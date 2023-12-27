@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "protected.md",
+                "file": "Наследование.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "protected.md",
+                "file": "Наследование.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "protected.md",
+                "file": "Наследование.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "protected.md"
+                "file": "Наследование.md"
               }
             }
           }
@@ -161,12 +161,24 @@
   },
   "active": "d72e2163662447b3",
   "lastOpenFiles": [
-    "Наследование.md",
+    "files/847319.pptx.ppt",
+    "files/20989.ppt",
+    "files/slide-3 (1).jpg",
+    "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome.jpg",
+    "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome 1.jpg",
+    "files/Screenshot_2023-12-26-13-07-38-506_com.android.chrome.jpg",
+    "files/Screenshot_2023-12-26-13-07-31-341_com.android.chrome.jpg",
+    "files/Screenshot_2023-12-26-13-07-19-369_com.android.chrome.jpg",
+    "files/Screenshot_2023-12-26-13-07-07-244_com.android.chrome.jpg",
     "Делегирование.md",
+    "static.png",
+    "slide-3 (1).jpg",
     "protected.md",
     "files/static.png",
-    "files/Screenshot_20231227_143154.png",
     "files",
+    "847319.pptx.ppt",
+    "20989.ppt",
+    "Наследование.md",
     "mutex.md",
     "Genshin c++.md",
     "C++.md",
