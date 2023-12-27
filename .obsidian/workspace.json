@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "e88780b7fbf4fe1c",
+        "id": "8a9438a0e0657910",
         "type": "tabs",
         "children": [
           {
-            "id": "6bcbb4d8cdea5ca9",
+            "id": "abdd3661182fa2e6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Override.md",
+                "file": "mutex.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d72e2163662447b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Наследование.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Override.md",
+                "file": "Наследование.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Override.md",
+                "file": "Наследование.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Override.md"
+                "file": "Наследование.md"
               }
             }
           }
@@ -146,6 +159,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6bcbb4d8cdea5ca9",
-  "lastOpenFiles": []
+  "active": "d72e2163662447b3",
+  "lastOpenFiles": [
+    "Делегирование.md",
+    "mutex.md",
+    "Genshin c++.md",
+    "C++.md",
+    "Деструктор.md",
+    "Override.md"
+  ]
 }
