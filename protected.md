@@ -38,13 +38,13 @@ int main() {
 ```c++
 class B : public A//наследники В будут наследовать также, как В наследовал от А
 	class C : B//поля В для С без именений
-		public
+		public// - одинаковые спецификаторы и у А, и у В, и у С
 		private
 		protected
 class B : private A//наследники В будут наследовать так, как если бы у В все поля были private
 	class C : B//поля В для С будут private
-		private
-		private
+		private//В и С теперь private. Private поля А доступны в В
+		private//Но в С к private-полям класса А доступа нет
 		private
 class B : protected A//наследники В будут наследовать так, как если бы поля public класса В стали protected
 	class C : B//public поля В для С станут protected. public стал protected
