@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "abdd3661182fa2e6",
+            "id": "a982e00538d5137e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mutex.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d72e2163662447b3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Наследование.md",
+                "file": "Приоритет технологий.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Наследование.md",
+                "file": "Приоритет технологий.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Наследование.md",
+                "file": "Приоритет технологий.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Наследование.md"
+                "file": "Приоритет технологий.md"
               }
             }
           }
@@ -159,8 +146,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d72e2163662447b3",
+  "active": "a982e00538d5137e",
   "lastOpenFiles": [
+    "Стек технологий.md",
+    "Приоритет технологий.md",
+    "NginX.md",
+    "Winderton.md",
+    "Override.md",
+    "virtual.md",
+    "Blockchain.md",
+    "Дебаггеры.md",
+    "Expression.md",
+    "Evaluators.md",
+    "Идиома NVI.md",
+    "Профайлер.md",
+    "Санитайзер.md",
+    "Tooliing.md",
+    "Наследование.md",
     "files/slide-3 (1).jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome.jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome 1.jpg",
@@ -173,18 +175,15 @@
     "static.png",
     "slide-3 (1).jpg",
     "Screenshot_20231227_143154.png",
-    "Screenshot_2023-12-26-13-46-15-795_com.android.chrome.jpg",
     "Obsidian Vault.zip",
     "847319.pptx.ppt",
     "20989.ppt",
     "Делегирование.md",
     "protected.md",
     "files",
-    "Наследование.md",
     "mutex.md",
     "Genshin c++.md",
     "C++.md",
-    "Деструктор.md",
-    "Override.md"
+    "Деструктор.md"
   ]
 }
