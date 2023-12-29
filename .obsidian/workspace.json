@@ -8,14 +8,55 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a982e00538d5137e",
+            "id": "4f5137a6173048c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Приоритет технологий.md",
+                "file": "virtual.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "2ec308222660b501",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3405d2facc00f773",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "virtual.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": false
+                }
               }
             }
           }
@@ -69,7 +110,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2c3fc3015b77dd24",
@@ -85,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Приоритет технологий.md",
+                "file": "virtual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Приоритет технологий.md",
+                "file": "virtual.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Приоритет технологий.md"
+                "file": "virtual.md"
               }
             }
           }
@@ -146,14 +188,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a982e00538d5137e",
+  "active": "4f5137a6173048c5",
   "lastOpenFiles": [
-    "Стек технологий.md",
+    "Виртуальный метод базового класса.md",
+    "virtual.md",
+    "Виртуальный деструктор.md",
+    "Чисто виртуальный деструктор.md",
+    "Делегирующий конструктор.md",
+    "Override.md",
+    "Tooliing.md",
     "Приоритет технологий.md",
+    "Стек технологий.md",
     "NginX.md",
     "Winderton.md",
-    "Override.md",
-    "virtual.md",
     "Blockchain.md",
     "Дебаггеры.md",
     "Expression.md",
@@ -161,7 +208,6 @@
     "Идиома NVI.md",
     "Профайлер.md",
     "Санитайзер.md",
-    "Tooliing.md",
     "Наследование.md",
     "files/slide-3 (1).jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome.jpg",

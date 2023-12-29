@@ -3,11 +3,9 @@
 
 using namespace std;
 
-class Weapon {
+class Weapon {//абстрактный класс
 public:
-	virtual void shoot() {
-		cout << "puk" << endl;
-	}
+	virtual void shoot() = 0;//чисто виртуальная функция
 };
 
 class Pistol : public Weapon{
@@ -24,15 +22,20 @@ public:
 	}
 };
 
+class Player {
+public:
+	void shoot(Weapon *weapon) {
+		weapon->shoot();	
+	}
+}
 
 int main() {
-
-	Weapon wp;
 	Pistol pist;
-	Weapon *Gun = &wp;
+	Weapon *Gun = &pist;//Указатель на базовый класс может хранить в себе ссылку на любого своего наследника
 	Gun->Shoot();
 return 0;
 }
 ```
 
-[[C++]] [[Override]] [[ООП]] [[Полиморфизм]]
+
+[[C++]] [[Override]] [[ООП]] [[Полиморфизм]] [[Наследование]]
