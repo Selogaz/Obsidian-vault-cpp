@@ -18,49 +18,21 @@
                 "source": false
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "2ec308222660b501",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "3405d2facc00f773",
+            "id": "2356c0283f895bc6",
             "type": "leaf",
             "state": {
-              "type": "localgraph",
+              "type": "markdown",
               "state": {
-                "file": "virtual.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1,
-                  "close": false
-                }
+                "file": "Множественное наследование.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "2c3fc3015b77dd24",
@@ -127,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "virtual.md",
+                "file": "Множественное наследование.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "virtual.md",
+                "file": "Множественное наследование.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "virtual.md"
+                "file": "Множественное наследование.md"
               }
             }
           }
@@ -188,10 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4f5137a6173048c5",
+  "active": "2356c0283f895bc6",
   "lastOpenFiles": [
-    "Виртуальный метод базового класса.md",
     "virtual.md",
+    "Множественное наследование.md",
+    "Виртуальный метод базового класса.md",
     "Виртуальный деструктор.md",
     "Чисто виртуальный деструктор.md",
     "Делегирующий конструктор.md",
