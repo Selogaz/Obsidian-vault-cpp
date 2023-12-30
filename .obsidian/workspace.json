@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "980ecb0f969cbfd0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Чтение и запись объекта в файл.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Чтение из файла.md",
+                "file": "Чтение и запись объекта в файл.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Чтение из файла.md",
+                "file": "Чтение и запись объекта в файл.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Чтение из файла.md"
+                "file": "Чтение и запись объекта в файл.md"
               }
             }
           }
@@ -159,10 +171,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4df8bdd559315369",
+  "active": "980ecb0f969cbfd0",
   "lastOpenFiles": [
-    "Запись в файл.md",
     "Чтение из файла.md",
+    "Чтение и запись объекта в файл.md",
+    "Запись в файл.md",
     "Виртуальное(ромбовидное) наследование.md",
     "files/gpu, memory, component.png",
     "files/OrcWarrior.png",
@@ -190,7 +203,6 @@
     "Expression.md",
     "Evaluators.md",
     "Профайлер.md",
-    "Санитайзер.md",
     "files/slide-3 (1).jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome.jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome 1.jpg",
