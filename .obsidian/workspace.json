@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4f5137a6173048c5",
+            "id": "82a18367833745a2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "virtual.md",
+                "file": "Запись в файл.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2356c0283f895bc6",
+            "id": "4df8bdd559315369",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Множественное наследование.md",
+                "file": "Чтение из файла.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Множественное наследование.md",
+                "file": "Чтение из файла.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Множественное наследование.md",
+                "file": "Чтение из файла.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Множественное наследование.md"
+                "file": "Чтение из файла.md"
               }
             }
           }
@@ -159,15 +159,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2356c0283f895bc6",
+  "active": "4df8bdd559315369",
   "lastOpenFiles": [
-    "virtual.md",
-    "Множественное наследование.md",
-    "Виртуальный метод базового класса.md",
-    "Виртуальный деструктор.md",
-    "Чисто виртуальный деструктор.md",
+    "Запись в файл.md",
+    "Чтение из файла.md",
+    "Виртуальное(ромбовидное) наследование.md",
+    "files/gpu, memory, component.png",
+    "files/OrcWarrior.png",
+    "Pasted image 20231230011019.png",
+    "Pasted image 20231230010833.png",
+    "Инкапсуляция.md",
+    "Идиома NVI.md",
     "Делегирующий конструктор.md",
+    "Делегирование.md",
+    "Виртуальный метод базового класса.md",
+    "Интерфейс.md",
+    "virtual.md",
     "Override.md",
+    "Множественное наследование.md",
+    "Чисто виртуальный деструктор.md",
+    "Множественное наследование одинаковые методы.md",
+    "Виртуальный деструктор.md",
     "Tooliing.md",
     "Приоритет технологий.md",
     "Стек технологий.md",
@@ -177,31 +189,19 @@
     "Дебаггеры.md",
     "Expression.md",
     "Evaluators.md",
-    "Идиома NVI.md",
     "Профайлер.md",
     "Санитайзер.md",
-    "Наследование.md",
     "files/slide-3 (1).jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome.jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome 1.jpg",
     "files/Screenshot_2023-12-26-13-07-38-506_com.android.chrome.jpg",
     "files/Screenshot_2023-12-26-13-07-31-341_com.android.chrome.jpg",
     "files/Screenshot_2023-12-26-13-07-19-369_com.android.chrome.jpg",
-    "files/Screenshot_2023-12-26-13-07-07-244_com.android.chrome.jpg",
     "files/847319.pptx.ppt",
     "files/20989.ppt",
-    "static.png",
-    "slide-3 (1).jpg",
-    "Screenshot_20231227_143154.png",
     "Obsidian Vault.zip",
     "847319.pptx.ppt",
     "20989.ppt",
-    "Делегирование.md",
-    "protected.md",
-    "files",
-    "mutex.md",
-    "Genshin c++.md",
-    "C++.md",
-    "Деструктор.md"
+    "files"
   ]
 }
