@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d5345c22f39dec84",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "try catch.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Потоковый ввод вывод в файл.md",
+                "file": "try catch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Потоковый ввод вывод в файл.md",
+                "file": "try catch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Потоковый ввод вывод в файл.md"
+                "file": "try catch.md"
               }
             }
           }
@@ -159,11 +171,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "71fa15e14aebd1eb",
+  "active": "d5345c22f39dec84",
   "lastOpenFiles": [
     "Чтение и запись fstream.md",
-    "Чтение и запись объекта в файл.md",
+    "try catch.md",
     "Потоковый ввод вывод в файл.md",
+    "Чтение и запись объекта в файл.md",
     "Запись в файл.md",
     "Чтение из файла.md",
     "Виртуальное(ромбовидное) наследование.md",
@@ -190,7 +203,6 @@
     "Winderton.md",
     "Blockchain.md",
     "Дебаггеры.md",
-    "Expression.md",
     "files/slide-3 (1).jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome.jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome 1.jpg",
