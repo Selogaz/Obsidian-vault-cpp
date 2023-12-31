@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c79e0cb97f8f365e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Чтение и запись fstream.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "71fa15e14aebd1eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Потоковый ввод вывод в файл.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "d5345c22f39dec84",
             "type": "leaf",
             "state": {
@@ -66,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "612419b77545eb55",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Свой класс exception.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -134,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Обработка исключений, 2 catch.md",
+                "file": "Свой класс exception.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Обработка исключений, 2 catch.md",
+                "file": "Свой класс exception.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Обработка исключений, 2 catch.md"
+                "file": "Свой класс exception.md"
               }
             }
           }
@@ -195,9 +183,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "988b691fc4ce9fc4",
+  "active": "612419b77545eb55",
   "lastOpenFiles": [
     "Генерация исключений throw.md",
+    "Свой класс exception.md",
     "Обработка исключений, 2 catch.md",
     "try catch.md",
     "Чтение и запись fstream.md",
@@ -226,7 +215,6 @@
     "Приоритет технологий.md",
     "Стек технологий.md",
     "NginX.md",
-    "Winderton.md",
     "files/slide-3 (1).jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome.jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome 1.jpg",
