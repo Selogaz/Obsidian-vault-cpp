@@ -8,66 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d5345c22f39dec84",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "try catch.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6383ee6f323e2578",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Генерация исключений throw.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "988b691fc4ce9fc4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Обработка исключений, 2 catch.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "612419b77545eb55",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Свой класс exception.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "61d45ad4b7d9f9b4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "enum.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "39ae20411d23d4f7",
             "type": "leaf",
             "state": {
@@ -78,9 +18,20 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d28f1d91d31d21db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Наследование шаблонных классов.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -209,8 +160,9 @@
   },
   "active": "39ae20411d23d4f7",
   "lastOpenFiles": [
-    "enum.md",
+    "Наследование шаблонных классов.md",
     "Шаблонный(обобщенный) класс.md",
+    "enum.md",
     "Свой класс exception.md",
     "Генерация исключений throw.md",
     "Обработка исключений, 2 catch.md",
@@ -238,7 +190,6 @@
     "Множественное наследование одинаковые методы.md",
     "Виртуальный деструктор.md",
     "Tooliing.md",
-    "Приоритет технологий.md",
     "files/slide-3 (1).jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome.jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome 1.jpg",
