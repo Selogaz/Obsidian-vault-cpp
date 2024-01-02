@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "3f9cea08e773c27f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Специализация шаблона класса.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "d28f1d91d31d21db",
             "type": "leaf",
             "state": {
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Шаблонный(обобщенный) класс.md",
+                "file": "Специализация шаблона класса.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Шаблонный(обобщенный) класс.md",
+                "file": "Специализация шаблона класса.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Шаблонный(обобщенный) класс.md"
+                "file": "Специализация шаблона класса.md"
               }
             }
           }
@@ -158,10 +171,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "39ae20411d23d4f7",
+  "active": "3f9cea08e773c27f",
   "lastOpenFiles": [
-    "Наследование шаблонных классов.md",
     "Шаблонный(обобщенный) класс.md",
+    "Наследование шаблонных классов.md",
+    "Специализация шаблона класса.md",
     "enum.md",
     "Свой класс exception.md",
     "Генерация исключений throw.md",
@@ -189,7 +203,6 @@
     "Чисто виртуальный деструктор.md",
     "Множественное наследование одинаковые методы.md",
     "Виртуальный деструктор.md",
-    "Tooliing.md",
     "files/slide-3 (1).jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome.jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome 1.jpg",
