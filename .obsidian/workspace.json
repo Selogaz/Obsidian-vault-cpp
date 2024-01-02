@@ -20,31 +20,43 @@
             }
           },
           {
-            "id": "3f9cea08e773c27f",
+            "id": "8943b3bf1943b374",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Специализация шаблона класса.md",
+                "file": "Идиома NVI.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d28f1d91d31d21db",
+            "id": "60dd8496ade1447b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Наследование шаблонных классов.md",
+                "file": "shared_ptr.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "acb823990f2261d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "std unique ptr.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Специализация шаблона класса.md",
+                "file": "std unique ptr.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Специализация шаблона класса.md",
+                "file": "std unique ptr.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Специализация шаблона класса.md"
+                "file": "std unique ptr.md"
               }
             }
           }
@@ -171,11 +183,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3f9cea08e773c27f",
+  "active": "acb823990f2261d6",
   "lastOpenFiles": [
+    "unique_ptr.md",
+    "std shared ptr.md",
+    "shared_ptr.md",
+    "std unique ptr.md",
+    "Идиома NVI.md",
+    "smart pointers.md",
     "Шаблонный(обобщенный) класс.md",
-    "Наследование шаблонных классов.md",
+    "struct.md",
     "Специализация шаблона класса.md",
+    "Наследование шаблонных классов.md",
     "enum.md",
     "Свой класс exception.md",
     "Генерация исключений throw.md",
@@ -192,17 +211,10 @@
     "Pasted image 20231230011019.png",
     "Pasted image 20231230010833.png",
     "Инкапсуляция.md",
-    "Идиома NVI.md",
     "Делегирующий конструктор.md",
     "Делегирование.md",
     "Виртуальный метод базового класса.md",
     "Интерфейс.md",
-    "virtual.md",
-    "Override.md",
-    "Множественное наследование.md",
-    "Чисто виртуальный деструктор.md",
-    "Множественное наследование одинаковые методы.md",
-    "Виртуальный деструктор.md",
     "files/slide-3 (1).jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome.jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome 1.jpg",
