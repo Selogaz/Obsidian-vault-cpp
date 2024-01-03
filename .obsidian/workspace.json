@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "39ae20411d23d4f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Шаблонный(обобщенный) класс.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8943b3bf1943b374",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Идиома NVI.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "60dd8496ade1447b",
             "type": "leaf",
             "state": {
@@ -44,19 +20,43 @@
             }
           },
           {
+            "id": "576f44cdf1a6116f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Динамический массив и умные указатели.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "12269b520772ac34",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Односвязный список.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "acb823990f2261d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "std unique ptr.md",
+                "file": "unique_ptr.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "std unique ptr.md",
+                "file": "Односвязный список.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "std unique ptr.md",
+                "file": "Односвязный список.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "std unique ptr.md"
+                "file": "Односвязный список.md"
               }
             }
           }
@@ -183,12 +183,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "acb823990f2261d6",
+  "active": "12269b520772ac34",
   "lastOpenFiles": [
-    "unique_ptr.md",
-    "std shared ptr.md",
+    "Динамический массив и умные указатели.md",
+    "Односвязный список.md",
+    "files/Односвязный_список.png",
+    "Массив.md",
     "shared_ptr.md",
+    "unique_ptr.md",
+    "Умные указатели.md",
     "std unique ptr.md",
+    "std shared ptr.md",
     "Идиома NVI.md",
     "smart pointers.md",
     "Шаблонный(обобщенный) класс.md",
@@ -211,16 +216,11 @@
     "Pasted image 20231230011019.png",
     "Pasted image 20231230010833.png",
     "Инкапсуляция.md",
-    "Делегирующий конструктор.md",
-    "Делегирование.md",
-    "Виртуальный метод базового класса.md",
-    "Интерфейс.md",
     "files/slide-3 (1).jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome.jpg",
     "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome 1.jpg",
     "files/Screenshot_2023-12-26-13-07-38-506_com.android.chrome.jpg",
     "files/Screenshot_2023-12-26-13-07-31-341_com.android.chrome.jpg",
-    "files/Screenshot_2023-12-26-13-07-19-369_com.android.chrome.jpg",
     "files/847319.pptx.ppt",
     "files/20989.ppt",
     "Obsidian Vault.zip",
