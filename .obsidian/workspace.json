@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "12269b520772ac34",
+            "id": "dc12b9948188d2ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Односвязный список.md",
+                "file": "Двусвязный список.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Односвязный список.md",
+                "file": "Двусвязный список.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Односвязный список.md",
+                "file": "Двусвязный список.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Односвязный список.md"
+                "file": "Двусвязный список.md"
               }
             }
           }
@@ -146,11 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "12269b520772ac34",
+  "active": "d1d4ec8293d0f967",
   "lastOpenFiles": [
+    "Односвязный список.md",
+    "Двусвязный список.md",
+    "files/Д_список.png",
+    "Pasted image 20240110094526.png",
+    "Pasted image 20240110093631.png",
+    "files/Двусвязный_список.png",
+    "List.cpp",
     "files/List.cpp",
     "Динамический массив и умные указатели.md",
-    "Односвязный список.md",
     "files/Односвязный_список.png",
     "Массив.md",
     "shared_ptr.md",
@@ -174,16 +180,11 @@
     "Чтение и запись объекта в файл.md",
     "Запись в файл.md",
     "Чтение из файла.md",
-    "Виртуальное(ромбовидное) наследование.md",
     "files/gpu, memory, component.png",
     "files/OrcWarrior.png",
     "Pasted image 20231230011019.png",
     "Pasted image 20231230010833.png",
     "files/slide-3 (1).jpg",
-    "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome.jpg",
-    "files/Screenshot_2023-12-26-13-46-15-795_com.android.chrome 1.jpg",
-    "files/Screenshot_2023-12-26-13-07-38-506_com.android.chrome.jpg",
-    "files/Screenshot_2023-12-26-13-07-31-341_com.android.chrome.jpg",
     "files/847319.pptx.ppt",
     "files/20989.ppt",
     "Obsidian Vault.zip",
