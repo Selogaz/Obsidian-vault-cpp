@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f3667b89fae251de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Бинарное дерево.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Двусвязный список.md",
+                "file": "Бинарное дерево.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Двусвязный список.md",
+                "file": "Бинарное дерево.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Двусвязный список.md"
+                "file": "Бинарное дерево.md"
               }
             }
           }
@@ -146,10 +159,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d1d4ec8293d0f967",
+  "active": "f3667b89fae251de",
   "lastOpenFiles": [
-    "Односвязный список.md",
+    "files/Бинарное_дерево_2.png",
     "Двусвязный список.md",
+    "Бинарное дерево.md",
+    "Односвязный список.md",
     "files/Д_список.png",
     "Pasted image 20240110094526.png",
     "Pasted image 20240110093631.png",
@@ -179,7 +194,6 @@
     "Потоковый ввод вывод в файл.md",
     "Чтение и запись объекта в файл.md",
     "Запись в файл.md",
-    "Чтение из файла.md",
     "files/gpu, memory, component.png",
     "files/OrcWarrior.png",
     "Pasted image 20231230011019.png",
