@@ -8,31 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "dc12b9948188d2ec",
+            "id": "a3b2a717a47121bb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Двусвязный список.md",
+                "file": "Очередь.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f3667b89fae251de",
+            "id": "895966eda9d6826e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Бинарное дерево.md",
+                "file": "Кольцевая очередь.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c61c4ad28e6fba61",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Очередь с приоритетом.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Бинарное дерево.md",
+                "file": "Очередь с приоритетом.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Бинарное дерево.md",
+                "file": "Очередь с приоритетом.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Бинарное дерево.md"
+                "file": "Очередь с приоритетом.md"
               }
             }
           }
@@ -159,11 +171,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f3667b89fae251de",
+  "active": "c61c4ad28e6fba61",
   "lastOpenFiles": [
+    "files/очередь_с_исключением_фыр.png",
+    "files/очередь_с_исключением.png",
+    "files/Очередь_с_приоритетом_фырфыр.png",
+    "files/Очередь_с_приоритетом_фыр.png",
+    "Кольцевая очередь.md",
+    "Очередь с приоритетом.md",
+    "files/Очередь_с_приоритетом.png",
+    "Очередь.md",
+    "files/Кольцевая_очередь.png",
+    "Стек.md",
+    "Бинарное дерево.md",
     "files/Бинарное_дерево_2.png",
     "Двусвязный список.md",
-    "Бинарное дерево.md",
     "Односвязный список.md",
     "files/Д_список.png",
     "Pasted image 20240110094526.png",
@@ -172,7 +194,6 @@
     "List.cpp",
     "files/List.cpp",
     "Динамический массив и умные указатели.md",
-    "files/Односвязный_список.png",
     "Массив.md",
     "shared_ptr.md",
     "unique_ptr.md",
@@ -190,15 +211,6 @@
     "Генерация исключений throw.md",
     "Обработка исключений, 2 catch.md",
     "try catch.md",
-    "Чтение и запись fstream.md",
-    "Потоковый ввод вывод в файл.md",
-    "Чтение и запись объекта в файл.md",
-    "Запись в файл.md",
-    "files/gpu, memory, component.png",
-    "files/OrcWarrior.png",
-    "Pasted image 20231230011019.png",
-    "Pasted image 20231230010833.png",
-    "files/slide-3 (1).jpg",
     "files/847319.pptx.ppt",
     "files/20989.ppt",
     "Obsidian Vault.zip",
