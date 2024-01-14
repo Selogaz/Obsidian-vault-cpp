@@ -4,42 +4,86 @@
     "type": "split",
     "children": [
       {
-        "id": "4d1d8e4ccb161e17",
+        "id": "6fce61ea327b3358",
         "type": "tabs",
+        "dimension": 55.87084148727984,
         "children": [
           {
-            "id": "2e489c12df695336",
+            "id": "05c52caf638be014",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vector.md",
+                "file": "C++.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "683d1cb5f38a34a0",
+            "id": "84762d4fd05e5156",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "auto.md",
+                "file": "stl prefix vs postfix.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b654b88ab4f756b6",
+            "id": "67cd6abf626f9b10",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Итератор.md",
+                "file": "foreach, range-based.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "ebe34ad20167ec84",
+        "type": "tabs",
+        "dimension": 44.12915851272016,
+        "children": [
+          {
+            "id": "5e2add73e043147d",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "foreach, range-based.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
               }
             }
           }
@@ -109,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vector.md",
+                "file": "foreach, range-based.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "vector.md",
+                "file": "foreach, range-based.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +193,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vector.md"
+                "file": "foreach, range-based.md"
               }
             }
           }
@@ -170,46 +214,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2e489c12df695336",
+  "active": "67cd6abf626f9b10",
   "lastOpenFiles": [
-    "list (stl).md",
+    "stl prefix vs postfix.md",
+    "foreach, range-based.md",
+    "C++.md",
     "auto.md",
-    "vector.md",
     "Итератор.md",
-    "files/capacity.png",
+    "stl.md",
+    "vector.md",
+    "Генерация исключений throw.md",
+    "Внутренний класс.md",
+    "Виртуальный метод базового класса.md",
+    "Виртуальный деструктор.md",
+    "Бинарное дерево.md",
+    "Ассоциация.md",
+    "Агрегация по ссылке.md",
+    "Запись в файл.md",
+    "ООП.md",
+    "namespace std.md",
+    "Дружественный метод класса.md",
+    "Идиома NVI.md",
+    "Конструктор класса по умолчанию.md",
+    "Массив объектов.md",
+    "Static.md",
+    "Наследование.md",
+    "Полиморфизм.md",
     "Динамический массив.md",
-    "Дек.md",
-    "Динамический массив и умные указатели.md",
+    "Стек.md",
+    "files/capacity.png",
     "files/ДЕК.png",
-    "Очередь с приоритетом.md",
     "files/очередь_с_исключением_фыр.png",
     "files/очередь_с_исключением.png",
     "files/Очередь_с_приоритетом_фырфыр.png",
     "files/Очередь_с_приоритетом_фыр.png",
-    "Кольцевая очередь.md",
     "files/Очередь_с_приоритетом.png",
-    "Очередь.md",
     "files/Кольцевая_очередь.png",
-    "Стек.md",
-    "Бинарное дерево.md",
     "files/Бинарное_дерево_2.png",
-    "Двусвязный список.md",
-    "Односвязный список.md",
     "files/Д_список.png",
     "List.cpp",
     "files/List.cpp",
-    "Массив.md",
-    "shared_ptr.md",
-    "unique_ptr.md",
-    "Умные указатели.md",
-    "std unique ptr.md",
-    "std shared ptr.md",
-    "Идиома NVI.md",
-    "smart pointers.md",
-    "Шаблонный(обобщенный) класс.md",
-    "struct.md",
-    "Специализация шаблона класса.md",
-    "Наследование шаблонных классов.md",
     "files/847319.pptx.ppt",
     "files/20989.ppt",
     "Obsidian Vault.zip",
