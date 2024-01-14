@@ -8,19 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7f52753ae40328de",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Дек.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8610bc0eb9e4f42a",
+            "id": "2e489c12df695336",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -55,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -183,11 +170,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8610bc0eb9e4f42a",
+  "active": "2e489c12df695336",
   "lastOpenFiles": [
-    "Итератор.md",
-    "vector.md",
+    "list (stl).md",
     "auto.md",
+    "vector.md",
+    "Итератор.md",
     "files/capacity.png",
     "Динамический массив.md",
     "Дек.md",
@@ -222,7 +210,6 @@
     "struct.md",
     "Специализация шаблона класса.md",
     "Наследование шаблонных классов.md",
-    "enum.md",
     "files/847319.pptx.ppt",
     "files/20989.ppt",
     "Obsidian Vault.zip",
