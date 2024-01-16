@@ -37,13 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Полиморфизм.md",
+                "file": "Функция.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "1f98a1f9442f2ab8",
@@ -55,7 +56,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Интерфейс.md",
+                "file": "Функция.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -150,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Интерфейс.md",
+                "file": "Функция.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Интерфейс.md",
+                "file": "Функция.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Интерфейс.md"
+                "file": "Функция.md"
               }
             }
           }
@@ -211,11 +212,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "36fef3052894913d",
+  "active": "b62ba3e170976cc8",
   "lastOpenFiles": [
+    "Указатель.md",
+    "Динамический массив.md",
+    "Темы для изучения.md",
+    "Ссылка.md",
     "Полиморфизм.md",
-    "AI.md",
     "Интерфейс.md",
+    "AI.md",
     "Перегрузка.md",
     "Итератор.md",
     "Идиома NVI.md",
@@ -225,7 +230,6 @@
     "Дружественный класс.md",
     "Деструктор.md",
     "Делегирующий конструктор.md",
-    "Динамический массив.md",
     "set stl.md",
     "Set stl.md",
     "deque_stl.md",
@@ -240,9 +244,6 @@
     "Untitled.md",
     "files/deque_stl.png",
     "list (stl).md",
-    "foreach, range-based.md",
-    "forward list stl.md",
-    "stl prefix vs postfix.md",
     "files/capacity.png",
     "files/ДЕК.png",
     "files/очередь_с_исключением_фыр.png",
