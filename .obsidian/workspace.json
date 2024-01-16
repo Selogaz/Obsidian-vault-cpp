@@ -8,12 +8,36 @@
         "type": "tabs",
         "children": [
           {
-            "id": "da9610a40a9e98f4",
+            "id": "36fef3052894913d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "set stl.md",
+                "file": "Интерфейс.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1f05457f20d55ac9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b62ba3e170976cc8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Полиморфизм.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +55,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "set stl.md",
+                "file": "Интерфейс.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -126,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "set stl.md",
+                "file": "Интерфейс.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "set stl.md",
+                "file": "Интерфейс.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "set stl.md"
+                "file": "Интерфейс.md"
               }
             }
           }
@@ -187,10 +211,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "da9610a40a9e98f4",
+  "active": "36fef3052894913d",
   "lastOpenFiles": [
-    "Set stl.md",
+    "Полиморфизм.md",
+    "AI.md",
+    "Интерфейс.md",
+    "Перегрузка.md",
+    "Итератор.md",
+    "Идиома NVI.md",
+    "Конструктор перемещения.md",
+    "rvalue reference.md",
+    "Конструктор копирования.md",
+    "Дружественный класс.md",
+    "Деструктор.md",
+    "Делегирующий конструктор.md",
+    "Динамический массив.md",
     "set stl.md",
+    "Set stl.md",
     "deque_stl.md",
     "vector.md",
     "Ajax.md",
@@ -204,21 +241,8 @@
     "files/deque_stl.png",
     "list (stl).md",
     "foreach, range-based.md",
-    "Итератор.md",
     "forward list stl.md",
     "stl prefix vs postfix.md",
-    "C++.md",
-    "auto.md",
-    "stl.md",
-    "Генерация исключений throw.md",
-    "Внутренний класс.md",
-    "Виртуальный метод базового класса.md",
-    "Виртуальный деструктор.md",
-    "Бинарное дерево.md",
-    "Ассоциация.md",
-    "Агрегация по ссылке.md",
-    "Запись в файл.md",
-    "ООП.md",
     "files/capacity.png",
     "files/ДЕК.png",
     "files/очередь_с_исключением_фыр.png",
