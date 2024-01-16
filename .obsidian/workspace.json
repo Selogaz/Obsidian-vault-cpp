@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1819abf26d16ed3c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "vector.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2242c47b32844e94",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "deque_stl.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "da9610a40a9e98f4",
             "type": "leaf",
             "state": {
@@ -43,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "1f98a1f9442f2ab8",
@@ -214,18 +189,19 @@
   },
   "active": "da9610a40a9e98f4",
   "lastOpenFiles": [
+    "Set stl.md",
+    "set stl.md",
+    "deque_stl.md",
+    "vector.md",
     "Ajax.md",
     "![[set_2.png.md",
-    "set stl.md",
     "Pasted image 20240115065943.png",
     "files/set_2.png",
-    "deque_stl.md",
     "files/set.png",
     "array stl.md",
     "stl и операторы сравнения.md",
     "Untitled.md",
     "files/deque_stl.png",
-    "vector.md",
     "list (stl).md",
     "foreach, range-based.md",
     "Итератор.md",
@@ -243,7 +219,6 @@
     "Агрегация по ссылке.md",
     "Запись в файл.md",
     "ООП.md",
-    "namespace std.md",
     "files/capacity.png",
     "files/ДЕК.png",
     "files/очередь_с_исключением_фыр.png",
