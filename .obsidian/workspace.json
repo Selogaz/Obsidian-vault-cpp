@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Функция.md",
+                "file": "Бинарное дерево.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Функция.md",
+                "file": "Бинарное дерево.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -151,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Функция.md",
+                "file": "Бинарное дерево.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Функция.md",
+                "file": "Бинарное дерево.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Функция.md"
+                "file": "Бинарное дерево.md"
               }
             }
           }
@@ -214,6 +214,11 @@
   },
   "active": "b62ba3e170976cc8",
   "lastOpenFiles": [
+    "Ассоциация.md",
+    "Агрегация по ссылке.md",
+    "auto.md",
+    "Ajax.md",
+    "Функция.md",
     "Указатель.md",
     "Динамический массив.md",
     "Темы для изучения.md",
@@ -234,16 +239,11 @@
     "Set stl.md",
     "deque_stl.md",
     "vector.md",
-    "Ajax.md",
     "![[set_2.png.md",
     "Pasted image 20240115065943.png",
     "files/set_2.png",
     "files/set.png",
-    "array stl.md",
-    "stl и операторы сравнения.md",
-    "Untitled.md",
     "files/deque_stl.png",
-    "list (stl).md",
     "files/capacity.png",
     "files/ДЕК.png",
     "files/очередь_с_исключением_фыр.png",
