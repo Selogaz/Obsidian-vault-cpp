@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "36fef3052894913d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Интерфейс.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "1f05457f20d55ac9",
             "type": "leaf",
             "state": {
@@ -37,14 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Бинарное дерево.md",
+                "file": "Оператор перемещения.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "1f98a1f9442f2ab8",
@@ -56,7 +44,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Бинарное дерево.md",
+                "file": "Оператор перемещения.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -151,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Бинарное дерево.md",
+                "file": "Оператор перемещения.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Бинарное дерево.md",
+                "file": "Оператор перемещения.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Бинарное дерево.md"
+                "file": "Оператор перемещения.md"
               }
             }
           }
@@ -214,32 +202,32 @@
   },
   "active": "b62ba3e170976cc8",
   "lastOpenFiles": [
-    "Ассоциация.md",
-    "Агрегация по ссылке.md",
-    "auto.md",
-    "Ajax.md",
-    "Функция.md",
-    "Указатель.md",
-    "Динамический массив.md",
-    "Темы для изучения.md",
-    "Ссылка.md",
-    "Полиморфизм.md",
-    "Интерфейс.md",
-    "AI.md",
+    "Перегрузка оператора присваивания.md",
+    "Оператор перемещения.md",
     "Перегрузка.md",
+    "Полиморфизм.md",
+    "Очередь.md",
+    "Односвязный список.md",
+    "Обработка исключений, 2 catch.md",
+    "Наследование шаблонных классов.md",
+    "Наследование.md",
+    "Множественное наследование.md",
+    "Метод класса.md",
+    "Массив объектов.md",
+    "Массив.md",
+    "Композиция.md",
+    "Кольцевая очередь.md",
+    "Класс.md",
     "Итератор.md",
+    "Делегирование.md",
+    "Инкапсуляция.md",
     "Идиома NVI.md",
-    "Конструктор перемещения.md",
-    "rvalue reference.md",
-    "Конструктор копирования.md",
+    "Запись в файл.md",
+    "Дружественный метод класса.md",
     "Дружественный класс.md",
-    "Деструктор.md",
-    "Делегирующий конструктор.md",
-    "set stl.md",
-    "Set stl.md",
-    "deque_stl.md",
-    "vector.md",
-    "![[set_2.png.md",
+    "Дружественная функция.md",
+    "Динамический массив и умные указатели.md",
+    "Динамический массив.md",
     "Pasted image 20240115065943.png",
     "files/set_2.png",
     "files/set.png",
