@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0906790dc760b9e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Remove-erase idiom.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "1f98a1f9442f2ab8",
@@ -44,7 +56,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Оператор перемещения.md",
+                "file": "Remove-erase idiom.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -139,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Оператор перемещения.md",
+                "file": "Remove-erase idiom.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Оператор перемещения.md",
+                "file": "Remove-erase idiom.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Оператор перемещения.md"
+                "file": "Remove-erase idiom.md"
               }
             }
           }
@@ -200,10 +212,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b62ba3e170976cc8",
+  "active": "0906790dc760b9e4",
   "lastOpenFiles": [
-    "Перегрузка оператора присваивания.md",
+    "Pasted image 20240117065050.png",
     "Оператор перемещения.md",
+    "Remove-erase idiom.md",
+    "Перегрузка оператора присваивания.md",
     "Перегрузка.md",
     "Полиморфизм.md",
     "Очередь.md",
@@ -226,8 +240,6 @@
     "Дружественный метод класса.md",
     "Дружественный класс.md",
     "Дружественная функция.md",
-    "Динамический массив и умные указатели.md",
-    "Динамический массив.md",
     "Pasted image 20240115065943.png",
     "files/set_2.png",
     "files/set.png",
