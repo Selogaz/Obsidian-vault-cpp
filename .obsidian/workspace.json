@@ -20,24 +20,36 @@
             }
           },
           {
-            "id": "b62ba3e170976cc8",
+            "id": "206fc31ae70c7416",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Оператор перемещения.md",
+                "file": "Typedef.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0906790dc760b9e4",
+            "id": "984dab31d5dedf3d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Remove-erase idiom.md",
+                "file": "map.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cc95aa271397d7ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Бинарный поиск.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +68,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Remove-erase idiom.md",
+                "file": "map.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -151,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Remove-erase idiom.md",
+                "file": "map.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +180,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Remove-erase idiom.md",
+                "file": "map.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,7 +203,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Remove-erase idiom.md"
+                "file": "map.md"
               }
             }
           }
@@ -212,34 +224,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0906790dc760b9e4",
+  "active": "984dab31d5dedf3d",
   "lastOpenFiles": [
-    "Pasted image 20240117065050.png",
-    "Оператор перемещения.md",
-    "Remove-erase idiom.md",
-    "Перегрузка оператора присваивания.md",
-    "Перегрузка.md",
-    "Полиморфизм.md",
-    "Очередь.md",
-    "Односвязный список.md",
-    "Обработка исключений, 2 catch.md",
-    "Наследование шаблонных классов.md",
-    "Наследование.md",
-    "Множественное наследование.md",
-    "Метод класса.md",
-    "Массив объектов.md",
-    "Массив.md",
-    "Композиция.md",
-    "Кольцевая очередь.md",
-    "Класс.md",
-    "Итератор.md",
-    "Делегирование.md",
+    "Бинарный поиск.md",
+    "map.md",
+    "files/map.png",
+    "pair.md",
+    "Typedef.md",
     "Инкапсуляция.md",
-    "Идиома NVI.md",
-    "Запись в файл.md",
-    "Дружественный метод класса.md",
-    "Дружественный класс.md",
-    "Дружественная функция.md",
+    "Интерфейс.md",
+    "Итератор.md",
+    "Remove-erase idiom.md",
+    "find-erase.md",
+    "RAII.md",
+    "protected.md",
+    "Override.md",
+    "NginX.md",
+    "namespace std.md",
+    "mutex.md",
+    "id-generator.md",
+    "Genshin c++.md",
+    "friend.md",
+    "forward list stl.md",
+    "foreach, range-based.md",
+    "Expression.md",
+    "Explicit.md",
+    "Evaluators.md",
+    "enum.md",
+    "Blockchain.md",
+    "C++.md",
+    "Pasted image 20240117065050.png",
     "Pasted image 20240115065943.png",
     "files/set_2.png",
     "files/set.png",
@@ -248,8 +262,6 @@
     "files/ДЕК.png",
     "files/очередь_с_исключением_фыр.png",
     "files/очередь_с_исключением.png",
-    "files/Очередь_с_приоритетом_фырфыр.png",
-    "files/Очередь_с_приоритетом_фыр.png",
     "List.cpp",
     "files/List.cpp",
     "files/847319.pptx.ppt",
