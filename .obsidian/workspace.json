@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "206fc31ae70c7416",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Typedef.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "984dab31d5dedf3d",
             "type": "leaf",
             "state": {
@@ -44,12 +32,12 @@
             }
           },
           {
-            "id": "cc95aa271397d7ab",
+            "id": "1d82d1079c90457e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Бинарный поиск.md",
+                "file": "multithreading.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +56,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "map.md",
+                "file": "multithreading.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -163,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "map.md",
+                "file": "multithreading.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "map.md",
+                "file": "multithreading.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -203,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "map.md"
+                "file": "multithreading.md"
               }
             }
           }
@@ -224,10 +212,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "984dab31d5dedf3d",
+  "active": "1d82d1079c90457e",
   "lastOpenFiles": [
-    "Бинарный поиск.md",
+    "Многопоточность.md",
+    "multithreading.md",
     "map.md",
+    "Бинарный поиск.md",
     "files/map.png",
     "pair.md",
     "Typedef.md",
@@ -251,8 +241,6 @@
     "Explicit.md",
     "Evaluators.md",
     "enum.md",
-    "Blockchain.md",
-    "C++.md",
     "Pasted image 20240117065050.png",
     "Pasted image 20240115065943.png",
     "files/set_2.png",
