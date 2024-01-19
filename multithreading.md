@@ -23,4 +23,29 @@ int main() {
 }
 ```
 
+Передача в поток функцию вместе с параметрами:
+
+```c++
+#include <thread>
+#include <chrono>
+
+void doWork(int a, int b) {
+	for (size_t i = 0; i < 10; i++) {
+		cout << "ID потока = "<<this_thread::get_id() << endl;
+		this_thread::sleep_for(chrono::milliseconds(1000));
+		cout <<"a + b = " <<a + b << endl;
+	}
+}
+
+int main() {
+	thread th(doWork,2,3);//параметры должны соответствовать типу и количеству
+	for (size_t i = 0; true; i++) {
+		cout << "ID потока main = "<<this_thread::get_id() << endl;
+		this_thread::sleep_for(chrono::milliseconds(500));
+	}
+	th.join();//дождиается выполнения потока th(функция doWork)
+	return 0;
+}
+```
+
 [[C++]] [[chrono]] [[Многопоточность]] 
