@@ -25,14 +25,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Адаптер контейнеров.md",
+                "file": "namespace std.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c0537aa412bd3de6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "namespace.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aaedd4339660a73d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Многофайловый проект.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       },
       {
         "id": "1f98a1f9442f2ab8",
@@ -44,7 +68,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Адаптер контейнеров.md",
+                "file": "Многофайловый проект.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -139,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Адаптер контейнеров.md",
+                "file": "Многофайловый проект.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +180,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Адаптер контейнеров.md",
+                "file": "Многофайловый проект.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +203,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Адаптер контейнеров.md"
+                "file": "Многофайловый проект.md"
               }
             }
           }
@@ -200,12 +224,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1d82d1079c90457e",
+  "active": "aaedd4339660a73d",
   "lastOpenFiles": [
+    "namespace.md",
+    "Многофайловый проект.md",
+    "namespace std.md",
+    "array stl.md",
+    "Адаптер контейнеров.md",
     "files/priority_queue_stl_2.png",
     "files/priority_queue_stl.png",
     "Очередь с приоритетом.md",
-    "Адаптер контейнеров.md",
     "Очередь.md",
     "Структуры данных.md",
     "Дек.md",
@@ -227,9 +255,6 @@
     "RAII.md",
     "protected.md",
     "Override.md",
-    "NginX.md",
-    "namespace std.md",
-    "mutex.md",
     "Pasted image 20240117065050.png",
     "Pasted image 20240115065943.png",
     "files/set_2.png",
@@ -237,7 +262,6 @@
     "files/deque_stl.png",
     "files/capacity.png",
     "files/ДЕК.png",
-    "files/очередь_с_исключением_фыр.png",
     "List.cpp",
     "files/List.cpp",
     "files/847319.pptx.ppt",
