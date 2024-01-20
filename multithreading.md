@@ -30,17 +30,18 @@ int main() {
 #include <chrono>
 
 void doWork(int a, int b) {
-	for (size_t i = 0; i < 10; i++) {
-		cout << "ID потока = "<<this_thread::get_id() << endl;
-		this_thread::sleep_for(chrono::milliseconds(1000));
+		this_thread::sleep_for(chrono::milliseconds(3000));
+		cout << "========\t "<<"DoWork STARTED\t=========" << endl;
+		this_thread::sleep_for(chrono::milliseconds(5000));
 		cout <<"a + b = " <<a + b << endl;
-	}
+		this_thread::sleep_for(chrono::milliseconds(3000));
+		cout << "========\t "<<"DoWork STOPPED\t=========" << endl;
 }
 
 int main() {
 	thread th(doWork,2,3);//параметры должны соответствовать типу и количеству
 	for (size_t i = 0; true; i++) {
-		cout << "ID потока main = "<<this_thread::get_id() << endl;
+		cout << "ID потока main = "<<this_thread::get_id() << "\tmain works\t"<<i<<endl;
 		this_thread::sleep_for(chrono::milliseconds(500));
 	}
 	th.join();//дождиается выполнения потока th(функция doWork)
