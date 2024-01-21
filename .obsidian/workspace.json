@@ -20,43 +20,43 @@
             }
           },
           {
-            "id": "1d82d1079c90457e",
+            "id": "562226d51cf6fb9b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "namespace std.md",
+                "file": "Возврат результата из потока по ссылке.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c0537aa412bd3de6",
+            "id": "07072a91a0b664d7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "namespace.md",
+                "file": "Union.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "aaedd4339660a73d",
+            "id": "02f4521550b1746b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Многофайловый проект.md",
+                "file": "multithreading.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       },
       {
         "id": "1f98a1f9442f2ab8",
@@ -68,7 +68,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Многофайловый проект.md",
+                "file": "Union.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -163,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Многофайловый проект.md",
+                "file": "Union.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,7 +180,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Многофайловый проект.md",
+                "file": "Union.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -203,7 +203,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Многофайловый проект.md"
+                "file": "Union.md"
               }
             }
           }
@@ -224,10 +224,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "aaedd4339660a73d",
+  "active": "07072a91a0b664d7",
   "lastOpenFiles": [
-    "namespace.md",
+    "files/u c.png",
+    "files/u b.png",
+    "files/u a.png",
+    "Возврат результата из потока по ссылке.md",
+    "Union.md",
+    "multithreading.md",
     "Многофайловый проект.md",
+    "namespace.md",
     "namespace std.md",
     "array stl.md",
     "Адаптер контейнеров.md",
@@ -238,7 +244,6 @@
     "Структуры данных.md",
     "Дек.md",
     "Бинарное дерево.md",
-    "multithreading.md",
     "Многопоточность.md",
     "Стек.md",
     "stack.md",
@@ -252,16 +257,11 @@
     "Итератор.md",
     "Remove-erase idiom.md",
     "find-erase.md",
-    "RAII.md",
-    "protected.md",
-    "Override.md",
     "Pasted image 20240117065050.png",
     "Pasted image 20240115065943.png",
     "files/set_2.png",
     "files/set.png",
     "files/deque_stl.png",
-    "files/capacity.png",
-    "files/ДЕК.png",
     "List.cpp",
     "files/List.cpp",
     "files/847319.pptx.ppt",
