@@ -47,13 +47,13 @@ void Bar(int a) {
 	}
 }
 
-int DoWork(vector<int> &vc) {//
+void DoWork(vector<int> &vc) {//
 	for (auto el : vc) {
 		Foo(el);
 	}
 }
 
-int DoWork2(vector<int> &vc) {
+void DoWork2(vector<int> &vc) {
 	for (auto el : vc) {
 		Bar(el);
 	}
@@ -69,7 +69,7 @@ int main() {
 
 
 ```c++
-int DoWork(vector<int> &vc, function<void(int)> f) {
+void DoWork(vector<int> &vc, function<void(int)> f) {
 	for (auto el : vc) {
 		f(el);
 	}
@@ -81,7 +81,7 @@ int main() {
 ```
 
 ```c++
-int DoWork(vector<int> &vc, vector<function<void(int)>> funcVector ) {
+void DoWork(vector<int> &vc, vector<function<void(int)>> funcVector ) {
 	for (auto el : vc) {
 		for (auto &fel : funcVector) {
 			fel(el);
