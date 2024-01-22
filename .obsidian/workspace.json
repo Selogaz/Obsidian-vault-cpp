@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "206b8b033563dc98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Запись в файл linux.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Системный вызов.md",
+                "file": "Запись в файл linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Системный вызов.md",
+                "file": "Запись в файл linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Системный вызов.md"
+                "file": "Запись в файл linux.md"
               }
             }
           }
@@ -159,10 +171,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "29119e596f2b124a",
+  "active": "206b8b033563dc98",
   "lastOpenFiles": [
-    "Захват контекста лямбдой.md",
+    "Показать содержимое файла.md",
+    "Запись в файл linux.md",
+    "Удалить файл.md",
+    "Untitled 1.md",
+    "Создать директорию.md",
     "Системный вызов.md",
+    "Номер порта.md",
+    "Создать файл.md",
+    "Sim link.md",
+    "hard link.md",
+    "IP-адрес.md",
+    "Захват контекста лямбдой.md",
     "Лямбда и поток.md",
     "Лямбда.md",
     "std function.md",
@@ -182,17 +204,7 @@
     "files/priority_queue_stl.png",
     "Очередь с приоритетом.md",
     "Очередь.md",
-    "Структуры данных.md",
-    "Дек.md",
-    "Бинарное дерево.md",
-    "Многопоточность.md",
-    "Стек.md",
-    "stack.md",
-    "map.md",
-    "Бинарный поиск.md",
     "files/map.png",
-    "pair.md",
-    "Typedef.md",
     "Pasted image 20240117065050.png",
     "Pasted image 20240115065943.png",
     "files/set_2.png",
