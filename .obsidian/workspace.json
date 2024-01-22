@@ -8,55 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1f05457f20d55ac9",
+            "id": "426bf8cf7d4071df",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI.md",
+                "file": "Лямбда.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "562226d51cf6fb9b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Возврат результата из потока по ссылке.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "07072a91a0b664d7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Union.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7a4ad5cb849a6bdc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "std function.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "02f4521550b1746b",
+            "id": "820071f9a2413ca9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -66,50 +30,33 @@
                 "source": false
               }
             }
-          }
-        ],
-        "currentTab": 3
-      },
-      {
-        "id": "1f98a1f9442f2ab8",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "de447bf4a8df74b0",
+            "id": "982104c3666adf0a",
             "type": "leaf",
             "state": {
-              "type": "localgraph",
+              "type": "markdown",
               "state": {
                 "file": "std function.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1,
-                  "close": false
-                }
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "857b5109b73d4f96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Лямбда и поток.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -175,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "std function.md",
+                "file": "Лямбда и поток.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -192,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "std function.md",
+                "file": "Лямбда и поток.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "std function.md"
+                "file": "Лямбда и поток.md"
               }
             }
           }
@@ -236,15 +183,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7a4ad5cb849a6bdc",
+  "active": "857b5109b73d4f96",
   "lastOpenFiles": [
-    "Union.md",
+    "Лямбда.md",
+    "Лямбда и поток.md",
     "std function.md",
+    "multithreading.md",
+    "AI.md",
+    "Возврат результата из потока по ссылке.md",
+    "Union.md",
     "files/u c.png",
     "files/u b.png",
     "files/u a.png",
-    "Возврат результата из потока по ссылке.md",
-    "multithreading.md",
     "Многофайловый проект.md",
     "namespace.md",
     "namespace std.md",
@@ -267,9 +217,6 @@
     "Typedef.md",
     "Инкапсуляция.md",
     "Интерфейс.md",
-    "Итератор.md",
-    "Remove-erase idiom.md",
-    "find-erase.md",
     "Pasted image 20240117065050.png",
     "Pasted image 20240115065943.png",
     "files/set_2.png",

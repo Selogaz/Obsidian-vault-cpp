@@ -55,7 +55,7 @@ void DoWork(vector<int> &vc) {//
 
 void DoWork2(vector<int> &vc) {
 	for (auto el : vc) {
-		Bar(el);
+		Bar(el);vector<int> vc = {1, 51, 4, 10, 44, 98, 8, 12, 22, 29, 49};
 	}
 }
 
