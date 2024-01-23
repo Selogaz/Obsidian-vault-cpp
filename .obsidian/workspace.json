@@ -13,38 +13,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Захват контекста лямбдой.md",
+                "file": "multithreading.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "29119e596f2b124a",
+            "id": "f0760a0d1368db26",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Системный вызов.md",
+                "file": "Время выполнения кода.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "206b8b033563dc98",
+            "id": "b8a4ae1e563ed4d7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Запись в файл linux.md",
+                "file": "Лямбда и поток.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5841f0189d000c58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Функторы.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b56a65ecbc0b7be3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Предикат.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -73,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "multithre",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Запись в файл linux.md",
+                "file": "Предикат.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Запись в файл linux.md",
+                "file": "Предикат.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Запись в файл linux.md"
+                "file": "Предикат.md"
               }
             }
           }
@@ -171,10 +195,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "206b8b033563dc98",
+  "active": "b56a65ecbc0b7be3",
   "lastOpenFiles": [
-    "Показать содержимое файла.md",
+    "Функторы.md",
+    "Предикат.md",
+    "Время выполнения кода.md",
+    "Лямбда и поток.md",
+    "multithreading.md",
+    "Многопоточность.md",
+    "Захват контекста лямбдой.md",
     "Запись в файл linux.md",
+    "Показать содержимое файла.md",
     "Удалить файл.md",
     "Untitled 1.md",
     "Создать директорию.md",
@@ -184,11 +215,8 @@
     "Sim link.md",
     "hard link.md",
     "IP-адрес.md",
-    "Захват контекста лямбдой.md",
-    "Лямбда и поток.md",
     "Лямбда.md",
     "std function.md",
-    "multithreading.md",
     "AI.md",
     "Возврат результата из потока по ссылке.md",
     "Union.md",
@@ -198,12 +226,8 @@
     "Многофайловый проект.md",
     "namespace.md",
     "namespace std.md",
-    "array stl.md",
-    "Адаптер контейнеров.md",
     "files/priority_queue_stl_2.png",
     "files/priority_queue_stl.png",
-    "Очередь с приоритетом.md",
-    "Очередь.md",
     "files/map.png",
     "Pasted image 20240117065050.png",
     "Pasted image 20240115065943.png",
