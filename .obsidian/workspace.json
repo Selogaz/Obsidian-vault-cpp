@@ -8,42 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "099c5aef6cccae2f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "multithreading.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f0760a0d1368db26",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Время выполнения кода.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b8a4ae1e563ed4d7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Лямбда и поток.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "5841f0189d000c58",
             "type": "leaf",
             "state": {
@@ -56,7 +20,7 @@
             }
           },
           {
-            "id": "b56a65ecbc0b7be3",
+            "id": "1be9049162a7a239",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -66,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5f009b7b5f4dc294",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "STL Алгоритмы сортировки.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -134,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Предикат.md",
+                "file": "STL Алгоритмы сортировки.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Предикат.md",
+                "file": "STL Алгоритмы сортировки.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Предикат.md"
+                "file": "STL Алгоритмы сортировки.md"
               }
             }
           }
@@ -195,10 +171,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b56a65ecbc0b7be3",
+  "active": "5f009b7b5f4dc294",
   "lastOpenFiles": [
-    "Функторы.md",
     "Предикат.md",
+    "STL Алгоритмы сортировки.md",
+    "Функторы.md",
     "Время выполнения кода.md",
     "Лямбда и поток.md",
     "multithreading.md",
@@ -225,7 +202,6 @@
     "files/u a.png",
     "Многофайловый проект.md",
     "namespace.md",
-    "namespace std.md",
     "files/priority_queue_stl_2.png",
     "files/priority_queue_stl.png",
     "files/map.png",
