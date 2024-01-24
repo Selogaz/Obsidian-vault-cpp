@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ed147eaba6e788e9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "STL Алгоритмы поиска.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "STL Алгоритмы сортировки.md",
+                "file": "STL Алгоритмы поиска.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "STL Алгоритмы сортировки.md",
+                "file": "STL Алгоритмы поиска.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "STL Алгоритмы сортировки.md"
+                "file": "STL Алгоритмы поиска.md"
               }
             }
           }
@@ -171,10 +183,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5f009b7b5f4dc294",
+  "active": "ed147eaba6e788e9",
   "lastOpenFiles": [
-    "Предикат.md",
     "STL Алгоритмы сортировки.md",
+    "Предикат.md",
+    "STL Алгоритмы поиска.md",
     "Функторы.md",
     "Время выполнения кода.md",
     "Лямбда и поток.md",
@@ -201,7 +214,6 @@
     "files/u b.png",
     "files/u a.png",
     "Многофайловый проект.md",
-    "namespace.md",
     "files/priority_queue_stl_2.png",
     "files/priority_queue_stl.png",
     "files/map.png",
