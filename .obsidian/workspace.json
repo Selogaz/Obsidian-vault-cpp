@@ -6,26 +6,28 @@
       {
         "id": "6fce61ea327b3358",
         "type": "tabs",
+        "dimension": 59.32358318098721,
         "children": [
           {
-            "id": "8d82632cbcecdbcf",
+            "id": "82b3cb2b6a5a9697",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "stl max_element.md",
+                "file": "multithreading.md",
                 "mode": "source",
                 "source": false
               }
-            }
+            },
+            "group": "a1f1263477805af7"
           },
           {
-            "id": "9fcef6156b6ffcc0",
+            "id": "3676de17ef83856d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "stl min_element + гибрид.md",
+                "file": "метод класса в потоке.md",
                 "mode": "source",
                 "source": false
               }
@@ -33,6 +35,49 @@
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "4fb82cb3ead850e7",
+        "type": "tabs",
+        "dimension": 40.67641681901279,
+        "children": [
+          {
+            "id": "9862508cd2d7a584",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "multithreading.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": false,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              }
+            },
+            "group": "a1f1263477805af7"
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +127,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2c3fc3015b77dd24",
@@ -98,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "stl min_element + гибрид.md",
+                "file": "метод класса в потоке.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "stl min_element + гибрид.md",
+                "file": "метод класса в потоке.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "stl min_element + гибрид.md"
+                "file": "метод класса в потоке.md"
               }
             }
           }
@@ -159,20 +205,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9fcef6156b6ffcc0",
+  "active": "3676de17ef83856d",
   "lastOpenFiles": [
-    "stl max_element.md",
+    "multithreading.md",
+    "метод класса в потоке.md",
+    "Время выполнения кода.md",
+    "Возврат результата из потока по ссылке.md",
+    "Многопоточность.md",
+    "Лямбда.md",
+    "Конструктор перемещения.md",
+    "Класс.md",
+    "Композиция.md",
+    "Кольцевая очередь.md",
     "stl min_element + гибрид.md",
+    "stl max_element.md",
     "stl remove stl remove_if удаление элемента по условию.md",
     "stl_copy  stl_copy_if Выборка данных по условию.md",
     "STL Алгоритмы сортировки.md",
     "STL Алгоритмы поиска.md",
     "Предикат.md",
     "Функторы.md",
-    "Время выполнения кода.md",
     "Лямбда и поток.md",
-    "multithreading.md",
-    "Многопоточность.md",
     "Захват контекста лямбдой.md",
     "Запись в файл linux.md",
     "Показать содержимое файла.md",
@@ -180,13 +233,6 @@
     "Untitled 1.md",
     "Создать директорию.md",
     "Системный вызов.md",
-    "Номер порта.md",
-    "Создать файл.md",
-    "Sim link.md",
-    "hard link.md",
-    "IP-адрес.md",
-    "Лямбда.md",
-    "std function.md",
     "files/u c.png",
     "files/u b.png",
     "files/u a.png",
