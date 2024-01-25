@@ -18,33 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "3fa90606e7088d0f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Перенаправление потока.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d4879de7773b76a4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "метод класса в потоке.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "метод класса в потоке.md",
+                "file": "multithreading.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "метод класса в потоке.md",
+                "file": "multithreading.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "метод класса в потоке.md"
+                "file": "multithreading.md"
               }
             }
           }
@@ -171,11 +146,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d4879de7773b76a4",
+  "active": "82b3cb2b6a5a9697",
   "lastOpenFiles": [
     "Перенаправление потока.md",
-    "multithreading.md",
     "метод класса в потоке.md",
+    "tail linux.md",
+    "global regular expression print.md",
+    "head linux.md",
+    "Количество строк linux.md",
+    "multithreading.md",
     "Показать содержимое файла.md",
     "Чтение из файла linux.md",
     "Навигация по файлу.md",
@@ -195,10 +174,6 @@
     "stl remove stl remove_if удаление элемента по условию.md",
     "stl_copy  stl_copy_if Выборка данных по условию.md",
     "STL Алгоритмы сортировки.md",
-    "STL Алгоритмы поиска.md",
-    "Предикат.md",
-    "Функторы.md",
-    "Лямбда и поток.md",
     "files/u c.png",
     "files/u b.png",
     "files/u a.png",
