@@ -18,8 +18,57 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e1f13bd702d5af14",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "accumulate stl.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "20d830b67b3da4e9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "stl mismatch.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b1c3ba9afaf0e384",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Системное программирование.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f0322cd30559cdd3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "STL Equal.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "multithreading.md",
+                "file": "Системное программирование.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "multithreading.md",
+                "file": "Системное программирование.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "multithreading.md"
+                "file": "Системное программирование.md"
               }
             }
           }
@@ -146,15 +195,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "82b3cb2b6a5a9697",
+  "active": "b1c3ba9afaf0e384",
   "lastOpenFiles": [
+    "stl mismatch.md",
+    "Системное программирование.md",
+    "files/Системное_программирование4.png",
+    "files/Системное_программирование3.png",
+    "files/Системное_программирование2.png",
+    "files/Системное_программирование.png",
+    "STL Equal.md",
+    "accumulate stl.md",
+    "multithreading.md",
     "Перенаправление потока.md",
     "метод класса в потоке.md",
     "tail linux.md",
     "global regular expression print.md",
     "head linux.md",
     "Количество строк linux.md",
-    "multithreading.md",
     "Показать содержимое файла.md",
     "Чтение из файла linux.md",
     "Навигация по файлу.md",
@@ -170,20 +227,12 @@
     "Композиция.md",
     "Кольцевая очередь.md",
     "stl min_element + гибрид.md",
-    "stl max_element.md",
-    "stl remove stl remove_if удаление элемента по условию.md",
-    "stl_copy  stl_copy_if Выборка данных по условию.md",
-    "STL Алгоритмы сортировки.md",
     "files/u c.png",
     "files/u b.png",
     "files/u a.png",
     "files/priority_queue_stl_2.png",
     "files/priority_queue_stl.png",
     "files/map.png",
-    "Pasted image 20240117065050.png",
-    "Pasted image 20240115065943.png",
-    "files/set_2.png",
-    "files/set.png",
     "List.cpp",
     "files/List.cpp",
     "files/847319.pptx.ppt",
