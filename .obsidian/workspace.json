@@ -20,30 +20,6 @@
             }
           },
           {
-            "id": "e1f13bd702d5af14",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "accumulate stl.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "20d830b67b3da4e9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "stl mismatch.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "b1c3ba9afaf0e384",
             "type": "leaf",
             "state": {
@@ -56,31 +32,31 @@
             }
           },
           {
-            "id": "f0322cd30559cdd3",
+            "id": "fced99f197c4a065",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "STL Equal.md",
+                "file": "lock_guard mutex.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "22c07f9f01f1752b",
+            "id": "de528fadf32b88b5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "STL Equal predicate.md",
+                "file": "Deadlock.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -146,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "STL Equal predicate.md",
+                "file": "Deadlock.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "STL Equal predicate.md",
+                "file": "Deadlock.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "STL Equal predicate.md"
+                "file": "Deadlock.md"
               }
             }
           }
@@ -207,11 +183,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "22c07f9f01f1752b",
+  "active": "de528fadf32b88b5",
   "lastOpenFiles": [
-    "STL Equal.md",
-    "STL Equal predicate.md",
+    "lock_guard mutex.md",
+    "Deadlock.md",
     "mutex.md",
+    "STL Equal predicate.md",
+    "STL Equal.md",
     "Системное программирование.md",
     "stl mismatch.md",
     "files/Системное_программирование4.png",
@@ -237,8 +215,6 @@
     "Многопоточность.md",
     "Лямбда.md",
     "Конструктор перемещения.md",
-    "Класс.md",
-    "Композиция.md",
     "files/u c.png",
     "files/u b.png",
     "files/u a.png",

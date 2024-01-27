@@ -24,3 +24,5 @@ cout << result << endl;
 	return 0;
 }
 ```
+
+[[C++]] [[STL Equal]] [[Предикат]] 
