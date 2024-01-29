@@ -44,30 +44,6 @@
             }
           },
           {
-            "id": "90d5abfcf682b685",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "stl for_each.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "32ed751d548a9287",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "stl unique.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "09651e952db21a82",
             "type": "leaf",
             "state": {
@@ -80,19 +56,19 @@
             }
           },
           {
-            "id": "e3f9109cd5d19d5e",
+            "id": "74eb1e87a7710625",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "stl random_shuffle.md",
+                "file": "unique_lock vs lock guard mutex.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -158,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "stl random_shuffle.md",
+                "file": "unique_lock vs lock guard mutex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "stl random_shuffle.md",
+                "file": "unique_lock vs lock guard mutex.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "stl random_shuffle.md"
+                "file": "unique_lock vs lock guard mutex.md"
               }
             }
           }
@@ -219,15 +195,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e3f9109cd5d19d5e",
+  "active": "74eb1e87a7710625",
   "lastOpenFiles": [
+    "files/with_lock_guard.png",
+    "unique_lock vs lock guard mutex.md",
+    "files/without_lock_guard.png",
+    "lock_guard mutex.md",
+    "Deadlock.md",
     "recursive_mutex.md",
     "stl random_shuffle.md",
     "stl unique.md",
     "files/stl_unique.png",
     "stl for_each.md",
-    "Deadlock.md",
-    "lock_guard mutex.md",
     "mutex.md",
     "STL Equal predicate.md",
     "STL Equal.md",
@@ -250,13 +229,9 @@
     "Навигация по файлу.md",
     "Чтение из файла.md",
     "linux.md",
-    "Запись в файл linux.md",
-    "Время выполнения кода.md",
     "files/u c.png",
     "files/u b.png",
     "files/u a.png",
-    "files/priority_queue_stl_2.png",
-    "files/priority_queue_stl.png",
     "List.cpp",
     "files/List.cpp",
     "files/847319.pptx.ppt",
