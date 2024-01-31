@@ -31,7 +31,7 @@ int main() {
 
 С лок гардом:
 ![[with_lock_guard.png]]
-
+[[multithreading]] [[C++]] [[mutex]] [[lock_guard mutex]] 
 
 
 
