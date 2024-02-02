@@ -8,19 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0d3bddb7eaadd46e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "{}.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a8beb78d6fe28572",
+            "id": "e47606134ac243e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,31 +20,19 @@
             }
           },
           {
-            "id": "e2f831ed27d769e2",
+            "id": "4299678f76f7f362",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "static_cast.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e47606134ac243e7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ранги целочисленных типов.md",
+                "file": "Prata ch 3.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -122,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "static_cast.md",
+                "file": "Prata ch 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "static_cast.md",
+                "file": "Prata ch 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "static_cast.md"
+                "file": "Prata ch 3.md"
               }
             }
           }
@@ -183,13 +159,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e2f831ed27d769e2",
+  "active": "4299678f76f7f362",
   "lastOpenFiles": [
     "Приведение типов.md",
-    "static_cast.md",
-    "Ранги целочисленных типов.md",
-    "Преобразование типов.md",
+    "Prata ch 3.md",
     "Целочисленное расширение.md",
+    "Ранги целочисленных типов.md",
+    "Сетапы геншин.md",
+    "files/Синцю, фишль, барбара, дендро.png",
+    "files/Кэцин-дендро-анемо-беннет.png",
+    "Hash.md",
+    "Аутентификация.md",
+    "Авторизация.md",
+    "static_cast.md",
+    "Преобразование типов.md",
     "{}.md",
     "namespace std.md",
     "Процедура.md",
@@ -206,21 +189,14 @@
     "PostgreSQL.md",
     "SQL.md",
     "Репликация.md",
-    "mutex.md",
-    "lock_guard mutex.md",
-    "unique_lock vs lock guard mutex.md",
     "files/with_lock_guard.png",
     "files/without_lock_guard.png",
-    "Deadlock.md",
-    "recursive_mutex.md",
     "files/stl_unique.png",
     "files/Системное_программирование4.png",
     "files/Системное_программирование3.png",
     "files/Системное_программирование2.png",
     "files/Системное_программирование.png",
     "files/u c.png",
-    "files/u b.png",
-    "files/u a.png",
     "List.cpp",
     "files/List.cpp",
     "files/847319.pptx.ppt",
