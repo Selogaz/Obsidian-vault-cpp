@@ -45,4 +45,47 @@ return 0;
 }
 ```
 
+```c++
+#include <iostream>
+
+  
+  
+
+int main(int argc, char **argv) {
+
+int degrees;
+
+int minutes;
+
+int seconds;
+
+const double min_per_deg = 60.0;
+
+const double sec_per_min = 60.0;
+
+const double sec_per_deg = 3600.0;
+
+std::cout << "Введите широту в градусах, минутах и секундах:" << std::endl;;
+
+std::cout << "Сначала введите широту в градусах:___\b\b\b";
+
+std::cin >> degrees;
+
+std::cout << "Дополните широту минутами:___\b\b\b";
+
+std::cin >> minutes;
+
+std::cout << "И последнее, дополните широту секундами:___\b\b\b";
+
+std::cin >> seconds;
+
+double total = (seconds / sec_per_deg) + (minutes / min_per_deg)+ degrees;
+
+std::cout << degrees << " градусов " << minutes << " минут " << seconds <<" секунд = "<<total << " градусов" << std::endl;
+
+return 0;
+
+}
+```
+
 [[C++]] [[Исходники]] 
