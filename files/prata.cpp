@@ -2,19 +2,15 @@
 
 
 int main(int argc, char **argv) {
-    long seconds;
-    const int sec_per_min = 60;
-    const int min_per_hr = 60;
-    const int hr_per_day = 24;
+    long all_ppl;
+    long rus_ppl;
    
-    std::cout << "Введите количество секунд______\b\b\b\b\b\b";
-    std::cin >> seconds;
-    int days = seconds / (sec_per_min * min_per_hr * hr_per_day);
-    int hr = (seconds / (sec_per_min * min_per_hr)) % hr_per_day;
-    int min = (seconds / sec_per_min) % min_per_hr;
-    int sec = seconds % sec_per_min;
+    std::cout << "Введите количество людей в мире ______\b\b\b\b\b\b";
+    std::cin >> all_ppl;
+    std::cout << "Введите население России ______\b\b\b\b\b\b";
+    std::cin >> rus_ppl;
+    double relation = double(rus_ppl) / double(all_ppl) * 100;
     
-    std::cout << seconds << " seconds = " << days << " days "
-    << hr << " hours " << min << " minutes " << sec << " seconds " << std::endl;
+    std::cout << "Население России составляет " << relation << "% от мирового населения " << std::endl;
     return 0;
 }
