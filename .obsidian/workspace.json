@@ -161,6 +161,7 @@
   },
   "active": "4299678f76f7f362",
   "lastOpenFiles": [
+    "files/alt_linux.png",
     "Приведение типов.md",
     "Prata ch 3.md",
     "Целочисленное расширение.md",
@@ -188,7 +189,6 @@
     "ACID.md",
     "PostgreSQL.md",
     "SQL.md",
-    "Репликация.md",
     "files/with_lock_guard.png",
     "files/without_lock_guard.png",
     "files/stl_unique.png",
