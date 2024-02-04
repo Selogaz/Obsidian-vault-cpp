@@ -2,15 +2,15 @@
 
 
 int main(int argc, char **argv) {
-    long all_ppl;
-    long rus_ppl;
+    long km;
+    long benz;
    
-    std::cout << "Введите количество людей в мире ______\b\b\b\b\b\b";
-    std::cin >> all_ppl;
-    std::cout << "Введите население России ______\b\b\b\b\b\b";
-    std::cin >> rus_ppl;
-    double relation = double(rus_ppl) / double(all_ppl) * 100;
+    std::cout << "Введите количество пройденных километров ___\b\b\b";
+    std::cin >> km;
+    std::cout << "Введите количество потраченного бензина в литрах ___\b\b\b";
+    std::cin >> benz;
+    double relation = double(benz) / double(km) * 100;
     
-    std::cout << "Население России составляет " << relation << "% от мирового населения " << std::endl;
+    std::cout << "Ваша тачка жрет " << relation << "л на 100км" << std::endl;
     return 0;
 }
