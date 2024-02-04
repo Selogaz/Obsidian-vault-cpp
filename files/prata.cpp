@@ -2,15 +2,15 @@
 
 
 int main(int argc, char **argv) {
-    long km;
-    long benz;
-   
-    std::cout << "Введите количество пройденных километров ___\b\b\b";
-    std::cin >> km;
-    std::cout << "Введите количество потраченного бензина в литрах ___\b\b\b";
-    std::cin >> benz;
-    double relation = double(benz) / double(km) * 100;
-    
-    std::cout << "Ваша тачка жрет " << relation << "л на 100км" << std::endl;
+    double mpg;
+    double litr_to_km;
+    double kilo_to_gallon = 62.14;
+    double litr_to_gallon = 3.875; 
+
+ std::cout << "Введите количество литров на 100км ___\b\b\b";
+ std::cin >> litr_to_km;
+
+    mpg = litr_to_gallon * kilo_to_gallon/ (litr_to_km);
+    std::cout << "Ебучий ответ к ебучей задаче " << mpg << std::endl;
     return 0;
 }
