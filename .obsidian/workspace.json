@@ -13,31 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Приведение типов.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4299678f76f7f362",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Prata ch 3.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6f2d63b9a986a39c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Итератор.md",
+                "file": "Programming/Java/Промежуточные операторы.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Приведение типов.md",
+                "file": "Programming/Java/Промежуточные операторы.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Приведение типов.md",
+                "file": "Programming/Java/Промежуточные операторы.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Приведение типов.md"
+                "file": "Programming/Java/Промежуточные операторы.md"
               }
             }
           }
@@ -170,51 +146,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e47606134ac243e7",
+  "active": "d1d4ec8293d0f967",
   "lastOpenFiles": [
-    "Итератор.md",
-    "vector.md",
-    "Бинарный поиск.md",
-    "Ум программиста конспект.md",
-    "Prata ch 3.md",
+    "Templates/Java template.md",
+    "Programming/Java/Промежуточные операторы.md",
+    "Programming/Java/Map(Stream).md",
+    "Programming/Java/Чистые функции.md",
+    "Programming/Java/Как создать Stream.md",
+    "Programming/Java/Декларативный подход.md",
+    "Programming/Java/StreamAPI.md",
+    "Programming/Java/Императивный подход.md",
+    "Programming/Java/Как работают переменные.md",
+    "Education/Книги/2024/!Книга1.md",
+    "Programming/Java",
+    "Education/Ежедневник/2024/Июль.md",
+    "Education/Книги/2024",
+    "Education/Книги",
+    "Education/Выполненные цели/Сортировка/Цели на год.md",
+    "Education/Выполненные цели/2024.md",
+    "Education/Выполненные цели/Сортировка/Список целей.md",
+    "Templates/Book Template.md",
+    "Education/Ежедневник/2024",
+    "Education/Ежедневник",
+    "Untitled.md",
+    "Education/Выполненные цели/Сортировка",
+    "Untitled",
+    "Templates/Planner Template.md",
+    "Education/Выполненные цели",
+    "Education",
+    "Daily",
+    "2024-07-16.md",
+    "files/Pasted image 20240117065050.png",
+    "files/Pasted image 20240115065943.png",
+    "files/Pasted image 20240110094526.png",
+    "files/Pasted image 20240110093631.png",
+    "files/Pasted image 20231230011019.png",
+    "files/Pasted image 20231230010833.png",
+    "Programming/C++/Структуры данных.md",
+    "Programming/C++/Класс.md",
+    "Programming/C++/Untitled 2.md",
+    "Programming/C++/Untitled 1.md",
+    "Programming/C++/Untitled.md",
+    "Programming/C++/stl.md",
+    "Programming/C++/![[set_2.png.md",
+    "Programming/C++/linux.md",
     "files/alt_linux.png",
-    "Приведение типов.md",
-    "Целочисленное расширение.md",
-    "Ранги целочисленных типов.md",
-    "Сетапы геншин.md",
     "files/Синцю, фишль, барбара, дендро.png",
     "files/Кэцин-дендро-анемо-беннет.png",
-    "Hash.md",
-    "Аутентификация.md",
-    "Авторизация.md",
-    "static_cast.md",
-    "Преобразование типов.md",
-    "{}.md",
-    "namespace std.md",
-    "Процедура.md",
-    "Объявление переменных.md",
-    "C++.md",
-    "Untitled 2.md",
-    "Транзакции.md",
-    "Шардирование.md",
-    "Elasticsearch.md",
-    "ceph.md",
-    "noSQL.md",
-    "redis.md",
-    "files/with_lock_guard.png",
-    "files/without_lock_guard.png",
-    "files/stl_unique.png",
-    "files/Системное_программирование4.png",
-    "files/Системное_программирование3.png",
-    "files/Системное_программирование2.png",
-    "files/Системное_программирование.png",
-    "List.cpp",
-    "files/List.cpp",
-    "files/847319.pptx.ppt",
-    "files/20989.ppt",
-    "Obsidian Vault.zip",
-    "847319.pptx.ppt",
-    "20989.ppt",
-    "files"
+    "files/with_lock_guard.png"
   ]
 }
