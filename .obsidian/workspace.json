@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b2fbbc5f886e36bb",
+        "id": "35297ad2dd601ae4",
         "type": "tabs",
         "children": [
           {
-            "id": "e47606134ac243e7",
+            "id": "71b0771fc297fae5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Java/Промежуточные операторы.md",
+                "file": "Programming/Java/Терминальные операторы.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2c3fc3015b77dd24",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/Java/Промежуточные операторы.md",
+                "file": "Programming/Java/Терминальные операторы.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/Java/Промежуточные операторы.md",
+                "file": "Programming/Java/Терминальные операторы.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/Java/Промежуточные операторы.md"
+                "file": "Programming/Java/Терминальные операторы.md"
               }
             }
           }
@@ -146,10 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d1d4ec8293d0f967",
+  "active": "71b0771fc297fae5",
   "lastOpenFiles": [
-    "Templates/Java template.md",
     "Programming/Java/Промежуточные операторы.md",
+    "Programming/Java/Терминальные операторы.md",
+    "Templates/Java template.md",
     "Programming/Java/Map(Stream).md",
     "Programming/Java/Чистые функции.md",
     "Programming/Java/Как создать Stream.md",
@@ -189,7 +191,6 @@
     "Programming/C++/Untitled.md",
     "Programming/C++/stl.md",
     "Programming/C++/![[set_2.png.md",
-    "Programming/C++/linux.md",
     "files/alt_linux.png",
     "files/Синцю, фишль, барбара, дендро.png",
     "files/Кэцин-дендро-анемо-беннет.png",
