@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Java/Создание собственных исключений.md",
+                "file": "Programming/Java/Отладка приложений.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/Java/Создание собственных исключений.md",
+                "file": "Programming/Java/Отладка приложений.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/Java/Создание собственных исключений.md",
+                "file": "Programming/Java/Отладка приложений.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/Java/Создание собственных исключений.md"
+                "file": "Programming/Java/Отладка приложений.md"
               }
             }
           }
@@ -162,8 +162,9 @@
   },
   "active": "6f676e887f59da57",
   "lastOpenFiles": [
-    "Programming/Java/Методы обработки исключений.md",
     "Programming/Java/Создание собственных исключений.md",
+    "Programming/Java/Отладка приложений.md",
+    "Programming/Java/Методы обработки исключений.md",
     "Programming/Java/try-with-resource.md",
     "Programming/Java/finally.md",
     "Java.md",
@@ -187,7 +188,6 @@
     "Programming/Java/Терминальные операторы.md",
     "Programming/Java/Map(Stream).md",
     "Programming/Java/Промежуточные операторы.md",
-    "Templates/Java template.md",
     "Programming/Java",
     "Education/Книги/2024",
     "Education/Книги",
