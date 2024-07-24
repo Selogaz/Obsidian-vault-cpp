@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "35297ad2dd601ae4",
+        "id": "3badb4818e746e53",
         "type": "tabs",
         "children": [
           {
-            "id": "71b0771fc297fae5",
+            "id": "1261dd2dee9238aa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Java/try-with-resource.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6f676e887f59da57",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming/Java/Отладка приложений.md",
+                "file": "Programming/Java/Логирование.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/Java/Отладка приложений.md",
+                "file": "Programming/Java/Логирование.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/Java/Отладка приложений.md",
+                "file": "Programming/Java/Логирование.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/Java/Отладка приложений.md"
+                "file": "Programming/Java/Логирование.md"
               }
             }
           }
@@ -160,10 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6f676e887f59da57",
+  "active": "1261dd2dee9238aa",
   "lastOpenFiles": [
-    "Programming/Java/Создание собственных исключений.md",
+    "Programming/Java/Логирование.md",
     "Programming/Java/Отладка приложений.md",
+    "Programming/Java/Создание собственных исключений.md",
     "Programming/Java/Методы обработки исключений.md",
     "Programming/Java/try-with-resource.md",
     "Programming/Java/finally.md",
@@ -187,7 +175,6 @@
     "Education/Выполненные цели/2024.md",
     "Programming/Java/Терминальные операторы.md",
     "Programming/Java/Map(Stream).md",
-    "Programming/Java/Промежуточные операторы.md",
     "Programming/Java",
     "Education/Книги/2024",
     "Education/Книги",
