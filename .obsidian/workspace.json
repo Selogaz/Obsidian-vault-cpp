@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Java/Терминальные операторы.md",
+                "file": "Programming/Java/try-with-resource.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6f676e887f59da57",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming/Java/Методы обработки исключений.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/Java/Терминальные операторы.md",
+                "file": "Programming/Java/Методы обработки исключений.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/Java/Терминальные операторы.md",
+                "file": "Programming/Java/Методы обработки исключений.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/Java/Терминальные операторы.md"
+                "file": "Programming/Java/Методы обработки исключений.md"
               }
             }
           }
@@ -147,50 +160,50 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "71b0771fc297fae5",
+  "active": "6f676e887f59da57",
   "lastOpenFiles": [
-    "Programming/Java/Промежуточные операторы.md",
-    "Programming/Java/Терминальные операторы.md",
-    "Templates/Java template.md",
-    "Programming/Java/Map(Stream).md",
-    "Programming/Java/Чистые функции.md",
-    "Programming/Java/Как создать Stream.md",
-    "Programming/Java/Декларативный подход.md",
+    "Programming/Java/try-with-resource.md",
+    "Programming/Java/finally.md",
+    "Java.md",
+    "Programming/Java/Ресурс.md",
+    "Programming/Java/Методы обработки исключений.md",
+    "Programming/Java/Обработка исключений.md",
+    "Programming/Java/Исключение.md",
+    "Programming/Java/Вернуть количество указанных элементов StreamAPI.md",
+    "Education/Ежедневник/2024/Июль.md",
+    "Education/Выполненные цели/Сортировка/Цели на год.md",
+    "Education/Выполненные цели/Сортировка/Список целей.md",
     "Programming/Java/StreamAPI.md",
+    "Programming/Java/Декларативный подход.md",
     "Programming/Java/Императивный подход.md",
     "Programming/Java/Как работают переменные.md",
+    "Programming/Java/Как создать Stream.md",
+    "Programming/Java/Чистые функции.md",
+    "Programming/Java/Map с подсчетом элементов(имя элемента - ключ, число элементов - значение).md",
+    "Daily/2024-07-21.md",
+    "Daily/Untitled.md",
+    "Education/Выполненные цели/2024.md",
+    "Programming/Java/Терминальные операторы.md",
+    "Programming/Java/Map(Stream).md",
+    "Programming/Java/Промежуточные операторы.md",
+    "Templates/Java template.md",
     "Education/Книги/2024/!Книга1.md",
     "Programming/Java",
-    "Education/Ежедневник/2024/Июль.md",
     "Education/Книги/2024",
     "Education/Книги",
-    "Education/Выполненные цели/Сортировка/Цели на год.md",
-    "Education/Выполненные цели/2024.md",
-    "Education/Выполненные цели/Сортировка/Список целей.md",
-    "Templates/Book Template.md",
     "Education/Ежедневник/2024",
     "Education/Ежедневник",
-    "Untitled.md",
     "Education/Выполненные цели/Сортировка",
     "Untitled",
-    "Templates/Planner Template.md",
     "Education/Выполненные цели",
     "Education",
     "Daily",
-    "2024-07-16.md",
     "files/Pasted image 20240117065050.png",
     "files/Pasted image 20240115065943.png",
     "files/Pasted image 20240110094526.png",
     "files/Pasted image 20240110093631.png",
     "files/Pasted image 20231230011019.png",
     "files/Pasted image 20231230010833.png",
-    "Programming/C++/Структуры данных.md",
-    "Programming/C++/Класс.md",
-    "Programming/C++/Untitled 2.md",
-    "Programming/C++/Untitled 1.md",
-    "Programming/C++/Untitled.md",
-    "Programming/C++/stl.md",
-    "Programming/C++/![[set_2.png.md",
     "files/alt_linux.png",
     "files/Синцю, фишль, барбара, дендро.png",
     "files/Кэцин-дендро-анемо-беннет.png",
