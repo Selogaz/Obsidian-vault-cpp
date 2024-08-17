@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "cab09af2dba7835d",
+        "id": "1d1296aaebdba144",
         "type": "tabs",
         "children": [
           {
-            "id": "cea8cca258e307c1",
+            "id": "b5d35f6223678bd0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Java/Парсер файлов CSV.md",
+                "file": "Programming/БД/SELECT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2abe765ade419601",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming/БД/Реляционные БД.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2c3fc3015b77dd24",
@@ -86,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/Java/Парсер файлов CSV.md",
+                "file": "Programming/БД/SELECT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/Java/Парсер файлов CSV.md",
+                "file": "Programming/БД/SELECT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/Java/Парсер файлов CSV.md"
+                "file": "Programming/БД/SELECT.md"
               }
             }
           }
@@ -147,36 +158,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cea8cca258e307c1",
+  "active": "b5d35f6223678bd0",
   "lastOpenFiles": [
-    "Programming/Java/Табличные файлы.md",
+    "Programming/БД/SQL.md",
+    "Programming/БД/SELECT.md",
+    "Programming/БД/СУБД.md",
+    "Programming/БД/Типы связей в реляционных базах данных.md",
+    "files/image8_RqbBftY.png",
+    "files/image7_12lqMct.png",
+    "files/image_6_DiklcjT.png",
+    "Programming/БД/Типы полей в реляционных базах данных.md",
+    "files/image_5_MvUpqik.png",
+    "files/image_4_u1wQPnO.png",
+    "files/image3_Jlqlkp8.png",
+    "Programming/БД/NoSQL.md",
+    "Programming/БД/Реляционные БД.md",
+    "files/image_2_4UakNdO.png",
+    "Programming/БД/База данных.md",
+    "files/image1_wiMtEtx.png",
+    "Programming/БД/СУБД типа семейство столбцов.md",
+    "Programming/БД/ClickHouse.md",
+    "Programming/БД/Apache Cassandra.md",
+    "Programming/БД/Redis.md",
+    "Programming/БД/СУБД ключ-значение.md",
+    "Programming/БД/MongoDB.md",
+    "Programming/БД/Слабоструктурированные данные.md",
+    "Programming/БД/Объектно-ориентированные БД.md",
+    "Programming/БД/Гибкость проектирования реляционных БД.md",
+    "Programming/БД/Графовые БД.md",
+    "Programming/БД/Иерархические БД.md",
+    "Programming/Java/Map с подсчетом элементов(имя элемента - ключ, число элементов - значение).md",
+    "Programming/БД",
+    "Programming/Java/StreamAPI.md",
+    "Programming/Java/Map(Stream).md",
     "Programming/Java/Парсер файлов CSV.md",
-    "Programming/Java/Каналы и селекторы.md",
-    "Programming/Java/Charset.md",
-    "Programming/Java/Чтение файлов Files.md",
-    "Programming/Java/Работа с файлами.md",
-    "Programming/Java/Работа с индексами.md",
-    "files/Client-server-skillbox-channel-selector.jpg",
-    "Programming/Java/Передача данных в файл (чтение и запись буфера).md",
-    "Programming/Java/ByteBuffer view.md",
-    "Programming/Java/Сравнение буферов.md",
-    "Programming/Java/Буферы.md",
     "Programming/Java/Java NIO.md",
-    "files/buffers.png",
-    "Programming/Java/Запись в файл.md",
-    "Programming/Java/Чтение файлов FileInputStream.md",
-    "Programming/Java/Чтение файлов BufferedReader.md",
-    "Programming/Java/Логирование.md",
-    "Programming/Java/Обработка исключений.md",
-    "Programming/Java/Исключение.md",
-    "Programming/Java/try-with-resource.md",
-    "Programming/Java/finally.md",
-    "Programming/Java/Создание собственных исключений.md",
-    "Programming/Java/Отладка приложений.md",
-    "Programming/Java/Методы обработки исключений.md",
     "Java.md",
-    "Programming/Java/Ресурс.md",
-    "Programming/Java/Вернуть количество указанных элементов StreamAPI.md",
+    "Programming/Java/HTML парсер.md",
+    "files/Client-server-skillbox-channel-selector.jpg",
+    "files/buffers.png",
     "Programming/Java",
     "Education/Книги/2024",
     "Education/Книги",
@@ -185,15 +205,6 @@
     "Education/Выполненные цели/Сортировка",
     "Untitled",
     "Education/Выполненные цели",
-    "Education",
-    "Daily",
-    "files/Pasted image 20240117065050.png",
-    "files/Pasted image 20240115065943.png",
-    "files/Pasted image 20240110094526.png",
-    "files/Pasted image 20240110093631.png",
-    "files/Pasted image 20231230011019.png",
-    "files/Pasted image 20231230010833.png",
-    "files/alt_linux.png",
-    "files/Синцю, фишль, барбара, дендро.png"
+    "Education"
   ]
 }
