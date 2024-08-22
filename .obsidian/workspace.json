@@ -8,30 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b5d35f6223678bd0",
+            "id": "2b5d28875482cd28",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/БД/SELECT.md",
+                "file": "Programming/БД/MySQL/with.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2abe765ade419601",
+            "id": "8af10135f736ff2b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/БД/Реляционные БД.md",
+                "file": "Programming/БД/MySQL/Подзапросы.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 335.5,
+    "collapsed": true
   },
   "right": {
     "id": "2c3fc3015b77dd24",
@@ -97,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/БД/SELECT.md",
+                "file": "Programming/БД/MySQL/Подзапросы.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/БД/SELECT.md",
+                "file": "Programming/БД/MySQL/Подзапросы.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/БД/SELECT.md"
+                "file": "Programming/БД/MySQL/Подзапросы.md"
               }
             }
           }
@@ -158,53 +160,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b5d35f6223678bd0",
+  "active": "8af10135f736ff2b",
   "lastOpenFiles": [
-    "Programming/БД/SQL.md",
-    "Programming/БД/SELECT.md",
-    "Programming/БД/СУБД.md",
-    "Programming/БД/Типы связей в реляционных базах данных.md",
-    "files/image8_RqbBftY.png",
-    "files/image7_12lqMct.png",
-    "files/image_6_DiklcjT.png",
-    "Programming/БД/Типы полей в реляционных базах данных.md",
-    "files/image_5_MvUpqik.png",
-    "files/image_4_u1wQPnO.png",
-    "files/image3_Jlqlkp8.png",
-    "Programming/БД/NoSQL.md",
-    "Programming/БД/Реляционные БД.md",
-    "files/image_2_4UakNdO.png",
-    "Programming/БД/База данных.md",
-    "files/image1_wiMtEtx.png",
-    "Programming/БД/СУБД типа семейство столбцов.md",
-    "Programming/БД/ClickHouse.md",
-    "Programming/БД/Apache Cassandra.md",
-    "Programming/БД/Redis.md",
-    "Programming/БД/СУБД ключ-значение.md",
-    "Programming/БД/MongoDB.md",
-    "Programming/БД/Слабоструктурированные данные.md",
-    "Programming/БД/Объектно-ориентированные БД.md",
-    "Programming/БД/Гибкость проектирования реляционных БД.md",
-    "Programming/БД/Графовые БД.md",
-    "Programming/БД/Иерархические БД.md",
-    "Programming/Java/Map с подсчетом элементов(имя элемента - ключ, число элементов - значение).md",
+    "files/Pasted image 20240821193536.png",
+    "files/Pasted image 20240821193508.png",
+    "Programming/БД/MySQL/with recursive.md",
+    "Programming/БД/MySQL/Подзапросы.md",
+    "files/Pasted image 20240821192613.png",
+    "Programming/БД/MySQL/with.md",
+    "files/Pasted image 20240821191657.png",
+    "files/Pasted image 20240821191602.png",
+    "files/Pasted image 20240821184706.png",
+    "Programming/БД/MySQL/limit().md",
+    "Programming/БД/MySQL/reverse().md",
+    "Programming/БД/MySQL/Untitled",
+    "Programming/БД/MySQL/order by.md",
+    "files/Pasted image 20240821151706.png",
+    "files/Pasted image 20240821151411.png",
+    "files/Pasted image 20240821150544.png",
+    "files/Pasted image 20240821150050.png",
+    "files/Pasted image 20240821150026.png",
+    "Programming/БД/Intersect.md",
+    "Programming/БД/MySQL/union.md",
+    "Programming/БД/MySQL/distinct.md",
+    "Programming/БД/MySQL/cast().md",
+    "Programming/БД/MySQL/json_replace().md",
+    "Programming/БД/MySQL/json_extract().md",
+    "Programming/БД/MySQL/JSON_OBJECT.md",
+    "Programming/БД/MySQL/UpdateXML.md",
+    "Programming/БД/MySQL/ExtractValue.md",
+    "Programming/БД/XPath.md",
+    "Programming/БД/MySQL/blob.md",
+    "Programming/БД/MySQL/sum().md",
+    "Programming/БД/MySQL/Комбинация агрег.md",
+    "Programming/БД/Агрегирующие функции.md",
+    "Programming/БД/MySQL/max().md",
+    "Programming/БД/MySQL/count().md",
+    "Programming/БД/Кортеж.md",
+    "Programming/БД/MySQL/where несколько.md",
+    "Programming/БД/MySQL/!=.md",
+    "Programming/БД/MySQL",
     "Programming/БД",
-    "Programming/Java/StreamAPI.md",
-    "Programming/Java/Map(Stream).md",
-    "Programming/Java/Парсер файлов CSV.md",
-    "Programming/Java/Java NIO.md",
-    "Java.md",
-    "Programming/Java/HTML парсер.md",
-    "files/Client-server-skillbox-channel-selector.jpg",
-    "files/buffers.png",
     "Programming/Java",
     "Education/Книги/2024",
     "Education/Книги",
     "Education/Ежедневник/2024",
     "Education/Ежедневник",
     "Education/Выполненные цели/Сортировка",
-    "Untitled",
-    "Education/Выполненные цели",
-    "Education"
+    "Untitled"
   ]
 }

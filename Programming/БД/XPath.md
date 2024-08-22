@@ -1,0 +1,1 @@
+_XPath_ (XML Path Language) — язык запросов к элементам XML-документа
