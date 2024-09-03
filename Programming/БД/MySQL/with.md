@@ -22,4 +22,6 @@ select * from vk_aproved_users;
 ```
 ![[Pasted image 20240821191657.png]]
 
-
+```sql
+with post_stats as (select min(creation_time) as min_time, max(creation_time) as max_time from user_group_post where group_id=570764) select * from user_private_message where send_time between (select min_time from post_stats) and (select max_time from post_stats);
+```

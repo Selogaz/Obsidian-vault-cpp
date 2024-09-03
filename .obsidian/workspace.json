@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/БД/MySQL/with.md",
+                "file": "Programming/БД/MySQL/Подзапросы.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8af10135f736ff2b",
+            "id": "1213bede308ea69d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/БД/MySQL/Подзапросы.md",
+                "file": "Programming/БД/Hibernate/Persistence Context/Making entities persistent.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 335.5,
-    "collapsed": true
+    "width": 287.5
   },
   "right": {
     "id": "2c3fc3015b77dd24",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/БД/MySQL/Подзапросы.md",
+                "file": "Programming/БД/Hibernate/Persistence Context/Making entities persistent.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/БД/MySQL/Подзапросы.md",
+                "file": "Programming/БД/Hibernate/Persistence Context/Making entities persistent.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/БД/MySQL/Подзапросы.md"
+                "file": "Programming/БД/Hibernate/Persistence Context/Making entities persistent.md"
               }
             }
           }
@@ -160,53 +159,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8af10135f736ff2b",
+  "active": "1213bede308ea69d",
   "lastOpenFiles": [
+    "Programming/БД/Hibernate/Persistence Context/Bytecode Enhancement.md",
+    "Programming/БД/Hibernate/Persistence Context/Making entities persistent.md",
+    "Programming/БД/Hibernate/Persistence Context/Accessing Hibernate APIs from Jakarta Persistence.md",
+    "Programming/БД/Hibernate/Persistence Context/Persistence Context.md",
+    "Programming/БД/Hibernate/Schema Generation/Columns index.md",
+    "Programming/БД/Hibernate/Persistence Context",
+    "Programming/БД/Hibernate/Schema Generation/Columns unique constraint.md",
+    "Programming/БД/Hibernate/Schema Generation/Default value for a database column.md",
+    "Programming/БД/Hibernate/Schema Generation/Database-level-checks.md",
+    "Programming/БД/Hibernate/Schema Generation/Database objects.md",
+    "Programming/БД/Hibernate/Schema Generation/Importing script files.md",
+    "Programming/БД/Hibernate/Schema Generation/Schema Generation.md",
+    "Programming/БД/Hibernate/Bootstrap/Jakarta Persistence Bootstrapping.md",
+    "Programming/БД/Hibernate/Schema Generation",
+    "Programming/БД/Hibernate/Bootstrap/Native Bootstrapping.md",
+    "Programming/БД/Hibernate/Bootstrap/Bootstrap.md",
+    "Programming/БД/Hibernate/Domain Model/Soft Delete.md",
+    "Programming/БД/Hibernate/Bootstrap",
+    "Programming/БД/Hibernate/Domain Model/Identifiers.md",
+    "Programming/БД/Hibernate/Domain Model/Inheritance.md",
+    "Programming/БД/Hibernate/Architecture/Transaction.md",
+    "Programming/БД/Hibernate/Architecture/Session.md",
+    "Programming/БД/Hibernate/Domain Model/Entity types.md",
+    "Programming/БД/Hibernate/Domain Model/Embeddable values.md",
+    "Programming/БД/Hibernate/Domain Model/Dynamic Model.md",
+    "Programming/БД/Hibernate/Domain Model/Domain Model.md",
+    "Programming/БД/Hibernate/Domain Model/Customizing the domain model.md",
+    "Programming/БД/Hibernate/Domain Model/Collections.md",
+    "Programming/БД/Hibernate/Domain Model/Access strategies.md",
+    "Programming/БД/Hibernate/Architecture",
+    "Programming/БД/Hibernate/Domain Model",
+    "files/Pasted image 20240903204101.png",
+    "Programming/БД/Hibernate",
+    "files/Pasted image 20240827021651.png",
+    "files/Pasted image 20240827015221.png",
+    "Programming/Java/Hibernate",
+    "files/Pasted image 20240822220241.png",
+    "files/Pasted image 20240822220050.png",
+    "files/Pasted image 20240822215018.png",
+    "files/Pasted image 20240822214712.png",
     "files/Pasted image 20240821193536.png",
     "files/Pasted image 20240821193508.png",
-    "Programming/БД/MySQL/with recursive.md",
-    "Programming/БД/MySQL/Подзапросы.md",
     "files/Pasted image 20240821192613.png",
-    "Programming/БД/MySQL/with.md",
-    "files/Pasted image 20240821191657.png",
-    "files/Pasted image 20240821191602.png",
-    "files/Pasted image 20240821184706.png",
-    "Programming/БД/MySQL/limit().md",
-    "Programming/БД/MySQL/reverse().md",
     "Programming/БД/MySQL/Untitled",
-    "Programming/БД/MySQL/order by.md",
-    "files/Pasted image 20240821151706.png",
-    "files/Pasted image 20240821151411.png",
-    "files/Pasted image 20240821150544.png",
-    "files/Pasted image 20240821150050.png",
-    "files/Pasted image 20240821150026.png",
-    "Programming/БД/Intersect.md",
-    "Programming/БД/MySQL/union.md",
-    "Programming/БД/MySQL/distinct.md",
-    "Programming/БД/MySQL/cast().md",
-    "Programming/БД/MySQL/json_replace().md",
-    "Programming/БД/MySQL/json_extract().md",
-    "Programming/БД/MySQL/JSON_OBJECT.md",
-    "Programming/БД/MySQL/UpdateXML.md",
-    "Programming/БД/MySQL/ExtractValue.md",
-    "Programming/БД/XPath.md",
-    "Programming/БД/MySQL/blob.md",
-    "Programming/БД/MySQL/sum().md",
-    "Programming/БД/MySQL/Комбинация агрег.md",
-    "Programming/БД/Агрегирующие функции.md",
-    "Programming/БД/MySQL/max().md",
-    "Programming/БД/MySQL/count().md",
-    "Programming/БД/Кортеж.md",
-    "Programming/БД/MySQL/where несколько.md",
-    "Programming/БД/MySQL/!=.md",
     "Programming/БД/MySQL",
-    "Programming/БД",
-    "Programming/Java",
-    "Education/Книги/2024",
-    "Education/Книги",
-    "Education/Ежедневник/2024",
-    "Education/Ежедневник",
-    "Education/Выполненные цели/Сортировка",
-    "Untitled"
+    "Programming/БД"
   ]
 }
