@@ -4,4 +4,6 @@ person.setName("John Doe");
 
 session.persist(person);
 ```
+
+Постоянство нужно, чтобы данные могли выдерживать сбой сервера, аварийное отключение или сбой сети.
 [[Persistence Context]]
