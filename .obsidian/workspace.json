@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2b5d28875482cd28",
+            "id": "1213bede308ea69d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/БД/MySQL/Подзапросы.md",
+                "file": "Programming/БД/Hibernate/Multitenancy/Caching.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1213bede308ea69d",
+            "id": "4d6c2b2df847adc9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/БД/Hibernate/Criteria/Selecting multiple values.md",
+                "file": "Programming/БД/Hibernate/Envers/Querying for entities using filtering criteria.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/БД/Hibernate/Criteria/Selecting multiple values.md",
+                "file": "Programming/БД/Hibernate/Envers/Querying for entities using filtering criteria.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/БД/Hibernate/Criteria/Selecting multiple values.md",
+                "file": "Programming/БД/Hibernate/Envers/Querying for entities using filtering criteria.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/БД/Hibernate/Criteria/Selecting multiple values.md"
+                "file": "Programming/БД/Hibernate/Envers/Querying for entities using filtering criteria.md"
               }
             }
           }
@@ -159,53 +159,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1213bede308ea69d",
+  "active": "4d6c2b2df847adc9",
   "lastOpenFiles": [
-    "Programming/БД/Hibernate/Criteria/Selecting an expression.md",
-    "Programming/БД/Hibernate/Criteria/Selecting multiple values.md",
-    "Programming/БД/Hibernate/Criteria/Selecting an entity.md",
-    "Programming/БД/Hibernate/Criteria/Typed criteria queries.md",
-    "Programming/БД/Hibernate/Criteria/Criteria.md",
-    "Programming/БД/Hibernate/Hibernate Query Language/Sorting order by.md",
+    "Programming/БД/Hibernate/Envers/Querying for entities of a class at a given revision.md",
+    "Programming/БД/Hibernate/Envers/Querying for entities using filtering criteria.md",
+    "Programming/БД/Hibernate/Envers/Queries.md",
+    "Programming/БД/Hibernate/Envers/Selecting strategy for tracking property level changes.md",
+    "Programming/БД/Hibernate/Envers/Tracking entity changes at the property level.md",
+    "Programming/БД/Hibernate/Envers/Tracking entity names modified during revisions.md",
+    "Programming/БД/Hibernate/Envers/Revision Log.md",
+    "Programming/БД/Hibernate/Envers/Choosing an audit strategy.md",
+    "Programming/БД/Hibernate/Envers/Additional mapping annotations.md",
+    "Programming/БД/Hibernate/Envers/Configuration Properties.md",
+    "Programming/БД/Hibernate/Envers/Basics.md",
+    "Programming/БД/Hibernate/Envers/Envers.md",
+    "Programming/БД/Hibernate/Multitenancy/Multitenancy Hibernate Session configuration.md",
+    "Programming/БД/Hibernate/Envers",
+    "Programming/БД/Hibernate/Multitenancy/Caching.md",
+    "Programming/БД/Hibernate/Caching/Caching statistics.md",
+    "Programming/БД/Hibernate/Caching/Query cache layout.md",
+    "Programming/БД/Hibernate/Caching/Query cache.md",
+    "Programming/БД/Hibernate/Caching/Managing the cached data.md",
+    "Programming/БД/Hibernate/Caching/JCache.md",
+    "Programming/БД/Hibernate/Caching/Infinispan.md",
+    "Programming/БД/Hibernate/Caching/Entity inheritance and second-level cache mapping.md",
+    "Programming/БД/Hibernate/Caching/Entity cache.md",
+    "Programming/БД/Hibernate/Caching/Configuring second-level caching.md",
+    "Programming/БД/Hibernate/Caching/Configuring second-level cache mappings.md",
+    "Programming/БД/Hibernate/Caching/Collection cache.md",
+    "Programming/БД/Hibernate/Caching/Caching.md",
+    "files/Pasted image 20240904231305.png",
+    "files/Pasted image 20240904231249.png",
+    "files/Pasted image 20240904231148.png",
+    "Programming/БД/Hibernate/Multitenancy",
+    "Programming/БД/Hibernate/Hibernate Vector module",
+    "Programming/БД/Hibernate/Spatial",
+    "Programming/БД/Hibernate/Native SQL Queries",
+    "Programming/БД/Hibernate/Criteria extensions",
     "Programming/БД/Hibernate/Criteria",
-    "Programming/БД/Hibernate/Hibernate Query Language/Operations on result sets union, intersect, and except.md",
-    "Programming/БД/Hibernate/Hibernate Query Language/Aggregation group by and having.md",
-    "Programming/БД/Hibernate/Hibernate Query Language/Restriction where.md",
-    "Programming/БД/Hibernate/Hibernate Query Language/Projection select.md",
-    "Programming/БД/Hibernate/Hibernate Query Language/Declaring joined entities.md",
-    "Programming/БД/Hibernate/Hibernate Query Language/Declaring root entities from and cross join.md",
-    "Programming/БД/Hibernate/Hibernate Query Language/Predicates.md",
-    "Programming/БД/Hibernate/Hibernate Query Language/Functions.md",
-    "Programming/БД/Hibernate/Hibernate Query Language/Identifiers and case sensitivity.md",
-    "Programming/БД/Hibernate/Hibernate Query Language/Expressions.md",
-    "Programming/БД/Hibernate/Hibernate Query Language/Literals.md",
-    "Programming/БД/Hibernate/Hibernate Query Language/Statement types.md",
-    "Programming/БД/Hibernate/Hibernate Query Language/Hibernate Query Language.md",
-    "Programming/БД/Hibernate/Java API for HQL and JPQL/MutationQuery.md",
     "Programming/БД/Hibernate/Hibernate Query Language",
-    "Programming/БД/Hibernate/Java API for HQL and JPQL/SelectionQuery.md",
-    "Programming/БД/Hibernate/Java API for HQL and JPQL/Entity query plan cache.md",
-    "Programming/БД/Hibernate/Java API for HQL and JPQL/Scrolling and streaming results.md",
-    "Programming/БД/Hibernate/Java API for HQL and JPQL/Executing HQL and JPQL queries.md",
-    "Programming/БД/Hibernate/Java API for HQL and JPQL/Obtaining a Query object.md",
-    "Programming/БД/Hibernate/Java API for HQL and JPQL/Example domain model.md",
     "Programming/БД/Hibernate/Java API for HQL and JPQL",
     "Programming/БД/Hibernate/Interceptors and Events",
-    "Programming/БД/Hibernate/Caching",
-    "Programming/БД/Hibernate/Batching",
-    "Programming/БД/Hibernate/Fetching",
-    "Programming/БД/Hibernate/Locking",
-    "Programming/БД/Hibernate/JNDI",
-    "Programming/БД/Hibernate/Transactions",
     "files/Pasted image 20240903204101.png",
     "files/Pasted image 20240827021651.png",
     "files/Pasted image 20240827015221.png",
     "files/Pasted image 20240822220241.png",
     "files/Pasted image 20240822220050.png",
     "files/Pasted image 20240822215018.png",
-    "files/Pasted image 20240822214712.png",
-    "files/Pasted image 20240821193536.png",
-    "files/Pasted image 20240821193508.png",
-    "files/Pasted image 20240821192613.png"
+    "files/Pasted image 20240822214712.png"
   ]
 }
