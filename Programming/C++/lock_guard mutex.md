@@ -38,4 +38,4 @@ int main() {
 }
 ```
 
-[[C++]] [[multithreading]] [[Многопоточность]] [[mutex]] 
+[[C++]] [[multithreading]] [[Programming/C++/Многопоточность]] [[mutex]] 

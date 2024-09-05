@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/БД/Hibernate/Envers/Querying for entities using filtering criteria.md",
+                "file": "Programming/Java/Многопоточность/Запустить поток.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/БД/Hibernate/Envers/Querying for entities using filtering criteria.md",
+                "file": "Programming/Java/Многопоточность/Запустить поток.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/БД/Hibernate/Envers/Querying for entities using filtering criteria.md",
+                "file": "Programming/Java/Многопоточность/Запустить поток.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/БД/Hibernate/Envers/Querying for entities using filtering criteria.md"
+                "file": "Programming/Java/Многопоточность/Запустить поток.md"
               }
             }
           }
@@ -161,8 +161,15 @@
   },
   "active": "4d6c2b2df847adc9",
   "lastOpenFiles": [
-    "Programming/БД/Hibernate/Envers/Querying for entities of a class at a given revision.md",
+    "Programming/Java/Многопоточность/Интерфейс Runnable.md",
+    "Programming/Java/Многопоточность/run().md",
+    "Programming/Java/Многопоточность/Многопоточность.md",
+    "Programming/Java/Многопоточность.md",
+    "Programming/Java/Многопоточность/Запустить поток.md",
+    "Programming/Java/Многопоточность/Thread.md",
     "Programming/БД/Hibernate/Envers/Querying for entities using filtering criteria.md",
+    "Programming/Java/Многопоточность",
+    "Programming/БД/Hibernate/Envers/Querying for entities of a class at a given revision.md",
     "Programming/БД/Hibernate/Envers/Queries.md",
     "Programming/БД/Hibernate/Envers/Selecting strategy for tracking property level changes.md",
     "Programming/БД/Hibernate/Envers/Tracking entity changes at the property level.md",
@@ -182,12 +189,6 @@
     "Programming/БД/Hibernate/Caching/Managing the cached data.md",
     "Programming/БД/Hibernate/Caching/JCache.md",
     "Programming/БД/Hibernate/Caching/Infinispan.md",
-    "Programming/БД/Hibernate/Caching/Entity inheritance and second-level cache mapping.md",
-    "Programming/БД/Hibernate/Caching/Entity cache.md",
-    "Programming/БД/Hibernate/Caching/Configuring second-level caching.md",
-    "Programming/БД/Hibernate/Caching/Configuring second-level cache mappings.md",
-    "Programming/БД/Hibernate/Caching/Collection cache.md",
-    "Programming/БД/Hibernate/Caching/Caching.md",
     "files/Pasted image 20240904231305.png",
     "files/Pasted image 20240904231249.png",
     "files/Pasted image 20240904231148.png",
@@ -199,7 +200,6 @@
     "Programming/БД/Hibernate/Criteria",
     "Programming/БД/Hibernate/Hibernate Query Language",
     "Programming/БД/Hibernate/Java API for HQL and JPQL",
-    "Programming/БД/Hibernate/Interceptors and Events",
     "files/Pasted image 20240903204101.png",
     "files/Pasted image 20240827021651.png",
     "files/Pasted image 20240827015221.png",
