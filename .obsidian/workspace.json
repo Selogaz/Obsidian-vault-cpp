@@ -8,15 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4d6c2b2df847adc9",
+            "id": "70e5293672377de8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Java/Многопоточность/Жизненный цикл потоков/Terminated.md",
+                "file": "Programming/Java/HTTP/HTTP-заголовки.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "HTTP-заголовки"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/Java/Многопоточность/Жизненный цикл потоков/Terminated.md",
+                "file": "Programming/Java/HTTP/Статус-коды HTTP-ответов/2xx.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2xx"
             }
           },
           {
@@ -102,10 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/Java/Многопоточность/Жизненный цикл потоков/Terminated.md",
+                "file": "Programming/Java/HTTP/Статус-коды HTTP-ответов/2xx.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2xx"
             }
           },
           {
@@ -116,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,8 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/Java/Многопоточность/Жизненный цикл потоков/Terminated.md"
-              }
+                "file": "Programming/Java/HTTP/Статус-коды HTTP-ответов/2xx.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2xx"
             }
           }
         ]
@@ -146,53 +162,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4d6c2b2df847adc9",
+  "active": "70e5293672377de8",
   "lastOpenFiles": [
-    "files/Pasted image 20240911002811.png",
-    "Programming/Java/Многопоточность/Жизненный цикл потоков/Timed_waiting.md",
-    "files/Pasted image 20240911002133.png",
-    "Programming/Java/Многопоточность/Жизненный цикл потоков/Waiting.md",
-    "Programming/Java/Многопоточность/Жизненный цикл потоков/Blocked or Waiting.md",
-    "files/Pasted image 20240911000553.png",
-    "Programming/Java/Многопоточность/Жизненный цикл потоков/Runnable.md",
-    "Programming/Java/Многопоточность/Жизненный цикл потоков/New.md",
-    "files/Pasted image 20240911000056.png",
-    "files/Pasted image 20240910234910.png",
-    "Programming/Java/Многопоточность/Жизненный цикл потоков/Жизненный цикл потоков.md",
-    "files/Pasted image 20240910234708.png",
-    "Programming/Java/Многопоточность/Жизненный цикл потоков/hz.md",
-    "Programming/Java/Многопоточность/Жизненный цикл потоков/Blocked.md",
-    "Programming/Java/Многопоточность/Жизненный цикл потоков/Terminated.md",
-    "Programming/Java/Многопоточность/Жизненный цикл потоков/Running.md",
-    "files/Pasted image 20240910234017.png",
-    "Programming/Java/Многопоточность/Thread join.md",
-    "files/Pasted image 20240910233743.png",
-    "Programming/Java/Многопоточность/Thread sleep.md",
-    "Programming/Java/Многопоточность/Запустить поток.md",
-    "files/Pasted image 20240910223314.png",
-    "files/Pasted image 20240910223242.png",
-    "files/Pasted image 20240910222352.png",
-    "Programming/Java/Многопоточность/Интерфейс Runnable.md",
-    "Programming/Java/Функциональный интерфейс.md",
-    "Programming/Java/Многопоточность/Квантование времени выполнения.md",
-    "Programming/Java/Многопоточность/Поток.md",
-    "Programming/Java/Многопоточность/Многопоточность.md",
-    "Programming/Java/Многопоточность/Deadlock().md",
-    "Programming/Java/Многопоточность/Volatile.md",
-    "Programming/Java/Многопоточность/Атомарные операции.md",
-    "Programming/Java/Collections/HashMap/Перебор HashMap.md",
-    "Programming/Java/Collections/HashMap/HashMap.md",
-    "Programming/Java/Map(Stream).md",
-    "Programming/Java/Map с подсчетом элементов(имя элемента - ключ, число элементов - значение).md",
+    "files/Pasted image 20241022072738.png",
+    "files/Pasted image 20241022072326.png",
+    "files/Pasted image 20241022070015.png",
+    "files/Pasted image 20241022065812.png",
+    "files/Pasted image 20241022065616.png",
+    "files/Pasted image 20241022065453.png",
+    "files/Pasted image 20241022065351.png",
+    "files/Pasted image 20241022065218.png",
+    "Programming/Java/HTTP/Cookies.md",
+    "files/Pasted image 20241022064938.png",
+    "files/Pasted image 20241022064909.png",
+    "files/Pasted image 20241022064730.png",
+    "Programming/Java/HTTP/HTTP-заголовки.md",
+    "Programming/Java/HTTP/REST/Untitled.md",
+    "Programming/Java/HTTP/REST/Виды запросов и ответов в REST.md",
+    "Programming/Java/HTTP/Методы запросов/GET и POST запросы.md",
+    "Programming/Java/HTTP/REST/REST.md",
+    "Programming/Java/HTTP/REST/CRUD.md",
+    "Programming/Java/HTTP/REST/Эндпоинт.md",
+    "Programming/Java/HTTP/Адресация сетевых ресурсов.md",
+    "Programming/Java/HTTP/REST",
+    "Programming/Java/HTTP/Статус-коды HTTP-ответов/5xx.md",
+    "Programming/Java/HTTP/Статус-коды HTTP-ответов/4xx.md",
+    "Programming/Java/HTTP/Статус-коды HTTP-ответов/3xx.md",
+    "Programming/Java/HTTP/Статус-коды HTTP-ответов/2xx.md",
+    "Programming/Java/HTTP/Статус-коды HTTP-ответов/Классификация.md",
+    "Programming/Java/HTTP/Статус-коды HTTP-ответов/1xx.md",
+    "Programming/Java/HTTP/Статус-коды HTTP-ответов/Пример.md",
+    "Programming/Java/HTTP/Методы запросов/Обзор методов.md",
+    "Programming/Java/HTTP/Статус-коды HTTP-ответов",
+    "Programming/Java/HTTP/Методы запросов/CONNECT.md",
+    "Programming/Java/HTTP/Методы запросов/TRACE.md",
+    "Programming/Java/HTTP/Методы запросов/OPTIONS.md",
+    "Programming/Java/HTTP/Методы запросов/HEAD.md",
+    "Programming/Java/HTTP/Методы запросов/PATCH.md",
+    "Programming/Java/HTTP/Методы запросов/DELETE.md",
+    "Programming/Java/HTTP/Методы запросов/PUT.md",
+    "Programming/Java/HTTP/URI.md",
+    "Programming/Java/HTTP/Методы запросов",
+    "Programming/Java/HTTP",
+    "Programming/Java/Память",
     "Programming/Java/Collections/HashMap",
     "Programming/Java/Collections",
     "Programming/Java/Многопоточность/Executors",
     "Programming/Java/Многопоточность/Жизненный цикл потоков",
-    "Programming/Java/Многопоточность",
-    "Programming/БД/Hibernate/Envers",
-    "Programming/БД/Hibernate/Multitenancy",
-    "Programming/БД/Hibernate/Hibernate Vector module",
-    "Programming/БД/Hibernate/Spatial",
-    "Programming/БД/Hibernate/Native SQL Queries"
+    "Programming/Java/Многопоточность"
   ]
 }

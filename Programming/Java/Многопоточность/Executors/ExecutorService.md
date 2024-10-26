@@ -10,4 +10,24 @@
 
 ExecutorService использует механизм управления задачами через блокирующую очередь, что гарантирует эффективную и безопасную передачу задач между потоками. ExecutorService использует BlockingQueue для управления задачами.
 
+```java
+ExecutorService service = Executors.newSingleThreadExecutor();
+Future<Double> future = service.submit(() -> {
+	double sum = 0;
+	for (int i = 0; i < 10000; i++) {
+		sum += Math.random();
+	}
+	return sum;
+});
+
+try {
+	System.out.println(future.get());
+	service.shutdown();
+} catch () {
+
+} catch () {
+
+}
+```
+
 [[Executors]] [[ExecutorService]] [[Programming/Java/Многопоточность|Многопоточность]] 
