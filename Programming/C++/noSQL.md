@@ -1,4 +1,4 @@
 Нереляционные
 redis
 MongoDB
-[[Базы данных]] [[redis]] 
+[[Базы данных]] [[Programming/C++/redis]] 
