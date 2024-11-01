@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Java/BD/Redis/ahaha test.md",
+                "file": "Programming/Java/BD/Redis/Какие данные хранить.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ahaha test"
+              "title": "Какие данные хранить"
             }
           }
         ]
@@ -164,13 +164,18 @@
   },
   "active": "70e5293672377de8",
   "lastOpenFiles": [
-    "Programming/Java/HTTP/Статус-коды HTTP-ответов/4xx.md",
+    "Programming/Java/BD/Что хранить в классических бд.md",
+    "Programming/Java/BD/Redis/Какие данные хранить.md",
+    "Programming/Java/Hibernate/Hibernate.md",
+    "Programming/Java/BD/Untitled",
+    "Programming/Java/BD/Redis/Преимущества и недостатки.md",
+    "Programming/Java/BD/Redis/Start.md",
+    "Programming/Java/BD/Redis/Redis.md",
     "Programming/Java/BD/Redis/ahaha test.md",
+    "Programming/Java/HTTP/Статус-коды HTTP-ответов/4xx.md",
     "Programming/Java/BD/Redis/Sorted Set.md",
     "Programming/Java/BD/Redis/SADD.md",
-    "Programming/Java/BD/Redis/Redis.md",
     "Programming/Java/BD/Redis/Команды.md",
-    "Programming/Java/BD/Redis/Start.md",
     "Programming/Java/BD/Redis/Счетчик посетителей сайта.md",
     "files/Pasted image 20241029133742.png",
     "files/Pasted image 20241029133705.png",
@@ -198,17 +203,12 @@
     "Programming/Java/HTTP/Статус-коды HTTP-ответов/Пример.md",
     "Programming/Java/HTTP/Статус-коды HTTP-ответов/Классификация.md",
     "Programming/Java/HTTP/URI.md",
-    "Programming/Java/HTTP/Статус-коды HTTP-ответов/3xx.md",
-    "Programming/Java/HTTP/Методы запросов/PUT.md",
-    "Programming/Java/HTTP/Методы запросов/PATCH.md",
-    "Programming/Java/HTTP/Методы запросов/GET и POST запросы.md",
     "Programming/Java/HTTP/REST",
     "Programming/Java/HTTP/Статус-коды HTTP-ответов",
     "Programming/Java/HTTP/Методы запросов",
     "Programming/Java/HTTP",
     "Programming/Java/Память",
     "Programming/Java/Collections/HashMap",
-    "Programming/Java/Collections",
-    "Programming/Java/Многопоточность/Executors"
+    "Programming/Java/Collections"
   ]
 }
