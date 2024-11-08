@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Java/BD/Redis/Какие данные хранить.md",
+                "file": "Programming/Java/Spring/Dependency Injection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Какие данные хранить"
+              "title": "Dependency Injection"
+            }
+          },
+          {
+            "id": "54d4d975d429968b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming/Java/Spring/Способы внедрения зависимостей (DI).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Способы внедрения зависимостей (DI)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,53 +177,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "70e5293672377de8",
+  "active": "54d4d975d429968b",
   "lastOpenFiles": [
-    "Programming/Java/BD/Что хранить в классических бд.md",
+    "Programming/Java/Spring/Аннотация Autowired.md",
+    "Programming/Java/Spring/Способы внедрения зависимостей (DI).md",
+    "Programming/Java/Spring/Механизм добавления бинов.md",
+    "Programming/Java/Spring/Bean.md",
+    "Programming/Java/Spring/Аннотация Service.md",
+    "Programming/Java/Spring/Аннотация Controller.md",
+    "Programming/Java/Spring/Концепция MVC.md",
+    "files/Pasted image 20241107122654.png",
+    "files/Pasted image 20241107122648.png",
+    "Programming/Java/Spring/Область видимости Bean.md",
+    "Programming/Java/Spring/Жизненный цикл бина.md",
+    "Programming/Java/Spring/Способы поиска бинов.md",
+    "Programming/Java/Spring/Spring.md",
+    "Programming/Java/Spring/Dependency Injection.md",
+    "Programming/Java/Spring/Inversion of Control.md",
+    "Programming/Java/Spring/Spring Boot.md",
+    "Programming/Java/Буферы.md",
+    "Programming/Java/Spring/Framework.md",
+    "Programming/Java/BD/MongoDB/MongoDB.md",
+    "Programming/Java/Spring",
+    "files/Pasted image 20241101155435.png",
+    "Programming/Java/BD/MongoDB/Особенности.md",
+    "Programming/Java/BD/MongoDB/Шардинг.md",
+    "Programming/Java/BD/MongoDB/Достоинства.md",
+    "Programming/Java/BD/MongoDB/Untitled.md",
+    "Programming/Java/BD/MongoDB/Какие объекты хранит.md",
+    "Programming/Java/BD/MongoDB/Как хранит данные.md",
+    "Programming/Java/BD/MongoDB/Где хранит данные.md",
     "Programming/Java/BD/Redis/Какие данные хранить.md",
-    "Programming/Java/Hibernate/Hibernate.md",
-    "Programming/Java/BD/Untitled",
-    "Programming/Java/BD/Redis/Преимущества и недостатки.md",
-    "Programming/Java/BD/Redis/Start.md",
-    "Programming/Java/BD/Redis/Redis.md",
-    "Programming/Java/BD/Redis/ahaha test.md",
-    "Programming/Java/HTTP/Статус-коды HTTP-ответов/4xx.md",
-    "Programming/Java/BD/Redis/Sorted Set.md",
-    "Programming/Java/BD/Redis/SADD.md",
-    "Programming/Java/BD/Redis/Команды.md",
-    "Programming/Java/BD/Redis/Счетчик посетителей сайта.md",
+    "Programming/Java/BD/MongoDB",
+    "Programming/Java/BD/Что хранить в классических бд.md",
     "files/Pasted image 20241029133742.png",
     "files/Pasted image 20241029133705.png",
     "files/Pasted image 20241029133535.png",
     "files/Pasted image 20241029133023.png",
     "files/Pasted image 20241029132930.png",
     "files/Pasted image 20241029132910.png",
-    "Programming/Java/BD/Redis/Ограничения.md",
     "files/Pasted image 20241029132625.png",
-    "Programming/Java/BD/Redis/Хранение данных.md",
-    "files/Pasted image 20241029132520.png",
-    "Programming/Java/BD/Redis/Примеры использования.md",
-    "files/Pasted image 20241028130159.png",
-    "files/Pasted image 20241028130040.png",
-    "Programming/Java/BD/Redis/Определение.md",
-    "Programming/Java/BD/Redis/SREM.md",
-    "Programming/Java/HTTP/HTTP-заголовки.md",
     "Programming/Java/BD/Redis",
     "Programming/Java/BD",
-    "Programming/Java/HTTP/Адресация сетевых ресурсов.md",
-    "Programming/Java/HTTP/Cookies.md",
-    "Programming/Java/HTTP/Протокол HTTP.md",
-    "Programming/Java/HTTP/Версии HTTP и HTTPS.md",
-    "Programming/Java/HTTP/Методы запросов/Обзор методов.md",
-    "Programming/Java/HTTP/Статус-коды HTTP-ответов/Пример.md",
-    "Programming/Java/HTTP/Статус-коды HTTP-ответов/Классификация.md",
-    "Programming/Java/HTTP/URI.md",
     "Programming/Java/HTTP/REST",
     "Programming/Java/HTTP/Статус-коды HTTP-ответов",
     "Programming/Java/HTTP/Методы запросов",
     "Programming/Java/HTTP",
     "Programming/Java/Память",
-    "Programming/Java/Collections/HashMap",
-    "Programming/Java/Collections"
+    "Programming/Java/Collections/HashMap"
   ]
 }
