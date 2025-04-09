@@ -13,28 +13,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Welcome.md",
+                "file": "1-Daily-Journals/2025-04-09.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Welcome"
+              "title": "2025-04-09"
             }
-          }
-        ]
-      },
-      {
-        "id": "27181e9e8b876181",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "2803360b83280d3f",
+            "id": "8991cb1e62bfff76",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "1-Daily-Journals/Вечерний разбор.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Вечерний разбор"
+            }
+          },
+          {
+            "id": "67eebcc176e264b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4-Battle-Plans/Осилить статью.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Осилить статью"
             }
           }
         ]
@@ -56,7 +68,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "alphabeticalReverse",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -94,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "167cbdbff2014bfc",
@@ -163,6 +175,16 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "488344f03a82720e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
           }
         ]
       }
@@ -178,11 +200,44 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "2803360b83280d3f",
+  "active": "c5a6a1ffd260d71f",
   "lastOpenFiles": [
-    "Welcome.md"
+    "5-Mind-Forge/Week-XX-Review.md",
+    "4-Battle-Plans/Осилить статью.md",
+    "1-Daily-Journals/2025-04-09.md",
+    "0-Inbox/Endpoint.md",
+    "0-Inbox/Репликация данных.md",
+    "0-Inbox/Индекс и обратный индекс.md",
+    "0-Inbox/Полнотекстовый поиск.md",
+    "0-Inbox/Elasticsearch.md",
+    "0-Inbox/MapReduce.md",
+    "Философия",
+    "Философия/Репозитории для изучения.md",
+    "Философия/Кодекс.md",
+    "1-Daily-Journals/Вечерний разбор.md",
+    "Философия/Бусидо и самодетерминация (SDT).md",
+    "2-Code-Katas/Array of Lists.md",
+    "0-Inbox/ThreadPoolExecutor.md",
+    "1-Daily-Journals/Daily шаблон.md",
+    "9-Templates/Daily-Template.md",
+    "0-Inbox/ForkJoinPool.md",
+    "0-Inbox/Java.md",
+    "0-Inbox/List.md",
+    "1-Daily-Journals/Утренний обзор.md",
+    "Философия/Ритуал начала пути.md",
+    "Untitled 1.md",
+    "1-Daily-Journals/2025-04-9.md",
+    "9-Templates",
+    "5-Mind-Forge",
+    "4-Battle-Plans",
+    "3-Java-Scrolls",
+    "2-Code-Katas",
+    "1-Daily-Journals",
+    "0-Inbox"
   ]
 }
