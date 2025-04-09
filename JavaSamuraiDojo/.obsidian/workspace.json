@@ -1,20 +1,40 @@
 {
   "main": {
-    "id": "87f32a97e4f811b8",
+    "id": "24cf5d64c9e33768",
     "type": "split",
     "children": [
       {
-        "id": "c1ed1c4dd03294b0",
+        "id": "175323541b3c8a32",
         "type": "tabs",
         "children": [
           {
-            "id": "51fe1e4a5481fa59",
+            "id": "c5a6a1ffd260d71f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Welcome.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Welcome"
+            }
+          }
+        ]
+      },
+      {
+        "id": "27181e9e8b876181",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2803360b83280d3f",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -23,15 +43,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "24f90e6e64b64792",
+    "id": "e8399abe97126e72",
     "type": "split",
     "children": [
       {
-        "id": "f894b53fce278fdb",
+        "id": "999e88c2e6ef0375",
         "type": "tabs",
         "children": [
           {
-            "id": "d1d4ec8293d0f967",
+            "id": "04c4fc643072e16e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +64,7 @@
             }
           },
           {
-            "id": "e7504e360d143f70",
+            "id": "94a1691bf48c8bf3",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +81,7 @@
             }
           },
           {
-            "id": "687848125d41d73f",
+            "id": "00d07f5a32f3d8a7",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -74,23 +94,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 287.5
+    "width": 300
   },
   "right": {
-    "id": "2c3fc3015b77dd24",
+    "id": "167cbdbff2014bfc",
     "type": "split",
     "children": [
       {
-        "id": "947c48541a61be76",
+        "id": "31158f5818896747",
         "type": "tabs",
         "children": [
           {
-            "id": "56ef79d9d5b5d3c0",
+            "id": "1a207ebdb95b3558",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/Java/HTTP/Статус-коды HTTP-ответов/2xx.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,46 +119,49 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2xx"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "782ce949f760c1e8",
+            "id": "a3ceb421e972de5c",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/Java/HTTP/Статус-коды HTTP-ответов/2xx.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2xx"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "fd859c8a75480734",
+            "id": "1497c7b75c39f3ad",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
             }
           },
           {
-            "id": "b9fa329bf497e3ca",
+            "id": "0a64cf4dda159615",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/Java/HTTP/Статус-коды HTTP-ответов/2xx.md"
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2xx"
+              "title": "Outline"
             }
           }
         ]
@@ -159,52 +181,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "51fe1e4a5481fa59",
+  "active": "2803360b83280d3f",
   "lastOpenFiles": [
-    "Programming/Agile/Kanban/7 паттернов канбана.md",
-    "Old",
-    "Programming/Agile/Kanban/Суть.md",
-    "Programming/Agile/Kanban/Kanban-доска.md",
-    "Programming/Agile/Kanban/Kanban.md",
-    "Programming/Agile/Kanban/Цель Kanban.md",
-    "Programming/Agile/Scrum/Бэклог спринта.md",
-    "Programming/Agile/Kanban",
-    "Programming/Agile/Scrum/Спринт.md",
-    "Programming/Agile/Scrum/Summary.md",
-    "Programming/Agile/Scrum/Scrum.md",
-    "Programming/Agile/Scrum/Scrum-мастер.md",
-    "Programming/Agile/Scrum/События и артефакты Scrum.md",
-    "Programming/Agile/Scrum/Команда разработки.md",
-    "Programming/Agile/Scrum/Владелец продукта.md",
-    "Programming/Agile/Scrum/Бэклог.md",
-    "Programming/Agile/Scrum/Ролевые модели Scrum.md",
-    "Programming/Agile/Scrum/Ценности Scrum.md",
-    "Programming/Agile/Scrum/Процесс управления в Scrum.md",
-    "Programming/Agile/Scrum/Фокусы Scrum.md",
-    "Programming/Agile/Scrum/Фреймворк.md",
-    "Programming/Agile/Клиффхэнгер.md",
-    "Programming/Agile/Scrum",
-    "Old/files/Pasted image 20250326235506.png",
-    "Programming/Agile/Циклы разработки Agile.md",
-    "Programming/Agile/Принципы Agile.md",
-    "Programming/Agile/Ценности Agile.md",
-    "Programming/Agile/Agile.md",
-    "Programming/Agile",
-    "Programming/Алгоритмы/СНМ.md",
-    "Programming/Алгоритмы",
-    "Old/files/Pasted image 20250202091040.png",
-    "Old/files/Pasted image 20250202091004.png",
-    "Old/files/Pasted image 20241110125309.png",
-    "Old/files/Pasted image 20241107122654.png",
-    "Old/files/Pasted image 20241107122648.png",
-    "Programming/Java/Spring",
-    "Old/files/Pasted image 20241101155435.png",
-    "Programming/Java/BD/MongoDB",
-    "Old/files/Pasted image 20241029133742.png",
-    "Old/files/Pasted image 20241029133705.png",
-    "Old/files/Pasted image 20241029133535.png",
-    "Programming/Java/BD/Redis",
-    "Programming/Java/BD",
-    "Programming/Java/HTTP/REST"
+    "Welcome.md"
   ]
 }
