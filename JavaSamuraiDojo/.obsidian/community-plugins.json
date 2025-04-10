@@ -2,5 +2,7 @@
   "obsidian-excalidraw-plugin",
   "dataview",
   "templater-obsidian",
-  "calendar"
+  "calendar",
+  "obsidian-kanban",
+  "obsidian-spaced-repetition"
 ]
