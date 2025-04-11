@@ -13,49 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1-Daily-Journals/2025-04-11.md",
+                "file": "3-Java-Scrolls/Вопросы с собесов/Карточка 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-04-11"
+              "title": "Карточка 1"
             }
           },
           {
-            "id": "c2967567a725dcd2",
+            "id": "f1a15188ff3b6fa1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1-Daily-Journals/Вечерний разбор.md",
+                "file": "Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Вечерний разбор"
+              "title": "Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример"
             }
           },
           {
-            "id": "bea23548965c57e4",
+            "id": "e2de4df33eb7b88f",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "4-Battle-Plans/Projects Kanban.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false
-                  ]
-                }
+                "file": "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\".md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-trello",
-              "title": "Projects Kanban"
+              "icon": "lucide-file",
+              "title": "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\""
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -112,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "167cbdbff2014bfc",
@@ -129,6 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример"
             }
           },
           {
@@ -204,13 +199,11 @@
               "title": "Notes Review Queue"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 284.5,
-    "collapsed": true
+    "width": 284.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -226,43 +219,47 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "9047c86c8502567e",
+  "active": "f1a15188ff3b6fa1",
   "lastOpenFiles": [
+    "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\".md",
+    "Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример.md",
+    "files/Pasted image 20250411192512.png",
+    "Управление знаниями в Obsidian. Обработка информации. Рабочий процесс. Источники информации. Работа с заметками.md",
+    "Как развивать базу Obsidian.md",
+    "Список папок GTD.md",
+    "Выделение цветом в браузере.md",
+    "files/Список папок GTD.png",
+    "GTD от flowing_abbyss.md",
+    "files/Pasted image 20250411182135.png",
+    "files/a7449f3f8a3762a581e65fb68280edb8.png",
+    "0-Inbox/Шум моря для концентрации.md",
+    "Obsidian manual.md",
+    "files/GTD.png",
+    "files/Критерии оценивания.pdf",
+    "files/ТЗ. Итоговый проект курса «Поисковый движок».pdf",
+    "files/Банк вопросов Backend.pdf",
+    "3-Java-Scrolls/Вопросы с собесов/тестовая карточка.md",
+    "files",
+    "3-Java-Scrolls/алгоритм сортировки слиянием.md",
+    "3-Java-Scrolls/Вопросы с собесов/Карточка 6.md",
+    "3-Java-Scrolls/Вопросы с собесов/Карточка 7.md",
+    "3-Java-Scrolls/логарифмическая сложность.md",
+    "3-Java-Scrolls/Вопросы с собесов/Карточка 1.md",
+    "3-Java-Scrolls/линейная сложность.md",
+    "3-Java-Scrolls/квадратичная сложность.md",
     "1-Daily-Journals/Вечерний разбор.md",
-    "1-Daily-Journals/2025-04-11.md",
-    "1-Daily-Journals/2025-04-10.md",
     "4-Battle-Plans/Projects Kanban.md",
-    "3-Java-Scrolls/Вопросы с собесов/Cards/Карточка 2.md",
-    "3-Java-Scrolls/Вопросы с собесов/Cards/Карточка 3.md",
-    "3-Java-Scrolls/Вопросы с собесов/Cards/Карточка 4.md",
-    "3-Java-Scrolls/Вопросы с собесов/Cards/Карточка 7.md",
-    "3-Java-Scrolls/Вопросы с собесов/Cards/Карточка 5.md",
-    "3-Java-Scrolls/Вопросы с собесов/Cards/тестовая карточка.md",
-    "3-Java-Scrolls/Вопросы с собесов/Cards/Карточка 6.md",
-    "3-Java-Scrolls/Вопросы с собесов/Cards/Карточка 1.md",
-    "3-Java-Scrolls/Вопросы с собесов/Cards/Drawing 2025-04-11 09.03.23.excalidraw.md",
-    "3-Java-Scrolls/Вопросы с собесов/Зачем бэкэнд разработчику нужно знать о вычислительной сложности?.md",
+    "3-Java-Scrolls/Микросервисная архитектура.md",
+    "3-Java-Scrolls/кубическая сложность.md",
+    "3-Java-Scrolls/API.md",
+    "3-Java-Scrolls/вычислительная сложность.md",
+    "1-Daily-Journals/2025-04-11.md",
+    "2-Code-Katas/Array of Lists.md",
     "3-Java-Scrolls/Вопросы с собесов/Cards",
-    "2-Code-Katas/plusMinus.md",
-    "2-Code-Katas/Multiples of 3 or 5.md",
-    "2-Code-Katas/Collinearity.md",
-    "1-Daily-Journals/2025-04-09.md",
-    "Space rep.md",
-    "Untitled Kanban.md",
     "3-Java-Scrolls/Вопросы с собесов",
-    "4-Battle-Plans/Пример заполнения.md",
-    "4-Battle-Plans/Plan template.md",
-    "Projects-Kanban.md",
-    "9-Templates/Battle-Plan-Template.md",
-    "4-Battle-Plans/Осилить статью.md",
-    "5-Mind-Forge/Week-XX-Review.md",
     "Философия",
     "9-Templates",
     "5-Mind-Forge",
-    "4-Battle-Plans",
-    "3-Java-Scrolls",
-    "2-Code-Katas",
-    "1-Daily-Journals",
-    "0-Inbox"
+    "4-Battle-Plans"
   ]
 }
