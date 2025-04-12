@@ -1,0 +1,30 @@
+{
+  "targetAttributes": [
+    "type",
+    "cssclass",
+    "kanban-plugin"
+  ],
+  "targetTags": true,
+  "getFromInlineField": true,
+  "enableTabHeader": true,
+  "activateSnippet": true,
+  "enableEditor": true,
+  "enableFileList": true,
+  "enableBacklinks": true,
+  "enableQuickSwitcher": true,
+  "enableSuggestor": true,
+  "selectors": [
+    {
+      "type": "attribute",
+      "name": "type",
+      "value": "book",
+      "matchCaseSensitive": false,
+      "match": "exact",
+      "uid": "14a4-966d",
+      "selectText": true,
+      "selectAppend": true,
+      "selectPrepend": true,
+      "selectBackground": true
+    }
+  ]
+}

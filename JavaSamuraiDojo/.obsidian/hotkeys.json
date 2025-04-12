@@ -13,5 +13,25 @@
       "modifiers": [],
       "key": "F3"
     }
+  ],
+  "calendar:show-calendar-view": [
+    {
+      "modifiers": [],
+      "key": "F4"
+    }
+  ],
+  "media-extended:open-media-switcher": [
+    {
+      "modifiers": [],
+      "key": "F4"
+    }
+  ],
+  "obsidian-projects:show-projects": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "P"
+    }
   ]
 }

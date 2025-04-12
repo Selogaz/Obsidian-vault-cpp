@@ -1,25 +1,25 @@
 {
   "main": {
-    "id": "24cf5d64c9e33768",
+    "id": "5324373015726ba8",
     "type": "split",
     "children": [
       {
-        "id": "c042a228baaeb8c4",
+        "id": "c9c0a75e8702bafc",
         "type": "split",
-        "dimension": 20.953101361573374,
+        "dimension": 17.84121320249777,
         "children": [
           {
-            "id": "ca54293f71a97784",
+            "id": "6b79cc86a6fca503",
             "type": "tabs",
             "children": [
               {
-                "id": "5c9500bfa9eb21ff",
+                "id": "56c9bcf3dd419466",
                 "type": "leaf",
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "home/Home.md",
-                    "collapseAll": true,
+                    "file": "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\".md",
+                    "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
                     "showSearch": false,
@@ -28,27 +28,27 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for Home"
+                  "title": "Backlinks for Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\""
                 }
               }
             ]
           },
           {
-            "id": "692b56b2a985f41a",
+            "id": "52b1d46b637c688b",
             "type": "tabs",
             "children": [
               {
-                "id": "b0a705712aaea524",
+                "id": "61a582473e13c5fe",
                 "type": "leaf",
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "home/Home.md",
+                    "file": "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\".md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-going-out",
-                  "title": "Outgoing links from Home"
+                  "title": "Outgoing links from Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\""
                 }
               }
             ]
@@ -57,103 +57,84 @@
         "direction": "horizontal"
       },
       {
-        "id": "175323541b3c8a32",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
-        "dimension": 50.45385779122542,
+        "dimension": 57.537912578055305,
         "children": [
           {
-            "id": "9df0193d6d7decd7",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home/Home.md",
+                "file": "mermaid.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "mermaid"
             }
           },
           {
-            "id": "02540002475e478b",
+            "id": "3ca4c8e253ebbde3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "свод по неделям.md",
+                "file": "buttons.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "свод по неделям"
+              "title": "buttons"
             }
           },
           {
-            "id": "b929d4aaa720a3bc",
+            "id": "db60b495d3e85428",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "periodic/templates/weekly.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "weekly"
+              "type": "obsidian-projects",
+              "state": {},
+              "icon": "projects-icon",
+              "title": "Projects"
             }
           },
           {
-            "id": "f7b38835bfd95780",
+            "id": "de81daa59c4881db",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2025-04-12.md",
+                "file": "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\".md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "2025-04-12"
-            }
-          },
-          {
-            "id": "3d6b39479d86804f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "свод по дням.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "свод по дням"
+              "title": "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\""
             }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
-        "id": "55e3fc1e259e7f58",
+        "id": "6491212c32aa5695",
         "type": "split",
-        "dimension": 28.593040847201213,
+        "dimension": 24.62087421944692,
         "children": [
           {
-            "id": "0f8084265f649aba",
+            "id": "e59fa401c0a0529c",
             "type": "tabs",
             "children": [
               {
-                "id": "80b25c05c2af7255",
+                "id": "7da8b9b939525312",
                 "type": "leaf",
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "home/Home.md",
+                    "file": "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\".md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -181,28 +162,28 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of Home"
+                  "title": "Graph of Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\""
                 }
               }
             ]
           },
           {
-            "id": "12205b55ee920b5d",
+            "id": "be34b21a72a2c179",
             "type": "tabs",
             "children": [
               {
-                "id": "cf3c101482ccb3ec",
+                "id": "88cfe2c84e849983",
                 "type": "leaf",
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "home/Home.md",
+                    "file": "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\".md",
                     "followCursor": false,
                     "showSearch": false,
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of Home"
+                  "title": "Outline of Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\""
                 }
               }
             ]
@@ -240,7 +221,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "bo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -266,8 +247,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "167cbdbff2014bfc",
@@ -277,38 +257,6 @@
         "id": "31158f5818896747",
         "type": "tabs",
         "children": [
-          {
-            "id": "1a207ebdb95b3558",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "home/Home.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Home"
-            }
-          },
-          {
-            "id": "a3ceb421e972de5c",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links"
-            }
-          },
           {
             "id": "1497c7b75c39f3ad",
             "type": "leaf",
@@ -330,13 +278,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "home/Home.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Home"
+              "title": "Outline"
             }
           },
           {
@@ -350,6 +297,16 @@
             }
           },
           {
+            "id": "54959bbbde60174c",
+            "type": "leaf",
+            "state": {
+              "type": "podcast_player_view",
+              "state": {},
+              "icon": "play-circle",
+              "title": "Podcast Player"
+            }
+          },
+          {
             "id": "7e38c0fd28a851e5",
             "type": "leaf",
             "state": {
@@ -360,58 +317,62 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 284.5,
+    "width": 390.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "quickadd:QuickAdd": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-kanban:Create new board": false,
+      "canvas:Create new canvas": true,
+      "templates:Insert template": true,
+      "command-palette:Open command palette": true,
+      "obsidian-excalidraw-plugin:New drawing": true,
+      "templater-obsidian:Templater": true,
+      "obsidian-kanban:Create new board": true,
       "obsidian-spaced-repetition:Review flashcards": false,
-      "homepage:Open homepage": false,
-      "media-extended:Open media": false,
-      "periodic-notes:Open today": false
+      "homepage:Open homepage": true,
+      "media-extended:Open media": true,
+      "obsidian-book-search-plugin:Create new book note": false,
+      "periodic-notes:Open today": false,
+      "obsidian-projects:Open projects": false
     }
   },
-  "active": "9df0193d6d7decd7",
+  "active": "94a1691bf48c8bf3",
   "lastOpenFiles": [
-    "свод по неделям.md",
-    "home/Home.md",
-    "periodic/templates/weekly.md",
-    "minMaxLength.md",
-    "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\".md",
     "Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример.md",
-    "Список папок GTD.md",
-    "как использовать алиасы в Obsidian.md",
-    "Как развивать базу Obsidian.md",
+    "home/Home.md",
+    "mermaid.md",
+    "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\".md",
     "Управление знаниями в Obsidian. Обработка информации. Рабочий процесс. Источники информации. Работа с заметками.md",
-    "Collinearity.md",
-    "Шум моря для концентрации.md",
-    "Запрос к дипсик1.md",
-    "Obsidian manual.md",
-    "алгоритм сортировки слиянием.md",
-    "логарифмическая сложность.md",
-    "линейная сложность.md",
-    "квадратичная сложность.md",
-    "Микросервисная архитектура.md",
-    "кубическая сложность.md",
-    "API.md",
-    "вычислительная сложность.md",
-    "Полнотекстовый поиск.md",
-    "Elasticsearch.md",
-    "Репликация данных.md",
+    "periodic/daily/2025-04-11.md",
+    "buttons.md",
+    "Untitled.md",
+    "Карточка 7.md",
+    "Как россияне остались без YouTube.md",
+    "inbox and pending and orphan notes.md",
+    "Как развивать базу Obsidian.md",
+    "Untitled 1.md",
+    "periodic/daily/2025-04-13.md",
+    "periodic/daily/2025-04-12.md",
+    "ThreadPoolExecutor.md",
+    "ForkJoinPool.md",
+    "Карточка 2.md",
+    "Репозитории для изучения.md",
+    "Карточка 3.md",
+    "Карточка 4.md",
     "MapReduce.md",
+    "Зачем бэкэнд разработчику нужно знать о вычислительной сложности?.md",
+    "cources.md",
+    "templates/cource template.md",
+    "articles.md",
+    "Scripts/movies.js",
+    "Scripts",
     "projects/search engine",
     "templates",
     "files/Техническая спецификация.pdf",
@@ -422,8 +383,6 @@
     "files/Банк вопросов Backend.pdf",
     "files/dashboard-ReadLineLength.css",
     "files/dashboard.css",
-    "projects",
-    "periodic/templates",
     "files/Pasted image 20250411192512.png",
     "files/Pasted image 20250411182135.png",
     "files/a7449f3f8a3762a581e65fb68280edb8.png",

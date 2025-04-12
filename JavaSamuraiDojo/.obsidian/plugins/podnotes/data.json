@@ -1,0 +1,73 @@
+{
+  "savedFeeds": {
+    "Запуск завтра": {
+      "title": "Запуск завтра",
+      "url": "https://feeds.transistor.fm/5f1e0bb2-458b-4ac4-8d85-f464a505f813",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/45/af/f5/45aff567-39fa-26ce-7114-e5ae3a585d31/mza_711152967035730807.jpg/100x100bb.jpg",
+      "collectionId": 1488945593
+    }
+  },
+  "podNotes": {},
+  "defaultPlaybackRate": 1,
+  "playedEpisodes": {
+    "Как россияне остались без YouTube": {
+      "title": "Как россияне остались без YouTube",
+      "podcastName": "Запуск завтра",
+      "time": 781.530832,
+      "duration": 2462.145306,
+      "finished": false
+    }
+  },
+  "favorites": {
+    "icon": "lucide-star",
+    "name": "Favorites",
+    "shouldEpisodeRemoveAfterPlay": false,
+    "shouldRepeat": false,
+    "episodes": []
+  },
+  "queue": {
+    "icon": "list-ordered",
+    "name": "Queue",
+    "shouldEpisodeRemoveAfterPlay": true,
+    "shouldRepeat": false,
+    "episodes": []
+  },
+  "playlists": {},
+  "skipBackwardLength": 15,
+  "skipForwardLength": 15,
+  "currentEpisode": {
+    "title": "Как россияне остались без YouTube",
+    "streamUrl": "https://media.transistor.fm/d2f23f42/5f7adfd9.mp3",
+    "url": "https://share.transistor.fm/s/d2f23f42",
+    "description": "\n        <p>Еще несколько месяцев назад YouTube смотрели около 100 миллионов россиян. В июле пользователи начали жаловаться на медленную загрузку видео, сейчас их вообще не получается запустить. Как блокировка такого популярного сервиса стала возможна? И что значил YouTube для россиян? Самат Галимов говорит с исследовательницей интернета Полиной Колозариди и одним из ведущих специалистов по блокировкам в рунете Филиппом Кулиным.</p><p><br></p><p>Сайт проекта «Эшер II»: <a href=\"https://usher2.club/\">https://usher2.club/</a> </p><p>Телеграм-канал «Эшер II A+»: <a href=\"https://t.me/usher2\">https://t.me/usher2</a></p><p><br></p><p>«Эшер II». Рассказ из книги Рея Брэдбери «Марсианские хроники»: <a href=\"https://usher2.club/usher2\">https://usher2.club/usher2</a> </p><p><br></p><p>Ссылка на бесплатный VPN-сервис: <a href=\"https://vpngen.org/\">https://vpngen.org/</a> </p><p><br></p><p>Подкаст «Закат империи»: <a href=\"https://pc.st/1492099371\">https://pc.st/1492099371</a> </p><p><br></p><p>Ссылка на курс по подкастам: <a href=\"https://course.libolibo.me/\">https://course.libolibo.me/</a> </p><p><br></p><p>Слушайте бонусные эпизоды «Запуск++», а еще другие бонусы студии «Либо/Либо» по подписке ЛибоЛибо+ в Apple Podcasts https://cutt.ly/zap0225epap и в закрытом телеграм-канале Либо/Либо https://cutt.ly/zap0225eptg </p><p><br></p><p>Подписаться только на «Запуск++» в Телеграме: https://t.me/tribute/app?startapp=s3zy </p><p><br></p><p>Чат Запуска в телеграме: https://t.me/zapuskzavtra </p><p><br></p><p>Связаться: zapuskzavtra@gmail.com</p><p><br></p><p>Редакторки: Маргарита Берденникова и Маша Агличева</p><p>Продюсеры: Данил Астапов и Евгения Хрищанович</p><p>Звукорежиссер: Юра Шустицкий</p><p>Дизайнер обложки: Петр Сутупов</p>\n      ",
+    "content": "\n        <p>Еще несколько месяцев назад YouTube смотрели около 100 миллионов россиян. В июле пользователи начали жаловаться на медленную загрузку видео, сейчас их вообще не получается запустить. Как блокировка такого популярного сервиса стала возможна? И что значил YouTube для россиян? Самат Галимов говорит с исследовательницей интернета Полиной Колозариди и одним из ведущих специалистов по блокировкам в рунете Филиппом Кулиным.</p><p><br></p><p>Сайт проекта «Эшер II»: <a href=\"https://usher2.club/\">https://usher2.club/</a> </p><p>Телеграм-канал «Эшер II A+»: <a href=\"https://t.me/usher2\">https://t.me/usher2</a></p><p><br></p><p>«Эшер II». Рассказ из книги Рея Брэдбери «Марсианские хроники»: <a href=\"https://usher2.club/usher2\">https://usher2.club/usher2</a> </p><p><br></p><p>Ссылка на бесплатный VPN-сервис: <a href=\"https://vpngen.org/\">https://vpngen.org/</a> </p><p><br></p><p>Подкаст «Закат империи»: <a href=\"https://pc.st/1492099371\">https://pc.st/1492099371</a> </p><p><br></p><p>Ссылка на курс по подкастам: <a href=\"https://course.libolibo.me/\">https://course.libolibo.me/</a> </p><p><br></p><p>Слушайте бонусные эпизоды «Запуск++», а еще другие бонусы студии «Либо/Либо» по подписке ЛибоЛибо+ в Apple Podcasts https://cutt.ly/zap0225epap и в закрытом телеграм-канале Либо/Либо https://cutt.ly/zap0225eptg </p><p><br></p><p>Подписаться только на «Запуск++» в Телеграме: https://t.me/tribute/app?startapp=s3zy </p><p><br></p><p>Чат Запуска в телеграме: https://t.me/zapuskzavtra </p><p><br></p><p>Связаться: zapuskzavtra@gmail.com</p><p><br></p><p>Редакторки: Маргарита Берденникова и Маша Агличева</p><p>Продюсеры: Данил Астапов и Евгения Хрищанович</p><p>Звукорежиссер: Юра Шустицкий</p><p>Дизайнер обложки: Петр Сутупов</p>\n      ",
+    "podcastName": "Запуск завтра",
+    "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/45/af/f5/45aff567-39fa-26ce-7114-e5ae3a585d31/mza_711152967035730807.jpg/100x100bb.jpg",
+    "episodeDate": "2025-02-27T16:06:50.000Z",
+    "feedUrl": "https://feeds.transistor.fm/5f1e0bb2-458b-4ac4-8d85-f464a505f813",
+    "itunesTitle": "Как россияне остались без YouTube"
+  },
+  "timestamp": {
+    "template": "- {{time}} "
+  },
+  "note": {
+    "path": "{{title}}",
+    "template": "---\ntype: podcast\npodcast: {{podcast}}\naliases: \n- \"~ {{title}}\"\ncover: {{artwork}}\nstatus: todo\nrecommendedby:\n---\n___\ntags:: \nprev:: [[podcasts|назад в библиотеку]]\ncategory::\nurl::\nchildren::"
+  },
+  "download": {
+    "path": ""
+  },
+  "downloadedEpisodes": {},
+  "localFiles": {
+    "icon": "folder",
+    "name": "Local Files",
+    "shouldEpisodeRemoveAfterPlay": false,
+    "shouldRepeat": false,
+    "episodes": []
+  },
+  "openAIApiKey": "",
+  "transcript": {
+    "path": "transcripts/{{podcast}}/{{title}}.md",
+    "template": "# {{title}}\n\nPodcast: {{podcast}}\nDate: {{date}}\n\n{{transcript}}"
+  }
+}
