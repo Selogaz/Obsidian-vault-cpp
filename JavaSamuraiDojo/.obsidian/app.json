@@ -2,5 +2,12 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "3-Java-Scrolls",
   "attachmentFolderPath": "files",
-  "readableLineLength": false
+  "readableLineLength": false,
+  "showLineNumber": false,
+  "userIgnoreFilters": [
+    "files/",
+    "periodic/daily/",
+    "periodic/weekly/",
+    "templates/"
+  ]
 }
