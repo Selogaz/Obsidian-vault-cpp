@@ -1,24 +1,38 @@
 {
   "collapse-filter": false,
   "search": "",
-  "showTags": true,
+  "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "line:(\"tags: #📥\")",
+      "query": "tag:#📥  ",
       "color": {
         "a": 1,
         "rgb": 14701138
       }
     },
     {
-      "query": "line:(\"type: book\")",
+      "query": "line:(\"type: course\")",
       "color": {
         "a": 1,
         "rgb": 14725458
+      }
+    },
+    {
+      "query": "tag:#🃏/java/interview  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "tag:#🌲  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
       }
     }
   ],

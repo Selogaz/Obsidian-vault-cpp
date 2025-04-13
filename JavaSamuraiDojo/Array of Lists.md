@@ -14,5 +14,4 @@ List<Integer>[] arrayOfLists = new List[]{
 
 Урок: впервые создал массив из коллекций
 #алгоритмы #codeWars
-[[List]] [[Array]] [[CodeWars]] 
 

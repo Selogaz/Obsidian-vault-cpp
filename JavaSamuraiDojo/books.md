@@ -3,7 +3,7 @@ type: book
 aliases: "&"
 ---
 %%cssClass: cards%%
-#📥 
+
 ## В процессе
 **status:** ==wip== *(work in progress)*
 

@@ -1,3 +1,10 @@
+---
+url: https://mermaid-js.github.io/mermaid/#/flowchart
+type: utils
+status: todo
+category: obsidian
+---
+
 [mermaid help](https://mermaid-js.github.io/mermaid/#/flowchart)
 
 ```mermaid
