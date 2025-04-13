@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "c9c0a75e8702bafc",
+        "id": "35c76640aa1d49ae",
         "type": "split",
-        "dimension": 17.84121320249777,
+        "dimension": 18.078668683812403,
         "children": [
           {
-            "id": "6b79cc86a6fca503",
+            "id": "10c661b511e85d19",
             "type": "tabs",
             "children": [
               {
-                "id": "56c9bcf3dd419466",
+                "id": "dbce4851903fe45f",
                 "type": "leaf",
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\".md",
-                    "collapseAll": false,
+                    "file": "home/Home.md",
+                    "collapseAll": true,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
                     "showSearch": false,
@@ -28,27 +28,27 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\""
+                  "title": "Backlinks for Home"
                 }
               }
             ]
           },
           {
-            "id": "52b1d46b637c688b",
+            "id": "7ed4e791c6b5d479",
             "type": "tabs",
             "children": [
               {
-                "id": "61a582473e13c5fe",
+                "id": "846d7d9fd2ad540b",
                 "type": "leaf",
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\".md",
+                    "file": "home/Home.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-going-out",
-                  "title": "Outgoing links from Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\""
+                  "title": "Outgoing links from Home"
                 }
               }
             ]
@@ -59,82 +59,132 @@
       {
         "id": "4509724f8bf84da7",
         "type": "tabs",
-        "dimension": 57.537912578055305,
+        "dimension": 57.413010590015126,
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "0ba04be26cebd9e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mermaid.md",
+                "file": "Вопросы для собеседования на Java Developer.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "mermaid"
+              "title": "Вопросы для собеседования на Java Developer"
             }
           },
           {
-            "id": "3ca4c8e253ebbde3",
+            "id": "25de5d3981f1068c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "buttons.md",
+                "file": "конспект по статье \"Вопросы для собеседования на Java Developer.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "buttons"
+              "title": "конспект по статье \"Вопросы для собеседования на Java Developer"
             }
           },
           {
-            "id": "db60b495d3e85428",
-            "type": "leaf",
-            "state": {
-              "type": "obsidian-projects",
-              "state": {},
-              "icon": "projects-icon",
-              "title": "Projects"
-            }
-          },
-          {
-            "id": "de81daa59c4881db",
+            "id": "ef4cdeeabec5ac5d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\".md",
+                "file": "ООП.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\""
+              "title": "ООП"
+            }
+          },
+          {
+            "id": "e91272272a5bb049",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "основные принципы ООП.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "основные принципы ООП"
+            }
+          },
+          {
+            "id": "31c876edf5df8841",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "что такое ООП?.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "что такое ООП?"
+            }
+          },
+          {
+            "id": "9dd6fd53543ff7ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "шум моря для концентрации.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "шум моря для концентрации"
+            }
+          },
+          {
+            "id": "eb793cf1932ae749",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home/Home.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Home"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       },
       {
-        "id": "6491212c32aa5695",
+        "id": "6ec6bda1c0d3485c",
         "type": "split",
-        "dimension": 24.62087421944692,
+        "dimension": 24.508320726172467,
         "children": [
           {
-            "id": "e59fa401c0a0529c",
+            "id": "897d6aa509071e95",
             "type": "tabs",
             "children": [
               {
-                "id": "7da8b9b939525312",
+                "id": "4820493fa1d342e6",
                 "type": "leaf",
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\".md",
+                    "file": "home/Home.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -157,33 +207,37 @@
                       "repelStrength": 10,
                       "linkStrength": 1,
                       "linkDistance": 250,
-                      "scale": 0.4444444444444444,
+                      "scale": 0.19753086419753085,
                       "close": true
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\""
+                  "title": "Graph of Home"
                 }
               }
             ]
           },
           {
-            "id": "be34b21a72a2c179",
+            "id": "7e474f0847bfa284",
             "type": "tabs",
             "children": [
               {
-                "id": "88cfe2c84e849983",
+                "id": "14e5b63331a175a9",
                 "type": "leaf",
                 "state": {
-                  "type": "outline",
+                  "type": "backlink",
                   "state": {
-                    "file": "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\".md",
-                    "followCursor": false,
+                    "file": "home/Home.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
                     "showSearch": false,
-                    "searchQuery": ""
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
                   },
-                  "icon": "lucide-list",
-                  "title": "Outline of Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\""
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Home"
                 }
               }
             ]
@@ -221,7 +275,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "bo",
+                "query": "tag:review",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -247,7 +301,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "167cbdbff2014bfc",
@@ -278,12 +333,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "home/Home.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Home"
             }
           },
           {
@@ -317,7 +373,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -339,50 +395,51 @@
       "homepage:Open homepage": true,
       "media-extended:Open media": true,
       "obsidian-book-search-plugin:Create new book note": false,
-      "periodic-notes:Open today": false,
-      "obsidian-projects:Open projects": false
+      "obsidian-projects:Open projects": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "94a1691bf48c8bf3",
+  "active": "eb793cf1932ae749",
   "lastOpenFiles": [
-    "Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример.md",
-    "home/Home.md",
-    "mermaid.md",
-    "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\".md",
-    "Управление знаниями в Obsidian. Обработка информации. Рабочий процесс. Источники информации. Работа с заметками.md",
-    "periodic/daily/2025-04-11.md",
-    "buttons.md",
-    "Untitled.md",
-    "Карточка 7.md",
-    "Как россияне остались без YouTube.md",
-    "inbox and pending and orphan notes.md",
-    "Как развивать базу Obsidian.md",
-    "Untitled 1.md",
-    "periodic/daily/2025-04-13.md",
-    "periodic/daily/2025-04-12.md",
-    "ThreadPoolExecutor.md",
-    "ForkJoinPool.md",
-    "Карточка 2.md",
-    "Репозитории для изучения.md",
-    "Карточка 3.md",
-    "Карточка 4.md",
-    "MapReduce.md",
-    "Зачем бэкэнд разработчику нужно знать о вычислительной сложности?.md",
-    "cources.md",
-    "templates/cource template.md",
+    "шум моря для концентрации.md",
+    "основные принципы ООП.md",
+    "files/mynoise-net.mkv",
+    "files/mynoise-net.mp3",
+    "files/mynoise-net.aac",
+    "files/output.mp3",
+    "files/output.aac",
+    "files/2025-04-13 16-22-23.mkv",
+    "ООП.md",
+    "конспект по статье \"Вопросы для собеседования на Java Developer.md",
+    "Вопросы для собеседования на Java Developer.md",
     "articles.md",
+    "что такое ООП?.md",
+    "tags.md",
+    "home/Home.md",
+    "источники.md",
+    "конспекты по курсу \"Профессия Java-разработчик PRO\".md",
+    "java-разработчик.md",
+    "Профессия Java-разработчик PRO.md",
+    "как размечать заметки.md",
+    "мои правила ведения заметок в Obsidian.md",
+    "cources.md",
+    "как связывать заметки.md",
+    "список конспектов.md",
+    "конспект.md",
+    "files/Сертификат Skillbox.png",
+    "templates/cource template.md",
+    "Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример.md",
+    "java.md",
+    "список существующих алиасов.md",
+    "Конспекты по статье \"Управление знаниями в Obsidian. Базовый рабочий процесс. Журнал. Источники и их библиотеки. Пример\".md",
+    "files/конспекты.png",
+    "основная заметка.md",
     "Scripts/movies.js",
     "Scripts",
     "projects/search engine",
     "templates",
-    "files/Техническая спецификация.pdf",
     "files/Pasted image 20250411194608.png",
     "files/Список папок GTD.png",
-    "files/Критерии оценивания.pdf",
-    "files/ТЗ. Итоговый проект курса «Поисковый движок».pdf",
-    "files/Банк вопросов Backend.pdf",
-    "files/dashboard-ReadLineLength.css",
-    "files/dashboard.css",
     "files/Pasted image 20250411192512.png",
     "files/Pasted image 20250411182135.png",
     "files/a7449f3f8a3762a581e65fb68280edb8.png",

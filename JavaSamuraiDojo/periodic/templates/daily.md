@@ -21,5 +21,6 @@ idea::
 
 Заметки сделанные в этот день:
 ```dataview
-LISTWHERE file.cday = date(<% tp.file.title %>)
+LIST
+WHERE file.cday = date(<% tp.file.title %>)
 ```

@@ -9,5 +9,6 @@
     "periodic/daily/",
     "periodic/weekly/",
     "templates/"
-  ]
+  ],
+  "alwaysUpdateLinks": true
 }
