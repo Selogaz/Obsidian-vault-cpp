@@ -1,0 +1,22 @@
+.full-width {
+  --file-line-width: 100%;
+}
+
+.no-inline-title .inline-title {
+  display: none;
+}
+
+.hide-backlinks .embedded-backlinks {
+  display: none;
+}
+
+.hide-properties {
+  --metadata-display-reading: none;
+  --metadata-display-editing: none;
+}
+
+.remove-dataview-title
+  :is(.block-language-dataview, .block-language-dataviewjs)
+  h4 {
+  display: none;
+}

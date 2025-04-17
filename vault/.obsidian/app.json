@@ -1,0 +1,19 @@
+{
+  "propertiesInDocument": "hidden",
+  "spellcheck": true,
+  "autoPairBrackets": false,
+  "autoPairMarkdown": false,
+  "vimMode": false,
+  "promptDelete": false,
+  "trashOption": "local",
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "base/notes",
+  "attachmentFolderPath": "files",
+  "userIgnoreFilters": [
+    "classes/",
+    "files/",
+    "templates/"
+  ],
+  "autoConvertHtml": true
+}

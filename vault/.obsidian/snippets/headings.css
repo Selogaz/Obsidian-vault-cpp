@@ -1,0 +1,74 @@
+/* heading font fix */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.cm-header {
+	font-family: var(--font-heading-theme) !important;
+	font-variant-caps: small-caps;
+}
+
+/* fix heading arrows */
+:is(.style-settings-collapse-indicator, .collapse-icon)
+	> .svg-icon.svg-icon.svg-icon.svg-icon {
+	height: 0.4em;
+	width: 0.4em;
+	stroke-width: 5px;
+	margin-left: -0.35em;
+}
+
+.HyperMD-header.HyperMD-header-1,
+.HyperMD-header.HyperMD-header-2,
+.HyperMD-header.HyperMD-header-3,
+.HyperMD-header.HyperMD-header-4,
+.HyperMD-header.HyperMD-header-5,
+.HyperMD-header.HyperMD-header-6 {
+	padding: 0px;
+	text-align: center;
+	font-variant-caps: small-caps;
+	line-height: 0.9;
+	border: 1px ridge rgba(209, 209, 209, 0.5);
+	border-radius: 5px;
+	background: #232323;
+}
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+	text-align: center;
+	font-variant-caps: small-caps;
+	line-height: 0.9;
+	border: 1px ridge rgba(209, 209, 209, 0.5);
+	border-radius: 5px;
+	background: #232323;
+}
+
+.cm-s-obsidian .cm-line.HyperMD-header {
+	padding: 0px;
+}
+
+/* fix headings for tasks */
+.callout :is(h1, h2, h3, h4, h5, h6) {
+	background: rgba(209, 209, 209, 0.03);
+	border-radius: 5px;
+	border: none;
+	text-align: left;
+}
+
+/* fix print colors */
+@media print {
+	.markdown-preview-view h1,
+	.markdown-preview-view h2,
+	.markdown-preview-view h3,
+	.markdown-preview-view h4,
+	.markdown-preview-view h5,
+	.markdown-preview-view h6 {
+		background: white !important;
+	}
+}

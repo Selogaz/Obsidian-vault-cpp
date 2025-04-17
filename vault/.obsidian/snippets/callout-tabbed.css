@@ -1,0 +1,63 @@
+[data-callout="tabbed"] {
+  /* outline: 1px solid var(--color-base-30); */
+  border-radius: 0.5rem;
+  padding-top: 15px;
+  margin: 0;
+}
+[data-callout="tabbed"] > .callout-content {
+  padding: 0rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, max-content));
+  gap: 0 0.5rem;
+
+  border: none;
+}
+[data-callout="tabbed"] > .callout-title {
+  display: none;
+}
+[data-callout="tabbed"] > .callout-content p {
+  margin: 0;
+}
+[data-callout="tabbed"] > .callout-content label > input {
+  display: none;
+}
+[data-callout="tabbed"] > .callout-content label {
+  width: 100%;
+  display: inline-block;
+  padding: 0rem 0ch;
+  border-radius: 0.2rem;
+
+  color: #ccc;
+  background-color: #292929;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+[data-callout="tabbed"] > .callout-content label:has(input:checked) {
+  color: white;
+  background-color: #383838;
+}
+[data-callout="tabbed"]
+  > .callout-content
+  p:not(:has(label input:checked))
+  + blockquote {
+  display: none;
+}
+[data-callout="tabbed"] > .callout-content > blockquote {
+  order: 999;
+  grid-column: 1 / -1;
+
+  background-color: transparent;
+  padding-left: 0;
+  border: 0;
+  margin-top: 2px;
+}
+
+/* fixes */
+
+.callout[data-callout="tabbed"] .prop-checkbox {
+  transform: translate(6px, 3px);
+}

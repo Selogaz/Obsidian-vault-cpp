@@ -1,0 +1,106 @@
+{
+  "tagIconPairs": [
+    {
+      "tag": "task/inbox",
+      "icon": "📥"
+    },
+    {
+      "tag": "task/idea",
+      "icon": "💡"
+    },
+    {
+      "tag": "task/one-off",
+      "icon": "1️⃣"
+    },
+    {
+      "tag": "task/multistep",
+      "icon": "🏗"
+    },
+    {
+      "tag": "task/next_action",
+      "icon": "🚀"
+    },
+    {
+      "tag": "task/reference",
+      "icon": "🔗"
+    },
+    {
+      "tag": "task/waiting_for",
+      "icon": "💤"
+    },
+    {
+      "tag": "task/someday",
+      "icon": "🤷"
+    },
+    {
+      "tag": "task/regular",
+      "icon": "🔁"
+    },
+    {
+      "tag": "priority/a",
+      "icon": "🇦"
+    },
+    {
+      "tag": "priority/b",
+      "icon": "🇧"
+    },
+    {
+      "tag": "priority/c",
+      "icon": "🇨"
+    },
+    {
+      "tag": "priority/d",
+      "icon": "🇩"
+    },
+    {
+      "tag": "priority/e",
+      "icon": "🇪"
+    },
+    {
+      "tag": "time/quick",
+      "icon": "🤏"
+    },
+    {
+      "tag": "time/moderate",
+      "icon": "🐰"
+    },
+    {
+      "tag": "time/lengthy",
+      "icon": "🐢"
+    },
+    {
+      "tag": "time/long",
+      "icon": "🐌"
+    },
+    {
+      "tag": "effort/easy",
+      "icon": "❤"
+    },
+    {
+      "tag": "effort/medium",
+      "icon": "❤️‍🔥"
+    },
+    {
+      "tag": "effort/hard",
+      "icon": "🫀"
+    },
+    {
+      "tag": "category/study",
+      "icon": "🎓"
+    },
+    {
+      "tag": "category/work",
+      "icon": "⛏️"
+    },
+    {
+      "tag": "category/english",
+      "icon": "🇺🇸"
+    }
+  ],
+  "tags": [
+    "lol"
+  ],
+  "symbols": [
+    "📥"
+  ]
+}

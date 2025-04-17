@@ -1,0 +1,23 @@
+{
+  "pluginList": [
+    "reply2za/obsidian-query-control",
+    "flowing-abyss/obsidian-task-search",
+    "flowing-abyss/obsidian-tag-replacer",
+    "flowing-abyss/obsidian-frontmatter-sync",
+    "flowing-abyss/dataview-interactive-views",
+    "flowing-abyss/obsidian-calendar-plugin",
+    "salmund/obsidian-better-link-inserter"
+  ],
+  "pluginSubListFrozenVersion": [],
+  "themesList": [],
+  "updateAtStartup": true,
+  "updateThemesAtStartup": true,
+  "enableAfterInstall": true,
+  "loggingEnabled": false,
+  "loggingPath": "BRAT-log",
+  "loggingVerboseEnabled": false,
+  "debuggingMode": true,
+  "notificationsEnabled": true,
+  "personalAccessToken": "",
+  "ribbonIconEnabled": true
+}

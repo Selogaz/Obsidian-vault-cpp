@@ -1,0 +1,51 @@
+/* https://github.com/Dmytro-Shulha/obsidian-css-snippets/blob/develop/Snippets/Embeds.md */
+
+.markdown-embed-title {
+  display: none;
+}
+.markdown-embed {
+  border: thick double #404040;
+  border-radius: 5px;
+  background-color: rgba(36, 36, 36, 0.3);
+
+  padding: 10px;
+  padding-right: 10px;
+}
+
+.markdown-embed-content {
+  max-height: unset;
+}
+.markdown-embed-content > :first-child {
+  margin-top: 0;
+}
+.markdown-embed-content > :last-child {
+  margin-bottom: 0;
+}
+
+.markdown-embed-content,
+.markdown-preview-view .markdown-embed-content > .markdown-preview-view {
+  max-height: unset;
+}
+
+div.markdown-preview-sizer.markdown-preview-section {
+  min-height: unset !important;
+  padding-bottom: 0 !important;
+}
+
+.markdown-embed-link,
+.file-embed-link {
+  top: 0px;
+  right: 0;
+  text-align: right;
+}
+
+.file-embed-link svg,
+.markdown-embed-link svg {
+  width: 16px;
+  opacity: 0;
+}
+
+.markdown-embed:hover .file-embed-link svg,
+.markdown-embed:hover .markdown-embed-link svg {
+  opacity: 1;
+}

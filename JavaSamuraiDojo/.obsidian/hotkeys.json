@@ -33,5 +33,11 @@
       ],
       "key": "P"
     }
+  ],
+  "obsidian-spaced-repetition:srs-review-flashcards-in-note": [
+    {
+      "modifiers": [],
+      "key": "F5"
+    }
   ]
 }

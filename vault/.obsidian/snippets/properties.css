@@ -1,0 +1,73 @@
+/* https://forum.obsidian.md/t/properties-view-css-the-fall-collection/66512 */
+
+[data-property-key="sr-due"],
+[data-property-key="sr-interval"],
+[data-property-key="sr-ease"],
+[data-property-key="created"],
+[data-property-key="updated"],
+[data-property-key="journal"],
+[data-property-key="journal-start-date"],
+[data-property-key="journal-end-date"],
+[data-property-key="journal-section"],
+[data-property-key="obsidianUIMode"],
+[data-property-key="cssclasses"],
+[data-property-key="icon"],
+[data-property-key="BC-tag-note"],
+[data-property-key="BC-tag-note-field"],
+[data-property-key="longform"] {
+  display: none;
+}
+
+.metadata-property[data-property-key^="filter"],
+.metadata-property[data-property-key^="view"],
+.metadata-property[data-property-key^="pagination"],
+.metadata-property[data-property-key^="search"],
+.metadata-property[data-property-key^="show_search"],
+.metadata-property[data-property-key^="sort"],
+.metadata-property[data-property-key^="sort_direction"] {
+  display: none;
+}
+
+/* --- */
+
+body {
+  --metadata-label-width: 5em;
+  --metadata-gap: 0;
+  --metadata-padding: 0;
+}
+
+.metadata-property-icon,
+.metadata-property-warning-icon {
+  display: none;
+}
+
+.multi-select-container,
+.metadata-input-number {
+  padding: 0 !important;
+  margin: 0 !important;
+  gap: 0 !important;
+}
+
+.metadata-property-key-input.metadata-property-key-input {
+  margin-left: 3px;
+}
+
+.metadata-properties {
+  margin-top: 3px;
+}
+
+.markdown-source-view.is-live-preview.show-properties .metadata-container {
+  display: none;
+}
+
+/* metadatamenu */
+
+.field-btn-container button.property-metadata-menu,
+.metadata-content .action-container .fileclass-btn-container .add-field-button {
+  background: transparent;
+  color: gray;
+  padding: 0;
+  margin: 0;
+  height: calc(var(--input-height));
+  width: calc(var(--input-height) * 0.7);
+}

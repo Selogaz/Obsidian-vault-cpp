@@ -6,7 +6,7 @@
       {
         "id": "35c76640aa1d49ae",
         "type": "split",
-        "dimension": 18.09235427706283,
+        "dimension": 20.04538577912254,
         "children": [
           {
             "id": "10c661b511e85d19",
@@ -18,7 +18,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "пример полиморфизма.md",
+                    "file": "Вопросы для собеседования на Java Developer.md",
                     "collapseAll": true,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -28,7 +28,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for пример полиморфизма"
+                  "title": "Backlinks for Вопросы для собеседования на Java Developer"
                 }
               }
             ]
@@ -43,12 +43,12 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "пример полиморфизма.md",
+                    "file": "Вопросы для собеседования на Java Developer.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-going-out",
-                  "title": "Outgoing links from пример полиморфизма"
+                  "title": "Outgoing links from Вопросы для собеседования на Java Developer"
                 }
               }
             ]
@@ -57,144 +57,169 @@
         "direction": "horizontal"
       },
       {
-        "id": "4509724f8bf84da7",
-        "type": "tabs",
-        "dimension": 55.26116578349735,
-        "children": [
-          {
-            "id": "cf5ebca8b9b1fec4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "home/Home.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Home"
-            }
-          },
-          {
-            "id": "35196fd3cefe55dd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ООП.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "ООП"
-            }
-          },
-          {
-            "id": "38cc40c92a43ea29",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "полиморфизм.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "полиморфизм"
-            }
-          },
-          {
-            "id": "933fc0f96e215518",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "пример полиморфизма.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "пример полиморфизма"
-            }
-          }
-        ],
-        "currentTab": 3
-      },
-      {
-        "id": "ac97d07a8b188120",
+        "id": "0fb336aaf8617b0a",
         "type": "split",
-        "dimension": 26.64647993943982,
+        "dimension": 79.95461422087746,
         "children": [
           {
             "id": "897d6aa509071e95",
             "type": "tabs",
+            "dimension": 67.10775047258979,
             "children": [
               {
-                "id": "4820493fa1d342e6",
+                "id": "b4aa8b3e2ce1913b",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "home/Home.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "Home"
+                }
+              },
+              {
+                "id": "0d2cd72abbc19995",
                 "type": "leaf",
                 "state": {
-                  "type": "localgraph",
+                  "type": "markdown",
                   "state": {
-                    "file": "пример полиморфизма.md",
-                    "options": {
-                      "collapse-filter": true,
-                      "search": "",
-                      "localJumps": 1,
-                      "localBacklinks": true,
-                      "localForelinks": true,
-                      "localInterlinks": false,
-                      "showTags": false,
-                      "showAttachments": false,
-                      "hideUnresolved": false,
-                      "collapse-color-groups": true,
-                      "colorGroups": [],
-                      "collapse-display": true,
-                      "showArrow": false,
-                      "textFadeMultiplier": 0,
-                      "nodeSizeMultiplier": 1,
-                      "lineSizeMultiplier": 1,
-                      "collapse-forces": true,
-                      "centerStrength": 0.518713248970312,
-                      "repelStrength": 10,
-                      "linkStrength": 1,
-                      "linkDistance": 250,
-                      "scale": 0.2962962962962963,
-                      "close": true
-                    }
+                    "file": "конспекты по статье \"Вопросы для собеседования на Java Developer\".md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
                   },
-                  "icon": "lucide-git-fork",
-                  "title": "Graph of пример полиморфизма"
+                  "icon": "lucide-file",
+                  "title": "конспекты по статье \"Вопросы для собеседования на Java Developer\""
+                }
+              },
+              {
+                "id": "16bf68355d7aa693",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Вопросы для собеседования на Java Developer.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Вопросы для собеседования на Java Developer"
+                }
+              },
+              {
+                "id": "4afc6dd67ac87ffa",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "преимущества ООП.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "преимущества ООП"
+                }
+              },
+              {
+                "id": "ca5ba71cc7e2cd1e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "periodic/daily/2025-04-14.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "2025-04-14"
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           },
           {
-            "id": "6d96e82685c40386",
-            "type": "tabs",
+            "id": "27a27cfe870a92c3",
+            "type": "split",
+            "dimension": 32.89224952741021,
             "children": [
               {
-                "id": "b336d014ac4fab57",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "пример полиморфизма.md",
-                    "followCursor": false,
-                    "showSearch": false,
-                    "searchQuery": ""
-                  },
-                  "icon": "lucide-list",
-                  "title": "Outline of пример полиморфизма"
-                }
+                "id": "05d9341a7426acd0",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "4820493fa1d342e6",
+                    "type": "leaf",
+                    "state": {
+                      "type": "localgraph",
+                      "state": {
+                        "file": "Вопросы для собеседования на Java Developer.md",
+                        "options": {
+                          "collapse-filter": true,
+                          "search": "",
+                          "localJumps": 1,
+                          "localBacklinks": true,
+                          "localForelinks": true,
+                          "localInterlinks": false,
+                          "showTags": false,
+                          "showAttachments": false,
+                          "hideUnresolved": false,
+                          "collapse-color-groups": true,
+                          "colorGroups": [],
+                          "collapse-display": true,
+                          "showArrow": false,
+                          "textFadeMultiplier": 0,
+                          "nodeSizeMultiplier": 1,
+                          "lineSizeMultiplier": 1,
+                          "collapse-forces": true,
+                          "centerStrength": 0.518713248970312,
+                          "repelStrength": 10,
+                          "linkStrength": 1,
+                          "linkDistance": 250,
+                          "scale": 0.2962962962962963,
+                          "close": true
+                        }
+                      },
+                      "icon": "lucide-git-fork",
+                      "title": "Graph of Вопросы для собеседования на Java Developer"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "b84d6f2aec0672f4",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "b336d014ac4fab57",
+                    "type": "leaf",
+                    "state": {
+                      "type": "outline",
+                      "state": {
+                        "file": "Вопросы для собеседования на Java Developer.md",
+                        "followCursor": false,
+                        "showSearch": false,
+                        "searchQuery": ""
+                      },
+                      "icon": "lucide-list",
+                      "title": "Outline of Вопросы для собеседования на Java Developer"
+                    }
+                  }
+                ]
               }
-            ]
+            ],
+            "direction": "horizontal"
           }
         ],
-        "direction": "horizontal"
+        "direction": "vertical"
       }
     ],
     "direction": "vertical"
@@ -226,7 +251,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "заметка",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -247,13 +272,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "167cbdbff2014bfc",
@@ -350,34 +373,34 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "933fc0f96e215518",
+  "active": "7e38c0fd28a851e5",
   "lastOpenFiles": [
-    "полиморфизм.md",
-    "пример полиморфизма.md",
-    "ООП.md",
+    "конспекты по статье \"Вопросы для собеседования на Java Developer\".md",
+    "Вопросы для собеседования на Java Developer.md",
     "home/Home.md",
-    "основные принципы ООП.md",
-    "инкапсуляция.md",
-    "наследование.md",
-    "пример наследования.md",
-    "пример полиморфизма от ИИ.md",
-    "атомарная заметка.md",
-    "список существующих алиасов.md",
-    "пример инкапсуляции.md",
+    "свод по дням.md",
+    "источники.md",
+    "мои правила ведения заметок в Obsidian.md",
+    "periodic/daily/2025-04-14.md",
+    "periodic/templates/weekly.md",
     "как размечать заметки.md",
     "как связывать заметки.md",
-    "конспекты по статье \"Вопросы для собеседования на Java Developer\".md",
-    "inbox and pending and orphan notes.md",
-    "periodic/daily/2025-04-13.md",
-    "periodic/weekly/2025-W16-April.md",
-    "список конспектов.md",
-    "конспекты по статье \"MapReduce как и зачем\".md",
-    "конспекты по статье \"каким цветом выделять текст\".md",
-    "конспекты по видео \"алгоритм чтения и формирования заметок\".md",
-    "periodic/daily/2025-04-14.md",
     "periodic/templates/daily.md",
-    "periodic/weekly/2025-W15-April.md",
-    "конспекты по статье \"С чего начинается Elasticsearch\".md",
+    "преимущества ООП.md",
+    "меньше ошибок.md",
+    "повторное использование кода.md",
+    "унифицированность в ООП.md",
+    "влияние ООП на другие программы.md",
+    "время на разработку.md",
+    "оформить в заметку.md",
+    "обработка разнородных структур данных.md",
+    "возможность для фреймворка.md",
+    "польза полиморфизма.md",
+    "реализация работы с наследниками.md",
+    "изменение поведения во время выполнения.md",
+    "расширяемость.md",
+    "модульность и параллелизм.md",
+    "локализация кода в одном месте.md",
     "files/mynoise-net.mkv",
     "files/mynoise-net.mp3",
     "files/mynoise-net.aac",

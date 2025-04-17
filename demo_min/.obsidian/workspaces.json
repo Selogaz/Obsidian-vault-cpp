@@ -1,0 +1,407 @@
+{
+  "start": {
+    "main": {
+      "id": "0ec04b35a99badaf",
+      "type": "split",
+      "children": [
+        {
+          "id": "eee118d1121558f2",
+          "type": "tabs",
+          "children": [
+            {
+              "id": "318428b7801ca065",
+              "type": "leaf",
+              "pinned": true,
+              "state": {
+                "type": "markdown",
+                "state": {
+                  "file": "home/main.md",
+                  "mode": "source",
+                  "source": false
+                },
+                "pinned": true
+              }
+            }
+          ]
+        }
+      ],
+      "direction": "vertical"
+    },
+    "left": {
+      "id": "f9f6853887658227",
+      "type": "split",
+      "children": [
+        {
+          "id": "18d05f8f3b65567a",
+          "type": "tabs",
+          "children": [
+            {
+              "id": "6b3e03e37f25a135",
+              "type": "leaf",
+              "state": {
+                "type": "recent-files",
+                "state": {}
+              }
+            },
+            {
+              "id": "2ccfbcf1efd082b9",
+              "type": "leaf",
+              "state": {
+                "type": "all-properties",
+                "state": {
+                  "sortOrder": "frequency",
+                  "showSearch": false,
+                  "searchQuery": ""
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "a462fafc50ce401a",
+          "type": "tabs",
+          "children": [
+            {
+              "id": "40df65842181b222",
+              "type": "leaf",
+              "state": {
+                "type": "backlink",
+                "state": {
+                  "file": "home/main.md",
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              }
+            },
+            {
+              "id": "ea5fe5b3292f7007",
+              "type": "leaf",
+              "state": {
+                "type": "outgoing-link",
+                "state": {
+                  "file": "home/main.md",
+                  "linksCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "direction": "horizontal",
+      "width": 293.5
+    },
+    "right": {
+      "id": "c755ff9010d6b7a2",
+      "type": "split",
+      "children": [
+        {
+          "id": "3e4aef25cb89b4a5",
+          "type": "tabs",
+          "dimension": 32.06831119544592,
+          "children": [
+            {
+              "id": "f74449831aea1ce0",
+              "type": "leaf",
+              "state": {
+                "type": "file-properties",
+                "state": {
+                  "file": "home/main.md"
+                }
+              }
+            },
+            {
+              "id": "49de07e9af4ba8d0",
+              "type": "leaf",
+              "state": {
+                "type": "localgraph",
+                "state": {
+                  "file": "home/main.md",
+                  "options": {
+                    "collapse-filter": true,
+                    "search": "",
+                    "localJumps": 1,
+                    "localBacklinks": true,
+                    "localForelinks": true,
+                    "localInterlinks": true,
+                    "showTags": true,
+                    "showAttachments": false,
+                    "hideUnresolved": true,
+                    "collapse-color-groups": true,
+                    "colorGroups": [
+                      {
+                        "query": "tag:#source/article  ",
+                        "color": {
+                          "a": 1,
+                          "rgb": 14701138
+                        }
+                      },
+                      {
+                        "query": "tag:#source/book  ",
+                        "color": {
+                          "a": 1,
+                          "rgb": 14725458
+                        }
+                      },
+                      {
+                        "query": "tag:#source/course  ",
+                        "color": {
+                          "a": 1,
+                          "rgb": 11657298
+                        }
+                      },
+                      {
+                        "query": "tag:#source/movie  ",
+                        "color": {
+                          "a": 1,
+                          "rgb": 5431378
+                        }
+                      },
+                      {
+                        "query": "tag:#source/podcast  ",
+                        "color": {
+                          "a": 1,
+                          "rgb": 5431473
+                        }
+                      },
+                      {
+                        "query": "tag:#source/video  ",
+                        "color": {
+                          "a": 1,
+                          "rgb": 480120
+                        }
+                      },
+                      {
+                        "query": "tag:#system/category  ",
+                        "color": {
+                          "a": 1,
+                          "rgb": 48127
+                        }
+                      },
+                      {
+                        "query": "tag:#system/meta  ",
+                        "color": {
+                          "a": 1,
+                          "rgb": 3093968
+                        }
+                      },
+                      {
+                        "query": "tag:#system/hierarchy  ",
+                        "color": {
+                          "a": 1,
+                          "rgb": 11148254
+                        }
+                      },
+                      {
+                        "query": "tag:#mark/fleeting  ",
+                        "color": {
+                          "a": 1,
+                          "rgb": 13458190
+                        }
+                      },
+                      {
+                        "query": "tag:#note/basic  ",
+                        "color": {
+                          "a": 1,
+                          "rgb": 6052956
+                        }
+                      },
+                      {
+                        "query": "tag:#note/evergreen  ",
+                        "color": {
+                          "a": 1,
+                          "rgb": 8453888
+                        }
+                      },
+                      {
+                        "query": "tag:#mark/quote  ",
+                        "color": {
+                          "a": 1,
+                          "rgb": 1675143
+                        }
+                      },
+                      {
+                        "query": "tag:#project/single  ",
+                        "color": {
+                          "a": 1,
+                          "rgb": 14725458
+                        }
+                      },
+                      {
+                        "query": "tag:#people/creator  ",
+                        "color": {
+                          "a": 1,
+                          "rgb": 9287991
+                        }
+                      },
+                      {
+                        "query": "file:(\"main\")",
+                        "color": {
+                          "a": 1,
+                          "rgb": 16711680
+                        }
+                      },
+                      {
+                        "query": "file:(\"articles\")",
+                        "color": {
+                          "a": 1,
+                          "rgb": 16711680
+                        }
+                      },
+                      {
+                        "query": "file:(\"books\")",
+                        "color": {
+                          "a": 1,
+                          "rgb": 16711680
+                        }
+                      },
+                      {
+                        "query": "file:(\"courses\")",
+                        "color": {
+                          "a": 1,
+                          "rgb": 16711680
+                        }
+                      },
+                      {
+                        "query": "file:(\"movies\")",
+                        "color": {
+                          "a": 1,
+                          "rgb": 16711680
+                        }
+                      },
+                      {
+                        "query": "file:(\"podcasts\")",
+                        "color": {
+                          "a": 1,
+                          "rgb": 16711680
+                        }
+                      },
+                      {
+                        "query": "file:(\"videos\")",
+                        "color": {
+                          "a": 1,
+                          "rgb": 16711680
+                        }
+                      },
+                      {
+                        "query": "file:(\"projects\")",
+                        "color": {
+                          "a": 1,
+                          "rgb": 16711680
+                        }
+                      },
+                      {
+                        "query": "file:(\"sources\")",
+                        "color": {
+                          "a": 1,
+                          "rgb": 16711680
+                        }
+                      },
+                      {
+                        "query": "file:(\"creators\")",
+                        "color": {
+                          "a": 1,
+                          "rgb": 16711680
+                        }
+                      },
+                      {
+                        "query": "file:(\"index\")",
+                        "color": {
+                          "a": 1,
+                          "rgb": 48127
+                        }
+                      },
+                      {
+                        "query": "file:(\"inbox\")",
+                        "color": {
+                          "a": 1,
+                          "rgb": 13458190
+                        }
+                      }
+                    ],
+                    "collapse-display": false,
+                    "showArrow": true,
+                    "textFadeMultiplier": -3,
+                    "nodeSizeMultiplier": 1,
+                    "lineSizeMultiplier": 1,
+                    "collapse-forces": true,
+                    "centerStrength": 0.518713248970312,
+                    "repelStrength": 10,
+                    "linkStrength": 1,
+                    "linkDistance": 167,
+                    "scale": 0.6666666666666666,
+                    "close": true
+                  }
+                }
+              }
+            },
+            {
+              "id": "ccaac3acb786866a",
+              "type": "leaf",
+              "state": {
+                "type": "calendar",
+                "state": {}
+              }
+            }
+          ]
+        },
+        {
+          "id": "ddfa79b1abfce86b",
+          "type": "tabs",
+          "dimension": 67.93168880455408,
+          "children": [
+            {
+              "id": "539b86c257881549",
+              "type": "leaf",
+              "state": {
+                "type": "quiet-outline",
+                "state": {}
+              }
+            },
+            {
+              "id": "639db2246b07f255",
+              "type": "leaf",
+              "state": {
+                "type": "bookmarks",
+                "state": {}
+              }
+            },
+            {
+              "id": "d19265c783b51f44",
+              "type": "leaf",
+              "state": {
+                "type": "search",
+                "state": {
+                  "query": "",
+                  "matchingCase": false,
+                  "explainSearch": false,
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical"
+                }
+              }
+            }
+          ],
+          "currentTab": 1
+        }
+      ],
+      "direction": "horizontal",
+      "width": 300
+    },
+    "left-ribbon": {
+      "hiddenItems": {
+        "graph:Open graph view": false,
+        "code-files:Create Code File": true,
+        "periodic-notes:Open today": true,
+        "workspaces:Manage workspace layouts": true
+      }
+    },
+    "active": "318428b7801ca065",
+    "mtime": "2024-06-17T00:08:06+07:00"
+  }
+}

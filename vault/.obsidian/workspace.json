@@ -1,0 +1,246 @@
+{
+  "main": {
+    "id": "d7120251430d072d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dc653c5106fb9155",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8757fe3e444d0e71",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2025082c7b2e629e",
+    "type": "split",
+    "children": [
+      {
+        "id": "2c71bf99c2f76a39",
+        "type": "tabs",
+        "dimension": 26.325757575757574,
+        "children": [
+          {
+            "id": "b806ce9b2348f6fe",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          },
+          {
+            "id": "f61d2cd9e7c9880c",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c493d6f232ce3228",
+        "type": "tabs",
+        "dimension": 73.67424242424242,
+        "children": [
+          {
+            "id": "3bbc3335d224e54b",
+            "type": "leaf",
+            "state": {
+              "type": "BC-matrix",
+              "state": {},
+              "icon": "BC-trail-icon",
+              "title": "Breadcrumbs Matrix"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 341.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "2266a43ed4d3dbb6",
+    "type": "split",
+    "children": [
+      {
+        "id": "9593e52e72c04bfd",
+        "type": "tabs",
+        "dimension": 26.609848484848484,
+        "children": [
+          {
+            "id": "1ac8c1b2ebef5be4",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "periodic/daily/2025-04-15.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c5d15b09186ff35b",
+        "type": "tabs",
+        "dimension": 73.39015151515152,
+        "children": [
+          {
+            "id": "86f5281329646bd0",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {},
+              "icon": "lines-of-text",
+              "title": "Quiet Outline"
+            }
+          },
+          {
+            "id": "e470d7a0e0639e43",
+            "type": "leaf",
+            "state": {
+              "type": "VIEW_TYPE_LONGFORM_EXPLORER",
+              "state": {},
+              "icon": "longform",
+              "title": "Longform"
+            }
+          },
+          {
+            "id": "4991079be1db926c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "033496683da6e126",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true,
+                "file": "base/notes/другая заметка.md"
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "8ce8c03ec23b8802",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 344.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "templater-obsidian:Templater": false,
+      "canvas:Create new canvas": true,
+      "workspaces:Manage workspace layouts": true,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
+      "periodic-notes:Open today": false,
+      "obsidian42-brat:BRAT": false
+    }
+  },
+  "active": "8757fe3e444d0e71",
+  "lastOpenFiles": [
+    "periodic/daily/2025-04-15.md",
+    "periodic/weekly/2025-W16.md",
+    "periodic/monthly/2025-04.md",
+    "periodic/quarterly/2025-Q2.md",
+    "templates/create/periodic/yearly template.md",
+    "templates/create/periodic/quarterly template.md",
+    "periodic/yearly/2025.md",
+    "templates/create/periodic/weekly template.md",
+    "templates/create/periodic/monthly template.md",
+    "templates/create/periodic/daily template.md",
+    "home/databases/fleeting notes.md",
+    "home/index.md",
+    "home/databases/people.md",
+    "periodic/monthly calendar.md",
+    "periodic/_upcoming.md",
+    "base/notes/2025-03-20 (11-31-28).md",
+    "periodic/_today.md",
+    "periodic/statuses/_inbox.md",
+    "home/databases/high-notes.md",
+    "home/databases/projects.md",
+    "home/databases/sources.md",
+    "base/notes/test note.md",
+    "base/notes/2025-03-19 (22-33-54).md",
+    "periodic/2025.canvas",
+    "base/notes/2025-03-19 (22-31-50).md",
+    "home/help/hotkeys.md",
+    "periodic/daily/2025-03-19.md",
+    "periodic/Eisenhower Matrix.canvas",
+    "periodic/yearly/2025.canvas",
+    "files/адекватное название 2025-02-03.png",
+    "files/2025-02-03 (17-26-36) 2025-02-03.png",
+    "files/мета-заметка 2025-02-03.png",
+    "base/canvases/Eisenhower Matrix.canvas",
+    "files/новая заметка 2025-02-03.png",
+    "files/2025-02-03 (15-32-08) 2025-02-03.png",
+    "base/canvases/какой-то канвас с архитектурой чего-то.canvas",
+    "connecting different audio",
+    "undo",
+    "files/2025-02-01 (13-43-03) 2025-02-01.png",
+    "templates/views/category/structure/view.js~",
+    "base/canvases/Диаграмма распределения пиковых нагрузок.canvas",
+    "base/canvases/Прогноз нагрузки на серверы на основе исторических данных.canvas",
+    "base/canvases/Архитектура для платформы предсказывающую нагрузку на серверы.canvas",
+    "templates/views/category/system/view.js~",
+    "templates/scripts/problem.js~",
+    "templates/scripts/meta.js~",
+    "Платформа для создания и управления сертификатами SSL",
+    "files/пример списка (цвет).png",
+    "files/пример списка (чб).png"
+  ]
+}

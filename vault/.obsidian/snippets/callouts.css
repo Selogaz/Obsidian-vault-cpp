@@ -1,0 +1,428 @@
+.callout {
+  background-color: transparent;
+  border-width: 2px;
+  border: none;
+}
+
+.callout-content {
+  border: solid rgba(var(--callout-color), 0.15);
+  border-width: 3px;
+}
+
+.callout-title {
+  border-bottom: none;
+}
+
+/* my */
+
+.callout[data-callout="my"] {
+  --callout-color: 140, 9, 9;
+  --callout-icon: gem;
+}
+
+/**/
+.callout[data-callout="note"] {
+  --callout-color: 145, 125, 105;
+}
+
+.callout[data-callout="note"] .callout-title {
+  background: rgb(var(--callout-color), 0.03);
+}
+
+/**/
+.callout[data-callout="abstract"] {
+  --callout-icon: loader;
+  --callout-color: 34, 152, 225;
+}
+
+.callout[data-callout="summary"] {
+  --callout-icon: align-justify;
+  --callout-color: 255, 221, 88;
+}
+
+.callout[data-callout="tldr"] {
+  --callout-icon: clock-4;
+  --callout-color: 240, 180, 225;
+}
+
+/**/
+.callout[data-callout="tldr"] .callout-title {
+  text-transform: uppercase;
+}
+
+.callout[data-callout="info"] {
+  --callout-color: 0, 171, 197;
+}
+
+.callout[data-callout="todo"] {
+  --callout-icon: check-square;
+  --callout-color: 0, 171, 197;
+}
+
+/**/
+.callout[data-callout="tip"] {
+  --callout-icon: clover;
+  --callout-color: 70, 206, 185;
+}
+
+.callout[data-callout="hint"] {
+  --callout-icon: search;
+  --callout-color: 70, 206, 185;
+}
+
+.callout[data-callout="important"] {
+  --callout-icon: asterisk;
+  --callout-color: 244, 87, 93;
+}
+
+/**/
+.callout[data-callout="success"] {
+  --callout-icon: flag;
+  --callout-color: 100, 175, 255;
+}
+
+.callout[data-callout="check"] {
+  --callout-icon: check;
+  --callout-color: 0, 200, 83;
+}
+
+.callout[data-callout="done"] {
+  --callout-icon: check;
+  --callout-color: 0, 200, 83;
+}
+
+/**/
+.callout[data-callout="question"] {
+  --callout-color: 130, 190, 235;
+}
+
+.callout[data-callout="help"] {
+  --callout-color: 150, 95, 255;
+}
+
+.callout[data-callout="faq"] {
+  --callout-color: 130, 190, 235;
+}
+
+/**/
+.callout[data-callout="warning"] {
+  --callout-color: 255, 161, 32;
+}
+
+.callout[data-callout="caution"] {
+  --callout-color: 255, 161, 32;
+}
+
+.callout[data-callout="attention"] {
+  --callout-color: 255, 161, 32;
+}
+
+/**/
+.callout[data-callout="failure"] {
+  --callout-color: 226, 72, 86;
+}
+
+.callout[data-callout="fail"] {
+  --callout-color: 226, 72, 86;
+}
+
+.callout[data-callout="missing"] {
+  --callout-color: 226, 72, 86;
+}
+
+/**/
+.callout[data-callout="danger"] {
+  --callout-color: 226, 72, 86;
+}
+
+.callout[data-callout="error"] {
+  --callout-icon: alert-circle;
+  --callout-color: 226, 72, 86;
+}
+
+/**/
+.callout[data-callout="bug"] {
+  --callout-color: 206, 91, 124;
+}
+
+/**/
+.callout[data-callout="example"] {
+  --callout-color: 173, 102, 234;
+}
+
+/**/
+.callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
+}
+
+.callout[data-callout="cite"] {
+  --callout-color: 158, 158, 158;
+}
+
+.callout[data-callout="quote"] .callout-content p:first-child {
+  font-style: italic;
+}
+
+/* .callout[data-callout="quote"] .callout-content p:first-child::before { */
+/*   content: "«"; */
+/* } */
+/* .callout[data-callout="quote"] .callout-content p:first-child::after { */
+/*   content: "»"; */
+/* } */
+
+/**/
+.callout[data-callout="link"] {
+  --callout-icon: link;
+  --callout-color: 158, 158, 158;
+}
+
+.callout[data-callout="mind"],
+.callout[data-callout="mindmap"] {
+  --callout-icon: brain;
+  --callout-color: 87, 28, 255;
+}
+
+/* <<< Sidenote Callouts */
+.callout[data-callout*="sidenote"] {
+  --callout-icon: lightbulb;
+  --callout-color: 255, 210, 107;
+  float: right;
+  max-width: calc(
+    var(--file-line-width) * var(--sidenote-callout-width) * 0.01
+  );
+  margin: 4px 0 4px 7px;
+  font-size: 90%;
+  line-height: 1.3em;
+}
+
+.sidenote-callout-outdent .callout[data-callout$="sidenote"] {
+  margin-right: -30px;
+}
+
+.callout[data-callout*="sidenote"] .callout-title {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+body .callout {
+  clear: right;
+}
+
+/* <<< Config Callout */
+.callout.callout.callout[data-callout*="config"] {
+  --callout-icon: settings;
+  --callout-color: 202, 164, 255;
+}
+
+.callout[data-callout*="config"] .task-list-item {
+  margin-inline-start: 3px;
+  color: var(--text-normal);
+  text-decoration: none;
+}
+
+.callout[data-callout*="config"] .task-list-item .task-list-item-checkbox {
+  margin-bottom: -3px;
+}
+
+.callout[data-callout*="config"]
+  .task-list-item
+  .task-list-item-checkbox::after {
+  display: none;
+}
+
+/* attachments */
+.callout[data-callout^="attachment"],
+.callout[data-callout^="file"] {
+  --callout-icon: paperclip;
+  --callout-color: 255, 90, 143;
+}
+
+/* URLs */
+.callout[data-callout^="URL" i] {
+  --callout-icon: link;
+  --callout-color: 192, 192, 192;
+}
+
+.callout[data-callout^="URL" i] .callout-title {
+  text-transform: uppercase;
+}
+
+/* "Warn" should work the same as "Warning" */
+.callout[data-callout^="warn"] {
+  --callout-icon: lucide-alert-triangle;
+  --callout-color: var(--callout-warning);
+}
+
+/*Kanban*/
+.callout.callout[data-callout~="kanban"] {
+  --callout-color: unset;
+  --callout-icon: layout-dashboard;
+  --callout-padding: 0;
+  --item-outline: 0 0 0 1px var(--outline, var(--background-modifier-border));
+  --lane-width: 250px;
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  width: auto;
+}
+.callout.callout[data-callout~="kanban"] .callout-title {
+  justify-content: center;
+  background: var(--code-bg, var(--background-primary));
+  padding: 5px;
+  border-radius: var(--radius-s);
+}
+.callout.callout[data-callout~="kanban"] .callout-title-inner {
+  flex: unset;
+}
+.callout.callout[data-callout~="kanban"] .callout-content {
+  padding: 0;
+}
+.callout.callout[data-callout~="kanban"] ul li::marker,
+.callout.callout[data-callout~="kanban"] ul li::before,
+.callout.callout[data-callout~="kanban"] .list-bullet,
+.callout.callout[data-callout~="kanban"] ul::before,
+.callout.callout[data-callout~="kanban"]
+  :is(ul, ul ul)
+  .list-collapse-indicator {
+  list-style-type: none;
+  color: transparent;
+  display: none !important;
+}
+.callout.callout[data-callout~="kanban"] ul {
+  display: flex;
+  margin-block-start: 5px;
+  padding-inline-start: 0;
+  text-align: center;
+  overflow: auto;
+}
+.callout.callout[data-callout~="kanban"] ul.list-view-ul {
+  margin-inline-start: unset;
+}
+.callout.callout[data-callout~="kanban"] ul li {
+  min-width: var(--lane-width);
+  border: 0;
+  padding: 10px 20px 5px 20px;
+  margin: 5px 1px;
+  background: var(--note, var(--background-primary-alt));
+  border-radius: var(--radius-s);
+  box-shadow: var(--item-outline), var(--shadow-s);
+}
+.callout.callout[data-callout~="kanban"] ul ul {
+  flex-direction: column;
+  text-align: left;
+  overflow: unset;
+}
+.callout.callout[data-callout~="kanban"] ul ul li {
+  min-width: calc(var(--lane-width) / 2);
+  padding: 5px;
+  box-shadow: var(--item-outline), var(--shadow-s);
+  background: var(--code-bg, var(--background-primary));
+}
+.callout.callout[data-callout~="kanban"] ul ul li :is(img, .internal-embed) {
+  margin-bottom: -6px;
+}
+.callout.callout[data-callout~="kanban"]
+  ul.contains-task-list
+  .task-list-item-checkbox {
+  margin-inline-start: 0;
+}
+.callout.callout[data-callout~="kanban"] .task-list-item-checkbox {
+  cursor: default;
+}
+.callout.callout[data-callout~="kanban"] :is(ul, ol) > li p:first-of-type {
+  margin-block-start: 0;
+}
+
+/* contacts */
+.callout[data-callout="contacts"] {
+  --callout-color: 246, 189, 96;
+  --callout-icon: lucide-users;
+}
+
+/* documentation */
+.callout[data-callout="documentation"] {
+  --callout-color: 132, 165, 156;
+  --callout-icon: lucide-scroll;
+}
+
+/* idea */
+.callout[data-callout="idea"] {
+  --callout-color: 247, 141, 25;
+  --callout-icon: lucide-lightbulb;
+}
+
+/* image */
+.callout[data-callout="image"],
+.callout[data-callout="img"],
+.callout[data-callout="picture"] {
+  --callout-color: 247, 141, 25;
+  --callout-icon: lucide-image;
+}
+
+.callout[data-callout="image"],
+.callout[data-callout="img"],
+.callout[data-callout="picture"] {
+  background-color: transparent;
+}
+
+/* code */
+.callout[data-callout="code"] {
+  --callout-color: 24, 26, 27;
+  --callout-icon: lucide-code;
+}
+
+/* AI generated */
+.callout[data-callout="ai"],
+.callout[data-callout="bot"] {
+  --callout-color: 127, 44, 165;
+  --callout-icon: lucide-bot;
+}
+
+/* TOC */
+.callout[data-callout="TOC"],
+.callout[data-callout="toc"] {
+  --callout-color: 248, 248, 248;
+  --callout-icon: lucide-list-tree;
+}
+
+/* annotation */
+
+/* Red */
+.callout[data-callout-metadata="#ff6666"] {
+  --callout-color: 205, 52, 92;
+}
+
+/* Green */
+.callout[data-callout-metadata="#5fb236"] {
+  --callout-color: 114, 162, 100;
+}
+
+/* Blue */
+.callout[data-callout-metadata="#2ea8e5"] {
+  --callout-color: 52, 82, 255;
+}
+
+/* Purple */
+.callout[data-callout-metadata="#a28ae5"] {
+  --callout-color: 157, 131, 242;
+}
+
+/* Orange */
+.callout[data-callout-metadata="#f19837"] {
+  --callout-color: 244, 164, 96;
+}
+
+/* Yellow */
+.callout[data-callout-metadata="#ffd400"] {
+  --callout-color: 255, 236, 0;
+}
+
+/* Magenta */
+.callout[data-callout-metadata="#e56eee"] {
+  --callout-color: 255, 33, 255;
+}
+
+/* Gray */
+.callout[data-callout-metadata="#aaaaaa"] {
+  --callout-color: 152, 152, 152;
+}

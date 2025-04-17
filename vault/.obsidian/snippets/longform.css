@@ -1,0 +1,53 @@
+/* move icons */
+
+.current-draft-path::before {
+  left: -7px;
+  top: -3px;
+}
+
+#project-picker-container
+  .current-draft-path.current-draft-path.current-draft-path.current-draft-path.current-draft-path {
+  bottom: -80%;
+}
+
+.workspace-leaf-content[data-type="VIEW_TYPE_LONGFORM_EXPLORER"]
+  .tab-list
+  button:first-child:before {
+  position: relative;
+  left: 6px;
+  top: 0px;
+}
+
+button:nth-child(2):before {
+  position: relative;
+  top: 0px;
+  left: 6px;
+}
+
+.workspace-leaf-content[data-type="VIEW_TYPE_LONGFORM_EXPLORER"]
+  .tab-list
+  button:nth-child(3):before {
+  position: relative;
+  top: 0px;
+  left: 5px;
+}
+
+/* fix font weight */
+
+#scene-list .longform-scene-number {
+  font-weight: normal;
+}
+
+/* scene indent */
+
+#scene-list .scene-container {
+  --longform-indent-size: 1.4em;
+}
+
+/* statuses */
+
+[data-scene-status]::after {
+  content: attr(data-scene-status);
+  opacity: 0.3;
+  padding: 0 2px 0 0;
+}

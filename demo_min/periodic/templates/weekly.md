@@ -1,0 +1,16 @@
+<% "---" %>
+tags:
+  - periodic/week
+reviewed: false
+<% "---" %>
+
+
+## Что я понял/узнал за неделю?
+
+> [!summary]
+> summary:: <% tp.file.cursor(0) %>
+
+
+# Что стоит сделать на этой неделе?
+- [ ]
+

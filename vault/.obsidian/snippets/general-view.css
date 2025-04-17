@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Color+Emoji&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  --font-text-theme: "Rubik", "Noto color Emoji";
+  --font-editor-theme: "Rubik", "Noto color Emoji";
+  --font-monospace-theme: "Roboto Mono", "Noto color Emoji";
+  --font-interface-theme: "Inter", "Noto color Emoji";
+
+  /* heading font fix*/
+  /* linux */
+  /* --font-heading-theme: "Liberation Serif", "Noto Color Emoji" !important; */
+  /* windows */
+  /* --font-heading-theme: "Times New Roman", "Noto Color Emoji" !important; */
+  /* universal */
+  --font-heading-theme: "Tinos", "Noto Color Emoji" !important;
+}
+
+/* all clicable */
+
+* {
+  user-select: all;
+  -webkit-user-select: text;
+}
+
+/* disable status bar */
+
+.status-bar {
+  display: none;
+}
+
+/* hide scrollbar */
+
+body:not(.native-scrollbars) ::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide block IDs on inactive lines */
+.cm-blockid {
+  opacity: 0;
+}
+/* Show block IDs on active lines */
+.cm-active .cm-blockid {
+  opacity: 1;
+}
+
+/* hide vault manager */
+
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
+  display: none;
+}
+
+/**/
+
+.theme-dark.theme-dark {
+  --link-color: rgb(84, 200, 208);
+  --link-unresolved-color: rgb(221, 51, 51);
+  --link-external-color: rgb(185, 125, 248);
+  --bold-color: rgb(209, 63, 141);
+  --italic-color: rgb(201, 87, 148);
+  --code-background: #1f1f1f;
+  --titlebar-background-focused: var(--titlebar-background);
+}
+
+.cm-link .cm-underline {
+  color: var(--link-external-color);
+}
+
+.frontmatter.language-yaml .atrule,
+.cm-atom.cm-hmd-frontmatter {
+  color: #f39b35;
+}
+
+.cm-def.cm-hmd-frontmatter.cm-hmd-frontmatter {
+  color: #98e342;
+}
+
+.cm-hmd-internal-link .cm-underline.cm-underline,
+.markdown-preview-view
+  .internal-link:not(.multi-select-pill, .metadata-link-inner),
+.metadata-container .internal-link,
+.markdown-rendered .internal-link,
+body:not(.classic-inline-backlinks) .embedded-backlinks .tree-item-inner {
+  text-decoration: none;
+}
+
+.mod-root .workspace-tab-header-container {
+  padding-left: 10px;
+}
+
+/* datepicker */
+
+.datepicker-widget {
+  background-color: transparent;
+}
+
+/* settings */
+
+.modal.mod-settings {
+  top: 20px;
+}
+
+.modal {
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.modal-container.mod-dim .modal {
+  box-shadow: none;
+}
+
+/* delete top spaces */
+
+.mod-root .markdown-reading-view .markdown-preview-view,
+.mod-root
+  .view-content
+  > .markdown-source-view.mod-cm6
+  > .cm-editor
+  > .cm-scroller {
+  padding-top: 0px;
+}
+
+/* another quick swither */
+.prompt,
+.prompt.another-quick-switcher__floating-prompt,
+.float-search-modal,
+.modal.task-search-modal {
+  position: absolute;
+  top: 42px !important;
+  left: 3px !important;
+  /* right: 3px !important; */
+  /* left: 1347px !important; */
+  min-width: 500px;
+  max-width: 570px;
+  max-height: 96%;
+  border-radius: 0;
+  border-width: 2px;
+  border-color: #383838;
+  box-shadow: none;
+}
+
+.another-quick-switcher__custom__item__title {
+  font-weight: normal;
+}
+
+.float-search-modal {
+  min-height: 96%;
+}
+
+.float-search-modal-instructions {
+  display: none;
+}
+
+.prompt .suggestion-item,
+.float-search-modal {
+  font-size: 100%;
+  padding: 3px;
+}
+
+input[type="text"][type]:not(.metadata-input, .metadata-property-key-input) {
+  border-radius: 0;
+}
+
+.theme-dark .modal-bg {
+  background-color: transparent;
+}
+
+.another-quick-switcher__status__default-input,
+.another-quick-switcher__status__search-command,
+.another-quick-switcher__header__auto-preview-icon,
+.another-quick-switcher__command_buttons,
+.another-quick-switcher__starred_item
+  .another-quick-switcher__item__entry:before {
+  display: none;
+}
+
+body .another-quick-switcher__status__count-input {
+  top: 1rem;
+}
+
+.another-quick-switcher__hit_word {
+  color: #ff47a9 !important;
+}
+
+/* hide label command palette */
+.better-command-palette .better-command-palette-title {
+  display: none;
+}
+
+/* editing toolbar fix */
+
+body:not(.normal-header-bar) #cMenuToolbarModalBar.top {
+  margin-right: 0em;
+}
+
+/* border radius for tabs */
+.workspace-tab-header,
+.workspace-tab-header-inner {
+  border-radius: 0.2rem;
+}
+
+/* recent files */
+.recent-files-file,
+.recent-files-title {
+  font-family: var(--font-interface-theme);
+}
+
+/* fix graph analysis */
+.scrollContainer {
+  padding: 0px 0px 0px 0px;
+}
+
+/* fix better search view */
+.better-search-views-file-match.markdown-rendered > *,
+.better-search-views-file-match.markdown-rendered > blockquote > * {
+  margin: 10px;
+}
+
+/* fix backlinks search */
+.embedded-backlinks .search-input-container input {
+  width: 90%;
+  transform: translate(0px, -2px);
+  padding-inline-start: 0.8em;
+}
+
+/* fix floating search */
+.float-search-modal .modal-header {
+  display: none;
+}
+
+/* table center */
+.markdown-preview-view table,
+.is-live-preview table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* image border */
+.markdown-source-view.mod-cm6 .internal-embed > img,
+.markdown-preview-view .internal-embed > img {
+  border: 1px solid #404040;
+  border-radius: 2px;
+}
+
+/* math block border */
+.markdown-source-view.mod-cm6 .math-block > mjx-container,
+.markdown-preview-view .math-block > mjx-container {
+  border: 1px solid #404040;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+/* fix modal */
+.modal-content h1 {
+  margin-top: 0px;
+}

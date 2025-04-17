@@ -1,0 +1,36 @@
+#calendar-container {
+  --color-background-heading: rgba(0, 0, 0, 0.1);
+  --color-background-weekend: rgba(0, 0, 0, 0.1);
+  --color-background-weeknum: rgba(0, 0, 0, 0.1);
+
+  margin-top: 10px;
+}
+
+#calendar-container .today {
+  color: var(--text-accent);
+  border: solid;
+  border-color: var(--text-accent);
+  border-width: 2px;
+}
+
+#calendar-container .reset-button {
+  margin-top: 3px;
+}
+
+#calendar-container .active {
+  border: solid;
+  border-color: var(--text-accent);
+  border-width: 1px;
+}
+
+#calendar-container .hollow {
+  display: none;
+}
+
+#calendar-container [data-reviewed~="false"] {
+  background: rgba(255, 0, 0, 0.05);
+}
+
+#calendar-container [data-reviewed~="true"] {
+  background: rgba(0, 255, 0, 0.05);
+}

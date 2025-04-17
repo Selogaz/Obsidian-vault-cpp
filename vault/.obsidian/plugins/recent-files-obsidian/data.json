@@ -1,0 +1,396 @@
+{
+  "recentFiles": [
+    {
+      "basename": "yearly template",
+      "path": "templates/create/periodic/yearly template.md"
+    },
+    {
+      "basename": "quarterly template",
+      "path": "templates/create/periodic/quarterly template.md"
+    },
+    {
+      "basename": "2025",
+      "path": "periodic/yearly/2025.md"
+    },
+    {
+      "basename": "weekly template",
+      "path": "templates/create/periodic/weekly template.md"
+    },
+    {
+      "basename": "monthly template",
+      "path": "templates/create/periodic/monthly template.md"
+    },
+    {
+      "basename": "daily template",
+      "path": "templates/create/periodic/daily template.md"
+    },
+    {
+      "basename": "fleeting notes",
+      "path": "home/databases/fleeting notes.md"
+    },
+    {
+      "basename": "index",
+      "path": "home/index.md"
+    },
+    {
+      "basename": "people",
+      "path": "home/databases/people.md"
+    },
+    {
+      "basename": "monthly calendar",
+      "path": "periodic/monthly calendar.md"
+    },
+    {
+      "basename": "_upcoming",
+      "path": "periodic/_upcoming.md"
+    },
+    {
+      "basename": "_today",
+      "path": "periodic/_today.md"
+    },
+    {
+      "basename": "_inbox",
+      "path": "periodic/statuses/_inbox.md"
+    },
+    {
+      "basename": "high-notes",
+      "path": "home/databases/high-notes.md"
+    },
+    {
+      "basename": "projects",
+      "path": "home/databases/projects.md"
+    },
+    {
+      "basename": "sources",
+      "path": "home/databases/sources.md"
+    },
+    {
+      "basename": "2025",
+      "path": "periodic/2025.canvas"
+    },
+    {
+      "basename": "hotkeys",
+      "path": "home/help/hotkeys.md"
+    },
+    {
+      "basename": "_regular",
+      "path": "periodic/statuses/_regular.md"
+    },
+    {
+      "basename": "Eisenhower Matrix",
+      "path": "periodic/Eisenhower Matrix.canvas"
+    },
+    {
+      "basename": "_priority",
+      "path": "periodic/_priority.md"
+    },
+    {
+      "basename": "_all tasks",
+      "path": "periodic/_all tasks.md"
+    },
+    {
+      "basename": "prefixes",
+      "path": "home/prefixes.md"
+    },
+    {
+      "basename": "zotero template",
+      "path": "templates/create/sources/zotero template.md"
+    },
+    {
+      "basename": "zotero with annotation template",
+      "path": "templates/create/sources/zotero with annotation template.md"
+    },
+    {
+      "basename": "_waiting_for",
+      "path": "periodic/statuses/_waiting_for.md"
+    },
+    {
+      "basename": "_one-off",
+      "path": "periodic/statuses/_one-off.md"
+    },
+    {
+      "basename": "_people",
+      "path": "periodic/_people.md"
+    },
+    {
+      "basename": "onStartup",
+      "path": "templates/onStartup.md"
+    },
+    {
+      "basename": "SocialPulse",
+      "path": "base/productions/SocialPulse.md"
+    },
+    {
+      "basename": "Ольга Фёдорова",
+      "path": "base/contacts/Ольга Фёдорова.md"
+    },
+    {
+      "basename": "Попасть на стажировку в Yandex",
+      "path": "projects/Попасть на стажировку в Yandex.md"
+    },
+    {
+      "basename": "development",
+      "path": "base/categories/development.md"
+    },
+    {
+      "basename": "_reference",
+      "path": "periodic/statuses/_reference.md"
+    },
+    {
+      "basename": "_bioinformatics",
+      "path": "periodic/categories/_bioinformatics.md"
+    },
+    {
+      "basename": "2025-02-07",
+      "path": "periodic/daily/2025-02-07.md"
+    },
+    {
+      "basename": "bioinformatics",
+      "path": "base/categories/bioinformatics.md"
+    },
+    {
+      "basename": "Лекции по математическим моделям в биологии",
+      "path": "sources/Лекции по математическим моделям в биологии.md"
+    },
+    {
+      "basename": "Практическая биоинформатика - conspectuses",
+      "path": "base/additions/Практическая биоинформатика - conspectuses.md"
+    },
+    {
+      "basename": "Практическая биоинформатика",
+      "path": "sources/Практическая биоинформатика.md"
+    },
+    {
+      "basename": "Практическая биоинформатика - practice",
+      "path": "base/additions/Практическая биоинформатика - practice.md"
+    },
+    {
+      "basename": "2025-02-03",
+      "path": "periodic/daily/2025-02-03.md"
+    },
+    {
+      "basename": "design patterns",
+      "path": "base/_hierarchy/design patterns.md"
+    },
+    {
+      "basename": "game development creating different character types",
+      "path": "base/notes/game development creating different character types.md"
+    },
+    {
+      "basename": "Vascular Health",
+      "path": "sources/Vascular Health.md"
+    },
+    {
+      "basename": "meal preparation system for custom meals",
+      "path": "base/notes/meal preparation system for custom meals.md"
+    },
+    {
+      "basename": "Modular Web Design",
+      "path": "sources/Modular Web Design.md"
+    },
+    {
+      "basename": "entrepreneurship",
+      "path": "base/categories/entrepreneurship.md"
+    },
+    {
+      "basename": "2025-02-04",
+      "path": "periodic/daily/2025-02-04.md"
+    },
+    {
+      "basename": "house construction process with customizable layouts and materials",
+      "path": "base/notes/house construction process with customizable layouts and materials.md"
+    },
+    {
+      "basename": "Eisenhower Matrix",
+      "path": "base/canvases/Eisenhower Matrix.canvas"
+    },
+    {
+      "basename": "2025-02-09",
+      "path": "periodic/daily/2025-02-09.md"
+    },
+    {
+      "basename": "2025-02-08",
+      "path": "periodic/daily/2025-02-08.md"
+    },
+    {
+      "basename": "структурирование с помощью системных заметок",
+      "path": "base/notes/структурирование с помощью системных заметок.md"
+    },
+    {
+      "basename": "UI-toolkit creating different themes",
+      "path": "base/notes/UI-toolkit creating different themes.md"
+    },
+    {
+      "basename": "Инструменты для автоматизации процесса найма сотрудников",
+      "path": "projects/Инструменты для автоматизации процесса найма сотрудников.md"
+    },
+    {
+      "basename": "graphic design app cloning and modifying shapes",
+      "path": "base/notes/graphic design app cloning and modifying shapes.md"
+    },
+    {
+      "basename": "EventScheduler (2025-02-01) - meeting",
+      "path": "base/additions/EventScheduler (2025-02-01) - meeting.md"
+    },
+    {
+      "basename": "Аналитика социальных медиа в реальном времени",
+      "path": "projects/Аналитика социальных медиа в реальном времени.md"
+    },
+    {
+      "basename": "заметка",
+      "path": "base/notes/заметка.md"
+    },
+    {
+      "basename": "другая заметка",
+      "path": "base/notes/другая заметка.md"
+    },
+    {
+      "basename": "_statuses",
+      "path": "templates/insert/_statuses.md"
+    },
+    {
+      "basename": "list of tags (projects)",
+      "path": "templates/lists/list of tags (projects).md"
+    },
+    {
+      "basename": "list of tags (notes)",
+      "path": "templates/lists/list of tags (notes).md"
+    },
+    {
+      "basename": "list of tags (system)",
+      "path": "templates/lists/list of tags (system).md"
+    },
+    {
+      "basename": "periodic summary",
+      "path": "home/periodic summary.md"
+    },
+    {
+      "basename": "Ozon",
+      "path": "base/_meta-notes/Ozon.md"
+    },
+    {
+      "basename": "мета-заметка",
+      "path": "base/notes/мета-заметка.md"
+    },
+    {
+      "basename": "create-calendar",
+      "path": "templates/insert/create-calendar.md"
+    },
+    {
+      "basename": "Дмитрий Коваленко",
+      "path": "base/contacts/Дмитрий Коваленко.md"
+    },
+    {
+      "basename": "Ольга Фёдорова (2025-01-25) - meeting",
+      "path": "base/additions/Ольга Фёдорова (2025-01-25) - meeting.md"
+    },
+    {
+      "basename": "Ольга Фёдорова (2025-01-30) - meeting",
+      "path": "base/additions/Ольга Фёдорова (2025-01-30) - meeting.md"
+    },
+    {
+      "basename": "DataDriven Decisions",
+      "path": "projects/DataDriven Decisions.md"
+    },
+    {
+      "basename": "CI and CD",
+      "path": "base/_meta-notes/CI and CD.md"
+    },
+    {
+      "basename": "deployment automation",
+      "path": "base/_problems/deployment automation.md"
+    },
+    {
+      "basename": "Ansible",
+      "path": "base/_hierarchy/Ansible.md"
+    },
+    {
+      "basename": "IDE",
+      "path": "base/_meta-notes/IDE.md"
+    },
+    {
+      "basename": "Design Systems Handbook",
+      "path": "sources/Design Systems Handbook.md"
+    },
+    {
+      "basename": "prototype pattern",
+      "path": "base/notes/prototype pattern.md"
+    },
+    {
+      "basename": "document editor duplicating templates for new documents",
+      "path": "base/notes/document editor duplicating templates for new documents.md"
+    },
+    {
+      "basename": "builder pattern",
+      "path": "base/notes/builder pattern.md"
+    },
+    {
+      "basename": "car manufacturing process allowing customization of features",
+      "path": "base/notes/car manufacturing process allowing customization of features.md"
+    },
+    {
+      "basename": "logistics application creating transport types",
+      "path": "base/notes/logistics application creating transport types.md"
+    },
+    {
+      "basename": "factory method pattern",
+      "path": "base/notes/factory method pattern.md"
+    },
+    {
+      "basename": "Kubernetes",
+      "path": "base/_hierarchy/Kubernetes.md"
+    },
+    {
+      "basename": "Grafana",
+      "path": "base/_hierarchy/Grafana.md"
+    },
+    {
+      "basename": "Docker",
+      "path": "base/_hierarchy/Docker.md"
+    },
+    {
+      "basename": "Инструмент для анализа угроз и инцидентов безопасности (2025-01-30) - meeting",
+      "path": "base/additions/Инструмент для анализа угроз и инцидентов безопасности (2025-01-30) - meeting.md"
+    },
+    {
+      "basename": "EventScheduler",
+      "path": "projects/EventScheduler.md"
+    },
+    {
+      "basename": "UX and UI",
+      "path": "base/_meta-notes/UX and UI.md"
+    },
+    {
+      "basename": "Angular",
+      "path": "base/_hierarchy/Angular.md"
+    },
+    {
+      "basename": "databases",
+      "path": "base/_meta-notes/databases.md"
+    },
+    {
+      "basename": "work",
+      "path": "base/categories/work.md"
+    },
+    {
+      "basename": "VirtualGarden",
+      "path": "projects/VirtualGarden.md"
+    },
+    {
+      "basename": "Принципы эффективного менеджмента в компаниях",
+      "path": "sources/Принципы эффективного менеджмента в компаниях.md"
+    },
+    {
+      "basename": "devops",
+      "path": "base/_hierarchy/devops.md"
+    }
+  ],
+  "omittedPaths": [
+    "\\.png$",
+    "excalibrain"
+  ],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false,
+  "maxLength": 100
+}

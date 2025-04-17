@@ -1,0 +1,110 @@
+{
+  "files": [
+    {
+      "useMoment": false,
+      "file": "home/databases/categories.md"
+    },
+    {
+      "useMoment": false,
+      "file": "home/databases/fleeting notes.md"
+    },
+    {
+      "useMoment": false,
+      "file": "home/databases/projects.md"
+    },
+    {
+      "useMoment": false,
+      "file": "periodic/_tasks.md"
+    },
+    {
+      "useMoment": false,
+      "file": "home/databases/sources.md"
+    },
+    {
+      "useMoment": false,
+      "file": "periodic/statuses/_inbox.md"
+    },
+    {
+      "useMoment": false,
+      "file": "periodic/_today.md"
+    },
+    {
+      "useMoment": false,
+      "file": "periodic/_upcoming.md"
+    },
+    {
+      "useMoment": false,
+      "file": "periodic/statuses/_idea.md"
+    },
+    {
+      "useMoment": false,
+      "file": "periodic/statuses/_next_action.md"
+    },
+    {
+      "useMoment": false,
+      "file": "periodic/statuses/_one-off.md"
+    },
+    {
+      "useMoment": false,
+      "file": "periodic/statuses/_multistep.md"
+    },
+    {
+      "useMoment": false,
+      "file": "periodic/statuses/_someday.md"
+    },
+    {
+      "useMoment": false,
+      "file": "periodic/statuses/_reference.md"
+    },
+    {
+      "useMoment": false,
+      "file": "periodic/statuses/_waiting_for.md"
+    },
+    {
+      "useMoment": false,
+      "file": "periodic/statuses/_regular.md"
+    },
+    {
+      "useMoment": false,
+      "file": "periodic/_all tasks.md"
+    },
+    {
+      "useMoment": false,
+      "file": "periodic/monthly calendar.md"
+    },
+    {
+      "useMoment": false,
+      "file": "home/databases/people.md"
+    },
+    {
+      "useMoment": false,
+      "file": "home/prefixes.md"
+    },
+    {
+      "useMoment": false,
+      "file": "periodic/_priority.md"
+    },
+    {
+      "useMoment": false,
+      "file": "home/index.md"
+    },
+    {
+      "useMoment": false,
+      "file": "home/databases/high-notes.md"
+    },
+    {
+      "useMoment": false,
+      "file": "periodic/_people.md"
+    },
+    {
+      "useMoment": false,
+      "file": "home/help/hotkeys.md"
+    },
+    {
+      "useMoment": false,
+      "file": "periodic/2025.canvas"
+    }
+  ],
+  "useExistingPane": true,
+  "useHoverEditor": false
+}

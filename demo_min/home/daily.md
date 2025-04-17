@@ -1,0 +1,51 @@
+alt+p (periodic)
+
+> [!Check]+ Todo
+> ```dataview
+> TASK
+> FROM "periodic/daily"
+> WHERE !completed
+> GROUP BY file.link
+> ```
+
+> [!summary]- 🦄 Unique days and [[all days]]
+> ```dataviewjs
+> // https://www.reddit.com/r/ObsidianMD/comments/13nkcuq/table_of_contents_toc_for_a_set_of_notes_using/
+> let p = dv
+>   .pages('"periodic/daily"')
+>   .where((p) => p.file.name != dv.current().file.name)
+>   .sort((p) => p.file.name, 'desc')
+>   .forEach((p) => {
+>     const cache = this.app.metadataCache.getCache(p.file.path); 
+>     if (cache) {
+>       const headings = cache.headings;
+>       if (headings) {
+>         dv.header(2, p.file.name);
+>         const filteredHeadings = headings
+>           .slice(0)
+>           .filter((h) => h.level <= 6)
+>           .map((h) => {
+>             let indent = "\t".repeat(h.level - 1);
+>             let linkyHeading =
+>               "[[" + p.file.name + "#" + h.heading + "|" + h.heading + "]]";
+> 
+>             return indent + "- " + linkyHeading;
+>           })
+>           .join("\n");
+> 
+>         dv.el("div", filteredHeadings);
+>       }
+>     }
+>   });
+> ```
+
+___
+____
+
+> [!Done]- Done
+> ```dataview
+> TASK
+> FROM "periodic/daily"
+> WHERE completed
+> GROUP BY file.link
+> ```

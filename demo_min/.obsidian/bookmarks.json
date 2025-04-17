@@ -1,0 +1,384 @@
+{
+  "items": [
+    {
+      "type": "group",
+      "ctime": 1695708303928,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1695708323700,
+          "path": "home/main.md",
+          "title": "➡️ main"
+        },
+        {
+          "type": "file",
+          "ctime": 1695709819603,
+          "path": "home/index.md",
+          "title": "🗺️ index"
+        }
+      ],
+      "title": "🔻🏠 HOME"
+    },
+    {
+      "type": "group",
+      "ctime": 1718545359978,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1695708378459,
+          "path": "home/daily.md",
+          "title": "📅 daily journal"
+        },
+        {
+          "type": "file",
+          "ctime": 1695708429611,
+          "path": "home/inbox.md",
+          "title": "📥 inbox"
+        },
+        {
+          "type": "group",
+          "ctime": 1718550373207,
+          "items": [
+            {
+              "type": "search",
+              "ctime": 1718550401846,
+              "query": "task:",
+              "title": "all"
+            },
+            {
+              "type": "search",
+              "ctime": 1718550434615,
+              "query": "task-todo:",
+              "title": "todo"
+            },
+            {
+              "type": "search",
+              "ctime": 1718550457352,
+              "query": "task-done:",
+              "title": "done"
+            }
+          ],
+          "title": "🔻 task search"
+        }
+      ],
+      "title": "🔻📅 TEMP"
+    },
+    {
+      "type": "group",
+      "ctime": 1718545489951,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1695708480194,
+          "path": "home/projects.md",
+          "title": "🏢 projects"
+        }
+      ],
+      "title": "🔻👓 PROJECTS"
+    },
+    {
+      "type": "group",
+      "ctime": 1695708448566,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1695708545458,
+          "path": "home/sources.md",
+          "title": "🗄️ sources"
+        },
+        {
+          "type": "file",
+          "ctime": 1695709633342,
+          "path": "home/creators.md",
+          "title": "👨‍🎨 creators"
+        },
+        {
+          "type": "group",
+          "ctime": 1695708567141,
+          "items": [
+            {
+              "type": "file",
+              "ctime": 1695708587073,
+              "path": "home/articles.md",
+              "title": "🧾 articles"
+            },
+            {
+              "type": "file",
+              "ctime": 1695708602014,
+              "path": "home/books.md",
+              "title": "📚 books"
+            },
+            {
+              "type": "file",
+              "ctime": 1695708612870,
+              "path": "home/courses.md",
+              "title": "🎓 courses"
+            },
+            {
+              "type": "file",
+              "ctime": 1695708624390,
+              "path": "home/movies.md",
+              "title": "🎬 movies"
+            },
+            {
+              "type": "file",
+              "ctime": 1695708640809,
+              "path": "home/podcasts.md",
+              "title": "📻 podcasts"
+            },
+            {
+              "type": "file",
+              "ctime": 1695708652962,
+              "path": "home/videos.md",
+              "title": "📺 videos"
+            }
+          ],
+          "title": "🔻 TYPES"
+        }
+      ],
+      "title": "🔻👀 CONTENTS"
+    },
+    {
+      "type": "group",
+      "ctime": 1695718519010,
+      "items": [
+        {
+          "type": "search",
+          "ctime": 1718545237566,
+          "query": "tag:#system/category  ",
+          "title": "🗺️ categories"
+        },
+        {
+          "type": "search",
+          "ctime": 1718545280669,
+          "query": "tag:#system/meta",
+          "title": "🔎 meta-notes"
+        },
+        {
+          "type": "search",
+          "ctime": 1718545321107,
+          "query": "tag:#system/hierarchy  ",
+          "title": "🧬 hierarchy"
+        }
+      ],
+      "title": "🔻🏷️ SYSTEM"
+    },
+    {
+      "type": "graph",
+      "ctime": 1718545869169,
+      "title": "🫀 default graph",
+      "options": {
+        "collapse-filter": false,
+        "search": "",
+        "showTags": true,
+        "showAttachments": false,
+        "hideUnresolved": true,
+        "showOrphans": false,
+        "collapse-color-groups": true,
+        "colorGroups": [
+          {
+            "query": "tag:#source/article  ",
+            "color": {
+              "a": 1,
+              "rgb": 14701138
+            }
+          },
+          {
+            "query": "tag:#source/book  ",
+            "color": {
+              "a": 1,
+              "rgb": 14725458
+            }
+          },
+          {
+            "query": "tag:#source/course  ",
+            "color": {
+              "a": 1,
+              "rgb": 11657298
+            }
+          },
+          {
+            "query": "tag:#source/movie  ",
+            "color": {
+              "a": 1,
+              "rgb": 5431378
+            }
+          },
+          {
+            "query": "tag:#source/podcast  ",
+            "color": {
+              "a": 1,
+              "rgb": 5431473
+            }
+          },
+          {
+            "query": "tag:#source/video  ",
+            "color": {
+              "a": 1,
+              "rgb": 480120
+            }
+          },
+          {
+            "query": "tag:#system/category  ",
+            "color": {
+              "a": 1,
+              "rgb": 48127
+            }
+          },
+          {
+            "query": "tag:#system/meta  ",
+            "color": {
+              "a": 1,
+              "rgb": 3093968
+            }
+          },
+          {
+            "query": "tag:#system/hierarchy  ",
+            "color": {
+              "a": 1,
+              "rgb": 11148254
+            }
+          },
+          {
+            "query": "tag:#mark/fleeting  ",
+            "color": {
+              "a": 1,
+              "rgb": 13458190
+            }
+          },
+          {
+            "query": "tag:#note/basic  ",
+            "color": {
+              "a": 1,
+              "rgb": 6052956
+            }
+          },
+          {
+            "query": "tag:#note/evergreen  ",
+            "color": {
+              "a": 1,
+              "rgb": 8453888
+            }
+          },
+          {
+            "query": "tag:#mark/quote  ",
+            "color": {
+              "a": 1,
+              "rgb": 1675143
+            }
+          },
+          {
+            "query": "tag:#project/single  ",
+            "color": {
+              "a": 1,
+              "rgb": 14725458
+            }
+          },
+          {
+            "query": "tag:#people/creator  ",
+            "color": {
+              "a": 1,
+              "rgb": 9287991
+            }
+          },
+          {
+            "query": "file:(\"main\")",
+            "color": {
+              "a": 1,
+              "rgb": 16711680
+            }
+          },
+          {
+            "query": "file:(\"articles\")",
+            "color": {
+              "a": 1,
+              "rgb": 16711680
+            }
+          },
+          {
+            "query": "file:(\"books\")",
+            "color": {
+              "a": 1,
+              "rgb": 16711680
+            }
+          },
+          {
+            "query": "file:(\"courses\")",
+            "color": {
+              "a": 1,
+              "rgb": 16711680
+            }
+          },
+          {
+            "query": "file:(\"movies\")",
+            "color": {
+              "a": 1,
+              "rgb": 16711680
+            }
+          },
+          {
+            "query": "file:(\"podcasts\")",
+            "color": {
+              "a": 1,
+              "rgb": 16711680
+            }
+          },
+          {
+            "query": "file:(\"videos\")",
+            "color": {
+              "a": 1,
+              "rgb": 16711680
+            }
+          },
+          {
+            "query": "file:(\"projects\")",
+            "color": {
+              "a": 1,
+              "rgb": 16711680
+            }
+          },
+          {
+            "query": "file:(\"sources\")",
+            "color": {
+              "a": 1,
+              "rgb": 16711680
+            }
+          },
+          {
+            "query": "file:(\"creators\")",
+            "color": {
+              "a": 1,
+              "rgb": 16711680
+            }
+          },
+          {
+            "query": "file:(\"index\")",
+            "color": {
+              "a": 1,
+              "rgb": 48127
+            }
+          },
+          {
+            "query": "file:(\"inbox\")",
+            "color": {
+              "a": 1,
+              "rgb": 13458190
+            }
+          }
+        ],
+        "collapse-display": true,
+        "showArrow": false,
+        "textFadeMultiplier": 0,
+        "nodeSizeMultiplier": 1,
+        "lineSizeMultiplier": 1,
+        "collapse-forces": true,
+        "centerStrength": 0,
+        "repelStrength": 0,
+        "linkStrength": 1,
+        "linkDistance": 250,
+        "scale": 0.6666666666666661,
+        "close": true
+      }
+    }
+  ]
+}

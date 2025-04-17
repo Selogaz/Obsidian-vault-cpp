@@ -1,0 +1,14 @@
+{
+  "syncTags": [
+    "source",
+    "project",
+    "system/high",
+    "contact",
+    "production",
+    "creator"
+  ],
+  "ignoreTags": [
+    "mark/log",
+    "mark/no_sync"
+  ]
+}

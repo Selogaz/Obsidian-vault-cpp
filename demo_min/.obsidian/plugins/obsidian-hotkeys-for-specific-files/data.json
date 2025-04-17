@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "useMoment": false,
+      "file": "home/inbox.md"
+    },
+    {
+      "useMoment": false,
+      "file": "home/main.md"
+    },
+    {
+      "useMoment": false,
+      "file": "home/sources.md"
+    },
+    {
+      "useMoment": false,
+      "file": "home/projects.md"
+    },
+    {
+      "useMoment": false,
+      "file": "home/index.md"
+    },
+    {
+      "useMoment": false,
+      "file": "home/daily.md"
+    }
+  ],
+  "useExistingPane": true,
+  "useHoverEditor": false
+}

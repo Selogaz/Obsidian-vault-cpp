@@ -1,0 +1,974 @@
+{
+  "choices": [
+    {
+      "id": "ae49c3ee-1e66-483f-9cd6-0bba3728fd01",
+      "name": "main menu",
+      "type": "Multi",
+      "command": true,
+      "choices": [
+        {
+          "id": "43cd4470-64ae-44e2-9e1d-a6677b94a695",
+          "name": "🏠 open main",
+          "type": "Macro",
+          "command": false,
+          "macroId": "ecf6aed3-ce99-4d97-94f7-91f9b25d39ec"
+        },
+        {
+          "id": "0fadbce1-2c40-404e-a37a-fa8e828c32de",
+          "name": "🔻📥 inbox",
+          "type": "Multi",
+          "command": false,
+          "choices": [
+            {
+              "id": "fcef71ad-2bd1-4aac-9852-ec8e0a9210e6",
+              "name": "📥 add to inbox",
+              "type": "Template",
+              "command": true,
+              "templatePath": "templates/inbox.md",
+              "fileNameFormat": {
+                "enabled": true,
+                "format": "{{DATE:YYYY-MM-DD (HH-mm-ss)}}"
+              },
+              "folder": {
+                "enabled": false,
+                "folders": [],
+                "chooseWhenCreatingNote": false,
+                "createInSameFolderAsActiveFile": false,
+                "chooseFromSubfolders": false
+              },
+              "appendLink": false,
+              "openFileInNewTab": {
+                "enabled": false,
+                "direction": "vertical",
+                "focus": true
+              },
+              "openFile": true,
+              "openFileInMode": "default",
+              "fileExistsMode": "Increment the file name",
+              "setFileExistsBehavior": false
+            },
+            {
+              "id": "a56232cc-7e8c-4098-9230-ec53c3c8c20d",
+              "name": "🗄️ open inbox",
+              "type": "Macro",
+              "command": false,
+              "macroId": "653ed3e3-770f-4ef5-861d-7aad9c7bcf15"
+            },
+            {
+              "id": "3a1cfd0e-ef3d-48fb-b0b9-941475bfa769",
+              "name": "🕵🏻 search",
+              "type": "Macro",
+              "command": false,
+              "macroId": "0d494afc-0ffe-49cd-8c2c-da3ecf76fbb1"
+            }
+          ],
+          "collapsed": true
+        },
+        {
+          "id": "662d3822-af3c-4452-a67e-648ca81deef3",
+          "name": "🔻🗄️ sources",
+          "type": "Multi",
+          "command": false,
+          "choices": [
+            {
+              "id": "ad02c312-cdb6-4bf7-a2f7-32ac7f5c410a",
+              "name": "🆕 create source",
+              "type": "Template",
+              "command": false,
+              "templatePath": "templates/source.md",
+              "fileNameFormat": {
+                "enabled": false,
+                "format": ""
+              },
+              "folder": {
+                "enabled": false,
+                "folders": [],
+                "chooseWhenCreatingNote": false,
+                "createInSameFolderAsActiveFile": false,
+                "chooseFromSubfolders": false
+              },
+              "appendLink": false,
+              "openFileInNewTab": {
+                "enabled": false,
+                "direction": "vertical",
+                "focus": true
+              },
+              "openFile": true,
+              "openFileInMode": "default",
+              "fileExistsMode": "Increment the file name",
+              "setFileExistsBehavior": false
+            },
+            {
+              "id": "a3d31869-6da4-4c76-b380-1017f87178df",
+              "name": "👨 create author",
+              "type": "Template",
+              "command": false,
+              "templatePath": "templates/creator.md",
+              "fileNameFormat": {
+                "enabled": false,
+                "format": ""
+              },
+              "folder": {
+                "enabled": false,
+                "folders": [],
+                "chooseWhenCreatingNote": false,
+                "createInSameFolderAsActiveFile": false,
+                "chooseFromSubfolders": false
+              },
+              "appendLink": false,
+              "openFileInNewTab": {
+                "enabled": false,
+                "direction": "vertical",
+                "focus": true
+              },
+              "openFile": true,
+              "openFileInMode": "default",
+              "fileExistsMode": "Increment the file name",
+              "setFileExistsBehavior": false
+            },
+            {
+              "id": "1ec73cfa-708e-4d62-88ff-c2a5376e4f1e",
+              "name": "🗄️ open sources",
+              "type": "Macro",
+              "command": false,
+              "macroId": "5df08442-36f5-4b02-93e7-8afceb2c9055"
+            },
+            {
+              "id": "59b70536-14c3-445e-8240-a54c5008634c",
+              "name": "🔻 source search 🕵🏻",
+              "type": "Multi",
+              "command": false,
+              "choices": [
+                {
+                  "id": "902a3613-f67c-49b6-a8ac-af6db9c0286d",
+                  "name": "🗃️ all",
+                  "type": "Macro",
+                  "command": false,
+                  "macroId": "a43d4e57-48c8-4d02-a1e7-5146bd1e9ca9"
+                },
+                {
+                  "id": "3310afe9-50ea-4db6-a958-780b8f0e08c8",
+                  "name": "🟦 wip",
+                  "type": "Macro",
+                  "command": false,
+                  "macroId": "278c91b1-bf63-44e4-badc-9f117ce2bed2"
+                },
+                {
+                  "id": "8544bbb1-e301-4f1f-8492-7e72f9841ab0",
+                  "name": "🟥 todo",
+                  "type": "Macro",
+                  "command": false,
+                  "macroId": "def60b5e-a689-4245-942d-1cef434f942d"
+                },
+                {
+                  "id": "8b18dac9-5a0e-48d5-8741-7d371fe739f4",
+                  "name": "🟩 done",
+                  "type": "Macro",
+                  "command": false,
+                  "macroId": "53bc73f6-eced-47f8-80e3-c7cc217d9341"
+                }
+              ],
+              "collapsed": true
+            }
+          ],
+          "collapsed": true
+        },
+        {
+          "id": "3471bed3-7263-46d5-876e-d32b2e43adba",
+          "name": "🔻🏢 projects",
+          "type": "Multi",
+          "command": false,
+          "choices": [
+            {
+              "id": "5fc99448-b7a3-4286-a1b0-04df557c4203",
+              "name": "🏢 create project",
+              "type": "Template",
+              "command": false,
+              "templatePath": "templates/project.md",
+              "fileNameFormat": {
+                "enabled": false,
+                "format": ""
+              },
+              "folder": {
+                "enabled": false,
+                "folders": [],
+                "chooseWhenCreatingNote": false,
+                "createInSameFolderAsActiveFile": false,
+                "chooseFromSubfolders": false
+              },
+              "appendLink": false,
+              "openFileInNewTab": {
+                "enabled": false,
+                "direction": "vertical",
+                "focus": true
+              },
+              "openFile": true,
+              "openFileInMode": "default",
+              "fileExistsMode": "Increment the file name",
+              "setFileExistsBehavior": false
+            },
+            {
+              "id": "5b507b8b-4081-4e41-8dff-68f22b2439a2",
+              "name": "🗄️ open projects",
+              "type": "Macro",
+              "command": false,
+              "macroId": "e269fa35-ddca-4bc5-ad1b-ca30a5b9f3e1"
+            },
+            {
+              "id": "e4d21434-e53f-413e-8613-3e1fcee33a8f",
+              "name": "🔻 project search 🕵🏻",
+              "type": "Multi",
+              "command": false,
+              "choices": [
+                {
+                  "id": "cd9246e5-d7ea-479b-83f9-0c860dfec4d1",
+                  "name": "🗃️ all",
+                  "type": "Macro",
+                  "command": false,
+                  "macroId": "107ecf56-7aaa-49b3-ac59-968f6b267add"
+                },
+                {
+                  "id": "b982085a-ab82-48db-a537-f6189ce9c970",
+                  "name": "🟦 wip",
+                  "type": "Macro",
+                  "command": false,
+                  "macroId": "959b4fe6-7f92-41f6-98a5-cb91d597b9b7"
+                },
+                {
+                  "id": "e395c37c-e804-4fd5-803c-7eebfa784039",
+                  "name": "🟥 todo",
+                  "type": "Macro",
+                  "command": false,
+                  "macroId": "625be489-279b-4d25-a88d-ceec6d9c302b"
+                },
+                {
+                  "id": "fbdef623-f65b-4622-a770-d6ba7431c6d2",
+                  "name": "🟩 done",
+                  "type": "Macro",
+                  "command": false,
+                  "macroId": "59153344-1a50-4d95-a3a6-d3aa4a2c0ac2"
+                }
+              ],
+              "collapsed": false
+            }
+          ],
+          "collapsed": true
+        },
+        {
+          "id": "c065562d-de84-4bc8-8ff5-3ab583b04362",
+          "name": "🔻🗓️ periodic",
+          "type": "Multi",
+          "command": false,
+          "choices": [
+            {
+              "id": "9cc2ee1b-67dc-4346-a708-66b7af456596",
+              "name": "📅 open today",
+              "type": "Macro",
+              "command": false,
+              "macroId": "6346b5ba-a4d5-41bc-84e9-909ece895626"
+            },
+            {
+              "id": "bf38e87f-2597-47fc-a55d-821129cd2927",
+              "name": "📋 open daily summary",
+              "type": "Macro",
+              "command": false,
+              "macroId": "59eb16b3-bd9c-4b53-9851-dae82d3e950b"
+            },
+            {
+              "id": "09715558-98da-43fa-9174-56805dc3e125",
+              "name": "💬 add daily LOG",
+              "type": "Capture",
+              "command": false,
+              "appendLink": false,
+              "captureTo": "periodic/daily/{{DATE}}",
+              "captureToActiveFile": false,
+              "createFileIfItDoesntExist": {
+                "enabled": true,
+                "createWithTemplate": true,
+                "template": "periodic/templates/daily.md"
+              },
+              "format": {
+                "enabled": true,
+                "format": "- {{VALUE}}"
+              },
+              "insertAfter": {
+                "enabled": false,
+                "after": "## Logs",
+                "insertAtEnd": true,
+                "considerSubsections": false,
+                "createIfNotFound": false,
+                "createIfNotFoundLocation": "top"
+              },
+              "prepend": true,
+              "task": false,
+              "openFileInNewTab": {
+                "enabled": false,
+                "direction": "vertical",
+                "focus": true
+              },
+              "openFile": false,
+              "openFileInMode": "default"
+            },
+            {
+              "id": "a95654cf-196e-4787-a437-a5122223a0e8",
+              "name": "✔️ add daily TASK",
+              "type": "Capture",
+              "command": false,
+              "appendLink": false,
+              "captureTo": "periodic/daily/{{date}}",
+              "captureToActiveFile": false,
+              "createFileIfItDoesntExist": {
+                "enabled": true,
+                "createWithTemplate": true,
+                "template": "periodic/templates/daily.md"
+              },
+              "format": {
+                "enabled": true,
+                "format": "- [ ] {{value}}"
+              },
+              "insertAfter": {
+                "enabled": false,
+                "after": "## Tasks",
+                "insertAtEnd": true,
+                "considerSubsections": false,
+                "createIfNotFound": false,
+                "createIfNotFoundLocation": "top"
+              },
+              "prepend": true,
+              "task": false,
+              "openFileInNewTab": {
+                "enabled": false,
+                "direction": "vertical",
+                "focus": true
+              },
+              "openFile": false,
+              "openFileInMode": "default"
+            }
+          ],
+          "collapsed": true
+        },
+        {
+          "id": "a5db7e51-c274-4ee7-9a5c-fa7965c7318d",
+          "name": "🔻🗺️ categories",
+          "type": "Multi",
+          "command": false,
+          "choices": [
+            {
+              "id": "6f35f689-156b-4c5d-8cd3-2cfe0f8cb09d",
+              "name": "🗄️ open index",
+              "type": "Macro",
+              "command": false,
+              "macroId": "62d47152-f53a-4e72-9aad-a652a073b4f0"
+            },
+            {
+              "id": "d194cd61-88d6-4b9e-9780-3e99843823f3",
+              "name": "🗺️ create category",
+              "type": "Macro",
+              "command": false,
+              "macroId": "c1dd801d-c0e6-48b8-99c8-707886fec85b"
+            },
+            {
+              "id": "fa4a7001-0238-4833-a1c1-066aced39247",
+              "name": "🔎 create meta-note",
+              "type": "Template",
+              "command": false,
+              "templatePath": "templates/meta-note.md",
+              "fileNameFormat": {
+                "enabled": false,
+                "format": ""
+              },
+              "folder": {
+                "enabled": false,
+                "folders": [],
+                "chooseWhenCreatingNote": false,
+                "createInSameFolderAsActiveFile": false,
+                "chooseFromSubfolders": false
+              },
+              "appendLink": false,
+              "openFileInNewTab": {
+                "enabled": false,
+                "direction": "vertical",
+                "focus": true
+              },
+              "openFile": true,
+              "openFileInMode": "default",
+              "fileExistsMode": "Increment the file name",
+              "setFileExistsBehavior": false
+            },
+            {
+              "id": "1988447b-36c1-46af-8b02-5a371962b48a",
+              "name": "🧬 create hierarchy",
+              "type": "Template",
+              "command": false,
+              "templatePath": "templates/hierarchy.md",
+              "fileNameFormat": {
+                "enabled": false,
+                "format": ""
+              },
+              "folder": {
+                "enabled": false,
+                "folders": [],
+                "chooseWhenCreatingNote": false,
+                "createInSameFolderAsActiveFile": false,
+                "chooseFromSubfolders": false
+              },
+              "appendLink": false,
+              "openFileInNewTab": {
+                "enabled": false,
+                "direction": "vertical",
+                "focus": true
+              },
+              "openFile": true,
+              "openFileInMode": "default",
+              "fileExistsMode": "Increment the file name",
+              "setFileExistsBehavior": false
+            },
+            {
+              "id": "e2bb6a0d-ff18-4f12-a00a-09fac35e3c0b",
+              "name": "🔻 high-notes search 🕵🏻",
+              "type": "Multi",
+              "command": false,
+              "choices": [
+                {
+                  "id": "1847f730-3792-47f3-9720-3b4369f21396",
+                  "name": "🗺️ categories",
+                  "type": "Macro",
+                  "command": false,
+                  "macroId": "46c34dcb-4bc3-465a-8830-8f30d2b3fdbb"
+                },
+                {
+                  "id": "4773da55-87ef-409f-b87c-e04f5502bb5a",
+                  "name": "🔎 meta-notes",
+                  "type": "Macro",
+                  "command": false,
+                  "macroId": "e4ba1053-2fa5-41ba-bae0-b02c68bdad35"
+                },
+                {
+                  "id": "708ff528-79b7-4e16-8e6f-7dec2b00bfe3",
+                  "name": "🧬 hierarchy",
+                  "type": "Macro",
+                  "command": false,
+                  "macroId": "d9828dc7-776e-4713-b8b1-2f6bf4aeb373"
+                }
+              ]
+            }
+          ],
+          "collapsed": false
+        },
+        {
+          "id": "ec21cb1a-13e3-46c4-895a-09adb6baacec",
+          "name": "🔻⚙ settings",
+          "type": "Multi",
+          "command": false,
+          "choices": [
+            {
+              "id": "9a2c4f3c-a00b-4ac9-a6f2-54f9701c82be",
+              "name": "📄 edit the template",
+              "type": "Macro",
+              "command": false,
+              "macroId": "7986e743-d920-4fe8-8552-483246e04b61"
+            },
+            {
+              "id": "c4cdf2da-6abe-43dd-820a-8b4a48a38e5d",
+              "name": "🌈 edit the snippet",
+              "type": "Macro",
+              "command": false,
+              "macroId": "03453d00-31d6-4dc1-b972-9f1e1e68eb8f"
+            },
+            {
+              "id": "7952c4cb-816a-4070-96f8-4089dac65d2e",
+              "name": "📁 file search",
+              "type": "Macro",
+              "command": false,
+              "macroId": "cf3e0f9d-d871-4653-a6fa-d7243b9d6c9f"
+            }
+          ],
+          "collapsed": true
+        }
+      ],
+      "collapsed": false
+    },
+    {
+      "id": "b23d9648-4959-4749-9659-c3fece8fc30b",
+      "name": "📋 open metadata",
+      "type": "Macro",
+      "command": true,
+      "macroId": "84fdbe21-5cbf-4fd4-8db9-75e94af29fbb"
+    }
+  ],
+  "macros": [
+    {
+      "name": "open inbox",
+      "id": "653ed3e3-770f-4ef5-861d-7aad9c7bcf15",
+      "commands": [
+        {
+          "name": "Hotkeys for specific files: Open home/inbox in new tab",
+          "type": "Obsidian",
+          "id": "f42a2d23-9d07-47e8-bde2-3f24d9620791",
+          "commandId": "obsidian-hotkeys-for-specific-files:home/inbox.md-new-tab"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "open sources",
+      "id": "5df08442-36f5-4b02-93e7-8afceb2c9055",
+      "commands": [
+        {
+          "name": "Hotkeys for specific files: Open home/sources in new tab",
+          "type": "Obsidian",
+          "id": "872fe226-274d-4970-9022-91a13c840fc4",
+          "commandId": "obsidian-hotkeys-for-specific-files:home/sources.md-new-tab"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "open projects",
+      "id": "e269fa35-ddca-4bc5-ad1b-ca30a5b9f3e1",
+      "commands": [
+        {
+          "name": "Hotkeys for specific files: Open home/projects in new tab",
+          "type": "Obsidian",
+          "id": "6b99ea01-0515-484e-a9d8-1c95a4a50ca6",
+          "commandId": "obsidian-hotkeys-for-specific-files:home/projects.md-new-tab"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "open main",
+      "id": "ecf6aed3-ce99-4d97-94f7-91f9b25d39ec",
+      "commands": [
+        {
+          "name": "Hotkeys for specific files: Open home/main in new tab",
+          "type": "Obsidian",
+          "id": "1eca0556-093b-4cd4-9f81-e5fdd17c5c1e",
+          "commandId": "obsidian-hotkeys-for-specific-files:home/main.md-new-tab"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "create category",
+      "id": "c1dd801d-c0e6-48b8-99c8-707886fec85b",
+      "commands": [
+        {
+          "name": "Hotkeys for specific files: Open home/index in new tab",
+          "type": "Obsidian",
+          "id": "bad16cc0-558d-4cc7-a4ca-a5c94cc026c2",
+          "commandId": "obsidian-hotkeys-for-specific-files:home/index.md-new-tab"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "b065edaa-1728-4f00-9c62-22ebecc81ac4",
+          "time": 300
+        },
+        {
+          "name": "Untitled Capture Choice",
+          "type": "NestedChoice",
+          "id": "5c72cc96-6fae-4d7d-a9b7-4737d6f1181e",
+          "choice": {
+            "id": "c039e4e6-2cc0-479d-9750-75167fc6b489",
+            "name": "Untitled Capture Choice",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "",
+            "captureToActiveFile": true,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "- <% tp.file.cursor(0) %>"
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": true,
+            "task": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        },
+        {
+          "name": "Templater: Replace templates in the active file",
+          "type": "Obsidian",
+          "id": "647ce343-8801-46bb-aba1-d0f30b39b768",
+          "commandId": "templater-obsidian:replace-in-file-templater"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "e97a1b19-33b2-49aa-a015-8ceaf2765cb7",
+          "time": 50
+        },
+        {
+          "name": "create category",
+          "type": "NestedChoice",
+          "id": "a6456ef7-ce09-48ce-837e-6abbfc6cd68e",
+          "choice": {
+            "id": "dac251fd-8262-49f7-8747-1e7f2cd10350",
+            "name": "create category",
+            "type": "Template",
+            "command": false,
+            "templatePath": "templates/category.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{value}}"
+            },
+            "folder": {
+              "enabled": false,
+              "folders": [],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": true,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "open index",
+      "id": "62d47152-f53a-4e72-9aad-a652a073b4f0",
+      "commands": [
+        {
+          "name": "Hotkeys for specific files: Open home/index in new tab",
+          "type": "Obsidian",
+          "id": "2bbca7ee-0e18-46fa-9b48-e796d6f6b21b",
+          "commandId": "obsidian-hotkeys-for-specific-files:home/index.md-new-tab"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "open today",
+      "id": "6346b5ba-a4d5-41bc-84e9-909ece895626",
+      "commands": [
+        {
+          "name": "Periodic Notes: Open daily note",
+          "type": "Obsidian",
+          "id": "b636441d-8e17-41d3-8d29-f978078a4bc2",
+          "commandId": "periodic-notes:open-daily-note"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "open daily summary",
+      "id": "59eb16b3-bd9c-4b53-9851-dae82d3e950b",
+      "commands": [
+        {
+          "name": "Hotkeys for specific files: Open home/daily in new tab",
+          "type": "Obsidian",
+          "id": "c0d104ef-30a2-46bf-a68f-b0cbfbe33616",
+          "commandId": "obsidian-hotkeys-for-specific-files:home/daily.md-new-tab"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "open metadata",
+      "id": "84fdbe21-5cbf-4fd4-8db9-75e94af29fbb",
+      "commands": [
+        {
+          "name": "Metadata Menu: Update active file lookups fields",
+          "type": "Obsidian",
+          "id": "9925ffd9-b2ce-44d7-8915-8af4080b0710",
+          "commandId": "metadata-menu:update_file_lookups"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "db400f99-da6f-49a6-99c6-8688cd7ee13b",
+          "time": 20
+        },
+        {
+          "name": "Metadata Menu: Open this note's fields modal",
+          "type": "Obsidian",
+          "id": "c39c555c-31be-42fa-8ba5-b24a1b976450",
+          "commandId": "metadata-menu:open_fields_modal"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "WIP sources",
+      "id": "278c91b1-bf63-44e4-badc-9f117ce2bed2",
+      "commands": [
+        {
+          "name": "Another Quick Switcher: WIP sources",
+          "type": "Obsidian",
+          "id": "ff689782-d97f-49f7-be54-011df2a6a378",
+          "commandId": "obsidian-another-quick-switcher:search-command_wip-sources"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "TODO sources",
+      "id": "def60b5e-a689-4245-942d-1cef434f942d",
+      "commands": [
+        {
+          "name": "Another Quick Switcher: TODO sources",
+          "type": "Obsidian",
+          "id": "71b19838-53ab-45ce-85b2-50ed6eeeecf5",
+          "commandId": "obsidian-another-quick-switcher:search-command_todo-sources"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "DONE sources",
+      "id": "53bc73f6-eced-47f8-80e3-c7cc217d9341",
+      "commands": [
+        {
+          "name": "Another Quick Switcher: DONE sources",
+          "type": "Obsidian",
+          "id": "5f28de9a-853c-44c4-8d0d-902ea8444004",
+          "commandId": "obsidian-another-quick-switcher:search-command_done-sources"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "WIP projects",
+      "id": "959b4fe6-7f92-41f6-98a5-cb91d597b9b7",
+      "commands": [
+        {
+          "name": "Another Quick Switcher: WIP projects",
+          "type": "Obsidian",
+          "id": "42c6c748-8782-48e4-95cc-2edfccf12c2e",
+          "commandId": "obsidian-another-quick-switcher:search-command_wip-projects"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "TODO projects",
+      "id": "625be489-279b-4d25-a88d-ceec6d9c302b",
+      "commands": [
+        {
+          "name": "Another Quick Switcher: TODO projects",
+          "type": "Obsidian",
+          "id": "ee75ae23-2938-4567-9172-79e96154a8f6",
+          "commandId": "obsidian-another-quick-switcher:search-command_todo-projects"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "DONE projects",
+      "id": "59153344-1a50-4d95-a3a6-d3aa4a2c0ac2",
+      "commands": [
+        {
+          "name": "Another Quick Switcher: DONE projects",
+          "type": "Obsidian",
+          "id": "d377eff6-069b-4409-932d-8e14b2705ca8",
+          "commandId": "obsidian-another-quick-switcher:search-command_done-projects"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "edit the template",
+      "id": "7986e743-d920-4fe8-8552-483246e04b61",
+      "commands": [
+        {
+          "name": "Another Quick Switcher: template search",
+          "type": "Obsidian",
+          "id": "87d8b9a5-d37c-428d-9e22-cd75a768d694",
+          "commandId": "obsidian-another-quick-switcher:search-command_template-search"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "edit the snippet",
+      "id": "03453d00-31d6-4dc1-b972-9f1e1e68eb8f",
+      "commands": [
+        {
+          "name": "Code Files: Edit CSS Snippet",
+          "type": "Obsidian",
+          "id": "94a26e91-c845-4ef5-a4fb-974df042b078",
+          "commandId": "code-files:open-css-snippet"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "file search",
+      "id": "cf3e0f9d-d871-4653-a6fa-d7243b9d6c9f",
+      "commands": [
+        {
+          "name": "Another Quick Switcher: file search",
+          "type": "Obsidian",
+          "id": "11cba96b-e0c0-4c8d-bcfe-653e9c68e2ea",
+          "commandId": "obsidian-another-quick-switcher:search-command_file-search"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "inbox search",
+      "id": "0d494afc-0ffe-49cd-8c2c-da3ecf76fbb1",
+      "commands": [
+        {
+          "name": "Another Quick Switcher: inbox search",
+          "type": "Obsidian",
+          "id": "1fd6417b-d64b-48ca-ae75-7ca18b0f708b",
+          "commandId": "obsidian-another-quick-switcher:search-command_inbox-search"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "source search",
+      "id": "a43d4e57-48c8-4d02-a1e7-5146bd1e9ca9",
+      "commands": [
+        {
+          "name": "Another Quick Switcher: source search",
+          "type": "Obsidian",
+          "id": "cdf91a48-98f6-4b09-9c50-1bce92625024",
+          "commandId": "obsidian-another-quick-switcher:search-command_source-search"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "project search",
+      "id": "107ecf56-7aaa-49b3-ac59-968f6b267add",
+      "commands": [
+        {
+          "name": "Another Quick Switcher: project search",
+          "type": "Obsidian",
+          "id": "ae2ac5f2-4453-4f3e-a6dd-a09d09212667",
+          "commandId": "obsidian-another-quick-switcher:search-command_project-search"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "category search",
+      "id": "46c34dcb-4bc3-465a-8830-8f30d2b3fdbb",
+      "commands": [
+        {
+          "name": "Another Quick Switcher: category search",
+          "type": "Obsidian",
+          "id": "bcc2c434-afd2-4537-881f-c38dbe0f892c",
+          "commandId": "obsidian-another-quick-switcher:search-command_category-search"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "meta-note search",
+      "id": "e4ba1053-2fa5-41ba-bae0-b02c68bdad35",
+      "commands": [
+        {
+          "name": "Another Quick Switcher: meta-note search",
+          "type": "Obsidian",
+          "id": "9359cd65-327a-4392-a7ae-01299044532f",
+          "commandId": "obsidian-another-quick-switcher:search-command_meta-note-search"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "hierarchy search",
+      "id": "d9828dc7-776e-4713-b8b1-2f6bf4aeb373",
+      "commands": [
+        {
+          "name": "Another Quick Switcher: hierarchy search",
+          "type": "Obsidian",
+          "id": "722db929-e2c3-47b9-bec8-ae0a48e56115",
+          "commandId": "obsidian-another-quick-switcher:search-command_hierarchy-search"
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
+  "inputPrompt": "single-line",
+  "devMode": false,
+  "templateFolderPath": "",
+  "announceUpdates": false,
+  "version": "1.11.0",
+  "disableOnlineFeatures": true,
+  "enableRibbonIcon": false,
+  "ai": {
+    "defaultModel": "Ask me",
+    "defaultSystemPrompt": "As an AI assistant within Obsidian, your primary goal is to help users manage their ideas and knowledge more effectively. Format your responses using Markdown syntax. Please use the [[Obsidian]] link format. You can write aliases for the links by writing [[Obsidian|the alias after the pipe symbol]]. To use mathematical notation, use LaTeX syntax. LaTeX syntax for larger equations should be on separate lines, surrounded with double dollar signs ($$). You can also inline math expressions by wrapping it in $ symbols. For example, use $$w_{ij}^{\text{new}}:=w_{ij}^{\text{current}}+etacdotdelta_jcdot x_{ij}$$ on a separate line, but you can write \"($eta$ = learning rate, $delta_j$ = error term, $x_{ij}$ = input)\" inline.",
+    "promptTemplatesFolderPath": "",
+    "showAssistant": true,
+    "providers": [
+      {
+        "name": "OpenAI",
+        "endpoint": "https://api.openai.com/v1",
+        "apiKey": "",
+        "models": [
+          {
+            "name": "gpt-3.5-turbo",
+            "maxTokens": 4096
+          },
+          {
+            "name": "gpt-3.5-turbo-16k",
+            "maxTokens": 16384
+          },
+          {
+            "name": "gpt-3.5-turbo-1106",
+            "maxTokens": 16385
+          },
+          {
+            "name": "gpt-4",
+            "maxTokens": 8192
+          },
+          {
+            "name": "gpt-4-32k",
+            "maxTokens": 32768
+          },
+          {
+            "name": "gpt-4-1106-preview",
+            "maxTokens": 128000
+          },
+          {
+            "name": "text-davinci-003",
+            "maxTokens": 4096
+          }
+        ]
+      }
+    ]
+  },
+  "migrations": {
+    "migrateToMacroIDFromEmbeddedMacro": true,
+    "useQuickAddTemplateFolder": true,
+    "incrementFileNameSettingMoveToDefaultBehavior": true,
+    "mutualExclusionInsertAfterAndWriteToBottomOfFile": true,
+    "setVersionAfterUpdateModalRelease": true,
+    "addDefaultAIProviders": true
+  }
+}
