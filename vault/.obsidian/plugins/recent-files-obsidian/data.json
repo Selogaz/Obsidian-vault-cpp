@@ -1,6 +1,110 @@
 {
   "recentFiles": [
     {
+      "basename": "2025",
+      "path": "periodic/2025.canvas"
+    },
+    {
+      "basename": "2025-W16",
+      "path": "periodic/weekly/2025-W16.md"
+    },
+    {
+      "basename": "2025-04-18",
+      "path": "periodic/daily/2025-04-18.md"
+    },
+    {
+      "basename": "2025-04-23",
+      "path": "periodic/daily/2025-04-23.md"
+    },
+    {
+      "basename": "2025-04-15",
+      "path": "periodic/daily/2025-04-15.md"
+    },
+    {
+      "basename": "2025-04-16",
+      "path": "periodic/daily/2025-04-16.md"
+    },
+    {
+      "basename": "2025-04-19",
+      "path": "periodic/daily/2025-04-19.md"
+    },
+    {
+      "basename": "2025-04-20",
+      "path": "periodic/daily/2025-04-20.md"
+    },
+    {
+      "basename": "2025-04-21",
+      "path": "periodic/daily/2025-04-21.md"
+    },
+    {
+      "basename": "2025-04-22",
+      "path": "periodic/daily/2025-04-22.md"
+    },
+    {
+      "basename": "1st academic year",
+      "path": "base/_meta-notes/1st academic year.md"
+    },
+    {
+      "basename": "Практическая биоинформатика",
+      "path": "sources/Практическая биоинформатика.md"
+    },
+    {
+      "basename": "index",
+      "path": "home/index.md"
+    },
+    {
+      "basename": "hotkeys",
+      "path": "home/help/hotkeys.md"
+    },
+    {
+      "basename": "Практическая биоинформатика - practice",
+      "path": "base/additions/Практическая биоинформатика - practice.md"
+    },
+    {
+      "basename": "Практическая биоинформатика - conspectuses",
+      "path": "base/additions/Практическая биоинформатика - conspectuses.md"
+    },
+    {
+      "basename": "Формирование сложных органических соединений в изолированной среде",
+      "path": "projects/Формирование сложных органических соединений в изолированной среде.md"
+    },
+    {
+      "basename": "bioinformatics",
+      "path": "base/categories/bioinformatics.md"
+    },
+    {
+      "basename": "Базы данных. Систематизация и поиск информации",
+      "path": "base/additions/conspectuses/Базы данных. Систематизация и поиск информации.md"
+    },
+    {
+      "basename": "Моделирование и биоинформатика в современной биологии",
+      "path": "base/additions/conspectuses/Моделирование и биоинформатика в современной биологии.md"
+    },
+    {
+      "basename": "мета-заметка",
+      "path": "base/notes/мета-заметка.md"
+    },
+    {
+      "basename": "Модели, описывающие рост популяции",
+      "path": "base/additions/conspectuses/Модели, описывающие рост популяции.md"
+    },
+    {
+      "basename": "study",
+      "path": "base/categories/study.md"
+    },
+    {
+      "basename": "структура обучения в университете",
+      "path": "base/notes/структура обучения в университете.md"
+    },
+    {
+      "basename": "math",
+      "path": "math.md"
+    },
+    {
+      "basename": "2nd academic year",
+      "path": "base/_meta-notes/2nd academic year.md"
+    },
+    {
       "basename": "yearly template",
       "path": "templates/create/periodic/yearly template.md"
     },
@@ -27,10 +131,6 @@
     {
       "basename": "fleeting notes",
       "path": "home/databases/fleeting notes.md"
-    },
-    {
-      "basename": "index",
-      "path": "home/index.md"
     },
     {
       "basename": "people",
@@ -63,14 +163,6 @@
     {
       "basename": "sources",
       "path": "home/databases/sources.md"
-    },
-    {
-      "basename": "2025",
-      "path": "periodic/2025.canvas"
-    },
-    {
-      "basename": "hotkeys",
-      "path": "home/help/hotkeys.md"
     },
     {
       "basename": "_regular",
@@ -145,24 +237,8 @@
       "path": "periodic/daily/2025-02-07.md"
     },
     {
-      "basename": "bioinformatics",
-      "path": "base/categories/bioinformatics.md"
-    },
-    {
       "basename": "Лекции по математическим моделям в биологии",
       "path": "sources/Лекции по математическим моделям в биологии.md"
-    },
-    {
-      "basename": "Практическая биоинформатика - conspectuses",
-      "path": "base/additions/Практическая биоинформатика - conspectuses.md"
-    },
-    {
-      "basename": "Практическая биоинформатика",
-      "path": "sources/Практическая биоинформатика.md"
-    },
-    {
-      "basename": "Практическая биоинформатика - practice",
-      "path": "base/additions/Практическая биоинформатика - practice.md"
     },
     {
       "basename": "2025-02-03",
@@ -269,10 +345,6 @@
       "path": "base/_meta-notes/Ozon.md"
     },
     {
-      "basename": "мета-заметка",
-      "path": "base/notes/мета-заметка.md"
-    },
-    {
       "basename": "create-calendar",
       "path": "templates/insert/create-calendar.md"
     },
@@ -327,62 +399,6 @@
     {
       "basename": "car manufacturing process allowing customization of features",
       "path": "base/notes/car manufacturing process allowing customization of features.md"
-    },
-    {
-      "basename": "logistics application creating transport types",
-      "path": "base/notes/logistics application creating transport types.md"
-    },
-    {
-      "basename": "factory method pattern",
-      "path": "base/notes/factory method pattern.md"
-    },
-    {
-      "basename": "Kubernetes",
-      "path": "base/_hierarchy/Kubernetes.md"
-    },
-    {
-      "basename": "Grafana",
-      "path": "base/_hierarchy/Grafana.md"
-    },
-    {
-      "basename": "Docker",
-      "path": "base/_hierarchy/Docker.md"
-    },
-    {
-      "basename": "Инструмент для анализа угроз и инцидентов безопасности (2025-01-30) - meeting",
-      "path": "base/additions/Инструмент для анализа угроз и инцидентов безопасности (2025-01-30) - meeting.md"
-    },
-    {
-      "basename": "EventScheduler",
-      "path": "projects/EventScheduler.md"
-    },
-    {
-      "basename": "UX and UI",
-      "path": "base/_meta-notes/UX and UI.md"
-    },
-    {
-      "basename": "Angular",
-      "path": "base/_hierarchy/Angular.md"
-    },
-    {
-      "basename": "databases",
-      "path": "base/_meta-notes/databases.md"
-    },
-    {
-      "basename": "work",
-      "path": "base/categories/work.md"
-    },
-    {
-      "basename": "VirtualGarden",
-      "path": "projects/VirtualGarden.md"
-    },
-    {
-      "basename": "Принципы эффективного менеджмента в компаниях",
-      "path": "sources/Принципы эффективного менеджмента в компаниях.md"
-    },
-    {
-      "basename": "devops",
-      "path": "base/_hierarchy/devops.md"
     }
   ],
   "omittedPaths": [

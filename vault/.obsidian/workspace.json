@@ -11,13 +11,45 @@
             "id": "8757fe3e444d0e71",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "periodic/daily/2025-04-23.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2025-04-23"
+            }
+          },
+          {
+            "id": "5a191e986cbbe5f2",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "periodic/2025.canvas",
+                "viewState": {
+                  "x": -270.3968125123855,
+                  "y": -6.633617823328102,
+                  "zoom": 0.19999999999999996
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "2025"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -72,8 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5,
-    "collapsed": true
+    "width": 341.5
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -90,10 +121,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "periodic/daily/2025-04-15.md"
+                "file": "periodic/2025.canvas"
               },
               "icon": "lucide-info",
-              "title": "File properties"
+              "title": "File properties for 2025"
             }
           }
         ]
@@ -191,35 +222,35 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "8757fe3e444d0e71",
+  "active": "5a191e986cbbe5f2",
   "lastOpenFiles": [
-    "periodic/daily/2025-04-15.md",
     "periodic/weekly/2025-W16.md",
-    "periodic/monthly/2025-04.md",
-    "periodic/quarterly/2025-Q2.md",
-    "templates/create/periodic/yearly template.md",
-    "templates/create/periodic/quarterly template.md",
-    "periodic/yearly/2025.md",
-    "templates/create/periodic/weekly template.md",
-    "templates/create/periodic/monthly template.md",
-    "templates/create/periodic/daily template.md",
-    "home/databases/fleeting notes.md",
-    "home/index.md",
-    "home/databases/people.md",
-    "periodic/monthly calendar.md",
-    "periodic/_upcoming.md",
-    "base/notes/2025-03-20 (11-31-28).md",
-    "periodic/_today.md",
-    "periodic/statuses/_inbox.md",
-    "home/databases/high-notes.md",
-    "home/databases/projects.md",
-    "home/databases/sources.md",
-    "base/notes/test note.md",
-    "base/notes/2025-03-19 (22-33-54).md",
     "periodic/2025.canvas",
-    "base/notes/2025-03-19 (22-31-50).md",
+    "periodic/daily/2025-04-18.md",
+    "periodic/weekly/2025-W17.md",
+    "periodic/daily/2025-04-23.md",
+    "periodic/daily/2025-04-15.md",
+    "periodic/daily/2025-04-16.md",
+    "base/notes/2025-04-17.md",
+    "periodic/daily/2025-04-17.md",
+    "periodic/daily/Empty File",
+    "periodic/daily/2025-04-19.md",
+    "periodic/daily/2025-04-20.md",
+    "periodic/daily/2025-04-21.md",
+    "periodic/daily/2025-04-22.md",
+    "base/_meta-notes/1st academic year.md",
+    "sources/Практическая биоинформатика.md",
+    "home/index.md",
     "home/help/hotkeys.md",
-    "periodic/daily/2025-03-19.md",
+    "base/additions/Практическая биоинформатика - practice.md",
+    "base/additions/Практическая биоинформатика - conspectuses.md",
+    "projects/Формирование сложных органических соединений в изолированной среде.md",
+    "base/categories/bioinformatics.md",
+    "base/additions/conspectuses/Базы данных. Систематизация и поиск информации.md",
+    "base/additions/conspectuses/Моделирование и биоинформатика в современной биологии.md",
+    "base/notes/мета-заметка.md",
+    "base/additions/conspectuses/Модели, описывающие рост популяции.md",
+    "base/categories/study.md",
     "periodic/Eisenhower Matrix.canvas",
     "periodic/yearly/2025.canvas",
     "files/адекватное название 2025-02-03.png",
