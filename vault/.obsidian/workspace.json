@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2025-04-23.md",
+                "file": "sources/Java, Полное руководство.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,24 +28,79 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-04-23"
+              "title": "Java, Полное руководство"
             }
           },
           {
-            "id": "5a191e986cbbe5f2",
+            "id": "cf0109c85764b506",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "periodic/2025.canvas",
-                "viewState": {
-                  "x": -270.3968125123855,
-                  "y": -6.633617823328102,
-                  "zoom": 0.19999999999999996
+                "file": "base/notes/зависимость количества производителей хамсы от количества молоди в Азовском море.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
                 }
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "2025"
+              "icon": "lucide-file",
+              "title": "зависимость количества производителей хамсы от количества молоди в Азовском море"
+            }
+          },
+          {
+            "id": "571ee4d8e2f5a9b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/регрессионные модели в биологии.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "регрессионные модели в биологии"
+            }
+          },
+          {
+            "id": "e10815485da7149a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home/help/hotkeys.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "hotkeys"
             }
           }
         ],
@@ -104,7 +159,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5
+    "width": 341.5,
+    "collapsed": true
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -121,10 +177,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "periodic/2025.canvas"
+                "file": "base/notes/зависимость количества производителей хамсы от количества молоди в Азовском море.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for 2025"
+              "title": "File properties for зависимость количества производителей хамсы от количества молоди в Азовском море"
             }
           }
         ]
@@ -222,35 +278,36 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "5a191e986cbbe5f2",
+  "active": "cf0109c85764b506",
   "lastOpenFiles": [
+    "base/notes/регрессионные модели в биологии.md",
+    "base/notes/зависимость количества производителей хамсы от количества молоди в Азовском море.md",
+    "base/notes/имитационные модели в биологии.md",
+    "sources/Java, Полное руководство.md",
+    "base/notes/качественные модели в вычислительной биологии.md",
+    "home/help/hotkeys.md",
+    "sources/Практическая биоинформатика.md",
+    "base/_meta-notes/1st academic year.md",
+    "base/notes/формула Мальтуса.md",
+    "base/notes/bind формула Мальтуса.md",
+    "periodic/weekly/2025-W17.md",
+    "periodic/daily/2025-04-23.md",
+    "base/notes/быстрое создание.md",
+    "home/prefixes.md",
+    "base/notes/какая-то заметка.md",
+    "base/notes/Общий алгоритм формирования заметок.md",
+    "sources/Философия Java.md",
+    "base/notes/Untitled.md",
+    "templates/insert/new note.md",
     "periodic/weekly/2025-W16.md",
     "periodic/2025.canvas",
     "periodic/daily/2025-04-18.md",
-    "periodic/weekly/2025-W17.md",
-    "periodic/daily/2025-04-23.md",
     "periodic/daily/2025-04-15.md",
     "periodic/daily/2025-04-16.md",
     "base/notes/2025-04-17.md",
     "periodic/daily/2025-04-17.md",
     "periodic/daily/Empty File",
     "periodic/daily/2025-04-19.md",
-    "periodic/daily/2025-04-20.md",
-    "periodic/daily/2025-04-21.md",
-    "periodic/daily/2025-04-22.md",
-    "base/_meta-notes/1st academic year.md",
-    "sources/Практическая биоинформатика.md",
-    "home/index.md",
-    "home/help/hotkeys.md",
-    "base/additions/Практическая биоинформатика - practice.md",
-    "base/additions/Практическая биоинформатика - conspectuses.md",
-    "projects/Формирование сложных органических соединений в изолированной среде.md",
-    "base/categories/bioinformatics.md",
-    "base/additions/conspectuses/Базы данных. Систематизация и поиск информации.md",
-    "base/additions/conspectuses/Моделирование и биоинформатика в современной биологии.md",
-    "base/notes/мета-заметка.md",
-    "base/additions/conspectuses/Модели, описывающие рост популяции.md",
-    "base/categories/study.md",
     "periodic/Eisenhower Matrix.canvas",
     "periodic/yearly/2025.canvas",
     "files/адекватное название 2025-02-03.png",

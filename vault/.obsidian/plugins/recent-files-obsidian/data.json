@@ -1,6 +1,74 @@
 {
   "recentFiles": [
     {
+      "basename": "зависимость количества производителей хамсы от количества молоди в Азовском море",
+      "path": "base/notes/зависимость количества производителей хамсы от количества молоди в Азовском море.md"
+    },
+    {
+      "basename": "регрессионные модели в биологии",
+      "path": "base/notes/регрессионные модели в биологии.md"
+    },
+    {
+      "basename": "имитационные модели в биологии",
+      "path": "base/notes/имитационные модели в биологии.md"
+    },
+    {
+      "basename": "Java, Полное руководство",
+      "path": "sources/Java, Полное руководство.md"
+    },
+    {
+      "basename": "качественные модели в вычислительной биологии",
+      "path": "base/notes/качественные модели в вычислительной биологии.md"
+    },
+    {
+      "basename": "hotkeys",
+      "path": "home/help/hotkeys.md"
+    },
+    {
+      "basename": "Практическая биоинформатика",
+      "path": "sources/Практическая биоинформатика.md"
+    },
+    {
+      "basename": "1st academic year",
+      "path": "base/_meta-notes/1st academic year.md"
+    },
+    {
+      "basename": "формула Мальтуса",
+      "path": "base/notes/формула Мальтуса.md"
+    },
+    {
+      "basename": "2025-W17",
+      "path": "periodic/weekly/2025-W17.md"
+    },
+    {
+      "basename": "2025-04-23",
+      "path": "periodic/daily/2025-04-23.md"
+    },
+    {
+      "basename": "быстрое создание",
+      "path": "base/notes/быстрое создание.md"
+    },
+    {
+      "basename": "prefixes",
+      "path": "home/prefixes.md"
+    },
+    {
+      "basename": "какая-то заметка",
+      "path": "base/notes/какая-то заметка.md"
+    },
+    {
+      "basename": "Общий алгоритм формирования заметок",
+      "path": "base/notes/Общий алгоритм формирования заметок.md"
+    },
+    {
+      "basename": "Философия Java",
+      "path": "sources/Философия Java.md"
+    },
+    {
+      "basename": "new note",
+      "path": "templates/insert/new note.md"
+    },
+    {
       "basename": "2025",
       "path": "periodic/2025.canvas"
     },
@@ -11,10 +79,6 @@
     {
       "basename": "2025-04-18",
       "path": "periodic/daily/2025-04-18.md"
-    },
-    {
-      "basename": "2025-04-23",
-      "path": "periodic/daily/2025-04-23.md"
     },
     {
       "basename": "2025-04-15",
@@ -41,20 +105,8 @@
       "path": "periodic/daily/2025-04-22.md"
     },
     {
-      "basename": "1st academic year",
-      "path": "base/_meta-notes/1st academic year.md"
-    },
-    {
-      "basename": "Практическая биоинформатика",
-      "path": "sources/Практическая биоинформатика.md"
-    },
-    {
       "basename": "index",
       "path": "home/index.md"
-    },
-    {
-      "basename": "hotkeys",
-      "path": "home/help/hotkeys.md"
     },
     {
       "basename": "Практическая биоинформатика - practice",
@@ -179,10 +231,6 @@
     {
       "basename": "_all tasks",
       "path": "periodic/_all tasks.md"
-    },
-    {
-      "basename": "prefixes",
-      "path": "home/prefixes.md"
     },
     {
       "basename": "zotero template",
@@ -351,54 +399,6 @@
     {
       "basename": "Дмитрий Коваленко",
       "path": "base/contacts/Дмитрий Коваленко.md"
-    },
-    {
-      "basename": "Ольга Фёдорова (2025-01-25) - meeting",
-      "path": "base/additions/Ольга Фёдорова (2025-01-25) - meeting.md"
-    },
-    {
-      "basename": "Ольга Фёдорова (2025-01-30) - meeting",
-      "path": "base/additions/Ольга Фёдорова (2025-01-30) - meeting.md"
-    },
-    {
-      "basename": "DataDriven Decisions",
-      "path": "projects/DataDriven Decisions.md"
-    },
-    {
-      "basename": "CI and CD",
-      "path": "base/_meta-notes/CI and CD.md"
-    },
-    {
-      "basename": "deployment automation",
-      "path": "base/_problems/deployment automation.md"
-    },
-    {
-      "basename": "Ansible",
-      "path": "base/_hierarchy/Ansible.md"
-    },
-    {
-      "basename": "IDE",
-      "path": "base/_meta-notes/IDE.md"
-    },
-    {
-      "basename": "Design Systems Handbook",
-      "path": "sources/Design Systems Handbook.md"
-    },
-    {
-      "basename": "prototype pattern",
-      "path": "base/notes/prototype pattern.md"
-    },
-    {
-      "basename": "document editor duplicating templates for new documents",
-      "path": "base/notes/document editor duplicating templates for new documents.md"
-    },
-    {
-      "basename": "builder pattern",
-      "path": "base/notes/builder pattern.md"
-    },
-    {
-      "basename": "car manufacturing process allowing customization of features",
-      "path": "base/notes/car manufacturing process allowing customization of features.md"
     }
   ],
   "omittedPaths": [
