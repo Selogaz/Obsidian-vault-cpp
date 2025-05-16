@@ -1,28 +1,148 @@
 {
   "recentFiles": [
     {
-      "basename": "зависимость количества производителей хамсы от количества молоди в Азовском море",
-      "path": "base/notes/зависимость количества производителей хамсы от количества молоди в Азовском море.md"
+      "basename": "PvE - Гайд на Холи Приста (x1)",
+      "path": "sources/PvE - Гайд на Холи Приста (x1).md"
     },
     {
-      "basename": "регрессионные модели в биологии",
-      "path": "base/notes/регрессионные модели в биологии.md"
+      "basename": "holy priest",
+      "path": "base/_problems/holy priest.md"
     },
     {
-      "basename": "имитационные модели в биологии",
-      "path": "base/notes/имитационные модели в биологии.md"
+      "basename": "Прочее - [Гайд ]Как одеваться после 80 уровня в пве",
+      "path": "sources/Прочее - [Гайд ]Как одеваться после 80 уровня в пве.md"
+    },
+    {
+      "basename": "world of warcraft",
+      "path": "base/_meta-notes/world of warcraft.md"
+    },
+    {
+      "basename": "Прочее - [Гайд ]Как одеваться после 80 уровня в пве - annotations",
+      "path": "base/additions/Прочее - [Гайд ]Как одеваться после 80 уровня в пве - annotations.md"
+    },
+    {
+      "basename": "sources",
+      "path": "home/databases/sources.md"
+    },
+    {
+      "basename": "index",
+      "path": "home/index.md"
+    },
+    {
+      "basename": "_one-off",
+      "path": "periodic/statuses/_one-off.md"
+    },
+    {
+      "basename": "hotkeys",
+      "path": "home/help/hotkeys.md"
+    },
+    {
+      "basename": "_inbox",
+      "path": "periodic/statuses/_inbox.md"
+    },
+    {
+      "basename": "_upcoming",
+      "path": "periodic/_upcoming.md"
+    },
+    {
+      "basename": "_today",
+      "path": "periodic/_today.md"
+    },
+    {
+      "basename": "prefixes",
+      "path": "home/prefixes.md"
+    },
+    {
+      "basename": "high-notes",
+      "path": "home/databases/high-notes.md"
+    },
+    {
+      "basename": "shadow priest",
+      "path": "base/_problems/shadow priest.md"
+    },
+    {
+      "basename": "games",
+      "path": "base/categories/games.md"
     },
     {
       "basename": "Java, Полное руководство",
       "path": "sources/Java, Полное руководство.md"
     },
     {
+      "basename": "имитационные модели в биологии",
+      "path": "base/notes/имитационные модели в биологии.md"
+    },
+    {
+      "basename": "регрессионные модели в биологии",
+      "path": "base/notes/регрессионные модели в биологии.md"
+    },
+    {
       "basename": "качественные модели в вычислительной биологии",
       "path": "base/notes/качественные модели в вычислительной биологии.md"
     },
     {
-      "basename": "hotkeys",
-      "path": "home/help/hotkeys.md"
+      "basename": "“Трансляция",
+      "path": "base/notes/“Трансляция.md"
+    },
+    {
+      "basename": "зависимость количества производителей хамсы от количества молоди в Азовском море",
+      "path": "base/notes/зависимость количества производителей хамсы от количества молоди в Азовском море.md"
+    },
+    {
+      "basename": "2025",
+      "path": "periodic/2025.canvas"
+    },
+    {
+      "basename": "2025-04-24",
+      "path": "periodic/daily/2025-04-24.md"
+    },
+    {
+      "basename": "2025-04-25",
+      "path": "periodic/daily/2025-04-25.md"
+    },
+    {
+      "basename": "2025-04-26",
+      "path": "periodic/daily/2025-04-26.md"
+    },
+    {
+      "basename": "2025-04-29",
+      "path": "periodic/daily/2025-04-29.md"
+    },
+    {
+      "basename": "2025-05-02",
+      "path": "periodic/daily/2025-05-02.md"
+    },
+    {
+      "basename": "2025-05-03",
+      "path": "periodic/daily/2025-05-03.md"
+    },
+    {
+      "basename": "2025-05-04",
+      "path": "periodic/daily/2025-05-04.md"
+    },
+    {
+      "basename": "2025-05-05",
+      "path": "periodic/daily/2025-05-05.md"
+    },
+    {
+      "basename": "2025",
+      "path": "periodic/yearly/2025.md"
+    },
+    {
+      "basename": "2025-Q2",
+      "path": "periodic/quarterly/2025-Q2.md"
+    },
+    {
+      "basename": "2025-05",
+      "path": "periodic/monthly/2025-05.md"
+    },
+    {
+      "basename": "2025-W19",
+      "path": "periodic/weekly/2025-W19.md"
+    },
+    {
+      "basename": "2025-05-06",
+      "path": "periodic/daily/2025-05-06.md"
     },
     {
       "basename": "Практическая биоинформатика",
@@ -49,10 +169,6 @@
       "path": "base/notes/быстрое создание.md"
     },
     {
-      "basename": "prefixes",
-      "path": "home/prefixes.md"
-    },
-    {
       "basename": "какая-то заметка",
       "path": "base/notes/какая-то заметка.md"
     },
@@ -67,10 +183,6 @@
     {
       "basename": "new note",
       "path": "templates/insert/new note.md"
-    },
-    {
-      "basename": "2025",
-      "path": "periodic/2025.canvas"
     },
     {
       "basename": "2025-W16",
@@ -105,10 +217,6 @@
       "path": "periodic/daily/2025-04-22.md"
     },
     {
-      "basename": "index",
-      "path": "home/index.md"
-    },
-    {
       "basename": "Практическая биоинформатика - practice",
       "path": "base/additions/Практическая биоинформатика - practice.md"
     },
@@ -119,10 +227,6 @@
     {
       "basename": "Формирование сложных органических соединений в изолированной среде",
       "path": "projects/Формирование сложных органических соединений в изолированной среде.md"
-    },
-    {
-      "basename": "bioinformatics",
-      "path": "base/categories/bioinformatics.md"
     },
     {
       "basename": "Базы данных. Систематизация и поиск информации",
@@ -141,16 +245,8 @@
       "path": "base/additions/conspectuses/Модели, описывающие рост популяции.md"
     },
     {
-      "basename": "study",
-      "path": "base/categories/study.md"
-    },
-    {
       "basename": "структура обучения в университете",
       "path": "base/notes/структура обучения в университете.md"
-    },
-    {
-      "basename": "math",
-      "path": "math.md"
     },
     {
       "basename": "2nd academic year",
@@ -163,10 +259,6 @@
     {
       "basename": "quarterly template",
       "path": "templates/create/periodic/quarterly template.md"
-    },
-    {
-      "basename": "2025",
-      "path": "periodic/yearly/2025.md"
     },
     {
       "basename": "weekly template",
@@ -193,28 +285,8 @@
       "path": "periodic/monthly calendar.md"
     },
     {
-      "basename": "_upcoming",
-      "path": "periodic/_upcoming.md"
-    },
-    {
-      "basename": "_today",
-      "path": "periodic/_today.md"
-    },
-    {
-      "basename": "_inbox",
-      "path": "periodic/statuses/_inbox.md"
-    },
-    {
-      "basename": "high-notes",
-      "path": "home/databases/high-notes.md"
-    },
-    {
       "basename": "projects",
       "path": "home/databases/projects.md"
-    },
-    {
-      "basename": "sources",
-      "path": "home/databases/sources.md"
     },
     {
       "basename": "_regular",
@@ -243,10 +315,6 @@
     {
       "basename": "_waiting_for",
       "path": "periodic/statuses/_waiting_for.md"
-    },
-    {
-      "basename": "_one-off",
-      "path": "periodic/statuses/_one-off.md"
     },
     {
       "basename": "_people",
@@ -331,74 +399,6 @@
     {
       "basename": "2025-02-09",
       "path": "periodic/daily/2025-02-09.md"
-    },
-    {
-      "basename": "2025-02-08",
-      "path": "periodic/daily/2025-02-08.md"
-    },
-    {
-      "basename": "структурирование с помощью системных заметок",
-      "path": "base/notes/структурирование с помощью системных заметок.md"
-    },
-    {
-      "basename": "UI-toolkit creating different themes",
-      "path": "base/notes/UI-toolkit creating different themes.md"
-    },
-    {
-      "basename": "Инструменты для автоматизации процесса найма сотрудников",
-      "path": "projects/Инструменты для автоматизации процесса найма сотрудников.md"
-    },
-    {
-      "basename": "graphic design app cloning and modifying shapes",
-      "path": "base/notes/graphic design app cloning and modifying shapes.md"
-    },
-    {
-      "basename": "EventScheduler (2025-02-01) - meeting",
-      "path": "base/additions/EventScheduler (2025-02-01) - meeting.md"
-    },
-    {
-      "basename": "Аналитика социальных медиа в реальном времени",
-      "path": "projects/Аналитика социальных медиа в реальном времени.md"
-    },
-    {
-      "basename": "заметка",
-      "path": "base/notes/заметка.md"
-    },
-    {
-      "basename": "другая заметка",
-      "path": "base/notes/другая заметка.md"
-    },
-    {
-      "basename": "_statuses",
-      "path": "templates/insert/_statuses.md"
-    },
-    {
-      "basename": "list of tags (projects)",
-      "path": "templates/lists/list of tags (projects).md"
-    },
-    {
-      "basename": "list of tags (notes)",
-      "path": "templates/lists/list of tags (notes).md"
-    },
-    {
-      "basename": "list of tags (system)",
-      "path": "templates/lists/list of tags (system).md"
-    },
-    {
-      "basename": "periodic summary",
-      "path": "home/periodic summary.md"
-    },
-    {
-      "basename": "Ozon",
-      "path": "base/_meta-notes/Ozon.md"
-    },
-    {
-      "basename": "create-calendar",
-      "path": "templates/insert/create-calendar.md"
-    },
-    {
-      "basename": "Дмитрий Коваленко",
-      "path": "base/contacts/Дмитрий Коваленко.md"
     }
   ],
   "omittedPaths": [

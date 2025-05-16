@@ -2,14 +2,14 @@
 tags:
   - mark/gtd
 aliases:
-  - скоро
-  - запланировано
-  - завтра
   - upcoming
   - tomorrow
   - scheduled
   - due
-updated: 2025-03-20T11:17:29+07:00
+  - скоро
+  - запланировано
+  - завтра
+updated: 2025-05-15T17:40:56+03:00
 cssclasses:
   - hide-properties
   - hide-backlinks
