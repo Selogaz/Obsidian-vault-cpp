@@ -18,7 +18,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Вопросы для собеседования на Java Developer.md",
+                    "file": "преимущества ООП.md",
                     "collapseAll": true,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -28,7 +28,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for Вопросы для собеседования на Java Developer"
+                  "title": "Backlinks for преимущества ООП"
                 }
               }
             ]
@@ -43,12 +43,12 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Вопросы для собеседования на Java Developer.md",
+                    "file": "преимущества ООП.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-going-out",
-                  "title": "Outgoing links from Вопросы для собеседования на Java Developer"
+                  "title": "Outgoing links from преимущества ООП"
                 }
               }
             ]
@@ -84,21 +84,6 @@
                 }
               },
               {
-                "id": "0d2cd72abbc19995",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "конспекты по статье \"Вопросы для собеседования на Java Developer\".md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "конспекты по статье \"Вопросы для собеседования на Java Developer\""
-                }
-              },
-              {
                 "id": "16bf68355d7aa693",
                 "type": "leaf",
                 "state": {
@@ -114,7 +99,22 @@
                 }
               },
               {
-                "id": "4afc6dd67ac87ffa",
+                "id": "e7c66d9b4bb4b086",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ООП.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "ООП"
+                }
+              },
+              {
+                "id": "9b22d049c47df01c",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -127,24 +127,9 @@
                   "icon": "lucide-file",
                   "title": "преимущества ООП"
                 }
-              },
-              {
-                "id": "ca5ba71cc7e2cd1e",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "periodic/daily/2025-04-14.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "2025-04-14"
-                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 3
           },
           {
             "id": "27a27cfe870a92c3",
@@ -161,7 +146,7 @@
                     "state": {
                       "type": "localgraph",
                       "state": {
-                        "file": "Вопросы для собеседования на Java Developer.md",
+                        "file": "преимущества ООП.md",
                         "options": {
                           "collapse-filter": true,
                           "search": "",
@@ -189,7 +174,7 @@
                         }
                       },
                       "icon": "lucide-git-fork",
-                      "title": "Graph of Вопросы для собеседования на Java Developer"
+                      "title": "Graph of преимущества ООП"
                     }
                   }
                 ]
@@ -204,13 +189,13 @@
                     "state": {
                       "type": "outline",
                       "state": {
-                        "file": "Вопросы для собеседования на Java Developer.md",
+                        "file": "преимущества ООП.md",
                         "followCursor": false,
                         "showSearch": false,
                         "searchQuery": ""
                       },
                       "icon": "lucide-list",
-                      "title": "Outline of Вопросы для собеседования на Java Developer"
+                      "title": "Outline of преимущества ООП"
                     }
                   }
                 ]
@@ -373,34 +358,34 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "7e38c0fd28a851e5",
+  "active": "9b22d049c47df01c",
   "lastOpenFiles": [
-    "конспекты по статье \"Вопросы для собеседования на Java Developer\".md",
-    "Вопросы для собеседования на Java Developer.md",
-    "home/Home.md",
-    "свод по дням.md",
-    "источники.md",
-    "мои правила ведения заметок в Obsidian.md",
-    "periodic/daily/2025-04-14.md",
-    "periodic/templates/weekly.md",
-    "как размечать заметки.md",
-    "как связывать заметки.md",
-    "periodic/templates/daily.md",
-    "преимущества ООП.md",
-    "меньше ошибок.md",
-    "повторное использование кода.md",
-    "унифицированность в ООП.md",
-    "влияние ООП на другие программы.md",
-    "время на разработку.md",
-    "оформить в заметку.md",
-    "обработка разнородных структур данных.md",
-    "возможность для фреймворка.md",
-    "польза полиморфизма.md",
-    "реализация работы с наследниками.md",
-    "изменение поведения во время выполнения.md",
     "расширяемость.md",
+    "преимущества ООП.md",
     "модульность и параллелизм.md",
     "локализация кода в одном месте.md",
+    "Вопросы для собеседования на Java Developer.md",
+    "ООП.md",
+    "позволяет абстрагироваться.md",
+    "естественность модели.md",
+    "интерфейс.md",
+    "объект.md",
+    "класс.md",
+    "обмен сообщениями.md",
+    "пример обмена сообщениями.md",
+    "абстракция.md",
+    "полиморфизм.md",
+    "пример полиморфизма от ИИ.md",
+    "home/Home.md",
+    "пример полиморфизма.md",
+    "наследование.md",
+    "пример наследования.md",
+    "инкапсуляция.md",
+    "пример инкапсуляции.md",
+    "основные принципы ООП.md",
+    "что такое ООП?.md",
+    "конспекты по статье \"Вопросы для собеседования на Java Developer\".md",
+    "свод по дням.md",
     "files/mynoise-net.mkv",
     "files/mynoise-net.mp3",
     "files/mynoise-net.aac",

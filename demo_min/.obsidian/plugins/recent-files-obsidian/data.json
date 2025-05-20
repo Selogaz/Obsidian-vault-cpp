@@ -1,32 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "конспекты по \"Вопросы для собеседования на Java Developer",
-      "path": "base/notes/конспекты по \"Вопросы для собеседования на Java Developer.md"
+      "basename": "all weeks",
+      "path": "home/all weeks.md"
+    },
+    {
+      "basename": "inbox",
+      "path": "home/inbox.md"
+    },
+    {
+      "basename": "конспекты по \"Вопросы для собеседования на Java Deve",
+      "path": "base/notes/конспекты по \"Вопросы для собеседования на Java Deve.md"
     },
     {
       "basename": "Вопросы для собеседования на Java Developer",
       "path": "sources/articles/Вопросы для собеседования на Java Developer.md"
     },
     {
-      "basename": "system description",
-      "path": "home/system description.md"
+      "basename": "sources",
+      "path": "home/sources.md"
     },
     {
       "basename": "main",
       "path": "home/main.md"
     },
     {
-      "basename": "sources",
-      "path": "home/sources.md"
+      "basename": "конспекты по \"Вопросы для собеседования на Java Developer",
+      "path": "base/notes/конспекты по \"Вопросы для собеседования на Java Developer.md"
+    },
+    {
+      "basename": "hierarchy 1",
+      "path": "base/hierarchy/hierarchy 1.md"
+    },
+    {
+      "basename": "programming",
+      "path": "base/categories/programming.md"
+    },
+    {
+      "basename": "system description",
+      "path": "home/system description.md"
     },
     {
       "basename": "flowing_abyss",
       "path": "base/creators/flowing_abyss.md"
-    },
-    {
-      "basename": "inbox",
-      "path": "home/inbox.md"
     },
     {
       "basename": "2025-W16-April",
@@ -43,10 +59,6 @@
     {
       "basename": "daily",
       "path": "home/daily.md"
-    },
-    {
-      "basename": "all weeks",
-      "path": "home/all weeks.md"
     },
     {
       "basename": "all days",
@@ -81,16 +93,8 @@
       "path": "periodic/templates/daily.md"
     },
     {
-      "basename": "programming",
-      "path": "base/categories/programming.md"
-    },
-    {
       "basename": "category 1",
       "path": "base/categories/category 1.md"
-    },
-    {
-      "basename": "hierarchy 1",
-      "path": "base/hierarchy/hierarchy 1.md"
     },
     {
       "basename": "meta-note 1",

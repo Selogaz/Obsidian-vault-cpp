@@ -15,5 +15,6 @@
     "files/",
     "templates/"
   ],
-  "autoConvertHtml": true
+  "autoConvertHtml": true,
+  "readableLineLength": true
 }

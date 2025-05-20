@@ -16,7 +16,19 @@ cssclasses:
 
 
 ----
-[[games]][[world of warcraft]]
 
+- [[programming]]
+	- [[java]]
+- [[health]]
+	- 
+- [[games]]
+	- [[world of warcraft]]
+- [[obsidian]]
+	- [[vault]]
+		
 # Contexts
+-  [[work]]
+	- [[java developer]]
+		- [[Получить оффер junior java dev]]
+			- [[Вопросы и ответы к интервью Java разработчика]]
 - 

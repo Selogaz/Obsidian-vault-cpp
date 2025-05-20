@@ -26,6 +26,8 @@ On the left is the name, on the right are the prefixes (separator `|`).
 computer_science – cs
 english – en|eng
 bioinformatics – binf
+work – w
+obsidian – obs
 
 
 ```yaml

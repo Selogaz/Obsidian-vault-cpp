@@ -1,96 +1,312 @@
 {
   "recentFiles": [
     {
-      "basename": "PvE - Гайд на Холи Приста (x1)",
-      "path": "sources/PvE - Гайд на Холи Приста (x1).md"
+      "basename": "преимущества ООП",
+      "path": "base/notes/преимущества ООП.md"
     },
     {
-      "basename": "holy priest",
-      "path": "base/_problems/holy priest.md"
+      "basename": "Вопросы и ответы к интервью Java разработчика",
+      "path": "sources/Вопросы и ответы к интервью Java разработчика.md"
     },
     {
-      "basename": "Прочее - [Гайд ]Как одеваться после 80 уровня в пве",
-      "path": "sources/Прочее - [Гайд ]Как одеваться после 80 уровня в пве.md"
+      "basename": "Получить оффер junior java dev",
+      "path": "projects/Получить оффер junior java dev.md"
     },
     {
-      "basename": "world of warcraft",
-      "path": "base/_meta-notes/world of warcraft.md"
+      "basename": "2025-05-20",
+      "path": "periodic/daily/2025-05-20.md"
     },
     {
-      "basename": "Прочее - [Гайд ]Как одеваться после 80 уровня в пве - annotations",
-      "path": "base/additions/Прочее - [Гайд ]Как одеваться после 80 уровня в пве - annotations.md"
-    },
-    {
-      "basename": "sources",
-      "path": "home/databases/sources.md"
+      "basename": "health",
+      "path": "base/categories/health.md"
     },
     {
       "basename": "index",
       "path": "home/index.md"
     },
     {
-      "basename": "_one-off",
-      "path": "periodic/statuses/_one-off.md"
+      "basename": "2025-05-24",
+      "path": "periodic/daily/2025-05-24.md"
     },
     {
-      "basename": "hotkeys",
-      "path": "home/help/hotkeys.md"
+      "basename": "2025",
+      "path": "periodic/2025.canvas"
     },
     {
-      "basename": "_inbox",
-      "path": "periodic/statuses/_inbox.md"
+      "basename": "Общий алгоритм формирования заметок",
+      "path": "base/notes/Общий алгоритм формирования заметок.md"
     },
     {
-      "basename": "_upcoming",
-      "path": "periodic/_upcoming.md"
+      "basename": "last created-updated",
+      "path": "home/help/last created-updated.md"
     },
     {
-      "basename": "_today",
-      "path": "periodic/_today.md"
+      "basename": "work",
+      "path": "base/categories/work.md"
+    },
+    {
+      "basename": "java developer",
+      "path": "base/_meta-notes/java developer.md"
+    },
+    {
+      "basename": "формула Мальтуса",
+      "path": "base/notes/формула Мальтуса.md"
+    },
+    {
+      "basename": "fleeting notes",
+      "path": "home/databases/fleeting notes.md"
+    },
+    {
+      "basename": "ИТ-собеседование в Т‑Банке",
+      "path": "sources/ИТ-собеседование в Т‑Банке.md"
+    },
+    {
+      "basename": "Изучение Java",
+      "path": "sources/Изучение Java.md"
+    },
+    {
+      "basename": "Собесы",
+      "path": "sources/Собесы.md"
+    },
+    {
+      "basename": "Руководство по вкатыванию в Backend на Java",
+      "path": "sources/Руководство по вкатыванию в Backend на Java.md"
+    },
+    {
+      "basename": "Роадмап тг Ника",
+      "path": "sources/Роадмап тг Ника.md"
     },
     {
       "basename": "prefixes",
       "path": "home/prefixes.md"
     },
     {
-      "basename": "high-notes",
-      "path": "home/databases/high-notes.md"
+      "basename": "vault",
+      "path": "sources/vault.md"
     },
     {
-      "basename": "shadow priest",
-      "path": "base/_problems/shadow priest.md"
-    },
-    {
-      "basename": "games",
-      "path": "base/categories/games.md"
-    },
-    {
-      "basename": "Java, Полное руководство",
-      "path": "sources/Java, Полное руководство.md"
-    },
-    {
-      "basename": "имитационные модели в биологии",
-      "path": "base/notes/имитационные модели в биологии.md"
-    },
-    {
-      "basename": "регрессионные модели в биологии",
-      "path": "base/notes/регрессионные модели в биологии.md"
-    },
-    {
-      "basename": "качественные модели в вычислительной биологии",
-      "path": "base/notes/качественные модели в вычислительной биологии.md"
-    },
-    {
-      "basename": "“Трансляция",
-      "path": "base/notes/“Трансляция.md"
+      "basename": "obsidian",
+      "path": "base/categories/obsidian.md"
     },
     {
       "basename": "зависимость количества производителей хамсы от количества молоди в Азовском море",
       "path": "base/notes/зависимость количества производителей хамсы от количества молоди в Азовском море.md"
     },
     {
-      "basename": "2025",
-      "path": "periodic/2025.canvas"
+      "basename": "быстрое создание",
+      "path": "base/notes/быстрое создание.md"
+    },
+    {
+      "basename": "имитационные модели в биологии",
+      "path": "base/notes/имитационные модели в биологии.md"
+    },
+    {
+      "basename": "какая-то заметка",
+      "path": "base/notes/какая-то заметка.md"
+    },
+    {
+      "basename": "качественные модели в вычислительной биологии",
+      "path": "base/notes/качественные модели в вычислительной биологии.md"
+    },
+    {
+      "basename": "мета-заметка",
+      "path": "base/notes/мета-заметка.md"
+    },
+    {
+      "basename": "основные приципы ООП",
+      "path": "base/notes/основные приципы ООП.md"
+    },
+    {
+      "basename": "“Трансляция",
+      "path": "base/notes/“Трансляция.md"
+    },
+    {
+      "basename": "_inbox",
+      "path": "periodic/statuses/_inbox.md"
+    },
+    {
+      "basename": "обмен сообщениями",
+      "path": "base/notes/обмен сообщениями.md"
+    },
+    {
+      "basename": "абстракция",
+      "path": "base/notes/абстракция.md"
+    },
+    {
+      "basename": "класс",
+      "path": "base/notes/класс.md"
+    },
+    {
+      "basename": "объект",
+      "path": "base/notes/объект.md"
+    },
+    {
+      "basename": "интерфейс",
+      "path": "base/notes/интерфейс.md"
+    },
+    {
+      "basename": "ООП",
+      "path": "base/notes/ООП.md"
+    },
+    {
+      "basename": "наследование",
+      "path": "base/notes/наследование.md"
+    },
+    {
+      "basename": "полиморфизм",
+      "path": "base/notes/полиморфизм.md"
+    },
+    {
+      "basename": "структура обучения в университете",
+      "path": "base/notes/структура обучения в университете.md"
+    },
+    {
+      "basename": "естественность модели",
+      "path": "base/notes/естественность модели.md"
+    },
+    {
+      "basename": "позволяет абстрагироваться",
+      "path": "base/notes/позволяет абстрагироваться.md"
+    },
+    {
+      "basename": "локализация кода в одном месте",
+      "path": "base/notes/локализация кода в одном месте.md"
+    },
+    {
+      "basename": "модульность и параллелизм",
+      "path": "base/notes/модульность и параллелизм.md"
+    },
+    {
+      "basename": "польза полиморфизма",
+      "path": "base/notes/польза полиморфизма.md"
+    },
+    {
+      "basename": "инкапсуляция",
+      "path": "base/notes/инкапсуляция.md"
+    },
+    {
+      "basename": "что такое ООП",
+      "path": "base/notes/что такое ООП.md"
+    },
+    {
+      "basename": "пример полиморфизма",
+      "path": "base/notes/пример полиморфизма.md"
+    },
+    {
+      "basename": "пример полиморфизма от ИИ",
+      "path": "base/notes/пример полиморфизма от ИИ.md"
+    },
+    {
+      "basename": "пример наследования",
+      "path": "base/notes/пример наследования.md"
+    },
+    {
+      "basename": "регрессионные модели в биологии",
+      "path": "base/notes/регрессионные модели в биологии.md"
+    },
+    {
+      "basename": "пример обмена сообщениями",
+      "path": "base/notes/пример обмена сообщениями.md"
+    },
+    {
+      "basename": "пример инкапсуляции",
+      "path": "base/notes/пример инкапсуляции.md"
+    },
+    {
+      "basename": "hotkeys",
+      "path": "home/help/hotkeys.md"
+    },
+    {
+      "basename": "_priority",
+      "path": "periodic/_priority.md"
+    },
+    {
+      "basename": "_health",
+      "path": "periodic/categories/_health.md"
+    },
+    {
+      "basename": "Как одеваться после 80 уровня в пве",
+      "path": "sources/Как одеваться после 80 уровня в пве.md"
+    },
+    {
+      "basename": "_work",
+      "path": "periodic/categories/_work.md"
+    },
+    {
+      "basename": "_all tasks",
+      "path": "periodic/_all tasks.md"
+    },
+    {
+      "basename": "_today",
+      "path": "periodic/_today.md"
+    },
+    {
+      "basename": "_test brat",
+      "path": "base/notes/_test brat.md"
+    },
+    {
+      "basename": "holy priest",
+      "path": "base/_problems/holy priest.md"
+    },
+    {
+      "basename": "world of warcraft",
+      "path": "base/_meta-notes/world of warcraft.md"
+    },
+    {
+      "basename": "PvE - Гайд на Холи Приста (x1)",
+      "path": "sources/PvE - Гайд на Холи Приста (x1).md"
+    },
+    {
+      "basename": "shadow priest",
+      "path": "base/_problems/shadow priest.md"
+    },
+    {
+      "basename": "sources",
+      "path": "home/databases/sources.md"
+    },
+    {
+      "basename": "_one-off",
+      "path": "periodic/statuses/_one-off.md"
+    },
+    {
+      "basename": "_reference",
+      "path": "periodic/statuses/_reference.md"
+    },
+    {
+      "basename": "_tasks",
+      "path": "periodic/_tasks.md"
+    },
+    {
+      "basename": "_upcoming",
+      "path": "periodic/_upcoming.md"
+    },
+    {
+      "basename": "java",
+      "path": "base/_meta-notes/java.md"
+    },
+    {
+      "basename": "programming",
+      "path": "base/categories/programming.md"
+    },
+    {
+      "basename": "2025-05-19",
+      "path": "periodic/daily/2025-05-19.md"
+    },
+    {
+      "basename": "2025-W20",
+      "path": "periodic/weekly/2025-W20.md"
+    },
+    {
+      "basename": "Прочее - [Гайд ]Как одеваться после 80 уровня в пве - annotations",
+      "path": "base/additions/Прочее - [Гайд ]Как одеваться после 80 уровня в пве - annotations.md"
+    },
+    {
+      "basename": "high-notes",
+      "path": "home/databases/high-notes.md"
+    },
+    {
+      "basename": "Java, Полное руководство",
+      "path": "sources/Java, Полное руководство.md"
     },
     {
       "basename": "2025-04-24",
@@ -153,28 +369,12 @@
       "path": "base/_meta-notes/1st academic year.md"
     },
     {
-      "basename": "формула Мальтуса",
-      "path": "base/notes/формула Мальтуса.md"
-    },
-    {
       "basename": "2025-W17",
       "path": "periodic/weekly/2025-W17.md"
     },
     {
       "basename": "2025-04-23",
       "path": "periodic/daily/2025-04-23.md"
-    },
-    {
-      "basename": "быстрое создание",
-      "path": "base/notes/быстрое создание.md"
-    },
-    {
-      "basename": "какая-то заметка",
-      "path": "base/notes/какая-то заметка.md"
-    },
-    {
-      "basename": "Общий алгоритм формирования заметок",
-      "path": "base/notes/Общий алгоритм формирования заметок.md"
     },
     {
       "basename": "Философия Java",
@@ -199,206 +399,6 @@
     {
       "basename": "2025-04-16",
       "path": "periodic/daily/2025-04-16.md"
-    },
-    {
-      "basename": "2025-04-19",
-      "path": "periodic/daily/2025-04-19.md"
-    },
-    {
-      "basename": "2025-04-20",
-      "path": "periodic/daily/2025-04-20.md"
-    },
-    {
-      "basename": "2025-04-21",
-      "path": "periodic/daily/2025-04-21.md"
-    },
-    {
-      "basename": "2025-04-22",
-      "path": "periodic/daily/2025-04-22.md"
-    },
-    {
-      "basename": "Практическая биоинформатика - practice",
-      "path": "base/additions/Практическая биоинформатика - practice.md"
-    },
-    {
-      "basename": "Практическая биоинформатика - conspectuses",
-      "path": "base/additions/Практическая биоинформатика - conspectuses.md"
-    },
-    {
-      "basename": "Формирование сложных органических соединений в изолированной среде",
-      "path": "projects/Формирование сложных органических соединений в изолированной среде.md"
-    },
-    {
-      "basename": "Базы данных. Систематизация и поиск информации",
-      "path": "base/additions/conspectuses/Базы данных. Систематизация и поиск информации.md"
-    },
-    {
-      "basename": "Моделирование и биоинформатика в современной биологии",
-      "path": "base/additions/conspectuses/Моделирование и биоинформатика в современной биологии.md"
-    },
-    {
-      "basename": "мета-заметка",
-      "path": "base/notes/мета-заметка.md"
-    },
-    {
-      "basename": "Модели, описывающие рост популяции",
-      "path": "base/additions/conspectuses/Модели, описывающие рост популяции.md"
-    },
-    {
-      "basename": "структура обучения в университете",
-      "path": "base/notes/структура обучения в университете.md"
-    },
-    {
-      "basename": "2nd academic year",
-      "path": "base/_meta-notes/2nd academic year.md"
-    },
-    {
-      "basename": "yearly template",
-      "path": "templates/create/periodic/yearly template.md"
-    },
-    {
-      "basename": "quarterly template",
-      "path": "templates/create/periodic/quarterly template.md"
-    },
-    {
-      "basename": "weekly template",
-      "path": "templates/create/periodic/weekly template.md"
-    },
-    {
-      "basename": "monthly template",
-      "path": "templates/create/periodic/monthly template.md"
-    },
-    {
-      "basename": "daily template",
-      "path": "templates/create/periodic/daily template.md"
-    },
-    {
-      "basename": "fleeting notes",
-      "path": "home/databases/fleeting notes.md"
-    },
-    {
-      "basename": "people",
-      "path": "home/databases/people.md"
-    },
-    {
-      "basename": "monthly calendar",
-      "path": "periodic/monthly calendar.md"
-    },
-    {
-      "basename": "projects",
-      "path": "home/databases/projects.md"
-    },
-    {
-      "basename": "_regular",
-      "path": "periodic/statuses/_regular.md"
-    },
-    {
-      "basename": "Eisenhower Matrix",
-      "path": "periodic/Eisenhower Matrix.canvas"
-    },
-    {
-      "basename": "_priority",
-      "path": "periodic/_priority.md"
-    },
-    {
-      "basename": "_all tasks",
-      "path": "periodic/_all tasks.md"
-    },
-    {
-      "basename": "zotero template",
-      "path": "templates/create/sources/zotero template.md"
-    },
-    {
-      "basename": "zotero with annotation template",
-      "path": "templates/create/sources/zotero with annotation template.md"
-    },
-    {
-      "basename": "_waiting_for",
-      "path": "periodic/statuses/_waiting_for.md"
-    },
-    {
-      "basename": "_people",
-      "path": "periodic/_people.md"
-    },
-    {
-      "basename": "onStartup",
-      "path": "templates/onStartup.md"
-    },
-    {
-      "basename": "SocialPulse",
-      "path": "base/productions/SocialPulse.md"
-    },
-    {
-      "basename": "Ольга Фёдорова",
-      "path": "base/contacts/Ольга Фёдорова.md"
-    },
-    {
-      "basename": "Попасть на стажировку в Yandex",
-      "path": "projects/Попасть на стажировку в Yandex.md"
-    },
-    {
-      "basename": "development",
-      "path": "base/categories/development.md"
-    },
-    {
-      "basename": "_reference",
-      "path": "periodic/statuses/_reference.md"
-    },
-    {
-      "basename": "_bioinformatics",
-      "path": "periodic/categories/_bioinformatics.md"
-    },
-    {
-      "basename": "2025-02-07",
-      "path": "periodic/daily/2025-02-07.md"
-    },
-    {
-      "basename": "Лекции по математическим моделям в биологии",
-      "path": "sources/Лекции по математическим моделям в биологии.md"
-    },
-    {
-      "basename": "2025-02-03",
-      "path": "periodic/daily/2025-02-03.md"
-    },
-    {
-      "basename": "design patterns",
-      "path": "base/_hierarchy/design patterns.md"
-    },
-    {
-      "basename": "game development creating different character types",
-      "path": "base/notes/game development creating different character types.md"
-    },
-    {
-      "basename": "Vascular Health",
-      "path": "sources/Vascular Health.md"
-    },
-    {
-      "basename": "meal preparation system for custom meals",
-      "path": "base/notes/meal preparation system for custom meals.md"
-    },
-    {
-      "basename": "Modular Web Design",
-      "path": "sources/Modular Web Design.md"
-    },
-    {
-      "basename": "entrepreneurship",
-      "path": "base/categories/entrepreneurship.md"
-    },
-    {
-      "basename": "2025-02-04",
-      "path": "periodic/daily/2025-02-04.md"
-    },
-    {
-      "basename": "house construction process with customizable layouts and materials",
-      "path": "base/notes/house construction process with customizable layouts and materials.md"
-    },
-    {
-      "basename": "Eisenhower Matrix",
-      "path": "base/canvases/Eisenhower Matrix.canvas"
-    },
-    {
-      "basename": "2025-02-09",
-      "path": "periodic/daily/2025-02-09.md"
     }
   ],
   "omittedPaths": [

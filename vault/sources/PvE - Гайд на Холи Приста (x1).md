@@ -1,7 +1,7 @@
 ---
 tags:
   - source/article/paper
-  - category/games
+  - category/test_brat
 aliases: []
 status: 🟦
 category:
@@ -16,7 +16,7 @@ start: 2025-05-15T17:00:11+03:00
 end: 
 total_hours: 0
 created: 2025-05-15T17:00:11+03:00
-updated: 2025-05-15T17:01:18+03:00
+updated: 2025-05-20T12:00:57+03:00
 ---
 
 ![cover|150]()

@@ -32,13 +32,13 @@
             }
           },
           {
-            "id": "f28f359a7b695e28",
+            "id": "b6ab8375a73b0875",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home/help/hotkeys.md",
-                "mode": "source",
+                "file": "base/categories/health.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -52,16 +52,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "hotkeys"
+              "title": "health"
             }
           },
           {
-            "id": "64ee41d04aca9288",
+            "id": "1ad9634cd53031b9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/_meta-notes/world of warcraft.md",
+                "file": "periodic/daily/2025-05-20.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,16 +76,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "world of warcraft"
+              "title": "2025-05-20"
             }
           },
           {
-            "id": "259572969fd25a7e",
+            "id": "c47baa3c031c336b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/Прочее - [Гайд ]Как одеваться после 80 уровня в пве.md",
+                "file": "projects/Получить оффер junior java dev.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,16 +100,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Прочее - [Гайд ]Как одеваться после 80 уровня в пве"
+              "title": "Получить оффер junior java dev"
             }
           },
           {
-            "id": "61ddc6d42bb59f38",
+            "id": "d220c0938ce9f182",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/additions/Прочее - [Гайд ]Как одеваться после 80 уровня в пве - annotations.md",
+                "file": "sources/Вопросы и ответы к интервью Java разработчика.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -124,16 +124,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Прочее - [Гайд ]Как одеваться после 80 уровня в пве - annotations"
+              "title": "Вопросы и ответы к интервью Java разработчика"
             }
           },
           {
-            "id": "a59baf4a22070593",
+            "id": "eeda3c70e6ff6add",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/PvE - Гайд на Холи Приста (x1).md",
+                "file": "base/notes/преимущества ООП.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -148,7 +148,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "PvE - Гайд на Холи Приста (x1)"
+              "title": "преимущества ООП"
             }
           }
         ],
@@ -197,17 +197,18 @@
             "id": "3bbc3335d224e54b",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "BC-matrix",
               "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "icon": "BC-trail-icon",
+              "title": "Breadcrumbs Matrix"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 341.5
+    "width": 341.5,
+    "collapsed": true
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -224,20 +225,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "sources/PvE - Гайд на Холи Приста (x1).md"
+                "file": "periodic/daily/2025-04-15.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for PvE - Гайд на Холи Приста (x1)"
-            }
-          },
-          {
-            "id": "3a0026349f8528e4",
-            "type": "leaf",
-            "state": {
-              "type": "BC-matrix",
-              "state": {},
-              "icon": "BC-trail-icon",
-              "title": "Breadcrumbs Matrix"
+              "title": "File properties"
             }
           }
         ]
@@ -320,7 +311,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5
+    "width": 344.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -334,36 +326,36 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "a59baf4a22070593",
+  "active": "eeda3c70e6ff6add",
   "lastOpenFiles": [
-    "base/_problems/holy priest.md",
-    "sources/Прочее - [Гайд ]Как одеваться после 80 уровня в пве.md",
-    "base/_meta-notes/world of warcraft.md",
-    "base/additions/Прочее - [Гайд ]Как одеваться после 80 уровня в пве - annotations.md",
-    "home/databases/sources.md",
-    "sources/PvE - Гайд на Холи Приста (x1).md",
+    "sources/Вопросы и ответы к интервью Java разработчика.md",
+    "projects/Получить оффер junior java dev.md",
+    "periodic/daily/2025-05-20.md",
+    "base/categories/health.md",
     "home/index.md",
-    "periodic/statuses/_one-off.md",
-    "home/help/hotkeys.md",
-    "periodic/statuses/_inbox.md",
-    "periodic/_upcoming.md",
-    "periodic/_today.md",
-    "home/prefixes.md",
-    "home/databases/high-notes.md",
-    "base/_problems/shadow priest.md",
-    "sources/Sirus.Su - Форум.md",
-    "files/holy priest 2025-05-15.png",
-    "base/categories/games.md",
-    "base/categories/chemistry.md",
-    "base/categories/computer_science.md",
-    "base/categories/math.md",
-    "base/categories/english.md",
-    "base/categories/study.md",
-    "base/categories/biology.md",
-    "math.md",
-    "base/categories/bioinformatics.md",
-    "base/categories/history.md",
+    "periodic/daily/2025-05-24.md",
     "periodic/2025.canvas",
+    "base/notes/Общий алгоритм формирования заметок.md",
+    "home/help/last created-updated.md",
+    "base/categories/work.md",
+    "base/_meta-notes/java developer.md",
+    "base/notes/формула Мальтуса.md",
+    "home/databases/fleeting notes.md",
+    "sources/ИТ-собеседование в Т‑Банке.md",
+    "sources/Изучение Java.md",
+    "sources/Собесы.md",
+    "sources/Руководство по вкатыванию в Backend на Java.md",
+    "sources/Роадмап тг Ника.md",
+    "home/prefixes.md",
+    "sources/vault.md",
+    "base/categories/obsidian.md",
+    "base/notes/worldofwarcraft.md",
+    "base/notes/зависимость количества производителей хамсы от количества молоди в Азовском море.md",
+    "base/notes/быстрое создание.md",
+    "base/notes/имитационные модели в биологии.md",
+    "base/notes/какая-то заметка.md",
+    "base/notes/качественные модели в вычислительной биологии.md",
+    "files/holy priest 2025-05-15.png",
     "files/2025-05-03 2025-05-06.png",
     "periodic/daily/Empty File",
     "periodic/Eisenhower Matrix.canvas",

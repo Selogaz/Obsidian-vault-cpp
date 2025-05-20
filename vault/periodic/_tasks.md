@@ -1,12 +1,13 @@
 ---
 tags:
   - mark/gtd
+updated: 2025-05-20T08:43:11+03:00
 alises:
-  - планирование
-  - задачи
   - tasks
   - planning
   - plan
+  - планирование
+  - задачи
 cssclasses:
   - hide-properties
   - hide-backlinks
@@ -49,4 +50,3 @@ ___
 #effort/hard
 
 ___
-

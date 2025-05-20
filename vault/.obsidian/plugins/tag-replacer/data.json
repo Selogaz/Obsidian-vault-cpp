@@ -95,6 +95,14 @@
     {
       "tag": "category/english",
       "icon": "🇺🇸"
+    },
+    {
+      "tag": "category/health",
+      "icon": "❤️"
+    },
+    {
+      "tag": "category/games",
+      "icon": "🎮"
     }
   ],
   "tags": [

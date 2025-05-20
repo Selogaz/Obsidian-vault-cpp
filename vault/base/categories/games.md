@@ -1,13 +1,18 @@
 ---
-tags: 
+tags:
   - system/category
-  - category/🗺️games
+  - category/test
+  - brat
 next:
-  - "[[_🗺️games]]"
+  - "[[_games]]"
 hierarchy:
-  - "[[base/_hierarchy/🗺️games hierarchy|🗺️games]]"
+  - "[[base/_hierarchy/games hierarchy|games]]"
 cssclasses:
   - category
+sort_sources: category
+sort_direction_sources: asc
+pagination_sources: 0
+show_search_sources: true
 ---
 
 > [!tabbed]+
@@ -38,8 +43,9 @@ cssclasses:
 >
 > <label>✅ tasks<input type="radio" name="test" /></label>
 >
-> > ![[periodic/categories/_🗺️games]]
+> > ![[_games]]
 >
 > <label>➕<input type="radio" name="test" /></label>
 >
-> >
+> 
+> 

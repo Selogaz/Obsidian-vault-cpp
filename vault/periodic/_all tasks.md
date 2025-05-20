@@ -1,7 +1,7 @@
 ---
 tags:
   - mark/gtd
-updated: 2025-02-28T08:37:32+07:00
+updated: 2025-05-20T08:43:23+03:00
 cssclasses:
   - hide-properties
   - hide-backlinks
