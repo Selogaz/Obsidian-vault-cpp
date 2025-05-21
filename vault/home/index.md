@@ -20,7 +20,8 @@ cssclasses:
 - [[programming]]
 	- [[java]]
 - [[health]]
-	- 
+	- [[Простое сообщество]]
+		- [[@prostosocial_bot]]
 - [[games]]
 	- [[world of warcraft]]
 - [[obsidian]]

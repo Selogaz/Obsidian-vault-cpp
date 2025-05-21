@@ -1,48 +1,160 @@
 {
   "recentFiles": [
     {
-      "basename": "преимущества ООП",
-      "path": "base/notes/преимущества ООП.md"
+      "basename": "2025",
+      "path": "periodic/2025.canvas"
     },
     {
-      "basename": "Вопросы и ответы к интервью Java разработчика",
-      "path": "sources/Вопросы и ответы к интервью Java разработчика.md"
-    },
-    {
-      "basename": "Получить оффер junior java dev",
-      "path": "projects/Получить оффер junior java dev.md"
-    },
-    {
-      "basename": "2025-05-20",
-      "path": "periodic/daily/2025-05-20.md"
-    },
-    {
-      "basename": "health",
-      "path": "base/categories/health.md"
+      "basename": "2025-05-17",
+      "path": "periodic/daily/2025-05-17.md"
     },
     {
       "basename": "index",
       "path": "home/index.md"
     },
     {
-      "basename": "2025-05-24",
-      "path": "periodic/daily/2025-05-24.md"
+      "basename": "last created-updated",
+      "path": "home/help/last created-updated.md"
     },
     {
-      "basename": "2025",
-      "path": "periodic/2025.canvas"
+      "basename": "fleeting notes",
+      "path": "home/databases/fleeting notes.md"
+    },
+    {
+      "basename": "work",
+      "path": "base/categories/work.md"
+    },
+    {
+      "basename": "vault",
+      "path": "sources/vault.md"
+    },
+    {
+      "basename": "Вопросы и ответы к интервью Java разработчика",
+      "path": "sources/Вопросы и ответы к интервью Java разработчика.md"
+    },
+    {
+      "basename": "frames",
+      "path": "base/notes/frames.md"
+    },
+    {
+      "basename": "2025-05-21",
+      "path": "periodic/daily/2025-05-21.md"
+    },
+    {
+      "basename": "2025-W21",
+      "path": "periodic/weekly/2025-W21.md"
+    },
+    {
+      "basename": "execution engine",
+      "path": "base/notes/execution engine.md"
+    },
+    {
+      "basename": "@prostosocial_bot",
+      "path": "sources/@prostosocial_bot.md"
+    },
+    {
+      "basename": "run-time data areas",
+      "path": "base/notes/run-time data areas.md"
+    },
+    {
+      "basename": "Простое сообщество",
+      "path": "base/_meta-notes/Простое сообщество.md"
+    },
+    {
+      "basename": "obsidian",
+      "path": "base/categories/obsidian.md"
+    },
+    {
+      "basename": "_health",
+      "path": "periodic/categories/_health.md"
+    },
+    {
+      "basename": "health",
+      "path": "base/categories/health.md"
+    },
+    {
+      "basename": "classloader",
+      "path": "base/notes/classloader.md"
+    },
+    {
+      "basename": "_inbox",
+      "path": "periodic/statuses/_inbox.md"
+    },
+    {
+      "basename": "_obsidian",
+      "path": "periodic/categories/_obsidian.md"
+    },
+    {
+      "basename": "за что отвечает JVM",
+      "path": "base/notes/за что отвечает JVM.md"
+    },
+    {
+      "basename": "2025-05-20",
+      "path": "periodic/daily/2025-05-20.md"
+    },
+    {
+      "basename": "ссылочные типы",
+      "path": "base/notes/ссылочные типы.md"
+    },
+    {
+      "basename": "примитивы",
+      "path": "base/notes/примитивы.md"
+    },
+    {
+      "basename": "динамическое или позднее связывание",
+      "path": "base/notes/динамическое или позднее связывание.md"
+    },
+    {
+      "basename": "статическое или раннее связывание",
+      "path": "base/notes/статическое или раннее связывание.md"
+    },
+    {
+      "basename": "агрегация и композиция в ООП",
+      "path": "base/notes/агрегация и композиция в ООП.md"
+    },
+    {
+      "basename": "является и имеет в ООП",
+      "path": "base/notes/является и имеет в ООП.md"
+    },
+    {
+      "basename": "недостатки ООП",
+      "path": "base/notes/недостатки ООП.md"
     },
     {
       "basename": "Общий алгоритм формирования заметок",
       "path": "base/notes/Общий алгоритм формирования заметок.md"
     },
     {
-      "basename": "last created-updated",
-      "path": "home/help/last created-updated.md"
+      "basename": "обмен сообщениями",
+      "path": "base/notes/обмен сообщениями.md"
     },
     {
-      "basename": "work",
-      "path": "base/categories/work.md"
+      "basename": "полиморфизм",
+      "path": "base/notes/полиморфизм.md"
+    },
+    {
+      "basename": "преимущества ООП",
+      "path": "base/notes/преимущества ООП.md"
+    },
+    {
+      "basename": "модульность и параллелизм",
+      "path": "base/notes/модульность и параллелизм.md"
+    },
+    {
+      "basename": "польза полиморфизма",
+      "path": "base/notes/польза полиморфизма.md"
+    },
+    {
+      "basename": "пример полиморфизма",
+      "path": "base/notes/пример полиморфизма.md"
+    },
+    {
+      "basename": "Получить оффер junior java dev",
+      "path": "projects/Получить оффер junior java dev.md"
+    },
+    {
+      "basename": "2025-05-24",
+      "path": "periodic/daily/2025-05-24.md"
     },
     {
       "basename": "java developer",
@@ -51,10 +163,6 @@
     {
       "basename": "формула Мальтуса",
       "path": "base/notes/формула Мальтуса.md"
-    },
-    {
-      "basename": "fleeting notes",
-      "path": "home/databases/fleeting notes.md"
     },
     {
       "basename": "ИТ-собеседование в Т‑Банке",
@@ -79,14 +187,6 @@
     {
       "basename": "prefixes",
       "path": "home/prefixes.md"
-    },
-    {
-      "basename": "vault",
-      "path": "sources/vault.md"
-    },
-    {
-      "basename": "obsidian",
-      "path": "base/categories/obsidian.md"
     },
     {
       "basename": "зависимость количества производителей хамсы от количества молоди в Азовском море",
@@ -121,14 +221,6 @@
       "path": "base/notes/“Трансляция.md"
     },
     {
-      "basename": "_inbox",
-      "path": "periodic/statuses/_inbox.md"
-    },
-    {
-      "basename": "обмен сообщениями",
-      "path": "base/notes/обмен сообщениями.md"
-    },
-    {
       "basename": "абстракция",
       "path": "base/notes/абстракция.md"
     },
@@ -153,10 +245,6 @@
       "path": "base/notes/наследование.md"
     },
     {
-      "basename": "полиморфизм",
-      "path": "base/notes/полиморфизм.md"
-    },
-    {
       "basename": "структура обучения в университете",
       "path": "base/notes/структура обучения в университете.md"
     },
@@ -173,24 +261,12 @@
       "path": "base/notes/локализация кода в одном месте.md"
     },
     {
-      "basename": "модульность и параллелизм",
-      "path": "base/notes/модульность и параллелизм.md"
-    },
-    {
-      "basename": "польза полиморфизма",
-      "path": "base/notes/польза полиморфизма.md"
-    },
-    {
       "basename": "инкапсуляция",
       "path": "base/notes/инкапсуляция.md"
     },
     {
       "basename": "что такое ООП",
       "path": "base/notes/что такое ООП.md"
-    },
-    {
-      "basename": "пример полиморфизма",
-      "path": "base/notes/пример полиморфизма.md"
     },
     {
       "basename": "пример полиморфизма от ИИ",
@@ -219,10 +295,6 @@
     {
       "basename": "_priority",
       "path": "periodic/_priority.md"
-    },
-    {
-      "basename": "_health",
-      "path": "periodic/categories/_health.md"
     },
     {
       "basename": "Как одеваться после 80 уровня в пве",
@@ -327,78 +399,6 @@
     {
       "basename": "2025-05-02",
       "path": "periodic/daily/2025-05-02.md"
-    },
-    {
-      "basename": "2025-05-03",
-      "path": "periodic/daily/2025-05-03.md"
-    },
-    {
-      "basename": "2025-05-04",
-      "path": "periodic/daily/2025-05-04.md"
-    },
-    {
-      "basename": "2025-05-05",
-      "path": "periodic/daily/2025-05-05.md"
-    },
-    {
-      "basename": "2025",
-      "path": "periodic/yearly/2025.md"
-    },
-    {
-      "basename": "2025-Q2",
-      "path": "periodic/quarterly/2025-Q2.md"
-    },
-    {
-      "basename": "2025-05",
-      "path": "periodic/monthly/2025-05.md"
-    },
-    {
-      "basename": "2025-W19",
-      "path": "periodic/weekly/2025-W19.md"
-    },
-    {
-      "basename": "2025-05-06",
-      "path": "periodic/daily/2025-05-06.md"
-    },
-    {
-      "basename": "Практическая биоинформатика",
-      "path": "sources/Практическая биоинформатика.md"
-    },
-    {
-      "basename": "1st academic year",
-      "path": "base/_meta-notes/1st academic year.md"
-    },
-    {
-      "basename": "2025-W17",
-      "path": "periodic/weekly/2025-W17.md"
-    },
-    {
-      "basename": "2025-04-23",
-      "path": "periodic/daily/2025-04-23.md"
-    },
-    {
-      "basename": "Философия Java",
-      "path": "sources/Философия Java.md"
-    },
-    {
-      "basename": "new note",
-      "path": "templates/insert/new note.md"
-    },
-    {
-      "basename": "2025-W16",
-      "path": "periodic/weekly/2025-W16.md"
-    },
-    {
-      "basename": "2025-04-18",
-      "path": "periodic/daily/2025-04-18.md"
-    },
-    {
-      "basename": "2025-04-15",
-      "path": "periodic/daily/2025-04-15.md"
-    },
-    {
-      "basename": "2025-04-16",
-      "path": "periodic/daily/2025-04-16.md"
     }
   ],
   "omittedPaths": [

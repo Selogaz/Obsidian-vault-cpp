@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8757fe3e444d0e71",
+            "id": "ac291f215ecec7c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,12 +32,29 @@
             }
           },
           {
-            "id": "b6ab8375a73b0875",
+            "id": "a66018f58a649f4b",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "periodic/2025.canvas",
+                "viewState": {
+                  "x": 346.6552188747461,
+                  "y": 206.75155013344346,
+                  "zoom": -0.9814221430159081
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "2025"
+            }
+          },
+          {
+            "id": "bb4dc09baed9cc51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/categories/health.md",
+                "file": "base/categories/work.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -52,107 +69,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "health"
-            }
-          },
-          {
-            "id": "1ad9634cd53031b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "periodic/daily/2025-05-20.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2025-05-20"
-            }
-          },
-          {
-            "id": "c47baa3c031c336b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "projects/Получить оффер junior java dev.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Получить оффер junior java dev"
-            }
-          },
-          {
-            "id": "d220c0938ce9f182",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sources/Вопросы и ответы к интервью Java разработчика.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Вопросы и ответы к интервью Java разработчика"
-            }
-          },
-          {
-            "id": "eeda3c70e6ff6add",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/преимущества ООП.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "преимущества ООП"
+              "title": "work"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -207,8 +128,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5,
-    "collapsed": true
+    "width": 341.5
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -225,10 +145,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "periodic/daily/2025-04-15.md"
+                "file": "periodic/2025.canvas"
               },
               "icon": "lucide-info",
-              "title": "File properties"
+              "title": "File properties for 2025"
             }
           }
         ]
@@ -311,8 +231,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5,
-    "collapsed": true
+    "width": 344.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -326,35 +245,35 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "eeda3c70e6ff6add",
+  "active": "a66018f58a649f4b",
   "lastOpenFiles": [
-    "sources/Вопросы и ответы к интервью Java разработчика.md",
-    "projects/Получить оффер junior java dev.md",
-    "periodic/daily/2025-05-20.md",
-    "base/categories/health.md",
-    "home/index.md",
-    "periodic/daily/2025-05-24.md",
+    "periodic/daily/2025-05-17.md",
     "periodic/2025.canvas",
-    "base/notes/Общий алгоритм формирования заметок.md",
+    "home/index.md",
     "home/help/last created-updated.md",
-    "base/categories/work.md",
-    "base/_meta-notes/java developer.md",
-    "base/notes/формула Мальтуса.md",
     "home/databases/fleeting notes.md",
-    "sources/ИТ-собеседование в Т‑Банке.md",
-    "sources/Изучение Java.md",
-    "sources/Собесы.md",
-    "sources/Руководство по вкатыванию в Backend на Java.md",
-    "sources/Роадмап тг Ника.md",
-    "home/prefixes.md",
+    "base/categories/work.md",
     "sources/vault.md",
+    "sources/Вопросы и ответы к интервью Java разработчика.md",
+    "base/notes/frames.md",
+    "periodic/daily/2025-05-21.md",
+    "periodic/weekly/2025-W21.md",
+    "base/notes/execution engine.md",
+    "sources/@prostosocial_bot.md",
+    "base/notes/run-time data areas.md",
+    "base/_meta-notes/Простое сообщество.md",
     "base/categories/obsidian.md",
-    "base/notes/worldofwarcraft.md",
-    "base/notes/зависимость количества производителей хамсы от количества молоди в Азовском море.md",
-    "base/notes/быстрое создание.md",
-    "base/notes/имитационные модели в биологии.md",
-    "base/notes/какая-то заметка.md",
-    "base/notes/качественные модели в вычислительной биологии.md",
+    "periodic/categories/_health.md",
+    "base/categories/health.md",
+    "base/notes/classloader.md",
+    "periodic/statuses/_inbox.md",
+    "periodic/categories/_obsidian.md",
+    "base/notes/за что отвечает JVM.md",
+    "periodic/daily/2025-05-20.md",
+    "base/notes/ссылочные типы.md",
+    "base/notes/примитивы.md",
+    "base/notes/динамическое или позднее связывание.md",
+    "base/notes/статическое или раннее связывание.md",
     "files/holy priest 2025-05-15.png",
     "files/2025-05-03 2025-05-06.png",
     "periodic/daily/Empty File",
