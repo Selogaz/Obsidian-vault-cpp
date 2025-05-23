@@ -8,31 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8757fe3e444d0e71",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "periodic/statuses/_inbox.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "_inbox"
-            }
-          },
-          {
-            "id": "13c2b34fcc02b75b",
+            "id": "81acff6b38a17e9e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -56,12 +32,12 @@
             }
           },
           {
-            "id": "7c77549f57544df6",
+            "id": "8e4cbcb4d9bd075a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/notes/модификаторы доступа.md",
+                "file": "base/notes/отличия интерфейса от абстрактного класса.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,11 +52,59 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "модификаторы доступа"
+              "title": "отличия интерфейса от абстрактного класса"
+            }
+          },
+          {
+            "id": "6684c84a0872a8ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/ключевое слово interface.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "ключевое слово interface"
+            }
+          },
+          {
+            "id": "1aa4589fd78faba6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/java 8.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "java 8"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -135,8 +159,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5,
-    "collapsed": true
+    "width": 341.5
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -153,10 +176,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "base/notes/модификаторы доступа.md"
+                "file": "periodic/daily/2025-04-15.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for модификаторы доступа"
+              "title": "File properties"
             }
           }
         ]
@@ -254,9 +277,20 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "7c77549f57544df6",
+  "active": "8e4cbcb4d9bd075a",
   "lastOpenFiles": [
+    "base/notes/отличия интерфейса от абстрактного класса.md",
     "sources/Вопросы и ответы к интервью Java разработчика.md",
+    "base/notes/ключевое слово interface.md",
+    "base/notes/java 8.md",
+    "base/notes/интерфейс.md",
+    "base/notes/модификатор abstract.md",
+    "base/notes/побитовые операции.md",
+    "base/notes/тернарный оператор.md",
+    "base/notes/логические операторы.md",
+    "base/notes/main.md",
+    "base/notes/значения переменных по умолчанию.md",
+    "base/notes/final.md",
     "base/notes/модификаторы доступа.md",
     "base/notes/отличия JVM, JRE и JDK.md",
     "periodic/statuses/_inbox.md",
@@ -271,17 +305,6 @@
     "base/notes/bean builder.md",
     "base/notes/паттерны проектирования.md",
     "base/notes/classpath.md",
-    "base/notes/переменные среды.md",
-    "base/notes/символическая ссылка в java.md",
-    "base/notes/java.nio.file.Path.md",
-    "base/notes/java..md",
-    "base/notes/стандартная библиотека java.md",
-    "base/notes/JRE.md",
-    "base/notes/JDK.md",
-    "base/notes/ссылочные типы.md",
-    "base/notes/динамическое создание в языках программирования.md",
-    "base/notes/динамическое создание в языках программирования.md",
-    "base/notes/за что отвечает JVM.md",
     "files/classloader 2025-05-23.png",
     "periodic/2025.canvas",
     "files/holy priest 2025-05-15.png",

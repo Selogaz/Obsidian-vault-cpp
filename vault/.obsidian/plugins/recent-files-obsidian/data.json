@@ -1,12 +1,56 @@
 {
   "recentFiles": [
     {
-      "basename": "модификаторы доступа",
-      "path": "base/notes/модификаторы доступа.md"
+      "basename": "отличия интерфейса от абстрактного класса",
+      "path": "base/notes/отличия интерфейса от абстрактного класса.md"
     },
     {
       "basename": "Вопросы и ответы к интервью Java разработчика",
       "path": "sources/Вопросы и ответы к интервью Java разработчика.md"
+    },
+    {
+      "basename": "ключевое слово interface",
+      "path": "base/notes/ключевое слово interface.md"
+    },
+    {
+      "basename": "java 8",
+      "path": "base/notes/java 8.md"
+    },
+    {
+      "basename": "интерфейс",
+      "path": "base/notes/интерфейс.md"
+    },
+    {
+      "basename": "модификатор abstract",
+      "path": "base/notes/модификатор abstract.md"
+    },
+    {
+      "basename": "побитовые операции",
+      "path": "base/notes/побитовые операции.md"
+    },
+    {
+      "basename": "тернарный оператор",
+      "path": "base/notes/тернарный оператор.md"
+    },
+    {
+      "basename": "логические операторы",
+      "path": "base/notes/логические операторы.md"
+    },
+    {
+      "basename": "main",
+      "path": "base/notes/main.md"
+    },
+    {
+      "basename": "значения переменных по умолчанию",
+      "path": "base/notes/значения переменных по умолчанию.md"
+    },
+    {
+      "basename": "final",
+      "path": "base/notes/final.md"
+    },
+    {
+      "basename": "модификаторы доступа",
+      "path": "base/notes/модификаторы доступа.md"
     },
     {
       "basename": "отличия JVM, JRE и JDK",
@@ -333,10 +377,6 @@
       "path": "base/notes/объект.md"
     },
     {
-      "basename": "интерфейс",
-      "path": "base/notes/интерфейс.md"
-    },
-    {
       "basename": "ООП",
       "path": "base/notes/ООП.md"
     },
@@ -359,46 +399,6 @@
     {
       "basename": "локализация кода в одном месте",
       "path": "base/notes/локализация кода в одном месте.md"
-    },
-    {
-      "basename": "что такое ООП",
-      "path": "base/notes/что такое ООП.md"
-    },
-    {
-      "basename": "пример полиморфизма от ИИ",
-      "path": "base/notes/пример полиморфизма от ИИ.md"
-    },
-    {
-      "basename": "пример наследования",
-      "path": "base/notes/пример наследования.md"
-    },
-    {
-      "basename": "регрессионные модели в биологии",
-      "path": "base/notes/регрессионные модели в биологии.md"
-    },
-    {
-      "basename": "пример обмена сообщениями",
-      "path": "base/notes/пример обмена сообщениями.md"
-    },
-    {
-      "basename": "пример инкапсуляции",
-      "path": "base/notes/пример инкапсуляции.md"
-    },
-    {
-      "basename": "hotkeys",
-      "path": "home/help/hotkeys.md"
-    },
-    {
-      "basename": "_priority",
-      "path": "periodic/_priority.md"
-    },
-    {
-      "basename": "Как одеваться после 80 уровня в пве",
-      "path": "sources/Как одеваться после 80 уровня в пве.md"
-    },
-    {
-      "basename": "_work",
-      "path": "periodic/categories/_work.md"
     }
   ],
   "omittedPaths": [
