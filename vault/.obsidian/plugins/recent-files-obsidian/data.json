@@ -1,16 +1,172 @@
 {
   "recentFiles": [
     {
-      "basename": "2025",
-      "path": "periodic/2025.canvas"
+      "basename": "модификаторы доступа",
+      "path": "base/notes/модификаторы доступа.md"
     },
     {
-      "basename": "2025-05-17",
-      "path": "periodic/daily/2025-05-17.md"
+      "basename": "Вопросы и ответы к интервью Java разработчика",
+      "path": "sources/Вопросы и ответы к интервью Java разработчика.md"
     },
     {
-      "basename": "index",
-      "path": "home/index.md"
+      "basename": "отличия JVM, JRE и JDK",
+      "path": "base/notes/отличия JVM, JRE и JDK.md"
+    },
+    {
+      "basename": "_inbox",
+      "path": "periodic/statuses/_inbox.md"
+    },
+    {
+      "basename": "run-time data areas",
+      "path": "base/notes/run-time data areas.md"
+    },
+    {
+      "basename": "constant pool и таблица символов",
+      "path": "base/notes/constant pool и таблица символов.md"
+    },
+    {
+      "basename": "смежность памяти",
+      "path": "base/notes/смежность памяти.md"
+    },
+    {
+      "basename": "frames",
+      "path": "base/notes/frames.md"
+    },
+    {
+      "basename": "classloader",
+      "path": "base/notes/classloader.md"
+    },
+    {
+      "basename": "AOP",
+      "path": "base/notes/AOP.md"
+    },
+    {
+      "basename": "CORBA и RMI",
+      "path": "base/notes/CORBA и RMI.md"
+    },
+    {
+      "basename": "RMI",
+      "path": "base/notes/RMI.md"
+    },
+    {
+      "basename": "bean builder",
+      "path": "base/notes/bean builder.md"
+    },
+    {
+      "basename": "паттерны проектирования",
+      "path": "base/notes/паттерны проектирования.md"
+    },
+    {
+      "basename": "classpath",
+      "path": "base/notes/classpath.md"
+    },
+    {
+      "basename": "переменные среды",
+      "path": "base/notes/переменные среды.md"
+    },
+    {
+      "basename": "символическая ссылка в java",
+      "path": "base/notes/символическая ссылка в java.md"
+    },
+    {
+      "basename": "java.nio.file.Path",
+      "path": "base/notes/java.nio.file.Path.md"
+    },
+    {
+      "basename": "стандартная библиотека java",
+      "path": "base/notes/стандартная библиотека java.md"
+    },
+    {
+      "basename": "JRE",
+      "path": "base/notes/JRE.md"
+    },
+    {
+      "basename": "JDK",
+      "path": "base/notes/JDK.md"
+    },
+    {
+      "basename": "ссылочные типы",
+      "path": "base/notes/ссылочные типы.md"
+    },
+    {
+      "basename": "динамическое создание в языках программирования",
+      "path": "base/notes/динамическое создание в языках программирования.md"
+    },
+    {
+      "basename": "за что отвечает JVM",
+      "path": "base/notes/за что отвечает JVM.md"
+    },
+    {
+      "basename": "примитивы",
+      "path": "base/notes/примитивы.md"
+    },
+    {
+      "basename": "расширенная кодировка символов",
+      "path": "base/notes/расширенная кодировка символов.md"
+    },
+    {
+      "basename": "sources",
+      "path": "home/databases/sources.md"
+    },
+    {
+      "basename": "обмен сообщениями",
+      "path": "base/notes/обмен сообщениями.md"
+    },
+    {
+      "basename": "байт-код",
+      "path": "base/notes/байт-код.md"
+    },
+    {
+      "basename": "vault",
+      "path": "sources/vault.md"
+    },
+    {
+      "basename": "таймкоды Obsidian vault",
+      "path": "base/notes/таймкоды Obsidian vault.md"
+    },
+    {
+      "basename": "prefixes",
+      "path": "home/prefixes.md"
+    },
+    {
+      "basename": "execution engine",
+      "path": "base/notes/execution engine.md"
+    },
+    {
+      "basename": "преимущества ООП",
+      "path": "base/notes/преимущества ООП.md"
+    },
+    {
+      "basename": "польза полиморфизма",
+      "path": "base/notes/польза полиморфизма.md"
+    },
+    {
+      "basename": "инкапсуляция",
+      "path": "base/notes/инкапсуляция.md"
+    },
+    {
+      "basename": "динамическое или позднее связывание",
+      "path": "base/notes/динамическое или позднее связывание.md"
+    },
+    {
+      "basename": "статическое или раннее связывание",
+      "path": "base/notes/статическое или раннее связывание.md"
+    },
+    {
+      "basename": "2025-05-22",
+      "path": "periodic/daily/2025-05-22.md"
+    },
+    {
+      "basename": "2025-W21",
+      "path": "periodic/weekly/2025-W21.md"
+    },
+    {
+      "basename": "2025-05",
+      "path": "periodic/monthly/2025-05.md"
+    },
+    {
+      "basename": "_test brat",
+      "path": "base/notes/_test brat.md"
     },
     {
       "basename": "last created-updated",
@@ -21,40 +177,32 @@
       "path": "home/databases/fleeting notes.md"
     },
     {
+      "basename": "полиморфизм",
+      "path": "base/notes/полиморфизм.md"
+    },
+    {
+      "basename": "index",
+      "path": "home/index.md"
+    },
+    {
+      "basename": "2025",
+      "path": "periodic/2025.canvas"
+    },
+    {
+      "basename": "2025-05-17",
+      "path": "periodic/daily/2025-05-17.md"
+    },
+    {
       "basename": "work",
       "path": "base/categories/work.md"
-    },
-    {
-      "basename": "vault",
-      "path": "sources/vault.md"
-    },
-    {
-      "basename": "Вопросы и ответы к интервью Java разработчика",
-      "path": "sources/Вопросы и ответы к интервью Java разработчика.md"
-    },
-    {
-      "basename": "frames",
-      "path": "base/notes/frames.md"
     },
     {
       "basename": "2025-05-21",
       "path": "periodic/daily/2025-05-21.md"
     },
     {
-      "basename": "2025-W21",
-      "path": "periodic/weekly/2025-W21.md"
-    },
-    {
-      "basename": "execution engine",
-      "path": "base/notes/execution engine.md"
-    },
-    {
       "basename": "@prostosocial_bot",
       "path": "sources/@prostosocial_bot.md"
-    },
-    {
-      "basename": "run-time data areas",
-      "path": "base/notes/run-time data areas.md"
     },
     {
       "basename": "Простое сообщество",
@@ -73,40 +221,12 @@
       "path": "base/categories/health.md"
     },
     {
-      "basename": "classloader",
-      "path": "base/notes/classloader.md"
-    },
-    {
-      "basename": "_inbox",
-      "path": "periodic/statuses/_inbox.md"
-    },
-    {
       "basename": "_obsidian",
       "path": "periodic/categories/_obsidian.md"
     },
     {
-      "basename": "за что отвечает JVM",
-      "path": "base/notes/за что отвечает JVM.md"
-    },
-    {
       "basename": "2025-05-20",
       "path": "periodic/daily/2025-05-20.md"
-    },
-    {
-      "basename": "ссылочные типы",
-      "path": "base/notes/ссылочные типы.md"
-    },
-    {
-      "basename": "примитивы",
-      "path": "base/notes/примитивы.md"
-    },
-    {
-      "basename": "динамическое или позднее связывание",
-      "path": "base/notes/динамическое или позднее связывание.md"
-    },
-    {
-      "basename": "статическое или раннее связывание",
-      "path": "base/notes/статическое или раннее связывание.md"
     },
     {
       "basename": "агрегация и композиция в ООП",
@@ -125,24 +245,8 @@
       "path": "base/notes/Общий алгоритм формирования заметок.md"
     },
     {
-      "basename": "обмен сообщениями",
-      "path": "base/notes/обмен сообщениями.md"
-    },
-    {
-      "basename": "полиморфизм",
-      "path": "base/notes/полиморфизм.md"
-    },
-    {
-      "basename": "преимущества ООП",
-      "path": "base/notes/преимущества ООП.md"
-    },
-    {
       "basename": "модульность и параллелизм",
       "path": "base/notes/модульность и параллелизм.md"
-    },
-    {
-      "basename": "польза полиморфизма",
-      "path": "base/notes/польза полиморфизма.md"
     },
     {
       "basename": "пример полиморфизма",
@@ -183,10 +287,6 @@
     {
       "basename": "Роадмап тг Ника",
       "path": "sources/Роадмап тг Ника.md"
-    },
-    {
-      "basename": "prefixes",
-      "path": "home/prefixes.md"
     },
     {
       "basename": "зависимость количества производителей хамсы от количества молоди в Азовском море",
@@ -261,10 +361,6 @@
       "path": "base/notes/локализация кода в одном месте.md"
     },
     {
-      "basename": "инкапсуляция",
-      "path": "base/notes/инкапсуляция.md"
-    },
-    {
       "basename": "что такое ООП",
       "path": "base/notes/что такое ООП.md"
     },
@@ -303,102 +399,6 @@
     {
       "basename": "_work",
       "path": "periodic/categories/_work.md"
-    },
-    {
-      "basename": "_all tasks",
-      "path": "periodic/_all tasks.md"
-    },
-    {
-      "basename": "_today",
-      "path": "periodic/_today.md"
-    },
-    {
-      "basename": "_test brat",
-      "path": "base/notes/_test brat.md"
-    },
-    {
-      "basename": "holy priest",
-      "path": "base/_problems/holy priest.md"
-    },
-    {
-      "basename": "world of warcraft",
-      "path": "base/_meta-notes/world of warcraft.md"
-    },
-    {
-      "basename": "PvE - Гайд на Холи Приста (x1)",
-      "path": "sources/PvE - Гайд на Холи Приста (x1).md"
-    },
-    {
-      "basename": "shadow priest",
-      "path": "base/_problems/shadow priest.md"
-    },
-    {
-      "basename": "sources",
-      "path": "home/databases/sources.md"
-    },
-    {
-      "basename": "_one-off",
-      "path": "periodic/statuses/_one-off.md"
-    },
-    {
-      "basename": "_reference",
-      "path": "periodic/statuses/_reference.md"
-    },
-    {
-      "basename": "_tasks",
-      "path": "periodic/_tasks.md"
-    },
-    {
-      "basename": "_upcoming",
-      "path": "periodic/_upcoming.md"
-    },
-    {
-      "basename": "java",
-      "path": "base/_meta-notes/java.md"
-    },
-    {
-      "basename": "programming",
-      "path": "base/categories/programming.md"
-    },
-    {
-      "basename": "2025-05-19",
-      "path": "periodic/daily/2025-05-19.md"
-    },
-    {
-      "basename": "2025-W20",
-      "path": "periodic/weekly/2025-W20.md"
-    },
-    {
-      "basename": "Прочее - [Гайд ]Как одеваться после 80 уровня в пве - annotations",
-      "path": "base/additions/Прочее - [Гайд ]Как одеваться после 80 уровня в пве - annotations.md"
-    },
-    {
-      "basename": "high-notes",
-      "path": "home/databases/high-notes.md"
-    },
-    {
-      "basename": "Java, Полное руководство",
-      "path": "sources/Java, Полное руководство.md"
-    },
-    {
-      "basename": "2025-04-24",
-      "path": "periodic/daily/2025-04-24.md"
-    },
-    {
-      "basename": "2025-04-25",
-      "path": "periodic/daily/2025-04-25.md"
-    },
-    {
-      "basename": "2025-04-26",
-      "path": "periodic/daily/2025-04-26.md"
-    },
-    {
-      "basename": "2025-04-29",
-      "path": "periodic/daily/2025-04-29.md"
-    },
-    {
-      "basename": "2025-05-02",
-      "path": "periodic/daily/2025-05-02.md"
     }
   ],
   "omittedPaths": [

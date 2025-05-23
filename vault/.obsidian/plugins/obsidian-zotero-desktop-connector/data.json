@@ -36,5 +36,6 @@
   ],
   "citeSuggestTemplate": "[[{{citekey}}]]",
   "openNoteAfterImport": true,
-  "whichNotesToOpenAfterImport": "first-imported-note"
+  "whichNotesToOpenAfterImport": "first-imported-note",
+  "shouldConcat": true
 }
