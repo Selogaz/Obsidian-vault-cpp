@@ -5,7 +5,10 @@ tags:
 aliases: []
 deck: obsidian::obsidian
 created: 2025-05-23T07:55:41+03:00
-updated: 2025-05-23T07:56:50+03:00
+updated: 2025-05-24T13:19:59+03:00
+sr-due: null
+sr-interval: null
+sr-ease: null
 ---
 
 **Таймкоды Obsidian vault**

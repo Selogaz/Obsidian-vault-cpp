@@ -14,7 +14,7 @@ start: 2025-05-20T12:24:31+03:00
 end: 
 total_hours: 0
 created: 2025-05-20T12:24:31+03:00
-updated: 2025-05-23T08:55:04+03:00
+updated: 2025-05-24T13:17:56+03:00
 ---
 
 ![cover|150](https://yastatic.net/s3/psf/disk-public/_/6jthIYkBdecaLwm8yXZPKuI1HW7.png)
@@ -22,6 +22,13 @@ updated: 2025-05-23T08:55:04+03:00
 # Abstract
 
 [[таймкоды Obsidian vault]]
+
+сделать заметку не повторяющейся
+```yaml
+sr-due: null
+sr-interval: null
+sr-ease: null
+```
 
 alt+shift+h
 alt+shift+q - настройки задач

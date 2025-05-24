@@ -5,7 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-23T09:47:18+03:00
-updated: 2025-05-23T09:47:54+03:00
+updated: 2025-05-24T12:01:07+03:00
+sr-due: 2025-05-25
+sr-interval: 1
+sr-ease: 222
 ---
 
 **Classpath**

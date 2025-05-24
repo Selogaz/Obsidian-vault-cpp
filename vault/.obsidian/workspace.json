@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "dc653c5106fb9155",
+        "id": "500268988ac90069",
         "type": "tabs",
         "children": [
           {
-            "id": "81acff6b38a17e9e",
+            "id": "563c88e0d65789f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/Вопросы и ответы к интервью Java разработчика.md",
+                "file": "base/notes/main.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,83 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Вопросы и ответы к интервью Java разработчика"
-            }
-          },
-          {
-            "id": "8e4cbcb4d9bd075a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/отличия интерфейса от абстрактного класса.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "отличия интерфейса от абстрактного класса"
-            }
-          },
-          {
-            "id": "6684c84a0872a8ec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/ключевое слово interface.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "ключевое слово interface"
-            }
-          },
-          {
-            "id": "1aa4589fd78faba6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/java 8.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "java 8"
+              "title": "main"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -176,10 +103,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "periodic/daily/2025-04-15.md"
+                "file": "base/notes/main.md"
               },
               "icon": "lucide-info",
-              "title": "File properties"
+              "title": "File properties for main"
             }
           }
         ]
@@ -232,12 +159,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "base/notes/main.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true,
-                "file": "base/notes/другая заметка.md"
+                "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from main"
             }
           },
           {
@@ -262,8 +189,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5,
-    "collapsed": true
+    "width": 344.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -277,34 +203,34 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "8e4cbcb4d9bd075a",
+  "active": "563c88e0d65789f3",
   "lastOpenFiles": [
-    "base/notes/отличия интерфейса от абстрактного класса.md",
-    "sources/Вопросы и ответы к интервью Java разработчика.md",
-    "base/notes/ключевое слово interface.md",
-    "base/notes/java 8.md",
-    "base/notes/интерфейс.md",
-    "base/notes/модификатор abstract.md",
-    "base/notes/побитовые операции.md",
-    "base/notes/тернарный оператор.md",
-    "base/notes/логические операторы.md",
-    "base/notes/main.md",
-    "base/notes/значения переменных по умолчанию.md",
     "base/notes/final.md",
+    "base/notes/main.md",
+    "base/notes/быстрое создание.md",
+    "base/notes/значения переменных по умолчанию.md",
+    "base/notes/имитационные модели в биологии.md",
+    "base/notes/какая-то заметка.md",
+    "base/notes/качественные модели в вычислительной биологии.md",
+    "base/notes/логические операторы.md",
+    "base/notes/побитовые операции.md",
+    "base/notes/таймкоды Obsidian vault.md",
+    "base/notes/тернарный оператор.md",
+    "base/notes/формула Мальтуса.md",
+    "sources/vault.md",
+    "base/notes/“Трансляция.md",
+    "home/databases/sources.md",
+    "home/index.md",
+    "base/notes/зависимость количества производителей хамсы от количества молоди в Азовском море.md",
     "base/notes/модификаторы доступа.md",
     "base/notes/отличия JVM, JRE и JDK.md",
-    "periodic/statuses/_inbox.md",
-    "base/notes/run-time data areas.md",
-    "base/notes/constant pool и таблица символов.md",
-    "base/notes/смежность памяти.md",
-    "base/notes/frames.md",
-    "base/notes/classloader.md",
+    "base/notes/структура обучения в университете.md",
     "base/notes/AOP.md",
     "base/notes/CORBA и RMI.md",
-    "base/notes/RMI.md",
     "base/notes/bean builder.md",
-    "base/notes/паттерны проектирования.md",
     "base/notes/classpath.md",
+    "base/notes/символическая ссылка в java.md",
+    "base/notes/constant pool и таблица символов.md",
     "files/classloader 2025-05-23.png",
     "periodic/2025.canvas",
     "files/holy priest 2025-05-15.png",
