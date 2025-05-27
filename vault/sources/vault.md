@@ -14,7 +14,7 @@ start: 2025-05-20T12:24:31+03:00
 end: 
 total_hours: 0
 created: 2025-05-20T12:24:31+03:00
-updated: 2025-05-24T13:17:56+03:00
+updated: 2025-05-26T19:33:41+03:00
 ---
 
 ![cover|150](https://yastatic.net/s3/psf/disk-public/_/6jthIYkBdecaLwm8yXZPKuI1HW7.png)
@@ -23,7 +23,7 @@ updated: 2025-05-24T13:17:56+03:00
 
 [[таймкоды Obsidian vault]]
 
-сделать заметку не повторяющейся
+# Сделать заметку не повторяющейся
 ```yaml
 sr-due: null
 sr-interval: null

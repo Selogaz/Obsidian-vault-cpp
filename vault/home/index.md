@@ -16,17 +16,21 @@ cssclasses:
 
 
 ----
-
+- [[computer science]]
+	- [[pc builds]]
 - [[programming]]
 	- [[java]]
 - [[health]]
 	- [[Простое сообщество]]
 		- [[@prostosocial_bot]]
+	- [[Ментальное здоровье]]
+		- [[Как умирает мышление]]
 - [[games]]
 	- [[world of warcraft]]
 - [[obsidian]]
 	- [[vault]]
-		
+		- [[vault#Сделать заметку не повторяющейся]]
+			
 # Contexts
 -  [[work]]
 	- [[java developer]]

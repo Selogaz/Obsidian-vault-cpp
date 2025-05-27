@@ -28,6 +28,7 @@ english – en|eng
 bioinformatics – binf
 work – w
 obsidian – obs
+health – h
 
 
 ```yaml

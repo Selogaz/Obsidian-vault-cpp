@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "500268988ac90069",
+        "id": "dc653c5106fb9155",
         "type": "tabs",
         "children": [
           {
-            "id": "563c88e0d65789f3",
+            "id": "8757fe3e444d0e71",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/notes/main.md",
+                "file": "sources/Вопросы и ответы к интервью Java разработчика.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,83 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "main"
+              "title": "Вопросы и ответы к интервью Java разработчика"
+            }
+          },
+          {
+            "id": "8c982f71f8eddfa4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/зачем нужен сборщик мусора.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "зачем нужен сборщик мусора"
+            }
+          },
+          {
+            "id": "6b551a3aaa8f6f9c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/GC Root.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "GC Root"
+            }
+          },
+          {
+            "id": "c45b64e8b63a89bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/daily/2025-05-27.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-05-27"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -86,7 +159,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5
+    "width": 341.5,
+    "collapsed": true
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -103,10 +177,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "base/notes/main.md"
+                "file": "base/notes/GC Root.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for main"
+              "title": "File properties for GC Root"
             }
           }
         ]
@@ -159,12 +233,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "base/notes/main.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": true,
+                "file": "base/notes/другая заметка.md"
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from main"
+              "title": "Outgoing links"
             }
           },
           {
@@ -185,11 +259,13 @@
               "title": "Backlinks"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 344.5
+    "width": 344.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -203,36 +279,37 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "563c88e0d65789f3",
+  "active": "6b551a3aaa8f6f9c",
   "lastOpenFiles": [
-    "base/notes/final.md",
-    "base/notes/main.md",
-    "base/notes/быстрое создание.md",
-    "base/notes/значения переменных по умолчанию.md",
-    "base/notes/имитационные модели в биологии.md",
-    "base/notes/какая-то заметка.md",
-    "base/notes/качественные модели в вычислительной биологии.md",
-    "base/notes/логические операторы.md",
-    "base/notes/побитовые операции.md",
-    "base/notes/таймкоды Obsidian vault.md",
-    "base/notes/тернарный оператор.md",
-    "base/notes/формула Мальтуса.md",
-    "sources/vault.md",
-    "base/notes/“Трансляция.md",
-    "home/databases/sources.md",
+    "base/notes/GC Root.md",
+    "base/notes/зачем нужен сборщик мусора.md",
+    "sources/Вопросы и ответы к интервью Java разработчика.md",
+    "base/notes/reference counting.md",
+    "base/notes/циклическая зависимость.md",
+    "base/notes/передача переменных в методы.md",
+    "base/notes/что хранится в куче, а что в стеке.md",
+    "base/notes/heap vs stack.md",
+    "base/notes/assert.md",
+    "base/notes/доступ к внешнему классу из внутреннего.md",
+    "base/notes/anonymous inner class.md",
+    "periodic/daily/2025-05-27.md",
+    "base/notes/local inner class.md",
+    "base/notes/w local inner class.md",
+    "base/notes/особенности использования внутренних классов.md",
+    "base/notes/инициализация static, nonstatic.md",
+    "base/notes/static nested class.md",
+    "base/notes/nested class.md",
+    "base/notes/типы классов в java.md",
+    "base/notes/member inner class.md",
+    "w инициализация static/nonstatic.md",
     "home/index.md",
-    "base/notes/зависимость количества производителей хамсы от количества молоди в Азовском море.md",
-    "base/notes/модификаторы доступа.md",
-    "base/notes/отличия JVM, JRE и JDK.md",
-    "base/notes/структура обучения в университете.md",
-    "base/notes/AOP.md",
-    "base/notes/CORBA и RMI.md",
-    "base/notes/bean builder.md",
-    "base/notes/classpath.md",
-    "base/notes/символическая ссылка в java.md",
-    "base/notes/constant pool и таблица символов.md",
-    "files/classloader 2025-05-23.png",
+    "w инициализация static",
+    "base/notes/static vs nonstatic.md",
+    "sources/vault.md",
+    "base/notes/exception в блоке инициализации.md",
+    "base/notes/final и методы интерфейса.md",
     "periodic/2025.canvas",
+    "files/classloader 2025-05-23.png",
     "files/holy priest 2025-05-15.png",
     "files/2025-05-03 2025-05-06.png",
     "periodic/daily/Empty File",
