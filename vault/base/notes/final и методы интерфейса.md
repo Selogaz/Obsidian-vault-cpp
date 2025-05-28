@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-25T17:59:50+03:00
-updated: 2025-05-27T10:24:15+03:00
-sr-due: 2025-05-28
-sr-interval: 1
-sr-ease: 230
+updated: 2025-05-28T05:06:08+03:00
+sr-due: 2025-05-31
+sr-interval: 3
+sr-ease: 250
 ---
 
 Почему нельзя объявить метод интерфейса с модификатором final?

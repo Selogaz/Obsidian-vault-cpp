@@ -13,7 +13,10 @@ cssclasses:
 > `$=dv.list(dv.pages("#system/category").where(l => !dv.func.contains(l.file.inlinks, dv.current().file.link)).file.link)`
 
 # Knowledge areas
-
+-  [[work]]
+	- [[java developer]]
+		- [[Получить оффер junior java dev]]
+			- [[Вопросы и ответы к интервью Java разработчика]]
 
 ----
 - [[computer science]]
@@ -32,8 +35,3 @@ cssclasses:
 		- [[vault#Сделать заметку не повторяющейся]]
 			
 # Contexts
--  [[work]]
-	- [[java developer]]
-		- [[Получить оффер junior java dev]]
-			- [[Вопросы и ответы к интервью Java разработчика]]
-- 

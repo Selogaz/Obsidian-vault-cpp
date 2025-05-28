@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-21T08:35:50+03:00
-updated: 2025-05-26T20:07:43+03:00
-sr-due: 2025-05-28
-sr-interval: 2
-sr-ease: 250
+updated: 2025-05-28T04:53:36+03:00
+sr-due: 2025-06-04
+sr-interval: 7
+sr-ease: 270
 ---
 
 **За что отвечает JVM**

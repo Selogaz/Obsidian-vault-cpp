@@ -8,7 +8,79 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8757fe3e444d0e71",
+            "id": "e2998ed6ae688453",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/assert.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "assert"
+            }
+          },
+          {
+            "id": "726c29ac1b55f6e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/daily/2025-05-28.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-05-28"
+            }
+          },
+          {
+            "id": "6f4b7b9556305302",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home/index.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "f2e6d3c5354cd838",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,12 +104,12 @@
             }
           },
           {
-            "id": "8c982f71f8eddfa4",
+            "id": "c5dfd781c279f654",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/notes/зачем нужен сборщик мусора.md",
+                "file": "base/notes/виды сборщиков мусора в HotSpot.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,16 +124,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "зачем нужен сборщик мусора"
+              "title": "виды сборщиков мусора в HotSpot"
             }
           },
           {
-            "id": "6b551a3aaa8f6f9c",
+            "id": "e895f4c2823fc1f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/notes/GC Root.md",
+                "file": "base/notes/Serial Garbage Collector.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,16 +148,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "GC Root"
+              "title": "Serial Garbage Collector"
             }
           },
           {
-            "id": "c45b64e8b63a89bf",
+            "id": "8809f6243ca6bd74",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2025-05-27.md",
+                "file": "base/notes/young generation.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,11 +172,83 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-05-27"
+              "title": "young generation"
+            }
+          },
+          {
+            "id": "3747509237ef9166",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/minor collection.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "minor collection"
+            }
+          },
+          {
+            "id": "c686594b3705c340",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/механизм сборки мусора.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "механизм сборки мусора"
+            }
+          },
+          {
+            "id": "f52dcd960e4b6be8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/garbage.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "garbage"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -177,10 +321,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "base/notes/GC Root.md"
+                "file": "periodic/daily/2025-04-15.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for GC Root"
+              "title": "File properties"
             }
           }
         ]
@@ -259,8 +403,7 @@
               "title": "Backlinks"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -279,35 +422,35 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "6b551a3aaa8f6f9c",
+  "active": "3747509237ef9166",
   "lastOpenFiles": [
-    "base/notes/GC Root.md",
-    "base/notes/зачем нужен сборщик мусора.md",
+    "base/notes/minor collection.md",
+    "base/notes/young generation.md",
+    "base/notes/Serial Garbage Collector.md",
+    "base/notes/виды сборщиков мусора в HotSpot.md",
     "sources/Вопросы и ответы к интервью Java разработчика.md",
-    "base/notes/reference counting.md",
-    "base/notes/циклическая зависимость.md",
+    "base/notes/механизм сборки мусора.md",
+    "base/notes/GC Root.md",
+    "base/notes/garbage.md",
+    "home/index.md",
+    "periodic/daily/2025-05-28.md",
+    "base/notes/assert.md",
+    "base/notes/static vs nonstatic.md",
+    "base/notes/доступ к внешнему классу из внутреннего.md",
+    "base/notes/инициализация static, nonstatic.md",
     "base/notes/передача переменных в методы.md",
+    "base/notes/типы классов java.md",
+    "base/notes/типы классов в java.md",
+    "base/notes/статический метод генерации.md",
+    "sources/vault.md",
     "base/notes/что хранится в куче, а что в стеке.md",
     "base/notes/heap vs stack.md",
-    "base/notes/assert.md",
-    "base/notes/доступ к внешнему классу из внутреннего.md",
-    "base/notes/anonymous inner class.md",
-    "periodic/daily/2025-05-27.md",
-    "base/notes/local inner class.md",
-    "base/notes/w local inner class.md",
-    "base/notes/особенности использования внутренних классов.md",
-    "base/notes/инициализация static, nonstatic.md",
-    "base/notes/static nested class.md",
     "base/notes/nested class.md",
-    "base/notes/типы классов в java.md",
-    "base/notes/member inner class.md",
-    "w инициализация static/nonstatic.md",
-    "home/index.md",
+    "base/notes/зачем нужен сборщик мусора.md",
+    "base/notes/особенности использования внутренних классов.md",
+    "base/notes/anonymous inner class.md",
+    "base/notes/local inner class.md",
     "w инициализация static",
-    "base/notes/static vs nonstatic.md",
-    "sources/vault.md",
-    "base/notes/exception в блоке инициализации.md",
-    "base/notes/final и методы интерфейса.md",
     "periodic/2025.canvas",
     "files/classloader 2025-05-23.png",
     "files/holy priest 2025-05-15.png",

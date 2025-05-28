@@ -1,28 +1,76 @@
 {
   "recentFiles": [
     {
-      "basename": "GC Root",
-      "path": "base/notes/GC Root.md"
+      "basename": "minor collection",
+      "path": "base/notes/minor collection.md"
     },
     {
-      "basename": "зачем нужен сборщик мусора",
-      "path": "base/notes/зачем нужен сборщик мусора.md"
+      "basename": "young generation",
+      "path": "base/notes/young generation.md"
+    },
+    {
+      "basename": "Serial Garbage Collector",
+      "path": "base/notes/Serial Garbage Collector.md"
+    },
+    {
+      "basename": "виды сборщиков мусора в HotSpot",
+      "path": "base/notes/виды сборщиков мусора в HotSpot.md"
     },
     {
       "basename": "Вопросы и ответы к интервью Java разработчика",
       "path": "sources/Вопросы и ответы к интервью Java разработчика.md"
     },
     {
-      "basename": "reference counting",
-      "path": "base/notes/reference counting.md"
+      "basename": "механизм сборки мусора",
+      "path": "base/notes/механизм сборки мусора.md"
     },
     {
-      "basename": "циклическая зависимость",
-      "path": "base/notes/циклическая зависимость.md"
+      "basename": "GC Root",
+      "path": "base/notes/GC Root.md"
+    },
+    {
+      "basename": "garbage",
+      "path": "base/notes/garbage.md"
+    },
+    {
+      "basename": "index",
+      "path": "home/index.md"
+    },
+    {
+      "basename": "2025-05-28",
+      "path": "periodic/daily/2025-05-28.md"
+    },
+    {
+      "basename": "assert",
+      "path": "base/notes/assert.md"
+    },
+    {
+      "basename": "static vs nonstatic",
+      "path": "base/notes/static vs nonstatic.md"
+    },
+    {
+      "basename": "доступ к внешнему классу из внутреннего",
+      "path": "base/notes/доступ к внешнему классу из внутреннего.md"
+    },
+    {
+      "basename": "инициализация static, nonstatic",
+      "path": "base/notes/инициализация static, nonstatic.md"
     },
     {
       "basename": "передача переменных в методы",
       "path": "base/notes/передача переменных в методы.md"
+    },
+    {
+      "basename": "типы классов java",
+      "path": "base/notes/типы классов java.md"
+    },
+    {
+      "basename": "статический метод генерации",
+      "path": "base/notes/статический метод генерации.md"
+    },
+    {
+      "basename": "vault",
+      "path": "sources/vault.md"
     },
     {
       "basename": "что хранится в куче, а что в стеке",
@@ -33,60 +81,40 @@
       "path": "base/notes/heap vs stack.md"
     },
     {
-      "basename": "assert",
-      "path": "base/notes/assert.md"
+      "basename": "nested class",
+      "path": "base/notes/nested class.md"
     },
     {
-      "basename": "доступ к внешнему классу из внутреннего",
-      "path": "base/notes/доступ к внешнему классу из внутреннего.md"
-    },
-    {
-      "basename": "anonymous inner class",
-      "path": "base/notes/anonymous inner class.md"
-    },
-    {
-      "basename": "2025-05-27",
-      "path": "periodic/daily/2025-05-27.md"
-    },
-    {
-      "basename": "local inner class",
-      "path": "base/notes/local inner class.md"
+      "basename": "зачем нужен сборщик мусора",
+      "path": "base/notes/зачем нужен сборщик мусора.md"
     },
     {
       "basename": "особенности использования внутренних классов",
       "path": "base/notes/особенности использования внутренних классов.md"
     },
     {
-      "basename": "инициализация static, nonstatic",
-      "path": "base/notes/инициализация static, nonstatic.md"
+      "basename": "anonymous inner class",
+      "path": "base/notes/anonymous inner class.md"
     },
     {
-      "basename": "static nested class",
-      "path": "base/notes/static nested class.md"
-    },
-    {
-      "basename": "nested class",
-      "path": "base/notes/nested class.md"
-    },
-    {
-      "basename": "типы классов в java",
-      "path": "base/notes/типы классов в java.md"
+      "basename": "local inner class",
+      "path": "base/notes/local inner class.md"
     },
     {
       "basename": "member inner class",
       "path": "base/notes/member inner class.md"
     },
     {
-      "basename": "index",
-      "path": "home/index.md"
+      "basename": "reference counting",
+      "path": "base/notes/reference counting.md"
     },
     {
-      "basename": "static vs nonstatic",
-      "path": "base/notes/static vs nonstatic.md"
+      "basename": "static nested class",
+      "path": "base/notes/static nested class.md"
     },
     {
-      "basename": "vault",
-      "path": "sources/vault.md"
+      "basename": "циклическая зависимость",
+      "path": "base/notes/циклическая зависимость.md"
     },
     {
       "basename": "exception в блоке инициализации",
@@ -97,20 +125,124 @@
       "path": "base/notes/final и методы интерфейса.md"
     },
     {
-      "basename": "static",
-      "path": "base/notes/static.md"
+      "basename": "final",
+      "path": "base/notes/final.md"
     },
     {
-      "basename": "блоки инициализации",
-      "path": "base/notes/блоки инициализации.md"
+      "basename": "main",
+      "path": "base/notes/main.md"
+    },
+    {
+      "basename": "static",
+      "path": "base/notes/static.md"
     },
     {
       "basename": "доступ к private членам класса",
       "path": "base/notes/доступ к private членам класса.md"
     },
     {
+      "basename": "блоки инициализации",
+      "path": "base/notes/блоки инициализации.md"
+    },
+    {
+      "basename": "значения переменных по умолчанию",
+      "path": "base/notes/значения переменных по умолчанию.md"
+    },
+    {
       "basename": "исключение при ошибке в блоке",
       "path": "base/notes/исключение при ошибке в блоке.md"
+    },
+    {
+      "basename": "execution engine",
+      "path": "base/notes/execution engine.md"
+    },
+    {
+      "basename": "bean builder",
+      "path": "base/notes/bean builder.md"
+    },
+    {
+      "basename": "classpath",
+      "path": "base/notes/classpath.md"
+    },
+    {
+      "basename": "RMI",
+      "path": "base/notes/RMI.md"
+    },
+    {
+      "basename": "java.nio.file.Path",
+      "path": "base/notes/java.nio.file.Path.md"
+    },
+    {
+      "basename": "frames",
+      "path": "base/notes/frames.md"
+    },
+    {
+      "basename": "java 8",
+      "path": "base/notes/java 8.md"
+    },
+    {
+      "basename": "за что отвечает JVM",
+      "path": "base/notes/за что отвечает JVM.md"
+    },
+    {
+      "basename": "run-time data areas",
+      "path": "base/notes/run-time data areas.md"
+    },
+    {
+      "basename": "логические операторы",
+      "path": "base/notes/логические операторы.md"
+    },
+    {
+      "basename": "побитовые операции",
+      "path": "base/notes/побитовые операции.md"
+    },
+    {
+      "basename": "тернарный оператор",
+      "path": "base/notes/тернарный оператор.md"
+    },
+    {
+      "basename": "модификаторы доступа",
+      "path": "base/notes/модификаторы доступа.md"
+    },
+    {
+      "basename": "недостатки ООП",
+      "path": "base/notes/недостатки ООП.md"
+    },
+    {
+      "basename": "отличия JVM, JRE и JDK",
+      "path": "base/notes/отличия JVM, JRE и JDK.md"
+    },
+    {
+      "basename": "символическая ссылка в java",
+      "path": "base/notes/символическая ссылка в java.md"
+    },
+    {
+      "basename": "польза полиморфизма",
+      "path": "base/notes/польза полиморфизма.md"
+    },
+    {
+      "basename": "модификатор abstract",
+      "path": "base/notes/модификатор abstract.md"
+    },
+    {
+      "basename": "отличия интерфейса от абстрактного класса",
+      "path": "base/notes/отличия интерфейса от абстрактного класса.md"
+    },
+    {
+      "basename": "паттерны проектирования",
+      "path": "base/notes/паттерны проектирования.md"
+    },
+    {
+      "basename": "переменные среды",
+      "path": "base/notes/переменные среды.md"
+    },
+    {
+      "basename": "смежность памяти",
+      "path": "base/notes/смежность памяти.md"
+    },
+    {
+      "basename": "2025-05-27",
+      "path": "periodic/daily/2025-05-27.md"
     },
     {
       "basename": "класс, абстрактный класс или интерфейс",
@@ -169,14 +301,6 @@
       "path": "base/notes/CORBA и RMI.md"
     },
     {
-      "basename": "bean builder",
-      "path": "base/notes/bean builder.md"
-    },
-    {
-      "basename": "classpath",
-      "path": "base/notes/classpath.md"
-    },
-    {
       "basename": "динамическое создание в языках программирования",
       "path": "base/notes/динамическое создание в языках программирования.md"
     },
@@ -193,10 +317,6 @@
       "path": "base/notes/динамическое или позднее связывание.md"
     },
     {
-      "basename": "java 8",
-      "path": "base/notes/java 8.md"
-    },
-    {
       "basename": "JDK",
       "path": "base/notes/JDK.md"
     },
@@ -205,16 +325,8 @@
       "path": "base/notes/JRE.md"
     },
     {
-      "basename": "недостатки ООП",
-      "path": "base/notes/недостатки ООП.md"
-    },
-    {
       "basename": "расширенная кодировка символов",
       "path": "base/notes/расширенная кодировка символов.md"
-    },
-    {
-      "basename": "паттерны проектирования",
-      "path": "base/notes/паттерны проектирования.md"
     },
     {
       "basename": "примитивы",
@@ -285,120 +397,8 @@
       "path": "base/notes/_test brat.md"
     },
     {
-      "basename": "execution engine",
-      "path": "base/notes/execution engine.md"
-    },
-    {
       "basename": "преимущества ООП",
       "path": "base/notes/преимущества ООП.md"
-    },
-    {
-      "basename": "AOP",
-      "path": "base/notes/AOP.md"
-    },
-    {
-      "basename": "польза полиморфизма",
-      "path": "base/notes/польза полиморфизма.md"
-    },
-    {
-      "basename": "constant pool и таблица символов",
-      "path": "base/notes/constant pool и таблица символов.md"
-    },
-    {
-      "basename": "frames",
-      "path": "base/notes/frames.md"
-    },
-    {
-      "basename": "за что отвечает JVM",
-      "path": "base/notes/за что отвечает JVM.md"
-    },
-    {
-      "basename": "pc builds",
-      "path": "base/_meta-notes/pc builds.md"
-    },
-    {
-      "basename": "Сборка под 9600x",
-      "path": "base/_problems/Сборка под 9600x.md"
-    },
-    {
-      "basename": "модификаторы доступа",
-      "path": "base/notes/модификаторы доступа.md"
-    },
-    {
-      "basename": "пример полиморфизма от ИИ",
-      "path": "base/notes/пример полиморфизма от ИИ.md"
-    },
-    {
-      "basename": "маркерные интерфейсы",
-      "path": "base/notes/маркерные интерфейсы.md"
-    },
-    {
-      "basename": "work",
-      "path": "base/categories/work.md"
-    },
-    {
-      "basename": "полиморфизм",
-      "path": "base/notes/полиморфизм.md"
-    },
-    {
-      "basename": "символическая ссылка в java",
-      "path": "base/notes/символическая ссылка в java.md"
-    },
-    {
-      "basename": "отличия интерфейса от абстрактного класса",
-      "path": "base/notes/отличия интерфейса от абстрактного класса.md"
-    },
-    {
-      "basename": "переменные среды",
-      "path": "base/notes/переменные среды.md"
-    },
-    {
-      "basename": "статическое или раннее связывание",
-      "path": "base/notes/статическое или раннее связывание.md"
-    },
-    {
-      "basename": "агрегация и композиция в ООП",
-      "path": "base/notes/агрегация и композиция в ООП.md"
-    },
-    {
-      "basename": "является и имеет в ООП",
-      "path": "base/notes/является и имеет в ООП.md"
-    },
-    {
-      "basename": "смежность памяти",
-      "path": "base/notes/смежность памяти.md"
-    },
-    {
-      "basename": "ссылочные типы",
-      "path": "base/notes/ссылочные типы.md"
-    },
-    {
-      "basename": "run-time data areas",
-      "path": "base/notes/run-time data areas.md"
-    },
-    {
-      "basename": "main",
-      "path": "base/notes/main.md"
-    },
-    {
-      "basename": "final",
-      "path": "base/notes/final.md"
-    },
-    {
-      "basename": "быстрое создание",
-      "path": "base/notes/быстрое создание.md"
-    },
-    {
-      "basename": "значения переменных по умолчанию",
-      "path": "base/notes/значения переменных по умолчанию.md"
-    },
-    {
-      "basename": "имитационные модели в биологии",
-      "path": "base/notes/имитационные модели в биологии.md"
-    },
-    {
-      "basename": "какая-то заметка",
-      "path": "base/notes/какая-то заметка.md"
     }
   ],
   "omittedPaths": [

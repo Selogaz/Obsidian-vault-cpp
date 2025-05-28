@@ -15,7 +15,7 @@ start: 2025-05-20T09:14:45+03:00
 end: 2025-12-20
 total_hours: 0
 created: 2025-05-20T09:14:45+03:00
-updated: 2025-05-27T14:39:16+03:00
+updated: 2025-05-28T07:52:56+03:00
 ---
 
 [JVM](zotero://select/items/@JavainterviewJvmmd)
@@ -88,7 +88,7 @@ updated: 2025-05-27T14:39:16+03:00
 - [[одновременное указание static и abstract]]
 - [[static vs nonstatic]]
 - [[инициализация static, nonstatic]]
-- [[типы классов в java]]
+- [[типы классов java]]
 	- [[local inner class]]
 	- [[anonymous inner class]]
 - [[nested class]]
@@ -99,6 +99,8 @@ updated: 2025-05-27T14:39:16+03:00
 - [[что хранится в куче, а что в стеке]]
 - [[передача переменных в методы]]
 - [[зачем нужен сборщик мусора]]
+- [[механизм сборки мусора]]
+- [[виды сборщиков мусора в HotSpot]]
 
 [^1]:
 [^2]:[JVM](“JVM” ([“java-interview/jvm.md”](zotero://select/library/items/UGH5TLJQ)) ([snapshot](zotero://open-pdf/library/items/IWGPPAD7?sel=article%20%3E%20div%3Afirst-child%20%3E%20h2&annotation=R738AJTH)))
