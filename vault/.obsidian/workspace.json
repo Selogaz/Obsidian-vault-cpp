@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e2998ed6ae688453",
+            "id": "8757fe3e444d0e71",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/notes/assert.md",
+                "file": "periodic/daily/2025-05-29.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,35 +28,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "assert"
+              "title": "2025-05-29"
             }
           },
           {
-            "id": "726c29ac1b55f6e7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "periodic/daily/2025-05-28.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2025-05-28"
-            }
-          },
-          {
-            "id": "6f4b7b9556305302",
+            "id": "2b4d29690fc3935a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,177 +54,8 @@
               "icon": "lucide-file",
               "title": "index"
             }
-          },
-          {
-            "id": "f2e6d3c5354cd838",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sources/Вопросы и ответы к интервью Java разработчика.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Вопросы и ответы к интервью Java разработчика"
-            }
-          },
-          {
-            "id": "c5dfd781c279f654",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/виды сборщиков мусора в HotSpot.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "виды сборщиков мусора в HotSpot"
-            }
-          },
-          {
-            "id": "e895f4c2823fc1f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/Serial Garbage Collector.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Serial Garbage Collector"
-            }
-          },
-          {
-            "id": "8809f6243ca6bd74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/young generation.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "young generation"
-            }
-          },
-          {
-            "id": "3747509237ef9166",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/minor collection.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "minor collection"
-            }
-          },
-          {
-            "id": "c686594b3705c340",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/механизм сборки мусора.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "механизм сборки мусора"
-            }
-          },
-          {
-            "id": "f52dcd960e4b6be8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/garbage.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "garbage"
-            }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "vertical"
@@ -321,10 +128,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "periodic/daily/2025-04-15.md"
+                "file": "periodic/daily/2025-05-29.md"
               },
               "icon": "lucide-info",
-              "title": "File properties"
+              "title": "File properties for 2025-05-29"
             }
           }
         ]
@@ -422,36 +229,36 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "3747509237ef9166",
+  "active": "8757fe3e444d0e71",
   "lastOpenFiles": [
-    "base/notes/minor collection.md",
-    "base/notes/young generation.md",
-    "base/notes/Serial Garbage Collector.md",
-    "base/notes/виды сборщиков мусора в HotSpot.md",
-    "sources/Вопросы и ответы к интервью Java разработчика.md",
-    "base/notes/механизм сборки мусора.md",
-    "base/notes/GC Root.md",
-    "base/notes/garbage.md",
     "home/index.md",
-    "periodic/daily/2025-05-28.md",
-    "base/notes/assert.md",
+    "home/databases/projects.md",
+    "home/databases/high-notes.md",
+    "sources/Backend Interviewer.md",
+    "home/databases/sources.md",
+    "sources/Практическая биоинформатика.md",
+    "base/additions/conspectuses/конспекты backend_interviewer.md",
+    "periodic/daily/2025-05-29.md",
+    "Untitled1.md",
+    "base/additions/Практическая биоинформатика - conspectuses.md",
+    "Untitled.md",
+    "base/notes/String pool.md",
+    "base/notes/виды сборщиков мусора в HotSpot.md",
+    "base/notes/механизм сборки мусора.md",
+    "base/notes/Serial Garbage Collector.md",
+    "base/notes/garbage.md",
+    "base/notes/minor collection.md",
+    "base/notes/old generation.md",
+    "base/notes/young generation.md",
+    "base/notes/bump-the-pointer.md",
     "base/notes/static vs nonstatic.md",
-    "base/notes/доступ к внешнему классу из внутреннего.md",
+    "base/notes/блоки инициализации.md",
     "base/notes/инициализация static, nonstatic.md",
-    "base/notes/передача переменных в методы.md",
-    "base/notes/типы классов java.md",
-    "base/notes/типы классов в java.md",
-    "base/notes/статический метод генерации.md",
-    "sources/vault.md",
-    "base/notes/что хранится в куче, а что в стеке.md",
+    "base/notes/исключение при ошибке в блоке.md",
+    "base/notes/classloader.md",
     "base/notes/heap vs stack.md",
-    "base/notes/nested class.md",
-    "base/notes/зачем нужен сборщик мусора.md",
-    "base/notes/особенности использования внутренних классов.md",
-    "base/notes/anonymous inner class.md",
-    "base/notes/local inner class.md",
-    "w инициализация static",
     "periodic/2025.canvas",
+    "w инициализация static",
     "files/classloader 2025-05-23.png",
     "files/holy priest 2025-05-15.png",
     "files/2025-05-03 2025-05-06.png",
