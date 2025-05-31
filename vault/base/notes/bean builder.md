@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-23T09:49:45+03:00
-updated: 2025-05-28T04:55:39+03:00
-sr-due: 2025-05-30
-sr-interval: 2
-sr-ease: 183
+updated: 2025-05-30T06:14:07+03:00
+sr-due: 2025-06-04
+sr-interval: 5
+sr-ease: 203
 ---
 
 **Bean builder**

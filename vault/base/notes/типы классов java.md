@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-28T06:40:50+03:00
-updated: 2025-05-28T06:41:29+03:00
-sr-due: 2025-05-31
-sr-interval: 3
-sr-ease: 265
+updated: 2025-05-31T03:40:42+03:00
+sr-due: 2025-06-12
+sr-interval: 12
+sr-ease: 285
 ---
 
 **Новые типы классов java**

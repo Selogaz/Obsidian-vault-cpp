@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-27T11:11:13+03:00
-updated: 2025-05-29T17:18:56+03:00
-sr-due: 2025-05-30
-sr-interval: 1
-sr-ease: 210
+updated: 2025-05-30T06:07:41+03:00
+sr-due: 2025-06-02
+sr-interval: 3
+sr-ease: 230
 ---
 
 **Local inner class**

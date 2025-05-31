@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-27T10:58:35+03:00
-updated: 2025-05-29T17:27:57+03:00
-sr-due: 2025-05-30
-sr-interval: 1
-sr-ease: 200
+updated: 2025-05-30T06:08:41+03:00
+sr-due: 2025-06-02
+sr-interval: 3
+sr-ease: 220
 ---
 
 **Nested class**

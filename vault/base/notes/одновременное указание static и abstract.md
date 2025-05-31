@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-25T21:22:28+03:00
-updated: 2025-05-27T10:09:15+03:00
-sr-due: 2025-05-31
-sr-interval: 4
-sr-ease: 270
+updated: 2025-05-31T03:44:16+03:00
+sr-due: 2025-06-16
+sr-interval: 16
+sr-ease: 290
 ---
 
 Можно ли объявить метод абстрактным и статическим одновременно?

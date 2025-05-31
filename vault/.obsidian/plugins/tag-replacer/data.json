@@ -103,6 +103,10 @@
     {
       "tag": "category/games",
       "icon": "🎮"
+    },
+    {
+      "tag": "category/obsidian",
+      "icon": "🟣"
     }
   ],
   "tags": [
