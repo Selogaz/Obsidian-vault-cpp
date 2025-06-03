@@ -5,7 +5,7 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-25T18:03:36+03:00
-updated: 2025-05-31T03:44:43+03:00
+updated: 2025-06-03T08:21:23+03:00
 sr-due: 2025-06-11
 sr-interval: 11
 sr-ease: 270
@@ -16,7 +16,7 @@ sr-ease: 270
 - *Внутри класса* доступ к приватной переменной открыт без ограничений
 - *Вложенный класс* имеет доступ ко всем членам содержащего его класса
 - доступ к приватным переменным через *неприватные геттеры*/сеттеры
-- через *механизм рефлексии*(<font color="#ffff00">Reflection API</font>):
+- через [[Reflection|механизм рефлексии]]
 ```java
 class Victim { private int field = 42; }
 //...
@@ -26,4 +26,4 @@ int fieldValue = (int) field.get(victim);
 //...
 ```
 
-- [ ] #task/inbox #category/work Что такое reflection API?
+- [x] #task/inbox #category/work Что такое reflection API? ✅ 2025-06-03

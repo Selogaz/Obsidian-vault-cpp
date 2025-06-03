@@ -5,7 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-02T09:49:51+03:00
-updated: 2025-06-02T09:51:44+03:00
+updated: 2025-06-03T07:57:32+03:00
+sr-due: 2025-06-07
+sr-interval: 4
+sr-ease: 270
 ---
 
 **Почему хэш код в виде 31 * x + y предпочтительнее чем x + y**

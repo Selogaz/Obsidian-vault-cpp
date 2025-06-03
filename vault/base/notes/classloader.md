@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-21T10:37:22+03:00
-updated: 2025-05-29T17:36:23+03:00
-sr-due: 2025-06-03
-sr-interval: 5
-sr-ease: 190
+updated: 2025-06-03T07:09:08+03:00
+sr-due: 2025-06-18
+sr-interval: 15
+sr-ease: 210
 ---
 
 **Classloader**

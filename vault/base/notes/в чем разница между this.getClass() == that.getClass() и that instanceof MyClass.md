@@ -5,7 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-02T09:41:55+03:00
-updated: 2025-06-02T11:15:49+03:00
+updated: 2025-06-03T07:57:14+03:00
+sr-due: 2025-06-04
+sr-interval: 1
+sr-ease: 237
 ---
 
 **В чем разница между this.getClass == that.getClass() и that instanceof MyClass**
@@ -15,4 +18,6 @@ updated: 2025-06-02T11:15:49+03:00
 - дочернего класса
 - класса, который реализует указанный [[интерфейс]]
 
-`this.getClass() == that.getClass()` проверяет два класса на идентичность, поэтому нужно использовать `getClass()`
+`this.getClass() == that.getClass()` проверяет два класса на идентичность,[^1] поэтому нужно использовать `getClass()`
+
+- [ ] #task/inbox #category/work :[^1] все еще непонятно в чем разница

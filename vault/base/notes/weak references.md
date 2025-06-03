@@ -5,7 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-02T13:53:44+03:00
-updated: 2025-06-02T13:54:01+03:00
+updated: 2025-06-03T07:14:09+03:00
+sr-due: 2025-06-07
+sr-interval: 4
+sr-ease: 270
 ---
 
 **Weak references**

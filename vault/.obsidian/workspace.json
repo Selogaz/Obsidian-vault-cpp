@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "dc653c5106fb9155",
+        "id": "c7e94441fb1413da",
         "type": "tabs",
         "children": [
           {
-            "id": "8757fe3e444d0e71",
+            "id": "d9b1d93407d216be",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,12 +32,12 @@
             }
           },
           {
-            "id": "e18263dca8d09e03",
+            "id": "76996ee97b41fe23",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/_meta-notes/pc builds.md",
+                "file": "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,59 +52,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "pc builds"
-            }
-          },
-          {
-            "id": "0ae2f0c2ea3f9a16",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/_problems/более дешевая 9600х.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "более дешевая 9600х"
-            }
-          },
-          {
-            "id": "07a95030fe2b2659",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/_problems/Сборка под 9600x.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Сборка под 9600x"
+              "title": "Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -177,10 +129,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "periodic/daily/2025-04-15.md"
+                "file": "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md"
               },
               "icon": "lucide-info",
-              "title": "File properties"
+              "title": "File properties for Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов"
             }
           }
         ]
@@ -278,35 +230,35 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "0ae2f0c2ea3f9a16",
+  "active": "76996ee97b41fe23",
   "lastOpenFiles": [
-    "base/_problems/Сборка под 9600x.md",
-    "base/_problems/более дешевая 9600х.md",
-    "base/_meta-notes/pc builds.md",
+    "base/notes/теория по Spring.md",
     "home/index.md",
-    "periodic/quarterly/2025-Q2.md",
-    "periodic/quarterly/2025-Q3.md",
-    "periodic/2025.canvas",
-    "periodic/yearly/2025.md",
-    "periodic/monthly/2025-06.md",
-    "periodic/weekly/2025-W23.md",
-    "periodic/daily/2025-06-02.md",
+    "base/notes/IoC.md",
+    "base/notes/способы внедрения зависимостей.md",
+    "base/notes/внедрение зависимостей через интерфейс.md",
+    "base/notes/внедрение зависимостей через сеттеры.md",
+    "base/notes/внедрение зависимостей через конструктор.md",
+    "base/notes/DI.md",
+    "base/notes/введение в книгу Федора Урванова по спрингу.md",
+    "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
+    "base/notes/принцип единственной ответственности.md",
+    "base/notes/Альтернативы для Spring.md",
+    "base/notes/Jakarta EE.md",
+    "base/notes/Servlet API.md",
+    "base/notes/Netty.md",
+    "base/notes/Spring Boot.md",
+    "base/notes/Spring Framework.md",
     "base/notes/консультация паблик для вкатунов 31.05.md",
-    "sources/Вопросы и ответы к интервью Java разработчика.md",
-    "base/notes/Java Collections Framework.md",
-    "base/notes/fail-fast поведение.md",
-    "base/notes/java.util.Collections.md",
-    "base/notes/java.util.Collection.md",
-    "base/notes/Основные интерфейсы JCF и их реализации.md",
-    "base/notes/weak references.md",
-    "base/notes/коллекция.md",
-    "base/notes/generics.md",
-    "base/notes/try-catch-finally.md",
-    "base/notes/Java core.md",
-    "base/notes/последовательность catch.md",
-    "base/notes/может ли main() выбросить исключение вовне и где оно будет обработано.md",
-    "base/notes/finally.md",
-    "base/notes/try-with-resources.md",
+    "periodic/statuses/_inbox.md",
+    "base/notes/Локальные переменные в JVM.md",
+    "base/notes/пример отличия поля от локальной переменной.md",
+    "base/notes/передача параметров в методы (ИИ версия).md",
+    "base/notes/ключевые отличия полей от локальных переменных.md",
+    "base/notes/особенности работы локальных переменных.md",
+    "base/notes/организация локальных переменных в памяти.md",
+    "base/notes/характеристики локальных переменных в Java.md",
+    "periodic/2025.canvas",
     "files/vault 2025-05-31.png",
     "w инициализация static",
     "files/classloader 2025-05-23.png",

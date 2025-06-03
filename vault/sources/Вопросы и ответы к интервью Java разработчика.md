@@ -15,7 +15,7 @@ start: 2025-05-20T09:14:45+03:00
 end: 2025-12-20
 total_hours: 0
 created: 2025-05-20T09:14:45+03:00
-updated: 2025-06-02T13:30:36+03:00
+updated: 2025-06-03T06:50:44+03:00
 ---
 
 # 🟩 ООП[^1]
@@ -50,7 +50,7 @@ updated: 2025-06-02T13:30:36+03:00
 
 - [[Java core]]
 
-# Java Collection Framework[^4]
+# 🟦 Java Collection Framework[^4]
 
 - [[Java Collections Framework]]
 
