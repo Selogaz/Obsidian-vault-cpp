@@ -18,7 +18,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Вопросы для собеседования на Java Developer.md",
+                    "file": "home/Home.md",
                     "collapseAll": true,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -28,7 +28,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for Вопросы для собеседования на Java Developer"
+                  "title": "Backlinks for Home"
                 }
               }
             ]
@@ -43,12 +43,12 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Вопросы для собеседования на Java Developer.md",
+                    "file": "home/Home.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-going-out",
-                  "title": "Outgoing links from Вопросы для собеседования на Java Developer"
+                  "title": "Outgoing links from Home"
                 }
               }
             ]
@@ -113,8 +113,7 @@
                   "title": "ООП"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "27a27cfe870a92c3",
@@ -131,7 +130,7 @@
                     "state": {
                       "type": "localgraph",
                       "state": {
-                        "file": "Вопросы для собеседования на Java Developer.md",
+                        "file": "home/Home.md",
                         "options": {
                           "collapse-filter": true,
                           "search": "",
@@ -159,7 +158,7 @@
                         }
                       },
                       "icon": "lucide-git-fork",
-                      "title": "Graph of Вопросы для собеседования на Java Developer"
+                      "title": "Graph of Home"
                     }
                   }
                 ]
@@ -174,13 +173,13 @@
                     "state": {
                       "type": "outline",
                       "state": {
-                        "file": "Вопросы для собеседования на Java Developer.md",
+                        "file": "home/Home.md",
                         "followCursor": false,
                         "showSearch": false,
                         "searchQuery": ""
                       },
                       "icon": "lucide-list",
-                      "title": "Outline of Вопросы для собеседования на Java Developer"
+                      "title": "Outline of Home"
                     }
                   }
                 ]
@@ -343,13 +342,17 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "7e38c0fd28a851e5",
+  "active": "b4aa8b3e2ce1913b",
   "lastOpenFiles": [
+    "конспекты по статье \"Управление знаниями в Obsidian. Часть 2\".md",
+    "управление знаниями в Obsidian. Часть 2.md",
+    "home/Home.md",
+    "мои правила ведения заметок в Obsidian.md",
+    "Вопросы для собеседования на Java Developer.md",
     "преимущества ООП.md",
     "расширяемость.md",
     "модульность и параллелизм.md",
     "локализация кода в одном месте.md",
-    "Вопросы для собеседования на Java Developer.md",
     "ООП.md",
     "позволяет абстрагироваться.md",
     "естественность модели.md",
@@ -361,16 +364,12 @@
     "абстракция.md",
     "полиморфизм.md",
     "пример полиморфизма от ИИ.md",
-    "home/Home.md",
     "пример полиморфизма.md",
     "наследование.md",
     "пример наследования.md",
     "инкапсуляция.md",
     "пример инкапсуляции.md",
     "основные принципы ООП.md",
-    "что такое ООП?.md",
-    "конспекты по статье \"Вопросы для собеседования на Java Developer\".md",
-    "свод по дням.md",
     "files/mynoise-net.mkv",
     "files/mynoise-net.mp3",
     "files/mynoise-net.aac",

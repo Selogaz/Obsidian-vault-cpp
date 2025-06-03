@@ -15,16 +15,8 @@ start: 2025-05-20T09:14:45+03:00
 end: 2025-12-20
 total_hours: 0
 created: 2025-05-20T09:14:45+03:00
-updated: 2025-05-31T04:04:54+03:00
+updated: 2025-06-02T13:30:36+03:00
 ---
-
-[JVM](zotero://select/items/@JavainterviewJvmmd)
-
-![cover|150](https://opengraph.githubassets.com/d9b4ad6de7aa7dceb117c18602eecdd1908dff42438fe981e79fccc3136fd6cf/enhorse/java-interview)
-
-# Abstract
-
-Вопросы и ответы к интервью Java разработчика. Contribute to enhorse/java-interview development by creating an account on GitHub.
 
 # 🟩 ООП[^1]
 > [!check]- ООП
@@ -54,10 +46,15 @@ updated: 2025-05-31T04:04:54+03:00
 
 - [[JVM]]
 
-# 🟦 Java core[^3]
+# 📋 Java core[^3]
 
 - [[Java core]]
+
+# Java Collection Framework[^4]
+
+- [[Java Collections Framework]]
 
 [^1]:
 [^2]:[JVM](“JVM” ([“java-interview/jvm.md”](zotero://select/library/items/UGH5TLJQ)) ([snapshot](zotero://open-pdf/library/items/IWGPPAD7?sel=article%20%3E%20div%3Afirst-child%20%3E%20h2&annotation=R738AJTH)))
 [^3]: [java-core](“Java Core” ([“java-interview/core”](zotero://select/library/items/T3X9ZD57)) ([snapshot](zotero://open-pdf/library/items/2GAN5TQF?sel=article%20%3E%20div%3Afirst-of-type%20%3E%20h1&annotation=3KTIQPAR)))
+[^4]: [JCF](“Java Collections Framework” ([“java-interview/jcf”](zotero://select/library/items/IKKYAIF7)) ([snapshot](zotero://open-pdf/library/items/UC6ZZ8YB?sel=article%20%3E%20div%3Afirst-of-type%20%3E%20h1&annotation=32EP7WM6)))

@@ -6,7 +6,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-31T04:02:51+03:00
-updated: 2025-05-31T04:03:32+03:00
+updated: 2025-06-02T09:09:31+03:00
+sr-due: null
+sr-interval: null
+sr-ease: null
 ---
 
 **JVM**

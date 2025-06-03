@@ -1,36 +1,256 @@
 {
   "recentFiles": [
     {
-      "basename": "2025-05-31",
-      "path": "periodic/daily/2025-05-31.md"
+      "basename": "более дешевая 9600х",
+      "path": "base/_problems/более дешевая 9600х.md"
     },
     {
-      "basename": "hashCode() у класса Point",
-      "path": "base/notes/hashCode() у класса Point.md"
+      "basename": "Сборка под 9600x",
+      "path": "base/_problems/Сборка под 9600x.md"
     },
     {
-      "basename": "правила переопределения Object.hashCode()",
-      "path": "base/notes/правила переопределения Object.hashCode().md"
+      "basename": "pc builds",
+      "path": "base/_meta-notes/pc builds.md"
     },
     {
-      "basename": "могут ли у разных объектов быть одинаковые hashCode()",
-      "path": "base/notes/могут ли у разных объектов быть одинаковые hashCode().md"
+      "basename": "index",
+      "path": "home/index.md"
     },
     {
-      "basename": "какие поля следует использовать при подсчете hashCode()",
-      "path": "base/notes/какие поля следует использовать при подсчете hashCode().md"
+      "basename": "2025-Q2",
+      "path": "periodic/quarterly/2025-Q2.md"
+    },
+    {
+      "basename": "2025-Q3",
+      "path": "periodic/quarterly/2025-Q3.md"
+    },
+    {
+      "basename": "2025",
+      "path": "periodic/2025.canvas"
+    },
+    {
+      "basename": "2025",
+      "path": "periodic/yearly/2025.md"
+    },
+    {
+      "basename": "2025-06",
+      "path": "periodic/monthly/2025-06.md"
+    },
+    {
+      "basename": "2025-W23",
+      "path": "periodic/weekly/2025-W23.md"
+    },
+    {
+      "basename": "2025-06-02",
+      "path": "periodic/daily/2025-06-02.md"
+    },
+    {
+      "basename": "консультация паблик для вкатунов 31.05",
+      "path": "base/notes/консультация паблик для вкатунов 31.05.md"
+    },
+    {
+      "basename": "Вопросы и ответы к интервью Java разработчика",
+      "path": "sources/Вопросы и ответы к интервью Java разработчика.md"
+    },
+    {
+      "basename": "Java Collections Framework",
+      "path": "base/notes/Java Collections Framework.md"
+    },
+    {
+      "basename": "fail-fast поведение",
+      "path": "base/notes/fail-fast поведение.md"
+    },
+    {
+      "basename": "java.util.Collections",
+      "path": "base/notes/java.util.Collections.md"
+    },
+    {
+      "basename": "java.util.Collection",
+      "path": "base/notes/java.util.Collection.md"
+    },
+    {
+      "basename": "Основные интерфейсы JCF и их реализации",
+      "path": "base/notes/Основные интерфейсы JCF и их реализации.md"
+    },
+    {
+      "basename": "weak references",
+      "path": "base/notes/weak references.md"
+    },
+    {
+      "basename": "коллекция",
+      "path": "base/notes/коллекция.md"
+    },
+    {
+      "basename": "generics",
+      "path": "base/notes/generics.md"
+    },
+    {
+      "basename": "try-catch-finally",
+      "path": "base/notes/try-catch-finally.md"
     },
     {
       "basename": "Java core",
       "path": "base/notes/Java core.md"
     },
     {
+      "basename": "последовательность catch",
+      "path": "base/notes/последовательность catch.md"
+    },
+    {
+      "basename": "может ли main() выбросить исключение вовне и где оно будет обработано",
+      "path": "base/notes/может ли main() выбросить исключение вовне и где оно будет обработано.md"
+    },
+    {
+      "basename": "finally",
+      "path": "base/notes/finally.md"
+    },
+    {
+      "basename": "try-with-resources",
+      "path": "base/notes/try-with-resources.md"
+    },
+    {
+      "basename": "OutOfMemoryError",
+      "path": "base/notes/OutOfMemoryError.md"
+    },
+    {
+      "basename": "Error",
+      "path": "base/notes/Error.md"
+    },
+    {
+      "basename": "пользовательское исключение",
+      "path": "base/notes/пользовательское исключение.md"
+    },
+    {
+      "basename": "иерархия исключений",
+      "path": "base/notes/иерархия исключений.md"
+    },
+    {
+      "basename": "unchecked exceptions",
+      "path": "base/notes/unchecked exceptions.md"
+    },
+    {
+      "basename": "Exceptions",
+      "path": "base/notes/Exceptions.md"
+    },
+    {
+      "basename": "как принудительно выбросить исключение",
+      "path": "base/notes/как принудительно выбросить исключение.md"
+    },
+    {
+      "basename": "throws",
+      "path": "base/notes/throws.md"
+    },
+    {
+      "basename": "почему метод clone() объявлен в классе Object, а не в интерфейсе Cloneable",
+      "path": "base/notes/почему метод clone() объявлен в классе Object, а не в интерфейсе Cloneable.md"
+    },
+    {
+      "basename": "наиболее предпочтительный способ клонирования",
+      "path": "base/notes/наиболее предпочтительный способ клонирования.md"
+    },
+    {
+      "basename": "глубокое клонирование",
+      "path": "base/notes/глубокое клонирование.md"
+    },
+    {
+      "basename": "поверхностное клонирование",
+      "path": "base/notes/поверхностное клонирование.md"
+    },
+    {
+      "basename": "клонирование объектов",
+      "path": "base/notes/клонирование объектов.md"
+    },
+    {
+      "basename": "Альтернативные способы клонирования объектов",
+      "path": "base/notes/Альтернативные способы клонирования объектов.md"
+    },
+    {
+      "basename": "типы конструкторов",
+      "path": "base/notes/типы конструкторов.md"
+    },
+    {
+      "basename": "клонирование класса с полем изменяемого ссылочного типа",
+      "path": "base/notes/клонирование класса с полем изменяемого ссылочного типа.md"
+    },
+    {
+      "basename": "vault",
+      "path": "sources/vault.md"
+    },
+    {
+      "basename": "Клонировать объект",
+      "path": "base/notes/Клонировать объект.md"
+    },
+    {
+      "basename": "в чем разница между this.getClass() == that.getClass() и that instanceof MyClass",
+      "path": "base/notes/в чем разница между this.getClass() == that.getClass() и that instanceof MyClass.md"
+    },
+    {
+      "basename": "Почему хэш код в виде 31 * x + y предпочтительнее чем x + y",
+      "path": "base/notes/Почему хэш код в виде 31 * x + y предпочтительнее чем x + y.md"
+    },
+    {
+      "basename": "Можно ли реализовать метод equals() класса MyClass вот так",
+      "path": "base/notes/Можно ли реализовать метод equals() класса MyClass вот так.md"
+    },
+    {
+      "basename": "можно ли так реализовать equals()",
+      "path": "base/notes/можно ли так реализовать equals().md"
+    },
+    {
+      "basename": "может ли equals() возвращать false у ссылок на один объект",
+      "path": "base/notes/может ли equals() возвращать false у ссылок на один объект.md"
+    },
+    {
+      "basename": "может ли equals() возвращать true у разных объектов",
+      "path": "base/notes/может ли equals() возвращать true у разных объектов.md"
+    },
+    {
+      "basename": "свойства отношения эквивалентности, порождаемого equals()",
+      "path": "base/notes/свойства отношения эквивалентности, порождаемого equals().md"
+    },
+    {
+      "basename": "Reflection",
+      "path": "base/notes/Reflection.md"
+    },
+    {
+      "basename": "JVM",
+      "path": "base/notes/JVM.md"
+    },
+    {
+      "basename": "Object",
+      "path": "base/notes/Object.md"
+    },
+    {
+      "basename": "String in switch",
+      "path": "base/notes/String in switch.md"
+    },
+    {
+      "basename": "classloader core-version",
+      "path": "base/notes/classloader core-version.md"
+    },
+    {
+      "basename": "intern()",
+      "path": "base/notes/intern().md"
+    },
+    {
+      "basename": "Разница String, StringBuffer, StringBuilder",
+      "path": "base/notes/Разница String, StringBuffer, StringBuilder.md"
+    },
+    {
+      "basename": "конструктор",
+      "path": "base/notes/конструктор.md"
+    },
+    {
       "basename": "правила переопределения Object.equals()",
       "path": "base/notes/правила переопределения Object.equals().md"
     },
     {
-      "basename": "hashCode()",
-      "path": "base/notes/hashCode().md"
+      "basename": "final и методы интерфейса",
+      "path": "base/notes/final и методы интерфейса.md"
+    },
+    {
+      "basename": "правила переопределения Object.hashCode()",
+      "path": "base/notes/правила переопределения Object.hashCode().md"
     },
     {
       "basename": "реализация equals() и hashCode() в Object",
@@ -41,336 +261,88 @@
       "path": "base/notes/что будет если переопределить equals(), но не переопределить hashCode().md"
     },
     {
-      "basename": "свойства отношения эквивалентности, порождаемого equals()",
-      "path": "base/notes/свойства отношения эквивалентности, порождаемого equals().md"
-    },
-    {
-      "basename": "equals()",
-      "path": "base/notes/equals().md"
-    },
-    {
-      "basename": "Reflection",
-      "path": "base/notes/Reflection.md"
-    },
-    {
-      "basename": "classloader core-version",
-      "path": "base/notes/classloader core-version.md"
-    },
-    {
       "basename": "базовая иерархия загрузчиков",
       "path": "base/notes/базовая иерархия загрузчиков.md"
-    },
-    {
-      "basename": "процесс загрузки класса",
-      "path": "base/notes/процесс загрузки класса.md"
     },
     {
       "basename": "динамическая загрузка классов в Java",
       "path": "base/notes/динамическая загрузка классов в Java.md"
     },
     {
+      "basename": "процесс загрузки класса",
+      "path": "base/notes/процесс загрузки класса.md"
+    },
+    {
       "basename": "способы инициировать загрузку класса",
       "path": "base/notes/способы инициировать загрузку класса.md"
     },
     {
-      "basename": "vault",
-      "path": "sources/vault.md"
+      "basename": "hashCode() у класса Point",
+      "path": "base/notes/hashCode() у класса Point.md"
     },
     {
-      "basename": "obsidian",
-      "path": "base/categories/obsidian.md"
+      "basename": "какие поля следует использовать при подсчете hashCode()",
+      "path": "base/notes/какие поля следует использовать при подсчете hashCode().md"
     },
     {
-      "basename": "index",
-      "path": "home/index.md"
-    },
-    {
-      "basename": "таймкоды Obsidian vault",
-      "path": "base/notes/таймкоды Obsidian vault.md"
-    },
-    {
-      "basename": "prefixes",
-      "path": "home/prefixes.md"
-    },
-    {
-      "basename": "hotkeys",
-      "path": "home/help/hotkeys.md"
-    },
-    {
-      "basename": "типы конструкторов",
-      "path": "base/notes/типы конструкторов.md"
-    },
-    {
-      "basename": "приватный конструктор",
-      "path": "base/notes/приватный конструктор.md"
+      "basename": "могут ли у разных объектов быть одинаковые hashCode()",
+      "path": "base/notes/могут ли у разных объектов быть одинаковые hashCode().md"
     },
     {
       "basename": "конструктор по умолчанию",
       "path": "base/notes/конструктор по умолчанию.md"
     },
     {
-      "basename": "конструктор",
-      "path": "base/notes/конструктор.md"
+      "basename": "приватный конструктор",
+      "path": "base/notes/приватный конструктор.md"
     },
     {
-      "basename": "Object",
-      "path": "base/notes/Object.md"
+      "basename": "hashCode()",
+      "path": "base/notes/hashCode().md"
     },
     {
-      "basename": "Разница String, StringBuffer, StringBuilder",
-      "path": "base/notes/Разница String, StringBuffer, StringBuilder.md"
+      "basename": "equals()",
+      "path": "base/notes/equals().md"
     },
     {
-      "basename": "String in switch",
-      "path": "base/notes/String in switch.md"
-    },
-    {
-      "basename": "intern()",
-      "path": "base/notes/intern().md"
-    },
-    {
-      "basename": "String как ключ для HashMap",
-      "path": "base/notes/String как ключ для HashMap.md"
-    },
-    {
-      "basename": "Вопросы и ответы к интервью Java разработчика",
-      "path": "sources/Вопросы и ответы к интервью Java разработчика.md"
-    },
-    {
-      "basename": "JVM",
-      "path": "base/notes/JVM.md"
-    },
-    {
-      "basename": "основные принципы ООП",
-      "path": "base/notes/основные принципы ООП.md"
-    },
-    {
-      "basename": "ООП",
-      "path": "base/notes/ООП.md"
-    },
-    {
-      "basename": "String не подходит для пароля",
-      "path": "base/notes/String не подходит для пароля.md"
-    },
-    {
-      "basename": "finalize",
-      "path": "base/notes/finalize.md"
-    },
-    {
-      "basename": "finally",
-      "path": "base/notes/finally.md"
-    },
-    {
-      "basename": "приведение типов",
-      "path": "base/notes/приведение типов.md"
-    },
-    {
-      "basename": "autoboxing",
-      "path": "base/notes/autoboxing.md"
-    },
-    {
-      "basename": "особенности String",
-      "path": "base/notes/особенности String.md"
-    },
-    {
-      "basename": "почему String неизменяемый",
-      "path": "base/notes/почему String неизменяемый.md"
-    },
-    {
-      "basename": "литералы",
-      "path": "base/notes/литералы.md"
+      "basename": "Общий алгоритм формирования заметок",
+      "path": "base/notes/Общий алгоритм формирования заметок.md"
     },
     {
       "basename": "exception в блоке инициализации",
       "path": "base/notes/exception в блоке инициализации.md"
     },
     {
-      "basename": "final и методы интерфейса",
-      "path": "base/notes/final и методы интерфейса.md"
-    },
-    {
-      "basename": "classpath",
-      "path": "base/notes/classpath.md"
-    },
-    {
-      "basename": "anonymous inner class",
-      "path": "base/notes/anonymous inner class.md"
-    },
-    {
-      "basename": "static",
-      "path": "base/notes/static.md"
-    },
-    {
-      "basename": "доступ к private членам класса",
-      "path": "base/notes/доступ к private членам класса.md"
-    },
-    {
-      "basename": "класс, абстрактный класс или интерфейс",
-      "path": "base/notes/класс, абстрактный класс или интерфейс.md"
-    },
-    {
-      "basename": "одновременное указание static и abstract",
-      "path": "base/notes/одновременное указание static и abstract.md"
-    },
-    {
-      "basename": "модификация метода при переопределении",
-      "path": "base/notes/модификация метода при переопределении.md"
-    },
-    {
-      "basename": "получение доступа к переопределенным методам родительского класса",
-      "path": "base/notes/получение доступа к переопределенным методам родительского класса.md"
-    },
-    {
-      "basename": "порядок вызова блоков инициализации и конструкторов",
-      "path": "base/notes/порядок вызова блоков инициализации и конструкторов.md"
-    },
-    {
-      "basename": "статический блок инициализации",
-      "path": "base/notes/статический блок инициализации.md"
-    },
-    {
-      "basename": "сужение области видимости при переопределении",
-      "path": "base/notes/сужение области видимости при переопределении.md"
-    },
-    {
-      "basename": "статический метод и переопределение",
-      "path": "base/notes/статический метод и переопределение.md"
-    },
-    {
-      "basename": "типы классов java",
-      "path": "base/notes/типы классов java.md"
-    },
-    {
-      "basename": "паттерны проектирования",
-      "path": "base/notes/паттерны проектирования.md"
-    },
-    {
-      "basename": "статический метод генерации",
-      "path": "base/notes/статический метод генерации.md"
-    },
-    {
-      "basename": "2025-05-30",
-      "path": "periodic/daily/2025-05-30.md"
-    },
-    {
-      "basename": "final",
-      "path": "base/notes/final.md"
-    },
-    {
-      "basename": "CORBA и RMI",
-      "path": "base/notes/CORBA и RMI.md"
-    },
-    {
-      "basename": "bean builder",
-      "path": "base/notes/bean builder.md"
-    },
-    {
-      "basename": "JVM Stacks",
-      "path": "base/notes/JVM Stacks.md"
-    },
-    {
-      "basename": "GC Root",
-      "path": "base/notes/GC Root.md"
-    },
-    {
-      "basename": "java.nio.file.Path",
-      "path": "base/notes/java.nio.file.Path.md"
-    },
-    {
-      "basename": "java 8",
-      "path": "base/notes/java 8.md"
-    },
-    {
-      "basename": "nested class",
-      "path": "base/notes/nested class.md"
+      "basename": "виды сборщиков мусора в HotSpot",
+      "path": "base/notes/виды сборщиков мусора в HotSpot.md"
     },
     {
       "basename": "local inner class",
       "path": "base/notes/local inner class.md"
     },
     {
-      "basename": "Стеки операндов",
-      "path": "base/notes/Стеки операндов.md"
+      "basename": "nested class",
+      "path": "base/notes/nested class.md"
     },
     {
-      "basename": "Динамическое связывание в контексте фрейма",
-      "path": "base/notes/Динамическое связывание в контексте фрейма.md"
+      "basename": "garbage",
+      "path": "base/notes/garbage.md"
     },
     {
-      "basename": "Локальные переменные",
-      "path": "base/notes/Локальные переменные.md"
-    },
-    {
-      "basename": "особенности использования внутренних классов",
-      "path": "base/notes/особенности использования внутренних классов.md"
-    },
-    {
-      "basename": "модификатор abstract",
-      "path": "base/notes/модификатор abstract.md"
-    },
-    {
-      "basename": "перегрузка метода",
-      "path": "base/notes/перегрузка метода.md"
-    },
-    {
-      "basename": "ключевое слово interface",
-      "path": "base/notes/ключевое слово interface.md"
-    },
-    {
-      "basename": "2025-05-29",
-      "path": "periodic/daily/2025-05-29.md"
-    },
-    {
-      "basename": "projects",
-      "path": "home/databases/projects.md"
-    },
-    {
-      "basename": "high-notes",
-      "path": "home/databases/high-notes.md"
-    },
-    {
-      "basename": "Backend Interviewer",
-      "path": "sources/Backend Interviewer.md"
-    },
-    {
-      "basename": "sources",
-      "path": "home/databases/sources.md"
-    },
-    {
-      "basename": "Практическая биоинформатика",
-      "path": "sources/Практическая биоинформатика.md"
-    },
-    {
-      "basename": "конспекты backend_interviewer",
-      "path": "base/additions/conspectuses/конспекты backend_interviewer.md"
-    },
-    {
-      "basename": "Практическая биоинформатика - conspectuses",
-      "path": "base/additions/Практическая биоинформатика - conspectuses.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "Untitled.md"
-    },
-    {
-      "basename": "String pool",
-      "path": "base/notes/String pool.md"
-    },
-    {
-      "basename": "виды сборщиков мусора в HotSpot",
-      "path": "base/notes/виды сборщиков мусора в HotSpot.md"
-    },
-    {
-      "basename": "механизм сборки мусора",
-      "path": "base/notes/механизм сборки мусора.md"
+      "basename": "GC Root",
+      "path": "base/notes/GC Root.md"
     },
     {
       "basename": "Serial Garbage Collector",
       "path": "base/notes/Serial Garbage Collector.md"
     },
     {
-      "basename": "garbage",
-      "path": "base/notes/garbage.md"
+      "basename": "young generation",
+      "path": "base/notes/young generation.md"
+    },
+    {
+      "basename": "frames",
+      "path": "base/notes/frames.md"
     },
     {
       "basename": "minor collection",
@@ -381,24 +353,52 @@
       "path": "base/notes/old generation.md"
     },
     {
-      "basename": "young generation",
-      "path": "base/notes/young generation.md"
-    },
-    {
       "basename": "bump-the-pointer",
       "path": "base/notes/bump-the-pointer.md"
+    },
+    {
+      "basename": "assert",
+      "path": "base/notes/assert.md"
+    },
+    {
+      "basename": "heap vs stack",
+      "path": "base/notes/heap vs stack.md"
     },
     {
       "basename": "static vs nonstatic",
       "path": "base/notes/static vs nonstatic.md"
     },
     {
+      "basename": "доступ к внешнему классу из внутреннего",
+      "path": "base/notes/доступ к внешнему классу из внутреннего.md"
+    },
+    {
+      "basename": "member inner class",
+      "path": "base/notes/member inner class.md"
+    },
+    {
       "basename": "блоки инициализации",
       "path": "base/notes/блоки инициализации.md"
     },
     {
-      "basename": "инициализация static, nonstatic",
-      "path": "base/notes/инициализация static, nonstatic.md"
+      "basename": "static nested class",
+      "path": "base/notes/static nested class.md"
+    },
+    {
+      "basename": "reference counting",
+      "path": "base/notes/reference counting.md"
+    },
+    {
+      "basename": "Локальные переменные",
+      "path": "base/notes/Локальные переменные.md"
+    },
+    {
+      "basename": "зачем нужен сборщик мусора",
+      "path": "base/notes/зачем нужен сборщик мусора.md"
+    },
+    {
+      "basename": "String pool",
+      "path": "base/notes/String pool.md"
     }
   ],
   "omittedPaths": [

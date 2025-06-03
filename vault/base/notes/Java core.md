@@ -6,7 +6,11 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-31T04:03:53+03:00
-updated: 2025-05-31T07:02:05+03:00
+updated: 2025-06-02T13:20:35+03:00
+sr-due: 2025-06-03
+sr-interval: 1
+sr-ease: 251
+image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA4UlEQVR4Ae1XAQbDMBTNSdpcoHdIC2A9W47we4NlZbtGwGwMwbABGQxAlofFMFsh+Rv5PE1/ynt92idfoORaSWmUbje9i/ARIRN8hJVmIHAm8kRaFh7cQs4DocGBJrouYAlumOBEsp8HXmDBid8WsKTwXLcbgz5O4Xy/ohWvl6APU+i2Y34BIN/fTu+20IeIvALw5h8KTuQVALu/7OcSsLy4HeD+Boj7L1iVygGC3S85QCCvQVSDqAbRfwRRDaJ6JmQ/ljs2Aaa3AkMp42hG/MMpCotmVtQaZQuM5w5D6ZP8Ad3WWERg2F0cAAAAAElFTkSuQmCC"
 ---
 
 **Java core**
@@ -82,3 +86,23 @@ updated: 2025-05-31T07:02:05+03:00
 - [[реализация equals() и hashCode() в Object]]
 - [[hashCode()]]
 - [[правила переопределения Object.hashCode()]]
+- [[может ли equals() возвращать true у разных объектов]]
+- [[может ли equals() возвращать false у ссылок на один объект]]
+- [[можно ли так реализовать equals()]]
+- [[в чем разница между this.getClass() == that.getClass() и that instanceof MyClass]]
+- [[Можно ли реализовать метод equals() класса MyClass вот так]]
+- [[Почему хэш код в виде 31 * x + y предпочтительнее чем x + y]]
+- [[клонирование объектов]]
+- [[поверхностное клонирование]]
+- [[глубокое клонирование]]
+- [[наиболее предпочтительный способ клонирования]]
+- [[почему метод clone() объявлен в классе Object, а не в интерфейсе Cloneable]]
+- [[иерархия исключений]]
+- [[как принудительно выбросить исключение]]
+- [[throws]]
+- [[пользовательское исключение]]
+- [[try-catch-finally ]]
+- [[try-with-resources]]
+- [[может ли main() выбросить исключение вовне и где оно будет обработано]]
+- [[последовательность catch]]
+- [[generics]]

@@ -1,5 +1,5 @@
 {
-  "searchDelayMilliSeconds": 120,
+  "searchDelayMilliSeconds": 100,
   "maxNumberOfSuggestions": 255,
   "normalizeAccentsAndDiacritics": false,
   "useSelectionWordsAsDefaultInputQuery": true,
@@ -9,6 +9,7 @@
   "showFullPathOfDirectory": false,
   "showAliasesOnTop": false,
   "displayAliaseAsTitle": false,
+  "displayDescriptionBelowTitle": false,
   "showExistingFilesOnly": true,
   "hideGutterIcons": true,
   "hideHotkeyGuides": true,
@@ -218,6 +219,7 @@
           "key": "ArrowLeft"
         }
       ],
+      "close if opened": [],
       "dismiss": [
         {
           "modifiers": [],
@@ -729,6 +731,7 @@
       "targetExtensions": [
         "md"
       ],
+      "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -776,6 +779,7 @@
       "targetExtensions": [
         "md"
       ],
+      "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -836,6 +840,7 @@
       "targetExtensions": [
         "md"
       ],
+      "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -887,6 +892,7 @@
       "targetExtensions": [
         "md"
       ],
+      "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -934,6 +940,7 @@
       "targetExtensions": [
         "md"
       ],
+      "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -974,6 +981,7 @@
       "targetExtensions": [
         "md"
       ],
+      "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -1015,6 +1023,7 @@
       "allowFuzzySearchForSearchTarget": true,
       "minFuzzyMatchScore": 0.5,
       "targetExtensions": [],
+      "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -1048,6 +1057,7 @@
       "targetExtensions": [
         "md"
       ],
+      "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -1086,6 +1096,7 @@
       "targetExtensions": [
         "md"
       ],
+      "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -1121,6 +1132,7 @@
       "allowFuzzySearchForSearchTarget": true,
       "minFuzzyMatchScore": 0.5,
       "targetExtensions": [],
+      "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -1159,6 +1171,7 @@
       "targetExtensions": [
         "md"
       ],
+      "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -1196,6 +1209,7 @@
       "targetExtensions": [
         "md"
       ],
+      "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -1231,6 +1245,7 @@
       "targetExtensions": [
         "md"
       ],
+      "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -1268,6 +1283,7 @@
       "targetExtensions": [
         "md"
       ],
+      "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -1303,6 +1319,7 @@
       "targetExtensions": [
         "md"
       ],
+      "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -1338,6 +1355,7 @@
       "targetExtensions": [
         "md"
       ],
+      "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -1375,6 +1393,7 @@
       "targetExtensions": [
         "md"
       ],
+      "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
       "excludeFrontMatterKeys": [
@@ -1396,6 +1415,12 @@
       "expand": false
     }
   ],
+  "searchesExcludePrefix": "-",
+  "searchesAutoAliasTransform": {
+    "enabled": false,
+    "aliasPattern": "",
+    "aliasFormat": ""
+  },
   "autoPreviewInFloatingHeaderSearch": true,
   "backlinkExcludePrefixPathPatterns": [],
   "inFileContextLines": 2,

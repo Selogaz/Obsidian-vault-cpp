@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/notes/Java core.md",
+                "file": "home/index.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Java core"
+              "title": "index"
             }
           },
           {
-            "id": "f7c42ad91f01d0eb",
+            "id": "e18263dca8d09e03",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/notes/правила переопределения Object.hashCode().md",
+                "file": "base/_meta-notes/pc builds.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,16 +52,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "правила переопределения Object.hashCode()"
+              "title": "pc builds"
             }
           },
           {
-            "id": "2d6f1a4cbcd9e18e",
+            "id": "0ae2f0c2ea3f9a16",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/notes/hashCode() у класса Point.md",
+                "file": "base/_problems/более дешевая 9600х.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,16 +76,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "hashCode() у класса Point"
+              "title": "более дешевая 9600х"
             }
           },
           {
-            "id": "8780015e1226ed6a",
+            "id": "07a95030fe2b2659",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2025-05-31.md",
+                "file": "base/_problems/Сборка под 9600x.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,11 +100,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-05-31"
+              "title": "Сборка под 9600x"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -159,7 +159,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5
+    "width": 341.5,
+    "collapsed": true
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -277,35 +278,36 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "8780015e1226ed6a",
+  "active": "0ae2f0c2ea3f9a16",
   "lastOpenFiles": [
-    "base/notes/hashCode() у класса Point.md",
-    "base/notes/правила переопределения Object.hashCode().md",
-    "base/notes/могут ли у разных объектов быть одинаковые hashCode().md",
-    "base/notes/какие поля следует использовать при подсчете hashCode().md",
-    "base/notes/Java core.md",
-    "base/notes/правила переопределения Object.equals().md",
-    "periodic/daily/2025-05-31.md",
-    "base/notes/hashCode().md",
-    "base/notes/реализация equals() и hashCode() в Object.md",
-    "base/notes/что будет если переопределить equals(), но не переопределить hashCode().md",
-    "base/notes/свойства отношения эквивалентности, порождаемого equals().md",
-    "base/notes/equals().md",
-    "base/notes/Reflection.md",
-    "base/notes/classloader core-version.md",
-    "base/notes/базовая иерархия загрузчиков.md",
-    "base/notes/процесс загрузки класса.md",
-    "base/notes/динамическая загрузка классов в Java.md",
-    "base/notes/способы инициировать загрузку класса.md",
-    "sources/vault.md",
-    "base/categories/obsidian.md",
+    "base/_problems/Сборка под 9600x.md",
+    "base/_problems/более дешевая 9600х.md",
+    "base/_meta-notes/pc builds.md",
     "home/index.md",
-    "base/notes/таймкоды Obsidian vault.md",
-    "home/prefixes.md",
-    "home/help/hotkeys.md",
-    "base/notes/типы конструкторов.md",
-    "base/notes/приватный конструктор.md",
+    "periodic/quarterly/2025-Q2.md",
+    "periodic/quarterly/2025-Q3.md",
     "periodic/2025.canvas",
+    "periodic/yearly/2025.md",
+    "periodic/monthly/2025-06.md",
+    "periodic/weekly/2025-W23.md",
+    "periodic/daily/2025-06-02.md",
+    "base/notes/консультация паблик для вкатунов 31.05.md",
+    "sources/Вопросы и ответы к интервью Java разработчика.md",
+    "base/notes/Java Collections Framework.md",
+    "base/notes/fail-fast поведение.md",
+    "base/notes/java.util.Collections.md",
+    "base/notes/java.util.Collection.md",
+    "base/notes/Основные интерфейсы JCF и их реализации.md",
+    "base/notes/weak references.md",
+    "base/notes/коллекция.md",
+    "base/notes/generics.md",
+    "base/notes/try-catch-finally.md",
+    "base/notes/Java core.md",
+    "base/notes/последовательность catch.md",
+    "base/notes/может ли main() выбросить исключение вовне и где оно будет обработано.md",
+    "base/notes/finally.md",
+    "base/notes/try-with-resources.md",
+    "files/vault 2025-05-31.png",
     "w инициализация static",
     "files/classloader 2025-05-23.png",
     "files/holy priest 2025-05-15.png",
@@ -330,7 +332,6 @@
     "templates/views/category/system/view.js~",
     "templates/scripts/problem.js~",
     "templates/scripts/meta.js~",
-    "Платформа для создания и управления сертификатами SSL",
-    "files/пример списка (цвет).png"
+    "Платформа для создания и управления сертификатами SSL"
   ]
 }

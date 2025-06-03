@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-27T10:45:19+03:00
-updated: 2025-05-29T17:40:12+03:00
-sr-due: 2025-06-01
-sr-interval: 3
-sr-ease: 250
+updated: 2025-06-02T07:41:03+03:00
+sr-due: 2025-06-17
+sr-interval: 15
+sr-ease: 270
 ---
 
 Где запрещена статическая инициализация полей?

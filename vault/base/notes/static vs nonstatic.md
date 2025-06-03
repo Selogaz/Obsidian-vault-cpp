@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-27T10:32:43+03:00
-updated: 2025-05-29T17:45:10+03:00
-sr-due: 2025-06-01
-sr-interval: 3
-sr-ease: 250
+updated: 2025-06-02T07:52:32+03:00
+sr-due: 2025-06-17
+sr-interval: 15
+sr-ease: 270
 ---
 
 **Static vs nonstatic**

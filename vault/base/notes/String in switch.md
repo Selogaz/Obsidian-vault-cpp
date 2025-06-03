@@ -5,7 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-31T04:09:05+03:00
-updated: 2025-05-31T04:12:22+03:00
+updated: 2025-06-02T09:04:38+03:00
+sr-due: 2025-06-06
+sr-interval: 4
+sr-ease: 274
 ---
 
 **String in switch**

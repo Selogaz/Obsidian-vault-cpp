@@ -10,6 +10,9 @@ cssclasses:
   - category
 sort_projects: priority
 sort_direction_projects: desc
+show_search_sources: true
+search_sources: ""
+pagination_notes: 0
 ---
 
 > [!tabbed]+

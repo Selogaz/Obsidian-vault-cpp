@@ -5,7 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-31T06:22:37+03:00
-updated: 2025-05-31T06:33:33+03:00
+updated: 2025-06-02T08:44:16+03:00
+sr-due: 2025-06-06
+sr-interval: 4
+sr-ease: 270
 ---
 
 **Свойства отношения эквивалентности, порождаемого [[equals()]]**

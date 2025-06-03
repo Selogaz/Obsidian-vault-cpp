@@ -5,7 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-31T06:34:48+03:00
-updated: 2025-05-31T07:02:50+03:00
+updated: 2025-06-02T09:00:05+03:00
+sr-due: 2025-06-03
+sr-interval: 1
+sr-ease: 230
 ---
 
 **Правила переопределения [[equals()|Object.equals()]]**

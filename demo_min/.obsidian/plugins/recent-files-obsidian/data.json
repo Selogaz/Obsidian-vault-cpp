@@ -5,6 +5,18 @@
       "path": "home/all weeks.md"
     },
     {
+      "basename": "flowing_abyss",
+      "path": "base/creators/flowing_abyss.md"
+    },
+    {
+      "basename": "main",
+      "path": "home/main.md"
+    },
+    {
+      "basename": "system description",
+      "path": "home/system description.md"
+    },
+    {
       "basename": "inbox",
       "path": "home/inbox.md"
     },
@@ -21,10 +33,6 @@
       "path": "home/sources.md"
     },
     {
-      "basename": "main",
-      "path": "home/main.md"
-    },
-    {
       "basename": "конспекты по \"Вопросы для собеседования на Java Developer",
       "path": "base/notes/конспекты по \"Вопросы для собеседования на Java Developer.md"
     },
@@ -35,14 +43,6 @@
     {
       "basename": "programming",
       "path": "base/categories/programming.md"
-    },
-    {
-      "basename": "system description",
-      "path": "home/system description.md"
-    },
-    {
-      "basename": "flowing_abyss",
-      "path": "base/creators/flowing_abyss.md"
     },
     {
       "basename": "2025-W16-April",
