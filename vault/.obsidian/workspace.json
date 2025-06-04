@@ -4,11 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "c7e94441fb1413da",
+        "id": "dc653c5106fb9155",
         "type": "tabs",
         "children": [
           {
-            "id": "d9b1d93407d216be",
+            "id": "5deae1676f054663",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/categories/java.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "java"
+            }
+          },
+          {
+            "id": "91d10ebced636f4e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,12 +56,36 @@
             }
           },
           {
-            "id": "76996ee97b41fe23",
+            "id": "793b6e8e8dfc37df",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
+                "file": "base/notes/java тестовая заметка.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "java тестовая заметка"
+            }
+          },
+          {
+            "id": "e977901c79d2babc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home/prefixes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,11 +100,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов"
+              "title": "prefixes"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -129,10 +177,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md"
+                "file": "periodic/daily/2025-04-15.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов"
+              "title": "File properties"
             }
           }
         ]
@@ -230,10 +278,17 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "76996ee97b41fe23",
+  "active": "793b6e8e8dfc37df",
   "lastOpenFiles": [
-    "base/notes/теория по Spring.md",
     "home/index.md",
+    "base/notes/java тестовая заметка.md",
+    "base/categories/java.md",
+    "home/prefixes.md",
+    "Untitled 1.md",
+    "base/categories/🗺️java.md",
+    "home/databases/high-notes.md",
+    "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
+    "base/notes/теория по Spring.md",
     "base/notes/IoC.md",
     "base/notes/способы внедрения зависимостей.md",
     "base/notes/внедрение зависимостей через интерфейс.md",
@@ -241,7 +296,6 @@
     "base/notes/внедрение зависимостей через конструктор.md",
     "base/notes/DI.md",
     "base/notes/введение в книгу Федора Урванова по спрингу.md",
-    "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
     "base/notes/принцип единственной ответственности.md",
     "base/notes/Альтернативы для Spring.md",
     "base/notes/Jakarta EE.md",
@@ -252,12 +306,6 @@
     "base/notes/консультация паблик для вкатунов 31.05.md",
     "periodic/statuses/_inbox.md",
     "base/notes/Локальные переменные в JVM.md",
-    "base/notes/пример отличия поля от локальной переменной.md",
-    "base/notes/передача параметров в методы (ИИ версия).md",
-    "base/notes/ключевые отличия полей от локальных переменных.md",
-    "base/notes/особенности работы локальных переменных.md",
-    "base/notes/организация локальных переменных в памяти.md",
-    "base/notes/характеристики локальных переменных в Java.md",
     "periodic/2025.canvas",
     "files/vault 2025-05-31.png",
     "w инициализация static",

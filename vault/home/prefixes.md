@@ -107,6 +107,7 @@ content
 # Code
 
 js – js
+java – java
 
 ```yaml
 prefix note title().md

@@ -19,12 +19,14 @@ cssclasses:
 			- [[Вопросы и ответы к интервью Java разработчика]]
 			- [[консультация паблик для вкатунов 31.05]]
 			- [[Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов]]
-
+- [[java]]
+	- [[java тестовая заметка]]
+- 
 ----
 - [[computer science]]
 	- [[pc builds]]
 - [[programming]]
-	- [[java]]
+	- [[base/categories/java]]
 - [[health]]
 	- [[Простое сообщество]]
 		- [[@prostosocial_bot]]

@@ -1,16 +1,32 @@
 {
   "recentFiles": [
     {
+      "basename": "java тестовая заметка",
+      "path": "base/notes/java тестовая заметка.md"
+    },
+    {
+      "basename": "index",
+      "path": "home/index.md"
+    },
+    {
+      "basename": "java",
+      "path": "base/categories/java.md"
+    },
+    {
+      "basename": "prefixes",
+      "path": "home/prefixes.md"
+    },
+    {
+      "basename": "high-notes",
+      "path": "home/databases/high-notes.md"
+    },
+    {
       "basename": "Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов",
       "path": "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md"
     },
     {
       "basename": "теория по Spring",
       "path": "base/notes/теория по Spring.md"
-    },
-    {
-      "basename": "index",
-      "path": "home/index.md"
     },
     {
       "basename": "IoC",
@@ -383,22 +399,6 @@
     {
       "basename": "2025-06",
       "path": "periodic/monthly/2025-06.md"
-    },
-    {
-      "basename": "2025-W23",
-      "path": "periodic/weekly/2025-W23.md"
-    },
-    {
-      "basename": "2025-06-02",
-      "path": "periodic/daily/2025-06-02.md"
-    },
-    {
-      "basename": "finally",
-      "path": "base/notes/finally.md"
-    },
-    {
-      "basename": "типы конструкторов",
-      "path": "base/notes/типы конструкторов.md"
     }
   ],
   "omittedPaths": [
