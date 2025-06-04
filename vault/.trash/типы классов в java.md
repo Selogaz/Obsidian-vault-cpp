@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-27 10:49:56+03:00
 deck: obsidian::work
-created: 2025-05-27T10:49:56+03:00
-updated: 2025-05-28T06:39:54+03:00
 sr-due: 2025-05-28
-sr-interval: NaN
 sr-ease: NaN
+sr-interval: NaN
+tags:
+- note/specific/code
+- category/java
+updated: 2025-05-28 06:39:54+03:00
 ---
 
 **Типы классов в java**

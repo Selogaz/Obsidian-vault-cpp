@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-27 11:11:13+03:00
 deck: obsidian::work
-created: 2025-05-27T11:11:13+03:00
-updated: 2025-06-02T08:17:04+03:00
 sr-due: 2025-06-13
-sr-interval: 11
 sr-ease: 250
+sr-interval: 11
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-02 08:17:04+03:00
 ---
 
 **Local inner class**

@@ -1,15 +1,15 @@
 ---
-tags:
-  - note/specific/exact
-  - mark/aggregator
-  - category/work
 aliases: []
+created: 2025-05-31 04:02:51+03:00
 deck: obsidian::work
-created: 2025-05-31T04:02:51+03:00
-updated: 2025-06-02T09:09:31+03:00
 sr-due: null
-sr-interval: null
 sr-ease: null
+sr-interval: null
+tags:
+- note/specific/code
+- mark/aggregator
+- category/java
+updated: 2025-06-02 09:09:31+03:00
 ---
 
 **JVM**

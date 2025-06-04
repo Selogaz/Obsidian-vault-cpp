@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-23 10:47:45+03:00
 deck: obsidian::work
-created: 2025-05-23T10:47:45+03:00
-updated: 2025-05-29T17:13:07+03:00
 sr-due: 2025-06-07
-sr-interval: 9
 sr-ease: 245
+sr-interval: 9
+tags:
+- note/specific/code
+- category/java
+updated: 2025-05-29 17:13:07+03:00
 ---
 
 **Constant pool и таблица символов**

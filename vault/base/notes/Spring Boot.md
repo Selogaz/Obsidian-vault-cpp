@@ -1,11 +1,11 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-06-03 10:17:01+03:00
 deck: obsidian::work
-created: 2025-06-03T10:17:01+03:00
-updated: 2025-06-03T10:29:46+03:00
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-03 10:29:46+03:00
 ---
 
 **Spring Boot**

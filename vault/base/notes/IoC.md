@@ -1,11 +1,11 @@
 ---
 tags:
-  - note/specific/exact
-  - category/work
+  - note/specific/code
+  - category/java
 aliases: []
 deck: obsidian::work
-created: 2025-06-03T11:26:07+03:00
-updated: 2025-06-03T16:47:21+03:00
+created: 2025-06-03 11:26:07+03:00
+updated: 2025-06-04T18:47:46+03:00
 ---
 
 IoC, Инверсия управления[^1]

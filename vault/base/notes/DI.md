@@ -1,11 +1,11 @@
 ---
 tags:
-  - note/specific/exact
-  - category/work
+  - note/specific/code
+  - category/java
 aliases: []
 deck: obsidian::work
-created: 2025-06-03T10:46:15+03:00
-updated: 2025-06-03T11:26:07+03:00
+created: 2025-06-03 10:46:15+03:00
+updated: 2025-06-04T18:47:53+03:00
 ---
 
 Внедрение зависимости, инъекция зависимости, Dependency Injection, DI

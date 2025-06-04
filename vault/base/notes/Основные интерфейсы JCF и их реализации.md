@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-06-02 13:32:24+03:00
 deck: obsidian::work
-created: 2025-06-02T13:32:24+03:00
-updated: 2025-06-03T07:42:54+03:00
 sr-due: 2025-06-04
-sr-interval: 1
 sr-ease: 230
+sr-interval: 1
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-03 07:42:54+03:00
 ---
 
 **Основные интерфейсы JCF и их реализации**

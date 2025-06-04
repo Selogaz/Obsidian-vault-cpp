@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-28 11:55:22+03:00
 deck: obsidian::work
-created: 2025-05-28T11:55:22+03:00
-updated: 2025-06-02T07:47:25+03:00
 sr-due: 2025-06-10
-sr-interval: 8
 sr-ease: 268
+sr-interval: 8
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-02 07:47:25+03:00
 ---
 
 Пул строк

@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-31 06:01:19+03:00
 deck: obsidian::work
-created: 2025-05-31T06:01:19+03:00
-updated: 2025-06-02T08:39:38+03:00
 sr-due: 2025-06-05
-sr-interval: 3
 sr-ease: 254
+sr-interval: 3
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-02 08:39:38+03:00
 ---
 
 **Динамическая загрузка классов в Java**

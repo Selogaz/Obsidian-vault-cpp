@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-23 10:54:45+03:00
 deck: obsidian::work
-created: 2025-05-23T10:54:45+03:00
-updated: 2025-05-28T04:49:06+03:00
 sr-due: 2025-06-13
-sr-interval: 16
 sr-ease: 297
+sr-interval: 16
+tags:
+- note/specific/code
+- category/java
+updated: 2025-05-28 04:49:06+03:00
 ---
 
 **Отличия JVM, JRE и JDK**

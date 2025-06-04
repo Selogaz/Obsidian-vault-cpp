@@ -8,31 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5deae1676f054663",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/categories/java.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "java"
-            }
-          },
-          {
-            "id": "91d10ebced636f4e",
+            "id": "8757fe3e444d0e71",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -56,36 +32,12 @@
             }
           },
           {
-            "id": "793b6e8e8dfc37df",
+            "id": "04530ce920cfbb04",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/notes/java тестовая заметка.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "java тестовая заметка"
-            }
-          },
-          {
-            "id": "e977901c79d2babc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "home/prefixes.md",
+                "file": "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,11 +52,83 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "prefixes"
+              "title": "Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов"
+            }
+          },
+          {
+            "id": "509f2f89a8496308",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/теория по Spring.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "теория по Spring"
+            }
+          },
+          {
+            "id": "416afa8df720d25d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/IoC.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "IoC"
+            }
+          },
+          {
+            "id": "95d7a015c23f6afb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/DI.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "DI"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -278,24 +302,24 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "793b6e8e8dfc37df",
+  "active": "416afa8df720d25d",
   "lastOpenFiles": [
+    "base/notes/DI.md",
+    "base/notes/IoC.md",
+    "base/notes/теория по Spring.md",
+    "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
     "home/index.md",
     "base/notes/java тестовая заметка.md",
+    "base/notes/введение в книгу Федора Урванова по спрингу.md",
     "base/categories/java.md",
     "home/prefixes.md",
     "Untitled 1.md",
     "base/categories/🗺️java.md",
     "home/databases/high-notes.md",
-    "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
-    "base/notes/теория по Spring.md",
-    "base/notes/IoC.md",
     "base/notes/способы внедрения зависимостей.md",
     "base/notes/внедрение зависимостей через интерфейс.md",
     "base/notes/внедрение зависимостей через сеттеры.md",
     "base/notes/внедрение зависимостей через конструктор.md",
-    "base/notes/DI.md",
-    "base/notes/введение в книгу Федора Урванова по спрингу.md",
     "base/notes/принцип единственной ответственности.md",
     "base/notes/Альтернативы для Spring.md",
     "base/notes/Jakarta EE.md",

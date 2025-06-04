@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-25 18:03:36+03:00
 deck: obsidian::work
-created: 2025-05-25T18:03:36+03:00
-updated: 2025-06-03T08:21:23+03:00
 sr-due: 2025-06-11
-sr-interval: 11
 sr-ease: 270
+sr-interval: 11
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-03 08:21:23+03:00
 ---
 
 Может ли объект получить доступ к члену класса, объявленному как private? Если да, то каким образом?

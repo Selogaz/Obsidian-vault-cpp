@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-25 21:22:28+03:00
 deck: obsidian::work
-created: 2025-05-25T21:22:28+03:00
-updated: 2025-05-31T03:44:16+03:00
 sr-due: 2025-06-16
-sr-interval: 16
 sr-ease: 290
+sr-interval: 16
+tags:
+- note/specific/code
+- category/java
+updated: 2025-05-31 03:44:16+03:00
 ---
 
 Можно ли объявить метод абстрактным и статическим одновременно?

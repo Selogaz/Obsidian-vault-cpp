@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-06-02 09:49:51+03:00
 deck: obsidian::work
-created: 2025-06-02T09:49:51+03:00
-updated: 2025-06-03T07:57:32+03:00
 sr-due: 2025-06-07
-sr-interval: 4
 sr-ease: 270
+sr-interval: 4
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-03 07:57:32+03:00
 ---
 
 **Почему хэш код в виде 31 * x + y предпочтительнее чем x + y**

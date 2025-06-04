@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-28 08:15:57+03:00
 deck: obsidian::work
-created: 2025-05-28T08:15:57+03:00
-updated: 2025-06-02T08:07:13+03:00
 sr-due: 2025-06-13
-sr-interval: 11
 sr-ease: 270
+sr-interval: 11
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-02 08:07:13+03:00
 ---
 
 **Young generation**

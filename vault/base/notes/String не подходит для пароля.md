@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-30 19:51:39+03:00
 deck: obsidian::work
-created: 2025-05-30T19:51:39+03:00
-updated: 2025-05-31T03:59:26+03:00
 sr-due: 2025-06-04
-sr-interval: 4
 sr-ease: 270
+sr-interval: 4
+tags:
+- note/specific/code
+- category/java
+updated: 2025-05-31 03:59:26+03:00
 ---
 
 **String не подходит для пароля**

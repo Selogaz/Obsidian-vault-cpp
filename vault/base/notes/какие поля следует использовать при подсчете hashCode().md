@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-31 07:17:26+03:00
 deck: obsidian::work
-created: 2025-05-31T07:17:26+03:00
-updated: 2025-06-02T08:24:31+03:00
 sr-due: 2025-06-06
-sr-interval: 4
 sr-ease: 270
+sr-interval: 4
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-02 08:24:31+03:00
 ---
 
 **Какие поля следует использовать при подсчете hashCode**

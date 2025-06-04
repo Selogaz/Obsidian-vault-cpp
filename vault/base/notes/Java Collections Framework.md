@@ -1,15 +1,15 @@
 ---
-tags:
-  - note/specific/exact
-  - mark/aggregator
-  - category/work
 aliases: []
+created: 2025-06-02 13:30:37+03:00
 deck: obsidian::work
-created: 2025-06-02T13:30:37+03:00
-updated: 2025-06-03T07:11:33+03:00
 sr-due: 2025-06-04
-sr-interval: 1
 sr-ease: 230
+sr-interval: 1
+tags:
+- note/specific/code
+- mark/aggregator
+- category/java
+updated: 2025-06-03 07:11:33+03:00
 ---
 
 **Java Collections Framework**

@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-25 17:22:45+03:00
 deck: obsidian::work
-created: 2025-05-25T17:22:45+03:00
-updated: 2025-06-03T08:57:40+03:00
 sr-due: 2025-06-13
-sr-interval: 11
 sr-ease: 261
+sr-interval: 11
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-03 08:57:40+03:00
 ---
 
 **Локальные переменные в JVM**

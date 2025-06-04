@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-06-02 09:41:55+03:00
 deck: obsidian::work
-created: 2025-06-02T09:41:55+03:00
-updated: 2025-06-03T07:57:14+03:00
 sr-due: 2025-06-04
-sr-interval: 1
 sr-ease: 237
+sr-interval: 1
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-03 07:57:14+03:00
 ---
 
 **В чем разница между this.getClass == that.getClass() и that instanceof MyClass**

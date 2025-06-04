@@ -1,11 +1,11 @@
 ---
 tags:
-  - note/specific/exact
-  - category/work
+  - note/specific/code
+  - category/java
 aliases: []
 deck: obsidian::work
-created: 2025-06-03T10:58:10+03:00
-updated: 2025-06-03T11:26:50+03:00
+created: 2025-06-03 10:58:10+03:00
+updated: 2025-06-04T18:47:19+03:00
 ---
 
 **Теория по Spring**

@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-30 19:43:08+03:00
 deck: obsidian::work
-created: 2025-05-30T19:43:08+03:00
-updated: 2025-06-02T07:35:47+03:00
 sr-due: 2025-06-06
-sr-interval: 4
 sr-ease: 235
+sr-interval: 4
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-02 07:35:47+03:00
 ---
 
 **Почему String неизменяемый**

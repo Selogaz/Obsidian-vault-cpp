@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "index",
+      "path": "home/index.md"
+    },
+    {
+      "basename": "main",
+      "path": "home/main.md"
+    },
+    {
       "basename": "all weeks",
       "path": "home/all weeks.md"
     },
     {
       "basename": "flowing_abyss",
       "path": "base/creators/flowing_abyss.md"
-    },
-    {
-      "basename": "main",
-      "path": "home/main.md"
     },
     {
       "basename": "system description",
@@ -83,10 +87,6 @@
     {
       "basename": "source",
       "path": "types/source.md"
-    },
-    {
-      "basename": "index",
-      "path": "home/index.md"
     },
     {
       "basename": "daily",

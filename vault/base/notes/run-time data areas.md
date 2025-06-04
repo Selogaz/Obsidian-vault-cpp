@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-21 11:43:33+03:00
 deck: obsidian::work
-created: 2025-05-21T11:43:33+03:00
-updated: 2025-05-28T04:52:48+03:00
 sr-due: 2025-06-05
-sr-interval: 8
 sr-ease: 234
+sr-interval: 8
+tags:
+- note/specific/code
+- category/java
+updated: 2025-05-28 04:52:48+03:00
 ---
 
 ```table-of-contents

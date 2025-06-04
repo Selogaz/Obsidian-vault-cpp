@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-06-02 12:43:29+03:00
 deck: obsidian::work
-created: 2025-06-02T12:43:29+03:00
-updated: 2025-06-03T07:12:40+03:00
 sr-due: 2025-06-06
-sr-interval: 3
 sr-ease: 260
+sr-interval: 3
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-03 07:12:40+03:00
 ---
 
 **OutOfMemoryError**

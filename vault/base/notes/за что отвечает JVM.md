@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-21 08:35:50+03:00
 deck: obsidian::work
-created: 2025-05-21T08:35:50+03:00
-updated: 2025-05-28T04:53:36+03:00
 sr-due: 2025-06-04
-sr-interval: 7
 sr-ease: 270
+sr-interval: 7
+tags:
+- note/specific/code
+- category/java
+updated: 2025-05-28 04:53:36+03:00
 ---
 
 **За что отвечает JVM**

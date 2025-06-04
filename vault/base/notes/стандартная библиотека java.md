@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-23 09:25:11+03:00
 deck: obsidian::work
-created: 2025-05-23T09:25:11+03:00
-updated: 2025-05-27T09:00:12+03:00
 sr-due: 2025-06-11
-sr-interval: 15
 sr-ease: 290
+sr-interval: 15
+tags:
+- note/specific/code
+- category/java
+updated: 2025-05-27 09:00:12+03:00
 ---
 
 **Стандартная библиотека java**

@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-23 13:01:41+03:00
 deck: obsidian::work
-created: 2025-05-23T13:01:41+03:00
-updated: 2025-05-30T05:56:02+03:00
 sr-due: 2025-06-07
-sr-interval: 8
 sr-ease: 234
+sr-interval: 8
+tags:
+- note/specific/code
+- category/java
+updated: 2025-05-30 05:56:02+03:00
 ---
 
 **Ключевое слово interface**

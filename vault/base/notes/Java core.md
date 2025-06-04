@@ -1,16 +1,16 @@
 ---
-tags:
-  - note/specific/exact
-  - mark/aggregator
-  - category/work
 aliases: []
+created: 2025-05-31 04:03:53+03:00
 deck: obsidian::work
-created: 2025-05-31T04:03:53+03:00
-updated: 2025-06-03T07:11:09+03:00
+image: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA4UlEQVR4Ae1XAQbDMBTNSdpcoHdIC2A9W47we4NlZbtGwGwMwbABGQxAlofFMFsh+Rv5PE1/ynt92idfoORaSWmUbje9i/ARIRN8hJVmIHAm8kRaFh7cQs4DocGBJrouYAlumOBEsp8HXmDBid8WsKTwXLcbgz5O4Xy/ohWvl6APU+i2Y34BIN/fTu+20IeIvALw5h8KTuQVALu/7OcSsLy4HeD+Boj7L1iVygGC3S85QCCvQVSDqAbRfwRRDaJ6JmQ/ljs2Aaa3AkMp42hG/MMpCotmVtQaZQuM5w5D6ZP8Ad3WWERg2F0cAAAAAElFTkSuQmCC
 sr-due: null
-sr-interval: null
 sr-ease: null
-image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA4UlEQVR4Ae1XAQbDMBTNSdpcoHdIC2A9W47we4NlZbtGwGwMwbABGQxAlofFMFsh+Rv5PE1/ynt92idfoORaSWmUbje9i/ARIRN8hJVmIHAm8kRaFh7cQs4DocGBJrouYAlumOBEsp8HXmDBid8WsKTwXLcbgz5O4Xy/ohWvl6APU+i2Y34BIN/fTu+20IeIvALw5h8KTuQVALu/7OcSsLy4HeD+Boj7L1iVygGC3S85QCCvQVSDqAbRfwRRDaJ6JmQ/ljs2Aaa3AkMp42hG/MMpCotmVtQaZQuM5w5D6ZP8Ad3WWERg2F0cAAAAAElFTkSuQmCC"
+sr-interval: null
+tags:
+- note/specific/code
+- mark/aggregator
+- category/java
+updated: 2025-06-03 07:11:09+03:00
 ---
 
 **Java core**

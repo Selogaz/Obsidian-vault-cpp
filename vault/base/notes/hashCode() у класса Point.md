@@ -1,15 +1,15 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-31 07:23:06+03:00
 deck: obsidian::work
-created: 2025-05-31T07:23:06+03:00
-updated: 2025-06-02T08:26:03+03:00
+image: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
 sr-due: 2025-06-05
-sr-interval: 3
 sr-ease: 250
-image: "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+sr-interval: 3
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-02 08:26:03+03:00
 ---
 
 Если у класса Point{int x, y;} реализовать метод

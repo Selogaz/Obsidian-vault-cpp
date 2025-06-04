@@ -1,12 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "java тестовая заметка",
-      "path": "base/notes/java тестовая заметка.md"
+      "basename": "IoC",
+      "path": "base/notes/IoC.md"
+    },
+    {
+      "basename": "DI",
+      "path": "base/notes/DI.md"
+    },
+    {
+      "basename": "теория по Spring",
+      "path": "base/notes/теория по Spring.md"
+    },
+    {
+      "basename": "Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов",
+      "path": "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md"
     },
     {
       "basename": "index",
       "path": "home/index.md"
+    },
+    {
+      "basename": "java тестовая заметка",
+      "path": "base/notes/java тестовая заметка.md"
+    },
+    {
+      "basename": "введение в книгу Федора Урванова по спрингу",
+      "path": "base/notes/введение в книгу Федора Урванова по спрингу.md"
     },
     {
       "basename": "java",
@@ -19,18 +39,6 @@
     {
       "basename": "high-notes",
       "path": "home/databases/high-notes.md"
-    },
-    {
-      "basename": "Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов",
-      "path": "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md"
-    },
-    {
-      "basename": "теория по Spring",
-      "path": "base/notes/теория по Spring.md"
-    },
-    {
-      "basename": "IoC",
-      "path": "base/notes/IoC.md"
     },
     {
       "basename": "способы внедрения зависимостей",
@@ -47,14 +55,6 @@
     {
       "basename": "внедрение зависимостей через конструктор",
       "path": "base/notes/внедрение зависимостей через конструктор.md"
-    },
-    {
-      "basename": "DI",
-      "path": "base/notes/DI.md"
-    },
-    {
-      "basename": "введение в книгу Федора Урванова по спрингу",
-      "path": "base/notes/введение в книгу Федора Урванова по спрингу.md"
     },
     {
       "basename": "Альтернативы для Spring",

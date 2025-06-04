@@ -1,11 +1,11 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-06-03 10:32:50+03:00
 deck: obsidian::work
-created: 2025-06-03T10:32:50+03:00
-updated: 2025-06-03T10:33:11+03:00
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-03 10:33:11+03:00
 ---
 
 **Netty**

@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-27 10:58:35+03:00
 deck: obsidian::work
-created: 2025-05-27T10:58:35+03:00
-updated: 2025-06-02T08:13:24+03:00
 sr-due: 2025-06-11
-sr-interval: 9
 sr-ease: 240
+sr-interval: 9
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-02 08:13:24+03:00
 ---
 
 **Nested class**

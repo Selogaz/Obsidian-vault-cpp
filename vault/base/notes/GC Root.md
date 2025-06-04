@@ -1,14 +1,14 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-05-27 14:39:35+03:00
 deck: obsidian::work
-created: 2025-05-27T14:39:35+03:00
-updated: 2025-06-02T08:12:31+03:00
 sr-due: 2025-06-13
-sr-interval: 11
 sr-ease: 251
+sr-interval: 11
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-02 08:12:31+03:00
 ---
 
 **GC Root**

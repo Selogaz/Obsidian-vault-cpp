@@ -1,11 +1,11 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-06-03 10:20:07+03:00
 deck: obsidian::work
-created: 2025-06-03T10:20:07+03:00
-updated: 2025-06-03T10:43:39+03:00
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-03 10:43:39+03:00
 ---
 
 **Jakarta EE или Java EE**

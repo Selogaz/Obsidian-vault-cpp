@@ -1,11 +1,11 @@
 ---
-tags:
-  - note/specific/exact
-  - category/work
 aliases: []
+created: 2025-06-03 10:43:02+03:00
 deck: obsidian::work
-created: 2025-06-03T10:43:02+03:00
-updated: 2025-06-03T10:46:53+03:00
+tags:
+- note/specific/code
+- category/java
+updated: 2025-06-03 10:46:53+03:00
 ---
 
 **Альтернативы для Spring**
