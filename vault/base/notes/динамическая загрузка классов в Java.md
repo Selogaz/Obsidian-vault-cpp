@@ -1,14 +1,14 @@
 ---
-aliases: []
-created: 2025-05-31 06:01:19+03:00
-deck: obsidian::work
-sr-due: 2025-06-05
-sr-ease: 254
-sr-interval: 3
 tags:
-- note/specific/code
-- category/java
-updated: 2025-06-02 08:39:38+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-05-31 06:01:19+03:00
+updated: 2025-06-05T16:49:16+03:00
+sr-due: 2025-06-14
+sr-interval: 9
+sr-ease: 254
 ---
 
 **Динамическая загрузка классов в Java**

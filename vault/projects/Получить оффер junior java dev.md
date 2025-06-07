@@ -1,14 +1,13 @@
 ---
 tags:
   - project/single
-  - category/work
+  - category/java
 aliases: []
 status: 🟦
 priority: "#priority/a"
 category:
-  - "[[work]]"
-meta:
-  - "[[java developer]]"
+  - "[[java]]"
+meta: 
 problem: 
 creator: 
 production: 
@@ -19,7 +18,7 @@ start:
 end: 
 total_hours: 0
 created: 2025-05-20T07:10:25+03:00
-updated: 2025-05-31T21:25:41+03:00
+updated: 2025-06-04T19:28:32+03:00
 ---
 
 > [!toc]- Table of contents

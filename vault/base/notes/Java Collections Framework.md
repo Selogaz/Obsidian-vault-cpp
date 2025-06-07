@@ -1,19 +1,20 @@
 ---
-aliases: []
-created: 2025-06-02 13:30:37+03:00
-deck: obsidian::work
-sr-due: 2025-06-04
-sr-ease: 230
-sr-interval: 1
 tags:
-- note/specific/code
-- mark/aggregator
-- category/java
-updated: 2025-06-03 07:11:33+03:00
+  - note/specific/code
+  - mark/aggregator
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-06-02 13:30:37+03:00
+updated: 2025-06-06T07:08:41+03:00
+sr-due: 2025-06-09
+sr-interval: 3
+sr-ease: 230
 ---
 
 **Java Collections Framework**
 —
+- [ ] #task/inbox #category/work определение jcf
 - [[коллекция]]
 - [[Основные интерфейсы JCF и их реализации]]
 - [[java.util.Collections]]

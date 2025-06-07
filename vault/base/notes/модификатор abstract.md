@@ -1,14 +1,14 @@
 ---
-aliases: []
-created: 2025-05-23 12:52:18+03:00
-deck: obsidian::work
-sr-due: 2025-06-06
-sr-ease: 270
-sr-interval: 7
 tags:
-- note/specific/code
-- category/java
-updated: 2025-05-30 05:56:48+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-05-23 12:52:18+03:00
+updated: 2025-06-06T06:35:35+03:00
+sr-due: 2025-07-02
+sr-interval: 26
+sr-ease: 290
 ---
 
 **Модификатор abstract**

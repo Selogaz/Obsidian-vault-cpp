@@ -1,14 +1,14 @@
 ---
-aliases: []
-created: 2025-05-21 17:49:08+03:00
-deck: obsidian::work
-sr-due: 2025-06-04
-sr-ease: 250
-sr-interval: 7
 tags:
-- note/specific/code
-- category/java
-updated: 2025-05-28 04:57:41+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-05-21 17:49:08+03:00
+updated: 2025-06-05T16:56:24+03:00
+sr-due: 2025-07-03
+sr-interval: 28
+sr-ease: 270
 ---
 
 **Execution engine**

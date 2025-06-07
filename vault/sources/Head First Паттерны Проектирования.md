@@ -3,10 +3,10 @@ tags:
   - source/book
   - category/work
 aliases:
-  - "Head First Паттерны Проектирования"
+  - Head First Паттерны Проектирования
 status: 🟥
 category:
-  - "[[work]]"
+  - "[[java]]"
 meta: 
 problem: 
 related: 
@@ -20,5 +20,5 @@ start: 2025-05-31T21:25:12+03:00
 end: 
 total_hours: 0
 created: 2025-05-31T21:25:12+03:00
-updated: 2025-05-31T21:25:17+03:00
+updated: 2025-06-05T16:58:34+03:00
 ---

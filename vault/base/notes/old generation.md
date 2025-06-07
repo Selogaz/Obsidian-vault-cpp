@@ -1,14 +1,14 @@
 ---
-aliases: []
-created: 2025-05-28 08:35:35+03:00
-deck: obsidian::work
-sr-due: 2025-06-18
-sr-ease: 290
-sr-interval: 16
 tags:
-- note/specific/code
-- category/java
-updated: 2025-06-02 08:00:42+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-05-28 08:35:35+03:00
+updated: 2025-06-05T16:58:36+03:00
+sr-due: 2025-06-18
+sr-interval: 16
+sr-ease: 290
 ---
 
 **Old generation**

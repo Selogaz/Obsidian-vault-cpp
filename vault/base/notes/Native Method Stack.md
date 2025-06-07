@@ -1,14 +1,14 @@
 ---
-aliases: []
-created: 2025-05-25 17:13:35+03:00
-deck: obsidian::work
-sr-due: 2025-06-10
-sr-ease: 286
-sr-interval: 12
 tags:
-- note/specific/code
-- category/java
-updated: 2025-05-29 17:13:44+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-05-25 17:13:35+03:00
+updated: 2025-06-05T16:58:37+03:00
+sr-due: 2025-06-10
+sr-interval: 12
+sr-ease: 286
 ---
 
 **Native Method Stack**

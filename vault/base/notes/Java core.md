@@ -1,23 +1,23 @@
 ---
-aliases: []
-created: 2025-05-31 04:03:53+03:00
-deck: obsidian::work
-image: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA4UlEQVR4Ae1XAQbDMBTNSdpcoHdIC2A9W47we4NlZbtGwGwMwbABGQxAlofFMFsh+Rv5PE1/ynt92idfoORaSWmUbje9i/ARIRN8hJVmIHAm8kRaFh7cQs4DocGBJrouYAlumOBEsp8HXmDBid8WsKTwXLcbgz5O4Xy/ohWvl6APU+i2Y34BIN/fTu+20IeIvALw5h8KTuQVALu/7OcSsLy4HeD+Boj7L1iVygGC3S85QCCvQVSDqAbRfwRRDaJ6JmQ/ljs2Aaa3AkMp42hG/MMpCotmVtQaZQuM5w5D6ZP8Ad3WWERg2F0cAAAAAElFTkSuQmCC
-sr-due: null
-sr-ease: null
-sr-interval: null
 tags:
-- note/specific/code
-- mark/aggregator
-- category/java
-updated: 2025-06-03 07:11:09+03:00
+  - note/specific/code
+  - mark/aggregator
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-05-31 04:03:53+03:00
+updated: 2025-06-05T17:17:18+03:00
+sr-due: null
+sr-interval: null
+sr-ease: null
+image: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA4UlEQVR4Ae1XAQbDMBTNSdpcoHdIC2A9W47we4NlZbtGwGwMwbABGQxAlofFMFsh+Rv5PE1/ynt92idfoORaSWmUbje9i/ARIRN8hJVmIHAm8kRaFh7cQs4DocGBJrouYAlumOBEsp8HXmDBid8WsKTwXLcbgz5O4Xy/ohWvl6APU+i2Y34BIN/fTu+20IeIvALw5h8KTuQVALu/7OcSsLy4HeD+Boj7L1iVygGC3S85QCCvQVSDqAbRfwRRDaJ6JmQ/ljs2Aaa3AkMp42hG/MMpCotmVtQaZQuM5w5D6ZP8Ad3WWERg2F0cAAAAAElFTkSuQmCC
 ---
 
 **Java core**
 —
 [[отличия JVM, JRE и JDK]]
 - [[модификаторы доступа]]
-- [[final|О чем говорит ключевое слово final?]]
+- [[java final|О чем говорит ключевое слово final?]]
 - [[значения переменных по умолчанию|Какими значениями инициализируются переменные по умолчанию?]]
 - [[main]]
 - [[логические операторы]]
@@ -25,7 +25,7 @@ updated: 2025-06-03 07:11:09+03:00
 - [[побитовые операции]]
 - [[модификатор abstract]]
 - [[ключевое слово interface]]
-- [[отличия интерфейса от абстрактного класса]]
+- [[java отличия интерфейса от абстрактного класса]]
 - [[маркерные интерфейсы]]
 - [[final и методы интерфейса]]
 - [[класс, абстрактный класс или интерфейс]]
@@ -56,45 +56,45 @@ updated: 2025-06-03 07:11:09+03:00
 - [[что хранится в куче, а что в стеке]]
 - [[передача переменных в методы]]
 - [[зачем нужен сборщик мусора]]
-- [[механизм сборки мусора]]
+- [[java механизм сборки мусора]]
 - [[виды сборщиков мусора в HotSpot]]
 - [[Serial Garbage Collector]]
 - [[String pool]]
 - [[finalize]]
 - [[finally]]
-- [[приведение типов]]
+- [[java приведение типов]]
 - [[литералы]]
-- [[autoboxing]]
+- [[java autoboxing]]
 - [[особенности String]]
-- [[почему String неизменяемый]]
-- [[String не подходит для пароля]]
-- [[String как ключ для HashMap]]
-- [[intern()]]
-- [[String in switch]]
-- [[Разница String, StringBuffer, StringBuilder]]
-- [[Object]]
+- [[java почему String неизменяемый]]
+- [[java почему String не подходит для пароля]]
+- [[java String как ключ для HashMap]]
+- [[java intern()]]
+- [[java String in switch]]
+- [[java Разница String, StringBuffer, StringBuilder]]
+- [[java Object]]
 - [[конструктор]]
 - [[конструктор по умолчанию]]
 - [[типы конструкторов]]
 - [[приватный конструктор]]
-- [[classloader core-version]]
-- [[Reflection]]
-- [[equals()]]
-- [[свойства отношения эквивалентности, порождаемого equals()]]
-- [[правила переопределения Object.equals()]]
-- [[что будет если переопределить equals(), но не переопределить hashCode()]]
-- [[реализация equals() и hashCode() в Object]]
-- [[hashCode()]]
-- [[правила переопределения Object.hashCode()]]
+- [[java classloader core-version]]
+- [[java Reflection]]
+- [[java equals()]]
+- [[java свойства отношения эквивалентности, порождаемого equals()]]
+- [[java правила переопределения Object.equals()]]
+- [[java что будет если переопределить equals(), но не переопределить hashCode()]]
+- [[java реализация equals() и hashCode() в Object]]
+- [[java hashCode()]]
+- [[java правила переопределения Object.hashCode()]]
 - [[может ли equals() возвращать true у разных объектов]]
 - [[может ли equals() возвращать false у ссылок на один объект]]
 - [[можно ли так реализовать equals()]]
-- [[в чем разница между this.getClass() == that.getClass() и that instanceof MyClass]]
+- [[java разница между this.getClass() == that.getClass() и that instanceof MyClass]]
 - [[Можно ли реализовать метод equals() класса MyClass вот так]]
 - [[Почему хэш код в виде 31 * x + y предпочтительнее чем x + y]]
-- [[клонирование объектов]]
+- [[java клонирование объектов]]
 - [[поверхностное клонирование]]
-- [[глубокое клонирование]]
+- [[java глубокое клонирование]]
 - [[наиболее предпочтительный способ клонирования]]
 - [[почему метод clone() объявлен в классе Object, а не в интерфейсе Cloneable]]
 - [[иерархия исключений]]

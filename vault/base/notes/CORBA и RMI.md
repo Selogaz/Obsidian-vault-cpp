@@ -1,14 +1,14 @@
 ---
-aliases: []
-created: 2025-05-23 09:52:47+03:00
-deck: obsidian::work
-sr-due: 2025-06-08
-sr-ease: 228
-sr-interval: 9
 tags:
-- note/specific/code
-- category/java
-updated: 2025-05-30 06:14:16+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-05-23 09:52:47+03:00
+updated: 2025-06-05T16:58:38+03:00
+sr-due: 2025-06-08
+sr-interval: 9
+sr-ease: 228
 ---
 
 **CORBA**

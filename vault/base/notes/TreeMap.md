@@ -1,11 +1,14 @@
 ---
-aliases: []
-created: 2025-06-03 08:15:05+03:00
-deck: obsidian::work
 tags:
-- note/specific/code
-- category/java
-updated: 2025-06-03 08:17:51+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-06-03 08:15:05+03:00
+updated: 2025-06-05T18:02:01+03:00
+sr-due: 2025-06-09
+sr-interval: 4
+sr-ease: 276
 ---
 
 **TreeMap**

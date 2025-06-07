@@ -1,20 +1,20 @@
 ---
-aliases: []
-created: 2025-05-23 13:01:41+03:00
-deck: obsidian::work
-sr-due: 2025-06-07
-sr-ease: 234
-sr-interval: 8
 tags:
-- note/specific/code
-- category/java
-updated: 2025-05-30 05:56:02+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-05-23 13:01:41+03:00
+updated: 2025-06-05T16:58:36+03:00
+sr-due: 2025-06-07
+sr-interval: 8
+sr-ease: 234
 ---
 
 **Ключевое слово interface**
 —
 используется для создания абстрактных классов
-- [x] #task/inbox #category/work Чем отличается от [[модификатор abstract]] ? [[отличия интерфейса от абстрактного класса]] ✅ 2025-05-24
+- [x] #task/inbox #category/work Чем отличается от [[модификатор abstract]] ? [[java отличия интерфейса от абстрактного класса]] ✅ 2025-05-24
 
 Определяет *каким образом* будет использоваться класс, который этот интерфейс реализует.
 

@@ -1,14 +1,14 @@
 ---
-aliases: []
-created: 2025-05-21 13:21:22+03:00
-deck: obsidian::work
-sr-due: 2025-06-12
-sr-ease: 181
-sr-interval: 10
 tags:
-- note/specific/code
-- category/java
-updated: 2025-06-03 08:07:47+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-05-21 13:21:22+03:00
+updated: 2025-06-05T16:58:37+03:00
+sr-due: 2025-06-12
+sr-interval: 10
+sr-ease: 181
 ---
 
 **Frames**

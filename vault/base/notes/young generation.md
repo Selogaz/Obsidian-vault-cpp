@@ -1,14 +1,14 @@
 ---
-aliases: []
-created: 2025-05-28 08:15:57+03:00
-deck: obsidian::work
-sr-due: 2025-06-13
-sr-ease: 270
-sr-interval: 11
 tags:
-- note/specific/code
-- category/java
-updated: 2025-06-02 08:07:13+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-05-28 08:15:57+03:00
+updated: 2025-06-05T16:58:36+03:00
+sr-due: 2025-06-13
+sr-interval: 11
+sr-ease: 270
 ---
 
 **Young generation**

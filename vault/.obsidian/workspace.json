@@ -32,12 +32,36 @@
             }
           },
           {
-            "id": "04530ce920cfbb04",
+            "id": "e78b1e62042a5e88",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
+                "file": "base/categories/computer science.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "computer science"
+            }
+          },
+          {
+            "id": "f6c83d0106d04e54",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/_meta-notes/pc builds.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,16 +76,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов"
+              "title": "pc builds"
             }
           },
           {
-            "id": "509f2f89a8496308",
+            "id": "3acbea71bbebddb1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/notes/теория по Spring.md",
+                "file": "base/_problems/Сборка под 9600x.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,18 +100,18 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "теория по Spring"
+              "title": "Сборка под 9600x"
             }
           },
           {
-            "id": "416afa8df720d25d",
+            "id": "d8ad5c7deee46407",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/notes/IoC.md",
+                "file": "base/_problems/более дешевая 9600х.md",
                 "mode": "source",
-                "source": true,
+                "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": true,
@@ -100,31 +124,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "IoC"
-            }
-          },
-          {
-            "id": "95d7a015c23f6afb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/DI.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "DI"
+              "title": "более дешевая 9600х"
             }
           }
         ],
@@ -201,10 +201,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "periodic/daily/2025-04-15.md"
+                "file": "base/_problems/Сборка под 9600x.md"
               },
               "icon": "lucide-info",
-              "title": "File properties"
+              "title": "File properties for Сборка под 9600x"
             }
           }
         ]
@@ -302,34 +302,35 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "416afa8df720d25d",
+  "active": "3acbea71bbebddb1",
   "lastOpenFiles": [
-    "base/notes/DI.md",
-    "base/notes/IoC.md",
-    "base/notes/теория по Spring.md",
-    "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
+    "base/_problems/более дешевая 9600х.md",
+    "base/_problems/Сборка под 9600x.md",
+    "base/_meta-notes/pc builds.md",
+    "periodic/daily/2025-05-26.md",
+    "base/categories/computer science.md",
     "home/index.md",
-    "base/notes/java тестовая заметка.md",
-    "base/notes/введение в книгу Федора Урванова по спрингу.md",
+    "sources/Вопросы и ответы к интервью Java разработчика.md",
     "base/categories/java.md",
-    "home/prefixes.md",
-    "Untitled 1.md",
-    "base/categories/🗺️java.md",
-    "home/databases/high-notes.md",
-    "base/notes/способы внедрения зависимостей.md",
-    "base/notes/внедрение зависимостей через интерфейс.md",
-    "base/notes/внедрение зависимостей через сеттеры.md",
-    "base/notes/внедрение зависимостей через конструктор.md",
-    "base/notes/принцип единственной ответственности.md",
-    "base/notes/Альтернативы для Spring.md",
-    "base/notes/Jakarta EE.md",
-    "base/notes/Servlet API.md",
-    "base/notes/Netty.md",
-    "base/notes/Spring Boot.md",
-    "base/notes/Spring Framework.md",
-    "base/notes/консультация паблик для вкатунов 31.05.md",
-    "periodic/statuses/_inbox.md",
-    "base/notes/Локальные переменные в JVM.md",
+    "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
+    "base/notes/java Микросервисы.md",
+    "base/notes/java service mesh.md",
+    "base/notes/java API gateway.md",
+    "base/notes/java service discovery.md",
+    "base/notes/java client-side service discovery.md",
+    "base/notes/java преимущества client-side service discovery.md",
+    "base/notes/java server-side service discovery.md",
+    "base/notes/java load balancer.md",
+    "base/notes/java преимущества server-side service discovery.md",
+    "base/notes/java service registry.md",
+    "base/notes/java взаимодействие микросервисов.md",
+    "base/notes/java недостатки микросервисов.md",
+    "base/notes/java плюсы микросервисов.md",
+    "base/notes/java gRPC.md",
+    "base/notes/java монолит.md",
+    "base/notes/теория по Spring.md",
+    "base/notes/AOP.md",
+    "mynoise-net.aac",
     "periodic/2025.canvas",
     "files/vault 2025-05-31.png",
     "w инициализация static",

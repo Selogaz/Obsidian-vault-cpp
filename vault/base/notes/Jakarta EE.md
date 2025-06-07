@@ -1,16 +1,19 @@
 ---
-aliases: []
-created: 2025-06-03 10:20:07+03:00
-deck: obsidian::work
 tags:
-- note/specific/code
-- category/java
-updated: 2025-06-03 10:43:39+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-06-03 10:20:07+03:00
+updated: 2025-06-05T18:16:29+03:00
+sr-due: 2025-06-09
+sr-interval: 4
+sr-ease: 270
 ---
 
 **Jakarta EE или Java EE**
 —
-На этой *спецификации* велась разработка до появления [[Spring Framework]]. Использовался сервер приложений <font color="#ffff00">GlassFish</font>. Используется для поддержки старых проектов
+На этой *спецификации* велась разработка до появления [[Spring Framework|Spring]]. Использовался сервер приложений <font color="#ffff00">GlassFish</font>. Используется для поддержки старых проектов
 
 Синонимы: JEE, J2EE, Java 2 Enterprise Edition, Java Platform, Enterprise Edition
 
@@ -18,7 +21,7 @@ updated: 2025-06-03 10:43:39+03:00
 
 - Внедрение зависимостей (JSR 330)
 - основные аннтации (JSR 250)
-- [[Servlet API]] (JSR 340)
+- [[java Servlet API]] (JSR 340)
 - WebSocket API (JSR 356)
 - Concurrency Utilities (JSR 236)
 - JSON Binding API (JSR 367)

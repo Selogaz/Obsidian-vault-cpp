@@ -1,404 +1,404 @@
 {
   "recentFiles": [
     {
-      "basename": "IoC",
-      "path": "base/notes/IoC.md"
-    },
-    {
-      "basename": "DI",
-      "path": "base/notes/DI.md"
-    },
-    {
-      "basename": "теория по Spring",
-      "path": "base/notes/теория по Spring.md"
-    },
-    {
-      "basename": "Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов",
-      "path": "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md"
-    },
-    {
-      "basename": "index",
-      "path": "home/index.md"
-    },
-    {
-      "basename": "java тестовая заметка",
-      "path": "base/notes/java тестовая заметка.md"
-    },
-    {
-      "basename": "введение в книгу Федора Урванова по спрингу",
-      "path": "base/notes/введение в книгу Федора Урванова по спрингу.md"
-    },
-    {
-      "basename": "java",
-      "path": "base/categories/java.md"
-    },
-    {
-      "basename": "prefixes",
-      "path": "home/prefixes.md"
-    },
-    {
-      "basename": "high-notes",
-      "path": "home/databases/high-notes.md"
-    },
-    {
-      "basename": "способы внедрения зависимостей",
-      "path": "base/notes/способы внедрения зависимостей.md"
-    },
-    {
-      "basename": "внедрение зависимостей через интерфейс",
-      "path": "base/notes/внедрение зависимостей через интерфейс.md"
-    },
-    {
-      "basename": "внедрение зависимостей через сеттеры",
-      "path": "base/notes/внедрение зависимостей через сеттеры.md"
-    },
-    {
-      "basename": "внедрение зависимостей через конструктор",
-      "path": "base/notes/внедрение зависимостей через конструктор.md"
-    },
-    {
-      "basename": "Альтернативы для Spring",
-      "path": "base/notes/Альтернативы для Spring.md"
-    },
-    {
-      "basename": "Jakarta EE",
-      "path": "base/notes/Jakarta EE.md"
-    },
-    {
-      "basename": "Servlet API",
-      "path": "base/notes/Servlet API.md"
-    },
-    {
-      "basename": "Netty",
-      "path": "base/notes/Netty.md"
-    },
-    {
-      "basename": "Spring Boot",
-      "path": "base/notes/Spring Boot.md"
-    },
-    {
-      "basename": "Spring Framework",
-      "path": "base/notes/Spring Framework.md"
-    },
-    {
-      "basename": "консультация паблик для вкатунов 31.05",
-      "path": "base/notes/консультация паблик для вкатунов 31.05.md"
-    },
-    {
-      "basename": "_inbox",
-      "path": "periodic/statuses/_inbox.md"
-    },
-    {
-      "basename": "Локальные переменные в JVM",
-      "path": "base/notes/Локальные переменные в JVM.md"
-    },
-    {
-      "basename": "пример отличия поля от локальной переменной",
-      "path": "base/notes/пример отличия поля от локальной переменной.md"
-    },
-    {
-      "basename": "передача параметров в методы (ИИ версия)",
-      "path": "base/notes/передача параметров в методы (ИИ версия).md"
-    },
-    {
-      "basename": "зачем нужен сборщик мусора",
-      "path": "base/notes/зачем нужен сборщик мусора.md"
-    },
-    {
-      "basename": "красно-черное дерево",
-      "path": "base/notes/красно-черное дерево.md"
-    },
-    {
-      "basename": "map",
-      "path": "base/notes/map.md"
-    },
-    {
-      "basename": "доступ к private членам класса",
-      "path": "base/notes/доступ к private членам класса.md"
-    },
-    {
-      "basename": "2025-05-27",
-      "path": "periodic/daily/2025-05-27.md"
-    },
-    {
-      "basename": "TreeMap",
-      "path": "base/notes/TreeMap.md"
-    },
-    {
-      "basename": "LIFO",
-      "path": "base/notes/LIFO.md"
-    },
-    {
-      "basename": "List",
-      "path": "base/notes/List.md"
-    },
-    {
-      "basename": "set",
-      "path": "base/notes/set.md"
-    },
-    {
-      "basename": "queue",
-      "path": "base/notes/queue.md"
-    },
-    {
-      "basename": "Стеки операндов",
-      "path": "base/notes/Стеки операндов.md"
-    },
-    {
-      "basename": "frames",
-      "path": "base/notes/frames.md"
-    },
-    {
-      "basename": "HashMap",
-      "path": "base/notes/HashMap.md"
-    },
-    {
-      "basename": "Hashtable",
-      "path": "base/notes/Hashtable.md"
-    },
-    {
-      "basename": "PriorityQueue",
-      "path": "base/notes/PriorityQueue.md"
-    },
-    {
-      "basename": "LinkedList",
-      "path": "base/notes/LinkedList.md"
-    },
-    {
-      "basename": "TreeSet",
-      "path": "base/notes/TreeSet.md"
-    },
-    {
-      "basename": "generics",
-      "path": "base/notes/generics.md"
-    },
-    {
-      "basename": "Основные интерфейсы JCF и их реализации",
-      "path": "base/notes/Основные интерфейсы JCF и их реализации.md"
-    },
-    {
-      "basename": "Java Collections Framework",
-      "path": "base/notes/Java Collections Framework.md"
-    },
-    {
-      "basename": "throws",
-      "path": "base/notes/throws.md"
-    },
-    {
-      "basename": "try-with-resources",
-      "path": "base/notes/try-with-resources.md"
-    },
-    {
-      "basename": "Можно ли реализовать метод equals() класса MyClass вот так",
-      "path": "base/notes/Можно ли реализовать метод equals() класса MyClass вот так.md"
-    },
-    {
-      "basename": "Почему хэш код в виде 31 * x + y предпочтительнее чем x + y",
-      "path": "base/notes/Почему хэш код в виде 31 * x + y предпочтительнее чем x + y.md"
-    },
-    {
-      "basename": "в чем разница между this.getClass() == that.getClass() и that instanceof MyClass",
-      "path": "base/notes/в чем разница между this.getClass() == that.getClass() и that instanceof MyClass.md"
-    },
-    {
-      "basename": "глубокое клонирование",
-      "path": "base/notes/глубокое клонирование.md"
-    },
-    {
-      "basename": "иерархия исключений",
-      "path": "base/notes/иерархия исключений.md"
-    },
-    {
-      "basename": "как принудительно выбросить исключение",
-      "path": "base/notes/как принудительно выбросить исключение.md"
-    },
-    {
-      "basename": "клонирование объектов",
-      "path": "base/notes/клонирование объектов.md"
-    },
-    {
-      "basename": "может ли equals() возвращать false у ссылок на один объект",
-      "path": "base/notes/может ли equals() возвращать false у ссылок на один объект.md"
-    },
-    {
-      "basename": "может ли equals() возвращать true у разных объектов",
-      "path": "base/notes/может ли equals() возвращать true у разных объектов.md"
-    },
-    {
-      "basename": "может ли main() выбросить исключение вовне и где оно будет обработано",
-      "path": "base/notes/может ли main() выбросить исключение вовне и где оно будет обработано.md"
-    },
-    {
-      "basename": "можно ли так реализовать equals()",
-      "path": "base/notes/можно ли так реализовать equals().md"
-    },
-    {
-      "basename": "наиболее предпочтительный способ клонирования",
-      "path": "base/notes/наиболее предпочтительный способ клонирования.md"
-    },
-    {
-      "basename": "поверхностное клонирование",
-      "path": "base/notes/поверхностное клонирование.md"
-    },
-    {
-      "basename": "пользовательское исключение",
-      "path": "base/notes/пользовательское исключение.md"
-    },
-    {
-      "basename": "последовательность catch",
-      "path": "base/notes/последовательность catch.md"
-    },
-    {
-      "basename": "почему метод clone() объявлен в классе Object, а не в интерфейсе Cloneable",
-      "path": "base/notes/почему метод clone() объявлен в классе Object, а не в интерфейсе Cloneable.md"
-    },
-    {
-      "basename": "Альтернативные способы клонирования объектов",
-      "path": "base/notes/Альтернативные способы клонирования объектов.md"
-    },
-    {
-      "basename": "Клонировать объект",
-      "path": "base/notes/Клонировать объект.md"
-    },
-    {
-      "basename": "интерфейс Cloneable",
-      "path": "base/notes/интерфейс Cloneable.md"
-    },
-    {
-      "basename": "клонирование класса с полем изменяемого ссылочного типа",
-      "path": "base/notes/клонирование класса с полем изменяемого ссылочного типа.md"
-    },
-    {
-      "basename": "Exceptions",
-      "path": "base/notes/Exceptions.md"
-    },
-    {
-      "basename": "try-catch-finally",
-      "path": "base/notes/try-catch-finally.md"
-    },
-    {
-      "basename": "сериализация",
-      "path": "base/notes/сериализация.md"
-    },
-    {
-      "basename": "фабричный метод",
-      "path": "base/notes/фабричный метод.md"
-    },
-    {
-      "basename": "unchecked exceptions",
-      "path": "base/notes/unchecked exceptions.md"
-    },
-    {
-      "basename": "fail-fast поведение",
-      "path": "base/notes/fail-fast поведение.md"
-    },
-    {
-      "basename": "java.util.Collections",
-      "path": "base/notes/java.util.Collections.md"
-    },
-    {
-      "basename": "weak references",
-      "path": "base/notes/weak references.md"
-    },
-    {
-      "basename": "Преимущества полиморфизма",
-      "path": "base/notes/Преимущества полиморфизма.md"
-    },
-    {
-      "basename": "Полиморфная переменная и функция",
-      "path": "base/notes/Полиморфная переменная и функция.md"
-    },
-    {
-      "basename": "конструктор копирования",
-      "path": "base/notes/конструктор копирования.md"
-    },
-    {
-      "basename": "OutOfMemoryError",
-      "path": "base/notes/OutOfMemoryError.md"
-    },
-    {
-      "basename": "коллекция",
-      "path": "base/notes/коллекция.md"
-    },
-    {
-      "basename": "java.util.Collection",
-      "path": "base/notes/java.util.Collection.md"
-    },
-    {
-      "basename": "Error",
-      "path": "base/notes/Error.md"
-    },
-    {
-      "basename": "Java core",
-      "path": "base/notes/Java core.md"
-    },
-    {
-      "basename": "anonymous inner class",
-      "path": "base/notes/anonymous inner class.md"
-    },
-    {
-      "basename": "classloader",
-      "path": "base/notes/classloader.md"
-    },
-    {
-      "basename": "java 8",
-      "path": "base/notes/java 8.md"
-    },
-    {
-      "basename": "инкапсуляция",
-      "path": "base/notes/инкапсуляция.md"
-    },
-    {
-      "basename": "полиморфизм",
-      "path": "base/notes/полиморфизм.md"
-    },
-    {
-      "basename": "правила переопределения Object.equals()",
-      "path": "base/notes/правила переопределения Object.equals().md"
-    },
-    {
-      "basename": "паттерны проектирования",
-      "path": "base/notes/паттерны проектирования.md"
-    },
-    {
-      "basename": "примитивы",
-      "path": "base/notes/примитивы.md"
-    },
-    {
-      "basename": "Вопросы и ответы к интервью Java разработчика",
-      "path": "sources/Вопросы и ответы к интервью Java разработчика.md"
+      "basename": "Сборка под 9600x",
+      "path": "base/_problems/Сборка под 9600x.md"
     },
     {
       "basename": "более дешевая 9600х",
       "path": "base/_problems/более дешевая 9600х.md"
     },
     {
-      "basename": "Сборка под 9600x",
-      "path": "base/_problems/Сборка под 9600x.md"
-    },
-    {
       "basename": "pc builds",
       "path": "base/_meta-notes/pc builds.md"
     },
     {
-      "basename": "2025-Q2",
-      "path": "periodic/quarterly/2025-Q2.md"
+      "basename": "2025-05-26",
+      "path": "periodic/daily/2025-05-26.md"
     },
     {
-      "basename": "2025-Q3",
-      "path": "periodic/quarterly/2025-Q3.md"
+      "basename": "computer science",
+      "path": "base/categories/computer science.md"
     },
     {
-      "basename": "2025",
-      "path": "periodic/2025.canvas"
+      "basename": "index",
+      "path": "home/index.md"
     },
     {
-      "basename": "2025",
-      "path": "periodic/yearly/2025.md"
+      "basename": "Вопросы и ответы к интервью Java разработчика",
+      "path": "sources/Вопросы и ответы к интервью Java разработчика.md"
+    },
+    {
+      "basename": "java",
+      "path": "base/categories/java.md"
+    },
+    {
+      "basename": "Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов",
+      "path": "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md"
+    },
+    {
+      "basename": "java Микросервисы",
+      "path": "base/notes/java Микросервисы.md"
+    },
+    {
+      "basename": "java service mesh",
+      "path": "base/notes/java service mesh.md"
+    },
+    {
+      "basename": "java API gateway",
+      "path": "base/notes/java API gateway.md"
+    },
+    {
+      "basename": "java service discovery",
+      "path": "base/notes/java service discovery.md"
+    },
+    {
+      "basename": "java client-side service discovery",
+      "path": "base/notes/java client-side service discovery.md"
+    },
+    {
+      "basename": "java server-side service discovery",
+      "path": "base/notes/java server-side service discovery.md"
+    },
+    {
+      "basename": "java load balancer",
+      "path": "base/notes/java load balancer.md"
+    },
+    {
+      "basename": "java service registry",
+      "path": "base/notes/java service registry.md"
+    },
+    {
+      "basename": "java gRPC",
+      "path": "base/notes/java gRPC.md"
+    },
+    {
+      "basename": "java монолит",
+      "path": "base/notes/java монолит.md"
+    },
+    {
+      "basename": "теория по Spring",
+      "path": "base/notes/теория по Spring.md"
+    },
+    {
+      "basename": "AOP",
+      "path": "base/notes/AOP.md"
+    },
+    {
+      "basename": "java термины AOP",
+      "path": "base/notes/java термины AOP.md"
+    },
+    {
+      "basename": "java aop introduction",
+      "path": "base/notes/java aop introduction.md"
+    },
+    {
+      "basename": "java aop target",
+      "path": "base/notes/java aop target.md"
+    },
+    {
+      "basename": "java aop weaving",
+      "path": "base/notes/java aop weaving.md"
+    },
+    {
+      "basename": "java aop aspect",
+      "path": "base/notes/java aop aspect.md"
+    },
+    {
+      "basename": "java aop join point",
+      "path": "base/notes/java aop join point.md"
+    },
+    {
+      "basename": "java aop advice",
+      "path": "base/notes/java aop advice.md"
+    },
+    {
+      "basename": "java aop pointcut",
+      "path": "base/notes/java aop pointcut.md"
+    },
+    {
+      "basename": "java многоуровневая архитектура",
+      "path": "base/notes/java многоуровневая архитектура.md"
+    },
+    {
+      "basename": "java слои приложения",
+      "path": "base/notes/java слои приложения.md"
+    },
+    {
+      "basename": "java слой безопасности",
+      "path": "base/notes/java слой безопасности.md"
+    },
+    {
+      "basename": "java слой пакетных заданий",
+      "path": "base/notes/java слой пакетных заданий.md"
+    },
+    {
+      "basename": "java слой контроллеров",
+      "path": "base/notes/java слой контроллеров.md"
+    },
+    {
+      "basename": "java слой презентации",
+      "path": "base/notes/java слой презентации.md"
+    },
+    {
+      "basename": "java компоненты слоя постоянства",
+      "path": "base/notes/java компоненты слоя постоянства.md"
+    },
+    {
+      "basename": "java классы DAO",
+      "path": "base/notes/java классы DAO.md"
+    },
+    {
+      "basename": "java слой постоянства",
+      "path": "base/notes/java слой постоянства.md"
+    },
+    {
+      "basename": "java схема бд",
+      "path": "base/notes/java схема бд.md"
+    },
+    {
+      "basename": "java слой бизнес-логики",
+      "path": "base/notes/java слой бизнес-логики.md"
+    },
+    {
+      "basename": "java ORM",
+      "path": "base/notes/java ORM.md"
+    },
+    {
+      "basename": "java MVP",
+      "path": "base/notes/java MVP.md"
+    },
+    {
+      "basename": "java MVC",
+      "path": "base/notes/java MVC.md"
+    },
+    {
+      "basename": "java антипаттерны внедрения зависимостей",
+      "path": "base/notes/java антипаттерны внедрения зависимостей.md"
+    },
+    {
+      "basename": "java Service locator",
+      "path": "base/notes/java Service locator.md"
+    },
+    {
+      "basename": "java пример антипаттерна service locator",
+      "path": "base/notes/java пример антипаттерна service locator.md"
+    },
+    {
+      "basename": "java Constrained construction",
+      "path": "base/notes/java Constrained construction.md"
+    },
+    {
+      "basename": "2025-W24",
+      "path": "periodic/weekly/2025-W24.md"
+    },
+    {
+      "basename": "2025-W23",
+      "path": "periodic/weekly/2025-W23.md"
     },
     {
       "basename": "2025-06",
       "path": "periodic/monthly/2025-06.md"
+    },
+    {
+      "basename": "2025-06-06",
+      "path": "periodic/daily/2025-06-06.md"
+    },
+    {
+      "basename": "java bastard injection",
+      "path": "base/notes/java bastard injection.md"
+    },
+    {
+      "basename": "java control freak",
+      "path": "base/notes/java control freak.md"
+    },
+    {
+      "basename": "java антипаттерн",
+      "path": "base/notes/java антипаттерн.md"
+    },
+    {
+      "basename": "java пример антипаттерна bastard injection",
+      "path": "base/notes/java пример антипаттерна bastard injection.md"
+    },
+    {
+      "basename": "java недостатки инверсии управления",
+      "path": "base/notes/java недостатки инверсии управления.md"
+    },
+    {
+      "basename": "java определение инверсии управления",
+      "path": "base/notes/java определение инверсии управления.md"
+    },
+    {
+      "basename": "java пример инверсии управления",
+      "path": "base/notes/java пример инверсии управления.md"
+    },
+    {
+      "basename": "java пример антипаттерна control freak",
+      "path": "base/notes/java пример антипаттерна control freak.md"
+    },
+    {
+      "basename": "java Object",
+      "path": "base/notes/java Object.md"
+    },
+    {
+      "basename": "java String in switch",
+      "path": "base/notes/java String in switch.md"
+    },
+    {
+      "basename": "java classloader core-version",
+      "path": "base/notes/java classloader core-version.md"
+    },
+    {
+      "basename": "java intern()",
+      "path": "base/notes/java intern().md"
+    },
+    {
+      "basename": "java map",
+      "path": "base/notes/java map.md"
+    },
+    {
+      "basename": "java final",
+      "path": "base/notes/java final.md"
+    },
+    {
+      "basename": "java Reflection",
+      "path": "base/notes/java Reflection.md"
+    },
+    {
+      "basename": "java.nio.file.Path",
+      "path": "base/notes/java.nio.file.Path.md"
+    },
+    {
+      "basename": "java OutOfMemoryError",
+      "path": "base/notes/java OutOfMemoryError.md"
+    },
+    {
+      "basename": "java hashCode()",
+      "path": "base/notes/java hashCode().md"
+    },
+    {
+      "basename": "Java Collections Framework",
+      "path": "base/notes/Java Collections Framework.md"
+    },
+    {
+      "basename": "java паттерны проектирования",
+      "path": "base/notes/java паттерны проектирования.md"
+    },
+    {
+      "basename": "LIFO",
+      "path": "base/notes/LIFO.md"
+    },
+    {
+      "basename": "java 8",
+      "path": "base/notes/java 8.md"
+    },
+    {
+      "basename": "java Servlet API",
+      "path": "base/notes/java Servlet API.md"
+    },
+    {
+      "basename": "java equals()",
+      "path": "base/notes/java equals().md"
+    },
+    {
+      "basename": "java консультация паблик для вкатунов 31.05",
+      "path": "base/notes/java консультация паблик для вкатунов 31.05.md"
+    },
+    {
+      "basename": "java Разница String, StringBuffer, StringBuilder",
+      "path": "base/notes/java Разница String, StringBuffer, StringBuilder.md"
+    },
+    {
+      "basename": "java почему String неизменяемый",
+      "path": "base/notes/java почему String неизменяемый.md"
+    },
+    {
+      "basename": "java правила переопределения Object.equals()",
+      "path": "base/notes/java правила переопределения Object.equals().md"
+    },
+    {
+      "basename": "java правила переопределения Object.hashCode()",
+      "path": "base/notes/java правила переопределения Object.hashCode().md"
+    },
+    {
+      "basename": "java реализация equals() и hashCode() в Object",
+      "path": "base/notes/java реализация equals() и hashCode() в Object.md"
+    },
+    {
+      "basename": "типы конструкторов",
+      "path": "base/notes/типы конструкторов.md"
+    },
+    {
+      "basename": "java что будет если переопределить equals(), но не переопределить hashCode()",
+      "path": "base/notes/java что будет если переопределить equals(), но не переопределить hashCode().md"
+    },
+    {
+      "basename": "java процесс загрузки класса",
+      "path": "base/notes/java процесс загрузки класса.md"
+    },
+    {
+      "basename": "java способы инициировать загрузку класса",
+      "path": "base/notes/java способы инициировать загрузку класса.md"
+    },
+    {
+      "basename": "java какие поля следует использовать при подсчете hashCode()",
+      "path": "base/notes/java какие поля следует использовать при подсчете hashCode().md"
+    },
+    {
+      "basename": "java могут ли у разных объектов быть одинаковые hashCode()",
+      "path": "base/notes/java могут ли у разных объектов быть одинаковые hashCode().md"
+    },
+    {
+      "basename": "java клонирование объектов",
+      "path": "base/notes/java клонирование объектов.md"
+    },
+    {
+      "basename": "java символическая ссылка",
+      "path": "base/notes/java символическая ссылка.md"
+    },
+    {
+      "basename": "приватный конструктор",
+      "path": "base/notes/приватный конструктор.md"
+    },
+    {
+      "basename": "java свойства отношения эквивалентности, порождаемого equals()",
+      "path": "base/notes/java свойства отношения эквивалентности, порождаемого equals().md"
+    },
+    {
+      "basename": "конструктор",
+      "path": "base/notes/конструктор.md"
+    },
+    {
+      "basename": "конструктор по умолчанию",
+      "path": "base/notes/конструктор по умолчанию.md"
+    },
+    {
+      "basename": "java отличия интерфейса от абстрактного класса",
+      "path": "base/notes/java отличия интерфейса от абстрактного класса.md"
+    },
+    {
+      "basename": "модификатор abstract",
+      "path": "base/notes/модификатор abstract.md"
+    },
+    {
+      "basename": "переменные среды",
+      "path": "base/notes/переменные среды.md"
+    },
+    {
+      "basename": "java ссылочные типы",
+      "path": "base/notes/java ссылочные типы.md"
+    },
+    {
+      "basename": "java смежность памяти",
+      "path": "base/notes/java смежность памяти.md"
+    },
+    {
+      "basename": "IoC",
+      "path": "base/notes/IoC.md"
+    },
+    {
+      "basename": "fail-fast поведение",
+      "path": "base/notes/fail-fast поведение.md"
     }
   ],
   "omittedPaths": [

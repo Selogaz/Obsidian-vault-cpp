@@ -1,21 +1,21 @@
 ---
-aliases: []
-created: 2025-05-28 06:40:50+03:00
-deck: obsidian::work
-sr-due: 2025-06-12
-sr-ease: 285
-sr-interval: 12
 tags:
-- note/specific/code
-- category/java
-updated: 2025-05-31 03:40:42+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-05-28 06:40:50+03:00
+updated: 2025-06-05T16:58:35+03:00
+sr-due: 2025-06-12
+sr-interval: 12
+sr-ease: 285
 ---
 
 **Новые типы классов java**
 —
 - top level (обычные классы)
 	- [[модификатор abstract|abstract]] class
-	- [[final|final]] class
+	- [[java final|java final]] class
 - [[ключевое слово interface|interfaces]]
 - enum
 - [[nested class|nested class]]

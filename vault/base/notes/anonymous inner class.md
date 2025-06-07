@@ -1,14 +1,14 @@
 ---
-aliases: []
-created: 2025-05-27 11:12:48+03:00
-deck: obsidian::work
-sr-due: 2025-06-09
-sr-ease: 210
-sr-interval: 6
 tags:
-- note/specific/code
-- category/java
-updated: 2025-06-03 07:10:44+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-05-27 11:12:48+03:00
+updated: 2025-06-05T16:58:37+03:00
+sr-due: 2025-06-09
+sr-interval: 6
+sr-ease: 210
 ---
 
 **Anonymous inner class**

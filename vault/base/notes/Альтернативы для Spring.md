@@ -1,11 +1,14 @@
 ---
-aliases: []
-created: 2025-06-03 10:43:02+03:00
-deck: obsidian::work
 tags:
-- note/specific/code
-- category/java
-updated: 2025-06-03 10:46:53+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-06-03 10:43:02+03:00
+updated: 2025-06-05T18:17:21+03:00
+sr-due: 2025-06-09
+sr-interval: 4
+sr-ease: 270
 ---
 
 **Альтернативы для Spring**

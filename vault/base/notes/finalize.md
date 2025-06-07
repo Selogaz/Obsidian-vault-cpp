@@ -1,14 +1,14 @@
 ---
-aliases: []
-created: 2025-05-30 17:48:08+03:00
-deck: obsidian::work
-sr-due: 2025-06-04
-sr-ease: 270
-sr-interval: 4
 tags:
-- note/specific/code
-- category/java
-updated: 2025-05-31 03:58:21+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-05-30 17:48:08+03:00
+updated: 2025-06-05T16:57:18+03:00
+sr-due: 2025-06-24
+sr-interval: 19
+sr-ease: 290
 ---
 
 **Finalize**

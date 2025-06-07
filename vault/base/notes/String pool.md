@@ -1,14 +1,14 @@
 ---
-aliases: []
-created: 2025-05-28 11:55:22+03:00
-deck: obsidian::work
-sr-due: 2025-06-10
-sr-ease: 268
-sr-interval: 8
 tags:
-- note/specific/code
-- category/java
-updated: 2025-06-02 07:47:25+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-05-28 11:55:22+03:00
+updated: 2025-06-05T16:58:37+03:00
+sr-due: 2025-06-10
+sr-interval: 8
+sr-ease: 268
 ---
 
 Пул строк
@@ -20,7 +20,7 @@ updated: 2025-06-02 07:47:25+03:00
 	- если в пуле уже есть такая строка, то возвращает ссылку на уже существующую
 	- иначе создается новая
 	- механизм выше реализуется методом `intern()`
-- является примером [[паттерны проектирования|паттерна]] "Приспособленец" (flyweight)
+- является примером [[java паттерны проектирования|паттерна]] "Приспособленец" (flyweight)
 
 - [ ] #task/inbox #category/work <font color="#ffff00">интернирование строк</font> [^1]
 

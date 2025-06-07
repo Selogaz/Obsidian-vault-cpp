@@ -1,14 +1,14 @@
 ---
-aliases: []
-created: 2025-05-25 18:39:07+03:00
-deck: obsidian::work
-sr-due: 2025-06-09
-sr-ease: 250
-sr-interval: 7
 tags:
-- note/specific/code
-- category/java
-updated: 2025-06-02 08:21:21+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-05-25 18:39:07+03:00
+updated: 2025-06-05T16:58:37+03:00
+sr-due: 2025-06-09
+sr-interval: 7
+sr-ease: 250
 ---
 
 **Exception в блоке инициализации**

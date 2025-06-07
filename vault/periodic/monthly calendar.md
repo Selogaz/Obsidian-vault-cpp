@@ -2,7 +2,7 @@
 tags:
   - mark/gtd
 aliases: []
-updated: 2025-03-20T11:17:36+07:00
+updated: 2025-06-05T16:58:34+03:00
 obsidianUIMode: preview
 cssclasses:
   - no-inline-title

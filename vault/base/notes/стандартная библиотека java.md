@@ -1,14 +1,14 @@
 ---
-aliases: []
-created: 2025-05-23 09:25:11+03:00
-deck: obsidian::work
-sr-due: 2025-06-11
-sr-ease: 290
-sr-interval: 15
 tags:
-- note/specific/code
-- category/java
-updated: 2025-05-27 09:00:12+03:00
+  - note/specific/code
+  - category/java
+aliases: []
+deck: obsidian::work
+created: 2025-05-23 09:25:11+03:00
+updated: 2025-06-05T16:58:35+03:00
+sr-due: 2025-06-11
+sr-interval: 15
+sr-ease: 290
 ---
 
 **Стандартная библиотека java**
