@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-25 18:39:07+03:00
-updated: 2025-06-05T16:58:37+03:00
-sr-due: 2025-06-09
-sr-interval: 7
-sr-ease: 250
+updated: 2025-06-11T08:52:40+03:00
+sr-due: 2025-07-12
+sr-interval: 31
+sr-ease: 270
 ---
 
 **Exception в блоке инициализации**

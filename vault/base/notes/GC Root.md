@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-27 14:39:35+03:00
-updated: 2025-06-05T16:58:37+03:00
-sr-due: 2025-06-13
-sr-interval: 11
-sr-ease: 251
+updated: 2025-06-16T21:31:31+03:00
+sr-due: 2025-08-02
+sr-interval: 47
+sr-ease: 271
 ---
 
 **GC Root**

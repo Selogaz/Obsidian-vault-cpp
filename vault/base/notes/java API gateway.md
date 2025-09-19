@@ -6,7 +6,10 @@ aliases:
   - API gateway
 deck: obsidian::java
 created: 2025-06-06T13:29:17+03:00
-updated: 2025-06-06T13:36:39+03:00
+updated: 2025-09-17T11:47:45+03:00
+sr-due: 2025-07-05
+sr-interval: 19
+sr-ease: 290
 ---
 
 **API gateway**
@@ -19,6 +22,6 @@ updated: 2025-06-06T13:36:39+03:00
 	- логирование
 	- сбор статистики
 	- авторизация
-	- аутентификация
+	- аутентификация(безопасный доступ)
 
 - [ ] #task/reference #category/work почему авторизация и аутентификация есть не только здесь, но и в [[java service mesh|service mesh]]

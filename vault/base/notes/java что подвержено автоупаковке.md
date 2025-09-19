@@ -6,10 +6,10 @@ aliases:
   - что подвержено автоупаковке
 deck: obsidian::java
 created: 2025-06-05T17:19:28+03:00
-updated: 2025-06-05T18:18:30+03:00
-sr-due: 2025-06-09
-sr-interval: 4
-sr-ease: 282
+updated: 2025-06-11T08:50:38+03:00
+sr-due: 2025-07-06
+sr-interval: 25
+sr-ease: 302
 ---
 
 **что подвержено автоупаковке**

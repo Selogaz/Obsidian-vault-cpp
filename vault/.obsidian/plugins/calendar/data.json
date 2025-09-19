@@ -1,10 +1,13 @@
 {
   "shouldConfirmBeforeCreate": false,
   "weekStart": "monday",
+  "ctrlClickOpensInNewTab": false,
   "wordsPerDot": 99999,
   "showWeeklyNote": true,
+  "showWeeklyNoteRight": false,
   "weeklyNoteFormat": "",
   "weeklyNoteTemplate": "",
   "weeklyNoteFolder": "",
-  "localeOverride": "system-default"
+  "localeOverride": "system-default",
+  "showQuarter": false
 }

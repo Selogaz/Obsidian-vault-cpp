@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-03 08:45:23+03:00
-updated: 2025-06-05T18:15:51+03:00
-sr-due: 2025-06-09
-sr-interval: 4
-sr-ease: 270
+updated: 2025-06-11T08:50:06+03:00
+sr-due: 2025-07-05
+sr-interval: 24
+sr-ease: 290
 ---
 
 **Организация локальных переменных в памяти**

@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-25 17:22:45+03:00
-updated: 2025-06-05T16:58:36+03:00
-sr-due: 2025-06-13
-sr-interval: 11
-sr-ease: 261
+updated: 2025-06-16T20:58:59+03:00
+sr-due: 2025-08-04
+sr-interval: 49
+sr-ease: 281
 ---
 
 **Локальные переменные в JVM**

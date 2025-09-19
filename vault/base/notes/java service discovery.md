@@ -6,7 +6,10 @@ aliases:
   - service discovery
 deck: obsidian::java
 created: 2025-06-06T12:59:07+03:00
-updated: 2025-06-06T13:14:38+03:00
+updated: 2025-06-16T21:42:30+03:00
+sr-due: 2025-07-06
+sr-interval: 20
+sr-ease: 292
 ---
 
 **service discovery**

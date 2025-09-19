@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-23 13:01:41+03:00
-updated: 2025-06-05T16:58:36+03:00
-sr-due: 2025-06-07
-sr-interval: 8
-sr-ease: 234
+updated: 2025-06-08T22:14:30+03:00
+sr-due: 2025-07-07
+sr-interval: 29
+sr-ease: 254
 ---
 
 **Ключевое слово interface**

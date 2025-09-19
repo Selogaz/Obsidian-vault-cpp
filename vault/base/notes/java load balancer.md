@@ -6,7 +6,10 @@ aliases:
   - load balancer
 deck: obsidian::java
 created: 2025-06-06T13:17:32+03:00
-updated: 2025-06-06T13:18:44+03:00
+updated: 2025-06-11T08:45:53+03:00
+sr-due: 2025-06-22
+sr-interval: 11
+sr-ease: 250
 ---
 
 **load balancer**

@@ -1,0 +1,8 @@
+---
+tags:
+  - note/basic/primary
+aliases: []
+created: 2025-07-16T10:36:08+03:00
+updated: 2025-07-16T10:36:08+03:00
+---
+

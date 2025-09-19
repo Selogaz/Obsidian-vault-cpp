@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-02 12:43:29+03:00
-updated: 2025-06-06T07:09:50+03:00
-sr-due: 2025-06-17
-sr-interval: 11
-sr-ease: 280
+updated: 2025-06-18T14:06:09+03:00
+sr-due: 2025-08-06
+sr-interval: 49
+sr-ease: 300
 ---
 
 **OutOfMemoryError**

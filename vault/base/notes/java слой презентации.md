@@ -6,7 +6,10 @@ aliases:
   - слой презентации
 deck: obsidian::java
 created: 2025-06-06T10:37:41+03:00
-updated: 2025-06-06T10:42:53+03:00
+updated: 2025-06-16T21:07:27+03:00
+sr-due: 2025-07-06
+sr-interval: 20
+sr-ease: 299
 ---
 
 **слой презентации**

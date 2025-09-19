@@ -6,7 +6,10 @@ aliases:
   - service mesh
 deck: obsidian::java
 created: 2025-06-06T13:32:29+03:00
-updated: 2025-06-06T13:38:15+03:00
+updated: 2025-06-16T21:37:10+03:00
+sr-due: 2025-07-05
+sr-interval: 19
+sr-ease: 290
 ---
 
 **service mesh**

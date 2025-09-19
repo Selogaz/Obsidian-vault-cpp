@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-03 10:46:15+03:00
-updated: 2025-06-05T17:57:21+03:00
-sr-due: 2025-06-08
-sr-interval: 3
-sr-ease: 250
+updated: 2025-06-16T21:34:00+03:00
+sr-due: 2025-07-14
+sr-interval: 28
+sr-ease: 270
 ---
 
 Внедрение зависимости, инъекция зависимости, Dependency Injection, DI

@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-02 12:13:42+03:00
-updated: 2025-06-04T21:33:13+03:00
-sr-due: 2025-06-07
-sr-interval: 3
-sr-ease: 250
+updated: 2025-06-08T22:51:37+03:00
+sr-due: 2025-06-23
+sr-interval: 15
+sr-ease: 270
 ---
 
 **Глубокое клонирование**

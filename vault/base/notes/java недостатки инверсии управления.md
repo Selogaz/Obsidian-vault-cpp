@@ -6,10 +6,10 @@ aliases:
   - недостатки инверсии управления
 deck: obsidian::java
 created: 2025-06-05T18:38:03+03:00
-updated: 2025-06-06T07:37:21+03:00
-sr-due: 2025-06-09
-sr-interval: 3
-sr-ease: 250
+updated: 2025-06-11T08:48:19+03:00
+sr-due: 2025-06-30
+sr-interval: 19
+sr-ease: 270
 ---
 
 **недостатки инверсии управления**

@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-02 09:41:55+03:00
-updated: 2025-06-05T17:01:51+03:00
-sr-due: 2025-06-12
-sr-interval: 7
-sr-ease: 257
+updated: 2025-06-16T21:29:24+03:00
+sr-due: 2025-07-26
+sr-interval: 40
+sr-ease: 277
 ---
 
 **В чем разница между this.getClass == that.getClass() и that instanceof MyClass**

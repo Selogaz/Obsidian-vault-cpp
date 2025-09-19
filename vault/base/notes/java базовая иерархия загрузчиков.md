@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-31 06:04:10+03:00
-updated: 2025-06-04T21:31:46+03:00
-sr-due: 2025-06-11
-sr-interval: 7
-sr-ease: 264
+updated: 2025-06-11T09:10:58+03:00
+sr-due: 2025-07-07
+sr-interval: 26
+sr-ease: 284
 ---
 
 **Базовая иерархия загрузчиков**

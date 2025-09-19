@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-27 11:12:48+03:00
-updated: 2025-06-05T16:58:37+03:00
-sr-due: 2025-06-09
-sr-interval: 6
-sr-ease: 210
+updated: 2025-06-11T08:49:04+03:00
+sr-due: 2025-07-06
+sr-interval: 25
+sr-ease: 230
 ---
 
 **Anonymous inner class**

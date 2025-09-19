@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-03 08:48:18+03:00
-updated: 2025-06-05T18:15:40+03:00
-sr-due: 2025-06-08
-sr-interval: 3
-sr-ease: 250
+updated: 2025-06-18T14:07:39+03:00
+sr-due: 2025-07-23
+sr-interval: 35
+sr-ease: 270
 ---
 
 **Особенности работы локальных переменных**

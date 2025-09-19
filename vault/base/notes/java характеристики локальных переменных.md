@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-03 08:44:48+03:00
-updated: 2025-06-05T18:13:54+03:00
-sr-due: 2025-06-09
-sr-interval: 4
-sr-ease: 270
+updated: 2025-06-11T08:49:23+03:00
+sr-due: 2025-07-05
+sr-interval: 24
+sr-ease: 290
 ---
 
 **Характеристики локальных переменных в Java**

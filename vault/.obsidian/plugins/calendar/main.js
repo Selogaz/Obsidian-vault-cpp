@@ -14,12 +14,15 @@ const TRIGGER_ON_OPEN = "calendar:open";
 const DEFAULT_DAILY_NOTE_FORMAT = "YYYY-MM-DD";
 const DEFAULT_WEEKLY_NOTE_FORMAT = "gggg-[W]ww";
 const DEFAULT_MONTHLY_NOTE_FORMAT = "YYYY-MM";
+const DEFAULT_QUARTERLY_NOTE_FORMAT = "YYYY-[Q]Q";
+const DEFAULT_YEARLY_NOTE_FORMAT = "YYYY";
 
 function shouldUsePeriodicNotesSettings(periodicity) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const periodicNotes = window.app.plugins.getPlugin("periodic-notes");
     return periodicNotes && periodicNotes.settings?.[periodicity]?.enabled;
 }
+
 /**
  * Read the user settings for the `daily-notes` plugin
  * to keep behavior of creating a new note in-sync.
@@ -47,6 +50,7 @@ function getDailyNoteSettings() {
         console.info("No custom daily note settings found!", err);
     }
 }
+
 /**
  * Read the user settings for the `weekly-notes` plugin
  * to keep behavior of creating a new note in-sync.
@@ -56,8 +60,7 @@ function getWeeklyNoteSettings() {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const pluginManager = window.app.plugins;
         const calendarSettings = pluginManager.getPlugin("calendar")?.options;
-        const periodicNotesSettings = pluginManager.getPlugin("periodic-notes")
-            ?.settings?.weekly;
+        const periodicNotesSettings = pluginManager.getPlugin("periodic-notes")?.settings?.weekly;
         if (shouldUsePeriodicNotesSettings("weekly")) {
             return {
                 format: periodicNotesSettings.format || DEFAULT_WEEKLY_NOTE_FORMAT,
@@ -76,6 +79,7 @@ function getWeeklyNoteSettings() {
         console.info("No custom weekly note settings found!", err);
     }
 }
+
 /**
  * Read the user settings for the `periodic-notes` plugin
  * to keep behavior of creating a new note in-sync.
@@ -99,51 +103,47 @@ function getMonthlyNoteSettings() {
 }
 
 /**
- * dateUID is a way of weekly identifying daily/weekly/monthly notes.
- * They are prefixed with the granularity to avoid ambiguity.
+ * Read the user settings for the `periodic-notes` plugin
+ * to keep behavior of creating a new note in-sync.
  */
-function getDateUID$1(date, granularity = "day") {
-    const ts = date.clone().startOf(granularity).format();
-    return `${granularity}-${ts}`;
+function getQuarterlyNoteSettings() {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const pluginManager = window.app.plugins;
+    try {
+        const settings = (shouldUsePeriodicNotesSettings("quarterly") &&
+            pluginManager.getPlugin("periodic-notes")?.settings?.quarterly) ||
+            {};
+        return {
+            format: settings.format || DEFAULT_QUARTERLY_NOTE_FORMAT,
+            folder: settings.folder?.trim() || "",
+            template: settings.template?.trim() || "",
+        };
+    }
+    catch (err) {
+        console.info("No custom quarterly note settings found!", err);
+    }
 }
-function removeEscapedCharacters(format) {
-    return format.replace(/\[[^\]]*\]/g, ""); // remove everything within brackets
-}
+
 /**
- * XXX: When parsing dates that contain both week numbers and months,
- * Moment choses to ignore the week numbers. For the week dateUID, we
- * want the opposite behavior. Strip the MMM from the format to patch.
+ * Read the user settings for the `periodic-notes` plugin
+ * to keep behavior of creating a new note in-sync.
  */
-function isFormatAmbiguous(format, granularity) {
-    if (granularity === "week") {
-        const cleanFormat = removeEscapedCharacters(format);
-        return (/w{1,2}/i.test(cleanFormat) &&
-            (/M{1,4}/.test(cleanFormat) || /D{1,4}/.test(cleanFormat)));
+function getYearlyNoteSettings() {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const pluginManager = window.app.plugins;
+    try {
+        const settings = (shouldUsePeriodicNotesSettings("yearly") &&
+            pluginManager.getPlugin("periodic-notes")?.settings?.yearly) ||
+            {};
+        return {
+            format: settings.format || DEFAULT_YEARLY_NOTE_FORMAT,
+            folder: settings.folder?.trim() || "",
+            template: settings.template?.trim() || "",
+        };
     }
-    return false;
-}
-function getDateFromFile(file, granularity) {
-    const getSettings = {
-        day: getDailyNoteSettings,
-        week: getWeeklyNoteSettings,
-        month: getMonthlyNoteSettings,
-    };
-    const format = getSettings[granularity]().format.split("/").pop();
-    const noteDate = window.moment(file.basename, format, true);
-    if (!noteDate.isValid()) {
-        return null;
+    catch (err) {
+        console.info("No custom yearly note settings found!", err);
     }
-    if (isFormatAmbiguous(format, granularity)) {
-        if (granularity === "week") {
-            const cleanFormat = removeEscapedCharacters(format);
-            if (/w{1,2}/i.test(cleanFormat)) {
-                return window.moment(file.basename, 
-                // If format contains week, remove day & month formatting
-                format.replace(/M{1,4}/g, "").replace(/D{1,4}/g, ""), false);
-            }
-        }
-    }
-    return noteDate;
 }
 
 // Credit: @creationix/path.js
@@ -159,18 +159,16 @@ function join(...partSegments) {
         const part = parts[i];
         // Remove leading and trailing slashes
         // Also remove "." segments
-        if (!part || part === ".")
-            continue;
+        if (!part || part === ".") continue;
         // Push new path segments.
-        else
-            newParts.push(part);
+        else newParts.push(part);
     }
     // Preserve the initial slash if there was one.
-    if (parts[0] === "")
-        newParts.unshift("");
+    if (parts[0] === "") newParts.unshift("");
     // Turn back into a single string path.
     return newParts.join("/");
 }
+
 async function ensureFolderExists(path) {
     const dirs = path.replace(/\\/g, "/").split("/");
     dirs.pop(); // remove basename
@@ -181,6 +179,7 @@ async function ensureFolderExists(path) {
         }
     }
 }
+
 async function getNotePath(directory, filename) {
     if (!filename.endsWith(".md")) {
         filename += ".md";
@@ -189,6 +188,7 @@ async function getNotePath(directory, filename) {
     await ensureFolderExists(path);
     return path;
 }
+
 async function getTemplateInfo(template) {
     const { metadataCache, vault } = window.app;
     const templatePath = obsidian__default['default'].normalizePath(template);
@@ -209,8 +209,70 @@ async function getTemplateInfo(template) {
     }
 }
 
-class DailyNotesFolderMissingError extends Error {
+/**
+ * dateUID is a way of weekly identifying daily/weekly/monthly notes.
+ * They are prefixed with the granularity to avoid ambiguity.
+ */
+function getDateUID$1(date, granularity = "day") {
+    const ts = date.clone().startOf(granularity).format();
+    return `${granularity}-${ts}`;
 }
+
+function removeEscapedCharacters(format) {
+    return format.replace(/\[[^\]]*\]/g, ""); // remove everything within brackets
+}
+
+/**
+ * XXX: When parsing dates that contain both week numbers and months,
+ * Moment choses to ignore the week numbers. For the week dateUID, we
+ * want the opposite behavior. Strip the MMM from the format to patch.
+ */
+function isFormatAmbiguous(format, granularity) {
+    if (granularity === "week") {
+        const cleanFormat = removeEscapedCharacters(format);
+        return (
+            /w{1,2}/i.test(cleanFormat) &&
+            (/M{1,4}/.test(cleanFormat) || /D{1,4}/.test(cleanFormat))
+        );
+    }
+    return false;
+}
+
+function getDateFromFile(file, granularity) {
+    return getDateFromFilename(file.basename, granularity);
+}
+
+function getDateFromFilename(filename, granularity) {
+    const getSettings = {
+        day: getDailyNoteSettings,
+        week: getWeeklyNoteSettings,
+        month: getMonthlyNoteSettings,
+        quarter: getQuarterlyNoteSettings,
+        year: getYearlyNoteSettings,
+    };
+    const format = getSettings[granularity]().format.split("/").pop();
+    const noteDate = window.moment(filename, format, true);
+    if (!noteDate.isValid()) {
+        return null;
+    }
+    if (isFormatAmbiguous(format, granularity)) {
+        if (granularity === "week") {
+            const cleanFormat = removeEscapedCharacters(format);
+            if (/w{1,2}/i.test(cleanFormat)) {
+                return window.moment(
+                    filename,
+                    // If format contains week, remove day & month formatting
+                    format.replace(/M{1,4}/g, "").replace(/D{1,4}/g, ""),
+                    false
+                );
+            }
+        }
+    }
+    return noteDate;
+}
+
+class DailyNotesFolderMissingError extends Error {}
+
 /**
  * This function mimics the behavior of the daily-notes plugin
  * so it will replace {{date}}, {{title}}, and {{time}} with the
@@ -227,27 +289,39 @@ async function createDailyNote(date) {
     const filename = date.format(format);
     const normalizedPath = await getNotePath(folder, filename);
     try {
-        const createdFile = await vault.create(normalizedPath, templateContents
-            .replace(/{{\s*date\s*}}/gi, filename)
-            .replace(/{{\s*time\s*}}/gi, moment().format("HH:mm"))
-            .replace(/{{\s*title\s*}}/gi, filename)
-            .replace(/{{\s*(date|time)\s*(([+-]\d+)([yqmwdhs]))?\s*(:.+?)?}}/gi, (_, _timeOrDate, calc, timeDelta, unit, momentFormat) => {
-            const now = moment();
-            const currentDate = date.clone().set({
-                hour: now.get("hour"),
-                minute: now.get("minute"),
-                second: now.get("second"),
-            });
-            if (calc) {
-                currentDate.add(parseInt(timeDelta, 10), unit);
-            }
-            if (momentFormat) {
-                return currentDate.format(momentFormat.substring(1).trim());
-            }
-            return currentDate.format(format);
-        })
-            .replace(/{{\s*yesterday\s*}}/gi, date.clone().subtract(1, "day").format(format))
-            .replace(/{{\s*tomorrow\s*}}/gi, date.clone().add(1, "d").format(format)));
+        const createdFile = await vault.create(
+            normalizedPath,
+            templateContents
+                .replace(/{{\s*date\s*}}/gi, filename)
+                .replace(/{{\s*time\s*}}/gi, moment().format("HH:mm"))
+                .replace(/{{\s*title\s*}}/gi, filename)
+                .replace(
+                    /{{\s*(date|time)\s*(([+-]\d+)([yqmwdhs]))?\s*(:.+?)?}}/gi,
+                    (_, _timeOrDate, calc, timeDelta, unit, momentFormat) => {
+                        const now = moment();
+                        const currentDate = date.clone().set({
+                            hour: now.get("hour"),
+                            minute: now.get("minute"),
+                            second: now.get("second"),
+                        });
+                        if (calc) {
+                            currentDate.add(parseInt(timeDelta, 10), unit);
+                        }
+                        if (momentFormat) {
+                            return currentDate.format(momentFormat.substring(1).trim());
+                        }
+                        return currentDate.format(format);
+                    }
+                )
+                .replace(
+                    /{{\s*yesterday\s*}}/gi,
+                    date.clone().subtract(1, "day").format(format)
+                )
+                .replace(
+                    /{{\s*tomorrow\s*}}/gi,
+                    date.clone().add(1, "d").format(format)
+                )
+        );
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         app.foldManager.save(createdFile, IFoldInfo);
         return createdFile;
@@ -257,16 +331,20 @@ async function createDailyNote(date) {
         new obsidian__default['default'].Notice("Unable to create new file.");
     }
 }
+
 function getDailyNote(date, dailyNotes) {
     return dailyNotes[getDateUID$1(date, "day")] ?? null;
 }
+
 function getAllDailyNotes() {
     /**
      * Find all daily notes in the daily note folder
      */
     const { vault } = window.app;
     const { folder } = getDailyNoteSettings();
-    const dailyNotesFolder = vault.getAbstractFileByPath(obsidian__default['default'].normalizePath(folder));
+    const dailyNotesFolder = vault.getAbstractFileByPath(
+        obsidian__default['default'].normalizePath(folder)
+    );
     if (!dailyNotesFolder) {
         throw new DailyNotesFolderMissingError("Failed to find daily notes folder");
     }
@@ -283,8 +361,8 @@ function getAllDailyNotes() {
     return dailyNotes;
 }
 
-class WeeklyNotesFolderMissingError extends Error {
-}
+class WeeklyNotesFolderMissingError extends Error {}
+
 function getDaysOfWeek$1() {
     const { moment } = window;
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -304,9 +382,11 @@ function getDaysOfWeek$1() {
     }
     return daysOfWeek;
 }
+
 function getDayOfWeekNumericalValue(dayOfWeekName) {
     return getDaysOfWeek$1().indexOf(dayOfWeekName.toLowerCase());
 }
+
 async function createWeeklyNote(date) {
     const { vault } = window.app;
     const { template, format, folder } = getWeeklyNoteSettings();
@@ -314,28 +394,37 @@ async function createWeeklyNote(date) {
     const filename = date.format(format);
     const normalizedPath = await getNotePath(folder, filename);
     try {
-        const createdFile = await vault.create(normalizedPath, templateContents
-            .replace(/{{\s*(date|time)\s*(([+-]\d+)([yqmwdhs]))?\s*(:.+?)?}}/gi, (_, _timeOrDate, calc, timeDelta, unit, momentFormat) => {
-            const now = window.moment();
-            const currentDate = date.clone().set({
-                hour: now.get("hour"),
-                minute: now.get("minute"),
-                second: now.get("second"),
-            });
-            if (calc) {
-                currentDate.add(parseInt(timeDelta, 10), unit);
-            }
-            if (momentFormat) {
-                return currentDate.format(momentFormat.substring(1).trim());
-            }
-            return currentDate.format(format);
-        })
-            .replace(/{{\s*title\s*}}/gi, filename)
-            .replace(/{{\s*time\s*}}/gi, window.moment().format("HH:mm"))
-            .replace(/{{\s*(sunday|monday|tuesday|wednesday|thursday|friday|saturday)\s*:(.*?)}}/gi, (_, dayOfWeek, momentFormat) => {
-            const day = getDayOfWeekNumericalValue(dayOfWeek);
-            return date.weekday(day).format(momentFormat.trim());
-        }));
+        const createdFile = await vault.create(
+            normalizedPath,
+            templateContents
+                .replace(
+                    /{{\s*(date|time)\s*(([+-]\d+)([yqmwdhs]))?\s*(:.+?)?}}/gi,
+                    (_, _timeOrDate, calc, timeDelta, unit, momentFormat) => {
+                        const now = window.moment();
+                        const currentDate = date.clone().set({
+                            hour: now.get("hour"),
+                            minute: now.get("minute"),
+                            second: now.get("second"),
+                        });
+                        if (calc) {
+                            currentDate.add(parseInt(timeDelta, 10), unit);
+                        }
+                        if (momentFormat) {
+                            return currentDate.format(momentFormat.substring(1).trim());
+                        }
+                        return currentDate.format(format);
+                    }
+                )
+                .replace(/{{\s*title\s*}}/gi, filename)
+                .replace(/{{\s*time\s*}}/gi, window.moment().format("HH:mm"))
+                .replace(
+                    /{{\s*(sunday|monday|tuesday|wednesday|thursday|friday|saturday)\s*:(.*?)}}/gi,
+                    (_, dayOfWeek, momentFormat) => {
+                        const day = getDayOfWeekNumericalValue(dayOfWeek);
+                        return date.weekday(day).format(momentFormat.trim());
+                    }
+                )
+        );
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         window.app.foldManager.save(createdFile, IFoldInfo);
         return createdFile;
@@ -345,17 +434,24 @@ async function createWeeklyNote(date) {
         new obsidian__default['default'].Notice("Unable to create new file.");
     }
 }
+
 function getWeeklyNote(date, weeklyNotes) {
     return weeklyNotes[getDateUID$1(date, "week")] ?? null;
 }
+
 function getAllWeeklyNotes() {
+    const weeklyNotes = {};
+    if (!appHasWeeklyNotesPluginLoaded()) {
+        return weeklyNotes;
+    }
     const { vault } = window.app;
     const { folder } = getWeeklyNoteSettings();
-    const weeklyNotesFolder = vault.getAbstractFileByPath(obsidian__default['default'].normalizePath(folder));
+    const weeklyNotesFolder = vault.getAbstractFileByPath(
+        obsidian__default['default'].normalizePath(folder)
+    );
     if (!weeklyNotesFolder) {
         throw new WeeklyNotesFolderMissingError("Failed to find weekly notes folder");
     }
-    const weeklyNotes = {};
     obsidian__default['default'].Vault.recurseChildren(weeklyNotesFolder, (note) => {
         if (note instanceof obsidian__default['default'].TFile) {
             const date = getDateFromFile(note, "week");
@@ -366,6 +462,246 @@ function getAllWeeklyNotes() {
         }
     });
     return weeklyNotes;
+}
+
+class MonthlyNotesFolderMissingError extends Error {}
+
+/**
+ * This function mimics the behavior of the daily-notes plugin
+ * so it will replace {{date}}, {{title}}, and {{time}} with the
+ * formatted timestamp.
+ *
+ * Note: it has an added bonus that it's not 'today' specific.
+ */
+async function createMonthlyNote(date) {
+    const { vault } = window.app;
+    const { template, format, folder } = getMonthlyNoteSettings();
+    const [templateContents, IFoldInfo] = await getTemplateInfo(template);
+    const filename = date.format(format);
+    const normalizedPath = await getNotePath(folder, filename);
+    try {
+        const createdFile = await vault.create(
+            normalizedPath,
+            templateContents
+                .replace(
+                    /{{\s*(date|time)\s*(([+-]\d+)([yqmwdhs]))?\s*(:.+?)?}}/gi,
+                    (_, _timeOrDate, calc, timeDelta, unit, momentFormat) => {
+                        const now = window.moment();
+                        const currentDate = date.clone().set({
+                            hour: now.get("hour"),
+                            minute: now.get("minute"),
+                            second: now.get("second"),
+                        });
+                        if (calc) {
+                            currentDate.add(parseInt(timeDelta, 10), unit);
+                        }
+                        if (momentFormat) {
+                            return currentDate.format(momentFormat.substring(1).trim());
+                        }
+                        return currentDate.format(format);
+                    }
+                )
+                .replace(/{{\s*date\s*}}/gi, filename)
+                .replace(/{{\s*time\s*}}/gi, window.moment().format("HH:mm"))
+                .replace(/{{\s*title\s*}}/gi, filename)
+        );
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        window.app.foldManager.save(createdFile, IFoldInfo);
+        return createdFile;
+    }
+    catch (err) {
+        console.error(`Failed to create file: '${normalizedPath}'`, err);
+        new obsidian__default['default'].Notice("Unable to create new file.");
+    }
+}
+
+function getMonthlyNote(date, monthlyNotes) {
+    return monthlyNotes[getDateUID$1(date, "month")] ?? null;
+}
+
+function getAllMonthlyNotes() {
+    const monthlyNotes = {};
+    if (!appHasMonthlyNotesPluginLoaded()) {
+        return monthlyNotes;
+    }
+    const { vault } = window.app;
+    const { folder } = getMonthlyNoteSettings();
+    const monthlyNotesFolder = vault.getAbstractFileByPath(
+        obsidian__default['default'].normalizePath(folder)
+    );
+    if (!monthlyNotesFolder) {
+        throw new MonthlyNotesFolderMissingError("Failed to find monthly notes folder");
+    }
+    obsidian__default['default'].Vault.recurseChildren(monthlyNotesFolder, (note) => {
+        if (note instanceof obsidian__default['default'].TFile) {
+            const date = getDateFromFile(note, "month");
+            if (date) {
+                const dateString = getDateUID$1(date, "month");
+                monthlyNotes[dateString] = note;
+            }
+        }
+    });
+    return monthlyNotes;
+}
+
+class QuarterlyNotesFolderMissingError extends Error {}
+
+/**
+ * This function mimics the behavior of the daily-notes plugin
+ * so it will replace {{date}}, {{title}}, and {{time}} with the
+ * formatted timestamp.
+ *
+ * Note: it has an added bonus that it's not 'today' specific.
+ */
+async function createQuarterlyNote(date) {
+    const { vault } = window.app;
+    const { template, format, folder } = getQuarterlyNoteSettings();
+    const [templateContents, IFoldInfo] = await getTemplateInfo(template);
+    const filename = date.format(format);
+    const normalizedPath = await getNotePath(folder, filename);
+    try {
+        const createdFile = await vault.create(
+            normalizedPath,
+            templateContents
+                .replace(
+                    /{{\s*(date|time)\s*(([+-]\d+)([yqmwdhs]))?\s*(:.+?)?}}/gi,
+                    (_, _timeOrDate, calc, timeDelta, unit, momentFormat) => {
+                        const now = window.moment();
+                        const currentDate = date.clone().set({
+                            hour: now.get("hour"),
+                            minute: now.get("minute"),
+                            second: now.get("second"),
+                        });
+                        if (calc) {
+                            currentDate.add(parseInt(timeDelta, 10), unit);
+                        }
+                        if (momentFormat) {
+                            return currentDate.format(momentFormat.substring(1).trim());
+                        }
+                        return currentDate.format(format);
+                    }
+                )
+                .replace(/{{\s*date\s*}}/gi, filename)
+                .replace(/{{\s*time\s*}}/gi, window.moment().format("HH:mm"))
+                .replace(/{{\s*title\s*}}/gi, filename)
+        );
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        window.app.foldManager.save(createdFile, IFoldInfo);
+        return createdFile;
+    }
+    catch (err) {
+        console.error(`Failed to create file: '${normalizedPath}'`, err);
+        new obsidian__default['default'].Notice("Unable to create new file.");
+    }
+}
+
+function getQuarterlyNote(date, quarterly) {
+    return quarterly[getDateUID$1(date, "quarter")] ?? null;
+}
+
+function getAllQuarterlyNotes() {
+    const quarterly = {};
+    if (!appHasQuarterlyNotesPluginLoaded()) {
+        return quarterly;
+    }
+    const { vault } = window.app;
+    const { folder } = getQuarterlyNoteSettings();
+    const quarterlyFolder = vault.getAbstractFileByPath(
+        obsidian__default['default'].normalizePath(folder)
+    );
+    if (!quarterlyFolder) {
+        throw new QuarterlyNotesFolderMissingError("Failed to find quarterly notes folder");
+    }
+    obsidian__default['default'].Vault.recurseChildren(quarterlyFolder, (note) => {
+        if (note instanceof obsidian__default['default'].TFile) {
+            const date = getDateFromFile(note, "quarter");
+            if (date) {
+                const dateString = getDateUID$1(date, "quarter");
+                quarterly[dateString] = note;
+            }
+        }
+    });
+    return quarterly;
+}
+
+class YearlyNotesFolderMissingError extends Error {}
+
+/**
+ * This function mimics the behavior of the daily-notes plugin
+ * so it will replace {{date}}, {{title}}, and {{time}} with the
+ * formatted timestamp.
+ *
+ * Note: it has an added bonus that it's not 'today' specific.
+ */
+async function createYearlyNote(date) {
+    const { vault } = window.app;
+    const { template, format, folder } = getYearlyNoteSettings();
+    const [templateContents, IFoldInfo] = await getTemplateInfo(template);
+    const filename = date.format(format);
+    const normalizedPath = await getNotePath(folder, filename);
+    try {
+        const createdFile = await vault.create(
+            normalizedPath,
+            templateContents
+                .replace(
+                    /{{\s*(date|time)\s*(([+-]\d+)([yqmwdhs]))?\s*(:.+?)?}}/gi,
+                    (_, _timeOrDate, calc, timeDelta, unit, momentFormat) => {
+                        const now = window.moment();
+                        const currentDate = date.clone().set({
+                            hour: now.get("hour"),
+                            minute: now.get("minute"),
+                            second: now.get("second"),
+                        });
+                        if (calc) {
+                            currentDate.add(parseInt(timeDelta, 10), unit);
+                        }
+                        if (momentFormat) {
+                            return currentDate.format(momentFormat.substring(1).trim());
+                        }
+                        return currentDate.format(format);
+                    }
+                )
+                .replace(/{{\s*date\s*}}/gi, filename)
+                .replace(/{{\s*time\s*}}/gi, window.moment().format("HH:mm"))
+                .replace(/{{\s*title\s*}}/gi, filename)
+        );
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        window.app.foldManager.save(createdFile, IFoldInfo);
+        return createdFile;
+    }
+    catch (err) {
+        console.error(`Failed to create file: '${normalizedPath}'`, err);
+        new obsidian__default['default'].Notice("Unable to create new file.");
+    }
+}
+
+function getYearlyNote(date, yearlyNotes) {
+    return yearlyNotes[getDateUID$1(date, "year")] ?? null;
+}
+
+function getAllYearlyNotes() {
+    const yearlyNotes = {};
+    if (!appHasYearlyNotesPluginLoaded()) {
+        return yearlyNotes;
+    }
+    const { vault } = window.app;
+    const { folder } = getYearlyNoteSettings();
+    const yearlyNotesFolder = vault.getAbstractFileByPath(
+        obsidian__default['default'].normalizePath(folder)
+    );
+    if (!yearlyNotesFolder) {
+        throw new YearlyNotesFolderMissingError("Failed to find yearly notes folder");
+    }
+    obsidian__default['default'].Vault.recurseChildren(yearlyNotesFolder, (note) => {
+        if (note instanceof obsidian__default['default'].TFile) {
+            const date = getDateFromFile(note, "year");
+            if (date) {
+                const dateString = getDateUID$1(date, "year");
+                yearlyNotes[dateString] = note;
+            }
+        }
+    });
+    return yearlyNotes;
 }
 
 function appHasDailyNotesPluginLoaded() {
@@ -379,17 +715,56 @@ function appHasDailyNotesPluginLoaded() {
     const periodicNotes = app.plugins.getPlugin("periodic-notes");
     return periodicNotes && periodicNotes.settings?.daily?.enabled;
 }
+
+/**
+ * XXX: "Weekly Notes" live in either the Calendar plugin or the periodic-notes plugin.
+ * Check both until the weekly notes feature is removed from the Calendar plugin.
+ */
+function appHasWeeklyNotesPluginLoaded() {
+    const { app } = window;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    if (app.plugins.getPlugin("calendar")) {
+        return true;
+    }
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const periodicNotes = app.plugins.getPlugin("periodic-notes");
+    return periodicNotes && periodicNotes.settings?.weekly?.enabled;
+}
+
+function appHasMonthlyNotesPluginLoaded() {
+    return true; // override
+}
+
+function appHasQuarterlyNotesPluginLoaded() {
+    return true; // override
+}
+
+function appHasYearlyNotesPluginLoaded() {
+    return true; // override
+}
 var appHasDailyNotesPluginLoaded_1 = appHasDailyNotesPluginLoaded;
 var createDailyNote_1 = createDailyNote;
+var createMonthlyNote_1 = createMonthlyNote;
+var createQuarterlyNote_1 = createQuarterlyNote;
 var createWeeklyNote_1 = createWeeklyNote;
+var createYearlyNote_1 = createYearlyNote;
 var getAllDailyNotes_1 = getAllDailyNotes;
+var getAllMonthlyNotes_1 = getAllMonthlyNotes;
+var getAllQuarterlyNotes_1 = getAllQuarterlyNotes;
 var getAllWeeklyNotes_1 = getAllWeeklyNotes;
+var getAllYearlyNotes_1 = getAllYearlyNotes;
 var getDailyNote_1 = getDailyNote;
 var getDailyNoteSettings_1 = getDailyNoteSettings;
 var getDateFromFile_1 = getDateFromFile;
 var getDateUID_1$1 = getDateUID$1;
+var getMonthlyNote_1 = getMonthlyNote;
+var getMonthlyNoteSettings_1 = getMonthlyNoteSettings;
+var getQuarterlyNote_1 = getQuarterlyNote;
+var getQuarterlyNoteSettings_1 = getQuarterlyNoteSettings;
 var getWeeklyNote_1 = getWeeklyNote;
 var getWeeklyNoteSettings_1 = getWeeklyNoteSettings;
+var getYearlyNote_1 = getYearlyNote;
+var getYearlyNoteSettings_1 = getYearlyNoteSettings;
 
 function noop$1() { }
 function run$1(fn) {
@@ -737,12 +1112,15 @@ const weekdays$1 = [
 const defaultSettings = Object.freeze({
     shouldConfirmBeforeCreate: true,
     weekStart: "locale",
+    ctrlClickOpensInNewTab: false,
     wordsPerDot: DEFAULT_WORDS_PER_DOT,
     showWeeklyNote: false,
+    showWeeklyNoteRight: false,
     weeklyNoteFormat: "",
     weeklyNoteTemplate: "",
     weeklyNoteFolder: "",
     localeOverride: "system-default",
+    showQuarter: false, // Added default value for showQuarter
 });
 function appHasPeriodicNotesPluginLoaded() {
     var _a, _b;
@@ -773,8 +1151,11 @@ class CalendarSettingsTab extends obsidian.PluginSettingTab {
         });
         this.addDotThresholdSetting();
         this.addWeekStartSetting();
+        this.addCtrlClickSetting();
         this.addConfirmCreateSetting();
         this.addShowWeeklyNoteSetting();
+        this.addShowWeeklyNoteRightSetting();
+        this.addShowQuarterSetting();
         if (this.plugin.options.showWeeklyNote &&
             !appHasPeriodicNotesPluginLoaded()) {
             this.containerEl.createEl("h3", {
@@ -829,6 +1210,21 @@ class CalendarSettingsTab extends obsidian.PluginSettingTab {
             });
         });
     }
+    addCtrlClickSetting() {
+        new obsidian.Setting(this.containerEl)
+            .setName("Ctrl + Click Behaviour")
+            .setDesc("Set the behaviour of Ctrl + Clicking on a date")
+            .addDropdown((dropdown) => {
+            dropdown.addOption("new-tab", "Open in new tab");
+            dropdown.addOption("new-split", "Open in new split");
+            dropdown.setValue(this.plugin.options.ctrlClickOpensInNewTab ? "new-tab" : "new-split");
+            dropdown.onChange(async (value) => {
+                this.plugin.writeOptions(() => ({
+                    ctrlClickOpensInNewTab: value === "new-tab",
+                }));
+            });
+        });
+    }
     addConfirmCreateSetting() {
         new obsidian.Setting(this.containerEl)
             .setName("Confirm before creating new note")
@@ -851,6 +1247,19 @@ class CalendarSettingsTab extends obsidian.PluginSettingTab {
             toggle.onChange(async (value) => {
                 this.plugin.writeOptions(() => ({ showWeeklyNote: value }));
                 this.display(); // show/hide weekly settings
+            });
+        });
+    }
+    // New method to add the Show Quarter setting
+    addShowQuarterSetting() {
+        new obsidian.Setting(this.containerEl)
+            .setName("Show Quarter")
+            .setDesc("Enable this to display the quarter of the year (Q1, Q2, Q3, Q4) in the calendar")
+            .addToggle((toggle) => {
+            toggle.setValue(this.plugin.options.showQuarter);
+            toggle.onChange(async (value) => {
+                this.plugin.writeOptions(() => ({ showQuarter: value }));
+                this.display(); // Optionally refresh the settings UI if needed
             });
         });
     }
@@ -885,6 +1294,18 @@ class CalendarSettingsTab extends obsidian.PluginSettingTab {
             textfield.setValue(this.plugin.options.weeklyNoteFolder);
             textfield.onChange(async (value) => {
                 this.plugin.writeOptions(() => ({ weeklyNoteFolder: value }));
+            });
+        });
+    }
+    addShowWeeklyNoteRightSetting() {
+        new obsidian.Setting(this.containerEl)
+            .setName("Change week number side")
+            .setDesc("Enable this to show week numbers to the right of the calendar")
+            .addToggle((toggle) => {
+            toggle.setValue(this.plugin.options.showWeeklyNoteRight);
+            toggle.onChange(async (value) => {
+                this.plugin.writeOptions(() => ({ showWeeklyNoteRight: value }));
+                this.display(); // show/hide weekly settings
             });
         });
     }
@@ -1002,9 +1423,70 @@ function createWeeklyNotesStore() {
             }
         } }, store);
 }
+function createMonthlyNotesStore() {
+    let hasError = false;
+    const store = writable(null);
+    return Object.assign({ reindex: () => {
+            try {
+                const monthlyNotes = getAllMonthlyNotes_1();
+                store.set(monthlyNotes);
+                hasError = false;
+            }
+            catch (err) {
+                if (!hasError) {
+                    // Avoid error being shown multiple times
+                    console.log("[Calendar] Failed to find monthly notes folder", err);
+                }
+                store.set({});
+                hasError = true;
+            }
+        } }, store);
+}
+function createYearlyNotesStore() {
+    let hasError = false;
+    const store = writable(null);
+    return Object.assign({ reindex: () => {
+            try {
+                const yearlyNotes = getAllYearlyNotes_1();
+                store.set(yearlyNotes);
+                hasError = false;
+            }
+            catch (err) {
+                if (!hasError) {
+                    // Avoid error being shown multiple times
+                    console.log("[Calendar] Failed to find yearly notes folder", err);
+                }
+                store.set({});
+                hasError = true;
+            }
+        } }, store);
+}
+function createQuarterlyNotesStore() {
+    let hasError = false;
+    const store = writable(null);
+    return Object.assign({ reindex: () => {
+            try {
+                const quarterlyNotes = getAllQuarterlyNotes_1();
+                store.set(quarterlyNotes);
+                hasError = false;
+            }
+            catch (err) {
+                if (!hasError) {
+                    // Avoid error being shown multiple times
+                    console.log("[Calendar] Failed to find quarterly notes folder", err);
+                }
+                store.set({});
+                hasError = true;
+            }
+        } }, store);
+}
+// Exporting the stores
 const settings = writable(defaultSettings);
 const dailyNotes = createDailyNotesStore();
 const weeklyNotes = createWeeklyNotesStore();
+const monthlyNotes = createMonthlyNotesStore();
+const yearlyNotes = createYearlyNotesStore();
+const quarterlyNotes = createQuarterlyNotesStore(); // Added quarterlyNotes store
 function createSelectedFileStore() {
     const store = writable(null);
     return Object.assign({ setFile: (file) => {
@@ -1043,15 +1525,24 @@ function createConfirmationDialog({ cta, onAccept, text, title, }) {
 /**
  * Create a Daily Note for a given date.
  */
-async function tryToCreateDailyNote(date, inNewSplit, settings, cb) {
+async function tryToCreateDailyNote(date, ctrlPressed, settings, cb) {
     const { workspace } = window.app;
     const { format } = getDailyNoteSettings_1();
     const filename = date.format(format);
     const createFile = async () => {
         const dailyNote = await createDailyNote_1(date);
-        const leaf = inNewSplit
-            ? workspace.splitActiveLeaf()
-            : workspace.getUnpinnedLeaf();
+        let leaf;
+        if (ctrlPressed) {
+            if (settings.ctrlClickOpensInNewTab) {
+                leaf = workspace.getLeaf('tab');
+            }
+            else {
+                leaf = workspace.getLeaf('split', 'vertical');
+            }
+        }
+        else {
+            leaf = workspace.getLeaf(false);
+        }
         await leaf.openFile(dailyNote, { active: true });
         cb === null || cb === void 0 ? void 0 : cb(dailyNote);
     };
@@ -1069,17 +1560,87 @@ async function tryToCreateDailyNote(date, inNewSplit, settings, cb) {
 }
 
 /**
+ * Create a Monthly Note for a given date.
+ */
+async function tryToCreateMonthlyNote(date, inNewSplit, settings, cb) {
+    const { workspace } = window.app;
+    const { format } = getMonthlyNoteSettings_1();
+    const filename = date.format(format);
+    const createFile = async () => {
+        const monthlyNote = await createMonthlyNote_1(date);
+        const leaf = inNewSplit
+            ? workspace.splitActiveLeaf()
+            : workspace.getUnpinnedLeaf();
+        await leaf.openFile(monthlyNote, { active: true });
+        cb === null || cb === void 0 ? void 0 : cb(monthlyNote);
+    };
+    if (settings.shouldConfirmBeforeCreate) {
+        createConfirmationDialog({
+            cta: "Create",
+            onAccept: createFile,
+            text: `File ${filename} does not exist. Would you like to create it?`,
+            title: "New Monthly Note",
+        });
+    }
+    else {
+        await createFile();
+    }
+}
+
+/**
+ * Create a Quarterly Note for a given date.
+ */
+async function tryToCreateQuarterlyNote(date, inNewSplit, settings, cb) {
+    const { workspace } = window.app;
+    const { format } = getQuarterlyNoteSettings_1();
+    const filename = date.format(format);
+    const createFile = async () => {
+        try {
+            const quarterlyNote = await createQuarterlyNote_1(date);
+            const leaf = inNewSplit
+                ? workspace.splitActiveLeaf()
+                : workspace.getUnpinnedLeaf();
+            await leaf.openFile(quarterlyNote, { active: true });
+            cb === null || cb === void 0 ? void 0 : cb(quarterlyNote);
+        }
+        catch (error) {
+            console.error(`Error creating quarterly note "${filename}":`, error);
+        }
+    };
+    if (settings.shouldConfirmBeforeCreate) {
+        createConfirmationDialog({
+            cta: "Create",
+            onAccept: createFile,
+            text: `File "${filename}" does not exist. Would you like to create it?`,
+            title: "New Quarterly Note",
+        });
+    }
+    else {
+        await createFile();
+    }
+}
+
+/**
  * Create a Weekly Note for a given date.
  */
-async function tryToCreateWeeklyNote(date, inNewSplit, settings, cb) {
+async function tryToCreateWeeklyNote(date, ctrlPressed, settings, cb) {
     const { workspace } = window.app;
     const { format } = getWeeklyNoteSettings_1();
     const filename = date.format(format);
     const createFile = async () => {
         const dailyNote = await createWeeklyNote_1(date);
-        const leaf = inNewSplit
-            ? workspace.splitActiveLeaf()
-            : workspace.getUnpinnedLeaf();
+        let leaf;
+        if (ctrlPressed) {
+            if (settings.ctrlClickOpensInNewTab) {
+                leaf = workspace.getLeaf("tab");
+            }
+            else {
+                leaf = workspace.getLeaf("split", "vertical");
+            }
+        }
+        else {
+            leaf = workspace.getLeaf(false);
+        }
         await leaf.openFile(dailyNote, { active: true });
         cb === null || cb === void 0 ? void 0 : cb(dailyNote);
     };
@@ -1089,6 +1650,34 @@ async function tryToCreateWeeklyNote(date, inNewSplit, settings, cb) {
             onAccept: createFile,
             text: `File ${filename} does not exist. Would you like to create it?`,
             title: "New Weekly Note",
+        });
+    }
+    else {
+        await createFile();
+    }
+}
+
+/**
+ * Create a Yearly Note for a given date.
+ */
+async function tryToCreateYearlyNote(date, inNewSplit, settings, cb) {
+    const { workspace } = window.app;
+    const { format } = getYearlyNoteSettings_1();
+    const filename = date.format(format);
+    const createFile = async () => {
+        const yearlyNote = await createYearlyNote_1(date);
+        const leaf = inNewSplit
+            ? workspace.splitActiveLeaf()
+            : workspace.getUnpinnedLeaf();
+        await leaf.openFile(yearlyNote, { active: true });
+        cb === null || cb === void 0 ? void 0 : cb(yearlyNote);
+    };
+    if (settings.shouldConfirmBeforeCreate) {
+        createConfirmationDialog({
+            cta: "Create",
+            onAccept: createFile,
+            text: `File ${filename} does not exist. Would you like to create it?`,
+            title: "New Yearly Note",
         });
     }
     else {
@@ -1675,7 +2264,7 @@ function getDateUID(date, granularity = "day") {
 }
 var getDateUID_1 = getDateUID;
 
-/* src/components/Dot.svelte generated by Svelte v3.35.0 */
+/* src\components\Dot.svelte generated by Svelte v3.35.0 */
 
 function add_css$5() {
 	var style = element("style");
@@ -1722,7 +2311,7 @@ function create_else_block$1(ctx) {
 }
 
 // (6:0) {#if isFilled}
-function create_if_block$2(ctx) {
+function create_if_block$3(ctx) {
 	let svg;
 	let circle;
 	let svg_class_value;
@@ -1762,7 +2351,7 @@ function create_fragment$6(ctx) {
 	let if_block_anchor;
 
 	function select_block_type(ctx, dirty) {
-		if (/*isFilled*/ ctx[1]) return create_if_block$2;
+		if (/*isFilled*/ ctx[1]) return create_if_block$3;
 		return create_else_block$1;
 	}
 
@@ -1822,7 +2411,7 @@ class Dot extends SvelteComponent {
 	}
 }
 
-/* src/components/MetadataResolver.svelte generated by Svelte v3.35.0 */
+/* src\components\MetadataResolver.svelte generated by Svelte v3.35.0 */
 
 const get_default_slot_changes_1 = dirty => ({});
 const get_default_slot_context_1 = ctx => ({ metadata: null });
@@ -1869,7 +2458,7 @@ function create_else_block(ctx) {
 }
 
 // (7:0) {#if metadata}
-function create_if_block$1(ctx) {
+function create_if_block$2(ctx) {
 	let await_block_anchor;
 	let promise;
 	let current;
@@ -1932,7 +2521,7 @@ function create_if_block$1(ctx) {
 	};
 }
 
-// (1:0) <svelte:options immutable />  <script lang="ts">; export let metadata; </script>  {#if metadata}
+// (1:0) <svelte:options immutable />  <script lang="ts">;  export let metadata;  </script>  {#if metadata}
 function create_catch_block(ctx) {
 	return {
 		c: noop,
@@ -1983,7 +2572,7 @@ function create_then_block(ctx) {
 	};
 }
 
-// (1:0) <svelte:options immutable />  <script lang="ts">; export let metadata; </script>  {#if metadata}
+// (1:0) <svelte:options immutable />  <script lang="ts">;  export let metadata;  </script>  {#if metadata}
 function create_pending_block(ctx) {
 	return {
 		c: noop,
@@ -2000,7 +2589,7 @@ function create_fragment$5(ctx) {
 	let if_block;
 	let if_block_anchor;
 	let current;
-	const if_block_creators = [create_if_block$1, create_else_block];
+	const if_block_creators = [create_if_block$2, create_else_block];
 	const if_blocks = [];
 
 	function select_block_type(ctx, dirty) {
@@ -2124,7 +2713,7 @@ function getMonth(displayedMonth, ..._args) {
     return month;
 }
 
-/* src/components/Day.svelte generated by Svelte v3.35.0 */
+/* src\components\Day.svelte generated by Svelte v3.35.0 */
 
 function add_css$4() {
 	var style = element("style");
@@ -2133,14 +2722,14 @@ function add_css$4() {
 	append(document.head, style);
 }
 
-function get_each_context$2(ctx, list, i) {
+function get_each_context$3(ctx, list, i) {
 	const child_ctx = ctx.slice();
 	child_ctx[11] = list[i];
 	return child_ctx;
 }
 
 // (36:8) {#each metadata.dots as dot}
-function create_each_block$2(ctx) {
+function create_each_block$3(ctx) {
 	let dot;
 	let current;
 	const dot_spread_levels = [/*dot*/ ctx[11]];
@@ -2197,7 +2786,7 @@ function create_default_slot$1(ctx) {
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block$2(get_each_context$2(ctx, each_value, i));
+		each_blocks[i] = create_each_block$3(get_each_context$3(ctx, each_value, i));
 	}
 
 	const out = i => transition_out(each_blocks[i], 1, 1, () => {
@@ -2272,13 +2861,13 @@ function create_default_slot$1(ctx) {
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context$2(ctx, each_value, i);
+					const child_ctx = get_each_context$3(ctx, each_value, i);
 
 					if (each_blocks[i]) {
 						each_blocks[i].p(child_ctx, dirty);
 						transition_in(each_blocks[i], 1);
 					} else {
-						each_blocks[i] = create_each_block$2(child_ctx);
+						each_blocks[i] = create_each_block$3(child_ctx);
 						each_blocks[i].c();
 						transition_in(each_blocks[i], 1);
 						each_blocks[i].m(div0, null);
@@ -2445,7 +3034,7 @@ class Day extends SvelteComponent {
 	}
 }
 
-/* src/components/Arrow.svelte generated by Svelte v3.35.0 */
+/* src\components\Arrow.svelte generated by Svelte v3.35.0 */
 
 function add_css$3() {
 	var style = element("style");
@@ -2537,17 +3126,158 @@ class Arrow extends SvelteComponent {
 	}
 }
 
-/* src/components/Nav.svelte generated by Svelte v3.35.0 */
+/* src\components\Nav.svelte generated by Svelte v3.35.0 */
 
 function add_css$2() {
 	var style = element("style");
-	style.id = "svelte-1vwr9dd-style";
-	style.textContent = ".nav.svelte-1vwr9dd.svelte-1vwr9dd{align-items:center;display:flex;margin:0.6em 0 1em;padding:0 8px;width:100%}.nav.is-mobile.svelte-1vwr9dd.svelte-1vwr9dd{padding:0}.title.svelte-1vwr9dd.svelte-1vwr9dd{color:var(--color-text-title);font-size:1.5em;margin:0}.is-mobile.svelte-1vwr9dd .title.svelte-1vwr9dd{font-size:1.3em}.month.svelte-1vwr9dd.svelte-1vwr9dd{font-weight:500;text-transform:capitalize}.year.svelte-1vwr9dd.svelte-1vwr9dd{color:var(--interactive-accent)}.right-nav.svelte-1vwr9dd.svelte-1vwr9dd{display:flex;justify-content:center;margin-left:auto}.reset-button.svelte-1vwr9dd.svelte-1vwr9dd{cursor:pointer;border-radius:4px;color:var(--text-muted);font-size:0.7em;font-weight:600;letter-spacing:1px;margin:0 4px;padding:0px 4px;text-transform:uppercase}.is-mobile.svelte-1vwr9dd .reset-button.svelte-1vwr9dd{display:none}";
+	style.id = "svelte-r96tv9-style";
+	style.textContent = ".nav.svelte-r96tv9.svelte-r96tv9{align-items:center;display:flex;margin:0.6em 0 1em;padding:0 8px;width:100%}.nav.is-mobile.svelte-r96tv9.svelte-r96tv9{padding:0}.title-container.svelte-r96tv9.svelte-r96tv9{display:flex;flex-direction:column;align-items:center}.title.svelte-r96tv9.svelte-r96tv9{color:var(--color-text-title);font-size:1.5em;margin:0}.is-mobile.svelte-r96tv9 .title.svelte-r96tv9{font-size:1.3em}.month.svelte-r96tv9.svelte-r96tv9{font-weight:500;text-transform:capitalize;cursor:pointer}.year.svelte-r96tv9.svelte-r96tv9{color:var(--interactive-accent);cursor:pointer}.quarters.svelte-r96tv9.svelte-r96tv9{display:flex;justify-content:center;align-items:center;margin-top:4px;padding:0 2px}.quarter.svelte-r96tv9.svelte-r96tv9{font-size:0.6em;color:var(--text-muted);margin:0 4px;cursor:pointer}.quarter.active.svelte-r96tv9.svelte-r96tv9{color:var(--interactive-accent);font-weight:bold}.divider.svelte-r96tv9.svelte-r96tv9{font-size:0.4em;color:var(--text-muted);margin:0 2px}.right-nav.svelte-r96tv9.svelte-r96tv9{display:flex;justify-content:center;margin-left:auto}.reset-button.svelte-r96tv9.svelte-r96tv9{cursor:pointer;border-radius:4px;color:var(--text-muted);font-size:0.7em;font-weight:600;letter-spacing:1px;margin:0 4px;padding:0 4px;text-transform:uppercase}.is-mobile.svelte-r96tv9 .reset-button.svelte-r96tv9{display:none}";
 	append(document.head, style);
 }
 
+function get_each_context$2(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[18] = list[i];
+	child_ctx[20] = i;
+	return child_ctx;
+}
+
+// (46:4) {#if quarterVisible}
+function create_if_block$1(ctx) {
+	let div;
+	let each_value = [1, 2, 3, 4];
+	let each_blocks = [];
+
+	for (let i = 0; i < 4; i += 1) {
+		each_blocks[i] = create_each_block$2(get_each_context$2(ctx, each_value, i));
+	}
+
+	return {
+		c() {
+			div = element("div");
+
+			for (let i = 0; i < 4; i += 1) {
+				each_blocks[i].c();
+			}
+
+			attr(div, "class", "quarters svelte-r96tv9");
+		},
+		m(target, anchor) {
+			insert(target, div, anchor);
+
+			for (let i = 0; i < 4; i += 1) {
+				each_blocks[i].m(div, null);
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*currentQuarter, onClickQuarter, getStartOfQuarter, displayedMonth*/ 2433) {
+				each_value = [1, 2, 3, 4];
+				let i;
+
+				for (i = 0; i < 4; i += 1) {
+					const child_ctx = get_each_context$2(ctx, each_value, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block$2(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div, null);
+					}
+				}
+
+				for (; i < 4; i += 1) {
+					each_blocks[i].d(1);
+				}
+			}
+		},
+		d(detaching) {
+			if (detaching) detach(div);
+			destroy_each(each_blocks, detaching);
+		}
+	};
+}
+
+// (58:10) {#if index < 3}
+function create_if_block_1$1(ctx) {
+	let span;
+
+	return {
+		c() {
+			span = element("span");
+			span.textContent = "•";
+			attr(span, "class", "divider svelte-r96tv9");
+		},
+		m(target, anchor) {
+			insert(target, span, anchor);
+		},
+		d(detaching) {
+			if (detaching) detach(span);
+		}
+	};
+}
+
+// (48:8) {#each [1, 2, 3, 4] as quarter, index}
+function create_each_block$2(ctx) {
+	let span;
+	let t0;
+	let t1;
+	let t2;
+	let if_block_anchor;
+	let mounted;
+	let dispose;
+
+	function click_handler_2(...args) {
+		return /*click_handler_2*/ ctx[17](/*quarter*/ ctx[18], ...args);
+	}
+
+	let if_block = /*index*/ ctx[20] < 3 && create_if_block_1$1();
+
+	return {
+		c() {
+			span = element("span");
+			t0 = text("Q");
+			t1 = text(/*quarter*/ ctx[18]);
+			t2 = space();
+			if (if_block) if_block.c();
+			if_block_anchor = empty();
+			attr(span, "class", "quarter svelte-r96tv9");
+			toggle_class(span, "active", /*quarter*/ ctx[18] === /*currentQuarter*/ ctx[8]);
+		},
+		m(target, anchor) {
+			insert(target, span, anchor);
+			append(span, t0);
+			append(span, t1);
+			insert(target, t2, anchor);
+			if (if_block) if_block.m(target, anchor);
+			insert(target, if_block_anchor, anchor);
+
+			if (!mounted) {
+				dispose = listen(span, "click", click_handler_2);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (dirty & /*currentQuarter*/ 256) {
+				toggle_class(span, "active", /*quarter*/ ctx[18] === /*currentQuarter*/ ctx[8]);
+			}
+		},
+		d(detaching) {
+			if (detaching) detach(span);
+			if (detaching) detach(t2);
+			if (if_block) if_block.d(detaching);
+			if (detaching) detach(if_block_anchor);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
 function create_fragment$2(ctx) {
-	let div2;
+	let div3;
+	let div0;
 	let h3;
 	let span0;
 	let t0_value = /*displayedMonth*/ ctx[0].format("MMM") + "";
@@ -2557,15 +3287,17 @@ function create_fragment$2(ctx) {
 	let t2_value = /*displayedMonth*/ ctx[0].format("YYYY") + "";
 	let t2;
 	let t3;
-	let div1;
-	let arrow0;
 	let t4;
-	let div0;
-	let t6;
+	let div2;
+	let arrow0;
+	let t5;
+	let div1;
+	let t7;
 	let arrow1;
 	let current;
 	let mounted;
 	let dispose;
+	let if_block = /*quarterVisible*/ ctx[4] && create_if_block$1(ctx);
 
 	arrow0 = new Arrow({
 			props: {
@@ -2585,7 +3317,8 @@ function create_fragment$2(ctx) {
 
 	return {
 		c() {
-			div2 = element("div");
+			div3 = element("div");
+			div0 = element("div");
 			h3 = element("h3");
 			span0 = element("span");
 			t0 = text(t0_value);
@@ -2593,44 +3326,49 @@ function create_fragment$2(ctx) {
 			span1 = element("span");
 			t2 = text(t2_value);
 			t3 = space();
-			div1 = element("div");
-			create_component(arrow0.$$.fragment);
+			if (if_block) if_block.c();
 			t4 = space();
-			div0 = element("div");
-			div0.textContent = `${/*todayDisplayStr*/ ctx[4]}`;
-			t6 = space();
+			div2 = element("div");
+			create_component(arrow0.$$.fragment);
+			t5 = space();
+			div1 = element("div");
+			div1.textContent = `${/*todayDisplayStr*/ ctx[9]}`;
+			t7 = space();
 			create_component(arrow1.$$.fragment);
-			attr(span0, "class", "month svelte-1vwr9dd");
-			attr(span1, "class", "year svelte-1vwr9dd");
-			attr(h3, "class", "title svelte-1vwr9dd");
-			attr(div0, "class", "reset-button svelte-1vwr9dd");
-			attr(div1, "class", "right-nav svelte-1vwr9dd");
-			attr(div2, "class", "nav svelte-1vwr9dd");
-			toggle_class(div2, "is-mobile", /*isMobile*/ ctx[5]);
+			attr(span0, "class", "month svelte-r96tv9");
+			attr(span1, "class", "year svelte-r96tv9");
+			attr(h3, "class", "title svelte-r96tv9");
+			attr(div0, "class", "title-container svelte-r96tv9");
+			attr(div1, "class", "reset-button svelte-r96tv9");
+			attr(div2, "class", "right-nav svelte-r96tv9");
+			attr(div3, "class", "nav svelte-r96tv9");
+			toggle_class(div3, "is-mobile", /*isMobile*/ ctx[10]);
 		},
 		m(target, anchor) {
-			insert(target, div2, anchor);
-			append(div2, h3);
+			insert(target, div3, anchor);
+			append(div3, div0);
+			append(div0, h3);
 			append(h3, span0);
 			append(span0, t0);
 			append(h3, t1);
 			append(h3, span1);
 			append(span1, t2);
-			append(div2, t3);
+			append(div0, t3);
+			if (if_block) if_block.m(div0, null);
+			append(div3, t4);
+			append(div3, div2);
+			mount_component(arrow0, div2, null);
+			append(div2, t5);
 			append(div2, div1);
-			mount_component(arrow0, div1, null);
-			append(div1, t4);
-			append(div1, div0);
-			append(div1, t6);
-			mount_component(arrow1, div1, null);
+			append(div2, t7);
+			mount_component(arrow1, div2, null);
 			current = true;
 
 			if (!mounted) {
 				dispose = [
-					listen(h3, "click", function () {
-						if (is_function(/*resetDisplayedMonth*/ ctx[1])) /*resetDisplayedMonth*/ ctx[1].apply(this, arguments);
-					}),
-					listen(div0, "click", function () {
+					listen(span0, "click", /*click_handler*/ ctx[15]),
+					listen(span1, "click", /*click_handler_1*/ ctx[16]),
+					listen(div1, "click", function () {
 						if (is_function(/*resetDisplayedMonth*/ ctx[1])) /*resetDisplayedMonth*/ ctx[1].apply(this, arguments);
 					})
 				];
@@ -2642,6 +3380,20 @@ function create_fragment$2(ctx) {
 			ctx = new_ctx;
 			if ((!current || dirty & /*displayedMonth*/ 1) && t0_value !== (t0_value = /*displayedMonth*/ ctx[0].format("MMM") + "")) set_data(t0, t0_value);
 			if ((!current || dirty & /*displayedMonth*/ 1) && t2_value !== (t2_value = /*displayedMonth*/ ctx[0].format("YYYY") + "")) set_data(t2, t2_value);
+
+			if (/*quarterVisible*/ ctx[4]) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block$1(ctx);
+					if_block.c();
+					if_block.m(div0, null);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+
 			const arrow0_changes = {};
 			if (dirty & /*decrementDisplayedMonth*/ 8) arrow0_changes.onClick = /*decrementDisplayedMonth*/ ctx[3];
 			arrow0.$set(arrow0_changes);
@@ -2661,7 +3413,8 @@ function create_fragment$2(ctx) {
 			current = false;
 		},
 		d(detaching) {
-			if (detaching) detach(div2);
+			if (detaching) detach(div3);
+			if (if_block) if_block.d();
 			destroy_component(arrow0);
 			destroy_component(arrow1);
 			mounted = false;
@@ -2670,13 +3423,24 @@ function create_fragment$2(ctx) {
 	};
 }
 
+function getCurrentQuarter(month) {
+	return Math.floor(month / 3) + 1;
+}
+
 function instance$2($$self, $$props, $$invalidate) {
+	let currentQuarter;
 	
 	let { displayedMonth } = $$props;
 	let { today } = $$props;
 	let { resetDisplayedMonth } = $$props;
 	let { incrementDisplayedMonth } = $$props;
 	let { decrementDisplayedMonth } = $$props;
+	let { quarterVisible } = $$props;
+	let { onClickDay } = $$props;
+	let { onClickWeek } = $$props;
+	let { onClickMonth } = $$props;
+	let { onClickYear } = $$props;
+	let { onClickQuarter } = $$props;
 
 	// Get the word 'Today' but localized to the current language
 	const todayDisplayStr = today.calendar().split(/\d|\s/)[0];
@@ -2684,12 +3448,40 @@ function instance$2($$self, $$props, $$invalidate) {
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	let isMobile = window.app.isMobile;
 
+	// Function to get the start of a quarter
+	function getStartOfQuarter(year, quarter) {
+		const startMonth = (quarter - 1) * 3; // Calculate the starting month of the quarter
+		return displayedMonth.clone().year(year).month(startMonth).startOf("month");
+	}
+
+	const click_handler = event => {
+		onClickMonth(displayedMonth, event.metaKey);
+	};
+
+	const click_handler_1 = event => {
+		onClickYear(displayedMonth, event.metaKey);
+	};
+
+	const click_handler_2 = (quarter, event) => onClickQuarter(getStartOfQuarter(displayedMonth.year(), quarter), event.metaKey);
+
 	$$self.$$set = $$props => {
 		if ("displayedMonth" in $$props) $$invalidate(0, displayedMonth = $$props.displayedMonth);
-		if ("today" in $$props) $$invalidate(6, today = $$props.today);
+		if ("today" in $$props) $$invalidate(12, today = $$props.today);
 		if ("resetDisplayedMonth" in $$props) $$invalidate(1, resetDisplayedMonth = $$props.resetDisplayedMonth);
 		if ("incrementDisplayedMonth" in $$props) $$invalidate(2, incrementDisplayedMonth = $$props.incrementDisplayedMonth);
 		if ("decrementDisplayedMonth" in $$props) $$invalidate(3, decrementDisplayedMonth = $$props.decrementDisplayedMonth);
+		if ("quarterVisible" in $$props) $$invalidate(4, quarterVisible = $$props.quarterVisible);
+		if ("onClickDay" in $$props) $$invalidate(13, onClickDay = $$props.onClickDay);
+		if ("onClickWeek" in $$props) $$invalidate(14, onClickWeek = $$props.onClickWeek);
+		if ("onClickMonth" in $$props) $$invalidate(5, onClickMonth = $$props.onClickMonth);
+		if ("onClickYear" in $$props) $$invalidate(6, onClickYear = $$props.onClickYear);
+		if ("onClickQuarter" in $$props) $$invalidate(7, onClickQuarter = $$props.onClickQuarter);
+	};
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*displayedMonth*/ 1) {
+			$$invalidate(8, currentQuarter = getCurrentQuarter(displayedMonth.month()));
+		}
 	};
 
 	return [
@@ -2697,47 +3489,64 @@ function instance$2($$self, $$props, $$invalidate) {
 		resetDisplayedMonth,
 		incrementDisplayedMonth,
 		decrementDisplayedMonth,
+		quarterVisible,
+		onClickMonth,
+		onClickYear,
+		onClickQuarter,
+		currentQuarter,
 		todayDisplayStr,
 		isMobile,
-		today
+		getStartOfQuarter,
+		today,
+		onClickDay,
+		onClickWeek,
+		click_handler,
+		click_handler_1,
+		click_handler_2
 	];
 }
 
 class Nav extends SvelteComponent {
 	constructor(options) {
 		super();
-		if (!document.getElementById("svelte-1vwr9dd-style")) add_css$2();
+		if (!document.getElementById("svelte-r96tv9-style")) add_css$2();
 
 		init(this, options, instance$2, create_fragment$2, safe_not_equal, {
 			displayedMonth: 0,
-			today: 6,
+			today: 12,
 			resetDisplayedMonth: 1,
 			incrementDisplayedMonth: 2,
-			decrementDisplayedMonth: 3
+			decrementDisplayedMonth: 3,
+			quarterVisible: 4,
+			onClickDay: 13,
+			onClickWeek: 14,
+			onClickMonth: 5,
+			onClickYear: 6,
+			onClickQuarter: 7
 		});
 	}
 }
 
-/* src/components/WeekNum.svelte generated by Svelte v3.35.0 */
+/* src\components\WeekNum.svelte generated by Svelte v3.35.0 */
 
 function add_css$1() {
 	var style = element("style");
-	style.id = "svelte-egt0yd-style";
-	style.textContent = "td.svelte-egt0yd{border-right:1px solid var(--background-modifier-border)}.week-num.svelte-egt0yd{background-color:var(--color-background-weeknum);border-radius:4px;color:var(--color-text-weeknum);cursor:pointer;font-size:0.65em;height:100%;padding:4px;text-align:center;transition:background-color 0.1s ease-in, color 0.1s ease-in;vertical-align:baseline}.week-num.svelte-egt0yd:hover{background-color:var(--interactive-hover)}.week-num.active.svelte-egt0yd:hover{background-color:var(--interactive-accent-hover)}.active.svelte-egt0yd{color:var(--text-on-accent);background-color:var(--interactive-accent)}.dot-container.svelte-egt0yd{display:flex;flex-wrap:wrap;justify-content:center;line-height:6px;min-height:6px}";
+	style.id = "svelte-1cyczq7-style";
+	style.textContent = "td.grid-right.svelte-1cyczq7{border-right:1px solid var(--background-modifier-border)}td.grid-left.svelte-1cyczq7{border-left:1px solid var(--background-modifier-border)}.week-num.svelte-1cyczq7{background-color:var(--color-background-weeknum);border-radius:4px;color:var(--color-text-weeknum);cursor:pointer;font-size:0.65em;height:100%;padding:4px;text-align:center;transition:background-color 0.1s ease-in,\n      color 0.1s ease-in;vertical-align:baseline}.week-num.svelte-1cyczq7:hover{background-color:var(--interactive-hover)}";
 	append(document.head, style);
 }
 
 function get_each_context$1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[11] = list[i];
+	child_ctx[12] = list[i];
 	return child_ctx;
 }
 
-// (35:8) {#each metadata.dots as dot}
+// (36:8) {#each metadata.dots as dot}
 function create_each_block$1(ctx) {
 	let dot;
 	let current;
-	const dot_spread_levels = [/*dot*/ ctx[11]];
+	const dot_spread_levels = [/*dot*/ ctx[12]];
 	let dot_props = {};
 
 	for (let i = 0; i < dot_spread_levels.length; i += 1) {
@@ -2755,8 +3564,8 @@ function create_each_block$1(ctx) {
 			current = true;
 		},
 		p(ctx, dirty) {
-			const dot_changes = (dirty & /*metadata*/ 64)
-			? get_spread_update(dot_spread_levels, [get_spread_object(/*dot*/ ctx[11])])
+			const dot_changes = (dirty & /*metadata*/ 128)
+			? get_spread_update(dot_spread_levels, [get_spread_object(/*dot*/ ctx[12])])
 			: {};
 
 			dot.$set(dot_changes);
@@ -2776,7 +3585,7 @@ function create_each_block$1(ctx) {
 	};
 }
 
-// (24:2) <MetadataResolver metadata="{metadata}" let:metadata>
+// (25:2) <MetadataResolver {metadata} let:metadata>
 function create_default_slot(ctx) {
 	let div1;
 	let t0;
@@ -2786,7 +3595,7 @@ function create_default_slot(ctx) {
 	let current;
 	let mounted;
 	let dispose;
-	let each_value = /*metadata*/ ctx[6].dots;
+	let each_value = /*metadata*/ ctx[7].dots;
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
@@ -2808,9 +3617,9 @@ function create_default_slot(ctx) {
 				each_blocks[i].c();
 			}
 
-			attr(div0, "class", "dot-container svelte-egt0yd");
-			attr(div1, "class", div1_class_value = "" + (null_to_empty(`week-num ${/*metadata*/ ctx[6].classes.join(" ")}`) + " svelte-egt0yd"));
-			toggle_class(div1, "active", /*selectedId*/ ctx[5] === getDateUID_1(/*days*/ ctx[1][0], "week"));
+			attr(div0, "class", "dot-container");
+			attr(div1, "class", div1_class_value = "" + (null_to_empty(`week-num ${/*metadata*/ ctx[7].classes.join(" ")}`) + " svelte-1cyczq7"));
+			toggle_class(div1, "active", /*selectedId*/ ctx[6] === getDateUID_1(/*days*/ ctx[1][0], "week"));
 		},
 		m(target, anchor) {
 			insert(target, div1, anchor);
@@ -2827,13 +3636,13 @@ function create_default_slot(ctx) {
 			if (!mounted) {
 				dispose = [
 					listen(div1, "click", function () {
-						if (is_function(/*onClick*/ ctx[3] && /*click_handler*/ ctx[8])) (/*onClick*/ ctx[3] && /*click_handler*/ ctx[8]).apply(this, arguments);
+						if (is_function(/*onClick*/ ctx[4] && /*click_handler*/ ctx[9])) (/*onClick*/ ctx[4] && /*click_handler*/ ctx[9]).apply(this, arguments);
 					}),
 					listen(div1, "contextmenu", function () {
-						if (is_function(/*onContextMenu*/ ctx[4] && /*contextmenu_handler*/ ctx[9])) (/*onContextMenu*/ ctx[4] && /*contextmenu_handler*/ ctx[9]).apply(this, arguments);
+						if (is_function(/*onContextMenu*/ ctx[5] && /*contextmenu_handler*/ ctx[10])) (/*onContextMenu*/ ctx[5] && /*contextmenu_handler*/ ctx[10]).apply(this, arguments);
 					}),
 					listen(div1, "pointerover", function () {
-						if (is_function(/*onHover*/ ctx[2] && /*pointerover_handler*/ ctx[10])) (/*onHover*/ ctx[2] && /*pointerover_handler*/ ctx[10]).apply(this, arguments);
+						if (is_function(/*onHover*/ ctx[3] && /*pointerover_handler*/ ctx[11])) (/*onHover*/ ctx[3] && /*pointerover_handler*/ ctx[11]).apply(this, arguments);
 					})
 				];
 
@@ -2844,8 +3653,8 @@ function create_default_slot(ctx) {
 			ctx = new_ctx;
 			if (!current || dirty & /*weekNum*/ 1) set_data(t0, /*weekNum*/ ctx[0]);
 
-			if (dirty & /*metadata*/ 64) {
-				each_value = /*metadata*/ ctx[6].dots;
+			if (dirty & /*metadata*/ 128) {
+				each_value = /*metadata*/ ctx[7].dots;
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
@@ -2871,12 +3680,12 @@ function create_default_slot(ctx) {
 				check_outros();
 			}
 
-			if (!current || dirty & /*metadata*/ 64 && div1_class_value !== (div1_class_value = "" + (null_to_empty(`week-num ${/*metadata*/ ctx[6].classes.join(" ")}`) + " svelte-egt0yd"))) {
+			if (!current || dirty & /*metadata*/ 128 && div1_class_value !== (div1_class_value = "" + (null_to_empty(`week-num ${/*metadata*/ ctx[7].classes.join(" ")}`) + " svelte-1cyczq7"))) {
 				attr(div1, "class", div1_class_value);
 			}
 
-			if (dirty & /*metadata, selectedId, getDateUID, days*/ 98) {
-				toggle_class(div1, "active", /*selectedId*/ ctx[5] === getDateUID_1(/*days*/ ctx[1][0], "week"));
+			if (dirty & /*metadata, selectedId, getDateUID, days*/ 194) {
+				toggle_class(div1, "active", /*selectedId*/ ctx[6] === getDateUID_1(/*days*/ ctx[1][0], "week"));
 			}
 		},
 		i(local) {
@@ -2909,16 +3718,17 @@ function create_default_slot(ctx) {
 function create_fragment$1(ctx) {
 	let td;
 	let metadataresolver;
+	let td_class_value;
 	let current;
 
 	metadataresolver = new MetadataResolver({
 			props: {
-				metadata: /*metadata*/ ctx[6],
+				metadata: /*metadata*/ ctx[7],
 				$$slots: {
 					default: [
 						create_default_slot,
-						({ metadata }) => ({ 6: metadata }),
-						({ metadata }) => metadata ? 64 : 0
+						({ metadata }) => ({ 7: metadata }),
+						({ metadata }) => metadata ? 128 : 0
 					]
 				},
 				$$scope: { ctx }
@@ -2929,7 +3739,7 @@ function create_fragment$1(ctx) {
 		c() {
 			td = element("td");
 			create_component(metadataresolver.$$.fragment);
-			attr(td, "class", "svelte-egt0yd");
+			attr(td, "class", td_class_value = "" + (null_to_empty(/*gridRight*/ ctx[2] ? "grid-right" : "grid-left") + " svelte-1cyczq7"));
 		},
 		m(target, anchor) {
 			insert(target, td, anchor);
@@ -2938,13 +3748,17 @@ function create_fragment$1(ctx) {
 		},
 		p(ctx, [dirty]) {
 			const metadataresolver_changes = {};
-			if (dirty & /*metadata*/ 64) metadataresolver_changes.metadata = /*metadata*/ ctx[6];
+			if (dirty & /*metadata*/ 128) metadataresolver_changes.metadata = /*metadata*/ ctx[7];
 
-			if (dirty & /*$$scope, metadata, selectedId, days, onClick, startOfWeek, onContextMenu, onHover, weekNum*/ 16639) {
+			if (dirty & /*$$scope, metadata, selectedId, days, onClick, startOfWeek, onContextMenu, onHover, weekNum*/ 33275) {
 				metadataresolver_changes.$$scope = { dirty, ctx };
 			}
 
 			metadataresolver.$set(metadataresolver_changes);
+
+			if (!current || dirty & /*gridRight*/ 4 && td_class_value !== (td_class_value = "" + (null_to_empty(/*gridRight*/ ctx[2] ? "grid-right" : "grid-left") + " svelte-1cyczq7"))) {
+				attr(td, "class", td_class_value);
+			}
 		},
 		i(local) {
 			if (current) return;
@@ -2968,6 +3782,7 @@ function instance$1($$self, $$props, $$invalidate) {
 	let { weekNum } = $$props;
 	let { days } = $$props;
 	let { metadata } = $$props;
+	let { gridRight } = $$props;
 	let { onHover } = $$props;
 	let { onClick } = $$props;
 	let { onContextMenu } = $$props;
@@ -2980,22 +3795,24 @@ function instance$1($$self, $$props, $$invalidate) {
 	$$self.$$set = $$props => {
 		if ("weekNum" in $$props) $$invalidate(0, weekNum = $$props.weekNum);
 		if ("days" in $$props) $$invalidate(1, days = $$props.days);
-		if ("metadata" in $$props) $$invalidate(6, metadata = $$props.metadata);
-		if ("onHover" in $$props) $$invalidate(2, onHover = $$props.onHover);
-		if ("onClick" in $$props) $$invalidate(3, onClick = $$props.onClick);
-		if ("onContextMenu" in $$props) $$invalidate(4, onContextMenu = $$props.onContextMenu);
-		if ("selectedId" in $$props) $$invalidate(5, selectedId = $$props.selectedId);
+		if ("metadata" in $$props) $$invalidate(7, metadata = $$props.metadata);
+		if ("gridRight" in $$props) $$invalidate(2, gridRight = $$props.gridRight);
+		if ("onHover" in $$props) $$invalidate(3, onHover = $$props.onHover);
+		if ("onClick" in $$props) $$invalidate(4, onClick = $$props.onClick);
+		if ("onContextMenu" in $$props) $$invalidate(5, onContextMenu = $$props.onContextMenu);
+		if ("selectedId" in $$props) $$invalidate(6, selectedId = $$props.selectedId);
 	};
 
 	$$self.$$.update = () => {
 		if ($$self.$$.dirty & /*days*/ 2) {
-			$$invalidate(7, startOfWeek = getStartOfWeek(days));
+			$$invalidate(8, startOfWeek = getStartOfWeek(days));
 		}
 	};
 
 	return [
 		weekNum,
 		days,
+		gridRight,
 		onHover,
 		onClick,
 		onContextMenu,
@@ -3011,16 +3828,17 @@ function instance$1($$self, $$props, $$invalidate) {
 class WeekNum extends SvelteComponent {
 	constructor(options) {
 		super();
-		if (!document.getElementById("svelte-egt0yd-style")) add_css$1();
+		if (!document.getElementById("svelte-1cyczq7-style")) add_css$1();
 
 		init(this, options, instance$1, create_fragment$1, not_equal, {
 			weekNum: 0,
 			days: 1,
-			metadata: 6,
-			onHover: 2,
-			onClick: 3,
-			onContextMenu: 4,
-			selectedId: 5
+			metadata: 7,
+			gridRight: 2,
+			onHover: 3,
+			onClick: 4,
+			onContextMenu: 5,
+			selectedId: 6
 		});
 	}
 }
@@ -3045,7 +3863,7 @@ function getWeeklyMetadata(sources, date, ..._args) {
     return metadataReducer(sources.map((source) => source.getWeeklyMetadata(date)));
 }
 
-/* src/components/Calendar.svelte generated by Svelte v3.35.0 */
+/* src\components\Calendar.svelte generated by Svelte v3.35.0 */
 
 function add_css() {
 	var style = element("style");
@@ -3056,30 +3874,30 @@ function add_css() {
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[18] = list[i];
+	child_ctx[23] = list[i];
 	return child_ctx;
 }
 
 function get_each_context_1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[21] = list[i];
+	child_ctx[26] = list[i];
 	return child_ctx;
 }
 
 function get_each_context_2(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
+	child_ctx[29] = list[i];
 	return child_ctx;
 }
 
 function get_each_context_3(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[27] = list[i];
+	child_ctx[32] = list[i];
 	return child_ctx;
 }
 
-// (55:6) {#if showWeekNums}
-function create_if_block_2(ctx) {
+// (64:6) {#if showWeekNums && !showWeekNumsRight}
+function create_if_block_4(ctx) {
 	let col;
 
 	return {
@@ -3095,7 +3913,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (58:6) {#each month[1].days as date}
+// (67:6) {#each month[1].days as date}
 function create_each_block_3(ctx) {
 	let col;
 
@@ -3103,14 +3921,14 @@ function create_each_block_3(ctx) {
 		c() {
 			col = element("col");
 			attr(col, "class", "svelte-pcimu8");
-			toggle_class(col, "weekend", isWeekend(/*date*/ ctx[27]));
+			toggle_class(col, "weekend", isWeekend(/*date*/ ctx[32]));
 		},
 		m(target, anchor) {
 			insert(target, col, anchor);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*isWeekend, month*/ 16384) {
-				toggle_class(col, "weekend", isWeekend(/*date*/ ctx[27]));
+			if (dirty[0] & /*month*/ 524288) {
+				toggle_class(col, "weekend", isWeekend(/*date*/ ctx[32]));
 			}
 		},
 		d(detaching) {
@@ -3119,8 +3937,8 @@ function create_each_block_3(ctx) {
 	};
 }
 
-// (64:8) {#if showWeekNums}
-function create_if_block_1(ctx) {
+// (73:8) {#if showWeekNums && !showWeekNumsRight}
+function create_if_block_3(ctx) {
 	let th;
 
 	return {
@@ -3138,10 +3956,10 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (67:8) {#each daysOfWeek as dayOfWeek}
+// (76:8) {#each daysOfWeek as dayOfWeek}
 function create_each_block_2(ctx) {
 	let th;
-	let t_value = /*dayOfWeek*/ ctx[24] + "";
+	let t_value = /*dayOfWeek*/ ctx[29] + "";
 	let t;
 
 	return {
@@ -3155,7 +3973,7 @@ function create_each_block_2(ctx) {
 			append(th, t);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*daysOfWeek*/ 32768 && t_value !== (t_value = /*dayOfWeek*/ ctx[24] + "")) set_data(t, t_value);
+			if (dirty[0] & /*daysOfWeek*/ 1048576 && t_value !== (t_value = /*dayOfWeek*/ ctx[29] + "")) set_data(t, t_value);
 		},
 		d(detaching) {
 			if (detaching) detach(th);
@@ -3163,22 +3981,42 @@ function create_each_block_2(ctx) {
 	};
 }
 
-// (75:10) {#if showWeekNums}
-function create_if_block(ctx) {
+// (79:8) {#if showWeekNums && showWeekNumsRight}
+function create_if_block_2(ctx) {
+	let th;
+
+	return {
+		c() {
+			th = element("th");
+			th.textContent = "W";
+			attr(th, "class", "svelte-pcimu8");
+		},
+		m(target, anchor) {
+			insert(target, th, anchor);
+		},
+		d(detaching) {
+			if (detaching) detach(th);
+		}
+	};
+}
+
+// (87:10) {#if showWeekNums && !showWeekNumsRight}
+function create_if_block_1(ctx) {
 	let weeknum;
 	let current;
 
 	const weeknum_spread_levels = [
-		/*week*/ ctx[18],
+		/*week*/ ctx[23],
 		{
-			metadata: getWeeklyMetadata(/*sources*/ ctx[8], /*week*/ ctx[18].days[0], /*today*/ ctx[10])
+			metadata: getWeeklyMetadata(/*sources*/ ctx[13], /*week*/ ctx[23].days[0], /*today*/ ctx[15])
 		},
-		{ onClick: /*onClickWeek*/ ctx[7] },
+		{ onClick: /*onClickWeek*/ ctx[9] },
 		{
-			onContextMenu: /*onContextMenuWeek*/ ctx[5]
+			onContextMenu: /*onContextMenuWeek*/ ctx[6]
 		},
-		{ onHover: /*onHoverWeek*/ ctx[3] },
-		{ selectedId: /*selectedId*/ ctx[9] }
+		{ onHover: /*onHoverWeek*/ ctx[4] },
+		{ selectedId: /*selectedId*/ ctx[14] },
+		{ gridRight: !/*showWeekNumsRight*/ ctx[2] }
 	];
 
 	let weeknum_props = {};
@@ -3198,18 +4036,19 @@ function create_if_block(ctx) {
 			current = true;
 		},
 		p(ctx, dirty) {
-			const weeknum_changes = (dirty & /*month, getWeeklyMetadata, sources, today, onClickWeek, onContextMenuWeek, onHoverWeek, selectedId*/ 18344)
+			const weeknum_changes = (dirty[0] & /*month, sources, today, onClickWeek, onContextMenuWeek, onHoverWeek, selectedId, showWeekNumsRight*/ 582228)
 			? get_spread_update(weeknum_spread_levels, [
-					dirty & /*month*/ 16384 && get_spread_object(/*week*/ ctx[18]),
-					dirty & /*getWeeklyMetadata, sources, month, today*/ 17664 && {
-						metadata: getWeeklyMetadata(/*sources*/ ctx[8], /*week*/ ctx[18].days[0], /*today*/ ctx[10])
+					dirty[0] & /*month*/ 524288 && get_spread_object(/*week*/ ctx[23]),
+					dirty[0] & /*sources, month, today*/ 565248 && {
+						metadata: getWeeklyMetadata(/*sources*/ ctx[13], /*week*/ ctx[23].days[0], /*today*/ ctx[15])
 					},
-					dirty & /*onClickWeek*/ 128 && { onClick: /*onClickWeek*/ ctx[7] },
-					dirty & /*onContextMenuWeek*/ 32 && {
-						onContextMenu: /*onContextMenuWeek*/ ctx[5]
+					dirty[0] & /*onClickWeek*/ 512 && { onClick: /*onClickWeek*/ ctx[9] },
+					dirty[0] & /*onContextMenuWeek*/ 64 && {
+						onContextMenu: /*onContextMenuWeek*/ ctx[6]
 					},
-					dirty & /*onHoverWeek*/ 8 && { onHover: /*onHoverWeek*/ ctx[3] },
-					dirty & /*selectedId*/ 512 && { selectedId: /*selectedId*/ ctx[9] }
+					dirty[0] & /*onHoverWeek*/ 16 && { onHover: /*onHoverWeek*/ ctx[4] },
+					dirty[0] & /*selectedId*/ 16384 && { selectedId: /*selectedId*/ ctx[14] },
+					dirty[0] & /*showWeekNumsRight*/ 4 && { gridRight: !/*showWeekNumsRight*/ ctx[2] }
 				])
 			: {};
 
@@ -3230,7 +4069,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (85:10) {#each week.days as day (day.format())}
+// (98:10) {#each week.days as day (day.format())}
 function create_each_block_1(key_1, ctx) {
 	let first;
 	let day;
@@ -3238,14 +4077,14 @@ function create_each_block_1(key_1, ctx) {
 
 	day = new Day({
 			props: {
-				date: /*day*/ ctx[21],
-				today: /*today*/ ctx[10],
+				date: /*day*/ ctx[26],
+				today: /*today*/ ctx[15],
 				displayedMonth: /*displayedMonth*/ ctx[0],
-				onClick: /*onClickDay*/ ctx[6],
-				onContextMenu: /*onContextMenuDay*/ ctx[4],
-				onHover: /*onHoverDay*/ ctx[2],
-				metadata: getDailyMetadata(/*sources*/ ctx[8], /*day*/ ctx[21], /*today*/ ctx[10]),
-				selectedId: /*selectedId*/ ctx[9]
+				onClick: /*onClickDay*/ ctx[8],
+				onContextMenu: /*onContextMenuDay*/ ctx[5],
+				onHover: /*onHoverDay*/ ctx[3],
+				metadata: getDailyMetadata(/*sources*/ ctx[13], /*day*/ ctx[26], /*today*/ ctx[15]),
+				selectedId: /*selectedId*/ ctx[14]
 			}
 		});
 
@@ -3265,14 +4104,14 @@ function create_each_block_1(key_1, ctx) {
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
 			const day_changes = {};
-			if (dirty & /*month*/ 16384) day_changes.date = /*day*/ ctx[21];
-			if (dirty & /*today*/ 1024) day_changes.today = /*today*/ ctx[10];
-			if (dirty & /*displayedMonth*/ 1) day_changes.displayedMonth = /*displayedMonth*/ ctx[0];
-			if (dirty & /*onClickDay*/ 64) day_changes.onClick = /*onClickDay*/ ctx[6];
-			if (dirty & /*onContextMenuDay*/ 16) day_changes.onContextMenu = /*onContextMenuDay*/ ctx[4];
-			if (dirty & /*onHoverDay*/ 4) day_changes.onHover = /*onHoverDay*/ ctx[2];
-			if (dirty & /*sources, month, today*/ 17664) day_changes.metadata = getDailyMetadata(/*sources*/ ctx[8], /*day*/ ctx[21], /*today*/ ctx[10]);
-			if (dirty & /*selectedId*/ 512) day_changes.selectedId = /*selectedId*/ ctx[9];
+			if (dirty[0] & /*month*/ 524288) day_changes.date = /*day*/ ctx[26];
+			if (dirty[0] & /*today*/ 32768) day_changes.today = /*today*/ ctx[15];
+			if (dirty[0] & /*displayedMonth*/ 1) day_changes.displayedMonth = /*displayedMonth*/ ctx[0];
+			if (dirty[0] & /*onClickDay*/ 256) day_changes.onClick = /*onClickDay*/ ctx[8];
+			if (dirty[0] & /*onContextMenuDay*/ 32) day_changes.onContextMenu = /*onContextMenuDay*/ ctx[5];
+			if (dirty[0] & /*onHoverDay*/ 8) day_changes.onHover = /*onHoverDay*/ ctx[3];
+			if (dirty[0] & /*sources, month, today*/ 565248) day_changes.metadata = getDailyMetadata(/*sources*/ ctx[13], /*day*/ ctx[26], /*today*/ ctx[15]);
+			if (dirty[0] & /*selectedId*/ 16384) day_changes.selectedId = /*selectedId*/ ctx[14];
 			day.$set(day_changes);
 		},
 		i(local) {
@@ -3291,17 +4130,87 @@ function create_each_block_1(key_1, ctx) {
 	};
 }
 
-// (73:6) {#each month as week (week.weekNum)}
+// (110:10) {#if showWeekNums && showWeekNumsRight}
+function create_if_block(ctx) {
+	let weeknum;
+	let current;
+
+	const weeknum_spread_levels = [
+		/*week*/ ctx[23],
+		{
+			metadata: getWeeklyMetadata(/*sources*/ ctx[13], /*week*/ ctx[23].days[0], /*today*/ ctx[15])
+		},
+		{ onClick: /*onClickWeek*/ ctx[9] },
+		{
+			onContextMenu: /*onContextMenuWeek*/ ctx[6]
+		},
+		{ onHover: /*onHoverWeek*/ ctx[4] },
+		{ selectedId: /*selectedId*/ ctx[14] },
+		{ gridRight: !/*showWeekNumsRight*/ ctx[2] }
+	];
+
+	let weeknum_props = {};
+
+	for (let i = 0; i < weeknum_spread_levels.length; i += 1) {
+		weeknum_props = assign(weeknum_props, weeknum_spread_levels[i]);
+	}
+
+	weeknum = new WeekNum({ props: weeknum_props });
+
+	return {
+		c() {
+			create_component(weeknum.$$.fragment);
+		},
+		m(target, anchor) {
+			mount_component(weeknum, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const weeknum_changes = (dirty[0] & /*month, sources, today, onClickWeek, onContextMenuWeek, onHoverWeek, selectedId, showWeekNumsRight*/ 582228)
+			? get_spread_update(weeknum_spread_levels, [
+					dirty[0] & /*month*/ 524288 && get_spread_object(/*week*/ ctx[23]),
+					dirty[0] & /*sources, month, today*/ 565248 && {
+						metadata: getWeeklyMetadata(/*sources*/ ctx[13], /*week*/ ctx[23].days[0], /*today*/ ctx[15])
+					},
+					dirty[0] & /*onClickWeek*/ 512 && { onClick: /*onClickWeek*/ ctx[9] },
+					dirty[0] & /*onContextMenuWeek*/ 64 && {
+						onContextMenu: /*onContextMenuWeek*/ ctx[6]
+					},
+					dirty[0] & /*onHoverWeek*/ 16 && { onHover: /*onHoverWeek*/ ctx[4] },
+					dirty[0] & /*selectedId*/ 16384 && { selectedId: /*selectedId*/ ctx[14] },
+					dirty[0] & /*showWeekNumsRight*/ 4 && { gridRight: !/*showWeekNumsRight*/ ctx[2] }
+				])
+			: {};
+
+			weeknum.$set(weeknum_changes);
+		},
+		i(local) {
+			if (current) return;
+			transition_in(weeknum.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			transition_out(weeknum.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			destroy_component(weeknum, detaching);
+		}
+	};
+}
+
+// (85:6) {#each month as week (week.weekNum)}
 function create_each_block(key_1, ctx) {
 	let tr;
 	let t0;
 	let each_blocks = [];
 	let each_1_lookup = new Map();
 	let t1;
+	let t2;
 	let current;
-	let if_block = /*showWeekNums*/ ctx[1] && create_if_block(ctx);
-	let each_value_1 = /*week*/ ctx[18].days;
-	const get_key = ctx => /*day*/ ctx[21].format();
+	let if_block0 = /*showWeekNums*/ ctx[1] && !/*showWeekNumsRight*/ ctx[2] && create_if_block_1(ctx);
+	let each_value_1 = /*week*/ ctx[23].days;
+	const get_key = ctx => /*day*/ ctx[26].format();
 
 	for (let i = 0; i < each_value_1.length; i += 1) {
 		let child_ctx = get_each_context_1(ctx, each_value_1, i);
@@ -3309,12 +4218,14 @@ function create_each_block(key_1, ctx) {
 		each_1_lookup.set(key, each_blocks[i] = create_each_block_1(key, child_ctx));
 	}
 
+	let if_block1 = /*showWeekNums*/ ctx[1] && /*showWeekNumsRight*/ ctx[2] && create_if_block(ctx);
+
 	return {
 		key: key_1,
 		first: null,
 		c() {
 			tr = element("tr");
-			if (if_block) if_block.c();
+			if (if_block0) if_block0.c();
 			t0 = space();
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -3322,11 +4233,13 @@ function create_each_block(key_1, ctx) {
 			}
 
 			t1 = space();
+			if (if_block1) if_block1.c();
+			t2 = space();
 			this.first = tr;
 		},
 		m(target, anchor) {
 			insert(target, tr, anchor);
-			if (if_block) if_block.m(tr, null);
+			if (if_block0) if_block0.m(tr, null);
 			append(tr, t0);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -3334,67 +4247,96 @@ function create_each_block(key_1, ctx) {
 			}
 
 			append(tr, t1);
+			if (if_block1) if_block1.m(tr, null);
+			append(tr, t2);
 			current = true;
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
 
-			if (/*showWeekNums*/ ctx[1]) {
-				if (if_block) {
-					if_block.p(ctx, dirty);
+			if (/*showWeekNums*/ ctx[1] && !/*showWeekNumsRight*/ ctx[2]) {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
 
-					if (dirty & /*showWeekNums*/ 2) {
-						transition_in(if_block, 1);
+					if (dirty[0] & /*showWeekNums, showWeekNumsRight*/ 6) {
+						transition_in(if_block0, 1);
 					}
 				} else {
-					if_block = create_if_block(ctx);
-					if_block.c();
-					transition_in(if_block, 1);
-					if_block.m(tr, t0);
+					if_block0 = create_if_block_1(ctx);
+					if_block0.c();
+					transition_in(if_block0, 1);
+					if_block0.m(tr, t0);
 				}
-			} else if (if_block) {
+			} else if (if_block0) {
 				group_outros();
 
-				transition_out(if_block, 1, 1, () => {
-					if_block = null;
+				transition_out(if_block0, 1, 1, () => {
+					if_block0 = null;
 				});
 
 				check_outros();
 			}
 
-			if (dirty & /*month, today, displayedMonth, onClickDay, onContextMenuDay, onHoverDay, getDailyMetadata, sources, selectedId*/ 18261) {
-				each_value_1 = /*week*/ ctx[18].days;
+			if (dirty[0] & /*month, today, displayedMonth, onClickDay, onContextMenuDay, onHoverDay, sources, selectedId*/ 581929) {
+				each_value_1 = /*week*/ ctx[23].days;
 				group_outros();
 				each_blocks = update_keyed_each(each_blocks, dirty, get_key, 1, ctx, each_value_1, each_1_lookup, tr, outro_and_destroy_block, create_each_block_1, t1, get_each_context_1);
+				check_outros();
+			}
+
+			if (/*showWeekNums*/ ctx[1] && /*showWeekNumsRight*/ ctx[2]) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+
+					if (dirty[0] & /*showWeekNums, showWeekNumsRight*/ 6) {
+						transition_in(if_block1, 1);
+					}
+				} else {
+					if_block1 = create_if_block(ctx);
+					if_block1.c();
+					transition_in(if_block1, 1);
+					if_block1.m(tr, t2);
+				}
+			} else if (if_block1) {
+				group_outros();
+
+				transition_out(if_block1, 1, 1, () => {
+					if_block1 = null;
+				});
+
 				check_outros();
 			}
 		},
 		i(local) {
 			if (current) return;
-			transition_in(if_block);
+			transition_in(if_block0);
 
 			for (let i = 0; i < each_value_1.length; i += 1) {
 				transition_in(each_blocks[i]);
 			}
 
+			transition_in(if_block1);
 			current = true;
 		},
 		o(local) {
-			transition_out(if_block);
+			transition_out(if_block0);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
 				transition_out(each_blocks[i]);
 			}
 
+			transition_out(if_block1);
 			current = false;
 		},
 		d(detaching) {
 			if (detaching) detach(tr);
-			if (if_block) if_block.d();
+			if (if_block0) if_block0.d();
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
 				each_blocks[i].d();
 			}
+
+			if (if_block1) if_block1.d();
 		}
 	};
 }
@@ -3411,6 +4353,7 @@ function create_fragment$7(ctx) {
 	let tr;
 	let t3;
 	let t4;
+	let t5;
 	let tbody;
 	let each_blocks = [];
 	let each2_lookup = new Map();
@@ -3418,32 +4361,37 @@ function create_fragment$7(ctx) {
 
 	nav = new Nav({
 			props: {
-				today: /*today*/ ctx[10],
+				today: /*today*/ ctx[15],
 				displayedMonth: /*displayedMonth*/ ctx[0],
-				incrementDisplayedMonth: /*incrementDisplayedMonth*/ ctx[11],
-				decrementDisplayedMonth: /*decrementDisplayedMonth*/ ctx[12],
-				resetDisplayedMonth: /*resetDisplayedMonth*/ ctx[13]
+				incrementDisplayedMonth: /*incrementDisplayedMonth*/ ctx[16],
+				decrementDisplayedMonth: /*decrementDisplayedMonth*/ ctx[17],
+				quarterVisible: /*quarterVisible*/ ctx[7],
+				onClickMonth: /*onClickMonth*/ ctx[10],
+				onClickYear: /*onClickYear*/ ctx[11],
+				onClickQuarter: /*onClickQuarter*/ ctx[12],
+				resetDisplayedMonth: /*resetDisplayedMonth*/ ctx[18]
 			}
 		});
 
-	let if_block0 = /*showWeekNums*/ ctx[1] && create_if_block_2();
-	let each_value_3 = /*month*/ ctx[14][1].days;
+	let if_block0 = /*showWeekNums*/ ctx[1] && !/*showWeekNumsRight*/ ctx[2] && create_if_block_4();
+	let each_value_3 = /*month*/ ctx[19][1].days;
 	let each_blocks_2 = [];
 
 	for (let i = 0; i < each_value_3.length; i += 1) {
 		each_blocks_2[i] = create_each_block_3(get_each_context_3(ctx, each_value_3, i));
 	}
 
-	let if_block1 = /*showWeekNums*/ ctx[1] && create_if_block_1();
-	let each_value_2 = /*daysOfWeek*/ ctx[15];
+	let if_block1 = /*showWeekNums*/ ctx[1] && !/*showWeekNumsRight*/ ctx[2] && create_if_block_3();
+	let each_value_2 = /*daysOfWeek*/ ctx[20];
 	let each_blocks_1 = [];
 
 	for (let i = 0; i < each_value_2.length; i += 1) {
 		each_blocks_1[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
 	}
 
-	let each_value = /*month*/ ctx[14];
-	const get_key = ctx => /*week*/ ctx[18].weekNum;
+	let if_block2 = /*showWeekNums*/ ctx[1] && /*showWeekNumsRight*/ ctx[2] && create_if_block_2();
+	let each_value = /*month*/ ctx[19];
+	const get_key = ctx => /*week*/ ctx[23].weekNum;
 
 	for (let i = 0; i < each_value.length; i += 1) {
 		let child_ctx = get_each_context(ctx, each_value, i);
@@ -3476,6 +4424,8 @@ function create_fragment$7(ctx) {
 			}
 
 			t4 = space();
+			if (if_block2) if_block2.c();
+			t5 = space();
 			tbody = element("tbody");
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -3485,7 +4435,7 @@ function create_fragment$7(ctx) {
 			attr(table, "class", "calendar svelte-pcimu8");
 			attr(div, "id", "calendar-container");
 			attr(div, "class", "container svelte-pcimu8");
-			toggle_class(div, "is-mobile", /*isMobile*/ ctx[16]);
+			toggle_class(div, "is-mobile", /*isMobile*/ ctx[21]);
 		},
 		m(target, anchor) {
 			insert(target, div, anchor);
@@ -3510,7 +4460,9 @@ function create_fragment$7(ctx) {
 				each_blocks_1[i].m(tr, null);
 			}
 
-			append(table, t4);
+			append(tr, t4);
+			if (if_block2) if_block2.m(tr, null);
+			append(table, t5);
 			append(table, tbody);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -3519,15 +4471,19 @@ function create_fragment$7(ctx) {
 
 			current = true;
 		},
-		p(ctx, [dirty]) {
+		p(ctx, dirty) {
 			const nav_changes = {};
-			if (dirty & /*today*/ 1024) nav_changes.today = /*today*/ ctx[10];
-			if (dirty & /*displayedMonth*/ 1) nav_changes.displayedMonth = /*displayedMonth*/ ctx[0];
+			if (dirty[0] & /*today*/ 32768) nav_changes.today = /*today*/ ctx[15];
+			if (dirty[0] & /*displayedMonth*/ 1) nav_changes.displayedMonth = /*displayedMonth*/ ctx[0];
+			if (dirty[0] & /*quarterVisible*/ 128) nav_changes.quarterVisible = /*quarterVisible*/ ctx[7];
+			if (dirty[0] & /*onClickMonth*/ 1024) nav_changes.onClickMonth = /*onClickMonth*/ ctx[10];
+			if (dirty[0] & /*onClickYear*/ 2048) nav_changes.onClickYear = /*onClickYear*/ ctx[11];
+			if (dirty[0] & /*onClickQuarter*/ 4096) nav_changes.onClickQuarter = /*onClickQuarter*/ ctx[12];
 			nav.$set(nav_changes);
 
-			if (/*showWeekNums*/ ctx[1]) {
+			if (/*showWeekNums*/ ctx[1] && !/*showWeekNumsRight*/ ctx[2]) {
 				if (if_block0) ; else {
-					if_block0 = create_if_block_2();
+					if_block0 = create_if_block_4();
 					if_block0.c();
 					if_block0.m(colgroup, t1);
 				}
@@ -3536,8 +4492,8 @@ function create_fragment$7(ctx) {
 				if_block0 = null;
 			}
 
-			if (dirty & /*isWeekend, month*/ 16384) {
-				each_value_3 = /*month*/ ctx[14][1].days;
+			if (dirty[0] & /*month*/ 524288) {
+				each_value_3 = /*month*/ ctx[19][1].days;
 				let i;
 
 				for (i = 0; i < each_value_3.length; i += 1) {
@@ -3559,9 +4515,9 @@ function create_fragment$7(ctx) {
 				each_blocks_2.length = each_value_3.length;
 			}
 
-			if (/*showWeekNums*/ ctx[1]) {
+			if (/*showWeekNums*/ ctx[1] && !/*showWeekNumsRight*/ ctx[2]) {
 				if (if_block1) ; else {
-					if_block1 = create_if_block_1();
+					if_block1 = create_if_block_3();
 					if_block1.c();
 					if_block1.m(tr, t3);
 				}
@@ -3570,8 +4526,8 @@ function create_fragment$7(ctx) {
 				if_block1 = null;
 			}
 
-			if (dirty & /*daysOfWeek*/ 32768) {
-				each_value_2 = /*daysOfWeek*/ ctx[15];
+			if (dirty[0] & /*daysOfWeek*/ 1048576) {
+				each_value_2 = /*daysOfWeek*/ ctx[20];
 				let i;
 
 				for (i = 0; i < each_value_2.length; i += 1) {
@@ -3582,7 +4538,7 @@ function create_fragment$7(ctx) {
 					} else {
 						each_blocks_1[i] = create_each_block_2(child_ctx);
 						each_blocks_1[i].c();
-						each_blocks_1[i].m(tr, null);
+						each_blocks_1[i].m(tr, t4);
 					}
 				}
 
@@ -3593,8 +4549,19 @@ function create_fragment$7(ctx) {
 				each_blocks_1.length = each_value_2.length;
 			}
 
-			if (dirty & /*month, today, displayedMonth, onClickDay, onContextMenuDay, onHoverDay, getDailyMetadata, sources, selectedId, getWeeklyMetadata, onClickWeek, onContextMenuWeek, onHoverWeek, showWeekNums*/ 18431) {
-				each_value = /*month*/ ctx[14];
+			if (/*showWeekNums*/ ctx[1] && /*showWeekNumsRight*/ ctx[2]) {
+				if (if_block2) ; else {
+					if_block2 = create_if_block_2();
+					if_block2.c();
+					if_block2.m(tr, null);
+				}
+			} else if (if_block2) {
+				if_block2.d(1);
+				if_block2 = null;
+			}
+
+			if (dirty[0] & /*month, sources, today, onClickWeek, onContextMenuWeek, onHoverWeek, selectedId, showWeekNumsRight, showWeekNums, displayedMonth, onClickDay, onContextMenuDay, onHoverDay*/ 582527) {
+				each_value = /*month*/ ctx[19];
 				group_outros();
 				each_blocks = update_keyed_each(each_blocks, dirty, get_key, 1, ctx, each_value, each2_lookup, tbody, outro_and_destroy_block, create_each_block, null, get_each_context);
 				check_outros();
@@ -3626,6 +4593,7 @@ function create_fragment$7(ctx) {
 			destroy_each(each_blocks_2, detaching);
 			if (if_block1) if_block1.d();
 			destroy_each(each_blocks_1, detaching);
+			if (if_block2) if_block2.d();
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
 				each_blocks[i].d();
@@ -3639,12 +4607,17 @@ function instance$7($$self, $$props, $$invalidate) {
 	
 	let { localeData } = $$props;
 	let { showWeekNums = false } = $$props;
+	let { showWeekNumsRight = false } = $$props;
 	let { onHoverDay } = $$props;
 	let { onHoverWeek } = $$props;
 	let { onContextMenuDay } = $$props;
 	let { onContextMenuWeek } = $$props;
+	let { quarterVisible } = $$props;
 	let { onClickDay } = $$props;
 	let { onClickWeek } = $$props;
+	let { onClickMonth } = $$props;
+	let { onClickYear } = $$props;
+	let { onClickQuarter } = $$props;
 	let { sources = [] } = $$props;
 	let { selectedId } = $$props;
 	let { today = window.moment() } = $$props;
@@ -3668,39 +4641,49 @@ function instance$7($$self, $$props, $$invalidate) {
 	}
 
 	$$self.$$set = $$props => {
-		if ("localeData" in $$props) $$invalidate(17, localeData = $$props.localeData);
+		if ("localeData" in $$props) $$invalidate(22, localeData = $$props.localeData);
 		if ("showWeekNums" in $$props) $$invalidate(1, showWeekNums = $$props.showWeekNums);
-		if ("onHoverDay" in $$props) $$invalidate(2, onHoverDay = $$props.onHoverDay);
-		if ("onHoverWeek" in $$props) $$invalidate(3, onHoverWeek = $$props.onHoverWeek);
-		if ("onContextMenuDay" in $$props) $$invalidate(4, onContextMenuDay = $$props.onContextMenuDay);
-		if ("onContextMenuWeek" in $$props) $$invalidate(5, onContextMenuWeek = $$props.onContextMenuWeek);
-		if ("onClickDay" in $$props) $$invalidate(6, onClickDay = $$props.onClickDay);
-		if ("onClickWeek" in $$props) $$invalidate(7, onClickWeek = $$props.onClickWeek);
-		if ("sources" in $$props) $$invalidate(8, sources = $$props.sources);
-		if ("selectedId" in $$props) $$invalidate(9, selectedId = $$props.selectedId);
-		if ("today" in $$props) $$invalidate(10, today = $$props.today);
+		if ("showWeekNumsRight" in $$props) $$invalidate(2, showWeekNumsRight = $$props.showWeekNumsRight);
+		if ("onHoverDay" in $$props) $$invalidate(3, onHoverDay = $$props.onHoverDay);
+		if ("onHoverWeek" in $$props) $$invalidate(4, onHoverWeek = $$props.onHoverWeek);
+		if ("onContextMenuDay" in $$props) $$invalidate(5, onContextMenuDay = $$props.onContextMenuDay);
+		if ("onContextMenuWeek" in $$props) $$invalidate(6, onContextMenuWeek = $$props.onContextMenuWeek);
+		if ("quarterVisible" in $$props) $$invalidate(7, quarterVisible = $$props.quarterVisible);
+		if ("onClickDay" in $$props) $$invalidate(8, onClickDay = $$props.onClickDay);
+		if ("onClickWeek" in $$props) $$invalidate(9, onClickWeek = $$props.onClickWeek);
+		if ("onClickMonth" in $$props) $$invalidate(10, onClickMonth = $$props.onClickMonth);
+		if ("onClickYear" in $$props) $$invalidate(11, onClickYear = $$props.onClickYear);
+		if ("onClickQuarter" in $$props) $$invalidate(12, onClickQuarter = $$props.onClickQuarter);
+		if ("sources" in $$props) $$invalidate(13, sources = $$props.sources);
+		if ("selectedId" in $$props) $$invalidate(14, selectedId = $$props.selectedId);
+		if ("today" in $$props) $$invalidate(15, today = $$props.today);
 		if ("displayedMonth" in $$props) $$invalidate(0, displayedMonth = $$props.displayedMonth);
 	};
 
 	$$self.$$.update = () => {
-		if ($$self.$$.dirty & /*displayedMonth, localeData*/ 131073) {
-			$$invalidate(14, month = getMonth(displayedMonth, localeData));
+		if ($$self.$$.dirty[0] & /*displayedMonth, localeData*/ 4194305) {
+			$$invalidate(19, month = getMonth(displayedMonth, localeData));
 		}
 
-		if ($$self.$$.dirty & /*today, localeData*/ 132096) {
-			$$invalidate(15, daysOfWeek = getDaysOfWeek(today, localeData));
+		if ($$self.$$.dirty[0] & /*today, localeData*/ 4227072) {
+			$$invalidate(20, daysOfWeek = getDaysOfWeek(today, localeData));
 		}
 	};
 
 	return [
 		displayedMonth,
 		showWeekNums,
+		showWeekNumsRight,
 		onHoverDay,
 		onHoverWeek,
 		onContextMenuDay,
 		onContextMenuWeek,
+		quarterVisible,
 		onClickDay,
 		onClickWeek,
+		onClickMonth,
+		onClickYear,
+		onClickQuarter,
 		sources,
 		selectedId,
 		today,
@@ -3719,35 +4702,48 @@ class Calendar$1 extends SvelteComponent {
 		super();
 		if (!document.getElementById("svelte-pcimu8-style")) add_css();
 
-		init(this, options, instance$7, create_fragment$7, not_equal, {
-			localeData: 17,
-			showWeekNums: 1,
-			onHoverDay: 2,
-			onHoverWeek: 3,
-			onContextMenuDay: 4,
-			onContextMenuWeek: 5,
-			onClickDay: 6,
-			onClickWeek: 7,
-			sources: 8,
-			selectedId: 9,
-			today: 10,
-			displayedMonth: 0,
-			incrementDisplayedMonth: 11,
-			decrementDisplayedMonth: 12,
-			resetDisplayedMonth: 13
-		});
+		init(
+			this,
+			options,
+			instance$7,
+			create_fragment$7,
+			not_equal,
+			{
+				localeData: 22,
+				showWeekNums: 1,
+				showWeekNumsRight: 2,
+				onHoverDay: 3,
+				onHoverWeek: 4,
+				onContextMenuDay: 5,
+				onContextMenuWeek: 6,
+				quarterVisible: 7,
+				onClickDay: 8,
+				onClickWeek: 9,
+				onClickMonth: 10,
+				onClickYear: 11,
+				onClickQuarter: 12,
+				sources: 13,
+				selectedId: 14,
+				today: 15,
+				displayedMonth: 0,
+				incrementDisplayedMonth: 16,
+				decrementDisplayedMonth: 17,
+				resetDisplayedMonth: 18
+			},
+			[-1, -1]
+		);
 	}
 
 	get incrementDisplayedMonth() {
-		return this.$$.ctx[11];
+		return this.$$.ctx[16];
 	}
 
 	get decrementDisplayedMonth() {
-		return this.$$.ctx[12];
+		return this.$$.ctx[17];
 	}
 
 	get resetDisplayedMonth() {
-		return this.$$.ctx[13];
+		return this.$$.ctx[18];
 	}
 }
 
@@ -3838,21 +4834,26 @@ function create_fragment(ctx) {
 	let current;
 
 	function calendarbase_displayedMonth_binding(value) {
-		/*calendarbase_displayedMonth_binding*/ ctx[12](value);
+		/*calendarbase_displayedMonth_binding*/ ctx[15](value);
 	}
 
 	let calendarbase_props = {
 		sources: /*sources*/ ctx[1],
-		today: /*today*/ ctx[9],
+		today: /*today*/ ctx[12],
 		onHoverDay: /*onHoverDay*/ ctx[2],
 		onHoverWeek: /*onHoverWeek*/ ctx[3],
-		onContextMenuDay: /*onContextMenuDay*/ ctx[6],
-		onContextMenuWeek: /*onContextMenuWeek*/ ctx[7],
+		onContextMenuDay: /*onContextMenuDay*/ ctx[9],
+		onContextMenuWeek: /*onContextMenuWeek*/ ctx[10],
 		onClickDay: /*onClickDay*/ ctx[4],
 		onClickWeek: /*onClickWeek*/ ctx[5],
-		localeData: /*today*/ ctx[9].localeData(),
-		selectedId: /*$activeFile*/ ctx[10],
-		showWeekNums: /*$settings*/ ctx[8].showWeeklyNote
+		onClickMonth: /*onClickMonth*/ ctx[6],
+		onClickYear: /*onClickYear*/ ctx[7],
+		onClickQuarter: /*onClickQuarter*/ ctx[8],
+		localeData: /*today*/ ctx[12].localeData(),
+		selectedId: /*$activeFile*/ ctx[13],
+		showWeekNums: /*$settings*/ ctx[11].showWeeklyNote,
+		showWeekNumsRight: /*$settings*/ ctx[11].showWeeklyNoteRight,
+		quarterVisible: /*$settings*/ ctx[11].showQuarter
 	};
 
 	if (/*displayedMonth*/ ctx[0] !== void 0) {
@@ -3873,16 +4874,21 @@ function create_fragment(ctx) {
 		p(ctx, [dirty]) {
 			const calendarbase_changes = {};
 			if (dirty & /*sources*/ 2) calendarbase_changes.sources = /*sources*/ ctx[1];
-			if (dirty & /*today*/ 512) calendarbase_changes.today = /*today*/ ctx[9];
+			if (dirty & /*today*/ 4096) calendarbase_changes.today = /*today*/ ctx[12];
 			if (dirty & /*onHoverDay*/ 4) calendarbase_changes.onHoverDay = /*onHoverDay*/ ctx[2];
 			if (dirty & /*onHoverWeek*/ 8) calendarbase_changes.onHoverWeek = /*onHoverWeek*/ ctx[3];
-			if (dirty & /*onContextMenuDay*/ 64) calendarbase_changes.onContextMenuDay = /*onContextMenuDay*/ ctx[6];
-			if (dirty & /*onContextMenuWeek*/ 128) calendarbase_changes.onContextMenuWeek = /*onContextMenuWeek*/ ctx[7];
+			if (dirty & /*onContextMenuDay*/ 512) calendarbase_changes.onContextMenuDay = /*onContextMenuDay*/ ctx[9];
+			if (dirty & /*onContextMenuWeek*/ 1024) calendarbase_changes.onContextMenuWeek = /*onContextMenuWeek*/ ctx[10];
 			if (dirty & /*onClickDay*/ 16) calendarbase_changes.onClickDay = /*onClickDay*/ ctx[4];
 			if (dirty & /*onClickWeek*/ 32) calendarbase_changes.onClickWeek = /*onClickWeek*/ ctx[5];
-			if (dirty & /*today*/ 512) calendarbase_changes.localeData = /*today*/ ctx[9].localeData();
-			if (dirty & /*$activeFile*/ 1024) calendarbase_changes.selectedId = /*$activeFile*/ ctx[10];
-			if (dirty & /*$settings*/ 256) calendarbase_changes.showWeekNums = /*$settings*/ ctx[8].showWeeklyNote;
+			if (dirty & /*onClickMonth*/ 64) calendarbase_changes.onClickMonth = /*onClickMonth*/ ctx[6];
+			if (dirty & /*onClickYear*/ 128) calendarbase_changes.onClickYear = /*onClickYear*/ ctx[7];
+			if (dirty & /*onClickQuarter*/ 256) calendarbase_changes.onClickQuarter = /*onClickQuarter*/ ctx[8];
+			if (dirty & /*today*/ 4096) calendarbase_changes.localeData = /*today*/ ctx[12].localeData();
+			if (dirty & /*$activeFile*/ 8192) calendarbase_changes.selectedId = /*$activeFile*/ ctx[13];
+			if (dirty & /*$settings*/ 2048) calendarbase_changes.showWeekNums = /*$settings*/ ctx[11].showWeeklyNote;
+			if (dirty & /*$settings*/ 2048) calendarbase_changes.showWeekNumsRight = /*$settings*/ ctx[11].showWeeklyNoteRight;
+			if (dirty & /*$settings*/ 2048) calendarbase_changes.quarterVisible = /*$settings*/ ctx[11].showQuarter;
 
 			if (!updating_displayedMonth && dirty & /*displayedMonth*/ 1) {
 				updating_displayedMonth = true;
@@ -3910,8 +4916,8 @@ function create_fragment(ctx) {
 function instance($$self, $$props, $$invalidate) {
 	let $settings;
 	let $activeFile;
-	component_subscribe($$self, settings, $$value => $$invalidate(8, $settings = $$value));
-	component_subscribe($$self, activeFile, $$value => $$invalidate(10, $activeFile = $$value));
+	component_subscribe($$self, settings, $$value => $$invalidate(11, $settings = $$value));
+	component_subscribe($$self, activeFile, $$value => $$invalidate(13, $activeFile = $$value));
 	
 	
 	let today;
@@ -3921,17 +4927,23 @@ function instance($$self, $$props, $$invalidate) {
 	let { onHoverWeek } = $$props;
 	let { onClickDay } = $$props;
 	let { onClickWeek } = $$props;
+	let { onClickMonth } = $$props;
+	let { onClickYear } = $$props;
+	let { onClickQuarter } = $$props;
 	let { onContextMenuDay } = $$props;
 	let { onContextMenuWeek } = $$props;
 
 	function tick() {
-		$$invalidate(9, today = window.moment());
+		$$invalidate(12, today = window.moment());
 	}
 
 	function getToday(settings) {
 		configureGlobalMomentLocale(settings.localeOverride, settings.weekStart);
 		dailyNotes.reindex();
 		weeklyNotes.reindex();
+		monthlyNotes.reindex();
+		yearlyNotes.reindex();
+		quarterlyNotes.reindex();
 		return window.moment();
 	}
 
@@ -3966,13 +4978,16 @@ function instance($$self, $$props, $$invalidate) {
 		if ("onHoverWeek" in $$props) $$invalidate(3, onHoverWeek = $$props.onHoverWeek);
 		if ("onClickDay" in $$props) $$invalidate(4, onClickDay = $$props.onClickDay);
 		if ("onClickWeek" in $$props) $$invalidate(5, onClickWeek = $$props.onClickWeek);
-		if ("onContextMenuDay" in $$props) $$invalidate(6, onContextMenuDay = $$props.onContextMenuDay);
-		if ("onContextMenuWeek" in $$props) $$invalidate(7, onContextMenuWeek = $$props.onContextMenuWeek);
+		if ("onClickMonth" in $$props) $$invalidate(6, onClickMonth = $$props.onClickMonth);
+		if ("onClickYear" in $$props) $$invalidate(7, onClickYear = $$props.onClickYear);
+		if ("onClickQuarter" in $$props) $$invalidate(8, onClickQuarter = $$props.onClickQuarter);
+		if ("onContextMenuDay" in $$props) $$invalidate(9, onContextMenuDay = $$props.onContextMenuDay);
+		if ("onContextMenuWeek" in $$props) $$invalidate(10, onContextMenuWeek = $$props.onContextMenuWeek);
 	};
 
 	$$self.$$.update = () => {
-		if ($$self.$$.dirty & /*$settings*/ 256) {
-			$$invalidate(9, today = getToday($settings));
+		if ($$self.$$.dirty & /*$settings*/ 2048) {
+			$$invalidate(12, today = getToday($settings));
 		}
 	};
 
@@ -3983,6 +4998,9 @@ function instance($$self, $$props, $$invalidate) {
 		onHoverWeek,
 		onClickDay,
 		onClickWeek,
+		onClickMonth,
+		onClickYear,
+		onClickQuarter,
 		onContextMenuDay,
 		onContextMenuWeek,
 		$settings,
@@ -4004,14 +5022,17 @@ class Calendar extends SvelteComponent$1 {
 			onHoverWeek: 3,
 			onClickDay: 4,
 			onClickWeek: 5,
-			onContextMenuDay: 6,
-			onContextMenuWeek: 7,
-			tick: 11
+			onClickMonth: 6,
+			onClickYear: 7,
+			onClickQuarter: 8,
+			onContextMenuDay: 9,
+			onContextMenuWeek: 10,
+			tick: 14
 		});
 	}
 
 	get tick() {
-		return this.$$.ctx[11];
+		return this.$$.ctx[14];
 	}
 }
 
@@ -4024,9 +5045,48 @@ function showFileMenu(app, file, position) {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         app.fileManager.promptForFileDeletion(file);
     }));
+    fileMenu.addItem((item) => item
+        .setTitle("Open in new tab")
+        .setIcon("file-plus")
+        .setSection("open")
+        .onClick(() => {
+        app.workspace.openLinkText(file.path, "", true);
+    }));
     app.workspace.trigger("file-menu", fileMenu, file, "calendar-context-menu", null);
     fileMenu.showAtPosition(position);
 }
+
+function getNoteReviewed(note) {
+    var _a;
+    if (!note) {
+        return [];
+    }
+    const { metadataCache } = window.app;
+    const frontmatter = (_a = metadataCache.getFileCache(note)) === null || _a === void 0 ? void 0 : _a.frontmatter;
+    return frontmatter.reviewed;
+}
+function getReviewedAttribute(note) {
+    const attrs = {};
+    const isReviewed = getNoteReviewed(note);
+    attrs["data-reviewed"] = isReviewed;
+    return attrs;
+}
+const customReviewedSource = {
+    getDailyMetadata: async (date) => {
+        const file = getDailyNote_1(date, get_store_value(dailyNotes));
+        return {
+            dataAttributes: getReviewedAttribute(file),
+            dots: [],
+        };
+    },
+    getWeeklyMetadata: async (date) => {
+        const file = getWeeklyNote_1(date, get_store_value(weeklyNotes));
+        return {
+            dataAttributes: getReviewedAttribute(file),
+            dots: [],
+        };
+    },
+};
 
 const getStreakClasses = (file) => {
     return classList({
@@ -4089,38 +5149,6 @@ const customTagsSource = {
         const file = getWeeklyNote_1(date, get_store_value(weeklyNotes));
         return {
             dataAttributes: getFormattedTagAttributes(file),
-            dots: [],
-        };
-    },
-};
-
-function getNoteReviewed(note) {
-    var _a;
-    if (!note) {
-        return [];
-    }
-    const { metadataCache } = window.app;
-    const frontmatter = (_a = metadataCache.getFileCache(note)) === null || _a === void 0 ? void 0 : _a.frontmatter;
-    return frontmatter.reviewed;
-}
-function getReviewedAttribute(note) {
-    const attrs = {};
-    const isReviewed = getNoteReviewed(note);
-    attrs["data-reviewed"] = isReviewed;
-    return attrs;
-}
-const customReviewedSource = {
-    getDailyMetadata: async (date) => {
-        const file = getDailyNote_1(date, get_store_value(dailyNotes));
-        return {
-            dataAttributes: getReviewedAttribute(file),
-            dots: [],
-        };
-    },
-    getWeeklyMetadata: async (date) => {
-        const file = getWeeklyNote_1(date, get_store_value(weeklyNotes));
-        return {
-            dataAttributes: getReviewedAttribute(file),
             dots: [],
         };
     },
@@ -4213,6 +5241,9 @@ class CalendarView extends obsidian.ItemView {
         super(leaf);
         this.openOrCreateDailyNote = this.openOrCreateDailyNote.bind(this);
         this.openOrCreateWeeklyNote = this.openOrCreateWeeklyNote.bind(this);
+        this.openOrCreateMonthlyNote = this.openOrCreateMonthlyNote.bind(this);
+        this.openOrCreateYearlyNote = this.openOrCreateYearlyNote.bind(this);
+        this.openOrCreateQuarterlyNote = this.openOrCreateQuarterlyNote.bind(this); // Added binding
         this.onNoteSettingsUpdate = this.onNoteSettingsUpdate.bind(this);
         this.onFileCreated = this.onFileCreated.bind(this);
         this.onFileDeleted = this.onFileDeleted.bind(this);
@@ -4220,8 +5251,14 @@ class CalendarView extends obsidian.ItemView {
         this.onFileOpen = this.onFileOpen.bind(this);
         this.onHoverDay = this.onHoverDay.bind(this);
         this.onHoverWeek = this.onHoverWeek.bind(this);
+        this.onHoverMonth = this.onHoverMonth.bind(this);
+        this.onHoverYear = this.onHoverYear.bind(this);
+        this.onHoverQuarter = this.onHoverQuarter.bind(this); // Added binding
         this.onContextMenuDay = this.onContextMenuDay.bind(this);
         this.onContextMenuWeek = this.onContextMenuWeek.bind(this);
+        this.onContextMenuMonth = this.onContextMenuMonth.bind(this);
+        this.onContextMenuYear = this.onContextMenuYear.bind(this);
+        this.onContextMenuQuarter = this.onContextMenuQuarter.bind(this); // Added binding
         this.registerEvent(
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         this.app.workspace.on("periodic-notes:settings-updated", this.onNoteSettingsUpdate));
@@ -4270,10 +5307,19 @@ class CalendarView extends obsidian.ItemView {
             props: {
                 onClickDay: this.openOrCreateDailyNote,
                 onClickWeek: this.openOrCreateWeeklyNote,
+                onClickMonth: this.openOrCreateMonthlyNote,
+                onClickYear: this.openOrCreateYearlyNote,
+                onClickQuarter: this.openOrCreateQuarterlyNote,
                 onHoverDay: this.onHoverDay,
                 onHoverWeek: this.onHoverWeek,
+                onHoverMonth: this.onHoverMonth,
+                onHoverYear: this.onHoverYear,
+                onHoverQuarter: this.onHoverQuarter,
                 onContextMenuDay: this.onContextMenuDay,
                 onContextMenuWeek: this.onContextMenuWeek,
+                onContextMenuMonth: this.onContextMenuMonth,
+                onContextMenuYear: this.onContextMenuYear,
+                onContextMenuQuarter: this.onContextMenuQuarter,
                 sources,
             },
         });
@@ -4294,10 +5340,33 @@ class CalendarView extends obsidian.ItemView {
         const { format } = getWeeklyNoteSettings_1();
         this.app.workspace.trigger("link-hover", this, targetEl, date.format(format), note === null || note === void 0 ? void 0 : note.path);
     }
+    onHoverMonth(date, targetEl, isMetaPressed) {
+        if (!isMetaPressed) {
+            return;
+        }
+        const note = getMonthlyNote_1(date, get_store_value(monthlyNotes));
+        const { format } = getMonthlyNoteSettings_1();
+        this.app.workspace.trigger("link-hover", this, targetEl, date.format(format), note === null || note === void 0 ? void 0 : note.path);
+    }
+    onHoverYear(date, targetEl, isMetaPressed) {
+        if (!isMetaPressed) {
+            return;
+        }
+        const note = getYearlyNote_1(date, get_store_value(yearlyNotes));
+        const { format } = getYearlyNoteSettings_1();
+        this.app.workspace.trigger("link-hover", this, targetEl, date.format(format), note === null || note === void 0 ? void 0 : note.path);
+    }
+    onHoverQuarter(date, targetEl, isMetaPressed) {
+        if (!isMetaPressed) {
+            return;
+        }
+        const { format } = getQuarterlyNoteSettings_1();
+        const note = getQuarterlyNote_1(date, get_store_value(quarterlyNotes));
+        this.app.workspace.trigger("link-hover", this, targetEl, date.format(format), note === null || note === void 0 ? void 0 : note.path);
+    }
     onContextMenuDay(date, event) {
         const note = getDailyNote_1(date, get_store_value(dailyNotes));
         if (!note) {
-            // If no file exists for a given day, show nothing.
             return;
         }
         showFileMenu(this.app, note, {
@@ -4308,7 +5377,36 @@ class CalendarView extends obsidian.ItemView {
     onContextMenuWeek(date, event) {
         const note = getWeeklyNote_1(date, get_store_value(weeklyNotes));
         if (!note) {
-            // If no file exists for a given day, show nothing.
+            return;
+        }
+        showFileMenu(this.app, note, {
+            x: event.pageX,
+            y: event.pageY,
+        });
+    }
+    onContextMenuMonth(date, event) {
+        const note = getMonthlyNote_1(date, get_store_value(monthlyNotes));
+        if (!note) {
+            return;
+        }
+        showFileMenu(this.app, note, {
+            x: event.pageX,
+            y: event.pageY,
+        });
+    }
+    onContextMenuYear(date, event) {
+        const note = getYearlyNote_1(date, get_store_value(yearlyNotes));
+        if (!note) {
+            return;
+        }
+        showFileMenu(this.app, note, {
+            x: event.pageX,
+            y: event.pageY,
+        });
+    }
+    onContextMenuQuarter(date, event) {
+        const note = getQuarterlyNote_1(date, get_store_value(quarterlyNotes));
+        if (!note) {
             return;
         }
         showFileMenu(this.app, note, {
@@ -4319,6 +5417,9 @@ class CalendarView extends obsidian.ItemView {
     onNoteSettingsUpdate() {
         dailyNotes.reindex();
         weeklyNotes.reindex();
+        monthlyNotes.reindex();
+        quarterlyNotes.reindex(); // Added line
+        yearlyNotes.reindex();
         this.updateActiveFile();
     }
     async onFileDeleted(file) {
@@ -4330,9 +5431,26 @@ class CalendarView extends obsidian.ItemView {
             weeklyNotes.reindex();
             this.updateActiveFile();
         }
+        if (getDateFromFile_1(file, "month")) {
+            monthlyNotes.reindex();
+            this.updateActiveFile();
+        }
+        if (getDateFromFile_1(file, "quarter")) {
+            // Added block
+            quarterlyNotes.reindex();
+            this.updateActiveFile();
+        }
+        if (getDateFromFile_1(file, "year")) {
+            yearlyNotes.reindex();
+            this.updateActiveFile();
+        }
     }
     async onFileModified(file) {
-        const date = getDateFromFile_1(file, "day") || getDateFromFile_1(file, "week");
+        const date = getDateFromFile_1(file, "day") ||
+            getDateFromFile_1(file, "week") ||
+            getDateFromFile_1(file, "month") ||
+            getDateFromFile_1(file, "quarter") || // Added line
+            getDateFromFile_1(file, "year");
         if (date && this.calendar) {
             this.calendar.tick();
         }
@@ -4345,6 +5463,19 @@ class CalendarView extends obsidian.ItemView {
             }
             if (getDateFromFile_1(file, "week")) {
                 weeklyNotes.reindex();
+                this.calendar.tick();
+            }
+            if (getDateFromFile_1(file, "month")) {
+                monthlyNotes.reindex();
+                this.calendar.tick();
+            }
+            if (getDateFromFile_1(file, "quarter")) {
+                // Added block
+                quarterlyNotes.reindex();
+                this.calendar.tick();
+            }
+            if (getDateFromFile_1(file, "year")) {
+                yearlyNotes.reindex();
                 this.calendar.tick();
             }
         }
@@ -4369,28 +5500,90 @@ class CalendarView extends obsidian.ItemView {
         const { moment } = window;
         const { activeLeaf } = this.app.workspace;
         if (activeLeaf.view instanceof obsidian.FileView) {
-            // Check to see if the active note is a daily-note
             let date = getDateFromFile_1(activeLeaf.view.file, "day");
             if (date) {
                 this.calendar.$set({ displayedMonth: date });
                 return;
             }
-            // Check to see if the active note is a weekly-note
-            const { format } = getWeeklyNoteSettings_1();
-            date = moment(activeLeaf.view.file.basename, format, true);
+            const { format: weeklyFormat } = getWeeklyNoteSettings_1();
+            date = moment(activeLeaf.view.file.basename, weeklyFormat, true);
+            if (date.isValid()) {
+                this.calendar.$set({ displayedMonth: date });
+                return;
+            }
+            const { format: monthlyFormat } = getMonthlyNoteSettings_1();
+            date = moment(activeLeaf.view.file.basename, monthlyFormat, true);
+            if (date.isValid()) {
+                this.calendar.$set({ displayedMonth: date });
+                return;
+            }
+            const { format: quarterlyFormat } = getQuarterlyNoteSettings_1(); // Added block
+            date = moment(activeLeaf.view.file.basename, quarterlyFormat, true);
+            if (date.isValid()) {
+                this.calendar.$set({ displayedMonth: date });
+                return;
+            }
+            const { format: yearlyFormat } = getYearlyNoteSettings_1();
+            date = moment(activeLeaf.view.file.basename, yearlyFormat, true);
             if (date.isValid()) {
                 this.calendar.$set({ displayedMonth: date });
                 return;
             }
         }
     }
-    async openOrCreateWeeklyNote(date, inNewSplit) {
+    async openOrCreateWeeklyNote(date, ctrlPressed) {
         const { workspace } = this.app;
         const startOfWeek = date.clone().startOf("week");
         const existingFile = getWeeklyNote_1(date, get_store_value(weeklyNotes));
         if (!existingFile) {
-            // File doesn't exist
-            tryToCreateWeeklyNote(startOfWeek, inNewSplit, this.settings, (file) => {
+            tryToCreateWeeklyNote(startOfWeek, ctrlPressed, this.settings, (file) => {
+                activeFile.setFile(file);
+            });
+            return;
+        }
+        let leaf;
+        if (ctrlPressed) {
+            if (this.settings.ctrlClickOpensInNewTab) {
+                leaf = workspace.getLeaf("tab");
+            }
+            else {
+                leaf = workspace.getLeaf("split", "vertical");
+            }
+        }
+        else {
+            leaf = workspace.getLeaf(false);
+        }
+        await leaf.openFile(existingFile);
+    }
+    async openOrCreateDailyNote(date, ctrlPressed) {
+        const { workspace } = this.app;
+        const existingFile = getDailyNote_1(date, get_store_value(dailyNotes));
+        if (!existingFile) {
+            tryToCreateDailyNote(date, ctrlPressed, this.settings, (dailyNote) => {
+                activeFile.setFile(dailyNote);
+            });
+            return;
+        }
+        let leaf;
+        if (ctrlPressed) {
+            if (this.settings.ctrlClickOpensInNewTab) {
+                leaf = workspace.getLeaf("tab");
+            }
+            else {
+                leaf = workspace.getLeaf("split", "vertical");
+            }
+        }
+        else {
+            leaf = workspace.getLeaf(false);
+        }
+        await leaf.openFile(existingFile);
+    }
+    async openOrCreateMonthlyNote(date, inNewSplit) {
+        const { workspace } = this.app;
+        const startOfMonth = date.clone().startOf("month");
+        const existingFile = getMonthlyNote_1(date, get_store_value(monthlyNotes));
+        if (!existingFile) {
+            tryToCreateMonthlyNote(startOfMonth, inNewSplit, this.settings, (file) => {
                 activeFile.setFile(file);
             });
             return;
@@ -4402,23 +5595,39 @@ class CalendarView extends obsidian.ItemView {
         activeFile.setFile(existingFile);
         workspace.setActiveLeaf(leaf, true, true);
     }
-    async openOrCreateDailyNote(date, inNewSplit) {
+    async openOrCreateQuarterlyNote(date, inNewSplit) {
         const { workspace } = this.app;
-        const existingFile = getDailyNote_1(date, get_store_value(dailyNotes));
+        const startOfQuarter = date.clone().startOf("quarter");
+        const existingFile = getQuarterlyNote_1(date, get_store_value(quarterlyNotes));
         if (!existingFile) {
-            // File doesn't exist
-            tryToCreateDailyNote(date, inNewSplit, this.settings, (dailyNote) => {
-                activeFile.setFile(dailyNote);
+            tryToCreateQuarterlyNote(startOfQuarter, inNewSplit, this.settings, (file) => {
+                activeFile.setFile(file);
             });
             return;
         }
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const mode = this.app.vault.getConfig("defaultViewMode");
         const leaf = inNewSplit
             ? workspace.splitActiveLeaf()
             : workspace.getUnpinnedLeaf();
-        await leaf.openFile(existingFile, { active: true, mode });
+        await leaf.openFile(existingFile);
         activeFile.setFile(existingFile);
+        workspace.setActiveLeaf(leaf, true, true);
+    }
+    async openOrCreateYearlyNote(date, inNewSplit) {
+        const { workspace } = this.app;
+        const startOfYear = date.clone().startOf("year");
+        const existingFile = getYearlyNote_1(date, get_store_value(yearlyNotes));
+        if (!existingFile) {
+            tryToCreateYearlyNote(startOfYear, inNewSplit, this.settings, (file) => {
+                activeFile.setFile(file);
+            });
+            return;
+        }
+        const leaf = inNewSplit
+            ? workspace.splitActiveLeaf()
+            : workspace.getUnpinnedLeaf();
+        await leaf.openFile(existingFile);
+        activeFile.setFile(existingFile);
+        workspace.setActiveLeaf(leaf, true, true);
     }
 }
 

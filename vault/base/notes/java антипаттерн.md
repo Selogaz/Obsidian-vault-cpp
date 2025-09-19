@@ -6,10 +6,10 @@ aliases:
   - антипаттерн
 deck: obsidian::java
 created: 2025-06-05T18:40:24+03:00
-updated: 2025-06-06T07:38:12+03:00
-sr-due: 2025-06-10
-sr-interval: 4
-sr-ease: 270
+updated: 2025-06-11T09:03:56+03:00
+sr-due: 2025-06-29
+sr-interval: 18
+sr-ease: 290
 ---
 
 **антипаттерн**

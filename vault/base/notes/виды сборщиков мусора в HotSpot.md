@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-28 07:52:56+03:00
-updated: 2025-06-05T16:58:36+03:00
-sr-due: 2025-06-14
-sr-interval: 12
-sr-ease: 270
+updated: 2025-06-16T21:07:02+03:00
+sr-due: 2025-08-08
+sr-interval: 53
+sr-ease: 290
 ---
 
 **Виды сборщиков мусора в HotSpot**

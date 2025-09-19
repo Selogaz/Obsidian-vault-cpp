@@ -4,6 +4,7 @@ tags:
 cssclasses:
   - category
 obsidianUIMode: preview
+pagination_sources: 0
 ---
 
 > [!tabbed]+

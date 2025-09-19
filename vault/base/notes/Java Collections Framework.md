@@ -6,9 +6,9 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-02 13:30:37+03:00
-updated: 2025-06-06T07:08:41+03:00
-sr-due: 2025-06-09
-sr-interval: 3
+updated: 2025-06-18T16:09:45+03:00
+sr-due: 2025-07-02
+sr-interval: 16
 sr-ease: 230
 ---
 
@@ -19,3 +19,5 @@ sr-ease: 230
 - [[Основные интерфейсы JCF и их реализации]]
 - [[java.util.Collections]]
 - [[fail-fast поведение]]
+- [[java коллекции от ИИ]]
+- [[java алгоритмическая сложность]]

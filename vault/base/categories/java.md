@@ -1,5 +1,5 @@
 ---
-tags: 
+tags:
   - system/category
   - category/java
 next:
@@ -8,6 +8,7 @@ hierarchy:
   - "[[base/_hierarchy/java hierarchy|java]]"
 cssclasses:
   - category
+pagination_notes: 3
 ---
 
 > [!tabbed]+

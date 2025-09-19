@@ -6,11 +6,15 @@ aliases:
   - пример антипаттерна service locator
 deck: obsidian::java
 created: 2025-06-06T08:21:18+03:00
-updated: 2025-06-06T08:44:45+03:00
+updated: 2025-06-16T21:39:46+03:00
+sr-due: 2025-07-04
+sr-interval: 18
+sr-ease: 290
 ---
 
 **пример антипаттерна service locator**
 —
+добавление зависимостей через специально созданный для этого класс
 ```java
 class ServiceLocator {
 	private static Set<Object> services = new HashSet<>();

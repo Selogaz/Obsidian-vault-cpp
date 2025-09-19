@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-03 10:20:07+03:00
-updated: 2025-06-05T18:16:29+03:00
-sr-due: 2025-06-09
-sr-interval: 4
-sr-ease: 270
+updated: 2025-06-11T08:44:58+03:00
+sr-due: 2025-07-03
+sr-interval: 22
+sr-ease: 290
 ---
 
 **Jakarta EE или Java EE**
@@ -19,7 +19,7 @@ sr-ease: 270
 
 # Спецификации
 
-- Внедрение зависимостей (JSR 330)
+- [[DI|Внедрение зависимостей]] (JSR 330)
 - основные аннтации (JSR 250)
 - [[java Servlet API]] (JSR 340)
 - WebSocket API (JSR 356)

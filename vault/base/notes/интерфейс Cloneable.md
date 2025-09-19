@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-02 11:24:38+03:00
-updated: 2025-06-05T16:58:36+03:00
-sr-due: 2025-06-07
-sr-interval: 4
-sr-ease: 270
+updated: 2025-06-08T22:24:09+03:00
+sr-due: 2025-06-28
+sr-interval: 20
+sr-ease: 290
 ---
 
 **Интерфейс Cloneable**

@@ -1,12 +1,16 @@
 ---
 tags:
   - note/specific/code
+  - mark/aggregator
   - category/java
 aliases:
   - термины AOP
 deck: obsidian::java
 created: 2025-06-06T11:45:07+03:00
-updated: 2025-06-06T12:05:16+03:00
+updated: 2025-06-16T21:08:35+03:00
+sr-due: 2025-07-04
+sr-interval: 18
+sr-ease: 295
 ---
 
 **термины AOP**

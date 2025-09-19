@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-03 08:50:23+03:00
-updated: 2025-06-05T18:14:21+03:00
-sr-due: 2025-06-09
-sr-interval: 4
-sr-ease: 271
+updated: 2025-06-11T08:49:40+03:00
+sr-due: 2025-07-04
+sr-interval: 23
+sr-ease: 291
 ---
 
 **Пример отличия поля от локальной переменной**

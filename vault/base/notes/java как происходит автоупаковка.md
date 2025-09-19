@@ -6,10 +6,10 @@ aliases:
   - как происходит автоупаковка
 deck: obsidian::java
 created: 2025-06-05T17:23:52+03:00
-updated: 2025-06-05T18:18:03+03:00
-sr-due: 2025-06-09
-sr-interval: 4
-sr-ease: 274
+updated: 2025-06-11T08:50:47+03:00
+sr-due: 2025-07-03
+sr-interval: 22
+sr-ease: 294
 ---
 
 **как происходит автоупаковка**

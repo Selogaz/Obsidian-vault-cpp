@@ -5,18 +5,18 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-03 07:21:05+03:00
-updated: 2025-06-06T07:28:20+03:00
-sr-due: 2025-06-18
-sr-interval: 12
-sr-ease: 289
+updated: 2025-06-18T15:55:22+03:00
+sr-due: 2025-08-05
+sr-interval: 48
+sr-ease: 309
 ---
 
 **Map**
 —
 - `Map` - пары ключ-значение
-	- ![[Hashtable]]
+	- ![[java Hashtable]]
 	- ![[HashMap]]
-	- `LinkedHashMap` - как [[HashMap]], но упорядоченная
+	- ![[java LinkedHashMap]]
 	- ![[TreeMap]]
 	- `WeakHashMap` - реализация хэш-таблицы, организованная с помощью [[weak references]] для ключей
 

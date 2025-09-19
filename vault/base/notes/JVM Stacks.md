@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-25 17:10:29+03:00
-updated: 2025-06-05T16:58:37+03:00
-sr-due: 2025-06-11
-sr-interval: 12
-sr-ease: 279
+updated: 2025-06-11T09:07:09+03:00
+sr-due: 2025-07-28
+sr-interval: 47
+sr-ease: 299
 ---
 
 **JVM Stacks**

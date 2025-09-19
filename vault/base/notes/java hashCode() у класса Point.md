@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-31 07:23:06+03:00
-updated: 2025-06-05T17:39:57+03:00
-sr-due: 2025-06-13
-sr-interval: 8
-sr-ease: 250
+updated: 2025-06-16T21:31:56+03:00
+sr-due: 2025-07-24
+sr-interval: 38
+sr-ease: 270
 image: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
 ---
 

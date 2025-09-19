@@ -6,7 +6,10 @@ aliases:
   - слои приложения
 deck: obsidian::java
 created: 2025-06-06T09:17:15+03:00
-updated: 2025-06-06T11:19:26+03:00
+updated: 2025-06-16T21:37:58+03:00
+sr-due: 2025-07-06
+sr-interval: 20
+sr-ease: 290
 ---
 
 **слои приложения**

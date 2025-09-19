@@ -6,7 +6,10 @@ aliases:
   - Микросервисы
 deck: obsidian::java
 created: 2025-06-06T12:16:26+03:00
-updated: 2025-06-06T14:07:10+03:00
+updated: 2025-06-16T21:45:10+03:00
+sr-due: 2025-07-04
+sr-interval: 18
+sr-ease: 290
 ---
 
 **Микросервисы**

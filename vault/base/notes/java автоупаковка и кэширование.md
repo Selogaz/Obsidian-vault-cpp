@@ -6,10 +6,10 @@ aliases:
   - автоупаковка и кэширование
 deck: obsidian::java
 created: 2025-06-05T17:17:41+03:00
-updated: 2025-06-05T18:19:05+03:00
-sr-due: 2025-06-09
-sr-interval: 4
-sr-ease: 274
+updated: 2025-06-11T08:51:22+03:00
+sr-due: 2025-07-03
+sr-interval: 22
+sr-ease: 294
 ---
 
 **автоупаковка и кэширование**
