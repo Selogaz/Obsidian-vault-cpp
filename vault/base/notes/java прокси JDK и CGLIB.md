@@ -6,10 +6,10 @@ aliases:
   - прокси JDK и CGLIB
 deck: obsidian::java
 created: 2025-06-15T11:53:47+03:00
-updated: 2025-06-16T22:18:15+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 277
+updated: 2025-09-21T12:10:46+03:00
+sr-due: 2025-10-05
+sr-interval: 14
+sr-ease: 257
 ---
 
 **прокси JDK и CGLIB**

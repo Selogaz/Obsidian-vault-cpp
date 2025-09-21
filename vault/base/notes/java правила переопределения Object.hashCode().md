@@ -6,10 +6,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-31 07:02:06+03:00
-updated: 2025-06-06T06:59:59+03:00
-sr-due: 2025-06-22
-sr-interval: 16
-sr-ease: 290
+updated: 2025-09-21T12:36:08+03:00
+sr-due: 2026-11-21
+sr-interval: 426
+sr-ease: 310
 image: https://blog.skillfactory.ru/wp-content/uploads/2023/02/vertical-logo-monochromatic-2822952.png
 ---
 

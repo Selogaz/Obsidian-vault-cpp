@@ -6,10 +6,10 @@ aliases:
   - загрузка пропертей и профили
 deck: obsidian::java
 created: 2025-06-13T11:56:44+03:00
-updated: 2025-06-16T22:20:36+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 270
+updated: 2025-09-21T12:12:36+03:00
+sr-due: 2026-09-23
+sr-interval: 367
+sr-ease: 290
 ---
 
 **загрузка пропертей и профили**

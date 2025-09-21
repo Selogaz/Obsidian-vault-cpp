@@ -6,10 +6,10 @@ aliases:
   - import
 deck: obsidian::java
 created: 2025-06-15T08:41:29+03:00
-updated: 2025-06-16T22:19:26+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 274
+updated: 2025-09-21T12:28:43+03:00
+sr-due: 2026-09-26
+sr-interval: 370
+sr-ease: 294
 ---
 
 **import**

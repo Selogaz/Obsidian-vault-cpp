@@ -6,10 +6,10 @@ aliases:
   - Spring Intitializr
 deck: obsidian::java
 created: 2025-06-13T09:13:11+03:00
-updated: 2025-06-18T14:42:29+03:00
-sr-due: 2025-06-22
-sr-interval: 4
-sr-ease: 276
+updated: 2025-09-21T12:38:19+03:00
+sr-due: 2026-09-25
+sr-interval: 369
+sr-ease: 296
 ---
 
 **Spring Intitializr**

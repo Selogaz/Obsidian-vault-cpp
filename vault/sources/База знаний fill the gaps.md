@@ -14,7 +14,7 @@ start: 2025-09-19T19:09:11+03:00
 end: 
 total_hours: 0
 created: 2025-09-19T19:09:11+03:00
-updated: 2025-09-19T22:15:52+03:00
+updated: 2025-09-21T08:54:38+03:00
 ---
 
 # [[java как запустить задачу в другом потоке|Как запустить задачу в другом потоке?]]
@@ -30,3 +30,20 @@ updated: 2025-09-19T22:15:52+03:00
 # [[java volatile|volatile]]
 
 # [[java atomic|Atomic]]
+
+# [[Spring Boot|Spring Boot]]
+
+# [[java Transactional|Аннотация Transactional]]
+
+# [[java equals()|Метод equals]]
+
+# [[java типы памяти в jvm|Типы памяти в JVM]]
+
+# [[java проблема N + 1|Проблема N + 1]]
+
+# Временные таблицы View
+
+java view
+```java
+
+```

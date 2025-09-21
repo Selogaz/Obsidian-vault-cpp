@@ -7,10 +7,10 @@ aliases:
   - точка соединения
 deck: obsidian::java
 created: 2025-06-06T11:50:53+03:00
-updated: 2025-06-11T09:06:09+03:00
-sr-due: 2025-06-23
-sr-interval: 12
-sr-ease: 270
+updated: 2025-09-21T12:40:25+03:00
+sr-due: 2026-10-14
+sr-interval: 388
+sr-ease: 290
 ---
 
 **aop join point**

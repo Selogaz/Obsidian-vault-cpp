@@ -6,10 +6,10 @@ aliases:
   - bastard injection
 deck: obsidian::java
 created: 2025-06-05T18:47:35+03:00
-updated: 2025-06-11T09:04:35+03:00
-sr-due: 2025-06-30
-sr-interval: 19
-sr-ease: 299
+updated: 2025-09-21T12:48:10+03:00
+sr-due: 2026-11-14
+sr-interval: 419
+sr-ease: 319
 ---
 
 **bastard injection**

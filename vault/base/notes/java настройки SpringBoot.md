@@ -6,10 +6,10 @@ aliases:
   - настройки SpringBoot
 deck: obsidian::java
 created: 2025-06-15T10:29:02+03:00
-updated: 2025-06-16T22:19:47+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 270
+updated: 2025-09-21T12:12:14+03:00
+sr-due: 2026-09-21
+sr-interval: 365
+sr-ease: 290
 ---
 
 **настройки SpringBoot**

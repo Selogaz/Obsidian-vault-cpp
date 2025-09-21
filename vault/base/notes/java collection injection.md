@@ -6,10 +6,10 @@ aliases:
   - collection injection
 deck: obsidian::java
 created: 2025-06-15T09:28:12+03:00
-updated: 2025-06-18T14:42:03+03:00
-sr-due: 2025-06-22
-sr-interval: 4
-sr-ease: 283
+updated: 2025-09-21T12:37:38+03:00
+sr-due: 2026-09-30
+sr-interval: 374
+sr-ease: 303
 ---
 
 **collection injection**

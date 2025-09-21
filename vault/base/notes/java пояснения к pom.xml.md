@@ -6,10 +6,10 @@ aliases:
   - пояснения к pom.xml
 deck: obsidian::java
 created: 2025-06-13T09:49:16+03:00
-updated: 2025-06-16T22:13:33+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 274
+updated: 2025-09-21T12:01:29+03:00
+sr-due: 2026-09-26
+sr-interval: 370
+sr-ease: 294
 ---
 
 **пояснения к pom.xml**

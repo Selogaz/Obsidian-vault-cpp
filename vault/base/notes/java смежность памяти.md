@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-23 10:41:59+03:00
-updated: 2025-06-06T06:30:21+03:00
-sr-due: 2025-06-30
-sr-interval: 24
-sr-ease: 265
+updated: 2025-09-21T12:47:17+03:00
+sr-due: 2026-10-21
+sr-interval: 395
+sr-ease: 285
 ---
 
 **Смежность памяти**

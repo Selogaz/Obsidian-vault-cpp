@@ -6,10 +6,10 @@ aliases:
   - ORM
 deck: obsidian::java
 created: 2025-06-06T10:16:40+03:00
-updated: 2025-06-11T08:45:25+03:00
-sr-due: 2025-06-22
-sr-interval: 11
-sr-ease: 252
+updated: 2025-09-21T12:31:22+03:00
+sr-due: 2026-09-13
+sr-interval: 357
+sr-ease: 272
 ---
 
 **ORM**

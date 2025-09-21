@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-23 09:50:15+03:00
-updated: 2025-09-16T17:45:38+03:00
-sr-due: 2025-06-25
-sr-interval: 9
-sr-ease: 150
+updated: 2025-09-21T12:43:52+03:00
+sr-due: 2026-04-22
+sr-interval: 213
+sr-ease: 170
 ---
 
 **Паттерны проектирования**

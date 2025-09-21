@@ -6,10 +6,10 @@ aliases:
   - способы описания аспектов
 deck: obsidian::java
 created: 2025-06-15T12:12:52+03:00
-updated: 2025-06-18T14:53:44+03:00
-sr-due: 2025-06-22
-sr-interval: 4
-sr-ease: 270
+updated: 2025-09-21T12:38:26+03:00
+sr-due: 2026-09-11
+sr-interval: 355
+sr-ease: 290
 ---
 
 **способы описания аспектов**

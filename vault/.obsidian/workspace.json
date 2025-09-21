@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2025-09-18.md",
+                "file": "base/notes/java термины AOP.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-09-18"
+              "title": "java термины AOP"
             }
           },
           {
-            "id": "c5cf05fdf6f6d5ad",
+            "id": "85a0b25a069a0861",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home/index.md",
+                "file": "base/notes/java сканирование бинов.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,16 +52,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "java сканирование бинов"
             }
           },
           {
-            "id": "b14591c05a806a08",
+            "id": "c5ec4a4d43813634",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/База знаний fill the gaps.md",
+                "file": "periodic/daily/2025-09-21.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,55 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "База знаний fill the gaps"
-            }
-          },
-          {
-            "id": "1ad10c69d260ddcc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sources/ 42 крутые игры для тех, кого тошнит от ААА .md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "42 крутые игры для тех, кого тошнит от ААА"
-            }
-          },
-          {
-            "id": "16e9690206a66714",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/categories/games.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "games"
+              "title": "2025-09-21"
             }
           }
         ],
@@ -303,34 +255,34 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "b14591c05a806a08",
+  "active": "c5ec4a4d43813634",
   "lastOpenFiles": [
-    "home/index.md",
-    "sources/ 42 крутые игры для тех, кого тошнит от ААА .md",
-    "sources/База знаний fill the gaps.md",
-    "base/categories/games.md",
-    "base/notes/java atomic.md",
-    "base/notes/java volatile.md",
-    "sources/Полезный паттерн использования volatile и Atomic с неизменяемыми объектами.md",
-    "base/notes/java Многопоточные коллекции.md",
-    "sources/Документация java util concurrent.md",
-    "base/notes/java immutable.md",
-    "sources/Создание билдера для работы с неизменяемыми объектами.md",
-    "sources/Пример работы с неизменяемыми объектами в многопоточной среде.md",
-    "base/notes/java Stream API.md",
-    "sources/Наглядно про операции Stream API.md",
-    "sources/Документация Stream API.md",
-    "base/notes/java свойства Stream API.md",
-    "base/notes/java экзекьюторы.md",
-    "base/notes/java как запустить задачу в другом потоке.md",
-    "sources/Нюансы работы и выбора экзекьюторов.md",
-    "sources/Наглядно про CompletableFuture.md",
-    "sources/20 НОВЫХ РПГ ИГР которые ВОЗРОДЯТ этот ЖАНР.md",
-    "periodic/daily/2025-09-18.md",
-    "sources/Лучшее железо для сборки ПК в 2025.md",
-    "sources/Лучшие связки ПРОЦЕССОР и ВИДЕОКАРТА на 2025. Примеры сборок ПК 2025.md",
-    "base/_meta-notes/pc builds.md",
-    "base/categories/java.md",
+    "base/notes/java сканирование бинов.md",
+    "periodic/daily/2025-09-21.md",
+    "base/notes/java термины AOP.md",
+    "base/notes/java gRPC.md",
+    "base/notes/java aop aspect.md",
+    "base/notes/Spring Boot.md",
+    "base/notes/Netty.md",
+    "base/notes/java @SpringBootApplication.md",
+    "base/notes/java автоупаковка и кэширование.md",
+    "base/notes/java как происходит автоупаковка.md",
+    "base/notes/java передача параметров в методы (ИИ версия).md",
+    "base/notes/TreeMap.md",
+    "base/notes/execution engine.md",
+    "base/notes/java коллизия.md",
+    "base/notes/Jakarta EE.md",
+    "base/notes/java queue.md",
+    "base/notes/java.nio.file.Path.md",
+    "base/notes/Java Collections Framework.md",
+    "base/notes/java control freak.md",
+    "base/notes/java final.md",
+    "base/notes/java пример инверсии управления.md",
+    "base/notes/java bastard injection.md",
+    "base/notes/java пример антипаттерна bastard injection.md",
+    "base/notes/java пример антипаттерна control freak.md",
+    "base/notes/java недостатки инверсии управления.md",
+    "base/notes/java смежность памяти.md",
     "files/Лучшее железо для сборки ПК в 2025 2025-09-18-4.png",
     "files/Лучшее железо для сборки ПК в 2025 2025-09-18-3.png",
     "files/Лучшее железо для сборки ПК в 2025 2025-09-18-2.png",

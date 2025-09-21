@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-03 08:46:17+03:00
-updated: 2025-06-11T08:49:50+03:00
-sr-due: 2025-07-03
-sr-interval: 22
-sr-ease: 290
+updated: 2025-09-21T12:50:22+03:00
+sr-due: 2026-11-01
+sr-interval: 406
+sr-ease: 310
 ---
 
 **Передача параметров в методы (ИИ версия)**

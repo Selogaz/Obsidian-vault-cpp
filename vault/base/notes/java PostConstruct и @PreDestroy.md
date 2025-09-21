@@ -6,10 +6,10 @@ aliases:
   - PostConstruct и @PreDestroy
 deck: obsidian::java
 created: 2025-06-15T11:14:59+03:00
-updated: 2025-06-18T14:09:28+03:00
-sr-due: 2025-06-25
-sr-interval: 7
-sr-ease: 254
+updated: 2025-09-21T12:44:30+03:00
+sr-due: 2026-08-25
+sr-interval: 338
+sr-ease: 274
 ---
 
 **PostConstruct и @PreDestroy**

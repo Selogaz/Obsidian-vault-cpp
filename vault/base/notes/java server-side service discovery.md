@@ -6,10 +6,10 @@ aliases:
   - server-side service discovery
 deck: obsidian::java
 created: 2025-06-06T13:06:43+03:00
-updated: 2025-06-11T09:06:28+03:00
-sr-due: 2025-06-23
-sr-interval: 12
-sr-ease: 270
+updated: 2025-09-21T12:40:38+03:00
+sr-due: 2026-10-15
+sr-interval: 389
+sr-ease: 290
 ---
 
 **server-side service discovery**

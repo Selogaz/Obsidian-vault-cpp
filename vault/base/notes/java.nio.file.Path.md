@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-23 09:40:49+03:00
-updated: 2025-06-06T07:11:02+03:00
-sr-due: 2025-07-02
-sr-interval: 26
-sr-ease: 290
+updated: 2025-09-21T12:48:54+03:00
+sr-due: 2026-11-25
+sr-interval: 430
+sr-ease: 310
 ---
 
 **Java.nio.file.Path**

@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-02 12:38:58+03:00
-updated: 2025-06-11T08:59:03+03:00
-sr-due: 2025-06-23
-sr-interval: 12
-sr-ease: 270
+updated: 2025-09-21T12:42:41+03:00
+sr-due: 2026-10-18
+sr-interval: 392
+sr-ease: 290
 ---
 
 **Unchecked exceptions**
@@ -18,3 +18,5 @@ sr-ease: 270
 
 примеры:
 `ArithmeticException, ClassCastException, ConcurrentModificationException, IllegalArgumentException, IllegalStateException, IndexOutOfBoundsException, NoSuchElementException, NullPointerException, UnsupportedOperationException`
+
+- [ ] #task/inbox #category/work но ведь я оборачивал npe и nsee в try-catch... что-то здесь не так

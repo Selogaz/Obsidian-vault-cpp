@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-30 19:51:39+03:00
-updated: 2025-06-05T17:29:23+03:00
-sr-due: 2025-06-24
-sr-interval: 19
-sr-ease: 290
+updated: 2025-09-21T12:43:40+03:00
+sr-due: 2026-12-04
+sr-interval: 439
+sr-ease: 310
 ---
 
 **String не подходит для пароля**

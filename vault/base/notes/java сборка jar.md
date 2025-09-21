@@ -6,10 +6,10 @@ aliases:
   - сборка jar
 deck: obsidian::java
 created: 2025-06-13T09:54:27+03:00
-updated: 2025-06-16T22:13:10+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 270
+updated: 2025-09-21T12:01:04+03:00
+sr-due: 2026-09-20
+sr-interval: 364
+sr-ease: 290
 ---
 
 **сборка jar**

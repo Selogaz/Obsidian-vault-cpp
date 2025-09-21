@@ -6,10 +6,10 @@ aliases:
   - механизм автоконфигурации Spring Boot
 deck: obsidian::java
 created: 2025-06-15T09:42:23+03:00
-updated: 2025-06-16T22:13:44+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 270
+updated: 2025-09-21T12:01:40+03:00
+sr-due: 2026-09-24
+sr-interval: 368
+sr-ease: 290
 ---
 
 **механизм автоконфигурации Spring Boot**

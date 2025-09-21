@@ -6,10 +6,10 @@ aliases:
   - Configuration и @Bean
 deck: obsidian::java
 created: 2025-06-15T09:59:41+03:00
-updated: 2025-06-18T15:07:27+03:00
-sr-due: 2025-06-22
-sr-interval: 4
-sr-ease: 270
+updated: 2025-09-21T12:40:16+03:00
+sr-due: 2026-09-07
+sr-interval: 351
+sr-ease: 290
 ---
 
 **@Configuration и @Bean**

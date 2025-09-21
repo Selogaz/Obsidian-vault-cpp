@@ -7,10 +7,10 @@ aliases:
   - аспект
 deck: obsidian::java
 created: 2025-06-06T11:55:54+03:00
-updated: 2025-06-16T21:34:45+03:00
-sr-due: 2025-07-04
-sr-interval: 18
-sr-ease: 292
+updated: 2025-09-21T12:53:35+03:00
+sr-due: 2026-10-23
+sr-interval: 397
+sr-ease: 312
 ---
 
 **aop aspect**

@@ -6,10 +6,10 @@ aliases:
   - control freak
 deck: obsidian::java
 created: 2025-06-05T18:42:59+03:00
-updated: 2025-06-11T09:04:26+03:00
-sr-due: 2025-07-01
-sr-interval: 20
-sr-ease: 290
+updated: 2025-09-21T12:48:39+03:00
+sr-due: 2026-11-03
+sr-interval: 408
+sr-ease: 310
 ---
 
 **control freak**

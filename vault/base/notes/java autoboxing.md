@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-30 19:02:00+03:00
-updated: 2025-06-05T17:28:29+03:00
-sr-due: 2025-06-25
-sr-interval: 20
-sr-ease: 292
+updated: 2025-09-21T12:45:29+03:00
+sr-due: 2026-12-05
+sr-interval: 440
+sr-ease: 312
 ---
 
 **Autoboxing**

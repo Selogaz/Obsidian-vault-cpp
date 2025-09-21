@@ -6,10 +6,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-02 13:30:37+03:00
-updated: 2025-06-18T16:09:45+03:00
-sr-due: 2025-07-02
-sr-interval: 16
-sr-ease: 230
+updated: 2025-09-21T12:48:47+03:00
+sr-due: 2026-08-02
+sr-interval: 315
+sr-ease: 250
 ---
 
 **Java Collections Framework**

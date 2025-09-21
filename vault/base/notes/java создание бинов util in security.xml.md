@@ -6,10 +6,10 @@ aliases:
   - создание бинов util in security.xml
 deck: obsidian::java
 created: 2025-06-15T09:27:10+03:00
-updated: 2025-06-16T22:16:00+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 270
+updated: 2025-09-21T12:06:35+03:00
+sr-due: 2026-09-18
+sr-interval: 362
+sr-ease: 290
 ---
 
 **создание бинов util in security.xml**

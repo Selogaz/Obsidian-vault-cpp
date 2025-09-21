@@ -6,10 +6,10 @@ aliases:
   - SpringBootApplication
 deck: obsidian::java
 created: 2025-06-15T09:43:00+03:00
-updated: 2025-06-18T14:43:11+03:00
-sr-due: 2025-07-03
-sr-interval: 15
-sr-ease: 300
+updated: 2025-09-21T12:51:26+03:00
+sr-due: 2026-10-20
+sr-interval: 394
+sr-ease: 320
 ---
 
 **@SpringBootApplication**

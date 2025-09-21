@@ -6,10 +6,10 @@ aliases:
   - xml-схемы и пространства имен
 deck: obsidian::java
 created: 2025-06-13T11:03:19+03:00
-updated: 2025-06-16T22:21:17+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 272
+updated: 2025-09-21T12:13:16+03:00
+sr-due: 2026-09-24
+sr-interval: 368
+sr-ease: 292
 ---
 
 **xml-схемы и пространства имен**

@@ -6,10 +6,10 @@ aliases:
   - способы описания бинов
 deck: obsidian::java
 created: 2025-06-15T10:39:32+03:00
-updated: 2025-06-16T22:17:12+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 274
+updated: 2025-09-21T12:09:09+03:00
+sr-due: 2026-09-29
+sr-interval: 373
+sr-ease: 294
 ---
 
 **способы описания бинов**

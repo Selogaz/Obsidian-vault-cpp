@@ -6,10 +6,10 @@ aliases:
   - Profile
 deck: obsidian::java
 created: 2025-06-15T10:13:37+03:00
-updated: 2025-06-18T14:55:18+03:00
-sr-due: 2025-06-22
-sr-interval: 4
-sr-ease: 270
+updated: 2025-09-21T12:39:48+03:00
+sr-due: 2026-09-08
+sr-interval: 352
+sr-ease: 290
 ---
 
 **@Profile**

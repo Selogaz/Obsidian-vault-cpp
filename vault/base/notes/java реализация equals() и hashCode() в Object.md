@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-31 06:51:08+03:00
-updated: 2025-06-06T06:59:07+03:00
-sr-due: 2025-06-20
-sr-interval: 14
-sr-ease: 292
+updated: 2025-09-21T12:08:18+03:00
+sr-due: 2026-11-29
+sr-interval: 434
+sr-ease: 312
 ---
 
 **Реализация equals и hashCode() в Object**

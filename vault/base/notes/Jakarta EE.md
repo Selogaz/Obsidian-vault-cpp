@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-03 10:20:07+03:00
-updated: 2025-06-11T08:44:58+03:00
-sr-due: 2025-07-03
-sr-interval: 22
-sr-ease: 290
+updated: 2025-09-21T12:49:11+03:00
+sr-due: 2026-11-09
+sr-interval: 414
+sr-ease: 310
 ---
 
 **Jakarta EE или Java EE**

@@ -6,10 +6,10 @@ aliases:
   - внедрение реализации интерфейса java.utl.Map
 deck: obsidian::java
 created: 2025-06-15T09:27:29+03:00
-updated: 2025-06-16T22:16:45+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 270
+updated: 2025-09-21T12:06:51+03:00
+sr-due: 2026-09-15
+sr-interval: 359
+sr-ease: 290
 ---
 
 **внедрение реализации интерфейса java.utl.Map**

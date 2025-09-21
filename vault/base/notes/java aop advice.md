@@ -7,10 +7,10 @@ aliases:
   - совет
 deck: obsidian::java
 created: 2025-06-06T11:51:41+03:00
-updated: 2025-06-11T09:05:51+03:00
-sr-due: 2025-06-23
-sr-interval: 12
-sr-ease: 270
+updated: 2025-09-21T12:40:19+03:00
+sr-due: 2026-10-13
+sr-interval: 387
+sr-ease: 290
 ---
 
 **aop advice**

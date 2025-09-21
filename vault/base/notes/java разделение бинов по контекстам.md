@@ -6,10 +6,10 @@ aliases:
   - разделение бинов по контекстам
 deck: obsidian::java
 created: 2025-06-13T10:42:21+03:00
-updated: 2025-06-16T22:16:12+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 270
+updated: 2025-09-21T12:06:43+03:00
+sr-due: 2026-09-16
+sr-interval: 360
+sr-ease: 290
 ---
 
 **разделение бинов по контекстам**

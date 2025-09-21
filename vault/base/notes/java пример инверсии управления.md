@@ -6,10 +6,10 @@ aliases:
   - пример инверсии управления
 deck: obsidian::java
 created: 2025-06-05T18:31:44+03:00
-updated: 2025-06-11T08:59:09+03:00
-sr-due: 2025-07-01
-sr-interval: 20
-sr-ease: 290
+updated: 2025-09-21T12:48:12+03:00
+sr-due: 2026-11-08
+sr-interval: 413
+sr-ease: 310
 ---
 
 **пример инверсии управления**

@@ -6,10 +6,10 @@ aliases:
   - запуск virtualpets
 deck: obsidian::java
 created: 2025-06-11T17:35:43+03:00
-updated: 2025-06-18T14:54:36+03:00
-sr-due: 2025-06-22
-sr-interval: 4
-sr-ease: 270
+updated: 2025-09-21T12:39:36+03:00
+sr-due: 2026-09-09
+sr-interval: 353
+sr-ease: 290
 ---
 
 **запуск virtualpets**

@@ -6,10 +6,10 @@ aliases:
   - web.xml
 deck: obsidian::java
 created: 2025-06-13T07:45:24+03:00
-updated: 2025-06-18T14:06:40+03:00
-sr-due: 2025-06-25
-sr-interval: 7
-sr-ease: 260
+updated: 2025-09-21T12:44:01+03:00
+sr-due: 2026-09-01
+sr-interval: 345
+sr-ease: 280
 ---
 
 **web.xml**

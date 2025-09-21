@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-31 04:12:42+03:00
-updated: 2025-06-06T07:06:22+03:00
-sr-due: 2025-06-21
-sr-interval: 15
-sr-ease: 290
+updated: 2025-09-21T12:31:08+03:00
+sr-due: 2026-11-27
+sr-interval: 432
+sr-ease: 310
 ---
 
 **Разница String, StringBuffer, StringBuilder**
