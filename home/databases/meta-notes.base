@@ -1,0 +1,57 @@
+filters:
+  and:
+    - file.hasTag("system/high/meta")
+    - or:
+        - this.isCategory == false
+        - or:
+            - file.hasTag("category/" + this.file.name.replace(" ", "_"))
+            - category.contains(link(this.file.name))
+    - or:
+        - this.meta_title == null
+        - this.meta_title == ""
+        - this.meta_title.length == 0
+        - file.name.contains(this.meta_title)
+    - or:
+        - this.meta_type == null
+        - this.meta_type == ""
+        - this.meta_type.length == 0
+        - file.tags.containsAny(this.meta_type)
+    - or:
+        - this.meta_relevant == null
+        - this.meta_relevant == ""
+        - this.meta_relevant.length == 0
+        - this.meta_relevant.contains(relevant)
+    - or:
+        - this.meta_category == null
+        - this.meta_category == ""
+        - this.meta_category.length == 0
+        - category.containsAny(this.meta_category)
+formulas:
+  backlinks: |
+    file.backlinks.length
+  outlinks: file.links.length
+properties:
+  file.name:
+    displayName: 🔤 title
+  note.addition:
+    displayName: ➕
+  note.relevant:
+    displayName: 📌
+  note.category:
+    displayName: 🗺️ category
+  formula.backlinks:
+    displayName: ⬇️
+  formula.outlinks:
+    displayName: ⬆️
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - addition
+      - relevant
+      - category
+      - formula.backlinks
+      - formula.outlinks
+    sort: []
+    limit: 28

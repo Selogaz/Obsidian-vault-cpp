@@ -1,0 +1,343 @@
+/* Fonts (loaded locally from fonts.css) */
+
+body {
+  --font-text-theme: 'Rubik', 'Noto Color Emoji', sans-serif;
+  --font-editor-theme: 'Rubik', 'Noto Color Emoji', sans-serif;
+  --font-monospace-theme: 'Roboto Mono', 'Noto Color Emoji', monospace;
+  --font-interface-theme: 'Inter', 'Noto Color Emoji', sans-serif;
+  --font-heading-theme: 'Tinos', 'Noto Color Emoji', serif !important;
+}
+
+/* all clicable */
+
+* {
+  user-select: all;
+  -webkit-user-select: text;
+}
+
+/* disable status bar */
+
+.status-bar {
+  display: none;
+}
+
+/* hide scrollbar */
+
+body:not(.native-scrollbars) ::-webkit-scrollbar {
+  display: none;
+}
+
+/* Web Viewer change background color of website */
+.webviewer-content webview {
+  background-color: var(--background-primary) !important;
+}
+
+/* BASES */
+/* titel color */
+.bases-thead {
+  background: color-mix(in srgb, var(--background-primary) 96%, white);
+}
+/* hide header icons */
+.bases-table-header-icon,
+.mb-search-modal-element-description {
+  display: none;
+}
+
+/* full width external embed */
+.external-embed {
+  width: 100% !important;
+}
+
+/* disable menu separator */
+.menu-scroll .menu-separator {
+  display: none;
+}
+
+/* Hide block IDs on inactive lines */
+.cm-blockid {
+  opacity: 0;
+}
+/* Show block IDs on active lines */
+.cm-active .cm-blockid {
+  opacity: 1;
+}
+
+/* fix mermaid background color */
+.cluster rect {
+  fill: transparent !important;
+}
+
+/* hide vault manager */
+
+body:not(.is-mobile)
+  .workspace-split.mod-left-split
+  .workspace-sidedock-vault-profile {
+  display: none;
+}
+
+/**/
+
+.theme-dark.theme-dark,
+.theme-light.theme-light {
+  --link-color: rgb(84, 200, 208);
+  --link-unresolved-color: rgb(221, 51, 51);
+  --link-external-color: rgb(185, 125, 248);
+  --bold-color: rgb(209, 63, 141);
+  --italic-color: rgb(201, 87, 148);
+  /* --italic-color: #72aefd; */
+  /* --code-background: #1f1f1f; */
+  --titlebar-background-focused: var(--titlebar-background);
+}
+
+.is-mobile.theme-dark,
+.is-mobile.theme-dark {
+  --background-primary: var(--background-secondary);
+  /* --background-secondary: var(--background-secondary); */
+}
+
+.cm-link .cm-underline {
+  color: var(--link-external-color);
+}
+
+.frontmatter.language-yaml .atrule,
+.cm-atom.cm-hmd-frontmatter {
+  color: #f39b35;
+}
+
+.cm-def.cm-hmd-frontmatter.cm-hmd-frontmatter {
+  color: #98e342;
+}
+
+.cm-hmd-internal-link .cm-underline.cm-underline,
+.markdown-preview-view
+  .internal-link:not(.multi-select-pill, .metadata-link-inner),
+.metadata-container .internal-link,
+.markdown-rendered .internal-link,
+body:not(.classic-inline-backlinks) .embedded-backlinks .tree-item-inner {
+  text-decoration: none;
+}
+
+.mod-root .workspace-tab-header-container {
+  padding-left: 10px;
+}
+
+/* zoom colors */
+.zoom-plugin-title {
+  color: gray;
+}
+
+/* highlight color */
+.cm-s-obsidian span.cm-highlight,
+.markdown-rendered mark,
+mark,
+.cm-highlight {
+  background-color: rgb(72, 25, 65);
+  color: var(--font-color);
+}
+
+.theme-light .cm-s-obsidian span.cm-highlight,
+.theme-light .markdown-rendered mark,
+.theme-light mark,
+.theme-light .cm-highlight {
+  background-color: #e7c4fa;
+}
+
+/* datepicker */
+
+.datepicker-widget {
+  background-color: transparent;
+}
+
+/* settings */
+
+.modal.mod-settings {
+  top: 20px;
+}
+
+.modal {
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.modal-container.mod-dim .modal {
+  box-shadow: none;
+}
+
+/* delete top spaces */
+
+.mod-root .markdown-reading-view .markdown-preview-view,
+.mod-root
+  .view-content
+  > .markdown-source-view.mod-cm6
+  > .cm-editor
+  > .cm-scroller {
+  padding-top: 0px;
+}
+
+/* another quick swither */
+.prompt,
+.prompt.another-quick-switcher__floating-prompt,
+.float-search-modal,
+.modal.task-search-modal {
+  position: absolute;
+  top: 42px !important;
+  left: 3px !important;
+  /* right: 3px !important; */
+  /* left: 1347px !important; */
+  min-width: 500px;
+  max-width: 570px;
+  max-height: 96%;
+  border-radius: 0;
+  border-width: 2px;
+  border-color: var(--titlebar-background-focused);
+  box-shadow: none;
+}
+
+.another-quick-switcher__custom__item__title {
+  font-weight: normal;
+}
+
+.float-search-modal {
+  min-height: 96%;
+}
+
+.float-search-modal-instructions {
+  display: none;
+}
+
+.prompt .suggestion-item,
+.float-search-modal {
+  font-size: 100%;
+  padding: 3px;
+}
+
+input[type='text'][type]:not(.metadata-input, .metadata-property-key-input) {
+  border-radius: 0;
+}
+
+.theme-dark .modal-bg,
+.theme-light .modal-bg {
+  background-color: transparent;
+}
+
+.another-quick-switcher__status__default-input,
+.another-quick-switcher__status__search-command,
+.another-quick-switcher__header__auto-preview-icon,
+.another-quick-switcher__command_buttons,
+.another-quick-switcher__starred_item
+  .another-quick-switcher__item__entry:before {
+  display: none;
+}
+
+body .another-quick-switcher__status__count-input {
+  top: 1rem;
+}
+
+.another-quick-switcher__hit_word {
+  color: #ff47a9 !important;
+}
+
+/* hide label command palette */
+.better-command-palette .better-command-palette-title {
+  display: none;
+}
+
+/* editing toolbar fix */
+
+body:not(.normal-header-bar) #cMenuToolbarModalBar.top {
+  margin-right: 0em;
+}
+
+/* border radius for tabs */
+.workspace-tab-header,
+.workspace-tab-header-inner {
+  border-radius: 0.2rem;
+}
+
+/* recent files */
+.recent-files-file,
+.recent-files-title {
+  font-family: var(--font-interface-theme);
+}
+
+/* fix graph analysis */
+.scrollContainer {
+  padding: 0px 0px 0px 0px;
+}
+
+/* fix better search view */
+.better-search-views-file-match.markdown-rendered > *,
+.better-search-views-file-match.markdown-rendered > blockquote > * {
+  margin: 10px;
+}
+
+/* fix backlinks search */
+.embedded-backlinks .search-input-container input {
+  width: 90%;
+  transform: translate(0px, -2px);
+  padding-inline-start: 0.8em;
+}
+
+/* backlinks in mobile */
+.is-mobile .embedded-backlinks {
+  display: none !important;
+}
+
+/* fix floating search */
+.float-search-modal .modal-header {
+  display: none;
+}
+
+/* table center */
+.markdown-preview-view table,
+.is-live-preview table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* image border */
+.markdown-source-view.mod-cm6 .internal-embed > img,
+.markdown-preview-view .internal-embed > img {
+  border: 1px solid #404040;
+  border-radius: 2px;
+}
+
+/* math block border */
+.markdown-source-view.mod-cm6 .math-block > mjx-container,
+.markdown-preview-view .math-block > mjx-container {
+  border: 1px solid #404040;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+/* fix modal */
+.modal-content h1 {
+  margin-top: 0px;
+}
+
+/* omnisearch */
+.omnisearch-result__folder-path {
+  display: none;
+}
+
+.omnisearch-result__title {
+  color: var(--link-color);
+}
+
+.suggestion-highlight.suggestion-highlight {
+  color: #ff47a9;
+}
+
+/* fix problem inlineai and language tool */
+.cm-tooltip.cm-tooltip-below:not(.lt-predictions-container) {
+  top: auto !important;
+  bottom: -2.2rem !important;
+}
+
+/* smart connections */
+.sc-top-bar,
+div.sc-container h2,
+div.sc-container p,
+div.sc-bottom-bar {
+  display: none;
+}

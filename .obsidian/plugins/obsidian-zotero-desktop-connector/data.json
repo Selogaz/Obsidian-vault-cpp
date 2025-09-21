@@ -1,0 +1,40 @@
+{
+  "database": "Zotero",
+  "noteImportFolder": "",
+  "pdfExportImageDPI": 120,
+  "pdfExportImageFormat": "png",
+  "pdfExportImageQuality": 100,
+  "citeFormats": [
+    {
+      "name": "Zotero link",
+      "format": "template",
+      "template": "{%- if shortTitle -%}\n[{{shortTitle}}](zotero://select/items/@{{citekey}})\n{% endif -%}\n{%- if not shortTitle -%}\n[{{title}}](zotero://select/items/@{{citekey}})\n{% endif -%}"
+    }
+  ],
+  "exportFormats": [
+    {
+      "name": "Import log with annotation",
+      "outputPathTemplate": "sources/{{citekey}}.md",
+      "imageOutputPathTemplate": "files/",
+      "imageBaseNameTemplate": "image",
+      "templatePath": "templates/create/sources/zotero with annotation template.md"
+    },
+    {
+      "name": "Annotations import",
+      "outputPathTemplate": "base/additions/{{citekey}}.md",
+      "imageOutputPathTemplate": "files/",
+      "imageBaseNameTemplate": "image",
+      "templatePath": "templates/create/sources/annotations template.md"
+    },
+    {
+      "name": "Source import",
+      "outputPathTemplate": "sources/{{citekey}}.md",
+      "imageOutputPathTemplate": "files/",
+      "imageBaseNameTemplate": "image",
+      "templatePath": "templates/create/sources/zotero template.md"
+    }
+  ],
+  "citeSuggestTemplate": "[[{{citekey}}]]",
+  "openNoteAfterImport": true,
+  "whichNotesToOpenAfterImport": "first-imported-note"
+}

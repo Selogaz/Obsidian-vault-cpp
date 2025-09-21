@@ -1,0 +1,107 @@
+filters:
+  and:
+    - file.hasTag("source")
+    - '!file.hasTag("mark/log")'
+    - or:
+        - this.isCategory == false
+        - or:
+            - file.hasTag("category/" + this.file.name.replace(" ", "_"))
+            - category.contains(link(this.file.name))
+    - or:
+        - this.source_title == null
+        - this.source_title == ""
+        - this.source_title.length == 0
+        - file.name.contains(this.source_title)
+    - or:
+        - this.source_type == null
+        - this.source_type == ""
+        - this.source_type.length == 0
+        - file.tags.containsAny(this.source_type)
+    - or:
+        - this.source_status == null
+        - this.source_status == ""
+        - this.source_status.length == 0
+        - this.source_status.contains(status)
+    - or:
+        - this.source_scientificity == null
+        - this.source_scientificity == ""
+        - this.source_scientificity.length == 0
+        - this.source_scientificity.contains(scientificity)
+    - or:
+        - this.source_rating == null
+        - this.source_rating == ""
+        - this.source_rating.length == 0
+        - this.source_rating.contains(rating)
+    - or:
+        - this.source_category == null
+        - this.source_category == ""
+        - this.source_category.length == 0
+        - category.containsAny(this.source_category)
+    - or:
+        - this.source_meta == null
+        - this.source_meta == ""
+        - this.source_meta.length == 0
+        - meta.containsAny(this.source_meta)
+    - or:
+        - this.source_problem == null
+        - this.source_problem == ""
+        - this.source_problem.length == 0
+        - problem.containsAny(this.source_problem)
+    - or:
+        - this.source_creator == null
+        - this.source_creator == ""
+        - this.source_creator.length == 0
+        - creator.containsAny(this.source_creator)
+    - or:
+        - this.source_production == null
+        - this.source_production == ""
+        - this.source_production.length == 0
+        - production.containsAny(this.source_production)
+formulas:
+  type: tags.filter(value.startsWith("source/"))[0].replace(/^.*\//, '')
+properties:
+  formula.type:
+    displayName: 🗄️ type
+  note.zotero:
+    displayName: 🇿
+  note.addition:
+    displayName: ➕
+  note.status:
+    displayName: 💯
+  note.scientificity:
+    displayName: 🅰️
+  note.rating:
+    displayName: 🌕️
+  note.category:
+    displayName: 🗺️ category
+  note.meta:
+    displayName: 🔎 meta
+  note.problem:
+    displayName: ⚡ problem
+  note.creator:
+    displayName: 👨 creator
+  note.production:
+    displayName: 🏬 production
+  note.url:
+    displayName: 🔗 url
+  file.name:
+    displayName: 🔤 title
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - addition
+      - zotero
+      - formula.type
+      - status
+      - scientificity
+      - rating
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - url
+    sort: []
+    limit: 28

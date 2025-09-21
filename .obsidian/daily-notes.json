@@ -1,4 +1,5 @@
 {
-  "template": "Templates/Daily Template",
-  "folder": "Daily"
+  "format": "YYYY-MM-DD",
+  "folder": "periodic/daily",
+  "template": "templates/create/periodic/daily template"
 }

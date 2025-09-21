@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "87f32a97e4f811b8",
+    "id": "d7120251430d072d",
     "type": "split",
     "children": [
       {
-        "id": "c1ed1c4dd03294b0",
+        "id": "4f3c26214a367c22",
         "type": "tabs",
         "children": [
           {
-            "id": "51fe1e4a5481fa59",
+            "id": "6fdd5211796fbaed",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -23,28 +23,91 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "24f90e6e64b64792",
+    "id": "2025082c7b2e629e",
     "type": "split",
     "children": [
       {
-        "id": "f894b53fce278fdb",
+        "id": "2c71bf99c2f76a39",
         "type": "tabs",
+        "dimension": 29.78723404255319,
         "children": [
           {
-            "id": "d1d4ec8293d0f967",
+            "id": "1ac8c1b2ebef5be4",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "file-properties",
+              "state": {},
+              "icon": "lucide-info",
+              "title": "File properties"
             }
           },
           {
-            "id": "e7504e360d143f70",
+            "id": "f61d2cd9e7c9880c",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c493d6f232ce3228",
+        "type": "tabs",
+        "dimension": 70.2127659574468,
+        "children": [
+          {
+            "id": "a3b633f5e6eb7da5",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "home/databases/breadcrumbs.base",
+                "viewName": "🔗 links"
+              },
+              "icon": "lucide-table",
+              "title": "breadcrumbs"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 341.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "2266a43ed4d3dbb6",
+    "type": "split",
+    "children": [
+      {
+        "id": "c5d15b09186ff35b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86f5281329646bd0",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {},
+              "icon": "lines-of-text",
+              "title": "Quiet Outline"
+            }
+          },
+          {
+            "id": "e470d7a0e0639e43",
+            "type": "leaf",
+            "state": {
+              "type": "VIEW_TYPE_LONGFORM_EXPLORER",
+              "state": {},
+              "icon": "longform",
+              "title": "Longform"
+            }
+          },
+          {
+            "id": "4991079be1db926c",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -52,159 +115,72 @@
                 "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
               "title": "Search"
             }
-          },
-          {
-            "id": "687848125d41d73f",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 287.5
-  },
-  "right": {
-    "id": "2c3fc3015b77dd24",
-    "type": "split",
-    "children": [
-      {
-        "id": "947c48541a61be76",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "56ef79d9d5b5d3c0",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Programming/Java/HTTP/Статус-коды HTTP-ответов/2xx.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for 2xx"
-            }
-          },
-          {
-            "id": "782ce949f760c1e8",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Programming/Java/HTTP/Статус-коды HTTP-ответов/2xx.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from 2xx"
-            }
-          },
-          {
-            "id": "fd859c8a75480734",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
-            "id": "b9fa329bf497e3ca",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Programming/Java/HTTP/Статус-коды HTTP-ответов/2xx.md"
-              },
-              "icon": "lucide-list",
-              "title": "Outline of 2xx"
-            }
-          }
-        ]
-      }
-    ],
-    "direction": "horizontal",
-    "width": 300,
+    "width": 344.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
+      "bases:Create new base": false,
       "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "templater-obsidian:Templater": false,
+      "canvas:Create new canvas": true,
+      "workspaces:Manage workspace layouts": true,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "periodic-notes:Open today": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian42-brat:BRAT": false,
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "51fe1e4a5481fa59",
+  "active": "6fdd5211796fbaed",
   "lastOpenFiles": [
-    "Programming/Agile/Kanban/7 паттернов канбана.md",
-    "Old",
-    "Programming/Agile/Kanban/Суть.md",
-    "Programming/Agile/Kanban/Kanban-доска.md",
-    "Programming/Agile/Kanban/Kanban.md",
-    "Programming/Agile/Kanban/Цель Kanban.md",
-    "Programming/Agile/Scrum/Бэклог спринта.md",
-    "Programming/Agile/Kanban",
-    "Programming/Agile/Scrum/Спринт.md",
-    "Programming/Agile/Scrum/Summary.md",
-    "Programming/Agile/Scrum/Scrum.md",
-    "Programming/Agile/Scrum/Scrum-мастер.md",
-    "Programming/Agile/Scrum/События и артефакты Scrum.md",
-    "Programming/Agile/Scrum/Команда разработки.md",
-    "Programming/Agile/Scrum/Владелец продукта.md",
-    "Programming/Agile/Scrum/Бэклог.md",
-    "Programming/Agile/Scrum/Ролевые модели Scrum.md",
-    "Programming/Agile/Scrum/Ценности Scrum.md",
-    "Programming/Agile/Scrum/Процесс управления в Scrum.md",
-    "Programming/Agile/Scrum/Фокусы Scrum.md",
-    "Programming/Agile/Scrum/Фреймворк.md",
-    "Programming/Agile/Клиффхэнгер.md",
-    "Programming/Agile/Scrum",
-    "Old/files/Pasted image 20250326235506.png",
-    "Programming/Agile/Циклы разработки Agile.md",
-    "Programming/Agile/Принципы Agile.md",
-    "Programming/Agile/Ценности Agile.md",
-    "Programming/Agile/Agile.md",
-    "Programming/Agile",
-    "Programming/Алгоритмы/СНМ.md",
-    "Programming/Алгоритмы",
-    "Old/files/Pasted image 20250202091040.png",
-    "Old/files/Pasted image 20250202091004.png",
-    "Old/files/Pasted image 20241110125309.png",
-    "Old/files/Pasted image 20241107122654.png",
-    "Old/files/Pasted image 20241107122648.png",
-    "Programming/Java/Spring",
-    "Old/files/Pasted image 20241101155435.png",
-    "Programming/Java/BD/MongoDB",
-    "Old/files/Pasted image 20241029133742.png",
-    "Old/files/Pasted image 20241029133705.png",
-    "Old/files/Pasted image 20241029133535.png",
-    "Programming/Java/BD/Redis",
-    "Programming/Java/BD",
-    "Programming/Java/HTTP/REST"
+    "periodic/tasks.md",
+    "classes/addition.md",
+    "templates/create/additions/addition template.md",
+    "home/databases/fleeting notes.md",
+    "home/index.md",
+    "__TEMP__abbecab4-56ff-44bc-926d-40f0dde08516.base",
+    "__TEMP__abbecab4-56ff-44bc-926d-40f0dde08516.md",
+    "home/databases/projects.md",
+    "home/databases/sources.md",
+    "base/creators/Richard Donner.md",
+    "sources/Lethal Weapon 4.md",
+    "sources/Lethal Weapon 3.md",
+    "sources/Lethal Weapon 2.md",
+    "sources/Lethal Weapon.md",
+    "sources/Weapons.md",
+    "sources/Police Academy.md",
+    "sources/Police Academy 2 Their First Assignment.md",
+    "sources/Police Academy 3 Back in Training.md",
+    "sources/Police Academy 4 Citizens on Patrol.md",
+    "sources/Police Academy 5 Assignment Miami Beach.md",
+    "sources/Police Academy 6 City Under Siege.md",
+    "sources/Police Academy Mission to Moscow.md",
+    "projects/new proj.md",
+    "projects/test proj.md",
+    "base/contacts/test contact - lol.md",
+    "sources/test source.md",
+    "base/notes/DATE_2025-08-31 TIME_08-12-21.md",
+    "__TEMP__d0c385c1-41b5-4ca7-8f58-e36562801e04.base",
+    "home/databases/breadcrumbs.base",
+    "__TEMP__06c72be7-2548-4242-8c13-8c3380860cb5.base",
+    "home/databases/sources.base~",
+    "templates/views/structure/view.js",
+    "templates/views/structure",
+    "templates/views/tasks/category/view.js",
+    "templates/views/tasks/category",
+    "templates/views/category/category/view.js"
   ]
 }

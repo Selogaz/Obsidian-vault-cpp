@@ -1,0 +1,44 @@
+filters:
+  and:
+    - file.hasTag("note")
+    - file.hasTag("category/" + this.file.name.replace(" ", "_"))
+    - or:
+        - this.note_title == null
+        - this.note_title == ""
+        - this.note_title.length == 0
+        - file.name.contains(this.note_title)
+        - aliases.join(" ").contains(this.note_title)
+    - or:
+        - this.note_tags == null
+        - this.note_tags == ""
+        - this.note_tags.length == 0
+        - file.tags.join(" ").contains(this.note_tags)
+formulas:
+  backlinks: |
+    file.backlinks.length
+  outlinks: file.links.length
+properties:
+  file.name:
+    displayName: 🔤 title
+  file.tags:
+    displayName: 🏷️ tags
+  formula.backlinks:
+    displayName: ⬇️
+  formula.outlinks:
+    displayName: ⬆️
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - file.tags
+      - created
+      - updated
+      - formula.backlinks
+      - formula.outlinks
+    sort: []
+    columnSize:
+      note.created: 143
+      note.updated: 143
+      formula.backlinks: 143
+      formula.outlinks: 143

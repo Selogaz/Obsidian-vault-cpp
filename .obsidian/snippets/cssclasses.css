@@ -1,0 +1,60 @@
+.full-width {
+  --file-line-width: 100%;
+}
+
+.no-inline-title .inline-title {
+  display: none;
+}
+
+.hide-backlinks .embedded-backlinks,
+.hide-backlinks .embedded-similar-notes {
+  display: none;
+}
+
+.hide-bases-header .bases-header {
+  display: none;
+}
+
+.hover-bases-header .bases-embed {
+  padding-top: 5px;
+}
+
+.hover-bases-header .bases-header {
+  opacity: 0;
+}
+
+.hover-bases-header .bases-header:hover {
+  opacity: 1;
+}
+
+.hide-properties {
+  --metadata-display-reading: none;
+  --metadata-display-editing: none;
+}
+
+.remove-dataview-title
+  :is(.block-language-dataview, .block-language-dataviewjs)
+  h4 {
+  display: none;
+}
+
+.hide-embed-heading .markdown-embed :is(h1, h2, h3, h4, h5, h6) {
+  display: none;
+}
+
+.native-embed .markdown-embed {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+
+.theme-dark .task-contrast .HyperMD-list-line[data-task=' '] {
+  background: rgba(177, 28, 28, 0.2);
+  border: solid 1px;
+}
+
+.theme-light .task-contrast .HyperMD-list-line[data-task=' '] {
+  background: rgba(196, 33, 33, 0.1);
+}

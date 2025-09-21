@@ -1,0 +1,49 @@
+.inline-title:not([data-level]) {
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+  color: var(--h1-color);
+  font-variant-caps: small-caps;
+  line-height: 0.9;
+
+  background: color-mix(in srgb, var(--background-primary) 98%, white);
+
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+/* fix */
+.markdown-source-view .inline-title {
+  margin-left: 0em;
+}
+
+.markdown-preview-view .inline-title {
+  margin-top: 38px;
+  margin-bottom: 32px;
+}
+
+.hover-popover .inline-title {
+  margin-top: 0px;
+  display: block;
+  text-align: center;
+  font-size: var(--font-text);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+/* disable inline title in mobile */
+.is-mobile .inline-title {
+  display: none;
+}
+
+.is-mobile .mod-root .markdown-reading-view .markdown-preview-view,
+.is-mobile
+  .mod-root
+  .view-content
+  > .markdown-source-view.mod-cm6
+  > .cm-editor
+  > .cm-scroller {
+  padding-top: 10px;
+}

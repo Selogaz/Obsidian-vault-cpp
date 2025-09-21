@@ -1,0 +1,49 @@
+filters:
+  and:
+    - file.folder != "classes"
+    - file.folder != "files"
+    - file.folder != "home"
+    - file.folder != "periodic/statuses"
+    - file.folder != "templates"
+    - or:
+        - this.recent_title == null
+        - this.recent_title == ""
+        - this.recent_title.length == 0
+        - file.name.contains(this.recent_title)
+        - aliases.join(" ").contains(this.recent_title)
+properties:
+  file.name:
+    displayName: 🔤 title
+  note.created:
+    displayName: 🆕 created
+  note.updated:
+    displayName: 🔄 updated
+views:
+  - type: table
+    name: 🆕 Last Updated
+    order:
+      - file.name
+      - created
+      - updated
+    sort:
+      - property: updated
+        direction: DESC
+    limit: 29
+    columnSize:
+      file.name: 420
+      note.created: 143
+      note.updated: 224
+  - type: table
+    name: 🔄 Last Created
+    order:
+      - file.name
+      - created
+      - updated
+    sort:
+      - property: created
+        direction: DESC
+    limit: 29
+    columnSize:
+      file.name: 420
+      note.created: 143
+      note.updated: 224

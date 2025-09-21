@@ -1,0 +1,60 @@
+{
+  "selectionHighlighter": {
+    "highlightWordAroundCursor": true,
+    "highlightSelectedText": true,
+    "maxMatches": 100,
+    "minSelectionLength": 3,
+    "highlightDelay": 200,
+    "ignoredWords": "myself, our, ours, ourselves, you, your, yours, yourself, yourselves, him, his, himself, she, her, hers, herself, its, itself, they, them, their, theirs, themselves, what, which, who, whom, this, that, these, those, are, was, were, been, being, have, has, had, having, does, did, doing, the, and, but, because, until, while, for, with, about, against, between, into, through, during, before, after, above, below, from, down, out, off, over, under, again, further, then, once, here, there, when, where, why, how, all, any, both, each, few, more, most, other, some, such, nor, not, only, own, same, than, too, very, can, will, just, don, should,now"
+  },
+  "staticHighlighter": {
+    "queries": {
+      "punctuation": {
+        "class": "punctuation",
+        "color": "#42188000",
+        "regex": true,
+        "query": "[+.,/#$%^&;:{}=\\-~()\"|–@—]",
+        "mark": [
+          "match"
+        ],
+        "css": ".punctuation {\n  color: rgba(84, 200, 208, 1) !important;\n}"
+      },
+      "digits": {
+        "class": "digits",
+        "color": "#00000000",
+        "regex": true,
+        "query": "\\d",
+        "mark": [
+          "match"
+        ],
+        "css": ".digits {\n  color: rgba(84, 200, 208, 1) !important;\n}"
+      },
+      "exclamation": {
+        "class": "exclamation",
+        "color": "#42188000",
+        "regex": true,
+        "query": "[?|!]",
+        "mark": [
+          "match"
+        ],
+        "css": ".exclamation {\n  color: rgba(251, 70, 76, 1) !important;\n}"
+      },
+      "long-dash": {
+        "class": "long-dash",
+        "color": "#42188000",
+        "regex": true,
+        "query": "^—$",
+        "mark": [
+          "match"
+        ],
+        "css": ".long-dash {\n  font-size: 0;\n}\n.cm-active .long-dash {\n  font-size: var(--font-text-size);\n  color: rgba(251, 70, 76, 1) !important;\n}\n.long-dash::before {\n  font-size: var(--font-text-size);\n  content: \"➖\";\n  color: rgba(209, 63, 141, 0.2) !important;\n}\n.cm-active .long-dash::before {\n  font-size: 0;\n}"
+      }
+    },
+    "queryOrder": [
+      "exclamation",
+      "punctuation",
+      "digits",
+      "long-dash"
+    ]
+  }
+}

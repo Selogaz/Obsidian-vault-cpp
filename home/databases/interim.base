@@ -1,0 +1,39 @@
+filters:
+  and:
+    - tags.join(" ").contains("mark/addition")
+    - status == "🟥"
+formulas:
+  type: tags.filter(value.startsWith("mark/addition"))[0].replace(/^.*\//, '')
+properties:
+  formula.type:
+    displayName: 🗄️ type
+  note.project:
+    displayName: 🏢 project
+  file.name:
+    displayName: 🗣️ interim
+  note.status:
+    displayName: 💯
+  note.input:
+    displayName: ⬇️ input
+  note.output:
+    displayName: ⬆️ output
+  note.description:
+    displayName: ✍️ description
+  note.attribute:
+    displayName: 🔖 attribute
+views:
+  - type: table
+    name: Table
+    order:
+      - project
+      - formula.type
+      - status
+      - file.name
+      - attribute
+      - description
+      - input
+      - output
+    sort:
+      - property: project
+        direction: ASC
+    limit: 30

@@ -1,0 +1,50 @@
+<%*
+const url_regex = /^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/
+
+let url = await tp.system.prompt("URL or TITLE (for conspectuses – prefix '!log')", "")
+let isLog = 0
+
+if (/^!log /.test(url)) {
+	await tp.file.rename(url.replace(/^!log /, "").replace(/[<>:"/\\|?*\x00-\x1f]/g, '').replace(/\s+/g, ' ').trim())
+	isLog = 1
+} else if (!url_regex.test(url)) {
+	await tp.file.rename(url.replace(/[<>:"/\\|?*\x00-\x1f]/g, '').replace(/\s+/g, ' ').trim())
+}
+-%>
+<%* if (url_regex.test(url) && (/youtube/.test(url) || /youtu/.test(url))) { %>
+<%- 
+tp.file.include("[[templates/create/sources/meta-templates/youtube template.md]]") 
+%>
+<%* } else if (url_regex.test(url) && /wiki|wikipedia/.test(url)) { %>
+<%- 
+tp.file.include("[[templates/create/sources/meta-templates/wikipedia template.md]]") 
+%>
+<%* } else if (url_regex.test(url) && /imdb/.test(url)) { %>
+<%- 
+tp.file.include("[[templates/create/sources/meta-templates/imdb template.md]]") 
+%>
+<%* } else if (url_regex.test(url) && /letterboxd/.test(url)) { %>
+<%- 
+tp.file.include("[[templates/create/sources/meta-templates/letterboxd template.md]]") 
+%>
+<%* } else if (false) { %>
+<%- 
+tp.file.include("[[]]") 
+%>
+<%* } else if (false) { %>
+<%- 
+tp.file.include("[[]]") 
+%>
+<%* } else if (url_regex.test(url)) { %>
+<%- 
+tp.file.include("[[templates/create/sources/meta-templates/any website template.md]]") 
+%>
+<%* } else if (isLog) { %>
+<%- 
+tp.file.include("[[log template]]") 
+%>
+<%* } else { %>
+<%- 
+tp.file.include("[[source template]]") 
+%>
+<%* } _%>

@@ -1,0 +1,52 @@
+{
+  "pluginList": [
+    "flowing-abyss/obsidian-task-calendar",
+    "reply2za/obsidian-query-control",
+    "flowing-abyss/obsidian-task-search",
+    "flowing-abyss/obsidian-tag-replacer",
+    "flowing-abyss/obsidian-frontmatter-sync",
+    "flowing-abyss/obsidian-calendar-plugin",
+    "salmund/obsidian-better-link-inserter"
+  ],
+  "pluginSubListFrozenVersion": [
+    {
+      "repo": "salmund/obsidian-better-link-inserter",
+      "version": "latest"
+    },
+    {
+      "repo": "flowing-abyss/obsidian-calendar-plugin",
+      "version": "latest"
+    },
+    {
+      "repo": "flowing-abyss/obsidian-frontmatter-sync",
+      "version": "latest"
+    },
+    {
+      "repo": "flowing-abyss/obsidian-tag-replacer",
+      "version": "latest"
+    },
+    {
+      "repo": "flowing-abyss/obsidian-task-search",
+      "version": "latest"
+    },
+    {
+      "repo": "reply2za/obsidian-query-control",
+      "version": "latest"
+    },
+    {
+      "repo": "flowing-abyss/obsidian-task-calendar",
+      "version": "latest"
+    }
+  ],
+  "themesList": [],
+  "updateAtStartup": true,
+  "updateThemesAtStartup": true,
+  "enableAfterInstall": true,
+  "loggingEnabled": false,
+  "loggingPath": "BRAT-log",
+  "loggingVerboseEnabled": false,
+  "debuggingMode": true,
+  "notificationsEnabled": true,
+  "personalAccessToken": "",
+  "ribbonIconEnabled": true
+}

@@ -1,0 +1,101 @@
+filters:
+  and:
+    - file.hasTag("project")
+    - or:
+        - this.isCategory == false
+        - or:
+            - file.hasTag("category/" + this.file.name.replace(" ", "_"))
+            - category.contains(link(this.file.name))
+    - or:
+        - this.project_title == null
+        - this.project_title == ""
+        - this.project_title.length == 0
+        - file.name.contains(this.project_title)
+    - or:
+        - this.project_type == null
+        - this.project_type == ""
+        - this.project_type.length == 0
+        - file.tags.containsAny(this.project_type)
+    - or:
+        - this.project_status == null
+        - this.project_status == ""
+        - this.project_status.length == 0
+        - this.project_status.contains(status)
+    - or:
+        - this.project_priority == null
+        - this.project_priority == ""
+        - this.project_priority.length == 0
+        - this.project_priority.contains(priority)
+    - or:
+        - this.project_category == null
+        - this.project_category == ""
+        - this.project_category.length == 0
+        - category.containsAny(this.project_category)
+    - or:
+        - this.project_meta == null
+        - this.project_meta == ""
+        - this.project_meta.length == 0
+        - meta.containsAny(this.project_meta)
+    - or:
+        - this.project_problem == null
+        - this.project_problem == ""
+        - this.project_problem.length == 0
+        - problem.containsAny(this.project_problem)
+    - or:
+        - this.project_creator == null
+        - this.project_creator == ""
+        - this.project_creator.length == 0
+        - creator.containsAny(this.project_creator)
+    - or:
+        - this.project_production == null
+        - this.project_production == ""
+        - this.project_production.length == 0
+        - production.containsAny(this.project_production)
+formulas:
+  type: tags.filter(value.startsWith("project/"))[0].replace(/^.*\//, '')
+properties:
+  formula.type:
+    displayName: 🗄️ type
+  note.addition:
+    displayName: ➕
+  note.status:
+    displayName: 💯
+  note.priority:
+    displayName: 🔺
+  note.category:
+    displayName: 🗺️ category
+  note.meta:
+    displayName: 🔎 meta
+  note.problem:
+    displayName: ⚡ problem
+  note.creator:
+    displayName: 👨 creator
+  note.production:
+    displayName: 🏬 production
+  note.url:
+    displayName: 🔗 url
+  file.name:
+    displayName: 🔤 title
+  note.start:
+    displayName: 🚩 start
+  note.end:
+    displayName: 🏁 end
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - addition
+      - formula.type
+      - status
+      - priority
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - url
+      - start
+      - end
+    sort: []
+    limit: 28

@@ -1,0 +1,55 @@
+filters:
+  and:
+    - or:
+        - file.hasTag("note/basic/seed")
+        - file.hasTag("note/basic/fern")
+        - file.hasTag("note/basic/incubator")
+        - file.hasTag("note/basic/evergreen")
+    - or:
+        - this.evergreen_title == null
+        - this.evergreen_title == ""
+        - this.evergreen_title.length == 0
+        - file.name.contains(this.evergreen_title)
+        - aliases.join(" ").contains(this.note_title)
+    - or:
+        - this.evergreen_type == null
+        - this.evergreen_type == ""
+        - this.evergreen_type.length == 0
+        - file.tags.containsAny(this.evergreen_type)
+formulas:
+  type: tags.filter(value.startsWith("note/basic/"))[0].replace(/^.*\//, '')
+  backlinks: |
+    file.backlinks.length
+  outlinks: file.links.length
+properties:
+  formula.type:
+    displayName: 🗄️ type
+  file.name:
+    displayName: 🔤 title
+  formula.backlinks:
+    displayName: ⬇️
+  formula.outlinks:
+    displayName: ⬆️
+views:
+  - type: table
+    name: 🌲 Evergreen
+    filters:
+      and:
+        - '!file.hasTag("note/discourse/question")'
+    order:
+      - formula.type
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+    limit: 28
+  - type: table
+    name: ❓ Favorite Problems
+    filters:
+      and:
+        - file.hasTag("note/discourse/question")
+    order:
+      - formula.type
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+    limit: 28

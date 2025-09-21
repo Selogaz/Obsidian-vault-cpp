@@ -1,0 +1,100 @@
+filters:
+  and:
+    - file.name != this.file.name
+formulas:
+  fm_out: this.file.properties.values() .map(list(value)).flat() .map(value.toString()) .filter(value.contains("[[")) .map(link(value)) .map(file(value)) .contains(file)
+  in_any: file.links.contains(this.file)
+  out_any: this.file.links.contains(file)
+  rank: if(formula.fm_out, -1, if(formula.in_any && formula.out_any, 0, if(formula.in_any, 1, 2)))
+  icon: if(formula.fm_out, "📋️", if(formula.in_any && formula.out_any, "🖇️", if(formula.in_any, "🔽", "⬆️")))
+properties:
+  formula.icon:
+    displayName: 🔗
+  file.name:
+    displayName: 🔤 title
+views:
+  - type: table
+    name: 🔗 links
+    filters:
+      or:
+        - formula.in_any
+        - formula.out_any
+    order:
+      - formula.icon
+      - file.name
+    sort:
+      - property: formula.rank
+        direction: ASC
+      - property: file.tags
+        direction: ASC
+    columnSize:
+      formula.link: 20
+  - type: table
+    name: ➕️ addition
+    filters:
+      and:
+        - or:
+            - file.hasTag("mark/addition")
+            - file.hasTag("mark/log")
+        - or:
+            - file.hasLink(this.asLink())
+            - this.file.hasLink(file.asLink())
+            - source.contains(this)
+            - project.contains(this)
+    order:
+      - file.name
+    sort:
+      - property: file.tags
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 🗺️ category
+    filters:
+      and:
+        - category.containsAny(this.category)
+    order:
+      - file.name
+    sort:
+      - property: file.tags
+        direction: DESC
+  - type: table
+    name: 🔎 meta
+    filters:
+      and:
+        - meta.containsAny(this.meta)
+    order:
+      - file.name
+    sort:
+      - property: file.tags
+        direction: DESC
+  - type: table
+    name: ⚡️ problem
+    filters:
+      and:
+        - problem.containsAny(this.problem)
+    order:
+      - file.name
+    sort:
+      - property: file.tags
+        direction: DESC
+  - type: table
+    name: 👨 creator
+    filters:
+      and:
+        - creator.containsAny(this.creator)
+    order:
+      - file.name
+    sort:
+      - property: file.tags
+        direction: DESC
+  - type: table
+    name: 🏬 production
+    filters:
+      and:
+        - production.containsAny(this.production)
+    order:
+      - file.name
+    sort:
+      - property: file.tags
+        direction: DESC
