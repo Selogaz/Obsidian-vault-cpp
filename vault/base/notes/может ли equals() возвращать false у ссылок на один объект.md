@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-02 09:21:51+03:00
-updated: 2025-09-12T10:39:51+03:00
-sr-due: 2025-09-28
-sr-interval: 16
-sr-ease: 256
+updated: 2025-09-28T06:25:48+03:00
+sr-due: 2025-11-24
+sr-interval: 57
+sr-ease: 276
 ---
 
 **Может ли equals возвращать false у ссылок на один объект**

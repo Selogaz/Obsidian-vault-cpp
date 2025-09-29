@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-02 09:24:36+03:00
-updated: 2025-06-08T22:34:05+03:00
-sr-due: 2025-06-28
-sr-interval: 20
-sr-ease: 293
+updated: 2025-09-28T06:18:01+03:00
+sr-due: 2026-12-29
+sr-interval: 457
+sr-ease: 313
 ---
 
 **Можно ли так реализовать equals**

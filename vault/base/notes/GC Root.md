@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-27 14:39:35+03:00
-updated: 2025-06-16T21:31:31+03:00
-sr-due: 2025-08-02
-sr-interval: 47
-sr-ease: 271
+updated: 2025-09-28T20:49:30+03:00
+sr-due: 2026-10-27
+sr-interval: 394
+sr-ease: 291
 ---
 
 **GC Root**
@@ -18,11 +18,11 @@ sr-ease: 271
 - [[Локальные переменные в JVM]] и параметры методов
 - Потоки
 - Статические переменные
-- Ссылки из <font color="#ffff00">JNI</font>
+- Ссылки из [[java JNI|JNI]]
 
 Самое простое java-приложение имеет:
 - локальные переменные внутри `main()` и параметры `main()`
 - поток, выполняющий `main()`
 - статические переменные класса, в котором находится `main()`
 
-- [ ] #task/inbox #category/work JNI
+- [x] #task/inbox #category/work JNI ✅ 2025-09-28

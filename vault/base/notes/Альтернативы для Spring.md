@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-03 10:43:02+03:00
-updated: 2025-06-11T08:51:39+03:00
-sr-due: 2025-07-05
-sr-interval: 24
-sr-ease: 290
+updated: 2025-09-28T20:59:43+03:00
+sr-due: 2026-12-07
+sr-interval: 435
+sr-ease: 310
 ---
 
 **Альтернативы для Spring**

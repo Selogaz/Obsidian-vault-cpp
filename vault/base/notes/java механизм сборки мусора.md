@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-28 07:27:53+03:00
-updated: 2025-06-08T22:58:48+03:00
-sr-due: 2025-06-19
-sr-interval: 11
-sr-ease: 282
+updated: 2025-09-28T06:27:27+03:00
+sr-due: 2026-12-10
+sr-interval: 438
+sr-ease: 302
 ---
 
 **Механизм сборки мусора**

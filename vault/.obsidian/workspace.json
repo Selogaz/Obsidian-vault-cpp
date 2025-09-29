@@ -13,6 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "base/notes/Основные интерфейсы JCF и их реализации.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Основные интерфейсы JCF и их реализации"
+            }
+          },
+          {
+            "id": "0a7c8bb793b66c77",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "home/index.md",
                 "mode": "source",
                 "source": false,
@@ -29,6 +53,30 @@
               },
               "icon": "lucide-file",
               "title": "index"
+            }
+          },
+          {
+            "id": "599b8086075ef409",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sources/Список книг.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Список книг"
             }
           },
           {
@@ -56,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -129,10 +177,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "periodic/daily/2025-04-15.md"
+                "file": "sources/Список книг.md"
               },
               "icon": "lucide-info",
-              "title": "File properties"
+              "title": "File properties for Список книг"
             }
           }
         ]
@@ -231,34 +279,34 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "1106751f5db76594",
+  "active": "599b8086075ef409",
   "lastOpenFiles": [
-    "base/notes/java view.md",
-    "sources/тестовый.md",
-    "sources/База знаний fill the gaps.md",
     "home/index.md",
-    "periodic/daily/2025-09-21.md",
-    "base/notes/java сканирование бинов.md",
-    "base/notes/java термины AOP.md",
-    "base/notes/java gRPC.md",
-    "base/notes/java aop aspect.md",
-    "base/notes/Spring Boot.md",
-    "base/notes/Netty.md",
-    "base/notes/java @SpringBootApplication.md",
-    "base/notes/java автоупаковка и кэширование.md",
-    "base/notes/java как происходит автоупаковка.md",
-    "base/notes/java передача параметров в методы (ИИ версия).md",
-    "base/notes/TreeMap.md",
-    "base/notes/execution engine.md",
-    "base/notes/java коллизия.md",
-    "base/notes/Jakarta EE.md",
-    "base/notes/java queue.md",
-    "base/notes/java.nio.file.Path.md",
-    "base/notes/Java Collections Framework.md",
-    "base/notes/java control freak.md",
-    "base/notes/java final.md",
-    "base/notes/java пример инверсии управления.md",
-    "base/notes/java bastard injection.md",
+    "sources/Список книг.md",
+    "base/notes/Основные интерфейсы JCF и их реализации.md",
+    "base/notes/Основные свойства красно-чёрных деревьев.md",
+    "base/notes/К2.md",
+    "base/notes/вечером.md",
+    "base/notes/Альтернативы для Spring.md",
+    "base/notes/внедрение зависимостей через сеттеры.md",
+    "base/notes/Общий алгоритм формирования заметок.md",
+    "base/notes/внедрение зависимостей через конструктор.md",
+    "base/notes/run-time data areas.md",
+    "base/notes/throws.md",
+    "base/notes/try-catch-finally.md",
+    "base/notes/Преимущества полиморфизма.md",
+    "base/notes/иерархия исключений.md",
+    "base/notes/weak references.md",
+    "base/notes/Клонировать объект.md",
+    "base/notes/Полиморфная переменная и функция.md",
+    "base/notes/Почему хэш код в виде 31 * x + y предпочтительнее чем x + y.md",
+    "base/notes/Альтернативные способы клонирования объектов.md",
+    "base/notes/внедрение зависимостей через интерфейс.md",
+    "base/notes/Можно ли реализовать метод equals() класса MyClass вот так.md",
+    "base/notes/static nested class.md",
+    "base/notes/зачем нужен сборщик мусора.md",
+    "base/notes/GC Root.md",
+    "base/notes/java типы памяти в jvm.md",
     "files/Лучшее железо для сборки ПК в 2025 2025-09-18-4.png",
     "files/Лучшее железо для сборки ПК в 2025 2025-09-18-3.png",
     "files/Лучшее железо для сборки ПК в 2025 2025-09-18-2.png",

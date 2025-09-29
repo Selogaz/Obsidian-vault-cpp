@@ -6,10 +6,10 @@ aliases:
   - слой бизнес-логики
 deck: obsidian::java
 created: 2025-06-06T10:19:03+03:00
-updated: 2025-06-11T08:45:40+03:00
-sr-due: 2025-06-20
-sr-interval: 9
-sr-ease: 251
+updated: 2025-09-28T06:32:23+03:00
+sr-due: 2026-10-20
+sr-interval: 387
+sr-ease: 271
 ---
 
 **слой бизнес-логики**

@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-30 18:10:55+03:00
-updated: 2025-06-04T21:14:11+03:00
-sr-due: 2025-06-19
-sr-interval: 15
-sr-ease: 290
+updated: 2025-09-28T06:27:09+03:00
+sr-due: 2027-01-05
+sr-interval: 464
+sr-ease: 310
 ---
 
 **Приведение типов**

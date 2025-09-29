@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-02 09:19:32+03:00
-updated: 2025-06-08T22:34:23+03:00
-sr-due: 2025-06-26
-sr-interval: 18
-sr-ease: 290
+updated: 2025-09-28T06:16:47+03:00
+sr-due: 2026-12-25
+sr-interval: 453
+sr-ease: 310
 ---
 
 **Может ли equals возвращать true у разных объектов**

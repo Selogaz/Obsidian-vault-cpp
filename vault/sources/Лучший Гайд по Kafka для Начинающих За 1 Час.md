@@ -6,15 +6,15 @@ aliases: []
 status: 🟦
 category:
   - "[[java]]"
-meta:
-problem:
+meta: 
+problem: 
 creator: Влад Мишустин
-production:
+production: 
 start: 2025-09-16T18:14:38+03:00
-end:
+end: 
 total_hours: 0
 created: 2025-09-16T18:14:38+03:00
-updated: 2025-09-17T10:51:26+03:00
+updated: 2025-09-26T14:33:32+03:00
 ---
 
 https://www.youtube.com/watch?v=hbseyn-CfXY

@@ -6,10 +6,10 @@ aliases:
   - контейнер бинов
 deck: obsidian::java
 created: 2025-06-11T17:39:59+03:00
-updated: 2025-06-16T21:47:43+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 276
+updated: 2025-09-28T20:45:15+03:00
+sr-due: 2025-10-13
+sr-interval: 15
+sr-ease: 256
 ---
 
 **контейнер бинов**

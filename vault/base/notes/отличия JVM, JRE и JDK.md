@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-23 10:54:45+03:00
-updated: 2025-06-16T21:02:15+03:00
-sr-due: 2025-09-02
-sr-interval: 78
-sr-ease: 317
+updated: 2025-09-28T06:24:32+03:00
+sr-due: 2027-01-02
+sr-interval: 461
+sr-ease: 337
 ---
 
 **Отличия JVM, JRE и JDK**
