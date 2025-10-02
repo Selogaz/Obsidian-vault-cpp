@@ -6,14 +6,18 @@ aliases:
   - DispatcherServlet
 deck: obsidian::java
 created: 2025-06-13T07:49:00+03:00
-updated: 2025-06-16T21:48:07+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 274
+updated: 2025-10-02T17:40:44+03:00
+sr-due: 2026-11-18
+sr-interval: 412
+sr-ease: 294
 ---
 
 **DispatcherServlet**
 —
+# Fill the gaps
+центральный сервлет, который принимает все входящие запросы, делегирует обработку в классы-контроллеры и возвращает ответ пользователю.
+
+# Урванов
 перенаправляет запросы [[java слой контроллеров|контроллеру]]
 ```java
 <servlet>

@@ -6,7 +6,7 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-31 04:03:53+03:00
-updated: 2025-06-05T17:17:18+03:00
+updated: 2025-10-01T21:39:55+03:00
 sr-due: null
 sr-interval: null
 sr-ease: null
@@ -57,7 +57,7 @@ image: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA4Ul
 - [[передача переменных в методы]]
 - [[зачем нужен сборщик мусора]]
 - [[java механизм сборки мусора]]
-- [[виды сборщиков мусора в HotSpot]]
+- [[виды сборщиков мусора]]
 - [[Serial Garbage Collector]]
 - [[java String pool]]
 - [[finalize]]

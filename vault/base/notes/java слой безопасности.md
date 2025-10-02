@@ -6,10 +6,10 @@ aliases:
   - слой безопасности
 deck: obsidian::java
 created: 2025-06-06T11:05:50+03:00
-updated: 2025-06-16T21:40:49+03:00
-sr-due: 2025-07-05
-sr-interval: 19
-sr-ease: 290
+updated: 2025-10-02T17:01:09+03:00
+sr-due: 2026-12-09
+sr-interval: 433
+sr-ease: 310
 ---
 
 **слой безопасности**

@@ -6,10 +6,10 @@ aliases:
   - автоупаковка констант
 deck: obsidian::java
 created: 2025-06-05T17:16:41+03:00
-updated: 2025-06-11T08:51:17+03:00
-sr-due: 2025-07-04
-sr-interval: 23
-sr-ease: 294
+updated: 2025-10-02T18:04:25+03:00
+sr-due: 2027-01-06
+sr-interval: 461
+sr-ease: 314
 ---
 
 **автоупаковка констант**

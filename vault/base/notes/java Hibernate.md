@@ -6,10 +6,10 @@ aliases:
   - Hibernate
 deck: obsidian::java
 created: 2025-06-06T10:17:00+03:00
-updated: 2025-09-16T17:09:09+03:00
-sr-due: 2025-07-16
-sr-interval: 30
-sr-ease: 290
+updated: 2025-10-02T18:16:05+03:00
+sr-due: 2026-12-07
+sr-interval: 431
+sr-ease: 310
 ---
 
 **Hibernate**

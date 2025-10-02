@@ -6,10 +6,10 @@ aliases:
   - Service locator
 deck: obsidian::java
 created: 2025-06-06T08:14:50+03:00
-updated: 2025-06-16T21:41:13+03:00
-sr-due: 2025-07-04
-sr-interval: 18
-sr-ease: 292
+updated: 2025-10-02T18:13:28+03:00
+sr-due: 2026-12-21
+sr-interval: 445
+sr-ease: 312
 ---
 
 **Service locator**

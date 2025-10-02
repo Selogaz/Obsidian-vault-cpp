@@ -6,10 +6,10 @@ aliases:
   - сканирование бинов
 deck: obsidian::java
 created: 2025-06-13T12:32:51+03:00
-updated: 2025-06-16T21:51:12+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 270
+updated: 2025-10-02T16:58:02+03:00
+sr-due: 2026-11-14
+sr-interval: 408
+sr-ease: 290
 ---
 
 **сканирование бинов**

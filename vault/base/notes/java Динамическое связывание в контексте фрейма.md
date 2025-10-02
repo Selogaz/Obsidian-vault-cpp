@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-25 17:26:24+03:00
-updated: 2025-06-11T08:53:58+03:00
-sr-due: 2025-07-23
-sr-interval: 42
-sr-ease: 272
+updated: 2025-10-02T18:09:58+03:00
+sr-due: 2026-12-05
+sr-interval: 429
+sr-ease: 292
 ---
 
 **Динамическое связывание в контексте фрейма**

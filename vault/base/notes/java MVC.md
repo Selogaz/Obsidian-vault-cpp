@@ -6,10 +6,10 @@ aliases:
   - MVC
 deck: obsidian::java
 created: 2025-06-06T09:03:39+03:00
-updated: 2025-06-16T21:34:42+03:00
-sr-due: 2025-07-05
-sr-interval: 19
-sr-ease: 290
+updated: 2025-10-02T18:14:23+03:00
+sr-due: 2026-12-12
+sr-interval: 436
+sr-ease: 310
 ---
 
 **MVC**

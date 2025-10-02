@@ -6,10 +6,10 @@ aliases:
   - root-context.xml
 deck: obsidian::java
 created: 2025-06-13T11:02:38+03:00
-updated: 2025-06-16T21:48:42+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 276
+updated: 2025-10-02T17:41:34+03:00
+sr-due: null
+sr-interval: null
+sr-ease: null
 ---
 
 **root-context.xml**

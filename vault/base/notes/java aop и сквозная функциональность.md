@@ -6,10 +6,10 @@ aliases:
   - aop и сквозная функциональность
 deck: obsidian::java
 created: 2025-06-08T22:54:42+03:00
-updated: 2025-06-16T21:38:31+03:00
-sr-due: 2025-07-04
-sr-interval: 18
-sr-ease: 291
+updated: 2025-10-02T18:13:02+03:00
+sr-due: 2026-12-13
+sr-interval: 437
+sr-ease: 311
 ---
 
 **aop и сквозная функциональность**

@@ -2,13 +2,14 @@
 tags:
   - note/specific/code
   - category/java
-aliases: []
+aliases:
+  - heap vs stack
 deck: obsidian::work
 created: 2025-05-27 13:41:32+03:00
-updated: 2025-06-18T14:09:55+03:00
-sr-due: 2025-08-17
-sr-interval: 60
-sr-ease: 290
+updated: 2025-10-02T18:20:22+03:00
+sr-due: 2026-12-01
+sr-interval: 425
+sr-ease: 310
 ---
 
 **Heap vs stack**

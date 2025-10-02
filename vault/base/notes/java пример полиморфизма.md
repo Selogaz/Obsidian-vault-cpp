@@ -6,10 +6,10 @@ aliases:
   - example
 deck: obsidian::work
 created: 2025-05-20 11:45:06+03:00
-updated: 2025-06-04T19:43:37+03:00
-sr-due: 2025-07-15
-sr-interval: 41
-sr-ease: 290
+updated: 2025-10-02T17:04:04+03:00
+sr-due: 2027-01-29
+sr-interval: 484
+sr-ease: 310
 ---
 
 **Пример полиморфизма**

@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-31 07:17:26+03:00
-updated: 2025-06-18T14:07:50+03:00
-sr-due: 2025-08-01
-sr-interval: 44
-sr-ease: 290
+updated: 2025-10-02T18:03:12+03:00
+sr-due: 2026-12-02
+sr-interval: 426
+sr-ease: 310
 ---
 
 **Какие поля следует использовать при подсчете hashCode**

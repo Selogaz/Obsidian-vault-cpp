@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-25 18:03:36+03:00
-updated: 2025-06-11T08:44:21+03:00
-sr-due: 2025-07-22
-sr-interval: 41
-sr-ease: 290
+updated: 2025-10-02T17:29:54+03:00
+sr-due: 2027-01-01
+sr-interval: 456
+sr-ease: 310
 ---
 
 Может ли объект получить доступ к члену класса, объявленному как private? Если да, то каким образом?

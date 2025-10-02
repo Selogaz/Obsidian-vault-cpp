@@ -6,10 +6,10 @@ aliases:
   - service registry
 deck: obsidian::java
 created: 2025-06-06T12:54:28+03:00
-updated: 2025-06-16T21:40:09+03:00
-sr-due: 2025-07-06
-sr-interval: 20
-sr-ease: 290
+updated: 2025-10-02T18:08:16+03:00
+sr-due: 2026-12-06
+sr-interval: 430
+sr-ease: 310
 ---
 
 **service registry**

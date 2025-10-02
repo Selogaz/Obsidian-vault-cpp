@@ -6,10 +6,10 @@ aliases:
   - внедрение зависимости от другого бина
 deck: obsidian::java
 created: 2025-06-13T11:28:25+03:00
-updated: 2025-06-16T21:51:22+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 270
+updated: 2025-10-02T18:03:32+03:00
+sr-due: null
+sr-interval: null
+sr-ease: null
 ---
 
 **внедрение зависимости от другого бина**

@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-03 08:49:06+03:00
-updated: 2025-06-11T08:50:17+03:00
-sr-due: 2025-07-04
-sr-interval: 23
-sr-ease: 290
+updated: 2025-10-02T17:44:42+03:00
+sr-due: 2027-01-04
+sr-interval: 459
+sr-ease: 310
 ---
 
 **Ключевые отличия полей от локальных переменных**

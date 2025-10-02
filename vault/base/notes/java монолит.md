@@ -6,10 +6,10 @@ aliases:
   - монолит
 deck: obsidian::java
 created: 2025-06-06T12:23:04+03:00
-updated: 2025-06-16T21:42:08+03:00
-sr-due: 2025-07-05
-sr-interval: 19
-sr-ease: 290
+updated: 2025-10-02T17:46:28+03:00
+sr-due: 2026-12-09
+sr-interval: 433
+sr-ease: 310
 ---
 
 **монолит**

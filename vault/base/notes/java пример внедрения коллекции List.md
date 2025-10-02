@@ -6,10 +6,10 @@ aliases:
   - пример внедрения коллекции List
 deck: obsidian::java
 created: 2025-06-15T09:05:50+03:00
-updated: 2025-06-16T21:50:03+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 270
+updated: 2025-10-02T16:56:34+03:00
+sr-due: 2026-11-12
+sr-interval: 406
+sr-ease: 290
 ---
 
 **пример внедрения коллекции List**

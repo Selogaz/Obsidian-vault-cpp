@@ -6,10 +6,10 @@ aliases:
   - пример антипаттерна constrained constructor
 deck: obsidian::java
 created: 2025-06-06T08:13:05+03:00
-updated: 2025-06-16T21:40:17+03:00
-sr-due: 2025-07-05
-sr-interval: 19
-sr-ease: 292
+updated: 2025-10-02T17:46:19+03:00
+sr-due: 2026-12-14
+sr-interval: 438
+sr-ease: 312
 ---
 
 **пример антипаттерна constrained constructor**

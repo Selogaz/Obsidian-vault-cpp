@@ -6,10 +6,10 @@ aliases:
   - состояние и сообщения объектов
 deck: obsidian::java
 created: 2025-06-08T22:29:13+03:00
-updated: 2025-06-16T21:09:29+03:00
-sr-due: 2025-07-06
-sr-interval: 20
-sr-ease: 296
+updated: 2025-10-02T17:03:49+03:00
+sr-due: 2026-12-20
+sr-interval: 444
+sr-ease: 316
 ---
 
 **состояние и сообщения объектов**

@@ -2,13 +2,14 @@
 tags:
   - note/specific/code
   - category/java
-aliases: []
+aliases:
+  - DI, Dependency Injection
 deck: obsidian::work
 created: 2025-06-03 10:46:15+03:00
-updated: 2025-06-16T21:34:00+03:00
-sr-due: 2025-07-14
-sr-interval: 28
-sr-ease: 270
+updated: 2025-10-02T18:25:01+03:00
+sr-due: 2026-11-09
+sr-interval: 403
+sr-ease: 290
 ---
 
 Внедрение зависимости, инъекция зависимости, Dependency Injection, DI

@@ -6,10 +6,10 @@ aliases:
   - пример антипаттерна service locator
 deck: obsidian::java
 created: 2025-06-06T08:21:18+03:00
-updated: 2025-06-16T21:39:46+03:00
-sr-due: 2025-07-04
-sr-interval: 18
-sr-ease: 290
+updated: 2025-10-02T17:00:09+03:00
+sr-due: 2026-12-11
+sr-interval: 435
+sr-ease: 310
 ---
 
 **пример антипаттерна service locator**

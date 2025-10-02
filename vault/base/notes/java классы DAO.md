@@ -6,10 +6,10 @@ aliases:
   - DAO
 deck: obsidian::java
 created: 2025-06-06T10:28:45+03:00
-updated: 2025-06-16T21:35:34+03:00
-sr-due: 2025-07-06
-sr-interval: 20
-sr-ease: 291
+updated: 2025-10-02T17:57:33+03:00
+sr-due: 2025-10-23
+sr-interval: 21
+sr-ease: 271
 ---
 
 **DAO**

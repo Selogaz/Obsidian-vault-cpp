@@ -6,10 +6,10 @@ aliases:
   - виды AOP
 deck: obsidian::java
 created: 2025-06-06T11:49:45+03:00
-updated: 2025-06-16T21:38:21+03:00
-sr-due: 2025-07-05
-sr-interval: 19
-sr-ease: 291
+updated: 2025-10-02T18:07:55+03:00
+sr-due: 2026-12-16
+sr-interval: 440
+sr-ease: 311
 ---
 
 **виды AOP**

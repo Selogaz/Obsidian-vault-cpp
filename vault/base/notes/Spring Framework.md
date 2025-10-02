@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-03 10:17:43+03:00
-updated: 2025-06-11T08:45:02+03:00
-sr-due: 2025-07-05
-sr-interval: 24
-sr-ease: 290
+updated: 2025-10-02T18:20:33+03:00
+sr-due: 2026-12-30
+sr-interval: 454
+sr-ease: 310
 ---
 
 **Spring Framework**

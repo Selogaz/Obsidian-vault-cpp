@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-23 09:52:47+03:00
-updated: 2025-06-08T22:58:18+03:00
-sr-due: 2025-07-06
-sr-interval: 28
-sr-ease: 248
+updated: 2025-10-02T18:22:11+03:00
+sr-due: 2026-11-04
+sr-interval: 398
+sr-ease: 268
 ---
 
 **CORBA**

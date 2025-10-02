@@ -6,7 +6,7 @@ aliases:
   - Stream API
 deck: obsidian::java
 created: 2025-09-19T20:42:10+03:00
-updated: 2025-09-19T20:42:10+03:00
+updated: 2025-10-01T18:58:29+03:00
 ---
 
 **Stream API**
@@ -132,4 +132,3 @@ userRepository.findAll().stream().filter(…)…
 # Дополнительные материалы
 [[Документация Stream API]]
 [[Наглядно про операции Stream API]]
-

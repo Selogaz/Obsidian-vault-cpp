@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-30 19:57:00+03:00
-updated: 2025-06-18T14:40:52+03:00
-sr-due: 2025-08-06
-sr-interval: 49
-sr-ease: 290
+updated: 2025-10-02T18:19:16+03:00
+sr-due: 2026-12-02
+sr-interval: 426
+sr-ease: 310
 ---
 
 **String как ключ для HashMap**

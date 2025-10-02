@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-23 13:16:12+03:00
-updated: 2025-06-06T06:38:59+03:00
-sr-due: 2025-07-10
-sr-interval: 34
-sr-ease: 286
+updated: 2025-10-02T17:58:18+03:00
+sr-due: 2025-10-29
+sr-interval: 27
+sr-ease: 266
 ---
 
 **Отличия интерфейса от абстрактного класса**

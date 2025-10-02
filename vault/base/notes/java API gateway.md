@@ -6,10 +6,10 @@ aliases:
   - API gateway
 deck: obsidian::java
 created: 2025-06-06T13:29:17+03:00
-updated: 2025-09-17T11:47:45+03:00
-sr-due: 2025-07-05
-sr-interval: 19
-sr-ease: 290
+updated: 2025-10-02T18:14:42+03:00
+sr-due: 2026-12-09
+sr-interval: 433
+sr-ease: 310
 ---
 
 **API gateway**

@@ -7,10 +7,10 @@ aliases:
   - связывание
 deck: obsidian::java
 created: 2025-06-06T11:57:50+03:00
-updated: 2025-06-16T21:40:54+03:00
-sr-due: 2025-07-04
-sr-interval: 18
-sr-ease: 290
+updated: 2025-10-02T18:13:08+03:00
+sr-due: 2026-12-10
+sr-interval: 434
+sr-ease: 310
 ---
 
 **aop weaving**

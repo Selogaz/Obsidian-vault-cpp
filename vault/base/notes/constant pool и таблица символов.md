@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-23 10:47:45+03:00
-updated: 2025-06-16T21:31:20+03:00
-sr-due: 2025-07-11
-sr-interval: 25
-sr-ease: 245
+updated: 2025-10-02T18:24:11+03:00
+sr-due: 2025-10-25
+sr-interval: 23
+sr-ease: 225
 ---
 
 **Constant pool и таблица символов**

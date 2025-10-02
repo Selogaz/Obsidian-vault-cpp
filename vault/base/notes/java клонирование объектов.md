@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-02 11:18:14+03:00
-updated: 2025-06-16T21:39:32+03:00
-sr-due: 2025-07-20
-sr-interval: 34
-sr-ease: 270
+updated: 2025-10-02T18:00:22+03:00
+sr-due: 2025-10-28
+sr-interval: 26
+sr-ease: 250
 ---
 
 **Клонирование объектов**

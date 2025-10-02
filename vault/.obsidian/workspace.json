@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/notes/Основные интерфейсы JCF и их реализации.md",
+                "file": "sources/Spring Security в действии.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,59 +28,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Основные интерфейсы JCF и их реализации"
+              "title": "Spring Security в действии"
             }
           },
           {
-            "id": "0a7c8bb793b66c77",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "home/index.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "599b8086075ef409",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sources/Список книг.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Список книг"
-            }
-          },
-          {
-            "id": "1106751f5db76594",
+            "id": "d6f5395ef913b2b8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -101,6 +53,30 @@
               },
               "icon": "lucide-file",
               "title": "База знаний fill the gaps"
+            }
+          },
+          {
+            "id": "99b1f89f1f19ca76",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/Method area.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Method area"
             }
           }
         ],
@@ -177,10 +153,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "sources/Список книг.md"
+                "file": "base/notes/Method area.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for Список книг"
+              "title": "File properties for Method area"
             }
           }
         ]
@@ -279,34 +255,36 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "599b8086075ef409",
+  "active": "99b1f89f1f19ca76",
   "lastOpenFiles": [
-    "home/index.md",
-    "sources/Список книг.md",
-    "base/notes/Основные интерфейсы JCF и их реализации.md",
-    "base/notes/Основные свойства красно-чёрных деревьев.md",
-    "base/notes/К2.md",
-    "base/notes/вечером.md",
-    "base/notes/Альтернативы для Spring.md",
-    "base/notes/внедрение зависимостей через сеттеры.md",
-    "base/notes/Общий алгоритм формирования заметок.md",
-    "base/notes/внедрение зависимостей через конструктор.md",
-    "base/notes/run-time data areas.md",
-    "base/notes/throws.md",
-    "base/notes/try-catch-finally.md",
-    "base/notes/Преимущества полиморфизма.md",
-    "base/notes/иерархия исключений.md",
-    "base/notes/weak references.md",
-    "base/notes/Клонировать объект.md",
-    "base/notes/Полиморфная переменная и функция.md",
-    "base/notes/Почему хэш код в виде 31 * x + y предпочтительнее чем x + y.md",
-    "base/notes/Альтернативные способы клонирования объектов.md",
-    "base/notes/внедрение зависимостей через интерфейс.md",
-    "base/notes/Можно ли реализовать метод equals() класса MyClass вот так.md",
-    "base/notes/static nested class.md",
-    "base/notes/зачем нужен сборщик мусора.md",
-    "base/notes/GC Root.md",
-    "base/notes/java типы памяти в jvm.md",
+    "base/notes/JVM Stacks.md",
+    "base/notes/fail-fast поведение.md",
+    "base/notes/frames.md",
+    "base/notes/DI.md",
+    "base/notes/exception в блоке инициализации.md",
+    "base/notes/AOP.md",
+    "base/notes/constant pool и таблица символов.md",
+    "base/notes/Q10.md",
+    "base/notes/CORBA и RMI.md",
+    "base/notes/anonymous inner class.md",
+    "base/notes/HotSpot VM.md",
+    "base/notes/Spring Framework.md",
+    "base/notes/heap vs stack.md",
+    "base/notes/java String как ключ для HashMap.md",
+    "base/notes/java OutOfMemoryError.md",
+    "base/notes/java Native Method Stack.md",
+    "base/notes/java Run-time constant pool.md",
+    "base/notes/java Heap.md",
+    "base/notes/java List.md",
+    "base/notes/java Reflection.md",
+    "base/notes/java String pool.md",
+    "base/notes/java Hibernate.md",
+    "base/notes/java Constrained construction.md",
+    "base/notes/java aop target.md",
+    "base/notes/java aop в java.md",
+    "base/notes/java aop introduction.md",
+    "files/Spring Security в действии 2025-09-30.png",
+    "files/Spring Security в действии 2025-09-29.png",
     "files/Лучшее железо для сборки ПК в 2025 2025-09-18-4.png",
     "files/Лучшее железо для сборки ПК в 2025 2025-09-18-3.png",
     "files/Лучшее железо для сборки ПК в 2025 2025-09-18-2.png",
@@ -315,8 +293,6 @@
     "files/5 Применений Kafka в Реальных Приложениях 2025-09-18-5.png",
     "files/5 Применений Kafka в Реальных Приложениях 2025-09-18-4.png",
     "files/5 Применений Kafka в Реальных Приложениях 2025-09-18-3.png",
-    "files/5 Применений Kafka в Реальных Приложениях 2025-09-18-2.png",
-    "files/5 Применений Kafka в Реальных Приложениях 2025-09-18-1.png",
     "periodic/2025.canvas",
     "mynoise-net.aac",
     "w инициализация static",

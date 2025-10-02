@@ -6,10 +6,10 @@ aliases:
   - слой пакетных заданий
 deck: obsidian::java
 created: 2025-06-06T11:16:55+03:00
-updated: 2025-06-16T21:09:38+03:00
-sr-due: 2025-07-04
-sr-interval: 18
-sr-ease: 294
+updated: 2025-10-02T17:00:35+03:00
+sr-due: 2026-12-12
+sr-interval: 436
+sr-ease: 314
 ---
 
 **слой пакетных заданий**

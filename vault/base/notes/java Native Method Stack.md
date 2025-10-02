@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-25 17:13:35+03:00
-updated: 2025-06-11T08:58:47+03:00
-sr-due: 2025-08-02
-sr-interval: 52
-sr-ease: 306
+updated: 2025-10-02T18:18:23+03:00
+sr-due: 2027-01-25
+sr-interval: 480
+sr-ease: 326
 ---
 
 **Native Method Stack**

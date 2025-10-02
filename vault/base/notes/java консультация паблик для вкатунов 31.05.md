@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-31 20:12:12+03:00
-updated: 2025-09-13T10:48:16+03:00
-sr-due: 2025-07-31
-sr-interval: 43
-sr-ease: 290
+updated: 2025-10-02T18:03:03+03:00
+sr-due: null
+sr-interval: null
+sr-ease: null
 ---
 
 **Консультация паблик для вкатунов 31.05**

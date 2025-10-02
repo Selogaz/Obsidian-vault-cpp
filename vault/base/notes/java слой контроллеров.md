@@ -6,10 +6,10 @@ aliases:
   - слой контроллеров
 deck: obsidian::java
 created: 2025-06-06T10:43:10+03:00
-updated: 2025-06-16T21:07:08+03:00
-sr-due: 2025-07-06
-sr-interval: 20
-sr-ease: 290
+updated: 2025-10-02T17:01:34+03:00
+sr-due: 2026-12-08
+sr-interval: 432
+sr-ease: 310
 ---
 
 **слой контроллеров**

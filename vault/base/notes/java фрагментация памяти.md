@@ -6,10 +6,10 @@ aliases:
   - фрагментация памяти
 deck: obsidian::java
 created: 2025-06-06T06:26:17+03:00
-updated: 2025-06-16T20:47:02+03:00
-sr-due: 2025-07-17
-sr-interval: 31
-sr-ease: 295
+updated: 2025-10-02T17:04:10+03:00
+sr-due: 2026-12-18
+sr-interval: 442
+sr-ease: 315
 ---
 
 **фрагментация памяти**

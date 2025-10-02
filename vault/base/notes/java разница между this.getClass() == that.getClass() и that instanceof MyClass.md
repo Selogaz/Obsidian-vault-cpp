@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-02 09:41:55+03:00
-updated: 2025-06-16T21:29:24+03:00
-sr-due: 2025-07-26
-sr-interval: 40
-sr-ease: 277
+updated: 2025-10-02T17:23:26+03:00
+sr-due: 2026-11-29
+sr-interval: 423
+sr-ease: 297
 ---
 
 **В чем разница между this.getClass == that.getClass() и that instanceof MyClass**
@@ -20,4 +20,5 @@ sr-ease: 277
 
 `this.getClass() == that.getClass()` проверяет два класса на идентичность,[^1] поэтому нужно использовать `getClass()`
 
-- [ ] #task/inbox #category/work :[^1] все еще непонятно в чем разница
+- [x] #task/inbox #category/work :[^1] все еще непонятно в чем разница ✅ 2025-10-02
+getClass проверяет именно точное совпадение

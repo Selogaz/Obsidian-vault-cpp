@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-23 11:30:59+03:00
-updated: 2025-06-16T21:02:39+03:00
-sr-due: 2025-08-29
-sr-interval: 74
-sr-ease: 310
+updated: 2025-10-02T17:24:05+03:00
+sr-due: 2027-01-08
+sr-interval: 463
+sr-ease: 330
 ---
 
 **Main**

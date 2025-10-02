@@ -6,10 +6,10 @@ aliases:
   - Constrained construction
 deck: obsidian::java
 created: 2025-06-06T08:06:50+03:00
-updated: 2025-06-16T21:41:37+03:00
-sr-due: 2025-07-06
-sr-interval: 20
-sr-ease: 299
+updated: 2025-10-02T18:15:34+03:00
+sr-due: 2026-12-25
+sr-interval: 449
+sr-ease: 319
 ---
 
 **Constrained construction**

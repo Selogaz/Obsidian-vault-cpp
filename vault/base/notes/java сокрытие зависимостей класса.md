@@ -6,10 +6,10 @@ aliases:
   - сокрытие зависимостей класса
 deck: obsidian::java
 created: 2025-06-06T08:59:18+03:00
-updated: 2025-06-16T21:08:54+03:00
-sr-due: 2025-07-05
-sr-interval: 19
-sr-ease: 294
+updated: 2025-10-02T17:01:01+03:00
+sr-due: 2026-12-10
+sr-interval: 434
+sr-ease: 314
 ---
 
 **сокрытие зависимостей класса**

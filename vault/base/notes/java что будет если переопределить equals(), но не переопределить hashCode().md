@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-31 06:46:34+03:00
-updated: 2025-06-18T14:05:54+03:00
-sr-due: 2025-07-31
-sr-interval: 43
-sr-ease: 290
+updated: 2025-10-02T17:23:48+03:00
+sr-due: 2025-10-31
+sr-interval: 29
+sr-ease: 270
 ---
 
 **Что будет если переопределить equals, но не переопределить hashCode()**

@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-31 06:01:19+03:00
-updated: 2025-06-16T21:04:29+03:00
-sr-due: 2025-07-26
-sr-interval: 40
-sr-ease: 274
+updated: 2025-10-02T17:30:25+03:00
+sr-due: 2026-11-19
+sr-interval: 413
+sr-ease: 294
 ---
 
 **Динамическая загрузка классов в Java**

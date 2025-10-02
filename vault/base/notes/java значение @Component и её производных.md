@@ -6,10 +6,10 @@ aliases:
   - значение @Component и её производных
 deck: obsidian::java
 created: 2025-06-13T12:17:24+03:00
-updated: 2025-06-16T22:10:54+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 270
+updated: 2025-10-02T17:43:24+03:00
+sr-due: 2026-11-13
+sr-interval: 407
+sr-ease: 290
 ---
 
 **значение @Component и её производных**

@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-25 17:22:45+03:00
-updated: 2025-06-16T20:58:59+03:00
-sr-due: 2025-08-04
-sr-interval: 49
-sr-ease: 281
+updated: 2025-10-02T17:33:11+03:00
+sr-due: 2026-11-30
+sr-interval: 424
+sr-ease: 301
 ---
 
 **Локальные переменные в JVM**
@@ -38,4 +38,4 @@ sr-ease: 281
 🚀 **Оптимизация**: [[HotSpot VM|HotSpot JVM]] может размещать примитивы в регистрах CPU, минуя стек, если это безопасно.
 
 - [x] #task/inbox #category/work переделать эту заметку ✅ 2025-06-03
-- [ ] #task/inbox #category/work this java
+- [x] #task/inbox #category/work this java ✅ 2025-10-02

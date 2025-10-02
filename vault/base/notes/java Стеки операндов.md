@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-25 17:23:59+03:00
-updated: 2025-06-11T09:10:10+03:00
-sr-due: 2025-07-27
-sr-interval: 46
-sr-ease: 301
+updated: 2025-10-02T18:11:03+03:00
+sr-due: 2027-01-24
+sr-interval: 479
+sr-ease: 321
 ---
 
 **Стеки операндов**

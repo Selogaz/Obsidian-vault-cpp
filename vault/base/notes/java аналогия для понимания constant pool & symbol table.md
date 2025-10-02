@@ -6,10 +6,10 @@ aliases:
   - аналогия для понимания constant pool & symbol table
 deck: obsidian::java
 created: 2025-06-08T22:50:19+03:00
-updated: 2025-06-16T21:32:39+03:00
-sr-due: 2025-07-06
-sr-interval: 20
-sr-ease: 288
+updated: 2025-10-02T18:08:10+03:00
+sr-due: 2026-12-01
+sr-interval: 425
+sr-ease: 308
 ---
 
 **аналогия для понимания constant pool & symbol table**

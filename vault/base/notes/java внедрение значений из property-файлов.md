@@ -6,10 +6,10 @@ aliases:
   - внедрение значений из property-файлов
 deck: obsidian::java
 created: 2025-06-13T12:32:00+03:00
-updated: 2025-06-16T22:10:29+03:00
-sr-due: 2025-06-20
-sr-interval: 4
-sr-ease: 270
+updated: 2025-10-02T18:03:48+03:00
+sr-due: 2026-11-11
+sr-interval: 405
+sr-ease: 290
 ---
 
 **внедрение значений из property-файлов**
