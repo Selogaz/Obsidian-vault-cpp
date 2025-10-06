@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "index",
+      "path": "home/index.md"
+    },
+    {
+      "basename": "java алгоритмическая сложность",
+      "path": "base/notes/java алгоритмическая сложность.md"
+    },
+    {
+      "basename": "Видос про коллекции",
+      "path": "sources/Видос про коллекции.md"
+    },
+    {
+      "basename": "2025-10-05",
+      "path": "periodic/daily/2025-10-05.md"
+    },
+    {
+      "basename": "java основы git",
+      "path": "base/notes/java основы git.md"
+    },
+    {
+      "basename": "sources",
+      "path": "home/databases/sources.md"
+    },
+    {
       "basename": "Method area",
       "path": "base/notes/Method area.md"
     },
@@ -375,30 +399,6 @@
     {
       "basename": "значения переменных по умолчанию",
       "path": "base/notes/значения переменных по умолчанию.md"
-    },
-    {
-      "basename": "Локальные переменные в JVM",
-      "path": "base/notes/Локальные переменные в JVM.md"
-    },
-    {
-      "basename": "блоки инициализации",
-      "path": "base/notes/блоки инициализации.md"
-    },
-    {
-      "basename": "динамическое или позднее связывание",
-      "path": "base/notes/динамическое или позднее связывание.md"
-    },
-    {
-      "basename": "динамическая загрузка классов в Java",
-      "path": "base/notes/динамическая загрузка классов в Java.md"
-    },
-    {
-      "basename": "try-with-resources",
-      "path": "base/notes/try-with-resources.md"
-    },
-    {
-      "basename": "доступ к private членам класса",
-      "path": "base/notes/доступ к private членам класса.md"
     }
   ],
   "omittedPaths": [
