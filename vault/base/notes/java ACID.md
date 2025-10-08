@@ -6,7 +6,10 @@ aliases:
   - ACID
 deck: obsidian::java
 created: 2025-08-10T12:40:49+03:00
-updated: 2025-08-10T12:40:49+03:00
+updated: 2025-10-08T18:28:32+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 270
 ---
 
 **ACID**

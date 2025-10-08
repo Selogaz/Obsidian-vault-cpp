@@ -6,7 +6,10 @@ aliases:
   - паттерны gof
 deck: obsidian::java
 created: 2025-10-01T20:13:43+03:00
-updated: 2025-10-01T20:13:43+03:00
+updated: 2025-10-06T19:28:28+03:00
+sr-due: 2025-10-10
+sr-interval: 4
+sr-ease: 270
 ---
 
 **паттерны gof**
@@ -109,4 +112,3 @@ int res = calc.add(1,2);
 [[java builder для продвинутых]] - https://t.me/java_fillthegaps/553
 [[java fluent api]]
 [[java fluent api vs builder]]
-

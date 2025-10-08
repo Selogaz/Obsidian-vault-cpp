@@ -6,7 +6,10 @@ aliases:
   - SOLID
 deck: obsidian::java
 created: 2025-08-10T12:59:57+03:00
-updated: 2025-09-12T10:44:59+03:00
+updated: 2025-10-06T19:21:29+03:00
+sr-due: 2025-10-10
+sr-interval: 4
+sr-ease: 295
 ---
 
 **SOLID**

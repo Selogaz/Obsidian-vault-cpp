@@ -6,7 +6,10 @@ aliases:
   - Transactional
 deck: obsidian::java
 created: 2025-08-14T09:57:04+03:00
-updated: 2025-09-20T08:41:49+03:00
+updated: 2025-10-06T19:24:57+03:00
+sr-due: 2025-10-10
+sr-interval: 4
+sr-ease: 286
 ---
 
 **Transactional**

@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-25 17:09:16+03:00
-updated: 2025-06-11T08:46:57+03:00
-sr-due: 2025-08-02
-sr-interval: 52
-sr-ease: 306
+updated: 2025-10-06T18:46:36+03:00
+sr-due: 2027-02-15
+sr-interval: 497
+sr-ease: 326
 ---
 
 **Program Counter Register**

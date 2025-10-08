@@ -6,7 +6,10 @@ aliases:
   - коллекции от ИИ
 deck: obsidian::java
 created: 2025-06-18T15:07:44+03:00
-updated: 2025-06-18T15:45:28+03:00
+updated: 2025-10-06T19:34:54+03:00
+sr-due: 2025-10-10
+sr-interval: 4
+sr-ease: 270
 ---
 
 **коллекции от ИИ**

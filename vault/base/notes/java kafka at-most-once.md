@@ -6,7 +6,10 @@ aliases:
   - kafka at most once
 deck: obsidian::java
 created: 2025-09-26T14:46:57+03:00
-updated: 2025-09-26T14:46:57+03:00
+updated: 2025-10-06T19:21:39+03:00
+sr-due: 2025-10-10
+sr-interval: 4
+sr-ease: 270
 ---
 
 **kafka at most once**

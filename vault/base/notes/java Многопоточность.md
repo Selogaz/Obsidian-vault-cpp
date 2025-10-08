@@ -7,7 +7,10 @@ aliases:
   - Многопоточность
 deck: obsidian::java
 created: 2025-07-16T10:41:08+03:00
-updated: 2025-07-16T14:34:01+03:00
+updated: 2025-10-08T18:32:33+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 270
 ---
 
 **Многопоточность**

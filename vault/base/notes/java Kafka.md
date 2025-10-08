@@ -6,7 +6,10 @@ aliases:
   - Kafka
 deck: obsidian::java
 created: 2025-09-17T10:51:17+03:00
-updated: 2025-09-21T10:06:27+03:00
+updated: 2025-10-06T19:33:29+03:00
+sr-due: 2025-10-10
+sr-interval: 4
+sr-ease: 276
 ---
 
 **Kafka**

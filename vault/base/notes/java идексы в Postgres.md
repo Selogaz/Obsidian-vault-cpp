@@ -6,7 +6,10 @@ aliases:
   - идексы в Postgres
 deck: obsidian::java
 created: 2025-09-26T10:03:54+03:00
-updated: 2025-09-26T10:04:24+03:00
+updated: 2025-10-08T18:39:24+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 270
 ---
 
 **идексы в Postgres**

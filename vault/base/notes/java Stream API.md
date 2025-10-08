@@ -6,7 +6,10 @@ aliases:
   - Stream API
 deck: obsidian::java
 created: 2025-09-19T20:42:10+03:00
-updated: 2025-10-01T18:58:29+03:00
+updated: 2025-10-06T18:52:07+03:00
+sr-due: 2025-10-09
+sr-interval: 3
+sr-ease: 262
 ---
 
 **Stream API**

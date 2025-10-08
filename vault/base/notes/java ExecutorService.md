@@ -6,7 +6,10 @@ aliases:
   - ExecutorService
 deck: obsidian::java
 created: 2025-07-16T11:11:05+03:00
-updated: 2025-07-27T18:25:34+03:00
+updated: 2025-10-06T19:19:16+03:00
+sr-due: 2025-10-10
+sr-interval: 4
+sr-ease: 270
 ---
 
 **ExecutorService**

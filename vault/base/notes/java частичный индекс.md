@@ -6,7 +6,10 @@ aliases:
   - частичный индекс
 deck: obsidian::java
 created: 2025-09-26T10:02:58+03:00
-updated: 2025-09-26T10:02:58+03:00
+updated: 2025-10-08T18:36:37+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 270
 ---
 
 **частичный индекс**

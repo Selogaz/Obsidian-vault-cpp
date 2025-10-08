@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-03 11:26:07+03:00
-updated: 2025-09-21T11:59:43+03:00
-sr-due: 2025-10-08
-sr-interval: 17
-sr-ease: 250
+updated: 2025-10-08T18:27:43+03:00
+sr-due: 2025-12-07
+sr-interval: 60
+sr-ease: 270
 ---
 
 IoC, Инверсия управления[^1]

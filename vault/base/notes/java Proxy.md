@@ -6,7 +6,10 @@ aliases:
   - Proxy
 deck: obsidian::java
 created: 2025-08-10T11:19:32+03:00
-updated: 2025-10-01T18:35:07+03:00
+updated: 2025-10-08T18:32:18+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 270
 ---
 
 **Proxy**

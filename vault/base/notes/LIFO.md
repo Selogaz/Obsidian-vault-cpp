@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-03 08:06:25+03:00
-updated: 2025-06-18T14:09:59+03:00
-sr-due: 2025-08-04
-sr-interval: 47
-sr-ease: 300
+updated: 2025-10-06T18:46:37+03:00
+sr-due: 2027-01-10
+sr-interval: 461
+sr-ease: 320
 ---
 
 **LIFO**

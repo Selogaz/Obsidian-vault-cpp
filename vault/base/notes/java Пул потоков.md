@@ -6,7 +6,10 @@ aliases:
   - Пул потоков
 deck: obsidian::java
 created: 2025-07-16T10:40:04+03:00
-updated: 2025-07-16T11:11:04+03:00
+updated: 2025-10-06T19:22:06+03:00
+sr-due: 2025-10-10
+sr-interval: 4
+sr-ease: 270
 ---
 
 **Пул потоков**

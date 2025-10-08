@@ -6,7 +6,10 @@ aliases:
   - command
 deck: obsidian::java
 created: 2025-10-01T18:59:16+03:00
-updated: 2025-10-01T18:59:16+03:00
+updated: 2025-10-06T19:15:12+03:00
+sr-due: 2025-10-10
+sr-interval: 4
+sr-ease: 270
 ---
 
 **command**

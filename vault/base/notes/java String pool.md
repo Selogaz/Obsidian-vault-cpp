@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-28 11:55:22+03:00
-updated: 2025-10-02T18:17:25+03:00
-sr-due: 2026-12-28
-sr-interval: 452
-sr-ease: 308
+updated: 2025-10-06T18:47:14+03:00
+sr-due: 2031-01-15
+sr-interval: 1927
+sr-ease: 328
 ---
 
 Пул строк

@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/notes/java алгоритмическая сложность.md",
+                "file": "base/notes/java prototype.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,10 +52,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "java алгоритмическая сложность"
+              "title": "java prototype"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -128,10 +129,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "home/index.md"
+                "file": "base/notes/java prototype.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for index"
+              "title": "File properties for java prototype"
             }
           }
         ]
@@ -229,35 +230,36 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "8757fe3e444d0e71",
+  "active": "eb0e0ae952f0eeeb",
   "lastOpenFiles": [
-    "base/notes/java алгоритмическая сложность.md",
-    "sources/Видос про коллекции.md",
-    "files/Видос про коллекции 2025-10-06.png",
-    "files/Видос про коллекции 2025-10-05.png",
-    "home/index.md",
-    "periodic/daily/2025-10-05.md",
-    "base/notes/java основы git.md",
-    "home/databases/sources.md",
-    "base/notes/полиморфизм.md",
-    "base/notes/java servlet.md",
-    "base/notes/java checked.md",
-    "sources/База знаний fill the gaps.md",
-    "base/categories/java.md",
-    "home/databases/fleeting notes.md",
-    "base/notes/java проблема N + 1.md",
-    "base/notes/java сборка мусора.md",
-    "base/notes/GC Roots.md",
-    "base/notes/java типы памяти в jvm.md",
-    "base/notes/java экзекьюторы.md",
+    "base/notes/java state.md",
+    "base/notes/java template method.md",
+    "base/notes/java паттерн наблюдатель.md",
+    "base/notes/java идексы в Postgres.md",
+    "base/notes/java кластеризированный индекс.md",
+    "base/notes/java когда индексы могут пригодиться.md",
     "base/notes/java покрывающий индекс.md",
     "base/notes/java составной индекс.md",
     "base/notes/java частичный индекс.md",
     "base/notes/java что учесть при создании индексов.md",
-    "base/notes/java прокси JDK и CGLIB.md",
+    "base/notes/java Adapter.md",
+    "base/notes/java Decorator.md",
+    "base/notes/java ReentrantLock.md",
+    "sources/сбер собес Сорокин.md",
+    "base/notes/java green thread.md",
+    "base/notes/java mutex.md",
     "base/notes/java примитивы синхронизации.md",
+    "base/notes/java способы синхронизации.md",
+    "base/notes/java Многопоточность.md",
+    "base/notes/java Tomcat.md",
+    "base/notes/java HTTP-сессия.md",
+    "base/notes/java Proxy.md",
     "base/notes/java ABA-проблема.md",
-    "base/notes/java основные сущности Kafka.md",
+    "base/notes/java LinkedHashMap.md",
+    "base/notes/java CTE.md",
+    "base/notes/java LATERAL.md",
+    "files/Видос про коллекции 2025-10-06.png",
+    "files/Видос про коллекции 2025-10-05.png",
     "files/Spring Security в действии 2025-09-30.png",
     "files/Spring Security в действии 2025-09-29.png",
     "files/Лучшее железо для сборки ПК в 2025 2025-09-18-4.png",
