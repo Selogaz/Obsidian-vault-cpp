@@ -6,7 +6,10 @@ aliases:
   - PasswordEncoder
 deck: obsidian::java
 created: 2025-09-30T20:09:09+03:00
-updated: 2025-09-30T20:13:36+03:00
+updated: 2025-10-08T19:34:21+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 270
 ---
 
 **PasswordEncoder**

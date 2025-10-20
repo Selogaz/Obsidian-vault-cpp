@@ -6,7 +6,10 @@ aliases:
   - volatile
 deck: obsidian::java
 created: 2025-09-19T22:06:06+03:00
-updated: 2025-09-19T22:14:25+03:00
+updated: 2025-10-08T19:25:51+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 270
 ---
 
 **volatile**

@@ -6,7 +6,10 @@ aliases:
   - Base64
 deck: obsidian::java
 created: 2025-09-30T19:38:52+03:00
-updated: 2025-09-30T19:40:29+03:00
+updated: 2025-10-08T19:36:06+03:00
+sr-due: 2025-10-24
+sr-interval: 16
+sr-ease: 290
 ---
 
 **Base64**

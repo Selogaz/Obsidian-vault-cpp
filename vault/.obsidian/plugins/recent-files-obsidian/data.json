@@ -1,8 +1,392 @@
 {
   "recentFiles": [
     {
+      "basename": "новый 7800x3d",
+      "path": "base/_problems/новый 7800x3d.md"
+    },
+    {
+      "basename": "pc builds",
+      "path": "base/_meta-notes/pc builds.md"
+    },
+    {
+      "basename": "7500f",
+      "path": "base/_problems/7500f.md"
+    },
+    {
+      "basename": "index",
+      "path": "home/index.md"
+    },
+    {
+      "basename": "ryzen 7800x3d",
+      "path": "base/_problems/ryzen 7800x3d.md"
+    },
+    {
+      "basename": "Лучшее железо для сборки ПК в 2025",
+      "path": "sources/Лучшее железо для сборки ПК в 2025.md"
+    },
+    {
+      "basename": "2025-10-13",
+      "path": "periodic/daily/2025-10-13.md"
+    },
+    {
+      "basename": "java Object",
+      "path": "base/notes/java Object.md"
+    },
+    {
+      "basename": "Список книг",
+      "path": "sources/Список книг.md"
+    },
+    {
+      "basename": "2025",
+      "path": "periodic/2025.canvas"
+    },
+    {
+      "basename": "2025-10-16",
+      "path": "periodic/daily/2025-10-16.md"
+    },
+    {
+      "basename": "java способы синхронизации",
+      "path": "base/notes/java способы синхронизации.md"
+    },
+    {
+      "basename": "java основные сущности Kafka",
+      "path": "base/notes/java основные сущности Kafka.md"
+    },
+    {
+      "basename": "java рекомендации по использованию пулов потоков",
+      "path": "base/notes/java рекомендации по использованию пулов потоков.md"
+    },
+    {
+      "basename": "java коллекции от ИИ",
+      "path": "base/notes/java коллекции от ИИ.md"
+    },
+    {
+      "basename": "java микросервисы",
+      "path": "base/notes/java микросервисы.md"
+    },
+    {
+      "basename": "java типы локов в БД",
+      "path": "base/notes/java типы локов в БД.md"
+    },
+    {
+      "basename": "java свойства Stream API",
+      "path": "base/notes/java свойства Stream API.md"
+    },
+    {
+      "basename": "java паттерны gof",
+      "path": "base/notes/java паттерны gof.md"
+    },
+    {
       "basename": "java prototype",
       "path": "base/notes/java prototype.md"
+    },
+    {
+      "basename": "java Strategy",
+      "path": "base/notes/java Strategy.md"
+    },
+    {
+      "basename": "java chain of responsibility",
+      "path": "base/notes/java chain of responsibility.md"
+    },
+    {
+      "basename": "java flyweight",
+      "path": "base/notes/java flyweight.md"
+    },
+    {
+      "basename": "Spring быстро",
+      "path": "sources/Spring быстро.md"
+    },
+    {
+      "basename": "народный пк от welson",
+      "path": "sources/народный пк от welson.md"
+    },
+    {
+      "basename": "Сборка под 9600x",
+      "path": "base/_problems/Сборка под 9600x.md"
+    },
+    {
+      "basename": "более дешевая 9600х",
+      "path": "base/_problems/более дешевая 9600х.md"
+    },
+    {
+      "basename": "сбер собес Сорокин",
+      "path": "sources/сбер собес Сорокин.md"
+    },
+    {
+      "basename": "HashMap",
+      "path": "base/notes/HashMap.md"
+    },
+    {
+      "basename": "java Adapter",
+      "path": "base/notes/java Adapter.md"
+    },
+    {
+      "basename": "java Decorator",
+      "path": "base/notes/java Decorator.md"
+    },
+    {
+      "basename": "java Proxy",
+      "path": "base/notes/java Proxy.md"
+    },
+    {
+      "basename": "внедрение зависимостей через интерфейс",
+      "path": "base/notes/внедрение зависимостей через интерфейс.md"
+    },
+    {
+      "basename": "почему метод clone() объявлен в классе Object, а не в интерфейсе Cloneable",
+      "path": "base/notes/почему метод clone() объявлен в классе Object, а не в интерфейсе Cloneable.md"
+    },
+    {
+      "basename": "java CAS",
+      "path": "base/notes/java CAS.md"
+    },
+    {
+      "basename": "generics",
+      "path": "base/notes/generics.md"
+    },
+    {
+      "basename": "2025-10-10",
+      "path": "periodic/daily/2025-10-10.md"
+    },
+    {
+      "basename": "Spring Security в действии",
+      "path": "sources/Spring Security в действии.md"
+    },
+    {
+      "basename": "java",
+      "path": "base/categories/java.md"
+    },
+    {
+      "basename": "42 крутые игры для тех, кого тошнит от ААА",
+      "path": "sources/42 крутые игры для тех, кого тошнит от ААА.md"
+    },
+    {
+      "basename": "games",
+      "path": "base/categories/games.md"
+    },
+    {
+      "basename": "20 НОВЫХ РПГ ИГР которые ВОЗРОДЯТ этот ЖАНР",
+      "path": "sources/20 НОВЫХ РПГ ИГР которые ВОЗРОДЯТ этот ЖАНР.md"
+    },
+    {
+      "basename": "Spring быстро",
+      "path": "base/additions/conspectuses/Spring быстро.md"
+    },
+    {
+      "basename": "java виды аутентификации",
+      "path": "base/notes/java виды аутентификации.md"
+    },
+    {
+      "basename": "java Stream API",
+      "path": "base/notes/java Stream API.md"
+    },
+    {
+      "basename": "java Base64",
+      "path": "base/notes/java Base64.md"
+    },
+    {
+      "basename": "java CSRF",
+      "path": "base/notes/java CSRF.md"
+    },
+    {
+      "basename": "java HTTPS",
+      "path": "base/notes/java HTTPS.md"
+    },
+    {
+      "basename": "java JWT",
+      "path": "base/notes/java JWT.md"
+    },
+    {
+      "basename": "java PasswordEncoder",
+      "path": "base/notes/java PasswordEncoder.md"
+    },
+    {
+      "basename": "java docker commands",
+      "path": "base/notes/java docker commands.md"
+    },
+    {
+      "basename": "java jwt vs access and refresh",
+      "path": "base/notes/java jwt vs access and refresh.md"
+    },
+    {
+      "basename": "java middle шаблон легенды",
+      "path": "base/notes/java middle шаблон легенды.md"
+    },
+    {
+      "basename": "java Какие проблемы решает Kafka",
+      "path": "base/notes/java Какие проблемы решает Kafka.md"
+    },
+    {
+      "basename": "java горизонтальное масштабирование",
+      "path": "base/notes/java горизонтальное масштабирование.md"
+    },
+    {
+      "basename": "java локи в базах данных",
+      "path": "base/notes/java локи в базах данных.md"
+    },
+    {
+      "basename": "java локи и уровни изоляции транзакций",
+      "path": "base/notes/java локи и уровни изоляции транзакций.md"
+    },
+    {
+      "basename": "java основы git",
+      "path": "base/notes/java основы git.md"
+    },
+    {
+      "basename": "java преимущества Docker",
+      "path": "base/notes/java преимущества Docker.md"
+    },
+    {
+      "basename": "java секреты",
+      "path": "base/notes/java секреты.md"
+    },
+    {
+      "basename": "Вопросы и ответы к интервью Java разработчика",
+      "path": "base/notes/Вопросы и ответы к интервью Java разработчика.md"
+    },
+    {
+      "basename": "java API",
+      "path": "base/notes/java API.md"
+    },
+    {
+      "basename": "java HTTP 401 Unauthorized",
+      "path": "base/notes/java HTTP 401 Unauthorized.md"
+    },
+    {
+      "basename": "java atomic",
+      "path": "base/notes/java atomic.md"
+    },
+    {
+      "basename": "java docker container",
+      "path": "base/notes/java docker container.md"
+    },
+    {
+      "basename": "java dockerfile",
+      "path": "base/notes/java dockerfile.md"
+    },
+    {
+      "basename": "java volatile",
+      "path": "base/notes/java volatile.md"
+    },
+    {
+      "basename": "java Гарантии в Apache Kafka",
+      "path": "base/notes/java Гарантии в Apache Kafka.md"
+    },
+    {
+      "basename": "java Гарантии в распределенных системах",
+      "path": "base/notes/java Гарантии в распределенных системах.md"
+    },
+    {
+      "basename": "java kafka at least once",
+      "path": "base/notes/java kafka at least once.md"
+    },
+    {
+      "basename": "java kafka at-most-once",
+      "path": "base/notes/java kafka at-most-once.md"
+    },
+    {
+      "basename": "java Многопоточные коллекции",
+      "path": "base/notes/java Многопоточные коллекции.md"
+    },
+    {
+      "basename": "java Сообщения, топики и партиции в Apache Kafka",
+      "path": "base/notes/java Сообщения, топики и партиции в Apache Kafka.md"
+    },
+    {
+      "basename": "java Уровни изоляции транзакций",
+      "path": "base/notes/java Уровни изоляции транзакций.md"
+    },
+    {
+      "basename": "java индексы",
+      "path": "base/notes/java индексы.md"
+    },
+    {
+      "basename": "java как запустить задачу в другом потоке",
+      "path": "base/notes/java как запустить задачу в другом потоке.md"
+    },
+    {
+      "basename": "java основные аннотации Spring",
+      "path": "base/notes/java основные аннотации Spring.md"
+    },
+    {
+      "basename": "java подзапросы, вложенные запросы",
+      "path": "base/notes/java подзапросы, вложенные запросы.md"
+    },
+    {
+      "basename": "java проблема N + 1",
+      "path": "base/notes/java проблема N + 1.md"
+    },
+    {
+      "basename": "java сборка мусора",
+      "path": "base/notes/java сборка мусора.md"
+    },
+    {
+      "basename": "виды сборщиков мусора",
+      "path": "base/notes/виды сборщиков мусора.md"
+    },
+    {
+      "basename": "java типы памяти в jvm",
+      "path": "base/notes/java типы памяти в jvm.md"
+    },
+    {
+      "basename": "java экзекьюторы",
+      "path": "base/notes/java экзекьюторы.md"
+    },
+    {
+      "basename": "java Facade",
+      "path": "base/notes/java Facade.md"
+    },
+    {
+      "basename": "java Factory method",
+      "path": "base/notes/java Factory method.md"
+    },
+    {
+      "basename": "java Singleton",
+      "path": "base/notes/java Singleton.md"
+    },
+    {
+      "basename": "java abstract factory",
+      "path": "base/notes/java abstract factory.md"
+    },
+    {
+      "basename": "java bridge",
+      "path": "base/notes/java bridge.md"
+    },
+    {
+      "basename": "java builder для продвинутых",
+      "path": "base/notes/java builder для продвинутых.md"
+    },
+    {
+      "basename": "java builder",
+      "path": "base/notes/java builder.md"
+    },
+    {
+      "basename": "java composite",
+      "path": "base/notes/java composite.md"
+    },
+    {
+      "basename": "java fluent api vs builder",
+      "path": "base/notes/java fluent api vs builder.md"
+    },
+    {
+      "basename": "java fluent api",
+      "path": "base/notes/java fluent api.md"
+    },
+    {
+      "basename": "java interpreter",
+      "path": "base/notes/java interpreter.md"
+    },
+    {
+      "basename": "java iterator",
+      "path": "base/notes/java iterator.md"
+    },
+    {
+      "basename": "java mediator",
+      "path": "base/notes/java mediator.md"
+    },
+    {
+      "basename": "java memento",
+      "path": "base/notes/java memento.md"
     },
     {
       "basename": "java state",
@@ -15,390 +399,6 @@
     {
       "basename": "java паттерн наблюдатель",
       "path": "base/notes/java паттерн наблюдатель.md"
-    },
-    {
-      "basename": "java идексы в Postgres",
-      "path": "base/notes/java идексы в Postgres.md"
-    },
-    {
-      "basename": "java кластеризированный индекс",
-      "path": "base/notes/java кластеризированный индекс.md"
-    },
-    {
-      "basename": "java когда индексы могут пригодиться",
-      "path": "base/notes/java когда индексы могут пригодиться.md"
-    },
-    {
-      "basename": "java покрывающий индекс",
-      "path": "base/notes/java покрывающий индекс.md"
-    },
-    {
-      "basename": "java составной индекс",
-      "path": "base/notes/java составной индекс.md"
-    },
-    {
-      "basename": "java частичный индекс",
-      "path": "base/notes/java частичный индекс.md"
-    },
-    {
-      "basename": "java что учесть при создании индексов",
-      "path": "base/notes/java что учесть при создании индексов.md"
-    },
-    {
-      "basename": "java Adapter",
-      "path": "base/notes/java Adapter.md"
-    },
-    {
-      "basename": "java Decorator",
-      "path": "base/notes/java Decorator.md"
-    },
-    {
-      "basename": "java ReentrantLock",
-      "path": "base/notes/java ReentrantLock.md"
-    },
-    {
-      "basename": "сбер собес Сорокин",
-      "path": "sources/сбер собес Сорокин.md"
-    },
-    {
-      "basename": "java green thread",
-      "path": "base/notes/java green thread.md"
-    },
-    {
-      "basename": "java mutex",
-      "path": "base/notes/java mutex.md"
-    },
-    {
-      "basename": "java примитивы синхронизации",
-      "path": "base/notes/java примитивы синхронизации.md"
-    },
-    {
-      "basename": "java способы синхронизации",
-      "path": "base/notes/java способы синхронизации.md"
-    },
-    {
-      "basename": "java Многопоточность",
-      "path": "base/notes/java Многопоточность.md"
-    },
-    {
-      "basename": "java Tomcat",
-      "path": "base/notes/java Tomcat.md"
-    },
-    {
-      "basename": "java HTTP-сессия",
-      "path": "base/notes/java HTTP-сессия.md"
-    },
-    {
-      "basename": "java Proxy",
-      "path": "base/notes/java Proxy.md"
-    },
-    {
-      "basename": "java ABA-проблема",
-      "path": "base/notes/java ABA-проблема.md"
-    },
-    {
-      "basename": "java LinkedHashMap",
-      "path": "base/notes/java LinkedHashMap.md"
-    },
-    {
-      "basename": "java CTE",
-      "path": "base/notes/java CTE.md"
-    },
-    {
-      "basename": "java LATERAL",
-      "path": "base/notes/java LATERAL.md"
-    },
-    {
-      "basename": "java kafka offset",
-      "path": "base/notes/java kafka offset.md"
-    },
-    {
-      "basename": "java HTTP 403 Forbidden",
-      "path": "base/notes/java HTTP 403 Forbidden.md"
-    },
-    {
-      "basename": "java ForkJoinPool",
-      "path": "base/notes/java ForkJoinPool.md"
-    },
-    {
-      "basename": "java kafka at least once",
-      "path": "base/notes/java kafka at least once.md"
-    },
-    {
-      "basename": "java основные сущности Kafka",
-      "path": "base/notes/java основные сущности Kafka.md"
-    },
-    {
-      "basename": "java LinkedHashSet",
-      "path": "base/notes/java LinkedHashSet.md"
-    },
-    {
-      "basename": "java ACID",
-      "path": "base/notes/java ACID.md"
-    },
-    {
-      "basename": "java cachedThreadPool",
-      "path": "base/notes/java cachedThreadPool.md"
-    },
-    {
-      "basename": "java fixedThreadPool",
-      "path": "base/notes/java fixedThreadPool.md"
-    },
-    {
-      "basename": "java scheduledThreadPool",
-      "path": "base/notes/java scheduledThreadPool.md"
-    },
-    {
-      "basename": "java singleThreadPool",
-      "path": "base/notes/java singleThreadPool.md"
-    },
-    {
-      "basename": "IoC",
-      "path": "base/notes/IoC.md"
-    },
-    {
-      "basename": "java рекомендации по использованию пулов потоков",
-      "path": "base/notes/java рекомендации по использованию пулов потоков.md"
-    },
-    {
-      "basename": "index",
-      "path": "home/index.md"
-    },
-    {
-      "basename": "Список книг",
-      "path": "sources/Список книг.md"
-    },
-    {
-      "basename": "java war vs jar",
-      "path": "base/notes/java war vs jar.md"
-    },
-    {
-      "basename": "java коллекции от ИИ",
-      "path": "base/notes/java коллекции от ИИ.md"
-    },
-    {
-      "basename": "java matrialized view",
-      "path": "base/notes/java matrialized view.md"
-    },
-    {
-      "basename": "java индексы в базах данных",
-      "path": "base/notes/java индексы в базах данных.md"
-    },
-    {
-      "basename": "java типы локов в БД",
-      "path": "base/notes/java типы локов в БД.md"
-    },
-    {
-      "basename": "java newWorkStealingPool",
-      "path": "base/notes/java newWorkStealingPool.md"
-    },
-    {
-      "basename": "java свойства Stream API",
-      "path": "base/notes/java свойства Stream API.md"
-    },
-    {
-      "basename": "java hash",
-      "path": "base/notes/java hash.md"
-    },
-    {
-      "basename": "java stop the world",
-      "path": "base/notes/java stop the world.md"
-    },
-    {
-      "basename": "java Kafka",
-      "path": "base/notes/java Kafka.md"
-    },
-    {
-      "basename": "java JNI",
-      "path": "base/notes/java JNI.md"
-    },
-    {
-      "basename": "java endpoint",
-      "path": "base/notes/java endpoint.md"
-    },
-    {
-      "basename": "java блокировки",
-      "path": "base/notes/java блокировки.md"
-    },
-    {
-      "basename": "java паттерны gof",
-      "path": "base/notes/java паттерны gof.md"
-    },
-    {
-      "basename": "java брокер сообщений",
-      "path": "base/notes/java брокер сообщений.md"
-    },
-    {
-      "basename": "java Spring Security",
-      "path": "base/notes/java Spring Security.md"
-    },
-    {
-      "basename": "java временная таблица",
-      "path": "base/notes/java временная таблица.md"
-    },
-    {
-      "basename": "java Авторизация",
-      "path": "base/notes/java Авторизация.md"
-    },
-    {
-      "basename": "java HashSet",
-      "path": "base/notes/java HashSet.md"
-    },
-    {
-      "basename": "java fail-safe",
-      "path": "base/notes/java fail-safe.md"
-    },
-    {
-      "basename": "java immutable",
-      "path": "base/notes/java immutable.md"
-    },
-    {
-      "basename": "java Transactional",
-      "path": "base/notes/java Transactional.md"
-    },
-    {
-      "basename": "java Пул потоков",
-      "path": "base/notes/java Пул потоков.md"
-    },
-    {
-      "basename": "полиморфизм",
-      "path": "base/notes/полиморфизм.md"
-    },
-    {
-      "basename": "java ArrayList",
-      "path": "base/notes/java ArrayList.md"
-    },
-    {
-      "basename": "java kafka at-most-once",
-      "path": "base/notes/java kafka at-most-once.md"
-    },
-    {
-      "basename": "java docker image",
-      "path": "base/notes/java docker image.md"
-    },
-    {
-      "basename": "java SOLID",
-      "path": "base/notes/java SOLID.md"
-    },
-    {
-      "basename": "java Semaphore",
-      "path": "base/notes/java Semaphore.md"
-    },
-    {
-      "basename": "java Аутентификация",
-      "path": "base/notes/java Аутентификация.md"
-    },
-    {
-      "basename": "java идемпотетность",
-      "path": "base/notes/java идемпотетность.md"
-    },
-    {
-      "basename": "java batch батч",
-      "path": "base/notes/java batch батч.md"
-    },
-    {
-      "basename": "java work-stealing алгоритм",
-      "path": "base/notes/java work-stealing алгоритм.md"
-    },
-    {
-      "basename": "java view",
-      "path": "base/notes/java view.md"
-    },
-    {
-      "basename": "java ExecutorService",
-      "path": "base/notes/java ExecutorService.md"
-    },
-    {
-      "basename": "java Spring",
-      "path": "base/notes/java Spring.md"
-    },
-    {
-      "basename": "java command",
-      "path": "base/notes/java command.md"
-    },
-    {
-      "basename": "java Паттерны отказоустойчивости микросервисов",
-      "path": "base/notes/java Паттерны отказоустойчивости микросервисов.md"
-    },
-    {
-      "basename": "java Stream API",
-      "path": "base/notes/java Stream API.md"
-    },
-    {
-      "basename": "java прокси JDK и CGLIB",
-      "path": "base/notes/java прокси JDK и CGLIB.md"
-    },
-    {
-      "basename": "JDK",
-      "path": "base/notes/JDK.md"
-    },
-    {
-      "basename": "RMI",
-      "path": "base/notes/RMI.md"
-    },
-    {
-      "basename": "garbage",
-      "path": "base/notes/garbage.md"
-    },
-    {
-      "basename": "final и методы интерфейса",
-      "path": "base/notes/final и методы интерфейса.md"
-    },
-    {
-      "basename": "JRE",
-      "path": "base/notes/JRE.md"
-    },
-    {
-      "basename": "Serial Garbage Collector",
-      "path": "base/notes/Serial Garbage Collector.md"
-    },
-    {
-      "basename": "java String pool",
-      "path": "base/notes/java String pool.md"
-    },
-    {
-      "basename": "bump-the-pointer",
-      "path": "base/notes/bump-the-pointer.md"
-    },
-    {
-      "basename": "LIFO",
-      "path": "base/notes/LIFO.md"
-    },
-    {
-      "basename": "Program Counter Register",
-      "path": "base/notes/Program Counter Register.md"
-    },
-    {
-      "basename": "classloader",
-      "path": "base/notes/classloader.md"
-    },
-    {
-      "basename": "Method area",
-      "path": "base/notes/Method area.md"
-    },
-    {
-      "basename": "java алгоритмическая сложность",
-      "path": "base/notes/java алгоритмическая сложность.md"
-    },
-    {
-      "basename": "Видос про коллекции",
-      "path": "sources/Видос про коллекции.md"
-    },
-    {
-      "basename": "2025-10-05",
-      "path": "periodic/daily/2025-10-05.md"
-    },
-    {
-      "basename": "java основы git",
-      "path": "base/notes/java основы git.md"
-    },
-    {
-      "basename": "sources",
-      "path": "home/databases/sources.md"
-    },
-    {
-      "basename": "JVM Stacks",
-      "path": "base/notes/JVM Stacks.md"
     }
   ],
   "omittedPaths": [

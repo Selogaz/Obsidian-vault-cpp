@@ -6,10 +6,10 @@ aliases:
   - паттерны gof
 deck: obsidian::java
 created: 2025-10-01T20:13:43+03:00
-updated: 2025-10-06T19:28:28+03:00
-sr-due: 2025-10-10
-sr-interval: 4
-sr-ease: 270
+updated: 2025-10-16T10:39:55+03:00
+sr-due: 2025-11-23
+sr-interval: 38
+sr-ease: 290
 ---
 
 **паттерны gof**

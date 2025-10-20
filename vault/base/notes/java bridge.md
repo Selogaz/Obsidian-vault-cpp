@@ -6,7 +6,10 @@ aliases:
   - bridge
 deck: obsidian::java
 created: 2025-10-01T18:23:31+03:00
-updated: 2025-10-01T18:23:31+03:00
+updated: 2025-10-08T18:50:49+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 270
 ---
 
 **bridge**

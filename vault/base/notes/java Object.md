@@ -5,7 +5,7 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-31 04:16:57+03:00
-updated: 2025-09-21T12:31:20+03:00
+updated: 2025-10-16T11:16:07+03:00
 sr-due: 2026-11-30
 sr-interval: 435
 sr-ease: 312
@@ -23,3 +23,5 @@ sr-ease: 312
 - [[java клонирование объектов|clone()]]
 - wait()
 - [[finalize]]
+
+java wait()

@@ -6,7 +6,10 @@ aliases:
   - сборка мусора
 deck: obsidian::java
 created: 2025-10-01T21:51:19+03:00
-updated: 2025-10-01T21:51:19+03:00
+updated: 2025-10-08T18:58:14+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 302
 ---
 
 **сборка мусора**
@@ -61,4 +64,3 @@ GC Roots - объекты, с которых начинается обход г�
 [Примеры оптимизации сборщика мусора](“Garbage Collection и JVM” ([badcasedaily1, 2023](zotero://select/library/items/PENHPP9I)) ([snapshot](zotero://open-pdf/library/items/64EQ4TY4?sel=h1%20%3E%20span&annotation=PCA6LFU9)))
 [Примеры оптимизации сборщика мусора](“Garbage Collection и JVM” ([badcasedaily1, 2023](zotero://select/library/items/PENHPP9I)) ([snapshot](zotero://open-pdf/library/items/64EQ4TY4?sel=h1%20%3E%20span&annotation=PCA6LFU9)))
 [Бенчмарки сборщиков мусора для Java](“Производительность современной Java при работе с большим объёмом данных, часть 1” ([AloneCoder, 2020](zotero://select/library/items/EFLY7HAH)) ([snapshot](zotero://open-pdf/library/items/XA8RW73T?sel=h1%20%3E%20span&annotation=W84J8G2P)))
-

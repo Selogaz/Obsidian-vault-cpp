@@ -6,7 +6,10 @@ aliases:
   - секреты
 deck: obsidian::java
 created: 2025-09-30T19:11:15+03:00
-updated: 2025-09-30T19:11:15+03:00
+updated: 2025-10-08T19:31:04+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 270
 ---
 
 **секреты**

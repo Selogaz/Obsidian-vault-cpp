@@ -6,7 +6,10 @@ aliases:
   - middle шаблон легенды
 deck: obsidian::java
 created: 2025-09-21T14:32:34+03:00
-updated: 2025-09-21T17:19:01+03:00
+updated: 2025-10-08T19:33:49+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 270
 ---
 
 **middle шаблон легенды**

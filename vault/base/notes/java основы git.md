@@ -6,7 +6,10 @@ aliases:
   - основы git
 deck: obsidian::java
 created: 2025-10-02T16:55:30+03:00
-updated: 2025-10-05T20:25:53+03:00
+updated: 2025-10-08T19:33:02+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 270
 ---
 
 **основы git**

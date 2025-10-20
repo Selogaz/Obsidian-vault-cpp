@@ -6,7 +6,10 @@ aliases:
   - API
 deck: obsidian::java
 created: 2025-09-17T16:13:53+03:00
-updated: 2025-09-17T16:46:48+03:00
+updated: 2025-10-08T19:30:56+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 270
 ---
 
 **API**

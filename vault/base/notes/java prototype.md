@@ -6,7 +6,10 @@ aliases:
   - prototype
 deck: obsidian::java
 created: 2025-10-01T18:19:44+03:00
-updated: 2025-10-01T18:19:44+03:00
+updated: 2025-10-16T10:38:00+03:00
+sr-due: 2025-11-17
+sr-interval: 32
+sr-ease: 311
 ---
 
 **prototype**
@@ -21,4 +24,4 @@ Shape newCircle = circlePrototype.clone();
 
 В [[JDK]] для этих целей можно использовать [[интерфейс Cloneable]] с методом `clone()`. Метод clone в классе Object объявлен как protected и не предназначен для вызова напрямую. Он реализует простое побитовое (swallow) копирование объекта, но так как эта операция не всегда желательна, она сработает только при наличии интерфейса-маркера Cloneable. Если класс не реализует интерфейс, вызов clone вызовет исключение CloneNotSupportedException.
 
-Spring бины c scope="prototype" не являются реализацией паттерна Prototype. Они создаются через конструктор.
+Spring бины c [[java жизненный цикл бинов#Scope бина|scope="prototype"]] не являются реализацией паттерна Prototype. Они создаются через конструктор.

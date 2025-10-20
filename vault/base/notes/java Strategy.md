@@ -6,7 +6,10 @@ aliases:
   - Strategy
 deck: obsidian::java
 created: 2025-08-10T12:04:51+03:00
-updated: 2025-10-01T19:10:30+03:00
+updated: 2025-10-16T10:37:11+03:00
+sr-due: 2025-11-15
+sr-interval: 30
+sr-ease: 290
 ---
 
 **Strategy**

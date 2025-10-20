@@ -20,7 +20,7 @@ start: 2025-09-29T21:49:35+03:00
 end: 
 total_hours: 0
 created: 2025-09-29T21:49:35+03:00
-updated: 2025-10-01T17:55:16+03:00
+updated: 2025-10-09T17:40:06+03:00
 ---
 
 ```table-of-contents
@@ -86,7 +86,7 @@ curl -H "Authorization: Basic dXNlcjo5M2EwMWNmMC03OTRiLTRiOTgtODZlZi01NDg2MGYzNm
 ![[java PasswordEncoder]]
 
 Реализации по умолчанию неявно защищают все конечные точки([[java endpoint|endpoint]])
-### HTTPS
+## HTTPS
 ![[java HTTPS]]
 
 ## Переопределение конфигураций по умолчанию
@@ -97,3 +97,4 @@ curl -H "Authorization: Basic dXNlcjo5M2EwMWNmMC03OTRiLTRiOTgtODZlZi01NDg2MGYzNm
 - переопределение методов
 
 ### Настройка UserDetailsService
+![[java authority]]

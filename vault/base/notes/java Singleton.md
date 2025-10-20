@@ -6,7 +6,10 @@ aliases:
   - Singleton
 deck: obsidian::java
 created: 2025-08-10T13:11:13+03:00
-updated: 2025-10-01T18:05:04+03:00
+updated: 2025-10-08T18:51:50+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 284
 ---
 
 **Singleton**

@@ -19,6 +19,7 @@ cssclasses:
 	- [[База знаний fill the gaps]]
 	- [[Список книг]]
 	- [[сбер собес Сорокин]]
+	- [[2025-10-10]]
 
 [[mynoise-net.aac]]
 
@@ -28,6 +29,7 @@ cssclasses:
 		- [[Получить оффер junior java dev]]
 - [[computer science]]
 	- [[pc builds]]
+		- [[новый 7800x3d]]
 - [[programming]]
 	- [[base/categories/java]]
 - [[health]]

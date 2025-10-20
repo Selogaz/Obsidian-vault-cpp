@@ -6,10 +6,10 @@ aliases:
   - типы локов в БД
 deck: obsidian::java
 created: 2025-08-30T11:24:47+03:00
-updated: 2025-10-06T19:34:00+03:00
-sr-due: 2025-10-10
-sr-interval: 4
-sr-ease: 270
+updated: 2025-10-16T10:40:58+03:00
+sr-due: 2025-11-23
+sr-interval: 38
+sr-ease: 290
 ---
 
 **типы локов в БД**

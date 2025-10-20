@@ -6,7 +6,10 @@ aliases:
   - Factory method
 deck: obsidian::java
 created: 2025-08-10T12:24:43+03:00
-updated: 2025-10-01T18:09:34+03:00
+updated: 2025-10-08T18:52:22+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 270
 ---
 
 **Factory method**

@@ -6,7 +6,10 @@ aliases:
   - индексы
 deck: obsidian::java
 created: 2025-09-26T10:02:42+03:00
-updated: 2025-09-26T10:07:33+03:00
+updated: 2025-10-08T19:06:11+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 270
 ---
 
 **индексы**

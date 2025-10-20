@@ -6,7 +6,10 @@ aliases:
   - HTTPS
 deck: obsidian::java
 created: 2025-09-30T20:27:50+03:00
-updated: 2025-09-30T20:30:13+03:00
+updated: 2025-10-08T19:35:44+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 270
 ---
 
 **HTTPS**

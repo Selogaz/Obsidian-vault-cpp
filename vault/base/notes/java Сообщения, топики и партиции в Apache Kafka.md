@@ -6,7 +6,10 @@ aliases:
   - Сообщения, топики и партиции в Apache Kafka
 deck: obsidian::java
 created: 2025-09-26T14:25:03+03:00
-updated: 2025-09-26T14:42:35+03:00
+updated: 2025-10-08T19:14:05+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 270
 ---
 
 **Сообщения, топики и партиции в Apache Kafka**

@@ -6,7 +6,7 @@ aliases:
   - kafka at least once
 deck: obsidian::java
 created: 2025-09-26T14:48:44+03:00
-updated: 2025-10-08T18:30:43+03:00
+updated: 2025-10-08T19:20:05+03:00
 sr-due: 2025-10-12
 sr-interval: 4
 sr-ease: 270
@@ -14,6 +14,8 @@ sr-ease: 270
 
 **kafka at least once**
 —
+гарантирует, что сообщение будет доставлено минимум один раз.
+
 Подтверждение смещения вручную после успешной обработки.
 ```java
 kafka.consumer.enable.auto.commit=false 

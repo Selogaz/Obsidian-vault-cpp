@@ -6,7 +6,10 @@ aliases:
   - проблема N + 1
 deck: obsidian::java
 created: 2025-09-20T09:19:18+03:00
-updated: 2025-09-20T09:19:18+03:00
+updated: 2025-10-08T18:59:38+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 276
 ---
 
 **проблема N + 1**

@@ -6,7 +6,10 @@ aliases:
   - Facade
 deck: obsidian::java
 created: 2025-08-10T12:33:26+03:00
-updated: 2025-10-01T18:32:20+03:00
+updated: 2025-10-08T18:52:25+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 279
 ---
 
 **Facade**

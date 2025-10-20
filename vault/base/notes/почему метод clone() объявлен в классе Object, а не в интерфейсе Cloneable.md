@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-02 12:20:08+03:00
-updated: 2025-10-02T17:24:33+03:00
-sr-due: 2025-10-11
-sr-interval: 9
-sr-ease: 250
+updated: 2025-10-13T16:31:55+03:00
+sr-due: 2025-11-21
+sr-interval: 39
+sr-ease: 270
 ---
 
 **Почему метод clone объявлен в классе Object, а не в интерфейсе Cloneable**

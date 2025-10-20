@@ -6,7 +6,10 @@ aliases:
   - локи в базах данных
 deck: obsidian::java
 created: 2025-08-30T11:24:49+03:00
-updated: 2025-08-30T11:24:49+03:00
+updated: 2025-10-08T19:33:37+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 270
 ---
 
 **локи в базах данных**

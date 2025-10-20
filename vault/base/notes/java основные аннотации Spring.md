@@ -6,7 +6,10 @@ aliases:
   - основные аннотации Spring
 deck: obsidian::java
 created: 2025-10-02T16:23:28+03:00
-updated: 2025-10-02T16:57:28+03:00
+updated: 2025-10-08T19:04:11+03:00
+sr-due: 2025-10-12
+sr-interval: 4
+sr-ease: 289
 ---
 
 **основные аннотации Spring**
