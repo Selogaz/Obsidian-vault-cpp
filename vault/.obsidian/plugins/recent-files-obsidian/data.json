@@ -1,6 +1,58 @@
 {
   "recentFiles": [
     {
+      "basename": "VRM",
+      "path": "base/notes/VRM.md"
+    },
+    {
+      "basename": "Отражения в играх",
+      "path": "base/notes/Отражения в играх.md"
+    },
+    {
+      "basename": "VRM. Что такое, зачем",
+      "path": "sources/VRM. Что такое, зачем.md"
+    },
+    {
+      "basename": "computer science",
+      "path": "base/categories/computer science.md"
+    },
+    {
+      "basename": "Отражение в играх. Как работают, различия и развитие технологий.",
+      "path": "sources/Отражение в играх. Как работают, различия и развитие технологий..md"
+    },
+    {
+      "basename": "index",
+      "path": "home/index.md"
+    },
+    {
+      "basename": "prefixes",
+      "path": "home/prefixes.md"
+    },
+    {
+      "basename": "fps-linked things",
+      "path": "base/_meta-notes/fps-linked things.md"
+    },
+    {
+      "basename": "Одно и двухканал памяти в современных процессорах",
+      "path": "sources/Одно и двухканал памяти в современных процессорах.md"
+    },
+    {
+      "basename": "Как на самом деле распределяют нагрузку Windows 10 и 11 на разные типы ядер в Intel Alder Lake?",
+      "path": "sources/Как на самом деле распределяют нагрузку Windows 10 и 11 на разные типы ядер в Intel Alder Lake?.md"
+    },
+    {
+      "basename": "computerscience",
+      "path": "base/notes/computerscience.md"
+    },
+    {
+      "basename": "1 vs 2 vs 3 vs 4 канала оперативной памяти",
+      "path": "sources/1 vs 2 vs 3 vs 4 канала оперативной памяти.md"
+    },
+    {
+      "basename": "fps задержки и пропускная способность памяти",
+      "path": "base/notes/fps задержки и пропускная способность памяти.md"
+    },
+    {
       "basename": "новый 7800x3d",
       "path": "base/_problems/новый 7800x3d.md"
     },
@@ -11,10 +63,6 @@
     {
       "basename": "7500f",
       "path": "base/_problems/7500f.md"
-    },
-    {
-      "basename": "index",
-      "path": "home/index.md"
     },
     {
       "basename": "ryzen 7800x3d",
@@ -351,54 +399,6 @@
     {
       "basename": "java bridge",
       "path": "base/notes/java bridge.md"
-    },
-    {
-      "basename": "java builder для продвинутых",
-      "path": "base/notes/java builder для продвинутых.md"
-    },
-    {
-      "basename": "java builder",
-      "path": "base/notes/java builder.md"
-    },
-    {
-      "basename": "java composite",
-      "path": "base/notes/java composite.md"
-    },
-    {
-      "basename": "java fluent api vs builder",
-      "path": "base/notes/java fluent api vs builder.md"
-    },
-    {
-      "basename": "java fluent api",
-      "path": "base/notes/java fluent api.md"
-    },
-    {
-      "basename": "java interpreter",
-      "path": "base/notes/java interpreter.md"
-    },
-    {
-      "basename": "java iterator",
-      "path": "base/notes/java iterator.md"
-    },
-    {
-      "basename": "java mediator",
-      "path": "base/notes/java mediator.md"
-    },
-    {
-      "basename": "java memento",
-      "path": "base/notes/java memento.md"
-    },
-    {
-      "basename": "java state",
-      "path": "base/notes/java state.md"
-    },
-    {
-      "basename": "java template method",
-      "path": "base/notes/java template method.md"
-    },
-    {
-      "basename": "java паттерн наблюдатель",
-      "path": "base/notes/java паттерн наблюдатель.md"
     }
   ],
   "omittedPaths": [

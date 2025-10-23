@@ -30,6 +30,9 @@ cssclasses:
 - [[computer science]]
 	- [[pc builds]]
 		- [[новый 7800x3d]]
+	- [[fps-linked things]]
+Аэродинамика промышленных аппаратов (Подвод, отвод и равномерная раздача потока)", Идельчик Исаак Евсеевич, 1964.
+
 - [[programming]]
 	- [[base/categories/java]]
 - [[health]]

@@ -13,6 +13,78 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "base/categories/computer science.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "computer science"
+            }
+          },
+          {
+            "id": "029652577c57df91",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/VRM.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "VRM"
+            }
+          },
+          {
+            "id": "3d4945fecf0e15bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/Отражения в играх.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": true,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Отражения в играх"
+            }
+          },
+          {
+            "id": "d82a59061cfd0458",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "home/index.md",
                 "mode": "source",
                 "source": false,
@@ -32,7 +104,7 @@
             }
           },
           {
-            "id": "923e8854c15fdeb3",
+            "id": "4c9c815cae26bbdd",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -129,10 +201,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "periodic/daily/2025-04-15.md"
+                "file": "base/notes/VRM.md"
               },
               "icon": "lucide-info",
-              "title": "File properties"
+              "title": "File properties for VRM"
             }
           }
         ]
@@ -215,8 +287,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5,
-    "collapsed": true
+    "width": 344.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -231,12 +302,30 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "923e8854c15fdeb3",
+  "active": "029652577c57df91",
   "lastOpenFiles": [
-    "base/_meta-notes/pc builds.md",
-    "base/_problems/новый 7800x3d.md",
-    "base/_problems/7500f.md",
+    "base/notes/Отражения в играх.md",
+    "base/notes/VRM.md",
+    "sources/VRM. Что такое, зачем.md",
+    "base/categories/computer science.md",
+    "sources/Отражение в играх. Как работают, различия и развитие технологий..md",
     "home/index.md",
+    "home/prefixes.md",
+    "base/_meta-notes/fps-linked things.md",
+    "sources/Одно и двухканал памяти в современных процессорах.md",
+    "sources/Как на самом деле распределяют нагрузку Windows 10 и 11 на разные типы ядер в Intel Alder Lake?.md",
+    "base/notes/computerscience.md",
+    "sources/1 vs 2 vs 3 vs 4 канала оперативной памяти.md",
+    "files/VRM 2025-10-23-2.png",
+    "files/VRM 2025-10-23-1.png",
+    "files/VRM 2025-10-23.png",
+    "base/notes/разделение ядер intel.md",
+    "base/notes/hyper-threading.md",
+    "base/notes/fps задержки и пропускная способность памяти.md",
+    "base/notes/зависимость частоты видеоядра от частоты памяти.md",
+    "base/_problems/новый 7800x3d.md",
+    "base/_meta-notes/pc builds.md",
+    "base/_problems/7500f.md",
     "base/_problems/ryzen 7800x3d.md",
     "sources/Лучшее железо для сборки ПК в 2025.md",
     "periodic/daily/2025-10-13.md",
@@ -246,30 +335,12 @@
     "periodic/2025.canvas",
     "periodic/daily/2025-10-16.md",
     "base/notes/java способы синхронизации.md",
-    "base/notes/java основные сущности Kafka.md",
-    "base/notes/java рекомендации по использованию пулов потоков.md",
-    "base/notes/java коллекции от ИИ.md",
-    "base/notes/java микросервисы.md",
-    "base/notes/java типы локов в БД.md",
-    "base/notes/java свойства Stream API.md",
-    "base/notes/java паттерны gof.md",
-    "base/notes/java prototype.md",
-    "base/notes/java Strategy.md",
-    "base/notes/java chain of responsibility.md",
-    "base/notes/java flyweight.md",
-    "sources/Spring быстро.md",
-    "sources/народный пк от welson.md",
-    "base/_problems/Сборка под 9600x.md",
-    "base/_problems/более дешевая 9600х.md",
     "files/Spring быстро 2025-10-11-1.png",
     "files/Spring быстро 2025-10-11.png",
     "files/Видос про коллекции 2025-10-06.png",
     "files/Видос про коллекции 2025-10-05.png",
     "files/Spring Security в действии 2025-09-30.png",
     "files/Spring Security в действии 2025-09-29.png",
-    "files/Лучшее железо для сборки ПК в 2025 2025-09-18-4.png",
-    "files/Лучшее железо для сборки ПК в 2025 2025-09-18-3.png",
-    "files/Лучшее железо для сборки ПК в 2025 2025-09-18-2.png",
     "mynoise-net.aac",
     "w инициализация static",
     "periodic/daily/Empty File",
