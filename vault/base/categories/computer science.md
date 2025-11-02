@@ -1,5 +1,5 @@
 ---
-tags: 
+tags:
   - system/category
   - category/computer science
 next:
@@ -8,6 +8,8 @@ hierarchy:
   - "[[base/_hierarchy/computer science hierarchy|computer science]]"
 cssclasses:
   - category
+sort_notes: file.outlinks.length
+sort_direction_notes: asc
 ---
 
 > [!tabbed]+

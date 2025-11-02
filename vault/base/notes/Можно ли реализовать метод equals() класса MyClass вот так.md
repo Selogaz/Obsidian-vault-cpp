@@ -5,10 +5,10 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-06-02 09:47:28+03:00
-updated: 2025-09-28T20:50:53+03:00
-sr-due: 2025-10-17
-sr-interval: 19
-sr-ease: 250
+updated: 2025-11-01T08:04:43+03:00
+sr-due: 2026-02-28
+sr-interval: 119
+sr-ease: 270
 ---
 
 **Можно ли реализовать метод equals класса MyClass вот так**

@@ -14,7 +14,7 @@ start: 2025-09-19T19:09:11+03:00
 end: 
 total_hours: 0
 created: 2025-09-19T19:09:11+03:00
-updated: 2025-10-02T16:55:59+03:00
+updated: 2025-10-24T08:13:37+03:00
 ---
 
 ```table-of-contents

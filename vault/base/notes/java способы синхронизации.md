@@ -6,10 +6,10 @@ aliases:
   - способы синхронизации
 deck: obsidian::java
 created: 2025-07-16T14:05:37+03:00
-updated: 2025-10-08T18:32:40+03:00
-sr-due: 2025-10-12
-sr-interval: 4
-sr-ease: 270
+updated: 2025-11-01T08:06:31+03:00
+sr-due: 2026-01-30
+sr-interval: 90
+sr-ease: 290
 ---
 
 **способы синхронизации**

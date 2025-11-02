@@ -29,6 +29,7 @@ bioinformatics – binf
 work – w
 obsidian – obs
 health – h
+games – g
 
 
 ```yaml

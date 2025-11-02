@@ -1,36 +1,152 @@
 {
   "recentFiles": [
     {
-      "basename": "VRM",
-      "path": "base/notes/VRM.md"
+      "basename": "2025-11-02",
+      "path": "periodic/daily/2025-11-02.md"
     },
     {
-      "basename": "Отражения в играх",
-      "path": "base/notes/Отражения в играх.md"
-    },
-    {
-      "basename": "VRM. Что такое, зачем",
-      "path": "sources/VRM. Что такое, зачем.md"
-    },
-    {
-      "basename": "computer science",
-      "path": "base/categories/computer science.md"
-    },
-    {
-      "basename": "Отражение в играх. Как работают, различия и развитие технологий.",
-      "path": "sources/Отражение в играх. Как работают, различия и развитие технологий..md"
+      "basename": "java middle шаблон легенды",
+      "path": "base/notes/java middle шаблон легенды.md"
     },
     {
       "basename": "index",
       "path": "home/index.md"
     },
     {
+      "basename": "2025-10-10",
+      "path": "periodic/daily/2025-10-10.md"
+    },
+    {
+      "basename": "java примитивы синхронизации",
+      "path": "base/notes/java примитивы синхронизации.md"
+    },
+    {
+      "basename": "java Object",
+      "path": "base/notes/java Object.md"
+    },
+    {
+      "basename": "pc builds",
+      "path": "base/_meta-notes/pc builds.md"
+    },
+    {
+      "basename": "java wait()",
+      "path": "base/notes/java wait().md"
+    },
+    {
+      "basename": "java Многопоточные коллекции",
+      "path": "base/notes/java Многопоточные коллекции.md"
+    },
+    {
+      "basename": "java способы синхронизации",
+      "path": "base/notes/java способы синхронизации.md"
+    },
+    {
+      "basename": "Можно ли реализовать метод equals() класса MyClass вот так",
+      "path": "base/notes/Можно ли реализовать метод equals() класса MyClass вот так.md"
+    },
+    {
+      "basename": "7500f",
+      "path": "base/_problems/7500f.md"
+    },
+    {
+      "basename": "2025-10-26",
+      "path": "periodic/daily/2025-10-26.md"
+    },
+    {
       "basename": "prefixes",
       "path": "home/prefixes.md"
     },
     {
+      "basename": "2025-10-24",
+      "path": "periodic/daily/2025-10-24.md"
+    },
+    {
+      "basename": "games",
+      "path": "base/categories/games.md"
+    },
+    {
+      "basename": "новый 7800x3d",
+      "path": "base/_problems/новый 7800x3d.md"
+    },
+    {
+      "basename": "настройка 9800x3d",
+      "path": "base/notes/настройка 9800x3d.md"
+    },
+    {
+      "basename": "ЛЕГЕНДАРНАЯ НАСТРОЙКА WINDOWS КОТОРАЯ РАЗНОСИТ ВСЕ ГАЙДЫ. ОПТИМИЗАЦИЯ ДЛЯ КС 2, ВАЛОРАНТ, ФОРТНАЙТ",
+      "path": "sources/ЛЕГЕНДАРНАЯ НАСТРОЙКА WINDOWS КОТОРАЯ РАЗНОСИТ ВСЕ ГАЙДЫ. ОПТИМИЗАЦИЯ ДЛЯ КС 2, ВАЛОРАНТ, ФОРТНАЙТ.md"
+    },
+    {
+      "basename": "ЕСЛИ У ТЕБЯ ПРОЦЕССОР АМД ПОСМОТРИ ЭТО ВИДЕО. САМАЯ ВАЖНАЯ НАСТРОЙКА ДЛЯ ИГР AMD RYZEN X3D",
+      "path": "sources/ЕСЛИ У ТЕБЯ ПРОЦЕССОР АМД ПОСМОТРИ ЭТО ВИДЕО. САМАЯ ВАЖНАЯ НАСТРОЙКА ДЛЯ ИГР AMD RYZEN X3D.md"
+    },
+    {
+      "basename": "правильная настройка windows",
+      "path": "base/notes/правильная настройка windows.md"
+    },
+    {
+      "basename": "SSRTGI",
+      "path": "base/notes/SSRTGI.md"
+    },
+    {
+      "basename": "cpumemory",
+      "path": "sources/cpumemory.md"
+    },
+    {
+      "basename": "FSR vs DLSS",
+      "path": "sources/FSR vs DLSS.md"
+    },
+    {
+      "basename": "КАК ВЫБРАТЬ БУ ВИДЕОКАРТУ ГАЙД",
+      "path": "sources/КАК ВЫБРАТЬ БУ ВИДЕОКАРТУ ГАЙД.md"
+    },
+    {
+      "basename": "computerscience",
+      "path": "base/notes/computerscience.md"
+    },
+    {
       "basename": "fps-linked things",
       "path": "base/_meta-notes/fps-linked things.md"
+    },
+    {
+      "basename": "Трассировка лучей теперь доступна во всех играх?",
+      "path": "sources/Трассировка лучей теперь доступна во всех играх?.md"
+    },
+    {
+      "basename": "DLDSR",
+      "path": "base/notes/DLDSR.md"
+    },
+    {
+      "basename": "База знаний fill the gaps",
+      "path": "sources/База знаний fill the gaps.md"
+    },
+    {
+      "basename": "java",
+      "path": "base/categories/java.md"
+    },
+    {
+      "basename": "computer science",
+      "path": "base/categories/computer science.md"
+    },
+    {
+      "basename": "Отражения в играх",
+      "path": "base/notes/Отражения в играх.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Untitled.md"
+    },
+    {
+      "basename": "VRM",
+      "path": "base/notes/VRM.md"
+    },
+    {
+      "basename": "VRM. Что такое, зачем",
+      "path": "sources/VRM. Что такое, зачем.md"
+    },
+    {
+      "basename": "Отражение в играх. Как работают, различия и развитие технологий.",
+      "path": "sources/Отражение в играх. Как работают, различия и развитие технологий..md"
     },
     {
       "basename": "Одно и двухканал памяти в современных процессорах",
@@ -41,28 +157,12 @@
       "path": "sources/Как на самом деле распределяют нагрузку Windows 10 и 11 на разные типы ядер в Intel Alder Lake?.md"
     },
     {
-      "basename": "computerscience",
-      "path": "base/notes/computerscience.md"
-    },
-    {
       "basename": "1 vs 2 vs 3 vs 4 канала оперативной памяти",
       "path": "sources/1 vs 2 vs 3 vs 4 канала оперативной памяти.md"
     },
     {
       "basename": "fps задержки и пропускная способность памяти",
       "path": "base/notes/fps задержки и пропускная способность памяти.md"
-    },
-    {
-      "basename": "новый 7800x3d",
-      "path": "base/_problems/новый 7800x3d.md"
-    },
-    {
-      "basename": "pc builds",
-      "path": "base/_meta-notes/pc builds.md"
-    },
-    {
-      "basename": "7500f",
-      "path": "base/_problems/7500f.md"
     },
     {
       "basename": "ryzen 7800x3d",
@@ -77,10 +177,6 @@
       "path": "periodic/daily/2025-10-13.md"
     },
     {
-      "basename": "java Object",
-      "path": "base/notes/java Object.md"
-    },
-    {
       "basename": "Список книг",
       "path": "sources/Список книг.md"
     },
@@ -91,10 +187,6 @@
     {
       "basename": "2025-10-16",
       "path": "periodic/daily/2025-10-16.md"
-    },
-    {
-      "basename": "java способы синхронизации",
-      "path": "base/notes/java способы синхронизации.md"
     },
     {
       "basename": "java основные сущности Kafka",
@@ -193,24 +285,12 @@
       "path": "base/notes/generics.md"
     },
     {
-      "basename": "2025-10-10",
-      "path": "periodic/daily/2025-10-10.md"
-    },
-    {
       "basename": "Spring Security в действии",
       "path": "sources/Spring Security в действии.md"
     },
     {
-      "basename": "java",
-      "path": "base/categories/java.md"
-    },
-    {
       "basename": "42 крутые игры для тех, кого тошнит от ААА",
       "path": "sources/42 крутые игры для тех, кого тошнит от ААА.md"
-    },
-    {
-      "basename": "games",
-      "path": "base/categories/games.md"
     },
     {
       "basename": "20 НОВЫХ РПГ ИГР которые ВОЗРОДЯТ этот ЖАНР",
@@ -255,10 +335,6 @@
     {
       "basename": "java jwt vs access and refresh",
       "path": "base/notes/java jwt vs access and refresh.md"
-    },
-    {
-      "basename": "java middle шаблон легенды",
-      "path": "base/notes/java middle шаблон легенды.md"
     },
     {
       "basename": "java Какие проблемы решает Kafka",
@@ -323,82 +399,6 @@
     {
       "basename": "java Гарантии в распределенных системах",
       "path": "base/notes/java Гарантии в распределенных системах.md"
-    },
-    {
-      "basename": "java kafka at least once",
-      "path": "base/notes/java kafka at least once.md"
-    },
-    {
-      "basename": "java kafka at-most-once",
-      "path": "base/notes/java kafka at-most-once.md"
-    },
-    {
-      "basename": "java Многопоточные коллекции",
-      "path": "base/notes/java Многопоточные коллекции.md"
-    },
-    {
-      "basename": "java Сообщения, топики и партиции в Apache Kafka",
-      "path": "base/notes/java Сообщения, топики и партиции в Apache Kafka.md"
-    },
-    {
-      "basename": "java Уровни изоляции транзакций",
-      "path": "base/notes/java Уровни изоляции транзакций.md"
-    },
-    {
-      "basename": "java индексы",
-      "path": "base/notes/java индексы.md"
-    },
-    {
-      "basename": "java как запустить задачу в другом потоке",
-      "path": "base/notes/java как запустить задачу в другом потоке.md"
-    },
-    {
-      "basename": "java основные аннотации Spring",
-      "path": "base/notes/java основные аннотации Spring.md"
-    },
-    {
-      "basename": "java подзапросы, вложенные запросы",
-      "path": "base/notes/java подзапросы, вложенные запросы.md"
-    },
-    {
-      "basename": "java проблема N + 1",
-      "path": "base/notes/java проблема N + 1.md"
-    },
-    {
-      "basename": "java сборка мусора",
-      "path": "base/notes/java сборка мусора.md"
-    },
-    {
-      "basename": "виды сборщиков мусора",
-      "path": "base/notes/виды сборщиков мусора.md"
-    },
-    {
-      "basename": "java типы памяти в jvm",
-      "path": "base/notes/java типы памяти в jvm.md"
-    },
-    {
-      "basename": "java экзекьюторы",
-      "path": "base/notes/java экзекьюторы.md"
-    },
-    {
-      "basename": "java Facade",
-      "path": "base/notes/java Facade.md"
-    },
-    {
-      "basename": "java Factory method",
-      "path": "base/notes/java Factory method.md"
-    },
-    {
-      "basename": "java Singleton",
-      "path": "base/notes/java Singleton.md"
-    },
-    {
-      "basename": "java abstract factory",
-      "path": "base/notes/java abstract factory.md"
-    },
-    {
-      "basename": "java bridge",
-      "path": "base/notes/java bridge.md"
     }
   ],
   "omittedPaths": [
