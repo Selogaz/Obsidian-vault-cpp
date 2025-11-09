@@ -1,16 +1,64 @@
 {
   "recentFiles": [
     {
-      "basename": "2025-11-02",
-      "path": "periodic/daily/2025-11-02.md"
+      "basename": "undying",
+      "path": "base/notes/undying.md"
     },
     {
-      "basename": "java middle шаблон легенды",
-      "path": "base/notes/java middle шаблон легенды.md"
+      "basename": "dota",
+      "path": "base/_meta-notes/dota.md"
     },
     {
       "basename": "index",
       "path": "home/index.md"
+    },
+    {
+      "basename": "Технологии и настройки",
+      "path": "base/_meta-notes/Технологии и настройки.md"
+    },
+    {
+      "basename": "obsidian",
+      "path": "base/categories/obsidian.md"
+    },
+    {
+      "basename": "vault",
+      "path": "sources/vault.md"
+    },
+    {
+      "basename": "(20) Что такое трассировка лучей и как работает NVIDIA RTX? - YouTube",
+      "path": "sources/(20) Что такое трассировка лучей и как работает NVIDIA RTX? - YouTube.md"
+    },
+    {
+      "basename": "рекурентное размытие и темпоральное накопление",
+      "path": "base/notes/рекурентное размытие и темпоральное накопление.md"
+    },
+    {
+      "basename": "Как правильно пользоваться Frame Generation",
+      "path": "sources/Как правильно пользоваться Frame Generation.md"
+    },
+    {
+      "basename": "Магия чисел. — Изучаем и тестируем DLSS 4",
+      "path": "sources/Магия чисел. — Изучаем и тестируем DLSS 4.md"
+    },
+    {
+      "basename": "prefixes",
+      "path": "home/prefixes.md"
+    },
+    {
+      "basename": "pc builds",
+      "path": "base/_meta-notes/pc builds.md"
+    },
+    {
+      "basename": "2025-11-02",
+      "path": "periodic/daily/2025-11-02.md"
+    },
+    {
+      "basename": "java middle Verme легенда",
+      "path": "base/notes/java middle Verme легенда.md"
+    },
+    {
+      "basename": "java middle шаблон легенды",
+      "path": "base/notes/java middle шаблон легенды.md"
     },
     {
       "basename": "2025-10-10",
@@ -23,10 +71,6 @@
     {
       "basename": "java Object",
       "path": "base/notes/java Object.md"
-    },
-    {
-      "basename": "pc builds",
-      "path": "base/_meta-notes/pc builds.md"
     },
     {
       "basename": "java wait()",
@@ -51,10 +95,6 @@
     {
       "basename": "2025-10-26",
       "path": "periodic/daily/2025-10-26.md"
-    },
-    {
-      "basename": "prefixes",
-      "path": "home/prefixes.md"
     },
     {
       "basename": "2025-10-24",
@@ -359,46 +399,6 @@
     {
       "basename": "java преимущества Docker",
       "path": "base/notes/java преимущества Docker.md"
-    },
-    {
-      "basename": "java секреты",
-      "path": "base/notes/java секреты.md"
-    },
-    {
-      "basename": "Вопросы и ответы к интервью Java разработчика",
-      "path": "base/notes/Вопросы и ответы к интервью Java разработчика.md"
-    },
-    {
-      "basename": "java API",
-      "path": "base/notes/java API.md"
-    },
-    {
-      "basename": "java HTTP 401 Unauthorized",
-      "path": "base/notes/java HTTP 401 Unauthorized.md"
-    },
-    {
-      "basename": "java atomic",
-      "path": "base/notes/java atomic.md"
-    },
-    {
-      "basename": "java docker container",
-      "path": "base/notes/java docker container.md"
-    },
-    {
-      "basename": "java dockerfile",
-      "path": "base/notes/java dockerfile.md"
-    },
-    {
-      "basename": "java volatile",
-      "path": "base/notes/java volatile.md"
-    },
-    {
-      "basename": "java Гарантии в Apache Kafka",
-      "path": "base/notes/java Гарантии в Apache Kafka.md"
-    },
-    {
-      "basename": "java Гарантии в распределенных системах",
-      "path": "base/notes/java Гарантии в распределенных системах.md"
     }
   ],
   "omittedPaths": [
