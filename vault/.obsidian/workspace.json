@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home/index.md",
+                "file": "periodic/daily/2025-11-14.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,35 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "8e83c9ae160adb96",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/Шейдеры.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Шейдеры"
+              "title": "2025-11-14"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -166,6 +141,16 @@
             "id": "db0630a3e88fda94",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "08b98a0c3a3f8f0e",
+            "type": "leaf",
+            "state": {
               "type": "BC-matrix",
               "state": {},
               "icon": "BC-trail-icon",
@@ -173,7 +158,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "c5d15b09186ff35b",
@@ -269,10 +254,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "8e83c9ae160adb96",
+  "active": "8757fe3e444d0e71",
   "lastOpenFiles": [
-    "periodic/daily/2025-11-13.md",
+    "base/notes/java Сопроводительное письмо.md",
+    "home/index.md",
+    "periodic/daily/2025-11-14.md",
     "base/notes/Шейдеры.md",
+    "periodic/daily/2025-11-13.md",
     "sources/Поясняю за трассировку и методы создания отражений в играх ЧАСТЬ 2.md",
     "sources/Отражение в играх. Как работают, различия и развитие технологий..md",
     "base/notes/Отражения в играх.md",
@@ -280,7 +268,6 @@
     "base/notes/Screen Space Reflections.md",
     "base/notes/кубическая карта.md",
     "base/notes/растеризация.md",
-    "home/index.md",
     "periodic/daily/2025-11-11.md",
     "base/notes/java Паттерны отказоустойчивости микросервисов.md",
     "base/notes/java как запустить задачу в другом потоке.md",
@@ -301,8 +288,6 @@
     "sources/vault.md",
     "sources/(20) Что такое трассировка лучей и как работает NVIDIA RTX? - YouTube.md",
     "base/notes/гибридный рендеринг.md",
-    "base/notes/рендер с отложенным расчетом освещения.md",
-    "base/notes/полная трассировка пути.md",
     "files/Магия чисел. — Изучаем и тестируем DLSS 4 2025-11-04-3.png",
     "files/Магия чисел. — Изучаем и тестируем DLSS 4 2025-11-04-2.png",
     "files/Магия чисел. — Изучаем и тестируем DLSS 4 2025-11-04-1.png",
