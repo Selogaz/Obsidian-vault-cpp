@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2025-11-14.md",
-                "mode": "source",
+                "file": "home/databases/sources.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-11-14"
+              "title": "sources"
             }
           },
           {
-            "id": "e9f744431e624232",
+            "id": "e5b30c7a5ede6c5a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2025-11-15.md",
+                "file": "base/_meta-notes/world of warcraft.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,16 +52,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-11-15"
+              "title": "world of warcraft"
             }
           },
           {
-            "id": "db7190fd9bb48755",
+            "id": "e6af545982b8c6ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/ВНУТРЯНКА АЙТИ.md",
+                "file": "base/_problems/Выбор сервера.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,31 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "ВНУТРЯНКА АЙТИ"
-            }
-          },
-          {
-            "id": "7e7446db6a09a493",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/java дейли.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": true,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "java дейли"
+              "title": "Выбор сервера"
             }
           }
         ],
@@ -137,19 +113,6 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
-          },
-          {
-            "id": "4bc934df318ba43f",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
-            }
           }
         ]
       },
@@ -162,10 +125,10 @@
             "id": "3bbc3335d224e54b",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "BC-matrix",
               "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "icon": "BC-trail-icon",
+              "title": "Breadcrumbs Matrix"
             }
           }
         ]
@@ -195,43 +158,8 @@
               "icon": "lucide-info",
               "title": "File properties"
             }
-          },
-          {
-            "id": "bdbea4f612cdbb37",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
-          },
-          {
-            "id": "db0630a3e88fda94",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "08b98a0c3a3f8f0e",
-            "type": "leaf",
-            "state": {
-              "type": "BC-matrix",
-              "state": {},
-              "icon": "BC-trail-icon",
-              "title": "Breadcrumbs Matrix"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "c5d15b09186ff35b",
@@ -323,14 +251,18 @@
       "workspaces:Manage workspace layouts": true,
       "obsidian-spaced-repetition:Review flashcards": false,
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-      "obsidian42-brat:BRAT": false,
-      "periodic-notes:Open today": false
+      "periodic-notes:Open today": false,
+      "obsidian42-brat:BRAT": false
     }
   },
-  "active": "db7190fd9bb48755",
+  "active": "e6af545982b8c6ba",
   "lastOpenFiles": [
-    "base/notes/java дейли.md",
+    "base/_meta-notes/world of warcraft.md",
+    "base/_problems/Выбор сервера.md",
+    "home/index.md",
+    "home/databases/sources.md",
     "sources/ВНУТРЯНКА АЙТИ.md",
+    "base/notes/java дейли.md",
     "base/notes/java планирование.md",
     "periodic/daily/2025-11-15.md",
     "base/notes/java словарь.md",
@@ -351,10 +283,6 @@
     "base/notes/java заложиться.md",
     "base/notes/java коммерческая занятость.md",
     "base/notes/java API.md",
-    "home/index.md",
-    "periodic/daily/2025-11-14.md",
-    "base/notes/java Сопроводительное письмо.md",
-    "base/notes/Шейдеры.md",
     "periodic/2025.canvas",
     "files/dota 2025-11-09-4.png",
     "files/dota 2025-11-09-3.png",

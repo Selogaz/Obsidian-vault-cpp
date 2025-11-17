@@ -7,13 +7,13 @@ category:
   - "[[games]]"
 relevant: false
 created: 2025-05-20T12:04:50+03:00
-updated: 2025-07-08T07:29:20+03:00
+updated: 2025-11-16T17:30:46+03:00
 ---
 
 [[holy priest]]
 [[shadow priest]]
 [[Как одеваться после 80 уровня в пве]]
-
+[[Выбор сервера]]
 стример пвп рл
 ![[world of warcraft 2025-06-07.png]]
 

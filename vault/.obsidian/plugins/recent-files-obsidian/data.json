@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Выбор сервера",
+      "path": "base/_problems/Выбор сервера.md"
+    },
+    {
+      "basename": "world of warcraft",
+      "path": "base/_meta-notes/world of warcraft.md"
+    },
+    {
+      "basename": "index",
+      "path": "home/index.md"
+    },
+    {
+      "basename": "sources",
+      "path": "home/databases/sources.md"
+    },
+    {
       "basename": "ВНУТРЯНКА АЙТИ",
       "path": "sources/ВНУТРЯНКА АЙТИ.md"
     },
@@ -19,10 +35,6 @@
     {
       "basename": "java API",
       "path": "base/notes/java API.md"
-    },
-    {
-      "basename": "index",
-      "path": "home/index.md"
     },
     {
       "basename": "2025-11-14",
@@ -387,18 +399,6 @@
     {
       "basename": "Spring Security в действии",
       "path": "sources/Spring Security в действии.md"
-    },
-    {
-      "basename": "42 крутые игры для тех, кого тошнит от ААА",
-      "path": "sources/42 крутые игры для тех, кого тошнит от ААА.md"
-    },
-    {
-      "basename": "20 НОВЫХ РПГ ИГР которые ВОЗРОДЯТ этот ЖАНР",
-      "path": "sources/20 НОВЫХ РПГ ИГР которые ВОЗРОДЯТ этот ЖАНР.md"
-    },
-    {
-      "basename": "Spring быстро",
-      "path": "base/additions/conspectuses/Spring быстро.md"
     }
   ],
   "omittedPaths": [
