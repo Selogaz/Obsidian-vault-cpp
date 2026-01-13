@@ -1,44 +1,89 @@
 filters:
   and:
-    - file.hasTag("note")
-    - file.hasTag("category/" + this.file.name.replace(" ", "_"))
+    - file.inFolder("base/notes")
     - or:
-        - this.note_title == null
-        - this.note_title == ""
-        - this.note_title.length == 0
-        - file.name.contains(this.note_title)
-        - aliases.join(" ").contains(this.note_title)
-    - or:
-        - this.note_tags == null
-        - this.note_tags == ""
-        - this.note_tags.length == 0
-        - file.tags.join(" ").contains(this.note_tags)
+        - '!this.file.hasTag("system/category")'
+        - or:
+            - file.hasTag("category/" + this.file.name.replace(" ", "_"))
+            - category.contains(link(this.file.name))
 formulas:
-  backlinks: |
-    file.backlinks.length
+  type: file.tags.filter(value.startsWith("#note/basic/"))[0].replace(/^.*\//, '')
+  backlinks: file.backlinks.length
   outlinks: file.links.length
+  rank: |
+    if(file.hasTag("note/basic/evergreen"), "① evergreen",
+      if(file.hasTag("note/basic/incubator"), "② incubator",
+        if(file.hasTag("note/basic/fern"), "③ fern",
+          if(file.hasTag("note/basic/seed"), "④ seed", "⑤ other")
+        )
+      )
+    )
+  created_relative: created.relative()
+  updated_relative: updated.relative()
 properties:
   file.name:
     displayName: 🔤 title
   file.tags:
     displayName: 🏷️ tags
+  formula.type:
+    displayName: 🗄️ type
+  note.deck:
+    displayName: 🃏 deck
+  file.backlinks:
+    displayName: backlinks
+  file.links:
+    displayName: outlinks
   formula.backlinks:
-    displayName: ⬇️
+    displayName: 🔽
   formula.outlinks:
     displayName: ⬆️
+  formula.created_relative:
+    displayName: 🆕 created
+  formula.updated_relative:
+    displayName: 🔄 updated
 views:
   - type: table
-    name: Table
+    name: 📝 All
     order:
       - file.name
       - file.tags
-      - created
-      - updated
+      - deck
       - formula.backlinks
+      - file.backlinks
       - formula.outlinks
-    sort: []
+      - file.links
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    limit: 28
     columnSize:
-      note.created: 143
-      note.updated: 143
-      formula.backlinks: 143
-      formula.outlinks: 143
+      formula.backlinks: 1
+      formula.outlinks: 1
+  - type: table
+    name: 🌲 Evergreens
+    filters:
+      or:
+        - file.hasTag("note/basic/evergreen")
+        - file.hasTag("note/basic/incubator")
+        - file.hasTag("note/basic/fern")
+        - file.hasTag("note/basic/seed")
+    groupBy:
+      property: formula.rank
+      direction: ASC
+    order:
+      - file.name
+      - formula.type
+      - formula.backlinks
+      - file.backlinks
+      - formula.outlinks
+      - file.links
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      formula.backlinks: 1
+      formula.outlinks: 1

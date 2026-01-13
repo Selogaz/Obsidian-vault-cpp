@@ -20,7 +20,9 @@ obsidianUIMode: preview
 icon: 🔝
 ---
 
-> [!todo]+ <span title="GROUP by [🔺,🗺️,🔗] and SORT by [📅+⏰]">Todo</span> ([[tasks (grouped by priority).canvas|priority]] | [[tasks (grouped by time).canvas|time]] | [[tasks (grouped by effort).canvas|effort]])
+> [!todo|hidden]
+> [[tasks (grouped by priority).canvas|priority]] - [[tasks (grouped by time).canvas|time]] - [[tasks (grouped by effort).canvas|effort]]
+> ___
 > ```tasks
 > not done
 > tags include #priority
@@ -32,10 +34,6 @@ icon: 🔝
 >   if (task.tags.includes("#priority/e"))         return "%%05%% 🇪 Eliminate"; \
 >   return "%%99%%";
 > group by function \
->   task.tags \
->     .filter(tag => tag.includes("#category/")) \
->     .map(tag => "[[" + tag.split("/")[1].replace("_", " ") + "]]")
-> group by function \
 > 	if (task.file.folder.includes("periodic/")) return "%%_%%"; \
 > 	return "-- [[" + task.file.filenameWithoutExtension + "]]"
 > sort by function \
@@ -44,6 +42,6 @@ icon: 🔝
 >   let timeStr = m ? (m[1].length == 4 ? "0" + m[1] : m[1]) : "99:99"; \
 >   return dateStr + "T" + timeStr;
 > hide on completion
-> hide task count
 > hide tags
+> hide task count
 > ```

@@ -10,18 +10,13 @@ tags:
 status: 🟥
 project:
   - "[[${name.replace(" - experiments", "")}]]"
+attribute:
 input:
 output:
 description:
-attribute:
 created: ${created}
 updated: ${created}
 ---
-
-\`INPUT[text(placeholder('🔖 Attribute')):attribute]\`
-\`INPUT[text(placeholder('✍️ Description')):description]\`
-\`INPUT[text(placeholder('⬇️ Input')):input]\`
-\`INPUT[text(placeholder('⬆️ Output')):output]\`
 
 `;
 
@@ -31,5 +26,4 @@ if (/experiments/.test(name)) {
 } else {
 	new Notice("sorry, bro", 2000)
 }
-
 -%>

@@ -5,7 +5,7 @@ icon: clipboard-list
 tagNames:
 excludes:
 extends:
-version: "2.532"
+version: "2.533"
 fields:
   - id: uH83LG
     name: cover
@@ -114,11 +114,11 @@ fields:
     options:
       sourceType: ValuesList
       valuesList:
-        "1": 🟥
-        "2": 🟦
-        "3": ⚛
-        "4": 🟩
-        "5": ⬛
+        "1": ⬛
+        "2": 🟥
+        "3": 🟦
+        "4": ⚛
+        "5": 🟩
     path: ""
     id: cVMupz
   - name: zotero

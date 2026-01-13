@@ -1,18 +1,12 @@
 {
   "pluginList": [
     "flowing-abyss/obsidian-task-calendar",
-    "reply2za/obsidian-query-control",
     "flowing-abyss/obsidian-task-search",
     "flowing-abyss/obsidian-tag-replacer",
     "flowing-abyss/obsidian-frontmatter-sync",
-    "flowing-abyss/obsidian-calendar-plugin",
-    "salmund/obsidian-better-link-inserter"
+    "flowing-abyss/obsidian-calendar-plugin"
   ],
   "pluginSubListFrozenVersion": [
-    {
-      "repo": "salmund/obsidian-better-link-inserter",
-      "version": "latest"
-    },
     {
       "repo": "flowing-abyss/obsidian-calendar-plugin",
       "version": "latest"
@@ -30,10 +24,6 @@
       "version": "latest"
     },
     {
-      "repo": "reply2za/obsidian-query-control",
-      "version": "latest"
-    },
-    {
       "repo": "flowing-abyss/obsidian-task-calendar",
       "version": "latest"
     }
@@ -48,5 +38,7 @@
   "debuggingMode": true,
   "notificationsEnabled": true,
   "personalAccessToken": "",
+  "selectLatestPluginVersionByDefault": false,
+  "allowIncompatiblePlugins": false,
   "ribbonIconEnabled": true
 }

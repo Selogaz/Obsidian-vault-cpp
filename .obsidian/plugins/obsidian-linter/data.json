@@ -38,7 +38,7 @@
     },
     "yaml-key-sort": {
       "enabled": true,
-      "yaml-key-priority-sort-order": "tags:\naliases:\nstatus:\nrating:\nscientificity:\npriority:\naddition:\nsource:\nproject:\nnext:\nup:\ndeck:\ngenre:\ncategory:\nmeta:\nproblem:\nrelated:\ncreator:\nproduction:\ncontext:\nsimilar:\ncorollary:\nopposite:\nurl:\nzotero:\nlongform:\ntitle_translation:\ncover:\npublished:\nstart:\nend:\ntotal_hours:\nrelevant:\ncreated:\nupdated:\nsr-due:\nsr-interval:\nsr-ease:",
+      "yaml-key-priority-sort-order": "tags:\naliases:\ndescription:\nstatus:\nrating:\nscientificity:\npriority:\naddition:\nsource:\nproject:\nnext:\nup:\ndeck:\ngenre:\ncategory:\nmeta:\nproblem:\nrelated:\ncreator:\nproduction:\ncontext:\nsimilar:\ncorollary:\nopposite:\nurl:\nzotero:\nlongform:\ntitle_translation:\ncover:\npublished:\nstart:\nend:\ntotal_hours:\nrelevant:\ncreated:\nupdated:\nsr-due:\nsr-interval:\nsr-ease:",
       "priority-keys-at-start-of-yaml": true,
       "yaml-sort-order-for-other-keys": "None"
     },
@@ -140,8 +140,8 @@
       "enabled": true
     },
     "convert-spaces-to-tabs": {
-      "enabled": false,
-      "tabsize": 4
+      "enabled": true,
+      "tabsize": "2"
     },
     "empty-line-around-blockquotes": {
       "enabled": false

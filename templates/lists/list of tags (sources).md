@@ -1,10 +1,7 @@
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<--- 🏷️ marks (any) 🏷️ --->
-mark/fleeting
-mark/bookmark
-___
+<-------------------------- 🏷️ marks (any) 🏷️ -------------------------->
 mark/log/conspectus
 mark/log/episode
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<--- 🗃️ sources (one) 🗃️ --->
+<------------------------- 🗃️ sources (one) 🗃️ ------------------------->
 source/article/paper
 source/article/resource
 ___

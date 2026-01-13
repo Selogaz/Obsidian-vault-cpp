@@ -1,13 +1,15 @@
 ---
-icon: 🏠
-BC-tag-note: "#system/category"
-BC-tag-note-field: subcategory
 aliases:
   - main
   - home
+updated: 2026-01-13T20:55:17+03:00
+icon: 🏠
+BC-tag-note: "#system/category"
+BC-tag-note-field: subcategory
 cssclasses:
   - hide-backlinks
 ---
+
 > [!attention]- orphan categories (`$=dv.pages("#system/category").where(l => !dv.func.contains(l.file.inlinks, dv.current().file.link)).length`)
 > `$=dv.list(dv.pages("#system/category").where(l => !dv.func.contains(l.file.inlinks, dv.current().file.link)).file.link)`
 
@@ -24,7 +26,7 @@ cssclasses:
 [[mynoise-net.aac]]
 
 ----
--  [[work]]
+- [[work]]
 	- [[java developer]]
 		- [[Получить оффер junior java dev]]
 - [[computer science]]
@@ -32,7 +34,6 @@ cssclasses:
 		- [[новый 7800x3d]]
 	- [[fps-linked things]]
 	- Аэродинамика промышленных аппаратов (Подвод, отвод и равномерная раздача потока)", Идельчик Исаак Евсеевич, 1964.
-	- 
 - [[programming]]
 	- [[base/categories/java]]
 - [[health]]

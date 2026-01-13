@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.name != this.file.name
+    - file.path != this.file.path
 formulas:
   fm_out: this.file.properties.values() .map(list(value)).flat() .map(value.toString()) .filter(value.contains("[[")) .map(link(value)) .map(file(value)) .contains(file)
   in_any: file.links.contains(this.file)
@@ -28,7 +28,7 @@ views:
       - property: file.tags
         direction: ASC
     columnSize:
-      formula.link: 20
+      formula.link: 1
   - type: table
     name: ➕️ addition
     filters:

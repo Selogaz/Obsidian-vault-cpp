@@ -1,5 +1,5 @@
 <%*
-const source = await tp.user.source()
+const source = await tp.user.conspectus()
 
 let source_names
 let source_type
@@ -20,13 +20,13 @@ if (source) {
 		.map(x => x.replace("#", ""))
 		.filter(item => /source\//.test(item))
 	source_type = await tp.system.suggester(source_names, source_names, false, "Source TYPE")
-	category = "category/" + await tp.user.category()
-	status = await tp.user.status()
+	category = "\n  - category/" + await tp.user.category()
+	status = await tp.user.status("source")
 }
 _%>
 <% "---" %>
-tags:<% category %>
-  - <% source_type %><%* if (source != "") { tR += "\n  - mark/log/conspectus" } else {tR += "\n  - mark/fleeting"} %>
+tags:<%* if (category != "") { tR += category } %>
+  - <% source_type %><%* if (source != "") { tR += "\n  - mark/log/conspectus" } %>
 aliases:
 status: <%* if (status != "") { tR += status } %>
 source:<%* if (source != "") { tR += "\n  - \"[[" + source + "]]\"" } %>
@@ -41,3 +41,5 @@ updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 > [!toc]+
 > ```table-of-contents
 > ```
+
+<% tp.file.cursor(0) %>

@@ -4,20 +4,83 @@
     "type": "split",
     "children": [
       {
-        "id": "4f3c26214a367c22",
+        "id": "3c88a27705254034",
         "type": "tabs",
         "children": [
           {
-            "id": "6fdd5211796fbaed",
+            "id": "0912e72502485aab",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "home/index.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "index"
+            }
+          },
+          {
+            "id": "f696661eb88142ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sources/Язык JavaScript.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Язык JavaScript"
+            }
+          },
+          {
+            "id": "e0e74352df2ec16d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sources/Спецификация ECMA-script.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Спецификация ECMA-script"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -29,18 +92,8 @@
       {
         "id": "2c71bf99c2f76a39",
         "type": "tabs",
-        "dimension": 29.78723404255319,
+        "dimension": 30.700888450148078,
         "children": [
-          {
-            "id": "1ac8c1b2ebef5be4",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {},
-              "icon": "lucide-info",
-              "title": "File properties"
-            }
-          },
           {
             "id": "f61d2cd9e7c9880c",
             "type": "leaf",
@@ -56,10 +109,10 @@
       {
         "id": "c493d6f232ce3228",
         "type": "tabs",
-        "dimension": 70.2127659574468,
+        "dimension": 69.29911154985193,
         "children": [
           {
-            "id": "a3b633f5e6eb7da5",
+            "id": "c1b5286a6d2052b2",
             "type": "leaf",
             "state": {
               "type": "bases",
@@ -75,7 +128,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5,
+    "width": 348.5,
     "collapsed": true
   },
   "right": {
@@ -87,13 +140,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "86f5281329646bd0",
+            "id": "6c7aa3a3b72a8ce3",
             "type": "leaf",
             "state": {
-              "type": "quiet-outline",
-              "state": {},
-              "icon": "lines-of-text",
-              "title": "Quiet Outline"
+              "type": "outline",
+              "state": {
+                "followCursor": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
             }
           },
           {
@@ -127,60 +184,80 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5,
+    "width": 348.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
       "daily-notes:Open today's daily note": false,
+      "obsidian42-brat:BRAT": false,
+      "bases:Create new base": false,
       "templater-obsidian:Templater": false,
       "canvas:Create new canvas": true,
       "workspaces:Manage workspace layouts": true,
       "obsidian-spaced-repetition:Review flashcards": false,
       "periodic-notes:Open today": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian42-brat:BRAT": false,
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "6fdd5211796fbaed",
+  "active": "f696661eb88142ea",
   "lastOpenFiles": [
-    "periodic/tasks.md",
-    "classes/addition.md",
-    "templates/create/additions/addition template.md",
-    "home/databases/fleeting notes.md",
+    "sources/Спецификация ECMA-script.md",
+    "sources/Язык JavaScript.md",
     "home/index.md",
-    "__TEMP__abbecab4-56ff-44bc-926d-40f0dde08516.base",
-    "__TEMP__abbecab4-56ff-44bc-926d-40f0dde08516.md",
-    "home/databases/projects.md",
-    "home/databases/sources.md",
-    "base/creators/Richard Donner.md",
-    "sources/Lethal Weapon 4.md",
-    "sources/Lethal Weapon 3.md",
-    "sources/Lethal Weapon 2.md",
-    "sources/Lethal Weapon.md",
-    "sources/Weapons.md",
-    "sources/Police Academy.md",
-    "sources/Police Academy 2 Their First Assignment.md",
-    "sources/Police Academy 3 Back in Training.md",
-    "sources/Police Academy 4 Citizens on Patrol.md",
-    "sources/Police Academy 5 Assignment Miami Beach.md",
-    "sources/Police Academy 6 City Under Siege.md",
-    "sources/Police Academy Mission to Moscow.md",
-    "projects/new proj.md",
-    "projects/test proj.md",
-    "base/contacts/test contact - lol.md",
-    "sources/test source.md",
-    "base/notes/DATE_2025-08-31 TIME_08-12-21.md",
-    "__TEMP__d0c385c1-41b5-4ca7-8f58-e36562801e04.base",
-    "home/databases/breadcrumbs.base",
-    "__TEMP__06c72be7-2548-4242-8c13-8c3380860cb5.base",
-    "home/databases/sources.base~",
-    "templates/views/structure/view.js",
-    "templates/views/structure",
-    "templates/views/tasks/category/view.js",
-    "templates/views/tasks/category",
-    "templates/views/category/category/view.js"
+    "base/notes/js TypeScript.md",
+    "base/notes/“Трансляция.md",
+    "base/notes/является и имеет в ООП.md",
+    "base/notes/что хранится в куче, а что в стеке.md",
+    "base/notes/что такое ООП.md",
+    "base/notes/чеснок.md",
+    "base/notes/цинк.md",
+    "base/notes/циклическая зависимость.md",
+    "base/notes/формула Мальтуса.md",
+    "base/notes/фабричный метод.md",
+    "base/notes/утром.md",
+    "base/notes/транскрибация видео.md",
+    "base/notes/типы конструкторов.md",
+    "base/notes/типы классов java.md",
+    "base/notes/тернарный оператор.md",
+    "base/notes/теория по Spring.md",
+    "base/notes/таймкоды Obsidian vault.md",
+    "base/notes/сужение области видимости при переопределении.md",
+    "base/notes/структура обучения в университете.md",
+    "base/notes/статическое или раннее связывание.md",
+    "base/notes/статический метод и переопределение.md",
+    "base/notes/статический метод генерации.md",
+    "base/notes/статический блок инициализации.md",
+    "base/notes",
+    "sources",
+    "base/categories",
+    "base",
+    "home/databases/notes.base",
+    "home/databases/sources.base",
+    "home/databases/projects.base",
+    "home/databases/people.base",
+    "periodic/2026.canvas",
+    "files/test.pdf",
+    "files/test.png",
+    "files/test.jpg",
+    "files/Pasted Image 20260107000747_014.png",
+    "files/japan_1.png",
+    "files/japan.png",
+    "files/2026-01-06_22-58.png",
+    "periodic/2025.canvas",
+    "templates/scripts/note.js~",
+    "base/canvases/Прогноз нагрузки на серверы на основе исторических данных.canvas",
+    "base/canvases/Диаграмма распределения пиковых нагрузок.canvas",
+    "base/canvases/Архитектура для платформы предсказывающую нагрузку на серверы.canvas",
+    "base/canvases/Eisenhower Matrix.canvas",
+    "files/DATE_2025-12-04 TIME_16-06-22 2025-12-04.png",
+    "periodic/2024.canvas",
+    "periodic/tasks (grouped by time).canvas",
+    "periodic/tasks (grouped by priority).canvas",
+    "files/Rapid Research Lab 2025-11-13.png",
+    "periodic/tasks (grouped by effort).canvas",
+    "files/DATE_2025-10-28 TIME_20-11-48 2025-10-28-1.png",
+    "files/DATE_2025-10-28 TIME_20-11-48 2025-10-28.png"
   ]
 }

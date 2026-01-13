@@ -5,7 +5,7 @@ cssclasses:
 obsidianUIMode: preview
 ---
 
-> [!summary|hide-icon]+ 🟩 Heatmap
+> [!important|hide-icon]+ ♨️ Heatmap
 > `$=await dv.view("templates/views/heatmap")`
 
 ___

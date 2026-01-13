@@ -1,7 +1,8 @@
 ---
-tags: 
+tags:
   - system/category
-aliases:
+aliases: []
+updated: 2026-01-13T20:55:27+03:00
 ---
 
 # Hierarchy

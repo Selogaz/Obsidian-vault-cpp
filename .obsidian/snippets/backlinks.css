@@ -1,0 +1,49 @@
+/* MINIMAL BACKLINKS */
+.markdown-preview-view .embedded-backlinks {
+  margin-top: 72px;
+}
+.embedded-backlinks {
+  padding-top: 8px;
+  border-top: var(--thin-muted-border);
+}
+.embedded-backlinks:has(.tree-item)::before {
+  content: '';
+  border-bottom: 1px solid var(--background-modifier-border);
+  display: block;
+  color: var(--text-muted);
+}
+.embedded-backlinks
+  :is(
+    .nav-buttons-container,
+    .backlink-pane > .tree-item-self,
+    .tree-item-flair,
+    .search-result-file-match,
+    .tree-item-icon,
+    .search-result-file-matches,
+    .nav-header,
+    .search-empty-state
+  ) {
+  display: none;
+}
+.embedded-backlinks .search-result-container {
+  padding: 0;
+  padding-top: 4px;
+  margin-left: 0;
+}
+.embedded-backlinks .tree-item-self.tree-item-self {
+  padding: 0;
+  background: none;
+  border: none;
+}
+.embedded-backlinks .tree-item-inner {
+  color: var(--link-color);
+}
+.embedded-backlinks .tree-item-self:hover .tree-item-inner {
+  color: var(--hover-accent);
+}
+.embedded-backlinks .tree-item-self::before {
+  margin-right: 6px;
+  font-weight: 700;
+  color: var(--text-faint);
+  content: '•';
+}

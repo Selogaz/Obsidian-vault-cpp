@@ -1,0 +1,155 @@
+filters:
+  and:
+    - or:
+        - file.inFolder("base/contacts")
+        - file.inFolder("base/creators")
+        - file.inFolder("base/productions")
+    - or:
+        - '!this.file.hasTag("system/category")'
+        - or:
+            - file.hasTag("category/" + this.file.name.replace(" ", "_"))
+            - category.contains(link(this.file.name))
+formulas:
+  backlinks: file.backlinks.length
+  outlinks: file.links.length
+  type: tags.toString().replace(/.*#(contact|creator|production)\/([^,]+).*/, "$2")
+  created_relative: created.relative()
+  updated_relative: updated.relative()
+properties:
+  formula.type:
+    displayName: 🗄️ type
+  file.name:
+    displayName: 🔤 title
+  note.description:
+    displayName: 🪪 description
+  note.addition:
+    displayName: ➕
+  note.relevant:
+    displayName: 📌
+  note.category:
+    displayName: 🗺️ category
+  note.meta:
+    displayName: 🔎 meta
+  note.problem:
+    displayName: ⚡ problem
+  note.production:
+    displayName: 🏬 production
+  formula.backlinks:
+    displayName: 🔽
+  formula.outlinks:
+    displayName: ⬆️
+  formula.created_relative:
+    displayName: 🆕 created
+  formula.updated_relative:
+    displayName: 🔄 updated
+views:
+  - type: table
+    name: 👥 All
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+      - addition
+      - formula.type
+      - description
+      - category
+      - meta
+      - problem
+      - production
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: relevant
+        direction: DESC
+    limit: 28
+    columnSize:
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: 👤 Contacts
+    filters:
+      and:
+        - file.inFolder("base/contacts")
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+      - addition
+      - formula.type
+      - description
+      - category
+      - meta
+      - problem
+      - production
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: relevant
+        direction: DESC
+    columnSize:
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: 👨‍🎨 Creators
+    filters:
+      and:
+        - file.inFolder("base/creators")
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+      - addition
+      - formula.type
+      - description
+      - category
+      - meta
+      - problem
+      - production
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: relevant
+        direction: DESC
+    columnSize:
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: 🏭 Productions
+    filters:
+      and:
+        - file.inFolder("base/productions")
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+      - addition
+      - formula.type
+      - description
+      - category
+      - meta
+      - problem
+      - production
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: relevant
+        direction: DESC
+    columnSize:
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140

@@ -1,5 +1,5 @@
 {
-  "propertiesInDocument": "hidden",
+  "propertiesInDocument": "visible",
   "spellcheck": true,
   "autoPairBrackets": false,
   "autoPairMarkdown": false,
@@ -13,7 +13,10 @@
   "userIgnoreFilters": [
     "classes/",
     "files/",
-    "templates/"
+    "templates/",
+    "home/",
+    "periodic/statuses/",
+    "/^periodic/[^/]+$/"
   ],
   "autoConvertHtml": true,
   "mobileToolbarCommands": [

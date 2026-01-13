@@ -30,7 +30,6 @@ var p=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var m=Object.g
 
 `;for(let e of this.settings.tagIconPairs){let[i,a]=e.tag.split("/"),g=`${i}${a}`;t+=`.tag[href="#${e.tag}"]:after,
 `,t+=`.cm-hashtag-begin.cm-tag-${g}:after {
-`,t+=`  background-color: rgba(162, 93, 53, 0.1);
 `,t+=`  border: solid 1px rgba(209, 209, 209, 0.1);
 `,t+=`  border-radius: 3px;
 `,t+=`  content: "${e.icon}";

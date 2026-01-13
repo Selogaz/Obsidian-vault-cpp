@@ -4,6 +4,7 @@ tags:
   - category/java
 next:
   - "[[_java]]"
+updated: 2026-01-13T21:41:56+03:00
 hierarchy:
   - "[[base/_hierarchy/java hierarchy|java]]"
 cssclasses:
@@ -30,7 +31,7 @@ pagination_notes: 3
 > > `$=await dv.view("templates/views/category/system", { type: "hierarchy"})` `$=await dv.view("templates/views/category/system", { type: "meta"})` `$=await dv.view("templates/views/category/system", { type: "problem"})`
 >
 > <label>📋 structure<input type="radio" name="test" /></label>
-> 
+>
 > > `$=await dv.view("templates/views/category/structure")`
 >
 > <label>📝 notes<input type="radio" name="test" /></label>

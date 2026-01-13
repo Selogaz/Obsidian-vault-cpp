@@ -1,14 +1,13 @@
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<--- 🏷️ marks (any) 🏷️ --->
+<-------------------------- 🏷️ marks (any) 🏷️ -------------------------->
 mark/approved
 mark/bookmark
 mark/aggregator
-mark/fleeting
 mark/quote
 mark/my
 mark/ai
 mark/example
 mark/kanban
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<--- 📝 notes (one) 📝 --->
+<-------------------------- 📝 notes (one) 📝 -------------------------->
 note/basic/primary
 note/basic/seed
 note/basic/fern
@@ -31,7 +30,7 @@ ___
 note/specific/outstanding
 note/specific/historical_person
 note/specific/athlete
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<--- ⚗️ discourse (one) ⚗️ --->
+<------------------------ ⚗️ discourse (one) ⚗️ ------------------------>
 note/discourse/question
 note/discourse/observation
 note/discourse/claim

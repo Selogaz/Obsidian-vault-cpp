@@ -1,15 +1,14 @@
 <%* 
-await tp.user.name
 const category = await tp.user.category()
 -%>
 <% "---" %>
 tags:
-  - system/high/meta<%* if (category != "") { tR += "\n  - category/" + category.replace(/ /g, '_') } %>
+  - system/high/meta
 aliases:
-category:<%* if (category != "") { tR += "\n  - \"[[" + category + "]]\"" } %>
+category:<%- category ? `\n  - "[[${category}]]"` : "" %>
 relevant: false
 created: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 <% "---" %>
 
-💤
+💤<% tp.file.cursor(0) %>

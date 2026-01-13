@@ -18,7 +18,7 @@ start:
 end: 
 total_hours: 0
 created: 2025-05-20T07:10:25+03:00
-updated: 2025-06-04T19:28:32+03:00
+updated: 2026-01-13T20:55:35+03:00
 ---
 
 > [!toc]- Table of contents

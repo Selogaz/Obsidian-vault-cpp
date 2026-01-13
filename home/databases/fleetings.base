@@ -1,0 +1,45 @@
+filters:
+  and:
+    - file.inFolder("base/notes")
+    - file.backlinks.length == 0
+    - file.links.length == 0
+formulas:
+  created_relative: created.relative()
+  updated_relative: updated.relative()
+properties:
+  file.name:
+    displayName: 🔤 title
+  formula.created_relative:
+    displayName: 🆕 created
+  formula.updated_relative:
+    displayName: 🔄 updated
+views:
+  - type: table
+    name: ✈️ All
+    order:
+      - file.name
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 590
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: ⭐ Bookmark
+    filters:
+      and:
+        - file.hasTag("mark/bookmark")
+    order:
+      - file.name
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 590
+      formula.created_relative: 140
+      formula.updated_relative: 140

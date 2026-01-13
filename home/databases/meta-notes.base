@@ -1,35 +1,16 @@
 filters:
   and:
-    - file.hasTag("system/high/meta")
+    - file.inFolder("base/_meta-notes")
     - or:
-        - this.isCategory == false
+        - '!this.file.hasTag("system/category")'
         - or:
             - file.hasTag("category/" + this.file.name.replace(" ", "_"))
             - category.contains(link(this.file.name))
-    - or:
-        - this.meta_title == null
-        - this.meta_title == ""
-        - this.meta_title.length == 0
-        - file.name.contains(this.meta_title)
-    - or:
-        - this.meta_type == null
-        - this.meta_type == ""
-        - this.meta_type.length == 0
-        - file.tags.containsAny(this.meta_type)
-    - or:
-        - this.meta_relevant == null
-        - this.meta_relevant == ""
-        - this.meta_relevant.length == 0
-        - this.meta_relevant.contains(relevant)
-    - or:
-        - this.meta_category == null
-        - this.meta_category == ""
-        - this.meta_category.length == 0
-        - category.containsAny(this.meta_category)
 formulas:
-  backlinks: |
-    file.backlinks.length
+  backlinks: file.backlinks.length
   outlinks: file.links.length
+  created_relative: created.relative()
+  updated_relative: updated.relative()
 properties:
   file.name:
     displayName: 🔤 title
@@ -40,18 +21,31 @@ properties:
   note.category:
     displayName: 🗺️ category
   formula.backlinks:
-    displayName: ⬇️
+    displayName: 🔽
   formula.outlinks:
     displayName: ⬆️
+  formula.created_relative:
+    displayName: 🆕 created
+  formula.updated_relative:
+    displayName: 🔄 updated
 views:
   - type: table
-    name: Table
+    name: 🔎 All
     order:
-      - file.name
-      - addition
       - relevant
-      - category
       - formula.backlinks
       - formula.outlinks
-    sort: []
-    limit: 28
+      - file.name
+      - addition
+      - category
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: created
+        direction: DESC
+    columnSize:
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140

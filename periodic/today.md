@@ -8,19 +8,17 @@ obsidianUIMode: preview
 icon: 📅
 ---
 
-> [!important|hide-icon]- ❗ <u>Overdue</u> (<font color="#646a73">today: `$=dv.span("[[periodic/daily/" + moment().format("YYYY-MM-DD") + "|" + moment().format("YYYY-MM-DD") + "]]")`)</font>
+> [!todo|hidden]
+> `$=dv.span("[[periodic/daily/" + moment().format("YYYY-MM-DD") + "|" + moment().format("D MMMM • dddd") + "]]")` ┃ [[upcoming|upcoming ➡️]] 
+> ___
 > ```tasks
-> (due before today) OR (scheduled before today)
+> (due before tomorrow) OR (scheduled before tomorrow)
 > not done
-> hide task count
-> hide on completion
-> ```
-
-___
-
-> [!abstract|hide-icon]+ 📅 <u>Today</u> ([[upcoming|upcoming ➡️]])
-> ```tasks
-> (due today) OR (scheduled today)
+> group by function \
+>   const date = task.happens.moment; \
+>   const now = moment(); \
+>   if (date && date.isBefore(now, 'day')) return '#### %%1%% ❗️ Overdue'; \
+>   return '';
 > sort by function \
 >   let m = task.description && task.description.match(/⏰\s*(\d{1,2}:\d{2})/); \
 >   return m ? (m[1].length == 4 ? "0" + m[1] : m[1]) : "99:99";

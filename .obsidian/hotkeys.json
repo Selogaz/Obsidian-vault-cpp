@@ -1247,6 +1247,42 @@
       "key": "F9"
     }
   ],
+  "editor:cycle-list-checklist": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "L"
+    }
+  ],
+  "easy-copy:contextual-copy": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ],
+  "quickadd:choice:10ff66e9-eff9-43b8-8740-3423b79beac9": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "I"
+    }
+  ],
+  "quickadd:choice:5f361050-4348-4bce-bf2d-18d3bd73b999": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "I"
+    }
+  ],
   "obsidian-quiet-outline:next-heading": [
     {
       "modifiers": [
@@ -1256,6 +1292,155 @@
     }
   ],
   "obsidian-quiet-outline:prev-heading": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "K"
+    }
+  ],
+  "inlineai:show-cursor-tooltip": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "X"
+    }
+  ],
+  "quickadd:choice:fb2ec774-91b3-4123-9b3a-de21a97efe36": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "I"
+    }
+  ],
+  "obsidian-another-quick-switcher:command-palette": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "P"
+    }
+  ],
+  "quickadd:choice:e98a9cb2-39a2-4a19-9a05-44e25af9f145": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "Q"
+    }
+  ],
+  "quickadd:choice:03f14101-02cf-4a8b-939f-4b4f682be3a0": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "C"
+    }
+  ],
+  "quickadd:choice:48942a8a-369d-416a-86fb-f49c0cb12857": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ],
+  "quickadd:choice:2e348a44-35c3-4159-943b-6ccbcd878685": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "-"
+    }
+  ],
+  "quickadd:choice:82b2eaa1-4a41-4942-ba42-dd3626774e4a": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "-"
+    }
+  ],
+  "quickadd:choice:06b4b126-2f5d-4515-87f4-629a16a121be": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "A"
+    }
+  ],
+  "quickadd:choice:00d6f2d5-a061-4af6-916a-b4cf99b4219a": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "F2"
+    }
+  ],
+  "quickadd:choice:05ea818b-a46c-4fa2-b3cf-171caf61dcfd": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "F"
+    }
+  ],
+  "quickadd:choice:544116cd-a6e2-44f8-8c0c-56deba19e144": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "H"
+    }
+  ],
+  "quickadd:choice:17cc37c8-1d33-4083-99b1-46698c9b1480": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "K"
+    }
+  ],
+  "quickadd:choice:8d516049-2bf1-4a46-ac78-3ba8f50c2f92": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "I"
+    }
+  ],
+  "quickadd:choice:109e558a-d152-427f-a63a-a95884910ce7": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "B"
+    }
+  ],
+  "quickadd:choice:6325268b-591f-424e-a4a2-3dff8ff1e216": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "A"
+    }
+  ],
+  "quickadd:choice:5929eeca-26d8-4cbf-901d-d34d7fa6a6ab": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "J"
+    }
+  ],
+  "quickadd:choice:c405767d-59ce-4d00-bd73-371e1dcf5dd2": [
     {
       "modifiers": [
         "Mod"

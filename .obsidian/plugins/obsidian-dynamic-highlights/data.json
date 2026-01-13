@@ -17,7 +17,7 @@
         "mark": [
           "match"
         ],
-        "css": ".punctuation {\n  color: rgba(84, 200, 208, 1) !important;\n}"
+        "css": ".punctuation {\n  color: var(--color-cyan) !important;\n}"
       },
       "digits": {
         "class": "digits",
@@ -27,7 +27,7 @@
         "mark": [
           "match"
         ],
-        "css": ".digits {\n  color: rgba(84, 200, 208, 1) !important;\n}"
+        "css": ".digits {\n  color: var(--color-orange) !important;\n}"
       },
       "exclamation": {
         "class": "exclamation",
@@ -37,7 +37,7 @@
         "mark": [
           "match"
         ],
-        "css": ".exclamation {\n  color: rgba(251, 70, 76, 1) !important;\n}"
+        "css": ".exclamation {\n  color: var(--color-red) !important;\n}"
       },
       "long-dash": {
         "class": "long-dash",
@@ -47,7 +47,7 @@
         "mark": [
           "match"
         ],
-        "css": ".long-dash {\n  font-size: 0;\n}\n.cm-active .long-dash {\n  font-size: var(--font-text-size);\n  color: rgba(251, 70, 76, 1) !important;\n}\n.long-dash::before {\n  font-size: var(--font-text-size);\n  content: \"➖\";\n  color: rgba(209, 63, 141, 0.2) !important;\n}\n.cm-active .long-dash::before {\n  font-size: 0;\n}"
+        "css": ".long-dash {\n  font-size: 0;\n}\n.cm-active .long-dash {\n  font-size: var(--font-text-size);\n  color: rgba(251, 70, 76, 1) !important;\n}\n.long-dash::before {\n  font-size: var(--font-text-size);\n  content: \"• • •\";\n  color: rgba(116, 116, 116, 1) !important;\n}\n.cm-active .long-dash::before {\n  font-size: 0;\n}"
       }
     },
     "queryOrder": [

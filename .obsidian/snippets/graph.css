@@ -1,9 +1,0 @@
-/* color-for-arrow */
-
-.theme-dark .graph-view.color-arrow {
-	color: #ff47a9;
-}
-
-.graph-view.color-line {
-	opacity: 0.7;
-}

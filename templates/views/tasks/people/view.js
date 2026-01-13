@@ -1,5 +1,5 @@
-const dateRegex = /📅\s*(\d{4}-\d{2}-\d{2})/
-const timeRegex = /⏰\s*(\d{2}:\d{2})/
+const dateRegex = /📅\s*(\d{4}-\d{2}-\d{2})/;
+const timeRegex = /⏰\s*(\d{2}:\d{2})/;
 
 const todo = `
 const people = dv.pages("#creator OR #production OR #contact").file.link;
@@ -19,11 +19,6 @@ const tasks = dv.pages().file.tasks
     })
     .groupBy(t => people.filter(link => dv.func.contains(t.outlinks, link)));
 dv.taskList(tasks);
-`
+`;
 
-dv.span(
-	'> [!todo]+ todo\n' +
-		'> ```dataviewjs\n> ' +
-		todo.split('\n').join('\n> ') +
-		'\n> ```\n'
-)
+dv.span('```dataviewjs\n' + todo + '```\n');

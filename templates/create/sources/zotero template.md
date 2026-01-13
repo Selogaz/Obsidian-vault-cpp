@@ -1,12 +1,4 @@
 <%*
-let title = tp.file.title;
-if (title.startsWith("Untitled")) {
-    title = await tp.system.prompt("Enter note title:");
-    await tp.file.rename(title);
-}
-
-const zoteroTitle = "{{title | safe}}";
-const zoteroShortTitle = "{{shortTitle | safe}}";
 const zoteroAllTags = "{{allTags}}";
 const zoteroItemType = "{{itemType}}".toLowerCase();
 
@@ -38,7 +30,7 @@ switch(true) {
     case /todo|📥|🟥/.test(zoteroAllTags): status = "🟥"; break;
     case /wip|🟦/.test(zoteroAllTags): status = "🟦"; break;
     case /done|🟩/.test(zoteroAllTags): status = "🟩"; break;
-    default: status = await tp.user.status();
+    default: status = await tp.user.status("source");
 }
 
 const ratings = ["🌕", "🌔", "🌓", "🌒", "🌑"];
@@ -52,7 +44,8 @@ let allCollections = [];
 allCollections.push("{{collection.fullPath}}");
 {% endfor -%}
 
-const uniquePaths = [...new Set(allCollections.join('/').split('/'))].filter(Boolean);
+const cleanedPaths = allCollections.map(path => path.replace(/\+/, ''));
+const uniquePaths = [...new Set(cleanedPaths.join('/').split('/'))].filter(Boolean);
 
 const extractItems = (regex) => {
     return uniquePaths
@@ -96,26 +89,20 @@ let relatedItems = [];
     {%- endif -%}
 {% endfor -%}
 const relatedYaml = formatAsYamlList(relatedItems);
-
-const finalFileName = zoteroShortTitle || zoteroTitle;
-if (finalFileName) {
-    await tp.file.rename(`${finalFileName.replace(/:/g,".")}`);
-}
 -%>
 ---
 tags:
   - <% allYamlTags.join("\n  - ") %>
+aliases:
+  - "{{title}}"
 status: <% status %>
 rating: <% rating %>
 scientificity: <% scientificity %>
-aliases:
-  - "{{title}}"
 published: {% if date %}{{date | format("YYYY")}}{% endif %}
 created: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 start: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 end:
-total_hours: 0
 category:<%* if (categoriesYaml) { tR += categoriesYaml } %>
 meta:<%* if (parentsYaml) { tR += parentsYaml } %>
 problem:<%* if (problemsYaml) { tR += problemsYaml } %>
@@ -125,10 +112,32 @@ production:<%* if (publisherYaml) { tR += publisherYaml } %>
 url: "[{{libraryCatalog}}{{publisher}}{{blogTitle}}{{websiteTitle}}]({{url}})"
 zotero: "[🇿](zotero://select/items/@{{citekey}})"
 ---
-
 <%*
-const noteFile = tp.file.find_tfile(finalFileName.replace(/:/g,"."));
-if (noteFile) {
-    app.workspace.getLeaf(true).openFile(noteFile);
-}
-%>
+await new Promise(resolve => setTimeout(resolve, 500));
+const finalFileName = await tp.file.title
+await app.workspace.getLeaf(true).openFile(tp.file.find_tfile(finalFileName));
+-%>
+{% for annotation in annotations -%}
+{%- if annotation.color in ["#5fb236", "#f19837", "#ffd400", "#e56eee"] -%}
+{%- if annotation.color == "#5fb236" -%}
+{%- set callout = "[!quote|#5fb236]+ key idea" -%}
+{%- elif annotation.color == "#f19837" -%}
+{%- set callout = "[!quote|#f19837]+ exact idea/term/example" -%}
+{%- elif annotation.color == "#ffd400" -%}
+{%- set callout = "[!quote|#ffd400]+ with references or requires clarification" -%}
+{%- elif annotation.color == "#e56eee" -%}
+{%- set callout = "[!quote|#e56eee]+ well-spoken" -%}
+{%- endif %}
+> {{callout}}
+{%- if annotation.annotatedText %}
+> «{{annotation.annotatedText | replace("\n", "\n> ")}}» ([Page {{annotation.page}}](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.page}}&annotation={{annotation.id}}))
+{%- endif -%}
+{%- if annotation.imageRelativePath %}
+> ![[{{annotation.imageRelativePath}}]]
+> [View on page {{annotation.page}}](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.page}})
+{%- endif -%}
+{%- if annotation.comment %}
+>
+> - 💎 {{annotation.comment | replace("\n", "\n> - 💎 ")}}
+{%- endif %}{% endif %}
+{% endfor -%}

@@ -1,9 +1,13 @@
 {
+	"edges":[],
+	"metadata":{
+		"frontmatter":{},
+		"version":"1.0-1.0"
+	},
 	"nodes":[
-		{"id":"316f3908e84061f8","type":"group","x":-1050,"y":-510,"width":1590,"height":1020,"label":"Time estimation"},
-		{"id":"0015a62992f63c83","type":"text","text":"\n> [!note|hide-icon] ❤ easy\n> ```tasks\n> not done \n> tags include effort/easy\n> group by function \\\n>   task.tags \\\n>     .filter(tag => tag.includes(\"#category/\")) \\\n>     .map(tag => \"[[\" + tag.split(\"/\")[1].replace(\"_\", \" \") + \"]]\")\n> sort by function task.happens.format(\"YYYY-MM-DD\")\n> hide task count\n> hide tags\n> ```","x":-1030,"y":-490,"width":500,"height":980},
-		{"id":"6ccb481fe4202784","type":"text","text":"\n> [!note|hide-icon] ❤️‍🔥 medium\n> ```tasks\n> not done \n> tags include effort/medium\n> group by function \\\n>   task.tags \\\n>     .filter(tag => tag.includes(\"#category/\")) \\\n>     .map(tag => \"[[\" + tag.split(\"/\")[1].replace(\"_\", \" \") + \"]]\")\n> sort by function task.happens.format(\"YYYY-MM-DD\")\n> hide task count\n> hide tags\n> ```","x":-510,"y":-490,"width":500,"height":980},
-		{"id":"62822657d0c32872","type":"text","text":"\n> [!note|hide-icon] 🫀 hard\n> ```tasks\n> not done \n> tags include effort/hard\n> group by function \\\n>   task.tags \\\n>     .filter(tag => tag.includes(\"#category/\")) \\\n>     .map(tag => \"[[\" + tag.split(\"/\")[1].replace(\"_\", \" \") + \"]]\")\n> sort by function task.happens.format(\"YYYY-MM-DD\")\n> hide task count\n> hide tags\n> ```","x":10,"y":-490,"width":500,"height":980}
-	],
-	"edges":[]
+		{"id":"316f3908e84061f8","type":"group","x":-1050,"y":-510,"width":1590,"height":1020,"label":"Effort estimation"},
+		{"id":"0015a62992f63c83","text":"\n> [!note|hide-icon] ❤ easy\n> ```tasks\n> not done \n> tags include effort/easy\n> sort by function \\\n>   let dateStr = task.happens ? task.happens.format(\"YYYY-MM-DD\") : \"9999-99-99\"; \\\n>   let m = task.description && task.description.match(/⏰\\s*(\\d{1,2}:\\d{2})/); \\\n>   let timeStr = m ? (m[1].length == 4 ? \"0\" + m[1] : m[1]) : \"99:99\"; \\\n>   return dateStr + \"T\" + timeStr;\n> hide task count\n> hide tags\n> ```","type":"text","x":-1030,"y":-490,"width":500,"height":980},
+		{"id":"6ccb481fe4202784","text":"\n> [!note|hide-icon] ❤️‍🔥 medium\n> ```tasks\n> not done \n> tags include effort/medium\n> sort by function \\\n>   let dateStr = task.happens ? task.happens.format(\"YYYY-MM-DD\") : \"9999-99-99\"; \\\n>   let m = task.description && task.description.match(/⏰\\s*(\\d{1,2}:\\d{2})/); \\\n>   let timeStr = m ? (m[1].length == 4 ? \"0\" + m[1] : m[1]) : \"99:99\"; \\\n>   return dateStr + \"T\" + timeStr;\n> hide task count\n> hide tags\n> ```","type":"text","x":-510,"y":-490,"width":500,"height":980},
+		{"id":"62822657d0c32872","text":"\n> [!note|hide-icon] 🫀 hard\n> ```tasks\n> not done \n> tags include effort/hard\n> sort by function \\\n>   let dateStr = task.happens ? task.happens.format(\"YYYY-MM-DD\") : \"9999-99-99\"; \\\n>   let m = task.description && task.description.match(/⏰\\s*(\\d{1,2}:\\d{2})/); \\\n>   let timeStr = m ? (m[1].length == 4 ? \"0\" + m[1] : m[1]) : \"99:99\"; \\\n>   return dateStr + \"T\" + timeStr;\n> hide task count\n> hide tags\n> ```","type":"text","x":10,"y":-490,"width":500,"height":980}
+	]
 }

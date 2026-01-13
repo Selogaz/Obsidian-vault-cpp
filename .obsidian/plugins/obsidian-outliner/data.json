@@ -1,8 +1,9 @@
 {
-  "styleLists": true,
+  "styleLists": false,
   "debug": false,
   "stickCursor": "bullet-and-checkbox",
   "betterEnter": true,
+  "betterVimO": true,
   "betterTab": true,
   "selectAll": true,
   "listLines": false,

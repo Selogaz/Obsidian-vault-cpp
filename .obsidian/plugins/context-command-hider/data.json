@@ -1,5 +1,8 @@
 {
   "hideTitles": [
+    "BRAT",
+    "[Virtual Linker] Exclude this file",
+    "Open file properties",
     "Export to PDF...",
     "Open linked view",
     "Replace...",
@@ -9,7 +12,6 @@
     "Open in new window",
     "Move file to...",
     "Create new base",
-    "/(.*)Virtual Linker(.*)/",
     "Create code file",
     "Toggle Footnotes Panel",
     "Toggle Comments Panel",

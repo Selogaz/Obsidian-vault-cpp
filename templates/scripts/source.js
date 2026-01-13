@@ -1,67 +1,59 @@
-module.exports = async function source(category) {
-	const dv = app.plugins.plugins['dataview'].api
-	const tp =
-		app.plugins.plugins['templater-obsidian'].templater.current_functions_object
+module.exports = async function source() {
+  const tp =
+    app.plugins.plugins['templater-obsidian'].templater
+      .current_functions_object;
 
-	let sources
-	let source
+  const shortTypes = {
+    article: ['📄', 'source/article/paper'],
+    book: ['📖', 'source/book'],
+    course: ['🎓', 'source/course'],
+    movie: ['🎬', 'source/cinematic/movie'],
+    podcast: ['📻', 'source/podcast'],
+    video: ['📺', 'source/video/recording'],
+    '...show all': ['➕', 'show all'],
+  };
 
-	if (category) {
-		sources = await dv
-			.pages('#source AND !#mark/log')
-			.where(p => dv.func.contains(p.file.frontmatter.category, category))
-			.sort(p => p.file.cday, 'desc')
-	} else {
-		sources = await dv
-			.pages('#source AND !#mark/log')
-			.sort(p => p.file.cday, 'desc')
-	}
+  const fullTypes = {
+    paper: ['📄', 'source/article/paper'],
+    resource: ['🌐', 'source/article/resource'],
+    book: ['📖', 'source/book'],
+    course: ['🎓', 'source/course'],
+    movie: ['🎬', 'source/cinematic/movie'],
+    series: ['🍿', 'source/cinematic/series'],
+    anime: ['🌸', 'source/cinematic/anime'],
+    podcast: ['📻', 'source/podcast'],
+    recording: ['📹', 'source/video/recording'],
+    playlist: ['📼', 'source/video/playlist'],
+    album: ['💽', 'source/music/album'],
+    tracklist: ['🎧', 'source/music/tracklist'],
+    game: ['🎮', 'source/game'],
+  };
 
-	source = await tp.system.suggester(
-		sources.map(function (value) {
-			tags = value.file.tags
-			categories = value.file.tags
-				.filter(item => /category\//.test(item))
-				.map(x => x.replace('#category/', '🗺 '))
+  const shortChoice = await tp.system.suggester(
+    Object.keys(shortTypes).map((key) => shortTypes[key][0] + ' ' + key),
+    Object.keys(shortTypes),
+    false,
+    'Source type:'
+  );
 
-			prefix = ''
-			switch (true) {
-				case /article/.test(tags):
-					prefix = '🧾'
-					break
-				case /book/.test(tags):
-					prefix = '📖'
-					break
-				case /course/.test(tags):
-					prefix = '🎓'
-					break
-				case /movie/.test(tags):
-					prefix = '🎬'
-					break
-				case /podcast/.test(tags):
-					prefix = '📻'
-					break
-				case /video/.test(tags):
-					prefix = '📺'
-					break
-			}
+  if (shortChoice === null || shortChoice === '') {
+    return 'source/article/paper';
+  }
 
-			return (
-				prefix +
-				' ' +
-				value.file.name +
-				' ' +
-				(categories.length > 0 ? categories : '')
-			)
-		}),
-		sources.file.name,
-		false,
-		'Select the source'
-	)
+  if (shortChoice === '...show all') {
+    const fullChoice = await tp.system.suggester(
+      Object.keys(fullTypes).map((key) => fullTypes[key][0] + ' ' + key),
+      Object.values(fullTypes).map((value) => value[1]),
+      false,
+      'Source type (full list):'
+    );
 
-	if (source == null) {
-		source = ''
-	}
+    if (fullChoice === null || fullChoice === '') {
+      return 'source/article/paper';
+    }
 
-	return source
-}
+    return fullChoice;
+  }
+
+  return shortTypes[shortChoice][1];
+};

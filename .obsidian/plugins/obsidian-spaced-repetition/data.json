@@ -14,10 +14,10 @@
     "clozePatterns": [
       "==[123;;]answer[;;hint]=="
     ],
-    "singleLineCardSeparator": "–",
-    "singleLineReversedCardSeparator": ":::",
+    "singleLineCardSeparator": "",
+    "singleLineReversedCardSeparator": "",
     "multilineCardSeparator": "—",
-    "multilineReversedCardSeparator": "??",
+    "multilineReversedCardSeparator": "",
     "multilineCardEndMarker": "",
     "editLaterTag": "#edit-later",
     "enableNoteReviewPaneOnStartup": false,
@@ -57,6 +57,7 @@
     "flashcardGoodText": "Good",
     "flashcardHardText": "Hard",
     "reviewButtonDelay": 0,
+    "openViewInNewTab": false,
     "algorithm": "SM-2-OSR",
     "baseEase": 250,
     "lapsesIntervalChange": 0.5,

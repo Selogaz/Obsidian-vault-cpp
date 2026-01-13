@@ -8,4 +8,7 @@ cssclasses:
 icon: 1️⃣
 ---
 
-`$=await dv.view("templates/views/tasks/type")`
+>[!todo|hidden] 
+> ```dataviewjs
+> await dv.view("templates/views/tasks/type")
+> ```

@@ -2,10 +2,10 @@
 limit: 100
 mapWithTag: false
 icon: person-standing
-tagNames: 
-excludes: 
-extends: 
-version: "2.84"
+tagNames:
+excludes:
+extends:
+version: "2.89"
 fields:
   - name: aliases
     type: YAML
@@ -21,24 +21,6 @@ fields:
       valuesFromDVQuery: ""
     path: ""
     id: jYbs5S
-  - name: created
-    type: Date
-    options:
-      dateShiftInterval: 1 day
-      dateFormat: YYYY-MM-DD
-      defaultInsertAsLink: false
-      linkPath: ""
-    path: ""
-    id: 9fvLkY
-  - name: updated
-    type: Date
-    options:
-      dateShiftInterval: 1 day
-      dateFormat: YYYY-MM-DD
-      defaultInsertAsLink: false
-      linkPath: ""
-    path: ""
-    id: gcxIO5
   - name: meta
     type: MultiFile
     options:
@@ -76,20 +58,25 @@ fields:
       valuesListNotePath: templates/lists/list of cssclasses.md
     path: ""
     id: W2oWСU
+  - name: description
+    type: Input
+    options:
+      template: "{{info}}"
+    path: ""
+    id: MNLxKO
 filesPaths:
   - base/creators
-bookmarksGroups: 
+bookmarksGroups:
 savedViews: []
-favoriteView: 
+favoriteView:
 fieldsOrder:
   - jYbs5S
   - GdGlea
+  - MNLxKO
   - KXUgKN
   - S8O4eM
   - VVTZs3
   - UQoHq5
   - Ne4p82
-  - gcxIO5
-  - 9fvLkY
   - W2oWСU
 ---

@@ -1,58 +1,19 @@
 filters:
   and:
-    - file.hasTag("project")
+    - file.inFolder("projects")
+    - '!file.hasTag("mark/scene")'
     - or:
-        - this.isCategory == false
+        - '!this.file.hasTag("system/category")'
         - or:
             - file.hasTag("category/" + this.file.name.replace(" ", "_"))
             - category.contains(link(this.file.name))
-    - or:
-        - this.project_title == null
-        - this.project_title == ""
-        - this.project_title.length == 0
-        - file.name.contains(this.project_title)
-    - or:
-        - this.project_type == null
-        - this.project_type == ""
-        - this.project_type.length == 0
-        - file.tags.containsAny(this.project_type)
-    - or:
-        - this.project_status == null
-        - this.project_status == ""
-        - this.project_status.length == 0
-        - this.project_status.contains(status)
-    - or:
-        - this.project_priority == null
-        - this.project_priority == ""
-        - this.project_priority.length == 0
-        - this.project_priority.contains(priority)
-    - or:
-        - this.project_category == null
-        - this.project_category == ""
-        - this.project_category.length == 0
-        - category.containsAny(this.project_category)
-    - or:
-        - this.project_meta == null
-        - this.project_meta == ""
-        - this.project_meta.length == 0
-        - meta.containsAny(this.project_meta)
-    - or:
-        - this.project_problem == null
-        - this.project_problem == ""
-        - this.project_problem.length == 0
-        - problem.containsAny(this.project_problem)
-    - or:
-        - this.project_creator == null
-        - this.project_creator == ""
-        - this.project_creator.length == 0
-        - creator.containsAny(this.project_creator)
-    - or:
-        - this.project_production == null
-        - this.project_production == ""
-        - this.project_production.length == 0
-        - production.containsAny(this.project_production)
 formulas:
-  type: tags.filter(value.startsWith("project/"))[0].replace(/^.*\//, '')
+  type: file.tags.filter(value.startsWith("#project/"))[0].replace(/^.*\//, '')
+  kanban: if(status.contains("🟦"), "1. 🟦 In Progress", if(status.contains("🟥"), "2. 🟥 ToDo", if(status.contains("❄"), "3. ❄ Hold", if(status.contains("🟩"), "4. 🟩 Done", "5. Other"))))
+  backlinks: file.backlinks.length
+  outlinks: file.links.length
+  created_relative: created.relative()
+  updated_relative: updated.relative()
 properties:
   formula.type:
     displayName: 🗄️ type
@@ -80,13 +41,20 @@ properties:
     displayName: 🚩 start
   note.end:
     displayName: 🏁 end
+  formula.backlinks:
+    displayName: 🔽
+  formula.outlinks:
+    displayName: ⬆️
+  formula.created_relative:
+    displayName: 🆕 created
+  formula.updated_relative:
+    displayName: 🔄 updated
 views:
   - type: table
-    name: Table
+    name: 🏢 All (short)
     order:
       - file.name
       - addition
-      - formula.type
       - status
       - priority
       - category
@@ -94,8 +62,198 @@ views:
       - problem
       - creator
       - production
-      - url
       - start
       - end
-    sort: []
+      - url
+    sort:
+      - property: created
+        direction: DESC
     limit: 28
+    columnSize:
+      formula.backlinks: 1
+      formula.outlinks: 1
+      note.status: 1
+      note.priority: 1
+  - type: table
+    name: 🏢 All (extended)
+    order:
+      - formula.backlinks
+      - formula.outlinks
+      - formula.created_relative
+      - formula.updated_relative
+      - formula.type
+      - file.name
+      - addition
+      - status
+      - priority
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - start
+      - end
+      - url
+    sort:
+      - property: created_relative
+        direction: DESC
+    limit: 28
+    columnSize:
+      formula.backlinks: 1
+      formula.outlinks: 1
+      note.status: 1
+      note.priority: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: 📋 Kanban
+    filters:
+      or:
+        - status.contains("❄")
+        - status.contains("🟥")
+        - status.contains("🟦")
+        - status.contains("🟩")
+    groupBy:
+      property: formula.kanban
+      direction: ASC
+    order:
+      - file.name
+      - addition
+      - status
+      - priority
+      - end
+      - url
+    sort:
+      - property: priority
+        direction: ASC
+    columnSize:
+      note.status: 1
+      note.priority: 1
+      note.addition: 90
+  - type: table
+    name: ❄ Hold
+    filters:
+      and:
+        - status.contains("❄")
+    groupBy:
+      property: priority
+      direction: ASC
+    order:
+      - file.name
+      - addition
+      - status
+      - priority
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - end
+      - url
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      note.status: 1
+      note.priority: 1
+  - type: table
+    name: 🟥 ToDo
+    filters:
+      and:
+        - status.contains("🟥")
+    groupBy:
+      property: priority
+      direction: ASC
+    order:
+      - file.name
+      - addition
+      - status
+      - priority
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - end
+      - url
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      note.status: 1
+      note.priority: 1
+  - type: table
+    name: 🟦 WIP
+    filters:
+      and:
+        - status.contains("🟦")
+    groupBy:
+      property: priority
+      direction: ASC
+    order:
+      - file.name
+      - addition
+      - status
+      - priority
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - end
+      - url
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      note.status: 1
+      note.priority: 1
+  - type: table
+    name: 🟩 Done
+    filters:
+      and:
+        - status.contains("🟩")
+    groupBy:
+      property: priority
+      direction: ASC
+    order:
+      - file.name
+      - addition
+      - status
+      - priority
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - end
+      - url
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      note.status: 1
+      note.priority: 1
+  - type: table
+    name: 📢 Published
+    filters:
+      and:
+        - status.contains("📢")
+    order:
+      - file.name
+      - addition
+      - status
+      - priority
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - end
+      - url
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      note.status: 1
+      note.priority: 1

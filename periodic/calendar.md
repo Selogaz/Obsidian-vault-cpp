@@ -7,6 +7,7 @@ cssclasses:
   - no-inline-title
   - hide-backlinks
   - full-width
+  - hide-properties
 obsidianUIMode: preview
 icon: 🗓️
 ---

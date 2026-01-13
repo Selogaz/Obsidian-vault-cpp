@@ -1,0 +1,9 @@
+/* ANOTHER QUICK SWITCHER */
+.another-quick-switcher__custom-search__navigation-history-header,
+.another-quick-switcher__status__search-command {
+  display: none;
+}
+.another-quick-switcher__status__count-input {
+  top: 1rem !important;
+  right: 1rem !important;
+}

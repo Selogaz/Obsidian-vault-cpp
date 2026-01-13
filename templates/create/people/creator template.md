@@ -1,16 +1,17 @@
 <%*
-await tp.user.name
 const category = await tp.user.category()
 const meta = await tp.user.meta(category)
 const problem = await tp.user.problem(meta)
 -%>
 <% "---" %>
 tags:
-  - creator/contentmaker<%* if (category != "") { tR += "\n  - category/" + category.replace(/ /g, '_') } %>
+  - creator/contentmaker
 aliases:
-category:<%* if (category != "") { tR += "\n  - \"[[" + category + "]]\"" } %>
-meta:<%* if (category != "" && meta != "") { tR += "\n  - \"[[" + meta + "]]\"" } %>
-problem:<%* if (problem != "") { tR += "\n  - \"[[" + problem + "]]\"" } %>
+description:
+category:<%- category ? `\n  - "[[${category}]]"` : "" %>
+meta:<%- (category && meta) ? `\n  - "[[${meta}]]"` : "" %>
+problem:<%- problem ? `\n  - "[[${problem}]]"` : "" %>
+relevant: false
 created: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 <% "---" %>
@@ -34,3 +35,4 @@ updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 > >  .groupBy(t => ""))
 > > ```
 
+<% tp.file.cursor(0) %>

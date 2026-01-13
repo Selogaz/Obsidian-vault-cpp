@@ -30,48 +30,28 @@ fields:
       valuesListNotePath: templates/lists/list of cssclasses.md
     path: ""
     id: AIbU7X
-  - name: created
-    type: DateTime
-    options:
-      dateShiftInterval: 1 day
-      dateFormat: YYYY-MM-DDTHH:mm:ssZ
-      defaultInsertAsLink: false
-      linkPath: ""
-    path: ""
-    id: 0sYzbQ
-  - name: updated
-    type: DateTime
-    options:
-      dateShiftInterval: 1 day
-      dateFormat: YYYY-MM-DDTHH:mm:ssZ
-      defaultInsertAsLink: false
-      linkPath: ""
-    path: ""
-    id: E9GYH2
   - name: icon
     type: Input
     options:
       template: "{{icon}}"
     path: ""
     id: xPV8i7
-version: "2.97"
+version: "2.99"
 limit: 100
 mapWithTag: true
 icon: atom
-tagNames: 
+tagNames:
 filesPaths:
   - base/notes
-bookmarksGroups: 
-excludes: 
-extends: 
+bookmarksGroups:
+excludes:
+extends:
 savedViews: []
-favoriteView: 
+favoriteView:
 fieldsOrder:
   - AwHz5o
   - IkD7ff
   - qboKed
   - AIbU7X
   - xPV8i7
-  - 0sYzbQ
-  - E9GYH2
 ---

@@ -7,7 +7,7 @@
   "isAutosuggestEnabled": false,
   "fileClassAlias": "class",
   "settingsVersion": "5.0",
-  "globalFileClass": "_atom",
+  "globalFileClass": "atom",
   "firstDayOfWeek": 1,
   "enableLinks": false,
   "enableTabHeader": false,
@@ -32,5 +32,6 @@
   "autoInsertFieldsAtFileClassInsertion": false,
   "fileClassIcon": "package",
   "isAutoCalculationEnabled": true,
+  "disableDataviewPrompt": false,
   "buttonIcon": "clipboard-list"
 }

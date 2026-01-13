@@ -1,71 +1,47 @@
-<%*
-let title = tp.file.title
-let title_strip = title.replace(/ /g,"_")
-if (title.startsWith("Untitled")) {
-	title = await tp.system.prompt("Title");
-}
-await tp.file.rename(title)
--%>
 <% "---" %>
 tags: 
   - system/category
-  - category/<% title.replace(/ /g, '_') %>
+  - category/<% await tp.file.title.replace(/ /g, '_') %>
 cssclasses:
   - category
+relevant: false
+icon: 🗺️
 <% "---" %>
 
 > [!tabbed]+
 >
 > <label>🗃️ sources<input type="radio" name="test" checked/></label>
 >
-> > `$=await dv.view("templates/views/filter", {type: "source"})`
-> > ![[sources.base]]
+> > ![[sources.base#📋 Kanban]]
 >
 > <label>🏢 projects<input type="radio" name="test" /></label>
 >
-> > `$=await dv.view("templates/views/filter", {type: "project"})`
-> > ![[projects.base]]
+> > ![[projects.base#📋 Kanban]]
 >
 > <label>👥 people<input type="radio" name="test" /></label>
 >
-> > > [!note|hide-icon]+ 👤 Contacts
-> > > `$=await dv.view("templates/views/filter", {type: "contact"})`
-> > > ![[contacts.base]]
-> >
-> > > [!note|hide-icon]+ 👨‍🎨 Creators
-> > > `$=await dv.view("templates/views/filter", {type: "creator"})`
-> > > ![[creators.base]]
-> >
-> > > [!note|hide-icon]+ 🏭 Productions
-> > > `$=await dv.view("templates/views/filter", {type: "production"})`
-> > > ![[productions.base]]
+> > ![[people.base#👤 Contacts]]
 >
 > <label>🔬 system<input type="radio" name="test" /></label>
 >
-> > > [!note|hide-icon]+ 🧬 Hierarchies
-> > > `$=await dv.view("templates/views/filter", { type: "hierarchy"})`
-> > > ![[hierarchies.base]]
-> >
-> > > [!note|hide-icon]+ 🔎 Meta-notes
-> > > `$=await dv.view("templates/views/filter", { type: "meta"})`
-> > > ![[meta-notes.base]]
-> >
-> > > [!note|hide-icon]+ ⚡️ Problems
-> > > `$=await dv.view("templates/views/filter", { type: "problem"})`
-> > > ![[problems.base]]
+> > ![[high-notes.base#🧬 Hierarchies]]
 >
 > <label>📋 structure<input type="radio" name="test" /></label>
 >
-> > `$=await dv.view("templates/views/structure")`
+> > ```dataviewjs
+> > await dv.view("templates/views/structure")
+> > ```
 >
 > <label>📝 notes<input type="radio" name="test" /></label>
 >
-> > 🔤 Title:`INPUT[text:note_title]` 🏷️ Tags: `INPUT[text:note_tags]`
 > > ![[notes.base]]
 >
 > <label>✅ tasks<input type="radio" name="test" /></label>
 >
-> > `$=await dv.view("templates/views/tasks/category")`
+> > > [!todo|hidden]
+> > > ```dataviewjs
+> > > await dv.view("templates/views/tasks/category")
+> > > ```
 >
 > <label>➕<input type="radio" name="test" /></label>
 >

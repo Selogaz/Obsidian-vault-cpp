@@ -1,5 +1,4 @@
 <%*
-
 const now = tp.date.now("YYYY-MM-DD");
 const name = tp.file.title;
 const title = name.replace(" - reports", "") + " (" + now + ")" + " - reports";
@@ -22,5 +21,4 @@ if (/reports/.test(name)) {
 } else {
 	new Notice("sorry, bro", 2000)
 }
-
 -%>

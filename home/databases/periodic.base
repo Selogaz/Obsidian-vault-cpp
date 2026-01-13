@@ -1,0 +1,84 @@
+filters:
+  and:
+    - or:
+        - file.inFolder("periodic/daily")
+        - file.inFolder("periodic/weekly")
+        - file.inFolder("periodic/monthly")
+        - file.inFolder("periodic/quarterly")
+        - file.inFolder("periodic/yearly")
+    - '!file.hasTag("#mark/ignore")'
+formulas:
+  month_group: file.name.slice(0, 7)
+  updated_relative: updated.relative()
+  existing_links: file.links.map(value.asFile()).filter(value.isTruthy())
+properties:
+  note.reviewed:
+    displayName: ✅️
+  formula.updated_relative:
+    displayName: 🔄 updated
+  formula.month_group:
+    displayName: 🗓️ month
+  note.description:
+    displayName: 🦄 description
+  file.name:
+    displayName: 📅 period
+  formula.existing_links:
+    displayName: 🔗 links
+views:
+  - type: table
+    name: 🇩ays
+    filters:
+      and:
+        - file.inFolder("periodic/daily")
+    groupBy:
+      property: formula.month_group
+      direction: DESC
+    order:
+      - reviewed
+      - file.name
+      - description
+      - formula.updated_relative
+    sort:
+      - property: file.name
+        direction: DESC
+    limit: 18
+    columnSize:
+      file.name: 145
+      note.description: 510
+  - type: list
+    name: 🇩ays (list)
+    filters:
+      and:
+        - file.inFolder("periodic/daily")
+    groupBy:
+      property: formula.month_group
+      direction: DESC
+    order:
+      - file.name
+      - formula.existing_links
+    sort:
+      - property: file.name
+        direction: DESC
+    limit: 15
+    indentProperties: true
+  - type: table
+    name: 🇩ays (with description)
+    filters:
+      and:
+        - file.inFolder("periodic/daily")
+        - "!description.isEmpty()"
+    groupBy:
+      property: formula.month_group
+      direction: DESC
+    order:
+      - reviewed
+      - file.name
+      - description
+      - formula.updated_relative
+    sort:
+      - property: file.name
+        direction: DESC
+    limit: 18
+    columnSize:
+      file.name: 145
+      note.description: 510

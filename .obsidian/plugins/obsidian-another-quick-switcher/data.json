@@ -1,5 +1,5 @@
 {
-  "searchDelayMilliSeconds": 120,
+  "searchDelayMilliSeconds": 160,
   "maxNumberOfSuggestions": 255,
   "normalizeAccentsAndDiacritics": false,
   "useSelectionWordsAsDefaultInputQuery": true,
@@ -106,6 +106,10 @@
           "key": "o"
         }
       ],
+      "check/uncheck": [],
+      "check/uncheck and next": [],
+      "check all": [],
+      "uncheck all": [],
       "preview": [
         {
           "modifiers": [
@@ -115,6 +119,8 @@
           "hideHotkeyGuide": false
         }
       ],
+      "scroll preview up": [],
+      "scroll preview down": [],
       "create": [
         {
           "modifiers": [
@@ -132,6 +138,8 @@
           "key": "Enter"
         }
       ],
+      "create in new pane (horizontal)": [],
+      "create in new pane (vertical)": [],
       "create in new window": [
         {
           "modifiers": [
@@ -219,7 +227,11 @@
           "key": "ArrowLeft"
         }
       ],
+      "previous search history": [],
+      "next search history": [],
       "close if opened": [],
+      "copy file vault path": [],
+      "copy absolute file path": [],
       "launch grep": [],
       "dismiss": [
         {
@@ -280,6 +292,31 @@
         }
       ]
     },
+    "command": {
+      "up": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "p"
+        }
+      ],
+      "down": [
+        {
+          "modifiers": [
+            "Mod"
+          ],
+          "key": "n"
+        }
+      ],
+      "copy command id": [],
+      "dismiss": [
+        {
+          "modifiers": [],
+          "key": "Escape"
+        }
+      ]
+    },
     "header": {
       "up": [
         {
@@ -326,9 +363,12 @@
           "modifiers": [
             "Mod"
           ],
-          "key": ","
+          "key": "l",
+          "hideHotkeyGuide": false
         }
       ],
+      "scroll preview up": [],
+      "scroll preview down": [],
       "insert all to editor": [
         {
           "modifiers": [
@@ -422,6 +462,10 @@
           "key": "o"
         }
       ],
+      "check/uncheck": [],
+      "check/uncheck and next": [],
+      "check all": [],
+      "uncheck all": [],
       "show all results": [
         {
           "modifiers": [
@@ -440,6 +484,8 @@
           "hideHotkeyGuide": false
         }
       ],
+      "scroll preview up": [],
+      "scroll preview down": [],
       "dismiss": [
         {
           "modifiers": [],
@@ -542,6 +588,8 @@
           "hideHotkeyGuide": false
         }
       ],
+      "scroll preview up": [],
+      "scroll preview down": [],
       "dismiss": [
         {
           "modifiers": [],
@@ -568,6 +616,7 @@
           "hideHotkeyGuide": false
         }
       ],
+      "insert to editor": [],
       "show all results": [
         {
           "modifiers": [
@@ -585,6 +634,8 @@
           "key": ","
         }
       ],
+      "scroll preview up": [],
+      "scroll preview down": [],
       "dismiss": [
         {
           "modifiers": [],
@@ -642,6 +693,8 @@
         }
       ],
       "toggle input": [],
+      "previous search history": [],
+      "next search history": [],
       "open": [
         {
           "modifiers": [],
@@ -700,6 +753,10 @@
           "key": "o"
         }
       ],
+      "check/uncheck": [],
+      "check/uncheck and next": [],
+      "check all": [],
+      "uncheck all": [],
       "preview": [
         {
           "modifiers": [
@@ -709,6 +766,8 @@
           "hideHotkeyGuide": false
         }
       ],
+      "scroll preview up": [],
+      "scroll preview down": [],
       "dismiss": [
         {
           "modifiers": [],
@@ -821,14 +880,12 @@
         "tag": true,
         "link": true,
         "header": true,
-        "property": true
+        "property": false
       },
       "keysOfPropertyToSearch": [
         "status",
         "creator",
         "production",
-        "cast",
-        "writer",
         "keywords",
         "description",
         "genre",
@@ -868,14 +925,9 @@
       ],
       "includePrefixPathPatterns": [],
       "excludePrefixPathPatterns": [
-        "base/additions/experiments/",
-        "base/additions/meetings/",
         "classes/",
         "files/",
-        "home/files/",
-        "templates/",
-        "periodic/templates/",
-        "periodic/files/"
+        "templates/"
       ],
       "expand": false
     },
@@ -939,9 +991,7 @@
       "searchTarget": "link",
       "allowFuzzySearchForSearchTarget": true,
       "minFuzzyMatchScore": 0.5,
-      "targetExtensions": [
-        "md"
-      ],
+      "targetExtensions": [],
       "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
@@ -960,7 +1010,6 @@
       "includePrefixPathPatterns": [],
       "excludePrefixPathPatterns": [
         "classes/",
-        "files/",
         "home/files/",
         "templates/",
         "periodic/templates/",
@@ -980,9 +1029,7 @@
       "searchTarget": "backlink",
       "allowFuzzySearchForSearchTarget": true,
       "minFuzzyMatchScore": 0.5,
-      "targetExtensions": [
-        "md"
-      ],
+      "targetExtensions": [],
       "includeCurrentFile": false,
       "floating": false,
       "showFrontMatter": false,
@@ -1004,7 +1051,6 @@
       "includePrefixPathPatterns": [],
       "excludePrefixPathPatterns": [
         "classes/",
-        "files/",
         "home/files/",
         "templates/",
         "periodic/templates/",
@@ -1079,7 +1125,8 @@
         "periodic/templates"
       ],
       "excludePrefixPathPatterns": [
-        "templates/excalidraw"
+        "templates/excalidraw",
+        "templates/prompts"
       ],
       "expand": false
     },
@@ -1150,8 +1197,7 @@
       "commandPrefix": "",
       "sortPriorities": [],
       "includePrefixPathPatterns": [
-        "files",
-        "periodic/files"
+        "files"
       ],
       "excludePrefixPathPatterns": [],
       "expand": false
@@ -1372,7 +1418,7 @@
         "cssclass",
         "publish"
       ],
-      "defaultInput": "-#system/supercategory ",
+      "defaultInput": "",
       "restoreLastInput": false,
       "commandPrefix": "",
       "sortPriorities": [],
@@ -1396,17 +1442,24 @@
   "inFileMaxDisplayLengthAroundMatchedWord": 64,
   "ripgrepCommand": "rg",
   "grepSearchDelayMilliSeconds": 0,
+  "grepMinQueryLength": 1,
   "grepExtensions": [
     "md"
   ],
   "maxDisplayLengthAroundMatchedWord": 64,
   "includeFilenameInGrepSearch": false,
-  "fdCommand": "fd",
   "defaultGrepFolder": "",
+  "autoPreviewInGrepSearch": false,
+  "grepAutoPreviewDelayMilliSeconds": 300,
+  "autoPreviewInBacklinkSearch": false,
+  "backlinkAutoPreviewDelayMilliSeconds": 300,
   "moveFileExcludePrefixPathPatterns": [],
   "moveFolderSortPriority": "Recently used",
   "moveFileRecentlyUsedFilePath": "",
   "moveFileMaxRecentlyUsedFolders": 10,
+  "commandPaletteHistoryPath": "",
+  "commandPaletteMaxHistoryRetentionDays": 2,
   "showLogAboutPerformanceInConsole": false,
-  "showFuzzyMatchScore": false
+  "showFuzzyMatchScore": false,
+  "fdCommand": "fd"
 }

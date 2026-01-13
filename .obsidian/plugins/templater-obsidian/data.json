@@ -51,10 +51,6 @@
       "template": "templates/create/system/problem template.md"
     },
     {
-      "folder": "base/_problems/discourse",
-      "template": "templates/create/system/problem template.md"
-    },
-    {
       "folder": "base/creators",
       "template": "templates/create/people/creator template.md"
     },
@@ -72,11 +68,7 @@
     },
     {
       "folder": "base/notes",
-      "template": "templates/create/notes/_default note template.md"
-    },
-    {
-      "folder": "periodic/categories",
-      "template": "templates/create/system/task category template.md"
+      "template": "templates/create/notes/default note template.md"
     },
     {
       "folder": "sources",
@@ -89,10 +81,6 @@
     {
       "folder": "projects/single",
       "template": "templates/create/projects/single project template.md"
-    },
-    {
-      "folder": "periodic/statuses",
-      "template": "templates/create/tasks/task status.md"
     }
   ],
   "enable_file_templates": false,
@@ -105,26 +93,10 @@
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
-    "templates/insert/_callouts.md",
-    "templates/insert/code-block.md",
-    "templates/insert/link from clipboard.md",
-    "templates/insert/send link to clipboard.md",
-    "templates/insert/_statuses.md",
-    "templates/create/tasks/create task.md",
-    "templates/insert/dash.md",
-    "templates/insert/long dash.md",
-    "templates/insert/_list callouts.md",
-    "templates/insert/insert date.md",
-    "templates/insert/new note.md",
-    "templates/insert/paste link with title.md",
-    "templates/insert/new alias.md",
+    "templates/create/additions/addition template.md",
     "templates/create/additions/meeting template.md",
     "templates/create/additions/experiment template.md",
-    "templates/create/additions/addition template.md",
-    "templates/create/tasks/task additions.md",
-    "templates/create/tasks/delete task prefixes.md",
-    "templates/create/additions/report template.md",
-    "templates/insert/insert time.md"
+    "templates/create/additions/report template.md"
   ],
   "startup_templates": [
     "templates/onStartup.md"

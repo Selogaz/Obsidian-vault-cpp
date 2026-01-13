@@ -13,22 +13,8 @@
   ],
   "exportFormats": [
     {
-      "name": "Import log with annotation",
-      "outputPathTemplate": "sources/{{citekey}}.md",
-      "imageOutputPathTemplate": "files/",
-      "imageBaseNameTemplate": "image",
-      "templatePath": "templates/create/sources/zotero with annotation template.md"
-    },
-    {
-      "name": "Annotations import",
-      "outputPathTemplate": "base/additions/{{citekey}}.md",
-      "imageOutputPathTemplate": "files/",
-      "imageBaseNameTemplate": "image",
-      "templatePath": "templates/create/sources/annotations template.md"
-    },
-    {
       "name": "Source import",
-      "outputPathTemplate": "sources/{{citekey}}.md",
+      "outputPathTemplate": "sources/{{shortTitle if shortTitle else title | safe}}.md",
       "imageOutputPathTemplate": "files/",
       "imageBaseNameTemplate": "image",
       "templatePath": "templates/create/sources/zotero template.md"
@@ -36,5 +22,6 @@
   ],
   "citeSuggestTemplate": "[[{{citekey}}]]",
   "openNoteAfterImport": true,
-  "whichNotesToOpenAfterImport": "first-imported-note"
+  "whichNotesToOpenAfterImport": "first-imported-note",
+  "shouldConcat": true
 }

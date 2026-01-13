@@ -13,5 +13,3 @@ updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 
 > [!success]- 🔻 history 🔻
 > `$=await dv.view("templates/views/periodic", {type: "week"})`
-
-<% tp.file.cursor(0) %>

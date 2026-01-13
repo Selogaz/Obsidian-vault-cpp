@@ -16,8 +16,11 @@
   "excludedFilesFilters": [
     "Scripts/",
     "classes/",
-    "home/files/",
     "templates/",
-    "periodic/templates/"
+    "periodic/templates/",
+    "\\.py$",
+    "files/static/",
+    "home/",
+    "\\.sh$"
   ]
 }

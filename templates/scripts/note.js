@@ -1,200 +1,338 @@
 module.exports = async function note(title, content) {
-	const tp =
-		app.plugins.plugins['templater-obsidian'].templater.current_functions_object
+  const tp =
+    app.plugins.plugins['templater-obsidian'].templater
+      .current_functions_object;
 
-	if (!title) {
-		title = tp.file.title
-	}
-	if (title.startsWith('Untitled')) {
-		title = await tp.system.prompt('Title')
-		await tp.file.rename(title)
-	}
+  const noteGenerator = new NoteGenerator(tp);
+  return await noteGenerator.generate(title, content);
+};
 
-	if (content) {
-		content = '\n' + content
-	} else {
-		content = ''
-	}
+class NoteGenerator {
+  constructor(tp) {
+    this.tp = tp;
+    this.prefixes = null;
+  }
 
-	const inputText = await tp.file.include('[[home/prefixes.md]]')
+  async generate(title, content) {
+    title = await this.resolveTitle(title);
+    content = this.formatContent(content);
 
-	function parseTextToDictionaries(text) {
-		const lines = text.trim().split('\n')
-		const dictionaries = {}
-		let currentCategory = ''
+    await this.loadPrefixes();
 
-		lines.forEach(line => {
-			line = line.trim()
-			if (line.startsWith('#')) {
-				currentCategory = line.replace('# ', '').trim()
-				dictionaries[currentCategory] = {}
-			} else if (line) {
-				if (/\s–\s/.test(line)) {
-					const [key, value] = line
-						.split('–')
-						.map(part => part.trim().replace(/ /g, '_'))
-					if (currentCategory) {
-						dictionaries[currentCategory][key] = value
-					}
-				}
-			}
-		})
+    const prefixMatch = this.findPrefixMatch(title);
+    const template = await this.generateTemplate(prefixMatch, content);
+    const finalTitle = this.cleanTitle(title, prefixMatch);
 
-		return dictionaries
-	}
+    return { title: finalTitle, template };
+  }
 
-	const prefixes = parseTextToDictionaries(inputText)
-	const category_prefixes = prefixes.Categories || {}
-	const specific_prefixes = prefixes.Specific || {}
-	const code_prefixes = prefixes.Code || {}
-	const system_prefixes = prefixes.System || {}
+  async resolveTitle(title) {
+    if (!title) {
+      title = this.tp.file.title;
+    }
 
-	const code_prefix_pattern = new RegExp(
-		`^(${Object.values(code_prefixes).join('|')}) `
-	)
-	const category_prefix_pattern = new RegExp(
-		`^(${Object.values(category_prefixes).join('|')}) `
-	)
-	const specific_prefix_pattern = new RegExp(
-		`^(${Object.values(specific_prefixes).join('|')}) `
-	)
-	const system_prefix_pattern = new RegExp(
-		`^(${Object.values(system_prefixes).join('|')}) `
-	)
+    if (title.startsWith('Untitled')) {
+      title = await this.tp.system.prompt('Title');
+      await this.tp.file.rename(title);
+    }
 
-	const brackets_pattern = /\(\)/
+    return title;
+  }
 
-	const code_prefix = (title.match(code_prefix_pattern) || [])[1]?.trim()
-	const category_prefix = (title.match(category_prefix_pattern) ||
-		[])[1]?.trim()
-	const specific_prefix = (title.match(specific_prefix_pattern) ||
-		[])[1]?.trim()
-	const system_prefix = (title.match(system_prefix_pattern) || [])[1]?.trim()
+  formatContent(content) {
+    return content ? '\n' + content : '';
+  }
 
-	const code_alias = title
-		.replace(code_prefix_pattern, '')
-		.replace(brackets_pattern, '')
-		.trim()
-	const category_alias = title
-		.replace(category_prefix_pattern, '')
-		.replace(brackets_pattern, '')
-		.trim()
-	const specific_alias = title
-		.replace(specific_prefix_pattern, '')
-		.replace(brackets_pattern, '')
-		.trim()
-	const system_alias = title
-		.replace(system_prefix_pattern, '')
-		.replace(brackets_pattern, '')
-		.trim()
+  async loadPrefixes() {
+    try {
+      const inputText = await this.tp.file.include('[[home/prefixes.md]]');
+      this.prefixes = this.parseTextToDictionaries(inputText);
+    } catch (error) {
+      console.error('Error loading prefixes:', error);
+      this.prefixes = {};
+    }
+  }
 
-	let template
-	const created = tp.date.now('YYYY-MM-DDTHH:mm:ssZ')
-	if (code_prefix) {
-		template = `---
+  parseTextToDictionaries(text) {
+    const lines = text.trim().split('\n');
+    const dictionaries = {};
+    let currentCategory = '';
+
+    lines.forEach((line) => {
+      line = line.trim();
+      if (line.startsWith('# ')) {
+        currentCategory = line.replace('# ', '').trim();
+        dictionaries[currentCategory] = {};
+      } else if (line && /\s–\s/.test(line) && !line.startsWith('//')) {
+        const [key, value] = line.split('–').map((part) => part.trim());
+        if (currentCategory && key && value) {
+          const normalizedKey = key.replace(/ /g, '_');
+
+          if (normalizedKey.includes(',')) {
+            const [mainCategory, ...subcategories] = normalizedKey
+              .split(',')
+              .map((cat) => cat.trim());
+            dictionaries[currentCategory][normalizedKey] = {
+              prefix: value,
+              mainCategory: mainCategory,
+              subcategories: subcategories,
+              fullPath: `${mainCategory}/${subcategories.join('/')}`,
+            };
+          } else {
+            dictionaries[currentCategory][normalizedKey] = value;
+          }
+        }
+      }
+    });
+
+    return dictionaries;
+  }
+
+  findPrefixMatch(title) {
+    const prefixTypes = ['Categories', 'Specific', 'Code', 'System'];
+
+    for (const type of prefixTypes) {
+      const prefixes = this.prefixes[type] || {};
+
+      const allPrefixes = [];
+      Object.entries(prefixes).forEach(([key, value]) => {
+        if (typeof value === 'object' && value.prefix) {
+          if (value.prefix.includes('|')) {
+            allPrefixes.push(
+              ...value.prefix.split('|').map((p) => ({
+                prefix: p.trim(),
+                categoryInfo: value,
+                originalKey: key,
+              }))
+            );
+          } else {
+            allPrefixes.push({
+              prefix: value.prefix,
+              categoryInfo: value,
+              originalKey: key,
+            });
+          }
+        } else if (typeof value === 'string') {
+          if (value.includes('|')) {
+            allPrefixes.push(
+              ...value.split('|').map((p) => ({
+                prefix: p.trim(),
+                categoryInfo: null,
+                originalKey: key,
+              }))
+            );
+          } else {
+            allPrefixes.push({
+              prefix: value,
+              categoryInfo: null,
+              originalKey: key,
+            });
+          }
+        }
+      });
+
+      for (const prefixData of allPrefixes) {
+        const pattern = new RegExp(
+          `^(${prefixData.prefix.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}) `
+        );
+        const match = title.match(pattern);
+
+        if (match) {
+          return {
+            type: type.toLowerCase(),
+            prefix: match[1].trim(),
+            pattern,
+            prefixes,
+            alias: this.generateAlias(title, pattern),
+            categoryInfo: prefixData.categoryInfo,
+            originalKey: prefixData.originalKey,
+          };
+        }
+      }
+    }
+
+    return null;
+  }
+
+  generateAlias(title, pattern) {
+    return title.replace(pattern, '').replace(/\(\)/, '').trim();
+  }
+
+  cleanTitle(title, prefixMatch) {
+    if (
+      prefixMatch &&
+      ['categories', 'specific', 'system'].includes(prefixMatch.type)
+    ) {
+      return title.replace(prefixMatch.pattern, '').trim();
+    }
+    return title;
+  }
+
+  async generateTemplate(prefixMatch, content) {
+    const created = this.tp.date.now('YYYY-MM-DDTHH:mm:ssZ');
+
+    if (!prefixMatch) {
+      return this.createBasicTemplate(created, content);
+    }
+
+    const templateGenerators = {
+      code: () => this.createCodeTemplate(prefixMatch, created, content),
+      categories: () =>
+        this.createCategoryTemplate(prefixMatch, created, content),
+      specific: () =>
+        this.createSpecificTemplate(prefixMatch, created, content),
+      system: () => this.createSystemTemplate(prefixMatch, created, content),
+    };
+
+    const generator = templateGenerators[prefixMatch.type];
+    return generator
+      ? await generator()
+      : this.createBasicTemplate(created, content);
+  }
+
+  createBasicTemplate(created, content) {
+    return `---
+tags:
+  - note/basic/primary
+aliases: []
+created: ${created}
+updated: ${created}
+---
+${content}
+`;
+  }
+
+  createCodeTemplate(prefixMatch, created, content) {
+    let category, deckPath;
+
+    if (prefixMatch.categoryInfo) {
+      category = prefixMatch.categoryInfo.fullPath;
+      deckPath = prefixMatch.categoryInfo.fullPath.replace(/\//g, '::');
+    } else {
+      category = this.findPrefixKey(prefixMatch.prefixes, prefixMatch.prefix);
+      deckPath = category;
+    }
+
+    const normalizedCategory = this.normalizeCategory(category);
+
+    return `---
 tags:
   - note/specific/code
-  - category/${Object.keys(code_prefixes).find(k =>
-		code_prefixes[k].includes(code_prefix)
-	)}
+  - category/${normalizedCategory}
 aliases:
-  - ${code_alias}
-deck: obsidian::${Object.keys(code_prefixes).find(k =>
-			code_prefixes[k].includes(code_prefix)
-		)}
+  - ${prefixMatch.alias}
+deck: obsidian::${deckPath}
 created: ${created}
 updated: ${created}
 ---
 
-**${code_alias}**
-—${content}
-`
-	} else if (category_prefix) {
-		if (category_prefix.startsWith('-')) {
-			template = `---
+**${prefixMatch.alias}**
+—${content}`;
+  }
+
+  createCategoryTemplate(prefixMatch, created, content) {
+    let category, deckPath;
+
+    if (prefixMatch.categoryInfo) {
+      category = prefixMatch.categoryInfo.fullPath;
+      deckPath = prefixMatch.categoryInfo.fullPath.replace(/\//g, '::');
+    } else {
+      category = this.findPrefixKey(prefixMatch.prefixes, prefixMatch.prefix);
+      deckPath = category;
+    }
+
+    const normalizedCategory = this.normalizeCategory(category);
+
+    if (prefixMatch.prefix.startsWith('-')) {
+      return `---
 tags:
   - note/basic/primary
-  - category/${Object.keys(category_prefixes).find(k =>
-		category_prefixes[k].includes(category_prefix)
-	)}
+  - category/${normalizedCategory}
 aliases: []
 created: ${created}
 updated: ${created}
 ---
 
 ${content}
-`
-		} else {
-			template = `---
+`;
+    }
+
+    const capitalizedAlias = this.capitalizeFirst(prefixMatch.alias);
+
+    return `---
 tags:
   - note/specific/exact
-  - category/${Object.keys(category_prefixes).find(k =>
-		category_prefixes[k].includes(category_prefix)
-	)}
+  - category/${normalizedCategory}
 aliases: []
-deck: obsidian::${Object.keys(category_prefixes).find(k =>
-				category_prefixes[k].includes(category_prefix)
-			)}
+deck: obsidian::${deckPath}
 created: ${created}
 updated: ${created}
 ---
 
-**${category_alias.charAt(0).toUpperCase()}${category_alias.slice(1)}**
-—${content}
-`
-		}
-		title = title.replace(category_prefix_pattern, '').trim()
-	} else if (specific_prefix) {
-		if (specific_prefix.includes('!')) {
-			template = `---
+**${capitalizedAlias}**
+—${content}`;
+  }
+
+  createSpecificTemplate(prefixMatch, created, content) {
+    const key = this.findPrefixKey(prefixMatch.prefixes, prefixMatch.prefix);
+    const aliasPrefix =
+      prefixMatch.prefix.includes('!') || prefixMatch.prefix.includes('%')
+        ? '^'
+        : '^';
+
+    let tag = 'note/basic/primary';
+    if (prefixMatch.prefix.includes('!')) {
+      tag = 'note/specific/exact';
+    } else if (prefixMatch.prefix.includes('%')) {
+      tag = 'note/specific/code';
+    }
+
+    return `---
 tags:
-  - note/specific/exact
+  - ${tag}
 aliases:
-  - ^${Object.keys(specific_prefixes).find(k =>
-		specific_prefixes[k].includes(specific_prefix)
-	)}
+  - ${aliasPrefix}${key}
 created: ${created}
 updated: ${created}
 ---${content}
 
-`
-		} else if (specific_prefix.includes('%')) {
-			template = `---
-tags:
-  - note/specific/code
-aliases:
-  - ^${Object.keys(specific_prefixes).find(k =>
-		specific_prefixes[k].includes(specific_prefix)
-	)}
-created: ${created}
-updated: ${created}
----${content}
+`;
+  }
 
-`
-		} else {
-			template = `---
-tags:
-  - note/basic/primary
-aliases:
-  - ^${Object.keys(specific_prefixes).find(k =>
-		specific_prefixes[k].includes(specific_prefix)
-	)}
-created: ${created}
-updated: ${created}
----${content}
+  async createSystemTemplate(prefixMatch, created, content) {
+    const systemPrefixes = this.prefixes.System || {};
+    const category = await this.tp.user.category();
 
-`
-		}
-		title = title.replace(specific_prefix_pattern, '').trim()
-	} else if (system_prefix) {
-		const category = await tp.user.category()
-		let meta
-		let problem
+    if (
+      systemPrefixes.meta &&
+      systemPrefixes.meta.split('|').includes(prefixMatch.prefix)
+    ) {
+      return this.createMetaSystemTemplate(category, created, content);
+    }
 
-		if (system_prefixes.meta.split('|').includes(system_prefix)) {
-			template = `---
+    if (
+      systemPrefixes.problem &&
+      systemPrefixes.problem.split('|').includes(prefixMatch.prefix)
+    ) {
+      return await this.createProblemSystemTemplate(category, created, content);
+    }
+
+    return await this.createGenericSystemTemplate(
+      prefixMatch,
+      category,
+      created,
+      content
+    );
+  }
+
+  createMetaSystemTemplate(category, created, content) {
+    const normalizedCategory = this.normalizeCategory(category);
+
+    return `---
 tags:
-  - system/high/meta${category ? `\n  - category/${category}` : ''}
+  - system/high/meta${
+    normalizedCategory ? `\n  - category/${normalizedCategory}` : ''
+  }
 aliases: []
 category:${category ? `\n  - "[[${category}]]"` : ''}
 relevant: false
@@ -202,13 +340,18 @@ created: ${created}
 updated: ${created}
 ---${content}
 
-💤
-`
-		} else if (system_prefixes.problem.split('|').includes(system_prefix)) {
-			meta = await tp.user.meta(category)
-			template = `---
+💤`;
+  }
+
+  async createProblemSystemTemplate(category, created, content) {
+    const meta = await this.tp.user.meta(category);
+    const normalizedCategory = this.normalizeCategory(category);
+
+    return `---
 tags:
-  - system/high/problem${category ? `\n  - category/${category}` : ''}
+  - system/high/problem${
+    normalizedCategory ? `\n  - category/${normalizedCategory}` : ''
+  }
 aliases: []
 category:${category ? `\n  - "[[${category}]]"` : ''}
 meta:${meta ? `\n  - "[[${meta}]]"` : ''}
@@ -217,16 +360,23 @@ created: ${created}
 updated: ${created}
 ---${content}
 
-💤
-`
-		} else {
-			meta = await tp.user.meta(category)
-			problem = await tp.user.problem(meta)
-			template = `---
+💤`;
+  }
+
+  async createGenericSystemTemplate(prefixMatch, category, created, content) {
+    const systemType = this.findPrefixKey(
+      this.prefixes.System,
+      prefixMatch.prefix
+    );
+    const meta = await this.tp.user.meta(category);
+    const problem = await this.tp.user.problem(meta);
+    const normalizedCategory = this.normalizeCategory(category);
+
+    return `---
 tags:
-  - system/high/${Object.keys(system_prefixes).find(k =>
-		system_prefixes[k].includes(system_prefix)
-	)}${category ? `\n  - category/${category}` : ''}
+  - system/high/${systemType}${
+      normalizedCategory ? `\n  - category/${normalizedCategory}` : ''
+    }
 aliases: []
 category:${category ? `\n  - "[[${category}]]"` : ''}
 meta:${meta ? `\n  - "[[${meta}]]"` : ''}
@@ -236,22 +386,30 @@ created: ${created}
 updated: ${created}
 ---${content}
 
-💤
-`
-		}
+💤`;
+  }
 
-		title = title.replace(system_prefix_pattern, '').trim()
-	} else {
-		template = `---
-tags:
-  - note/basic/primary
-aliases: []
-created: ${created}
-updated: ${created}
----${content}
+  findPrefixKey(prefixes, prefix) {
+    return Object.keys(prefixes).find((k) => {
+      const value = prefixes[k];
+      if (typeof value === 'object' && value.prefix) {
+        return value.prefix.includes('|')
+          ? value.prefix.split('|').includes(prefix)
+          : value.prefix === prefix;
+      } else if (typeof value === 'string') {
+        return value.includes('|')
+          ? value.split('|').includes(prefix)
+          : value === prefix;
+      }
+      return false;
+    });
+  }
 
-`
-	}
+  capitalizeFirst(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
 
-	return { title, template }
+  normalizeCategory(category) {
+    return category ? category.replace(/ /g, '_').toLowerCase() : category;
+  }
 }

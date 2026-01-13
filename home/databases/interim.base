@@ -1,9 +1,10 @@
 filters:
   and:
-    - tags.join(" ").contains("mark/addition")
+    - file.inFolder("base/additions")
+    - file.hasTag("#mark/addition")
     - status == "🟥"
 formulas:
-  type: tags.filter(value.startsWith("mark/addition"))[0].replace(/^.*\//, '')
+  type: file.tags.filter(value.startsWith("#mark/addition/"))[0].replace(/^.*\//, '')
 properties:
   formula.type:
     displayName: 🗄️ type
@@ -23,17 +24,15 @@ properties:
     displayName: 🔖 attribute
 views:
   - type: table
-    name: Table
+    name: 🗣️ All
     order:
       - project
       - formula.type
-      - status
       - file.name
       - attribute
-      - description
       - input
       - output
+      - description
     sort:
       - property: project
         direction: ASC
-    limit: 30

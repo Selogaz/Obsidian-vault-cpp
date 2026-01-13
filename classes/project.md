@@ -6,9 +6,9 @@ tagNames:
   - project/single
   - project/longform
   - project/short
-excludes: 
-extends: 
-version: "2.196"
+excludes:
+extends:
+version: "2.200"
 fields:
   - id: qsrvuj
     name: cover
@@ -30,13 +30,6 @@ fields:
       defaultInsertAsLink: false
     type: Date
     path: ""
-  - id: ZcJexE
-    name: total_hours
-    options:
-      step: "1"
-      min: "1"
-    type: Number
-    path: ""
   - name: tags
     type: Multi
     options:
@@ -52,15 +45,6 @@ fields:
       dvQueryString: dv.pages("#system/category AND -#mark/ignore")
     path: ""
     id: YGxO6z
-  - name: updated
-    type: Date
-    options:
-      dateShiftInterval: 1 day
-      dateFormat: YYYY-MM-DD
-      defaultInsertAsLink: false
-      linkPath: ""
-    path: ""
-    id: pw9GSL
   - name: aliases
     type: YAML
     options: {}
@@ -93,15 +77,6 @@ fields:
       dvQueryString: dv.pages("#system/high/problem AND -#mark/ignore").where(p => Array.isArray(p.file.frontmatter.meta) && current.file.frontmatter.meta.some(v => p.file.frontmatter.meta.includes(v)))
     path: ""
     id: ojOTU4
-  - name: created
-    type: Date
-    options:
-      dateShiftInterval: 1 day
-      dateFormat: YYYY-MM-DD
-      defaultInsertAsLink: false
-      linkPath: ""
-    path: ""
-    id: tTcw03
   - name: priority
     type: Select
     options:
@@ -119,12 +94,12 @@ fields:
     options:
       sourceType: ValuesList
       valuesList:
-        "1": 🟥
-        "2": 🟦
-        "3": 🟩
-        "4": 📢
-        "5": ❄
-        "6": ⬛
+        "1": ⬛
+        "2": ❄
+        "3": 🟥
+        "4": 🟦
+        "5": 🟩
+        "6": 📢
     path: ""
     id: 7GrOx8
   - name: creator
@@ -147,10 +122,10 @@ fields:
       valuesListNotePath: templates/lists/list of cssclasses.md
     path: ""
     id: W2oWcu
-filesPaths: 
-bookmarksGroups: 
+filesPaths:
+bookmarksGroups:
 savedViews: []
-favoriteView: 
+favoriteView:
 fieldsOrder:
   - WV01w7
   - FabvXB
@@ -163,11 +138,8 @@ fieldsOrder:
   - tV52l1
   - 26Dmf8
   - mNXPQV
-  - ZcJexE
   - 2YkbVI
   - Ryj6VJ
   - qsrvuj
-  - tTcw03
-  - pw9GSL
   - W2oWcu
 ---
