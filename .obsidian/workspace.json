@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0912e72502485aab",
+            "id": "999181858d180e22",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,13 +32,13 @@
             }
           },
           {
-            "id": "f696661eb88142ea",
+            "id": "3e2b52eb76862f5d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/Язык JavaScript.md",
-                "mode": "source",
+                "file": "base/categories/js.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -52,35 +52,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Язык JavaScript"
-            }
-          },
-          {
-            "id": "e0e74352df2ec16d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sources/Спецификация ECMA-script.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Спецификация ECMA-script"
+              "title": "js"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -201,10 +176,16 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "f696661eb88142ea",
+  "active": "999181858d180e22",
   "lastOpenFiles": [
-    "sources/Спецификация ECMA-script.md",
+    "files",
+    "Programming/Java.md",
+    "base/categories/java.md",
+    "base/categories/js.md",
     "sources/Язык JavaScript.md",
+    "sources/Спецификация ECMA-script.md",
+    "sources/official doc vue js.md",
+    "sources/MDN.md",
     "home/index.md",
     "base/notes/js TypeScript.md",
     "base/notes/“Трансляция.md",
@@ -223,12 +204,6 @@
     "base/notes/тернарный оператор.md",
     "base/notes/теория по Spring.md",
     "base/notes/таймкоды Obsidian vault.md",
-    "base/notes/сужение области видимости при переопределении.md",
-    "base/notes/структура обучения в университете.md",
-    "base/notes/статическое или раннее связывание.md",
-    "base/notes/статический метод и переопределение.md",
-    "base/notes/статический метод генерации.md",
-    "base/notes/статический блок инициализации.md",
     "base/notes",
     "sources",
     "base/categories",

@@ -26,7 +26,7 @@ cssclasses:
 [[mynoise-net.aac]]
 
 [[js]]
-
+[[base/categories/java]]
 ----
 - [[work]]
 	- [[java developer]]

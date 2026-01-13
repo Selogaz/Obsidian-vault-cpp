@@ -1,3 +1,0 @@
-
-
-[[Interceptors and Events]]
