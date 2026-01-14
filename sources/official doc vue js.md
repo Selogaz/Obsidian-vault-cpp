@@ -15,13 +15,13 @@ problem:
 related:
 creator:
 production:
-url: "[](https://vuejs.org/)"
+url: "[ru.vuejs.org](https://vuejs.org/)"
 zotero: "[🇿](zotero://select/items/@Vuejs)"
 published:
 start: 2026-01-13T22:43:43+03:00
 end:
 created: 2026-01-13T22:43:43+03:00
-updated: 2026-01-13T22:55:45+03:00
+updated: 2026-01-14T09:50:07+03:00
 ---
 
 https://ru.vuejs.org

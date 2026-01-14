@@ -32,13 +32,13 @@
             }
           },
           {
-            "id": "bfa2eb252b493740",
+            "id": "13b90029a4ea5075",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/categories/js.md",
-                "mode": "preview",
+                "file": "sources/full stack itproger.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -52,7 +52,55 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "js"
+              "title": "full stack itproger"
+            }
+          },
+          {
+            "id": "e828f13e9d947511",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sources/official doc vue js.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "official doc vue js"
+            }
+          },
+          {
+            "id": "95a518fb520951c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sources/MDN.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "MDN"
             }
           }
         ],
@@ -121,12 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "sources/full stack itproger.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of full stack itproger"
             }
           },
           {
@@ -160,8 +209,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5,
-    "collapsed": true
+    "width": 348.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,15 +225,24 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "bfa2eb252b493740",
+  "active": "13b90029a4ea5075",
   "lastOpenFiles": [
-    "home/index.md",
+    "files/full stack itproger 2026-01-14.png",
+    "base/additions/full stack itproger - attachments.md",
+    "sources/full stack itproger.md",
     "base/categories/js.md",
+    "home/index.md",
+    "files/[SW.BAND] 2 - Как работает Интернет_ Протоколы, домены и прочие вещи.mp4",
+    "base/additions",
+    "sources/vue cobezz.md",
+    "sources/official doc vue js.md",
+    "sources/MDN.md",
     "base/categories/java.md",
+    "sources/База знаний fill the gaps.md",
+    "sources/сбер собес Сорокин.md",
     "sources/Spring быстро.md",
     "vault/base/categories/java.md",
     "sources/Spring Security в действии.md",
-    "sources/сбер собес Сорокин.md",
     "files/Spring-fast-2025-10-11-1.png",
     "files/Spring-fast-2025-10-11.png",
     "files/Трассировка лучей теперь доступна во всех играх? 2025-10-24.png",
@@ -208,13 +265,6 @@
     "sources/PvE - Гайд на Холи Приста (x1).md",
     "sources/refactoring guru.md",
     "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
-    "sources/vault.md",
-    "sources/VRM. Что такое, зачем.md",
-    "sources/Амбициозный Но Ленивый Тебе Нужно Это Услышать.md",
-    "sources/База знаний fill the gaps.md",
-    "sources/Видос про коллекции.md",
-    "sources/ВНУТРЯНКА АЙТИ.md",
-    "sources/Вопросы и ответы к интервью Java разработчика.md",
     "vault/base/notes",
     "files",
     "base/notes",
@@ -223,8 +273,6 @@
     "base",
     "home/databases/notes.base",
     "home/databases/sources.base",
-    "home/databases/projects.base",
-    "home/databases/people.base",
     "periodic/2026.canvas",
     "periodic/2025.canvas",
     "base/canvases/Прогноз нагрузки на серверы на основе исторических данных.canvas",

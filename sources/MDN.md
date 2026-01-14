@@ -21,10 +21,11 @@ published: 2025
 start: 2026-01-13T22:27:24+03:00
 end:
 created: 2026-01-13T22:27:24+03:00
-updated: 2026-01-13T23:27:08+03:00
+updated: 2026-01-14T01:06:49+03:00
 ---
+
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Language_overview
 
 # Language overview
 
-[[java]]
-[[ano]]
+Одним из ключевых отличий JavaScript является отсутствие классов, вместо этого функциональность классов осуществляется прототипами объектов

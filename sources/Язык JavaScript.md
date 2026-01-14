@@ -15,7 +15,7 @@ problem:
 related:
 creator:
 production:
-url: "[](https://learn.javascript.ru/js)"
+url: "[learn.javascript.ru](https://learn.javascript.ru/js)"
 zotero: "[🇿](zotero://select/items/@YazykJavaScript)"
 published:
 start: 2026-01-13T22:04:15+03:00

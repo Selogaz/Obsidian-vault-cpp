@@ -23,10 +23,9 @@ cssclasses:
 	- [[сбер собес Сорокин]]
 	- [[2025-10-10]]
 
-[[mynoise-net.aac]]
 	
 [[js]]
-[[base/categories/java]]
+
 
 ----
 - [[work]]
@@ -55,3 +54,5 @@ cssclasses:
 		- [[vault#Сделать заметку не повторяющейся]]
 			
 # Contexts
+
+[[mynoise-net.aac]]
