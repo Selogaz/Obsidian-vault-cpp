@@ -250,7 +250,7 @@ http://validator.w3.org/nu/
 	</tr>
 </table>
 ```
-`<caption></caption>`  - заголовок таблицы
+`<caption></caption>`  - заголовок таблицы. Позицию и выравнивание можно изменить стилями
 ```html
 <table>
 	<caption>Учет по магазинам</caption>
@@ -263,4 +263,92 @@ http://validator.w3.org/nu/
 		<td>345</td>
 	</tr>
 </table>
+```
+атрибут тега td`colspan` - объединяет столбцы
+атрибут тега th`rowspan` - объединяет строки
+```html
+<table>
+	<tr>
+		<td colspan="2">Ячейка на 2 столбца</td>
+	</tr>
+	<tr>
+		<td>Ячейка 1</td>
+		<td>Ячейка 2</td>
+	</tr>
+</table>
+```
+
+## Теги формы
+`action` - задает адрес куда отправлять данные формы
+`method` - задает метод передачи данных(get, post). По умолчанию `get`
+```html
+<form action="https://tproger.com/login/" method="post">
+<!--поля формы-->
+</form>
+```
+get - данные передаются через url адрес
+post - передаются через сервер
+
+### Тег input
+- атрибут `type` задает тип поля и влияет на то, как поле отображается в браузере. По умолчанию тип text. Другие значения атрибута `type`:
+	- `password` - значение поля будет отображаться звездочками
+	- `checkbox` - создает поле галочку. Атрибут `checked` ставит галочку сам.
+	- `radio` - переключатель. Тип поля для выбора варианта. Обычно это группа полей, которая связана именем. У поля переключатель *всегда должен быть атрибут* `value`
+	- `file` - добавляет поле для загрузки файла. При вставке поля в форму требует обязательно наличие у формы атрибута `enctype` со значением `multipart/form-data`.
+	- `hidden` - скрывает поле от пользователя. При этом данные с этого поля передаются на сервер.
+	- `button` - кнопка для отправки формы. В обычных случаях не требует атрибута `name`. Можно заменить тегом кнопки.
+```html
+<label> Есть машина
+	 <input type="radio" name="user-car" value="yes" checked>
+ </label>
+<label> Нет машины
+	<input type="radio" name="user-car" value="yes">
+</label>
+```
+- атрибут `name` необходим, чтобы считать информацию с поля на сервере
+- `id` - уникальный id поля. Для связи поля и подписи, для удобного выбора поля в коде JavaScript
+- `value` - значение поля по умолчанию
+
+
+### Тег label
+Подпись к полю. Атрибут `for` связывает подпись и поле
+```html
+<form action="https://tproger.com/login/" method="post">
+	<label> Имя <input type="text" name="user-name"></label>
+</form>
+
+<form action="https://tproger.com/login/" method="post">
+	<label for="user-name-id">Имя</label>
+	<input id="user-name-id" type="text" name="user-name">
+</form>
+```
+
+### Раскрывающийся список или селект
+```html
+<select name="color">
+	<option value="red">Красный</option>
+	<option value="green">Зеленый</option>
+</select>
+```
+На сервер отправляется значение атрибута `value`. Если такой не задан, то отправится текст в `<option>`
+
+### Селект с множественным выбором
+В отличие от радиокнопок в селектах можно выбирать несколько вариантов из списка. Для этого тегу нужно добавить атрибут `multiple`
+```html
+<select name="cars[]" multiple>
+	<option value="lada">Lada</option>
+	<option value="bmw" selected>BMW</option>
+	<option value="lexus">Lexus</option>
+</select>
+```
+### Многострочное поле ввода
+Используется для передачи большого текста. Атрибуты:
+- `name`
+- `id`
+- `rows` - высота поля в строках
+- `cols` - ширина поля в символах
+```html
+<textarea name="comment" rows="100" cols="100">
+	Очень много текста с добрыми отзывами!<!--текст по умолчанию-->
+</textarea>
 ```
