@@ -32,6 +32,30 @@
             }
           },
           {
+            "id": "1d52e4fa7e0ce0dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home/help/hotkeys.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "hotkeys"
+            }
+          },
+          {
             "id": "13b90029a4ea5075",
             "type": "leaf",
             "state": {
@@ -53,6 +77,30 @@
               },
               "icon": "lucide-file",
               "title": "full stack itproger"
+            }
+          },
+          {
+            "id": "3d808263d1f9bd95",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/additions/full stack itproger - attachments.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "full stack itproger - attachments"
             }
           },
           {
@@ -104,7 +152,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -209,8 +257,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5,
-    "collapsed": true
+    "width": 348.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -228,11 +275,14 @@
   },
   "active": "13b90029a4ea5075",
   "lastOpenFiles": [
-    "files/full stack itproger 2026-01-14.png",
-    "base/additions/full stack itproger - attachments.md",
+    "files/full stack itproger 2026-01-14-2.png",
+    "files/full stack itproger 2026-01-14-1.png",
+    "home/help/hotkeys.md",
     "sources/full stack itproger.md",
-    "base/categories/js.md",
     "home/index.md",
+    "base/additions/full stack itproger - attachments.md",
+    "files/full stack itproger 2026-01-14.png",
+    "base/categories/js.md",
     "files/[SW.BAND] 2 - Как работает Интернет_ Протоколы, домены и прочие вещи.mp4",
     "base/additions",
     "sources/vue cobezz.md",
@@ -252,8 +302,6 @@
     "files/Популярные шаблоны микросервисной архитектуры за 20 минут 2025-09-17-5.png",
     "files/Популярные шаблоны микросервисной архитектуры за 20 минут 2025-09-17-4.png",
     "files/Популярные шаблоны микросервисной архитектуры за 20 минут 2025-09-17-3.png",
-    "files/Популярные шаблоны микросервисной архитектуры за 20 минут 2025-09-17-2.png",
-    "files/Популярные шаблоны микросервисной архитектуры за 20 минут 2025-09-17-1.png",
     "files/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов 2025-06-15 11.43.04.md",
     "files/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов 2025-06-15 11.35.20.md",
     "sources/Head First Паттерны Проектирования.md",
@@ -265,7 +313,6 @@
     "sources/@prostosocial_bot.md",
     "sources/PvE - Гайд на Холи Приста (x1).md",
     "sources/refactoring guru.md",
-    "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
     "vault/base/notes",
     "files",
     "base/notes",
