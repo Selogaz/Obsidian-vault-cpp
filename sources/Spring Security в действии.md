@@ -7,8 +7,7 @@ aliases:
   - Spring Security в действии
 status: 🟦
 category:
-  - "[[java]]"
-
+  - "[[base/categories/java]]"
 ---
 
 ```table-of-contents

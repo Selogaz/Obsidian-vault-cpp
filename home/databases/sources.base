@@ -72,13 +72,14 @@ views:
     sort:
       - property: created
         direction: DESC
-    limit: 28
+    limit: 30
     columnSize:
       note.addition: 90
       note.zotero: 1
       note.status: 1
       note.scientificity: 1
       note.rating: 1
+      note.category: 170
   - type: table
     name: 🗃️ All (extended)
     order:

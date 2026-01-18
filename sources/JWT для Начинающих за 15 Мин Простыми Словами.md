@@ -6,7 +6,7 @@ tags:
 aliases: []
 status: 🟥
 category:
-  - "[[java]]"
+  - "[[base/categories/java]]"
 meta:
 problem:
 creator: Влад Мишустин

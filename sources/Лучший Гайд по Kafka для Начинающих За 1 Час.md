@@ -5,13 +5,13 @@ tags:
 aliases: []
 status: 🟦
 category:
-  - "[[java]]"
-meta: 
-problem: 
+  - "[[base/categories/java]]"
+meta:
+problem:
 creator: Влад Мишустин
-production: 
+production:
 start: 2025-09-16T18:14:38+03:00
-end: 
+end:
 total_hours: 0
 created: 2025-09-16T18:14:38+03:00
 updated: 2026-01-14T00:21:50+03:00

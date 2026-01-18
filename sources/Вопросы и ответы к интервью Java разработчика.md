@@ -5,9 +5,9 @@ tags:
 aliases: []
 status: 🟦
 category:
-  - "[[java]]"
-meta: 
-problem: 
+  - "[[base/categories/java]]"
+meta:
+problem:
 url: "[Website](https://github.com/enhorse/java-interview)"
 cover: https://opengraph.githubassets.com/d9b4ad6de7aa7dceb117c18602eecdd1908dff42438fe981e79fccc3136fd6cf/enhorse/java-interview
 start: 2025-05-20T09:14:45+03:00

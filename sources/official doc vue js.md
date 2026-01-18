@@ -21,7 +21,7 @@ published:
 start: 2026-01-13T22:43:43+03:00
 end:
 created: 2026-01-13T22:43:43+03:00
-updated: 2026-01-14T09:50:07+03:00
+updated: 2026-01-18T16:49:50+03:00
 ---
 
 https://ru.vuejs.org

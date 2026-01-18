@@ -7,7 +7,7 @@ aliases:
   - Сайд-эффекты ребалансировок в Kafka
 status: 🟥
 category:
-  - "[[java]]"
+  - "[[base/categories/java]]"
 meta:
 problem:
 related:

@@ -7,7 +7,7 @@ aliases:
   - Снижение ребалансировок в Kafka при частом мерцании
 status: 🟥
 category:
-  - "[[java]]"
+  - "[[base/categories/java]]"
 meta:
 problem:
 related:

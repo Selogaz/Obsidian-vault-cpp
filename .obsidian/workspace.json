@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "999181858d180e22",
+            "id": "cdd115aacacc133b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,12 +32,12 @@
             }
           },
           {
-            "id": "1d52e4fa7e0ce0dd",
+            "id": "be0759b2c51bf16d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home/help/hotkeys.md",
+                "file": "base/_meta-notes/frontend.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,16 +52,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "hotkeys"
+              "title": "frontend"
             }
           },
           {
-            "id": "13b90029a4ea5075",
+            "id": "d818f42f53e375e1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/full stack itproger.md",
+                "file": "base/_hierarchy/frontend.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,16 +76,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "full stack itproger"
+              "title": "frontend"
             }
           },
           {
-            "id": "3d808263d1f9bd95",
+            "id": "7ad293c221d4b7f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/additions/full stack itproger - attachments.md",
+                "file": "base/_hierarchy/backend.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,17 +100,17 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "full stack itproger - attachments"
+              "title": "backend"
             }
           },
           {
-            "id": "e828f13e9d947511",
+            "id": "51b9fb3a0b5ec665",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/official doc vue js.md",
-                "mode": "source",
+                "file": "base/categories/java.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -124,16 +124,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "official doc vue js"
+              "title": "java"
             }
           },
           {
-            "id": "95a518fb520951c6",
+            "id": "2cecd2621d0ea17f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/MDN.md",
+                "file": "base/notes/TreeSet.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -148,11 +148,59 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "MDN"
+              "title": "TreeSet"
+            }
+          },
+          {
+            "id": "e9f44a71a729b43d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sources/vault.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "vault"
+            }
+          },
+          {
+            "id": "1c7f2251767fff8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/categories/programming.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "programming"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -162,26 +210,8 @@
     "type": "split",
     "children": [
       {
-        "id": "2c71bf99c2f76a39",
-        "type": "tabs",
-        "dimension": 30.700888450148078,
-        "children": [
-          {
-            "id": "f61d2cd9e7c9880c",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          }
-        ]
-      },
-      {
         "id": "c493d6f232ce3228",
         "type": "tabs",
-        "dimension": 69.29911154985193,
         "children": [
           {
             "id": "c1b5286a6d2052b2",
@@ -217,13 +247,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sources/full stack itproger.md",
+                "file": "base/categories/programming.md",
                 "followCursor": true,
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of full stack itproger"
+              "title": "Outline of programming"
             }
           },
           {
@@ -252,6 +282,16 @@
               "icon": "lucide-search",
               "title": "Search"
             }
+          },
+          {
+            "id": "0a5fdfc2161025f9",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
           }
         ]
       }
@@ -273,54 +313,54 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "13b90029a4ea5075",
+  "active": "1c7f2251767fff8e",
   "lastOpenFiles": [
+    "base/_meta-notes/frontend.md",
+    "base/_hierarchy/frontend.md",
+    "base/categories/programming.md",
+    "base/_hierarchy/backend.md",
+    "home/index.md",
+    "base/categories/java.md",
+    "sources/vault.md",
+    "base/notes/TreeSet.md",
+    "base/_meta-notes/frontend1.md",
+    "base/categories/obsidian.md",
+    "sources/full stack itproger.md",
+    "base/categories/web.md",
+    "base/_meta-notes/backend.md",
+    "home/databases/sources.base",
+    "sources/official doc vue js.md",
+    "base/categories/css.md",
+    "base/notes/java консультация паблик для вкатунов 31.05.md",
+    "base/additions/full stack itproger - conspectuses.md",
+    "files/vault 2026-01-18-2.png",
+    "files/vault 2026-01-18-1.png",
+    "files/vault 2026-01-18.png",
+    "base/additions/conspectuses/Краткий обзор CSS.md",
+    "sources/Во что превращаются различные LockModeType в разных бд eng.md",
+    "base/additions/conspectuses/Краткий список html тегов.md",
+    "base/categories/js.md",
+    "base/categories/html.md",
+    "Карткий обзор тегов html.md",
+    "vault/base/_hierarchy",
+    "base/additions/conspectuses",
+    "base/additions/full stack itproger - attachments.md",
+    "список html тегов.md",
+    "sources/MDN.md",
+    "base/_meta-notes",
     "files/full stack itproger 2026-01-14-2.png",
     "files/full stack itproger 2026-01-14-1.png",
-    "home/help/hotkeys.md",
-    "sources/full stack itproger.md",
-    "home/index.md",
-    "base/additions/full stack itproger - attachments.md",
     "files/full stack itproger 2026-01-14.png",
-    "base/categories/js.md",
     "files/[SW.BAND] 2 - Как работает Интернет_ Протоколы, домены и прочие вещи.mp4",
     "base/additions",
-    "sources/vue cobezz.md",
-    "sources/official doc vue js.md",
-    "sources/MDN.md",
-    "base/categories/java.md",
-    "sources/База знаний fill the gaps.md",
-    "sources/сбер собес Сорокин.md",
-    "sources/Spring быстро.md",
-    "vault/base/categories/java.md",
-    "sources/Spring Security в действии.md",
     "files/Spring-fast-2025-10-11-1.png",
     "files/Spring-fast-2025-10-11.png",
     "files/Трассировка лучей теперь доступна во всех играх? 2025-10-24.png",
     "files/Снимок экрана от 2025-11-04 11-34-26.png",
-    "files/Популярные шаблоны микросервисной архитектуры за 20 минут 2025-09-17-6.png",
-    "files/Популярные шаблоны микросервисной архитектуры за 20 минут 2025-09-17-5.png",
-    "files/Популярные шаблоны микросервисной архитектуры за 20 минут 2025-09-17-4.png",
-    "files/Популярные шаблоны микросервисной архитектуры за 20 минут 2025-09-17-3.png",
-    "files/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов 2025-06-15 11.43.04.md",
-    "files/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов 2025-06-15 11.35.20.md",
-    "sources/Head First Паттерны Проектирования.md",
-    "sources/Java, Полное руководство.md",
-    "sources/It Отец трудоустройство.md",
-    "sources/JWT для Начинающих за 15 Мин Простыми Словами.md",
-    "sources/Kafka Rebalancing.md",
-    "sources/Kafka за 20 минут. Ментальная модель и как с ней работать.md",
-    "sources/@prostosocial_bot.md",
-    "sources/PvE - Гайд на Холи Приста (x1).md",
-    "sources/refactoring guru.md",
     "vault/base/notes",
     "files",
     "base/notes",
     "sources",
-    "base/categories",
-    "base",
-    "home/databases/notes.base",
-    "home/databases/sources.base",
     "periodic/2026.canvas",
     "periodic/2025.canvas",
     "base/canvases/Прогноз нагрузки на серверы на основе исторических данных.canvas",
