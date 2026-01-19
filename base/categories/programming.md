@@ -1,45 +1,47 @@
 ---
-tags:
+tags: 
   - system/category
   - category/programming
-next:
-  - "[[_programming]]"
-updated: 2026-01-18T15:36:13+03:00
-hierarchy:
-  - "[[base/_hierarchy/programming hierarchy|programming]]"
 cssclasses:
   - category
+relevant: false
+icon: 🗺️
 ---
 
 > [!tabbed]+
 >
 > <label>🗃️ sources<input type="radio" name="test" checked/></label>
 >
-> > `$=await dv.view("templates/views/category/sources")`
+> > ![[sources.base#📋 Kanban]]
 >
 > <label>🏢 projects<input type="radio" name="test" /></label>
 >
-> > `$=await dv.view("templates/views/category/projects")`
+> > ![[projects.base#📋 Kanban]]
 >
 > <label>👥 people<input type="radio" name="test" /></label>
 >
-> > `$=await dv.view("templates/views/category/people", {type: "contact"})` `$=await dv.view("templates/views/category/people", {type: "creator"})` `$=await dv.view("templates/views/category/people", {type: "production"})`
+> > ![[people.base#👤 Contacts]]
 >
 > <label>🔬 system<input type="radio" name="test" /></label>
 >
-> > `$=await dv.view("templates/views/category/system", { type: "hierarchy"})` `$=await dv.view("templates/views/category/system", { type: "meta"})` `$=await dv.view("templates/views/category/system", { type: "problem"})`
+> > ![[high-notes.base#🧬 Hierarchies]]
 >
 > <label>📋 structure<input type="radio" name="test" /></label>
 >
-> > `$=await dv.view("templates/views/category/structure")`
+> > ```dataviewjs
+> > await dv.view("templates/views/structure")
+> > ```
 >
 > <label>📝 notes<input type="radio" name="test" /></label>
 >
-> > `$=await dv.view("templates/views/category/notes")`
+> > ![[notes.base]]
 >
 > <label>✅ tasks<input type="radio" name="test" /></label>
 >
-> > ![[periodic/categories/_programming]]
+> > > [!todo|hidden]
+> > > ```dataviewjs
+> > > await dv.view("templates/views/tasks/category")
+> > > ```
 >
 > <label>➕<input type="radio" name="test" /></label>
 >

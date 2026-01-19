@@ -72,14 +72,14 @@ views:
     sort:
       - property: created
         direction: DESC
-    limit: 30
+    limit: 28
     columnSize:
+      file.name: 530
       note.addition: 90
       note.zotero: 1
       note.status: 1
       note.scientificity: 1
       note.rating: 1
-      note.category: 170
   - type: table
     name: 🗃️ All (extended)
     order:
@@ -105,6 +105,7 @@ views:
         direction: DESC
     limit: 28
     columnSize:
+      file.name: 530
       formula.backlinks: 1
       formula.outlinks: 1
       note.addition: 90
@@ -127,14 +128,16 @@ views:
     order:
       - file.name
       - addition
+      - zotero
       - status
       - url
     sort:
       - property: priority
         direction: ASC
     columnSize:
-      note.status: 1
+      file.name: 530
       note.addition: 90
+      note.status: 1
   - type: cards
     name: 🖼️ covers
     filters:
@@ -175,6 +178,7 @@ views:
       - property: formula.created_relative
         direction: DESC
     columnSize:
+      file.name: 530
       note.addition: 90
       note.zotero: 1
       note.status: 1
@@ -204,6 +208,7 @@ views:
       - property: formula.created_relative
         direction: DESC
     columnSize:
+      file.name: 530
       note.addition: 90
       note.zotero: 1
       note.status: 1
@@ -230,6 +235,7 @@ views:
       - property: formula.created_relative
         direction: DESC
     columnSize:
+      file.name: 530
       note.addition: 90
       note.zotero: 1
       note.status: 1

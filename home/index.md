@@ -15,11 +15,12 @@ cssclasses:
 
 # Knowledge areas
 
-- [[programming]][[backend]][[base/_meta-notes/frontend]]
+- [[programming]]
 	- [[html]]
 	- [[css]]
 	- [[js]]
 	-  [[java]]
+
 ----
 - [[work]]
 - [[computer science]]

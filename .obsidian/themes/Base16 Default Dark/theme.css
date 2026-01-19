@@ -1470,6 +1470,19 @@ body:has(.metadata-menu)
   & :is(.bases-rendered-value, .bases-metadata-value) {
     min-width: fit-content;
     width: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 4px;
+  }
+
+  & .multi-select-pill {
+    flex-shrink: 0;
+    max-width: none !important;
+  }
+
+  & .multi-select-pill-content {
+    text-overflow: clip !important;
+    overflow: visible !important;
   }
 
   &:hover :is(.bases-rendered-value, .bases-metadata-value) {
@@ -1606,6 +1619,9 @@ body .another-quick-switcher__item {
 }
 body .another-quick-switcher__item__description {
   margin-left: 8px;
+}
+.another-quick-switcher__item__title__header1 {
+  margin-left: 6px;
 }
 
 .prompt,
@@ -1936,5 +1952,5 @@ mark {
 }
 .workspace-split.mod-root .workspace-tab-header.is-active::before,
 .workspace-split.mod-root .workspace-tab-header.is-active::after {
-  box-shadow: none;
+  box-shadow: none !important;
 }

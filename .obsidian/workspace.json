@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cdd115aacacc133b",
+            "id": "999181858d180e22",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,12 +32,12 @@
             }
           },
           {
-            "id": "be0759b2c51bf16d",
+            "id": "6edfaa128d136412",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/_meta-notes/frontend.md",
+                "file": "sources/full stack itproger.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,16 +52,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "frontend"
+              "title": "full stack itproger"
             }
           },
           {
-            "id": "d818f42f53e375e1",
+            "id": "486f37b6182d3c9d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/_hierarchy/frontend.md",
+                "file": "base/notes/css float.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,16 +76,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "frontend"
+              "title": "css float"
             }
           },
           {
-            "id": "7ad293c221d4b7f9",
+            "id": "d745ecf661b539df",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/_hierarchy/backend.md",
+                "file": "base/additions/conspectuses/Краткий обзор CSS.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,16 +100,40 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "backend"
+              "title": "Краткий обзор CSS"
             }
           },
           {
-            "id": "51b9fb3a0b5ec665",
+            "id": "01f723aed4fa96f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/categories/java.md",
+                "file": "base/additions/conspectuses/Краткий обзор CSS.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Краткий обзор CSS"
+            }
+          },
+          {
+            "id": "80c58151b7922492",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home/vault statistics.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -124,83 +148,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "java"
-            }
-          },
-          {
-            "id": "2cecd2621d0ea17f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/TreeSet.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "TreeSet"
-            }
-          },
-          {
-            "id": "e9f44a71a729b43d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sources/vault.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "vault"
-            }
-          },
-          {
-            "id": "1c7f2251767fff8e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/categories/programming.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "programming"
+              "title": "vault statistics"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -210,8 +162,26 @@
     "type": "split",
     "children": [
       {
+        "id": "2c71bf99c2f76a39",
+        "type": "tabs",
+        "dimension": 30.700888450148078,
+        "children": [
+          {
+            "id": "f61d2cd9e7c9880c",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      },
+      {
         "id": "c493d6f232ce3228",
         "type": "tabs",
+        "dimension": 69.29911154985193,
         "children": [
           {
             "id": "c1b5286a6d2052b2",
@@ -247,13 +217,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "base/categories/programming.md",
                 "followCursor": true,
-                "showSearch": true,
+                "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of programming"
+              "title": "Outline"
             }
           },
           {
@@ -284,92 +253,93 @@
             }
           },
           {
-            "id": "0a5fdfc2161025f9",
+            "id": "d031b26e7efa533a",
             "type": "leaf",
             "state": {
-              "type": "calendar",
+              "type": "review-queue-list-view",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 348.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "templater-obsidian:Templater": false,
       "daily-notes:Open today's daily note": false,
       "obsidian42-brat:BRAT": false,
       "bases:Create new base": false,
-      "templater-obsidian:Templater": false,
       "canvas:Create new canvas": true,
       "workspaces:Manage workspace layouts": true,
       "obsidian-spaced-repetition:Review flashcards": false,
-      "periodic-notes:Open today": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "1c7f2251767fff8e",
+  "active": "6edfaa128d136412",
   "lastOpenFiles": [
-    "base/_meta-notes/frontend.md",
-    "base/_hierarchy/frontend.md",
-    "base/categories/programming.md",
-    "base/_hierarchy/backend.md",
-    "home/index.md",
-    "base/categories/java.md",
-    "sources/vault.md",
-    "base/notes/TreeSet.md",
-    "base/_meta-notes/frontend1.md",
-    "base/categories/obsidian.md",
-    "sources/full stack itproger.md",
-    "base/categories/web.md",
-    "base/_meta-notes/backend.md",
-    "home/databases/sources.base",
-    "sources/official doc vue js.md",
-    "base/categories/css.md",
-    "base/notes/java консультация паблик для вкатунов 31.05.md",
-    "base/additions/full stack itproger - conspectuses.md",
-    "files/vault 2026-01-18-2.png",
-    "files/vault 2026-01-18-1.png",
-    "files/vault 2026-01-18.png",
+    "base/notes/css float.md",
     "base/additions/conspectuses/Краткий обзор CSS.md",
-    "sources/Во что превращаются различные LockModeType в разных бд eng.md",
-    "base/additions/conspectuses/Краткий список html тегов.md",
-    "base/categories/js.md",
-    "base/categories/html.md",
-    "Карткий обзор тегов html.md",
-    "vault/base/_hierarchy",
-    "base/additions/conspectuses",
-    "base/additions/full stack itproger - attachments.md",
-    "список html тегов.md",
-    "sources/MDN.md",
-    "base/_meta-notes",
-    "files/full stack itproger 2026-01-14-2.png",
-    "files/full stack itproger 2026-01-14-1.png",
-    "files/full stack itproger 2026-01-14.png",
-    "files/[SW.BAND] 2 - Как работает Интернет_ Протоколы, домены и прочие вещи.mp4",
-    "base/additions",
-    "files/Spring-fast-2025-10-11-1.png",
-    "files/Spring-fast-2025-10-11.png",
-    "files/Трассировка лучей теперь доступна во всех играх? 2025-10-24.png",
-    "files/Снимок экрана от 2025-11-04 11-34-26.png",
-    "vault/base/notes",
-    "files",
-    "base/notes",
-    "sources",
+    "sources/full stack itproger.md",
+    "home/vault statistics.md",
+    "base/notes/css подключение шрифта.md",
+    "home/index.md",
     "periodic/2026.canvas",
+    "home/fleetings.md",
+    "periodic/yearly/2026.md",
+    "periodic/monthly/2026-01.md",
+    "periodic/quarterly/2025-Q3.md",
+    "periodic/quarterly/2025-Q2.md",
+    "periodic/monthly/2025-06.md",
+    "periodic/monthly/2025-05.md",
+    "periodic/monthly",
+    "periodic/daily/2026-01-19.md",
     "periodic/2025.canvas",
+    "periodic/daily/2025-05-20.md",
+    "periodic/daily/2025-11-15.md",
+    "periodic/daily/2025-11-14.md",
+    "periodic/daily/2025-11-13.md",
+    "periodic/daily/2025-11-11.md",
+    "periodic/daily/2025-11-02.md",
+    "periodic/daily/2025-10-26.md",
+    "periodic/daily/2025-10-24.md",
+    "periodic/daily/2025-10-16.md",
+    "periodic/daily/2025-10-13.md",
+    "periodic/daily/2025-10-10.md",
+    "periodic/daily/2025-10-05.md",
+    "periodic/quarterly",
+    "periodic/weekly",
+    "periodic/daily",
+    "home/databases/sources.base",
+    "base/_problems",
+    "files/mynoise-net.aac",
+    "periodic/tasks (grouped by priority).canvas",
+    "periodic/tasks (grouped by effort).canvas",
+    "periodic/tasks (grouped by time).canvas",
+    "home/databases/high-notes.base",
+    "home/databases/people.base",
+    "home/databases/projects.base",
+    "files/test.png",
+    "files/test.jpg",
+    "files/Pasted Image 20260107000747_014.png",
+    "files/japan_1.png",
+    "files/japan.png",
+    "files/2026-01-06_22-58.png",
     "base/canvases/Прогноз нагрузки на серверы на основе исторических данных.canvas",
     "base/canvases/Диаграмма распределения пиковых нагрузок.canvas",
     "base/canvases/Архитектура для платформы предсказывающую нагрузку на серверы.canvas",
     "base/canvases/Eisenhower Matrix.canvas",
+    "files/DATE_2025-12-04 TIME_16-06-22 2025-12-04.png",
     "periodic/2024.canvas",
-    "periodic/tasks (grouped by time).canvas",
-    "periodic/tasks (grouped by priority).canvas",
-    "periodic/tasks (grouped by effort).canvas"
+    "files/Rapid Research Lab 2025-11-13.png",
+    "files/DATE_2025-10-28 TIME_20-11-48 2025-10-28-1.png",
+    "files/DATE_2025-10-28 TIME_20-11-48 2025-10-28.png"
   ]
 }

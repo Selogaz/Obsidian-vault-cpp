@@ -20,7 +20,7 @@
     "multilineReversedCardSeparator": "",
     "multilineCardEndMarker": "",
     "editLaterTag": "#edit-later",
-    "enableNoteReviewPaneOnStartup": false,
+    "enableNoteReviewPaneOnStartup": true,
     "tagsToReview": [
       "#note"
     ],

@@ -1,5 +1,7 @@
 {
   "hideTitles": [
+    "/(.*)year - (.*)/",
+    "/(.*)quarter - (.*)/",
     "BRAT",
     "[Virtual Linker] Exclude this file",
     "Open file properties",

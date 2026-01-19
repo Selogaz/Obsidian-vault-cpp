@@ -1745,7 +1745,7 @@
                     "name": "Wait",
                     "type": "Wait",
                     "id": "9922944f-9f02-44b9-a1f9-364aec1a53ad",
-                    "time": 1000
+                    "time": 1200
                   },
                   {
                     "name": "cursor",
@@ -1825,7 +1825,7 @@
                     "name": "Wait",
                     "type": "Wait",
                     "id": "56f84d0e-9c21-4c9a-88ff-b5323dab17b6",
-                    "time": 1000
+                    "time": 1200
                   },
                   {
                     "name": "cursor",
@@ -1837,7 +1837,7 @@
                       "type": "Capture",
                       "command": false,
                       "appendLink": false,
-                      "captureTo": "periodic/weekly/{{DATE:YYYY-[W]W}}",
+                      "captureTo": "periodic/weekly/{{DATE:YYYY-[W]WW}}",
                       "captureToActiveFile": false,
                       "createFileIfItDoesntExist": {
                         "enabled": false,
@@ -1868,7 +1868,8 @@
                         "direction": "vertical",
                         "mode": "default",
                         "focus": true
-                      }
+                      },
+                      "activeFileWritePosition": "cursor"
                     }
                   },
                   {
@@ -1906,7 +1907,7 @@
                     "name": "Wait",
                     "type": "Wait",
                     "id": "edb1b052-d99d-46c3-8178-f02b50efe1d2",
-                    "time": 1000
+                    "time": 1200
                   },
                   {
                     "name": "cursor",
@@ -1949,7 +1950,8 @@
                         "direction": "vertical",
                         "mode": "default",
                         "focus": true
-                      }
+                      },
+                      "activeFileWritePosition": "cursor"
                     }
                   },
                   {
@@ -1987,7 +1989,7 @@
                     "name": "Wait",
                     "type": "Wait",
                     "id": "de1d2a74-b3da-4801-8812-dc772c4a4200",
-                    "time": 1000
+                    "time": 1200
                   },
                   {
                     "name": "cursor",
@@ -2030,7 +2032,8 @@
                         "direction": "vertical",
                         "mode": "default",
                         "focus": true
-                      }
+                      },
+                      "activeFileWritePosition": "cursor"
                     }
                   },
                   {
@@ -2068,7 +2071,7 @@
                     "name": "Wait",
                     "type": "Wait",
                     "id": "793b527b-cfa2-4aef-a577-043946317a39",
-                    "time": 1000
+                    "time": 1200
                   },
                   {
                     "name": "cursor",

@@ -25,6 +25,6 @@ views:
         direction: DESC
     limit: 28
     columnSize:
-      file.name: 580
+      file.name: 1500
       formula.created_relative: 140
       formula.updated_relative: 140

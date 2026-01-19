@@ -15,7 +15,7 @@ start: 2025-05-20T12:24:31+03:00
 end:
 total_hours: 0
 created: 2025-05-20T12:24:31+03:00
-updated: 2026-01-18T16:37:26+03:00
+updated: 2026-01-18T17:52:27+03:00
 ---
 
 ![cover|150](https://yastatic.net/s3/psf/disk-public/_/6jthIYkBdecaLwm8yXZPKuI1HW7.png)
@@ -100,3 +100,9 @@ alt + F - выделив текст, сделать его заметкой. П�
 ![[vault 2026-01-18.png]]
 ![[vault 2026-01-18-1.png]]
 ![[vault 2026-01-18-2.png]]
+
+# Boosty
+https://boosty.to/flowing-abyss
+
+# Видос
+https://www.youtube.com/watch?**v=4wB-Ph5XYV0

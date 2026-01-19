@@ -58,6 +58,8 @@ views:
         direction: DESC
     limit: 28
     columnSize:
+      file.name: 530
+      note.addition: 90
       note.relevant: 1
       formula.backlinks: 1
       formula.outlinks: 1
@@ -79,6 +81,7 @@ views:
       - property: file.name
         direction: ASC
     columnSize:
+      file.name: 530
       note.relevant: 1
       formula.backlinks: 1
       formula.outlinks: 1
@@ -102,6 +105,8 @@ views:
       - property: formula.created_relative
         direction: DESC
     columnSize:
+      file.name: 530
+      note.addition: 90
       note.relevant: 1
       formula.backlinks: 1
       formula.outlinks: 1
@@ -128,6 +133,8 @@ views:
       - property: formula.created_relative
         direction: DESC
     columnSize:
+      file.name: 530
+      note.addition: 90
       note.relevant: 1
       formula.backlinks: 1
       formula.outlinks: 1
@@ -158,6 +165,10 @@ views:
       note.relevant: 1
       formula.backlinks: 1
       formula.outlinks: 1
+      file.name: 219
+      note.addition: 90
+      note.category: 183
+      note.meta: 265
       formula.created_relative: 140
       formula.updated_relative: 140
   - type: list

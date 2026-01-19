@@ -44,7 +44,7 @@ views:
     limit: 18
     columnSize:
       file.name: 145
-      note.description: 510
+      note.description: 1200
   - type: list
     name: 🇩ays (list)
     filters:
@@ -66,7 +66,7 @@ views:
     filters:
       and:
         - file.inFolder("periodic/daily")
-        - "!description.isEmpty()"
+        - '!description.isEmpty()'
     groupBy:
       property: formula.month_group
       direction: DESC

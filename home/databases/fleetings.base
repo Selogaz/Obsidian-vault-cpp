@@ -1,6 +1,7 @@
 filters:
   and:
     - file.inFolder("base/notes")
+    - '!file.hasTag("category")'
     - file.backlinks.length == 0
     - file.links.length == 0
 formulas:
@@ -24,7 +25,7 @@ views:
       - property: formula.created_relative
         direction: DESC
     columnSize:
-      file.name: 590
+      file.name: 1500
       formula.created_relative: 140
       formula.updated_relative: 140
   - type: table
@@ -40,6 +41,6 @@ views:
       - property: formula.created_relative
         direction: DESC
     columnSize:
-      file.name: 590
+      file.name: 1500
       formula.created_relative: 140
       formula.updated_relative: 140

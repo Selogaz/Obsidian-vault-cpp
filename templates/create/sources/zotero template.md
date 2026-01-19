@@ -89,6 +89,24 @@ let relatedItems = [];
     {%- endif -%}
 {% endfor -%}
 const relatedYaml = formatAsYamlList(relatedItems);
+
+const libraryCatalog = "{{libraryCatalog}}".trim();
+const publisher = "{{publisher}}".trim();
+const blogTitle = "{{blogTitle}}".trim();
+const websiteTitle = "{{websiteTitle}}".trim();
+const itemUrl = "{{url}}".trim();
+const citekey = "{{citekey}}".trim();
+
+let urlLink = "";
+if (itemUrl) {
+    const linkText = publisher || libraryCatalog || blogTitle || websiteTitle || "url";
+    urlLink = `"[${linkText}](${itemUrl})"`;
+}
+
+let zoteroLink = "";
+if (citekey) {
+    zoteroLink = `"[🇿](zotero://select/items/@${citekey})"`;
+}
 -%>
 ---
 tags:
@@ -109,8 +127,8 @@ problem:<%* if (problemsYaml) { tR += problemsYaml } %>
 related:<%* if (relatedYaml) { tR += relatedYaml } %>
 creator:<%* if (creatorsYaml) { tR += creatorsYaml } %>
 production:<%* if (publisherYaml) { tR += publisherYaml } %>
-url: "[{{libraryCatalog}}{{publisher}}{{blogTitle}}{{websiteTitle}}]({{url}})"
-zotero: "[🇿](zotero://select/items/@{{citekey}})"
+url: <%* if (urlLink) { tR += urlLink } %>
+zotero: <%* if (zoteroLink) { tR += zoteroLink } %>
 ---
 <%*
 await new Promise(resolve => setTimeout(resolve, 500));

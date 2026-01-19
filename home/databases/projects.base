@@ -70,6 +70,8 @@ views:
         direction: DESC
     limit: 28
     columnSize:
+      file.name: 530
+      note.addition: 90
       formula.backlinks: 1
       formula.outlinks: 1
       note.status: 1
@@ -99,6 +101,8 @@ views:
         direction: DESC
     limit: 28
     columnSize:
+      file.name: 530
+      note.addition: 90
       formula.backlinks: 1
       formula.outlinks: 1
       note.status: 1
@@ -127,9 +131,10 @@ views:
       - property: priority
         direction: ASC
     columnSize:
+      file.name: 530
+      note.addition: 90
       note.status: 1
       note.priority: 1
-      note.addition: 90
   - type: table
     name: ❄ Hold
     filters:
@@ -154,6 +159,8 @@ views:
       - property: formula.created_relative
         direction: DESC
     columnSize:
+      file.name: 530
+      note.addition: 90
       note.status: 1
       note.priority: 1
   - type: table
@@ -180,6 +187,8 @@ views:
       - property: formula.created_relative
         direction: DESC
     columnSize:
+      file.name: 530
+      note.addition: 90
       note.status: 1
       note.priority: 1
   - type: table
@@ -206,6 +215,8 @@ views:
       - property: formula.created_relative
         direction: DESC
     columnSize:
+      file.name: 530
+      note.addition: 90
       note.status: 1
       note.priority: 1
   - type: table
@@ -232,6 +243,8 @@ views:
       - property: formula.created_relative
         direction: DESC
     columnSize:
+      file.name: 530
+      note.addition: 90
       note.status: 1
       note.priority: 1
   - type: table
@@ -255,5 +268,7 @@ views:
       - property: formula.created_relative
         direction: DESC
     columnSize:
+      file.name: 530
+      note.addition: 90
       note.status: 1
       note.priority: 1
