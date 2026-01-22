@@ -8,31 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "999181858d180e22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "home/index.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "6edfaa128d136412",
+            "id": "b5b00e5bd6fc87f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -56,12 +32,12 @@
             }
           },
           {
-            "id": "486f37b6182d3c9d",
+            "id": "6edfaa128d136412",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/notes/css float.md",
+                "file": "base/additions/full stack itproger - practice.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,16 +52,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "css float"
+              "title": "full stack itproger - practice"
             }
           },
           {
-            "id": "d745ecf661b539df",
+            "id": "9681598076f077e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/additions/conspectuses/Краткий обзор CSS.md",
+                "file": "projects/Практика по flexbox в CSS.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,16 +76,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Краткий обзор CSS"
+              "title": "Практика по flexbox в CSS"
             }
           },
           {
-            "id": "01f723aed4fa96f4",
+            "id": "3e6f9046091080d4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/additions/conspectuses/Краткий обзор CSS.md",
+                "file": "base/notes/css flexbox.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -124,31 +100,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Краткий обзор CSS"
-            }
-          },
-          {
-            "id": "80c58151b7922492",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "home/vault statistics.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "vault statistics"
+              "title": "css flexbox"
             }
           }
         ],
@@ -217,12 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "base/additions/full stack itproger - practice.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of full stack itproger - practice"
             }
           },
           {
@@ -266,8 +219,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5,
-    "collapsed": true
+    "width": 348.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -285,39 +237,49 @@
   },
   "active": "6edfaa128d136412",
   "lastOpenFiles": [
-    "base/notes/css float.md",
-    "base/additions/conspectuses/Краткий обзор CSS.md",
+    "projects/Практика по flexbox в CSS.md",
+    "base/notes/css flexbox.md",
+    "base/notes/css flex-basis.md",
+    "base/notes/css flex-контейнер.md",
+    "base/notes/css flex.md",
+    "base/additions/full stack itproger - practice.md",
     "sources/full stack itproger.md",
+    "projects/Практика по анимациям в CSS.md",
+    "base/additions/conspectuses/Анимация, адаптивность и flexbox.md",
+    "base/notes/css анимации.md",
+    "projects/Практика по медиа-запросам в CSS.md",
+    "base/additions/full stack itproger - conspectuses.md",
+    "home/databases/sources.base",
+    "base/notes/css медиа-запросы.md",
+    "projects",
+    "base/additions/conspectuses/Краткий список html тегов.md",
     "home/vault statistics.md",
-    "base/notes/css подключение шрифта.md",
+    "files/css flexbox 2026-01-21.png",
+    "files/Анимация, адаптивность и flexbox 2026-01-21-2.png",
+    "files/Анимация, адаптивность и flexbox 2026-01-21-1.png",
+    "files/Анимация, адаптивность и flexbox 2026-01-21.png",
+    "base/categories/html.md",
     "home/index.md",
+    "base/notes/css keyframes.md",
+    "base/additions/conspectuses/Медиа-запросы в CSS.md",
+    "files/full stack itproger 2026-01-21-4.png",
+    "files/full stack itproger 2026-01-21-3.png",
+    "files/full stack itproger 2026-01-21-2.png",
+    "files/full stack itproger 2026-01-21-1.png",
+    "files/full stack itproger 2026-01-21.png",
+    "base/notes/css transitions.md",
+    "base/notes/css cвойства CSS анимации.md",
+    "base/additions/conspectuses/Дополнения к обзору CSS и немного практики.md",
+    "base/notes/css button.md",
+    "base/notes/css float.md",
+    "home/prefixes.md",
+    "base/notes/css line-height.md",
     "periodic/2026.canvas",
-    "home/fleetings.md",
-    "periodic/yearly/2026.md",
-    "periodic/monthly/2026-01.md",
-    "periodic/quarterly/2025-Q3.md",
-    "periodic/quarterly/2025-Q2.md",
-    "periodic/monthly/2025-06.md",
-    "periodic/monthly/2025-05.md",
     "periodic/monthly",
-    "periodic/daily/2026-01-19.md",
     "periodic/2025.canvas",
-    "periodic/daily/2025-05-20.md",
-    "periodic/daily/2025-11-15.md",
-    "periodic/daily/2025-11-14.md",
-    "periodic/daily/2025-11-13.md",
-    "periodic/daily/2025-11-11.md",
-    "periodic/daily/2025-11-02.md",
-    "periodic/daily/2025-10-26.md",
-    "periodic/daily/2025-10-24.md",
-    "periodic/daily/2025-10-16.md",
-    "periodic/daily/2025-10-13.md",
-    "periodic/daily/2025-10-10.md",
-    "periodic/daily/2025-10-05.md",
     "periodic/quarterly",
     "periodic/weekly",
     "periodic/daily",
-    "home/databases/sources.base",
     "base/_problems",
     "files/mynoise-net.aac",
     "periodic/tasks (grouped by priority).canvas",
@@ -325,21 +287,11 @@
     "periodic/tasks (grouped by time).canvas",
     "home/databases/high-notes.base",
     "home/databases/people.base",
-    "home/databases/projects.base",
     "files/test.png",
-    "files/test.jpg",
-    "files/Pasted Image 20260107000747_014.png",
-    "files/japan_1.png",
-    "files/japan.png",
-    "files/2026-01-06_22-58.png",
     "base/canvases/Прогноз нагрузки на серверы на основе исторических данных.canvas",
     "base/canvases/Диаграмма распределения пиковых нагрузок.canvas",
     "base/canvases/Архитектура для платформы предсказывающую нагрузку на серверы.canvas",
     "base/canvases/Eisenhower Matrix.canvas",
-    "files/DATE_2025-12-04 TIME_16-06-22 2025-12-04.png",
-    "periodic/2024.canvas",
-    "files/Rapid Research Lab 2025-11-13.png",
-    "files/DATE_2025-10-28 TIME_20-11-48 2025-10-28-1.png",
-    "files/DATE_2025-10-28 TIME_20-11-48 2025-10-28.png"
+    "periodic/2024.canvas"
   ]
 }
