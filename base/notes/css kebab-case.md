@@ -7,7 +7,7 @@ aliases:
   - kebab-case
 deck: obsidian::css
 created: 2026-01-22T14:30:43+03:00
-updated: 2026-01-22T14:36:32+03:00
+updated: 2026-01-22T15:36:14+03:00
 ---
 
 **kebab-case**
@@ -22,3 +22,6 @@ updated: 2026-01-22T14:36:32+03:00
 Существуют другие стили:
 - camelCase - принят в [[java]]
 - snake_case - вроде как в python
+
+![[prog camelCase]]
+![[prog snake_case]]

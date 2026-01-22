@@ -56,6 +56,30 @@
             }
           },
           {
+            "id": "d96c3d1473476498",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/additions/conspectuses/Краткий обзор JavaScript.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Краткий обзор JavaScript"
+            }
+          },
+          {
             "id": "6edfaa128d136412",
             "type": "leaf",
             "state": {
@@ -80,12 +104,12 @@
             }
           },
           {
-            "id": "a4e96315db17fd31",
+            "id": "a13e1c716c8beb0d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/Практика по БЭМ в CSS.md",
+                "file": "home/prefixes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,11 +124,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Практика по БЭМ в CSS"
+              "title": "prefixes"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -169,13 +193,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "base/additions/full stack itproger - conspectuses.md",
-                "followCursor": true,
+                "file": "base/additions/conspectuses/Краткий обзор JavaScript.md",
+                "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of full stack itproger - conspectuses"
+              "title": "Outline of Краткий обзор JavaScript"
             }
           },
           {
@@ -235,14 +259,24 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "9458411168134ab2",
+  "active": "d96c3d1473476498",
   "lastOpenFiles": [
+    "base/notes/конструктор.md",
+    "base/additions/conspectuses/Краткий обзор JavaScript.md",
+    "base/notes/логические операторы.md",
+    "home/prefixes.md",
     "base/additions/full stack itproger - practice.md",
+    "base/notes/prog camelCase.md",
+    "base/notes/prog стили именования в языках программирования.md",
+    "base/notes/prog PascalCase.md",
+    "base/notes/prog UPPER_SNAKE_CASE.md",
     "base/additions/full stack itproger - conspectuses.md",
-    "projects/Практика по БЭМ в CSS.md",
-    "projects/Практика по медиа-запросам в CSS.md",
     "base/notes/css kebab-case.md",
+    "projects/Практика по БЭМ в CSS.md",
+    "base/notes/prog snake_case.md",
     "base/notes/css БЭМ.md",
+    "base/notes/динамическое создание в языках программирования.md",
+    "projects/Практика по медиа-запросам в CSS.md",
     "sources/full stack itproger.md",
     "base/notes/html hotkeys.md",
     "projects/Верстка SoundBurner на flexbox.md",
@@ -253,27 +287,17 @@
     "base/notes/css flex.md",
     "projects/Практика по анимациям в CSS.md",
     "base/additions/conspectuses/Анимация, адаптивность и flexbox.md",
-    "base/notes/css анимации.md",
     "home/databases/sources.base",
-    "base/notes/css медиа-запросы.md",
     "projects",
-    "base/additions/conspectuses/Краткий список html тегов.md",
-    "home/vault statistics.md",
     "files/css flexbox 2026-01-21.png",
     "files/Анимация, адаптивность и flexbox 2026-01-21-2.png",
     "files/Анимация, адаптивность и flexbox 2026-01-21-1.png",
     "files/Анимация, адаптивность и flexbox 2026-01-21.png",
-    "base/categories/html.md",
-    "home/index.md",
-    "base/notes/css keyframes.md",
-    "base/additions/conspectuses/Медиа-запросы в CSS.md",
     "files/full stack itproger 2026-01-21-4.png",
     "files/full stack itproger 2026-01-21-3.png",
     "files/full stack itproger 2026-01-21-2.png",
     "files/full stack itproger 2026-01-21-1.png",
     "files/full stack itproger 2026-01-21.png",
-    "base/notes/css transitions.md",
-    "base/notes/css cвойства CSS анимации.md",
     "periodic/2026.canvas",
     "periodic/monthly",
     "periodic/2025.canvas",

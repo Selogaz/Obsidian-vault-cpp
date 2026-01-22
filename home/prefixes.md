@@ -111,6 +111,7 @@ js – js
 java – java
 html – html
 css – css
+programming – prog
 
 ```yaml
 prefix note title().md
