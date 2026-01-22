@@ -32,6 +32,30 @@
             }
           },
           {
+            "id": "9458411168134ab2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/additions/full stack itproger - conspectuses.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "full stack itproger - conspectuses"
+            }
+          },
+          {
             "id": "6edfaa128d136412",
             "type": "leaf",
             "state": {
@@ -56,12 +80,12 @@
             }
           },
           {
-            "id": "9681598076f077e8",
+            "id": "a4e96315db17fd31",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/Практика по flexbox в CSS.md",
+                "file": "projects/Практика по БЭМ в CSS.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,31 +100,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Практика по flexbox в CSS"
-            }
-          },
-          {
-            "id": "3e6f9046091080d4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/css flexbox.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "css flexbox"
+              "title": "Практика по БЭМ в CSS"
             }
           }
         ],
@@ -169,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "base/additions/full stack itproger - practice.md",
+                "file": "base/additions/full stack itproger - conspectuses.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of full stack itproger - practice"
+              "title": "Outline of full stack itproger - conspectuses"
             }
           },
           {
@@ -235,20 +235,25 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "6edfaa128d136412",
+  "active": "9458411168134ab2",
   "lastOpenFiles": [
+    "base/additions/full stack itproger - practice.md",
+    "base/additions/full stack itproger - conspectuses.md",
+    "projects/Практика по БЭМ в CSS.md",
+    "projects/Практика по медиа-запросам в CSS.md",
+    "base/notes/css kebab-case.md",
+    "base/notes/css БЭМ.md",
+    "sources/full stack itproger.md",
+    "base/notes/html hotkeys.md",
+    "projects/Верстка SoundBurner на flexbox.md",
     "projects/Практика по flexbox в CSS.md",
     "base/notes/css flexbox.md",
     "base/notes/css flex-basis.md",
     "base/notes/css flex-контейнер.md",
     "base/notes/css flex.md",
-    "base/additions/full stack itproger - practice.md",
-    "sources/full stack itproger.md",
     "projects/Практика по анимациям в CSS.md",
     "base/additions/conspectuses/Анимация, адаптивность и flexbox.md",
     "base/notes/css анимации.md",
-    "projects/Практика по медиа-запросам в CSS.md",
-    "base/additions/full stack itproger - conspectuses.md",
     "home/databases/sources.base",
     "base/notes/css медиа-запросы.md",
     "projects",
@@ -269,11 +274,6 @@
     "files/full stack itproger 2026-01-21.png",
     "base/notes/css transitions.md",
     "base/notes/css cвойства CSS анимации.md",
-    "base/additions/conspectuses/Дополнения к обзору CSS и немного практики.md",
-    "base/notes/css button.md",
-    "base/notes/css float.md",
-    "home/prefixes.md",
-    "base/notes/css line-height.md",
     "periodic/2026.canvas",
     "periodic/monthly",
     "periodic/2025.canvas",
