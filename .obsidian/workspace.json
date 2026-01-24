@@ -32,7 +32,7 @@
             }
           },
           {
-            "id": "b1718899ae123fea",
+            "id": "abec0570f8f9761d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -56,7 +56,7 @@
             }
           },
           {
-            "id": "a56a9ea660bba21f",
+            "id": "191dfe65795ddc30",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -80,7 +80,7 @@
             }
           },
           {
-            "id": "10e4d547c8a204c5",
+            "id": "cf653d66ae9d0a7e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -101,30 +101,6 @@
               },
               "icon": "lucide-file",
               "title": "События в JS"
-            }
-          },
-          {
-            "id": "6bb1fb6affcdcdbc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "projects/Практика по JS часть 2.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Практика по JS часть 2"
             }
           }
         ],
@@ -259,27 +235,27 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "10e4d547c8a204c5",
+  "active": "cf653d66ae9d0a7e",
   "lastOpenFiles": [
-    "base/additions/conspectuses/Краткий обзор CSS.md",
+    "base/notes/js hoisting.md",
+    "projects/Практика по JS часть 1.md",
+    "base/additions/full stack itproger - practice.md",
     "projects/События в JS.md",
     "projects/Практика по JS часть 2.md",
-    "base/additions/full stack itproger - practice.md",
-    "projects/Практика по JS часть 1.md",
+    "base/additions/full stack itproger - conspectuses.md",
+    "sources/full stack itproger.md",
+    "base/additions/conspectuses/Краткий обзор CSS.md",
     "periodic/daily/2026-01-23.md",
     "periodic/daily/2026-01-19.md",
     "base/notes/Untitled.md",
     "base/additions/conspectuses/Краткий обзор JavaScript.md",
     "base/notes/java set.md",
-    "base/notes/js hoisting.md",
     "base/notes/js const.md",
     "base/notes/js let.md",
     "base/notes/js var.md",
     "base/notes/js функция как объект первого класса.md",
-    "base/additions/full stack itproger - conspectuses.md",
     "base/notes/js undefined.md",
     "base/additions/conspectuses/Краткий список html тегов.md",
-    "sources/full stack itproger.md",
     "base/notes/js async.md",
     "home/prefixes.md",
     "base/notes/конструктор.md",

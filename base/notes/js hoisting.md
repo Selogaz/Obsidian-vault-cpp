@@ -2,15 +2,18 @@
 tags:
   - note/specific/code
   - category/js
+  - ai
 aliases:
   - hoisting
 deck: obsidian::js
 created: 2026-01-23T19:42:41+03:00
-updated: 2026-01-23T19:48:49+03:00
+updated: 2026-01-24T19:15:08+03:00
 ---
 
 **hoisting**
 —
+🤖
+
 В JavaScript объявления функций(function decalarations) и объявления переменных обрабатываются по-разному на этапе создания контекста выполнения
 
 # Function declaration
