@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b5b00e5bd6fc87f9",
+            "id": "999181858d180e22",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,7 +32,7 @@
             }
           },
           {
-            "id": "9458411168134ab2",
+            "id": "b1718899ae123fea",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -56,31 +56,7 @@
             }
           },
           {
-            "id": "d96c3d1473476498",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/additions/conspectuses/Краткий обзор JavaScript.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Краткий обзор JavaScript"
-            }
-          },
-          {
-            "id": "6edfaa128d136412",
+            "id": "a56a9ea660bba21f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -104,12 +80,12 @@
             }
           },
           {
-            "id": "a13e1c716c8beb0d",
+            "id": "10e4d547c8a204c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home/prefixes.md",
+                "file": "projects/События в JS.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -124,11 +100,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "prefixes"
+              "title": "События в JS"
+            }
+          },
+          {
+            "id": "6bb1fb6affcdcdbc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/Практика по JS часть 2.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Практика по JS часть 2"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -193,13 +193,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "base/additions/conspectuses/Краткий обзор JavaScript.md",
-                "followCursor": false,
+                "file": "projects/События в JS.md",
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Краткий обзор JavaScript"
+              "title": "Outline of События в JS"
             }
           },
           {
@@ -259,34 +259,34 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d96c3d1473476498",
+  "active": "10e4d547c8a204c5",
   "lastOpenFiles": [
-    "base/notes/конструктор.md",
-    "base/additions/conspectuses/Краткий обзор JavaScript.md",
-    "base/notes/логические операторы.md",
-    "home/prefixes.md",
+    "base/additions/conspectuses/Краткий обзор CSS.md",
+    "projects/События в JS.md",
+    "projects/Практика по JS часть 2.md",
     "base/additions/full stack itproger - practice.md",
+    "projects/Практика по JS часть 1.md",
+    "periodic/daily/2026-01-23.md",
+    "periodic/daily/2026-01-19.md",
+    "base/notes/Untitled.md",
+    "base/additions/conspectuses/Краткий обзор JavaScript.md",
+    "base/notes/java set.md",
+    "base/notes/js hoisting.md",
+    "base/notes/js const.md",
+    "base/notes/js let.md",
+    "base/notes/js var.md",
+    "base/notes/js функция как объект первого класса.md",
+    "base/additions/full stack itproger - conspectuses.md",
+    "base/notes/js undefined.md",
+    "base/additions/conspectuses/Краткий список html тегов.md",
+    "sources/full stack itproger.md",
+    "base/notes/js async.md",
+    "home/prefixes.md",
+    "base/notes/конструктор.md",
+    "base/notes/логические операторы.md",
     "base/notes/prog camelCase.md",
     "base/notes/prog стили именования в языках программирования.md",
     "base/notes/prog PascalCase.md",
-    "base/notes/prog UPPER_SNAKE_CASE.md",
-    "base/additions/full stack itproger - conspectuses.md",
-    "base/notes/css kebab-case.md",
-    "projects/Практика по БЭМ в CSS.md",
-    "base/notes/prog snake_case.md",
-    "base/notes/css БЭМ.md",
-    "base/notes/динамическое создание в языках программирования.md",
-    "projects/Практика по медиа-запросам в CSS.md",
-    "sources/full stack itproger.md",
-    "base/notes/html hotkeys.md",
-    "projects/Верстка SoundBurner на flexbox.md",
-    "projects/Практика по flexbox в CSS.md",
-    "base/notes/css flexbox.md",
-    "base/notes/css flex-basis.md",
-    "base/notes/css flex-контейнер.md",
-    "base/notes/css flex.md",
-    "projects/Практика по анимациям в CSS.md",
-    "base/additions/conspectuses/Анимация, адаптивность и flexbox.md",
     "home/databases/sources.base",
     "projects",
     "files/css flexbox 2026-01-21.png",

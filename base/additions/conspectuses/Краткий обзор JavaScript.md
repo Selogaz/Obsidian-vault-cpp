@@ -14,7 +14,7 @@ url:
 start: 2026-01-22T15:04:59+03:00
 end:
 created: 2026-01-22T15:04:59+03:00
-updated: 2026-01-22T16:55:57+03:00
+updated: 2026-01-23T20:24:56+03:00
 ---
 
 > [!toc]+
@@ -46,6 +46,7 @@ updated: 2026-01-22T16:55:57+03:00
 3 типа переменных:
 
 ### Var
+[[js var]]
 Область видимости - глобальная
 ```js
 var lesson = "JavaScript";
@@ -53,12 +54,14 @@ lesson = "JS Уровень 1";
 ```
 
 ### Let
+[[js let]]
 Другая(какая?) область видимости
 ```js
 let day = "16 April";
 ```
 
 ### Const
+[[js const]]
 ```js
 const FOOTER_COLOR = "#ccc";
 ```
@@ -129,6 +132,7 @@ var cars=null;
 ```
 
 ### Undefined
+[[js undefined]]
 Значение не присвоено
 ```js
 var cars;
@@ -244,7 +248,7 @@ function Car(name, color, year) {
 }
 ```
 
-### Создание экземпляра
+### Создание экземпляра(класса?)
 ```js
 var car1 = new Car("Nissan", "green", 1992);
 ```
