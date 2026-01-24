@@ -1,25 +1,27 @@
 ---
 tags:
-  - status/wip
-  - project/short
-  - priority/c
+  - source/article/paper
+  - mark/log/conspectus
+  - category/js
+  - category/html
+  - category/css
 aliases: []
 status: 🟦
-priority: 🇨
-category:
-meta:
-problem:
-creator:
-production:
+source:
+  - "[[full stack itproger]]"
+next:
 url:
-cover:
-start: 2026-01-23T11:33:29+03:00
+start: 2026-01-24T20:58:15+03:00
 end:
-created: 2026-01-23T11:33:29+03:00
-updated: 2026-01-24T20:58:47+03:00
+created: 2026-01-24T20:58:15+03:00
+updated: 2026-01-24T21:02:18+03:00
 ---
 
-[[Практика по JS часть 2|Продолжение]]
+> [!toc]+
+> ```table-of-contents
+> ```
+
+[[Подробный разбор JS Часть 2|Продолжение]]
 
 # Переменные и типы данных
 

@@ -56,6 +56,30 @@
             }
           },
           {
+            "id": "e6bf6a94110bff56",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/additions/conspectuses/AJAX.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "AJAX"
+            }
+          },
+          {
             "id": "191dfe65795ddc30",
             "type": "leaf",
             "state": {
@@ -80,12 +104,12 @@
             }
           },
           {
-            "id": "cf653d66ae9d0a7e",
+            "id": "cc7cce9141811e16",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/События в JS.md",
+                "file": "base/notes/js async.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,7 +124,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "События в JS"
+              "title": "js async"
             }
           }
         ],
@@ -169,13 +193,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/События в JS.md",
+                "file": "base/additions/full stack itproger - practice.md",
                 "followCursor": true,
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of События в JS"
+              "title": "Outline of full stack itproger - practice"
             }
           },
           {
@@ -219,7 +243,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 348.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -235,20 +260,26 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "cf653d66ae9d0a7e",
+  "active": "191dfe65795ddc30",
   "lastOpenFiles": [
-    "base/notes/js hoisting.md",
-    "projects/Практика по JS часть 1.md",
+    "base/additions/conspectuses/AJAX.md",
     "base/additions/full stack itproger - practice.md",
-    "projects/События в JS.md",
+    "base/notes/js async.md",
     "projects/Практика по JS часть 2.md",
+    "projects/Практика по JS часть 1.md",
+    "projects/прпр События в JS.md",
+    "base/additions/conspectuses/Краткий обзор JavaScript.md",
+    "projects/прпр AJAX.md",
     "base/additions/full stack itproger - conspectuses.md",
+    "base/additions/conspectuses/События в JS.md",
+    "base/additions/conspectuses/Подробный разбор JS Часть 2.md",
+    "base/additions/conspectuses/Подробный разбор JS часть 1.md",
+    "base/notes/js hoisting.md",
     "sources/full stack itproger.md",
     "base/additions/conspectuses/Краткий обзор CSS.md",
     "periodic/daily/2026-01-23.md",
     "periodic/daily/2026-01-19.md",
     "base/notes/Untitled.md",
-    "base/additions/conspectuses/Краткий обзор JavaScript.md",
     "base/notes/java set.md",
     "base/notes/js const.md",
     "base/notes/js let.md",
@@ -256,13 +287,7 @@
     "base/notes/js функция как объект первого класса.md",
     "base/notes/js undefined.md",
     "base/additions/conspectuses/Краткий список html тегов.md",
-    "base/notes/js async.md",
     "home/prefixes.md",
-    "base/notes/конструктор.md",
-    "base/notes/логические операторы.md",
-    "base/notes/prog camelCase.md",
-    "base/notes/prog стили именования в языках программирования.md",
-    "base/notes/prog PascalCase.md",
     "home/databases/sources.base",
     "projects",
     "files/css flexbox 2026-01-21.png",

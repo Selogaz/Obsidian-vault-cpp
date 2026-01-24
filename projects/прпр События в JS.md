@@ -1,10 +1,10 @@
 ---
 tags:
-  - status/wip
+  - status/done
   - project/short
   - priority/c
 aliases: []
-status: 🟦
+status: 🟩
 priority: 🇨
 category:
 meta:
@@ -16,7 +16,7 @@ cover:
 start: 2026-01-24T14:04:06+03:00
 end:
 created: 2026-01-24T14:04:06+03:00
-updated: 2026-01-24T19:12:36+03:00
+updated: 2026-01-24T20:16:25+03:00
 ---
 
 # События мыши
@@ -82,20 +82,20 @@ function focusEndEvent() {
 <input onfocus="focusEvent()" onblur="focusEndEvent()" onmouseover="focusEvent()" onmouseout="focusEndEvent()">
 ```
 
-### onmousedown
+### Onmousedown
 Зажали лкм и держим
 
-### onmouseup
+### Onmouseup
 Отпустили лкм
 
-### oncontextmenu
+### Oncontextmenu
 Нажали пкм
 
-### onmouseenter
+### Onmouseenter
 
-### onmouseleave
+### Onmouseleave
 
-### onmousemove
+### Onmousemove
 Свойство отслеживает движение мыши
 
 #### Реализация подсказки под мышкой
@@ -193,7 +193,7 @@ text.oninput = function(e) {
 };
 ```
 
-### onkeydown
+### Onkeydown
 
 - Срабатывает когда начали нажатие клавиши
 - ✅ Покажет клавишу, но не покажет ctrl+c/ctrl+v
@@ -203,10 +203,10 @@ text.onkeydown = function(e) {
 };
 ```
 
-### onkeypress
+### Onkeypress
 Полностью нажали клавишу, но не отпустили
 
-### onkeyup
+### Onkeyup
 Отпустили клавишу
 
 # Серийное обращение к событиям
@@ -226,7 +226,7 @@ boldText.forEach(function(el) {
 
 # События сенсорного экрана
 
-## Список  событий
+## Список событий
 
 ### Touchstart
 
@@ -265,8 +265,6 @@ window.addEventListener('touchmove', function(e) {
 });
 ```
 `targetTouches` - массив пальцев
-
-
 
 [^1]: [Полный перечень событий](https://www.w3schools.com/tags/ref_eventattributes.asp)
 [^2]: [[Краткий обзор CSS#Псевдоклассы для ссылок|hover и остальные]]
