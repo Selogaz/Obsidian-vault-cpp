@@ -1,20 +1,20 @@
 ---
 tags:
+  - source/article/paper
+  - mark/log/conspectus
   - category/js
   - category/html
   - category/css
-  - source/article/paper
-  - mark/log/conspectus
-aliases:
+aliases: []
 status: 🟦
 source:
   - "[[full stack itproger]]"
-start: 2026-01-26T00:10:21+03:00
-end:
 next:
 url:
+start: 2026-01-26T00:10:21+03:00
+end:
 created: 2026-01-26T00:10:21+03:00
-updated: 2026-01-26T00:10:21+03:00
+updated: 2026-01-26T15:45:19+03:00
 ---
 
 > [!toc]+
@@ -74,7 +74,7 @@ npm run dev
 
 # Папки в проекте
 
-## src - для разработки
+## Src - для разработки
 
 ### App.vue
 
@@ -83,7 +83,7 @@ npm run dev
 <HelloWorld msg="Welcome"/>
 ```
 
-#### script setup
+#### Script setup
 
 Подключение компонентов
 
@@ -107,19 +107,160 @@ import HelloWorld from './components/HelloWorld.vue'
 
 - 🤖 Вроде бы все это часть [[js Composition API vs Options API|Composition API]]
 
-#### template
+#### Template
 Тут находится html код. Здесь используются компоненты
+Нельзя запустить проект с пустым template
 
-#### style scoped
+#### Style scoped
 Тут css. Scoped - css применяется только к этому компоненту, а не сразу ко всем.
 
-
 ### components/
+Очевидно, здесь лежат компоненты
 
-
-
-## public - продакшн?
+## Public - продакшн?
 Только эту папку можно поместить на сервер
 
+# Удаляем старое и добавляем свой код
+App.vue
+
+## User и ratings
+```js
+<script setup>
+import {reactive, ref} from 'vue'
+
+const user = reactive({
+  id: 1,
+  login: 'Gosha',
+  name: 'George',
+  surname: 'Dudar',
+  email: 'admin@itproger.com',
+  isAdmin: true
+})
+const ratings = ref(0)
+
+
+// import HelloWorld from './components/HelloWorld.vue'
+// import TheWelcome from './components/TheWelcome.vue'
+</script>
+```
+```html
+<template>
+  
+  <header>
+    <p>Привет, {{ user.name }}</p>
+    <p>Твой рейтинг: {{ ratings }}</p>
+    <button @click="ratings++"> Увеличить рейтинг</button>
+  </header>
+  
+  
+  <!-- <header>
+    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+
+    <div class="wrapper">
+      <HelloWorld msg="You did it!" />
+    </div>
+  </header>
+
+  <main>
+    <TheWelcome />
+  </main> -->
+</template>
+```
+## Computed
+```js
+<script setup>
+import {reactive, ref, computed} from 'vue'
+
+const user = reactive({
+  id: 1,
+  login: 'Gosha',
+  name: 'George',
+  surname: 'Dudar',
+  email: 'admin@itproger.com',
+  isAdmin: true
+})
+const ratings = ref(0)
+const fullName = computed(() => `${user.name} ${user.surname}`) 
+
+</script>
+```
+
+```html
+<template>
+  <header>
+    <p>Привет, {{ user.name }}</p>
+    <h2>{{ fullName }}</h2>
+    <p>Твой рейтинг: {{ ratings }}</p>
+    <button @click="ratings++"> Увеличить рейтинг</button>
+  </header>
+  
+</template>
+```
+
+## Метод addRating
+
+```js
+let ratings = ref(0)
+const addRating = () => `${ratings.value++}`
+```
+```html
+<template>
+	Твой рейтинг: {{ ratings }}<br>
+	<button @click="addRating"> Увеличить рейтинг</button>
+</template>
+```
+
+## Метод onMounted
+
+Применяется при загрузке страницы
+
+```js
+import {reactive, ref, computed, onMounted} from 'vue'
+let ratings = ref(0)
+onMounted(() => ratings.value++)
+```
+```html
+<template>
+	Твой рейтинг: {{ ratings }}<br>
+	<button @click="addRating"> Увеличить рейтинг</button>
+</template>
+```
+## Watch
+
+Отслеживает изменения
+
+```js
+import {reactive, ref, computed, onMounted, watch} from 'vue'
+let ratings = ref(0)
+watch(ratings,(newValue, oldValue) => {
+	console.log(`Новое значение: ${newValue}, старое значение ${oldValue}`)
+})
+```
+```html
+<template>
+  <header>
+    <div>Привет, {{ user.name }}</div>
+    <div>{{ fullName }}</div>
+    Твой рейтинг: {{ ratings }}
+    <button @click="addRating"> Поставить лайк</button>
+  </header>
+  
+</template>
+```
+
+# Создание компонента
+
+Копируем из App.vue всё в components/UserInfo.vue. Удаляем весь JS и html[^2] в App.vue и добавляем следующие строки:
+
+App.vue
+```js
+import UserInfo from './components/UserInfo.vue'
+```
+```html
+<template>
+  <UserInfo/>
+</template>
+```
+
 [^1]: script setup - синтаксический сахар над export default
-[^2]: data/methods
+[^2]: кроме `<template></template>`
