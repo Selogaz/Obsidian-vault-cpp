@@ -1,0 +1,125 @@
+---
+tags:
+  - category/js
+  - category/html
+  - category/css
+  - source/article/paper
+  - mark/log/conspectus
+aliases:
+status: 🟦
+source:
+  - "[[full stack itproger]]"
+start: 2026-01-26T00:10:21+03:00
+end:
+next:
+url:
+created: 2026-01-26T00:10:21+03:00
+updated: 2026-01-26T00:10:21+03:00
+---
+
+> [!toc]+
+> ```table-of-contents
+> ```
+
+# Node JS и npm
+
+Установить node js LTS - https://nodejs.org
+
+Следующие команды вводить в папке проекта:
+
+# DEPRECATED
+
+```zsh
+npm install -g @vue/cli
+```
+
+vue/cli больше не поддерживается, нужно использовать vite
+
+# Установка vue + vite
+
+```zsh
+npm create vue@latest
+
+Project name (target directory):
+│  my-vue-app
+│
+◇  Select features to include in your project: (↑/↓ to navigate, space to select, a to toggle all, enter to confirm)
+│  Pinia (state management), ESLint (error prevention), Prettier (code formatting)
+│
+◇  Select experimental features to include in your project: (↑/↓ to navigate, space to select, a to toggle all, enter
+to confirm)
+│  none
+│
+◇  Skip all example code and start with a blank Vue project?
+│  No
+```
+
+## Запуск проекта
+
+```zsh
+cd my-vue-app
+npm install
+npm run format
+npm run dev
+```
+
+## Чето про typescript
+
+Надо добавить в файл jsconfig.json, иначе ошибку видит
+```json
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM"],
+```
+
+# Папки в проекте
+
+## src - для разработки
+
+### App.vue
+
+внутрь переменной msg передается текст
+```html
+<HelloWorld msg="Welcome"/>
+```
+
+#### script setup
+
+Подключение компонентов
+
+вместо `export default` используется `<script setup>` - автоматически делает компонент "экспортируемым". [^1]
+Было:
+```js
+export default {
+  setup() {
+    // ваши импорты и логика
+    return { /* всё, что нужно для шаблона */ }
+  },
+  components: { HelloWorld }
+}
+```
+Стало:
+```js
+<script setup>
+import HelloWorld from './components/HelloWorld.vue'
+</script>
+```
+
+- 🤖 Вроде бы все это часть [[js Composition API vs Options API|Composition API]]
+
+#### template
+Тут находится html код. Здесь используются компоненты
+
+#### style scoped
+Тут css. Scoped - css применяется только к этому компоненту, а не сразу ко всем.
+
+
+### components/
+
+
+
+## public - продакшн?
+Только эту папку можно поместить на сервер
+
+[^1]: script setup - синтаксический сахар над export default
+[^2]: data/methods
