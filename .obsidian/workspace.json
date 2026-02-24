@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/full stack itproger.md",
+                "file": "home/index.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "full stack itproger"
+              "title": "index"
             }
           },
           {
-            "id": "abec0570f8f9761d",
+            "id": "4ee5a28bc06b2681",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/additions/full stack itproger - conspectuses.md",
+                "file": "projects/Подготовка к ЕГЭ.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,17 +52,17 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "full stack itproger - conspectuses"
+              "title": "Подготовка к ЕГЭ"
             }
           },
           {
-            "id": "cffd7b9043b2b025",
+            "id": "2d08e0fbb312fc9c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/additions/conspectuses/Vue CLI, отдельные vue файлы.md",
-                "mode": "source",
+                "file": "base/categories/study.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -76,16 +76,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Vue CLI, отдельные vue файлы"
+              "title": "study"
             }
           },
           {
-            "id": "191dfe65795ddc30",
+            "id": "e0616f4eef177a25",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/additions/full stack itproger - practice.md",
+                "file": "periodic/daily/2026-02-23.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,11 +100,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "full stack itproger - practice"
+              "title": "2026-02-23"
+            }
+          },
+          {
+            "id": "c1bbbbd8b84ab05c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home/help/hotkeys.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "hotkeys"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -169,13 +193,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "base/additions/conspectuses/Vue CLI, отдельные vue файлы.md",
+                "file": "projects/Подготовка к ЕГЭ.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Vue CLI, отдельные vue файлы"
+              "title": "Outline of Подготовка к ЕГЭ"
             }
           },
           {
@@ -235,45 +259,45 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "cffd7b9043b2b025",
+  "active": "4ee5a28bc06b2681",
   "lastOpenFiles": [
-    "base/additions/full stack itproger - conspectuses.md",
-    "base/additions/conspectuses/Vue CLI, отдельные vue файлы.md",
-    "base/additions/full stack itproger - practice.md",
-    "base/notes/DATE_2026-01-26 TIME_15-42-23.md",
-    "base/notes/js Composition API vs Options API.md",
-    "base/additions/conspectuses/Фильтры, компоненты и атрибуты.md",
-    "base/additions/conspectuses/Создание проекта с Vue JS.md",
-    "base/additions/conspectuses/LocalStorage.md",
-    "base/additions/conspectuses/Генераторы в JS.md",
-    "base/additions/conspectuses/Proxy в JS.md",
-    "periodic/daily/2026-01-25.md",
+    "base/categories/study.md",
+    "periodic/daily/2026-02-23.md",
+    "projects/Подготовка к ЕГЭ.md",
+    "files/Подготовка к ЕГЭ 2026-02-24-2.png",
+    "files/Подготовка к ЕГЭ 2026-02-24-1.png",
+    "home/index.md",
+    "files/Подготовка к ЕГЭ 2026-02-24.png",
+    "periodic/statuses/inbox.md",
+    "home/help/hotkeys.md",
+    "periodic/daily/2026-02-22.md",
+    "files/Подготовка к ЕГЭ 2026-02-23.png",
+    "base/categories/productivity.md",
+    "projects/Мои LLM.md",
+    "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
+    "base/categories/java.md",
     "sources/full stack itproger.md",
+    "base/additions/full stack itproger - conspectuses.md",
+    "base/categories/js.md",
+    "files/Мои LLM 2026-02-22.png",
+    "base/notes/КЭГЭ.md",
+    "base/notes/image llm.md",
+    "base/categories/LLM.md",
+    "periodic/daily/2026-02-20.md",
+    "periodic/daily/2026-02-21.md",
+    "periodic/daily/2026-02-19.md",
+    "periodic/weekly/2026-W09.md",
+    "periodic/daily/2026-02-28.md",
+    "base/notes/2026-02-23.md",
+    "files/Подготовка к ЕГЭ 2026-02-21-2.png",
+    "files/Подготовка к ЕГЭ 2026-02-21-1.png",
+    "files/Подготовка к ЕГЭ 2026-02-21.png",
+    "periodic/weekly/2026-W08.md",
+    "periodic/monthly/2026-03.md",
+    "files/Подготовка к ЕГЭ 2026-02-19-1.png",
+    "files/Подготовка к ЕГЭ 2026-02-19.png",
     "home/databases/sources.base",
-    "projects/Ввод через нижнее подчеркивание, а вывод через пробел с помощью Proxy.md",
-    "base/additions/conspectuses/Промисы (Promise).md",
-    "base/additions/conspectuses/Функции и замыкания.md",
-    "base/additions/conspectuses/Прототипы в JS.md",
-    "base/additions/conspectuses/ECMAScript и Babel.md",
-    "base/additions/conspectuses/Модули в JS.md",
-    "projects/Форма комментариев на JS.md",
-    "projects/Практика по медиа-запросам в CSS.md",
-    "home/vault statistics.md",
-    "base/additions/conspectuses/AJAX.md",
-    "base/notes/js async.md",
-    "projects/прпр AJAX.md",
-    "projects/прпр События в JS.md",
-    "projects/Практика по JS часть 2.md",
     "projects",
-    "files/css flexbox 2026-01-21.png",
-    "files/Анимация, адаптивность и flexbox 2026-01-21-2.png",
-    "files/Анимация, адаптивность и flexbox 2026-01-21-1.png",
-    "files/Анимация, адаптивность и flexbox 2026-01-21.png",
-    "files/full stack itproger 2026-01-21-4.png",
-    "files/full stack itproger 2026-01-21-3.png",
-    "files/full stack itproger 2026-01-21-2.png",
-    "files/full stack itproger 2026-01-21-1.png",
-    "files/full stack itproger 2026-01-21.png",
     "periodic/2026.canvas",
     "periodic/monthly",
     "periodic/2025.canvas",
@@ -287,7 +311,6 @@
     "periodic/tasks (grouped by time).canvas",
     "home/databases/high-notes.base",
     "home/databases/people.base",
-    "files/test.png",
     "base/canvases/Прогноз нагрузки на серверы на основе исторических данных.canvas",
     "base/canvases/Диаграмма распределения пиковых нагрузок.canvas",
     "base/canvases/Архитектура для платформы предсказывающую нагрузку на серверы.canvas",

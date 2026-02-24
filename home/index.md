@@ -15,17 +15,25 @@ cssclasses:
 
 # Knowledge areas
 
+- [[study]]
+	- [[Поступление в вуз]]
+	- [[Подготовка к ЕГЭ]]
 - [[programming]]
 	- [[html]]
 	- [[css]]
 	- [[js]]
 	-  [[java]]
-
+- [[productivity]]
+- [[LLM]]
+	- [[Мои LLM]]
 ----
 - [[work]]
 - [[computer science]]
 - [[health]]
 - [[games]]
+	- [[ДК 335]]
+
+
 - [[obsidian]]
 # Contexts
 

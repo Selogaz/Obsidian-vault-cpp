@@ -1,5 +1,6 @@
 ---
 tags:
+  - status/wip
   - source/book
   - category/java
 aliases: []
@@ -14,7 +15,7 @@ start: 2025-05-31T20:58:17+03:00
 end:
 total_hours: 0
 created: 2025-05-31T20:58:17+03:00
-updated: 2026-01-14T00:25:24+03:00
+updated: 2026-02-12T10:32:05+03:00
 ---
 
 - [[введение в книгу Федора Урванова по спрингу]]

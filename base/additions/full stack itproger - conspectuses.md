@@ -1,7 +1,7 @@
 ---
 tags:
   - mark/addition/aggregator
-updated: 2026-01-26T00:10:22+03:00
+updated: 2026-01-30T10:35:39+03:00
 ---
 
 # Html
@@ -28,8 +28,15 @@ updated: 2026-01-26T00:10:22+03:00
 [[Proxy в JS]]
 [[Генераторы в JS]]
 [[LocalStorage]]
+[[SVG]]
 
 ## Vue js
 [[Создание проекта с Vue JS]]
 [[Фильтры, компоненты и атрибуты]]
 [[Vue CLI, отдельные vue файлы]]
+[[Дальнейшая верстка компонентов]]
+[[Создание форм в Vue]]
+
+# TailwindCSS
+[[css подключение TailwindCSS к vite проекту]]
+[[css добавление своего цвета в TailwindCSS]]
