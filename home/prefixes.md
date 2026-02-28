@@ -30,6 +30,8 @@ work – w
 obsidian – obs
 health – h
 games – g
+study – s
+linux – l
 
 
 ```yaml

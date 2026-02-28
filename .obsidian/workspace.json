@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home/index.md",
+                "file": "sources/How Linux Works.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,107 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "4ee5a28bc06b2681",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "projects/Подготовка к ЕГЭ.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Подготовка к ЕГЭ"
-            }
-          },
-          {
-            "id": "2d08e0fbb312fc9c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/categories/study.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "study"
-            }
-          },
-          {
-            "id": "e0616f4eef177a25",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "periodic/daily/2026-02-23.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2026-02-23"
-            }
-          },
-          {
-            "id": "c1bbbbd8b84ab05c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "home/help/hotkeys.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "hotkeys"
+              "title": "How Linux Works"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -193,13 +96,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/Подготовка к ЕГЭ.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Подготовка к ЕГЭ"
+              "title": "Outline"
             }
           },
           {
@@ -243,7 +145,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 348.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -259,43 +162,44 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4ee5a28bc06b2681",
+  "active": "999181858d180e22",
   "lastOpenFiles": [
-    "base/categories/study.md",
-    "periodic/daily/2026-02-23.md",
+    "sources/How Linux Works.md",
     "projects/Подготовка к ЕГЭ.md",
+    "base/categories/linux.md",
+    "home/index.md",
+    "files/Подготовка к ЕГЭ 2026-02-27-2.png",
+    "files/Подготовка к ЕГЭ 2026-02-27-1.png",
+    "files/Подготовка к ЕГЭ 2026-02-27.png",
+    "sources/flowing-abbyss.md",
+    "base/categories/obsidian.md",
+    "periodic/daily/2026-02-26.md",
+    "home/prefixes.md",
+    "files/flowing-abbyss 2026-02-26.png",
+    "base/categories/study.md",
+    "base/categories/productivity.md",
+    "home/fleetings.md",
+    "sources/Qwen.md",
+    "base/notes/мета-заметка.md",
+    "files/Подготовка к ЕГЭ 2026-02-26-2.png",
+    "files/Подготовка к ЕГЭ 2026-02-26-1.png",
+    "files/Подготовка к ЕГЭ 2026-02-26.png",
+    "periodic/daily/2026-02-24.md",
+    "base/_hierarchy/pacman commands.md",
+    "base/_hierarchy/плейлисты и способы поиска музыки.md",
+    "projects/pacman commands.md",
+    "base/notes/установка из .zst.md",
+    "home/help/hotkeys.md",
+    "files/Подготовка к ЕГЭ 2026-02-25.png",
+    "base/notes/Информатика А2 сложная версия про таблицу истинности.md",
+    "base/notes/Математика А3 найти высоту цилиндра.md",
+    "base/notes/Математика А3 найти образующую конуса.md",
+    "base/notes/Найти образующую конуса, около которого описана сфера.md",
+    "base/notes/Найти высоту правильной шестиугольной пирамиды.md",
+    "base/notes/Математика А3 Найти высоту цилиндра, около которого описан параллелепипед.md",
+    "files/Перевод песен In Flames_ перевод песни Paralyzed, текст песни. Лингво-лаборатория Амальгама..pdf",
     "files/Подготовка к ЕГЭ 2026-02-24-2.png",
     "files/Подготовка к ЕГЭ 2026-02-24-1.png",
-    "home/index.md",
-    "files/Подготовка к ЕГЭ 2026-02-24.png",
-    "periodic/statuses/inbox.md",
-    "home/help/hotkeys.md",
-    "periodic/daily/2026-02-22.md",
-    "files/Подготовка к ЕГЭ 2026-02-23.png",
-    "base/categories/productivity.md",
-    "projects/Мои LLM.md",
-    "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
-    "base/categories/java.md",
-    "sources/full stack itproger.md",
-    "base/additions/full stack itproger - conspectuses.md",
-    "base/categories/js.md",
-    "files/Мои LLM 2026-02-22.png",
-    "base/notes/КЭГЭ.md",
-    "base/notes/image llm.md",
-    "base/categories/LLM.md",
-    "periodic/daily/2026-02-20.md",
-    "periodic/daily/2026-02-21.md",
-    "periodic/daily/2026-02-19.md",
-    "periodic/weekly/2026-W09.md",
-    "periodic/daily/2026-02-28.md",
-    "base/notes/2026-02-23.md",
-    "files/Подготовка к ЕГЭ 2026-02-21-2.png",
-    "files/Подготовка к ЕГЭ 2026-02-21-1.png",
-    "files/Подготовка к ЕГЭ 2026-02-21.png",
-    "periodic/weekly/2026-W08.md",
-    "periodic/monthly/2026-03.md",
-    "files/Подготовка к ЕГЭ 2026-02-19-1.png",
-    "files/Подготовка к ЕГЭ 2026-02-19.png",
     "home/databases/sources.base",
     "projects",
     "periodic/2026.canvas",
@@ -310,7 +214,6 @@
     "periodic/tasks (grouped by effort).canvas",
     "periodic/tasks (grouped by time).canvas",
     "home/databases/high-notes.base",
-    "home/databases/people.base",
     "base/canvases/Прогноз нагрузки на серверы на основе исторических данных.canvas",
     "base/canvases/Диаграмма распределения пиковых нагрузок.canvas",
     "base/canvases/Архитектура для платформы предсказывающую нагрузку на серверы.canvas",
