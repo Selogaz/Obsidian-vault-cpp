@@ -68,6 +68,9 @@
   --container-map-width: var(--max-width) !important;
   --container-chart-width: var(--max-width) !important;
 }
+.wider-page {
+  --file-line-width: 70%;
+}
 .no-inline-title .inline-title,
 .no-inline-title .el-pre.mod-frontmatter.mod-ui {
   display: none;

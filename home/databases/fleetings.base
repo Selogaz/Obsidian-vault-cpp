@@ -1,22 +1,29 @@
 filters:
   and:
     - file.inFolder("base/notes")
-    - '!file.hasTag("category")'
-    - file.backlinks.length == 0
-    - file.links.length == 0
 formulas:
+  md_links_count: file.links.filter(value.asFile().ext == "md").length
   created_relative: created.relative()
   updated_relative: updated.relative()
 properties:
   file.name:
     displayName: 🔤 title
+  note.topic:
+    displayName: 💬 topic
+  note.modelKey:
+    displayName: 🧠 model
   formula.created_relative:
     displayName: 🆕 created
   formula.updated_relative:
     displayName: 🔄 updated
 views:
   - type: table
-    name: ✈️ All
+    name: 👻 Orphans
+    filters:
+      and:
+        - '!file.hasTag("category")'
+        - file.backlinks.length == 0
+        - formula.md_links_count == 0
     order:
       - file.name
       - formula.created_relative
@@ -25,7 +32,27 @@ views:
       - property: formula.created_relative
         direction: DESC
     columnSize:
-      file.name: 1500
+      file.name: 1330
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: 🤖 AI Generated
+    filters:
+      and:
+        - file.hasTag("mark/ai")
+    order:
+      - file.name
+      - topic
+      - modelKey
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.updated_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.topic: 350
+      note.modelKey: 350
       formula.created_relative: 140
       formula.updated_relative: 140
   - type: table
@@ -41,6 +68,6 @@ views:
       - property: formula.created_relative
         direction: DESC
     columnSize:
-      file.name: 1500
+      file.name: 1330
       formula.created_relative: 140
       formula.updated_relative: 140

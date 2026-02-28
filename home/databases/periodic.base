@@ -9,6 +9,7 @@ filters:
     - '!file.hasTag("#mark/ignore")'
 formulas:
   month_group: file.name.slice(0, 7)
+  year: file.name.slice(0, 4)
   updated_relative: updated.relative()
   existing_links: file.links.map(value.asFile()).filter(value.isTruthy())
 properties:
@@ -82,3 +83,76 @@ views:
     columnSize:
       file.name: 145
       note.description: 510
+  - type: table
+    name: 🇼eeks
+    filters:
+      and:
+        - file.inFolder("periodic/weekly")
+    groupBy:
+      property: formula.year
+      direction: DESC
+    order:
+      - reviewed
+      - file.name
+      - description
+      - formula.updated_relative
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 145
+      note.description: 1200
+  - type: table
+    name: 🇲onths
+    filters:
+      and:
+        - file.inFolder("periodic/monthly")
+    groupBy:
+      property: formula.year
+      direction: DESC
+    order:
+      - reviewed
+      - file.name
+      - description
+      - formula.updated_relative
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 145
+      note.description: 1200
+  - type: table
+    name: 🇶uarters
+    filters:
+      and:
+        - file.inFolder("periodic/quarterly")
+    groupBy:
+      property: formula.year
+      direction: DESC
+    order:
+      - reviewed
+      - file.name
+      - description
+      - formula.updated_relative
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 145
+      note.description: 1200
+  - type: table
+    name: 🇾ears
+    filters:
+      and:
+        - file.inFolder("periodic/yearly")
+    order:
+      - reviewed
+      - file.name
+      - description
+      - formula.updated_relative
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 145
+      note.description: 1200

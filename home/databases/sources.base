@@ -9,11 +9,19 @@ filters:
             - category.contains(link(this.file.name))
 formulas:
   type: file.tags.filter(value.startsWith("#source/"))[0].replace(/^.*\//, '')
-  kanban: if(status.contains("⚛"), "1. ⚛ Atom", if(status.contains("🟦"), "2. 🟦 In Progress", if(status.contains("🟥"), "3. 🟥 ToDo", "4. Other")))
+  kanban: if(status.contains("⚛"), "① ⚛ Atom", if(status.contains("🟦"), "② 🟦 In Progress", if(status.contains("🟥"), "③ 🟥 ToDo", "④ Other")))
+  scientificity: if(scientificity.contains("🅰️"), "① 🅰️ primary research", if(scientificity.contains("🅱️"), "② 🅱️ secondary research", if(scientificity.contains("👓"), "③ 👓 expert/industry", if(scientificity.contains("📢"), "④ 📢 popular science/journalism", if(scientificity.contains("💬"), "⑤ 💬 opinion/unverified", "⑥ Other")))))
+  rating: if(rating.contains("🌕"), "① 🌕 masterpiece", if(rating.contains("🌔"), "② 🌔 great", if(rating.contains("🌓"), "③ 🌓 good", if(rating.contains("🌒"), "④ 🌒 mediocre", if(rating.contains("🌑"), "⑤ 🌑 poor", "⑥ Other")))))
   backlinks: file.backlinks.length
   outlinks: file.links.length
   created_relative: created.relative()
   updated_relative: updated.relative()
+  category_status: if(!category.isEmpty(), "✅", "❌")
+  category_type_valid: if(category.isEmpty(), "✅", if(list(category).filter(value.asFile().hasTag("system/category")).length == list(category).length, "✅", "❌"))
+  meta_type_valid: if(meta.isEmpty(), "✅", if(list(meta).filter(value.asFile().hasTag("system/high/meta")).length == list(meta).length, "✅", "❌"))
+  problem_type_valid: if(problem.isEmpty(), "✅", if(list(problem).filter(value.asFile().hasTag("system/high/problem")).length == list(problem).length, "✅", "❌"))
+  creator_type_valid: if(creator.isEmpty(), "✅", if(list(creator).filter(value.asFile().tags.filter(value.startsWith("#creator/") || value.startsWith("#contact/")).length > 0).length == list(creator).length, "✅", "❌"))
+  production_type_valid: if(production.isEmpty(), "✅", if(list(production).filter(value.asFile().tags.filter(value.startsWith("#production/")).length > 0).length == list(production).length, "✅", "❌"))
 properties:
   formula.type:
     displayName: 🗄️ type
@@ -53,9 +61,21 @@ properties:
     displayName: 🆕 created
   formula.updated_relative:
     displayName: 🔄 updated
+  formula.category_status:
+    displayName: structure
+  formula.category_type_valid:
+    displayName: type
+  formula.meta_type_valid:
+    displayName: 🏷️
+  formula.problem_type_valid:
+    displayName: 🏷️
+  formula.creator_type_valid:
+    displayName: 🏷️
+  formula.production_type_valid:
+    displayName: 🏷️
 views:
   - type: table
-    name: 🗃️ All (short)
+    name: "📊 All: Short View"
     order:
       - file.name
       - addition
@@ -70,7 +90,9 @@ views:
       - production
       - url
     sort:
-      - property: created
+      - property: formula.kanban
+        direction: ASC
+      - property: formula.created_relative
         direction: DESC
     limit: 28
     columnSize:
@@ -81,7 +103,7 @@ views:
       note.scientificity: 1
       note.rating: 1
   - type: table
-    name: 🗃️ All (extended)
+    name: "📊 All: Extended View"
     order:
       - formula.backlinks
       - formula.outlinks
@@ -101,7 +123,9 @@ views:
       - production
       - url
     sort:
-      - property: created_relative
+      - property: formula.kanban
+        direction: ASC
+      - property: formula.created_relative
         direction: DESC
     limit: 28
     columnSize:
@@ -116,7 +140,14 @@ views:
       formula.created_relative: 140
       formula.updated_relative: 140
   - type: table
-    name: 📋 Kanban
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+  - type: table
+    name: "📋 Workflow: Kanban (v)"
     filters:
       or:
         - status.contains("⚛")
@@ -130,6 +161,13 @@ views:
       - addition
       - zotero
       - status
+      - scientificity
+      - rating
+      - category
+      - meta
+      - problem
+      - creator
+      - production
       - url
     sort:
       - property: priority
@@ -137,28 +175,85 @@ views:
     columnSize:
       file.name: 530
       note.addition: 90
+      note.zotero: 1
       note.status: 1
-  - type: cards
-    name: 🖼️ covers
-    filters:
-      and:
-        - cover != null
-        - file.tags.containsAny("source/cinematic/movie", "source/cinematic/anime", "source/cinematic/series")
+      note.scientificity: 1
+      note.rating: 1
+  - type: board-view
+    name: "📋 Workflow: Kanban (h)"
     order:
       - file.name
+      - formula.type
+      - scientificity
+      - category
+    groupProperty: note.status
+    hideEmptyGroups: false
+    hiddenGroups:
+      - 💡
+      - 🧠
+      - 🖍
+      - 🔎
+      - 📦
+      - 📋
+      - ⚙️
+      - 📢
+      - Empty Group
+      - ❄
+      - ⬛
+      - 🟩
+    groupOrder:
+      - 🟥
+      - 🟦
+      - ⚛
+    colorCells: false
+    colorHeaders: true
+    colorCards: true
+    hideEmptySubGroups: true
+    iconProperty: note.status
+  - type: table
+    name: "🗄️ Workflow: Group By Type"
+    filters:
+      or:
+        - status.contains("⚛")
+        - status.contains("🟦")
+        - status.contains("🟥")
+    groupBy:
+      property: formula.type
+      direction: ASC
+    order:
+      - file.name
+      - addition
+      - zotero
+      - status
+      - scientificity
+      - rating
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - url
     sort:
+      - property: formula.kanban
+        direction: ASC
       - property: formula.created_relative
         direction: DESC
-    limit: 27
-    image: note.cover
-    imageFit: contain
-    imageAspectRatio: 1.4
-  - type: list
-    name: 📋 List
-    markers: bullet
-    indentProperties: true
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.zotero: 1
+      note.status: 1
+      note.scientificity: 1
+      note.rating: 1
   - type: table
-    name: 🟥 ToDo
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+  - type: table
+    name: "🟥 Status: To Do"
     filters:
       and:
         - status.contains("🟥")
@@ -173,6 +268,7 @@ views:
       - meta
       - problem
       - creator
+      - production
       - url
     sort:
       - property: formula.created_relative
@@ -185,7 +281,7 @@ views:
       note.scientificity: 1
       note.rating: 1
   - type: table
-    name: 🟦 WIP
+    name: "🟦 Status: In Progress"
     filters:
       or:
         - status.contains("🟦")
@@ -201,6 +297,7 @@ views:
       - meta
       - problem
       - creator
+      - production
       - url
     sort:
       - property: status
@@ -215,7 +312,7 @@ views:
       note.scientificity: 1
       note.rating: 1
   - type: table
-    name: 🟩 Done
+    name: "🟩 Status: Done"
     filters:
       and:
         - status.contains("🟩")
@@ -230,6 +327,7 @@ views:
       - meta
       - problem
       - creator
+      - production
       - url
     sort:
       - property: formula.created_relative
@@ -241,3 +339,359 @@ views:
       note.status: 1
       note.scientificity: 1
       note.rating: 1
+  - type: table
+    name: "⬛ Status: Drop"
+    filters:
+      and:
+        - status.contains("⬛")
+    order:
+      - file.name
+      - addition
+      - zotero
+      - status
+      - scientificity
+      - rating
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - url
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.zotero: 1
+      note.status: 1
+      note.scientificity: 1
+      note.rating: 1
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+  - type: table
+    name: "🅰️ Group: By Scientificity"
+    groupBy:
+      property: formula.scientificity
+      direction: ASC
+    order:
+      - file.name
+      - addition
+      - zotero
+      - status
+      - scientificity
+      - rating
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - url
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: status
+        direction: DESC
+      - property: formula.rating
+        direction: ASC
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.zotero: 1
+      note.status: 1
+      note.scientificity: 1
+      note.rating: 1
+  - type: table
+    name: "🌕 Group: By Rating"
+    groupBy:
+      property: formula.rating
+      direction: ASC
+    order:
+      - file.name
+      - addition
+      - zotero
+      - status
+      - scientificity
+      - rating
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - url
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: status
+        direction: DESC
+      - property: formula.scientificity
+        direction: ASC
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.zotero: 1
+      note.status: 1
+      note.scientificity: 1
+      note.rating: 1
+  - type: table
+    name: "🗺️ Group: By Category"
+    groupBy:
+      property: category
+      direction: ASC
+    order:
+      - file.name
+      - addition
+      - zotero
+      - status
+      - scientificity
+      - rating
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - url
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: status
+        direction: DESC
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.zotero: 1
+      note.status: 1
+      note.scientificity: 1
+      note.rating: 1
+  - type: table
+    name: "🔎 Group: By Meta"
+    groupBy:
+      property: meta
+      direction: ASC
+    order:
+      - file.name
+      - addition
+      - zotero
+      - status
+      - scientificity
+      - rating
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - url
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: status
+        direction: DESC
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.zotero: 1
+      note.status: 1
+      note.scientificity: 1
+      note.rating: 1
+  - type: table
+    name: "⚡ Group: By Problem"
+    groupBy:
+      property: problem
+      direction: ASC
+    order:
+      - file.name
+      - addition
+      - zotero
+      - status
+      - scientificity
+      - rating
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - url
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: status
+        direction: DESC
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.zotero: 1
+      note.status: 1
+      note.scientificity: 1
+      note.rating: 1
+  - type: table
+    name: "👨 Group: By Creator"
+    groupBy:
+      property: creator
+      direction: ASC
+    order:
+      - file.name
+      - addition
+      - zotero
+      - status
+      - scientificity
+      - rating
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - url
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: status
+        direction: DESC
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.zotero: 1
+      note.status: 1
+      note.scientificity: 1
+      note.rating: 1
+  - type: table
+    name: "🏬 Group: By Production"
+    groupBy:
+      property: production
+      direction: ASC
+    order:
+      - file.name
+      - addition
+      - zotero
+      - status
+      - scientificity
+      - rating
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - url
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: status
+        direction: DESC
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.zotero: 1
+      note.status: 1
+      note.scientificity: 1
+      note.rating: 1
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+  - type: cards
+    name: "🖼️ Gallery: Covers"
+    filters:
+      and:
+        - cover != null
+    groupBy:
+      property: formula.type
+      direction: ASC
+    order:
+      - file.name
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    image: note.cover
+    imageFit: contain
+    imageAspectRatio: 1.4
+  - type: cards
+    name: "🖼️ Gallery: Genres"
+    filters:
+      and:
+        - cover != null
+        - genre != null
+    groupBy:
+      property: genre
+      direction: ASC
+    order:
+      - file.name
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    image: note.cover
+    imageFit: contain
+    imageAspectRatio: 1.4
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+  - type: table
+    name: ✅ Structure Validation
+    filters:
+      or:
+        - formula.category_type_valid == "❌"
+        - formula.meta_type_valid == "❌"
+        - formula.problem_type_valid == "❌"
+        - formula.creator_type_valid == "❌"
+        - formula.production_type_valid == "❌"
+    order:
+      - file.name
+      - formula.category_type_valid
+      - category
+      - formula.meta_type_valid
+      - meta
+      - formula.problem_type_valid
+      - problem
+      - formula.creator_type_valid
+      - creator
+      - formula.production_type_valid
+      - production
+    sort:
+      - property: formula.category_type_valid
+        direction: DESC
+      - property: formula.meta_type_valid
+        direction: DESC
+      - property: formula.problem_type_valid
+        direction: DESC
+      - property: formula.creator_type_valid
+        direction: DESC
+      - property: formula.production_type_valid
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 350
+      formula.category_type_valid: 70
+      formula.meta_type_valid: 1
+      formula.problem_type_valid: 1
+      formula.creator_type_valid: 1
+      formula.production_type_valid: 1
+      note.category: 180
+      note.meta: 180
+      note.problem: 180
+      note.creator: 180
+      note.production: 180

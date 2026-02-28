@@ -5,7 +5,7 @@ icon: clipboard-list
 tagNames:
 excludes:
 extends:
-version: "2.533"
+version: "2.536"
 fields:
   - id: uH83LG
     name: cover
@@ -43,7 +43,7 @@ fields:
   - id: u93aRN
     name: url
     options:
-      template: "'\"[{{site}}]({{url}})\"'"
+      template: "{{url}}"
     type: Input
     path: ""
   - name: aliases

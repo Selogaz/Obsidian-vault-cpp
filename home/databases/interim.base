@@ -25,14 +25,16 @@ properties:
 views:
   - type: table
     name: 🗣️ All
+    groupBy:
+      property: project
+      direction: ASC
     order:
-      - project
-      - formula.type
       - file.name
+      - formula.type
       - attribute
       - input
       - output
       - description
     sort:
-      - property: project
+      - property: file.name
         direction: ASC

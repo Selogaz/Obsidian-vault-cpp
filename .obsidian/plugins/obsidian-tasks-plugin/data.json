@@ -1,5 +1,5 @@
 {
-  "presets": {},
+  "includes": {},
   "globalQuery": "path does not include files/\npath does not include classes/\npath does not include home/\npath does not include templates/",
   "globalFilter": "",
   "removeGlobalFilter": false,

@@ -29,9 +29,10 @@
   "obsidian-frontmatter-sync",
   "automatic-table-of-contents",
   "obsidian-excalidraw-plugin",
-  "copy-url-in-preview",
   "janitor",
   "obsidian-to-anki-plugin",
   "obsidian-zoom",
-  "obsidian42-brat"
+  "obsidian42-brat",
+  "query-control",
+  "board-view"
 ]

@@ -21,7 +21,8 @@
                 "id": "77730487-f798-4dd2-bf69-5ba67de88c47",
                 "path": "templates/openFile.js",
                 "settings": {
-                  "File Path": "home/index.md"
+                  "File Path": "home/index.md",
+                  "View Mode": "preview"
                 }
               }
             ]
@@ -43,7 +44,8 @@
                 "id": "feabc337-949d-47aa-8074-480e37ccf8bb",
                 "path": "templates/openFile.js",
                 "settings": {
-                  "File Path": "home/fleetings.md"
+                  "File Path": "home/fleetings.md",
+                  "View Mode": "preview"
                 }
               }
             ]
@@ -66,7 +68,8 @@
                 "id": "2a9c379d-4a42-4305-88ea-dc4b1fcaeb49",
                 "path": "templates/openFile.js",
                 "settings": {
-                  "File Path": "home/databases/notes.base"
+                  "File Path": "home/databases/notes.base",
+                  "View Mode": "default"
                 }
               }
             ]
@@ -87,7 +90,8 @@
                 "id": "43f985a7-ff94-401f-aa8e-a7b85bb24e98",
                 "path": "templates/openFile.js",
                 "settings": {
-                  "File Path": "home/databases/sources.base"
+                  "File Path": "home/databases/sources.base",
+                  "View Mode": "default"
                 }
               }
             ]
@@ -109,7 +113,8 @@
                 "id": "2148c5f9-7731-4940-96bf-3d74416b188f",
                 "path": "templates/openFile.js",
                 "settings": {
-                  "File Path": "home/databases/projects.base"
+                  "File Path": "home/databases/projects.base",
+                  "View Mode": "default"
                 }
               }
             ]
@@ -153,7 +158,8 @@
                 "id": "1053e3dc-cc4f-41af-b981-3ca2b9727dde",
                 "path": "templates/openFile.js",
                 "settings": {
-                  "File Path": "home/databases/high-notes.base"
+                  "File Path": "home/databases/high-notes.base",
+                  "View Mode": "default"
                 }
               }
             ]
@@ -363,7 +369,7 @@
                   "activeFileWritePosition": "cursor"
                 }
               ],
-              "collapsed": false
+              "collapsed": true
             },
             {
               "id": "00cab3c4-42d0-42de-b4b7-8742c64d0b66",
@@ -1281,7 +1287,8 @@
                     "id": "867ea4c7-8985-40e4-988d-cdb731dd6b4f",
                     "path": "templates/openFile.js",
                     "settings": {
-                      "File Path": "periodic/statuses/inbox.md"
+                      "File Path": "periodic/statuses/inbox.md",
+                      "View Mode": "preview"
                     }
                   }
                 ]
@@ -1303,7 +1310,8 @@
                     "id": "b1aa4148-1f3a-4953-af70-6f17375f0f98",
                     "path": "templates/openFile.js",
                     "settings": {
-                      "File Path": "periodic/today.md"
+                      "File Path": "periodic/today.md",
+                      "View Mode": "preview"
                     }
                   }
                 ]
@@ -1325,7 +1333,8 @@
                     "id": "d10ef878-456e-4577-b5be-696a21a7daf2",
                     "path": "templates/openFile.js",
                     "settings": {
-                      "File Path": "periodic/upcoming.md"
+                      "File Path": "periodic/upcoming.md",
+                      "View Mode": "preview"
                     }
                   }
                 ]
@@ -1347,7 +1356,8 @@
                     "id": "f61c3e6a-55da-4f64-9ecb-d313f6e05ced",
                     "path": "templates/openFile.js",
                     "settings": {
-                      "File Path": "periodic/calendar.md"
+                      "File Path": "periodic/calendar.md",
+                      "View Mode": "preview"
                     }
                   }
                 ]
@@ -1369,7 +1379,8 @@
                     "id": "d69f5cc0-2646-4ace-81d6-762ec8ad1b14",
                     "path": "templates/openFile.js",
                     "settings": {
-                      "File Path": "periodic/priority.md"
+                      "File Path": "periodic/priority.md",
+                      "View Mode": "preview"
                     }
                   }
                 ]
@@ -1729,7 +1740,7 @@
               "id": "05b80424-2829-4535-9711-18e909b90f40",
               "name": "🇩 daily",
               "type": "Macro",
-              "command": false,
+              "command": true,
               "runOnStartup": false,
               "macro": {
                 "name": "🇩 daily",
@@ -1745,7 +1756,7 @@
                     "name": "Wait",
                     "type": "Wait",
                     "id": "9922944f-9f02-44b9-a1f9-364aec1a53ad",
-                    "time": 1200
+                    "time": 500
                   },
                   {
                     "name": "cursor",
@@ -1825,7 +1836,7 @@
                     "name": "Wait",
                     "type": "Wait",
                     "id": "56f84d0e-9c21-4c9a-88ff-b5323dab17b6",
-                    "time": 1200
+                    "time": 500
                   },
                   {
                     "name": "cursor",
@@ -1907,7 +1918,7 @@
                     "name": "Wait",
                     "type": "Wait",
                     "id": "edb1b052-d99d-46c3-8178-f02b50efe1d2",
-                    "time": 1200
+                    "time": 500
                   },
                   {
                     "name": "cursor",
@@ -1989,7 +2000,7 @@
                     "name": "Wait",
                     "type": "Wait",
                     "id": "de1d2a74-b3da-4801-8812-dc772c4a4200",
-                    "time": 1200
+                    "time": 500
                   },
                   {
                     "name": "cursor",
@@ -2071,7 +2082,7 @@
                     "name": "Wait",
                     "type": "Wait",
                     "id": "793b527b-cfa2-4aef-a577-043946317a39",
-                    "time": 1200
+                    "time": 500
                   },
                   {
                     "name": "cursor",
@@ -2148,7 +2159,8 @@
                     "id": "1e281acc-9255-4a84-a5c9-9247d8082c84",
                     "path": "templates/openFile.js",
                     "settings": {
-                      "File Path": "periodic/2026.canvas"
+                      "File Path": "periodic/2026.canvas",
+                      "View Mode": "default"
                     }
                   }
                 ]
@@ -2378,7 +2390,8 @@
                     "id": "e7562cd9-2ae9-4ee3-9295-aaf880545ef9",
                     "path": "templates/openFile.js",
                     "settings": {
-                      "File Path": "home/vault statistics.md"
+                      "File Path": "home/vault statistics.md",
+                      "View Mode": "preview"
                     }
                   }
                 ]
@@ -2400,7 +2413,8 @@
                     "id": "ab1524f2-6fd4-456d-9cfd-893a5574d1b5",
                     "path": "templates/openFile.js",
                     "settings": {
-                      "File Path": "home/help/hotkeys.md"
+                      "File Path": "home/help/hotkeys.md",
+                      "View Mode": "preview"
                     }
                   }
                 ]
@@ -2422,7 +2436,8 @@
                     "id": "e3eb7af0-cfe6-4285-aa9c-bb6bd95869db",
                     "path": "templates/openFile.js",
                     "settings": {
-                      "File Path": "home/prefixes.md"
+                      "File Path": "home/prefixes.md",
+                      "View Mode": "source"
                     }
                   }
                 ]
@@ -3296,10 +3311,12 @@
     }
   ],
   "inputPrompt": "single-line",
+  "persistInputPromptDrafts": true,
+  "useSelectionAsCaptureValue": true,
   "devMode": false,
   "templateFolderPath": "",
   "announceUpdates": "none",
-  "version": "2.9.4",
+  "version": "2.11.0",
   "globalVariables": {},
   "onePageInputEnabled": false,
   "disableOnlineFeatures": true,
@@ -3307,6 +3324,17 @@
   "showCaptureNotification": false,
   "showInputCancellationNotification": false,
   "enableTemplatePropertyTypes": false,
+  "dateAliases": {
+    "t": "today",
+    "tm": "tomorrow",
+    "yd": "yesterday",
+    "nw": "next week",
+    "nm": "next month",
+    "ny": "next year",
+    "lw": "last week",
+    "lm": "last month",
+    "ly": "last year"
+  },
   "ai": {
     "defaultModel": "Ask me",
     "defaultSystemPrompt": "As an AI assistant within Obsidian, your primary goal is to help users manage their ideas and knowledge more effectively. Format your responses using Markdown syntax. Please use the [[Obsidian]] link format. You can write aliases for the links by writing [[Obsidian|the alias after the pipe symbol]]. To use mathematical notation, use LaTeX syntax. LaTeX syntax for larger equations should be on separate lines, surrounded with double dollar signs ($$). You can also inline math expressions by wrapping it in $ symbols. For example, use $$w_{ij}^{\text{new}}:=w_{ij}^{\text{current}}+etacdotdelta_jcdot x_{ij}$$ on a separate line, but you can write \"($eta$ = learning rate, $delta_j$ = error term, $x_{ij}$ = input)\" inline.",
@@ -3360,6 +3388,8 @@
     "addDefaultAIProviders": true,
     "removeMacroIndirection": true,
     "migrateFileOpeningSettings": true,
-    "setProviderModelDiscoveryMode": true
+    "setProviderModelDiscoveryMode": true,
+    "backfillFileOpeningDefaults": true,
+    "migrateProviderApiKeysToSecretStorage": true
   }
 }

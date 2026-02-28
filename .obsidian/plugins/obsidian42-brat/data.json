@@ -1,5 +1,7 @@
 {
   "pluginList": [
+    "seventhxiv/obsidian-board-view",
+    "reply2za/obsidian-query-control",
     "flowing-abyss/obsidian-task-calendar",
     "flowing-abyss/obsidian-task-search",
     "flowing-abyss/obsidian-tag-replacer",
@@ -7,6 +9,14 @@
     "flowing-abyss/obsidian-calendar-plugin"
   ],
   "pluginSubListFrozenVersion": [
+    {
+      "repo": "seventhxiv/obsidian-board-view",
+      "version": "latest"
+    },
+    {
+      "repo": "reply2za/obsidian-query-control",
+      "version": "latest"
+    },
     {
       "repo": "flowing-abyss/obsidian-calendar-plugin",
       "version": "latest"
@@ -37,8 +47,9 @@
   "loggingVerboseEnabled": false,
   "debuggingMode": true,
   "notificationsEnabled": true,
+  "globalTokenName": "",
   "personalAccessToken": "",
-  "selectLatestPluginVersionByDefault": false,
+  "selectLatestPluginVersionByDefault": true,
   "allowIncompatiblePlugins": false,
   "ribbonIconEnabled": true
 }

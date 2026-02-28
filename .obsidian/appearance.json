@@ -12,9 +12,9 @@
     "callouts",
     "modals",
     "calendar",
-    "backlinks",
     "supercharged-links",
-    "supercharged-links-gen"
+    "supercharged-links-gen",
+    "mobile"
   ],
   "cssTheme": "Base16 Default Dark",
   "showRibbon": false,

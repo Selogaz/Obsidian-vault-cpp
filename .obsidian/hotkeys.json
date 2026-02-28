@@ -23,12 +23,24 @@
         "Alt"
       ],
       "key": "["
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "["
     }
   ],
   "app:toggle-right-sidebar": [
     {
       "modifiers": [
         "Alt"
+      ],
+      "key": "]"
+    },
+    {
+      "modifiers": [
+        "Mod"
       ],
       "key": "]"
     }
@@ -143,6 +155,13 @@
     {
       "modifiers": [
         "Alt",
+        "Shift"
+      ],
+      "key": "K"
+    },
+    {
+      "modifiers": [
+        "Ctrl",
         "Shift"
       ],
       "key": "K"
@@ -331,7 +350,6 @@
   "app:go-back": [
     {
       "modifiers": [
-        "Mod",
         "Alt"
       ],
       "key": "ArrowLeft"
@@ -339,12 +357,6 @@
     {
       "modifiers": [
         "Mod"
-      ],
-      "key": "H"
-    },
-    {
-      "modifiers": [
-        "Alt"
       ],
       "key": "ArrowLeft"
     }
@@ -352,7 +364,6 @@
   "app:go-forward": [
     {
       "modifiers": [
-        "Mod",
         "Alt"
       ],
       "key": "ArrowRight"
@@ -360,12 +371,6 @@
     {
       "modifiers": [
         "Mod"
-      ],
-      "key": "L"
-    },
-    {
-      "modifiers": [
-        "Alt"
       ],
       "key": "ArrowRight"
     }
@@ -423,6 +428,13 @@
     {
       "modifiers": [
         "Alt"
+      ],
+      "key": "P"
+    },
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
       ],
       "key": "P"
     }
@@ -489,6 +501,13 @@
     {
       "modifiers": [
         "Alt",
+        "Shift"
+      ],
+      "key": "Y"
+    },
+    {
+      "modifiers": [
+        "Mod",
         "Shift"
       ],
       "key": "Y"
@@ -728,15 +747,6 @@
       "key": "R"
     }
   ],
-  "periodic-notes:open-daily-note": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "D"
-    }
-  ],
   "editor:open-link-in-new-window": [],
   "editor:open-link-in-new-split": [],
   "various-complements:reload-custom-dictionaries": [],
@@ -869,6 +879,12 @@
     {
       "modifiers": [
         "Alt"
+      ],
+      "key": "H"
+    },
+    {
+      "modifiers": [
+        "Mod"
       ],
       "key": "H"
     }
@@ -1314,6 +1330,13 @@
         "Shift"
       ],
       "key": "I"
+    },
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "I"
     }
   ],
   "obsidian-another-quick-switcher:command-palette": [
@@ -1380,6 +1403,12 @@
         "Shift"
       ],
       "key": "F2"
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "F2"
     }
   ],
   "quickadd:choice:05ea818b-a46c-4fa2-b3cf-171caf61dcfd": [
@@ -1403,6 +1432,12 @@
     {
       "modifiers": [
         "Alt"
+      ],
+      "key": "K"
+    },
+    {
+      "modifiers": [
+        "Ctrl"
       ],
       "key": "K"
     }
@@ -1446,6 +1481,32 @@
         "Mod"
       ],
       "key": "K"
+    }
+  ],
+  "copilot:chat-open-window": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "F1"
+    }
+  ],
+  "copilot:new-chat": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "F1"
+    }
+  ],
+  "quickadd:choice:05b80424-2829-4535-9711-18e909b90f40": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "D"
     }
   ]
 }

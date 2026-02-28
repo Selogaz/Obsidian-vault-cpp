@@ -16,7 +16,7 @@ cover:
 start: 2026-02-22T13:12:48+03:00
 end:
 created: 2026-02-22T13:12:48+03:00
-updated: 2026-02-23T14:30:54+03:00
+updated: 2026-02-28T20:44:39+03:00
 ---
 
 # Description
@@ -44,3 +44,19 @@ https://github.com/lllyasviel/Fooocus?tab=readme-ov-file#linux-using-python-venv
 `python entry_with_update.py`
 
 [[image llm]]
+
+# Opencode
+
+Конфигурация:
+```zsh
+export OPENAI_API_KEY=""
+export OPENAI_BASE_URL="http://localhost:1234/v1"
+export OPENAI_MODEL="qwen2.5-7b-instruct"
+```
+
+```zsh
+opencode run \ 
+  --file .claude/skills/today/SKILL.md \
+  --file periodic/daily/2026-02-28.md \
+  -- "Создай ежедневный брифинг согласно инструкции в skills/today/SKILL.md"
+```

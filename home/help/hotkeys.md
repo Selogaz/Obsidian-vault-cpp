@@ -4,7 +4,7 @@ aliases:
 cssclasses:
   - hide-backlinks
 obsidianUIMode: preview
-icon: 🆘
+icon: ⌨️
 ---
 
 # Main menu

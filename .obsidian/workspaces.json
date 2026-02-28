@@ -6,11 +6,11 @@
         "type": "split",
         "children": [
           {
-            "id": "3c88a27705254034",
+            "id": "d4bf962253535dd4",
             "type": "tabs",
             "children": [
               {
-                "id": "999181858d180e22",
+                "id": "bda9ef25e60d256c",
                 "type": "leaf",
                 "state": {
                   "type": "empty",
@@ -41,6 +41,204 @@
                   "state": {},
                   "icon": "calendar-with-checkmark",
                   "title": "Calendar"
+                }
+              },
+              {
+                "id": "4247943d03ca86d9",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": true,
+                      "showTags": false,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [
+                        {
+                          "query": "tag:#note/basic",
+                          "color": {
+                            "a": 1,
+                            "rgb": 9486517
+                          }
+                        },
+                        {
+                          "query": "tag:#note/specific",
+                          "color": {
+                            "a": 1,
+                            "rgb": 14543214
+                          }
+                        },
+                        {
+                          "query": "tag:#system/category",
+                          "color": {
+                            "a": 1,
+                            "rgb": 3509376
+                          }
+                        },
+                        {
+                          "query": "tag:#system/supercategory",
+                          "color": {
+                            "a": 1,
+                            "rgb": 13684936
+                          }
+                        },
+                        {
+                          "query": "tag:#system/high/hierarchy",
+                          "color": {
+                            "a": 1,
+                            "rgb": 10551504
+                          }
+                        },
+                        {
+                          "query": "tag:#system/high/meta",
+                          "color": {
+                            "a": 1,
+                            "rgb": 8283336
+                          }
+                        },
+                        {
+                          "query": "tag:#system/high/problem",
+                          "color": {
+                            "a": 1,
+                            "rgb": 14266432
+                          }
+                        },
+                        {
+                          "query": "tag:#periodic",
+                          "color": {
+                            "a": 1,
+                            "rgb": 6450848
+                          }
+                        },
+                        {
+                          "query": "tag:#project/short",
+                          "color": {
+                            "a": 1,
+                            "rgb": 11898992
+                          }
+                        },
+                        {
+                          "query": "tag:#project/single",
+                          "color": {
+                            "a": 1,
+                            "rgb": 13136181
+                          }
+                        },
+                        {
+                          "query": "tag:#project/longform",
+                          "color": {
+                            "a": 1,
+                            "rgb": 6526389
+                          }
+                        },
+                        {
+                          "query": "tag:#mark/log OR tag:#mark/addition",
+                          "color": {
+                            "a": 1,
+                            "rgb": 9486517
+                          }
+                        },
+                        {
+                          "query": "tag:#source/article",
+                          "color": {
+                            "a": 1,
+                            "rgb": 8743104
+                          }
+                        },
+                        {
+                          "query": "tag:#source/book",
+                          "color": {
+                            "a": 1,
+                            "rgb": 13093232
+                          }
+                        },
+                        {
+                          "query": "tag:#source/course",
+                          "color": {
+                            "a": 1,
+                            "rgb": 8026677
+                          }
+                        },
+                        {
+                          "query": "tag:#source/cinematic",
+                          "color": {
+                            "a": 1,
+                            "rgb": 13854037
+                          }
+                        },
+                        {
+                          "query": "tag:#source/podcast",
+                          "color": {
+                            "a": 1,
+                            "rgb": 3503504
+                          }
+                        },
+                        {
+                          "query": "tag:#source/video",
+                          "color": {
+                            "a": 1,
+                            "rgb": 3509376
+                          }
+                        },
+                        {
+                          "query": "tag:#creator",
+                          "color": {
+                            "a": 1,
+                            "rgb": 14462048
+                          }
+                        },
+                        {
+                          "query": "tag:#production",
+                          "color": {
+                            "a": 1,
+                            "rgb": 13850949
+                          }
+                        },
+                        {
+                          "query": "tag:#contact",
+                          "color": {
+                            "a": 1,
+                            "rgb": 4718773
+                          }
+                        },
+                        {
+                          "query": "tag:#mark/gtd",
+                          "color": {
+                            "a": 1,
+                            "rgb": 4587361
+                          }
+                        },
+                        {
+                          "query": "tag:#mark/scene",
+                          "color": {
+                            "a": 1,
+                            "rgb": 14600064
+                          }
+                        }
+                      ],
+                      "collapse-display": true,
+                      "showArrow": true,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 1,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 1,
+                      "close": true
+                    }
+                  },
+                  "icon": "lucide-git-fork",
+                  "title": "Graph view"
                 }
               }
             ]
@@ -138,6 +336,7 @@
       },
       "left-ribbon": {
         "hiddenItems": {
+          "templater-obsidian:Templater": false,
           "daily-notes:Open today's daily note": false,
           "obsidian42-brat:BRAT": false,
           "bases:Create new base": false,
@@ -146,11 +345,12 @@
           "obsidian-spaced-repetition:Review flashcards": false,
           "obsidian-excalidraw-plugin:New drawing": false,
           "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-          "periodic-notes:Open today": false
+          "periodic-notes:Open today": false,
+          "graph:Open graph view": false
         }
       },
-      "active": "999181858d180e22",
-      "mtime": "2026-01-17T13:57:10+07:00"
+      "active": "bda9ef25e60d256c",
+      "mtime": "2026-02-18T20:09:12+07:00"
     },
     "search": {
       "main": {
@@ -158,11 +358,11 @@
         "type": "split",
         "children": [
           {
-            "id": "bcf331e37bd0c61e",
+            "id": "254c978382691039",
             "type": "tabs",
             "children": [
               {
-                "id": "528ed0d96ad966c9",
+                "id": "6079afcdbfeb81c8",
                 "type": "leaf",
                 "state": {
                   "type": "empty",
@@ -204,8 +404,45 @@
                   "icon": "calendar-with-checkmark",
                   "title": "Calendar"
                 }
+              },
+              {
+                "id": "c24c00f17129b420",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": false,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [],
+                      "collapse-display": true,
+                      "showArrow": false,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 1,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 1,
+                      "close": true
+                    }
+                  },
+                  "icon": "lucide-git-fork",
+                  "title": "Graph view"
+                }
               }
-            ]
+            ],
+            "currentTab": 2
           },
           {
             "id": "e5e1529f2a00091d",
@@ -291,10 +528,12 @@
           }
         ],
         "direction": "horizontal",
-        "width": 751.5
+        "width": 606.5
       },
       "left-ribbon": {
         "hiddenItems": {
+          "obsidian42-brat:BRAT": false,
+          "graph:Open graph view": false,
           "daily-notes:Open today's daily note": false,
           "bases:Create new base": false,
           "templater-obsidian:Templater": false,
@@ -306,8 +545,281 @@
           "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
         }
       },
-      "active": "528ed0d96ad966c9",
-      "mtime": "2025-12-04T13:58:24+07:00"
+      "active": "6079afcdbfeb81c8",
+      "mtime": "2026-02-18T20:09:54+07:00"
+    },
+    "tasks": {
+      "main": {
+        "id": "d7120251430d072d",
+        "type": "split",
+        "children": [
+          {
+            "id": "5b06339001f299c0",
+            "type": "split",
+            "children": [
+              {
+                "id": "31832427b6ed27ce",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "58bc42a2b8ecc4b6",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "periodic/today.md",
+                        "mode": "preview",
+                        "source": false,
+                        "backlinks": true,
+                        "backlinkOpts": {
+                          "collapseAll": true,
+                          "extraContext": false,
+                          "sortOrder": "alphabetical",
+                          "showSearch": false,
+                          "searchQuery": "",
+                          "backlinkCollapsed": false,
+                          "unlinkedCollapsed": true
+                        }
+                      },
+                      "icon": "lucide-file",
+                      "title": "today"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "4bb803b62bb4934d",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "85d0ae8dfadca37a",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "periodic/statuses/next_action.md",
+                        "mode": "preview",
+                        "source": false,
+                        "backlinks": true,
+                        "backlinkOpts": {
+                          "collapseAll": true,
+                          "extraContext": false,
+                          "sortOrder": "alphabetical",
+                          "showSearch": false,
+                          "searchQuery": "",
+                          "backlinkCollapsed": false,
+                          "unlinkedCollapsed": true
+                        }
+                      },
+                      "icon": "lucide-file",
+                      "title": "next_action"
+                    }
+                  }
+                ]
+              }
+            ],
+            "direction": "horizontal"
+          },
+          {
+            "id": "91759d3ca3b61f57",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "db55c216d0acfbeb",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "periodic/statuses/inbox.md",
+                    "mode": "preview",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": true,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "inbox"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "2025082c7b2e629e",
+        "type": "split",
+        "children": [
+          {
+            "id": "2c71bf99c2f76a39",
+            "type": "tabs",
+            "dimension": 30.700888450148078,
+            "children": [
+              {
+                "id": "f61d2cd9e7c9880c",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "0484e773a99b97d4",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "periodic/today.md",
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": false,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [],
+                      "collapse-display": true,
+                      "showArrow": false,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 1,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 1,
+                      "close": false
+                    }
+                  },
+                  "icon": "lucide-git-fork",
+                  "title": "Graph of today"
+                }
+              }
+            ]
+          },
+          {
+            "id": "c493d6f232ce3228",
+            "type": "tabs",
+            "dimension": 69.29911154985193,
+            "children": [
+              {
+                "id": "c1b5286a6d2052b2",
+                "type": "leaf",
+                "state": {
+                  "type": "bases",
+                  "state": {
+                    "file": "home/databases/breadcrumbs.base",
+                    "viewName": "🔗 links"
+                  },
+                  "icon": "lucide-table",
+                  "title": "breadcrumbs"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 348.5,
+        "collapsed": true
+      },
+      "right": {
+        "id": "2266a43ed4d3dbb6",
+        "type": "split",
+        "children": [
+          {
+            "id": "c5d15b09186ff35b",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "6c7aa3a3b72a8ce3",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "periodic/statuses/inbox.md",
+                    "followCursor": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of inbox"
+                }
+              },
+              {
+                "id": "e470d7a0e0639e43",
+                "type": "leaf",
+                "state": {
+                  "type": "VIEW_TYPE_LONGFORM_EXPLORER",
+                  "state": {},
+                  "icon": "longform",
+                  "title": "Longform"
+                }
+              },
+              {
+                "id": "4991079be1db926c",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "d031b26e7efa533a",
+                "type": "leaf",
+                "state": {
+                  "type": "review-queue-list-view",
+                  "state": {},
+                  "icon": "SpacedRepIcon",
+                  "title": "Notes Review Queue"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 348.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "graph:Open graph view": false,
+          "templater-obsidian:Templater": false,
+          "daily-notes:Open today's daily note": false,
+          "obsidian42-brat:BRAT": false,
+          "bases:Create new base": false,
+          "canvas:Create new canvas": true,
+          "workspaces:Manage workspace layouts": true,
+          "obsidian-spaced-repetition:Review flashcards": false,
+          "obsidian-excalidraw-plugin:New drawing": false,
+          "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
+          "periodic-notes:Open today": false
+        }
+      },
+      "active": "58bc42a2b8ecc4b6",
+      "mtime": "2026-02-18T20:10:09+07:00"
     }
   },
   "active": "default"

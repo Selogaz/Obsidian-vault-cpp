@@ -99,7 +99,7 @@ const citekey = "{{citekey}}".trim();
 
 let urlLink = "";
 if (itemUrl) {
-    const linkText = publisher || libraryCatalog || blogTitle || websiteTitle || "url";
+    const linkText = publisher || libraryCatalog || blogTitle || websiteTitle || "Source";
     urlLink = `"[${linkText}](${itemUrl})"`;
 }
 

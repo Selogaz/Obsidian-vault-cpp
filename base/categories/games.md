@@ -12,19 +12,22 @@ icon: 🗺️
 >
 > <label>🗃️ sources<input type="radio" name="test" checked/></label>
 >
-> > ![[sources.base#📋 Kanban]]
+> > ![[sources.base#📋 Workflow: Kanban (v)]]
 >
 > <label>🏢 projects<input type="radio" name="test" /></label>
 >
-> > ![[projects.base#📋 Kanban]]
+> > ![[projects.base#📋 Workflow: Kanban (v)]]
+> > ```dataviewjs
+> > await dv.view("templates/views/gantt")
+> > ```
 >
 > <label>👥 people<input type="radio" name="test" /></label>
 >
-> > ![[people.base#👤 Contacts]]
+> > ![[people.base#🗄️ Group: By Type]]
 >
 > <label>🔬 system<input type="radio" name="test" /></label>
 >
-> > ![[high-notes.base#🧬 Hierarchies]]
+> > ![[high-notes.base#🗄️ Group: By Type]]
 >
 > <label>📋 structure<input type="radio" name="test" /></label>
 >

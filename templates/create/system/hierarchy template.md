@@ -7,9 +7,9 @@ const problem = await tp.user.problem(meta)
 tags:
   - system/high/hierarchy
 aliases:
-category:<%- category ? `\n  - "[[${category}]]"` : "" %>
-meta:<%- (category && meta) ? `\n  - "[[${meta}]]"` : "" %>
-problem:<%- problem ? `\n  - "[[${problem}]]"` : "" %>
+category:<%* if (category != "") { tR += "\n  - \"[[" + category + "]]\"" } %>
+meta:<%* if (category != "" && meta != "") { tR += "\n  - \"[[" + meta + "]]\"" } %>
+problem:<%* if (problem != "") { tR += "\n  - \"[[" + problem + "]]\"" } %>
 relevant: false
 created: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>

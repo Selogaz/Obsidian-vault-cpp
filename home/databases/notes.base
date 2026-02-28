@@ -18,6 +18,21 @@ formulas:
         )
       )
     )
+  total_links: file.backlinks.length + file.links.length
+  imbalance: |
+    if(file.backlinks.length > file.links.length,
+      file.backlinks.length - file.links.length,
+      file.links.length - file.backlinks.length)
+  primary_backlinks: |
+    file.backlinks.filter(
+      file(value).hasTag("note") ||
+      file(value).inFolder("sources")
+    ).length
+  primary_outlinks: |
+    file.links.filter(
+      file(value).hasTag("note") ||
+      file(value).inFolder("sources")
+    ).length
   created_relative: created.relative()
   updated_relative: updated.relative()
 properties:
@@ -41,6 +56,10 @@ properties:
     displayName: 🆕 created
   formula.updated_relative:
     displayName: 🔄 updated
+  formula.total_links:
+    displayName: 🔗 total
+  formula.imbalance:
+    displayName: ⚖️ |Δ|
 views:
   - type: table
     name: 📝 All
@@ -76,6 +95,89 @@ views:
     order:
       - file.name
       - formula.type
+      - formula.backlinks
+      - file.backlinks
+      - formula.outlinks
+      - file.links
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      formula.backlinks: 1
+      formula.outlinks: 1
+  - type: table
+    name: 🪡 Single Link
+    filters:
+      and:
+        - formula.total_links == 1
+    order:
+      - file.name
+      - formula.backlinks
+      - file.backlinks
+      - formula.outlinks
+      - file.links
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    limit: 28
+    columnSize:
+      file.name: 530
+      formula.backlinks: 1
+      formula.outlinks: 1
+  - type: table
+    name: 🕸️ Most Connected
+    order:
+      - file.name
+      - formula.backlinks
+      - file.backlinks
+      - formula.outlinks
+      - file.links
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.total_links
+        direction: DESC
+    limit: 28
+    columnSize:
+      file.name: 530
+      formula.backlinks: 1
+      formula.outlinks: 1
+  - type: table
+    name: ⚖️ Imbalanced (|Δ| ≥ 5)
+    filters:
+      and:
+        - formula.imbalance >= 5
+    order:
+      - file.name
+      - formula.backlinks
+      - file.backlinks
+      - formula.outlinks
+      - file.links
+      - formula.imbalance
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.imbalance
+        direction: DESC
+    limit: 28
+    columnSize:
+      file.name: 530
+      formula.backlinks: 1
+      formula.outlinks: 1
+  - type: table
+    name: 🔇 Unused (not in system/projects)
+    filters:
+      and:
+        - formula.primary_backlinks == formula.backlinks
+        - formula.primary_outlinks == formula.outlinks
+        - formula.total_links > 0
+    order:
+      - file.name
       - formula.backlinks
       - file.backlinks
       - formula.outlinks

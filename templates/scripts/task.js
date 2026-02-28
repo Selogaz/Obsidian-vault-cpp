@@ -12,7 +12,8 @@
  * - Tasks with tabulation are automatically marked as subtasks with ⤵️
  * - Tasks with comment lines (indented text without task marker) get 💬 marker
  * - Comment detection works only when multiple lines are selected
- */ // ============================================================================
+ */
+// ============================================================================
 // CONFIGURATION & CONSTANTS
 // ============================================================================
 

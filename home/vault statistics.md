@@ -8,6 +8,51 @@ obsidianUIMode: preview
 > [!important|hide-icon]+ ♨️ Heatmap
 > `$=await dv.view("templates/views/heatmap")`
 
+```dataviewjs
+const pages = dv.pages("#note OR #system OR #project OR #source OR #creator OR #contact OR #production");
+const N = pages.length;
+const outlinks = pages.flatMap(p => p.file.outlinks).length;
+const backlinks = pages.flatMap(p => p.file.inlinks).length;
+const E = (outlinks + backlinks) / 2;
+const density = (2 * E) / (N * (N - 1));
+const avgDegree = (2 * E) / N;
+const orphans = pages.filter(p => p.file.outlinks.length === 0 && p.file.inlinks.length === 0).length;
+const noisePct = ((orphans / N) * 100).toFixed(1);
+
+// Status evaluation
+const densityStatus = density < 0.01 ? "sparse, noise" : density > 0.1 ? "chaos, over-connected" : "healthy";
+const degreeStatus = avgDegree < 2 ? "too many orphans" : avgDegree > 10 ? "hub-dominated" : "balanced";
+const orphanStatus = (orphans / N) < 0.05 ? "clean" : "noisy";
+
+// PKM Journey Achievement (detailed progression)
+let vaultAchievement;
+if (N < 25) vaultAchievement = "🌰 Seed — just planted";
+else if (N < 50) vaultAchievement = "🌱 Sprout — first shoots";
+else if (N < 100) vaultAchievement = "📝 Note Hoarder — collecting phase";
+else if (N < 200) vaultAchievement = "🔗 Link Discoverer — connections emerge";
+else if (N < 350) vaultAchievement = "🧩 Pattern Seeker — themes surfacing";
+else if (N < 500) vaultAchievement = "🗺️ Map Maker — MOCs appearing";
+else if (N < 750) vaultAchievement = "🌿 Digital Gardener — tending ideas";
+else if (N < 1000) vaultAchievement = "📚 Commonplace Scholar — old school method";
+else if (N < 1500) vaultAchievement = "🏗️ System Builder — structure solidifies";
+else if (N < 2500) vaultAchievement = "🧠 Second Brain — Forte's vision";
+else if (N < 4000) vaultAchievement = "🃏 Zettelkasten Practitioner — Luhmann's way";
+else if (N < 6000) vaultAchievement = "⚡ Idea Machine — synthesis mode";
+else if (N < 8000) vaultAchievement = "✍️ Prolific Writer — Ryan Holiday level";
+else if (N < 10000) vaultAchievement = "📖 Knowledge Publisher — producing from notes";
+else if (N < 15000) vaultAchievement = "🎓 Luhmann's Disciple — serious scale";
+else if (N < 20000) vaultAchievement = "🏛️ Living Library — institutional memory";
+else vaultAchievement = "🌌 Exocortex Master — transcendent system";
+
+dv.table(["Metric", "Value", "Status"], [
+  ["Vault Size", N, vaultAchievement],
+  ["Edges", E.toFixed(0), "—"],
+  ["Density", density.toFixed(4), densityStatus],
+  ["Avg Degree", avgDegree.toFixed(2), degreeStatus],
+  ["Orphans", `${orphans} (${noisePct}%)`, orphanStatus]
+]);
+```
+
 ___
 
 > [!info|hide-icon]+ 📝 Notes

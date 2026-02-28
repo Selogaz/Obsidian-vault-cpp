@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3c88a27705254034",
+        "id": "d4bf962253535dd4",
         "type": "tabs",
         "children": [
           {
-            "id": "999181858d180e22",
+            "id": "bda9ef25e60d256c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,7 +18,7 @@
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
-                  "collapseAll": false,
+                  "collapseAll": true,
                   "extraContext": false,
                   "sortOrder": "alphabetical",
                   "showSearch": false,
@@ -29,6 +29,108 @@
               },
               "icon": "lucide-file",
               "title": "How Linux Works"
+            }
+          },
+          {
+            "id": "7cb18acf1a1255d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home/help/hotkeys.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "hotkeys"
+            }
+          },
+          {
+            "id": "723011e0e225bfe3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home/prefixes.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "prefixes"
+            }
+          },
+          {
+            "id": "979ee41754ea8425",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/how linux works конспект.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "how linux works конспект"
+            }
+          }
+        ]
+      },
+      {
+        "id": "3657634af306f9b1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32fac67cf8cc875f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/how linux works конспект.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "how linux works конспект"
             }
           }
         ]
@@ -53,6 +155,204 @@
               "state": {},
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
+            }
+          },
+          {
+            "id": "4247943d03ca86d9",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [
+                    {
+                      "query": "tag:#note/basic",
+                      "color": {
+                        "a": 1,
+                        "rgb": 9486517
+                      }
+                    },
+                    {
+                      "query": "tag:#note/specific",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14543214
+                      }
+                    },
+                    {
+                      "query": "tag:#system/category",
+                      "color": {
+                        "a": 1,
+                        "rgb": 3509376
+                      }
+                    },
+                    {
+                      "query": "tag:#system/supercategory",
+                      "color": {
+                        "a": 1,
+                        "rgb": 13684936
+                      }
+                    },
+                    {
+                      "query": "tag:#system/high/hierarchy",
+                      "color": {
+                        "a": 1,
+                        "rgb": 10551504
+                      }
+                    },
+                    {
+                      "query": "tag:#system/high/meta",
+                      "color": {
+                        "a": 1,
+                        "rgb": 8283336
+                      }
+                    },
+                    {
+                      "query": "tag:#system/high/problem",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14266432
+                      }
+                    },
+                    {
+                      "query": "tag:#periodic",
+                      "color": {
+                        "a": 1,
+                        "rgb": 6450848
+                      }
+                    },
+                    {
+                      "query": "tag:#project/short",
+                      "color": {
+                        "a": 1,
+                        "rgb": 11898992
+                      }
+                    },
+                    {
+                      "query": "tag:#project/single",
+                      "color": {
+                        "a": 1,
+                        "rgb": 13136181
+                      }
+                    },
+                    {
+                      "query": "tag:#project/longform",
+                      "color": {
+                        "a": 1,
+                        "rgb": 6526389
+                      }
+                    },
+                    {
+                      "query": "tag:#mark/log OR tag:#mark/addition",
+                      "color": {
+                        "a": 1,
+                        "rgb": 9486517
+                      }
+                    },
+                    {
+                      "query": "tag:#source/article",
+                      "color": {
+                        "a": 1,
+                        "rgb": 8743104
+                      }
+                    },
+                    {
+                      "query": "tag:#source/book",
+                      "color": {
+                        "a": 1,
+                        "rgb": 13093232
+                      }
+                    },
+                    {
+                      "query": "tag:#source/course",
+                      "color": {
+                        "a": 1,
+                        "rgb": 8026677
+                      }
+                    },
+                    {
+                      "query": "tag:#source/cinematic",
+                      "color": {
+                        "a": 1,
+                        "rgb": 13854037
+                      }
+                    },
+                    {
+                      "query": "tag:#source/podcast",
+                      "color": {
+                        "a": 1,
+                        "rgb": 3503504
+                      }
+                    },
+                    {
+                      "query": "tag:#source/video",
+                      "color": {
+                        "a": 1,
+                        "rgb": 3509376
+                      }
+                    },
+                    {
+                      "query": "tag:#creator",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14462048
+                      }
+                    },
+                    {
+                      "query": "tag:#production",
+                      "color": {
+                        "a": 1,
+                        "rgb": 13850949
+                      }
+                    },
+                    {
+                      "query": "tag:#contact",
+                      "color": {
+                        "a": 1,
+                        "rgb": 4718773
+                      }
+                    },
+                    {
+                      "query": "tag:#mark/gtd",
+                      "color": {
+                        "a": 1,
+                        "rgb": 4587361
+                      }
+                    },
+                    {
+                      "query": "tag:#mark/scene",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14600064
+                      }
+                    }
+                  ],
+                  "collapse-display": true,
+                  "showArrow": true,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -96,12 +396,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "sources/How Linux Works.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of How Linux Works"
             }
           },
           {
@@ -141,11 +442,12 @@
               "title": "Notes Review Queue"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 348.5,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -159,65 +461,67 @@
       "obsidian-spaced-repetition:Review flashcards": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-      "periodic-notes:Open today": false
+      "periodic-notes:Open today": false,
+      "graph:Open graph view": false
     }
   },
-  "active": "999181858d180e22",
+  "active": "bda9ef25e60d256c",
   "lastOpenFiles": [
+    "base/notes/how linux works конспект.md",
     "sources/How Linux Works.md",
-    "projects/Подготовка к ЕГЭ.md",
-    "base/categories/linux.md",
+    "home/prefixes.md",
+    "home/help/hotkeys.md",
+    "base/notes/how linux works atomization plan.md",
+    "templates/lists/list of questions.md",
+    "templates/views/gantt/view.js",
+    "templates/views/gantt",
+    "templates/create/used/periodic - start (monthly).md",
+    "templates/create/used/periodic - start (quarterly).md",
+    "templates/create/used/periodic - start (daily).md",
+    "templates/create/used/periodic - random questions.md",
+    "templates/create/used/periodic - start (yearly).md",
+    "templates/create/used/periodic - start (weekly).md",
+    "home/help/callouts.md",
+    "periodic/2027.canvas",
+    "CLAUDE.md",
+    "periodic/yearly/2026.md",
+    "sources/vault.md",
+    "base/categories/obsidian.md",
     "home/index.md",
+    "periodic/daily/2026-02-28.md",
+    "projects/Мои LLM.md",
+    "skills/today.md",
+    "skills/test.md",
+    "base/notes/установка из .zst.md",
+    "base/_hierarchy/pacman commands.md",
+    "base/categories/linux.md",
+    "sources/Qwen.md",
+    "skills/yearly-review",
+    "skills/weekly-review",
+    "skills/today/references",
+    "skills/today",
+    "skills/text-editor",
+    "skills/skill-creator/scripts/quick_validate.py",
+    "skills/skill-creator/scripts/package_skill.py",
+    "skills/skill-creator/scripts/init_skill.py",
     "files/Подготовка к ЕГЭ 2026-02-27-2.png",
     "files/Подготовка к ЕГЭ 2026-02-27-1.png",
     "files/Подготовка к ЕГЭ 2026-02-27.png",
-    "sources/flowing-abbyss.md",
-    "base/categories/obsidian.md",
-    "periodic/daily/2026-02-26.md",
-    "home/prefixes.md",
     "files/flowing-abbyss 2026-02-26.png",
-    "base/categories/study.md",
-    "base/categories/productivity.md",
-    "home/fleetings.md",
-    "sources/Qwen.md",
-    "base/notes/мета-заметка.md",
     "files/Подготовка к ЕГЭ 2026-02-26-2.png",
     "files/Подготовка к ЕГЭ 2026-02-26-1.png",
     "files/Подготовка к ЕГЭ 2026-02-26.png",
-    "periodic/daily/2026-02-24.md",
-    "base/_hierarchy/pacman commands.md",
-    "base/_hierarchy/плейлисты и способы поиска музыки.md",
-    "projects/pacman commands.md",
-    "base/notes/установка из .zst.md",
-    "home/help/hotkeys.md",
     "files/Подготовка к ЕГЭ 2026-02-25.png",
-    "base/notes/Информатика А2 сложная версия про таблицу истинности.md",
-    "base/notes/Математика А3 найти высоту цилиндра.md",
-    "base/notes/Математика А3 найти образующую конуса.md",
-    "base/notes/Найти образующую конуса, около которого описана сфера.md",
-    "base/notes/Найти высоту правильной шестиугольной пирамиды.md",
-    "base/notes/Математика А3 Найти высоту цилиндра, около которого описан параллелепипед.md",
-    "files/Перевод песен In Flames_ перевод песни Paralyzed, текст песни. Лингво-лаборатория Амальгама..pdf",
     "files/Подготовка к ЕГЭ 2026-02-24-2.png",
     "files/Подготовка к ЕГЭ 2026-02-24-1.png",
-    "home/databases/sources.base",
-    "projects",
     "periodic/2026.canvas",
-    "periodic/monthly",
     "periodic/2025.canvas",
-    "periodic/quarterly",
-    "periodic/weekly",
-    "periodic/daily",
-    "base/_problems",
-    "files/mynoise-net.aac",
     "periodic/tasks (grouped by priority).canvas",
     "periodic/tasks (grouped by effort).canvas",
     "periodic/tasks (grouped by time).canvas",
-    "home/databases/high-notes.base",
     "base/canvases/Прогноз нагрузки на серверы на основе исторических данных.canvas",
     "base/canvases/Диаграмма распределения пиковых нагрузок.canvas",
     "base/canvases/Архитектура для платформы предсказывающую нагрузку на серверы.canvas",
-    "base/canvases/Eisenhower Matrix.canvas",
-    "periodic/2024.canvas"
+    "base/canvases/Eisenhower Matrix.canvas"
   ]
 }

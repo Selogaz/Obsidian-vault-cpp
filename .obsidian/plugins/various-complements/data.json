@@ -15,6 +15,7 @@
   "delayMilliSeconds": 0,
   "disableSuggestionsDuringImeOn": false,
   "disableSuggestionsInMathBlock": true,
+  "disableSuggestionsInCodeBlock": false,
   "insertSpaceAfterCompletion": false,
   "firstCharactersDisableSuggestions": ":/^",
   "patternsToSuppressTrigger": [
@@ -45,6 +46,8 @@
       }
     ],
     "select with custom alias": [],
+    "select with custom alias and add to aliases": [],
+    "select with query alias": [],
     "up": [
       {
         "modifiers": [
@@ -62,9 +65,16 @@
       },
       {
         "modifiers": [
-          "Shift"
+          "Meta"
         ],
-        "key": "Tab",
+        "key": "k",
+        "hideHotkeyGuide": false
+      },
+      {
+        "modifiers": [
+          "Meta"
+        ],
+        "key": "л",
         "hideHotkeyGuide": false
       }
     ],
@@ -86,6 +96,20 @@
       {
         "modifiers": [],
         "key": "Tab",
+        "hideHotkeyGuide": false
+      },
+      {
+        "modifiers": [
+          "Meta"
+        ],
+        "key": "j",
+        "hideHotkeyGuide": false
+      },
+      {
+        "modifiers": [
+          "Meta"
+        ],
+        "key": "л",
         "hideHotkeyGuide": false
       }
     ],
@@ -111,6 +135,7 @@
   "currentVaultMinNumberOfCharacters": 0,
   "includeCurrentVaultPathPrefixPatterns": "",
   "excludeCurrentVaultPathPrefixPatterns": "",
+  "excludeCurrentVaultPathGlobPatterns": [],
   "includeCurrentVaultOnlyFilesUnderCurrentDirectory": false,
   "excludeCurrentVaultWordPatterns": [],
   "enableCustomDictionaryComplement": true,
@@ -123,7 +148,9 @@
   "displayedTextSuffix": " => ...",
   "enableInternalLinkComplement": true,
   "suggestInternalLinkWithAlias": true,
+  "preserveFirstLetterCaseOnInternalLink": false,
   "excludeInternalLinkPathPrefixPatterns": "base/additions/\nbase/categories/\nbase/hierarchy/\nbase/inbox/\nclasses/\nfiles/\nhome/\nperiodic/\ntemplates/",
+  "excludeInternalLinkPathGlobPatterns": [],
   "excludeSelfInternalLink": false,
   "excludeExistingInActiveFileInternalLinks": false,
   "updateInternalLinksOnSave": true,
@@ -137,6 +164,10 @@
   "enableFrontMatterComplement": false,
   "frontMatterComplementMatchStrategy": "inherit",
   "insertCommaAfterFrontMatterCompletion": false,
+  "currentFileMinNumberOfCharactersForTrigger": 0,
+  "currentVaultMinNumberOfCharactersForTrigger": 0,
+  "customDictionaryMinNumberOfCharactersForTrigger": 0,
+  "internalLinkMinNumberOfCharactersForTrigger": 0,
   "intelligentSuggestionPrioritization": {
     "enabled": true,
     "historyFilePath": "",

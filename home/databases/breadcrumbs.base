@@ -5,8 +5,12 @@ formulas:
   fm_out: this.file.properties.values() .map(list(value)).flat() .map(value.toString()) .filter(value.contains("[[")) .map(link(value)) .map(file(value)) .contains(file)
   in_any: file.links.contains(this.file)
   out_any: this.file.links.contains(file)
+  out_2hop: this.file.links.map(file(value)).map(value.links).flat().map(file(value)).contains(file)
+  in_2hop: this.file.backlinks.map(file(value)).map(value.backlinks).flat().map(file(value)).contains(file)
+  is_2hop: (formula.out_2hop || formula.in_2hop) && !formula.in_any && !formula.out_any && !formula.fm_out
   rank: if(formula.fm_out, -1, if(formula.in_any && formula.out_any, 0, if(formula.in_any, 1, 2)))
   icon: if(formula.fm_out, "📋️", if(formula.in_any && formula.out_any, "🖇️", if(formula.in_any, "🔽", "⬆️")))
+  pseudo_random: ((now() - file.ctime).milliseconds % 10000 + file.name.length * 17 + file.size % 1000) % 100
 properties:
   formula.icon:
     displayName: 🔗
@@ -29,6 +33,36 @@ views:
         direction: ASC
     columnSize:
       formula.link: 1
+  - type: table
+    name: 🥢 2-hop
+    filters:
+      and:
+        - formula.is_2hop
+    order:
+      - file.name
+    sort:
+      - property: file.tags
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 🎲 random
+    filters:
+      or:
+        - file.inFolder("base/_hierarchy")
+        - file.inFolder("base/_meta-notes")
+        - file.inFolder("base/_problems")
+        - file.inFolder("base/contacts")
+        - file.inFolder("base/notes")
+        - file.inFolder("base/productions")
+        - file.inFolder("sources")
+        - file.inFolder("projects")
+    order:
+      - file.name
+    sort:
+      - property: formula.pseudo_random
+        direction: DESC
+    limit: 20
   - type: table
     name: ➕️ addition
     filters:

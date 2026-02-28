@@ -11,11 +11,11 @@ icon: ✈️
 >
 > <label>📥 inbox<input type="radio" name="test" checked/></label>
 >
-> > ![[fleetings.base#✈️ All]]
+> > ![[fleetings.base#👻 Orphans]]
 >
 > <label>🆕 recent<input type="radio" name="test"/></label>
 >
-> > ![[recent.base#🆕 All]]
+> > ![[recent.base#🔄 Last Updated]]
 >
 > <label>✅ tasks<input type="radio" name="test"/></label>
 >

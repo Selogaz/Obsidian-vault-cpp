@@ -15,6 +15,11 @@ formulas:
   type: tags.toString().replace(/.*#(contact|creator|production)\/([^,]+).*/, "$2")
   created_relative: created.relative()
   updated_relative: updated.relative()
+  category_status: if(!category.isEmpty(), "✅", "❌")
+  category_type_valid: if(category.isEmpty(), "✅", if(list(category).filter(value.asFile().hasTag("system/category")).length == list(category).length, "✅", "❌"))
+  meta_type_valid: if(meta.isEmpty(), "✅", if(list(meta).filter(value.asFile().hasTag("system/high/meta")).length == list(meta).length, "✅", "❌"))
+  problem_type_valid: if(problem.isEmpty(), "✅", if(list(problem).filter(value.asFile().hasTag("system/high/problem")).length == list(problem).length, "✅", "❌"))
+  production_type_valid: if(production.isEmpty(), "✅", if(list(production).filter(value.asFile().tags.filter(value.startsWith("#production/")).length > 0).length == list(production).length, "✅", "❌"))
 properties:
   formula.type:
     displayName: 🗄️ type
@@ -42,9 +47,19 @@ properties:
     displayName: 🆕 created
   formula.updated_relative:
     displayName: 🔄 updated
+  formula.category_status:
+    displayName: structure
+  formula.category_type_valid:
+    displayName: type
+  formula.meta_type_valid:
+    displayName: 🏷️
+  formula.problem_type_valid:
+    displayName: 🏷️
+  formula.production_type_valid:
+    displayName: 🏷️
 views:
   - type: table
-    name: 👥 All
+    name: 👥 All People
     order:
       - relevant
       - formula.backlinks
@@ -72,7 +87,51 @@ views:
       formula.created_relative: 140
       formula.updated_relative: 140
   - type: table
-    name: 👤 Contacts
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+  - type: table
+    name: "🗄️ Group: By Type"
+    groupBy:
+      property: formula.type
+      direction: ASC
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+      - addition
+      - formula.type
+      - description
+      - category
+      - meta
+      - problem
+      - production
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: relevant
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+  - type: table
+    name: "👤 Type: Contacts"
     filters:
       and:
         - file.inFolder("base/contacts")
@@ -100,7 +159,7 @@ views:
       formula.created_relative: 140
       formula.updated_relative: 140
   - type: table
-    name: 👨‍🎨 Creators
+    name: "👨‍🎨 Type: Creators"
     filters:
       and:
         - file.inFolder("base/creators")
@@ -130,7 +189,7 @@ views:
       formula.created_relative: 140
       formula.updated_relative: 140
   - type: table
-    name: 🏭 Productions
+    name: "🏭 Type: Productions"
     filters:
       and:
         - file.inFolder("base/productions")
@@ -159,3 +218,188 @@ views:
       formula.outlinks: 1
       formula.created_relative: 140
       formula.updated_relative: 140
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+  - type: table
+    name: "🗺️ Group: By Category"
+    filters:
+      and:
+        - "!category.isEmpty()"
+    groupBy:
+      property: category
+      direction: ASC
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+      - addition
+      - formula.type
+      - description
+      - category
+      - meta
+      - problem
+      - production
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: relevant
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: "🔎 Group: By Meta"
+    filters:
+      and:
+        - "!meta.isEmpty()"
+    groupBy:
+      property: meta
+      direction: ASC
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+      - addition
+      - formula.type
+      - description
+      - category
+      - meta
+      - problem
+      - production
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: relevant
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: "⚡ Group: By Problem"
+    filters:
+      and:
+        - "!problem.isEmpty()"
+    groupBy:
+      property: problem
+      direction: ASC
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+      - addition
+      - formula.type
+      - description
+      - category
+      - meta
+      - problem
+      - production
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: relevant
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: "🏬 Group: By Production"
+    filters:
+      and:
+        - "!production.isEmpty()"
+    groupBy:
+      property: production
+      direction: ASC
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+      - addition
+      - formula.type
+      - description
+      - category
+      - meta
+      - problem
+      - production
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: relevant
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+  - type: table
+    name: ✅ Structure Validation
+    filters:
+      or:
+        - formula.category_type_valid == "❌"
+        - formula.meta_type_valid == "❌"
+        - formula.problem_type_valid == "❌"
+        - formula.production_type_valid == "❌"
+    order:
+      - file.name
+      - formula.category_type_valid
+      - category
+      - formula.meta_type_valid
+      - meta
+      - formula.problem_type_valid
+      - problem
+      - formula.production_type_valid
+      - production
+    sort:
+      - property: formula.category_type_valid
+        direction: DESC
+      - property: formula.meta_type_valid
+        direction: DESC
+      - property: formula.problem_type_valid
+        direction: DESC
+      - property: formula.production_type_valid
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 350
+      formula.category_type_valid: 70
+      formula.meta_type_valid: 1
+      formula.problem_type_valid: 1
+      formula.production_type_valid: 1
+      note.category: 180
+      note.meta: 180
+      note.problem: 180
+      note.production: 180

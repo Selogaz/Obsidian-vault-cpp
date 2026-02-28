@@ -2,9 +2,16 @@
 body {
   --font-text-theme: 'Rubik', 'Noto Color Emoji', sans-serif !important;
   --font-editor-theme: 'Rubik', 'Noto Color Emoji', sans-serif !important;
-  --font-monospace-theme: 'Roboto Mono', 'Noto Color Emoji', monospace !important;
+  --font-monospace-theme:
+    'Roboto Mono', 'Noto Color Emoji', monospace !important;
   --font-interface-theme: 'Inter', 'Noto Color Emoji', sans-serif !important;
   --font-heading-theme: 'Tinos', 'Noto Color Emoji', serif !important;
+}
+
+/* Shimmering focus */
+.theme-dark.theme-dark {
+  --bg-hue-dark: 0;
+  --bg-sat: 0;
 }
 
 /* DELETE TOP SPACES */
@@ -14,9 +21,9 @@ body {
 
 /* HIDE ELEMENTS */
 /* vault manager */
-/* body:not(.is-mobile)
-  .workspace-split.mod-left-split
-  .workspace-sidedock-vault-profile, */
+/* body:not(.is-mobile) */
+/*   .workspace-split.mod-left-split */
+/*   .workspace-sidedock-vault-profile, */
 /* status bar */
 .status-bar,
 /* empty state actions */
@@ -37,6 +44,8 @@ body {
 /* bases header icons */
 .bases-table-header-icon,
 .mb-search-modal-element-description,
+/* new note on kanban view */
+.board-view .board-new-note-button,
 /* properties heading */
 .metadata-properties-heading,
 /* properties */

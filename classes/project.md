@@ -8,7 +8,7 @@ tagNames:
   - project/short
 excludes:
 extends:
-version: "2.200"
+version: "2.201"
 fields:
   - id: qsrvuj
     name: cover
@@ -68,7 +68,7 @@ fields:
   - name: url
     type: Input
     options:
-      template: "'\"[{{site}}]({{url}})\"'"
+      template: "{{url}}"
     path: ""
     id: mNXPQV
   - name: problem
