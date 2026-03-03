@@ -1,10 +1,10 @@
 ---
 tags:
-  - status/wip
+  - status/done
   - project/short
   - priority/c
 aliases: []
-status: 🟦
+status: 🟩
 priority: 🇨
 category:
 meta:
@@ -16,7 +16,7 @@ cover:
 start: 2026-01-22T11:57:29+03:00
 end:
 created: 2026-01-22T11:57:29+03:00
-updated: 2026-01-22T12:48:27+03:00
+updated: 2026-02-28T23:27:24+03:00
 ---
 
 # Description

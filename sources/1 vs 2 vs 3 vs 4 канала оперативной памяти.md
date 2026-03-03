@@ -1,11 +1,11 @@
 ---
 tags:
-  - status/wip
+  - status/done
   - source/video/recording
   - category/computer_science
 aliases:
   - 1 vs 2 vs 3 vs 4 канала оперативной памяти
-status: 🟦
+status: 🟩
 category:
   - "[[computer science]]"
 meta:
@@ -21,7 +21,7 @@ start: 2025-10-23T16:41:09+03:00
 end:
 total_hours: 0
 created: 2025-10-23T16:41:09+03:00
-updated: 2026-01-14T00:01:22+03:00
+updated: 2026-02-28T23:33:10+03:00
 ---
 
 ![[fps задержки и пропускная способность памяти]]

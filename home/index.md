@@ -20,7 +20,6 @@ cssclasses:
 	- [[Подготовка к ЕГЭ]]
 - [[linux]]
 - [[productivity]]
-[[flowing-abbyss]]
 ----
 - [[obsidian]]
 - редко использую
@@ -30,13 +29,11 @@ cssclasses:
 		- [[js]]
 		-  [[java]]
 	- [[LLM]]
-		- [[Мои LLM]]
 	- [[music]]
 	- [[work]]
 	- [[computer science]]
 	- [[health]]
 	- [[games]]
-		- [[ДК 335]]
 # Contexts
 
 [[mynoise-net.aac]]

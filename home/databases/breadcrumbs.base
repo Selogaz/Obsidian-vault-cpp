@@ -27,6 +27,8 @@ views:
       - formula.icon
       - file.name
     sort:
+      - property: file.name
+        direction: ASC
       - property: formula.rank
         direction: ASC
       - property: file.tags

@@ -672,12 +672,12 @@ views:
       - production
     sort:
       - property: formula.category_type_valid
+        direction: ASC
+      - property: formula.creator_type_valid
         direction: DESC
       - property: formula.meta_type_valid
         direction: DESC
       - property: formula.problem_type_valid
-        direction: DESC
-      - property: formula.creator_type_valid
         direction: DESC
       - property: formula.production_type_valid
         direction: DESC

@@ -1,24 +1,18 @@
 ---
 tags:
-  - status/wip
-  - project/short
-  - priority/c
+  - system/high/hierarchy
+  - category/LLM
 aliases: []
-status: 🟦
-priority: 🇨
 category:
+  - "[[LLM]]"
 meta:
 problem:
-creator:
-production:
-url:
-cover:
-start: 2026-02-22T13:12:48+03:00
-end:
-created: 2026-02-22T13:12:48+03:00
-updated: 2026-02-28T20:44:39+03:00
+relevant: false
+created: 2026-03-01T00:11:15+03:00
+updated: 2026-03-01T00:11:53+03:00
 ---
 
+💤
 # Description
 
 https://chat.qwen.ai/s/t_ad6bc95a-6d52-48c9-90b0-27d932d26fee?fev=0.2.7
@@ -54,9 +48,17 @@ export OPENAI_BASE_URL="http://localhost:1234/v1"
 export OPENAI_MODEL="qwen2.5-7b-instruct"
 ```
 
+Запуск:
 ```zsh
 opencode run \ 
   --file .claude/skills/today/SKILL.md \
   --file periodic/daily/2026-02-28.md \
   -- "Создай ежедневный брифинг согласно инструкции в skills/today/SKILL.md"
+```
+или
+
+```zsh
+opencode run \ 
+  -- "Создай конспект по книге How Linux Works, но один файлом. Пометь какие фрагменты будут оформлены в отдельные заметки, но помни, создай только один файл, не мусори в хранилище. Я хочу понять насколько мои заметки будут отличаться от твоих и почему"
+
 ```

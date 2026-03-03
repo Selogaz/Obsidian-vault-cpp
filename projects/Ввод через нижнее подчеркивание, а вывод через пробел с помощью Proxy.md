@@ -1,10 +1,10 @@
 ---
 tags:
-  - status/wip
+  - status/done
   - project/short
   - priority/c
 aliases: []
-status: 🟦
+status: 🟩
 priority: 🇨
 category:
 meta:
@@ -16,7 +16,7 @@ cover:
 start: 2026-01-25T20:11:07+03:00
 end:
 created: 2026-01-25T20:11:07+03:00
-updated: 2026-01-25T20:12:52+03:00
+updated: 2026-02-28T23:27:36+03:00
 ---
 
 С помощью proxy можно создавать *computed values* - те значения, которые создаются по ходу выполнения программы[^1]

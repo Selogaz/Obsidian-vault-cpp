@@ -8,6 +8,7 @@ aliases:
 status: 🟦
 category:
   - "[[base/categories/java]]"
+updated: 2026-02-28T23:35:08+03:00
 ---
 
 ```table-of-contents

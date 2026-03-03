@@ -1,11 +1,13 @@
 ---
 tags:
+  - status/wip
   - source/article/paper
   - category/java
 aliases: []
 status: 🟦
 category:
   - "[[base/categories/java]]"
+  - "[[java]]"
 meta:
 problem:
 url: "[Website](https://github.com/enhorse/java-interview)"
@@ -14,7 +16,7 @@ start: 2025-05-20T09:14:45+03:00
 end: 2025-12-20
 total_hours: 0
 created: 2025-05-20T09:14:45+03:00
-updated: 2026-01-14T00:24:18+03:00
+updated: 2026-02-28T23:36:39+03:00
 ---
 
 # 🟩 ООП[^1]

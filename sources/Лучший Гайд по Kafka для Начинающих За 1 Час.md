@@ -3,7 +3,7 @@ tags:
   - source/cinematic/movie
   - category/java
 aliases: []
-status: 🟦
+status:
 category:
   - "[[base/categories/java]]"
 meta:

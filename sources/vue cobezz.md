@@ -1,11 +1,11 @@
 ---
 tags:
-  - status/wip
+  - status/todo
   - source/article/paper
   - category/js
 aliases:
   - Интенсив по фреймворку VUE 3» [Андрей Кобец]
-status: 🟦
+status: 🟥
 rating:
 scientificity:
 category:
@@ -21,5 +21,5 @@ published: 2022
 start: 2026-01-14T09:50:22+03:00
 end:
 created: 2026-01-14T09:50:22+03:00
-updated: 2026-01-14T09:50:30+03:00
+updated: 2026-02-28T23:35:23+03:00
 ---

@@ -1,11 +1,11 @@
 ---
 tags:
-  - status/wip
+  - status/done
   - source/article/paper
   - category/games
 aliases:
   - (20) Что такое трассировка лучей и как работает NVIDIA RTX? - YouTube
-status: 🟦
+status: 🟩
 category:
   - "[[games]]"
 meta:
@@ -20,7 +20,7 @@ start: 2025-11-04T18:02:13+03:00
 end:
 total_hours: 0
 created: 2025-11-04T18:02:13+03:00
-updated: 2026-01-14T00:01:09+03:00
+updated: 2026-02-28T23:32:49+03:00
 ---
 
 ```toc

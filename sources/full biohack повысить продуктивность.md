@@ -1,10 +1,10 @@
 ---
 tags:
-  - status/wip
+  - status/done
   - source/article/paper
   - category/health
 aliases: []
-status: 🟦
+status: 🟩
 category:
   - "[[health]]"
 meta:
@@ -15,7 +15,7 @@ start: 2025-06-10T20:41:43+03:00
 end:
 total_hours: 0
 created: 2025-06-10T20:41:43+03:00
-updated: 2026-01-14T00:11:10+03:00
+updated: 2026-02-28T23:28:37+03:00
 ---
 
 [[конспекты full biohack как повысить продуктивность]]

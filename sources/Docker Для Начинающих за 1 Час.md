@@ -1,10 +1,10 @@
 ---
 tags:
-  - status/wip
+  - status/done
   - source/video/recording
   - category/java
 aliases: []
-status: 🟦
+status: 🟩
 category:
   - "[[base/categories/java]]"
 meta:
@@ -15,7 +15,7 @@ start: 2025-09-17T18:19:50+03:00
 end:
 total_hours: 0
 created: 2025-09-17T18:19:50+03:00
-updated: 2026-01-14T00:00:47+03:00
+updated: 2026-02-28T23:36:30+03:00
 ---
 
 https://www.youtube.com/watch?v=lr1rYnUubpQ

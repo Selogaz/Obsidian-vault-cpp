@@ -1,11 +1,11 @@
 ---
 tags:
-  - status/wip
+  - status/todo
   - source/video/recording
   - category/computer_science
 aliases:
   - ЛЕГЕНДАРНАЯ НАСТРОЙКА WINDOWS КОТОРАЯ РАЗНОСИТ ВСЕ ГАЙДЫ. ОПТИМИЗАЦИЯ ДЛЯ КС 2, ВАЛОРАНТ, ФОРТНАЙТ
-status: 🟦
+status: 🟥
 category:
   - "[[computer science]]"
 meta:

@@ -1,10 +1,10 @@
 ---
 tags:
-  - status/wip
+  - status/done
   - source/video/recording
   - category/java
 aliases: []
-status: 🟦
+status: 🟩
 category:
   - "[[base/categories/java]]"
 meta:
@@ -16,7 +16,7 @@ start: 2025-09-18T17:06:21+03:00
 end:
 total_hours: 0
 created: 2025-09-18T17:06:21+03:00
-updated: 2026-01-14T00:03:12+03:00
+updated: 2026-02-28T23:34:47+03:00
 ---
 
 https://www.youtube.com/watch?v=r2QiU0o5kWs

@@ -22,7 +22,7 @@ published: 2016
 start: 2026-02-26T19:12:15+03:00
 end:
 created: 2026-02-26T19:12:15+03:00
-updated: 2026-02-28T23:05:08+03:00
+updated: 2026-02-28T23:09:16+03:00
 ---
 
 [[how linux works конспект|конспект от opencloud]]

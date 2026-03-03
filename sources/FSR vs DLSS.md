@@ -1,11 +1,11 @@
 ---
 tags:
-  - status/wip
+  - status/done
   - source/video/recording
   - category/computer_science
 aliases:
   - FSR vs DLSS | Как работает | Графику сравниваю не я, а - ВЫ!
-status: 🟦
+status: 🟩
 category:
   - "[[computer science]]"
 meta:
@@ -21,7 +21,7 @@ start: 2025-10-24T09:55:00+03:00
 end:
 total_hours: 0
 created: 2025-10-24T09:55:00+03:00
-updated: 2026-01-14T00:10:56+03:00
+updated: 2026-02-28T23:33:53+03:00
 ---
 
 ![[способы отрисовки текста]]

@@ -1,9 +1,10 @@
 ---
 tags:
+  - status/done
   - source/article/paper
-  - category/test_brat
+  - category/games
 aliases: []
-status: 🟦
+status: 🟩
 category:
   - "[[games]]"
 meta:
@@ -11,12 +12,12 @@ meta:
 problem:
   - "[[holy priest]]"
 url: "[Website](https://forum.sirus.su/resources/gaid-na-xoli-prista-x1.68/)"
-cover: 
+cover:
 start: 2025-05-15T17:00:11+03:00
-end: 
+end:
 total_hours: 0
 created: 2025-05-15T17:00:11+03:00
-updated: 2026-01-14T00:25:53+03:00
+updated: 2026-02-28T23:35:37+03:00
 ---
 
 ![cover|150]()

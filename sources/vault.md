@@ -15,7 +15,7 @@ start: 2025-05-20T12:24:31+03:00
 end:
 total_hours: 0
 created: 2025-05-20T12:24:31+03:00
-updated: 2026-02-28T21:20:10+03:00
+updated: 2026-03-01T00:12:10+03:00
 ---
 
 ![cover|150](https://yastatic.net/s3/psf/disk-public/_/6jthIYkBdecaLwm8yXZPKuI1HW7.png)
@@ -150,3 +150,16 @@ https://www.youtube.com/watch?**v=4wB-Ph5XYV0
 - `skill-creator` — создание новых скилов
 - `discourse-graph` — структурированная аргументация
 - `obsidian-structure` — справочник по структуре хранилища
+
+# Почему-то не пользуюсь этим
+
+[[breadcrumbs.base]]
+[[fleetings.base]]
+[[fleetings]]
+[[notes.base]]
+[[recent.base]]
+[[sources.base]]
+
+# Opencode
+
+[[My AI#Opencode]]

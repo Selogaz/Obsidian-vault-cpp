@@ -4,11 +4,48 @@
     "type": "split",
     "children": [
       {
-        "id": "d4bf962253535dd4",
+        "id": "37a081f05e2b8fd3",
         "type": "tabs",
         "children": [
           {
-            "id": "bda9ef25e60d256c",
+            "id": "400f91ab3915a288",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/daily/2026-03-03.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-03-03"
+            }
+          },
+          {
+            "id": "e5b74ea2fe6ab578",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "home/databases/sources.base",
+                "viewName": "📊 All: Extended View"
+              },
+              "icon": "lucide-table",
+              "title": "sources"
+            }
+          },
+          {
+            "id": "d7c93ddd68b08418",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,55 +69,7 @@
             }
           },
           {
-            "id": "7cb18acf1a1255d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "home/help/hotkeys.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "hotkeys"
-            }
-          },
-          {
-            "id": "723011e0e225bfe3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "home/prefixes.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "prefixes"
-            }
-          },
-          {
-            "id": "979ee41754ea8425",
+            "id": "1238bca50109e13c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -103,37 +92,8 @@
               "title": "how linux works конспект"
             }
           }
-        ]
-      },
-      {
-        "id": "3657634af306f9b1",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "32fac67cf8cc875f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/how linux works конспект.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "how linux works конспект"
-            }
-          }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -396,13 +356,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sources/How Linux Works.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of How Linux Works"
+              "title": "Outline"
             }
           },
           {
@@ -442,16 +401,16 @@
               "title": "Notes Review Queue"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 348.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "similar-notes:Open Similar Notes": false,
       "templater-obsidian:Templater": false,
       "daily-notes:Open today's daily note": false,
       "obsidian42-brat:BRAT": false,
@@ -465,45 +424,44 @@
       "graph:Open graph view": false
     }
   },
-  "active": "bda9ef25e60d256c",
+  "active": "1238bca50109e13c",
   "lastOpenFiles": [
-    "base/notes/how linux works конспект.md",
     "sources/How Linux Works.md",
-    "home/prefixes.md",
-    "home/help/hotkeys.md",
-    "base/notes/how linux works atomization plan.md",
-    "templates/lists/list of questions.md",
+    "home/databases/sources.base",
+    "periodic/daily/2026-03-03.md",
+    "base/notes/how linux works конспект.md",
+    "periodic/daily/2026-02-28.md",
+    "periodic/daily/2026-03-01.md",
+    "home/index.md",
+    "base/notes/таймкоды Obsidian vault.md",
+    "home/vault statistics.md",
+    "sources/vault.md",
+    "projects/Подготовка к ЕГЭ.md",
+    "sources/flowing-abbyss.md",
+    "base/_hierarchy/My AI.md",
+    "base/notes/ДК 335.md",
+    "projects/Мои LLM.md",
+    "base/categories/LLM.md",
+    "base/categories/linux.md",
+    "base/notes/установка из .zst.md",
+    "base/categories/obsidian.md",
+    "sources/5 Применений Kafka в Реальных Приложениях.md",
+    "home/databases/notes.base",
+    "home/databases/high-notes.base",
+    "home/databases/recent.base",
+    "base/notes/Брюс Эккель.md",
+    "base/notes/Этот Компьютер.md",
+    "home/fleetings.md",
+    "base/notes/java словарь.md",
+    "sources/Практическая биоинформатика.md",
+    "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
+    "home/databases/projects.base",
+    "home/databases/breadcrumbs.base",
     "templates/views/gantt/view.js",
     "templates/views/gantt",
-    "templates/create/used/periodic - start (monthly).md",
-    "templates/create/used/periodic - start (quarterly).md",
-    "templates/create/used/periodic - start (daily).md",
-    "templates/create/used/periodic - random questions.md",
-    "templates/create/used/periodic - start (yearly).md",
-    "templates/create/used/periodic - start (weekly).md",
-    "home/help/callouts.md",
     "periodic/2027.canvas",
-    "CLAUDE.md",
-    "periodic/yearly/2026.md",
-    "sources/vault.md",
-    "base/categories/obsidian.md",
-    "home/index.md",
-    "periodic/daily/2026-02-28.md",
-    "projects/Мои LLM.md",
-    "skills/today.md",
-    "skills/test.md",
-    "base/notes/установка из .zst.md",
-    "base/_hierarchy/pacman commands.md",
-    "base/categories/linux.md",
-    "sources/Qwen.md",
     "skills/yearly-review",
     "skills/weekly-review",
-    "skills/today/references",
-    "skills/today",
-    "skills/text-editor",
-    "skills/skill-creator/scripts/quick_validate.py",
-    "skills/skill-creator/scripts/package_skill.py",
-    "skills/skill-creator/scripts/init_skill.py",
     "files/Подготовка к ЕГЭ 2026-02-27-2.png",
     "files/Подготовка к ЕГЭ 2026-02-27-1.png",
     "files/Подготовка к ЕГЭ 2026-02-27.png",
