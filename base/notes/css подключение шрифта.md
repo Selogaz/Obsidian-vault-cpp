@@ -1,12 +1,12 @@
 ---
 tags:
   - note/specific/code
-  - category/css
+  - category/webdev
 aliases:
   - подключение шрифта
 deck: obsidian::css
 created: 2026-01-19T20:56:48+03:00
-updated: 2026-01-19T21:12:40+03:00
+updated: 2026-03-04T19:44:17+03:00
 ---
 
 **подключение шрифта**

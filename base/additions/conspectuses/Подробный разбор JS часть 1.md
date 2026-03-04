@@ -2,7 +2,7 @@
 tags:
   - source/article/paper
   - mark/log/conspectus
-  - category/js
+  - category/webdev
   - category/html
   - category/css
 aliases: []
@@ -272,7 +272,7 @@ function calc(a, b = 10) {
 
 ## Присвоение функции переменной Оо(hoisting)
 
-- [x] #task/inbox #category/js Это че такое блять? ✅ 2026-01-23
+- [x] #task/inbox #category/webdev Это че такое блять? ✅ 2026-01-23
 - 🤖 [[js функция как объект первого класса]]
 
 ```js
@@ -404,7 +404,7 @@ for (let key in car) {
 
 ## Функции внутри класса
 
-- [ ] #task/inbox #category/js - Разница между `function Car` и `class Car`?
+- [ ] #task/inbox #category/webdev - Разница между `function Car` и `class Car`?
 
 ### [[конструктор]]
 

@@ -2,14 +2,14 @@
 tags:
   - status/todo
   - source/article/paper
-  - category/js
+  - category/webdev
 aliases:
   - Vue.js
 status: 🟥
 rating:
 scientificity:
 category:
-  - "[[js]]"
+  - "[[webdev]]"
 meta:
 problem:
 related:
@@ -21,7 +21,7 @@ published:
 start: 2026-01-13T22:43:43+03:00
 end:
 created: 2026-01-13T22:43:43+03:00
-updated: 2026-01-18T16:49:50+03:00
+updated: 2026-03-04T19:31:03+03:00
 ---
 
 https://ru.vuejs.org

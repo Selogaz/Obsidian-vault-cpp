@@ -2,9 +2,7 @@
 tags:
   - source/article/paper
   - mark/log/conspectus
-  - category/js
-  - category/html
-  - category/css
+  - category/webdev
 aliases: []
 status: 🟦
 source:
@@ -14,7 +12,7 @@ url:
 start: 2026-01-18T16:03:30+03:00
 end:
 created: 2026-01-18T16:03:30+03:00
-updated: 2026-01-19T22:23:34+03:00
+updated: 2026-03-04T19:54:36+03:00
 ---
 
 > [!toc]+

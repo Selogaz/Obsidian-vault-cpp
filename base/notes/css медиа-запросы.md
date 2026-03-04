@@ -1,12 +1,12 @@
 ---
 tags:
   - note/specific/code
-  - category/css
+  - category/webdev
 aliases:
   - медиа-запросы
 deck: obsidian::css
 created: 2026-01-21T12:51:35+03:00
-updated: 2026-01-21T14:59:02+03:00
+updated: 2026-03-04T19:43:06+03:00
 ---
 
 **медиа-запросы**

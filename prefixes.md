@@ -115,7 +115,7 @@ prefix note title().md
 ---
 tags:
   - note/specific/code
-  - category/js
+  - category/webdev
 aliases:
   - note title
 deck: obsidian::js

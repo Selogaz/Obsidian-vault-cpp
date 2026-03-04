@@ -1,12 +1,12 @@
 ---
 tags:
   - note/specific/code
-  - category/css
+  - category/webdev
 aliases:
   - БЭМ
 deck: obsidian::css
 created: 2026-01-22T12:54:44+03:00
-updated: 2026-01-22T14:11:02+03:00
+updated: 2026-03-04T19:42:01+03:00
 ---
 
 **БЭМ**

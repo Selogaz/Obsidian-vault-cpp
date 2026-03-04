@@ -2,7 +2,7 @@
 tags:
   - source/article/paper
   - mark/log/conspectus
-  - category/js
+  - category/webdev
   - category/html
   - category/css
 aliases: []
@@ -50,7 +50,7 @@ navigator.platform;//определяет ОС
 location.href;//полный адрес до html страницы
 location.reload;//перезагрузить страницу
 ```
-- [ ] #task/inbox #category/js - Чем отличается `location.href = "url`" от `window.open` ?
+- [ ] #task/inbox #category/webdev - Чем отличается `location.href = "url`" от `window.open` ?
 ```js
 location.href = "https://itproger.com";//переход на другую страницу
 ```
@@ -178,7 +178,7 @@ input.removeAttribute("class");
 input.className = "some new test";
 ```
 
-- [ ] #task/inbox #category/js - Разбить практику с DOM на работу с id, тегами, классами и атрибутами
+- [ ] #task/inbox #category/webdev - Разбить практику с DOM на работу с id, тегами, классами и атрибутами
 
 ## Добавление текста с помощью JS
 ```js

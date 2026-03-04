@@ -1,12 +1,12 @@
 ---
 tags:
   - note/specific/code
-  - category/css
+  - category/webdev
 aliases:
   - cвойства CSS анимации
 deck: obsidian::css
 created: 2026-01-20T15:41:22+03:00
-updated: 2026-01-20T15:41:44+03:00
+updated: 2026-03-04T19:43:26+03:00
 ---
 
 **cвойства CSS анимации**

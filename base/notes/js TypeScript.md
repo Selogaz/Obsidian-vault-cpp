@@ -1,7 +1,7 @@
 ---
 tags:
   - note/specific/code
-  - category/js
+  - category/webdev
 aliases:
   - TypeScript
 deck: obsidian::js

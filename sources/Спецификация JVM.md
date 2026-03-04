@@ -6,7 +6,7 @@ tags:
 aliases: []
 status: 🟥
 category:
-  - "[[base/categories/java]]"
+  - "[[java]]"
 meta:
 problem:
 creator:

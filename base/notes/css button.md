@@ -1,12 +1,12 @@
 ---
 tags:
   - note/specific/code
-  - category/css
+  - category/webdev
 aliases:
   - button
 deck: obsidian::css
 created: 2026-01-19T22:30:50+03:00
-updated: 2026-01-19T22:35:11+03:00
+updated: 2026-03-04T19:43:50+03:00
 ---
 
 **button**

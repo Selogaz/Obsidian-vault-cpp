@@ -2,7 +2,7 @@
 tags:
   - source/article/paper
   - mark/log/conspectus
-  - category/js
+  - category/webdev
 aliases: []
 status: 🟦
 source:

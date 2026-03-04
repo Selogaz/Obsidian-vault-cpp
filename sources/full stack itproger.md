@@ -2,7 +2,7 @@
 tags:
   - status/wip
   - source/article/paper
-  - category/js
+  - category/webdev
 aliases:
   - Профессия FULL STACK разработчик itProger
 status: 🟦
@@ -13,7 +13,7 @@ addition:
   - "[[full stack itproger - conspectuses|📓]]"
   - "[[full stack itproger - attachments|📁]]"
 category:
-  - "[[js]]"
+  - "[[webdev]]"
 meta:
 problem:
 related:
@@ -25,7 +25,7 @@ published: 2022
 start: 2026-01-14T10:26:29+03:00
 end:
 created: 2026-01-14T10:26:29+03:00
-updated: 2026-01-25T20:40:35+03:00
+updated: 2026-03-04T19:38:25+03:00
 ---
 
 # Конспекты

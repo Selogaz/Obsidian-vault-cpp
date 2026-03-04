@@ -1,10 +1,10 @@
 ---
 tags:
   - system/high/hierarchy
-  - category/js
+  - category/webdev
 aliases: []
 category:
-  - "[[js]]"
+  - "[[webdev]]"
 meta:
 problem:
 relevant: false

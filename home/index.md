@@ -23,9 +23,8 @@ cssclasses:
 ----
 - [[obsidian]]
 - редко использую
-		- [[css]]
-		- [[js]]
-		-  [[java]]
+	- [[webdev]]
+	-  [[java]]
 	- [[LLM]]
 	- [[music]]
 	- [[work]]

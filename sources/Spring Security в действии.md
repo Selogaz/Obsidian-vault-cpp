@@ -7,7 +7,7 @@ aliases:
   - Spring Security в действии
 status: 🟦
 category:
-  - "[[base/categories/java]]"
+  - "[[java]]"
 updated: 2026-02-28T23:35:08+03:00
 ---
 

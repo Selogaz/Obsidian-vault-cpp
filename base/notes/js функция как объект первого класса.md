@@ -1,7 +1,7 @@
 ---
 tags:
   - note/specific/code
-  - category/js
+  - category/webdev
 aliases:
   - функция как объект первого класса
 deck: obsidian::js

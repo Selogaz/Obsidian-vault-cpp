@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "82516872b3bb2012",
+            "id": "bda9ef25e60d256c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,20 +32,7 @@
             }
           },
           {
-            "id": "5459d3d65eda7916",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "home/databases/high-notes.base",
-                "viewName": "⚙️ All Notes"
-              },
-              "icon": "lucide-table",
-              "title": "high-notes"
-            }
-          },
-          {
-            "id": "721e663ae2e19235",
+            "id": "070d35c0afd6c981",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -67,9 +54,129 @@
               "icon": "lucide-file",
               "title": "index"
             }
+          },
+          {
+            "id": "bcd21a5780bb961a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/categories/webdev.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "webdev"
+            }
+          },
+          {
+            "id": "6b35ad2b97b7d75c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sources/full stack itproger.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "full stack itproger"
+            }
+          },
+          {
+            "id": "c312a5fd62325562",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/additions/full stack itproger - conspectuses.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "full stack itproger - conspectuses"
+            }
+          },
+          {
+            "id": "223d598b4d7ec8e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home/index.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "38e7eced1e692c02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/_meta-notes/Порождающие паттерны и идиомы.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Порождающие паттерны и идиомы"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -315,7 +422,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 348.5,
+    "collapsed": true
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -331,13 +439,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "home/index.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline"
             }
           },
           {
@@ -381,7 +488,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 348.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -399,37 +507,39 @@
       "graph:Open graph view": false
     }
   },
-  "active": "721e663ae2e19235",
+  "active": "223d598b4d7ec8e8",
   "lastOpenFiles": [
-    "base/categories/css.md",
-    "sources/Лучшее железо для сборки ПК в 2025.md",
-    "base/categories/computer science.md",
+    "base/additions/conspectuses/Краткий обзор CSS.md",
+    "base/additions/full stack itproger - conspectuses.md",
+    "base/_hierarchy/html.md",
+    "base/_hierarchy/TailwindCSS.md",
+    "base/_hierarchy/css.md",
+    "sources/full stack itproger.md",
+    "base/categories/webdev.md",
+    "base/_hierarchy/js.md",
+    "base/_hierarchy/vue js.md",
+    "base/_meta-notes/css.md",
+    "base/categories/java.md",
     "home/index.md",
-    "base/notes/html hotkeys.md",
-    "base/categories/html.md",
-    "base/categories/programming.md",
-    "base/notes/prog camelCase.md",
-    "base/notes/prog snake_case.md",
-    "base/notes/prog UPPER_SNAKE_CASE.md",
-    "base/notes/prog PascalCase.md",
-    "base/notes/prog стили именования в языках программирования.md",
+    "base/categories/work.md",
+    "base/categories/css.md",
+    "base/notes/css а когда будет tailwindCSS.md",
+    "base/notes/css position.md",
+    "base/notes/css initial.md",
+    "base/notes/css inherit.md",
+    "base/notes/css unset.md",
+    "base/notes/css all.md",
+    "base/notes/css important.md",
+    "base/notes/css подключение шрифта.md",
+    "base/notes/css float.md",
+    "base/notes/css line-height.md",
+    "base/notes/css button.md",
+    "base/notes/css keyframes.md",
+    "sources/Язык JavaScript.md.bak",
+    "test_replacement.txt",
     "home/databases/high-notes.base",
-    "base/_hierarchy/Создание объектов в Java.md",
-    "base/notes/статический метод генерации.md",
-    "base/_problems/fluent api vs builder.md",
-    "base/_meta-notes/Порождающие паттерны и идиомы.md",
-    "base/notes/java fluent api vs builder.md",
-    "periodic/quarterly/2026-Q1.md",
-    "projects/Подготовка к ЕГЭ.md",
-    "periodic/monthly/2026-03.md",
-    "periodic/yearly/2026.md",
-    "periodic/daily/2026-03-04.md",
-    "periodic/weekly/2026-W10.md",
-    "periodic/weekly/2026-W09.md",
     "files/Подготовка к ЕГЭ 2026-03-04-3.png",
     "files/Подготовка к ЕГЭ 2026-03-04-2.png",
-    "home/prefixes.md",
-    "sources/Простые мысли vk.md",
     "home/databases/sources.base",
     "files/Подготовка к ЕГЭ 2026-03-04-1.png",
     "files/Подготовка к ЕГЭ 2026-03-04.png",
@@ -440,8 +550,6 @@
     "templates/views/gantt/view.js",
     "templates/views/gantt",
     "periodic/2027.canvas",
-    "skills/yearly-review",
-    "skills/weekly-review",
     "files/Подготовка к ЕГЭ 2026-02-27-2.png",
     "files/Подготовка к ЕГЭ 2026-02-27-1.png",
     "files/Подготовка к ЕГЭ 2026-02-27.png",

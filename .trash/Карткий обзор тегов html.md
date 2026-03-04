@@ -1,6 +1,6 @@
 ---
 tags:
-  - category/js
+  - category/webdev
   - source/article/paper
   - mark/log/conspectus
 aliases:

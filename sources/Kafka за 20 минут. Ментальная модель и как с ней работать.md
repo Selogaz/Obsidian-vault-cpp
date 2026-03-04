@@ -7,7 +7,7 @@ aliases:
   - Kafka за 20 минут. Ментальная модель и как с ней работать
 status: 🟥
 category:
-  - "[[base/categories/java]]"
+  - "[[java]]"
 meta:
 problem:
 related:

@@ -7,7 +7,7 @@ aliases:
   - Spring быстро
 status: 🟦
 category:
-  - "[[base/categories/java]]"
+  - "[[java]]"
 updated: 2026-02-28T23:35:03+03:00
 ---
 

@@ -10,7 +10,7 @@ addition:
   - конспекты backend_interviewer
 category:
   - "[[work]]"
-  - "[[base/categories/java]]"
+  - "[[java]]"
 meta:
   - "[[java developer]]"
 problem:

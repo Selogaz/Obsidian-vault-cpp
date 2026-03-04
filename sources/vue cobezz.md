@@ -2,14 +2,14 @@
 tags:
   - status/todo
   - source/article/paper
-  - category/js
+  - category/webdev
 aliases:
   - Интенсив по фреймворку VUE 3» [Андрей Кобец]
 status: 🟥
 rating:
 scientificity:
 category:
-  - "[[js]]"
+  - "[[webdev]]"
 meta:
 problem:
 related:

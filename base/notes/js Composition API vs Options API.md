@@ -1,7 +1,7 @@
 ---
 tags:
   - note/specific/code
-  - category/js
+  - category/webdev
 aliases:
   - Composition API vs Options API
 deck: obsidian::js

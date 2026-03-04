@@ -2,7 +2,7 @@
 tags:
   - source/article/paper
   - mark/log/conspectus
-  - category/js
+  - category/webdev
   - category/html
   - category/css
 aliases: []
@@ -298,7 +298,7 @@ import CreatePost from './CreatePost.vue'
 ## Общая схема
 
 - Родитель может передавать данные дочернему компоненту через `props`
-	- [ ] #task/inbox #category/js - Что еще за props?
+	- [ ] #task/inbox #category/webdev - Что еще за props?
 - Дочерний элемент может отправлять данные родителю через события `emit`
 
 ## Emit

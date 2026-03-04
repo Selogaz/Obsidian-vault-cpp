@@ -1,12 +1,12 @@
 ---
 tags:
   - note/specific/code
-  - category/css
+  - category/webdev
 aliases:
   - flex-basis
 deck: obsidian::css
 created: 2026-01-21T15:43:13+03:00
-updated: 2026-01-21T15:48:48+03:00
+updated: 2026-03-04T19:42:32+03:00
 ---
 
 **flex-basis**

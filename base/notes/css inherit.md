@@ -1,12 +1,12 @@
 ---
 tags:
   - note/specific/code
-  - category/css
+  - category/webdev
 aliases:
   - inherit
 deck: obsidian::css
 created: 2026-01-19T18:47:07+03:00
-updated: 2026-01-19T18:53:47+03:00
+updated: 2026-03-04T19:44:48+03:00
 ---
 
 **inherit**

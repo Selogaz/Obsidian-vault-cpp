@@ -1,12 +1,12 @@
 ---
 tags:
   - note/specific/code
-  - category/css
+  - category/webdev
 aliases:
   - float
 deck: obsidian::css
 created: 2026-01-19T22:23:27+03:00
-updated: 2026-01-19T22:27:07+03:00
+updated: 2026-03-04T19:44:09+03:00
 ---
 
 **float**

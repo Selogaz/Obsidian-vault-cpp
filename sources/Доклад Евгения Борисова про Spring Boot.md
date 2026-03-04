@@ -1,11 +1,12 @@
 ---
 tags:
+  - status/todo
   - source/video/recording
   - category/java
 aliases: []
 status: 🟥
 category:
-  - "[[base/categories/java]]"
+  - "[[java]]"
 meta:
 problem:
 creator:

@@ -1,12 +1,12 @@
 ---
 tags:
   - note/specific/code
-  - category/css
+  - category/webdev
 aliases:
   - position
 deck: obsidian::css
 created: 2026-01-18T18:30:36+03:00
-updated: 2026-01-18T18:44:40+03:00
+updated: 2026-03-04T19:45:06+03:00
 ---
 
 **position**
