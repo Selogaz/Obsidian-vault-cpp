@@ -21,16 +21,12 @@ cssclasses:
 - [[linux]]
 - [[productivity]]
 ----
+-  [[java]]
+- [[webdev]]
 - [[obsidian]]
-- редко использую
-	- [[webdev]]
-	-  [[java]]
-	- [[LLM]]
-	- [[music]]
-	- [[work]]
-	- [[computer science]]
-	- [[health]]
-	- [[games]]
+- [[computer science]]
+- [[health]]
+- [[games]]
 # Contexts
 
 [[mynoise-net.aac]]

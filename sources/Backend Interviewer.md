@@ -2,14 +2,12 @@
 tags:
   - status/todo
   - source/article/paper
-  - category/work
   - category/java
 aliases: []
 status: 🟥
 addition:
   - конспекты backend_interviewer
 category:
-  - "[[work]]"
   - "[[java]]"
 meta:
   - "[[java developer]]"

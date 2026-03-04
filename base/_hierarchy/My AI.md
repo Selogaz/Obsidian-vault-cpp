@@ -1,10 +1,10 @@
 ---
 tags:
   - system/high/hierarchy
-  - category/LLM
+  - category/computer_science
 aliases: []
 category:
-  - "[[LLM]]"
+  - "[[computer science]]"
 meta:
 problem:
 relevant: false

@@ -76,7 +76,6 @@ views:
     sort:
       - property: formula.created_relative
         direction: DESC
-    limit: 28
     columnSize:
       file.name: 530
       formula.backlinks: 1

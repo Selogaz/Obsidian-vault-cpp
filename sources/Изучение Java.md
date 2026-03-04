@@ -2,11 +2,11 @@
 tags:
   - status/todo
   - source/article/paper
-  - category/work
+  - category/java
 aliases: []
 status: 🟥
 category:
-  - "[[work]]"
+  - "[[java]]"
 meta:
 problem:
 url: "[Website](https://t.me/javastart_helper)"

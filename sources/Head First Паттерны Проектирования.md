@@ -1,7 +1,7 @@
 ---
 tags:
+  - status/todo
   - source/book
-  - category/work
 aliases:
   - Head First Паттерны Проектирования
 status: 🟥

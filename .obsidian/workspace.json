@@ -54,129 +54,9 @@
               "icon": "lucide-file",
               "title": "index"
             }
-          },
-          {
-            "id": "bcd21a5780bb961a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/categories/webdev.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "webdev"
-            }
-          },
-          {
-            "id": "6b35ad2b97b7d75c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sources/full stack itproger.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "full stack itproger"
-            }
-          },
-          {
-            "id": "c312a5fd62325562",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/additions/full stack itproger - conspectuses.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "full stack itproger - conspectuses"
-            }
-          },
-          {
-            "id": "223d598b4d7ec8e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "home/index.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "38e7eced1e692c02",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/_meta-notes/Порождающие паттерны и идиомы.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Порождающие паттерны и идиомы"
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -463,7 +343,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#category/work",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -484,12 +364,12 @@
               "title": "Notes Review Queue"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 348.5,
-    "collapsed": true
+    "width": 348.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -507,34 +387,34 @@
       "graph:Open graph view": false
     }
   },
-  "active": "223d598b4d7ec8e8",
+  "active": "070d35c0afd6c981",
   "lastOpenFiles": [
-    "base/additions/conspectuses/Краткий обзор CSS.md",
+    "base/categories/games.md",
+    "home/index.md",
+    "base/_hierarchy/плейлисты и способы поиска музыки.md",
+    "base/categories/computer science.md",
+    "base/categories/LLM.md",
+    "base/categories/music.md",
+    "base/categories/work.md",
+    "sources/JWT для Начинающих за 15 Мин Простыми Словами.md",
+    "base/_meta-notes/Порождающие паттерны и идиомы.md",
+    "sources/Главные Ошибки Начинающих в Архитектуре Приложений.md",
+    "sources/full stack itproger.md",
     "base/additions/full stack itproger - conspectuses.md",
+    "base/categories/webdev.md",
+    "base/notes/computerscience.md",
+    "sources/Руководство по вкатыванию в Backend на Java.md",
+    "sources/Роадмап тг Ника.md",
+    "sources/ИТ-собеседование в Т‑Банке.md",
+    "base/additions/conspectuses/Краткий обзор CSS.md",
     "base/_hierarchy/html.md",
     "base/_hierarchy/TailwindCSS.md",
     "base/_hierarchy/css.md",
-    "sources/full stack itproger.md",
-    "base/categories/webdev.md",
     "base/_hierarchy/js.md",
     "base/_hierarchy/vue js.md",
     "base/_meta-notes/css.md",
     "base/categories/java.md",
-    "home/index.md",
-    "base/categories/work.md",
     "base/categories/css.md",
-    "base/notes/css а когда будет tailwindCSS.md",
-    "base/notes/css position.md",
-    "base/notes/css initial.md",
-    "base/notes/css inherit.md",
-    "base/notes/css unset.md",
-    "base/notes/css all.md",
-    "base/notes/css important.md",
-    "base/notes/css подключение шрифта.md",
-    "base/notes/css float.md",
-    "base/notes/css line-height.md",
-    "base/notes/css button.md",
-    "base/notes/css keyframes.md",
     "sources/Язык JavaScript.md.bak",
     "test_replacement.txt",
     "home/databases/high-notes.base",
