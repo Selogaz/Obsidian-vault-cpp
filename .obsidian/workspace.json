@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bda9ef25e60d256c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/статический метод генерации.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "статический метод генерации"
-            }
-          },
-          {
             "id": "070d35c0afd6c981",
             "type": "leaf",
             "state": {
@@ -54,9 +30,81 @@
               "icon": "lucide-file",
               "title": "index"
             }
+          },
+          {
+            "id": "e37b16475f89cf04",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/categories/productivity.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "productivity"
+            }
+          },
+          {
+            "id": "26a52ae4e2168407",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/_hierarchy/советы по борьбе с прокрастинацией.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "советы по борьбе с прокрастинацией"
+            }
+          },
+          {
+            "id": "d0a36ae21e3598f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sources/Думай как математик.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Думай как математик"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -319,12 +367,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "sources/Думай как математик.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Думай как математик"
             }
           },
           {
@@ -343,7 +392,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#category/work",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -364,8 +413,7 @@
               "title": "Notes Review Queue"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -387,10 +435,14 @@
       "graph:Open graph view": false
     }
   },
-  "active": "070d35c0afd6c981",
+  "active": "d0a36ae21e3598f0",
   "lastOpenFiles": [
-    "base/categories/games.md",
+    "base/categories/productivity.md",
+    "base/_hierarchy/советы по борьбе с прокрастинацией.md",
+    "sources/Думай как математик.md",
     "home/index.md",
+    "base/notes/статический метод генерации.md",
+    "base/categories/games.md",
     "base/_hierarchy/плейлисты и способы поиска музыки.md",
     "base/categories/computer science.md",
     "base/categories/LLM.md",
@@ -411,10 +463,6 @@
     "base/_hierarchy/TailwindCSS.md",
     "base/_hierarchy/css.md",
     "base/_hierarchy/js.md",
-    "base/_hierarchy/vue js.md",
-    "base/_meta-notes/css.md",
-    "base/categories/java.md",
-    "base/categories/css.md",
     "sources/Язык JavaScript.md.bak",
     "test_replacement.txt",
     "home/databases/high-notes.base",
