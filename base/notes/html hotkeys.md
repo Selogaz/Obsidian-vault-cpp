@@ -1,12 +1,12 @@
 ---
 tags:
   - note/specific/code
-  - category/html
+  - category/js
 aliases:
   - hotkeys
 deck: obsidian::html
 created: 2026-01-22T13:04:46+03:00
-updated: 2026-01-22T13:05:11+03:00
+updated: 2026-03-04T18:59:09+03:00
 ---
 
 **hotkeys**

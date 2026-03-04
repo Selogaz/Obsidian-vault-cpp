@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "37a081f05e2b8fd3",
+        "id": "d4bf962253535dd4",
         "type": "tabs",
         "children": [
           {
-            "id": "400f91ab3915a288",
+            "id": "82516872b3bb2012",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2026-03-03.md",
+                "file": "base/notes/статический метод генерации.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,29 +28,29 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-03-03"
+              "title": "статический метод генерации"
             }
           },
           {
-            "id": "e5b74ea2fe6ab578",
+            "id": "5459d3d65eda7916",
             "type": "leaf",
             "state": {
               "type": "bases",
               "state": {
-                "file": "home/databases/sources.base",
-                "viewName": "📊 All: Extended View"
+                "file": "home/databases/high-notes.base",
+                "viewName": "⚙️ All Notes"
               },
               "icon": "lucide-table",
-              "title": "sources"
+              "title": "high-notes"
             }
           },
           {
-            "id": "d7c93ddd68b08418",
+            "id": "721e663ae2e19235",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/How Linux Works.md",
+                "file": "home/index.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -65,35 +65,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "How Linux Works"
-            }
-          },
-          {
-            "id": "1238bca50109e13c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/how linux works конспект.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "how linux works конспект"
+              "title": "index"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -339,8 +315,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5,
-    "collapsed": true
+    "width": 348.5
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -356,12 +331,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "home/index.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of index"
             }
           },
           {
@@ -405,8 +381,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5,
-    "collapsed": true
+    "width": 348.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -424,37 +399,42 @@
       "graph:Open graph view": false
     }
   },
-  "active": "1238bca50109e13c",
+  "active": "721e663ae2e19235",
   "lastOpenFiles": [
-    "sources/How Linux Works.md",
-    "home/databases/sources.base",
-    "periodic/daily/2026-03-03.md",
-    "base/notes/how linux works конспект.md",
-    "periodic/daily/2026-02-28.md",
-    "periodic/daily/2026-03-01.md",
+    "base/categories/css.md",
+    "sources/Лучшее железо для сборки ПК в 2025.md",
+    "base/categories/computer science.md",
     "home/index.md",
-    "base/notes/таймкоды Obsidian vault.md",
-    "home/vault statistics.md",
-    "sources/vault.md",
-    "projects/Подготовка к ЕГЭ.md",
-    "sources/flowing-abbyss.md",
-    "base/_hierarchy/My AI.md",
-    "base/notes/ДК 335.md",
-    "projects/Мои LLM.md",
-    "base/categories/LLM.md",
-    "base/categories/linux.md",
-    "base/notes/установка из .zst.md",
-    "base/categories/obsidian.md",
-    "sources/5 Применений Kafka в Реальных Приложениях.md",
-    "home/databases/notes.base",
+    "base/notes/html hotkeys.md",
+    "base/categories/html.md",
+    "base/categories/programming.md",
+    "base/notes/prog camelCase.md",
+    "base/notes/prog snake_case.md",
+    "base/notes/prog UPPER_SNAKE_CASE.md",
+    "base/notes/prog PascalCase.md",
+    "base/notes/prog стили именования в языках программирования.md",
     "home/databases/high-notes.base",
+    "base/_hierarchy/Создание объектов в Java.md",
+    "base/notes/статический метод генерации.md",
+    "base/_problems/fluent api vs builder.md",
+    "base/_meta-notes/Порождающие паттерны и идиомы.md",
+    "base/notes/java fluent api vs builder.md",
+    "periodic/quarterly/2026-Q1.md",
+    "projects/Подготовка к ЕГЭ.md",
+    "periodic/monthly/2026-03.md",
+    "periodic/yearly/2026.md",
+    "periodic/daily/2026-03-04.md",
+    "periodic/weekly/2026-W10.md",
+    "periodic/weekly/2026-W09.md",
+    "files/Подготовка к ЕГЭ 2026-03-04-3.png",
+    "files/Подготовка к ЕГЭ 2026-03-04-2.png",
+    "home/prefixes.md",
+    "sources/Простые мысли vk.md",
+    "home/databases/sources.base",
+    "files/Подготовка к ЕГЭ 2026-03-04-1.png",
+    "files/Подготовка к ЕГЭ 2026-03-04.png",
+    "home/databases/notes.base",
     "home/databases/recent.base",
-    "base/notes/Брюс Эккель.md",
-    "base/notes/Этот Компьютер.md",
-    "home/fleetings.md",
-    "base/notes/java словарь.md",
-    "sources/Практическая биоинформатика.md",
-    "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
     "home/databases/projects.base",
     "home/databases/breadcrumbs.base",
     "templates/views/gantt/view.js",
@@ -468,10 +448,6 @@
     "files/flowing-abbyss 2026-02-26.png",
     "files/Подготовка к ЕГЭ 2026-02-26-2.png",
     "files/Подготовка к ЕГЭ 2026-02-26-1.png",
-    "files/Подготовка к ЕГЭ 2026-02-26.png",
-    "files/Подготовка к ЕГЭ 2026-02-25.png",
-    "files/Подготовка к ЕГЭ 2026-02-24-2.png",
-    "files/Подготовка к ЕГЭ 2026-02-24-1.png",
     "periodic/2026.canvas",
     "periodic/2025.canvas",
     "periodic/tasks (grouped by priority).canvas",

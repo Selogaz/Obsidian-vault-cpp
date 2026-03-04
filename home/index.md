@@ -23,8 +23,6 @@ cssclasses:
 ----
 - [[obsidian]]
 - редко использую
-	- [[programming]]
-		- [[html]]
 		- [[css]]
 		- [[js]]
 		-  [[java]]

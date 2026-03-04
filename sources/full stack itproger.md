@@ -3,8 +3,6 @@ tags:
   - status/wip
   - source/article/paper
   - category/js
-  - category/html
-  - category/css
 aliases:
   - Профессия FULL STACK разработчик itProger
 status: 🟦
@@ -16,8 +14,6 @@ addition:
   - "[[full stack itproger - attachments|📁]]"
 category:
   - "[[js]]"
-  - "[[html]]"
-  - "[[css]]"
 meta:
 problem:
 related:
