@@ -5,7 +5,7 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-31 06:51:08+03:00
-updated: 2025-09-21T12:08:18+03:00
+updated: 2026-03-05T17:17:52+03:00
 sr-due: 2026-11-29
 sr-interval: 434
 sr-ease: 312
@@ -25,5 +25,5 @@ public boolean equals(Object obj) {
 public native int hashCode();
 ```
 
-в [[HotSpot VM|HotSpot VM]] хэш-код вычисляется с помощью алгоритма генерации простых чисел<font color="#ffff00"> Xorshift</font>
-- [ ] #task/inbox #category/work Xorshift
+в [[HotSpot VM|HotSpot VM]] хэш-код вычисляется с помощью алгоритма генерации простых чисел [[java xorshift|Xorshift]]
+- [x] #task/inbox #category/work Xorshift ✅ 2026-03-05

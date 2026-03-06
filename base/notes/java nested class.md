@@ -5,7 +5,7 @@ tags:
 aliases: []
 deck: obsidian::work
 created: 2025-05-27 10:58:35+03:00
-updated: 2025-10-02T18:09:26+03:00
+updated: 2026-03-05T16:58:38+03:00
 sr-due: 2026-11-17
 sr-interval: 411
 sr-ease: 280
@@ -21,6 +21,6 @@ sr-ease: 280
 - [[local inner class|local inner]]
 - [[anonymous inner class|anonymous inner]]
 
-c [[java 8]] inner и anonymous классы могут использовать <font color="#ffff00">`effectively final`</font> переменные
+c [[java 8]] inner и anonymous классы могут использовать [[java effectively final|effectively final]]переменные
 
-- [ ] #task/inbox #category/work effectively final
+- [x] #task/inbox #category/work effectively final ✅ 2026-03-05

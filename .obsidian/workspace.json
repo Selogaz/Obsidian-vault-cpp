@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "070d35c0afd6c981",
+            "id": "bda9ef25e60d256c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home/index.md",
+                "file": "projects/Подготовка к ЕГЭ.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,40 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Подготовка к ЕГЭ"
             }
           },
           {
-            "id": "e37b16475f89cf04",
+            "id": "14dad2cc8681f0ae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/categories/productivity.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "productivity"
-            }
-          },
-          {
-            "id": "26a52ae4e2168407",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/_hierarchy/советы по борьбе с прокрастинацией.md",
+                "file": "periodic/monthly/2026-02.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,35 +52,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "советы по борьбе с прокрастинацией"
-            }
-          },
-          {
-            "id": "d0a36ae21e3598f0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sources/Думай как математик.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Думай как математик"
+              "title": "2026-02"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -350,8 +302,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5,
-    "collapsed": true
+    "width": 348.5
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -367,13 +318,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sources/Думай как математик.md",
+                "file": "periodic/monthly/2026-02.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Думай как математик"
+              "title": "Outline of 2026-02"
             }
           },
           {
@@ -435,48 +386,48 @@
       "graph:Open graph view": false
     }
   },
-  "active": "d0a36ae21e3598f0",
+  "active": "14dad2cc8681f0ae",
   "lastOpenFiles": [
-    "base/categories/productivity.md",
-    "base/_hierarchy/советы по борьбе с прокрастинацией.md",
-    "sources/Думай как математик.md",
-    "home/index.md",
-    "base/notes/статический метод генерации.md",
-    "base/categories/games.md",
-    "base/_hierarchy/плейлисты и способы поиска музыки.md",
-    "base/categories/computer science.md",
-    "base/categories/LLM.md",
-    "base/categories/music.md",
-    "base/categories/work.md",
-    "sources/JWT для Начинающих за 15 Мин Простыми Словами.md",
-    "base/_meta-notes/Порождающие паттерны и идиомы.md",
-    "sources/Главные Ошибки Начинающих в Архитектуре Приложений.md",
-    "sources/full stack itproger.md",
-    "base/additions/full stack itproger - conspectuses.md",
-    "base/categories/webdev.md",
-    "base/notes/computerscience.md",
-    "sources/Руководство по вкатыванию в Backend на Java.md",
-    "sources/Роадмап тг Ника.md",
-    "sources/ИТ-собеседование в Т‑Банке.md",
-    "base/additions/conspectuses/Краткий обзор CSS.md",
-    "base/_hierarchy/html.md",
-    "base/_hierarchy/TailwindCSS.md",
-    "base/_hierarchy/css.md",
-    "base/_hierarchy/js.md",
+    "periodic/daily/2026-03-06.md",
+    "projects/Подготовка к ЕГЭ.md",
+    "home/fleetings.md",
+    "periodic/monthly/2026-03.md",
+    "periodic/yearly/2026.md",
+    "periodic/daily/2026-03-05.md",
+    "sources/How Linux Works.md",
+    "home/databases/sources.base",
+    "home/databases/projects.base",
+    "base/notes/HotSpot VM.md",
+    "base/notes/java реализация equals() и hashCode() в Object.md",
+    "base/notes/java xorshift.md",
+    "base/notes/java Constrained construction.md",
+    "base/notes/java недостатки constrained construction.md",
+    "base/notes/java nested class.md",
+    "base/notes/java effectively final.md",
+    "base/notes/недостатки ООП.md",
+    "base/notes/java проверка типов.md",
+    "base/notes/java unchecked exceptions.md",
+    "base/notes/java ключевая разница между checked и unchecked.md",
+    "base/notes/особенности String.md",
+    "base/notes/java интернирование строк.md",
+    "base/notes/исключение при ошибке в блоке.md",
+    "base/notes/java исключение-источник.md",
+    "home/databases/notes.base",
+    "base/notes/плейлисты и способы поиска музыки.md",
+    "base/notes/Информатика А2 (3 и) найти соответствие между столбцами и переменными с помощью таблицы истинности.md",
+    "periodic/daily/2026-03-03.md",
+    "base/notes/мета-заметка.md",
+    "files/Перевод песен In Flames_ перевод песни Paralyzed, текст песни. Лингво-лаборатория Амальгама..pdf",
+    "home/databases/high-notes.base",
     "sources/Язык JavaScript.md.bak",
     "test_replacement.txt",
-    "home/databases/high-notes.base",
     "files/Подготовка к ЕГЭ 2026-03-04-3.png",
     "files/Подготовка к ЕГЭ 2026-03-04-2.png",
-    "home/databases/sources.base",
     "files/Подготовка к ЕГЭ 2026-03-04-1.png",
     "files/Подготовка к ЕГЭ 2026-03-04.png",
-    "home/databases/notes.base",
     "home/databases/recent.base",
-    "home/databases/projects.base",
     "home/databases/breadcrumbs.base",
     "templates/views/gantt/view.js",
-    "templates/views/gantt",
     "periodic/2027.canvas",
     "files/Подготовка к ЕГЭ 2026-02-27-2.png",
     "files/Подготовка к ЕГЭ 2026-02-27-1.png",

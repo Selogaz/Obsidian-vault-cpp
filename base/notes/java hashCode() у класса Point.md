@@ -74,4 +74,4 @@ notes.forEach(p => {
 })
 ```
 
-- [ ] #task/inbox #category/obsidian интересная ссылка с иконкой
+- [x] #task/inbox #category/obsidian интересная ссылка с иконкой ✅ 2026-03-05

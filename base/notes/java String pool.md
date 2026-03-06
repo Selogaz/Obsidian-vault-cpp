@@ -22,7 +22,7 @@ sr-ease: 328
 	- механизм выше реализуется методом `intern()`
 - является примером [[java паттерны проектирования|паттерна]] "Приспособленец" ([[java паттерны gof#java flyweight Flyweight|flyweight]])
 
-- [ ] #task/inbox #category/work <font color="#ffff00">интернирование строк</font> [^1]
+- [x] #task/inbox #category/work <font color="#ffff00">интернирование строк</font> [^1] ✅ 2026-03-05
 - [x] #task/inbox #category/work паттерн "Приспособленец" (flyweight) ✅ 2025-10-02
 
 [^1]: [](“интернирования строк” ([“java-interview/core”](zotero://select/library/items/T3X9ZD57)) ([snapshot](zotero://open-pdf/library/items/2GAN5TQF?sel=ul%3Anth-child(245)%20%3E%20li%3Afirst-child&annotation=LGG3CHJQ)))
