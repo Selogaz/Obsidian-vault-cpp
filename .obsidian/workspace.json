@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/Подготовка к ЕГЭ.md",
+                "file": "periodic/daily/2026-03-09.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,35 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Подготовка к ЕГЭ"
-            }
-          },
-          {
-            "id": "14dad2cc8681f0ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "periodic/monthly/2026-02.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2026-02"
+              "title": "2026-03-09"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -302,7 +277,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 348.5,
+    "collapsed": true
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -318,13 +294,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "periodic/monthly/2026-02.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-02"
+              "title": "Outline"
             }
           },
           {
@@ -368,7 +343,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 348.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -386,37 +362,40 @@
       "graph:Open graph view": false
     }
   },
-  "active": "14dad2cc8681f0ae",
+  "active": "bda9ef25e60d256c",
   "lastOpenFiles": [
-    "periodic/daily/2026-03-06.md",
+    "periodic/daily/2026-03-08.md",
+    "periodic/weekly/2026-W11.md",
+    "periodic/weekly/2026-W10.md",
+    "projects/Алгоритмы и структуры данных.md",
+    "home/index.md",
+    "periodic/daily/2026-03-09.md",
+    "periodic/daily/2026-03-07.md",
+    "base/notes/codeforces ввод вывод java.md",
+    "files/Алгоритмы и структуры данных 2026-03-09.png",
     "projects/Подготовка к ЕГЭ.md",
-    "home/fleetings.md",
-    "periodic/monthly/2026-03.md",
-    "periodic/yearly/2026.md",
+    "periodic/daily/2026-03-06.md",
+    "sources/opencode.md",
+    "periodic/quarterly/2026-Q1.md",
+    "files/opencode 2026-03-08.png",
+    "files/2026-03-07 2026-03-08.png",
     "periodic/daily/2026-03-05.md",
-    "sources/How Linux Works.md",
+    "base/_hierarchy/стратегия изучения алгоритмов 15 минут в день.md",
+    "base/notes/порядок решения задач codeforces.md",
+    "base/notes/теги codeforces для собеседований.md",
+    "base/notes/сравнение codeforces codewars hackerrank.md",
+    "base/notes/codeforces — оптимальный ресурс для собеседований.md",
+    "base/categories/study.md",
+    "base/_hierarchy/егэ-математика-стратегия.md",
+    "base/notes/рекомендуемая стратегия изучения алгоритмов.md",
+    "base/notes/практика small-batch обучения.md",
+    "base/notes/микрозадачи вместо макрозадач.md",
+    "base/notes/типичные требования вакансий к языкам программирования.md",
+    "base/notes/один язык — глубоко, остальные — поверхностно.md",
+    "base/notes/практика LeetCode.md",
     "home/databases/sources.base",
     "home/databases/projects.base",
-    "base/notes/HotSpot VM.md",
-    "base/notes/java реализация equals() и hashCode() в Object.md",
-    "base/notes/java xorshift.md",
-    "base/notes/java Constrained construction.md",
-    "base/notes/java недостатки constrained construction.md",
-    "base/notes/java nested class.md",
-    "base/notes/java effectively final.md",
-    "base/notes/недостатки ООП.md",
-    "base/notes/java проверка типов.md",
-    "base/notes/java unchecked exceptions.md",
-    "base/notes/java ключевая разница между checked и unchecked.md",
-    "base/notes/особенности String.md",
-    "base/notes/java интернирование строк.md",
-    "base/notes/исключение при ошибке в блоке.md",
-    "base/notes/java исключение-источник.md",
     "home/databases/notes.base",
-    "base/notes/плейлисты и способы поиска музыки.md",
-    "base/notes/Информатика А2 (3 и) найти соответствие между столбцами и переменными с помощью таблицы истинности.md",
-    "periodic/daily/2026-03-03.md",
-    "base/notes/мета-заметка.md",
     "files/Перевод песен In Flames_ перевод песни Paralyzed, текст песни. Лингво-лаборатория Амальгама..pdf",
     "home/databases/high-notes.base",
     "sources/Язык JavaScript.md.bak",
@@ -432,9 +411,6 @@
     "files/Подготовка к ЕГЭ 2026-02-27-2.png",
     "files/Подготовка к ЕГЭ 2026-02-27-1.png",
     "files/Подготовка к ЕГЭ 2026-02-27.png",
-    "files/flowing-abbyss 2026-02-26.png",
-    "files/Подготовка к ЕГЭ 2026-02-26-2.png",
-    "files/Подготовка к ЕГЭ 2026-02-26-1.png",
     "periodic/2026.canvas",
     "periodic/2025.canvas",
     "periodic/tasks (grouped by priority).canvas",

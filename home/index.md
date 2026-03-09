@@ -16,8 +16,8 @@ cssclasses:
 # Knowledge areas
 
 - [[study]]
-	- [[Поступление в вуз]]
 	- [[Подготовка к ЕГЭ]]
+	- [[Алгоритмы и структуры данных]]
 - [[linux]]
 - [[productivity]]
 ----
