@@ -57,6 +57,6 @@ sr-ease: 290
 
 # Kubernetes
 
-- [ ] #task/reference #category/work Ознакомиться с Kubernetes после изучения книги[^1]
+- [ ] #task/reference #category/java Ознакомиться с Kubernetes после изучения книги[^1]
 
 [^1]: с. 37

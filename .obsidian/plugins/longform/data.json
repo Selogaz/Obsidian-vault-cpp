@@ -4,7 +4,18 @@
   "selectedDraftVaultPath": null,
   "userScriptFolder": null,
   "sessionStorage": "data",
-  "sessions": [],
+  "sessions": [
+    {
+      "start": "2026-03-10T22:07:23.222Z",
+      "total": 0,
+      "drafts": {
+        "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки.md": {
+          "total": 0,
+          "scenes": {}
+        }
+      }
+    }
+  ],
   "showWordCountInStatusBar": false,
   "startNewSessionEachDay": false,
   "sessionGoal": 500,
@@ -15,6 +26,9 @@
   "sessionFile": "longform-sessions.json",
   "numberScenes": false,
   "sceneTemplate": "templates/create/projects/longform scene template.md",
+  "waitForSync": false,
+  "fallbackWaitEnabled": true,
+  "fallbackWaitTime": 5,
   "workflows": {
     "Default Workflow": {
       "name": "Default Workflow",
