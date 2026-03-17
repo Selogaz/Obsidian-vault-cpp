@@ -15,7 +15,7 @@ start: 2025-05-20T12:24:31+03:00
 end:
 total_hours: 0
 created: 2025-05-20T12:24:31+03:00
-updated: 2026-03-01T00:12:10+03:00
+updated: 2026-03-16T17:56:55+03:00
 ---
 
 ![cover|150](https://yastatic.net/s3/psf/disk-public/_/6jthIYkBdecaLwm8yXZPKuI1HW7.png)
@@ -163,3 +163,6 @@ https://www.youtube.com/watch?**v=4wB-Ph5XYV0
 # Opencode
 
 [[My AI#Opencode]]
+
+# LATEX
+![[vault 2026-03-16.png]]
