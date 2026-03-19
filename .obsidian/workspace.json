@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1dd6e5840f3ddf6b",
+            "id": "bda9ef25e60d256c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/ЕГЭ Информатика/А6-простейшие алгоритмы.md",
+                "file": "periodic/daily/2026-03-19.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,11 +28,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "А6-простейшие алгоритмы"
+              "title": "2026-03-19"
             }
           },
           {
-            "id": "5702dc4feb28e07c",
+            "id": "d91ca2b6350021aa",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -56,12 +56,12 @@
             }
           },
           {
-            "id": "9b25de12a586618d",
+            "id": "56e26d75e35f5d92",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/ЕГЭ Математика/А1-простейшая планиметрия.md",
+                "file": "base/notes/shifted mex codeforces 2185c.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,17 +76,17 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "А1-простейшая планиметрия"
+              "title": "shifted mex codeforces 2185c"
             }
           },
           {
-            "id": "7c99cc7230c2562a",
+            "id": "5cd35ababe0b25e1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2026-03-17.md",
-                "mode": "source",
+                "file": "base/categories/computer science.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -100,11 +100,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-03-17"
+              "title": "computer science"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -367,13 +367,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "periodic/daily/2026-03-17.md",
+                "file": "projects/Алгоритмы и структуры данных.md",
                 "followCursor": true,
-                "showSearch": true,
+                "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-03-17"
+              "title": "Outline of Алгоритмы и структуры данных"
             }
           },
           {
@@ -392,7 +392,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#task/next_action",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -413,8 +413,7 @@
               "title": "Notes Review Queue"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -436,54 +435,54 @@
       "graph:Open graph view": false
     }
   },
-  "active": "7c99cc7230c2562a",
+  "active": "d91ca2b6350021aa",
   "lastOpenFiles": [
-    "base/notes/Лечение похолодания конечностей....md",
-    "periodic/daily/2026-03-17.md",
-    "projects/ЕГЭ Информатика/А6-простейшие алгоритмы.md",
-    "projects/ЕГЭ Информатика/А5-алгоритмы на системы счисления.md",
-    "projects/ЕГЭ Информатика/А4-условие Фано.md",
-    "projects/ЕГЭ Информатика/ЕГЭ Информатика.md",
-    "home/index.md",
-    "projects/ЕГЭ Математика/А1-простейшая планиметрия.md",
-    "projects/ЕГЭ Математика/ЕГЭ Математика.md",
+    "base/categories/computer science.md",
+    "base/notes/shifted mex codeforces 2185c.md",
+    "base/notes/влияние сортировки массива и удаления дубликатов.md",
     "projects/Алгоритмы и структуры данных.md",
-    "periodic/daily/2026-03-16.md",
-    "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/6-дневник-наблюдений.md",
-    "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки.md",
-    "projects/Подготовка к ЕГЭ.md",
-    "files/А6-простейшие алгоритмы 2026-03-16.png",
-    "base/notes/A6_hard.py.md",
-    "files/A6_hard.py 2026-03-15.png",
-    "projects/ЕГЭ Информатика/Прогресс.md",
-    "projects/ЕГЭ Информатика/А8-комбинаторика и системы счислений.md",
-    "projects/ЕГЭ Информатика/А7-кодирование информации.md",
+    "home/index.md",
+    "periodic/daily/2026-03-19.md",
+    "base/_hierarchy/linux commands.md",
+    "sources/vault.md",
+    "files/Снимок экрана от 2026-03-19 22-07-50.png",
+    "base/categories/obsidian.md",
+    "base/notes/конструктор.md",
+    "base/notes/Java core.md",
+    "base/notes/heap vs stack.md",
+    "base/notes/java типы памяти в jvm.md",
+    "base/categories/java.md",
+    "sources/Вопросы и ответы к интервью Java разработчика.md",
+    "sources/База знаний fill the gaps.md",
+    "base/notes/java RestController.md",
+    "base/notes/java GetMapping.md",
+    "base/notes/java Autowired на сеттере.md",
+    "base/notes/java Autowired.md",
+    "base/notes/копировать из любого файла.md",
+    "files/2026-03-19 2026-03-19.png",
     "projects/ЕГЭ Информатика/А2-таблицы истинности.md",
-    "projects/ЕГЭ Информатика/А3-базы данных Excel.md",
+    "projects/ЕГЭ Математика/ЕГЭ Математика.md",
+    "projects/ЕГЭ Математика/Стратегия.md",
+    "periodic/daily/2026-03-18.md",
+    "projects/ЕГЭ Информатика/А6-простейшие алгоритмы.md",
+    "skills/local-today",
+    "skills/local_today/scripts/example.py",
+    "skills/local_today/assets/example_asset.txt",
+    "skills/local_today/scripts",
+    "skills/local_today/references",
+    "skills/local_today/assets",
+    "skills/local_today",
+    "files/My AI 2026-03-18.png",
+    "files/А6-простейшие алгоритмы 2026-03-16.png",
+    "files/A6_hard.py 2026-03-15.png",
     "home/databases/projects.base",
     "projects/ЕГЭ Информатика",
-    "projects/ЕГЭ Математика/А3-простейшая стереометрия.md",
-    "sources/vault.md",
     "files/vault 2026-03-16.png",
-    "base/categories/obsidian.md",
-    "projects/ЕГЭ Математика/A2-векторы.md",
-    "projects/ЕГЭ Математика/А14-стереометрия.md",
-    "base/notes/Java Collections Framework.md",
     "projects/ЕГЭ Математика",
-    "home/databases/sources.base",
     "files/Подготовка к ЕГЭ 2026-03-15-1.png",
     "files/Подготовка к ЕГЭ 2026-03-15.png",
     "files/Подготовка к ЕГЭ 2026-03-14-1.png",
     "files/Подготовка к ЕГЭ 2026-03-14.png",
-    "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки",
-    "files/Подготовка к ЕГЭ 2026-03-11.png",
-    "files/Подготовка к ЕГЭ 2026-03-10.png",
-    "files/Алгоритмы и структуры данных 2026-03-10.png",
-    "home/databases/notes.base",
-    "files/Перевод песен In Flames_ перевод песни Paralyzed, текст песни. Лингво-лаборатория Амальгама..pdf",
-    "home/databases/high-notes.base",
-    "sources/Язык JavaScript.md.bak",
-    "test_replacement.txt",
     "periodic/2027.canvas",
     "periodic/2026.canvas",
     "periodic/2025.canvas",

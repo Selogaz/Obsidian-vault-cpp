@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "obsidian-hybrid-search": {
+      "command": "npx",
+      "args": ["-y", "-p", "obsidian-hybrid-search@latest", "obsidian-hybrid-search-mcp"],
+      "env": {
+        "OBSIDIAN_VAULT_PATH": "/home/exuberance/Документы/Obsidian/Obsidian-vault-cpp",
+        "OBSIDIAN_IGNORE_PATTERNS": ".obsidian/**,templates/**",
+        "OPENAI_API_KEY": "ollama",
+        "OPENAI_BASE_URL": "http://localhost:11434/v1",
+        "OPENAI_EMBEDDING_MODEL": "bge-m3"
+      }
+    }
+  }
+}

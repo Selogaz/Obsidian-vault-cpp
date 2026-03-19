@@ -37,8 +37,8 @@ public class MainController {
 - 8080 – порт сервера (по умолчанию для Apache Tomcat – 8080)
 - simple-spring-webmvc – название по умолчанию при запуске из IDE, либо название [[java war vs jar|war-файла]]
 
-![[java @RestController]]
+![[java RestController]]
 
-![[java @GetMapping]]
+![[java GetMapping]]
 
 - [x] #task/reference #category/work war-файл ✅ 2025-09-17

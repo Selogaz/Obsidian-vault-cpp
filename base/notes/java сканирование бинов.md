@@ -23,6 +23,6 @@ sr-ease: 290
 
 XML-элемент `context:component-scan` ищет бины в пакетах, указанных в `base-package`. Поиск осуществляется по аннотации [[java значение @Component и её производных|@Component]](а также по её специализациям `@Repository,@Service,@Controller,@RestController`). В приведенном примере спринг будет искать бины, т.е. *классы, помеченные соответствующими аннотациями*, находящиеся в указанных пакетах(dao и service)
 
-[[java @Autowired]]
+[[java Autowired]]
 
 [[java внедрение значений из property-файлов]]

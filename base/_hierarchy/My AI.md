@@ -9,7 +9,7 @@ meta:
 problem:
 relevant: false
 created: 2026-03-01T00:11:15+03:00
-updated: 2026-03-15T17:40:26+03:00
+updated: 2026-03-18T12:48:38+03:00
 ---
 
 💤
@@ -61,4 +61,55 @@ opencode run \
 opencode run \ 
   -- "Создай конспект по книге How Linux Works, но один файлом. Пометь какие фрагменты будут оформлены в отдельные заметки, но помни, создай только один файл, не мусори в хранилище. Я хочу понять насколько мои заметки будут отличаться от твоих и почему"
 
+```
+
+# Qwen3.5:4b-64k
+
+## Настройка
+```zsh
+ollama run qwen3.5:4b
+>>> /set parameter num_ctx 65536
+Set parameter 'num_ctx' to '65536'
+>>> /save qwen3:8b-16k
+Created new model 'qwen3.5:4b-64k'
+>>> /bye
+```
+
+`~/.config/opencode/opencode.json`
+```zsh
+ollama launch opencode
+```
+
+## Запуск
+```zsh
+opencode 
+```
+# [myaniu](https://ollama.com/myaniu)/ [qwen2.5-1m](https://ollama.com/myaniu/qwen2.5-1m "qwen2.5-1m")
+
+![[My AI 2026-03-18.png]]
+
+## Первоначальная настройка модели
+
+```zsh
+ollama run myaniu/qwen2.5-1m:14b
+/set parameter num_ctx 32768
+/set parameter num_predict 8192
+/set parameter top_p 0.9
+/set parameter temperature 0.3
+/set system /set system Вы — агент Obsidian с доступом к SKILL.md. Всегда включайте поле "description" в
+...  вызовах bash tool.
+/save qwen2.5-1m:14b-32k
+```
+
+# qwen3.5:9b-32k
+
+```zsh
+ollama run qwen3.5:9b-32k
+/set parameter num_ctx 32768
+/set parameter num_predict 8192
+/set parameter top_p 0.9
+/set parameter temperature 0.3
+/set system Вы — агент Obsidian с доступом к SKILL.md. Всегда включайте поле "description" в
+...  вызовах bash tool.
+/save qwen3.5:9b-32k
 ```

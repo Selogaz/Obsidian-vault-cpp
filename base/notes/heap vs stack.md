@@ -6,7 +6,7 @@ aliases:
   - heap vs stack
 deck: obsidian::work
 created: 2025-05-27 13:41:32+03:00
-updated: 2025-10-02T18:20:22+03:00
+updated: 2026-03-19T22:43:48+03:00
 sr-due: 2026-12-01
 sr-interval: 425
 sr-ease: 310

@@ -15,7 +15,7 @@ start: 2025-05-20T12:24:31+03:00
 end:
 total_hours: 0
 created: 2025-05-20T12:24:31+03:00
-updated: 2026-03-16T17:56:55+03:00
+updated: 2026-03-19T23:18:44+03:00
 ---
 
 ![cover|150](https://yastatic.net/s3/psf/disk-public/_/6jthIYkBdecaLwm8yXZPKuI1HW7.png)
@@ -166,3 +166,14 @@ https://www.youtube.com/watch?**v=4wB-Ph5XYV0
 
 # LATEX
 ![[vault 2026-03-16.png]]
+
+# Obsidian hybrid search
+
+## Настройка с помощью big pickle
+![[Снимок экрана от 2026-03-19 22-07-50.png]]
+
+## Rerank
+Команда для включения cross-encoder reranking через `bge-reranker-v2-m3` для более точного ранжирования:
+```
+ohs "запрос" --rerank
+```
