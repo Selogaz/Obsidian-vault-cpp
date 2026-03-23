@@ -1,4 +1,4 @@
-<%* const up = await moment(tp.file.title, "YYYY-MM-DD").format("YYYY-[W]WW") -%>
+<%* const up = moment(tp.file.title, "YYYY-MM-DD").format("YYYY-[W]WW") -%>
 <% "---" %>
 tags:
   - periodic/day

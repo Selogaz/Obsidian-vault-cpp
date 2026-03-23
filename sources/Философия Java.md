@@ -1,26 +1,25 @@
 ---
 tags:
-  - status/done
+  - status/todo
   - source/book
+  - category/java
 aliases:
-  - Философия Java
-status: 🟩
+  - Thinking in Java
+status: 🟥
+rating:
+scientificity:
 category:
+  - "[[java]]"
 meta:
 problem:
 related:
 creator:
-  - "[[Брюс Эккель]]"
 production:
-  - "[[Питер]]"
-url: "[Питер](https://libgen.mx/book/14567483)"
-zotero: "[🇿](zotero://select/items/@ekkelFilosofiyaJavaLibgen2015)"
-published: 2015
-start: 2025-04-23T12:50:28+03:00
+url: "[Source](https://psv4.userapi.com/s/v1/d/wkVee5vUkloPFo7xoUoh2GVaomIxPvjUypIXAAgqxDKtIxDe13SL1zFta3l5_dtQtHFSr8dw09kElPnEHwJTXM_kRIo6aHuYfUG7X4EbMF6VmN0LGG3ndQ/Bryus_Ekkel_-_Filosofia_Java_4-e_polnoe_izdanie.pdf?dl=1)"
+zotero: "[🇿](zotero://select/items/@ThinkingJava)"
+published:
+start: 2026-03-21T22:37:42+03:00
 end:
-total_hours: 0
-created: 2025-04-23T12:50:28+03:00
-updated: 2026-02-28T23:32:10+03:00
+created: 2026-03-21T22:37:42+03:00
+updated: 2026-03-21T22:38:12+03:00
 ---
-
-[[Общий алгоритм формирования заметок]]

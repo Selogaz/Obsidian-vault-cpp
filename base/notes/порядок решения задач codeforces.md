@@ -4,13 +4,13 @@ tags:
   - category/study
 aliases: []
 created: 2026-03-06T23:10:00+03:00
-updated: 2026-03-06T23:10:00+03:00
+updated: 2026-03-21T23:43:45+03:00
 ---
 
 Рекомендуемый порядок решения задач на Codeforces:
 
 ```
-1. math → strings → sorting        (800-1000) — 2 недели
+1. implementation ->math → strings → sorting (800-1000) — 2 недели
 2. binary search → two pointers     (1000-1200) — 2 недели
 3. hashing → stack → queue         (1000-1200) — 2 недели
 4. graphs → trees                  (1200-1400) — 2 недели

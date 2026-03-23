@@ -9,6 +9,7 @@ status: 🟩
 category:
   - "[[computer science]]"
 meta:
+  - hardware
 problem:
 related:
 creator:

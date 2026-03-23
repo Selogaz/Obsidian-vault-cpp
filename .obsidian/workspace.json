@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bda9ef25e60d256c",
+            "id": "a8513218d562cbea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2026-03-19.md",
+                "file": "periodic/daily/2026-03-23.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,83 +28,27 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-03-19"
+              "title": "2026-03-23"
             }
           },
           {
-            "id": "d91ca2b6350021aa",
+            "id": "79423318723d6c91",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "projects/Алгоритмы и структуры данных.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
+                "file": "periodic/tasks (grouped by priority).canvas",
+                "viewState": {
+                  "x": -380,
+                  "y": 60,
+                  "zoom": -1.1498343256606545
                 }
               },
-              "icon": "lucide-file",
-              "title": "Алгоритмы и структуры данных"
-            }
-          },
-          {
-            "id": "56e26d75e35f5d92",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/shifted mex codeforces 2185c.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "shifted mex codeforces 2185c"
-            }
-          },
-          {
-            "id": "5cd35ababe0b25e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/categories/computer science.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "computer science"
+              "icon": "lucide-layout-dashboard",
+              "title": "tasks (grouped by priority)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -367,13 +311,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/Алгоритмы и структуры данных.md",
+                "file": "periodic/daily/2026-03-23.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Алгоритмы и структуры данных"
+              "title": "Outline of 2026-03-23"
             }
           },
           {
@@ -435,60 +379,60 @@
       "graph:Open graph view": false
     }
   },
-  "active": "d91ca2b6350021aa",
+  "active": "a8513218d562cbea",
   "lastOpenFiles": [
-    "base/categories/computer science.md",
-    "base/notes/shifted mex codeforces 2185c.md",
-    "base/notes/влияние сортировки массива и удаления дубликатов.md",
-    "projects/Алгоритмы и структуры данных.md",
-    "home/index.md",
-    "periodic/daily/2026-03-19.md",
-    "base/_hierarchy/linux commands.md",
-    "sources/vault.md",
-    "files/Снимок экрана от 2026-03-19 22-07-50.png",
-    "base/categories/obsidian.md",
-    "base/notes/конструктор.md",
-    "base/notes/Java core.md",
-    "base/notes/heap vs stack.md",
-    "base/notes/java типы памяти в jvm.md",
-    "base/categories/java.md",
-    "sources/Вопросы и ответы к интервью Java разработчика.md",
-    "sources/База знаний fill the gaps.md",
-    "base/notes/java RestController.md",
-    "base/notes/java GetMapping.md",
-    "base/notes/java Autowired на сеттере.md",
-    "base/notes/java Autowired.md",
-    "base/notes/копировать из любого файла.md",
-    "files/2026-03-19 2026-03-19.png",
-    "projects/ЕГЭ Информатика/А2-таблицы истинности.md",
-    "projects/ЕГЭ Математика/ЕГЭ Математика.md",
-    "projects/ЕГЭ Математика/Стратегия.md",
-    "periodic/daily/2026-03-18.md",
+    "projects/ЕГЭ Информатика/ЕГЭ Информатика.md",
+    "periodic/daily/2026-03-23.md",
+    "periodic/weekly/2026-W13.md",
+    "periodic/tasks (grouped by priority).canvas",
+    "periodic/priority.md",
+    "projects/ЕГЭ Математика/А1-простейшая планиметрия.md",
+    "base/notes/работа с next_action.md",
+    "files/А1-простейшая планиметрия 2026-03-23-1.png",
+    "files/А1-простейшая планиметрия 2026-03-23.png",
     "projects/ЕГЭ Информатика/А6-простейшие алгоритмы.md",
-    "skills/local-today",
-    "skills/local_today/scripts/example.py",
-    "skills/local_today/assets/example_asset.txt",
-    "skills/local_today/scripts",
-    "skills/local_today/references",
-    "skills/local_today/assets",
-    "skills/local_today",
-    "files/My AI 2026-03-18.png",
-    "files/А6-простейшие алгоритмы 2026-03-16.png",
-    "files/A6_hard.py 2026-03-15.png",
+    "projects/ЕГЭ Математика/Прогресс.md",
+    "periodic/daily/2026-03-16.md",
+    "periodic/daily/2026-03-24.md",
+    "periodic/weekly/2026-W14.md",
+    "periodic/daily/2026-03-22.md",
+    "periodic/statuses/next_action.md",
+    "periodic/statuses/reference.md",
+    "periodic/upcoming.md",
+    "periodic/statuses/inbox.md",
+    "periodic/weekly/2026-W12.md",
+    "templates/create/used/weekly - enhanced.md",
+    "templates/create/used/daily - enhanced.md",
+    "files/2026-03-22 2026-03-22.png",
+    "periodic/daily/2026-03-21.md",
+    "periodic/daily/2026-03-20.md",
+    "periodic/daily/2026-03-19.md",
+    "periodic/daily/2026-03-18.md",
+    "periodic/daily/2026-03-17.md",
+    "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/6-дневник-наблюдений.md",
+    "projects/ЕГЭ Информатика/А7-кодирование информации.md",
     "home/databases/projects.base",
-    "projects/ЕГЭ Информатика",
-    "files/vault 2026-03-16.png",
-    "projects/ЕГЭ Математика",
-    "files/Подготовка к ЕГЭ 2026-03-15-1.png",
-    "files/Подготовка к ЕГЭ 2026-03-15.png",
-    "files/Подготовка к ЕГЭ 2026-03-14-1.png",
-    "files/Подготовка к ЕГЭ 2026-03-14.png",
+    "home/databases/sources.base",
+    "periodic/tasks (grouped by effort).canvas",
+    "periodic/tasks (grouped by time).canvas",
+    "projects/Диплом ML Deployment",
+    "files/Narcissu 2026-03-20-5.png",
+    "files/Narcissu 2026-03-20-4.png",
+    "files/Narcissu 2026-03-20-3.png",
+    "files/Narcissu 2026-03-20-2.png",
+    "files/Narcissu 2026-03-20-1.png",
+    "files/Narcissu 2026-03-20.png",
+    "skills/local-today",
+    "skills/skill-creator/eval-viewer/viewer.html",
+    "skills/skill-creator/eval-viewer/generate_review.py",
+    "skills/skill-creator/assets/eval_review.html",
+    "skills/skill-creator/scripts/utils.py",
+    "skills/skill-creator/scripts/run_loop.py",
+    "skills/skill-creator/scripts/run_eval.py",
+    "files/Снимок экрана от 2026-03-19 22-07-50.png",
     "periodic/2027.canvas",
     "periodic/2026.canvas",
     "periodic/2025.canvas",
-    "periodic/tasks (grouped by priority).canvas",
-    "periodic/tasks (grouped by effort).canvas",
-    "periodic/tasks (grouped by time).canvas",
     "base/canvases/Прогноз нагрузки на серверы на основе исторических данных.canvas",
     "base/canvases/Диаграмма распределения пиковых нагрузок.canvas",
     "base/canvases/Архитектура для платформы предсказывающую нагрузку на серверы.canvas",

@@ -4,8 +4,9 @@ tags:
   - category/computer_science
 aliases:
   - shifted MEX solution
+meta:
 created: 2026-03-19T22:15:00+03:00
-updated: 2026-03-20T00:24:21+03:00
+updated: 2026-03-20T00:48:58+03:00
 ---
 
 # Shifted MEX — Codeforces 2185C
@@ -21,7 +22,6 @@ MEX — минимальное неотрицательное число, отс
 Оптимальный сдвиг `x` делает так, чтобы `a[i] + x = k` для какого-то `k` в диапазоне MEX. Тогда `x = k - a[i]`.
 
 Перебираем все пары `(i, k)` где `i` — индекс элемента, `k` —MEX.
-
 ## Решение (O(n log n))
 
 ```java
@@ -79,3 +79,4 @@ public class Main {
 - MEX: 0, 1, 2 есть → MEX = **3**
 
 https://codeforces.com/problemset/problem/2185/C
+[[algorithms]]

@@ -9,6 +9,7 @@ status: 🟩
 category:
   - "[[computer science]]"
 meta:
+  - grapthics
 problem:
 related:
 creator:

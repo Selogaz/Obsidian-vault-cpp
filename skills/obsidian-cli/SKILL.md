@@ -9,24 +9,6 @@ Use the `obsidian` CLI to interact with a running Obsidian instance. Requires Ob
 
 **REQUIRES:** Obsidian 1.12+ with CLI enabled: Settings → General → Command line interface.
 
-## PATH Setup
-
-On macOS, Obsidian adds itself to `.zprofile` when you enable the CLI:
-```bash
-export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
-```
-
-In Claude Code Bash tool sessions (non-login shell), source it explicitly or use the full path:
-```bash
-# Option A: set PATH inline
-export PATH="/Applications/Obsidian.app/Contents/MacOS:$PATH" && obsidian <command>
-
-# Option B: full path
-/Applications/Obsidian.app/Contents/MacOS/Obsidian <command>
-```
-
-For brevity, all examples below assume `obsidian` is in PATH.
-
 ## Syntax
 
 **Parameters** take a value with `=`. Quote values with spaces:
@@ -176,10 +158,16 @@ obsidian files folder=base/_problems ext=md
 
 ### Finding active projects (replaces: Grep "status: 🟦" in projects/)
 ```bash
-# Use [property: value] syntax for frontmatter property search:
+# Combine tag: operator with [property: value] — searches entire vault, no path needed:
+obsidian search query="tag:#project [status: 🟦]"
+obsidian search query="tag:#project [status: 🟥]"
+
+# IMPORTANT: bare #tag + [property: value] returns 0 — always use tag: operator
+# tag: supports nested tags: tag:#project matches project/single, project/longform, etc.
+
+# Without tag filter (includes subfolders recursively — may include longform scenes):
 obsidian search query="[status: 🟦]" path=projects
 obsidian search query="[status: 🟩]" path=projects
-obsidian search query="[status: 🟥]" path=projects
 ```
 
 ### Finding inbox tasks across daily notes (replaces: Grep #task/inbox)
@@ -213,10 +201,10 @@ obsidian search query="[status: 🟩] [end: 2026-02]" path=sources total
 # Tasks completed this month (text search for ✅ date marker):
 obsidian search query="✅ 2026-02" total
 
-# Projects by status (replaces: Grep "status: 🟦" in projects/):
-obsidian search query="[status: 🟦]" path=projects
-obsidian search query="[status: 🟥]" path=projects
-obsidian search query="[status: 🟩]" path=projects
+# Projects by status — use tag: to exclude longform scenes:
+obsidian search query="tag:#project [status: 🟦]"   # in progress
+obsidian search query="tag:#project [status: 🟥]"   # todo
+obsidian search query="tag:#project [status: 🟩]"   # done
 ```
 
 **IMPORTANT:** `[property: value]` syntax supports partial matching:

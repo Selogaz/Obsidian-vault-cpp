@@ -8,7 +8,8 @@ aliases:
 status: 🟥
 category:
   - "[[computer science]]"
-
+meta:
+  - hardware
 ---
 
 ```toc
