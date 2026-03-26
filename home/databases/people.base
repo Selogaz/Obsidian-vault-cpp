@@ -76,6 +76,8 @@ views:
       - formula.updated_relative
     sort:
       - property: relevant
+        direction: ASC
+      - property: formula.type
         direction: DESC
     limit: 28
     columnSize:

@@ -33,6 +33,7 @@ games – g
 study – s
 linux – l
 productivity – prod
+webdev – web
 
 
 ```yaml

@@ -112,5 +112,5 @@ public class FactoryMethodDemo {
 
 Еще существует <font color="#ffff00">Simple Factory</font> и <font color="#ffff00">Abstract Factory</font>
 
-- [ ] #task/inbox #category/work Simple Factory
-- [ ] #task/inbox #category/work Abstract Factory
+- [ ] #task/inbox #category/java Simple Factory
+- [ ] #task/inbox #category/java Abstract Factory

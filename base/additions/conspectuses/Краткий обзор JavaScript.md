@@ -14,7 +14,7 @@ url:
 start: 2026-01-22T15:04:59+03:00
 end:
 created: 2026-01-22T15:04:59+03:00
-updated: 2026-01-24T21:08:24+03:00
+updated: 2026-03-24T15:50:13+03:00
 ---
 
 > [!toc]+
@@ -68,10 +68,12 @@ const FOOTER_COLOR = "#ccc";
 
 ## Именование переменных и классов
 
-### [[prog camelCase|camelCase]]
+### camelCase[^1]
 - для переменных
 - констант, получающих значение [[динамическое создание в языках программирования|динамически]]
-- [ ] #task/inbox #category/programming - Сделать заметку по статическому созданию в языках программирования, чтобы связать все вещи, создаваемые на этапе написания кода.
+
+- [ ] #task/inbox #category/webdev - Сделать заметку по статическому созданию в языках программирования, чтобы связать все вещи, создаваемые на этапе написания кода.
+
 ```js
 const user = fetchUser(); // ❌ не UPPER_SNAKE_CASE
 ```
@@ -349,3 +351,5 @@ document.getElementsByTagName('li');//по тегу
 document.getElementById('car');//по атрибуту id
 document.getElementsByClassName('text');//по атрибуту класс
 ```
+
+[^1]: [[prog camelCase]]

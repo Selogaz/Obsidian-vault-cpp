@@ -22,8 +22,8 @@ sr-ease: null
 	- [Java 8 коллекции — urvanov.ru](https://urvanov.ru/2016/06/14/java-8-%d0%ba%d0%be%d0%bb%d0%bb%d0%b5%d0%ba%d1%86%d0%b8%d0%b8/)
 - Stack, heap [[heap vs stack]]
 - Больше практики (в зотеро есть еще одна книга по спрингу)
-- [ ] #task/inbox #category/work Spring Framework
-- [ ] #task/inbox #category/work RabbitMQ. Очереди
+- [ ] #task/inbox #category/java Spring Framework
+- [ ] #task/inbox #category/java RabbitMQ. Очереди
 - [x] #task/inbox #category/work [[java Многопоточность|Многопоточность]]. ✅ 2025-09-12
 	- [Java 8 Многопоточность — urvanov.ru](https://urvanov.ru/2016/05/27/java-8-%d0%bc%d0%bd%d0%be%d0%b3%d0%be%d0%bf%d0%be%d1%82%d0%be%d1%87%d0%bd%d0%be%d1%81%d1%82%d1%8c/)
 	- [GitHub - enhorse/java-interview: Многопоточность](https://github.com/enhorse/java-interview/tree/master#%D0%9C%D0%BD%D0%BE%D0%B3%D0%BE%D0%BF%D0%BE%D1%82%D0%BE%D1%87%D0%BD%D0%BE%D1%81%D1%82%D1%8C)
