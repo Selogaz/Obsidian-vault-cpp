@@ -11,48 +11,10 @@
             "id": "bda9ef25e60d256c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "periodic/daily/2026-03-26.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2026-03-26"
-            }
-          },
-          {
-            "id": "ef61060d0a0362b1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "projects/Подземелья Максвелла.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Подземелья Максвелла"
+              "title": "New tab"
             }
           }
         ]
@@ -318,13 +280,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "periodic/daily/2026-03-26.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-03-26"
+              "title": "Outline"
             }
           },
           {
@@ -368,7 +329,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 348.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -388,29 +350,37 @@
   },
   "active": "bda9ef25e60d256c",
   "lastOpenFiles": [
-    "projects/Подземелья Максвелла.md",
-    "home/databases/projects.base",
-    "periodic/daily/2026-03-26.md",
-    "periodic/daily/2026-03-25.md",
-    "projects/ЕГЭ Математика/А3-простейшая стереометрия.md",
+    "periodic/daily/2026-03-27.md",
+    "sources/Deepseek помощь в лечении функциональных расстройств.md",
     "periodic/tasks (grouped by priority).canvas",
+    "base/notes/подергивания правого глаза.md",
+    "base/_hierarchy/Диагнозы.md",
     "periodic/priority.md",
-    "projects/ЕГЭ Математика/A2-векторы.md",
-    "periodic/daily/2026-03-24.md",
-    "home/databases/sources.base",
-    "projects/Диплом ML Deployment/Диплом ML Deployment.md",
-    "base/notes/справка по подготовке к работе.md",
-    "projects/Алгоритмы и структуры данных.md",
-    "periodic/statuses/inbox.md",
-    "base/additions/conspectuses/Краткий обзор JavaScript.md",
-    "home/fleetings.md",
-    "sources/Narcissu.md",
-    "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/6-дневник-наблюдений.md",
-    "home/databases/notes.base",
+    "base/notes/тошнота после пробуждения.md",
+    "base/notes/почему в носках сон плохой.md",
+    "base/notes/дискомфорт в груди.md",
+    "base/notes/скрытый железодефицит.md",
+    "base/_hierarchy/Анализы для выявления скрытого железодефицита.md",
+    "base/notes/Витамин D (25-OH).md",
+    "base/notes/почему горячий чай мне помогает.md",
+    "base/notes/резкие пробуждения среди ночи.md",
+    "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки.md",
+    "projects/ЕГЭ Информатика/А7-кодирование информации.md",
+    "home/prefixes.md",
+    "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/5-план-действий.md",
+    "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/4-методы-лечения.md",
+    "base/notes/путь для шаблонов alt e.md",
+    "projects/Подземелья Максвелла.md",
+    "projects/ЕГЭ Информатика/А6-простейшие алгоритмы.md",
+    "projects/ЕГЭ Информатика/А5-алгоритмы на системы счисления.md",
+    "base/notes/действия при усталости.md",
+    "sources/vault.md",
     "base/notes/советы по борьбе с апатией.md",
-    "projects/ЕГЭ Математика/А1-простейшая планиметрия.md",
+    "files/Site dnd.pdf",
+    "home/databases/projects.base",
+    "home/databases/sources.base",
+    "home/databases/notes.base",
     "files/А1-простейшая планиметрия 2026-03-24-13.png",
-    "base/notes/методы избегания прокрастинации.md",
     "files/А1-простейшая планиметрия 2026-03-24-12.png",
     "files/А1-простейшая планиметрия 2026-03-24-11.png",
     "files/А1-простейшая планиметрия 2026-03-24-10.png",
@@ -420,13 +390,6 @@
     "files/А1-простейшая планиметрия 2026-03-24-6.png",
     "files/А1-простейшая планиметрия 2026-03-24-5.png",
     "files/А1-простейшая планиметрия 2026-03-24-4.png",
-    "projects/ЕГЭ Математика/ЕГЭ Математика.md",
-    "base/_hierarchy/My AI.md",
-    "periodic/daily/2026-03-18.md",
-    "periodic/daily/2026-03-19.md",
-    "periodic/daily/2026-03-20.md",
-    "periodic/daily/2026-03-21.md",
-    "periodic/daily/2026-03-22.md",
     "home/databases/people.base",
     "base/contacts",
     "periodic/tasks (grouped by effort).canvas",
@@ -435,7 +398,6 @@
     "skills/local-today",
     "skills/skill-creator/eval-viewer/viewer.html",
     "skills/skill-creator/eval-viewer/generate_review.py",
-    "skills/skill-creator/assets/eval_review.html",
     "periodic/2027.canvas",
     "periodic/2026.canvas",
     "periodic/2025.canvas",

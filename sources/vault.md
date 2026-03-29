@@ -15,7 +15,7 @@ start: 2025-05-20T12:24:31+03:00
 end:
 total_hours: 0
 created: 2025-05-20T12:24:31+03:00
-updated: 2026-03-19T23:18:44+03:00
+updated: 2026-03-27T09:17:40+03:00
 ---
 
 ![cover|150](https://yastatic.net/s3/psf/disk-public/_/6jthIYkBdecaLwm8yXZPKuI1HW7.png)
@@ -124,6 +124,7 @@ https://www.youtube.com/watch?**v=4wB-Ph5XYV0
 **Проекты и задачи:**
 - `obsidian-projects` — управление проектами (статусы, приоритеты)
 - `obsidian-tasks` — GTD задачи с тегами #task/, #category/
+	- [[Типы задач в Obsidian]]
 
 **Базы и источники:**
 - `obsidian-bases` — .base файлы (таблицы, карточки, фильтры)
