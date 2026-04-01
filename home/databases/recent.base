@@ -1,0 +1,167 @@
+filters:
+  or:
+    - file.inFolder("base")
+    - file.inFolder("sources")
+    - file.inFolder("projects")
+formulas:
+  created_relative: created.relative()
+  updated_relative: updated.relative()
+  folder_type: |
+    if(file.inFolder("base"), "📝 base",
+      if(file.inFolder("sources"), "📚 sources",
+        if(file.inFolder("projects"), "📋 projects", "other")))
+  today_activity: |
+    if(created >= today(), "🆕 created today",
+      if(updated >= today(), "🔄 updated today", "—"))
+properties:
+  file.name:
+    displayName: 🔤 title
+  formula.created_relative:
+    displayName: 🆕 created
+  formula.updated_relative:
+    displayName: 🔄 updated
+  formula.folder_type:
+    displayName: 📂 folder
+  formula.today_activity:
+    displayName: 📅 activity
+views:
+  - type: table
+    name: 🔄 Last Updated
+    groupBy:
+      property: formula.folder_type
+      direction: ASC
+    order:
+      - file.name
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.updated_relative
+        direction: DESC
+    limit: 25
+    columnSize:
+      file.name: 1325
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: 🆕 Last Created
+    groupBy:
+      property: formula.folder_type
+      direction: ASC
+    order:
+      - file.name
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    limit: 25
+    columnSize:
+      file.name: 1325
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: 📅 Today activity
+    filters:
+      or:
+        - created >= today()
+        - updated >= today()
+    groupBy:
+      property: formula.today_activity
+      direction: ASC
+    order:
+      - file.name
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.updated_relative
+        direction: DESC
+    columnSize:
+      file.name: 1325
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: 📆 Last 7 Days
+    filters:
+      or:
+        - created >= today() - "7d"
+        - updated >= today() - "7d"
+    order:
+      - file.name
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 1325
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: 🗓️ Last 30 Days
+    filters:
+      or:
+        - created >= today() - "30d"
+        - updated >= today() - "30d"
+    order:
+      - file.name
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 1325
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: 🔲 Last 90 Days
+    filters:
+      or:
+        - created >= today() - "90d"
+        - updated >= today() - "90d"
+    order:
+      - file.name
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 1325
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: 📊 Last 365 Days
+    filters:
+      or:
+        - created >= today() - "365d"
+        - updated >= today() - "365d"
+    order:
+      - file.name
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 1325
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: 🧊 Stale (365+ days)
+    filters:
+      and:
+        - '!file.hasTag("system/category")'
+        - updated < today() - "365d"
+    order:
+      - file.name
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.updated_relative
+        direction: ASC
+    limit: 28
+    columnSize:
+      file.name: 1325
+      formula.created_relative: 140
+      formula.updated_relative: 140

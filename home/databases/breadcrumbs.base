@@ -1,0 +1,136 @@
+filters:
+  and:
+    - file.path != this.file.path
+formulas:
+  fm_out: this.file.properties.values() .map(list(value)).flat() .map(value.toString()) .filter(value.contains("[[")) .map(link(value)) .map(file(value)) .contains(file)
+  in_any: file.links.contains(this.file)
+  out_any: this.file.links.contains(file)
+  out_2hop: this.file.links.map(file(value)).map(value.links).flat().map(file(value)).contains(file)
+  in_2hop: this.file.backlinks.map(file(value)).map(value.backlinks).flat().map(file(value)).contains(file)
+  is_2hop: (formula.out_2hop || formula.in_2hop) && !formula.in_any && !formula.out_any && !formula.fm_out
+  rank: if(formula.fm_out, -1, if(formula.in_any && formula.out_any, 0, if(formula.in_any, 1, 2)))
+  icon: if(formula.fm_out, "📋️", if(formula.in_any && formula.out_any, "🖇️", if(formula.in_any, "🔽", "⬆️")))
+  pseudo_random: ((now() - file.ctime).milliseconds % 10000 + file.name.length * 17 + file.size % 1000) % 100
+properties:
+  formula.icon:
+    displayName: 🔗
+  file.name:
+    displayName: 🔤 title
+views:
+  - type: table
+    name: 🔗 links
+    filters:
+      or:
+        - formula.in_any
+        - formula.out_any
+    order:
+      - formula.icon
+      - file.name
+    sort:
+      - property: file.name
+        direction: ASC
+      - property: formula.rank
+        direction: ASC
+      - property: file.tags
+        direction: ASC
+    columnSize:
+      formula.link: 1
+  - type: table
+    name: 🥢 2-hop
+    filters:
+      and:
+        - formula.is_2hop
+    order:
+      - file.name
+    sort:
+      - property: file.tags
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 🎲 random
+    filters:
+      or:
+        - file.inFolder("base/_hierarchy")
+        - file.inFolder("base/_meta-notes")
+        - file.inFolder("base/_problems")
+        - file.inFolder("base/contacts")
+        - file.inFolder("base/notes")
+        - file.inFolder("base/productions")
+        - file.inFolder("sources")
+        - file.inFolder("projects")
+    order:
+      - file.name
+    sort:
+      - property: formula.pseudo_random
+        direction: DESC
+    limit: 20
+  - type: table
+    name: ➕️ addition
+    filters:
+      and:
+        - or:
+            - file.hasTag("mark/addition")
+            - file.hasTag("mark/log")
+        - or:
+            - file.hasLink(this.asLink())
+            - this.file.hasLink(file.asLink())
+            - source.contains(this)
+            - project.contains(this)
+    order:
+      - file.name
+    sort:
+      - property: file.tags
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 🗺️ category
+    filters:
+      and:
+        - category.containsAny(this.category)
+    order:
+      - file.name
+    sort:
+      - property: file.tags
+        direction: DESC
+  - type: table
+    name: 🔎 meta
+    filters:
+      and:
+        - meta.containsAny(this.meta)
+    order:
+      - file.name
+    sort:
+      - property: file.tags
+        direction: DESC
+  - type: table
+    name: ⚡️ problem
+    filters:
+      and:
+        - problem.containsAny(this.problem)
+    order:
+      - file.name
+    sort:
+      - property: file.tags
+        direction: DESC
+  - type: table
+    name: 👨 creator
+    filters:
+      and:
+        - creator.containsAny(this.creator)
+    order:
+      - file.name
+    sort:
+      - property: file.tags
+        direction: DESC
+  - type: table
+    name: 🏬 production
+    filters:
+      and:
+        - production.containsAny(this.production)
+    order:
+      - file.name
+    sort:
+      - property: file.tags
+        direction: DESC

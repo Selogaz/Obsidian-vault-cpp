@@ -1,0 +1,25 @@
+---
+tags:
+  - status/todo
+  - source/article/paper
+  - category/webdev
+aliases:
+  - Интенсив по фреймворку VUE 3» [Андрей Кобец]
+status: 🟥
+rating:
+scientificity:
+category:
+  - "[[webdev]]"
+meta:
+problem:
+related:
+creator:
+production:
+url: "[SHAREWOOD.TECH (ex .BIZ) (Шервуд) 🔥 Слив Курсов – Скачать Бесплатно](https://s1.sharewood.tech/threads/andrej-kobec-kobezzza-channel-intensiv-po-frejmvorku-vue-3-2022.390153/)"
+zotero: "[🇿](zotero://select/items/@IntensivPoFreymvorku2022)"
+published: 2022
+start: 2026-01-14T09:50:22+03:00
+end:
+created: 2026-01-14T09:50:22+03:00
+updated: 2026-02-28T23:35:23+03:00
+---

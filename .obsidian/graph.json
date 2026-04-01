@@ -1,0 +1,184 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": false,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "tag:#note/basic",
+      "color": {
+        "a": 1,
+        "rgb": 9486517
+      }
+    },
+    {
+      "query": "tag:#note/specific",
+      "color": {
+        "a": 1,
+        "rgb": 14543214
+      }
+    },
+    {
+      "query": "tag:#system/category",
+      "color": {
+        "a": 1,
+        "rgb": 3509376
+      }
+    },
+    {
+      "query": "tag:#system/supercategory",
+      "color": {
+        "a": 1,
+        "rgb": 13684936
+      }
+    },
+    {
+      "query": "tag:#system/high/hierarchy",
+      "color": {
+        "a": 1,
+        "rgb": 10551504
+      }
+    },
+    {
+      "query": "tag:#system/high/meta",
+      "color": {
+        "a": 1,
+        "rgb": 8283336
+      }
+    },
+    {
+      "query": "tag:#system/high/problem",
+      "color": {
+        "a": 1,
+        "rgb": 14266432
+      }
+    },
+    {
+      "query": "tag:#periodic",
+      "color": {
+        "a": 1,
+        "rgb": 6450848
+      }
+    },
+    {
+      "query": "tag:#project/short",
+      "color": {
+        "a": 1,
+        "rgb": 11898992
+      }
+    },
+    {
+      "query": "tag:#project/single",
+      "color": {
+        "a": 1,
+        "rgb": 13136181
+      }
+    },
+    {
+      "query": "tag:#project/longform",
+      "color": {
+        "a": 1,
+        "rgb": 6526389
+      }
+    },
+    {
+      "query": "tag:#mark/log OR tag:#mark/addition",
+      "color": {
+        "a": 1,
+        "rgb": 9486517
+      }
+    },
+    {
+      "query": "tag:#source/article",
+      "color": {
+        "a": 1,
+        "rgb": 8743104
+      }
+    },
+    {
+      "query": "tag:#source/book",
+      "color": {
+        "a": 1,
+        "rgb": 13093232
+      }
+    },
+    {
+      "query": "tag:#source/course",
+      "color": {
+        "a": 1,
+        "rgb": 8026677
+      }
+    },
+    {
+      "query": "tag:#source/cinematic",
+      "color": {
+        "a": 1,
+        "rgb": 13854037
+      }
+    },
+    {
+      "query": "tag:#source/podcast",
+      "color": {
+        "a": 1,
+        "rgb": 3503504
+      }
+    },
+    {
+      "query": "tag:#source/video",
+      "color": {
+        "a": 1,
+        "rgb": 3509376
+      }
+    },
+    {
+      "query": "tag:#creator",
+      "color": {
+        "a": 1,
+        "rgb": 14462048
+      }
+    },
+    {
+      "query": "tag:#production",
+      "color": {
+        "a": 1,
+        "rgb": 13850949
+      }
+    },
+    {
+      "query": "tag:#contact",
+      "color": {
+        "a": 1,
+        "rgb": 4718773
+      }
+    },
+    {
+      "query": "tag:#mark/gtd",
+      "color": {
+        "a": 1,
+        "rgb": 4587361
+      }
+    },
+    {
+      "query": "tag:#mark/scene",
+      "color": {
+        "a": 1,
+        "rgb": 14600064
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.377604166666667,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.059326171875,
+  "close": false
+}

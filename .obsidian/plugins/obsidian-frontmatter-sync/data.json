@@ -1,0 +1,81 @@
+{
+  "propertyConfigs": [
+    {
+      "propertyName": "category",
+      "syncType": "wikilink",
+      "tagPrefix": "category/"
+    },
+    {
+      "propertyName": "status",
+      "syncType": "value",
+      "valueMappings": [
+        {
+          "propertyValue": "🟥",
+          "tagValue": "status/todo"
+        },
+        {
+          "propertyValue": "🟦",
+          "tagValue": "status/wip"
+        },
+        {
+          "propertyValue": "🟩",
+          "tagValue": "status/done"
+        },
+        {
+          "propertyValue": "⚛",
+          "tagValue": "status/atom"
+        },
+        {
+          "propertyValue": "📢",
+          "tagValue": "status/published"
+        },
+        {
+          "propertyValue": "❄",
+          "tagValue": "status/hold"
+        },
+        {
+          "propertyValue": "⬛",
+          "tagValue": "status/drop"
+        }
+      ]
+    },
+    {
+      "propertyName": "priority",
+      "syncType": "value",
+      "valueMappings": [
+        {
+          "propertyValue": "🇦",
+          "tagValue": "priority/a"
+        },
+        {
+          "propertyValue": "🇧",
+          "tagValue": "priority/b"
+        },
+        {
+          "propertyValue": "🇨",
+          "tagValue": "priority/c"
+        },
+        {
+          "propertyValue": "🇩",
+          "tagValue": "priority/d"
+        },
+        {
+          "propertyValue": "🇪",
+          "tagValue": "priority/d"
+        }
+      ]
+    }
+  ],
+  "syncTags": [
+    "source",
+    "project",
+    "system/high",
+    "contact",
+    "production",
+    "creator"
+  ],
+  "ignoreTags": [
+    "mark/log",
+    "mark/no_sync"
+  ]
+}

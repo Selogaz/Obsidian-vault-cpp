@@ -1,0 +1,66 @@
+/* FONTS (loaded locally from fonts.css) */
+body {
+  --font-text-theme: 'Rubik', 'Noto Color Emoji', sans-serif !important;
+  --font-editor-theme: 'Rubik', 'Noto Color Emoji', sans-serif !important;
+  --font-monospace-theme:
+    'Roboto Mono', 'Noto Color Emoji', monospace !important;
+  --font-interface-theme: 'Inter', 'Noto Color Emoji', sans-serif !important;
+  --font-heading-theme: 'Tinos', 'Noto Color Emoji', serif !important;
+}
+
+/* Shimmering focus */
+.theme-dark.theme-dark {
+  --bg-hue-dark: 0;
+  --bg-sat: 0;
+}
+
+/* DELETE TOP SPACES */
+.view-content > .markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller {
+  padding-top: 0px;
+}
+
+/* HIDE ELEMENTS */
+/* vault manager */
+/* body:not(.is-mobile) */
+/*   .workspace-split.mod-left-split */
+/*   .workspace-sidedock-vault-profile, */
+/* status bar */
+.status-bar,
+/* empty state actions */
+.empty-state-container,
+/* empty heading panel */
+.pane-empty,
+/* empty search panel */
+.search-empty-state,
+/* menu separator */
+.menu-scroll .menu-separator,
+/* toggle buttons */
+/* body:not(.show-sidebar-toggle-buttons) .sidebar-toggle-button, */
+/* bases head on left panel */
+.mod-left-split .bases-thead,
+/* bases toolbar icons */
+.bases-toolbar-item.bases-toolbar-views-menu .text-button-icon,
+.bases-toolbar-menu-item-info .bases-toolbar-menu-item-info-icon,
+/* bases header icons */
+.bases-table-header-icon,
+.mb-search-modal-element-description,
+/* new note on kanban view */
+.board-view .board-new-note-button,
+/* properties heading */
+.metadata-properties-heading,
+/* properties */
+[data-property-key='sr-due'],
+[data-property-key='sr-interval'],
+[data-property-key='sr-ease'],
+[data-property-key='created'],
+[data-property-key='updated'],
+[data-property-key='journal'],
+[data-property-key='journal-start-date'],
+[data-property-key='journal-end-date'],
+[data-property-key='journal-section'],
+[data-property-key='obsidianUIMode'],
+[data-property-key='BC-tag-note'],
+[data-property-key='BC-tag-note-field'],
+[data-property-key='longform'] {
+  display: none !important;
+}

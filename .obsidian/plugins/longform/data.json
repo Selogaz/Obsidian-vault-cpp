@@ -1,0 +1,122 @@
+{
+  "version": 3,
+  "projects": {},
+  "selectedDraftVaultPath": "projects/ЕГЭ Информатика/ЕГЭ Информатика.md",
+  "userScriptFolder": null,
+  "sessionStorage": "data",
+  "sessions": [
+    {
+      "start": "2026-03-10T22:07:23.222Z",
+      "total": 16485,
+      "drafts": {
+        "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки.md": {
+          "total": 1915,
+          "scenes": {
+            "1-введение": 121,
+            "2-диагностика": 133,
+            "3-возможные-причины": 160,
+            "4-методы-лечения": 304,
+            "5-план-действий": 204,
+            "6-дневник-наблюдений": 803,
+            "7-анализы": 190
+          }
+        },
+        "projects/ЕГЭ Математика/ЕГЭ Математика.md": {
+          "total": 7040,
+          "scenes": {
+            "Стратегия": 4,
+            "Прогресс": 394,
+            "А1-простейшая планиметрия": 2880,
+            "A2-векторы": 1498,
+            "А3-простейшая стереометрия": 638,
+            "А4-простая вероятность": 651,
+            "А5-сложная вероятность": 829,
+            "А14-стереометрия": 138,
+            "А6-простейшие уравнения": 4,
+            "А7-преобразования": 4
+          }
+        },
+        "projects/ЕГЭ Информатика/ЕГЭ Информатика.md": {
+          "total": 6452,
+          "scenes": {
+            "А2-таблицы истинности": 1050,
+            "А3-базы данных Excel": 11,
+            "А4-условие Фано": 939,
+            "А5-алгоритмы на системы счисления": 649,
+            "А6-простейшие алгоритмы": 1207,
+            "А7-кодирование информации": 925,
+            "А8-комбинаторика и системы счислений": 1453,
+            "Прогресс": 206,
+            "9-электронные таблицы": 4,
+            "10-редактор текста": 4,
+            "11-посимвольное кодирование": 4
+          }
+        },
+        "projects/Диплом ML Deployment/Диплом ML Deployment.md": {
+          "total": 1078,
+          "scenes": {
+            "01-тема-и-актуальность": 541,
+            "02-обзор-микросервисной-архитектуры": 86,
+            "03-mlops-и-deployment": 102,
+            "04-проектирование-системы": 83,
+            "05-implementation": 109,
+            "06-testing": 72,
+            "07-results": 85
+          }
+        }
+      }
+    }
+  ],
+  "showWordCountInStatusBar": false,
+  "startNewSessionEachDay": false,
+  "sessionGoal": 500,
+  "applyGoalTo": "all",
+  "notifyOnGoal": false,
+  "countDeletionsForGoal": false,
+  "keepSessionCount": 30,
+  "sessionFile": "longform-sessions.json",
+  "numberScenes": false,
+  "sceneTemplate": "templates/create/projects/longform scene template.md",
+  "waitForSync": false,
+  "fallbackWaitEnabled": true,
+  "fallbackWaitTime": 5,
+  "workflows": {
+    "Default Workflow": {
+      "name": "Default Workflow",
+      "description": "A starter workflow. Feel free to edit, rename, or delete it and create your own.",
+      "steps": [
+        {
+          "id": "strip-frontmatter",
+          "optionValues": {}
+        },
+        {
+          "id": "remove-links",
+          "optionValues": {
+            "remove-wikilinks": true,
+            "remove-external-links": true
+          }
+        },
+        {
+          "id": "prepend-title",
+          "optionValues": {
+            "format": "$3{#} $1",
+            "separator": "\n\n"
+          }
+        },
+        {
+          "id": "concatenate-text",
+          "optionValues": {
+            "separator": "\\n\\n---\\n\\n"
+          }
+        },
+        {
+          "id": "write-to-note",
+          "optionValues": {
+            "target": "manuscript.md",
+            "open-after": true
+          }
+        }
+      ]
+    }
+  }
+}

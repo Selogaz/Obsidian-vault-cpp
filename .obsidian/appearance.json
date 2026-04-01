@@ -1,0 +1,22 @@
+{
+  "baseFontSize": 20,
+  "baseFontSizeAction": false,
+  "showViewHeader": false,
+  "nativeMenus": false,
+  "enabledCssSnippets": [
+    "supercharged-links-manual",
+    "tags",
+    "fonts",
+    "general-view",
+    "cssclasses",
+    "callouts",
+    "modals",
+    "calendar",
+    "supercharged-links",
+    "supercharged-links-gen",
+    "mobile"
+  ],
+  "cssTheme": "Base16 Default Dark",
+  "showRibbon": false,
+  "theme": "obsidian"
+}

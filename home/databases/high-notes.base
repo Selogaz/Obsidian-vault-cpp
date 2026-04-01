@@ -1,0 +1,412 @@
+filters:
+  and:
+    - file.path != this.file.path
+    - or:
+        - file.inFolder("base/categories")
+        - file.inFolder("base/_meta-notes")
+        - file.inFolder("base/_problems")
+        - file.inFolder("base/_hierarchy")
+    - or:
+        - '!this.file.hasTag("system/category")'
+        - or:
+            - file.hasTag("category/" + this.file.name.replace(" ", "_"))
+            - category.contains(link(this.file.name))
+formulas:
+  backlinks: file.backlinks.length
+  outlinks: file.links.length
+  created_relative: created.relative()
+  updated_relative: updated.relative()
+  type: if(file.tags.toString().contains("#system/category"), "Category", if(file.tags.toString().contains("#system/high/meta"), "Meta-note", if(file.tags.toString().contains("#system/high/problem"), "Problem", if(file.tags.toString().contains("#system/high/hierarchy"), "Hierarchy", "Other"))))
+  category_status: if(file.tags.toString().contains("#system/category"), if(category.isEmpty(), "✅", "❌"), if(file.tags.toString().contains("#system/high/meta"), if(!category.isEmpty(), "✅", "❌"), if(file.tags.toString().contains("#system/high/problem"), if(!category.isEmpty(), "✅", "❌"), if(file.tags.toString().contains("#system/high/hierarchy"), if(!category.isEmpty(), "✅", "❌"), ""))))
+  meta_status: if(file.tags.toString().contains("#system/category"), if(meta.isEmpty(), "✅", "❌"), if(file.tags.toString().contains("#system/high/meta"), if(meta.isEmpty(), "✅", "❌"), if(file.tags.toString().contains("#system/high/problem"), if(!meta.isEmpty(), "✅", "❌"), if(file.tags.toString().contains("#system/high/hierarchy"), "✅", ""))))
+  problem_status: if(file.tags.toString().contains("#system/high/hierarchy"), "✅", if(problem.isEmpty(), "✅", "❌"))
+  category_type_valid: if(category.isEmpty(), "✅", if(list(category).filter(value.asFile().hasTag("system/category")).length == list(category).length, "✅", "❌"))
+  meta_type_valid: if(meta.isEmpty(), "✅", if(list(meta).filter(value.asFile().hasTag("system/high/meta")).length == list(meta).length, "✅", "❌"))
+  problem_type_valid: if(problem.isEmpty(), "✅", if(list(problem).filter(value.asFile().hasTag("system/high/problem")).length == list(problem).length, "✅", "❌"))
+properties:
+  file.name:
+    displayName: 🔤 title
+  note.addition:
+    displayName: ➕
+  note.relevant:
+    displayName: 📌
+  note.category:
+    displayName: 🗺️ category
+  note.meta:
+    displayName: 🔎 meta
+  note.problem:
+    displayName: ⚡ problem
+  formula.backlinks:
+    displayName: 🔽
+  formula.outlinks:
+    displayName: ⬆️
+  formula.created_relative:
+    displayName: 🆕 created
+  formula.updated_relative:
+    displayName: 🔄 updated
+  formula.type:
+    displayName: 🗄️ type
+  formula.category_status:
+    displayName: structure
+  formula.meta_status:
+    displayName: ✓
+  formula.problem_status:
+    displayName: ✓
+  formula.category_type_valid:
+    displayName: type
+  formula.meta_type_valid:
+    displayName: 🏷️
+  formula.problem_type_valid:
+    displayName: 🏷️
+views:
+  - type: table
+    name: ⚙️ All Notes
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+      - addition
+      - category
+      - meta
+      - problem
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: relevant
+        direction: DESC
+      - property: formula.type
+        direction: DESC
+      - property: category
+        direction: ASC
+      - property: meta
+        direction: ASC
+      - property: problem
+        direction: ASC
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+  - type: table
+    name: "🗄️ Group: By Type"
+    groupBy:
+      property: formula.type
+      direction: DESC
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+      - addition
+      - category
+      - meta
+      - problem
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: relevant
+        direction: DESC
+      - property: category
+        direction: ASC
+      - property: meta
+        direction: ASC
+      - property: problem
+        direction: ASC
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+  - type: table
+    name: "🗺️ Type: Categories"
+    filters:
+      and:
+        - file.inFolder("base/categories")
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+    sort:
+      - property: relevant
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 530
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+  - type: table
+    name: "🔎 Type: Meta-notes"
+    filters:
+      and:
+        - file.inFolder("base/_meta-notes")
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+      - addition
+      - category
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: relevant
+        direction: DESC
+      - property: category
+        direction: ASC
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: "⚡ Type: Problems"
+    filters:
+      and:
+        - file.inFolder("base/_problems")
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+      - addition
+      - category
+      - meta
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: relevant
+        direction: DESC
+      - property: category
+        direction: ASC
+      - property: meta
+        direction: ASC
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: "🧬 Type: Hierarchies"
+    filters:
+      and:
+        - file.inFolder("base/_hierarchy")
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+      - addition
+      - category
+      - meta
+      - problem
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: relevant
+        direction: DESC
+      - property: category
+        direction: ASC
+      - property: meta
+        direction: ASC
+      - property: problem
+        direction: ASC
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+  - type: table
+    name: "🗺️ Group: By Category"
+    filters:
+      and:
+        - "!category.isEmpty()"
+    groupBy:
+      property: category
+      direction: ASC
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+      - addition
+      - category
+      - meta
+      - problem
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: relevant
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: "🔎 Group: By Meta"
+    filters:
+      and:
+        - "!meta.isEmpty()"
+    groupBy:
+      property: meta
+      direction: ASC
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+      - addition
+      - category
+      - problem
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: relevant
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: "⚡ Group: By Problem"
+    filters:
+      and:
+        - "!problem.isEmpty()"
+    groupBy:
+      property: problem
+      direction: ASC
+    order:
+      - relevant
+      - formula.backlinks
+      - formula.outlinks
+      - file.name
+      - addition
+      - category
+      - meta
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: relevant
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.relevant: 1
+      formula.backlinks: 1
+      formula.outlinks: 1
+      formula.created_relative: 140
+      formula.updated_relative: 140
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+  - type: table
+    name: ✅ Structure Validation
+    filters:
+      or:
+        - formula.category_status == "❌"
+        - formula.meta_status == "❌"
+        - formula.problem_status == "❌"
+        - formula.category_type_valid == "❌"
+        - formula.meta_type_valid == "❌"
+        - formula.problem_type_valid == "❌"
+    order:
+      - file.name
+      - formula.category_status
+      - formula.category_type_valid
+      - category
+      - formula.meta_status
+      - formula.meta_type_valid
+      - meta
+      - formula.problem_status
+      - formula.problem_type_valid
+      - problem
+    sort:
+      - property: formula.type
+        direction: DESC
+      - property: formula.category_status
+        direction: DESC
+      - property: formula.category_type_valid
+        direction: DESC
+      - property: formula.meta_status
+        direction: DESC
+      - property: formula.meta_type_valid
+        direction: DESC
+      - property: formula.problem_status
+        direction: DESC
+      - property: formula.problem_type_valid
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 350
+      formula.type: 120
+      formula.category_status: 110
+      formula.category_type_valid: 70
+      formula.meta_status: 1
+      formula.meta_type_valid: 1
+      formula.problem_status: 1
+      formula.problem_type_valid: 1
+      note.category: 180
+      note.meta: 180
+      note.problem: 180

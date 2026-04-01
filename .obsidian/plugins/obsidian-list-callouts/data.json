@@ -1,0 +1,113 @@
+[
+  {
+    "color": "80, 72, 20",
+    "char": "💡"
+  },
+  {
+    "color": "82, 58, 30",
+    "char": "❓"
+  },
+  {
+    "color": "92, 36, 44",
+    "char": "❗"
+  },
+  {
+    "color": "70, 50, 85",
+    "char": "@"
+  },
+  {
+    "color": "48, 62, 90",
+    "char": "💬"
+  },
+  {
+    "color": "45, 85, 85",
+    "char": "🧩"
+  },
+  {
+    "color": "50, 70, 92",
+    "char": "ℹ️"
+  },
+  {
+    "char": "💎",
+    "color": "70, 50, 85",
+    "custom": true
+  },
+  {
+    "char": "🔗",
+    "color": "50, 70, 92",
+    "icon": null,
+    "custom": true
+  },
+  {
+    "char": "❌",
+    "color": "92, 36, 44",
+    "icon": null,
+    "custom": true
+  },
+  {
+    "char": "✅",
+    "color": "45, 95, 60",
+    "icon": null,
+    "custom": true
+  },
+  {
+    "char": "➡",
+    "color": "50, 70, 92",
+    "icon": null,
+    "custom": true
+  },
+  {
+    "char": "📌",
+    "color": "82, 58, 30",
+    "icon": null,
+    "custom": true
+  },
+  {
+    "char": "💭",
+    "color": "48, 62, 90",
+    "icon": null,
+    "custom": true
+  },
+  {
+    "char": "🪧",
+    "color": "50, 70, 92",
+    "icon": null,
+    "custom": true
+  },
+  {
+    "char": "🧪",
+    "color": "45, 85, 85",
+    "icon": null,
+    "custom": true
+  },
+  {
+    "char": "🌀",
+    "color": "45, 85, 85",
+    "icon": null,
+    "custom": true
+  },
+  {
+    "char": "👀",
+    "color": "48, 62, 90",
+    "icon": null,
+    "custom": true
+  },
+  {
+    "char": "👁️‍🗨️",
+    "color": "70, 50, 85",
+    "icon": null,
+    "custom": true
+  },
+  {
+    "char": "🤖",
+    "color": "70, 50, 85",
+    "icon": null,
+    "custom": true
+  },
+  {
+    "char": "➕",
+    "color": "50, 70, 92",
+    "icon": null,
+    "custom": true
+  }
+]

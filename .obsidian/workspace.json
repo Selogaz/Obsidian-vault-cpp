@@ -1,0 +1,447 @@
+{
+  "main": {
+    "id": "d7120251430d072d",
+    "type": "split",
+    "children": [
+      {
+        "id": "d4bf962253535dd4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bda9ef25e60d256c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/daily/2026-04-01.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-04-01"
+            }
+          },
+          {
+            "id": "058f5b741a37316f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/priority.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "priority"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2025082c7b2e629e",
+    "type": "split",
+    "children": [
+      {
+        "id": "2c71bf99c2f76a39",
+        "type": "tabs",
+        "dimension": 30.700888450148078,
+        "children": [
+          {
+            "id": "f61d2cd9e7c9880c",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "4247943d03ca86d9",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [
+                    {
+                      "query": "tag:#note/basic",
+                      "color": {
+                        "a": 1,
+                        "rgb": 9486517
+                      }
+                    },
+                    {
+                      "query": "tag:#note/specific",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14543214
+                      }
+                    },
+                    {
+                      "query": "tag:#system/category",
+                      "color": {
+                        "a": 1,
+                        "rgb": 3509376
+                      }
+                    },
+                    {
+                      "query": "tag:#system/supercategory",
+                      "color": {
+                        "a": 1,
+                        "rgb": 13684936
+                      }
+                    },
+                    {
+                      "query": "tag:#system/high/hierarchy",
+                      "color": {
+                        "a": 1,
+                        "rgb": 10551504
+                      }
+                    },
+                    {
+                      "query": "tag:#system/high/meta",
+                      "color": {
+                        "a": 1,
+                        "rgb": 8283336
+                      }
+                    },
+                    {
+                      "query": "tag:#system/high/problem",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14266432
+                      }
+                    },
+                    {
+                      "query": "tag:#periodic",
+                      "color": {
+                        "a": 1,
+                        "rgb": 6450848
+                      }
+                    },
+                    {
+                      "query": "tag:#project/short",
+                      "color": {
+                        "a": 1,
+                        "rgb": 11898992
+                      }
+                    },
+                    {
+                      "query": "tag:#project/single",
+                      "color": {
+                        "a": 1,
+                        "rgb": 13136181
+                      }
+                    },
+                    {
+                      "query": "tag:#project/longform",
+                      "color": {
+                        "a": 1,
+                        "rgb": 6526389
+                      }
+                    },
+                    {
+                      "query": "tag:#mark/log OR tag:#mark/addition",
+                      "color": {
+                        "a": 1,
+                        "rgb": 9486517
+                      }
+                    },
+                    {
+                      "query": "tag:#source/article",
+                      "color": {
+                        "a": 1,
+                        "rgb": 8743104
+                      }
+                    },
+                    {
+                      "query": "tag:#source/book",
+                      "color": {
+                        "a": 1,
+                        "rgb": 13093232
+                      }
+                    },
+                    {
+                      "query": "tag:#source/course",
+                      "color": {
+                        "a": 1,
+                        "rgb": 8026677
+                      }
+                    },
+                    {
+                      "query": "tag:#source/cinematic",
+                      "color": {
+                        "a": 1,
+                        "rgb": 13854037
+                      }
+                    },
+                    {
+                      "query": "tag:#source/podcast",
+                      "color": {
+                        "a": 1,
+                        "rgb": 3503504
+                      }
+                    },
+                    {
+                      "query": "tag:#source/video",
+                      "color": {
+                        "a": 1,
+                        "rgb": 3509376
+                      }
+                    },
+                    {
+                      "query": "tag:#creator",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14462048
+                      }
+                    },
+                    {
+                      "query": "tag:#production",
+                      "color": {
+                        "a": 1,
+                        "rgb": 13850949
+                      }
+                    },
+                    {
+                      "query": "tag:#contact",
+                      "color": {
+                        "a": 1,
+                        "rgb": 4718773
+                      }
+                    },
+                    {
+                      "query": "tag:#mark/gtd",
+                      "color": {
+                        "a": 1,
+                        "rgb": 4587361
+                      }
+                    },
+                    {
+                      "query": "tag:#mark/scene",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14600064
+                      }
+                    }
+                  ],
+                  "collapse-display": true,
+                  "showArrow": true,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c493d6f232ce3228",
+        "type": "tabs",
+        "dimension": 69.29911154985193,
+        "children": [
+          {
+            "id": "c1b5286a6d2052b2",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "home/databases/breadcrumbs.base",
+                "viewName": "🔗 links"
+              },
+              "icon": "lucide-table",
+              "title": "breadcrumbs"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 348.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "2266a43ed4d3dbb6",
+    "type": "split",
+    "children": [
+      {
+        "id": "c5d15b09186ff35b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6c7aa3a3b72a8ce3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "e470d7a0e0639e43",
+            "type": "leaf",
+            "state": {
+              "type": "VIEW_TYPE_LONGFORM_EXPLORER",
+              "state": {},
+              "icon": "longform",
+              "title": "Longform"
+            }
+          },
+          {
+            "id": "4991079be1db926c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d031b26e7efa533a",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 348.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "templater-obsidian:Templater": false,
+      "daily-notes:Open today's daily note": false,
+      "obsidian42-brat:BRAT": false,
+      "bases:Create new base": false,
+      "canvas:Create new canvas": true,
+      "workspaces:Manage workspace layouts": true,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
+      "periodic-notes:Open today": false,
+      "graph:Open graph view": false
+    }
+  },
+  "active": "bda9ef25e60d256c",
+  "lastOpenFiles": [
+    "periodic/priority.md",
+    "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/6-дневник-наблюдений.md",
+    "periodic/daily/2026-04-01.md",
+    "periodic/tasks (grouped by priority).canvas",
+    "periodic/daily/2026-03-31.md",
+    "periodic/weekly/2026-W14.md",
+    "projects/Подземелья Максвелла.md",
+    "periodic/monthly/2026-03.md",
+    "home/databases/sources.base",
+    "sources/Кодирование и Комбинаторика ЕГЭ Инф №8.md",
+    "base/notes/vk audiopad.md",
+    "home/databases/music.base",
+    "base/productions/Bury Tomorrow.md",
+    "base/productions/Of Mice and Men.md",
+    "base/creators/Bury Tomorrow.md",
+    "base/productions",
+    "base/creators",
+    "projects/ЕГЭ Информатика/А8-комбинаторика и системы счислений.md",
+    "projects/ЕГЭ Математика/А3-простейшая стереометрия.md",
+    "files/Кодирование и Комбинаторика ЕГЭ Инф №8 2026-03-31-1.png",
+    "files/Кодирование и Комбинаторика ЕГЭ Инф №8 2026-03-31.png",
+    "sources/42 крутые игры для тех, кого тошнит от ААА.md",
+    "base/categories/games.md",
+    "sources/20 НОВЫХ РПГ ИГР которые ВОЗРОДЯТ этот ЖАНР.md",
+    "home/index.md",
+    "periodic/tasks (grouped by time).canvas",
+    "periodic/tasks (grouped by effort).canvas",
+    "periodic/calendar.md",
+    "periodic/daily/2026-03-30.md",
+    "periodic/today.md",
+    "base/categories/health.md",
+    "base/categories/productivity.md",
+    "base/categories/computer science.md",
+    "projects/Алгоритмы и структуры данных.md",
+    "base/categories/study.md",
+    "files/Кодирование и Комбинаторика ЕГЭ Инф №8 2026-03-30-4.png",
+    "files/Кодирование и Комбинаторика ЕГЭ Инф №8 2026-03-30-3.png",
+    "files/Кодирование и Комбинаторика ЕГЭ Инф №8 2026-03-30-2.png",
+    "files/Кодирование и Комбинаторика ЕГЭ Инф №8 2026-03-30-1.png",
+    "files/Кодирование и Комбинаторика ЕГЭ Инф №8 2026-03-30.png",
+    "periodic/2025.canvas",
+    "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/7-анализы",
+    "periodic/2026.canvas",
+    "files/OAK.csv",
+    "files/БК.csv",
+    "files/ГиО.csv",
+    "projects/ЕГЭ Информатика/XXMl6uiw",
+    "files/Еда 2026-03-29-4.png",
+    "files/Еда 2026-03-29-3.png",
+    "files/Еда 2026-03-29-2.png",
+    "home/databases/projects.base",
+    "periodic/2027.canvas",
+    "base/canvases/Прогноз нагрузки на серверы на основе исторических данных.canvas",
+    "base/canvases/Диаграмма распределения пиковых нагрузок.canvas",
+    "base/canvases/Архитектура для платформы предсказывающую нагрузку на серверы.canvas",
+    "base/canvases/Eisenhower Matrix.canvas"
+  ]
+}

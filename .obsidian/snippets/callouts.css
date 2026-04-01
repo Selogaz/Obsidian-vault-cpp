@@ -1,0 +1,206 @@
+/* CALLOUT METADATA CUSTOMIZATIONS */
+.callout[data-callout-metadata='hide-icon'] .callout-icon {
+  display: none;
+}
+.callout[data-callout-metadata='hide-title'] .callout-title,
+.callout[data-callout-metadata='hidden'] .callout-title {
+  display: none;
+}
+.callout[data-callout-metadata='hidden'].callout,
+.callout[data-callout-metadata='hidden'] .callout-content,
+.callout[data-callout-metadata='hidden'] p {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.callout[data-callout-metadata='hidden'] .callout-title {
+  display: none;
+}
+.callout[data-callout-metadata='hidden'].callout,
+.callout[data-callout-metadata='hidden'] .callout-content,
+.callout[data-callout-metadata='hidden'] p {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* ZOTERO ANNOTATION COLORS */
+.theme-dark .callout[data-callout-metadata='#ff6666'] .callout-icon,
+.theme-dark .callout[data-callout-metadata='#ff6666'] .callout-icon svg {
+  color: #cc6666;
+}
+.theme-dark .callout[data-callout-metadata='#5fb236'] .callout-icon,
+.theme-dark .callout[data-callout-metadata='#5fb236'] .callout-icon svg {
+  color: #b5bd68;
+}
+.theme-dark .callout[data-callout-metadata='#2ea8e5'] .callout-icon,
+.theme-dark .callout[data-callout-metadata='#2ea8e5'] .callout-icon svg {
+  color: #81a2be;
+}
+.theme-dark .callout[data-callout-metadata='#a28ae5'] .callout-icon,
+.theme-dark .callout[data-callout-metadata='#a28ae5'] .callout-icon svg {
+  color: #b294bb;
+}
+.theme-dark .callout[data-callout-metadata='#f19837'] .callout-icon,
+.theme-dark .callout[data-callout-metadata='#f19837'] .callout-icon svg {
+  color: #de935f;
+}
+.theme-dark .callout[data-callout-metadata='#ffd400'] .callout-icon,
+.theme-dark .callout[data-callout-metadata='#ffd400'] .callout-icon svg {
+  color: #f0c674;
+}
+.theme-dark .callout[data-callout-metadata='#e56eee'] .callout-icon,
+.theme-dark .callout[data-callout-metadata='#e56eee'] .callout-icon svg {
+  color: #ba8baf;
+}
+.theme-dark .callout[data-callout-metadata='#aaaaaa'] .callout-icon,
+.theme-dark .callout[data-callout-metadata='#aaaaaa'] .callout-icon svg {
+  color: #969896;
+}
+
+/* KANBAN CALLOUT */
+.callout.callout[data-callout~='kanban'] {
+  --callout-color: unset;
+  --callout-icon: layout-dashboard;
+  --callout-padding: 0;
+  --item-outline: 0 0 0 1px var(--outline, var(--background-modifier-border));
+  --lane-width: 250px;
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  width: auto;
+}
+.callout.callout[data-callout~='kanban'] .callout-title {
+  justify-content: center;
+  background: var(--code-bg, var(--background-primary));
+  padding: 5px;
+  border-radius: var(--radius-s);
+}
+.callout.callout[data-callout~='kanban'] .callout-title-inner {
+  flex: unset;
+}
+.callout.callout[data-callout~='kanban'] .callout-content {
+  padding: 0;
+}
+.callout.callout[data-callout~='kanban'] ul li::marker,
+.callout.callout[data-callout~='kanban'] ul li::before,
+.callout.callout[data-callout~='kanban'] .list-bullet,
+.callout.callout[data-callout~='kanban'] ul::before,
+.callout.callout[data-callout~='kanban']
+  :is(ul, ul ul)
+  .list-collapse-indicator {
+  list-style-type: none;
+  color: transparent;
+  display: none !important;
+}
+.callout.callout[data-callout~='kanban'] ul {
+  display: flex;
+  margin-block-start: 5px;
+  padding-inline-start: 0;
+  text-align: center;
+  overflow: auto;
+}
+.callout.callout[data-callout~='kanban'] ul.list-view-ul {
+  margin-inline-start: unset;
+}
+.callout.callout[data-callout~='kanban'] ul li {
+  min-width: var(--lane-width);
+  border: 0;
+  padding: 10px 20px 5px 20px;
+  margin: 5px 1px;
+  background: var(--note, var(--background-primary-alt));
+  border-radius: var(--radius-s);
+  box-shadow: var(--item-outline), var(--shadow-s);
+}
+.callout.callout[data-callout~='kanban'] ul ul {
+  flex-direction: column;
+  text-align: left;
+  overflow: unset;
+}
+.callout.callout[data-callout~='kanban'] ul ul li {
+  min-width: calc(var(--lane-width) / 2);
+  padding: 5px;
+  box-shadow: var(--item-outline), var(--shadow-s);
+  background: var(--code-bg, var(--background-primary));
+}
+.callout.callout[data-callout~='kanban'] ul ul li :is(img, .internal-embed) {
+  margin-bottom: -6px;
+}
+.callout.callout[data-callout~='kanban']
+  ul.contains-task-list
+  .task-list-item-checkbox {
+  margin-inline-start: 0;
+}
+.callout.callout[data-callout~='kanban'] .task-list-item-checkbox {
+  cursor: default;
+}
+.callout.callout[data-callout~='kanban'] :is(ul, ol) > li p:first-of-type {
+  margin-block-start: 0;
+}
+
+/* TABBED CALLOUT */
+[data-callout='tabbed'] {
+  padding-top: 15px !important;
+  --callout-color: 255, 255, 255 !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0.5rem;
+  padding-top: 15px;
+  margin: 0;
+}
+[data-callout='tabbed'] > .callout-content {
+  padding: 0rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, max-content));
+  gap: 0 0.5rem;
+  border: none;
+}
+[data-callout='tabbed'] > .callout-title {
+  display: none;
+}
+[data-callout='tabbed'] > .callout-content p {
+  margin: 0;
+  font-style: normal !important;
+}
+[data-callout='tabbed'] > .callout-content label > input {
+  display: none;
+}
+[data-callout='tabbed'] > .callout-content label {
+  width: 100%;
+  display: inline-block;
+  padding: 0rem 0ch;
+  border-radius: 0.2rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+[data-callout='tabbed'] > .callout-content label:has(input:checked) {
+  background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+}
+.theme-light
+  [data-callout='tabbed']
+  > .callout-content
+  label:has(input:checked) {
+  background-color: var(--background-primary);
+  border: solid 1px var(--titlebar-background-focused);
+}
+[data-callout='tabbed']
+  > .callout-content
+  p:not(:has(label input:checked))
+  + blockquote {
+  display: none;
+}
+[data-callout='tabbed'] > .callout-content > blockquote {
+  order: 999;
+  grid-column: 1 / -1;
+  background-color: transparent;
+  padding-left: 0;
+  border: 0;
+  margin-top: 2px;
+  font-style: normal !important;
+  opacity: 1 !important;
+}

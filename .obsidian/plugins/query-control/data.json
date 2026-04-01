@@ -1,0 +1,17 @@
+{
+  "defaultCollapse": true,
+  "defaultShowContext": false,
+  "defaultHideTitle": false,
+  "defaultHideResults": false,
+  "defaultRenderMarkdown": false,
+  "defaultSortOrder": "alphabetical",
+  "controlVisibility": {
+    "collapseAll": "visible",
+    "extraContext": "visible",
+    "sort": "visible",
+    "hideTitle": "visible",
+    "hideResults": "visible",
+    "renderMarkdown": "visible",
+    "copyResults": "visible"
+  }
+}

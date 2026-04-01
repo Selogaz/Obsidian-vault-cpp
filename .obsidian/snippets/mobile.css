@@ -1,0 +1,22 @@
+/* disable floating from mobile navbar and view header */
+.mobile-navbar {
+  border-radius: 0 !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+  position: fixed !important;
+  bottom: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+
+.view-header {
+  background-color: var(--background-secondary) !important;
+  opacity: 1 !important;
+  margin: var(--safe-area-inset-top, 0) 0 0 0 !important;
+  padding: 0 !important;
+}
+
+/* correct aggresive radius app wide */
+.is-mobile * {
+  border-radius: 3px !important;
+}

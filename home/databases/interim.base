@@ -1,0 +1,40 @@
+filters:
+  and:
+    - file.inFolder("base/additions")
+    - file.hasTag("#mark/addition")
+    - status == "🟥"
+formulas:
+  type: file.tags.filter(value.startsWith("#mark/addition/"))[0].replace(/^.*\//, '')
+properties:
+  formula.type:
+    displayName: 🗄️ type
+  note.project:
+    displayName: 🏢 project
+  file.name:
+    displayName: 🗣️ interim
+  note.status:
+    displayName: 💯
+  note.input:
+    displayName: ⬇️ input
+  note.output:
+    displayName: ⬆️ output
+  note.description:
+    displayName: ✍️ description
+  note.attribute:
+    displayName: 🔖 attribute
+views:
+  - type: table
+    name: 🗣️ All
+    groupBy:
+      property: project
+      direction: ASC
+    order:
+      - file.name
+      - formula.type
+      - attribute
+      - input
+      - output
+      - description
+    sort:
+      - property: file.name
+        direction: ASC

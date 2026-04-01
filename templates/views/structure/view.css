@@ -1,0 +1,8 @@
+/* Color scheme for structure visualization */
+:root {
+  --structure-color-hierarchy: #3f2759;
+  --structure-color-meta: #211f73;
+  --structure-color-problem: #4f482f;
+  --structure-color-aggregator-stroke: #db7923;
+  --structure-color-ignore-stroke: #ff6347;
+}
