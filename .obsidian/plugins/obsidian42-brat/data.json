@@ -1,5 +1,6 @@
 {
   "pluginList": [
+    "flowing-abyss/obsidian-hybrid-search-plugin",
     "seventhxiv/obsidian-board-view",
     "reply2za/obsidian-query-control",
     "flowing-abyss/obsidian-task-calendar",
@@ -9,6 +10,10 @@
     "flowing-abyss/obsidian-calendar-plugin"
   ],
   "pluginSubListFrozenVersion": [
+    {
+      "repo": "flowing-abyss/obsidian-hybrid-search-plugin",
+      "version": "latest"
+    },
     {
       "repo": "seventhxiv/obsidian-board-view",
       "version": "latest"
