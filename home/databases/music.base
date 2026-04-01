@@ -1,0 +1,18 @@
+filters:
+  and:
+    - file.hasTag("production/band")
+formulas:
+  track_count: if(track_list, track_list.split("\\n").length, 0)
+properties:
+  description:
+    displayName: Description
+views:
+  - type: cards
+    name: Artists
+    order:
+      - file.name
+      - description
+  - type: list
+    name: Quick List
+    order:
+      - file.name

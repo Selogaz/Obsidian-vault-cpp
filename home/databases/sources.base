@@ -90,6 +90,8 @@ views:
       - production
       - url
     sort:
+      - property: status
+        direction: DESC
       - property: meta
         direction: DESC
       - property: formula.kanban
@@ -126,6 +128,10 @@ views:
       - production
       - url
     sort:
+      - property: status
+        direction: DESC
+      - property: file.name
+        direction: ASC
       - property: formula.kanban
         direction: ASC
       - property: formula.created_relative

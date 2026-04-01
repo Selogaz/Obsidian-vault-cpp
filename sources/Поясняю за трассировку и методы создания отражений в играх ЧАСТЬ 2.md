@@ -9,6 +9,7 @@ status: 🟩
 category:
   - "[[games]]"
 meta:
+  - grapthics
 problem:
 related:
 creator:

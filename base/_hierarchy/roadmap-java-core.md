@@ -11,7 +11,7 @@ meta:
   - "[[microservices]]"
 relevant: false
 created: 2026-03-21T00:00:00+07:00
-updated: 2026-03-21T22:56:49+03:00
+updated: 2026-03-29T11:15:21+03:00
 ---
 
 # Roadmap: Java Core
@@ -68,12 +68,12 @@ Java Core — prerequisite для Spring Boot, который является �
 ## Критерии завершения
 
 - [ ] Реализовал 3+ проекта на Java
-	- [ ] ⤵️ #task/reference #category/computer_science #time/moderate #effort/medium Console Todo API
-	- [ ] ⤵️ #task/reference #category/computer_science #priority/b #time/lengthy #effort/hard In-Memory Cache
-	- [ ] ⤵️ #task/reference #category/computer_science #priority/b #time/lengthy #effort/hard Mini Message Broker
+	- [ ] ⤵️ #task/reference #category/computer_science #priority/c #time/lengthy Console Todo API
+	- [ ] ⤵️ #task/reference #category/computer_science #priority/c #time/lengthy #effort/hard In-Memory Cache
+	- [ ] ⤵️ #task/reference #category/computer_science #priority/c #time/lengthy #effort/hard Mini Message Broker
 - [x] Можешь объяснить difference между HashMap и ConcurrentHashMap ✅ 2026-03-21
 - [x] Понимаешь как работает Garbage Collector ✅ 2026-03-21
-- [ ] #task/reference #category/computer_science #priority/b #time/long #effort/hard Решил 50+ задач на Codeforces (Java)
+- [ ] #task/reference #category/computer_science #priority/с #time/long #effort/hard Решил 50+ задач на Codeforces (Java)
 
 ## Связь с дипломом
 
