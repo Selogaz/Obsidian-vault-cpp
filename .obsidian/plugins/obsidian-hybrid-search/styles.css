@@ -1,0 +1,210 @@
+.hybrid-search-result {
+  padding: 2px 0;
+}
+
+.hybrid-search-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hybrid-search-result .hybrid-search-name {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.hybrid-search-score {
+  font-size: 0.8em;
+  font-family: monospace;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+.hybrid-search-meta {
+  margin-top: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.hybrid-search-meta-path {
+  font-size: 0.75em;
+  color: var(--text-muted);
+  font-family: var(--font-monospace);
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.hybrid-search-meta-path::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  opacity: 0.5;
+  background-color: currentColor;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-8l-2-2z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-8l-2-2z'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.hybrid-search-tag {
+  font-size: 0.75em;
+  background: var(--tag-background);
+  color: var(--tag-color);
+  padding: 1px 6px;
+  border-radius: 10px;
+}
+
+/* Preview metadata panel — separate block below the preview */
+.hybrid-search-preview-meta-panel {
+  position: fixed;
+  padding: 8px 12px;
+  max-height: 160px;
+  overflow-y: auto;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  box-shadow: var(--shadow-s);
+  z-index: var(--layer-modal);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  user-select: text;
+  -webkit-user-select: text;
+  cursor: text;
+}
+
+.hybrid-search-preview-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78em;
+  color: var(--text-muted);
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.hybrid-search-preview-meta-icon {
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  opacity: 0.5;
+  background-color: var(--text-muted);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.hybrid-search-preview-meta-icon-folder {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-8l-2-2z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-8l-2-2z'/%3E%3C/svg%3E");
+}
+
+.hybrid-search-preview-meta-icon-tag {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82zM7 7H7.01'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82zM7 7H7.01'/%3E%3C/svg%3E");
+}
+
+.hybrid-search-preview-meta-icon-alias {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath d='M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath d='M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94'/%3E%3C/svg%3E");
+}
+
+.hybrid-search-preview-meta-folder {
+  font-family: var(--font-monospace);
+}
+
+.hybrid-search-preview-meta-label {
+  flex-shrink: 0;
+  font-family: var(--font-monospace);
+  opacity: 0.6;
+}
+
+.hybrid-search-preview-meta-alias {
+  font-style: italic;
+  font-size: 11px;
+  background: var(--background-modifier-hover);
+  color: var(--text-muted);
+  padding: 0 5px;
+  border-radius: 4px;
+}
+
+.hybrid-search-preview-meta-link {
+  color: var(--link-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hybrid-search-preview-meta-link:hover {
+  text-decoration: underline;
+}
+
+.hybrid-search-preview-meta-sep {
+  color: var(--text-faint);
+  font-size: 9px;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+/* Mode indicator badge — shown inside the search input row */
+.hybrid-search-mode-badge {
+  font-size: 10px;
+  font-family: var(--font-monospace);
+  color: var(--text-muted);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 3px;
+  padding: 1px 4px;
+  line-height: 1;
+  align-self: center;
+  flex-shrink: 0;
+  margin-right: 14px;
+  user-select: none;
+  opacity: 0.75;
+}
+
+/* Ensure Obsidian's hover page preview appears above our fixed panels */
+.popover.hover-popover {
+  z-index: calc(var(--layer-modal) + 10);
+}
+
+/* Preview panel: fixed position to the right of the modal */
+.hybrid-search-preview {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  padding: 16px 20px;
+  overflow-y: auto;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  box-shadow: var(--shadow-l2);
+  z-index: var(--layer-modal);
+  user-select: text;
+  -webkit-user-select: text;
+  cursor: text;
+}
+
+/* Semantic/hybrid/fulltext search: highlight the matching block */
+.hybrid-search-semantic-match {
+  border-left: 3px solid var(--interactive-accent);
+  padding-left: 8px;
+}
+
+/* List items: border only, no padding shift (checkbox/bullet must stay in place) */
+li.hybrid-search-semantic-match {
+  padding-left: 0;
+}
+
+/* Query word highlight in preview — outline only, no background fill */
+.hybrid-search-word-match {
+  box-shadow: 0 0 0 2px var(--interactive-accent);
+  border-radius: 2px;
+}
