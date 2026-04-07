@@ -1,14 +1,14 @@
 ---
 tags:
-  - status/wip
+  - status/hold
   - source/book
   - category/java
 aliases:
   - Spring быстро
-status: 🟦
+status: ❄
 category:
   - "[[java]]"
-updated: 2026-02-28T23:35:03+03:00
+updated: 2026-04-02T14:38:51+03:00
 ---
 
 Внедрение бина(зависимости) - получение бина из контекста в класс, где есть аннотация Autowired

@@ -1,10 +1,10 @@
 ---
 tags:
-  - status/wip
+  - status/hold
   - source/article/paper
   - category/health
 aliases: []
-status: 🟦
+status: ❄
 category:
   - "[[health]]"
 meta:
@@ -16,7 +16,7 @@ start: 2025-05-21T15:46:55+03:00
 end:
 total_hours: 0
 created: 2025-05-21T15:46:55+03:00
-updated: 2026-02-28T23:35:51+03:00
+updated: 2026-04-02T14:41:17+03:00
 ---
 
 ```table-of-contents

@@ -1,14 +1,14 @@
 ---
 tags:
-  - status/wip
+  - status/hold
   - source/book
   - category/java
 aliases:
   - Spring Security в действии
-status: 🟦
+status: ❄
 category:
   - "[[java]]"
-updated: 2026-02-28T23:35:08+03:00
+updated: 2026-04-02T14:38:57+03:00
 ---
 
 ```table-of-contents

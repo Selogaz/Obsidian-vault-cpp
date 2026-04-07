@@ -17,9 +17,9 @@ creator:
 production:
 url: https://drjud.com/procrastination/how-to-stop-procrastinating/
 start: 2026-04-01T21:10:09+03:00
-end:
+end: 2026-04-01T21:40:09+03:00
 created: 2026-04-01T21:10:09+03:00
-updated: 2026-04-01T21:18:11+03:00
+updated: 2026-04-06T21:55:46+03:00
 ---
 
 ### Первый этап: Составление карты цикла формирования привычки

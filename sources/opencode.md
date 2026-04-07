@@ -1,10 +1,10 @@
 ---
 tags:
-  - status/wip
+  - status/hold
   - source/article/resource
   - category/study
 aliases: []
-status: 🟦
+status: ❄
 rating:
 scientificity:
 category:
@@ -16,7 +16,7 @@ production:
 start: 2026-03-03T14:03:39+03:00
 end:
 created: 2026-03-03T14:03:39+03:00
-updated: 2026-03-08T00:11:10+03:00
+updated: 2026-04-02T14:42:14+03:00
 ---
 
 [[заметки по ведению хранилища от opencode]]

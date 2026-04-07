@@ -6,7 +6,7 @@ aliases:
   - основы git
 deck: obsidian::java
 created: 2025-10-02T16:55:30+03:00
-updated: 2025-10-08T19:33:02+03:00
+updated: 2026-04-07T14:05:44+03:00
 sr-due: 2025-10-12
 sr-interval: 4
 sr-ease: 270
@@ -72,3 +72,7 @@ Fast-forward - если конфликтов при объединении не�
 [Документация Git](“Book” ([“Документация Git”](zotero://select/library/items/JMFPRMJ3)) ([snapshot](zotero://open-pdf/library/items/5IUHPCTB?sel=h1&annotation=SWBNTU3L)))
 [Описание Gitflow](“Gitflow workflow” ([“Описание Gitflow”](zotero://select/library/items/H58FXWE7)) ([snapshot](zotero://open-pdf/library/items/TECZ5BM2?sel=h1&annotation=HXLID4ZZ)))
 [Описание Trunk Based Development](“Introduction #” ([paul-hammant](zotero://select/library/items/EWYY9CZ3)) ([snapshot](zotero://open-pdf/library/items/FA6V9CIG?sel=article%20%3E%20div&annotation=ZLEDBRFP)))
+
+[[создать ветку git]]
+
+[[слить ветку с main]]

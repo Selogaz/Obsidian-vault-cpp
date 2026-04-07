@@ -1,10 +1,10 @@
 ---
 tags:
-  - status/wip
+  - status/hold
   - source/course
   - category/java
 aliases: []
-status: 🟦
+status: ❄
 category:
   - "[[java]]"
 meta:
@@ -15,7 +15,7 @@ start: 2025-09-21T14:25:53+03:00
 end:
 total_hours: 0
 created: 2025-09-21T14:25:53+03:00
-updated: 2026-02-28T23:35:59+03:00
+updated: 2026-04-02T14:38:40+03:00
 ---
 
 ![[java middle шаблон легенды]]
