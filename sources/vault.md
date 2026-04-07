@@ -15,7 +15,7 @@ start: 2025-05-20T12:24:31+03:00
 end:
 total_hours: 0
 created: 2025-05-20T12:24:31+03:00
-updated: 2026-03-27T09:17:40+03:00
+updated: 2026-04-02T14:56:23+03:00
 ---
 
 ![cover|150](https://yastatic.net/s3/psf/disk-public/_/6jthIYkBdecaLwm8yXZPKuI1HW7.png)
@@ -109,6 +109,10 @@ alt + F - выделив текст, сделать его заметкой. П�
 
 # Boosty
 https://boosty.to/flowing-abyss
+
+# Digital garden
+
+https://flowing-abyss.com/
 
 # Видос
 https://www.youtube.com/watch?**v=4wB-Ph5XYV0

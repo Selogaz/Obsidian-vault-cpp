@@ -1,6 +1,6 @@
 ---
 tags:
-  - status/todo
+  - status/hold
   - project/longform
   - priority/c
   - category/computer_science
@@ -8,7 +8,7 @@ aliases:
   - thesis ml deployment
   - diploma ml
   - диплом микросервисы ml
-status: 🟥
+status: ❄
 priority: 🇨
 category:
   - "[[computer science]]"
@@ -34,7 +34,7 @@ longform:
 start: 2026-09-01T00:00:00+07:00
 end: 2030-06-30T00:00:00+07:00
 created: 2026-03-21T00:00:00+07:00
-updated: 2026-03-24T22:29:04+03:00
+updated: 2026-04-02T14:29:58+03:00
 ---
 
 > [!toc]- Table of contents

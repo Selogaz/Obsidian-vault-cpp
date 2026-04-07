@@ -1,11 +1,11 @@
 ---
 tags:
-  - status/wip
+  - status/hold
   - source/book
   - category/linux
 aliases:
   - How Linux Works
-status: 🟦
+status: ❄
 rating:
 scientificity:
 category:
@@ -22,7 +22,7 @@ published: 2016
 start: 2026-02-26T19:12:15+03:00
 end:
 created: 2026-02-26T19:12:15+03:00
-updated: 2026-03-04T22:25:32+03:00
+updated: 2026-04-02T14:33:36+03:00
 ---
 
 [[how linux works конспект|конспект от opencloud]]

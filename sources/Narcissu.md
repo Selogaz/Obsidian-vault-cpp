@@ -1,10 +1,10 @@
 ---
 tags:
-  - status/wip
+  - status/hold
   - source/game
   - category/english
 aliases: []
-status: 🟦
+status: ❄
 rating:
 scientificity:
 category:
@@ -16,7 +16,7 @@ production:
 start: 2026-03-20T16:26:03+03:00
 end:
 created: 2026-03-20T16:26:03+03:00
-updated: 2026-03-26T20:46:07+03:00
+updated: 2026-04-02T14:34:18+03:00
 ---
 
 visual novel

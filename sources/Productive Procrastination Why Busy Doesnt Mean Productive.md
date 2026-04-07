@@ -17,9 +17,9 @@ creator:
 production:
 url: https://drjud.com/procrastination/productive-procrastination/
 start: 2026-04-01T20:52:44+03:00
-end:
+end: 2026-04-01T21:02:44+03:00
 created: 2026-04-01T20:52:44+03:00
-updated: 2026-04-01T21:19:32+03:00
+updated: 2026-04-06T21:56:11+03:00
 ---
 
 [[продуктивная прокрастинация]]

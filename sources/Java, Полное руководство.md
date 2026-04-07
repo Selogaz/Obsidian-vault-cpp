@@ -1,11 +1,11 @@
 ---
 tags:
-  - status/wip
+  - status/hold
   - source/book
   - category/bioinformatics
 aliases:
   - Java, Полное руководство
-status: 🟦
+status: ❄
 category:
   - "[[bioinformatics]]"
 meta:
@@ -22,7 +22,7 @@ start: 2025-04-23T13:46:22+03:00
 end:
 total_hours: 0
 created: 2025-04-23T13:46:22+03:00
-updated: 2026-01-14T00:26:33+03:00
+updated: 2026-04-02T14:38:45+03:00
 ---
 
 prefix: binf

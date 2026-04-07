@@ -1,10 +1,10 @@
 ---
 tags:
-  - status/wip
+  - status/hold
   - source/article/paper
   - category/java
 aliases: []
-status: 🟦
+status: ❄
 category:
   - "[[java]]"
 meta:
@@ -15,7 +15,7 @@ start: 2025-08-06T14:27:29+03:00
 end:
 total_hours: 0
 created: 2025-08-06T14:27:29+03:00
-updated: 2026-01-14T00:25:45+03:00
+updated: 2026-04-02T14:41:42+03:00
 ---
 
 > [!toc]+

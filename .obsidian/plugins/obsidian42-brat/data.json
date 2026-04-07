@@ -52,7 +52,7 @@
   "loggingVerboseEnabled": false,
   "debuggingMode": true,
   "notificationsEnabled": true,
-  "globalTokenName": "",
+  "globalTokenName": "hybridsearch",
   "personalAccessToken": "",
   "selectLatestPluginVersionByDefault": true,
   "allowIncompatiblePlugins": false,

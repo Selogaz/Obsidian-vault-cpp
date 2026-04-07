@@ -1,11 +1,11 @@
 ---
 tags:
-  - status/wip
+  - status/hold
   - source/article/paper
   - category/webdev
 aliases:
   - Профессия FULL STACK разработчик itProger
-status: 🟦
+status: ❄
 rating:
 scientificity:
 addition:
@@ -25,7 +25,7 @@ published: 2022
 start: 2026-01-14T10:26:29+03:00
 end:
 created: 2026-01-14T10:26:29+03:00
-updated: 2026-03-04T19:38:25+03:00
+updated: 2026-04-02T14:34:51+03:00
 ---
 
 # Конспекты
