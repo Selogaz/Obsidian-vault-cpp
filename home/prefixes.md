@@ -34,6 +34,7 @@ study – s
 linux – l
 productivity – prod
 webdev – web
+japanese – jap
 
 
 ```yaml
