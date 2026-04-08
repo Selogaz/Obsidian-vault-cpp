@@ -20,9 +20,10 @@ cssclasses:
 	- [[ЕГЭ Математика]]
 	- [[ЕГЭ Информатика]]
 - [[computer science]]
+- [[japanese]]
+----
 - [[linux]]
 - [[english]]
-----
 - [[productivity]]
 -  [[java]]
 - [[webdev]]
@@ -30,7 +31,9 @@ cssclasses:
 - [[health]]
 	- [[Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки]]
 - [[games]]
-
+- [[music]]
+- [[convert gpx to pdf]]
+- [[site with tabs]]
 
 # Contexts
 

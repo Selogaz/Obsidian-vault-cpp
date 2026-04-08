@@ -1,11 +1,11 @@
 {
-  "binaryPath": "/home/exuberance/.nvm/versions/node/v24.13.0/bin/obsidian-hybrid-search",
+  "binaryPath": "/home/exuberance/.nvm/versions/node/v25.9.0/bin/obsidian-hybrid-search",
   "defaultMode": "hybrid",
   "showMeta": false,
   "showPreviewMeta": true,
   "centerPanels": false,
-  "showPreview": false,
+  "showPreview": true,
   "scrollToSnippet": false,
   "rememberLastQuery": true,
-  "lastQuery": "слить ветку git"
+  "lastQuery": "bury"
 }

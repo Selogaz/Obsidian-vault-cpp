@@ -11,13 +11,124 @@
             "id": "bda9ef25e60d256c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/hiragana.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "hiragana"
+            }
+          },
+          {
+            "id": "047ee122a0997172",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/daily/2026-04-08.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-04-08"
+            }
+          },
+          {
+            "id": "cea1d6cf110ee85a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/productions/Erra.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Erra"
+            }
+          },
+          {
+            "id": "269daeb4e0217b93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/productions/Bury Tomorrow.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Bury Tomorrow"
+            }
+          },
+          {
+            "id": "bed63e56c85fcba0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home/index.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -280,12 +391,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "base/productions/Erra.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Erra"
             }
           },
           {
@@ -329,8 +441,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5,
-    "collapsed": true
+    "width": 348.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -348,36 +459,42 @@
       "graph:Open graph view": false
     }
   },
-  "active": "bda9ef25e60d256c",
+  "active": "cea1d6cf110ee85a",
   "lastOpenFiles": [
-    "periodic/weekly/2026-W15.md",
+    "base/productions/Bury Tomorrow.md",
+    "home/index.md",
+    "sources/convert gpx to pdf.md",
+    "sources/site with tabs.md",
+    "base/categories/music.md",
+    "base/productions/Erra.md",
+    "periodic/daily/2026-04-08.md",
+    "base/notes/hiragana.md",
+    "projects/Переезд в Японию/Японский язык.md",
     "periodic/priority.md",
-    "periodic/daily/2026-04-07.md",
-    "projects/Подземелья Максвелла.md",
-    "files/Site dnd.pdf",
     "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/6-дневник-наблюдений.md",
-    "periodic/tasks (grouped by priority).canvas",
-    "base/notes/java основы git.md",
-    "base/notes/слить ветку с main.md",
-    "base/notes/создать ветку git.md",
-    "base/notes/java гит-флоу.md",
-    "home/databases/projects.base",
+    "periodic/weekly/2026-W15.md",
+    "periodic/daily/2026-04-07.md",
+    "files/Site dnd.pdf",
+    "projects/Подземелья Максвелла.md",
     "projects/ЕГЭ Информатика/11-посимвольное кодирование.md",
-    "sources/я перестал ошибаться после этого разбора задания 11 родя.md",
-    "projects/ЕГЭ Информатика/10-редактор текста.md",
-    "projects/ЕГЭ Информатика/9-электронные таблицы.md",
     "sources/Не теряй баллы 1 3 10 родя.md",
-    "periodic/daily/2026-04-06.md",
-    "periodic/daily/2026-04-04.md",
-    "periodic/daily/2026-04-03.md",
-    "periodic/daily/2026-04-02.md",
-    "periodic/daily/2026-04-01.md",
-    "periodic/monthly/2026-04.md",
-    "projects/ЕГЭ Информатика/1-анализ информационных моделей.md",
-    "projects/ЕГЭ Математика/ЕГЭ Математика.md",
-    "projects/ЕГЭ Информатика/15-истинность логического выражения.md",
-    "projects/ЕГЭ Информатика/2-таблицы истинности.md",
-    "projects/ЕГЭ Информатика/3-базы данных Excel.md",
+    "sources/bunpro.md",
+    "files/Hiragana-Practice-en.pdf",
+    "base/notes/A.md",
+    "files/Hiragana-Chart-en 1.pdf",
+    "files/Hiragana-Chart-en.pdf",
+    "base/_hierarchy/Стратегия изучения японского.md",
+    "base/notes/jap hiragana.md",
+    "home/prefixes.md",
+    "base/notes/vowel sound.md",
+    "base/notes/consonant sound.md",
+    "projects/Переезд в Японию/Переезд в Японию.md",
+    "home/databases/projects.base",
+    "base/notes/DATE_2026-04-07 TIME_18-19-41.md",
+    "base/notes/оригинальный путь к ohs.md",
+    "home/databases/high-notes.base",
+    "projects/Переезд в Японию",
+    "periodic/tasks (grouped by priority).canvas",
     "files/Подземелья Максвелла 2026-04-03.png",
     "files/Задание 9 ЕГЭ Информатика 2026 Алексей Ковальчук 2026-04-03-13.png",
     "files/Задание 9 ЕГЭ Информатика 2026 Алексей Ковальчук 2026-04-03-12.png",
@@ -391,15 +508,10 @@
     "home/databases/sources.base",
     "home/databases/notes.base",
     "base/notes/иерархическая vs mark",
-    "base/creators",
-    "home/databases/music.base",
-    "base/productions",
     "periodic/tasks (grouped by time).canvas",
     "periodic/tasks (grouped by effort).canvas",
     "periodic/2025.canvas",
-    "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/7-анализы",
     "periodic/2026.canvas",
-    "files/OAK.csv",
     "periodic/2027.canvas",
     "base/canvases/Прогноз нагрузки на серверы на основе исторических данных.canvas",
     "base/canvases/Диаграмма распределения пиковых нагрузок.canvas",
