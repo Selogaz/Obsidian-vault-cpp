@@ -5,6 +5,8 @@ tags:
 aliases:
   - classloader от ИИ
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-18T14:26:58+03:00
 updated: 2025-09-21T14:15:46+03:00
 sr-due: 2026-07-24

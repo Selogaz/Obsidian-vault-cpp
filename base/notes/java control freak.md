@@ -5,6 +5,8 @@ tags:
 aliases:
   - control freak
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-05T18:42:59+03:00
 updated: 2025-09-21T12:48:39+03:00
 sr-due: 2026-11-03

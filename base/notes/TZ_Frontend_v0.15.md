@@ -4,6 +4,8 @@ tags:
   - category/webdev
 aliases: []
 deck: obsidian::webdev
+icon: 📝
+color: "#d0a570"
 created: 2026-03-23T13:18:41+03:00
 updated: 2026-03-23T13:18:41+03:00
 ---

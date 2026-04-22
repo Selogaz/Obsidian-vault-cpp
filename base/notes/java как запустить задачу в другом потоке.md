@@ -5,6 +5,8 @@ tags:
 aliases:
   - как запустить задачу в другом потоке
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-19T19:57:27+03:00
 updated: 2025-10-08T19:06:01+03:00
 sr-due: 2025-10-12

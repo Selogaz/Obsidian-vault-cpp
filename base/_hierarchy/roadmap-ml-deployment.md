@@ -1,16 +1,19 @@
 ---
 tags:
-  - system/high/hierarchy
   - category/computer_science
+  - system/high/hierarchy
 aliases:
-  - roadmap ml deployment
   - model serving
+  - roadmap ml deployment
+relevant: false
 category:
   - "[[computer science]]"
 meta:
-  - "[[machine learning]]"
   - "[[ci-cd]]"
-relevant: false
+  - "[[machine learning]]"
+problem:
+icon: 🧬
+color: "#b089c4"
 created: 2026-03-21T00:00:00+07:00
 updated: 2026-03-21T00:00:00+07:00
 ---

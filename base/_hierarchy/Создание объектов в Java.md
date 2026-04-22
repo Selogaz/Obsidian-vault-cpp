@@ -1,14 +1,16 @@
 ---
 tags:
-  - system/high/hierarchy
   - category/java
+  - system/high/hierarchy
 aliases: []
+relevant: false
 category:
   - "[[java]]"
 meta:
   - "[[Порождающие паттерны и идиомы]]"
 problem:
-relevant: false
+icon: 🧬
+color: "#b089c4"
 created: 2026-03-04T18:18:58+03:00
 updated: 2026-03-04T18:50:31+03:00
 ---

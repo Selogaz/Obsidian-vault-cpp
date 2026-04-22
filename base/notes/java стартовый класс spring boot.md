@@ -5,6 +5,8 @@ tags:
 aliases:
   - стартовый класс spring boot
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-13T09:51:53+03:00
 updated: 2025-09-21T12:00:45+03:00
 sr-due: 2026-09-23

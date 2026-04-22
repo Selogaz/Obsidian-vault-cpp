@@ -5,6 +5,8 @@ tags:
 aliases:
   - контекст Spring
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-10-09T17:51:01+03:00
 updated: 2025-10-09T17:51:01+03:00
 ---

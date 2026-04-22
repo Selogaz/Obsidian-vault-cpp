@@ -5,6 +5,8 @@ tags:
 aliases:
   - Kafka
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-17T10:51:17+03:00
 updated: 2025-10-06T19:33:29+03:00
 sr-due: 2025-10-10

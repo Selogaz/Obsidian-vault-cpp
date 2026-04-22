@@ -3,6 +3,8 @@ tags:
   - note/basic/primary
   - category/computer_science
 aliases: []
+icon: 📝
+color: "#70a0b5"
 created: 2026-03-30T12:00:00+07:00
 updated: 2026-03-30T12:00:00+07:00
 ---

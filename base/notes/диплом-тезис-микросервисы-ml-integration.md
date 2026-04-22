@@ -3,6 +3,8 @@ tags:
   - note/discourse/claim
   - category/study
 aliases: []
+icon: ❗
+color: "#c85545"
 created: 2026-03-21T00:00:00+07:00
 updated: 2026-03-21T00:00:00+07:00
 ---

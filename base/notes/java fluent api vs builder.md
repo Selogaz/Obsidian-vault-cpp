@@ -5,6 +5,8 @@ tags:
 aliases:
   - fluent api vs builder
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-10-01T20:11:50+03:00
 updated: 2026-03-04T18:45:43+03:00
 sr-due: 2025-10-12

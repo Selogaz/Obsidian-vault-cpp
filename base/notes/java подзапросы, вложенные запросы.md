@@ -5,6 +5,8 @@ tags:
 aliases:
   - подзапросы, вложенные запросы
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-26T09:12:59+03:00
 updated: 2025-10-08T19:01:12+03:00
 sr-due: 2025-10-12

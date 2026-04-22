@@ -5,6 +5,8 @@ tags:
 aliases:
   - словарь
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-11-15T16:54:19+03:00
 updated: 2026-02-28T23:39:57+03:00
 ---

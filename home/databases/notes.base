@@ -40,6 +40,8 @@ properties:
     displayName: 🔤 title
   file.tags:
     displayName: 🏷️ tags
+  note.aliases:
+    displayName: 🔖 aliases
   formula.type:
     displayName: 🗄️ type
   note.deck:
@@ -73,6 +75,7 @@ views:
       - file.links
       - formula.created_relative
       - formula.updated_relative
+      - aliases
     sort:
       - property: formula.created_relative
         direction: DESC
@@ -190,3 +193,29 @@ views:
       file.name: 530
       formula.backlinks: 1
       formula.outlinks: 1
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+  - type: chart-bar
+    name: "📈 Statistics: By Evergreens"
+    filters:
+      or:
+        - file.hasTag("note/basic/evergreen")
+        - file.hasTag("note/basic/incubator")
+        - file.hasTag("note/basic/fern")
+        - file.hasTag("note/basic/seed")
+    sort:
+      - property: formula.rank
+        direction: ASC
+    x: formula.rank
+    aggregate:file.name: Count
+    show-labels: true
+  - type: chart-pie
+    name: "📈 Statistics: By Deck"
+    x: note.deck
+    aggregate:file.name: Count
+    show-labels: true

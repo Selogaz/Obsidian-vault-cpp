@@ -1,7 +1,22 @@
-module.exports = async function meta(category) {
+module.exports = async function meta(category, note) {
 	const dv = app.plugins.plugins['dataview'].api
 	const tp =
 		app.plugins.plugins['templater-obsidian'].templater.current_functions_object
+
+	if (note) {
+		const noteFile = app.metadataCache.getFirstLinkpathDest(note, '')
+		if (noteFile) {
+			const fm = app.metadataCache.getFileCache(noteFile)?.frontmatter
+			const links = [fm?.meta].flat().filter(Boolean)
+			if (links.length > 0) {
+				const names = links.map(raw => {
+					const match = String(raw).match(/\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/)
+					return match ? match[1].split('/').pop().replace(/\.md$/, '') : String(raw)
+				}).filter(Boolean)
+				if (names.length > 0) return names
+			}
+		}
+	}
 
 	let meta_notes
 	let meta

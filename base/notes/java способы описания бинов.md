@@ -5,6 +5,8 @@ tags:
 aliases:
   - способы описания бинов
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-15T10:39:32+03:00
 updated: 2026-02-12T11:53:38+03:00
 sr-due: 2026-09-29

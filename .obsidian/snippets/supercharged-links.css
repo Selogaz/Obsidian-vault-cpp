@@ -1,102 +1,121 @@
-/*
-░█▀▀░▀█▀░█▀█░▀█▀░█░█░█▀▀░█▀▀░█▀▀
-░▀▀█░░█░░█▀█░░█░░█░█░▀▀█░█▀▀░▀▀█
-░▀▀▀░░▀░░▀░▀░░▀░░▀▀▀░▀▀▀░▀▀▀░▀▀▀
-*/
+/* core mechanics */
+.data-link-icon[data-link-icon]::before {
+  content: attr(data-link-icon, '📝') ' ';
+}
 
-.data-link-icon[data-link-status='🟥' i][data-link-tags*='#source' i]::before,
-.data-link-icon[data-link-status='🟥' i][data-link-tags*='#project' i]::before {
+.cm-hmd-internal-link .data-link-text,
+.data-link-icon[data-link-color] {
+  color: attr(data-link-color type(<color>), inherit);
+}
+
+/* status */
+.data-link-icon[data-link-status='📥' i]::before {
+  border-left: solid #f7bb73;
+  border-bottom: solid #f7bb73;
+  border-radius: 100px;
+  border-width: 3px;
+}
+
+.data-link-icon[data-link-status='🟥' i]::before {
   border-left: solid #ff1100;
   border-bottom: solid #ff1100;
   border-radius: 100px;
   border-width: 3px;
 }
 
-.data-link-icon[data-link-status='🟦' i][data-link-tags*='#source' i]::before,
-.data-link-icon[data-link-status='🟦' i][data-link-tags*='#project' i]::before {
+.data-link-icon[data-link-status='🟦' i]::before {
   border-left: solid #00ffff;
   border-bottom: solid #00ffff;
   border-radius: 100px;
   border-width: 3px;
 }
 
-.data-link-icon[data-link-status='⚛️' i][data-link-tags*='#source' i]::before {
+.data-link-icon[data-link-status='⚛' i]::before {
   border-left: solid #dd00ff;
   border-bottom: solid #dd00ff;
   border-radius: 100px;
   border-width: 3px;
 }
 
-.data-link-icon[data-link-status='🟩' i][data-link-tags*='#source' i]::before,
-.data-link-icon[data-link-status='🟩' i][data-link-tags*='#project' i]::before {
+.data-link-icon[data-link-status='🟩' i]::before {
   border-left: solid #88ff00;
   border-bottom: solid #88ff00;
   border-radius: 100px;
   border-width: 3px;
 }
 
-.data-link-icon[data-link-status='⬛' i][data-link-tags*='#source' i]::before,
-.data-link-icon[data-link-status='⬛' i][data-link-tags*='#project' i]::before {
+.data-link-icon[data-link-status='⬛' i]::before {
   border-left: solid #787878;
   border-bottom: solid #787878;
   border-radius: 100px;
   border-width: 3px;
 }
 
-.data-link-icon[data-link-status='❄️' i][data-link-tags*='#source' i]::before,
-.data-link-icon[data-link-status='❄️' i][data-link-tags*='#project' i]::before {
+.data-link-icon[data-link-status='❄' i]::before {
   border-left: solid #ffffff;
   border-bottom: solid #43aeff;
   border-radius: 100px;
   border-width: 3px;
 }
 
-.data-link-icon[data-link-status='📢' i][data-link-tags*='#project' i]::before {
+.data-link-icon[data-link-status='📢' i]::before {
   border-left: solid #ffffff;
   border-bottom: solid #88ff00;
   border-radius: 100px;
   border-width: 3px;
 }
 
-/*
-░█▀█░█▀▄░█▀█░▀▀█░█▀▀░█▀▀░▀█▀░█▀▀
-░█▀▀░█▀▄░█░█░░░█░█▀▀░█░░░░█░░▀▀█
-░▀░░░▀░▀░▀▀▀░▀▀░░▀▀▀░▀▀▀░░▀░░▀▀▀
-*/
-.prompt-results [data-link-tags*='#project' i],
-.tree-item-self [data-link-tags*='#project' i] {
-  text-decoration: underline;
+.data-link-icon[data-link-status='⚙️' i]::before {
+  border-left: solid #a0a0c0;
+  border-bottom: solid #a0a0c0;
+  border-radius: 100px;
+  border-width: 3px;
 }
 
-[data-link-tags*='#project/short' i] {
-  color: #a39070 !important;
+.data-link-icon[data-link-status='💡' i]::before {
+  border-left: solid #ffe000;
+  border-bottom: solid #ffe000;
+  border-radius: 100px;
+  border-width: 3px;
 }
 
-.data-link-icon[data-link-tags*='#project/short' i]::before {
-  content: '🗞️ ';
+.data-link-icon[data-link-status='🧠' i]::before {
+  border-left: solid #ff8c00;
+  border-bottom: solid #ff8c00;
+  border-radius: 100px;
+  border-width: 3px;
 }
 
-[data-link-tags*='#project/single' i] {
-  color: #b87535 !important;
+.data-link-icon[data-link-status='🔎' i]::before {
+  border-left: solid #4488ff;
+  border-bottom: solid #4488ff;
+  border-radius: 100px;
+  border-width: 3px;
 }
 
-.data-link-icon[data-link-tags*='#project/single' i]::before {
-  content: '✏️ ';
+.data-link-icon[data-link-status='📋' i]::before {
+  border-left: solid #cc88ff;
+  border-bottom: solid #cc88ff;
+  border-radius: 100px;
+  border-width: 3px;
 }
 
-[data-link-tags*='#project/longform' i] {
-  color: #5585b5 !important;
+.data-link-icon[data-link-status='🖍' i]::before {
+  border-left: solid #ff66aa;
+  border-bottom: solid #ff66aa;
+  border-radius: 100px;
+  border-width: 3px;
 }
 
-.data-link-icon[data-link-tags*='#project/longform' i]::before {
-  content: '🖊️ ';
+.data-link-icon[data-link-status='📦' i]::before {
+  border-left: solid #c08040;
+  border-bottom: solid #c08040;
+  border-radius: 100px;
+  border-width: 3px;
 }
 
-/*
-░█▀▀░█▀█░█░█░█▀▄░█▀▀░█▀▀
-░▀▀█░█░█░█░█░█▀▄░█░░░█▀▀
-░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀▀▀
-*/
+/* source */
+
 .prompt-results
   [data-link-tags*='#source' i]:not([data-link-tags*='#mark/log' i]),
 .tree-item-self
@@ -104,264 +123,10 @@
   text-decoration: underline;
 }
 
-/* articles */
-[data-link-tags*='#source/article' i] {
-  color: #7575c0 !important;
-}
-
-.data-link-icon[data-link-tags*='#source/article/paper' i]::before {
-  content: '📃 ';
-}
-
-.data-link-icon[data-link-tags*='#source/article/resource' i]::before {
-  content: '🌐 ';
-}
-
-/* books */
-[data-link-tags*='#source/book' i] {
-  color: #b5b570 !important;
-}
-
-.data-link-icon[data-link-tags*='#source/book' i]::before {
-  content: '📖 ';
-}
-
-/* courses */
-[data-link-tags*='#source/course' i] {
-  color: #6b7a35 !important;
-}
-
-.data-link-icon[data-link-tags*='#source/course' i]::before {
-  content: '🎓 ';
-}
-
-/* cinematics */
-[data-link-tags*='#source/cinematic/movie' i] {
-  color: #c86555 !important;
-}
-
-.data-link-icon[data-link-tags*='#source/cinematic/movie' i]::before {
-  content: '🎞️ ';
-}
-
-[data-link-tags*='#source/cinematic/series' i] {
-  color: #d08a50 !important;
-}
-
-.data-link-icon[data-link-tags*='#source/cinematic/series' i]::before {
-  content: '🍿 ';
-}
-
-[data-link-tags*='#source/cinematic/anime' i] {
-  color: #d090b5 !important;
-}
-
-.data-link-icon[data-link-tags*='#source/cinematic/anime' i]::before {
-  content: '🌸 ';
-}
-
-[data-link-tags*='#source/comic' i] {
-  color: #c8702a !important;
-}
-
-.data-link-icon[data-link-tags*='#source/comic' i]::before {
-  content: '💥 ';
-}
-
-[data-link-tags*='#source/music' i] {
-  color: #70b5c5 !important;
-}
-
-.data-link-icon[data-link-tags*='#source/music/album' i]::before {
-  content: '💽 ';
-}
-
-.data-link-icon[data-link-tags*='#source/music/tracklist' i]::before {
-  content: '🎧 ';
-}
-
-[data-link-tags*='#source/game' i] {
-  color: #3a9560 !important;
-}
-
-.data-link-icon[data-link-tags*='#source/game' i]::before {
-  content: '🎮 ';
-}
-
-/* podcasts */
-[data-link-tags*='#source/podcast' i] {
-  color: #2a7590 !important;
-}
-
-.data-link-icon[data-link-tags*='#source/podcast' i]::before {
-  content: '📻 ';
-}
-
-/* video */
-[data-link-tags*='#source/video' i] {
-  color: #2a9070 !important;
-}
-
-.data-link-icon[data-link-tags*='#source/video/recording' i]::before {
-  content: '📹 ';
-}
-
-.data-link-icon[data-link-tags*='#source/video/playlist' i]::before {
-  content: '📼 ';
-}
-
-/*
-░█▀█░█▀▀░█▀█░█▀█░█░░░█▀▀
-░█▀▀░█▀▀░█░█░█▀▀░█░░░█▀▀
-░▀░░░▀▀▀░▀▀▀░▀░░░▀▀▀░▀▀▀
-*/
-/* creators */
-[data-link-tags*='#creator' i] {
-  color: #d09060 !important;
-}
-
-.data-link-icon[data-link-tags*='#creator/writer' i]::before {
-  content: '👩🏻‍💻 ';
-}
-
-.data-link-icon[data-link-tags*='#creator/director' i]::before {
-  content: '🧑‍✈️';
-}
-
-.data-link-icon[data-link-tags*='#creator/researcher' i]::before {
-  content: '🧑‍🔬 ';
-}
-
-.data-link-icon[data-link-tags*='#creator/contentmaker' i]::before {
-  content: '🦸 ';
-}
-
-.data-link-icon[data-link-tags*='#creator/businessman' i]::before {
-  content: '🫅 ';
-}
-
-.data-link-icon[data-link-tags*='#creator/musician' i]::before {
-  content: '🧑‍🎤 ';
-}
-
-.data-link-icon[data-link-tags*='#creator/composer' i]::before {
-  content: '🎼 ';
-}
-
-.data-link-icon[data-link-tags*='#creator/actor' i]::before {
-  content: '🤵 ';
-}
-
-.data-link-icon[data-link-tags*='#creator/painter' i]::before {
-  content: '🧑‍🎨 ';
-}
-
-.data-link-icon[data-link-tags*='#creator/photographer' i]::before {
-  content: '📷 ';
-}
-
-.data-link-icon[data-link-tags*='#creator/cinematographer' i]::before {
-  content: '🎥 ';
-}
-
-.data-link-icon[data-link-tags*='#creator/expert' i]::before {
-  content: '😎 ';
-}
-
-/* productions */
-[data-link-tags*='#production' i] {
-  color: #c85545 !important;
-}
-
-.data-link-icon[data-link-tags*='#production/channel' i]::before,
-.data-link-icon[data-link-tags*='#production/podcast' i]::before {
-  content: '🔔 ';
-}
-
-.data-link-icon[data-link-tags*='#production/film_studio' i]::before,
-.data-link-icon[data-link-tags*='#production/art_studio' i]::before,
-.data-link-icon[data-link-tags*='#production/game_studio' i]::before,
-.data-link-icon[data-link-tags*='#production/label' i]::before {
-  content: '🎛️ ';
-}
-
-.data-link-icon[data-link-tags*='#production/band' i]::before {
-  content: '🎸 ';
-}
-
-.data-link-icon[data-link-tags*='#production/organization' i]::before {
-  content: '🏢 ';
-}
-
-.data-link-icon[data-link-tags*='#production/company' i]::before {
-  content: '💼 ';
-}
-
-.data-link-icon[data-link-tags*='#production/platform' i]::before {
-  content: '🏨 ';
-}
-
-.data-link-icon[data-link-tags*='#production/publisher' i]::before {
-  content: '🖨 ';
-}
-
-.data-link-icon[data-link-tags*='#production/journal' i]::before {
-  content: '📰 ';
-}
-
-/* contacts */
-[data-link-tags*='#contact' i] {
-  color: #3a80b5 !important;
-}
-
-.data-link-icon[data-link-tags*='#contact/working' i]::before {
-  content: '👤 ';
-}
-
-.data-link-icon[data-link-tags*='#contact/personal' i]::before {
-  content: '🧑‍🤝‍🧑 ';
-}
-
-.data-link-icon[data-link-tags*='#contact/routine' i]::before {
-  content: '🧟 ';
-}
-
-.data-link-icon[data-link-tags*='#contact/client' i]::before {
-  content: '🤝 ';
-}
-
-/*
-░█▀▀░█░█░█▀▀░▀█▀░█▀▀░█▄█
-░▀▀█░░█░░▀▀█░░█░░█▀▀░█░█
-░▀▀▀░░▀░░▀▀▀░░▀░░▀▀▀░▀░▀
-*/
+/* system */
 [data-link-tags*='#system' i],
 .bases-view [data-link-tags*='#system' i] {
   text-decoration: underline !important;
-}
-
-[data-link-tags*='#system/category' i] {
-  color: #2a9080 !important;
-}
-
-.data-link-icon[data-link-tags*='#system/category' i]::before {
-  content: '🗺️ ';
-}
-
-[data-link-tags*='#system/high/hierarchy' i] {
-  color: #b089c4 !important;
-}
-
-.data-link-icon[data-link-tags*='#system/high/hierarchy' i]::before {
-  content: '🧬 ';
-}
-
-[data-link-tags*='#system/high/meta' i] {
-  color: #6fa8d6 !important;
-}
-
-.data-link-icon[data-link-tags*='#system/high/meta' i]::before {
-  content: '🔬 ';
 }
 
 [data-link-tags*='#system/genre' i] {
@@ -370,39 +135,6 @@
 
 .data-link-icon[data-link-tags*='#system/genre' i]::before {
   content: '🎭 ';
-}
-
-[data-link-tags*='#system/high/problem' i] {
-  color: #d0b040 !important;
-}
-
-.data-link-icon[data-link-tags*='#system/high/problem' i]::before {
-  content: '⚡ ';
-}
-
-/*
-░█▀█░█▀▀░█▀▄░▀█▀░█▀█░█▀▄░▀█▀░█▀▀
-░█▀▀░█▀▀░█▀▄░░█░░█░█░█░█░░█░░█░░
-░▀░░░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀░░▀▀▀░▀▀▀
-*/
-.data-link-icon[data-link-tags*='#periodic/day' i]::before {
-  content: '🇩 ';
-}
-
-.data-link-icon[data-link-tags*='#periodic/week' i]::before {
-  content: '🇼 ';
-}
-
-.data-link-icon[data-link-tags*='#periodic/month' i]::before {
-  content: '🇲 ';
-}
-
-.data-link-icon[data-link-tags*='#periodic/quarter' i]::before {
-  content: '🇶 ';
-}
-
-.data-link-icon[data-link-tags*='#periodic/year' i]::before {
-  content: '🇾 ';
 }
 
 [data-link-reviewed*='true' i]::before {
@@ -419,181 +151,7 @@
   border-width: 2px;
 }
 
-/*
-░█▀█░█▀█░▀█▀░█▀▀
-░█░█░█░█░░█░░█▀▀
-░▀░▀░▀▀▀░░▀░░▀▀▀
-*/
-[data-link-tags*='#note/basic/primary' i] {
-  color: #70a0b5 !important;
-}
-
-.prompt-results
-  .data-link-icon[data-link-tags*='#note/basic/primary' i]::before,
-.tree-item-self
-  .data-link-icon[data-link-tags*='#note/basic/primary' i]::before,
-.workspace-tab-header
-  .data-link-icon[data-link-tags*='#note/basic/primary' i]::before,
-.bases-view .data-link-icon[data-link-tags*='#note/basic/primary' i]::before,
-.suggestion-container
-  .data-link-icon[data-link-tags*='#note/basic/primary' i]::before {
-  content: '📝 ';
-}
-
-[data-link-tags*='#note/basic/seed' i] {
-  color: #85a560 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/basic/seed' i]::before {
-  content: '🌱 ';
-}
-
-[data-link-tags*='#note/basic/fern' i] {
-  color: #75a835 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/basic/fern' i]::before {
-  content: '🌿 ';
-}
-
-[data-link-tags*='#note/basic/incubator' i] {
-  color: #c85545 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/basic/incubator' i]::before {
-  content: '♨️ ';
-}
-
-[data-link-tags*='#note/basic/evergreen' i] {
-  color: #2a8a40 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/basic/evergreen' i]::before {
-  content: '🌲 ';
-}
-
-.prompt-results
-  .data-link-icon[data-link-tags*='#note/specific/code' i]::before,
-.tree-item-self
-  .data-link-icon[data-link-tags*='#note/specific/code' i]::before,
-.workspace-tab-header
-  .data-link-icon[data-link-tags*='#note/specific/code' i]::before,
-.bases-view .data-link-icon[data-link-tags*='#note/specific/code' i]::before,
-.suggestion-container
-  .data-link-icon[data-link-tags*='#note/specific/code' i]::before {
-  content: '</> ';
-  color: rgb(233, 68, 68) !important;
-}
-
-.prompt-results
-  .data-link-icon[data-link-tags*='#note/specific/exact' i]::before,
-.tree-item-self
-  .data-link-icon[data-link-tags*='#note/specific/exact' i]::before,
-.workspace-tab-header
-  .data-link-icon[data-link-tags*='#note/specific/exact' i]::before,
-.bases-view .data-link-icon[data-link-tags*='#note/specific/exact' i]::before,
-.suggestion-container
-  .data-link-icon[data-link-tags*='#note/specific/exact' i]::before {
-  content: '📝 ';
-}
-
-[data-link-tags*='#note/specific/exact' i] {
-  color: #d0a570 !important;
-}
-
-[data-link-tags*='#note/specific/drawing' i] {
-  color: #c89560 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/specific/drawing' i]::before {
-  content: '🎨 ';
-}
-
-[data-link-tags*='#note/specific/photo' i] {
-  color: #90b5c0 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/specific/photo' i]::before {
-  content: '📸 ';
-}
-
-[data-link-tags*='#note/specific/sculpture' i] {
-  color: #a0a0a0 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/specific/sculpture' i]::before {
-  content: '🗿 ';
-}
-
-[data-link-tags*='#note/specific/architecture' i] {
-  color: #b8b095 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/specific/architecture' i]::before {
-  content: '🏰 ';
-}
-
-[data-link-tags*='#note/specific/artifact' i] {
-  color: #c88560 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/specific/artifact' i]::before {
-  content: '🏺 ';
-}
-
-[data-link-tags*='#note/specific/track' i] {
-  color: #d08a30 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/specific/track' i]::before {
-  content: '▶️ ';
-}
-
-[data-link-tags*='#note/specific/composition' i] {
-  color: #6080a0 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/specific/composition' i]::before {
-  content: '🎵 ';
-}
-
-/* --- */
-[data-link-tags*='#note/specific/outstanding' i] {
-  color: #d0b540 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/specific/outstanding' i]::before {
-  content: '😎 ';
-}
-
-[data-link-tags*='#note/specific/person' i] {
-  color: #a54040 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/specific/historical_person' i]::before {
-  content: '💂 ';
-}
-
-[data-link-tags*='#note/specific/athlete' i] {
-  color: #c8803a !important;
-}
-
-.data-link-icon[data-link-tags*='#note/specific/athlete' i]::before {
-  content: '🏋️ ';
-}
-
-/*
-░█▀▄░▀█▀░█▀▀░█▀▀░█▀█░█░█░█▀▄░█▀▀░█▀▀
-░█░█░░█░░▀▀█░█░░░█░█░█░█░█▀▄░▀▀█░█▀▀
-░▀▀░░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀▀▀
-*/
-[data-link-tags*='#note/discourse/question' i] {
-  color: #c85545 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/discourse/question' i]::before {
-  content: '❓ ' !important;
-}
+/* discourse */
 
 .data-link-icon[data-link-tags*='#note/discourse/question' i][data-link-tags*='#note/basic/seed' i]::before {
   content: '🌱❓ ' !important;
@@ -611,55 +169,7 @@
   content: '🌲❓ ' !important;
 }
 
-[data-link-tags*='#note/discourse/observation' i] {
-  color: #c0c0c0 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/discourse/observation' i]::before {
-  content: '👀 ' !important;
-}
-
-[data-link-tags*='#note/discourse/claim' i] {
-  color: #c85545 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/discourse/claim' i]::before {
-  content: '❗ ' !important;
-}
-
-[data-link-tags*='#note/discourse/evidence' i] {
-  color: #4585c8 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/discourse/evidence' i]::before {
-  content: '🌀 ' !important;
-}
-
-[data-link-tags*='#note/discourse/synthesis' i] {
-  color: #2ab5a0 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/discourse/synthesis' i]::before {
-  content: '🧪 ' !important;
-}
-
-[data-link-tags*='#note/discourse/context' i] {
-  color: #909090 !important;
-}
-
-.data-link-icon[data-link-tags*='#note/discourse/context' i]::before {
-  content: '🪧 ' !important;
-}
-
-/*
-░█▄█░█▀█░█▀▄░█░█
-░█░█░█▀█░█▀▄░█▀▄
-░▀░▀░▀░▀░▀░▀░▀░▀
-*/
-.data-link-icon-after[data-link-addition]::after {
-  content: '⁺';
-  color: gray;
-}
+/* mark */
 
 [data-link-tags*='#mark/addition/aggregator' i] {
   color: #7a7d88 !important;
@@ -677,18 +187,6 @@
 .suggestion-container
   .data-link-icon[data-link-tags*='#mark/addition/aggregator' i]::before {
   content: '➕ ';
-}
-
-.data-link-icon[data-link-tags*='#mark/addition/meeting' i]::before {
-  content: attr(data-link-status) '🗣️ ';
-}
-
-.data-link-icon[data-link-tags*='#mark/addition/experiment' i]::before {
-  content: attr(data-link-status) '⚗️ ';
-}
-
-.data-link-icon[data-link-tags*='#mark/addition/report' i]::before {
-  content: attr(data-link-status) '🚨 ';
 }
 
 .data-link-icon-after[data-link-tags*='#mark/aggregator' i]::after {
@@ -711,14 +209,6 @@
   color: rgb(255, 0, 0) !important;
 }
 
-.data-link-icon[data-link-tags*='#mark/log/conspectus' i]::before {
-  content: '📑 ' !important;
-}
-
-.data-link-icon[data-link-tags*='#mark/log/episode' i]::before {
-  content: '🌆 ' !important;
-}
-
 .data-link-icon[data-link-tags*='#mark/my' i]::before {
   content: '💎 ';
 }
@@ -735,25 +225,12 @@
   content: '💭 ' !important;
 }
 
-[data-link-tags*='#mark/scene' i] {
-  color: #d0b580 !important;
-}
-
-.data-link-icon[data-link-tags*='#mark/scene' i]::before {
-  content: attr(data-link-status) ' ';
-}
-
 [data-link-tags*='#mark/kanban' i] {
   color: #c5c5c5 !important;
 }
 
 .data-link-icon[data-link-tags*='#mark/kanban' i]::before {
   content: '📋 ';
-}
-
-.data-link-icon-after[data-link-deck]::after {
-  content: ' *';
-  color: gray;
 }
 
 .data-link-icon-after[data-link-tags*='#mark/no_sync' i]::after {
@@ -794,34 +271,12 @@
   content: '🖼️ ';
 }
 
-.data-link-icon[data-link-path$='.canvas' i]::before {
-  content: '⬜ ';
-}
-
-/* --- */
-.data-link-icon[data-link-category*='help' i]::before,
-.data-link-icon[data-link-tags*='#category/help' i]::before {
-  content: '🆘 ';
-}
-
-/* --- */
-/* tasks */
-.data-link-icon[data-link-icon]:not(
-    [data-link-tags*='#mark/gtd'],
-    [data-link-path^='classes/' i]
+.data-link-icon[data-link-path$='.canvas' i]:not(
+    .multi-select-pill-content
   )::before {
-  content: attr(data-link-icon) ' ' !important;
+  content: '⬜ ' !important;
 }
 
-.prompt-results .data-link-icon[data-link-tags*='#mark/gtd' i]::before,
-.tree-item-self .data-link-icon[data-link-tags*='#mark/gtd' i]::before,
-.workspace-tab-header .data-link-icon[data-link-tags*='#mark/gtd' i]::before,
-.bases-view .data-link-icon[data-link-tags*='#mark/gtd' i]::before,
-.suggestion-container .data-link-icon[data-link-tags*='#mark/gtd' i]::before {
-  content: attr(data-link-icon) ' ';
-}
-
-/* --- */
-.data-link-icon[data-link-excalidraw-plugin*='parsed' i]::before {
-  content: '🖌 ';
+.data-link-icon[data-link-tags*='#mark/excalidraw' i]::before {
+  content: '🖌 ' !important;
 }

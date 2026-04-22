@@ -5,6 +5,8 @@ tags:
 aliases:
   - DAO
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-06T10:28:45+03:00
 updated: 2025-10-02T17:57:33+03:00
 sr-due: 2025-10-23

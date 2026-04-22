@@ -5,6 +5,8 @@ tags:
 aliases:
   - пример антипаттерна service locator
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-06T08:21:18+03:00
 updated: 2025-10-02T17:00:09+03:00
 sr-due: 2026-12-11

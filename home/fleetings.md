@@ -9,7 +9,7 @@ icon: ✈️
 
 > [!tabbed]+
 >
-> <label>📥 inbox<input type="radio" name="test" checked/></label>
+> <label>📝 notes <input type="radio" name="test" checked/></label>
 >
 > > ![[fleetings.base#👻 Orphans]]
 >
@@ -19,13 +19,18 @@ icon: ✈️
 >
 > <label>✅ tasks<input type="radio" name="test"/></label>
 >
-> > ```dataviewjs
-> > await dv.view("templates/views/tasks/type", {type: "inbox"})
-> > ```
+> > > [!tabbed]+
+> > > <label>- [ ] Inline Tasks<input type="radio" name="tasks" checked/></label>
+> > >
+> > > > `$=await dv.view("templates/views/tasks/type", {type: "inbox"})`
+> > >
+> > > <label>✔️ Task Notes<input type="radio" name="tasks"/></label>
+> > >
+> > > > ![[tasks.base#📋 Workflow: Kanban (v)]]
 >
 > <label>🗣️ interim<input type="radio" name="test"/></label>
 >
-> > ![[interim.base#🗣️ All]]
+> > ![[interim.base#📋 Workflow: Kanban (v)]]
 >
 > <label>📅 periodic<input type="radio" name="test"/></label>
 >

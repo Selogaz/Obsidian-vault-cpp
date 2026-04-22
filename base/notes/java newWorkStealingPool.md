@@ -5,6 +5,8 @@ tags:
 aliases:
   - newWorkStealingPool
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-07-27T18:15:17+03:00
 updated: 2025-10-06T19:33:51+03:00
 sr-due: 2025-10-10

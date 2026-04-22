@@ -5,6 +5,8 @@ tags:
 aliases:
   - HashSet
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-18T15:45:58+03:00
 updated: 2025-10-06T19:27:49+03:00
 sr-due: 2025-10-10

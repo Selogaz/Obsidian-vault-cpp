@@ -5,6 +5,8 @@ tags:
 aliases:
   - SpringBootApplication
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-15T09:43:00+03:00
 updated: 2025-09-21T12:51:26+03:00
 sr-due: 2026-10-20

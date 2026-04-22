@@ -5,6 +5,8 @@ tags:
 aliases:
   - подключение шрифта
 deck: obsidian::css
+icon: </>
+color: "#ab4642"
 created: 2026-01-19T20:56:48+03:00
 updated: 2026-03-04T19:44:17+03:00
 ---

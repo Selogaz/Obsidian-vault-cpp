@@ -3,6 +3,8 @@ tags:
   - note/discourse/context
   - category/computer_science
 aliases: []
+icon: 🪧
+color: "#909090"
 created: 2026-03-21T00:00:00+07:00
 updated: 2026-03-21T00:00:00+07:00
 ---

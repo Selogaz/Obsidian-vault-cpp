@@ -5,6 +5,8 @@ tags:
 aliases:
   - БЭМ
 deck: obsidian::css
+icon: </>
+color: "#ab4642"
 created: 2026-01-22T12:54:44+03:00
 updated: 2026-03-04T19:42:01+03:00
 ---

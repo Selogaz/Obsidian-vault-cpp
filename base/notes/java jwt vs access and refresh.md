@@ -5,6 +5,8 @@ tags:
 aliases:
   - jwt vs access and refresh
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-17T12:41:51+03:00
 updated: 2025-10-08T19:34:06+03:00
 sr-due: 2025-10-12

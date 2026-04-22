@@ -5,6 +5,8 @@ tags:
 aliases:
   - composite
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-10-01T18:27:45+03:00
 updated: 2025-10-08T18:48:50+03:00
 sr-due: 2025-10-12

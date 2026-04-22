@@ -5,6 +5,8 @@ tags:
 aliases:
   - сканирование бинов
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-13T12:32:51+03:00
 updated: 2025-10-02T16:58:02+03:00
 sr-due: 2026-11-14

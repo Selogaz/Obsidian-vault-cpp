@@ -6,6 +6,8 @@ tags:
 aliases:
   - kebab-case
 deck: obsidian::css
+icon: </>
+color: "#ab4642"
 created: 2026-01-22T14:30:43+03:00
 updated: 2026-03-04T19:41:49+03:00
 ---

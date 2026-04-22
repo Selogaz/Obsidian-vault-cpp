@@ -5,6 +5,8 @@ tags:
 aliases:
   - Spring Security
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-30T19:09:26+03:00
 updated: 2025-10-06T19:28:12+03:00
 sr-due: 2025-10-10

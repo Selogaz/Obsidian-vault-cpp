@@ -5,6 +5,8 @@ tags:
 aliases:
   - рекомендации по использованию пулов потоков
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-07-27T18:25:19+03:00
 updated: 2025-10-16T10:49:08+03:00
 sr-due: 2025-11-14

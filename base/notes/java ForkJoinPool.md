@@ -5,6 +5,8 @@ tags:
 aliases:
   - ForkJoinPool
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-07-16T10:58:43+03:00
 updated: 2025-10-08T18:31:04+03:00
 sr-due: 2025-10-12

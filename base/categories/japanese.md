@@ -1,11 +1,13 @@
 ---
-tags: 
-  - system/category
+tags:
   - category/japanese
+  - system/category
+aliases:
 cssclasses:
   - category
 relevant: false
 icon: 🗺️
+color: "#2a9080"
 ---
 
 > [!tabbed]+
@@ -17,9 +19,6 @@ icon: 🗺️
 > <label>🏢 projects<input type="radio" name="test" /></label>
 >
 > > ![[projects.base#📋 Workflow: Kanban (v)]]
-> > ```dataviewjs
-> > await dv.view("templates/views/gantt")
-> > ```
 >
 > <label>👥 people<input type="radio" name="test" /></label>
 >
@@ -31,9 +30,7 @@ icon: 🗺️
 >
 > <label>📋 structure<input type="radio" name="test" /></label>
 >
-> > ```dataviewjs
-> > await dv.view("templates/views/structure")
-> > ```
+> > `$=await dv.view("templates/views/structure")`
 >
 > <label>📝 notes<input type="radio" name="test" /></label>
 >
@@ -41,10 +38,14 @@ icon: 🗺️
 >
 > <label>✅ tasks<input type="radio" name="test" /></label>
 >
-> > > [!todo|hidden]
-> > > ```dataviewjs
-> > > await dv.view("templates/views/tasks/category")
-> > > ```
+> > > [!tabbed]
+> > > <label>- [ ] Inline Tasks<input type="radio" name="tasks" checked/></label>
+> > >
+> > > > `$=await dv.view("templates/views/tasks/category")`
+> > >
+> > > <label>✔️ Task Notes<input type="radio" name="tasks"/></label>
+> > >
+> > > > ![[tasks.base#📋 Workflow: Kanban (v)]]
 >
 > <label>➕<input type="radio" name="test" /></label>
 >

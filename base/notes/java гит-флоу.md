@@ -5,6 +5,8 @@ tags:
 aliases:
   - гит-флоу
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-11-15T16:53:46+03:00
 updated: 2026-04-07T13:58:57+03:00
 ---

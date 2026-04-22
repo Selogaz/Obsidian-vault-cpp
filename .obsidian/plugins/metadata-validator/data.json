@@ -1,0 +1,17 @@
+{
+  "schemasRoot": "templates/create/",
+  "enableOnSave": true,
+  "enableOnOpen": true,
+  "hideObsidianTypeIcon": false,
+  "hideObsidianValidator": false,
+  "showInlineErrors": true,
+  "showSidebarPanel": true,
+  "showFileExplorerBadges": false,
+  "interceptBases": true,
+  "enableLiveValidation": true,
+  "backgroundScanInterval": 5,
+  "globalPropertyOrder": [
+    "tags",
+    "aliases"
+  ]
+}

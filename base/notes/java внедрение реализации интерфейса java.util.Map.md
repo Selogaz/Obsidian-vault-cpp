@@ -5,6 +5,8 @@ tags:
 aliases:
   - внедрение реализации интерфейса java.utl.Map
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-15T09:27:29+03:00
 updated: 2025-09-21T12:06:51+03:00
 sr-due: 2026-09-15

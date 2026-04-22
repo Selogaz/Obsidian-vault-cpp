@@ -5,11 +5,13 @@ tags:
 aliases:
   - внедрение зависимости от другого бина
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-13T11:28:25+03:00
 updated: 2025-10-02T18:03:32+03:00
-sr-due: null
-sr-interval: null
-sr-ease: null
+sr-due:
+sr-interval:
+sr-ease:
 ---
 
 **внедрение зависимости от другого бина**

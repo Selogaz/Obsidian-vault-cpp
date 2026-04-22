@@ -5,6 +5,8 @@ tags:
 aliases:
   - анимации
 deck: obsidian::css
+icon: </>
+color: "#ab4642"
 created: 2026-01-21T12:52:54+03:00
 updated: 2026-03-04T19:42:48+03:00
 ---

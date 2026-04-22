@@ -18,6 +18,7 @@ cssclasses:
   - hide-backlinks
 obsidianUIMode: preview
 icon: 🔝
+color: "#e8e8e8"
 ---
 
 > [!todo|hidden]

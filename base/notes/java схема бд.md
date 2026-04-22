@@ -5,6 +5,8 @@ tags:
 aliases:
   - схема бд
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-06T10:24:55+03:00
 updated: 2025-10-02T17:03:25+03:00
 sr-due: 2026-12-07

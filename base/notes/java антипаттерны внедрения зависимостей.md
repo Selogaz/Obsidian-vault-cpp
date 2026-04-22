@@ -5,6 +5,8 @@ tags:
 aliases:
   - антипаттерны внедрения зависимостей
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-05T18:38:25+03:00
 updated: 2025-09-21T12:46:57+03:00
 sr-due: 2026-10-19

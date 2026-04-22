@@ -5,6 +5,8 @@ tags:
 aliases:
   - heap vs stack
 deck: obsidian::work
+icon: </>
+color: "#ab4642"
 created: 2025-05-27 13:41:32+03:00
 updated: 2026-03-19T22:43:48+03:00
 sr-due: 2026-12-01

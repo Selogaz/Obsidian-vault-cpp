@@ -11,20 +11,68 @@ obsidianUIMode: preview
 ```dataviewjs
 const pages = dv.pages("#note OR #system OR #project OR #source OR #creator OR #contact OR #production");
 const N = pages.length;
-const outlinks = pages.flatMap(p => p.file.outlinks).length;
-const backlinks = pages.flatMap(p => p.file.inlinks).length;
-const E = (outlinks + backlinks) / 2;
-const density = (2 * E) / (N * (N - 1));
-const avgDegree = (2 * E) / N;
-const orphans = pages.filter(p => p.file.outlinks.length === 0 && p.file.inlinks.length === 0).length;
+
+const pageSet = new Set(pages.map(p => p.file.path));
+const pathToIndex = new Map(pages.map((p, i) => [p.file.path, i]));
+
+let E = 0;
+const degreeMap = new Map(pages.map(p => [p.file.path, 0]));
+const adjacency = new Map(pages.map(p => [p.file.path, new Set()]));
+
+for (const p of pages) {
+  for (const link of p.file.outlinks) {
+    if (pageSet.has(link.path) && link.path !== p.file.path) {
+      E++;
+      degreeMap.set(p.file.path, degreeMap.get(p.file.path) + 1);
+      degreeMap.set(link.path, degreeMap.get(link.path) + 1);
+      adjacency.get(p.file.path).add(link.path);
+      adjacency.get(link.path).add(p.file.path);
+    }
+  }
+}
+
+const density = N > 1 ? E / (N * (N - 1)) : 0;
+const avgDegree = N > 0 ? (2 * E) / N : 0;
+
+const orphans = pages.filter(p => degreeMap.get(p.file.path) === 0).length;
 const noisePct = ((orphans / N) * 100).toFixed(1);
 
-// Status evaluation
-const densityStatus = density < 0.01 ? "sparse, noise" : density > 0.1 ? "chaos, over-connected" : "healthy";
+const degrees = pages.map(p => degreeMap.get(p.file.path)).sort((a, b) => a - b);
+const mid = Math.floor(degrees.length / 2);
+const medianDegree = degrees.length % 2 !== 0
+  ? degrees[mid]
+  : ((degrees[mid - 1] + degrees[mid]) / 2);
+
+const visited = new Set();
+let componentCount = 0;
+let largestComponent = 0;
+
+for (const p of pages) {
+  if (!visited.has(p.file.path)) {
+    componentCount++;
+    const queue = [p.file.path];
+    let componentSize = 0;
+    while (queue.length > 0) {
+      const current = queue.shift();
+      if (visited.has(current)) continue;
+      visited.add(current);
+      componentSize++;
+      for (const neighbor of adjacency.get(current)) {
+        if (!visited.has(neighbor)) queue.push(neighbor);
+      }
+    }
+    if (componentSize > largestComponent) largestComponent = componentSize;
+  }
+}
+
+const largestPct = ((largestComponent / N) * 100).toFixed(1);
+
 const degreeStatus = avgDegree < 2 ? "too many orphans" : avgDegree > 10 ? "hub-dominated" : "balanced";
 const orphanStatus = (orphans / N) < 0.05 ? "clean" : "noisy";
+const medianStatus = medianDegree === 0 ? "most nodes isolated" : medianDegree < 2 ? "sparse" : medianDegree <= 5 ? "healthy" : "dense";
+const componentStatus = componentCount === 1 ? "fully connected" : componentCount <= Math.floor(N * 0.05) ? "few clusters" : "fragmented";
+const largestStatus = largestPct > 90 ? "dominant core" : largestPct > 60 ? "partial core" : "no clear core";
 
-// PKM Journey Achievement (detailed progression)
 let vaultAchievement;
 if (N < 25) vaultAchievement = "🌰 Seed — just planted";
 else if (N < 50) vaultAchievement = "🌱 Sprout — first shoots";
@@ -46,17 +94,30 @@ else vaultAchievement = "🌌 Exocortex Master — transcendent system";
 
 dv.table(["Metric", "Value", "Status"], [
   ["Vault Size", N, vaultAchievement],
-  ["Edges", E.toFixed(0), "—"],
-  ["Density", density.toFixed(4), densityStatus],
+  ["Edges (directed)", E, "—"],
+  ["Density", density.toFixed(4), "—"],
   ["Avg Degree", avgDegree.toFixed(2), degreeStatus],
-  ["Orphans", `${orphans} (${noisePct}%)`, orphanStatus]
+  ["Median Degree", medianDegree.toFixed(1), medianStatus],
+  ["Orphans", `${orphans} (${noisePct}%)`, orphanStatus],
+  ["Components", componentCount, componentStatus],
+  ["Largest Component", `${largestComponent} (${largestPct}%)`, largestStatus]
 ]);
 ```
+
+- **Vault Size** – the number of notes in the system.
+- **Edges** – the number of directed links between notes within the vault.
+- **Density** – the proportion of existing connections out of all possible ones. Aim for the range 0.005–0.05: below that the graph is too sparse, above it becomes chaotic.
+- **Avg Degree** – the average number of connections per note. Healthy range: 2–10. Below 2, the graph breaks apart into isolated islands.
+- **Median Degree** – the typical number of connections for an ordinary note. If significantly lower than the average, the system is held together by a few hubs rather than a balanced network. Aim for 2+.
+- **Orphans** – notes with no connections within the vault. Normal threshold: up to 5%.
+- **Components** – the number of disconnected clusters. Ideal: 1. The fewer there are, the more cohesive the system.
+- **Largest Component** – the share of notes in the main connected core. Aim for 90%+: this indicates that the vault functions as a unified system rather than an archive.
 
 ___
 
 > [!info|hide-icon]+ 📝 Notes
 > <u>Total</u>: `$=dv.pages("#note").length`
+> Evergreens: `$=dv.pages("#note/basic/evergreen OR #note/basic/incubator OR #note/basic/fern OR #note/basic/seed").length`
 > Created today: `$=dv.pages("#note").where(p => dv.func.contains(p.file.frontmatter.created, moment().format("YYYY-MM-DD"))).length`
 > Updated today: `$=dv.pages("#note").where(p => dv.func.contains(p.file.frontmatter.updated, moment().format("YYYY-MM-DD"))).length`
 

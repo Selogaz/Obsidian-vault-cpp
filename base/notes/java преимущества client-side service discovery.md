@@ -5,6 +5,8 @@ tags:
 aliases:
   - преимущества client-side service discovery
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-06T13:28:42+03:00
 updated: 2025-10-02T17:45:41+03:00
 sr-due: 2026-12-12

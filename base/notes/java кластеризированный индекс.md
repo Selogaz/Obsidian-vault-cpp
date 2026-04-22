@@ -5,6 +5,8 @@ tags:
 aliases:
   - кластеризированный индекс
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-26T10:02:52+03:00
 updated: 2025-10-08T18:38:35+03:00
 sr-due: 2025-10-12

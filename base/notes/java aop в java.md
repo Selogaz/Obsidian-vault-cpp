@@ -5,6 +5,8 @@ tags:
 aliases:
   - aop в java
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-08T22:53:43+03:00
 updated: 2025-10-02T18:14:50+03:00
 sr-due: 2026-12-14

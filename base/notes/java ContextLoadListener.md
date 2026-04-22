@@ -5,11 +5,13 @@ tags:
 aliases:
   - ContextLoadListener
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-13T07:41:02+03:00
 updated: 2025-10-02T18:12:54+03:00
-sr-due: null
-sr-interval: null
-sr-ease: null
+sr-due:
+sr-interval:
+sr-ease:
 ---
 
 **ContextLoadListener**

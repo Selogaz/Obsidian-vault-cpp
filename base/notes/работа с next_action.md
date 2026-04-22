@@ -4,6 +4,8 @@ tags:
   - category/obsidian
 aliases: []
 deck: obsidian::obsidian
+icon: 📝
+color: "#d0a570"
 created: 2026-03-23T11:14:14+03:00
 updated: 2026-03-23T11:15:17+03:00
 ---

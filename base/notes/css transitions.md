@@ -5,6 +5,8 @@ tags:
 aliases:
   - transitions
 deck: obsidian::css
+icon: </>
+color: "#ab4642"
 created: 2026-01-20T15:51:04+03:00
 updated: 2026-03-04T19:43:12+03:00
 ---

@@ -2,6 +2,8 @@
 tags:
   - note/basic/primary
 aliases: []
+icon: 📝
+color: "#70a0b5"
 created: 2026-02-22T15:01:30+03:00
 updated: 2026-02-22T15:01:41+03:00
 ---

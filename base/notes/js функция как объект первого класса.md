@@ -5,6 +5,8 @@ tags:
 aliases:
   - функция как объект первого класса
 deck: obsidian::js
+icon: </>
+color: "#ab4642"
 created: 2026-01-23T19:13:44+03:00
 updated: 2026-01-23T19:19:32+03:00
 ---

@@ -5,6 +5,8 @@ tags:
 aliases:
   - Composition API vs Options API
 deck: obsidian::js
+icon: </>
+color: "#ab4642"
 created: 2026-01-26T01:34:52+03:00
 updated: 2026-01-26T01:34:52+03:00
 ---

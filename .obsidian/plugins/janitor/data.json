@@ -21,6 +21,7 @@
     "\\.py$",
     "files/static/",
     "home/",
-    "\\.sh$"
+    "\\.sh$",
+    "opencode.json"
   ]
 }

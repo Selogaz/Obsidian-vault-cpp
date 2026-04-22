@@ -5,6 +5,8 @@ tags:
 aliases:
   - BeanFactory
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-11T18:01:22+03:00
 updated: 2025-09-28T20:45:19+03:00
 sr-due: 2026-10-26

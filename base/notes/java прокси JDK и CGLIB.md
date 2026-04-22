@@ -5,6 +5,8 @@ tags:
 aliases:
   - прокси JDK и CGLIB
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-15T11:53:47+03:00
 updated: 2025-10-06T18:49:13+03:00
 sr-due: 2025-11-29

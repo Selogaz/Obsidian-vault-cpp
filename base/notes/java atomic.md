@@ -5,6 +5,8 @@ tags:
 aliases:
   - atomic
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-19T22:14:31+03:00
 updated: 2025-10-08T19:30:38+03:00
 sr-due: 2025-10-12

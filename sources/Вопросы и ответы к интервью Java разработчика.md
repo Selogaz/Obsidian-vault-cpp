@@ -4,18 +4,26 @@ tags:
   - source/article/paper
   - category/java
 aliases: []
+addition:
 status: ❄
+rating:
+scientificity:
 category:
   - "[[java]]"
 meta:
 problem:
-url: "[Website](https://github.com/enhorse/java-interview)"
-cover: https://opengraph.githubassets.com/d9b4ad6de7aa7dceb117c18602eecdd1908dff42438fe981e79fccc3136fd6cf/enhorse/java-interview
+creator:
+production:
 start: 2025-05-20T09:14:45+03:00
 end: 2025-12-20
-total_hours: 0
+url:
+  - "[Website](https://github.com/enhorse/java-interview)"
+cover: https://opengraph.githubassets.com/d9b4ad6de7aa7dceb117c18602eecdd1908dff42438fe981e79fccc3136fd6cf/enhorse/java-interview
+icon: 📃
+color: "#7575c0"
 created: 2025-05-20T09:14:45+03:00
 updated: 2026-04-02T14:39:02+03:00
+total_hours: 0
 ---
 
 # 🟩 ООП[^1]

@@ -5,6 +5,8 @@ tags:
 aliases:
   - endpoint
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-17T16:13:34+03:00
 updated: 2025-10-06T19:32:30+03:00
 sr-due: 2025-10-10

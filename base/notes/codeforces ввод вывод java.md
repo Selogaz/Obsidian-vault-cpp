@@ -3,6 +3,8 @@ tags:
   - note/specific/code
   - category/study
 aliases: []
+icon: </>
+color: "#ab4642"
 created: 2026-03-06T23:20:00+03:00
 updated: 2026-03-08T23:28:02+03:00
 ---

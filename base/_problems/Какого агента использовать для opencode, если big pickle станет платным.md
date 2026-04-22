@@ -1,15 +1,17 @@
 ---
-tags:
-  - system/high/problem
-  - category/obsidian
-aliases: []
 category:
   - "[[obsidian]]"
 meta:
   - "[[agents]]"
-relevant: false
+icon: ⚡
+color: "#d0b040"
 created: 2026-03-20T18:16:39+03:00
 updated: 2026-03-20T18:49:31+03:00
+tags:
+  - category/obsidian
+  - system/high/problem
+aliases: []
+relevant: false
 ---
 
 ## Альтернативы для opencode

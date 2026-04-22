@@ -3,6 +3,8 @@ tags:
   - note/discourse/question
   - category/study
 aliases: []
+icon: ❓
+color: "#c85545"
 created: 2026-03-06T22:50:00+03:00
 updated: 2026-03-06T22:50:00+03:00
 ---

@@ -5,11 +5,13 @@ tags:
   - category/java
 aliases: []
 deck: obsidian::work
+icon: </>
+color: "#ab4642"
 created: 2025-05-31 04:03:53+03:00
 updated: 2026-03-19T22:43:40+03:00
-sr-due: null
-sr-interval: null
-sr-ease: null
+sr-due:
+sr-interval:
+sr-ease:
 image: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA4UlEQVR4Ae1XAQbDMBTNSdpcoHdIC2A9W47we4NlZbtGwGwMwbABGQxAlofFMFsh+Rv5PE1/ynt92idfoORaSWmUbje9i/ARIRN8hJVmIHAm8kRaFh7cQs4DocGBJrouYAlumOBEsp8HXmDBid8WsKTwXLcbgz5O4Xy/ohWvl6APU+i2Y34BIN/fTu+20IeIvALw5h8KTuQVALu/7OcSsLy4HeD+Boj7L1iVygGC3S85QCCvQVSDqAbRfwRRDaJ6JmQ/ljs2Aaa3AkMp42hG/MMpCotmVtQaZQuM5w5D6ZP8Ad3WWERg2F0cAAAAAElFTkSuQmCC
 ---
 

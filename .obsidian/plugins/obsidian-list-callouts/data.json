@@ -1,112 +1,112 @@
 [
   {
-    "color": "80, 72, 20",
+    "color": "180, 150, 20",
     "char": "💡"
   },
   {
-    "color": "82, 58, 30",
+    "color": "170, 100, 20",
     "char": "❓"
   },
   {
-    "color": "92, 36, 44",
+    "color": "180, 40, 40",
     "char": "❗"
   },
   {
-    "color": "70, 50, 85",
+    "color": "140, 70, 130",
     "char": "@"
   },
   {
-    "color": "48, 62, 90",
+    "color": "50, 110, 170",
     "char": "💬"
   },
   {
-    "color": "45, 85, 85",
+    "color": "40, 150, 150",
     "char": "🧩"
   },
   {
-    "color": "50, 70, 92",
+    "color": "50, 110, 170",
     "char": "ℹ️"
   },
   {
     "char": "💎",
-    "color": "70, 50, 85",
+    "color": "140, 70, 130",
     "custom": true
   },
   {
     "char": "🔗",
-    "color": "50, 70, 92",
+    "color": "50, 110, 170",
     "icon": null,
     "custom": true
   },
   {
     "char": "❌",
-    "color": "92, 36, 44",
+    "color": "180, 40, 40",
     "icon": null,
     "custom": true
   },
   {
     "char": "✅",
-    "color": "45, 95, 60",
+    "color": "60, 160, 50",
     "icon": null,
     "custom": true
   },
   {
     "char": "➡",
-    "color": "50, 70, 92",
+    "color": "50, 110, 170",
     "icon": null,
     "custom": true
   },
   {
     "char": "📌",
-    "color": "82, 58, 30",
+    "color": "170, 100, 20",
     "icon": null,
     "custom": true
   },
   {
     "char": "💭",
-    "color": "48, 62, 90",
+    "color": "50, 110, 170",
     "icon": null,
     "custom": true
   },
   {
     "char": "🪧",
-    "color": "50, 70, 92",
+    "color": "50, 110, 170",
     "icon": null,
     "custom": true
   },
   {
     "char": "🧪",
-    "color": "45, 85, 85",
+    "color": "40, 150, 150",
     "icon": null,
     "custom": true
   },
   {
     "char": "🌀",
-    "color": "45, 85, 85",
+    "color": "40, 150, 150",
     "icon": null,
     "custom": true
   },
   {
     "char": "👀",
-    "color": "48, 62, 90",
+    "color": "50, 110, 170",
     "icon": null,
     "custom": true
   },
   {
     "char": "👁️‍🗨️",
-    "color": "70, 50, 85",
+    "color": "140, 70, 130",
     "icon": null,
     "custom": true
   },
   {
     "char": "🤖",
-    "color": "70, 50, 85",
+    "color": "140, 70, 130",
     "icon": null,
     "custom": true
   },
   {
     "char": "➕",
-    "color": "50, 70, 92",
+    "color": "50, 110, 170",
     "icon": null,
     "custom": true
   }

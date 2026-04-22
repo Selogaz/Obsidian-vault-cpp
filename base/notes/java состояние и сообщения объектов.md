@@ -5,6 +5,8 @@ tags:
 aliases:
   - состояние и сообщения объектов
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-08T22:29:13+03:00
 updated: 2025-10-02T17:03:49+03:00
 sr-due: 2026-12-20

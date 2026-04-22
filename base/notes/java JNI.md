@@ -5,6 +5,8 @@ tags:
 aliases:
   - JNI
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-28T20:48:24+03:00
 updated: 2025-10-06T19:32:35+03:00
 sr-due: 2025-10-10

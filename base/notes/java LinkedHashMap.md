@@ -5,6 +5,8 @@ tags:
 aliases:
   - LinkedHashMap
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-18T15:54:02+03:00
 updated: 2025-10-08T18:32:01+03:00
 sr-due: 2025-10-12

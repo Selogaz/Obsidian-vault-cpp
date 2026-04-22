@@ -5,6 +5,8 @@ tags:
 aliases:
   - монолит
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-06T12:23:04+03:00
 updated: 2025-10-02T17:46:28+03:00
 sr-due: 2026-12-09

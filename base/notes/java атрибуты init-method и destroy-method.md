@@ -5,6 +5,8 @@ tags:
 aliases:
   - атрибуты init-method и destroy-method
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-15T11:21:47+03:00
 updated: 2025-09-21T12:06:32+03:00
 sr-due: 2026-09-25

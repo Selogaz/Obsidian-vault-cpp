@@ -5,6 +5,8 @@ tags:
 aliases:
   - свойства Stream API
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-19T20:09:13+03:00
 updated: 2025-10-16T10:40:34+03:00
 sr-due: 2025-11-22

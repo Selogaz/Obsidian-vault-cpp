@@ -5,6 +5,8 @@ tags:
 aliases:
   - Transactional
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-08-14T09:57:04+03:00
 updated: 2025-10-06T19:24:57+03:00
 sr-due: 2025-10-10

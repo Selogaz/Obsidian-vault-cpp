@@ -204,3 +204,28 @@
   font-style: normal !important;
   opacity: 1 !important;
 }
+
+/* MULTICOLUMN */
+.callout[data-callout^='col'] {
+  --callout-color: 140, 140, 140;
+  --callout-icon: lucide-columns;
+}
+.callout[data-callout^='col'] .callout-content {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+}
+.callout[data-callout='columns'] .callout-content,
+.callout[data-callout='col'] .callout-content {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.callout[data-callout='col-2'] .callout-content {
+  grid-template-columns: 1fr 1fr;
+}
+.callout[data-callout='col-3'] .callout-content {
+  grid-template-columns: repeat(3, 1fr);
+}
+.callout[data-callout^='col'] .callout-content > * {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}

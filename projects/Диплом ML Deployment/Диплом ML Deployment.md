@@ -5,36 +5,34 @@ tags:
   - priority/c
   - category/computer_science
 aliases:
-  - thesis ml deployment
-  - diploma ml
   - диплом микросервисы ml
+  - diploma ml
+  - thesis ml deployment
+addition:
 status: ❄
 priority: 🇨
 category:
   - "[[computer science]]"
 meta:
-  - "[[microservices]]"
   - "[[machine learning]]"
+  - "[[microservices]]"
 problem: []
+creator:
+production:
+start: 2026-09-01T00:00:00+07:00
+end: 2030-06-30T00:00:00+07:00
+icon: 🖊️
+color: "#5585b5"
+created: 2026-03-21T00:00:00+07:00
+updated: 2026-04-02T14:29:58+03:00
 longform:
   format: scenes
   title: Диплом ML Deployment
   workflow: Default Workflow
   sceneFolder: /
-  scenes:
-    - 01-тема-и-актуальность
-    - 02-обзор-микросервисной-архитектуры
-    - 03-mlops-и-deployment
-    - 04-проектирование-системы
-    - 05-implementation
-    - 06-testing
-    - 07-results
+  scenes: []
   sceneTemplate: templates/create/projects/longform scene template.md
   ignoredFiles: []
-start: 2026-09-01T00:00:00+07:00
-end: 2030-06-30T00:00:00+07:00
-created: 2026-03-21T00:00:00+07:00
-updated: 2026-04-02T14:29:58+03:00
 ---
 
 > [!toc]- Table of contents

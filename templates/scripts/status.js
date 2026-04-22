@@ -7,18 +7,29 @@ module.exports = async function status(type) {
 
   if (type === 'project') {
     statuses = {
+      '📥 inbox': '📥',
+      '❄  hold': '❄',
       '🟥 todo': '🟥',
       '🟦 wip': '🟦',
       '🟩 done': '🟩',
       '📢 published': '📢',
-      '❄  hold': '❄',
       '⬛ drop': '⬛',
     };
   } else if (type === 'source') {
     statuses = {
+      '📥 inbox': '📥',
       '🟥 todo': '🟥',
       '🟦 wip': '🟦',
       '⚛ atom': '⚛',
+      '🟩 done': '🟩',
+      '⬛ drop': '⬛',
+    };
+  } else if (type === 'task') {
+    statuses = {
+      '📥 inbox': '📥',
+      '❄  hold': '❄',
+      '🟥 todo': '🟥',
+      '🟦 wip': '🟦',
       '🟩 done': '🟩',
       '⬛ drop': '⬛',
     };
@@ -81,6 +92,7 @@ module.exports = async function status(type) {
     }
   } else {
     statuses = {
+      '📥 inbox': '📥',
       '🟥 todo': '🟥',
       '🟦 wip': '🟦',
       '⚛ atom': '⚛',
@@ -96,7 +108,7 @@ module.exports = async function status(type) {
   );
 
   if (status == null) {
-    status = '🟥';
+    status = '📥';
   }
 
   return status;

@@ -1,5 +1,6 @@
 {
   "format": "YYYY-MM-DD",
   "folder": "periodic/daily",
-  "template": "templates/create/periodic/daily template"
+  "template": "templates/create/periodic/day/template"
 }
+

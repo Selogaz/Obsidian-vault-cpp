@@ -5,6 +5,8 @@ tags:
 aliases:
   - bridge
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-10-01T18:23:31+03:00
 updated: 2025-10-08T18:50:49+03:00
 sr-due: 2025-10-12

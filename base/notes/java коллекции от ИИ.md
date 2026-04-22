@@ -5,6 +5,8 @@ tags:
 aliases:
   - коллекции от ИИ
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-18T15:07:44+03:00
 updated: 2025-10-16T10:49:01+03:00
 sr-due: 2025-11-22

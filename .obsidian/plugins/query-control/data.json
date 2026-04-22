@@ -11,7 +11,7 @@
     "sort": "visible",
     "hideTitle": "visible",
     "hideResults": "visible",
-    "renderMarkdown": "visible",
+    "renderMarkdown": "hidden",
     "copyResults": "visible"
   }
 }

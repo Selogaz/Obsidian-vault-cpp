@@ -1,7 +1,11 @@
 {
   "hideTitles": [
-    "/(.*)year - (.*)/",
-    "/(.*)quarter - (.*)/",
+    "[Virtual Linker] Include this file",
+    "[Virtual Linker] Converting link is not here.",
+    "Collect attachments in file",
+    "/(.*)Look up(.*)/",
+    "/(.*)Open in terminal(.*)/",
+    "/(.*)Copilot(.*)/",
     "BRAT",
     "[Virtual Linker] Exclude this file",
     "Open file properties",
@@ -59,7 +63,6 @@
     "Add to custom dictionary",
     "/(.*)Search(.*)/",
     "/(.*)Mesh AI(.*)/",
-    "/(.*)Copilot(.*)/",
     "Add a new class",
     "/(.*)Add class to(.*)/",
     "Add missing fields at section...",

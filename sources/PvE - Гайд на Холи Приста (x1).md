@@ -4,20 +4,28 @@ tags:
   - source/article/paper
   - category/games
 aliases: []
+addition:
 status: 🟩
+rating:
+scientificity:
 category:
   - "[[games]]"
 meta:
   - "[[world of warcraft]]"
 problem:
   - "[[holy priest]]"
-url: "[Website](https://forum.sirus.su/resources/gaid-na-xoli-prista-x1.68/)"
-cover:
+creator:
+production:
 start: 2025-05-15T17:00:11+03:00
 end:
-total_hours: 0
+url:
+  - "[Website](https://forum.sirus.su/resources/gaid-na-xoli-prista-x1.68/)"
+cover:
+icon: 📃
+color: "#7575c0"
 created: 2025-05-15T17:00:11+03:00
 updated: 2026-02-28T23:35:37+03:00
+total_hours: 0
 ---
 
 ![cover|150]()

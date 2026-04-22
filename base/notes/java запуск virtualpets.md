@@ -5,6 +5,8 @@ tags:
 aliases:
   - запуск virtualpets
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-11T17:35:43+03:00
 updated: 2025-09-21T12:39:36+03:00
 sr-due: 2026-09-09

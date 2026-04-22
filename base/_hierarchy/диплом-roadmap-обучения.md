@@ -1,14 +1,17 @@
 ---
 tags:
-  - system/high/hierarchy
-  - mark/discourse
   - category/computer_science
+  - mark/discourse
+  - system/high/hierarchy
 aliases: []
+relevant: true
 category:
   - "[[computer science]]"
 meta:
   - "[[microservices]]"
-relevant: true
+problem:
+icon: 🧬
+color: "#b089c4"
 created: 2026-03-21T00:00:00+07:00
 updated: 2026-03-21T21:07:54+03:00
 ---

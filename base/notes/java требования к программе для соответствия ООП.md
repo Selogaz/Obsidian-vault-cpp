@@ -5,6 +5,8 @@ tags:
 aliases:
   - требования к программе для соответствия ООП
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-08T22:27:11+03:00
 updated: 2025-10-02T17:00:15+03:00
 sr-due: 2026-12-13

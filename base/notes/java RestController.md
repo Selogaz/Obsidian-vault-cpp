@@ -5,6 +5,8 @@ tags:
 aliases:
   - "@RestController"
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-13T08:23:14+03:00
 updated: 2025-06-13T08:23:14+03:00
 ---

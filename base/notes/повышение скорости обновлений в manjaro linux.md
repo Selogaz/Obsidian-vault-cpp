@@ -3,8 +3,10 @@ tags:
   - note/basic/primary
   - category/linux
 aliases:
-  - pacman mirror
   - manjaro mirrorlist
+  - pacman mirror
+icon: 📝
+color: "#70a0b5"
 created: 2026-03-29T12:00:00+07:00
 updated: 2026-03-29T10:43:07+03:00
 ---

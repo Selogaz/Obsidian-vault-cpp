@@ -3,9 +3,12 @@ tags:
   - status/todo
   - project/diploma
   - mark/scene
+aliases:
 status: 🟥
 up:
   - "[[Диплом ML Deployment]]"
+icon: ✍️
+color: "#d0b580"
 created: 2026-03-21T00:00:00+07:00
 updated: 2026-03-21T21:00:51+03:00
 ---

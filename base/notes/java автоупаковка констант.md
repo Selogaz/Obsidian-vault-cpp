@@ -5,6 +5,8 @@ tags:
 aliases:
   - автоупаковка констант
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-05T17:16:41+03:00
 updated: 2025-10-02T18:04:25+03:00
 sr-due: 2027-01-06

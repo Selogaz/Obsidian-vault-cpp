@@ -5,6 +5,8 @@ tags:
 aliases:
   - Adapter
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-08-10T11:30:33+03:00
 updated: 2025-10-08T18:36:20+03:00
 sr-due: 2025-10-12

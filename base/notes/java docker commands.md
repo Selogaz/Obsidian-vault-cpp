@@ -5,6 +5,8 @@ tags:
 aliases:
   - docker commands
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-13T17:47:56+03:00
 updated: 2025-10-08T19:34:13+03:00
 sr-due: 2025-10-12

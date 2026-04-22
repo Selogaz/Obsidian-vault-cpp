@@ -5,6 +5,8 @@ tags:
 aliases:
   - пример application.yaml
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-15T10:20:02+03:00
 updated: 2025-10-02T17:43:02+03:00
 sr-due: 2026-11-07

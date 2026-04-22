@@ -5,6 +5,8 @@ tags:
 aliases:
   - Микросервисы
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-06T12:16:26+03:00
 updated: 2025-10-16T10:43:45+03:00
 sr-due: 2026-01-18

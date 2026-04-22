@@ -4,6 +4,8 @@ tags:
   - category/english
 aliases: []
 deck: obsidian::english
+icon: 📝
+color: "#d0a570"
 created: 2025-11-04T17:59:22+03:00
 updated: 2025-11-04T17:59:22+03:00
 ---

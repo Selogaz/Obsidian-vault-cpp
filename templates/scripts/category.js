@@ -1,7 +1,22 @@
-module.exports = async function category() {
+module.exports = async function category(note) {
 	const dv = app.plugins.plugins['dataview'].api
 	const tp =
 		app.plugins.plugins['templater-obsidian'].templater.current_functions_object
+
+	if (note) {
+		const noteFile = app.metadataCache.getFirstLinkpathDest(note, '')
+		if (noteFile) {
+			const fm = app.metadataCache.getFileCache(noteFile)?.frontmatter
+			const links = [fm?.category].flat().filter(Boolean)
+			if (links.length > 0) {
+				const names = links.map(raw => {
+					const match = String(raw).match(/\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/)
+					return match ? match[1].split('/').pop().replace(/\.md$/, '') : String(raw)
+				}).filter(Boolean)
+				if (names.length > 0) return names
+			}
+		}
+	}
 
 	const pages = await dv.pages('#system/category AND -#mark/ignore')
 	const categories = pages

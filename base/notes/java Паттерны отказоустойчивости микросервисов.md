@@ -5,6 +5,8 @@ tags:
 aliases:
   - Паттерны отказоустойчивости микросервисов
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-28T04:59:46+03:00
 updated: 2025-10-06T19:15:05+03:00
 sr-due: 2025-10-10

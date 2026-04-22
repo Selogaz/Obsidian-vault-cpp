@@ -5,6 +5,8 @@ tags:
 aliases:
   - Base64
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-30T19:38:52+03:00
 updated: 2025-10-08T19:36:06+03:00
 sr-due: 2025-10-24

@@ -1,15 +1,18 @@
 ---
 tags:
-  - system/high/hierarchy
   - category/computer_science
+  - system/high/hierarchy
 aliases:
-  - spring boot learning
   - roadmap spring
+  - spring boot learning
+relevant: false
 category:
   - "[[computer science]]"
 meta:
   - "[[microservices]]"
-relevant: false
+problem:
+icon: 🧬
+color: "#b089c4"
 created: 2026-03-21T00:00:00+07:00
 updated: 2026-03-21T22:42:44+03:00
 ---

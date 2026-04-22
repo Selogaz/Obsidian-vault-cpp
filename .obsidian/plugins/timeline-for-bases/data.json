@@ -1,0 +1,16 @@
+{
+  "defaultWeekStart": "monday",
+  "collapsedGroups": {
+    "base/additions/Obsidian Hybrid Search - tasks.md::🕛 Workflow: Timeline": {
+      "milestone::Ungrouped": true
+    }
+  },
+  "viewTimeScales": {
+    "base/additions/Obsidian Hybrid Search - tasks.md::🕛 Workflow: Timeline": "day",
+    "base/additions/Obsidian Hybrid Search - tasks.md::View": "day",
+    "home/databases/projects.base::🕛 Workflow: Timeline": "week",
+    "base/additions/Obsidian Hybrid Search - tasks.md::📍 Milestones: Timeline": "day",
+    "base/additions/Obsidian Hybrid Search - tasks.md::📍 Workflow: Timeline": "day",
+    "base/additions/aggregators/Obsidian Hybrid Search - tasks.md::📍 Workflow: Timeline": "day"
+  }
+}

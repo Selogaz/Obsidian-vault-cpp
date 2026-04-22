@@ -4,6 +4,7 @@ tags:
   - source/article/resource
   - category/study
 aliases: []
+addition:
 status: ❄
 rating:
 scientificity:
@@ -15,6 +16,8 @@ creator:
 production:
 start: 2026-03-03T14:03:39+03:00
 end:
+icon: 🌐
+color: "#7575c0"
 created: 2026-03-03T14:03:39+03:00
 updated: 2026-04-02T14:42:14+03:00
 ---

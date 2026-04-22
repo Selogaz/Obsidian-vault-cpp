@@ -5,6 +5,8 @@ tags:
 aliases:
   - DispatcherServlet
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-13T07:49:00+03:00
 updated: 2025-10-02T17:40:44+03:00
 sr-due: 2026-11-18

@@ -5,6 +5,8 @@ tags:
 aliases:
   - stop the world
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-10-02T17:34:19+03:00
 updated: 2025-10-06T19:33:30+03:00
 sr-due: 2025-10-10

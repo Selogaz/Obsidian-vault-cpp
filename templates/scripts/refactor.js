@@ -17,5 +17,5 @@ module.exports = async function refactor() {
   await navigator.clipboard.writeText('[[' + title + ']]');
   new Notice('link sent to clipboard', 3000);
 
-  return '![[' + title + tp.file.cursor() + ']]';
+  return '[[' + title + tp.file.cursor() + ']]';
 };

@@ -5,6 +5,8 @@ tags:
 aliases:
   - CAS
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-10-08T19:30:08+03:00
 updated: 2025-10-13T16:31:40+03:00
 sr-due: 2025-11-01

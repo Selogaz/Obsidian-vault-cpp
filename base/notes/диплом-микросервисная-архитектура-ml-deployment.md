@@ -3,7 +3,9 @@ tags:
   - note/discourse/synthesis
   - category/study
 aliases:
-  - "Microservices for ML Deployment"
+  - Microservices for ML Deployment
+icon: 🧪
+color: "#2ab5a0"
 created: 2026-03-21T00:00:00+07:00
 updated: 2026-03-21T00:00:00+07:00
 ---

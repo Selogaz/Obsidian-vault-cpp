@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2026-04-22.md",
-                "mode": "source",
+                "file": "home/index.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-04-22"
+              "title": "index"
             }
           },
           {
-            "id": "3b2c4b9dc0d4d0df",
+            "id": "e0652eefb461d403",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/notes/hiragana.md",
+                "file": "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/6-дневник-наблюдений.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,27 +52,72 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "hiragana"
+              "title": "6-дневник-наблюдений"
             }
           },
           {
-            "id": "cf0ef1263604fa32",
+            "id": "756e1f2aab626412",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "periodic/tasks (grouped by priority).canvas",
-                "viewState": {
-                  "x": -380,
-                  "y": 60.000000000000014,
-                  "zoom": 0
+                "file": "periodic/daily/2026-04-23.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
                 }
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "tasks (grouped by priority)"
+              "icon": "lucide-file",
+              "title": "2026-04-23"
+            }
+          },
+          {
+            "id": "d309b0e327a23db7",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "home/databases/tasks.base",
+                "viewName": "📊 All: Short View"
+              },
+              "icon": "lucide-table",
+              "title": "tasks"
+            }
+          },
+          {
+            "id": "71433842ae0fa1e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/tasks/Масштабируемость меню выбора расы.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Масштабируемость меню выбора расы"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -335,13 +380,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "periodic/daily/2026-04-22.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-04-22"
+              "title": "Outline"
             }
           },
           {
@@ -380,8 +424,19 @@
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
+          },
+          {
+            "id": "59b74ca478751a67",
+            "type": "leaf",
+            "state": {
+              "type": "mv-sidebar-panel",
+              "state": {},
+              "icon": "shield-check",
+              "title": "Metadata validator"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -389,77 +444,76 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-hybrid-search:Hybrid search": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "workspaces:Пространства": false,
+      "bases:Создать новую базу": false,
+      "obsidian-spaced-repetition:Изучать карточки": false,
+      "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false,
       "templater-obsidian:Templater": false,
-      "daily-notes:Open today's daily note": false,
       "obsidian42-brat:BRAT": false,
-      "bases:Create new base": false,
-      "canvas:Create new canvas": true,
-      "workspaces:Manage workspace layouts": true,
-      "obsidian-spaced-repetition:Review flashcards": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-      "periodic-notes:Open today": false,
-      "graph:Open graph view": false
+      "periodic-notes:Open today": false
     }
   },
-  "active": "bda9ef25e60d256c",
+  "active": "71433842ae0fa1e7",
   "lastOpenFiles": [
-    "periodic/daily/2026-04-21.md",
-    "periodic/daily/2026-04-22.md",
-    "base/notes/hiragana.md",
-    "periodic/tasks (grouped by priority).canvas",
-    "periodic/priority.md",
-    "periodic/daily/2026-04-20.md",
-    "periodic/daily/2026-04-19.md",
+    "home/databases/tasks.base",
+    "base/tasks/Масштабируемость меню выбора расы.md",
+    "periodic/daily/2026-04-23.md",
     "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/6-дневник-наблюдений.md",
-    "projects/ЕГЭ Информатика/ЕГЭ Информатика.md",
-    "projects/Подземелья Максвелла.md",
-    "base/categories/webdev.md",
+    "home/fleetings.md",
     "home/databases/projects.base",
-    "projects/ЕГЭ Математика/ЕГЭ Математика.md",
-    "periodic/daily/2026-04-12.md",
-    "periodic/daily/2026-04-11.md",
-    "periodic/daily/2026-04-10.md",
-    "periodic/daily/2026-04-09.md",
-    "periodic/daily/2026-04-08.md",
-    "periodic/daily/2026-04-07.md",
-    "periodic/daily/2026-04-06.md",
-    "periodic/daily/2026-04-13.md",
-    "periodic/daily/2026-04-14.md",
-    "periodic/daily/2026-04-17.md",
-    "periodic/weekly/2026-W17.md",
-    "periodic/weekly/2026-W16.md",
-    "projects/Переезд в Японию/Японский язык.md",
-    "base/notes/ввод с клавиатуры.md",
-    "base/productions/Erra.md",
-    "files/Site dnd.pdf",
-    "files/Hiragana-Practice-en.pdf",
-    "files/Hiragana-Chart-en 1.pdf",
-    "files/Hiragana-Chart-en.pdf",
-    "home/databases/high-notes.base",
-    "projects/Переезд в Японию",
-    "files/Подземелья Максвелла 2026-04-03.png",
-    "files/Задание 9 ЕГЭ Информатика 2026 Алексей Ковальчук 2026-04-03-13.png",
-    "files/Задание 9 ЕГЭ Информатика 2026 Алексей Ковальчук 2026-04-03-12.png",
-    "files/Задание 9 ЕГЭ Информатика 2026 Алексей Ковальчук 2026-04-03-11.png",
-    "files/Задание 9 ЕГЭ Информатика 2026 Алексей Ковальчук 2026-04-03-10.png",
-    "files/Задание 9 ЕГЭ Информатика 2026 Алексей Ковальчук 2026-04-03-9.png",
-    "files/Задание 9 ЕГЭ Информатика 2026 Алексей Ковальчук 2026-04-03-8.png",
-    "files/Задание 9 ЕГЭ Информатика 2026 Алексей Ковальчук 2026-04-03-7.png",
-    "files/Задание 9 ЕГЭ Информатика 2026 Алексей Ковальчук 2026-04-03-6.png",
-    "files/Задание 9 ЕГЭ Информатика 2026 Алексей Ковальчук 2026-04-03-5.png",
+    "projects/Инвентаризация.md",
+    "projects/Разбор прокрастинации из-за ЕГЭ.md",
+    "home/index.md",
+    "home/databases/breadcrumbs.base",
+    "projects/Редизайн мобильного приложения для покупки билетов в S7.md",
+    "base/additions/aggregators/Редизайн мобильного приложения для покупки билетов в S7 - tasks.md",
+    "base/tasks/Поиск рейса в мобильном приложении S7.md",
+    "base/tasks/Создание прототипа календаря для мобильного приложения в S7.md",
+    "files/Редизайн мобильного приложения для покупки билетов в S7 (2026-04-21) - roadmap.canvas",
+    "base/tasks/Ретаргетинг для возврата ушедших клиентов в S7.md",
+    "base/tasks/Дополнительные услуги перед оплатой билетов в S7.md",
+    "base/tasks/Оплата билетов в мобильном приложении S7.md",
+    "base/tasks/Выбор мест в мобильном приложении S7.md",
+    "base/_meta-notes/S7.md",
+    "base/categories/work.md",
+    "base/_meta-notes/S8.md",
+    "base/tasks/Выделение окна выгоды.md",
+    "base/tasks/Проектирование UI календаря.md",
+    "base/tasks/Выбор места в мобильном приложении S7.md",
+    "base/tasks/Тестирование и оптимизация.md",
+    "base/tasks/Навигация по периодам.md",
+    "base/tasks/Визуальное отображение цены.md",
+    "base/tasks/Анализ структуры данных календаря.md",
+    "home/databases/interim.base",
+    "templates/scripts/creator.js",
+    "base/additions/conversations",
+    "base/additions/negotiations",
+    "base/additions/сonversations",
+    "base/additions/сonversation",
     "home/databases/sources.base",
-    "home/databases/notes.base",
-    "base/notes/иерархическая vs mark",
-    "periodic/tasks (grouped by time).canvas",
-    "periodic/tasks (grouped by effort).canvas",
     "periodic/2025.canvas",
     "periodic/2026.canvas",
     "periodic/2027.canvas",
-    "base/canvases/Прогноз нагрузки на серверы на основе исторических данных.canvas",
-    "base/canvases/Диаграмма распределения пиковых нагрузок.canvas",
-    "base/canvases/Архитектура для платформы предсказывающую нагрузку на серверы.canvas",
-    "base/canvases/Eisenhower Matrix.canvas"
+    "periodic/tasks (grouped by effort)_1.canvas",
+    "periodic/2024_1.canvas",
+    "periodic/2025_1.canvas",
+    "periodic/tasks (grouped by time)_1.canvas",
+    "periodic/2026_1.canvas",
+    "periodic/tasks (grouped by priority)_1.canvas",
+    "files/test.png",
+    "files/test.jpg",
+    "files/Pasted Image 20260107000747_014.png",
+    "files/japan_1.png",
+    "files/japan.png",
+    "files/2026-01-06_22-58.png",
+    "files/DATE_2025-12-04 TIME_16-06-22 2025-12-04.png",
+    "files/Rapid Research Lab 2025-11-13.png",
+    "files/DATE_2025-10-28 TIME_20-11-48 2025-10-28-1.png",
+    "files/DATE_2025-10-28 TIME_20-11-48 2025-10-28.png"
   ]
 }

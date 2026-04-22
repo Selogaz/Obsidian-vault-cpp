@@ -6,7 +6,7 @@ filters:
         - file.inFolder("periodic/monthly")
         - file.inFolder("periodic/quarterly")
         - file.inFolder("periodic/yearly")
-    - '!file.hasTag("#mark/ignore")'
+    - '!file.hasTag("mark/ignore")'
 formulas:
   month_group: file.name.slice(0, 7)
   year: file.name.slice(0, 4)
@@ -20,11 +20,23 @@ properties:
   formula.month_group:
     displayName: 🗓️ month
   note.description:
-    displayName: 🦄 description
+    displayName: 🦄 description (text)
   file.name:
     displayName: 📅 period
   formula.existing_links:
     displayName: 🔗 links
+  note.focus:
+    displayName: 🧿 focus (0-10)
+  note.learn:
+    displayName: 💡 learn
+  note.routine:
+    displayName: 🔄 routine
+  note.move:
+    displayName: 🧗 move
+  note.connect:
+    displayName: 💬 connect
+  note.rest:
+    displayName: 🌙 rest
 views:
   - type: table
     name: 🇩ays
@@ -37,15 +49,25 @@ views:
     order:
       - reviewed
       - file.name
-      - description
       - formula.updated_relative
+      - focus
+      - learn
+      - routine
+      - move
+      - connect
+      - rest
+      - description
     sort:
       - property: file.name
         direction: DESC
-    limit: 18
     columnSize:
       file.name: 145
-      note.description: 1200
+      note.focus: 145
+      note.learn: 90
+      note.routine: 100
+      note.move: 90
+      note.connect: 110
+      note.rest: 80
   - type: list
     name: 🇩ays (list)
     filters:
@@ -60,29 +82,26 @@ views:
     sort:
       - property: file.name
         direction: DESC
-    limit: 15
     indentProperties: true
   - type: table
     name: 🇩ays (with description)
     filters:
       and:
         - file.inFolder("periodic/daily")
-        - '!description.isEmpty()'
+        - "!description.isEmpty()"
     groupBy:
       property: formula.month_group
       direction: DESC
     order:
       - reviewed
       - file.name
-      - description
       - formula.updated_relative
+      - description
     sort:
       - property: file.name
         direction: DESC
-    limit: 18
     columnSize:
       file.name: 145
-      note.description: 510
   - type: table
     name: 🇼eeks
     filters:
@@ -94,14 +113,13 @@ views:
     order:
       - reviewed
       - file.name
-      - description
       - formula.updated_relative
+      - description
     sort:
       - property: file.name
         direction: DESC
     columnSize:
       file.name: 145
-      note.description: 1200
   - type: table
     name: 🇲onths
     filters:
@@ -113,14 +131,13 @@ views:
     order:
       - reviewed
       - file.name
-      - description
       - formula.updated_relative
+      - description
     sort:
       - property: file.name
         direction: DESC
     columnSize:
       file.name: 145
-      note.description: 1200
   - type: table
     name: 🇶uarters
     filters:
@@ -132,14 +149,13 @@ views:
     order:
       - reviewed
       - file.name
-      - description
       - formula.updated_relative
+      - description
     sort:
       - property: file.name
         direction: DESC
     columnSize:
       file.name: 145
-      note.description: 1200
   - type: table
     name: 🇾ears
     filters:
@@ -148,11 +164,52 @@ views:
     order:
       - reviewed
       - file.name
-      - description
       - formula.updated_relative
+      - description
     sort:
       - property: file.name
         direction: DESC
     columnSize:
       file.name: 145
-      note.description: 1200
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+  - type: chart-bar
+    name: "📈 Statistics: By Reviewed"
+    x: note.reviewed
+    aggregate:file.name: Count
+    show-labels: true
+  - type: chart-line
+    name: "📈 Statistics: By Actions"
+    filters:
+      and:
+        - file.inFolder("periodic/daily")
+        - or:
+            - "!focus.isEmpty()"
+            - "!learn.isEmpty()"
+            - "!move.isEmpty()"
+            - "!connect.isEmpty()"
+            - "!routine.isEmpty()"
+            - "!rest.isEmpty()"
+    order:
+      - focus
+      - learn
+      - move
+      - connect
+      - routine
+      - rest
+    sort:
+      - property: file.basename
+        direction: ASC
+    limit: 30
+    x: file.name
+    show-labels: false
+    aggregate: None
+    null-handling: Leave gap
+    min-y-override: "0"
+    max-y-override: "10"
+    sync-y-axes: false

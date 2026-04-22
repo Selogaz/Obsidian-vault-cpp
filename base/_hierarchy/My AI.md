@@ -1,13 +1,15 @@
 ---
 tags:
-  - system/high/hierarchy
   - category/computer_science
+  - system/high/hierarchy
 aliases: []
+relevant: false
 category:
   - "[[computer science]]"
 meta:
 problem:
-relevant: false
+icon: 🧬
+color: "#b089c4"
 created: 2026-03-01T00:11:15+03:00
 updated: 2026-03-18T12:48:38+03:00
 ---

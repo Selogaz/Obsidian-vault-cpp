@@ -5,6 +5,8 @@ tags:
 aliases:
   - пояснения к pom.xml
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-13T09:49:16+03:00
 updated: 2025-09-21T12:01:29+03:00
 sr-due: 2026-09-26

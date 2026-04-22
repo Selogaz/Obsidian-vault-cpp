@@ -5,6 +5,8 @@ tags:
 aliases:
   - паттерны gof
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-10-01T20:13:43+03:00
 updated: 2025-10-16T10:39:55+03:00
 sr-due: 2025-11-23

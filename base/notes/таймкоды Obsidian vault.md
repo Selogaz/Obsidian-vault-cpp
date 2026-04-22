@@ -4,11 +4,13 @@ tags:
   - category/obsidian
 aliases: []
 deck: obsidian::obsidian
+icon: 📝
+color: "#d0a570"
 created: 2025-05-23T07:55:41+03:00
 updated: 2026-02-28T23:22:42+03:00
-sr-due: null
-sr-interval: null
-sr-ease: null
+sr-due:
+sr-interval:
+sr-ease:
 ---
 
 **Таймкоды Obsidian vault**

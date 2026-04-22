@@ -5,6 +5,8 @@ tags:
 aliases:
   - фрагментация памяти
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-06T06:26:17+03:00
 updated: 2025-10-02T17:04:10+03:00
 sr-due: 2026-12-18

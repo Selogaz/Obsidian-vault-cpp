@@ -5,9 +5,18 @@ tags:
   - category/java
 aliases:
   - Spring Security в действии
+addition:
 status: ❄
+rating:
+scientificity:
 category:
   - "[[java]]"
+meta:
+problem:
+creator:
+production:
+icon: 📖
+color: "#b5b570"
 updated: 2026-04-02T14:38:57+03:00
 ---
 

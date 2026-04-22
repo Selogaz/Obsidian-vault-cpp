@@ -360,6 +360,18 @@ views:
         - "false"
     order:
       - file.name
+  - type: chart-bar
+    name: "📈 Statistics: By Types"
+    x: formula.type
+    aggregate:file.name: Count
+    show-labels: true
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
   - type: table
     name: ✅ Structure Validation
     filters:

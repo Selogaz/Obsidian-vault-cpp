@@ -136,7 +136,8 @@
                 "id": "abc6d7f4-1d92-4887-82c0-0f656a7f3c11",
                 "path": "templates/openFile.js",
                 "settings": {
-                  "File Path": "home/databases/people.base"
+                  "File Path": "home/databases/people.base",
+                  "View Mode": "default"
                 }
               }
             ]
@@ -211,11 +212,7 @@
                             "createInSameFolderAsActiveFile": false,
                             "chooseFromSubfolders": false
                           },
-                          "appendLink": {
-                            "enabled": true,
-                            "placement": "replaceSelection",
-                            "requireActiveFile": false
-                          },
+                          "appendLink": false,
                           "openFile": true,
                           "fileOpening": {
                             "location": "tab",
@@ -253,7 +250,7 @@
                   "createFileIfItDoesntExist": {
                     "enabled": true,
                     "createWithTemplate": true,
-                    "template": "templates/create/periodic/daily template.md"
+                    "template": "templates/create/periodic/day/template.md"
                   },
                   "format": {
                     "enabled": true,
@@ -295,7 +292,7 @@
                   "createFileIfItDoesntExist": {
                     "enabled": true,
                     "createWithTemplate": true,
-                    "template": "templates/create/periodic/daily template.md"
+                    "template": "templates/create/periodic/day/template.md"
                   },
                   "format": {
                     "enabled": true,
@@ -337,7 +334,7 @@
                   "createFileIfItDoesntExist": {
                     "enabled": true,
                     "createWithTemplate": true,
-                    "template": "templates/create/periodic/daily template.md"
+                    "template": "templates/create/periodic/day/template.md"
                   },
                   "format": {
                     "enabled": true,
@@ -369,7 +366,7 @@
                   "activeFileWritePosition": "cursor"
                 }
               ],
-              "collapsed": true
+              "collapsed": false
             },
             {
               "id": "00cab3c4-42d0-42de-b4b7-8742c64d0b66",
@@ -388,54 +385,22 @@
                     "id": "a9df42ac-5c43-498b-9429-3f58dd4b2f75",
                     "commands": [
                       {
-                        "name": "🔤 Title",
-                        "type": "NestedChoice",
-                        "id": "38f803f9-b017-40d2-9165-c1ee71ba6f4b",
-                        "choice": {
-                          "id": "3babe541-1d3a-4bac-a8d7-73bbc50dfafe",
-                          "name": "🔤 Title",
-                          "type": "Template",
-                          "command": false,
-                          "templatePath": "templates/create/sources/source template.md",
-                          "fileNameFormat": {
-                            "enabled": false,
-                            "format": ""
-                          },
-                          "folder": {
-                            "enabled": true,
-                            "folders": [
-                              "sources"
-                            ],
-                            "chooseWhenCreatingNote": false,
-                            "createInSameFolderAsActiveFile": false,
-                            "chooseFromSubfolders": false
-                          },
-                          "appendLink": {
-                            "enabled": true,
-                            "placement": "replaceSelection",
-                            "requireActiveFile": false
-                          },
-                          "openFile": true,
-                          "fileOpening": {
-                            "location": "tab",
-                            "direction": "vertical",
-                            "mode": "default",
-                            "focus": true
-                          },
-                          "fileExistsMode": "Increment the file name",
-                          "setFileExistsBehavior": false
-                        }
+                        "name": "sources",
+                        "type": "UserScript",
+                        "id": "42da8f52-0312-4cb2-88df-f8ccf1f3d464",
+                        "path": "templates/create/sources/sources.js",
+                        "settings": {}
                       },
                       {
                         "name": "Wait",
                         "type": "Wait",
-                        "id": "5b7ac7fb-5600-4455-80ac-296e84931e76",
+                        "id": "e5e7010b-4807-4293-ae11-f1dbb1f49608",
                         "time": 1000
                       },
                       {
                         "name": "Templater: Replace templates in the active file",
                         "type": "Obsidian",
-                        "id": "20a28484-fca7-431f-b116-44c094a31609",
+                        "id": "e9e335d1-8009-4a4b-b50b-b03c6570456c",
                         "commandId": "templater-obsidian:replace-in-file-templater"
                       }
                     ]
@@ -464,205 +429,36 @@
               "collapsed": true
             },
             {
-              "id": "ee76dc2b-560f-4344-8b8b-c6968b8fcddb",
+              "id": "45e2f469-7257-4416-939e-77782e920de0",
               "name": "🔻🏢 project",
-              "type": "Multi",
+              "type": "Macro",
               "command": false,
-              "choices": [
-                {
-                  "id": "b0f3b37d-8e11-4f71-b35f-a064c9e683fd",
-                  "name": "🗞️ create short *(quick project)*",
-                  "type": "Macro",
-                  "command": false,
-                  "runOnStartup": false,
-                  "macro": {
-                    "name": "🗞️ create short *(quick project)*",
-                    "id": "a1253660-eaff-412e-a082-b35ae89b9dd9",
-                    "commands": [
-                      {
-                        "name": "🔤 Title",
-                        "type": "NestedChoice",
-                        "id": "7fc33c02-f412-4474-bc71-1803dbe73188",
-                        "choice": {
-                          "id": "26304ad7-3e48-41db-af14-e7665f299ca8",
-                          "name": "🔤 Title",
-                          "type": "Template",
-                          "command": false,
-                          "templatePath": "templates/create/projects/short project template.md",
-                          "fileNameFormat": {
-                            "enabled": false,
-                            "format": ""
-                          },
-                          "folder": {
-                            "enabled": true,
-                            "folders": [
-                              "projects"
-                            ],
-                            "chooseWhenCreatingNote": false,
-                            "createInSameFolderAsActiveFile": false,
-                            "chooseFromSubfolders": false
-                          },
-                          "appendLink": {
-                            "enabled": true,
-                            "placement": "replaceSelection",
-                            "requireActiveFile": false
-                          },
-                          "openFile": true,
-                          "fileOpening": {
-                            "location": "tab",
-                            "direction": "vertical",
-                            "mode": "default",
-                            "focus": true
-                          },
-                          "fileExistsMode": "Increment the file name",
-                          "setFileExistsBehavior": false
-                        }
-                      },
-                      {
-                        "name": "Wait",
-                        "type": "Wait",
-                        "id": "7028e944-d01b-451c-a598-45d40f0675e1",
-                        "time": 1000
-                      },
-                      {
-                        "name": "Templater: Replace templates in the active file",
-                        "type": "Obsidian",
-                        "id": "0717f800-0c97-4265-a26f-ca4507779177",
-                        "commandId": "templater-obsidian:replace-in-file-templater"
-                      }
-                    ]
+              "runOnStartup": false,
+              "macro": {
+                "name": "🔻🏢 project",
+                "id": "d640fc8e-906e-46f2-bc0d-e8d7b91d2425",
+                "commands": [
+                  {
+                    "name": "projects",
+                    "type": "UserScript",
+                    "id": "5047078e-9212-4571-8057-c40c2c6a9097",
+                    "path": "templates/create/projects/projects.js",
+                    "settings": {}
+                  },
+                  {
+                    "name": "Wait",
+                    "type": "Wait",
+                    "id": "3877f875-73c9-4215-9e83-f384a866f05c",
+                    "time": 1000
+                  },
+                  {
+                    "name": "Templater: Replace templates in the active file",
+                    "type": "Obsidian",
+                    "id": "ce4d0758-42ba-4214-8fb3-7575bf1699b6",
+                    "commandId": "templater-obsidian:replace-in-file-templater"
                   }
-                },
-                {
-                  "id": "de6c0758-8c3c-4986-bd0f-f3012bab75fd",
-                  "name": "✏️ create single *(standard project)*",
-                  "type": "Macro",
-                  "command": false,
-                  "runOnStartup": false,
-                  "macro": {
-                    "name": "✏️ create single *(standard project)*",
-                    "id": "0ef56c83-6ba4-476d-b44a-d0f34ab34c39",
-                    "commands": [
-                      {
-                        "name": "🔤 Title",
-                        "type": "NestedChoice",
-                        "id": "ff6966e0-cdde-4cd2-9277-e34a50e439d4",
-                        "choice": {
-                          "id": "fd34effb-4743-414a-8e58-631e96389917",
-                          "name": "🔤 Title",
-                          "type": "Template",
-                          "command": false,
-                          "templatePath": "templates/create/projects/single project template.md",
-                          "fileNameFormat": {
-                            "enabled": false,
-                            "format": ""
-                          },
-                          "folder": {
-                            "enabled": true,
-                            "folders": [
-                              "projects"
-                            ],
-                            "chooseWhenCreatingNote": false,
-                            "createInSameFolderAsActiveFile": false,
-                            "chooseFromSubfolders": false
-                          },
-                          "appendLink": {
-                            "enabled": true,
-                            "placement": "replaceSelection",
-                            "requireActiveFile": false
-                          },
-                          "openFile": true,
-                          "fileOpening": {
-                            "location": "tab",
-                            "direction": "vertical",
-                            "mode": "default",
-                            "focus": true
-                          },
-                          "fileExistsMode": "Increment the file name",
-                          "setFileExistsBehavior": false
-                        }
-                      },
-                      {
-                        "name": "Wait",
-                        "type": "Wait",
-                        "id": "ef8b7909-6c43-4467-98ba-747471660551",
-                        "time": 1000
-                      },
-                      {
-                        "name": "Templater: Replace templates in the active file",
-                        "type": "Obsidian",
-                        "id": "52e49385-5e2e-4fe9-af32-4dd8c68c7e5f",
-                        "commandId": "templater-obsidian:replace-in-file-templater"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "232cc429-7103-4222-9197-45931d25a2fe",
-                  "name": "✒ create longform *(complex project)*",
-                  "type": "Macro",
-                  "command": false,
-                  "runOnStartup": false,
-                  "macro": {
-                    "name": "✒ create longform *(complex project)*",
-                    "id": "9df856b3-b415-4062-8c71-46eaae6458d7",
-                    "commands": [
-                      {
-                        "name": "🔤 Title",
-                        "type": "NestedChoice",
-                        "id": "94d0599f-0f48-408f-b74a-63c75064cce0",
-                        "choice": {
-                          "id": "30983753-d6c9-482a-b652-1c2122349311",
-                          "name": "🔤 Title",
-                          "type": "Template",
-                          "command": false,
-                          "templatePath": "templates/create/projects/longform project template.md",
-                          "fileNameFormat": {
-                            "enabled": false,
-                            "format": ""
-                          },
-                          "folder": {
-                            "enabled": true,
-                            "folders": [
-                              "projects"
-                            ],
-                            "chooseWhenCreatingNote": false,
-                            "createInSameFolderAsActiveFile": false,
-                            "chooseFromSubfolders": false
-                          },
-                          "appendLink": {
-                            "enabled": true,
-                            "placement": "replaceSelection",
-                            "requireActiveFile": false
-                          },
-                          "openFile": true,
-                          "fileOpening": {
-                            "location": "tab",
-                            "direction": "vertical",
-                            "mode": "default",
-                            "focus": true
-                          },
-                          "fileExistsMode": "Increment the file name",
-                          "setFileExistsBehavior": false
-                        }
-                      },
-                      {
-                        "name": "Wait",
-                        "type": "Wait",
-                        "id": "4c9bbd15-3158-44dd-9c0c-04457e5bd104",
-                        "time": 1000
-                      },
-                      {
-                        "name": "Templater: Replace templates in the active file",
-                        "type": "Obsidian",
-                        "id": "d88df416-cb0c-47bc-a9c3-ded3c4dbf859",
-                        "commandId": "templater-obsidian:replace-in-file-templater"
-                      }
-                    ]
-                  }
-                }
-              ],
-              "collapsed": true
+                ]
+              }
             },
             {
               "id": "707ecefc-d0c4-4952-a1dc-a59188781173",
@@ -681,43 +477,11 @@
                     "id": "c36413aa-0da2-455b-b669-6bb628ad909a",
                     "commands": [
                       {
-                        "name": "🔤 Name",
-                        "type": "NestedChoice",
-                        "id": "8a1032be-cce9-48cc-97c6-c98874c3713b",
-                        "choice": {
-                          "id": "55270283-d7e3-4ee0-a21d-b473be8fca3a",
-                          "name": "🔤 Name",
-                          "type": "Template",
-                          "command": false,
-                          "templatePath": "templates/create/people/contact template.md",
-                          "fileNameFormat": {
-                            "enabled": false,
-                            "format": ""
-                          },
-                          "folder": {
-                            "enabled": true,
-                            "folders": [
-                              "base/contacts"
-                            ],
-                            "chooseWhenCreatingNote": false,
-                            "createInSameFolderAsActiveFile": false,
-                            "chooseFromSubfolders": false
-                          },
-                          "appendLink": {
-                            "enabled": true,
-                            "placement": "replaceSelection",
-                            "requireActiveFile": false
-                          },
-                          "openFile": true,
-                          "fileOpening": {
-                            "location": "tab",
-                            "direction": "vertical",
-                            "mode": "default",
-                            "focus": true
-                          },
-                          "fileExistsMode": "Increment the file name",
-                          "setFileExistsBehavior": false
-                        }
+                        "name": "contacts",
+                        "type": "UserScript",
+                        "id": "68ae0d9e-c8cc-425b-a540-48ff477c4208",
+                        "path": "templates/create/contacts/contacts.js",
+                        "settings": {}
                       },
                       {
                         "name": "Wait",
@@ -745,43 +509,11 @@
                     "id": "2b309add-d218-4a2d-93c0-7065ff46d061",
                     "commands": [
                       {
-                        "name": "🔤 Name",
-                        "type": "NestedChoice",
-                        "id": "980848d7-1956-44c4-bb1d-aba343e4ebcf",
-                        "choice": {
-                          "id": "b13ebe77-0096-4651-a2ea-e6124d2f5d44",
-                          "name": "🔤 Name",
-                          "type": "Template",
-                          "command": false,
-                          "templatePath": "templates/create/people/creator template.md",
-                          "fileNameFormat": {
-                            "enabled": false,
-                            "format": ""
-                          },
-                          "folder": {
-                            "enabled": true,
-                            "folders": [
-                              "base/creators"
-                            ],
-                            "chooseWhenCreatingNote": false,
-                            "createInSameFolderAsActiveFile": false,
-                            "chooseFromSubfolders": false
-                          },
-                          "appendLink": {
-                            "enabled": true,
-                            "placement": "replaceSelection",
-                            "requireActiveFile": false
-                          },
-                          "openFile": true,
-                          "fileOpening": {
-                            "location": "tab",
-                            "direction": "vertical",
-                            "mode": "default",
-                            "focus": true
-                          },
-                          "fileExistsMode": "Increment the file name",
-                          "setFileExistsBehavior": false
-                        }
+                        "name": "creators",
+                        "type": "UserScript",
+                        "id": "ed592cc3-5d69-4060-a351-85fd455c1209",
+                        "path": "templates/create/creators/creators.js",
+                        "settings": {}
                       },
                       {
                         "name": "Wait",
@@ -809,41 +541,11 @@
                     "id": "c8a44ed5-3aee-4a14-930c-4435d87eb7bc",
                     "commands": [
                       {
-                        "name": "🔤 Name",
-                        "type": "NestedChoice",
-                        "id": "c31e2abd-1a6e-4db2-912c-403f90d60dfc",
-                        "choice": {
-                          "id": "f712a28c-e6dc-4053-ae27-c4bbe7fe5169",
-                          "name": "🔤 Name",
-                          "type": "Template",
-                          "command": false,
-                          "templatePath": "templates/create/people/production template.md",
-                          "fileNameFormat": {
-                            "enabled": false,
-                            "format": ""
-                          },
-                          "folder": {
-                            "enabled": false,
-                            "folders": [],
-                            "chooseWhenCreatingNote": false,
-                            "createInSameFolderAsActiveFile": false,
-                            "chooseFromSubfolders": false
-                          },
-                          "appendLink": {
-                            "enabled": true,
-                            "placement": "replaceSelection",
-                            "requireActiveFile": false
-                          },
-                          "openFile": true,
-                          "fileOpening": {
-                            "location": "tab",
-                            "direction": "vertical",
-                            "mode": "default",
-                            "focus": true
-                          },
-                          "fileExistsMode": "Increment the file name",
-                          "setFileExistsBehavior": false
-                        }
+                        "name": "productions",
+                        "type": "UserScript",
+                        "id": "f79ff86a-50d6-4abf-8bbe-36963c4c61e0",
+                        "path": "templates/create/productions/productions.js",
+                        "settings": {}
                       },
                       {
                         "name": "Wait",
@@ -888,7 +590,7 @@
                           "name": "🔤 Title",
                           "type": "Template",
                           "command": false,
-                          "templatePath": "templates/create/system/category template.md",
+                          "templatePath": "templates/create/system/category/template.md",
                           "fileNameFormat": {
                             "enabled": false,
                             "format": ""
@@ -940,7 +642,7 @@
                           "name": "🔤 Title",
                           "type": "Template",
                           "command": false,
-                          "templatePath": "templates/create/system/meta-note template.md",
+                          "templatePath": "templates/create/system/category/meta/template.md",
                           "fileNameFormat": {
                             "enabled": false,
                             "format": ""
@@ -1004,7 +706,7 @@
                           "name": "🔤 Title",
                           "type": "Template",
                           "command": false,
-                          "templatePath": "templates/create/system/problem template.md",
+                          "templatePath": "templates/create/system/category/meta/problem/template.md",
                           "fileNameFormat": {
                             "enabled": false,
                             "format": ""
@@ -1068,7 +770,7 @@
                           "name": "🔤 Title",
                           "type": "Template",
                           "command": false,
-                          "templatePath": "templates/create/system/hierarchy template.md",
+                          "templatePath": "templates/create/system/category/meta/problem/hierarchy/template.md",
                           "fileNameFormat": {
                             "enabled": false,
                             "format": ""
@@ -1117,151 +819,24 @@
               "collapsed": true
             },
             {
-              "id": "a50bfbd3-c921-4506-957c-1fc32e1ae4a6",
+              "id": "bfea583a-186c-4a13-8b18-36a2225d0976",
               "name": "🔻➕ additions",
-              "type": "Multi",
+              "type": "Macro",
               "command": false,
-              "choices": [
-                {
-                  "id": "e59f10b6-e2ca-43e0-90d3-25be704796eb",
-                  "name": "👉➕ create addition *(initialize container, required first)*",
-                  "type": "Macro",
-                  "command": false,
-                  "macro": {
-                    "id": "14b5d180-5640-48df-b1ce-8cacea7d2d5d",
-                    "name": "👉➕ create addition *(initialize container, required first)*",
-                    "commands": [
-                      {
-                        "name": "Templater: Insert templates/create/additions/addition template.md",
-                        "type": "Obsidian",
-                        "id": "88242be5-303f-449e-8a8d-04a231f46c12",
-                        "commandId": "templater-obsidian:templates/create/additions/addition template.md"
-                      }
-                    ]
-                  },
-                  "runOnStartup": false
-                },
-                {
-                  "id": "82360617-23fc-4cb7-9fca-8d4775f68faa",
-                  "name": "➕📓 add conspectus",
-                  "type": "Macro",
-                  "command": false,
-                  "runOnStartup": false,
-                  "macro": {
-                    "name": "➕📓 add conspectus",
-                    "id": "4a870aaa-9e13-4c9c-8fd4-b57230b6c43a",
-                    "commands": [
-                      {
-                        "name": "🔤 Title",
-                        "type": "NestedChoice",
-                        "id": "5a190c10-7626-4d22-b2c3-c0524417853a",
-                        "choice": {
-                          "id": "4121876a-5b7a-4d1f-94a3-565ba293acc0",
-                          "name": "🔤 Title",
-                          "type": "Template",
-                          "command": false,
-                          "templatePath": "templates/create/sources/log template.md",
-                          "fileNameFormat": {
-                            "enabled": false,
-                            "format": ""
-                          },
-                          "folder": {
-                            "enabled": true,
-                            "folders": [],
-                            "chooseWhenCreatingNote": false,
-                            "createInSameFolderAsActiveFile": false,
-                            "chooseFromSubfolders": false
-                          },
-                          "appendLink": {
-                            "enabled": true,
-                            "placement": "replaceSelection",
-                            "requireActiveFile": false
-                          },
-                          "openFile": true,
-                          "fileOpening": {
-                            "location": "tab",
-                            "direction": "vertical",
-                            "mode": "default",
-                            "focus": true
-                          },
-                          "fileExistsMode": "Increment the file name",
-                          "setFileExistsBehavior": false
-                        }
-                      },
-                      {
-                        "name": "Wait",
-                        "type": "Wait",
-                        "id": "48903c6f-83f6-4d3e-a1bf-8bbf04acd8af",
-                        "time": 1000
-                      },
-                      {
-                        "name": "Templater: Replace templates in the active file",
-                        "type": "Obsidian",
-                        "id": "40063bee-e021-4dd8-95e6-a21c91454336",
-                        "commandId": "templater-obsidian:replace-in-file-templater"
-                      }
-                    ]
+              "runOnStartup": false,
+              "macro": {
+                "name": "🔻➕ additions",
+                "id": "61a33de3-1b8b-4cbf-8286-60e6142b4291",
+                "commands": [
+                  {
+                    "name": "addition",
+                    "type": "UserScript",
+                    "id": "6f7db66c-f24f-488b-aa01-0bddb2c77df6",
+                    "path": "templates/create/additions/addition.js",
+                    "settings": {}
                   }
-                },
-                {
-                  "id": "3c91da85-e228-4e6d-9e3f-bcedff16e1c3",
-                  "name": "➕🗣️ add meeting",
-                  "type": "Macro",
-                  "command": false,
-                  "macro": {
-                    "id": "8cd5d7c9-b862-4692-b917-bb7c02d9a350",
-                    "name": "add meeting",
-                    "commands": [
-                      {
-                        "name": "Templater: Insert templates/create/additions/meeting template.md",
-                        "type": "Obsidian",
-                        "id": "f8f62a01-974e-49d5-96b7-77c11208bb16",
-                        "commandId": "templater-obsidian:templates/create/additions/meeting template.md"
-                      }
-                    ]
-                  },
-                  "runOnStartup": false
-                },
-                {
-                  "id": "4e702a36-631c-47b6-815e-49fcdc420b4b",
-                  "name": "➕⚗️ add experiment",
-                  "type": "Macro",
-                  "command": false,
-                  "macro": {
-                    "id": "ebd2504c-61fa-4ba9-8ac1-7e91e3c175b4",
-                    "name": "add experiment",
-                    "commands": [
-                      {
-                        "name": "Templater: Insert templates/create/additions/experiment template.md",
-                        "type": "Obsidian",
-                        "id": "57cb0779-864c-4479-bab6-9883b08fa992",
-                        "commandId": "templater-obsidian:templates/create/additions/experiment template.md"
-                      }
-                    ]
-                  },
-                  "runOnStartup": false
-                },
-                {
-                  "id": "1c611adf-a0d3-4971-9fc7-c430774b30a1",
-                  "name": "➕🚨 add report",
-                  "type": "Macro",
-                  "command": false,
-                  "macro": {
-                    "id": "8792136e-9786-45cc-8364-bc4482ba7600",
-                    "name": "add report",
-                    "commands": [
-                      {
-                        "name": "Templater: Insert templates/create/additions/report template.md",
-                        "type": "Obsidian",
-                        "id": "7a56f58c-f0be-40c3-ad4a-d5395f81fb30",
-                        "commandId": "templater-obsidian:templates/create/additions/report template.md"
-                      }
-                    ]
-                  },
-                  "runOnStartup": false
-                }
-              ],
-              "collapsed": true
+                ]
+              }
             }
           ],
           "collapsed": true
@@ -1443,7 +1018,8 @@
                             "direction": "vertical",
                             "mode": "default",
                             "focus": true
-                          }
+                          },
+                          "activeFileWritePosition": "cursor"
                         }
                       },
                       {
@@ -2168,7 +1744,7 @@
               "runOnStartup": false
             }
           ],
-          "collapsed": false
+          "collapsed": true
         },
         {
           "id": "57baf482-c7e5-493a-9ba1-849468463199",
@@ -2669,49 +2245,6 @@
       "type": "Multi",
       "command": false,
       "choices": [
-        {
-          "id": "9687cbec-d921-4810-88f9-4ece5ca439f8",
-          "name": "open metadata",
-          "type": "Macro",
-          "command": true,
-          "macro": {
-            "id": "97ec6f73-0ae3-4e30-bbb0-c91a605da9a3",
-            "name": "open metadata",
-            "commands": [
-              {
-                "name": "Metadata Menu: Update active file lookups fields",
-                "type": "Obsidian",
-                "id": "2c01fced-dfb8-4394-9c47-a9c109d2e50d",
-                "commandId": "metadata-menu:update_file_lookups"
-              },
-              {
-                "name": "Wait",
-                "type": "Wait",
-                "id": "2d5f29d3-9a80-42c9-9b1f-f41d81671574",
-                "time": 50
-              },
-              {
-                "name": "Metadata Menu: Update all lookups and formulas",
-                "type": "Obsidian",
-                "id": "9d520241-3c0a-4e88-9b9f-5e8b4db5f0da",
-                "commandId": "metadata-menu:update_all_lookups"
-              },
-              {
-                "name": "Wait",
-                "type": "Wait",
-                "id": "b082404d-114f-41f5-a213-10a3db2a9a34",
-                "time": 50
-              },
-              {
-                "name": "Metadata Menu: Open this note's fields modal",
-                "type": "Obsidian",
-                "id": "8857cff5-88df-4059-a9be-ed1898cfaefd",
-                "commandId": "metadata-menu:open_fields_modal"
-              }
-            ]
-          },
-          "runOnStartup": false
-        },
         {
           "id": "17cc37c8-1d33-4083-99b1-46698c9b1480",
           "name": "better link",
@@ -3305,9 +2838,29 @@
               }
             ]
           }
+        },
+        {
+          "id": "df650bef-3b43-4cba-bdff-cc2597221496",
+          "name": "update task relation",
+          "type": "Macro",
+          "command": true,
+          "runOnStartup": false,
+          "macro": {
+            "name": "update task relation",
+            "id": "5b459bfe-470e-494c-93e5-a640539a8d1e",
+            "commands": [
+              {
+                "name": "update-relations",
+                "type": "UserScript",
+                "id": "723933d3-1611-4c0b-86d1-ec72f74c077d",
+                "path": "templates/macros/update-relations.js",
+                "settings": {}
+              }
+            ]
+          }
         }
       ],
-      "collapsed": true
+      "collapsed": false
     }
   ],
   "inputPrompt": "single-line",
@@ -3316,7 +2869,7 @@
   "devMode": false,
   "templateFolderPath": "",
   "announceUpdates": "none",
-  "version": "2.11.0",
+  "version": "2.12.0",
   "globalVariables": {},
   "onePageInputEnabled": false,
   "disableOnlineFeatures": true,

@@ -5,6 +5,8 @@ tags:
 aliases:
   - типы памяти в jvm
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-20T09:06:59+03:00
 updated: 2026-03-19T22:44:02+03:00
 sr-due: 2025-10-12

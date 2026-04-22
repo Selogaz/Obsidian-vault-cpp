@@ -2,15 +2,15 @@ const category = dv.current().file.name.replace(/ /g, '_');
 
 const groupByType = `
 group by function \
-  if (task.tags.includes("#task/inbox"))         return "%%01%% [[inbox|📥 inbox]]"; \
-  if (task.tags.includes("#task/next_action"))   return "%%02%% [[next_action|🚀 next action]]"; \
-  if (task.tags.includes("#task/one-off"))       return "%%03%% [[one-off|1️⃣ one-off]]"; \
-  if (task.tags.includes("#task/multistep"))     return "%%04%% [[multistep|🏗 multistep]]"; \
-  if (task.tags.includes("#task/waiting_for"))   return "%%05%% [[waiting_for|💤 waiting for]]"; \
-  if (task.tags.includes("#task/regular"))       return "%%06%% [[regular|🔁 regular]]"; \
-  if (task.tags.includes("#task/idea"))          return "%%07%% [[idea|💡 ideas]]"; \
-  if (task.tags.includes("#task/reference"))     return "%%08%% [[reference|🔗 references]]"; \
-  if (task.tags.includes("#task/someday"))       return "%%09%% [[someday|🤷 someday]]"; \
+  if (task.tags.includes("#task/inbox"))         return "%%01%% [[inbox|inbox]]"; \
+  if (task.tags.includes("#task/next_action"))   return "%%02%% [[next_action|next action]]"; \
+  if (task.tags.includes("#task/one-off"))       return "%%03%% [[one-off|one-off]]"; \
+  if (task.tags.includes("#task/multistep"))     return "%%04%% [[multistep|multistep]]"; \
+  if (task.tags.includes("#task/waiting_for"))   return "%%05%% [[waiting_for|waiting for]]"; \
+  if (task.tags.includes("#task/regular"))       return "%%06%% [[regular|regular]]"; \
+  if (task.tags.includes("#task/idea"))          return "%%07%% [[idea|ideas]]"; \
+  if (task.tags.includes("#task/reference"))     return "%%08%% [[reference|references]]"; \
+  if (task.tags.includes("#task/someday"))       return "%%09%% [[someday|someday]]"; \
   return "%%00%% Without status";
 `;
 

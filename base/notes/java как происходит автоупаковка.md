@@ -5,6 +5,8 @@ tags:
 aliases:
   - как происходит автоупаковка
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-05T17:23:52+03:00
 updated: 2025-09-21T12:50:25+03:00
 sr-due: 2026-11-11

@@ -1,12 +1,15 @@
 ---
 tags:
-  - system/high/hierarchy
   - category/health
+  - system/high/hierarchy
 aliases: []
+relevant: false
 category:
   - "[[health]]"
 meta:
-relevant: false
+problem:
+icon: 🧬
+color: "#b089c4"
 created: 2026-03-11T03:00:00+03:00
 updated: 2026-03-11T02:14:38+03:00
 ---

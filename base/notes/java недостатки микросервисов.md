@@ -5,6 +5,8 @@ tags:
 aliases:
   - недостатки микросервисов
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-06T12:33:38+03:00
 updated: 2025-10-02T17:57:51+03:00
 sr-due: 2026-12-08

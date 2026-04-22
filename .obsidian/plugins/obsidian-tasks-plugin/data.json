@@ -1,6 +1,6 @@
 {
-  "includes": {},
-  "globalQuery": "path does not include files/\npath does not include classes/\npath does not include home/\npath does not include templates/",
+  "presets": {},
+  "globalQuery": "path does not include files/\npath does not include classes/\npath does not include home/\npath does not include templates/\nhide toolbar",
   "globalFilter": "",
   "removeGlobalFilter": false,
   "taskFormat": "tasksPluginEmoji",
@@ -49,6 +49,19 @@
         "type": "CANCELLED"
       }
     ]
+  },
+  "isShownInEditModal": {
+    "priority": false,
+    "recurrence": true,
+    "due": true,
+    "scheduled": false,
+    "start": false,
+    "before_this": false,
+    "after_this": false,
+    "status": true,
+    "created": false,
+    "done": true,
+    "cancelled": false
   },
   "features": {
     "INTERNAL_TESTING_ENABLED_BY_DEFAULT": true

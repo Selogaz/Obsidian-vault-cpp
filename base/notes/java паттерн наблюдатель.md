@@ -3,9 +3,11 @@ tags:
   - note/specific/code
   - category/java
 aliases:
-  - observer
   - паттерн наблюдатель
+  - observer
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-16T18:14:08+03:00
 updated: 2025-10-08T18:39:57+03:00
 sr-due: 2025-10-12

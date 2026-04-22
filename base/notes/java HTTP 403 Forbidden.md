@@ -5,6 +5,8 @@ tags:
 aliases:
   - HTTP 403 Forbidden
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-30T19:33:45+03:00
 updated: 2025-10-08T18:31:13+03:00
 sr-due: 2025-10-12

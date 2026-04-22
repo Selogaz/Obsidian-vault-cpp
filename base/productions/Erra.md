@@ -9,6 +9,8 @@ problem:
 relevant: false
 created: 2026-04-08T20:21:49+03:00
 updated: 2026-04-09T21:54:38+03:00
+icon: 🎸
+color: "#c85545"
 ---
 
 > [!todo]- tasks (`$=dv.pages().file.tasks.where(t => !t.completed).where(t => dv.func.contains(t.outlinks, dv.current().file.link)).length`)

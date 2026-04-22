@@ -5,6 +5,8 @@ tags:
 aliases:
   - DI, Dependency Injection
 deck: obsidian::work
+icon: </>
+color: "#ab4642"
 created: 2025-06-03 10:46:15+03:00
 updated: 2025-10-02T18:25:01+03:00
 sr-due: 2026-11-09

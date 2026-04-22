@@ -9,7 +9,7 @@ filters:
             - category.contains(link(this.file.name))
 formulas:
   type: file.tags.filter(value.startsWith("#source/"))[0].replace(/^.*\//, '')
-  kanban: if(status.contains("⚛"), "① ⚛ Atom", if(status.contains("🟦"), "② 🟦 In Progress", if(status.contains("🟥"), "③ 🟥 ToDo", "④ Other")))
+  kanban: if(status.contains("⚛"), "① ⚛ Atom", if(status.contains("🟦"), "② 🟦 In Progress", if(status.contains("🟥"), "③ 🟥 ToDo", if(status.contains("📥"), "④ 📥 Inbox", "⑤ Other"))))
   scientificity: if(scientificity.contains("🅰️"), "① 🅰️ primary research", if(scientificity.contains("🅱️"), "② 🅱️ secondary research", if(scientificity.contains("👓"), "③ 👓 expert/industry", if(scientificity.contains("📢"), "④ 📢 popular science/journalism", if(scientificity.contains("💬"), "⑤ 💬 opinion/unverified", "⑥ Other")))))
   rating: if(rating.contains("🌕"), "① 🌕 masterpiece", if(rating.contains("🌔"), "② 🌔 great", if(rating.contains("🌓"), "③ 🌓 good", if(rating.contains("🌒"), "④ 🌒 mediocre", if(rating.contains("🌑"), "⑤ 🌑 poor", "⑥ Other")))))
   backlinks: file.backlinks.length
@@ -22,6 +22,8 @@ formulas:
   problem_type_valid: if(problem.isEmpty(), "✅", if(list(problem).filter(value.asFile().hasTag("system/high/problem")).length == list(problem).length, "✅", "❌"))
   creator_type_valid: if(creator.isEmpty(), "✅", if(list(creator).filter(value.asFile().tags.filter(value.startsWith("#creator/") || value.startsWith("#contact/")).length > 0).length == list(creator).length, "✅", "❌"))
   production_type_valid: if(production.isEmpty(), "✅", if(list(production).filter(value.asFile().tags.filter(value.startsWith("#production/")).length > 0).length == list(production).length, "✅", "❌"))
+  published_year: if(published, published.toString().slice(0, 4), "")
+  tasks_progress: if(tasks.filter(value.toString().startsWith("- [")).length, tasks.filter(value.toString().startsWith("- [x]")).length + " / " + tasks.filter(value.toString().startsWith("- [")).length, "—")
 properties:
   formula.type:
     displayName: 🗄️ type
@@ -47,6 +49,10 @@ properties:
     displayName: 🏬 production
   note.url:
     displayName: 🔗 url
+  note.tags:
+    displayName: 🏷️ tags
+  note.aliases:
+    displayName: 🔖 aliases
   note.genre:
     displayName: 🎭 Genre
   note.published:
@@ -73,6 +79,8 @@ properties:
     displayName: 🏷️
   formula.production_type_valid:
     displayName: 🏷️
+  formula.tasks_progress:
+    displayName: ✅
 views:
   - type: table
     name: "📊 All: Short View"
@@ -89,16 +97,13 @@ views:
       - creator
       - production
       - url
+      - tags
+      - aliases
     sort:
-      - property: status
-        direction: DESC
-      - property: meta
-        direction: DESC
       - property: formula.kanban
         direction: ASC
       - property: formula.created_relative
         direction: DESC
-    limit: 28
     columnSize:
       file.name: 530
       note.addition: 90
@@ -106,7 +111,6 @@ views:
       note.status: 1
       note.scientificity: 1
       note.rating: 1
-      note.meta: 274
   - type: table
     name: "📊 All: Extended View"
     order:
@@ -127,11 +131,9 @@ views:
       - creator
       - production
       - url
+      - tags
+      - aliases
     sort:
-      - property: status
-        direction: DESC
-      - property: file.name
-        direction: ASC
       - property: formula.kanban
         direction: ASC
       - property: formula.created_relative
@@ -157,10 +159,9 @@ views:
   - type: table
     name: "📋 Workflow: Kanban (v)"
     filters:
-      or:
-        - status.contains("⚛")
-        - status.contains("🟦")
-        - status.contains("🟥")
+      and:
+        - '!status.contains("⬛")'
+        - '!status.contains("🟩")'
     groupBy:
       property: formula.kanban
       direction: ASC
@@ -178,8 +179,8 @@ views:
       - production
       - url
     sort:
-      - property: priority
-        direction: ASC
+      - property: formula.created_relative
+        direction: DESC
     columnSize:
       file.name: 530
       note.addition: 90
@@ -189,6 +190,10 @@ views:
       note.rating: 1
   - type: board-view
     name: "📋 Workflow: Kanban (h)"
+    filters:
+      and:
+        - '!status.contains("⬛")'
+        - '!status.contains("🟩")'
     order:
       - file.name
       - formula.type
@@ -197,6 +202,7 @@ views:
     groupProperty: note.status
     hideEmptyGroups: false
     hiddenGroups:
+      - Empty Group
       - 💡
       - 🧠
       - 🖍
@@ -205,26 +211,45 @@ views:
       - 📋
       - ⚙️
       - 📢
-      - Empty Group
       - ❄
       - ⬛
       - 🟩
     groupOrder:
+      - 📥
       - 🟥
       - 🟦
       - ⚛
     colorCells: false
-    colorHeaders: true
-    colorCards: true
-    hideEmptySubGroups: true
-    iconProperty: note.status
+    colorHeaders: false
+    colorCards: false
+    hideEmptySubGroups: false
+    subGroupLabels:
+      - Empty Group=default
+    groupLabels:
+      - 📥=📥 Inbox
+      - 🟥=🟥 ToDo
+      - 🟦=🟦 WIP
+      - ⚛=⚛ Atom
+    newNoteFolder:
+      - sources
+    newNoteTemplate:
+      - templates/create/sources/source template.md
+    newNoteOpen: true
+  - type: block-view
+    name: "✅ Workflow: Inline Tasks"
+    filters:
+      and:
+        - '!status.contains("⬛")'
+        - '!status.contains("🟩")'
+    filterTasks: true
+    filterQuotes: false
+    filterTasksType: incomplete
   - type: table
     name: "🗄️ Workflow: Group By Type"
     filters:
-      or:
-        - status.contains("⚛")
-        - status.contains("🟦")
-        - status.contains("🟥")
+      and:
+        - '!status.contains("⬛")'
+        - '!status.contains("🟩")'
     groupBy:
       property: formula.type
       direction: ASC
@@ -260,6 +285,62 @@ views:
         - "false"
     order:
       - file.name
+  - type: table
+    name: "⬛ Status: Drop"
+    filters:
+      and:
+        - status.contains("⬛")
+    order:
+      - file.name
+      - addition
+      - zotero
+      - status
+      - scientificity
+      - rating
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - url
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.zotero: 1
+      note.status: 1
+      note.scientificity: 1
+      note.rating: 1
+  - type: table
+    name: "📥 Status: Inbox"
+    filters:
+      and:
+        - status.contains("📥")
+    order:
+      - file.name
+      - addition
+      - zotero
+      - status
+      - scientificity
+      - rating
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - url
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.zotero: 1
+      note.status: 1
+      note.scientificity: 1
+      note.rating: 1
   - type: table
     name: "🟥 Status: To Do"
     filters:
@@ -324,34 +405,6 @@ views:
     filters:
       and:
         - status.contains("🟩")
-    order:
-      - file.name
-      - addition
-      - zotero
-      - status
-      - scientificity
-      - rating
-      - category
-      - meta
-      - problem
-      - creator
-      - production
-      - url
-    sort:
-      - property: formula.created_relative
-        direction: DESC
-    columnSize:
-      file.name: 530
-      note.addition: 90
-      note.zotero: 1
-      note.status: 1
-      note.scientificity: 1
-      note.rating: 1
-  - type: table
-    name: "⬛ Status: Drop"
-    filters:
-      and:
-        - status.contains("⬛")
     order:
       - file.name
       - addition
@@ -657,6 +710,58 @@ views:
         - "false"
     order:
       - file.name
+  - type: chart-bar
+    name: "📈 Statistics: By Types"
+    x: formula.type
+    aggregate:file.name: Count
+    show-labels: true
+  - type: chart-bar
+    name: "📈 Statistics: By Statuses"
+    sort:
+      - property: formula.kanban
+        direction: ASC
+    x: note.status
+    aggregate:file.name: Count
+    show-labels: true
+  - type: chart-bar
+    name: "📈 Statistics: By Ratings"
+    x: note.rating
+    aggregate:file.name: Count
+    show-labels: true
+    sync-y-axes: false
+  - type: chart-bar
+    name: "📈 Statistics: By Scientificity"
+    x: note.scientificity
+    aggregate:file.name: Count
+    show-labels: true
+    sync-y-axes: false
+  - type: chart-bar
+    name: "📈 Statistics: By Category"
+    x: note.category
+    aggregate:file.name: Count
+    show-labels: true
+    sync-y-axes: false
+    show-percentages: false
+  - type: chart-bar
+    name: "📈 Statistics: By Published"
+    filters:
+      and:
+        - published != null
+    sort:
+      - property: published
+        direction: ASC
+    x: formula.published_year
+    aggregate:file.name: Count
+    show-labels: true
+    sync-y-axes: false
+    show-percentages: false
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
   - type: table
     name: ✅ Structure Validation
     filters:
@@ -680,12 +785,12 @@ views:
       - production
     sort:
       - property: formula.category_type_valid
-        direction: ASC
-      - property: formula.creator_type_valid
         direction: DESC
       - property: formula.meta_type_valid
         direction: DESC
       - property: formula.problem_type_valid
+        direction: DESC
+      - property: formula.creator_type_valid
         direction: DESC
       - property: formula.production_type_valid
         direction: DESC

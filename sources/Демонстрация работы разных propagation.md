@@ -4,7 +4,10 @@ tags:
   - source/article/paper
   - category/java
 aliases: []
+addition:
 status: 🟥
+rating:
+scientificity:
 category:
   - "[[java]]"
 meta:
@@ -13,9 +16,11 @@ creator:
 production:
 start: 2025-09-20T08:40:13+03:00
 end:
-total_hours: 0
+icon: 📃
+color: "#7575c0"
 created: 2025-09-20T08:40:13+03:00
 updated: 2026-01-14T00:23:47+03:00
+total_hours: 0
 ---
 
 https://sysout.ru/transaction-propagation/

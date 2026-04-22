@@ -5,6 +5,8 @@ tags:
 aliases:
   - способы описания аспектов
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-15T12:12:52+03:00
 updated: 2025-09-21T12:38:26+03:00
 sr-due: 2026-09-11

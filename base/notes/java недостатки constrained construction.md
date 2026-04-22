@@ -5,6 +5,8 @@ tags:
 aliases:
   - недостатки constrained construction
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2026-03-05T17:07:11+03:00
 updated: 2026-03-05T17:07:11+03:00
 ---

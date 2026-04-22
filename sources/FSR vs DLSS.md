@@ -5,24 +5,30 @@ tags:
   - category/computer_science
 aliases:
   - FSR vs DLSS | Как работает | Графику сравниваю не я, а - ВЫ!
+published: 2021
+addition:
+zotero: "[🇿](zotero://select/items/@etotkompyuterFSRVsDLSS2021)"
 status: 🟩
+rating:
+scientificity:
 category:
   - "[[computer science]]"
 meta:
   - grapthics
 problem:
-related:
 creator:
   - "[[Этот Компьютер]]"
 production:
-url: "[YouTube](https://www.youtube.com/watch?v=WP0y9xZLW9w)"
-zotero: "[🇿](zotero://select/items/@etotkompyuterFSRVsDLSS2021)"
-published: 2021
 start: 2025-10-24T09:55:00+03:00
 end:
-total_hours: 0
+url:
+  - "[YouTube](https://www.youtube.com/watch?v=WP0y9xZLW9w)"
+icon: 📹
+color: "#2a9070"
 created: 2025-10-24T09:55:00+03:00
 updated: 2026-02-28T23:33:53+03:00
+related:
+total_hours: 0
 ---
 
 ![[способы отрисовки текста]]

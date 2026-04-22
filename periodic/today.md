@@ -6,10 +6,11 @@ cssclasses:
   - hide-backlinks
 obsidianUIMode: preview
 icon: 📅
+color: "#e8e8e8"
 ---
 
 > [!todo|hidden]
-> `$=dv.span("[[periodic/daily/" + moment().format("YYYY-MM-DD") + "|" + moment().format("D MMMM • dddd") + "]]")` ┃ [[upcoming|upcoming ➡️]] 
+> `$=dv.span("[[periodic/daily/" + moment().format("YYYY-MM-DD") + "|" + moment().format("D MMMM • dddd") + "]]")` ┃ [[upcoming|upcoming]]
 > ___
 > ```tasks
 > (due before tomorrow) OR (scheduled before tomorrow)
@@ -17,7 +18,7 @@ icon: 📅
 > group by function \
 >   const date = task.happens.moment; \
 >   const now = moment(); \
->   if (date && date.isBefore(now, 'day')) return '#### %%1%% ❗️ Overdue'; \
+>   if (date && date.isBefore(now, 'day')) return '%%1%% ❗️ Overdue'; \
 >   return '';
 > sort by function \
 >   let m = task.description && task.description.match(/⏰\s*(\d{1,2}:\d{2})/); \

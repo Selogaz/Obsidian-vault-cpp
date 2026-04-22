@@ -5,6 +5,8 @@ tags:
 aliases:
   - wait
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-11-01T09:27:16+03:00
 updated: 2025-11-01T09:28:28+03:00
 ---
