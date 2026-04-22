@@ -13,6 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "periodic/daily/2026-04-22.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-04-22"
+            }
+          },
+          {
+            "id": "3b2c4b9dc0d4d0df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "base/notes/hiragana.md",
                 "mode": "source",
                 "source": false,
@@ -32,31 +56,7 @@
             }
           },
           {
-            "id": "1ad72f177db488d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "periodic/daily/2026-04-19.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2026-04-19"
-            }
-          },
-          {
-            "id": "021f87e10e17a33e",
+            "id": "cf0ef1263604fa32",
             "type": "leaf",
             "state": {
               "type": "canvas",
@@ -64,16 +64,15 @@
                 "file": "periodic/tasks (grouped by priority).canvas",
                 "viewState": {
                   "x": -380,
-                  "y": 183.68102893890676,
-                  "zoom": -0.14828719946317592
+                  "y": 60.000000000000014,
+                  "zoom": 0
                 }
               },
               "icon": "lucide-layout-dashboard",
               "title": "tasks (grouped by priority)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -319,7 +318,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 345.5
+    "width": 348.5,
+    "collapsed": true
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -335,13 +335,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "periodic/daily/2026-04-19.md",
+                "file": "periodic/daily/2026-04-22.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-04-19"
+              "title": "Outline of 2026-04-22"
             }
           },
           {
@@ -403,8 +403,21 @@
       "graph:Open graph view": false
     }
   },
-  "active": "1ad72f177db488d5",
+  "active": "bda9ef25e60d256c",
   "lastOpenFiles": [
+    "periodic/daily/2026-04-21.md",
+    "periodic/daily/2026-04-22.md",
+    "base/notes/hiragana.md",
+    "periodic/tasks (grouped by priority).canvas",
+    "periodic/priority.md",
+    "periodic/daily/2026-04-20.md",
+    "periodic/daily/2026-04-19.md",
+    "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/6-дневник-наблюдений.md",
+    "projects/ЕГЭ Информатика/ЕГЭ Информатика.md",
+    "projects/Подземелья Максвелла.md",
+    "base/categories/webdev.md",
+    "home/databases/projects.base",
+    "projects/ЕГЭ Математика/ЕГЭ Математика.md",
     "periodic/daily/2026-04-12.md",
     "periodic/daily/2026-04-11.md",
     "periodic/daily/2026-04-10.md",
@@ -415,28 +428,15 @@
     "periodic/daily/2026-04-13.md",
     "periodic/daily/2026-04-14.md",
     "periodic/daily/2026-04-17.md",
-    "periodic/daily/2026-04-19.md",
-    "periodic/tasks (grouped by priority).canvas",
-    "periodic/priority.md",
     "periodic/weekly/2026-W17.md",
     "periodic/weekly/2026-W16.md",
-    "base/notes/hiragana.md",
-    "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/6-дневник-наблюдений.md",
     "projects/Переезд в Японию/Японский язык.md",
     "base/notes/ввод с клавиатуры.md",
     "base/productions/Erra.md",
-    "base/productions/Bury Tomorrow.md",
-    "home/index.md",
-    "sources/convert gpx to pdf.md",
-    "sources/site with tabs.md",
-    "base/categories/music.md",
-    "periodic/weekly/2026-W15.md",
     "files/Site dnd.pdf",
-    "projects/Подземелья Максвелла.md",
     "files/Hiragana-Practice-en.pdf",
     "files/Hiragana-Chart-en 1.pdf",
     "files/Hiragana-Chart-en.pdf",
-    "home/databases/projects.base",
     "home/databases/high-notes.base",
     "projects/Переезд в Японию",
     "files/Подземелья Максвелла 2026-04-03.png",
