@@ -5,6 +5,8 @@ tags:
 aliases:
   - горизонтальное масштабирование
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-17T18:51:24+03:00
 updated: 2025-10-08T19:33:39+03:00
 sr-due: 2025-10-12

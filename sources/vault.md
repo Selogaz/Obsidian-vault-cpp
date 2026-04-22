@@ -4,18 +4,26 @@ tags:
   - source/article/paper
   - category/obsidian
 aliases: []
+addition:
 status: 🟦
+rating:
+scientificity:
 category:
   - "[[obsidian]]"
 meta:
 problem:
-url: "[Website](https://disk.yandex.ru/d/UwTfGDTMJOhl-w/instruction.mp4)"
-cover: https://yastatic.net/s3/psf/disk-public/_/6jthIYkBdecaLwm8yXZPKuI1HW7.png
+creator:
+production:
 start: 2025-05-20T12:24:31+03:00
 end:
-total_hours: 0
+url:
+  - "[Website](https://disk.yandex.ru/d/UwTfGDTMJOhl-w/instruction.mp4)"
+cover: https://yastatic.net/s3/psf/disk-public/_/6jthIYkBdecaLwm8yXZPKuI1HW7.png
+icon: 📃
+color: "#7575c0"
 created: 2025-05-20T12:24:31+03:00
 updated: 2026-04-02T14:56:23+03:00
+total_hours: 0
 ---
 
 ![cover|150](https://yastatic.net/s3/psf/disk-public/_/6jthIYkBdecaLwm8yXZPKuI1HW7.png)

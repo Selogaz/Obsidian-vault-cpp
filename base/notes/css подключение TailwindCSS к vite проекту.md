@@ -5,10 +5,12 @@ tags:
 aliases:
   - подключение TailwindCSS к vite проекту
 deck: obsidian::css
-meta:
-  - css
+icon: </>
+color: "#ab4642"
 created: 2026-01-26T18:28:06+03:00
 updated: 2026-03-04T19:33:43+03:00
+meta:
+  - css
 ---
 
 **подключение TailwindCSS к vite проекту**

@@ -1,0 +1,1534 @@
+/* Metadata Validator plugin styles */
+
+/* ── Body-level CSS toggles (controlled by CssInjector) ──── */
+body.mv-hide-type-icon .metadata-content .metadata-property-icon {
+  display: none !important;
+}
+
+body.mv-hide-validator .metadata-content .metadata-property-warning-icon {
+  display: none !important;
+}
+
+/* ── Picker Modal ─────────────────────────────────────────── */
+.mv-picker-modal .mv-picker-header {
+  margin-bottom: 8px;
+}
+
+.mv-picker-modal .mv-picker-meta {
+  opacity: 0.6;
+  font-size: 12px;
+}
+
+.mv-picker-modal .mv-picker-search {
+  width: 100%;
+  margin: 8px 0;
+  padding: 6px;
+}
+
+.mv-picker-modal .mv-picker-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.mv-picker-modal .mv-picker-option {
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mv-picker-modal .mv-picker-option:hover,
+.mv-picker-modal .mv-picker-option.is-focused {
+  background: var(--background-modifier-hover);
+}
+
+.mv-picker-modal .mv-picker-option.is-selected {
+  background: var(--background-modifier-hover);
+  border-left: 3px solid var(--interactive-accent);
+  padding-left: 7px;
+}
+
+.mv-picker-modal .mv-picker-group {
+  margin-bottom: 10px;
+}
+
+.mv-picker-modal .mv-picker-group:last-child {
+  margin-bottom: 0;
+}
+
+.mv-picker-modal .mv-picker-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2px 0 6px;
+  padding: 0 2px;
+}
+
+.mv-picker-modal .mv-picker-group-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.mv-picker-modal .mv-picker-group-type {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-faint);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 999px;
+  padding: 1px 6px;
+}
+
+.mv-picker-modal .mv-picker-value-hint {
+  opacity: 0.5;
+  font-size: 11px;
+}
+
+.mv-picker-modal .mv-picker-footer {
+  margin-top: 12px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* ── Validator Tooltip ────────────────────────────────────── */
+#mv-validator-tooltip {
+  position: fixed;
+  z-index: 9999;
+  background: var(--background-primary);
+  border: 1px solid var(--color-red, #f38ba8);
+  border-radius: 6px;
+  padding: 10px 14px;
+  max-width: 320px;
+  font-size: 13px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.mv-tooltip-row {
+  margin-bottom: 6px;
+}
+
+.mv-tooltip-error {
+  color: var(--color-red, #f38ba8);
+}
+
+.mv-tooltip-warning {
+  color: var(--color-yellow, #f9e2af);
+}
+
+.mv-tooltip-meta {
+  font-size: 11px;
+  opacity: 0.6;
+  margin-top: 2px;
+}
+
+.mv-tooltip-link {
+  font-size: 11px;
+  color: var(--link-color);
+  cursor: pointer;
+  display: block;
+  margin-top: 2px;
+}
+
+/* ── Inline decorator icons ───────────────────────────────── */
+.mv-picker-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0 2px;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.4;
+  color: var(--icon-color, var(--text-muted));
+  transition:
+    opacity 0.15s,
+    background 0.15s;
+}
+
+.mv-picker-btn:hover {
+  opacity: 1;
+  background: var(--background-modifier-hover);
+}
+
+.mv-picker-btn svg {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  stroke-width: 2.2px;
+}
+
+.mv-type-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0 2px;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text-faint);
+  opacity: 0.4;
+  transition:
+    opacity 0.15s,
+    background 0.15s;
+}
+
+.mv-type-icon:hover {
+  opacity: 1;
+  background: var(--background-modifier-hover);
+}
+
+.mv-type-icon svg {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  stroke-width: 2px;
+}
+
+.mv-validator-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--color-red, #f38ba8);
+  transition: background 0.15s;
+}
+
+.mv-validator-icon:hover {
+  background: var(--background-modifier-hover);
+}
+
+.mv-validator-icon svg {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  stroke-width: 2.2px;
+}
+
+/* ── Bases cell validation indicators ────────────────────── */
+.mv-bases-error {
+  box-shadow: inset 0 0 0 1.5px rgba(var(--color-red-rgb, 220, 60, 60), 0.3);
+  transition: box-shadow 0.1s;
+}
+
+.mv-bases-warning {
+  box-shadow: inset 0 0 0 1.5px rgba(var(--color-orange-rgb, 230, 140, 50), 0.3);
+  transition: box-shadow 0.1s;
+}
+
+.mv-bases-error:hover {
+  box-shadow: inset 0 0 0 1.5px rgba(var(--color-red-rgb, 220, 60, 60), 0.5);
+}
+
+.mv-bases-warning:hover {
+  box-shadow: inset 0 0 0 1.5px rgba(var(--color-orange-rgb, 230, 140, 50), 0.5);
+}
+
+/* ── Sidebar panel ────────────────────────────────────────── */
+.mv-sidebar-empty {
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.mv-sidebar-ok {
+  color: var(--color-green, #a6e3a1);
+  margin-top: 4px;
+}
+
+.mv-sidebar-row {
+  padding: 4px 0;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.mv-vault-issue-row {
+  padding: 3px 0;
+  font-size: 12px;
+}
+
+.mv-error {
+  color: var(--color-red, #f38ba8);
+}
+
+.mv-warning {
+  color: var(--color-yellow, #f9e2af);
+}
+
+.mv-sidebar-autofixed {
+  margin-top: 8px;
+  font-size: 11px;
+  opacity: 0.6;
+}
+
+.mv-sidebar-summary {
+  margin-top: 8px;
+  font-size: 11px;
+  opacity: 0.5;
+}
+
+.mv-sidebar-scan-state {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: var(--background-secondary);
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.mv-sidebar-scan-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--interactive-accent);
+  animation: mv-scan-pulse 1.2s ease-in-out infinite;
+}
+
+.mv-scan-btn.is-scanning {
+  position: relative;
+  padding-left: 28px;
+}
+
+.mv-scan-btn.is-scanning::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  border: 2px solid var(--text-faint);
+  border-top-color: var(--interactive-accent);
+  border-radius: 50%;
+  animation: mv-scan-spin 0.8s linear infinite;
+}
+
+@keyframes mv-scan-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.45;
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 1;
+  }
+}
+
+@keyframes mv-scan-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ── Context menu modal ───────────────────────────────────── */
+.mv-context-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.mv-context-name {
+  min-width: 120px;
+  color: var(--text-normal);
+}
+
+.mv-context-value {
+  flex: 1;
+  margin: 0 8px;
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.mv-context-err-icon {
+  color: var(--color-red, #f38ba8);
+}
+
+/* ── Explorer badges ──────────────────────────────────────── */
+.mv-explorer-badge {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.mv-explorer-badge.mv-badge-error {
+  background: var(--color-red, #f38ba8);
+}
+
+.mv-explorer-badge.mv-badge-warning {
+  background: var(--color-yellow, #f9e2af);
+}
+
+.mv-explorer-badge.mv-badge-valid {
+  background: var(--color-green, #a6e3a1);
+}
+
+/* ── Schema tree ──────────────────────────────────────────── */
+.mv-schema-tree ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mv-schema-tree li {
+  margin: 4px 0;
+}
+
+.mv-schema-tree .mv-tree-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mv-schema-tree .mv-tree-row:hover {
+  background: var(--background-modifier-hover);
+}
+
+.mv-schema-tree .mv-tree-toggle {
+  font-size: 11px;
+  min-width: 12px;
+  transition: transform 0.15s;
+}
+
+.mv-schema-tree .mv-tree-toggle.is-open {
+  transform: rotate(90deg);
+}
+
+.mv-schema-tree .mv-tree-leaf {
+  opacity: 0.3;
+  min-width: 12px;
+  text-align: center;
+}
+
+.mv-schema-tree .mv-tree-children {
+  list-style: none;
+  padding-left: 16px;
+}
+
+.mv-schema-tree .mv-tree-children.is-collapsed {
+  display: none;
+}
+
+.mv-schema-tree .mv-tree-name {
+  font-weight: bold;
+}
+
+.mv-schema-tree .mv-tree-count {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.mv-schema-tree .mv-tree-folder {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.mv-schema-tree .mv-tree-tag {
+  font-size: 11px;
+  color: var(--tag-color, #89b4fa);
+}
+
+/* ── Schema editor modal ──────────────────────────────────── */
+.modal-content.mv-schema-editor-modal {
+  width: min(720px, 92vw);
+  padding-top: 4px;
+}
+
+/* Field cards */
+.mv-fields-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.mv-field-card {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mv-field-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--background-secondary);
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.mv-field-key-input {
+  flex: 1;
+  font-weight: 600;
+  font-size: 13px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 2px 6px;
+  color: var(--text-normal);
+}
+
+.mv-field-key-input:focus {
+  border-color: var(--interactive-accent);
+  background: var(--background-primary);
+  outline: none;
+}
+
+.mv-field-type-select {
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.mv-field-remove-btn {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.mv-field-remove-btn:hover {
+  opacity: 1;
+  color: var(--color-red);
+  background: var(--background-modifier-hover);
+}
+
+.mv-field-card-body {
+  padding: 4px 0 4px 12px;
+}
+
+.mv-field-card-body .setting-item {
+  border-top: none;
+  padding: 6px 12px 6px 0;
+}
+
+.mv-field-card-body .setting-item-heading {
+  padding-top: 8px;
+  opacity: 0.6;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Options list */
+.mv-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 4px 0 8px;
+}
+
+.mv-option-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mv-option-input {
+  flex: 1;
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.mv-option-value {
+  max-width: 140px;
+}
+
+.mv-option-arrow {
+  color: var(--text-faint);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.mv-option-del {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text-muted);
+  opacity: 0.5;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.mv-option-del:hover {
+  opacity: 1;
+  color: var(--color-red);
+  background: var(--background-modifier-hover);
+}
+
+/* ── Collapsible sections ─────────────────────────────────── */
+.mv-collapsible-body--collapsed {
+  display: none;
+}
+
+.mv-collapsible-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 0;
+  font-weight: 600;
+  user-select: none;
+}
+
+/* Separator only when body is visible — avoids double-line when collapsed */
+.mv-collapsible-body:not(.mv-collapsible-body--collapsed) {
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+.mv-collapsible-header:hover {
+  color: var(--text-accent);
+}
+
+.mv-collapsible-chevron {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.mv-collapsible-title {
+  font-size: 14px;
+}
+
+/* ── Drag-and-drop ────────────────────────────────────────── */
+.mv-field-card[draggable="true"] {
+  cursor: grab;
+}
+
+.mv-dragging {
+  opacity: 0.4;
+}
+
+.mv-drag-over {
+  outline: 2px dashed var(--interactive-accent);
+}
+
+/* ── Utility: number inputs ───────────────────────────────── */
+.mv-input-number-sm {
+  width: 80px;
+}
+.mv-input-number-md {
+  width: 100px;
+}
+
+/* ── Utility: visibility toggle ──────────────────────────── */
+.mv-hidden {
+  display: none;
+}
+
+.mv-field-empty {
+  color: var(--text-muted);
+  font-style: italic;
+  cursor: pointer;
+}
+
+/* ── Scan vault button ────────────────────────────────────── */
+.mv-sidebar-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.mv-sidebar-action-btn {
+  font-size: 12px;
+  padding: 6px 8px;
+  text-align: left;
+}
+
+.mv-scan-btn {
+  margin-bottom: 0;
+}
+
+.mv-sidebar-action-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.mv-copy-btn {
+  white-space: normal;
+  line-height: 1.25;
+}
+
+/* ── Context menu modal ───────────────────────────────────── */
+.mv-context-modal {
+  padding: 8px 0;
+  min-width: 380px;
+}
+
+.mv-context-modal h4.mv-context-section-header {
+  margin: 8px 0 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.mv-field-row {
+  display: grid;
+  grid-template-columns: 130px 20px 1fr 22px;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.mv-field-row:last-child {
+  border-bottom: none;
+}
+
+.mv-field-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-normal);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mv-field-type-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: var(--text-faint);
+  opacity: 0.6;
+}
+
+.mv-field-type-icon svg {
+  width: 13px;
+  height: 13px;
+  stroke-width: 2px;
+}
+
+.mv-field-badge {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--text-faint);
+  background: var(--background-modifier-border);
+  padding: 1px 5px;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.mv-field-value {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  min-width: 0;
+}
+
+.mv-field-value input[type="text"]:not(.mv-list-add-input),
+.mv-field-value input[type="number"],
+.mv-field-value input[type="url"],
+.mv-field-value input[type="date"] {
+  width: 100%;
+  min-width: 0;
+  font-size: 13px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.mv-field-value input[type="text"]:not(.mv-list-add-input):focus,
+.mv-field-value input[type="number"]:focus,
+.mv-field-value input[type="url"]:focus,
+.mv-field-value input[type="date"]:focus {
+  outline: none;
+  border-color: var(--interactive-accent);
+}
+
+.mv-field-fixed {
+  font-size: 12px;
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+.mv-number-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.mv-number-row input[type="number"] {
+  flex: 1;
+  min-width: 0;
+}
+
+.mv-field-range-hint {
+  font-size: 11px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.mv-field-err {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--color-red);
+  transition: background 0.15s;
+}
+
+.mv-field-err.has-errors:hover {
+  background: var(--background-modifier-hover);
+}
+
+.mv-field-err svg {
+  width: 13px;
+  height: 13px;
+  stroke-width: 2px;
+}
+
+.mv-chip-sep {
+  color: var(--text-faint);
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.mv-chip {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 8px;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-normal);
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition:
+    background 0.15s,
+    border-color 0.15s,
+    color 0.15s;
+}
+
+.mv-chip:hover {
+  background: var(--background-modifier-hover);
+  border-color: var(--background-modifier-border-hover, var(--background-modifier-border));
+}
+
+.mv-chip--tags {
+  color: var(--text-accent);
+  border-color: var(--interactive-accent);
+}
+
+.mv-chip-edit {
+  font-size: 11px;
+  padding: 2px 8px;
+  flex-shrink: 0;
+}
+
+.mv-wikilink {
+  font-size: 12px;
+  color: var(--text-accent);
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+.mv-wikilink:hover {
+  text-decoration-color: var(--text-accent);
+}
+
+.mv-list-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.mv-list-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.mv-list-row input {
+  flex: 1;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.mv-list-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+
+.mv-chip--removable {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.mv-chip-remove {
+  font-size: 11px;
+  opacity: 0.6;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.mv-chip-remove:hover {
+  opacity: 1;
+  color: var(--color-red);
+}
+
+/* Compact "+" trigger button — uses <button> to avoid input min-height quirks */
+.mv-list-add-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  align-self: center;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0;
+  border-radius: 6px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+  color: var(--text-faint);
+  cursor: pointer;
+  transition:
+    border-color 0.15s,
+    background 0.15s,
+    color 0.15s,
+    transform 0.15s;
+}
+
+.mv-list-add-btn:hover {
+  border-color: var(--interactive-accent);
+  background: var(--background-modifier-hover);
+  color: var(--interactive-accent);
+  transform: translateY(-1px);
+}
+
+/* Inline text input shown after clicking the "+" button */
+.mv-list-add-input {
+  width: 80px;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding: 1px 6px;
+  border-radius: 6px;
+  border: 1px solid var(--interactive-accent);
+  background: var(--background-primary);
+  color: var(--text-normal);
+  outline: none;
+  align-self: center;
+}
+
+/* Edit input (right-click) — slightly wider to show existing content */
+.mv-list-edit-input {
+  width: 120px;
+}
+
+.mv-context-footer {
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px solid var(--background-modifier-border);
+  font-size: 11px;
+  color: var(--text-faint);
+}
+
+/* ── Sidebar vault stats ──────────────────────────────────── */
+.mv-sidebar-divider {
+  border: none;
+  border-top: 1px solid var(--background-modifier-border);
+  margin: 8px 0;
+}
+
+.mv-sidebar-filename {
+  margin: 4px 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.mv-sidebar-section-title {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.mv-vault-stats {
+  margin-bottom: 4px;
+}
+
+.mv-vault-stats-title {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.mv-stat-row {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  padding: 2px 0;
+  font-size: 13px;
+}
+
+.mv-stat-count {
+  font-weight: 600;
+  min-width: 2.5em;
+  text-align: right;
+}
+
+.mv-stat-errors {
+  color: var(--color-red);
+}
+.mv-stat-warnings {
+  color: var(--color-yellow);
+}
+.mv-stat-clean {
+  color: var(--color-green);
+}
+.mv-stat-none {
+  color: var(--text-faint);
+}
+
+.mv-stat-label {
+  color: var(--text-muted);
+}
+
+.mv-vault-stats-time {
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--text-faint);
+}
+
+.mv-vault-issues-title {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.mv-vault-issues-summary {
+  margin: 0 0 8px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.mv-vault-issues-empty {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.mv-vault-group {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.mv-vault-group-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  cursor: pointer;
+  padding: 8px;
+  background: var(--background-secondary);
+}
+
+.mv-vault-group-title {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.mv-vault-group-meta {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.mv-vault-group-body {
+  padding: 6px 8px 8px;
+}
+
+.mv-vault-note {
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding: 6px 0;
+}
+
+.mv-vault-note:last-child {
+  border-bottom: none;
+}
+
+.mv-vault-note-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.mv-vault-note-link {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--link-color);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.mv-vault-note-link:hover {
+  text-decoration: underline;
+}
+
+.mv-vault-note-meta {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.mv-vault-note-path {
+  margin-top: 2px;
+  margin-bottom: 4px;
+  font-size: 11px;
+  color: var(--text-faint);
+  word-break: break-all;
+}
+
+/* ── Schema editor: collapsed field cards ─────────────────── */
+.mv-field-collapse-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.mv-field-collapse-toggle svg {
+  width: 14px;
+  height: 14px;
+}
+
+.mv-field-card-header {
+  cursor: pointer;
+}
+
+/* ── Context menu: hover-highlight from footer ────────────── */
+.mv-field-row--highlighted {
+  background: var(--background-modifier-hover);
+  border-radius: 4px;
+}
+
+.mv-footer-schema-name {
+  cursor: pointer;
+  color: var(--text-accent);
+  border-bottom: 1px dashed transparent;
+  transition: border-color 0.1s;
+}
+
+.mv-footer-schema-name:hover {
+  border-bottom-color: var(--text-accent);
+}
+
+.mv-footer-label {
+  color: var(--text-faint);
+}
+
+.mv-footer-arrow {
+  color: var(--text-faint);
+}
+
+.mv-footer-errors {
+  color: var(--color-red);
+}
+
+.mv-footer-filepath {
+  display: block;
+  opacity: 0.5;
+  margin-top: 2px;
+}
+
+/* ── Context menu: dense layout ───────────────────────────── */
+/* Higher specificity (.modal-content.mv-context-modal) overrides Obsidian's
+   own .modal-content top padding so there's no wasted space above the fields. */
+.modal-content.mv-context-modal {
+  padding: 4px 16px 12px;
+}
+
+/* Obsidian wraps titleEl in a .modal-header div with margin-bottom that
+   creates wasted space even when the title is empty. */
+.modal:has(.modal-content.mv-context-modal) .modal-header {
+  display: none;
+}
+
+.mv-hidden {
+  display: none;
+}
+
+.mv-context-section {
+  margin-bottom: 8px;
+}
+
+.mv-field-row {
+  grid-template-columns: 130px 20px 1fr 22px;
+  min-height: 28px;
+  padding: 4px 0;
+}
+
+.mv-field-value input[type="text"]:not(.mv-list-add-input),
+.mv-field-value input[type="number"],
+.mv-field-value input[type="url"],
+.mv-field-value input[type="date"] {
+  font-size: 12px;
+  padding: 2px 6px;
+  /* Prevent very long values from overflowing */
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Suppress Obsidian's type icon when we inject our own ──  */
+/* Only hide when the setting is active (mv-hide-type-icon body class) */
+body.mv-hide-type-icon
+  .metadata-property:has([data-mv-picker])
+  .metadata-content
+  .metadata-property-icon {
+  display: none !important;
+}
+
+/* ── URL field in context modal ─────────────────────────── */
+.mv-url-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  flex: 1;
+}
+
+.mv-url-link {
+  font-size: 12px;
+  color: var(--link-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 260px;
+  flex: 1;
+}
+
+.mv-url-link:hover {
+  text-decoration: underline;
+}
+
+.mv-url-input {
+  flex: 1;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--interactive-accent);
+  background: var(--background-primary);
+  color: var(--text-normal);
+  min-width: 0;
+}
+
+/* ── Field order drag-and-drop ───────────────────────────── */
+.mv-order-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.mv-order-chip {
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+  color: var(--text-muted);
+  cursor: grab;
+  user-select: none;
+  transition:
+    background 0.1s,
+    border-color 0.1s;
+}
+
+.mv-order-chip.is-own {
+  border-color: var(--interactive-accent);
+  color: var(--text-normal);
+  font-weight: 500;
+}
+
+.mv-order-chip.is-excluded {
+  background: transparent;
+  border-color: var(--color-red);
+  color: var(--color-red);
+  text-decoration: line-through;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.mv-order-chip:hover {
+  background: var(--background-modifier-hover);
+}
+
+.mv-order-chip.mv-dragging {
+  opacity: 0.4;
+}
+
+.mv-order-chip.mv-drag-over {
+  outline: 2px dashed var(--interactive-accent);
+  background: var(--background-modifier-hover);
+}
+
+/* ── Inherited fields description hint ───────────────────── */
+.mv-inherited-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0 0 8px;
+}
+
+/* ── Expression input (full width) ───────────────────────── */
+.mv-expression-input {
+  width: 100%;
+}
+
+/* ── JS textarea ─────────────────────────────────────────── */
+.mv-js-textarea {
+  width: 100%;
+  font-family: var(--font-monospace);
+  font-size: 12px;
+  resize: vertical;
+}
+
+/* ── Options mode toggle ─────────────────────────────────── */
+.mv-options-mode {
+  display: flex;
+  gap: 6px;
+  margin: 4px 0 8px;
+}
+
+.mv-options-mode-btn {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.mv-options-mode-btn.is-active {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-color: var(--interactive-accent);
+}
+
+/* ── Quick edit modal ────────────────────────────────────── */
+.mv-quick-edit-modal {
+  max-width: 320px;
+}
+
+.mv-quick-edit-modal .mv-qe-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+.mv-qe-number-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mv-qe-number-row .mv-qe-input {
+  flex: 1;
+  width: auto;
+}
+
+.mv-qe-range-hint {
+  font-size: 11px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.mv-qe-input {
+  width: 100%;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.mv-qe-input:focus {
+  outline: none;
+  border-color: var(--interactive-accent);
+}
+
+.mv-qe-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.mv-qe-list-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mv-qe-list-input {
+  flex: 1;
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.mv-qe-list-add {
+  border-style: dashed;
+}
+
+.mv-qe-list-del {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text-muted);
+  opacity: 0.5;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.mv-qe-list-del:hover {
+  opacity: 1;
+  color: var(--color-red);
+  background: var(--background-modifier-hover);
+}
+
+.mv-qe-done {
+  margin-top: 4px;
+  width: 100%;
+}
+
+/* ── Clickable type icon in context modal ────────────────── */
+.mv-field-type-icon--clickable {
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 1px;
+  transition:
+    background 0.1s,
+    opacity 0.1s;
+}
+
+.mv-field-type-icon--clickable:hover {
+  opacity: 1;
+  background: var(--background-modifier-hover);
+}
+
+/* ── Schema editor inheritance nav ──────────────────────── */
+.mv-editor-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.mv-nav-btn {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+  color: var(--text-accent);
+  cursor: pointer;
+}
+
+.mv-nav-btn:hover {
+  background: var(--background-modifier-hover);
+}

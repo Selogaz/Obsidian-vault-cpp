@@ -5,6 +5,8 @@ tags:
 aliases:
   - xorshift
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2026-03-05T17:17:24+03:00
 updated: 2026-03-05T17:17:24+03:00
 ---

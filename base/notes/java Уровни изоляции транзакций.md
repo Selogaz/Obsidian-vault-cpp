@@ -5,6 +5,8 @@ tags:
 aliases:
   - Уровни изоляции
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-08-14T09:54:36+03:00
 updated: 2025-10-08T19:12:19+03:00
 sr-due: 2025-10-12

@@ -5,6 +5,8 @@ tags:
 aliases:
   - пример инверсии управления
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-05T18:31:44+03:00
 updated: 2025-09-21T12:48:12+03:00
 sr-due: 2026-11-08

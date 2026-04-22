@@ -1,7 +1,16 @@
 ---
 tags:
   - mark/gtd
-alises:
+  - task/inbox
+  - task/idea
+  - task/next_action
+  - task/one-off
+  - task/multistep
+  - task/someday
+  - task/reference
+  - task/waiting_for
+  - task/regular
+aliases:
   - планирование
   - задачи
   - tasks
@@ -12,20 +21,21 @@ cssclasses:
   - hide-backlinks
 obsidianUIMode: preview
 icon: ✅
+color: "#e8e8e8"
 ---
 
-#task/inbox [[inbox|inbox]]
+[[inbox|inbox]]
 
-[[today|📅 today]]
-[[upcoming|🔜 upcoming]]
-[[calendar|🗓️ calendar]]
-[[priority|🔝 priorities]]
+[[today|today]]
+[[upcoming|upcoming]]
+[[calendar|calendar]]
+[[priority|priorities]]
 
-#task/idea [[idea|ideas]]
-#task/next_action [[next_action|next action]]
-#task/one-off [[one-off|one-off]]
-#task/multistep [[multistep|multistep]]
-#task/someday [[someday|someday]]
-#task/reference [[reference|reference]]
-#task/waiting_for [[waiting_for|waiting for]]
-#task/regular [[regular|regular]]
+[[idea|ideas]]
+[[next_action|next action]]
+[[one-off|one-off]]
+[[multistep|multistep]]
+[[someday|someday]]
+[[reference|reference]]
+[[waiting_for|waiting for]]
+[[regular|regular]]

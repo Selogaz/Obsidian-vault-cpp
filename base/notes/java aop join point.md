@@ -3,9 +3,11 @@ tags:
   - note/specific/code
   - category/java
 aliases:
-  - aop join point
   - точка соединения
+  - aop join point
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-06T11:50:53+03:00
 updated: 2025-09-21T12:40:25+03:00
 sr-due: 2026-10-14

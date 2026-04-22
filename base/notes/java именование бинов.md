@@ -5,11 +5,13 @@ tags:
 aliases:
   - именование бинов
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-13T07:23:17+03:00
 updated: 2025-10-02T17:42:38+03:00
-sr-due: null
-sr-interval: null
-sr-ease: null
+sr-due:
+sr-interval:
+sr-ease:
 ---
 
 **именование бинов**

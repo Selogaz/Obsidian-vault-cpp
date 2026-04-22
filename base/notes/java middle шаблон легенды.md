@@ -5,6 +5,8 @@ tags:
 aliases:
   - middle шаблон легенды
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-21T14:32:34+03:00
 updated: 2025-11-02T16:29:36+03:00
 sr-due: 2025-10-12

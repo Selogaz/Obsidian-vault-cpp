@@ -5,6 +5,8 @@ tags:
 aliases:
   - загрузка пропертей и профили
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-13T11:56:44+03:00
 updated: 2025-09-21T12:12:36+03:00
 sr-due: 2026-09-23

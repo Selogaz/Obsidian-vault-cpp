@@ -1,15 +1,18 @@
 ---
 tags:
-  - system/high/hierarchy
-  - mark/discourse
   - category/computer_science
+  - mark/discourse
+  - system/high/hierarchy
 aliases: []
+relevant: false
 category:
   - "[[computer science]]"
 meta:
-  - "[[hardware]]"
   - "[[algorithms]]"
-relevant: false
+  - "[[hardware]]"
+problem:
+icon: 🧬
+color: "#b089c4"
 created: 2026-03-21T00:00:00+07:00
 updated: 2026-03-21T20:57:15+03:00
 ---

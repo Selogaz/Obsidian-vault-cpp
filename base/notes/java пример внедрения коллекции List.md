@@ -5,6 +5,8 @@ tags:
 aliases:
   - пример внедрения коллекции List
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-15T09:05:50+03:00
 updated: 2025-10-02T16:56:34+03:00
 sr-due: 2026-11-12

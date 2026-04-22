@@ -5,6 +5,8 @@ tags:
 aliases:
   - ExecutorService
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-07-16T11:11:05+03:00
 updated: 2025-10-06T19:19:16+03:00
 sr-due: 2025-10-10

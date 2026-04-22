@@ -1,11 +1,13 @@
 ---
 tags:
-  - system/high/meta
   - category/obsidian
+  - system/high/meta
 aliases: []
+relevant: false
 category:
   - "[[obsidian]]"
-relevant: false
+icon: 🔎
+color: "#6fa8d6"
 created: 2026-03-20T18:15:49+03:00
 updated: 2026-03-20T18:16:39+03:00
 ---

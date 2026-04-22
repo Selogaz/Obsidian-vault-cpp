@@ -9,10 +9,12 @@ aliases: []
 status: 🟦
 source:
   - "[[full stack itproger]]"
-next:
-url:
 start: 2026-01-25T20:13:26+03:00
 end:
+next:
+url:
+icon: 📓
+color: "#6f97c8"
 created: 2026-01-25T20:13:26+03:00
 updated: 2026-01-25T20:44:23+03:00
 ---

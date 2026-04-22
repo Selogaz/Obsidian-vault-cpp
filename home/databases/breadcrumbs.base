@@ -27,14 +27,12 @@ views:
       - formula.icon
       - file.name
     sort:
-      - property: file.name
-        direction: ASC
       - property: formula.rank
         direction: ASC
       - property: file.tags
         direction: ASC
     columnSize:
-      formula.link: 1
+      formula.icon: 1
   - type: table
     name: 🥢 2-hop
     filters:

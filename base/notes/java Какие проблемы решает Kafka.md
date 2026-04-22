@@ -5,6 +5,8 @@ tags:
 aliases:
   - Какие проблемы решает Kafka
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-16T18:36:09+03:00
 updated: 2025-10-08T19:33:45+03:00
 sr-due: 2025-10-12

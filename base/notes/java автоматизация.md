@@ -5,6 +5,8 @@ tags:
 aliases:
   - автоматизация
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-11-15T16:53:51+03:00
 updated: 2025-11-15T16:53:51+03:00
 ---

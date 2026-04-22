@@ -43,6 +43,13 @@
         ],
         "key": "д",
         "hideHotkeyGuide": false
+      },
+      {
+        "modifiers": [
+          "Meta"
+        ],
+        "key": "l",
+        "hideHotkeyGuide": false
       }
     ],
     "select with custom alias": [],

@@ -4,6 +4,8 @@ tags:
   - category/japanese
 aliases: []
 deck: obsidian::japanese
+icon: 📝
+color: "#d0a570"
 created: 2026-04-07T19:38:25+03:00
 updated: 2026-04-22T09:28:37+03:00
 ---

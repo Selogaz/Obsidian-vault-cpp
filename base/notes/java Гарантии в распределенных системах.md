@@ -5,6 +5,8 @@ tags:
 aliases:
   - Гарантии в распределенных системах
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-27T18:40:56+03:00
 updated: 2025-10-08T19:20:57+03:00
 sr-due: 2025-10-12

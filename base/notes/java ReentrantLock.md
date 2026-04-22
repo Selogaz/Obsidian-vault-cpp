@@ -5,6 +5,8 @@ tags:
 aliases:
   - ReentrantLock
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-07-16T14:30:41+03:00
 updated: 2025-10-08T18:35:48+03:00
 sr-due: 2025-10-12

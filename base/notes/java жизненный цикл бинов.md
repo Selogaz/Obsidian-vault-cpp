@@ -5,6 +5,8 @@ tags:
 aliases:
   - жизненный цикл бинов
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-15T11:28:28+03:00
 updated: 2025-10-02T15:58:53+03:00
 sr-due: 2026-09-20

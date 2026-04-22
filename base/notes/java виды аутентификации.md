@@ -5,6 +5,8 @@ tags:
 aliases:
   - виды аутентификации
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-30T19:23:23+03:00
 updated: 2025-10-08T19:06:14+03:00
 sr-due: 2025-10-12

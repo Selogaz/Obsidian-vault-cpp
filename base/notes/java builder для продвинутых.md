@@ -5,6 +5,8 @@ tags:
 aliases:
   - builder для продвинутых
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-10-01T20:05:53+03:00
 updated: 2025-10-08T18:50:38+03:00
 sr-due: 2025-10-12

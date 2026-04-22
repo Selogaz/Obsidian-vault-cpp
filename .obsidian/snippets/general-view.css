@@ -1,11 +1,20 @@
 /* FONTS (loaded locally from fonts.css) */
 body {
-  --font-text-theme: 'Rubik', 'Noto Color Emoji', sans-serif !important;
-  --font-editor-theme: 'Rubik', 'Noto Color Emoji', sans-serif !important;
+  --font-text-theme: 'IBM Plex Sans', 'Noto Color Emoji', sans-serif !important;
+  --font-editor-theme:
+    'IBM Plex Mono', 'Noto Color Emoji', sans-serif !important;
   --font-monospace-theme:
-    'Roboto Mono', 'Noto Color Emoji', monospace !important;
-  --font-interface-theme: 'Inter', 'Noto Color Emoji', sans-serif !important;
-  --font-heading-theme: 'Tinos', 'Noto Color Emoji', serif !important;
+    'IBM Plex Mono', 'Noto Color Emoji', monospace !important;
+  --font-interface-theme:
+    'IBM Plex Sans', 'Noto Color Emoji', sans-serif !important;
+  --font-heading-theme: 'IBM Plex Serif', 'Noto Color Emoji', serif !important;
+
+  --font-weight-normal: 500 !important;
+}
+
+/* Inline title */
+.inline-title:not([data-level]) {
+  font-family: var(--font-heading-theme);
 }
 
 /* Shimmering focus */
@@ -44,10 +53,14 @@ body {
 /* bases header icons */
 .bases-table-header-icon,
 .mb-search-modal-element-description,
+/* hide new button */
+.bases-toolbar-item.bases-toolbar-new-item-menu,
 /* new note on kanban view */
-.board-view .board-new-note-button,
+/* .board-view .board-new-note-button, */
 /* properties heading */
 .metadata-properties-heading,
+/* open daily note in metadata */
+.metadata-property-value .clickable-icon,
 /* properties */
 [data-property-key='sr-due'],
 [data-property-key='sr-interval'],
@@ -61,6 +74,9 @@ body {
 [data-property-key='obsidianUIMode'],
 [data-property-key='BC-tag-note'],
 [data-property-key='BC-tag-note-field'],
-[data-property-key='longform'] {
+[data-property-key='longform'],
+[data-property-key='guid'],
+[data-property-key='icon'],
+[data-property-key='color'] {
   display: none !important;
 }

@@ -5,6 +5,8 @@ tags:
 aliases:
   - Singleton
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-08-10T13:11:13+03:00
 updated: 2025-10-08T18:51:50+03:00
 sr-due: 2025-10-12

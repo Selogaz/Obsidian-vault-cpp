@@ -1,0 +1,288 @@
+{
+  "devMode": false,
+  "ignoreCodeBlockRestrictions": false,
+  "preferredDateFormat": "YYYY-MM-DD",
+  "firstWeekday": {
+    "index": 1,
+    "name": "Monday",
+    "shortName": "Mo"
+  },
+  "syncInterval": 200,
+  "enableJs": false,
+  "viewFieldDisplayNullAsEmpty": false,
+  "enableSyntaxHighlighting": true,
+  "enableEditorRightClickMenu": true,
+  "inputFieldTemplates": [],
+  "buttonTemplates": [
+    {
+      "label": "✔️ Add task",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "New task",
+      "id": "add-task-note",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "templates/create/additions/tasks/template.md",
+          "folderPath": "base/tasks",
+          "fileName": "Untitled",
+          "openNote": false,
+          "openIfAlreadyExists": false
+        }
+      ]
+    },
+    {
+      "label": "📍 Add milestone",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "New milestone",
+      "id": "add-milestone-note",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "templates/create/additions/tasks/milestone.md",
+          "folderPath": "base/tasks",
+          "fileName": "Untitled",
+          "openNote": false,
+          "openIfAlreadyExists": false
+        }
+      ]
+    },
+    {
+      "label": "📓 Add conspectus",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "New conspectus",
+      "id": "add-conspectus",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "templates/create/additions/conspectuses/template.md",
+          "folderPath": "base/additions/conspectuses",
+          "fileName": "Untitled",
+          "openNote": false,
+          "openIfAlreadyExists": false
+        }
+      ]
+    },
+    {
+      "label": "🧪 Add experiment",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "New experiment",
+      "id": "add-experiment",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "templates/create/additions/experiments/template.md",
+          "folderPath": "base/additions/experiments",
+          "fileName": "Untitled",
+          "openNote": false,
+          "openIfAlreadyExists": false
+        }
+      ]
+    },
+    {
+      "label": "🗣️ Add meeting",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "New meeting",
+      "id": "add-meeting",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "templates/create/additions/meetings/template.md",
+          "folderPath": "base/additions/meetings",
+          "fileName": "Untitled",
+          "openNote": false,
+          "openIfAlreadyExists": false
+        }
+      ]
+    },
+    {
+      "label": "👅 Add conversation",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "New conversation",
+      "id": "add-conversation",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "templates/create/additions/conversations/template.md",
+          "folderPath": "base/additions/conversations",
+          "fileName": "Untitled",
+          "openNote": false,
+          "openIfAlreadyExists": false
+        }
+      ]
+    },
+    {
+      "label": "🤝 Add negotiation",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "New negotiation",
+      "id": "add-negotiation",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "templates/create/additions/negotiations/template.md",
+          "folderPath": "base/additions/negotiations",
+          "fileName": "Untitled",
+          "openNote": false,
+          "openIfAlreadyExists": false
+        }
+      ]
+    },
+    {
+      "label": "🚨 Add report",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "New report",
+      "id": "add-report",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "templates/create/additions/reports/template.md",
+          "folderPath": "base/additions/reports",
+          "fileName": "Untitled",
+          "openNote": false,
+          "openIfAlreadyExists": false
+        }
+      ]
+    },
+    {
+      "label": "💪 Add practice",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "New practice",
+      "id": "add-practice",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "templates/create/additions/practice/template.md",
+          "folderPath": "base/additions/practice",
+          "fileName": "Untitled",
+          "openNote": false,
+          "openIfAlreadyExists": false
+        }
+      ]
+    },
+    {
+      "label": "🕵 Add research",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "New research",
+      "id": "add-research",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "templates/create/additions/researches/template.md",
+          "folderPath": "base/additions/researches",
+          "fileName": "Untitled",
+          "openNote": false,
+          "openIfAlreadyExists": false
+        }
+      ]
+    },
+    {
+      "label": "🤖 Add generated",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "New generated note",
+      "id": "add-generated",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "templates/create/additions/generated/template.md",
+          "folderPath": "base/additions/generated",
+          "fileName": "Untitled",
+          "openNote": false,
+          "openIfAlreadyExists": false
+        }
+      ]
+    },
+    {
+      "label": "💬 Add social",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "New social note",
+      "id": "add-social",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "templates/create/additions/social/template.md",
+          "folderPath": "base/additions/social",
+          "fileName": "Untitled",
+          "openNote": false,
+          "openIfAlreadyExists": false
+        }
+      ]
+    },
+    {
+      "label": "🖇️ update relations",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "",
+      "id": "task-update-relation",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:df650bef-3b43-4cba-bdff-cc2597221496"
+        }
+      ]
+    }
+  ],
+  "excludedFolders": ["templates"]
+}

@@ -1,0 +1,11 @@
+{
+  "columnColors": {
+    "note.status:⬛": "Grey",
+    "note.status:❄": "Grey",
+    "note.status:🟥": "Red",
+    "note.status:🟦": "Blue",
+    "note.status:🟩": "Green",
+    "note.status:📢": "Grey",
+    "note.status:⚛": "Purple"
+  }
+}

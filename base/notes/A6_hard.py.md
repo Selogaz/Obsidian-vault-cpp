@@ -4,6 +4,8 @@ tags:
   - category/study
 aliases: []
 deck: obsidian::study
+icon: 📝
+color: "#d0a570"
 created: 2026-03-15T23:32:28+03:00
 updated: 2026-03-16T19:49:52+03:00
 ---

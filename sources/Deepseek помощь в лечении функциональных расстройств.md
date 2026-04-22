@@ -4,6 +4,7 @@ tags:
   - source/article/resource
   - category/health
 aliases: []
+addition:
 status: 🟦
 rating:
 scientificity:
@@ -13,9 +14,12 @@ meta:
 problem:
 creator:
 production:
-url: https://chat.deepseek.com/share/xdjnwx4sxj1650hy2x
 start: 2026-03-27T13:38:41+03:00
 end:
+url:
+  - https://chat.deepseek.com/share/xdjnwx4sxj1650hy2x
+icon: 🌐
+color: "#7575c0"
 created: 2026-03-27T13:38:41+03:00
 updated: 2026-03-30T15:38:47+03:00
 ---

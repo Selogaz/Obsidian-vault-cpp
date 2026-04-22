@@ -46,6 +46,27 @@
     "excalidraw-open-md": "checkbox",
     "excalidraw-embed-md": "checkbox",
     "excalidraw-export-internal-links": "checkbox",
-    "TQ_show_toolbar": "checkbox"
+    "TQ_show_toolbar": "checkbox",
+    "start": "date",
+    "end": "date",
+    "id": "text",
+    "attribute": "text",
+    "description": "text",
+    "project": "multitext",
+    "milestone": "multitext",
+    "status": "text",
+    "priority": "text",
+    "related": "multitext",
+    "blockedBy": "multitext",
+    "category": "multitext",
+    "meta": "multitext",
+    "problem": "multitext",
+    "creator": "multitext",
+    "production": "multitext",
+    "url": "multitext",
+    "addition": "multitext",
+    "cover": "text",
+    "prefix": "text",
+    "taskCount": "number"
   }
 }

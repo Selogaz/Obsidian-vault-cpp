@@ -5,6 +5,8 @@ tags:
 aliases:
   - контейнер бинов
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-11T17:39:59+03:00
 updated: 2025-09-28T20:45:15+03:00
 sr-due: 2025-10-13

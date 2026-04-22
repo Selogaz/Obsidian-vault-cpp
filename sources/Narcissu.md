@@ -4,6 +4,7 @@ tags:
   - source/game
   - category/english
 aliases: []
+addition:
 status: ❄
 rating:
 scientificity:
@@ -15,6 +16,8 @@ creator:
 production:
 start: 2026-03-20T16:26:03+03:00
 end:
+icon: 🎮
+color: "#3a9560"
 created: 2026-03-20T16:26:03+03:00
 updated: 2026-04-02T14:34:18+03:00
 ---

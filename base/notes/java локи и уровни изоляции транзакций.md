@@ -5,6 +5,8 @@ tags:
 aliases:
   - локи и уровни изоляции транзакций
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-08-30T11:24:41+03:00
 updated: 2025-10-08T19:33:07+03:00
 sr-due: 2025-10-12

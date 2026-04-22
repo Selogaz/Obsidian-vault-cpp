@@ -1,13 +1,17 @@
 ---
 tags:
-  - system/high/hierarchy
   - category/study
+  - system/high/hierarchy
 aliases:
-  - thesis writing
   - roadmap thesis
+  - thesis writing
+relevant: false
 category:
   - "[[study]]"
-relevant: false
+meta:
+problem:
+icon: 🧬
+color: "#b089c4"
 created: 2026-03-21T00:00:00+07:00
 updated: 2026-03-21T18:39:11+03:00
 ---

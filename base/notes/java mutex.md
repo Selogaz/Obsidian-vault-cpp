@@ -5,6 +5,8 @@ tags:
 aliases:
   - mutex
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-07-16T12:03:00+03:00
 updated: 2025-10-08T18:34:14+03:00
 sr-due: 2025-10-12

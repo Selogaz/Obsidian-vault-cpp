@@ -5,6 +5,8 @@ tags:
 aliases:
   - основы git
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-10-02T16:55:30+03:00
 updated: 2026-04-07T14:05:44+03:00
 sr-due: 2025-10-12

@@ -5,6 +5,8 @@ tags:
 aliases:
   - virtual-pets-server web.xml
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-15T09:28:58+03:00
 updated: 2025-09-21T12:13:25+03:00
 sr-due: 2026-09-19

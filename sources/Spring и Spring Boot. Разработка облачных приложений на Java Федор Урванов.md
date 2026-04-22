@@ -4,7 +4,10 @@ tags:
   - source/book
   - category/java
 aliases: []
+addition:
 status: ❄
+rating:
+scientificity:
 category:
   - "[[java]]"
 meta:
@@ -13,9 +16,11 @@ creator:
 production:
 start: 2025-05-31T20:58:17+03:00
 end:
-total_hours: 0
+icon: 📖
+color: "#b5b570"
 created: 2025-05-31T20:58:17+03:00
 updated: 2026-04-02T14:36:37+03:00
+total_hours: 0
 ---
 
 - [[введение в книгу Федора Урванова по спрингу]]

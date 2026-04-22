@@ -5,6 +5,8 @@ tags:
 aliases:
   - Strategy
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-08-10T12:04:51+03:00
 updated: 2025-10-16T10:37:11+03:00
 sr-due: 2025-11-15

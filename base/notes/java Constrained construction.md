@@ -5,6 +5,8 @@ tags:
 aliases:
   - Constrained construction
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-06T08:06:50+03:00
 updated: 2026-03-05T17:07:28+03:00
 sr-due: 2026-12-25

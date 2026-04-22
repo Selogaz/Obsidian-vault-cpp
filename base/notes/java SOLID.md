@@ -5,6 +5,8 @@ tags:
 aliases:
   - SOLID
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-08-10T12:59:57+03:00
 updated: 2025-10-06T19:21:29+03:00
 sr-due: 2025-10-10

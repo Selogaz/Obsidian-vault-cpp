@@ -9,7 +9,7 @@ filters:
             - category.contains(link(this.file.name))
 formulas:
   type: file.tags.filter(value.startsWith("#project/"))[0].replace(/^.*\//, '')
-  kanban: if(status.contains("🟦"), "① 🟦 In Progress", if(status.contains("🟥"), "② 🟥 ToDo", if(status.contains("❄"), "③ ❄ Hold", if(status.contains("🟩"), "④ 🟩 Done", "⑤ Other"))))
+  kanban: if(status.contains("🟦"), "① 🟦 In Progress", if(status.contains("🟥"), "② 🟥 ToDo", if(status.contains("📥"), "③ 📥 Inbox", if(status.contains("❄"), "④ ❄ Hold", if(status.contains("🟩"), "⑤ 🟩 Done", "⑥ Other")))))
   priority: if(priority.contains("🇦"), "① 🇦 Important and urgent", if(priority.contains("🇧"), "② 🇧 Important and non-urgent", if(priority.contains("🇨"), "③ 🇨 Common project", if(priority.contains("🇩"), "④ 🇩 Delegate", if(priority.contains("🇪"), "⑤ 🇪 Eliminate", "⑥ Other")))))
   backlinks: file.backlinks.length
   outlinks: file.links.length
@@ -21,6 +21,8 @@ formulas:
   problem_type_valid: if(problem.isEmpty(), "✅", if(list(problem).filter(value.asFile().hasTag("system/high/problem")).length == list(problem).length, "✅", "❌"))
   creator_type_valid: if(creator.isEmpty(), "✅", if(list(creator).filter(value.asFile().tags.filter(value.startsWith("#creator/") || value.startsWith("#contact/")).length > 0).length == list(creator).length, "✅", "❌"))
   production_type_valid: if(production.isEmpty(), "✅", if(list(production).filter(value.asFile().tags.filter(value.startsWith("#production/")).length > 0).length == list(production).length, "✅", "❌"))
+  end_year: if(end, end.toString().slice(0, 4), "")
+  tasks_progress: if(tasks.filter(value.toString().startsWith("- [")).length, tasks.filter(value.toString().startsWith("- [x]")).length + " / " + tasks.filter(value.toString().startsWith("- [")).length, "—")
 properties:
   formula.type:
     displayName: 🗄️ type
@@ -42,6 +44,10 @@ properties:
     displayName: 🏬 production
   note.url:
     displayName: 🔗 url
+  note.tags:
+    displayName: 🏷️ tags
+  note.aliases:
+    displayName: 🔖 aliases
   file.name:
     displayName: 🔤 title
   note.start:
@@ -68,6 +74,8 @@ properties:
     displayName: 🏷️
   formula.production_type_valid:
     displayName: 🏷️
+  formula.tasks_progress:
+    displayName: ✅
 views:
   - type: table
     name: "📊 All: Short View"
@@ -84,6 +92,8 @@ views:
       - start
       - end
       - url
+      - tags
+      - aliases
     sort:
       - property: formula.kanban
         direction: ASC
@@ -91,7 +101,6 @@ views:
         direction: DESC
       - property: formula.created_relative
         direction: DESC
-    limit: 28
     columnSize:
       file.name: 530
       note.addition: 90
@@ -119,6 +128,8 @@ views:
       - start
       - end
       - url
+      - tags
+      - aliases
     sort:
       - property: formula.kanban
         direction: ASC
@@ -126,7 +137,6 @@ views:
         direction: DESC
       - property: formula.created_relative
         direction: DESC
-    limit: 28
     columnSize:
       file.name: 530
       note.addition: 90
@@ -146,11 +156,9 @@ views:
   - type: table
     name: "📋 Workflow: Kanban (v)"
     filters:
-      or:
-        - status.contains("❄")
-        - status.contains("🟥")
-        - status.contains("🟦")
-        - status.contains("🟩")
+      and:
+        - '!status.contains("⬛")'
+        - '!status.contains("📢")'
     groupBy:
       property: formula.kanban
       direction: ASC
@@ -179,44 +187,159 @@ views:
       note.priority: 1
   - type: board-view
     name: "📋 Workflow: Kanban (h)"
+    filters:
+      and:
+        - '!status.contains("⬛")'
+        - '!status.contains("📢")'
     order:
       - file.name
       - priority
       - category
     groupProperty: note.status
-    hideEmptyGroups: false
     hiddenGroups:
-      - 💡
-      - ⚛️
-      - ⚛
+      - Empty Group
+      - 📢
       - 🧠
       - 🖍
       - 🔎
       - 📦
       - 📋
+      - 💡
+      - ⚛️
+      - ⚛
       - ⚙️
-      - Empty Group
-      - 📢
       - ⬛
     groupOrder:
+      - 📥
       - ❄
       - 🟥
       - 🟦
       - 🟩
     colorCells: false
-    colorHeaders: true
-    colorCards: true
-    hideEmptySubGroups: true
-    iconProperty: note.status
+    colorHeaders: false
+    colorCards: false
+    hideEmptyGroups: false
+    hideEmptySubGroups: false
     subGroupProperty: note.priority
+    groupLabels:
+      - 📥=📥 Inbox
+      - ❄=❄ Hold/Blocked
+      - 🟥=🟥 ToDo
+      - 🟦=🟦 WIP
+      - 🟩=🟩 Done
+    subGroupLabels:
+      - 🇦=🇦 critical & urgent
+      - 🇧=🇧 important, not urgent
+      - 🇨=🇨 normal
+      - 🇩=🇩 delegated
+      - 🇪=🇪 review or delete
+    hiddenSubGroups:
+      - Empty Group
+    subGroupOrder:
+      - 🇦
+      - 🇧
+      - 🇨
+      - 🇩
+      - 🇪
+    newNoteFolder:
+      - projects
+    newNoteTemplate:
+      - templates/create/projects/single project template.md
+    newNoteOpen: true
+  - type: board-view
+    name: "📋 Workflow: Kanban-i (h)"
+    filters:
+      and:
+        - '!status.contains("⬛")'
+        - '!status.contains("📢")'
+    order:
+      - file.name
+      - priority
+      - category
+    groupProperty: note.priority
+    hideEmptyGroups: false
+    hiddenGroups:
+      - Empty Group
+    groupOrder:
+      - 🇦
+      - 🇧
+      - 🇨
+      - 🇩
+      - 🇪
+    colorCells: false
+    colorHeaders: false
+    colorCards: false
+    hideEmptySubGroups: false
+    subGroupProperty: note.status
+    subGroupLabels:
+      - 📥=📥 Inbox
+      - ❄=❄ Hold/Blocked
+      - 🟥=🟥 ToDo
+      - 🟦=🟦 WIP
+      - 🟩=🟩 Done
+    groupLabels:
+      - 🇦=🇦 critical & urgent
+      - 🇧=🇧 important, not urgent
+      - 🇨=🇨 normal
+      - 🇩=🇩 delegated
+      - 🇪=🇪 review or delete
+    subGroupOrder:
+      - 🟦
+      - 🟥
+      - ❄
+      - 📥
+      - 🟩
+    hiddenSubGroups:
+      - Empty Group
+    newNoteFolder:
+      - projects
+    newNoteTemplate:
+      - templates/create/projects/single project template.md
+    newNoteOpen: true
+  - type: timeline
+    name: "🕛 Workflow: Timeline"
+    filters:
+      and:
+        - '!status.contains("⬛")'
+        - '!status.contains("📢")'
+        - start
+        - end
+    startDate: note.start
+    endDate: note.end
+    colorBy: note.priority
+    colorMap:
+      🇨: var(--color-blue)
+      🇦: var(--color-red)
+      🇧: var(--color-orange)
+      🇩: var(--color-accent)
+      🇪: var(--color-base-40)
+    zoom: 1
+    showColors: false
+  - type: calendar
+    name: "🗓️ Workflow: Calendar"
+    filters:
+      and:
+        - '!status.contains("⬛")'
+        - '!status.contains("📢")'
+        - start
+        - end
+    startDate: note.start
+    endDate: note.end
+  - type: block-view
+    name: "✅ Workflow: Inline Tasks"
+    filters:
+      and:
+        - '!status.contains("⬛")'
+        - '!status.contains("📢")'
+    filterTasks: true
+    filterQuotes: false
+    filterTasksType: incomplete
   - type: table
     name: "🗄️ Workflow: Group By Type"
     filters:
-      or:
-        - status.contains("❄")
-        - status.contains("🟥")
-        - status.contains("🟦")
-        - status.contains("🟩")
+      and:
+        - '!status.contains("⬛")'
+        - '!status.contains("📢")'
     groupBy:
       property: formula.type
       direction: ASC
@@ -246,11 +369,9 @@ views:
   - type: table
     name: "🔺 Workflow: Group By Priority"
     filters:
-      or:
-        - status.contains("❄")
-        - status.contains("🟥")
-        - status.contains("🟦")
-        - status.contains("🟩")
+      and:
+        - '!status.contains("⬛")'
+        - '!status.contains("📢")'
     groupBy:
       property: formula.priority
       direction: ASC
@@ -284,6 +405,61 @@ views:
         - "false"
     order:
       - file.name
+  - type: table
+    name: "⬛ Status: Drop"
+    filters:
+      and:
+        - status.contains("⬛")
+    order:
+      - file.name
+      - addition
+      - status
+      - priority
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - start
+      - end
+      - url
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.status: 1
+      note.priority: 1
+  - type: table
+    name: "📥 Status: Inbox"
+    filters:
+      and:
+        - status.contains("📥")
+    groupBy:
+      property: formula.priority
+      direction: ASC
+    order:
+      - file.name
+      - addition
+      - status
+      - priority
+      - category
+      - meta
+      - problem
+      - creator
+      - production
+      - start
+      - end
+      - url
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      note.addition: 90
+      note.status: 1
+      note.priority: 1
   - type: table
     name: "🟥 Status: To Do"
     filters:
@@ -314,10 +490,10 @@ views:
       note.status: 1
       note.priority: 1
   - type: table
-    name: "🟦 Status: In Progress"
+    name: "❄ Status: Hold"
     filters:
       and:
-        - status.contains("🟦")
+        - status.contains("❄")
     groupBy:
       property: formula.priority
       direction: ASC
@@ -343,10 +519,10 @@ views:
       note.status: 1
       note.priority: 1
   - type: table
-    name: "❄ Status: Hold"
+    name: "🟦 Status: In Progress"
     filters:
       and:
-        - status.contains("❄")
+        - status.contains("🟦")
     groupBy:
       property: formula.priority
       direction: ASC
@@ -405,32 +581,6 @@ views:
     filters:
       and:
         - status.contains("📢")
-    order:
-      - file.name
-      - addition
-      - status
-      - priority
-      - category
-      - meta
-      - problem
-      - creator
-      - production
-      - start
-      - end
-      - url
-    sort:
-      - property: formula.created_relative
-        direction: DESC
-    columnSize:
-      file.name: 530
-      note.addition: 90
-      note.status: 1
-      note.priority: 1
-  - type: table
-    name: "⬛ Status: Drop"
-    filters:
-      and:
-        - status.contains("⬛")
     order:
       - file.name
       - addition
@@ -622,7 +772,10 @@ views:
       and:
         - end
         - end < today()
-        - status.contains("🟦")
+        - and:
+            - '!status.contains("⬛")'
+            - '!status.contains("🟩")'
+            - '!status.contains("📢")'
     groupBy:
       property: formula.priority
       direction: ASC
@@ -648,6 +801,46 @@ views:
       note.status: 1
       note.priority: 1
       note.end: 120
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+  - type: chart-bar
+    name: "📈 Statistics: By Types"
+    x: formula.type
+    aggregate:file.name: Count
+    show-labels: true
+  - type: chart-bar
+    name: "📈 Statistics: By Statuses"
+    sort:
+      - property: formula.kanban
+        direction: ASC
+    x: note.status
+    aggregate:file.name: Count
+    show-labels: true
+  - type: chart-bar
+    name: "📈 Statistics: By Category"
+    x: note.category
+    aggregate:file.name: Count
+    show-labels: true
+    sync-y-axes: false
+    show-percentages: false
+  - type: chart-bar
+    name: "📈 Statistics: By End"
+    filters:
+      and:
+        - end != null
+    sort:
+      - property: end
+        direction: ASC
+    x: formula.end_year
+    aggregate:file.name: Count
+    show-labels: true
+    sync-y-axes: false
+    show-percentages: false
   - type: table
     name: ———
     filters:

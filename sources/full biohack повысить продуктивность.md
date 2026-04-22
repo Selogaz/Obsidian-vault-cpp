@@ -4,7 +4,10 @@ tags:
   - source/article/paper
   - category/health
 aliases: []
+addition:
 status: 🟩
+rating:
+scientificity:
 category:
   - "[[health]]"
 meta:
@@ -13,9 +16,11 @@ creator:
 production:
 start: 2025-06-10T20:41:43+03:00
 end:
-total_hours: 0
+icon: 📃
+color: "#7575c0"
 created: 2025-06-10T20:41:43+03:00
 updated: 2026-02-28T23:28:37+03:00
+total_hours: 0
 ---
 
 [[конспекты full biohack как повысить продуктивность]]

@@ -1509,12 +1509,12 @@
       "key": "D"
     }
   ],
-  "obsidian-hybrid-search:open-search": [
+  "metadata-validator:edit-properties": [
     {
       "modifiers": [
-        "Meta"
+        "Alt"
       ],
-      "key": "F"
+      "key": "M"
     }
   ]
 }

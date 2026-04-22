@@ -16,10 +16,10 @@
     },
     "format-yaml-array": {
       "enabled": true,
-      "alias-key": true,
-      "tag-key": true,
+      "alias-key": false,
+      "tag-key": false,
       "default-array-style": "multi-line",
-      "default-array-keys": true,
+      "default-array-keys": false,
       "force-single-line-array-style": "",
       "force-multi-line-array-style": ""
     },
@@ -37,8 +37,8 @@
       "yaml-keys-to-remove": ""
     },
     "yaml-key-sort": {
-      "enabled": true,
-      "yaml-key-priority-sort-order": "tags:\naliases:\ndescription:\nstatus:\nrating:\nscientificity:\npriority:\naddition:\nsource:\nproject:\nnext:\nup:\ndeck:\ngenre:\ncategory:\nmeta:\nproblem:\nrelated:\ncreator:\nproduction:\ncontext:\nsimilar:\ncorollary:\nopposite:\nurl:\nzotero:\nlongform:\ntitle_translation:\ncover:\npublished:\nstart:\nend:\ntotal_hours:\nrelevant:\ncreated:\nupdated:\nsr-due:\nsr-interval:\nsr-ease:",
+      "enabled": false,
+      "yaml-key-priority-sort-order": "tags:\naliases:\nid:\nattribute:\ndescription:\nstatus:\nrating:\nscientificity:\npriority:\naddition:\nsource:\nproject:\nmilestone:\nnext:\nup:\ndeck:\nrelated:\nblockedBy:\ngenre:\ncategory:\nmeta:\nproblem:\ncreator:\nproduction:\ncontext:\nsimilar:\ncorollary:\nopposite:\nurl:\nzotero:\nlongform:\ntitle_translation:\ncover:\npublished:\nstart:\nend:\ntotal_hours:\nrelevant:\ncreated:\nupdated:\nsr-due:\nsr-interval:\nsr-ease:",
       "priority-keys-at-start-of-yaml": true,
       "yaml-sort-order-for-other-keys": "None"
     },
@@ -259,12 +259,12 @@
       "ignore-keys": ""
     },
     "sort-yaml-array-values": {
-      "enabled": true,
-      "sort-alias-key": true,
+      "enabled": false,
+      "sort-alias-key": false,
       "sort-tag-key": true,
       "sort-array-keys": true,
       "ignore-keys": "",
-      "sort-order": "Descending Alphabetical"
+      "sort-order": "Ascending Alphabetical"
     },
     "default-language-for-code-fences": {
       "enabled": false,
@@ -281,6 +281,7 @@
   "lintOnFileChange": true,
   "displayLintOnFileChangeNotice": false,
   "settingsConvertedToConfigKeyValues": true,
+  "additionalFileExtensions": [],
   "foldersToIgnore": [
     "templates",
     "classes",

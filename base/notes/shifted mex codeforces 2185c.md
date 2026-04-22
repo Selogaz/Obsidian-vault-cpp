@@ -4,9 +4,11 @@ tags:
   - category/computer_science
 aliases:
   - shifted MEX solution
-meta:
+icon: </>
+color: "#ab4642"
 created: 2026-03-19T22:15:00+03:00
 updated: 2026-03-20T00:48:58+03:00
+meta:
 ---
 
 # Shifted MEX — Codeforces 2185C

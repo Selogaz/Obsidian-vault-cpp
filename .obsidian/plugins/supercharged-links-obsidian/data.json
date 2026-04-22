@@ -1,21 +1,19 @@
 {
   "targetAttributes": [
     "status",
-    "category",
     "reviewed",
-    "excalidraw-plugin",
-    "deck",
     "icon",
-    "addition"
+    "color"
   ],
   "targetTags": true,
   "getFromInlineField": true,
   "enableTabHeader": true,
-  "activateSnippet": true,
+  "activateSnippet": false,
   "enableEditor": true,
   "enableFileList": true,
   "enableBacklinks": true,
   "enableQuickSwitcher": true,
   "enableSuggestor": true,
+  "enableBases": true,
   "selectors": []
 }

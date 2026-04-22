@@ -4,6 +4,7 @@ tags:
   - project/short
   - priority/c
 aliases: []
+addition:
 status: 🟩
 priority: 🇨
 category:
@@ -11,10 +12,12 @@ meta:
 problem:
 creator:
 production:
-url:
-cover:
 start: 2026-01-21T15:15:59+03:00
 end:
+url:
+cover:
+icon: 🗞️
+color: "#a39070"
 created: 2026-01-21T15:15:59+03:00
 updated: 2026-01-21T15:34:09+03:00
 ---

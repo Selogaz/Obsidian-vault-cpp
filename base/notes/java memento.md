@@ -5,6 +5,8 @@ tags:
 aliases:
   - memento
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-10-01T19:04:16+03:00
 updated: 2025-10-08T18:45:44+03:00
 sr-due: 2025-10-12

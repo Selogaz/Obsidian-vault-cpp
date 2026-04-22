@@ -5,6 +5,8 @@ tags:
 aliases:
   - локи в базах данных
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-08-30T11:24:49+03:00
 updated: 2025-10-08T19:33:37+03:00
 sr-due: 2025-10-12

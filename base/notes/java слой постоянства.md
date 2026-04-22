@@ -5,6 +5,8 @@ tags:
 aliases:
   - слой постоянства
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-06T09:17:34+03:00
 updated: 2025-09-21T12:30:37+03:00
 sr-due: 2026-09-14

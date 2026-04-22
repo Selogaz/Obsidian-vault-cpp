@@ -3,9 +3,11 @@ tags:
   - note/specific/code
   - category/java
 aliases:
-  - aop advice
   - совет
+  - aop advice
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-06T11:51:41+03:00
 updated: 2025-09-21T12:40:19+03:00
 sr-due: 2026-10-13

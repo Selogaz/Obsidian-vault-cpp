@@ -5,6 +5,8 @@ tags:
 aliases:
   - исключение-источник
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2026-03-05T16:29:17+03:00
 updated: 2026-03-05T16:29:17+03:00
 ---

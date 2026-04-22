@@ -4,11 +4,13 @@ tags:
   - category/java
 aliases: []
 deck: obsidian::work
+icon: </>
+color: "#ab4642"
 created: 2025-05-31 20:12:12+03:00
 updated: 2026-01-18T16:37:54+03:00
-sr-due: null
-sr-interval: null
-sr-ease: null
+sr-due:
+sr-interval:
+sr-ease:
 ---
 
 **Консультация паблик для вкатунов 31.05**

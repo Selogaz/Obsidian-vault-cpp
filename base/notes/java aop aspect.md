@@ -3,9 +3,11 @@ tags:
   - note/specific/code
   - category/java
 aliases:
-  - aop aspect
   - аспект
+  - aop aspect
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-06T11:55:54+03:00
 updated: 2025-09-21T12:53:35+03:00
 sr-due: 2026-10-23

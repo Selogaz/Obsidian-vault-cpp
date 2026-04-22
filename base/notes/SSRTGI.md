@@ -4,6 +4,8 @@ tags:
   - category/computer_science
 aliases: []
 deck: obsidian::computer_science
+icon: 📝
+color: "#d0a570"
 created: 2025-10-24T09:40:41+03:00
 updated: 2025-10-24T09:54:48+03:00
 ---

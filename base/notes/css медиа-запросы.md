@@ -5,6 +5,8 @@ tags:
 aliases:
   - медиа-запросы
 deck: obsidian::css
+icon: </>
+color: "#ab4642"
 created: 2026-01-21T12:51:35+03:00
 updated: 2026-03-04T19:43:06+03:00
 ---

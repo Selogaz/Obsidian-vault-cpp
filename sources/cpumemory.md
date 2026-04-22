@@ -5,11 +5,19 @@ tags:
   - category/computer_science
 aliases:
   - cpumemory
+addition:
 status: 🟥
+rating:
+scientificity:
 category:
   - "[[computer science]]"
 meta:
   - hardware
+problem:
+creator:
+production:
+icon: 📖
+color: "#b5b570"
 ---
 
 ```toc

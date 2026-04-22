@@ -4,6 +4,8 @@ tags:
   - category/linux
 aliases: []
 deck: obsidian::linux
+icon: 📝
+color: "#d0a570"
 created: 2026-03-03T00:00:00+03:00
 updated: 2026-03-03T13:49:49+03:00
 ---

@@ -5,6 +5,8 @@ tags:
 aliases:
   - ACID
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-08-10T12:40:49+03:00
 updated: 2025-10-08T18:28:32+03:00
 sr-due: 2025-10-12

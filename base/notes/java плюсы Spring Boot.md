@@ -5,6 +5,8 @@ tags:
 aliases:
   - плюсы Spring Boot
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-13T10:02:05+03:00
 updated: 2025-09-21T12:39:32+03:00
 sr-due: 2026-09-10

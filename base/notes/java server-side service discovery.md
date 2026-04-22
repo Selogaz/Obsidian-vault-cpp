@@ -5,6 +5,8 @@ tags:
 aliases:
   - server-side service discovery
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-06T13:06:43+03:00
 updated: 2025-09-21T12:40:38+03:00
 sr-due: 2026-10-15

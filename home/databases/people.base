@@ -47,6 +47,10 @@ properties:
     displayName: 🆕 created
   formula.updated_relative:
     displayName: 🔄 updated
+  note.tags:
+    displayName: 🏷️ tags
+  note.aliases:
+    displayName: 🔖 aliases
   formula.category_status:
     displayName: structure
   formula.category_type_valid:
@@ -74,10 +78,9 @@ views:
       - production
       - formula.created_relative
       - formula.updated_relative
+      - aliases
     sort:
       - property: relevant
-        direction: ASC
-      - property: formula.type
         direction: DESC
     limit: 28
     columnSize:
@@ -359,6 +362,18 @@ views:
       formula.outlinks: 1
       formula.created_relative: 140
       formula.updated_relative: 140
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+  - type: chart-bar
+    name: "📈 Statistics: By Types"
+    x: formula.type
+    aggregate:file.name: Count
+    show-labels: true
   - type: table
     name: ———
     filters:

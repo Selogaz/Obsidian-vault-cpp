@@ -5,22 +5,28 @@ tags:
   - category/games
 aliases:
   - (20) Что такое трассировка лучей и как работает NVIDIA RTX? - YouTube
+published:
+addition:
+zotero: "[🇿](zotero://select/items/@20ChtoTakoe)"
 status: 🟩
+rating:
+scientificity:
 category:
   - "[[games]]"
 meta:
 problem:
-related:
 creator:
 production:
-url: "[](https://www.youtube.com/watch?v=wWxIPsbnj2k)"
-zotero: "[🇿](zotero://select/items/@20ChtoTakoe)"
-published:
 start: 2025-11-04T18:02:13+03:00
 end:
-total_hours: 0
+url:
+  - "[](https://www.youtube.com/watch?v=wWxIPsbnj2k)"
+icon: 📃
+color: "#7575c0"
 created: 2025-11-04T18:02:13+03:00
 updated: 2026-02-28T23:32:49+03:00
+related:
+total_hours: 0
 ---
 
 ```toc

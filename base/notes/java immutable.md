@@ -5,6 +5,8 @@ tags:
 aliases:
   - immutable
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-19T21:29:55+03:00
 updated: 2025-10-06T19:27:35+03:00
 sr-due: 2025-10-10

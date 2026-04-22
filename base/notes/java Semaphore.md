@@ -5,6 +5,8 @@ tags:
 aliases:
   - Semaphore
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-07-16T11:17:18+03:00
 updated: 2025-10-06T19:20:18+03:00
 sr-due: 2025-10-10

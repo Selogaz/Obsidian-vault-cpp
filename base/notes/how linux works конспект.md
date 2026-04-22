@@ -3,6 +3,8 @@ tags:
   - note/basic/primary
   - category/linux
 aliases: []
+icon: 📝
+color: "#70a0b5"
 created: 2026-02-28T18:00:00+03:00
 updated: 2026-02-28T23:18:52+03:00
 ---

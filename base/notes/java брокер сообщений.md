@@ -5,6 +5,8 @@ tags:
 aliases:
   - брокер сообщений
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-16T18:35:48+03:00
 updated: 2025-10-06T19:28:15+03:00
 sr-due: 2025-10-10

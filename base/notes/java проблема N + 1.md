@@ -5,6 +5,8 @@ tags:
 aliases:
   - проблема N + 1
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-09-20T09:19:18+03:00
 updated: 2025-10-08T18:59:38+03:00
 sr-due: 2025-10-12

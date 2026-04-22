@@ -25,5 +25,4 @@ These are human-only. Never create, edit, or delete anything inside:
 - `home/databases/`
 - `home/prefixes.md`
 - `templates/`
-- `classes/`
 - `periodic/statuses/`

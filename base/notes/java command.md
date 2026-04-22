@@ -5,6 +5,8 @@ tags:
 aliases:
   - command
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-10-01T18:59:16+03:00
 updated: 2025-10-06T19:15:12+03:00
 sr-due: 2025-10-10

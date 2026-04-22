@@ -5,6 +5,8 @@ tags:
 aliases:
   - слой пакетных заданий
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-06T11:16:55+03:00
 updated: 2025-10-02T17:00:35+03:00
 sr-due: 2026-12-12

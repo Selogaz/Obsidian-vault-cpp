@@ -27,7 +27,8 @@ const finalSourceTag = `source/${sourceSubTag}`;
 
 let status = "";
 switch(true) {
-    case /todo|📥|🟥/.test(zoteroAllTags): status = "🟥"; break;
+    case /inbox|📥/.test(zoteroAllTags): status = "📥"; break;
+    case /todo|🟥/.test(zoteroAllTags): status = "🟥"; break;
     case /wip|🟦/.test(zoteroAllTags): status = "🟦"; break;
     case /done|🟩/.test(zoteroAllTags): status = "🟩"; break;
     default: status = await tp.user.status("source");
@@ -74,11 +75,11 @@ allYamlTags.push(...categoryTagItems);
 
 const zoteroCreators = "{{authors}},{{directors}}";
 const creatorsList = zoteroCreators.split(',').map(name => name.trim()).filter(Boolean);
-const creatorsYaml = formatAsYamlList(creatorsList);
+const creatorsYaml = creatorsList.length === 0 ? null : creatorsList.map(item => `\n  - "[[base/creators/${item.trim()}|${item.trim()}]]"`).join("");
 
 const zoteroPublisher = "{{publisher}}";
 const publisherList = zoteroPublisher ? [zoteroPublisher] : [];
-const publisherYaml = formatAsYamlList(publisherList);
+const publisherYaml = publisherList.length === 0 ? null : publisherList.map(item => `\n  - "[[base/productions/${item.trim()}|${item.trim()}]]"`).join("");
 
 let relatedItems = [];
 {% for relation in relations -%}
@@ -156,6 +157,6 @@ await app.workspace.getLeaf(true).openFile(tp.file.find_tfile(finalFileName));
 {%- endif -%}
 {%- if annotation.comment %}
 >
-> - 💎 {{annotation.comment | replace("\n", "\n> - 💎 ")}}
+> - 💎 {{annotation.comment | replace("\n", "\n> - 💎 ") | replace("> - 💎 \n", ">\n")}}
 {%- endif %}{% endif %}
 {% endfor -%}

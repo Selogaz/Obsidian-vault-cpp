@@ -3,6 +3,8 @@ tags:
   - note/discourse/evidence
   - category/study
 aliases: []
+icon: 🌀
+color: "#4585c8"
 created: 2026-03-06T23:10:00+03:00
 updated: 2026-03-21T23:43:45+03:00
 ---

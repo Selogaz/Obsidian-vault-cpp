@@ -5,6 +5,8 @@ tags:
 aliases:
   - способы синхронизации
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-07-16T14:05:37+03:00
 updated: 2025-11-01T08:06:31+03:00
 sr-due: 2026-01-30

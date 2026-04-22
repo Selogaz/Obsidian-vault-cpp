@@ -5,6 +5,8 @@ tags:
 aliases:
   - недостатки инверсии управления
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-05T18:38:03+03:00
 updated: 2025-09-21T12:47:29+03:00
 sr-due: 2026-10-10

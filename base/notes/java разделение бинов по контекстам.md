@@ -5,6 +5,8 @@ tags:
 aliases:
   - разделение бинов по контекстам
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-13T10:42:21+03:00
 updated: 2025-09-21T12:06:43+03:00
 sr-due: 2026-09-16

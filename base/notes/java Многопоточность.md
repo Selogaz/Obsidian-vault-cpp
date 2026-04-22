@@ -6,6 +6,8 @@ tags:
 aliases:
   - Многопоточность
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-07-16T10:41:08+03:00
 updated: 2025-10-08T18:32:33+03:00
 sr-due: 2025-10-12

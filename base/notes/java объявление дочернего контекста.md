@@ -5,6 +5,8 @@ tags:
 aliases:
   - объявление дочернего контекста
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-13T10:41:48+03:00
 updated: 2025-09-21T12:44:08+03:00
 sr-due: 2026-08-20

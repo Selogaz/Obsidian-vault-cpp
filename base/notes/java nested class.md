@@ -4,6 +4,8 @@ tags:
   - category/java
 aliases: []
 deck: obsidian::work
+icon: </>
+color: "#ab4642"
 created: 2025-05-27 10:58:35+03:00
 updated: 2026-03-05T16:58:38+03:00
 sr-due: 2026-11-17

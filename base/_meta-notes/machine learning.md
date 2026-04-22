@@ -1,13 +1,15 @@
 ---
 tags:
-  - system/high/meta
   - category/computer_science
+  - system/high/meta
 aliases:
-  - mlops
   - machine learning operations
+  - mlops
+relevant: false
 category:
   - "[[computer science]]"
-relevant: false
+icon: 🔎
+color: "#6fa8d6"
 created: 2026-03-21T00:00:00+07:00
 updated: 2026-03-21T00:00:00+07:00
 ---

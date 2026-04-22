@@ -5,6 +5,9 @@ tags:
   - category/linux
 aliases:
   - How Linux Works
+published: 2016
+addition:
+zotero: "[🇿](zotero://select/items/@wardHowLinuxWorks2016)"
 status: ❄
 rating:
 scientificity:
@@ -12,17 +15,18 @@ category:
   - "[[linux]]"
 meta:
 problem:
-related:
 creator:
   - "[[Brian Ward]]"
 production:
-url: https://chat.qwen.ai/s/t_4c5bfeff-f174-486b-8527-8d1274797167?fev=0.2.8
-zotero: "[🇿](zotero://select/items/@wardHowLinuxWorks2016)"
-published: 2016
 start: 2026-02-26T19:12:15+03:00
 end:
+url:
+  - https://chat.qwen.ai/s/t_4c5bfeff-f174-486b-8527-8d1274797167?fev=0.2.8
+icon: 📖
+color: "#b5b570"
 created: 2026-02-26T19:12:15+03:00
 updated: 2026-04-02T14:33:36+03:00
+related:
 ---
 
 [[how linux works конспект|конспект от opencloud]]

@@ -5,6 +5,8 @@ tags:
 aliases:
   - Facade
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-08-10T12:33:26+03:00
 updated: 2025-10-08T18:52:25+03:00
 sr-due: 2025-10-12

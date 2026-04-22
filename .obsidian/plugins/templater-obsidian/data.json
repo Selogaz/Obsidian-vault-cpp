@@ -16,71 +16,111 @@
   "folder_templates": [
     {
       "folder": "periodic/daily",
-      "template": "templates/create/periodic/daily template.md"
+      "template": "templates/create/periodic/day/template.md"
     },
     {
       "folder": "periodic/weekly",
-      "template": "templates/create/periodic/weekly template.md"
+      "template": "templates/create/periodic/week/template.md"
     },
     {
       "folder": "periodic/monthly",
-      "template": "templates/create/periodic/monthly template.md"
+      "template": "templates/create/periodic/month/template.md"
     },
     {
       "folder": "periodic/quarterly",
-      "template": "templates/create/periodic/quarterly template.md"
+      "template": "templates/create/periodic/quarter/template.md"
     },
     {
       "folder": "periodic/yearly",
-      "template": "templates/create/periodic/yearly template.md"
+      "template": "templates/create/periodic/year/template.md"
     },
     {
       "folder": "base/categories",
-      "template": "templates/create/system/category template.md"
+      "template": "templates/create/system/category/template.md"
     },
     {
       "folder": "base/_hierarchy",
-      "template": "templates/create/system/hierarchy template.md"
+      "template": "templates/create/system/category/meta/problem/hierarchy/template.md"
     },
     {
       "folder": "base/_meta-notes",
-      "template": "templates/create/system/meta-note template.md"
+      "template": "templates/create/system/category/meta/template.md"
     },
     {
       "folder": "base/_problems",
-      "template": "templates/create/system/problem template.md"
+      "template": "templates/create/system/category/meta/problem/template.md"
     },
     {
       "folder": "base/creators",
-      "template": "templates/create/people/creator template.md"
+      "template": "templates/create/creators/template.md"
     },
     {
       "folder": "base/contacts",
-      "template": "templates/create/people/contact template.md"
+      "template": "templates/create/contacts/template.md"
     },
     {
       "folder": "base/productions",
-      "template": "templates/create/people/production template.md"
-    },
-    {
-      "folder": "base/additions",
-      "template": "templates/create/additions/addition template.md"
+      "template": "templates/create/productions/template.md"
     },
     {
       "folder": "base/notes",
-      "template": "templates/create/notes/default note template.md"
+      "template": "templates/create/notes/template.md"
     },
     {
       "folder": "sources",
-      "template": "templates/create/sources/source template.md"
+      "template": "templates/create/sources/template.md"
     },
     {
       "folder": "projects/short",
-      "template": "templates/create/projects/short project template.md"
+      "template": "templates/create/projects/short/template.md"
     },
     {
       "folder": "projects/single",
-      "template": "templates/create/projects/single project template.md"
+      "template": "templates/create/projects/single/template.md"
+    },
+    {
+      "folder": "base/additions/aggregators",
+      "template": "templates/create/additions/annotations/aggregator.md"
+    },
+    {
+      "folder": "base/additions/conspectuses",
+      "template": "templates/create/additions/conspectuses/template.md"
+    },
+    {
+      "folder": "base/additions/experiments",
+      "template": "templates/create/additions/experiments/template.md"
+    },
+    {
+      "folder": "base/additions/generated",
+      "template": "templates/create/additions/generated/template.md"
+    },
+    {
+      "folder": "base/additions/meetings",
+      "template": "templates/create/additions/meetings/template.md"
+    },
+    {
+      "folder": "base/additions/practices",
+      "template": "templates/create/additions/practice/template.md"
+    },
+    {
+      "folder": "base/additions/reports",
+      "template": "templates/create/additions/reports/template.md"
+    },
+    {
+      "folder": "base/additions/researches",
+      "template": "templates/create/additions/researches/template.md"
+    },
+    {
+      "folder": "base/additions/socials",
+      "template": "templates/create/additions/social/template.md"
+    },
+    {
+      "folder": "base/additions/tasks",
+      "template": "templates/create/additions/tasks/template.md"
+    },
+    {
+      "folder": "base/tasks",
+      "template": "templates/create/additions/tasks/template.md"
     }
   ],
   "enable_file_templates": false,
@@ -92,12 +132,7 @@
   ],
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
-  "enabled_templates_hotkeys": [
-    "templates/create/additions/addition template.md",
-    "templates/create/additions/meeting template.md",
-    "templates/create/additions/experiment template.md",
-    "templates/create/additions/report template.md"
-  ],
+  "enabled_templates_hotkeys": [],
   "startup_templates": [
     "templates/onStartup.md"
   ],

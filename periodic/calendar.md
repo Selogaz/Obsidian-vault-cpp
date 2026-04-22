@@ -10,6 +10,7 @@ cssclasses:
   - hide-properties
 obsidianUIMode: preview
 icon: 🗓️
+color: "#e8e8e8"
 ---
 
 ```dataviewjs
@@ -42,5 +43,5 @@ if (isMobile) {
     dailyNoteFolder: "periodic/daily",
     dailyNoteFormat: "YYYY-MM-DD"
   });
-} 
+}
 ```

@@ -5,6 +5,8 @@ tags:
 aliases:
   - многоуровневая архитектура
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-06T09:01:40+03:00
 updated: 2025-10-02T17:46:46+03:00
 sr-due: 2026-12-13

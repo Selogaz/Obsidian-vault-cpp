@@ -5,6 +5,8 @@ tags:
 aliases:
   - flexbox
 deck: obsidian::css
+icon: </>
+color: "#ab4642"
 created: 2026-01-21T14:12:16+03:00
 updated: 2026-03-04T19:42:40+03:00
 ---

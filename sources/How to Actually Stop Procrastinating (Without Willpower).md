@@ -4,6 +4,7 @@ tags:
   - source/article/paper
   - category/productivity
 aliases: []
+addition:
 status: 🟩
 rating:
 scientificity:
@@ -15,9 +16,12 @@ problem:
 creator:
   - Dr. Jud Brewer,
 production:
-url: https://drjud.com/procrastination/how-to-stop-procrastinating/
 start: 2026-04-01T21:10:09+03:00
 end: 2026-04-01T21:40:09+03:00
+url:
+  - https://drjud.com/procrastination/how-to-stop-procrastinating/
+icon: 📃
+color: "#7575c0"
 created: 2026-04-01T21:10:09+03:00
 updated: 2026-04-06T21:55:46+03:00
 ---

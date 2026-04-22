@@ -5,6 +5,8 @@ tags:
 aliases:
   - middle Verme легенда
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-11-02T17:15:06+03:00
 updated: 2025-11-02T17:17:42+03:00
 ---

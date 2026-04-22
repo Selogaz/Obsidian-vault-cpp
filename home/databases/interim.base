@@ -1,13 +1,48 @@
 filters:
   and:
     - file.inFolder("base/additions")
-    - file.hasTag("#mark/addition")
-    - status == "🟥"
+    - status
+    - or:
+        - and:
+            - '!this.file.hasTag("system/category")'
+            - '!this.file.hasTag("mark/addition/aggregator")'
+        - and:
+            - this.file.hasTag("system/category")
+            - or:
+                - file.hasTag("category/" + this.file.name.replace(" ", "_"))
+                - category.contains(link(this.file.name))
+        - and:
+            - this.file.hasTag("mark/addition/aggregator")
+            - or:
+                - and:
+                    - project
+                    - this.project
+                    - project.contains(this.project[0])
+                - and:
+                    - source
+                    - this.source
+                    - source.contains(this.source[0])
+                - and:
+                    - contact
+                    - this.contact
+                    - contact.contains(this.contact[0])
+                - and:
+                    - production
+                    - this.production
+                    - production.contains(this.production[0])
+                - and:
+                    - creator
+                    - this.creator
+                    - creator.contains(this.creator[0])
 formulas:
-  type: file.tags.filter(value.startsWith("#mark/addition/"))[0].replace(/^.*\//, '')
+  type: file.tags.filter(value.startsWith("#mark/"))[0].replace(/^.*\//, '')
+  kanban: if(status.contains("⚛️") || status.contains("⚛"), "① ⚛️ Atomizing", if(status.contains("🟦"), "② 🟦 In Progress", if(status.contains("🟥"), "③ 🟥 ToDo", if(status.contains("📥"), "④ 📥 Inbox", if(status.contains("❄"), "⑤ ❄ Hold", if(status.contains("🟩"), "⑥ 🟩 Done", if(status.contains("📢"), "⑦ 📢 Published", if(status.contains("⬛"), "⑧ ⬛ Drop", "⑨ Other"))))))))
+  context: if(list(project).length > 0, list(project)[0], if(list(source).length > 0, list(source)[0], if(list(contact).length > 0, list(contact)[0], if(list(production).length > 0, list(production)[0], if(list(creator).length > 0, list(creator)[0], "")))))
 properties:
   formula.type:
     displayName: 🗄️ type
+  formula.context:
+    displayName: 🧭 context
   note.project:
     displayName: 🏢 project
   file.name:
@@ -20,21 +55,284 @@ properties:
     displayName: ⬆️ output
   note.description:
     displayName: ✍️ description
+  note.summary:
+    displayName: 🧾 summary
   note.attribute:
     displayName: 🔖 attribute
+  note.order:
+    displayName: "#"
 views:
   - type: table
     name: 🗣️ All
-    groupBy:
-      property: project
-      direction: ASC
     order:
       - file.name
+      - status
       - formula.type
+      - formula.context
       - attribute
       - input
       - output
       - description
+      - summary
     sort:
-      - property: file.name
+      - property: formula.kanban
         direction: ASC
+      - property: created
+        direction: DESC
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: created
+        direction: DESC
+  - type: table
+    name: "📋 Workflow: Kanban (v)"
+    filters:
+      and:
+        - '!status.contains("⬛")'
+        - '!status.contains("📢")'
+        - '!status.contains("🟩")'
+    groupBy:
+      property: formula.kanban
+      direction: ASC
+    order:
+      - file.name
+      - status
+      - formula.type
+      - formula.context
+      - attribute
+      - input
+      - output
+      - description
+      - summary
+    sort:
+      - property: created
+        direction: DESC
+  - type: table
+    name: "🧭 Workflow: By Context"
+    filters:
+      and:
+        - '!status.contains("⬛")'
+        - '!status.contains("📢")'
+        - '!status.contains("🟩")'
+    groupBy:
+      property: formula.context
+      direction: ASC
+    order:
+      - file.name
+      - status
+      - formula.type
+      - formula.context
+      - attribute
+      - input
+      - output
+      - description
+      - summary
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: created
+        direction: DESC
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: created
+        direction: DESC
+  - type: table
+    name: 📓 Conspectuses
+    filters:
+      and:
+        - file.inFolder("base/additions/conspectuses")
+    order:
+      - order
+      - file.name
+      - status
+      - formula.context
+      - description
+      - summary
+    sort:
+      - property: order
+        direction: ASC
+      - property: formula.kanban
+        direction: ASC
+      - property: created
+        direction: DESC
+    columnSize:
+      note.order: 1
+  - type: table
+    name: 🧪 Experiments
+    filters:
+      and:
+        - file.inFolder("base/additions/experiments")
+    order:
+      - file.name
+      - status
+      - formula.context
+      - attribute
+      - input
+      - output
+      - description
+      - summary
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: created
+        direction: DESC
+  - type: table
+    name: 🤖 Generated
+    filters:
+      and:
+        - file.inFolder("base/additions/generated")
+    order:
+      - file.name
+      - status
+      - formula.context
+      - description
+      - summary
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: created
+        direction: DESC
+  - type: table
+    name: 🗣️ Meetings
+    filters:
+      and:
+        - file.inFolder("base/additions/meetings")
+    order:
+      - file.name
+      - status
+      - formula.context
+      - description
+      - summary
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: created
+        direction: DESC
+  - type: table
+    name: 👅 Conversations
+    filters:
+      and:
+        - file.inFolder("base/additions/conversations")
+    order:
+      - file.name
+      - status
+      - formula.context
+      - description
+      - summary
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: created
+        direction: DESC
+  - type: table
+    name: 🤝 Negotiations
+    filters:
+      and:
+        - file.inFolder("base/additions/negotiations")
+    order:
+      - file.name
+      - status
+      - formula.context
+      - description
+      - summary
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: created
+        direction: DESC
+  - type: table
+    name: 💪 Practice
+    filters:
+      and:
+        - file.inFolder("base/additions/practice")
+    order:
+      - file.name
+      - status
+      - formula.context
+      - description
+      - summary
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: created
+        direction: DESC
+  - type: table
+    name: 🚨 Reports
+    filters:
+      and:
+        - file.inFolder("base/additions/reports")
+    order:
+      - file.name
+      - status
+      - formula.context
+      - description
+      - summary
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: created
+        direction: DESC
+  - type: table
+    name: 🕵 Researches
+    filters:
+      and:
+        - file.inFolder("base/additions/researches")
+    order:
+      - file.name
+      - status
+      - formula.context
+      - description
+      - summary
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: created
+        direction: DESC
+  - type: table
+    name: 💬 Social
+    filters:
+      and:
+        - file.inFolder("base/additions/social")
+    order:
+      - file.name
+      - status
+      - formula.context
+      - description
+      - summary
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: created
+        direction: DESC
+  - type: table
+    name: ———
+    filters:
+      and:
+        - "false"
+    order:
+      - file.name
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: created
+        direction: DESC
+  - type: chart-bar
+    name: "📈 Statistics: By Types"
+    x: formula.type
+    aggregate:file.name: Count
+    show-labels: true

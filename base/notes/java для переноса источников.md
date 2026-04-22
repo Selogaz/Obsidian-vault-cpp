@@ -5,6 +5,8 @@ tags:
 aliases:
   - для переноса источников
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2026-01-14T00:02:20+03:00
 updated: 2026-01-14T00:03:03+03:00
 ---

@@ -5,6 +5,8 @@ tags:
 aliases:
   - authority
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-10-09T16:46:27+03:00
 updated: 2025-10-09T16:46:27+03:00
 ---

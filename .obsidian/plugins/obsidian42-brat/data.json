@@ -1,7 +1,11 @@
 {
   "pluginList": [
-    "flowing-abyss/obsidian-hybrid-search-plugin",
-    "seventhxiv/obsidian-board-view",
+    "TimoBechtel/obsidian-block-view",
+    "ocapraro/obsidian-bases-tasks",
+    "churnish/bases-auto-search",
+    "haiqiang-zhang/obsidian-bases-charts",
+    "flowing-abyss/obsidian-bases-board",
+    "TfTHacker/timeline-for-bases",
     "reply2za/obsidian-query-control",
     "flowing-abyss/obsidian-task-calendar",
     "flowing-abyss/obsidian-task-search",
@@ -11,11 +15,27 @@
   ],
   "pluginSubListFrozenVersion": [
     {
-      "repo": "flowing-abyss/obsidian-hybrid-search-plugin",
+      "repo": "TimoBechtel/obsidian-block-view",
       "version": "latest"
     },
     {
-      "repo": "seventhxiv/obsidian-board-view",
+      "repo": "ocapraro/obsidian-bases-tasks",
+      "version": ""
+    },
+    {
+      "repo": "churnish/bases-auto-search",
+      "version": "latest"
+    },
+    {
+      "repo": "haiqiang-zhang/obsidian-bases-charts",
+      "version": ""
+    },
+    {
+      "repo": "flowing-abyss/obsidian-bases-board",
+      "version": "latest"
+    },
+    {
+      "repo": "TfTHacker/timeline-for-bases",
       "version": "latest"
     },
     {
@@ -50,9 +70,9 @@
   "loggingEnabled": false,
   "loggingPath": "BRAT-log",
   "loggingVerboseEnabled": false,
-  "debuggingMode": true,
-  "notificationsEnabled": true,
-  "globalTokenName": "hybridsearch",
+  "debuggingMode": false,
+  "notificationsEnabled": false,
+  "globalTokenName": "",
   "personalAccessToken": "",
   "selectLatestPluginVersionByDefault": true,
   "allowIncompatiblePlugins": false,

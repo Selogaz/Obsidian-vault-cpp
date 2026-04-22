@@ -5,6 +5,8 @@ tags:
 aliases:
   - LinkedHashSet
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-18T15:16:07+03:00
 updated: 2025-10-08T18:28:34+03:00
 sr-due: 2025-10-12

@@ -5,6 +5,8 @@ tags:
 aliases:
   - залить
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-11-15T16:53:30+03:00
 updated: 2025-11-15T16:53:30+03:00
 ---

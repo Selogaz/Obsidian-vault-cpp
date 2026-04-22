@@ -5,6 +5,9 @@ tags:
   - category/webdev
 aliases:
   - Vue.js
+published:
+addition:
+zotero: "[🇿](zotero://select/items/@Vuejs)"
 status: 🟥
 rating:
 scientificity:
@@ -12,16 +15,17 @@ category:
   - "[[webdev]]"
 meta:
 problem:
-related:
 creator:
 production:
-url: "[ru.vuejs.org](https://vuejs.org/)"
-zotero: "[🇿](zotero://select/items/@Vuejs)"
-published:
 start: 2026-01-13T22:43:43+03:00
 end:
+url:
+  - "[ru.vuejs.org](https://vuejs.org/)"
+icon: 📃
+color: "#7575c0"
 created: 2026-01-13T22:43:43+03:00
 updated: 2026-03-04T19:31:03+03:00
+related:
 ---
 
 https://ru.vuejs.org

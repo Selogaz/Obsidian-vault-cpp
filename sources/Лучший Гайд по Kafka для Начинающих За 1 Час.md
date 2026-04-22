@@ -3,7 +3,10 @@ tags:
   - source/cinematic/movie
   - category/java
 aliases: []
-status:
+addition:
+status: 📥
+rating:
+scientificity:
 category:
   - "[[java]]"
 meta:
@@ -12,9 +15,11 @@ creator: Влад Мишустин
 production:
 start: 2025-09-16T18:14:38+03:00
 end:
-total_hours: 0
+icon: 🎞️
+color: "#c86555"
 created: 2025-09-16T18:14:38+03:00
 updated: 2026-01-14T00:21:50+03:00
+total_hours: 0
 ---
 
 https://www.youtube.com/watch?v=hbseyn-CfXY

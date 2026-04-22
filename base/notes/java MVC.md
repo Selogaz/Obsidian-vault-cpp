@@ -5,6 +5,8 @@ tags:
 aliases:
   - MVC
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-06T09:03:39+03:00
 updated: 2025-10-02T18:14:23+03:00
 sr-due: 2026-12-12

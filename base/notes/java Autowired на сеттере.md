@@ -5,6 +5,8 @@ tags:
 aliases:
   - "@Autowired на сеттере"
 deck: obsidian::java
+icon: </>
+color: "#ab4642"
 created: 2025-06-13T12:25:35+03:00
 updated: 2025-06-13T12:25:35+03:00
 ---

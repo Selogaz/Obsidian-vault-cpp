@@ -35,5 +35,16 @@
   "obsidian42-brat",
   "query-control",
   "board-view",
-  "obsidian-hybrid-search"
+  "timeline-for-bases",
+  "bases-board",
+  "bases-auto-search",
+  "bases-chart-views",
+  "bases-tasks",
+  "block-view",
+  "calendar-bases",
+  "obsidian-custom-attachment-location",
+  "obsidian-local-images-plus",
+  "obsidian-meta-bind-plugin",
+  "metadata-validator",
+  "tag-replacer"
 ]

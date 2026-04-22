@@ -78,8 +78,8 @@
   ],
   "files": [
     {
-      "filePattern": "",
-      "viewMode": ""
+      "filePattern": "home/fleetings.md",
+      "viewMode": "obsidianUIMode: preview"
     }
   ]
 }
