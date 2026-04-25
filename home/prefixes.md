@@ -33,7 +33,7 @@ games – g
 study – s
 linux – l
 productivity – prod
-webdev – web
+
 japanese – jap
 
 
@@ -117,6 +117,7 @@ java – java
 html – html
 css – css
 programming – prog
+webdev – web
 
 ```yaml
 prefix note title().md

@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "obsidian-hybrid-search": {
-      "command": "npx",
-      "args": ["-y", "-p", "obsidian-hybrid-search@latest", "obsidian-hybrid-search-mcp"],
+      "command": "/home/exuberance/.nvm/versions/node/v25.9.0/bin/node",
+      "args": ["/home/exuberance/.nvm/versions/node/v25.9.0/lib/node_modules/obsidian-hybrid-search/dist/src/server.js"],
       "env": {
         "OBSIDIAN_VAULT_PATH": "/home/exuberance/Документы/Obsidian/Obsidian-vault-cpp",
         "OBSIDIAN_IGNORE_PATTERNS": ".obsidian/**,templates/**",

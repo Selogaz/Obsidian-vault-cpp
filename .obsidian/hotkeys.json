@@ -1516,5 +1516,13 @@
       ],
       "key": "M"
     }
+  ],
+  "obsidian-hybrid-search:open-search": [
+    {
+      "modifiers": [
+        "Meta"
+      ],
+      "key": "F"
+    }
   ]
 }
