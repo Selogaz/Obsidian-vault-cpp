@@ -11,113 +11,13 @@
             "id": "bda9ef25e60d256c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "home/index.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "e0652eefb461d403",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/6-дневник-наблюдений.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "6-дневник-наблюдений"
-            }
-          },
-          {
-            "id": "756e1f2aab626412",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "periodic/daily/2026-04-23.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2026-04-23"
-            }
-          },
-          {
-            "id": "d309b0e327a23db7",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "home/databases/tasks.base",
-                "viewName": "📊 All: Short View"
-              },
-              "icon": "lucide-table",
-              "title": "tasks"
-            }
-          },
-          {
-            "id": "71433842ae0fa1e7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/tasks/Масштабируемость меню выбора расы.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Масштабируемость меню выбора расы"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -424,78 +324,70 @@
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
-          },
-          {
-            "id": "59b74ca478751a67",
-            "type": "leaf",
-            "state": {
-              "type": "mv-sidebar-panel",
-              "state": {},
-              "icon": "shield-check",
-              "title": "Metadata validator"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 348.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "graph:Граф": false,
-      "canvas:Создать новый холст": false,
-      "daily-notes:Сегодняшняя заметка": false,
-      "workspaces:Пространства": false,
-      "bases:Создать новую базу": false,
-      "obsidian-spaced-repetition:Изучать карточки": false,
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false,
+      "obsidian-hybrid-search:Hybrid search": false,
       "templater-obsidian:Templater": false,
+      "daily-notes:Open today's daily note": false,
       "obsidian42-brat:BRAT": false,
+      "bases:Create new base": false,
+      "canvas:Create new canvas": true,
+      "workspaces:Manage workspace layouts": true,
+      "obsidian-spaced-repetition:Review flashcards": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-      "periodic-notes:Open today": false
+      "periodic-notes:Open today": false,
+      "graph:Open graph view": false
     }
   },
-  "active": "71433842ae0fa1e7",
+  "active": "bda9ef25e60d256c",
   "lastOpenFiles": [
-    "home/databases/tasks.base",
-    "base/tasks/Масштабируемость меню выбора расы.md",
-    "periodic/daily/2026-04-23.md",
-    "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/6-дневник-наблюдений.md",
-    "home/fleetings.md",
-    "home/databases/projects.base",
-    "projects/Инвентаризация.md",
-    "projects/Разбор прокрастинации из-за ЕГЭ.md",
-    "home/index.md",
+    "periodic/daily/2026-04-24.md",
     "home/databases/breadcrumbs.base",
-    "projects/Редизайн мобильного приложения для покупки билетов в S7.md",
-    "base/additions/aggregators/Редизайн мобильного приложения для покупки билетов в S7 - tasks.md",
-    "base/tasks/Поиск рейса в мобильном приложении S7.md",
-    "base/tasks/Создание прототипа календаря для мобильного приложения в S7.md",
+    "periodic/daily/2026-04-25.md",
+    "base/categories/webdev.md",
+    "projects/Подземелья Максвелла.md",
+    "home/databases/projects.base",
+    "periodic/daily/2026-04-26.md",
+    "periodic/priority.md",
+    "periodic/tasks (grouped by priority).canvas",
+    "base/tasks/Заскриптовать выбор заклинаний.md",
+    "base/tasks/Исправить цвет гнома и человека.md",
+    "base/tasks/Выяснить правильный способ верстки таких меню.md",
+    "periodic/daily/2026-04-19.md",
+    "periodic/daily/2026-04-23.md",
+    "periodic/daily/2026-04-22.md",
+    "periodic/daily/2026-04-21.md",
+    "periodic/daily/2026-04-20.md",
+    "base/tasks/Марафон кодинга до утра понедельника.md",
+    "base/tasks/заскриптовать выбор класса.md",
+    "base/tasks/Исправить позиционирование левого и правого меню.md",
+    "base/tasks/Марафон кодинга до утра субботы.md",
+    "base/tasks/Заскриптовать выбор происхождения.md",
+    "base/tasks/Заскриптовать выбор характеристик.md",
+    "base/tasks/Заскриптовать выбор подрасы.md",
+    "base/tasks/разбить страницы на компоненты.md",
+    "base/tasks/увеличить шапку.md",
+    "base/tasks/Масштабирование.md",
+    "base/tasks/Масштабируемость меню выбора расы.md",
+    "home/databases/tasks.base",
+    "home/databases/notes.base",
     "files/Редизайн мобильного приложения для покупки билетов в S7 (2026-04-21) - roadmap.canvas",
-    "base/tasks/Ретаргетинг для возврата ушедших клиентов в S7.md",
-    "base/tasks/Дополнительные услуги перед оплатой билетов в S7.md",
-    "base/tasks/Оплата билетов в мобильном приложении S7.md",
-    "base/tasks/Выбор мест в мобильном приложении S7.md",
-    "base/_meta-notes/S7.md",
-    "base/categories/work.md",
-    "base/_meta-notes/S8.md",
-    "base/tasks/Выделение окна выгоды.md",
-    "base/tasks/Проектирование UI календаря.md",
-    "base/tasks/Выбор места в мобильном приложении S7.md",
-    "base/tasks/Тестирование и оптимизация.md",
-    "base/tasks/Навигация по периодам.md",
-    "base/tasks/Визуальное отображение цены.md",
-    "base/tasks/Анализ структуры данных календаря.md",
     "home/databases/interim.base",
     "templates/scripts/creator.js",
     "base/additions/conversations",
     "base/additions/negotiations",
     "base/additions/сonversations",
     "base/additions/сonversation",
-    "home/databases/sources.base",
     "periodic/2025.canvas",
     "periodic/2026.canvas",
     "periodic/2027.canvas",
@@ -504,7 +396,6 @@
     "periodic/2025_1.canvas",
     "periodic/tasks (grouped by time)_1.canvas",
     "periodic/2026_1.canvas",
-    "periodic/tasks (grouped by priority)_1.canvas",
     "files/test.png",
     "files/test.jpg",
     "files/Pasted Image 20260107000747_014.png",

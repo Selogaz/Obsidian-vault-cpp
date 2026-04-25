@@ -90,7 +90,7 @@ properties:
     displayName: ✅
 views:
   - type: table
-    name: '📊 All: Short View'
+    name: "📊 All: Short View"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
@@ -121,7 +121,7 @@ views:
       note.start: 140
       note.end: 140
   - type: table
-    name: '📊 All: Extended View'
+    name: "📊 All: Extended View"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
@@ -167,7 +167,7 @@ views:
       formula.created_relative: 140
       formula.updated_relative: 140
   - type: table
-    name: '📍 All: Milestones'
+    name: "📍 All: Milestones"
     filters:
       and:
         - file.hasTag("task/milestone")
@@ -197,11 +197,11 @@ views:
     name: ———
     filters:
       and:
-        - 'false'
+        - "false"
     order:
       - file.name
   - type: table
-    name: '📋 Workflow: Kanban (v)'
+    name: "📋 Workflow: Kanban (v)"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
@@ -230,7 +230,7 @@ views:
       note.status: 1
       note.priority: 1
   - type: board-view
-    name: '📋 Workflow: Kanban (h)'
+    name: "📋 Workflow: Kanban (h)"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
@@ -334,7 +334,7 @@ views:
       - 🇩
       - 🇪
   - type: board-view
-    name: '📋 Workflow: Kanban-i (h)'
+    name: "📋 Workflow: Kanban-i (h)"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
@@ -421,7 +421,7 @@ views:
       - 🟩
       - ❄
   - type: timeline
-    name: '📍 Workflow: Timeline'
+    name: "📍 Workflow: Timeline"
     filters:
       and:
         - '!status.contains("📥")'
@@ -455,7 +455,7 @@ views:
     borderWidth: 1
     showColors: true
   - type: calendar
-    name: '🗓️ Workflow: Calendar'
+    name: "🗓️ Workflow: Calendar"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
@@ -466,7 +466,7 @@ views:
     startDate: note.start
     endDate: note.end
   - type: block-view
-    name: '✅ Workflow: Inline Tasks'
+    name: "✅ Workflow: Inline Tasks"
     filters:
       and:
         - '!status.contains("⬛")'
@@ -475,7 +475,7 @@ views:
     filterQuotes: false
     filterTasksType: incomplete
   - type: table
-    name: '🗄️ Workflow: Group By Type'
+    name: "🗄️ Workflow: Group By Type"
     filters:
       and:
         - '!status.contains("⬛")'
@@ -503,7 +503,7 @@ views:
       note.status: 1
       note.priority: 1
   - type: table
-    name: '🔺 Workflow: Group By Priority'
+    name: "🔺 Workflow: Group By Priority"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
@@ -535,11 +535,11 @@ views:
     name: ———
     filters:
       and:
-        - 'false'
+        - "false"
     order:
       - file.name
   - type: table
-    name: '⬛ Status: Drop'
+    name: "⬛ Status: Drop"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
@@ -562,7 +562,7 @@ views:
       note.status: 1
       note.priority: 1
   - type: table
-    name: '📥 Status: Inbox'
+    name: "📥 Status: Inbox"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
@@ -587,7 +587,7 @@ views:
       note.status: 1
       note.priority: 1
   - type: table
-    name: '🟥 Status: To Do'
+    name: "🟥 Status: To Do"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
@@ -613,7 +613,7 @@ views:
       note.status: 1
       note.priority: 1
   - type: table
-    name: '❄ Status: Hold'
+    name: "❄ Status: Hold"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
@@ -640,7 +640,7 @@ views:
       note.status: 1
       note.priority: 1
   - type: table
-    name: '🟦 Status: In Progress'
+    name: "🟦 Status: In Progress"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
@@ -666,7 +666,7 @@ views:
       note.status: 1
       note.priority: 1
   - type: table
-    name: '🟩 Status: Done'
+    name: "🟩 Status: Done"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
@@ -695,11 +695,11 @@ views:
     name: ———
     filters:
       and:
-        - 'false'
+        - "false"
     order:
       - file.name
   - type: table
-    name: '🧩 Group: By Attribute'
+    name: "🧩 Group: By Attribute"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
@@ -729,7 +729,7 @@ views:
       note.status: 1
       note.priority: 1
   - type: table
-    name: '📍 Group: By Milestones'
+    name: "📍 Group: By Milestones"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
@@ -758,7 +758,7 @@ views:
       note.start: 140
       note.end: 140
   - type: table
-    name: '📁 Group: By Project'
+    name: "📁 Group: By Project"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
@@ -785,7 +785,7 @@ views:
       note.status: 1
       note.priority: 1
   - type: table
-    name: '🗺️ Group: By Category'
+    name: "🗺️ Group: By Category"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
@@ -815,7 +815,7 @@ views:
     name: ———
     filters:
       and:
-        - 'false'
+        - "false"
     order:
       - file.name
   - type: table
@@ -850,18 +850,18 @@ views:
       note.priority: 1
       note.end: 120
   - type: chart-bar
-    name: '📈 Statistics: By Attribute'
+    name: "📈 Statistics: By Attribute"
     x: note.attribute
     aggregate:file.name: Count
   - type: chart-bar
-    name: '📈 Statistics: By Status'
+    name: "📈 Statistics: By Status"
     sort:
       - property: formula.kanban
         direction: DESC
     x: note.status
     aggregate:file.name: Count
   - type: chart-bar
-    name: '📈 Statistics: By Priority'
+    name: "📈 Statistics: By Priority"
     sort:
       - property: formula.priority
         direction: ASC
@@ -871,7 +871,7 @@ views:
     name: ———
     filters:
       and:
-        - 'false'
+        - "false"
     order:
       - file.name
   - type: table
