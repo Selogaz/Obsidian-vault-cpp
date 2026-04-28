@@ -11,10 +11,96 @@
             "id": "bda9ef25e60d256c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "periodic/daily/2026-04-28.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2026-04-28"
+            }
+          },
+          {
+            "id": "791775d9a882c380",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/katakana.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "katakana"
+            }
+          },
+          {
+            "id": "b02340cd86ba39a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/weekly/2026-W17.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-W17"
+            }
+          },
+          {
+            "id": "76686f8b27648453",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/Подземелья Максвелла.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Подземелья Максвелла"
             }
           }
         ]
@@ -263,8 +349,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5,
-    "collapsed": true
+    "width": 348.5
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -351,34 +436,36 @@
   },
   "active": "bda9ef25e60d256c",
   "lastOpenFiles": [
-    "periodic/daily/2026-04-24.md",
-    "home/databases/breadcrumbs.base",
-    "periodic/daily/2026-04-25.md",
-    "base/categories/webdev.md",
+    "periodic/daily/2026-04-27.md",
+    "periodic/daily/2026-04-28.md",
+    "periodic/weekly/2026-W17.md",
     "projects/Подземелья Максвелла.md",
-    "home/databases/projects.base",
+    "base/notes/katakana.md",
     "periodic/daily/2026-04-26.md",
-    "periodic/priority.md",
-    "periodic/tasks (grouped by priority).canvas",
-    "base/tasks/Заскриптовать выбор заклинаний.md",
-    "base/tasks/Исправить цвет гнома и человека.md",
-    "base/tasks/Выяснить правильный способ верстки таких меню.md",
-    "periodic/daily/2026-04-19.md",
-    "periodic/daily/2026-04-23.md",
-    "periodic/daily/2026-04-22.md",
-    "periodic/daily/2026-04-21.md",
-    "periodic/daily/2026-04-20.md",
     "base/tasks/Марафон кодинга до утра понедельника.md",
-    "base/tasks/заскриптовать выбор класса.md",
+    "periodic/daily/2026-04-25.md",
     "base/tasks/Исправить позиционирование левого и правого меню.md",
-    "base/tasks/Марафон кодинга до утра субботы.md",
-    "base/tasks/Заскриптовать выбор происхождения.md",
-    "base/tasks/Заскриптовать выбор характеристик.md",
-    "base/tasks/Заскриптовать выбор подрасы.md",
-    "base/tasks/разбить страницы на компоненты.md",
-    "base/tasks/увеличить шапку.md",
-    "base/tasks/Масштабирование.md",
+    "base/tasks/Исправить цвет гнома и человека.md",
     "base/tasks/Масштабируемость меню выбора расы.md",
+    "base/tasks/Заскриптовать выбор характеристик.md",
+    "base/tasks/Заскриптовать выбор происхождения.md",
+    "base/tasks/Заскриптовать выбор подрасы.md",
+    "base/tasks/Заскриптовать выбор заклинаний.md",
+    "base/tasks/заскриптовать выбор класса.md",
+    "home/index.md",
+    "base/tasks/Выучить катакану.md",
+    "base/notes/переключение между алфавитами.md",
+    "base/tasks/Выучить хирагану.md",
+    "base/notes/hiragana.md",
+    "base/tasks/Выяснить правильный способ верстки таких меню.md",
+    "base/tasks/сверстать мобильную версию.md",
+    "base/tasks/заанимировать переключение расы.md",
+    "periodic/daily/2026-04-24.md",
+    "base/categories/japanese.md",
+    "periodic/2026.canvas",
+    "home/databases/breadcrumbs.base",
+    "home/databases/projects.base",
+    "periodic/tasks (grouped by priority).canvas",
     "home/databases/tasks.base",
     "home/databases/notes.base",
     "files/Редизайн мобильного приложения для покупки билетов в S7 (2026-04-21) - roadmap.canvas",
@@ -389,7 +476,6 @@
     "base/additions/сonversations",
     "base/additions/сonversation",
     "periodic/2025.canvas",
-    "periodic/2026.canvas",
     "periodic/2027.canvas",
     "periodic/tasks (grouped by effort)_1.canvas",
     "periodic/2024_1.canvas",
