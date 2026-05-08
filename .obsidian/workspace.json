@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2026-04-28.md",
+                "file": "periodic/daily/2026-05-08.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-04-28"
+              "title": "2026-05-08"
             }
           },
           {
-            "id": "791775d9a882c380",
+            "id": "788f60dae50ad5e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/notes/katakana.md",
+                "file": "periodic/daily/2026-05-07.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,35 +52,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "katakana"
+              "title": "2026-05-07"
             }
           },
           {
-            "id": "b02340cd86ba39a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "periodic/weekly/2026-W17.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2026-W17"
-            }
-          },
-          {
-            "id": "76686f8b27648453",
+            "id": "3faf4055d12ccfc8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -102,8 +78,105 @@
               "icon": "lucide-file",
               "title": "Подземелья Максвелла"
             }
+          },
+          {
+            "id": "0f88f474d0544921",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sources/bunpro.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "bunpro"
+            }
+          },
+          {
+            "id": "b838b12e88e30757",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/tasks/N5.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "N5"
+            }
+          },
+          {
+            "id": "2483896d3cb3f55f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/hiragana.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "hiragana"
+            }
+          },
+          {
+            "id": "be95daa19d46b92b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home/index.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -349,7 +422,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 348.5,
+    "collapsed": true
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -365,12 +439,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "base/tasks/N5.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of N5"
             }
           },
           {
@@ -414,8 +489,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5,
-    "collapsed": true
+    "width": 348.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -434,36 +508,46 @@
       "graph:Open graph view": false
     }
   },
-  "active": "bda9ef25e60d256c",
+  "active": "b838b12e88e30757",
   "lastOpenFiles": [
-    "periodic/daily/2026-04-27.md",
-    "periodic/daily/2026-04-28.md",
-    "periodic/weekly/2026-W17.md",
-    "projects/Подземелья Максвелла.md",
-    "base/notes/katakana.md",
-    "periodic/daily/2026-04-26.md",
-    "base/tasks/Марафон кодинга до утра понедельника.md",
-    "periodic/daily/2026-04-25.md",
-    "base/tasks/Исправить позиционирование левого и правого меню.md",
-    "base/tasks/Исправить цвет гнома и человека.md",
-    "base/tasks/Масштабируемость меню выбора расы.md",
-    "base/tasks/Заскриптовать выбор характеристик.md",
-    "base/tasks/Заскриптовать выбор происхождения.md",
-    "base/tasks/Заскриптовать выбор подрасы.md",
-    "base/tasks/Заскриптовать выбор заклинаний.md",
-    "base/tasks/заскриптовать выбор класса.md",
-    "home/index.md",
-    "base/tasks/Выучить катакану.md",
-    "base/notes/переключение между алфавитами.md",
-    "base/tasks/Выучить хирагану.md",
+    "base/notes/вставка кандзи.md",
     "base/notes/hiragana.md",
-    "base/tasks/Выяснить правильный способ верстки таких меню.md",
-    "base/tasks/сверстать мобильную версию.md",
-    "base/tasks/заанимировать переключение расы.md",
-    "periodic/daily/2026-04-24.md",
-    "base/categories/japanese.md",
-    "periodic/2026.canvas",
+    "base/notes/大.md",
+    "base/tasks/N5.md",
+    "base/tasks/Выучить катакану.md",
+    "sources/bunpro.md",
+    "base/notes/переключение между алфавитами.md",
+    "base/notes/katakana.md",
+    "base/notes/N5.md",
+    "home/index.md",
+    "sources/Выучить язык легко.md",
+    "sources/Learning Japanese isnt astually that hard.md",
+    "files/908187f27a096d70bad75d15ed6c3672_MD5.png",
+    "base/notes/comprehensible method.md",
+    "periodic/daily/2026-05-08.md",
+    "periodic/daily/2026-05-07.md",
+    "projects/Подземелья Максвелла.md",
+    "periodic/daily/2026-04-08.md",
+    "periodic/daily/2026-04-07.md",
+    "periodic/daily/2026-04-13.md",
+    "periodic/daily/2026-04-12.md",
+    "periodic/daily/2026-04-11.md",
+    "periodic/daily/2026-04-04.md",
+    "periodic/daily/2026-04-10.md",
+    "periodic/daily/2026-04-03.md",
+    "periodic/daily/2026-04-09.md",
+    "periodic/daily/2026-04-23.md",
+    "files/katakana 20260506095923130.png",
     "home/databases/breadcrumbs.base",
+    "files/Suzume no Tojimari 20260503210952134.png",
+    "files/Suzume no Tojimari 20260503183815017.png",
+    "files/Suzume no Tojimari 20260503181515131.png",
+    "files/Suzume no Tojimari 20260503181328386.png",
+    "files/Nichinan_日南,_Miyazaki_Prefecture,_Kyushu,_Japan_🇯🇵_-_31_March_2026.jpg",
+    "files/Suzume no Tojimari 20260503172739486.png",
+    "files/Снимок экрана от 2026-05-03 17-10-45.png",
+    "files/2026-05-02 20260503140309265.png",
+    "periodic/2026.canvas",
     "home/databases/projects.base",
     "periodic/tasks (grouped by priority).canvas",
     "home/databases/tasks.base",
@@ -481,16 +565,6 @@
     "periodic/2024_1.canvas",
     "periodic/2025_1.canvas",
     "periodic/tasks (grouped by time)_1.canvas",
-    "periodic/2026_1.canvas",
-    "files/test.png",
-    "files/test.jpg",
-    "files/Pasted Image 20260107000747_014.png",
-    "files/japan_1.png",
-    "files/japan.png",
-    "files/2026-01-06_22-58.png",
-    "files/DATE_2025-12-04 TIME_16-06-22 2025-12-04.png",
-    "files/Rapid Research Lab 2025-11-13.png",
-    "files/DATE_2025-10-28 TIME_20-11-48 2025-10-28-1.png",
-    "files/DATE_2025-10-28 TIME_20-11-48 2025-10-28.png"
+    "periodic/2026_1.canvas"
   ]
 }
