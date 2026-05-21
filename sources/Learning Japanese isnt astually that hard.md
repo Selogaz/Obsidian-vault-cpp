@@ -1,12 +1,12 @@
 ---
 tags:
-  - status/wip
+  - status/done
   - source/video/recording
   - category/japanese
 aliases: []
 published:
 addition:
-status: 🟦
+status: 🟩
 rating:
 scientificity:
 category:
@@ -23,7 +23,7 @@ cover:
 icon: 📹
 color: "#2a9070"
 created: 2026-05-08T18:12:39+03:00
-updated: 2026-05-08T18:55:12+03:00
+updated: 2026-05-14T19:18:28+03:00
 ---
 
 [[comprehensible method]]
