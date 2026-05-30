@@ -5,6 +5,7 @@ tags:
   - category/obsidian
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@flowing_abbyss)"
 status: 🟥
 rating:
 scientificity:

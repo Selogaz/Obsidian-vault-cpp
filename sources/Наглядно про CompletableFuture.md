@@ -5,6 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@наглядно_про_completablefuture)"
 status: 🟥
 rating:
 scientificity:

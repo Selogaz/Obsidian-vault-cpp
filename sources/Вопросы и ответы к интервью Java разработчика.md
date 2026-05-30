@@ -5,6 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@вопросы_и_ответы_к_интервью_java_разработчика)"
 status: ❄
 rating:
 scientificity:

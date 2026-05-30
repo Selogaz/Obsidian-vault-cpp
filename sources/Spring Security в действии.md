@@ -6,6 +6,7 @@ tags:
 aliases:
   - Spring Security в действии
 addition:
+zotero: "[🇿](zotero://select/items/@spring_security_в_действии)"
 status: ❄
 rating:
 scientificity:

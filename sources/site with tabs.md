@@ -5,6 +5,7 @@ tags:
   - category/music
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@site_with_tabs)"
 status: 🟥
 rating:
 scientificity:

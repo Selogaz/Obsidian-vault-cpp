@@ -7,6 +7,7 @@ tags:
 aliases: []
 published:
 addition:
+zotero: "[🇿](zotero://select/items/@stephen_krashen_language_acquisition_and_comprehensible_input)"
 status: 🟩
 rating:
 scientificity:

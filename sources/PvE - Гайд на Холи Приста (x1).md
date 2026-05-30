@@ -5,6 +5,7 @@ tags:
   - category/games
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@pve_гайд_на_холи_приста_x1)"
 status: 🟩
 rating:
 scientificity:

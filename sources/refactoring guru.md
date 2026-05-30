@@ -5,6 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@refactoring_guru)"
 status: ❄
 rating:
 scientificity:

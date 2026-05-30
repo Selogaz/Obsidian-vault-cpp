@@ -5,6 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@база_знаний_fill_the_gaps)"
 status: ❄
 rating:
 scientificity:

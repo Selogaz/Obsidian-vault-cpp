@@ -5,6 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@документация_механизмы_блокировки_в_postgres)"
 status: 🟥
 rating:
 scientificity:

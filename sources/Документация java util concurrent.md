@@ -4,6 +4,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@документация_java_util_concurrent)"
 status: 🟥
 rating:
 scientificity:

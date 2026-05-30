@@ -6,6 +6,7 @@ tags:
 aliases: []
 published:
 addition:
+zotero: "[🇿](zotero://select/items/@how_to_connect_figma_to_opencode)"
 status: 🟩
 rating:
 scientificity:

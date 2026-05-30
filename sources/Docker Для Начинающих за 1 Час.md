@@ -5,6 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@docker_для_начинающих_за_1_час)"
 status: 🟩
 rating:
 scientificity:

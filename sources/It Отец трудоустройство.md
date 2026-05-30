@@ -5,6 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@it_отец_трудоустройство)"
 status: ❄
 rating:
 scientificity:

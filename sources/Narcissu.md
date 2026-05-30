@@ -5,6 +5,7 @@ tags:
   - category/english
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@narcissu)"
 status: ❄
 rating:
 scientificity:

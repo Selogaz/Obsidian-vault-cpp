@@ -5,6 +5,7 @@ tags:
   - category/health
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@prostosocial_bot)"
 status: ❄
 rating:
 scientificity:

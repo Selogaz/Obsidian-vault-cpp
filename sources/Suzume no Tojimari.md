@@ -6,6 +6,7 @@ tags:
 aliases: []
 published:
 addition:
+zotero: "[🇿](zotero://select/items/@suzume_no_tojimari)"
 status: 🟩
 rating:
 scientificity:

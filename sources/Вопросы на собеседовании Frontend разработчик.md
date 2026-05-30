@@ -6,6 +6,7 @@ tags:
 aliases: []
 published:
 addition:
+zotero: "[🇿](zotero://select/items/@вопросы_на_собеседовании_frontend_разработчик)"
 status: 🟦
 rating:
 scientificity:

@@ -5,6 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@изучение_java)"
 status: 🟥
 rating:
 scientificity:

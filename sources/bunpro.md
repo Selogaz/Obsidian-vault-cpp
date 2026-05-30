@@ -5,6 +5,7 @@ tags:
   - category/japanese
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@bunpro)"
 status: 🟦
 rating:
 scientificity:

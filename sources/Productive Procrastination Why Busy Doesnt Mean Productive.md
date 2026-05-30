@@ -5,6 +5,7 @@ tags:
   - category/productivity
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@productive_procrastination_why_busy_doesnt_mean_productive)"
 status: 🟩
 rating:
 scientificity:

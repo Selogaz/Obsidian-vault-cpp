@@ -5,6 +5,7 @@ tags:
   - category/obsidian
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@vault)"
 status: 🟦
 rating:
 scientificity:

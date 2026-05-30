@@ -6,6 +6,7 @@ tags:
 aliases: []
 published:
 addition:
+zotero: "[🇿](zotero://select/items/@shinpr_claude_code_workflows)"
 status: 🟦
 rating:
 scientificity:

@@ -6,6 +6,7 @@ tags:
 aliases: []
 published:
 addition:
+zotero: "[🇿](zotero://select/items/@repo_dnd_frontend)"
 status: 🟦
 rating:
 scientificity:

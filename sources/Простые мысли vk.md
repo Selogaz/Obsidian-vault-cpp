@@ -6,6 +6,7 @@ tags:
   - category/health
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@простые_мысли_vk)"
 status: 🟥
 rating:
 scientificity:

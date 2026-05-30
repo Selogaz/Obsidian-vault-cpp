@@ -5,6 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@во_что_превращаются_различные_lockmodetype_в_разных_бд_eng)"
 status: 🟥
 rating:
 scientificity:

@@ -7,6 +7,7 @@ aliases: []
 published:
 addition:
   - "[[A Philosophy Of Software Design - conspectuses|📓]]"
+zotero: "[🇿](zotero://select/items/@a_philosophy_of_software_design)"
 status: 🟦
 rating:
 scientificity:

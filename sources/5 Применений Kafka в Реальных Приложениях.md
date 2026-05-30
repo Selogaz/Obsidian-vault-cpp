@@ -5,6 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@5_применений_kafka_в_реальных_приложениях)"
 status: 🟩
 rating:
 scientificity:

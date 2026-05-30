@@ -5,6 +5,7 @@ tags:
   - category/study
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@opencode)"
 status: ❄
 rating:
 scientificity:

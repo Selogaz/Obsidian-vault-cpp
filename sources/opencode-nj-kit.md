@@ -6,6 +6,7 @@ tags:
 aliases: []
 published:
 addition:
+zotero: "[🇿](zotero://select/items/@opencode_nj_kit)"
 status: 🟦
 rating:
 scientificity:

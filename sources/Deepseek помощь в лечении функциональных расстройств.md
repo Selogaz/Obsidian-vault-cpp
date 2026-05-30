@@ -5,6 +5,7 @@ tags:
   - category/health
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@deepseek_помощь_в_лечении_функциональных_расстройств)"
 status: 🟦
 rating:
 scientificity:

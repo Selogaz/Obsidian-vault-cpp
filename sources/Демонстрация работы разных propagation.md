@@ -5,6 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@демонстрация_работы_разных_propagation)"
 status: 🟥
 rating:
 scientificity:

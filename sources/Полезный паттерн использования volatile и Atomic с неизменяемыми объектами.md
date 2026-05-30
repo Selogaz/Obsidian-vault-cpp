@@ -4,6 +4,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@полезный_паттерн_использования_volatile_и_atomic_с_неизменяемыми_объектами)"
 status: 🟥
 rating:
 scientificity:

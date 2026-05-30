@@ -5,6 +5,7 @@ tags:
   - category/music
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@convert_gpx_to_pdf)"
 status: 🟥
 rating:
 scientificity:

@@ -6,7 +6,7 @@ tags:
 aliases: []
 published:
 addition:
-zotero:
+zotero: "[🇿](zotero://select/items/@народный_пк_от_welson)"
 status: 🟥
 rating:
 scientificity:

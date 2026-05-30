@@ -4,6 +4,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@пересказ_английской_документации_по_transactional_с_примерами)"
 status: 🟥
 rating:
 scientificity:

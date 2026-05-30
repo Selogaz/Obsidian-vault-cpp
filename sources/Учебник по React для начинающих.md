@@ -8,6 +8,7 @@ aliases:
 published: 2023-03-12
 addition:
   - "[[Учебник по React для начинающих - conspectuses|📓]]"
+zotero: "[🇿](zotero://select/items/@учебник_по_react_для_начинающих)"
 status: 🟩
 rating: 🌔
 scientificity:

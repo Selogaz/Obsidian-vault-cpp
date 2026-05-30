@@ -6,6 +6,7 @@ tags:
 aliases:
   - cpumemory
 addition:
+zotero: "[🇿](zotero://select/items/@cpumemory)"
 status: 🟥
 rating:
 scientificity:

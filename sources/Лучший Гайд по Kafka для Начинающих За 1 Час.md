@@ -4,6 +4,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@лучший_гайд_по_kafka_для_начинающих_за_1_час)"
 status: 📥
 rating:
 scientificity:

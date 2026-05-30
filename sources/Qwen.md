@@ -5,6 +5,7 @@ tags:
   - category/linux
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@qwen)"
 status: ❄
 rating:
 scientificity:

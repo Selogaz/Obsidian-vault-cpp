@@ -6,6 +6,7 @@ tags:
 aliases: []
 addition:
   - конспекты backend_interviewer
+zotero: "[🇿](zotero://select/items/@backend_interviewer)"
 status: 🟥
 rating:
 scientificity:

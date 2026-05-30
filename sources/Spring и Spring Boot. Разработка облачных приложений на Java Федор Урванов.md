@@ -5,6 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@spring_и_spring_boot_разработка_облачных_приложений_на_java_федор_урванов)"
 status: ❄
 rating:
 scientificity:

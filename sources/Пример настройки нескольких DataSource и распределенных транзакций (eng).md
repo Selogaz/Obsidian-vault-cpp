@@ -5,6 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@пример_настройки_нескольких_datasource_и_распределенных_транзакций_eng)"
 status: 🟥
 rating:
 scientificity:

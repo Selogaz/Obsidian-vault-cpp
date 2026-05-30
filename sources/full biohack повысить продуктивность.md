@@ -5,6 +5,7 @@ tags:
   - category/health
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@full_biohack_повысить_продуктивность)"
 status: 🟩
 rating:
 scientificity:

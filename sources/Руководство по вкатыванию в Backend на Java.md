@@ -5,6 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@руководство_по_вкатыванию_в_backend_на_java)"
 status: 🟥
 rating:
 scientificity:

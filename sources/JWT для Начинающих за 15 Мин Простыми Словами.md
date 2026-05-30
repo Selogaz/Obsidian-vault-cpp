@@ -5,6 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@jwt_для_начинающих_за_15_мин_простыми_словами)"
 status: 🟥
 rating:
 scientificity:

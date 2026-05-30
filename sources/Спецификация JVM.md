@@ -5,6 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
+zotero: "[🇿](zotero://select/items/@спецификация_jvm)"
 status: 🟥
 rating:
 scientificity:

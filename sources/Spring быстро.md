@@ -6,6 +6,7 @@ tags:
 aliases:
   - Spring быстро
 addition:
+zotero: "[🇿](zotero://select/items/@spring_быстро)"
 status: ❄
 rating:
 scientificity:
