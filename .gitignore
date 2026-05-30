@@ -1,1 +1,4 @@
 .aider*
+
+# Транзиентный SQLite-индекс плагина hybrid-search — меняется при каждом запуске Obsidian
+.obsidian-hybrid-search.db*
