@@ -3,11 +3,14 @@ import json
 import re
 from pathlib import Path
 
-# Configuration
-LIBRARY_FILE = ".library.json"
-SOURCES_DIR = "sources"
+# Configuration — paths resolve relative to this script (files/zotero-sync/),
+# so it runs correctly from any CWD (incl. the inotify watcher).
+SCRIPT_DIR = Path(__file__).resolve().parent
+VAULT_ROOT = SCRIPT_DIR.parents[1]
+LIBRARY_FILE = str(SCRIPT_DIR / ".library.json")
+SOURCES_DIR = str(VAULT_ROOT / "sources")
 
-STATUS_MAP = {"📥": "🟥", "🟥": "🟥", "🟦": "🟦", "🟩": "🟩", "✖": "⬛"}
+STATUS_MAP = {"📥": "🟥", "🟥": "🟥", "🟦": "🟦", "🟩": "🟩", "❄": "❄", "✖": "⬛"}
 RATING_MAP = {"🌕": "🌕", "🌔": "🌔", "🌓": "🌓", "🌒": "🌒", "🌑": "🌑"}
 SCIENTIFICITY_MAP = {"🅰️": "🅰️", "🅱️": "🅱️", "👓": "👓", "📢": "📢", "💬": "💬"}
 COLLECTION_MAP = {
@@ -28,7 +31,7 @@ def load_zotero_library(filepath):
             data = json.load(f)
     except FileNotFoundError:
         print(f"❌ File {filepath} not found.")
-        return None, None, None, None
+        return None, None, None
 
     items_by_key = {}
     for item in data.get("items", []):
@@ -197,7 +200,8 @@ def process_file(
         with open(file_path, "r", encoding="utf-8") as f:
             content = f.read()
 
-        citekey_match = re.search(r"zotero:.*items/@([a-zA-Z0-9_\-]+)", content)
+        # [\w\-] matches Cyrillic citation keys too (sanitize_key keeps Ѐ-ӿ)
+        citekey_match = re.search(r"zotero://select(?:/library)?/items/@([\w\-]+)", content)
         if not citekey_match:
             return False
 

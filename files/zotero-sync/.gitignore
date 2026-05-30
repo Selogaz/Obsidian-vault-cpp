@@ -1,0 +1,8 @@
+# Generated / transient artifacts — reproducible from the .py scripts + live Zotero.
+# The Python/shell scripts and the handoff doc are the source of truth.
+*.js
+.library.json
+My Library.json
+orphan*.bib
+__pycache__/
+_backup-*/
