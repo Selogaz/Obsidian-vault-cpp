@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "annotations": [
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "00004|00000942",
+      "pageLabel": "",
+      "position": {
+        "type": "FragmentSelector",
+        "conformsTo": "http://www.idpf.org/epub/linking/cfi/epub-cfi.html",
+        "value": "epubcfi(/6/10!/4/6,/1:0,/3:93)"
+      },
+      "text": "The most fundamental problem in computer science is problem decomposition: how to take a complex problem and divide it up into pieces that can be solved independently",
+      "comment": "",
+      "tags": [],
+      "id": "NIGQ2FP7",
+      "dateCreated": "2026-05-27T19:18:26.206Z",
+      "dateModified": "2026-05-27T19:18:26.206Z",
+      "authorName": ""
+    }
+  ]
+}

@@ -8,195 +8,342 @@ deck: obsidian::webdev
 icon: </>
 color: "#ab4642"
 created: 2026-05-10T21:00:37+03:00
-updated: 2026-05-11T00:37:01+03:00
+updated: 2026-05-24T01:12:15+03:00
 ---
 
 **аудит проекта**
 —
-# Аудит проекта: критические проблемы
+# План рефакторинга front-maxwell
 
-## 1. 🔴 TEST_MODE=true В auth-роутах в проде-готовом коде
+Дата: 2026-05-24. Источник правды — состояние репо на момент написания,
+не старый аудит. Что уже сделано — отмечено в разделе «Контекст».
 
-[src/app/api/auth/login/route.ts:7](vscode-webview://0anlt4kj9jaeu08hr47t2vr4o3rrn0b8dhrnohrps2cj868a93pj/src/app/api/auth/login/route.ts#L7), [register/route.ts:7](vscode-webview://0anlt4kj9jaeu08hr47t2vr4o3rrn0b8dhrnohrps2cj868a93pj/src/app/api/auth/register/route.ts#L7), [me/route.ts:5](vscode-webview://0anlt4kj9jaeu08hr47t2vr4o3rrn0b8dhrnohrps2cj868a93pj/src/app/api/me/route.ts#L5) — `TEST_MODE = true` принимает любые данные и создаёт сессию. Если такой билд уйдёт на staging/прод, любой запрос с `?test=true` (а в `test-auth/page.tsx` — это всегда true) логинит произвольного пользователя.
+## Контекст: что изменилось со времён старого аудита
 
-**Решение.** Заменить на `process.env.NODE_ENV !== 'production' && process.env.AUTH_TEST_MODE === '1'` и убрать query-флаг `?test=true` со всех страниц. Лучше — целиком вынести тестовый режим за пределы продового бандла через separate route или env-условный `notFound()`.
+- **TEST_MODE и локальные auth-роуты удалены** — `src/app/api/auth/*` и
+	`src/app/api/me` больше нет, авторизация только через `proxy.ts` →
+	backend. В AGENTS.md явно зафиксировано «не восстанавливать TEST_MODE».
+	Раздел «security» из старого плана закрыт.
+- **`buildCreateCharacterPayload`** уже вынесен в
+	[src/lib/characterDraft.ts](../src/lib/characterDraft.ts), `page.tsx` им
+	пользуется.
+- **`useToast` подключён** в [page.tsx](../src/app/(game)/game/character/page.tsx)
+	и `(game)/game/create/page.tsx`; ошибки `createCharacter` уже
+	показываются пользователю. Глобального `apiClient` всё ещё нет.
+- **`no-scrollbar` утилитарный класс** в `globals.css` уже введён и
+	используется в большинстве шагов — старый пункт #7 в основном закрыт
+	(остались точечные «inline-styles + magic px», но это уже мелочь).
+- **`disabled={!canCreateCharacter}`** уже навешан на desktop-кнопку
+	«Создать персонажа». На mobile (`CharacterContinueButton` внутри
+	`*StepMobile`) — нет.
+- **Дублёры desktop ↔ mobile НЕ схлопнуты** — все 9 пар на месте, общий
+	объём `character/sections/` ≈ 7.3k строк (см. wc -l).
+- **`useCharacter.ts` вырос**: 853 строки, 9 `useEffect`, ≈30 экспортов
+	в return-объекте.
+- **`page.tsx` слегка похудел** (700 → 565), но содержит два больших
+	switch-блока (desktop и mobile), каждый со своей таблицей пропсов.
 
-## 2. 🔴 Дубликат верстки desktop ↔ mobile для каждого шага
+## Топ-проблем, которые реально стоит решать (в порядке ROI)
 
-27 файлов в [character/sections/](vscode-webview://0anlt4kj9jaeu08hr47t2vr4o3rrn0b8dhrnohrps2cj868a93pj/src/app/\(game\)/game/character/sections/), 7230 строк. Каждый шаг существует дважды: `CharacterRaceStep.tsx` и `CharacterRaceStepMobile.tsx` — почти идентичная логика выбора, разная только обёртка. Любая доработка (добавить поле, поправить адаптер) делается в двух местах, и история сессии показывает, что они уже разъезжаются.
+### 1. 🔴 Дубликат desktop ↔ mobile для каждого шага
 
-**Решение.** Вынести логику шага (пропсы, обработчики, состояние списка) в headless-хук `useStepX(...)`, а `Step` и `StepMobile` оставить тонкими «оболочками-вьюхами». Альтернатива на уровне CSS — один компонент с responsive-версткой через Tailwind breakpoints (`md:hidden`/`hidden md:block`), как сделано в `page.tsx`. Это уменьшит площадь ошибок вдвое.
+`Character{Race,SubRace,Class,SubClass,Origin,Alignment,Stats,Spells,
+Name,Gender}Step` + `*StepMobile` — 18 файлов, ~5.5k строк, диффы между
+парами уже расходятся (см. свежий фикс `CharacterFeaturePlate` mobile —
+делалось в двух местах). Любая фича оплачивается дважды.
 
-## 3. 🔴 [page.tsx](vscode-webview://0anlt4kj9jaeu08hr47t2vr4o3rrn0b8dhrnohrps2cj868a93pj/src/app/\(game\)/game/character/page.tsx) — 700 Строк, держит всё
+**Что даёт.** Минус ~2–3k строк, исчезает класс багов «починили только
+одну версию». Снимает нагрузку с page.tsx (см. #2).
 
-Один файл содержит: `ContinueButton`/`BackButton`, лоадер, error state, динамическую генерацию шагов, `handleCreateCharacter` с маппингом DTO, а также массивный switch по `currentStep` с пробросом ~15 пропсов в каждый компонент шага. Нарушает «не складывать всё в один файл» из AGENTS.md.
+### 2. 🔴 `page.tsx` — Два параллельных switch'а на 9 шагов
 
-**Решение.**
+В файле два почти одинаковых дерева JSX: 9 mobile-веток и 9 desktop-веток.
+Каждая ветка явно прокидывает 10–17 пропсов. Любой новый общий проп —
+18 правок.
 
-- Кнопки → `components/ui/CharacterContinueButton.tsx` / `CharacterBackButton.tsx`.
-- Маппинг `selection → CreateCharacterRequest` → `lib/characterDraft.ts` (`buildCreateCharacterPayload(selection, totalStats)`). Сейчас это инлайн в обработчике, который никем не тестируется.
-- Switch шагов → `<CharacterStepRouter currentStep=... />` с одной таблицей `{ id: ... , Component, mobileComponent, props }`.
+**Что даёт.** При нормальном `StepRouter` (одна таблица шагов) page.tsx
+ужмётся примерно вдвое и перестанет требовать ручного синка
+пропсов desktop/mobile.
 
-## 4. 🟠 Утечка состояния между шагами при сборке payload
+### 3. 🔴 `useCharacter.ts` — God-hook (853 строки, 9 useEffect)
 
-В [page.tsx](vscode-webview://0anlt4kj9jaeu08hr47t2vr4o3rrn0b8dhrnohrps2cj868a93pj/src/app/\(game\)/game/character/page.tsx) `handleCreateCharacter` молча `return`'ит, если поля не выбраны (`selection.alignment`, `selection.origin` и т.п.). Кнопка при этом активна (`disabled={false}` в [page.tsx:643](vscode-webview://0anlt4kj9jaeu08hr47t2vr4o3rrn0b8dhrnohrps2cj868a93pj/src/app/\(game\)/game/character/page.tsx#L643)), и пользователь жмёт «Создать персонажа» — ничего не происходит, ошибки нет. Та же кнопка на mobile: `onNext={handleNext}` без визуального состояния.
+Грузит races/subraces/classes/subclasses/backgrounds/alignments/spells,
+держит selection, считает totalStats/raceBonuses, рандомизирует всё,
+авто-выбирает дефолтные подрасы, ставит template. История проекта
+показывает классические race-condition'ы (мерцающий гном, tiefling-zariel)
+именно отсюда.
 
-**Решение.** Использовать `canCreateCharacter` из `useCharacter` (он уже там есть!) как `disabled` для ContinueButton на шаге `spells`. Плюс добавить toast/inline-ошибку при `createCharacter` failure — сейчас только `console.warn` ([page.tsx](vscode-webview://0anlt4kj9jaeu08hr47t2vr4o3rrn0b8dhrnohrps2cj868a93pj/src/app/\(game\)/game/character/page.tsx) в `catch`).
+**Что даёт.** Изоляция cascade-зависимостей `race → subraces`,
+`class → subclasses`, `class+subclass → spells` в отдельные хуки убирает
+целый класс багов с гонками эффектов.
 
-## 5. 🟠 [useCharacter.ts](vscode-webview://0anlt4kj9jaeu08hr47t2vr4o3rrn0b8dhrnohrps2cj868a93pj/src/hooks/useCharacter.ts) — 756 Строк, god-hook
+### 4. 🟠 Mobile-кнопка «Создать персонажа» не блокируется
 
-Один хук грузит races, subraces, classes, subclasses, backgrounds, alignments, spells, держит локальный selection, считает totalStats, randomize-ит всё, авто-выбирает дефолтные подрасы. У него ~30 точек return и куча useEffect с deps вроде `[selection.characterClass?.id, selection.subClass?.id]` — отсюда race condition'ы (см. историю сессии: «гном мерцал», «tiefling-zariel»).
+Desktop-`CharacterContinueButton` уже использует `!canCreateCharacter`.
+На mobile тот же шаг — кнопка всегда активна, `handleNext` молча уходит
+в `return`, пользователь не понимает, что не заполнено. Маленькая правка
+с большим UX-эффектом.
 
-**Решение.** Разбить на:
+### 5. 🟠 Нет единого `apiClient` / типизированной `ApiError`
 
-- `useCharacterCatalog()` — все справочники (races/classes/...).
-- `useCharacterSelection()` — мутации + derived state.
-- `useSpellsForSelection(classId, subclassId)` — POST /spells, изолированно.
-- `useSubclassesForClass(classId)` — изолированно.
+Каждый сервис в `src/services/*` сам парсит ответ, сам решает, кидать
+ли исключение, по-разному форматирует сообщение. Поверх этого ToastContext
+уже есть — не хватает только общего узкого места, через которое все
+ошибки идут с одинаковыми полями (`status`, `code`, `message`).
 
-Это уберёт связанные deps и каскадные эффекты.
+### 6. 🟡 Точечная чистка
 
-## 6. 🟠 Нет глобального error UX
+- 15 `console.*` — половина диагностические, можно либо убрать, либо
+	спрятать за `lib/logger.ts` (no-op в prod). Не блокер.
+- `services/character.ts` всё ещё держит мок-расы/классы как фоллбэк;
+	по AGENTS.md «не хардкодить данные в services/». Удалить мок-секции,
+	оставить только `STEPS` и `statsInfo`.
+- `proficiencies.skills`/`inventory.items` остаются `[]` в payload —
+	по правилам D&D персонаж неполный. Это уже продуктовая задача (нужны
+	UI-шаги), не чистый рефакторинг — оставить за рамками этого плана.
 
-`createCharacter` (только что подключённый), `getSpells`, `getFirstLevelSubclasses` — все ошибки уходят в `console.warn`. Пользователь видит зависшую кнопку или пустой список и не понимает, что бэк отдал 502/403.
+---
 
-**Решение.** Добавить минимальный `useToast` (sonner или своё на 30 строк) и единый `apiClient` в `services/_client.ts`, который кидает типизированную `ApiError` с code/status/body — и тостит её на верхнем уровне. Сейчас каждый сервис изобретает свой парсинг `response.text()`.
+## План работ
 
-## 7. 🟡 Inline-styles + `<style jsx>` для скрытия скроллбаров — повторено 6+ раз
+Делается строго в этом порядке: #4 — самая дешёвая и сразу видна
+пользователю, дальше идёт #3 (хуки готовят почву для #1), потом #1+#2
+вместе (одно без другого не имеет смысла), в конце — #5 и #6.
 
-13 случаев `<style jsx>` или фиксированной высоты. Например, `.origin-mobile-scroll`, `.alignment-mobile-scroll`, `.spells-mobile-scroll` — три почти идентичных блока CSS.
+### Этап 0 — Мелкие быстрые победы (≤ полдня)
 
-**Решение.** Один утилитарный класс в `globals.css`:
+Не блокируют ничего и сразу улучшают UX/код.
 
-```css
-.no-scrollbar::-webkit-scrollbar { display: none; }
-.no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+- **0.1** Прокинуть `disabled={!canCreateCharacter}` в mobile
+	`CharacterContinueButton` на шаге `spells` (см. #4). Тот же паттерн,
+	что уже стоит на desktop-кнопке в
+	[page.tsx](../src/app/(game)/game/character/page.tsx).
+- **0.2** Подчистить очевидно устаревшие `console.log`:
+	- [src/hooks/useCharacter.ts](../src/hooks/useCharacter.ts) `Refetch
+		requested`,
+	- [src/app/(lk)/lk/page.tsx](../src/app/(lk)/lk/page.tsx) `Save
+		changes:`,
+	- [src/app/_dev/templates-modal/page.tsx](../src/app/_dev/templates-modal/page.tsx)
+		— оставить, это dev-страница.
+	`console.warn` в сервисах оставить (диагностика плохой формы ответа
+	бэка).
+- **0.3** Удалить мок-расы/классы из
+	[src/services/character.ts](../src/services/character.ts), оставить
+	только `STEPS` и `statsInfo`. Проверить, что нигде это уже не
+	используется как источник данных (поиск `getCharacterData`).
+
+**DoD.** TS зелёный, mobile-кнопка «Создать персонажа» блокируется при
+незаполненных полях, в проде в консоли тихо.
+
+### Этап 1 — Распилить `useCharacter` (1–2 дня)
+
+Готовит почву для этапов 2–3: тонкие шаги-вьюхи будут опираться на
+маленькие хуки, а не на god-hook с 30 экспортами.
+
+#### 1.1 Зафиксировать публичный API
+
+Перед любым изменением — выгрузить все поля, которые page.tsx читает
+из `useCharacter()` (это ~30 имён в return-объекте). Это «контракт» —
+после рефакторинга `useCharacter()` должен возвращать тот же объект,
+чтобы page.tsx менялся минимально (или вообще не менялся).
+
+#### 1.2 Извлечь катологи в `useCharacterCatalog`
+
+В `src/hooks/character/useCharacterCatalog.ts`. Грузит:
+
+- races, classes, backgrounds, alignments — то, что от выбора не зависит.
+
+Возвращает `{ raceOptions, classOptions, backgroundOptions,
+alignmentOptions, loading, error }`. Внутри — один `useEffect` с
+`Promise.all([...])` и `withRetry`. Никаких deps от selection.
+
+#### 1.3 Извлечь cascade-загрузки
+
+Три отдельных хука, каждый отвечает за одну зависимость:
+
+- `useSubracesForRace(raceId)` — GET `/api/character-builder/subraces`,
+	фильтр по `raceId`. Возвращает `{ subRaceOptions, loading }`.
+- `useSubclassesForClass(classId)` — GET `/api/character-builder/
+	subclasses` (только если `subclassSelectionLevel === 1`). Возвращает
+	`{ subclassOptions, loading }`.
+- `useSpellsForSelection(classId, subclassId)` — POST `/spells`.
+	Возвращает `{ cantripChoices, spellChoices, loading }`.
+
+Каждый — один `useEffect` с одной зависимостью. Этим убираются гонки
+типа «выбрал расу → пока летят subraces, выбрал другую → подмешалось
+старое».
+
+#### 1.4 Извлечь selection-state в `useCharacterSelection`
+
+Чистая мутация state без сетевых вызовов: `selectRace`, `selectSubRace`,
+…, `setName`, `setGender`, `updateStats`, `selectSpells`,
+`selectCantrips`, `applyRecommendedStats`, `resetStats`. Возвращает
+`{ selection, ...actions }`.
+
+`selection.race` теперь хранит **только id + минимум полей для UI**, а
+полный `RaceOption` тянется из каталога по id в момент рендера —
+один источник правды. Это закрывает «id: 'human' (мок) vs UUID (бэк)».
+
+#### 1.5 Извлечь чистые derivations в `lib/characterStats.ts`
+
+Без хуков — функции `computeUsedPoints(stats)`, `computeRaceBonuses(race,
+subRace)`, `computeTotalStats(stats, race, subRace)`. Сейчас они внутри
+`useCharacter` как `useMemo`, но логически — чистые трансформации.
+
+#### 1.6 Извлечь рандомизацию в `useCharacterRandomizer`
+
+`randomize{Race,SubRace,Class,SubClass,Origin,Alignment,Stats,Spells,
+Name}` и `randomizeCharacter`. Зависит от каталога + selection-actions,
+сам стейт не хранит.
+
+#### 1.7 Извлечь авто-выбор дефолтов в `useCharacterAutoselect`
+
+Эффекты вида «когда пришли subraces для выбранной расы — авто-выбрать
+дефолтную». Изолируется в один хук, чтобы было видно, какие
+`useEffect`'ы side-effect-ят, а какие просто читают.
+
+#### 1.8 Композиция
+
+`useCharacter()` переписывается как тонкий композитор поверх 1.2–1.7.
+Возвращает тот же объект, что и раньше (контракт из 1.1). Файл должен
+ужаться до ~150–200 строк.
+
+**DoD этапа 1.**
+- TS зелёный.
+- `useCharacter` ≤ 200 строк.
+- Ручной прогон визарда: каждый шаг, плюс edge-cases —
+	- быстрая смена расы (race condition по subraces),
+	- класс с подклассом 1-го уровня (Sorcerer/Warlock/Cleric),
+	- «Случайная генерация» заполняет всё корректно.
+
+### Этап 2 — Решить, как схлопывать desktop/mobile (полдня)
+
+**Это gate. Без явного решения и пилота — не делаем этап 3.**
+
+#### 2.1 Выбор стратегии
+
+Два варианта:
+
+- **α — single-component, responsive Tailwind.** Один компонент,
+	desktop-блок в `hidden md:flex`, mobile-блок в `md:hidden`. Шаг
+	имеет одну реализацию выбора (handlers, state), но две вёрстки.
+	Минусы: больше JSX в одном файле; плюсы: проще, чем headless-хук.
+- **β — headless hook + два тонких View.** `useStepX()` отдаёт
+	`{ items, selectedId, onSelect, ... }`, а `CharacterXStep` /
+	`CharacterXStepMobile` — тонкие вьюхи без логики. Плюсы: чистое
+	разделение; минусы: всё ещё два файла вёрстки, можно опять
+	«разъехаться».
+
+**Рекомендация.** Начать с α: ~80% диффа между парами — это вёрстка
+(SVG-рамки разной высоты, разные viewport-классы), а не логика. Headless-
+хук решает не тот вопрос, который болит сильнее. Если на пилоте выяснится,
+что один компонент стал > 500 строк и нечитаемым — откатиться к β.
+
+#### 2.2 Пилот: схлопнуть `CharacterNameStep` + `CharacterNameStepMobile`
+
+Самый маленький, без сетевых зависимостей. 141 + 214 строк → один файл,
+цель ~250–280 строк. После пилота — прогнать на 360px / 768px / 1280px,
+прежде чем тиражировать.
+
+**DoD этапа 2.** Зафиксировано решение в `AGENTS.md` (одна-две строки),
+пилотный шаг работает на двух breakpoint'ах, диффов между десктопом и
+мобильным больше не существует физически.
+
+### Этап 3 — Схлопнуть остальные дублёры (1.5–2 дня)
+
+По одной паре за коммит. После каждой — визуальный прогон. Зависимости
+от этапа 1: схлопывание шагов с cascade-данными (`SubRace`, `SubClass`,
+`Spells`) использует новые мини-хуки.
+
+Порядок от простого к сложному:
+
+1. **3.1 Gender** (82 + 222 строки) — простой выбор М/Ж.
+2. **3.2 Alignment** (312 + 341).
+3. **3.3 Origin** (327 + 365).
+4. **3.4 Race** (337 + 337). Тут уже разъехались (см. свежие фиксы
+	 мобильного блока name/description/features).
+5. **3.5 SubRace** (285 + 335) — зависит от `useSubracesForRace`.
+6. **3.6 Class** (279 + 328).
+7. **3.7 SubClass** (310 + 348) — зависит от `useSubclassesForClass`.
+8. **3.8 Stats** (518 + 534) — сложный: 6 +/- кнопок, «Рекомендованные»,
+	 «Сброс», лимит 8–15, бонусы расы. Тестировать distribute-points.
+9. **3.9 Spells** (557 + 488) — зависит от `useSpellsForSelection`.
+	 Здесь же — `disabled={!canCreateCharacter}` для mobile-кнопки (если
+	 ещё не закрыто на этапе 0).
+
+**DoD этапа 3.**
+- В `character/sections/` нет файлов `*StepMobile.tsx`.
+- `AGENTS.md` обновлён: убраны упоминания `*StepMobile.tsx` из дерева.
+- Прогон визарда на узком и широком экранах: golden path + три edge-
+	cases (класс с подклассом, раса без подрасы, «Случайная генерация»).
+
+### Этап 4 — Сжать `page.tsx` через `<CharacterStepRouter>` (полдня)
+
+После этапа 3 в page.tsx останется одна switch-таблица (а не две). Её
+выносим в `components/sections/game/character/CharacterStepRouter.tsx`:
+
+```ts
+const STEP_REGISTRY: Record<StepId, React.FC<StepProps>> = {
+  name: CharacterNameStep,
+  gender: CharacterGenderStep,
+  race: CharacterRaceStep,
+  …
+};
 ```
 
-И заменить все вхождения. Заодно убрать магические `height: '409px'` — лучше `flex-1 min-h-0`, чтобы скролл работал без хардкода.
+И из page.tsx — `<CharacterStepRouter currentStep={currentStep}
+{...stepProps} />`. Все общие пропсы (`selection`, `totalStats`,
+`primaryStat`, navigation callbacks) собираются один раз.
 
-## 8. 🟡 Хардкод mock-данных в [services/character.ts](vscode-webview://0anlt4kj9jaeu08hr47t2vr4o3rrn0b8dhrnohrps2cj868a93pj/src/services/character.ts) при работающем бэкенде
+**DoD.** `page.tsx` ≤ 300 строк, в нём нет ни одного `currentStep ===
+'race' && <CharacterRaceStep …/>`.
 
-Файл на 95 строк отдаёт хардкодные races/classes/subClasses/origins. По AGENTS.md эти данные теперь идут из `/api/character-builder/*`, но `getCharacterData()` всё ещё вызывается в `useCharacter` для structure (steps, statsInfo) и фолбэка. Это запутывает: какой `id: 'human'` (мок) vs UUID (бэк).
+### Этап 5 — Единый `apiClient` (опционально, 0.5–1 день)
 
-**Решение.** Оставить в `character.ts` только то, что реально не приходит с бэка (статичные `steps`, `statsInfo`), и переименовать функцию в `getCharacterStaticData()`. Удалить мок-races/classes — они уже не используются как источник правды.
+Если уже не болит — отложить. Если болит (новый сервис снова парсит
+`response.text()` руками) — сделать минимальный `services/_client.ts`
+с `apiFetch<T>(path, init)`:
 
-## 9. 🟡 16 `console.log/warn/error` Уйдут в прод
+- одно место для `credentials: 'include'`, `Content-Type`;
+- бросает `ApiError { status, code?, message }` на не-2xx;
+- ловится в page.tsx и идёт в `showToast(...)`.
 
-Не критично, но засоряет консоль. Половина — диагностика race conditions, которые по идее уже починены.
-
-**Решение.** Завести `lib/logger.ts` с `logger.warn(...)` no-op'ящим в `NODE_ENV === 'production'`, заменить вызовы. Или просто отчистить устаревшие логи.
-
-## 10. 🟡 Inventory/proficiencies Всегда пустые в `createCharacter`
-
-В только что добавленной [character-create.ts](vscode-webview://0anlt4kj9jaeu08hr47t2vr4o3rrn0b8dhrnohrps2cj868a93pj/src/services/character-create.ts) → [page.tsx](vscode-webview://0anlt4kj9jaeu08hr47t2vr4o3rrn0b8dhrnohrps2cj868a93pj/src/app/\(game\)/game/character/page.tsx) `handleCreateCharacter` — `proficiencies.skills: []`, `inventory.items: []`. Бэк это примет, но персонаж будет «лысым».
-
-**Решение.** Это требует доработки UI (этапы выбора навыков/языков/стартового снаряжения, которых сейчас нет в визарде). Минимум — затащить дефолты с бэка: для класса есть `proficiencies.skills.choose: N` и `from: ClassSkillItem[]` — на этапе stats или нового шага дать выбрать N навыков. Иначе финальный персонаж не валиден по правилам D&D.
-
----
-
-# Приоритеты, если делать поэтапно
-
-1. **Сейчас** — #1 (security), #4 (`disabled={!canCreateCharacter}` + toast на ошибку API). Минимум кода, максимум пользы.
-2. **Следующий спринт** — #3 (вынести `buildCreateCharacterPayload` + `StepRouter`) и #7 (no-scrollbar utility). Это рефакторинг без изменения поведения.
-3. **Стратегически** — #2 (схлопнуть desktop/mobile дублёры) и #5 (распилить `useCharacter`). Эти два дадут максимальный долгосрочный выигрыш, но требуют 1–2 дня рефакторинга и регрессионного тестирования всего визарда.
-4. **Перед запуском в прод** — #10 (выбор навыков/инвентаря), #8 (вычистить мок-данные), #9 (логи).
-
-# Декомпозиция приоритета №3
-
-## Часть A — Распилить `useCharacter.ts` (756 строк → ~150)
-
-Сначала useCharacter, потому что новые мини-хуки сделают рефакторинг шагов проще: схлопывая desktop/mobile, я буду опираться уже на чистый API хуков, а не на god-hook.
-
-### A1. Подготовка
-
-1. **A1.1** Создать `src/hooks/character/` директорию.
-2. **A1.2** Снять snapshot текущего поведения визарда: пройти все шаги вручную, записать что куда selectится, какие race-conditions сейчас есть. Это reference для регрессии.
-3. **A1.3** Зафиксировать публичный API `useCharacter` (что именно используется на стороне `page.tsx`) — grep по `useCharacter()` в проекте, выписать список потребляемых полей. Это нужно, чтобы новые хуки покрывали всё, что сейчас торчит наружу.
-
-### A2. Извлечь катологи (read-only справочники с бэка)
-
-1. **A2.1** Создать `useCharacterCatalog()` — грузит `races`, `classes`, `backgrounds`, `alignments` (статичные списки, не зависящие от выбора). Возвращает `{raceOptions, classOptions, backgroundOptions, alignmentOptions, loading, error}`.
-2. **A2.2** Создать `useSubracesForRace(raceId)` — грузит подрасы выбранной расы. Изолирует cascade `race → subraces`.
-3. **A2.3** Создать `useSubclassesForClass(classId, level)` — грузит подклассы выбранного класса 1 уровня. Только если у класса `subclassSelectionLevel === 1`.
-4. **A2.4** Создать `useSpellsForSelection(classId, subclassId)` — POST `/spells`. Возвращает `{cantripChoices, spellChoices, loading}`.
-
-### A3. Извлечь selection-логику
-
-1. **A3.1** Создать `useCharacterSelection()` — держит `selection` state + selectters (`selectRace`, `selectSubRace`, `selectClass`, ..., `setName`, `setGender`, `updateStats`). Чистая мутация state без сетевых вызовов.
-2. **A3.2** Извлечь `randomize*` функции в `useCharacterRandomizer(selection, catalog)` — зависит от каталога и текущего selection, дёргает методы из A3.1.
-3. **A3.3** Извлечь `totalStats`, `usedPoints`, `raceBonuses` derivations в `useCharacterDerived(selection, catalog)` (или просто чистые функции в `lib/characterStats.ts`, без хука).
-
-### A4. Извлечь side-effects авто-выбора
-
-1. **A4.1** Извлечь auto-pick первой расы / дефолтной подрасы (DEFAULT_SUBRACE_BY_RACE) в отдельный `useCharacterAutoselect(selection, catalog, dispatch)` — это эффект, который ставит дефолты при появлении новых данных. Чтобы было ясно, какие useEffect'ы тут side-effect'ят, а какие чисто read.
-
-### A5. Композиция
-
-1. **A5.1** Переписать `useCharacter()` как тонкий композитор поверх A2–A4. Сохранить тот же return-объект (по A1.3). Файл должен ужаться ~до 150 строк.
-2. **A5.2** Прогнать визард end-to-end на dev. Сравнить со снимком A1.2. Особое внимание: гном/тифлинг (известные race conditions из истории), переключение класса с/на класс с подклассом.
-
-### A6. Очистка
-
-1. **A6.1** Удалить мок-данные из `services/character.ts`, оставить только статичные `steps` + `statsInfo` (#8 из аудита, идёт в довесок). Переименовать в `getCharacterStaticData()`.
-2. **A6.2** Снять `console.warn` оставшиеся после стабилизации (#9 из аудита).
+Сервисы переводим постепенно, по одному.
 
 ---
 
-## Часть B — Схлопнуть desktop/mobile дублёры
+## Что НЕ делаем в этом плане
 
-Делаю шаг за шагом: пилотный шаг, потом масштабируем шаблон. Не делаю всё сразу — каждый шаг нужно протестировать визуально на двух breakpoint'ах.
+- **Inventory / proficiencies / выбор навыков.** Это продуктовая работа
+	(новые UI-шаги визарда), не рефакторинг. Отдельная задача.
+- **i18n.** Все строки RU, гардкоженные — пока ОК.
+- **CSS-фреймворк/дизайн-токены.** Tailwind и текущие цвета фиксированы
+	в AGENTS.md — не трогаем.
 
-### B1. Выбор стратегии и пилот
+## Оценка и порядок зависимостей
 
-1. **B1.1** **Решить, как схлопывать**: вариант α — single component с responsive Tailwind (`md:` / `hidden md:block`); вариант β — headless `useStepX()` хук + два тонких `<View>` компонента. Зафиксировать решение в `AGENTS.md`. Без этого решения остальные шаги бессмысленны.
-2. **B1.2** **Пилот на одном простом шаге** — `CharacterNameStep` + `CharacterNameStepMobile`. Самый маленький, без сложного state. Проверить, что выбранный подход реально схлопывает код, а не плодит дополнительные обёртки.
-3. **B1.3** Пройти проверку end-to-end на узком и широком экранах (≤768px и ≥1024px). Если выбранный подход неудобен — откатить и попробовать другой. Лучше переделать пилот, чем тиражировать ошибку на 8 шагов.
+| Этап | Время | Зависит от |
+|------|-------|------------|
+| 0    | ≤ 0.5 дня | — |
+| 1    | 1–2 дня | — |
+| 2    | 0.5 дня | — (но осмысленно после 1) |
+| 3    | 1.5–2 дня | 1, 2 |
+| 4    | 0.5 дня | 3 |
+| 5    | 0.5–1 день | — (можно в любой момент) |
 
-### B2. Простые шаги (без cascade-dependencies)
+**Итого: ~5 рабочих дней** при последовательной работе. Можно
+останавливаться после любого этапа — каждый самодостаточен и оставляет
+проект в рабочем состоянии.
 
-1. **B2.1** Схлопнуть `CharacterGenderStep` ↔ `CharacterGenderStepMobile`.
-2. **B2.2** Схлопнуть `CharacterAlignmentStep` ↔ `CharacterAlignmentStepMobile`.
-3. **B2.3** Схлопнуть `CharacterOriginStep` ↔ `CharacterOriginStepMobile`.
+## Принципы по ходу работы
 
-### B3. Шаги выбора с скроллом и карточками
-
-1. **B3.1** Схлопнуть `CharacterRaceStep` ↔ `CharacterRaceStepMobile`. Здесь больше логики (icons, info-modal, scroll-thumb), но шаг изолирован.
-2. **B3.2** Схлопнуть `CharacterSubRaceStep` ↔ `CharacterSubRaceStepMobile`. Зависит от `useSubracesForRace` из A2.2 — должно быть готово.
-3. **B3.3** Схлопнуть `CharacterClassStep` ↔ `CharacterClassStepMobile`.
-4. **B3.4** Схлопнуть `CharacterSubClassStep` ↔ `CharacterSubClassStepMobile`. Зависит от A2.3.
-
-### B4. Сложные шаги
-
-1. **B4.1** Схлопнуть `CharacterStatsStep` ↔ `CharacterStatsStepMobile`. Сложнее: 6 +/- кнопок, рекомендованные/сброс, валидация диапазона. Тестировать distribute-points аккуратно.
-2. **B4.2** Схлопнуть `CharacterSpellsStep` ↔ `CharacterSpellsStepMobile`. Самый большой шаг (selectedCantrips + selectedSpells, лимиты, кнопка "Создать персонажа"). Зависит от A2.4.
-
-### B5. StepRouter (#3 из аудита, попутный refactor)
-
-1. **B5.1** В `page.tsx` switch по `currentStep` сейчас занимает ~400 строк (после схлопывания шагов один компонент на шаг — но всё ещё швах ~15 пропсов на каждый). Вынести в `<CharacterStepRouter currentStep="..." {...stepProps} />` с одной таблицей шагов.
-2. **B5.2** Убрать дублирующую логику навигации (`isFirstStep` / `isLastStep` рассчитывается одинаково в каждом step-компоненте).
-
-### B6. Финал
-
-1. **B6.1** Прогнать весь визард на узком и широком экранах ещё раз — golden path + edge cases:
-		- Класс с подклассом (Sorcerer/Warlock/Cleric) — проверить что step "Подкласс" появляется и работает.
-		- Раса без подрасы (Half-Orc?) — проверить, что шаг подрасы корректно скипается/показывается.
-		- Spells шаг — лимиты cantrips/spells, кнопка "Создать персонажа" блокируется когда `!canCreateCharacter`.
-		- "Случайная генерация" заполняет всё.
-2. **B6.2** Удалить старые `*StepMobile.tsx` файлы окончательно.
-3. **B6.3** Обновить `AGENTS.md`: убрать упоминания `*StepMobile.tsx` из списка структуры.
-
----
-
-## Оценка
-
-- **Часть A:** ~10–14 часов чистой работы (A1.3 + A2 + A3 + A5 — самое объёмное; A4 + A6 — мелочи).
-- **Часть B:** ~12–16 часов (~1–1.5 часа на каждый шаг + B5 + регрессия). B1.3 ОБЯЗАТЕЛЬНО, иначе риск переделать всё.
-- **Итого ~3–4 рабочих дня** при последовательной работе. Можно растянуть, делая по одной задаче за коммит, чтобы регрессии локализовались.
-
-## Порядок и зависимости
-
-- A → B: B2.2/B3.2/B3.4/B4.2 зависят от A2 (новые мини-хуки).
-- A1.3 — критичен. Не уверен, что покрыл — не начинай A2.
-- B1.3 — gate, без зелёной проверки на пилоте B2 не начинать.
-- B5 можно делать после B4 или **между** B3 и B4 (когда уже половина шагов схлопнута, но ещё не все — будет видно, какие пропсы реально общие).
+- **Один этап = одна ветка / серия коммитов.** Не смешивать «распилил
+	хук» и «схлопнул шаг» в один диф — регрессии нелокализуемы.
+- **После каждого этапа — ручной прогон визарда.** Авто-тестов на UI
+	нет, единственная гарантия — глазами.
+- **`useCharacter()` контракт не ломать до конца этапа 1.** page.tsx
+	и шаги читают одни и те же поля — пока этап 3 не схлопнул шаги, любое
+	изменение return-объекта = правки в 9 местах.
+- **Не делать «попутный рефакторинг».** Если на этапе 3 нашлось, что
+	`CharacterMenu` тоже разъехался с CharacterRightPanel — фиксируем в
+	отдельный TODO, не делаем сейчас.

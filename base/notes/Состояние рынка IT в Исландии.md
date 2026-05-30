@@ -1,0 +1,11 @@
+---
+tags:
+  - note/discourse/context
+  - category/Релокация
+aliases:
+icon: 🪧
+color: "#909090"
+created: 2026-05-21T10:05:00+03:00
+updated: 2026-05-21T10:05:00+03:00
+---
+Анализ текущего спроса на Frontend-разработчиков в Исландии.

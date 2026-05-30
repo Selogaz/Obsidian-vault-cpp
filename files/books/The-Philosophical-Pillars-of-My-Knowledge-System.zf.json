@@ -1,0 +1,1074 @@
+{
+  "version": 1,
+  "annotations": [
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0000294",
+      "position": {
+        "type": "CssSelector",
+        "value": "#движение-между-абстракцией-и-конкретизацией + p",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 47,
+          "end": 95
+        }
+      },
+      "text": "проистекает из системного анализа и data science",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "VGWZDKLA",
+      "dateCreated": "2026-05-29T18:02:03.506Z",
+      "dateModified": "2026-05-29T18:02:07.514Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0000385",
+      "position": {
+        "type": "CssSelector",
+        "value": "#движение-между-абстракцией-и-конкретизацией + p",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 140,
+          "end": 181
+        }
+      },
+      "text": "скользить между абстракцией и конкретикой",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "G3MFRCEQ",
+      "dateCreated": "2026-05-29T18:02:14.327Z",
+      "dateModified": "2026-05-29T18:02:23.144Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0000537",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(5)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 91,
+          "end": 124
+        }
+      },
+      "text": "категории, метазаметки и проблемы",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "FAA2XD9C",
+      "dateCreated": "2026-05-29T18:03:15.709Z",
+      "dateModified": "2026-05-29T18:03:15.709Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0000778",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(6)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 111,
+          "end": 173
+        }
+      },
+      "text": "композиции, то есть когда мы вкладываем одни элементы в другие",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "FAAJF8KD",
+      "dateCreated": "2026-05-29T18:03:24.365Z",
+      "dateModified": "2026-05-29T18:03:24.365Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0001904",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(9)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 90,
+          "end": 173
+        }
+      },
+      "text": "сначала определять класс проблем. Это очень сильно пересекается с классическим ТРИЗ",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "RIN5J82V",
+      "dateCreated": "2026-05-29T18:04:35.052Z",
+      "dateModified": "2026-05-29T18:04:35.052Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0002133",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(10)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 149,
+          "end": 293
+        }
+      },
+      "text": "Если словил в чём-то затык и не можешь понять, как связаны точечные факты – абстрагируйся. Слишком много теории, концептуализации – найди пример",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "UL6Z22A4",
+      "dateCreated": "2026-05-29T18:05:02.285Z",
+      "dateModified": "2026-05-29T18:05:02.285Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0002333",
+      "position": {
+        "type": "CssSelector",
+        "value": "#не-создаю-чего-не-понимаю + p"
+      },
+      "text": "Я не создаю структурных элементов, которые не понимаю, как можно использовать и развивать в долгосрочной перспективе.",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "9WM38PXZ",
+      "dateCreated": "2026-05-29T18:05:15.567Z",
+      "dateModified": "2026-05-29T18:05:15.567Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0002578",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(14)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 44,
+          "end": 106
+        }
+      },
+      "text": "не создаю и не переобуваюсь в процессе, не меняю core-механики",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "GLB3D33Q",
+      "dateCreated": "2026-05-29T18:05:26.423Z",
+      "dateModified": "2026-05-29T18:05:26.423Z",
+      "authorName": ""
+    },
+    {
+      "type": "highlight",
+      "color": "#ffd400",
+      "sortIndex": "0002931",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(17)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 10,
+          "end": 18
+        }
+      },
+      "text": "“effort”",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "5NYPRJR4",
+      "dateCreated": "2026-05-29T18:05:41.869Z",
+      "dateModified": "2026-05-29T18:05:45.068Z",
+      "authorName": ""
+    },
+    {
+      "type": "highlight",
+      "color": "#ffd400",
+      "sortIndex": "0003386",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(19)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 75,
+          "end": 80
+        }
+      },
+      "text": "PMBOK",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "7TXFPSYP",
+      "dateCreated": "2026-05-29T18:06:02.901Z",
+      "dateModified": "2026-05-29T18:06:13.821Z",
+      "authorName": ""
+    },
+    {
+      "type": "highlight",
+      "color": "#ffd400",
+      "sortIndex": "0003408",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(19)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 98,
+          "end": 104
+        }
+      },
+      "text": "Linear",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "4BI96CE3",
+      "dateCreated": "2026-05-29T18:06:06.203Z",
+      "dateModified": "2026-05-29T18:06:16.396Z",
+      "authorName": ""
+    },
+    {
+      "type": "highlight",
+      "color": "#ffd400",
+      "sortIndex": "0003442",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(19)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 133,
+          "end": 142
+        }
+      },
+      "text": "Waterfall",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "XL53LM3P",
+      "dateCreated": "2026-05-29T18:06:09.933Z",
+      "dateModified": "2026-05-29T18:06:19.315Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0003729",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(20)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 153,
+          "end": 254
+        }
+      },
+      "text": "сложно подвязывать другие идеи из реального окружающего нас мира, возникает проблема масштабируемости",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "BY55B4YR",
+      "dateCreated": "2026-05-29T18:06:49.089Z",
+      "dateModified": "2026-05-29T18:06:49.089Z",
+      "authorName": ""
+    },
+    {
+      "type": "highlight",
+      "color": "#ffd400",
+      "sortIndex": "0003998",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(21)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 45,
+          "end": 63
+        }
+      },
+      "text": "школы Щедровицкого",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "75ICI2GK",
+      "dateCreated": "2026-05-29T18:07:10.509Z",
+      "dateModified": "2026-05-29T18:07:10.509Z",
+      "authorName": ""
+    },
+    {
+      "type": "highlight",
+      "color": "#ffd400",
+      "sortIndex": "0004045",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(21)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 92,
+          "end": 101
+        }
+      },
+      "text": "Левенчука",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "MCMVPCZF",
+      "dateCreated": "2026-05-29T18:07:15.454Z",
+      "dateModified": "2026-05-29T18:07:15.454Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0005054",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(26)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 86,
+          "end": 148
+        }
+      },
+      "text": "значительно реже дают готовые, очень хорошо прожеванные знания",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "F4TWWFE7",
+      "dateCreated": "2026-05-29T18:07:48.012Z",
+      "dateModified": "2026-05-29T18:07:48.012Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0005309",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(26)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 347,
+          "end": 363
+        }
+      },
+      "text": "мне это нравится",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "9SG855LY",
+      "dateCreated": "2026-05-29T18:08:08.119Z",
+      "dateModified": "2026-05-29T18:08:08.119Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0005481",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(27)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 45,
+          "end": 80
+        }
+      },
+      "text": "научное на порядки более скептичное",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "WXHSL7FU",
+      "dateCreated": "2026-05-29T18:08:18.489Z",
+      "dateModified": "2026-05-29T18:08:18.489Z",
+      "authorName": ""
+    },
+    {
+      "type": "note",
+      "color": "#ffd400",
+      "sortIndex": "0000096",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(27)"
+      },
+      "text": "",
+      "pageLabel": "",
+      "comment": "Значит ли, что \"Голова пухнет\" - показатель хорошей работы или хотя бы коррелят?",
+      "tags": [],
+      "id": "EWEPMPGY",
+      "dateCreated": "2026-05-29T18:08:45.113Z",
+      "dateModified": "2026-05-29T18:09:32.131Z",
+      "authorName": "",
+      "onlyTextOrComment": true
+    },
+    {
+      "type": "underline",
+      "color": "#ffd400",
+      "sortIndex": "0005729",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(27)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 301,
+          "end": 318
+        }
+      },
+      "text": "у тебя она пухнет",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "KR5IQYBA",
+      "dateCreated": "2026-05-29T18:09:50.083Z",
+      "dateModified": "2026-05-29T18:09:50.083Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0006028",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(28)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 120,
+          "end": 163
+        }
+      },
+      "text": "сильно расходится с мейнстримным пониманием",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "TVVJ8L78",
+      "dateCreated": "2026-05-29T18:10:21.178Z",
+      "dateModified": "2026-05-29T18:10:21.178Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0006159",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(29)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 12,
+          "end": 43
+        }
+      },
+      "text": "возникает определённое сомнение",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "8MSYXK7W",
+      "dateCreated": "2026-05-29T18:10:29.005Z",
+      "dateModified": "2026-05-29T18:10:29.005Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0006509",
+      "position": {
+        "type": "CssSelector",
+        "value": "#архитектура-и-структурализм + p",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 0,
+          "end": 96
+        }
+      },
+      "text": "Если в моей системе какой-то элемент не имеет формального описания, то значит, его не существует",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "I2M4HX8X",
+      "dateCreated": "2026-05-29T18:10:53.503Z",
+      "dateModified": "2026-05-29T18:10:53.503Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0006657",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(32)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 53,
+          "end": 107
+        }
+      },
+      "text": "даёт надежную опору в её масштабировании и углублении.",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "7KSBAQEG",
+      "dateCreated": "2026-05-29T18:10:58.232Z",
+      "dateModified": "2026-05-29T18:10:58.232Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0006937",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(34)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 42,
+          "end": 86
+        }
+      },
+      "text": "логическая и смысловая взаимосвязь элементов",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "M6RBJZCP",
+      "dateCreated": "2026-05-29T18:11:21.629Z",
+      "dateModified": "2026-05-29T18:11:21.629Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0007000",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(34)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 107,
+          "end": 131
+        }
+      },
+      "text": "пайплайны/преобразования",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "GQITMT8A",
+      "dateCreated": "2026-05-29T18:11:33.507Z",
+      "dateModified": "2026-05-29T18:11:33.507Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0007040",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(34)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 149,
+          "end": 178
+        }
+      },
+      "text": "формальное описание элементов",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "ZCW5RSIT",
+      "dateCreated": "2026-05-29T18:11:36.720Z",
+      "dateModified": "2026-05-29T18:11:36.720Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0007113",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(35)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 43,
+          "end": 70
+        }
+      },
+      "text": "не противоречила самой себе",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "D3CU85M3",
+      "dateCreated": "2026-05-29T18:11:45.807Z",
+      "dateModified": "2026-05-29T18:11:45.807Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0007196",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(35)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 128,
+          "end": 181
+        }
+      },
+      "text": "механики не конфликтовали и не дублировали друг друга",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "BVGDEWYE",
+      "dateCreated": "2026-05-29T18:11:58.131Z",
+      "dateModified": "2026-05-29T18:11:58.131Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0007347",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(36)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 100,
+          "end": 219
+        }
+      },
+      "text": "невозможно, например, сразу сделать полноценный проект или сразу прочитать источник и достать из него максимум инсайтов",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "F5DFU73A",
+      "dateCreated": "2026-05-29T18:12:19.705Z",
+      "dateModified": "2026-05-29T18:12:19.705Z",
+      "authorName": ""
+    },
+    {
+      "type": "highlight",
+      "color": "#ffd400",
+      "sortIndex": "0007905",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(37)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 405,
+          "end": 463
+        }
+      },
+      "text": "вылить в бронзовую “статую”, не делая с ней больше ничего.",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "UL4TSNSX",
+      "dateCreated": "2026-05-29T18:12:50.204Z",
+      "dateModified": "2026-05-29T18:12:50.204Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0007979",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(38)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 18,
+          "end": 56
+        }
+      },
+      "text": "и валидироваться, и интерпретироваться",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "JHPRUBLQ",
+      "dateCreated": "2026-05-29T18:13:00.877Z",
+      "dateModified": "2026-05-29T18:13:00.877Z",
+      "authorName": ""
+    },
+    {
+      "type": "highlight",
+      "color": "#ffd400",
+      "sortIndex": "0008122",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(38)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 164,
+          "end": 175
+        }
+      },
+      "text": "демаркацией",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "FC2EM8KJ",
+      "dateCreated": "2026-05-29T18:13:11.903Z",
+      "dateModified": "2026-05-29T18:13:11.903Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0008227",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(38)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 272,
+          "end": 335
+        }
+      },
+      "text": "за пониманием будут появляться осознанные действия и результаты",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "4H6WCHHW",
+      "dateCreated": "2026-05-29T18:13:44.468Z",
+      "dateModified": "2026-05-29T18:13:44.468Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0008378",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(39)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 89,
+          "end": 135
+        }
+      },
+      "text": "формирует последовательность и преемственность",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "PND3KF32",
+      "dateCreated": "2026-05-29T18:13:53.315Z",
+      "dateModified": "2026-05-29T18:13:53.315Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0008471",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(39)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 184,
+          "end": 210
+        }
+      },
+      "text": "мне так или иначе нравится",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "YJSDUHTL",
+      "dateCreated": "2026-05-29T18:14:01.793Z",
+      "dateModified": "2026-05-29T18:14:01.793Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0008664",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(40)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 33,
+          "end": 115
+        }
+      },
+      "text": "обозначает причинность между совершёнными действиями, инструментами и результатами",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "N9IDZQGB",
+      "dateCreated": "2026-05-29T18:14:26.146Z",
+      "dateModified": "2026-05-29T18:14:26.146Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0008922",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(42)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 101,
+          "end": 125
+        }
+      },
+      "text": "невозможно гарантировать",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "MFLCUYTS",
+      "dateCreated": "2026-05-29T18:14:44.716Z",
+      "dateModified": "2026-05-29T18:14:44.716Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0009146",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(43)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 116,
+          "end": 144
+        }
+      },
+      "text": "легко самому себе дать отчет",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "9UZUNPP2",
+      "dateCreated": "2026-05-29T18:15:06.517Z",
+      "dateModified": "2026-05-29T18:15:06.517Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0009368",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(44)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 40,
+          "end": 75
+        }
+      },
+      "text": "создает возможность для измеримости",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "VKKUYLYN",
+      "dateCreated": "2026-05-29T18:15:13.674Z",
+      "dateModified": "2026-05-29T18:15:13.674Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0009493",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(44)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 170,
+          "end": 275
+        }
+      },
+      "text": "Когда метрики положительные, то ими не прочь похвалиться и те, кто к ним изначально относится скептически",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "PPHNU63K",
+      "dateCreated": "2026-05-29T18:15:32.354Z",
+      "dateModified": "2026-05-29T18:15:32.354Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0009637",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(45)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 43,
+          "end": 111
+        }
+      },
+      "text": "структура хранилища в заметной степени определяет структуру мышления",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "DBCDIZRU",
+      "dateCreated": "2026-05-29T18:15:44.410Z",
+      "dateModified": "2026-05-29T18:15:44.410Z",
+      "authorName": ""
+    },
+    {
+      "type": "highlight",
+      "color": "#ffd400",
+      "sortIndex": "0009861",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(45)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 274,
+          "end": 295
+        }
+      },
+      "text": "системной кибернетики",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "W3359XT7",
+      "dateCreated": "2026-05-29T18:15:52.026Z",
+      "dateModified": "2026-05-29T18:15:52.026Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#5fb236",
+      "sortIndex": "0010165",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(48)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 91,
+          "end": 118
+        }
+      },
+      "text": "инкапсулированную сложность",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "PNV9AGLN",
+      "dateCreated": "2026-05-29T18:16:10.821Z",
+      "dateModified": "2026-05-29T18:16:15.588Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0010383",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(49)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 195,
+          "end": 234
+        }
+      },
+      "text": "провоцировало изощренную прокрастинацию",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "2ALUG77M",
+      "dateCreated": "2026-05-29T18:16:30.672Z",
+      "dateModified": "2026-05-29T18:16:30.672Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0010664",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(51)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 79,
+          "end": 102
+        }
+      },
+      "text": "за пользователя подумал",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "888K68VI",
+      "dateCreated": "2026-05-29T18:16:54.536Z",
+      "dateModified": "2026-05-29T18:16:54.536Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0011081",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(52)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 336,
+          "end": 364
+        }
+      },
+      "text": "инкапсулировал всю сложность",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "72Q6WHJW",
+      "dateCreated": "2026-05-29T18:17:10.646Z",
+      "dateModified": "2026-05-29T18:17:10.646Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0011470",
+      "position": {
+        "type": "CssSelector",
+        "value": "p:nth-child(53)",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 327,
+          "end": 380
+        }
+      },
+      "text": "долгосрочную систему, которая должна приносить пользу",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "9MNUBPVI",
+      "dateCreated": "2026-05-29T18:17:30.688Z",
+      "dateModified": "2026-05-29T18:17:30.688Z",
+      "authorName": ""
+    },
+    {
+      "type": "underline",
+      "color": "#f19837",
+      "sortIndex": "0011674",
+      "position": {
+        "type": "CssSelector",
+        "value": "#итог + p",
+        "refinedBy": {
+          "type": "TextPositionSelector",
+          "start": 149,
+          "end": 321
+        }
+      },
+      "text": "держится на возможности двигаться между абстракцией и конкретикой, не плодить непонятые сущности, сопротивляться хайпу, формализовать архитектуру и прятать лишнюю сложность",
+      "pageLabel": "",
+      "comment": "",
+      "tags": [],
+      "id": "CJ77BQUT",
+      "dateCreated": "2026-05-29T18:17:48.161Z",
+      "dateModified": "2026-05-29T18:17:48.161Z",
+      "authorName": ""
+    }
+  ]
+}

@@ -11,72 +11,10 @@
             "id": "bda9ef25e60d256c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "periodic/daily/2026-05-21.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2026-05-21"
-            }
-          },
-          {
-            "id": "9af07f8c024c9830",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/categories/webdev.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "webdev"
-            }
-          },
-          {
-            "id": "b21b5ae2d161a287",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "home/index.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "index"
+              "title": "New tab"
             }
           }
         ]
@@ -366,7 +304,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#task/next_action",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -387,17 +325,19 @@
               "title": "Notes Review Queue"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 348.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false,
       "obsidian-hybrid-search:Hybrid search": false,
+      "zotflow:ZotFlow: Activity Center": false,
+      "zotflow:ZotFlow: Search Zotero": false,
       "templater-obsidian:Templater": false,
       "daily-notes:Open today's daily note": false,
       "obsidian42-brat:BRAT": false,
@@ -411,38 +351,47 @@
       "graph:Open graph view": false
     }
   },
-  "active": "4991079be1db926c",
+  "active": "bda9ef25e60d256c",
   "lastOpenFiles": [
+    "sources/Философские столпы моей системы знаний.md",
+    "base/categories/obsidian.md",
+    "base/notes/как именно организация и качество хранилища влияет на мышление.md",
+    "base/notes/мышление и хранилище.md",
     "home/index.md",
-    "periodic/daily/2026-05-21.md",
-    "base/categories/webdev.md",
-    "sources/Oxford English Grammar Tests.md",
-    "projects/Learn English from a1-a2 level.md",
-    "sources/ef set quick check english test.md",
-    "periodic/daily/2026-05-18.md",
-    "periodic/daily/2026-05-17.md",
-    "CLAUDE.md",
-    "periodic/tasks (grouped by priority).canvas",
+    "base/notes/claude-code-workflows guide.md",
+    "periodic/daily/2026-05-29.md",
+    "periodic/daily/2026-05-28.md",
+    "periodic/daily/2026-05-27.md",
+    "base/notes/абстрактное кредо инженера.md",
+    "base/notes/необходимость интервального повторения.md",
+    "base/notes/преемственность.md",
+    "base/notes/сопротивление информации.md",
+    "base/notes/демаркация.md",
+    "base/notes/все и сразу.md",
+    "base/notes/фундамент системы знаний.md",
+    "base/notes/некоторые свойства хорошей системы.md",
+    "base/notes/необходимость описания всех элементов.md",
+    "base/notes/фрикция.md",
+    "base/notes/отказ от мейнстрима.md",
+    "base/notes/лекарство от сложности.md",
+    "base/notes/критерий масштабируемости.md",
+    "base/notes/отказ от читерства.md",
+    "base/notes/скольжение от абстракции к конкретике и обратно.md",
+    "Source/Local/@The-Philosophical-Pillars-of-My-Knowledge-System.md",
+    "base/_meta-notes/Работа с информацией.md",
+    "home/databases/sources.base",
+    "files/books/The-Philosophical-Pillars-of-My-Knowledge-System.zf.json",
+    "files/books/The-Philosophical-Pillars-of-My-Knowledge-System.html",
     "home/databases/breadcrumbs.base",
-    "periodic/daily/2026-05-16.md",
-    "periodic/priority.md",
-    "periodic/daily/2026-05-15.md",
-    "projects/Подземелья Максвелла.md",
-    "base/notes/web настройки svg.md",
-    "base/notes/Тз на разработку Seržákmarkeťák.md",
-    "periodic/daily/2026-05-14.md",
-    "periodic/daily/2026-05-10.md",
-    "periodic/daily/2026-05-11.md",
-    "periodic/daily/2026-05-12.md",
-    "periodic/daily/2026-05-13.md",
-    "periodic/statuses/next_action.md",
-    "periodic/statuses/inbox.md",
-    "projects/ЕГЭ Математика/ЕГЭ Математика.md",
-    "projects/Переезд в Японию/Переезд в Японию.md",
-    "sources/Learning Japanese isnt astually that hard.md",
-    "base/tasks/N5.md",
-    "templates/used",
-    "templates/scripts/ruby.js",
+    "docs",
+    "Source/Local",
+    "Source",
+    "files/books/a.philosophy.of.software.design.zf.json",
+    "files/books/a.philosophy.of.software.design.epub",
+    "files/books",
+    "periodic/tasks (grouped by priority).canvas",
+    "files/2026-05-23 20260523233435765.png",
+    "files/2026-05-22 20260522122348017.png",
     "files/908187f27a096d70bad75d15ed6c3672_MD5.png",
     "files/katakana 20260506095923130.png",
     "files/Suzume no Tojimari 20260503210952134.png",
@@ -451,17 +400,8 @@
     "files/Suzume no Tojimari 20260503181328386.png",
     "files/Nichinan_日南,_Miyazaki_Prefecture,_Kyushu,_Japan_🇯🇵_-_31_March_2026.jpg",
     "files/Suzume no Tojimari 20260503172739486.png",
-    "files/Снимок экрана от 2026-05-03 17-10-45.png",
-    "files/2026-05-02 20260503140309265.png",
     "periodic/2026.canvas",
-    "home/databases/projects.base",
-    "home/databases/tasks.base",
-    "home/databases/notes.base",
     "files/Редизайн мобильного приложения для покупки билетов в S7 (2026-04-21) - roadmap.canvas",
-    "home/databases/interim.base",
-    "templates/scripts/creator.js",
-    "base/additions/conversations",
-    "base/additions/negotiations",
     "periodic/2025.canvas",
     "periodic/2027.canvas",
     "periodic/tasks (grouped by effort)_1.canvas",

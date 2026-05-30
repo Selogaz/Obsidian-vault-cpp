@@ -1,0 +1,32 @@
+---
+tags:
+  - status/wip
+  - source/article/resource
+  - category/webdev
+aliases: []
+published:
+addition:
+status: 🟦
+rating:
+scientificity:
+category:
+  - "[[webdev]]"
+meta:
+problem:
+creator:
+production:
+start: 2026-05-27T13:28:58+03:00
+end:
+url:
+  - https://github.com/shinpr/claude-code-workflows
+cover:
+icon: 🌐
+color: "#7575c0"
+created: 2026-05-27T13:28:58+03:00
+updated: 2026-05-27T15:23:24+03:00
+---
+
+Добавить в Claude marketplace `shinpr/claude-code-workflows`
+Добавить плагин `dev-workflows-frontend@claude-code-workflows`
+
+``
