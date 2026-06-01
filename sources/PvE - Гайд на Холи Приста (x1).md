@@ -5,7 +5,7 @@ tags:
   - category/games
 aliases: []
 addition:
-zotero: "[🇿](zotero://select/items/@pve_гайд_на_холи_приста_x1)"
+zotero: "[🇿](zotero://select/items/@pve_gayd_na_holi_prista_x1)"
 status: 🟩
 rating:
 scientificity:
@@ -25,7 +25,7 @@ cover:
 icon: 📃
 color: "#7575c0"
 created: 2025-05-15T17:00:11+03:00
-updated: 2026-02-28T23:35:37+03:00
+updated: 2026-06-01T17:38:29+03:00
 total_hours: 0
 ---
 

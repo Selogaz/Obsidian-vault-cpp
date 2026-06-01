@@ -1,13 +1,12 @@
 ---
 tags:
-  - status/hold
   - source/book
   - category/java
 aliases:
   - Spring быстро
 addition:
-zotero: "[🇿](zotero://select/items/@spring_быстро)"
-status: ❄
+zotero: "[🇿](zotero://select/items/@spilkeSpringBystro)"
+status: 📥
 rating:
 scientificity:
 category:
@@ -18,7 +17,7 @@ creator:
 production:
 icon: 📖
 color: "#b5b570"
-updated: 2026-04-02T14:38:51+03:00
+updated: 2026-06-01T17:34:35+03:00
 ---
 
 Внедрение бина(зависимости) - получение бина из контекста в класс, где есть аннотация Autowired

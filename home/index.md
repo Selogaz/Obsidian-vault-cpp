@@ -24,7 +24,13 @@ cssclasses:
 - [[webdev]]
 - [[obsidian]]
 - [[health]]
-
+- [[productivity]]
+- [[music]]
+- [[linux]]
+- [[java]]
+- [[japanese]]
+- [[games]]
+- [[computer science]]
 # Contexts
 
-[[mynoise-net.aac]]
+

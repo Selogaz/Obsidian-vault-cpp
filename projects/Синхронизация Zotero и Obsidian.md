@@ -1,11 +1,11 @@
 ---
 tags:
-  - status/wip
+  - status/done
   - project/single
   - priority/b
 aliases: []
 addition:
-status: 🟦
+status: 🟩
 priority: 🇧
 category:
 meta:
@@ -13,13 +13,13 @@ problem:
 creator:
 production:
 start: 2026-05-29
-end:
+end: 2026-05-29
 url:
 cover:
 icon: ✏️
 color: "#b87535"
 created: 2026-05-30T15:31:07+03:00
-updated: 2026-05-30T17:22:34+03:00
+updated: 2026-05-30T20:48:11+03:00
 ---
 
 > [!toc]- Table of contents
@@ -68,5 +68,4 @@ updated: 2026-05-30T17:22:34+03:00
 Ключевой баг сессии: `BetterBibTeX KeyManager.find()` возвращал один элемент на любой ключ — перешли на матчинг по itemKey.
 
 ### Остаётся (опционально)
-- 66 Zotero-элементов без заметки (книги/доки/фрагменты) — намеренно оставлены без категории.
-- Удалить файлы `Source/Local/`, отключить плагин ZotFlow.
+- 66 Zotero-элементов без заметки (книги/доки/фрагменты) — намеренно оставлены без дубликата в Obsidian

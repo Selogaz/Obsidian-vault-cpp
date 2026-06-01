@@ -5,7 +5,7 @@ tags:
   - category/health
 aliases: []
 addition:
-zotero: "[🇿](zotero://select/items/@full_biohack_повысить_продуктивность)"
+zotero: "[🇿](zotero://select/items/@full_biohack_povysit_produktivnost)"
 status: 🟩
 rating:
 scientificity:
@@ -20,7 +20,7 @@ end:
 icon: 📃
 color: "#7575c0"
 created: 2025-06-10T20:41:43+03:00
-updated: 2026-02-28T23:28:37+03:00
+updated: 2026-06-01T17:41:44+03:00
 total_hours: 0
 ---
 

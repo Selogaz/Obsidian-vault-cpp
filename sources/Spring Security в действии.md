@@ -1,13 +1,12 @@
 ---
 tags:
-  - status/hold
   - source/book
   - category/java
 aliases:
   - Spring Security в действии
 addition:
-zotero: "[🇿](zotero://select/items/@spring_security_в_действии)"
-status: ❄
+zotero: "[🇿](zotero://select/items/@spilkeSpringSecurityDeystvii)"
+status: 📥
 rating:
 scientificity:
 category:
@@ -18,7 +17,7 @@ creator:
 production:
 icon: 📖
 color: "#b5b570"
-updated: 2026-04-02T14:38:57+03:00
+updated: 2026-06-01T17:35:59+03:00
 ---
 
 ```table-of-contents

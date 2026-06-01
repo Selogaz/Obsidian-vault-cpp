@@ -5,7 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
-zotero: "[🇿](zotero://select/items/@jwt_для_начинающих_за_15_мин_простыми_словами)"
+zotero: "[🇿](zotero://select/items/@jwt_dlya_nachinayushchih_za_15_min_prostymi_slovami)"
 status: 🟥
 rating:
 scientificity:
@@ -20,8 +20,10 @@ end:
 icon: 📹
 color: "#2a9070"
 created: 2025-09-17T12:33:46+03:00
-updated: 2026-03-04T20:00:09+03:00
+updated: 2026-06-01T17:39:06+03:00
 total_hours: 0
+tasks:
+  - "- [ ] #task/inbox #category/java Короткоживущий и долгоживущий jwt-токен"
 ---
 
 https://www.youtube.com/watch?v=D8KggyvCRrg

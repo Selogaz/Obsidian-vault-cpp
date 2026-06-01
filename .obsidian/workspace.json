@@ -8,13 +8,75 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bda9ef25e60d256c",
+            "id": "4ed793cdffd600a4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "periodic/daily/2026-06-01.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2026-06-01"
+            }
+          },
+          {
+            "id": "fe892aa31c976048",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sources/Все способы разрешения N + 1.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Все способы разрешения N + 1"
+            }
+          },
+          {
+            "id": "dbafeef9c7721d06",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/scientificity.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "scientificity"
             }
           }
         ]
@@ -336,8 +398,6 @@
     "hiddenItems": {
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false,
       "obsidian-hybrid-search:Hybrid search": false,
-      "zotflow:ZotFlow: Activity Center": false,
-      "zotflow:ZotFlow: Search Zotero": false,
       "templater-obsidian:Templater": false,
       "daily-notes:Open today's daily note": false,
       "obsidian42-brat:BRAT": false,
@@ -351,44 +411,47 @@
       "graph:Open graph view": false
     }
   },
-  "active": "bda9ef25e60d256c",
+  "active": "4ed793cdffd600a4",
   "lastOpenFiles": [
-    "sources/Философские столпы моей системы знаний.md",
-    "base/categories/obsidian.md",
-    "base/notes/как именно организация и качество хранилища влияет на мышление.md",
-    "base/notes/мышление и хранилище.md",
-    "home/index.md",
-    "base/notes/claude-code-workflows guide.md",
-    "periodic/daily/2026-05-29.md",
-    "periodic/daily/2026-05-28.md",
-    "periodic/daily/2026-05-27.md",
-    "base/notes/абстрактное кредо инженера.md",
-    "base/notes/необходимость интервального повторения.md",
-    "base/notes/преемственность.md",
-    "base/notes/сопротивление информации.md",
-    "base/notes/демаркация.md",
-    "base/notes/все и сразу.md",
-    "base/notes/фундамент системы знаний.md",
-    "base/notes/некоторые свойства хорошей системы.md",
-    "base/notes/необходимость описания всех элементов.md",
-    "base/notes/фрикция.md",
-    "base/notes/отказ от мейнстрима.md",
-    "base/notes/лекарство от сложности.md",
-    "base/notes/критерий масштабируемости.md",
-    "base/notes/отказ от читерства.md",
-    "base/notes/скольжение от абстракции к конкретике и обратно.md",
-    "Source/Local/@The-Philosophical-Pillars-of-My-Knowledge-System.md",
-    "base/_meta-notes/Работа с информацией.md",
-    "home/databases/sources.base",
-    "files/books/The-Philosophical-Pillars-of-My-Knowledge-System.zf.json",
-    "files/books/The-Philosophical-Pillars-of-My-Knowledge-System.html",
+    "sources/Все способы разрешения N + 1.md",
+    "sources/Все про переопределение зависимостей.md",
+    "sources/5 Применений Kafka в Реальных Приложениях.md",
+    "sources/Zotero Tags.md",
+    "base/notes/scientificity.md",
+    "base/notes/определение степени научности с помощью ИИ.md",
+    "periodic/daily/2026-06-01.md",
+    "templates/create/sources/recording/manifest.md",
+    "sources/It Отец трудоустройство.md",
+    "sources/full biohack повысить продуктивность.md",
+    "sources/42 крутые игры для тех, кого тошнит от ААА.md",
+    "sources/JWT для Начинающих за 15 Мин Простыми Словами.md",
+    "sources/PvE - Гайд на Холи Приста (x1).md",
+    "sources/Spring и Spring Boot. Разработка облачных приложений на Java Федор Урванов.md",
+    "sources/Spring Security в действии.md",
+    "sources/Spring быстро.md",
+    "sources/20 НОВЫХ РПГ ИГР которые ВОЗРОДЯТ этот ЖАНР.md",
+    "sources/Deepseek помощь в лечении функциональных расстройств.md",
+    "sources/Docker Для Начинающих за 1 Час.md",
+    "base/notes/комбинация оценки и научности.md",
+    "base/notes/жизненный цикл источников.md",
+    "base/notes/rating Zotero.md",
+    "base/notes/плагин Zotero Actions & Tags.md",
+    "sources/vault.md",
+    "sources/MarkDB-Connect.md",
+    "base/notes/настройки Actions & Tags.md",
+    "periodic/monthly/2026-05.md.tmp.188759.14c88bc5ddb0",
+    "periodic/weekly/2026-W22.md.tmp.186084.1850a095ac32",
     "home/databases/breadcrumbs.base",
-    "docs",
-    "Source/Local",
-    "Source",
-    "files/books/a.philosophy.of.software.design.zf.json",
-    "files/books/a.philosophy.of.software.design.epub",
-    "files/books",
+    "sources/Вопросы и ответы к интервью Java разработчика.md.tmp.20611.b9ffcc1ec98e",
+    "sources/народный пк от welson.md.tmp.20611.1c71bb6b30d3",
+    "sources/ЕСЛИ У ТЕБЯ ПРОЦЕССОР АМД ПОСМОТРИ ЭТО ВИДЕО. САМАЯ ВАЖНАЯ НАСТРОЙКА ДЛЯ ИГР AMD RYZEN X3D.md.tmp.20611.ff8ab1667817",
+    "files/7eaa7c5e6dfcf869db82ebc9cc26ea29_MD5.png",
+    "files/7ea799320378bc2e61e385b5c0ab8c37_MD5.png",
+    "files/5a57b85e4b493fa9c7403d9ecd30d0a2_MD5.png",
+    "files/zotero-sync/_backup-sources-20260530-175138",
+    "projects/Синхронизация Zotero и Obsidian.md.tmp.20611.79ebb1012b38",
+    "sources/ЕСЛИ У ТЕБЯ ПРОЦЕССОР АМД ПОСМОТРИ ЭТО ВИДЕО. САМАЯ ВАЖНАЯ НАСТРОЙКА ДЛЯ ИГР AMD RYZEN X3D.md.tmp.20611.304238b19545",
+    "sources/ЕСЛИ У ТЕБЯ ПРОЦЕССОР АМД ПОСМОТРИ ЭТО ВИДЕО. САМАЯ ВАЖНАЯ НАСТРОЙКА ДЛЯ ИГР AMD RYZEN X3D.md.tmp.20611.caeaeadfb782",
     "periodic/tasks (grouped by priority).canvas",
     "files/2026-05-23 20260523233435765.png",
     "files/2026-05-22 20260522122348017.png",
@@ -397,9 +460,6 @@
     "files/Suzume no Tojimari 20260503210952134.png",
     "files/Suzume no Tojimari 20260503183815017.png",
     "files/Suzume no Tojimari 20260503181515131.png",
-    "files/Suzume no Tojimari 20260503181328386.png",
-    "files/Nichinan_日南,_Miyazaki_Prefecture,_Kyushu,_Japan_🇯🇵_-_31_March_2026.jpg",
-    "files/Suzume no Tojimari 20260503172739486.png",
     "periodic/2026.canvas",
     "files/Редизайн мобильного приложения для покупки билетов в S7 (2026-04-21) - roadmap.canvas",
     "periodic/2025.canvas",

@@ -5,7 +5,7 @@ tags:
   - category/java
 aliases: []
 addition:
-zotero: "[🇿](zotero://select/items/@5_применений_kafka_в_реальных_приложениях)"
+zotero: "[🇿](zotero://select/items/@5_primeneniy_kafka_v_realnyh_prilozheniyah)"
 status: 🟩
 rating:
 scientificity:
@@ -21,7 +21,7 @@ end:
 icon: 📹
 color: "#2a9070"
 created: 2025-09-18T17:06:21+03:00
-updated: 2026-02-28T23:34:47+03:00
+updated: 2026-06-01T17:47:46+03:00
 total_hours: 0
 ---
 

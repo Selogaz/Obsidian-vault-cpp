@@ -23,7 +23,7 @@ cover: https://yastatic.net/s3/psf/disk-public/_/6jthIYkBdecaLwm8yXZPKuI1HW7.png
 icon: 📃
 color: "#7575c0"
 created: 2025-05-20T12:24:31+03:00
-updated: 2026-04-02T14:56:23+03:00
+updated: 2026-06-01T13:46:03+03:00
 total_hours: 0
 ---
 

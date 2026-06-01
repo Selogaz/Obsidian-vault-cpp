@@ -1,12 +1,11 @@
 ---
 tags:
-  - status/hold
   - source/book
   - category/java
 aliases: []
 addition:
-zotero: "[🇿](zotero://select/items/@spring_и_spring_boot_разработка_облачных_приложений_на_java_федор_урванов)"
-status: ❄
+zotero: "[🇿](zotero://select/items/@spring_i_spring_boot_razrabotka_oblachnyh_prilozheniy_na_java_fedor_urvanov)"
+status: 📥
 rating:
 scientificity:
 category:
@@ -20,7 +19,7 @@ end:
 icon: 📖
 color: "#b5b570"
 created: 2025-05-31T20:58:17+03:00
-updated: 2026-04-02T14:36:37+03:00
+updated: 2026-06-01T17:36:48+03:00
 total_hours: 0
 ---
 

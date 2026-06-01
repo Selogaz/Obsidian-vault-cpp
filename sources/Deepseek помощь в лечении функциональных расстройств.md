@@ -5,7 +5,7 @@ tags:
   - category/health
 aliases: []
 addition:
-zotero: "[🇿](zotero://select/items/@deepseek_помощь_в_лечении_функциональных_расстройств)"
+zotero: "[🇿](zotero://select/items/@deepseek_pomoshch_v_lechenii_funkcionalnyh_rasstroystv)"
 status: 🟦
 rating:
 scientificity:
@@ -22,7 +22,7 @@ url:
 icon: 🌐
 color: "#7575c0"
 created: 2026-03-27T13:38:41+03:00
-updated: 2026-03-30T15:38:47+03:00
+updated: 2026-06-01T17:32:29+03:00
 ---
 
 [[скрытый железодефицит]]
