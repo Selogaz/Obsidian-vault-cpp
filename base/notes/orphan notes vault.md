@@ -8,7 +8,7 @@ aliases:
 icon: 📝
 color: "#70a0b5"
 created: 2026-06-11T21:20:00+03:00
-updated: 2026-06-11T21:20:00+03:00
+updated: 2026-06-11T20:04:15+03:00
 ---
 
 # Orphan notes vault
@@ -97,12 +97,12 @@ updated: 2026-06-11T21:20:00+03:00
 - Erra
 - Of Mice and Men
 
-## projects
+## Projects
 
 - Покупка гитары, усилителя и педали
 - Практика по SVG
 - Форма комментариев на JS
 
-## sources
+## Sources
 
 - Практическая биоинформатика

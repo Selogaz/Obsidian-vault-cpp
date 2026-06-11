@@ -517,7 +517,8 @@
         2056,
         2060,
         2187,
-        2192
+        2192,
+        2193
       ]
     }
   },
@@ -888,7 +889,7 @@
     },
     {
       "key": "8LKQU8JW",
-      "version": 6109,
+      "version": 6115,
       "itemType": "videoRecording",
       "title": "Как ПОЛИГЛОТЫ начинают думать на английском: ВАЖНЫЕ ШАГИ без зубрёжки",
       "abstractNote": "Почему ты понимаешь английский, но замираешь, когда нужно заговорить?\nПочему мысли есть — а слова «застревают» в голове?\nВ этом видео я объясняю и какие ВАЖНЫЕ ШАГИ помогают начать думать на английском, как это делают ПОЛИГЛОТЫ.",
@@ -907,6 +908,9 @@
       ],
       "tags": [
         {
+          "tag": "💎"
+        },
+        {
           "tag": "💬"
         },
         {
@@ -915,7 +919,7 @@
       ],
       "relations": {},
       "dateAdded": "2026-06-10T17:53:10Z",
-      "dateModified": "2026-06-10T17:53:53Z",
+      "dateModified": "2026-06-11T09:45:39Z",
       "uri": "http://zotero.org/users/16981227/items/8LKQU8JW",
       "itemID": 2190,
       "attachments": [],
@@ -7005,6 +7009,54 @@
       "itemKey": "Y5Z2BP99",
       "libraryID": 1,
       "select": "zotero://select/library/items/Y5Z2BP99"
+    },
+    {
+      "key": "WLZMK3ND",
+      "version": 6123,
+      "itemType": "webpage",
+      "title": "VisualViewport - Web APIs | MDN",
+      "abstractNote": "Ios/mac positioning features",
+      "date": "2026-06-02",
+      "citationKey": "VisualViewportWebAPIs2026",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport",
+      "accessDate": "2026-06-11T09:46:01Z",
+      "language": "en-US",
+      "websiteTitle": "MDN Web Docs",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "🌔"
+        },
+        {
+          "tag": "👓"
+        },
+        {
+          "tag": "🟩"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-11T09:46:01Z",
+      "dateModified": "2026-06-11T09:47:07Z",
+      "uri": "http://zotero.org/users/16981227/items/WLZMK3ND",
+      "itemID": 2193,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-06-11T09:46:07Z",
+          "dateModified": "2026-06-11T09:46:07Z",
+          "uri": "http://zotero.org/users/16981227/items/5NTKZHUY",
+          "path": "/home/exuberance/Zotero/storage/5NTKZHUY/VisualViewport.html",
+          "select": "zotero://select/library/items/5NTKZHUY"
+        }
+      ],
+      "notes": [],
+      "itemKey": "WLZMK3ND",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/WLZMK3ND"
     },
     {
       "key": "5UQS9A73",
