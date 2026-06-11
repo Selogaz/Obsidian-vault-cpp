@@ -8,7 +8,7 @@ addition:
 zotero: "[🇿](zotero://select/items/@5_primeneniy_kafka_v_realnyh_prilozheniyah)"
 status: 🟩
 rating:
-scientificity:
+scientificity: 📢
 category:
   - "[[java]]"
 meta:

@@ -23,8 +23,12 @@ cover:
 icon: ✏️
 color: "#b87535"
 created: 2026-05-31T19:38:57+03:00
-updated: 2026-05-31T19:44:03+03:00
+updated: 2026-06-03T12:46:55+03:00
 tasks:
+  - "- [ ] #task/multistep #category/webdev Добавить к [[PomodoroMusicExtension]] страницы с настройкой при установке, как в Anki Dictionary"
+  - "- [ ] Добавить в [[PomodoroMusicExtension]] прикрепление таймера к Obsidian-проекту. Кнопка для автоматической записи количества сессий в проект"
+  - "- [ ] Сделать паузу и старт одной кнопкой"
+  - "- [ ] Добавить отдельно кнопку стоп(вместо теперешней паузы)"
   - "- [x] Настройка проекта (Vite, TypeScript, multi-entry build pipeline)"
   - "- [x] Popup UI (старт/пауза/сброс, обратный отсчёт, фаза, список вкладок)"
   - "- [x] Timer engine через `chrome.alarms` (tick + phase-end)"
@@ -83,8 +87,11 @@ src/
 └── shared/       # types, constants, messages
 ```
 
-# Done
-
+# Tasks
+- [ ] #task/multistep #category/webdev Добавить к [[PomodoroMusicExtension]] страницы с настройкой при установке, как в Anki Dictionary
+- [ ] Добавить в [[PomodoroMusicExtension]] прикрепление таймера к Obsidian-проекту. Кнопка для автоматической записи количества сессий в проект
+- [ ] Сделать паузу и старт одной кнопкой
+- [ ] Добавить отдельно кнопку стоп(вместо теперешней паузы)
 - [x] Настройка проекта (Vite, TypeScript, multi-entry build pipeline)
 - [x] Popup UI (старт/пауза/сброс, обратный отсчёт, фаза, список вкладок)
 - [x] Timer engine через `chrome.alarms` (tick + phase-end)

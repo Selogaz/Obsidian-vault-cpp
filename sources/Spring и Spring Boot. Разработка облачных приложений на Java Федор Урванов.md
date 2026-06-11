@@ -5,7 +5,7 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@spring_i_spring_boot_razrabotka_oblachnyh_prilozheniy_na_java_fedor_urvanov)"
-status: 📥
+status: ⬛
 rating:
 scientificity:
 category:

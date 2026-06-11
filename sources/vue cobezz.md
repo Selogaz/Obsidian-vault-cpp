@@ -8,9 +8,9 @@ aliases:
 published: 2022
 addition:
 zotero: "[🇿](zotero://select/items/@IntensivPoFreymvorku2022)"
-status: 🟥
+status: 📥
 rating:
-scientificity:
+scientificity: 💬
 category:
   - "[[webdev]]"
 meta:

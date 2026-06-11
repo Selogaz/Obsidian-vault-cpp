@@ -6,7 +6,7 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@документация_механизмы_блокировки_в_postgres)"
-status: 🟥
+status: 📥
 rating:
 scientificity:
 category:

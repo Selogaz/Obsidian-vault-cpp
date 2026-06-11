@@ -10,11 +10,10 @@ addition:
 zotero: "[🇿](zotero://select/items/@etotkompyuterFSRVsDLSS2021)"
 status: 🟩
 rating:
-scientificity:
+scientificity: 📢
 category:
   - "[[computer science]]"
 meta:
-  - grapthics
 problem:
 creator:
   - "[[Этот Компьютер]]"

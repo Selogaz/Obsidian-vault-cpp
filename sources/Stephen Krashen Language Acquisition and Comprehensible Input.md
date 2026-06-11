@@ -10,10 +10,9 @@ addition:
 zotero: "[🇿](zotero://select/items/@stephen_krashen_language_acquisition_and_comprehensible_input)"
 status: 🟩
 rating:
-scientificity:
+scientificity: 📢
 category:
   - "[[english]]"
-  - "[[japanese]]"
 meta:
 problem:
 creator:

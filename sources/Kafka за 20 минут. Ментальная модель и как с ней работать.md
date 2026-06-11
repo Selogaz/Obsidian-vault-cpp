@@ -8,7 +8,7 @@ aliases:
 published: 2023
 addition:
 zotero: "[🇿](zotero://select/items/@gongledKafkaZa202023)"
-status: 🟥
+status: 📥
 rating:
 scientificity:
 category:

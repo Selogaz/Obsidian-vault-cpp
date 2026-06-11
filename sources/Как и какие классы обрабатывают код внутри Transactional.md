@@ -6,7 +6,7 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@как_и_какие_классы_обрабатывают_код_внутри_transactional)"
-status: 🟥
+status: 📥
 rating:
 scientificity:
 category:

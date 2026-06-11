@@ -139,6 +139,15 @@ var init_LLMService = __esm({
       constructor(config) {
         this.config = config;
       }
+      buildHeaders() {
+        const headers = {
+          "Content-Type": "application/json"
+        };
+        if (this.config.apiKey && this.config.apiKey.trim().length > 0) {
+          headers.Authorization = `Bearer ${this.config.apiKey.trim()}`;
+        }
+        return headers;
+      }
       async sendMessage(message, conversationHistory = []) {
         var _a, _b;
         try {
@@ -238,9 +247,7 @@ var init_LLMService = __esm({
         }
       }
       async makeAPIRequest(request) {
-        const headers = {
-          "Content-Type": "application/json"
-        };
+        const headers = this.buildHeaders();
         LoggingUtility.log("Making API request to:", this.config.apiEndpoint);
         LoggingUtility.log("Headers:", headers);
         try {
@@ -272,9 +279,7 @@ var init_LLMService = __esm({
           if (!window || !window.fetch) {
             throw new Error("Streaming is not supported in this environment");
           }
-          const headers = {
-            "Content-Type": "application/json"
-          };
+          const headers = this.buildHeaders();
           const response = await fetch(this.config.apiEndpoint, {
             method: "POST",
             headers,
@@ -425,9 +430,7 @@ var init_LLMService = __esm({
       }
       async fetchAvailableModels() {
         const endpoints = this.getModelListEndpoints();
-        const headers = {
-          "Content-Type": "application/json"
-        };
+        const headers = this.buildHeaders();
         for (const endpoint of endpoints) {
           try {
             LoggingUtility.log("Fetching models from:", endpoint);
@@ -458,7 +461,8 @@ var init_LLMService = __esm({
             `${parsedUrl.origin}${basePath}/api/v1/models`,
             `${parsedUrl.origin}${basePath}/v1/models`
           ];
-        } catch (e) {
+        } catch (error) {
+          LoggingUtility.error("Error parsing URL for model endpoint:", error);
           const fallbackBase = this.config.apiEndpoint.replace("/chat/completions", "").replace("/embeddings", "").replace("/v1/models", "").replace("/api/v1/models", "");
           return [
             `${fallbackBase}/api/v1/models`,
@@ -495,7 +499,8 @@ var init_LLMService = __esm({
         }
         try {
           new URL(this.config.apiEndpoint);
-        } catch (e) {
+        } catch (error) {
+          LoggingUtility.error("Invalid API endpoint URL format:", error);
           errors.push("Invalid API endpoint URL format");
         }
         return {
@@ -678,7 +683,7 @@ var SearchService = class {
           LoggingUtility.log(`Found relevant file: ${result.title} (${(result.relevance * 100).toFixed(1)}% relevant)`);
         }
       } catch (error) {
-        LoggingUtility.warn(`Error searching file ${file.path}:`, error);
+        LoggingUtility.error(`Error searching file ${file.path}:`, error);
       }
     }
     const sortedResults = results.sort((a, b) => b.relevance - a.relevance);
@@ -706,7 +711,7 @@ var SearchService = class {
         path: file.path
       };
     } catch (error) {
-      LoggingUtility.warn(`Error processing file ${file.path}:`, error);
+      LoggingUtility.error(`Error processing file ${file.path}:`, error);
       return null;
     }
   }
@@ -864,12 +869,12 @@ var SearchService = class {
             path: file.path
           });
         } catch (error) {
-          LoggingUtility.warn(`Error reading file ${file.path}:`, error);
+          LoggingUtility.error(`Error reading file ${file.path}:`, error);
         }
       }
       return results;
     } catch (error) {
-      LoggingUtility.warn("Error getting current note context:", error);
+      LoggingUtility.error("Error getting current note context:", error);
       return [];
     }
   }
@@ -909,12 +914,12 @@ var SearchService = class {
             path: file.path
           });
         } catch (error) {
-          LoggingUtility.warn(`Error reading file ${file.path}:`, error);
+          LoggingUtility.error(`Error reading file ${file.path}:`, error);
         }
       }
       return results;
     } catch (error) {
-      LoggingUtility.warn("Error getting recent notes context:", error);
+      LoggingUtility.error("Error getting recent notes context:", error);
       return [];
     }
   }
@@ -930,6 +935,10 @@ var ChatView = class _ChatView extends import_obsidian3.ItemView {
     this.isStreaming = false;
     this.currentAbortController = null;
     this.contextMode = "open-notes" /* OPEN_NOTES */;
+    this.streamingThinkingState = /* @__PURE__ */ new Map();
+    this.thinkingViewState = /* @__PURE__ */ new Map();
+    this.streamingRenderInFlight = /* @__PURE__ */ new Set();
+    this.pendingStreamingRender = /* @__PURE__ */ new Map();
     this.plugin = plugin;
     this.searchService = new SearchService(this.app, plugin.ragService);
     this.updateLLMServiceFromSettings();
@@ -1029,7 +1038,7 @@ var ChatView = class _ChatView extends import_obsidian3.ItemView {
     this.stopButton.addEventListener("click", () => {
       this.stopStreaming();
     });
-    this.addMessage({
+    await this.addMessage({
       id: "welcome",
       role: "assistant",
       content: await _ChatView.getWelcomeMessage(this.llmService),
@@ -1051,7 +1060,8 @@ var ChatView = class _ChatView extends import_obsidian3.ItemView {
       maxTokens: settings.maxTokens,
       temperature: settings.temperature,
       systemPrompt: settings.systemPrompt,
-      model: settings.model
+      model: settings.model,
+      apiKey: settings.apiKey
     });
   }
   /**
@@ -1072,7 +1082,8 @@ var ChatView = class _ChatView extends import_obsidian3.ItemView {
       maxTokens: config.maxTokens,
       temperature: config.temperature,
       systemPrompt: config.systemPrompt,
-      model: config.model
+      model: config.model,
+      apiKey: config.apiKey
     });
   }
   showReviewPromptBanner(message, reviewUrl) {
@@ -1124,7 +1135,7 @@ var ChatView = class _ChatView extends import_obsidian3.ItemView {
       content,
       timestamp: /* @__PURE__ */ new Date()
     };
-    this.addMessage(userMessage);
+    await this.addMessage(userMessage);
     this.inputElement.value = "";
     this.currentAbortController = new AbortController();
     this.setSendButtonEnabled(false);
@@ -1159,7 +1170,7 @@ var ChatView = class _ChatView extends import_obsidian3.ItemView {
         LoggingUtility.log("No context mode selected - using message without additional context");
       }
     } catch (searchError) {
-      LoggingUtility.warn("Error getting context:", searchError);
+      LoggingUtility.error("Error getting context:", searchError);
     } finally {
       this.showSearchIndicator(false);
     }
@@ -1171,7 +1182,7 @@ var ChatView = class _ChatView extends import_obsidian3.ItemView {
       isStreaming: true,
       usedNotes: searchResults.length > 0 ? searchResults : void 0
     };
-    this.addMessage(assistantMessage);
+    await this.addMessage(assistantMessage);
     try {
       const conversationHistory = this.messages.filter((m) => !m.isStreaming && m.id !== "welcome").map((m) => ({
         role: m.role,
@@ -1253,36 +1264,56 @@ User question: ${content}`;
   }
   async updateStreamingMessage(messageId, chunk) {
     const message = this.messages.find((m) => m.id === messageId);
-    if (message) {
-      message.content += chunk;
-      await this.updateStreamingContent(messageId, message.content);
+    if (!message) {
+      return;
     }
+    const state = this.getOrCreateStreamingThinkingState(messageId);
+    const normalizedChunk = this.normalizeStreamingChunk(state, chunk);
+    if (!normalizedChunk) {
+      return;
+    }
+    const assistantDelta = this.extractAssistantContentFromChunk(state, normalizedChunk);
+    if (assistantDelta.length > 0) {
+      message.content += assistantDelta;
+    }
+    message.thinkingBlocks = state.blocks.length > 0 ? [...state.blocks] : void 0;
+    await this.updateStreamingContent(messageId, message);
   }
-  async updateStreamingContent(messageId, content) {
-    const messageElement = this.messageContainer.querySelector(`[data-message-id="${messageId}"]`);
-    if (messageElement) {
-      const contentEl = messageElement.querySelector(".local-llm-message-content");
-      if (contentEl) {
-        contentEl.empty();
-        import_obsidian3.MarkdownRenderer.render(
-          this.app,
-          content,
-          contentEl,
-          "",
-          this
-        );
-        const cursor = contentEl.createEl("span", {
-          cls: "streaming-cursor",
-          text: "\u258B"
-        });
-        contentEl.addClass("local-llm-selectable-content");
+  async updateStreamingContent(messageId, message) {
+    this.pendingStreamingRender.set(messageId, message);
+    if (this.streamingRenderInFlight.has(messageId)) {
+      return;
+    }
+    this.streamingRenderInFlight.add(messageId);
+    try {
+      while (true) {
+        const nextMessage = this.pendingStreamingRender.get(messageId);
+        if (!nextMessage) {
+          break;
+        }
+        this.pendingStreamingRender.delete(messageId);
+        const messageElement = this.messageContainer.querySelector(`[data-message-id="${messageId}"]`);
+        if (!messageElement) {
+          break;
+        }
+        const contentEl = messageElement.querySelector(".local-llm-message-content");
+        if (!contentEl) {
+          break;
+        }
+        await this.renderAssistantMessageContent(contentEl, nextMessage);
+        this.messageContainer.scrollTop = this.messageContainer.scrollHeight;
       }
+    } finally {
+      this.streamingRenderInFlight.delete(messageId);
     }
   }
   async finalizeStreamingMessage(messageId) {
     const message = this.messages.find((m) => m.id === messageId);
     if (message) {
+      this.flushStreamingThinkingState(message);
       message.isStreaming = false;
+      const viewState = this.getOrCreateThinkingViewState(message);
+      viewState.expanded = false;
       const messageElement = this.messageContainer.querySelector(`[data-message-id="${messageId}"]`);
       if (messageElement) {
         messageElement.remove();
@@ -1290,11 +1321,333 @@ User question: ${content}`;
       await this.renderMessage(message);
     }
   }
+  getOrCreateStreamingThinkingState(messageId) {
+    const existing = this.streamingThinkingState.get(messageId);
+    if (existing) {
+      return existing;
+    }
+    const created = {
+      inThinkBlock: false,
+      buffer: "",
+      blocks: [],
+      rawTranscript: ""
+    };
+    this.streamingThinkingState.set(messageId, created);
+    return created;
+  }
+  /**
+   * Some providers send cumulative chunks instead of deltas.
+   * Normalize to true delta text so we don't duplicate thinking/output.
+   */
+  normalizeStreamingChunk(state, chunk) {
+    if (!chunk) {
+      return "";
+    }
+    if (state.rawTranscript && chunk.length > state.rawTranscript.length && chunk.startsWith(state.rawTranscript)) {
+      const delta = chunk.slice(state.rawTranscript.length);
+      state.rawTranscript = chunk;
+      return delta;
+    }
+    state.rawTranscript += chunk;
+    return chunk;
+  }
+  extractAssistantContentFromChunk(state, chunk) {
+    if (!chunk) {
+      return "";
+    }
+    const openTag = "<think>";
+    const closeTag = "</think>";
+    const assistantParts = [];
+    let input = state.buffer + chunk;
+    state.buffer = "";
+    while (input.length > 0) {
+      if (!state.inThinkBlock) {
+        const openIndex = input.toLowerCase().indexOf(openTag);
+        if (openIndex === -1) {
+          const carry = this.getTrailingTagPrefix(input, openTag);
+          const safeLength = input.length - carry.length;
+          if (safeLength > 0) {
+            assistantParts.push(input.slice(0, safeLength));
+          }
+          state.buffer = carry;
+          break;
+        }
+        if (openIndex > 0) {
+          assistantParts.push(input.slice(0, openIndex));
+        }
+        state.inThinkBlock = true;
+        state.blocks.push("");
+        input = input.slice(openIndex + openTag.length);
+        continue;
+      }
+      const closeIndex = input.toLowerCase().indexOf(closeTag);
+      if (closeIndex === -1) {
+        const carry = this.getTrailingTagPrefix(input, closeTag);
+        const safeLength = input.length - carry.length;
+        if (safeLength > 0) {
+          this.appendToThinkingBlock(state, input.slice(0, safeLength));
+        }
+        state.buffer = carry;
+        break;
+      }
+      if (closeIndex > 0) {
+        this.appendToThinkingBlock(state, input.slice(0, closeIndex));
+      }
+      state.inThinkBlock = false;
+      input = input.slice(closeIndex + closeTag.length);
+    }
+    return assistantParts.join("");
+  }
+  flushStreamingThinkingState(message) {
+    const state = this.streamingThinkingState.get(message.id);
+    if (!state) {
+      return;
+    }
+    if (state.buffer.length > 0) {
+      if (state.inThinkBlock) {
+        this.appendToThinkingBlock(state, state.buffer);
+      } else {
+        message.content += state.buffer;
+      }
+    }
+    state.buffer = "";
+    state.inThinkBlock = false;
+    message.thinkingBlocks = state.blocks.length > 0 ? [...state.blocks] : void 0;
+    this.streamingThinkingState.delete(message.id);
+  }
+  appendToThinkingBlock(state, value) {
+    if (!value) {
+      return;
+    }
+    if (state.blocks.length === 0) {
+      state.blocks.push(value);
+      return;
+    }
+    const lastIndex = state.blocks.length - 1;
+    state.blocks[lastIndex] = `${state.blocks[lastIndex]}${value}`;
+  }
+  getTrailingTagPrefix(value, tag) {
+    const maxLength = Math.min(value.length, tag.length - 1);
+    const valueLower = value.toLowerCase();
+    const tagLower = tag.toLowerCase();
+    for (let prefixLength = maxLength; prefixLength > 0; prefixLength--) {
+      if (valueLower.endsWith(tagLower.slice(0, prefixLength))) {
+        return value.slice(value.length - prefixLength);
+      }
+    }
+    return "";
+  }
+  async renderAssistantMessageContent(contentEl, message) {
+    await this.renderAssistantResponse(contentEl, message);
+    await this.renderThinkingSection(contentEl, message);
+    contentEl.addClass("local-llm-selectable-content");
+  }
+  async renderAssistantResponse(contentEl, message) {
+    let responseEl = contentEl.querySelector(".local-llm-assistant-response");
+    if (!responseEl) {
+      responseEl = contentEl.createEl("div", {
+        cls: "local-llm-assistant-response"
+      });
+    }
+    responseEl.empty();
+    await import_obsidian3.MarkdownRenderer.render(
+      this.app,
+      message.content,
+      responseEl,
+      "",
+      this
+    );
+    if (message.isStreaming) {
+      responseEl.createEl("span", {
+        cls: "streaming-cursor",
+        text: "\u258B"
+      });
+    }
+    const thinkingContainer = contentEl.querySelector(".local-llm-thinking-container");
+    if (thinkingContainer && responseEl.nextSibling !== thinkingContainer) {
+      contentEl.insertBefore(responseEl, thinkingContainer);
+    }
+  }
+  getOrCreateThinkingViewState(message) {
+    const existing = this.thinkingViewState.get(message.id);
+    if (existing) {
+      return existing;
+    }
+    const created = {
+      expanded: !!message.isStreaming,
+      stickToBottom: true
+    };
+    this.thinkingViewState.set(message.id, created);
+    return created;
+  }
+  isThinkingPreviewNearBottom(previewEl) {
+    const distanceFromBottom = previewEl.scrollHeight - previewEl.clientHeight - previewEl.scrollTop;
+    return distanceFromBottom <= 24;
+  }
+  getOrCreateThinkingPanelElements(contentEl, messageId) {
+    let containerEl = contentEl.querySelector(".local-llm-thinking-container");
+    if (!containerEl) {
+      containerEl = contentEl.createEl("div", {
+        cls: "local-llm-thinking-container"
+      });
+    }
+    let summaryRow = containerEl.querySelector(".local-llm-thinking-summary");
+    if (!summaryRow) {
+      summaryRow = containerEl.createEl("div", {
+        cls: "local-llm-thinking-summary"
+      });
+    }
+    let statusEl = summaryRow.querySelector(".local-llm-thinking-status");
+    if (!statusEl) {
+      statusEl = summaryRow.createEl("span", {
+        cls: "local-llm-thinking-status"
+      });
+    }
+    let summaryControls = summaryRow.querySelector(".local-llm-thinking-controls");
+    if (!summaryControls) {
+      summaryControls = summaryRow.createEl("div", {
+        cls: "local-llm-thinking-controls"
+      });
+    }
+    let metaEl = summaryControls.querySelector(".local-llm-thinking-meta");
+    if (!metaEl) {
+      metaEl = summaryControls.createEl("span", {
+        cls: "local-llm-thinking-meta"
+      });
+    }
+    let toggleButton = summaryControls.querySelector(".local-llm-thinking-toggle");
+    if (!toggleButton) {
+      toggleButton = summaryControls.createEl("button", {
+        cls: "local-llm-thinking-toggle",
+        attr: { type: "button" }
+      });
+    }
+    let previewEl = containerEl.querySelector(".local-llm-thinking-preview-markdown");
+    if (!previewEl) {
+      previewEl = containerEl.createEl("div", {
+        cls: "local-llm-thinking-preview-markdown"
+      });
+    }
+    if (toggleButton.dataset.boundMessageId !== messageId) {
+      toggleButton.dataset.boundMessageId = messageId;
+      toggleButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        this.handleThinkingPanelToggle(messageId);
+      });
+    }
+    if (previewEl.dataset.scrollBound !== "true") {
+      previewEl.dataset.scrollBound = "true";
+      previewEl.addEventListener("scroll", () => {
+        const message = this.messages.find((m) => m.id === messageId);
+        if (!message) {
+          return;
+        }
+        const state = this.getOrCreateThinkingViewState(message);
+        state.stickToBottom = this.isThinkingPreviewNearBottom(previewEl);
+      });
+    }
+    return {
+      statusEl,
+      metaEl,
+      toggleButton,
+      previewEl
+    };
+  }
+  setThinkingPanelExpanded(elements, expanded) {
+    elements.toggleButton.textContent = expanded ? "Hide" : "Show";
+    if (expanded) {
+      elements.previewEl.removeClass("local-llm-thinking-preview-hidden");
+    } else {
+      elements.previewEl.addClass("local-llm-thinking-preview-hidden");
+    }
+  }
+  handleThinkingPanelToggle(messageId) {
+    const message = this.messages.find((m) => m.id === messageId);
+    if (!message) {
+      return;
+    }
+    const state = this.getOrCreateThinkingViewState(message);
+    state.expanded = !state.expanded;
+    const messageElement = this.messageContainer.querySelector(`[data-message-id="${messageId}"]`);
+    const contentEl = messageElement == null ? void 0 : messageElement.querySelector(".local-llm-message-content");
+    if (!contentEl) {
+      return;
+    }
+    const panel = this.getOrCreateThinkingPanelElements(contentEl, messageId);
+    this.setThinkingPanelExpanded(panel, state.expanded);
+    if (state.expanded && state.stickToBottom) {
+      panel.previewEl.scrollTop = panel.previewEl.scrollHeight;
+    }
+  }
+  async renderThinkingSection(contentEl, message) {
+    const blocks = message.thinkingBlocks || [];
+    const streamState = this.streamingThinkingState.get(message.id);
+    const isThinkingActive = !!message.isStreaming && !!(streamState == null ? void 0 : streamState.inThinkBlock);
+    if (blocks.length === 0 && !isThinkingActive) {
+      const existingContainer = contentEl.querySelector(".local-llm-thinking-container");
+      if (existingContainer) {
+        existingContainer.remove();
+      }
+      this.thinkingViewState.delete(message.id);
+      return;
+    }
+    const thinkingLines = this.getThinkingLines(blocks);
+    const totalCharacters = blocks.reduce((sum, block) => sum + block.length, 0);
+    const state = this.getOrCreateThinkingViewState(message);
+    const panel = this.getOrCreateThinkingPanelElements(contentEl, message.id);
+    const previousScrollTop = panel.previewEl.scrollTop;
+    if (state.expanded) {
+      state.stickToBottom = this.isThinkingPreviewNearBottom(panel.previewEl);
+    }
+    panel.statusEl.textContent = isThinkingActive ? "Thinking..." : "Thought process";
+    panel.metaEl.textContent = `${totalCharacters.toLocaleString()} chars`;
+    this.setThinkingPanelExpanded(panel, state.expanded);
+    panel.previewEl.empty();
+    for (const line of thinkingLines) {
+      const lineEl = panel.previewEl.createEl("div", {
+        cls: "local-llm-thinking-preview-line"
+      });
+      await import_obsidian3.MarkdownRenderer.render(
+        this.app,
+        line,
+        lineEl,
+        "",
+        this
+      );
+    }
+    if (!state.expanded) {
+      return;
+    }
+    if (state.stickToBottom) {
+      panel.previewEl.scrollTop = panel.previewEl.scrollHeight;
+      return;
+    }
+    panel.previewEl.scrollTop = Math.min(
+      previousScrollTop,
+      Math.max(0, panel.previewEl.scrollHeight - panel.previewEl.clientHeight)
+    );
+  }
+  getThinkingLines(blocks) {
+    if (blocks.length === 0) {
+      return ["Analyzing..."];
+    }
+    const lines = blocks.join("\n").replace(/\r/g, "").split("\n").map((line) => line.trim()).filter((line) => line.length > 0);
+    if (lines.length === 0) {
+      return ["Analyzing..."];
+    }
+    return lines;
+  }
   handleStreamingError(messageId, error) {
     const message = this.messages.find((m) => m.id === messageId);
     if (message) {
       message.content = error.message;
       message.isStreaming = false;
+      message.thinkingBlocks = void 0;
+      this.streamingThinkingState.delete(messageId);
+      this.thinkingViewState.delete(messageId);
+      this.pendingStreamingRender.delete(messageId);
+      this.streamingRenderInFlight.delete(messageId);
       const messageElement = this.messageContainer.querySelector(`[data-message-id="${messageId}"]`);
       if (messageElement) {
         messageElement.remove();
@@ -1303,9 +1656,9 @@ User question: ${content}`;
     }
     LoggingUtility.error("Error calling local LLM:", error);
   }
-  addMessage(message) {
+  async addMessage(message) {
     this.messages.push(message);
-    this.renderMessage(message);
+    await this.renderMessage(message);
   }
   removeMessage(messageId) {
     const messageElement = this.messageContainer.querySelector(`[data-message-id="${messageId}"]`);
@@ -1313,16 +1666,10 @@ User question: ${content}`;
       messageElement.remove();
     }
     this.messages = this.messages.filter((m) => m.id !== messageId);
-  }
-  updateMessageDisplay(messageId) {
-    const message = this.messages.find((m) => m.id === messageId);
-    if (message) {
-      const messageElement = this.messageContainer.querySelector(`[data-message-id="${messageId}"]`);
-      if (messageElement) {
-        messageElement.remove();
-      }
-      this.renderMessage(message);
-    }
+    this.streamingThinkingState.delete(messageId);
+    this.thinkingViewState.delete(messageId);
+    this.pendingStreamingRender.delete(messageId);
+    this.streamingRenderInFlight.delete(messageId);
   }
   async renderMessage(message) {
     const messageEl = this.messageContainer.createEl("div", {
@@ -1332,15 +1679,9 @@ User question: ${content}`;
     const contentEl = messageEl.createEl("div", {
       cls: "local-llm-message-content"
     });
-    if (message.role === "assistant" && !message.isStreaming) {
-      import_obsidian3.MarkdownRenderer.render(
-        this.app,
-        message.content,
-        contentEl,
-        "",
-        this
-      );
-      if (message.id === "welcome" && message.content.includes("Welcome to Private AI!")) {
+    if (message.role === "assistant") {
+      await this.renderAssistantMessageContent(contentEl, message);
+      if (!message.isStreaming && message.id === "welcome" && message.content.includes("Welcome to Private AI!")) {
         const refreshButton = messageEl.createEl("button", {
           cls: "local-llm-refresh-button",
           text: "\u{1F504} Test connection",
@@ -1377,12 +1718,6 @@ User question: ${content}`;
       }
     } else {
       contentEl.setText(message.content);
-      if (message.isStreaming) {
-        const cursor = contentEl.createEl("span", {
-          cls: "streaming-cursor",
-          text: "\u258B"
-        });
-      }
     }
     if (!message.isStreaming) {
       const copyButton = messageEl.createEl("button", {
@@ -1460,17 +1795,18 @@ User question: ${content}`;
     this.messageContainer.scrollTop = this.messageContainer.scrollHeight;
   }
   /**
-   * Deduplicate search results by document path, keeping only the highest relevance score for each unique document
+   * Deduplicate search results by document path, keeping only the highest relevance score for each unique document.
+   * Assumes input is already sorted by relevance (highest first).
    */
   deduplicateNotesByPath(notes) {
-    const notesByPath = /* @__PURE__ */ new Map();
-    for (const note of notes) {
-      const existing = notesByPath.get(note.path);
-      if (!existing || note.relevance > existing.relevance) {
-        notesByPath.set(note.path, note);
+    const seenPaths = /* @__PURE__ */ new Set();
+    return notes.filter((note) => {
+      if (seenPaths.has(note.path)) {
+        return false;
       }
-    }
-    return Array.from(notesByPath.values()).sort((a, b) => b.relevance - a.relevance);
+      seenPaths.add(note.path);
+      return true;
+    });
   }
   stopStreaming() {
     if (this.currentAbortController) {
@@ -1492,7 +1828,11 @@ User question: ${content}`;
     }
     this.messages = [];
     this.messageContainer.empty();
-    this.addMessage({
+    this.streamingThinkingState.clear();
+    this.thinkingViewState.clear();
+    this.pendingStreamingRender.clear();
+    this.streamingRenderInFlight.clear();
+    await this.addMessage({
       id: "welcome",
       role: "assistant",
       content: await _ChatView.getWelcomeMessage(this.llmService),
@@ -1565,12 +1905,13 @@ Once your server is running, click the test connection button below.`;
    * Show RAG database statistics
    */
   showRAGStats(documentCount, fileCount) {
-    this.ragStatusContent.innerHTML = `
-			<div class="local-llm-rag-stats">
-				<span class="local-llm-rag-stats-icon">\u{1F4DA}</span>
-				<span class="local-llm-rag-stats-text">RAG Database: ${documentCount.toLocaleString()} paragraphs from ${fileCount.toLocaleString()} files available for context</span>
-			</div>
-		`;
+    this.ragStatusContent.empty();
+    const statsEl = this.ragStatusContent.createEl("div", { cls: "local-llm-rag-stats" });
+    statsEl.createEl("span", { cls: "local-llm-rag-stats-icon", text: "\u{1F4DA}" });
+    statsEl.createEl("span", {
+      cls: "local-llm-rag-stats-text",
+      text: `RAG Database: ${documentCount.toLocaleString()} paragraphs from ${fileCount.toLocaleString()} files available for context`
+    });
     this.ragStatusArea.removeClass("local-llm-rag-status-paused");
     this.ragStatusArea.removeClass("local-llm-rag-status-hidden");
     this.ragStatusArea.addClass("local-llm-rag-status-visible");
@@ -1586,25 +1927,30 @@ Once your server is running, click the test connection button below.`;
     const progressMessage = total > 0 && !isPaused ? `${resolvedMessage} (${current}/${total})` : resolvedMessage;
     const pauseCategory = this.plugin.ragService.pauseCategoryType;
     const pauseLabel = pauseCategory === "vision" ? "Paused (Vision)" : pauseCategory === "embedding" ? "Paused (Embeddings)" : pauseCategory === "connection" ? "Paused (Connection)" : "Paused";
-    this.ragStatusContent.innerHTML = `
-			<div class="local-llm-rag-progress">
-				<div class="local-llm-rag-progress-header">
-					<span class="local-llm-rag-progress-icon">\u26A1</span>
-					<span class="local-llm-rag-progress-text">Indexing Notes</span>
-					${isPaused ? `<span class="local-llm-rag-paused-pill">${pauseLabel}</span>` : ""}
-				</div>
-				<div class="local-llm-rag-progress-details">
-					<div class="local-llm-rag-progress-message">${progressMessage}</div>
-					<div class="local-llm-rag-progress-bar-container">
-						<div class="local-llm-rag-progress-bar" style="width: ${percentage}%"></div>
-					</div>
-					<div class="local-llm-rag-progress-footer">
-						<div class="local-llm-rag-progress-percentage">${percentage}%</div>
-						${isPaused ? '<button type="button" class="mod-cta local-llm-rag-retry-button">Retry Indexing</button>' : ""}
-					</div>
-				</div>
-			</div>
-		`;
+    this.ragStatusContent.empty();
+    const progressContainer = this.ragStatusContent.createEl("div", { cls: "local-llm-rag-progress" });
+    const headerEl = progressContainer.createEl("div", { cls: "local-llm-rag-progress-header" });
+    headerEl.createEl("span", { cls: "local-llm-rag-progress-icon", text: "\u26A1" });
+    headerEl.createEl("span", { cls: "local-llm-rag-progress-text", text: "Indexing Notes" });
+    if (isPaused) {
+      headerEl.createEl("span", { cls: "local-llm-rag-paused-pill", text: pauseLabel });
+    }
+    const detailsEl = progressContainer.createEl("div", { cls: "local-llm-rag-progress-details" });
+    detailsEl.createEl("div", { cls: "local-llm-rag-progress-message", text: progressMessage });
+    const barContainer = detailsEl.createEl("div", { cls: "local-llm-rag-progress-bar-container" });
+    barContainer.createEl("div", {
+      cls: "local-llm-rag-progress-bar",
+      attr: { style: `width: ${percentage}%` }
+    });
+    const footerEl = detailsEl.createEl("div", { cls: "local-llm-rag-progress-footer" });
+    footerEl.createEl("div", { cls: "local-llm-rag-progress-percentage", text: `${percentage}%` });
+    if (isPaused) {
+      footerEl.createEl("button", {
+        cls: "mod-cta local-llm-rag-retry-button",
+        text: "Retry Indexing",
+        attr: { type: "button" }
+      });
+    }
     if (isPaused) {
       this.ragStatusArea.addClass("local-llm-rag-status-paused");
     } else {
@@ -3834,6 +4180,7 @@ var MigrationRunner = class {
           db.run("COMMIT");
           LoggingUtility.log(`Migration version ${migration.version} applied successfully`);
         } catch (error) {
+          LoggingUtility.error(`Error during migration ${migration.version}:`, error);
           db.run("ROLLBACK");
           throw error;
         }
@@ -3875,7 +4222,7 @@ var UnifiedVectorDatabase = class {
       try {
         this.db.run("PRAGMA journal_mode = WAL");
       } catch (e) {
-        LoggingUtility.warn("Could not set WAL mode (might be unsupported in this WASM build):", e);
+        LoggingUtility.error("Could not set WAL mode (might be unsupported in this WASM build):", e);
       }
       this.db.run(`
 				CREATE TABLE IF NOT EXISTS schema_versions (
@@ -3983,6 +4330,7 @@ var UnifiedVectorDatabase = class {
       await this.save();
     } catch (error) {
       this.db.run("ROLLBACK");
+      LoggingUtility.error("Failed to upsert file documents:", error);
       throw error;
     }
   }
@@ -4297,6 +4645,15 @@ var EmbeddingService = class {
   constructor(config) {
     this.config = config;
   }
+  buildHeaders() {
+    const headers = {
+      "Content-Type": "application/json"
+    };
+    if (this.config.apiKey && this.config.apiKey.trim().length > 0) {
+      headers.Authorization = `Bearer ${this.config.apiKey.trim()}`;
+    }
+    return headers;
+  }
   /**
    * Generate embeddings for a text
    */
@@ -4310,9 +4667,7 @@ var EmbeddingService = class {
       const response = await (0, import_obsidian4.requestUrl)({
         url: this.config.endpoint,
         method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
+        headers: this.buildHeaders(),
         body: JSON.stringify(request)
       });
       if (response.status >= 400) {
@@ -4346,9 +4701,7 @@ var EmbeddingService = class {
       const response = await (0, import_obsidian4.requestUrl)({
         url: this.config.endpoint,
         method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
+        headers: this.buildHeaders(),
         body: JSON.stringify(request)
       });
       if (response.status >= 400) {
@@ -4689,7 +5042,7 @@ var RAGService = class {
       this.imageTextExtractor = new ImageTextExtractor(llmService, this.app);
       LoggingUtility.log("Image text extractor initialized successfully");
     } catch (error) {
-      LoggingUtility.warn("Failed to initialize image text extractor:", error);
+      LoggingUtility.error("Failed to initialize image text extractor:", error);
       this.imageTextExtractor = void 0;
     }
   }
@@ -4889,7 +5242,7 @@ var RAGService = class {
       }
       return isFresh;
     } catch (error) {
-      LoggingUtility.warn("Error detecting fresh install, assuming fresh:", error);
+      LoggingUtility.error("Error detecting fresh install, assuming fresh:", error);
       return true;
     }
   }
@@ -5187,7 +5540,7 @@ var RAGService = class {
       }
       return false;
     } catch (error) {
-      LoggingUtility.warn("Error checking if file is active:", error);
+      LoggingUtility.error("Error checking if file is active:", error);
       return false;
     }
   }
@@ -5255,7 +5608,7 @@ var RAGService = class {
         }
       }
     } catch (error) {
-      LoggingUtility.warn("Error handling active leaf change:", error);
+      LoggingUtility.error("Error handling active leaf change:", error);
     }
   }
   /**
@@ -5271,7 +5624,7 @@ var RAGService = class {
         this.lastActiveFilePath = null;
       }
     } catch (error) {
-      LoggingUtility.warn("Error updating last active file:", error);
+      LoggingUtility.error("Error updating last active file:", error);
       this.lastActiveFilePath = null;
     }
   }
@@ -5589,16 +5942,13 @@ var RAGService = class {
             size: file.stat.size
           });
         } catch (error) {
-          LoggingUtility.warn(`Could not read file for checksum: ${file.path}`, error);
+          LoggingUtility.error(`Could not read file for checksum: ${file.path}`, error);
         }
         if (i % 10 === 0) {
           await new Promise((resolve2) => setTimeout(resolve2, 0));
         }
       }
-      const imageFiles = this.getIncludedImageFiles();
-      for (const img of imageFiles) {
-        existingFiles.add(img.path);
-      }
+      this.getIncludedImageFiles().forEach((img) => existingFiles.add(img.path));
       await this.vectorDB.removeObsoleteDocuments(existingFiles);
       const filesToUpdate = this.vectorDB.getFilesNeedingUpdate(fileStats);
       LoggingUtility.log(`Found ${filesToUpdate.length} markdown files that need updating out of ${files.length} total files`);
@@ -5678,26 +6028,26 @@ var RAGService = class {
         LoggingUtility.log("Starting image processing phase...");
         const allFiles = this.app.vault.getFiles();
         LoggingUtility.log(`Total files in vault during indexing: ${allFiles.length}`);
-        const imageFiles2 = allFiles.filter((file) => this.shouldIndexImageFile(file));
-        LoggingUtility.log(`Found ${imageFiles2.length} image files in vault during indexing`);
-        if (imageFiles2.length > 0) {
-          LoggingUtility.log("First few image files found:", imageFiles2.slice(0, 5).map((f) => f.path));
+        const imageFiles = allFiles.filter((file) => this.shouldIndexImageFile(file));
+        LoggingUtility.log(`Found ${imageFiles.length} image files in vault during indexing`);
+        if (imageFiles.length > 0) {
+          LoggingUtility.log("First few image files found:", imageFiles.slice(0, 5).map((f) => f.path));
         }
-        if (imageFiles2.length > 0) {
+        if (imageFiles.length > 0) {
           if (this.progressCallback) {
-            this.progressCallback(0, imageFiles2.length, "Finding unindexed image text");
+            this.progressCallback(0, imageFiles.length, "Finding unindexed image text");
           }
-          for (let i = 0; i < imageFiles2.length; i++) {
+          for (let i = 0; i < imageFiles.length; i++) {
             if ((_h = this.indexingAbortController) == null ? void 0 : _h.signal.aborted) {
               LoggingUtility.log("Image processing aborted by user");
               break;
             }
-            const imageFile = imageFiles2[i];
+            const imageFile = imageFiles[i];
             if (this.progressCallback) {
-              this.progressCallback(i + 1, imageFiles2.length, `Processing image: ${imageFile.basename}`);
+              this.progressCallback(i + 1, imageFiles.length, `Processing image: ${imageFile.basename}`);
             }
             try {
-              LoggingUtility.log(`Checking image ${i + 1}/${imageFiles2.length}: ${imageFile.path}`);
+              LoggingUtility.log(`Checking image ${i + 1}/${imageFiles.length}: ${imageFile.path}`);
               const newImageChecksum = await this.calculateCRC32(imageFile);
               if ((_i = this.indexingAbortController) == null ? void 0 : _i.signal.aborted) break;
               const existingImageDocs = this.vectorDB.getFileDocuments(imageFile.path);
@@ -5768,7 +6118,7 @@ var RAGService = class {
           }
           if (!((_l = this.indexingAbortController) == null ? void 0 : _l.signal.aborted)) {
             await this.vectorDB.save();
-            LoggingUtility.log(`Image processing complete. Processed ${imageFiles2.length} images.`);
+            LoggingUtility.log(`Image processing complete. Processed ${imageFiles.length} images.`);
           }
         } else {
           LoggingUtility.log("No image files found in vault");
@@ -5880,7 +6230,7 @@ var RAGService = class {
           fileChunkCounts.set(file.path, chunkCount);
           totalChunks += chunkCount;
         } catch (error) {
-          LoggingUtility.warn(`Could not read file for chunk calculation: ${file.path}`, error);
+          LoggingUtility.error(`Could not read file for chunk calculation: ${file.path}`, error);
           fileChunkCounts.set(file.path, 0);
         }
         if (i % 10 === 0) {
@@ -6058,7 +6408,7 @@ var RAGService = class {
           fileChunkCounts.set(file.path, chunkCount);
           totalChunks += chunkCount;
         } catch (error) {
-          LoggingUtility.warn(`Could not read file for chunk calculation: ${file.path}`, error);
+          LoggingUtility.error(`Could not read file for chunk calculation: ${file.path}`, error);
           fileChunkCounts.set(file.path, 0);
         }
         if (i % 10 === 0) {
@@ -6550,7 +6900,7 @@ var RAGService = class {
 var manifest_default = {
   id: "private-ai",
   name: "Private AI",
-  version: "1.0.60",
+  version: "1.0.64",
   minAppVersion: "1.8.10",
   description: "Effortlessly chat with your notes using locally hosted AI.  Private by design, your notes never leave the device and use locally processing only.",
   author: "GB",
@@ -6619,13 +6969,15 @@ var LocalLLMPlugin2 = class extends import_obsidian6.Plugin {
     const { createLLMService: createLLMService2 } = await Promise.resolve().then(() => (init_LLMService(), LLMService_exports));
     this.llmService = createLLMService2({
       apiEndpoint: this.settings.apiEndpoint,
+      apiKey: this.settings.apiKey,
       maxTokens: this.settings.maxTokens,
       temperature: this.settings.temperature,
       systemPrompt: this.settings.systemPrompt
     });
     this.ragService = new RAGService(this.app, this.manifest, {
       endpoint: this.settings.embeddingEndpoint,
-      model: this.settings.embeddingModel
+      model: this.settings.embeddingModel,
+      apiKey: this.settings.apiKey
     }, {
       autoMaintenance: true,
       backgroundIndexing: true,
@@ -6691,6 +7043,7 @@ var LocalLLMPlugin2 = class extends import_obsidian6.Plugin {
       const { createLLMService: createLLMService2 } = await Promise.resolve().then(() => (init_LLMService(), LLMService_exports));
       this.llmService = createLLMService2({
         apiEndpoint: this.settings.apiEndpoint,
+        apiKey: this.settings.apiKey,
         maxTokens: this.settings.maxTokens,
         temperature: this.settings.temperature,
         systemPrompt: this.settings.systemPrompt
@@ -6702,7 +7055,8 @@ var LocalLLMPlugin2 = class extends import_obsidian6.Plugin {
     if (this.ragService) {
       this.ragService.updateEmbeddingConfig({
         endpoint: this.settings.embeddingEndpoint,
-        model: this.settings.embeddingModel
+        model: this.settings.embeddingModel,
+        apiKey: this.settings.apiKey
       });
     }
     this.notifyChatViewsOfSettingsChange();
@@ -6881,6 +7235,14 @@ var LocalLLMSettingTab = class extends import_obsidian6.PluginSettingTab {
       this.plugin.settings.apiEndpoint = value;
       await this.plugin.saveSettings();
     }));
+    new import_obsidian6.Setting(containerEl).setName("API key").setDesc("Optional API key sent as a Bearer token for API authentication.  To generate, goto LM Studio, click Developer tab, Server Settings, and click Manage Tokens").addText((text) => {
+      var _a;
+      return text.setPlaceholder("Enter API key").setValue((_a = this.plugin.settings.apiKey) != null ? _a : "").onChange(async (value) => {
+        const trimmedValue = value.trim();
+        this.plugin.settings.apiKey = trimmedValue.length > 0 ? trimmedValue : void 0;
+        await this.plugin.saveSettings();
+      });
+    });
     const modelSetting = new import_obsidian6.Setting(containerEl).setName("Model").setDesc("Select a specific model to use. (Loaded from LM Studio downloaded models.)").addDropdown((dropdown) => {
       dropdown.addOption("", "Auto (server chooses)");
       const savedModel = this.plugin.settings.model || "";
@@ -7093,7 +7455,8 @@ var LocalLLMSettingTab = class extends import_obsidian6.PluginSettingTab {
       try {
         this.plugin.ragService.updateEmbeddingConfig({
           endpoint: this.plugin.settings.embeddingEndpoint,
-          model: this.plugin.settings.embeddingModel
+          model: this.plugin.settings.embeddingModel,
+          apiKey: this.plugin.settings.apiKey
         });
         const result = await this.plugin.ragService.testEmbeddingConnection();
         if (result.success) {
@@ -7155,6 +7518,7 @@ var LocalLLMSettingTab = class extends import_obsidian6.PluginSettingTab {
         const { createLLMService: createLLMService2 } = await Promise.resolve().then(() => (init_LLMService(), LLMService_exports));
         const llmService = createLLMService2({
           apiEndpoint: this.plugin.settings.apiEndpoint,
+          apiKey: this.plugin.settings.apiKey,
           maxTokens: this.plugin.settings.maxTokens,
           temperature: this.plugin.settings.temperature,
           systemPrompt: this.plugin.settings.systemPrompt,
@@ -7200,13 +7564,15 @@ ${validation.errors.join("\n")}`);
     try {
       const savedModel = this.plugin.settings.model || "";
       dropdown.selectEl.disabled = true;
-      dropdown.selectEl.innerHTML = '<option value="">Loading models...</option>';
+      dropdown.selectEl.empty();
+      dropdown.selectEl.createEl("option", { value: "", text: "Loading models..." });
       const { createLLMService: createLLMService2 } = await Promise.resolve().then(() => (init_LLMService(), LLMService_exports));
       const llmService = createLLMService2({
-        apiEndpoint: this.plugin.settings.apiEndpoint
+        apiEndpoint: this.plugin.settings.apiEndpoint,
+        apiKey: this.plugin.settings.apiKey
       });
       const models = await llmService.getAvailableModels();
-      dropdown.selectEl.innerHTML = "";
+      dropdown.selectEl.empty();
       dropdown.addOption("", "Auto (server chooses)");
       if (models.length > 0) {
         models.forEach((model) => {
@@ -7225,7 +7591,7 @@ ${validation.errors.join("\n")}`);
       dropdown.selectEl.disabled = false;
     } catch (error) {
       LoggingUtility.error("Failed to load available models:", error);
-      dropdown.selectEl.innerHTML = "";
+      dropdown.selectEl.empty();
       dropdown.addOption("", "Auto (server chooses)");
       dropdown.addOption("", "Failed to load models");
       const savedModel = this.plugin.settings.model || "";
@@ -7244,13 +7610,15 @@ ${validation.errors.join("\n")}`);
     const currentOrDefaultModel = this.plugin.settings.embeddingModel || DEFAULT_SETTINGS.embeddingModel;
     try {
       dropdown.selectEl.disabled = true;
-      dropdown.selectEl.innerHTML = '<option value="">Loading embedding models...</option>';
+      dropdown.selectEl.empty();
+      dropdown.selectEl.createEl("option", { value: "", text: "Loading embedding models..." });
       const { createLLMService: createLLMService2 } = await Promise.resolve().then(() => (init_LLMService(), LLMService_exports));
       const llmService = createLLMService2({
-        apiEndpoint: this.plugin.settings.embeddingEndpoint
+        apiEndpoint: this.plugin.settings.embeddingEndpoint,
+        apiKey: this.plugin.settings.apiKey
       });
       const models = await llmService.getAvailableEmbeddingModels();
-      dropdown.selectEl.innerHTML = "";
+      dropdown.selectEl.empty();
       if (models.length > 0) {
         models.forEach((model) => dropdown.addOption(model, model));
         if (models.includes(currentOrDefaultModel)) {
@@ -7269,7 +7637,7 @@ ${validation.errors.join("\n")}`);
       dropdown.selectEl.disabled = false;
     } catch (error) {
       LoggingUtility.error("Failed to load available embedding models:", error);
-      dropdown.selectEl.innerHTML = "";
+      dropdown.selectEl.empty();
       dropdown.addOption(currentOrDefaultModel, currentOrDefaultModel);
       dropdown.setValue(currentOrDefaultModel);
       dropdown.selectEl.disabled = false;

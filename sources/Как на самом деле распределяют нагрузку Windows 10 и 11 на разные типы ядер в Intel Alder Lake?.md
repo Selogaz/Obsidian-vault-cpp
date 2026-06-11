@@ -10,7 +10,7 @@ addition:
 zotero: "[🇿](zotero://select/items/@etotkompyuterKakNaSamom2022)"
 status: 🟩
 rating:
-scientificity:
+scientificity: 📢
 category:
   - "[[computer science]]"
 meta:

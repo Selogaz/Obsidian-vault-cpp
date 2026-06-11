@@ -7,13 +7,12 @@ aliases:
   - cpumemory
 addition:
 zotero: "[🇿](zotero://select/items/@cpumemory)"
-status: 🟥
+status: 📥
 rating:
-scientificity:
+scientificity: 🅱️
 category:
   - "[[computer science]]"
 meta:
-  - hardware
 problem:
 creator:
 production:

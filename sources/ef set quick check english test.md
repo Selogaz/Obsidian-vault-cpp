@@ -9,7 +9,7 @@ addition:
 zotero: "[🇿](zotero://select/items/@ef_set_quick_check_english_test)"
 status: 🟩
 rating:
-scientificity:
+scientificity: 📢
 category:
   - "[[english]]"
 meta:

@@ -10,7 +10,7 @@ addition:
 zotero: "[🇿](zotero://select/items/@20ChtoTakoe)"
 status: 🟩
 rating:
-scientificity:
+scientificity: 📢
 category:
   - "[[games]]"
 meta:

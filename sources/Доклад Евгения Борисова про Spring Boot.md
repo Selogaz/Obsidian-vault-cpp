@@ -6,7 +6,7 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@доклад_евгения_борисова_про_spring_boot)"
-status: 🟥
+status: 📥
 rating:
 scientificity:
 category:

@@ -1,11 +1,12 @@
 ---
 tags:
+  - status/drop
   - source/course
   - category/java
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@it_otec_trudoustroystvo)"
-status: 📥
+status: ⬛
 rating:
 scientificity:
 category:
@@ -19,7 +20,7 @@ end:
 icon: 🎓
 color: "#6b7a35"
 created: 2025-09-21T14:25:53+03:00
-updated: 2026-06-01T17:47:07+03:00
+updated: 2026-06-02T15:24:31+03:00
 total_hours: 0
 ---
 

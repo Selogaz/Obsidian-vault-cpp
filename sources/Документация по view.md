@@ -6,7 +6,7 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@документация_по_view)"
-status: 🟥
+status: 📥
 rating:
 scientificity:
 category:

@@ -8,7 +8,7 @@ addition:
 zotero: "[🇿](zotero://select/items/@how_to_actually_stop_procrastinating_without_willpower)"
 status: 🟩
 rating:
-scientificity:
+scientificity: 💬
 category:
   - "[[productivity]]"
 meta:

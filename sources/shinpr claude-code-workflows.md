@@ -7,9 +7,9 @@ aliases: []
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@shinpr_claude_code_workflows)"
-status: 🟦
+status: 🟩
 rating:
-scientificity:
+scientificity: 💬
 category:
   - "[[webdev]]"
 meta:

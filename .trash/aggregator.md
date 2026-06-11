@@ -7,7 +7,7 @@ deck: obsidian::obsidian
 icon: 📝
 color: "#d0a570"
 created: 2026-04-01T18:16:43+03:00
-updated: 2026-04-01T18:16:43+03:00
+updated: 2026-06-11T00:50:35+03:00
 ---
 
 **Иерархическая vs mark/aggregator**

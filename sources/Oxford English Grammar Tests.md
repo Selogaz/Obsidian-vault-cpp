@@ -9,7 +9,7 @@ addition:
 zotero: "[🇿](zotero://select/items/@oxford_english_grammar_tests)"
 status: 🟦
 rating:
-scientificity:
+scientificity: 👓
 category:
   - "[[english]]"
 meta:

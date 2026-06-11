@@ -5,7 +5,7 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@как_сделать_распределенные_транзакции_через_transactional_eng)"
-status: 🟥
+status: 📥
 rating:
 scientificity:
 category:

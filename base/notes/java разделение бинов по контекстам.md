@@ -8,13 +8,13 @@ deck: obsidian::java
 icon: </>
 color: "#ab4642"
 created: 2025-06-13T10:42:21+03:00
-updated: 2025-09-21T12:06:43+03:00
+updated: 2026-06-11T00:39:25+03:00
 sr-due: 2026-09-16
 sr-interval: 360
 sr-ease: 290
 ---
 
-**разделение бинов по контекстам**
+**разделение бинов по [[java контекст Spring|контекстам]]**
 —
 Если бины описаны в одном контексте, то в [[java DispatcherServlet|DispatcherServlet]] в качестве `contextConfigLocation` не передается ничего:
 

@@ -1,0 +1,23 @@
+{
+  "binaryPath": "",
+  "transport": "stdio",
+  "httpHost": "127.0.0.1",
+  "httpPort": 3939,
+  "httpFallbackEnabled": false,
+  "httpFallbackHost": "127.0.0.1",
+  "httpFallbackPort": 3939,
+  "defaultMode": "hybrid",
+  "showMeta": false,
+  "showPreviewMeta": true,
+  "centerPanels": false,
+  "showPreview": true,
+  "showGraphPanel": false,
+  "scrollToSnippet": false,
+  "rememberLastQuery": true,
+  "lastQuery": "действия",
+  "showSimilarNotesAtBottom": false,
+  "similarNotesBottomLimit": 5,
+  "similarNotesThreshold": 0,
+  "searchPanelLimit": 20,
+  "searchPanelThreshold": 0
+}

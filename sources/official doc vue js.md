@@ -8,9 +8,9 @@ aliases:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@Vuejs)"
-status: 🟥
+status: 📥
 rating:
-scientificity:
+scientificity: 👓
 category:
   - "[[webdev]]"
 meta:

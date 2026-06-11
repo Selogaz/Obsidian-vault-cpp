@@ -6,7 +6,7 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@подробное_объяснение_механизма_работы_transactional_eng)"
-status: 🟥
+status: 📥
 rating:
 scientificity:
 category:

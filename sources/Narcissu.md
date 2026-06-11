@@ -1,12 +1,12 @@
 ---
 tags:
-  - status/hold
+  - status/drop
   - source/game
   - category/english
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@narcissu)"
-status: ❄
+status: ⬛
 rating:
 scientificity:
 category:
@@ -20,7 +20,7 @@ end:
 icon: 🎮
 color: "#3a9560"
 created: 2026-03-20T16:26:03+03:00
-updated: 2026-04-02T14:34:18+03:00
+updated: 2026-06-02T13:19:26+03:00
 ---
 
 visual novel

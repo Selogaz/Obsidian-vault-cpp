@@ -6,12 +6,12 @@ aliases: []
 icon: 📝
 color: "#70a0b5"
 created: 2026-02-28T00:00:00+07:00
-updated: 2026-02-28T22:09:41+03:00
+updated: 2026-06-11T00:36:58+03:00
 ---
 
 # План атомизации: How Linux Works (Brian Ward)
 
-## Книга: How Linux Works, 3rd Edition
+## Книга: [[How Linux Works]], 3rd Edition
 **Автор:** Brian Ward
 **Год:** 2021
 **Издательство:** No Starch Press

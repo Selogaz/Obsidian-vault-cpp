@@ -10,7 +10,7 @@ addition:
 zotero: "[🇿](zotero://select/items/@a_philosophy_of_software_design)"
 status: 🟦
 rating:
-scientificity:
+scientificity: 🅱️
 category:
   - "[[webdev]]"
 meta:

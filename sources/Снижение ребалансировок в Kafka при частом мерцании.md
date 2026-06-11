@@ -8,9 +8,9 @@ aliases:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@SnizhenieRebalansirovokKafka)"
-status: 🟥
+status: 📥
 rating:
-scientificity:
+scientificity: 👓
 category:
   - "[[java]]"
 meta:

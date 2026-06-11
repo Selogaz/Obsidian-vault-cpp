@@ -1,6 +1,5 @@
 ---
 tags:
-  - status/todo
   - source/article/paper
   - category/webdev
 aliases:
@@ -8,9 +7,9 @@ aliases:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@YazykJavaScript)"
-status: 🟥
+status: 📥
 rating:
-scientificity:
+scientificity: 📢
 category:
   - "[[webdev]]"
 meta:

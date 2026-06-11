@@ -6,9 +6,9 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@qwen)"
-status: ❄
+status: ⬛
 rating:
-scientificity:
+scientificity: 💬
 category:
   - "[[linux]]"
 meta:

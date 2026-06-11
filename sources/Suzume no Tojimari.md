@@ -9,7 +9,7 @@ addition:
 zotero: "[🇿](zotero://select/items/@suzume_no_tojimari)"
 status: 🟩
 rating:
-scientificity:
+scientificity: 💬
 category:
   - "[[japanese]]"
 meta:

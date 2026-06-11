@@ -8,7 +8,7 @@ addition:
 zotero: "[🇿](zotero://select/items/@pve_gayd_na_holi_prista_x1)"
 status: 🟩
 rating:
-scientificity:
+scientificity: 💬
 category:
   - "[[games]]"
 meta:

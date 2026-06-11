@@ -8,11 +8,12 @@ aliases:
 published: 2023
 addition:
 zotero: "[🇿](zotero://select/items/@shildtJavaPolnoeRukovodstvo2023)"
-status: ❄
+status: ⬛
 rating:
-scientificity:
+scientificity: 🅱️
 category:
   - "[[bioinformatics]]"
+  - "[[java]]"
 meta:
 problem:
 creator:

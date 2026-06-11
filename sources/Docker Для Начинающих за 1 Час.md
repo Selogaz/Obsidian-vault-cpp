@@ -8,9 +8,8 @@ addition:
 zotero: "[🇿](zotero://select/items/@DockerDlyaNachinayushchih)"
 status: 🟩
 rating:
-scientificity:
+scientificity: 📢
 category:
-  - "[[java]]"
 meta:
 problem:
 creator:

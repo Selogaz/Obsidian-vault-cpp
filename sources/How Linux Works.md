@@ -1,6 +1,6 @@
 ---
 tags:
-  - status/hold
+  - status/drop
   - source/book
   - category/linux
 aliases:
@@ -8,9 +8,9 @@ aliases:
 published: 2016
 addition:
 zotero: "[🇿](zotero://select/items/@wardHowLinuxWorks2016)"
-status: ❄
+status: ⬛
 rating:
-scientificity:
+scientificity: 🅱️
 category:
   - "[[linux]]"
 meta:
@@ -25,7 +25,7 @@ url:
 icon: 📖
 color: "#b5b570"
 created: 2026-02-26T19:12:15+03:00
-updated: 2026-04-02T14:33:36+03:00
+updated: 2026-06-11T00:56:40+03:00
 related:
 ---
 

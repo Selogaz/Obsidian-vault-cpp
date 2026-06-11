@@ -141,9 +141,10 @@
         15,
         16,
         28,
+        72,
         1897,
         2041,
-        72
+        2186
       ]
     },
     "JDWBZAA3": {
@@ -185,7 +186,9 @@
         1871,
         1873,
         1889,
-        1899
+        1899,
+        2190,
+        2191
       ]
     },
     "Y73ZVE8V": {
@@ -442,7 +445,8 @@
         1915,
         2047,
         2062,
-        2145
+        2145,
+        2188
       ]
     },
     "JPS5N475": {
@@ -454,7 +458,9 @@
       ],
       "items": [
         1291,
-        1987
+        1987,
+        2188,
+        2191
       ]
     },
     "DD6MR3D9": {
@@ -509,7 +515,9 @@
         1923,
         2035,
         2056,
-        2060
+        2060,
+        2187,
+        2192
       ]
     }
   },
@@ -720,10 +728,10 @@
       ],
       "tags": [
         {
-          "tag": "💎"
+          "tag": "🟦"
         },
         {
-          "tag": "🟦"
+          "tag": "💎"
         },
         {
           "tag": "🅱️"
@@ -877,6 +885,44 @@
       "itemKey": "EFLY7HAH",
       "libraryID": 1,
       "select": "zotero://select/library/items/EFLY7HAH"
+    },
+    {
+      "key": "8LKQU8JW",
+      "version": 6109,
+      "itemType": "videoRecording",
+      "title": "Как ПОЛИГЛОТЫ начинают думать на английском: ВАЖНЫЕ ШАГИ без зубрёжки",
+      "abstractNote": "Почему ты понимаешь английский, но замираешь, когда нужно заговорить?\nПочему мысли есть — а слова «застревают» в голове?\nВ этом видео я объясняю и какие ВАЖНЫЕ ШАГИ помогают начать думать на английском, как это делают ПОЛИГЛОТЫ.",
+      "date": "2025",
+      "citationKey": "angliyskiysjerryKakPOLIGLOTYNachinayut2025",
+      "url": "https://www.youtube.com/watch?v=wqDwmGudg9o",
+      "accessDate": "2026-06-10T17:53:10Z",
+      "shortTitle": "Как ПОЛИГЛОТЫ начинают думать на английском",
+      "libraryCatalog": "YouTube",
+      "runningTime": "12:50",
+      "creators": [
+        {
+          "name": "Английский с  JERRY",
+          "creatorType": "creator"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "💬"
+        },
+        {
+          "tag": "🟦"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-10T17:53:10Z",
+      "dateModified": "2026-06-10T17:53:53Z",
+      "uri": "http://zotero.org/users/16981227/items/8LKQU8JW",
+      "itemID": 2190,
+      "attachments": [],
+      "notes": [],
+      "itemKey": "8LKQU8JW",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/8LKQU8JW"
     },
     {
       "key": "RKB7VXBT",
@@ -2078,6 +2124,44 @@
       "select": "zotero://select/library/items/V6EUSKFR"
     },
     {
+      "key": "YPF9XIDK",
+      "version": 6096,
+      "itemType": "computerProgram",
+      "title": "Egonex-AI/Understand-Anything",
+      "abstractNote": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+      "date": "2026-06-10T16:16:41Z",
+      "citationKey": "EgonexAIUnderstandAnything2026",
+      "url": "https://github.com/Egonex-AI/Understand-Anything",
+      "accessDate": "2026-06-10T16:22:21Z",
+      "libraryCatalog": "GitHub",
+      "rights": "MIT",
+      "extra": "original-date: 2026-03-15T02:30:51Z",
+      "company": "Egonex",
+      "programmingLanguage": "TypeScript",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "🌔"
+        },
+        {
+          "tag": "👓"
+        },
+        {
+          "tag": "🟩"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-10T16:22:21Z",
+      "dateModified": "2026-06-10T16:23:34Z",
+      "uri": "http://zotero.org/users/16981227/items/YPF9XIDK",
+      "itemID": 2187,
+      "attachments": [],
+      "notes": [],
+      "itemKey": "YPF9XIDK",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/YPF9XIDK"
+    },
+    {
       "key": "F3TBMSJ3",
       "version": 5832,
       "itemType": "book",
@@ -2874,6 +2958,46 @@
       "itemKey": "HTTS575T",
       "libraryID": 1,
       "select": "zotero://select/library/items/HTTS575T"
+    },
+    {
+      "key": "6AT9QKG4",
+      "version": 6089,
+      "itemType": "computerProgram",
+      "title": "rohitg00/ai-engineering-from-scratch",
+      "abstractNote": "Learn it. Build it. Ship it for others.",
+      "date": "2026-06-08T09:58:44Z",
+      "citationKey": "ghumareRohitg00Aiengineeringfromscratch2026",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "accessDate": "2026-06-08T10:01:13Z",
+      "libraryCatalog": "GitHub",
+      "rights": "MIT",
+      "extra": "original-date: 2026-03-18T18:38:02Z",
+      "programmingLanguage": "Python",
+      "creators": [
+        {
+          "firstName": "Rohit",
+          "lastName": "Ghumare",
+          "creatorType": "programmer"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "👓"
+        },
+        {
+          "tag": "🟥"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-08T10:01:13Z",
+      "dateModified": "2026-06-08T10:02:11Z",
+      "uri": "http://zotero.org/users/16981227/items/6AT9QKG4",
+      "itemID": 2186,
+      "attachments": [],
+      "notes": [],
+      "itemKey": "6AT9QKG4",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/6AT9QKG4"
     },
     {
       "key": "NNFM79IF",
@@ -5407,7 +5531,7 @@
     },
     {
       "key": "QE2PITAR",
-      "version": 4785,
+      "version": 6001,
       "itemType": "document",
       "title": "Repo dnd-frontend",
       "citationKey": "repo_dnd_frontend",
@@ -5421,15 +5545,18 @@
       ],
       "tags": [
         {
-          "tag": "🟦"
+          "tag": "💎"
         },
         {
-          "tag": "💎"
+          "tag": "💬"
+        },
+        {
+          "tag": "🟦"
         }
       ],
       "relations": {},
       "dateAdded": "2026-05-30T09:04:11Z",
-      "dateModified": "2026-06-01T14:03:17Z",
+      "dateModified": "2026-06-02T12:28:22Z",
       "uri": "http://zotero.org/users/16981227/items/QE2PITAR",
       "itemID": 1881,
       "attachments": [],
@@ -6569,6 +6696,50 @@
       "select": "zotero://select/library/items/C43ESGSM"
     },
     {
+      "key": "U6K3XJGJ",
+      "version": 6105,
+      "itemType": "webpage",
+      "title": "About these notes",
+      "abstractNote": "Example of good knowledge base from flowing-abyss",
+      "citationKey": "TheseNotes",
+      "url": "https://notes.andymatuschak.org/About_these_notes",
+      "accessDate": "2026-06-10T17:42:18Z",
+      "language": "en",
+      "websiteTitle": "Andyʼs working notes",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "🟥"
+        },
+        {
+          "tag": "💬"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-10T17:42:18Z",
+      "dateModified": "2026-06-10T17:43:30Z",
+      "uri": "http://zotero.org/users/16981227/items/U6K3XJGJ",
+      "itemID": 2188,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://notes.andymatuschak.org/About_these_notes",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-06-10T17:42:18Z",
+          "dateModified": "2026-06-10T17:42:18Z",
+          "uri": "http://zotero.org/users/16981227/items/6UAP72EF",
+          "path": "/home/exuberance/Zotero/storage/6UAP72EF/About_these_notes.html",
+          "select": "zotero://select/library/items/6UAP72EF"
+        }
+      ],
+      "notes": [],
+      "itemKey": "U6K3XJGJ",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/U6K3XJGJ"
+    },
+    {
       "key": "XT29TK9F",
       "version": 5831,
       "itemType": "book",
@@ -6796,6 +6967,46 @@
       "select": "zotero://select/library/items/3H7AQG5W"
     },
     {
+      "key": "Y5Z2BP99",
+      "version": 6114,
+      "itemType": "computerProgram",
+      "title": "obra/superpowers",
+      "abstractNote": "An agentic skills framework & software development methodology that works.",
+      "date": "2026-06-10T18:19:07Z",
+      "citationKey": "vincentObraSuperpowers2026",
+      "url": "https://github.com/obra/superpowers",
+      "accessDate": "2026-06-10T18:19:22Z",
+      "libraryCatalog": "GitHub",
+      "rights": "MIT",
+      "extra": "original-date: 2025-10-09T19:45:18Z",
+      "programmingLanguage": "Shell",
+      "creators": [
+        {
+          "firstName": "Jesse",
+          "lastName": "Vincent",
+          "creatorType": "programmer"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "👓"
+        },
+        {
+          "tag": "🟥"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-10T18:19:22Z",
+      "dateModified": "2026-06-10T18:20:03Z",
+      "uri": "http://zotero.org/users/16981227/items/Y5Z2BP99",
+      "itemID": 2192,
+      "attachments": [],
+      "notes": [],
+      "itemKey": "Y5Z2BP99",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/Y5Z2BP99"
+    },
+    {
       "key": "5UQS9A73",
       "version": 5823,
       "itemType": "book",
@@ -6983,6 +7194,75 @@
       "itemKey": "REQ4BPQP",
       "libraryID": 1,
       "select": "zotero://select/library/items/REQ4BPQP"
+    },
+    {
+      "key": "KCDW56VW",
+      "version": 6111,
+      "itemType": "computerProgram",
+      "title": "DeepTutor: Towards Agentic Personalized Tutoring",
+      "abstractNote": "DeepTutor: Agent-native, Open-sourced Personalized Tutoring. https://deeptutor.info/.",
+      "date": "2026",
+      "citationKey": "zhaoDeepTutorAgenticPersonalized2026",
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "accessDate": "2026-06-10T18:13:51Z",
+      "shortTitle": "DeepTutor",
+      "libraryCatalog": "GitHub",
+      "rights": "Apache-2.0",
+      "extra": "Publication Title: arXiv preprint arXiv:2604.26962\noriginal-date: 2025-12-28T15:35:54Z",
+      "programmingLanguage": "Python",
+      "creators": [
+        {
+          "firstName": "Bingxi",
+          "lastName": "Zhao",
+          "creatorType": "programmer"
+        },
+        {
+          "firstName": "Jiahao",
+          "lastName": "Zhang",
+          "creatorType": "programmer"
+        },
+        {
+          "firstName": "Xubin",
+          "lastName": "Ren",
+          "creatorType": "programmer"
+        },
+        {
+          "firstName": "Zirui",
+          "lastName": "Guo",
+          "creatorType": "programmer"
+        },
+        {
+          "firstName": "Tianzhe",
+          "lastName": "Chu",
+          "creatorType": "programmer"
+        },
+        {
+          "firstName": "Yi",
+          "lastName": "Ma",
+          "creatorType": "programmer"
+        },
+        {
+          "firstName": "Chao",
+          "lastName": "Huang",
+          "creatorType": "programmer"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-10T18:13:51Z",
+      "dateModified": "2026-06-10T18:13:51Z",
+      "uri": "http://zotero.org/users/16981227/items/KCDW56VW",
+      "itemID": 2191,
+      "attachments": [],
+      "notes": [],
+      "itemKey": "KCDW56VW",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/KCDW56VW"
     },
     {
       "key": "DSBH28W9",

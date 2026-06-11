@@ -6,7 +6,7 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@наглядно_про_операции_stream_api)"
-status: 🟥
+status: 📥
 rating:
 scientificity:
 category:

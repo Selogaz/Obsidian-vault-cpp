@@ -5,7 +5,7 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@пересказ_английской_документации_по_transactional_с_примерами)"
-status: 🟥
+status: 📥
 rating:
 scientificity:
 category:

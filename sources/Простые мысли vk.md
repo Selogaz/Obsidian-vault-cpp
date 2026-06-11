@@ -7,7 +7,7 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@простые_мысли_vk)"
-status: 🟥
+status: 📥
 rating:
 scientificity:
 category:

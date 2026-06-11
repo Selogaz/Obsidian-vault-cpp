@@ -6,9 +6,9 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@jwt_dlya_nachinayushchih_za_15_min_prostymi_slovami)"
-status: 🟥
+status: 📥
 rating:
-scientificity:
+scientificity: 💬
 category:
   - "[[java]]"
 meta:

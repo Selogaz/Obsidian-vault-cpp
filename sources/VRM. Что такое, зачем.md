@@ -10,11 +10,10 @@ addition:
 zotero: "[🇿](zotero://select/items/@etotkompyuterVRMChtoTakoe2019)"
 status: 🟩
 rating:
-scientificity:
+scientificity: 📢
 category:
   - "[[computer science]]"
 meta:
-  - hardware
 problem:
 creator:
   - "[[Этот Компьютер]]"

@@ -134,6 +134,8 @@ views:
       - tags
       - aliases
     sort:
+      - property: status
+        direction: ASC
       - property: formula.kanban
         direction: ASC
       - property: formula.created_relative

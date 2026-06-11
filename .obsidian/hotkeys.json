@@ -1525,5 +1525,21 @@
       "key": "F"
     }
   ],
-  "zotflow:insert-citation": []
+  "zotflow:insert-citation": [],
+  "hybrid-search:open-search": [
+    {
+      "modifiers": [
+        "Meta"
+      ],
+      "key": "F"
+    }
+  ],
+  "hybrid-search:open-graph-workbench": [
+    {
+      "modifiers": [
+        "Meta"
+      ],
+      "key": "G"
+    }
+  ]
 }

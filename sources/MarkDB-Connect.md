@@ -7,9 +7,9 @@ aliases:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@MarkDBConnect)"
-status: 📥
+status: 🟩
 rating:
-scientificity:
+scientificity: 💬
 category:
   - "[[obsidian]]"
 meta:

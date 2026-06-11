@@ -61,7 +61,7 @@ views:
       - property: file.name
         direction: DESC
     columnSize:
-      file.name: 145
+      file.name: 196
       note.focus: 145
       note.learn: 90
       note.routine: 100

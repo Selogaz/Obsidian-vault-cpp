@@ -6,7 +6,7 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@много_материалов_про_блокировки_eng)"
-status: 🟥
+status: 📥
 rating:
 scientificity:
 category:

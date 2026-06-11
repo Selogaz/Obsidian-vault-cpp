@@ -6,9 +6,9 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@deepseek_pomoshch_v_lechenii_funkcionalnyh_rasstroystv)"
-status: 🟦
+status: ⬛
 rating:
-scientificity:
+scientificity: 💬
 category:
   - "[[health]]"
 meta:

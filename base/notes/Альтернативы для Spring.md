@@ -7,7 +7,7 @@ deck: obsidian::work
 icon: </>
 color: "#ab4642"
 created: 2025-06-03 10:43:02+03:00
-updated: 2025-10-01T20:20:40+03:00
+updated: 2026-06-11T00:38:01+03:00
 sr-due: 2026-12-07
 sr-interval: 435
 sr-ease: 310

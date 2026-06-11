@@ -66,8 +66,11 @@ User: "weekly review" / "итоги недели" / "недельный обзо
    b. Themes — count wikilinks across daily notes
    c. Project progress — read active projects via obsidian search + mentions in daily notes
    d. Open threads — extract Threads sections from briefing callouts
-   e. Journal patterns — aggregate free-text themes from user writing in daily notes
-    |
+    e. Journal patterns — aggregate free-text themes from user writing in daily notes
+    f. Anchors compliance — scan each daily note for checked anchor checkboxes
+       (`- [x] ⚓ English`, `- [x] ⚓ Coding`, `- [x] ⚓ ЕГЭ`, `- [x] ⚓ Vault`).
+       Count how many days each anchor was completed out of 7.
+     |
 6. For each section: collect data → derive one "→" inference from the specific pattern
     |
 7. Generate review callout with inferences
@@ -199,6 +202,43 @@ Sort by persistence (most days appearing first):
 
 Write the inference in detected language. Skip if no clear pattern.
 
+## Anchors Compliance
+
+Scan each daily note for checked anchor checkboxes:
+```bash
+obsidian search:context query="⚓" path=periodic/daily
+```
+
+Count per anchor type across the 7 daily notes (Mon–Sun):
+
+| Anchor | Target per week | Days completed |
+|--------|----------------|---------------|
+| ⚓ English | 7/7 | N/7 |
+| ⚓ Coding practice | 7/7 | N/7 |
+| ⚓ ЕГЭ | 6/7 | N/7 |
+| ⚓ Vault upkeep | 7/7 | N/7 |
+
+Render as a compact table:
+```markdown
+> **Якоря:**
+> | Якорь | Выполнено | Цель |
+> |-------|-----------|------|
+> | ⚓ English | 5/7 | 7/7 |
+> | ⚓ Coding | 4/7 | 7/7 |
+> | ⚓ ЕГЭ | 3/6 | 6/7 |
+> | ⚓ Vault | 6/7 | 7/7 |
+```
+
+**→ Inference:** After listing anchors, derive one data-specific observation. Look for:
+- Anchor consistently skipped → is the 30-min dose too high for that area?
+- English 0 days 2+ weeks running → language is dropping out of the system; needs intervention
+- Coding completed every day but no new notes created → execution without capture
+- ЕГЭ only done on correct days → чередование работает
+- Vault 0/7 days → upkeep is being deferred despite being the smallest anchor
+- Sharp drop mid-week → main work (Подземелья Максвелла) consumed all energy on those days
+
+Write the inference in detected language. Skip if no clear pattern.
+
 ## Reflection Questions
 
 Generate **exactly 2** sharp questions grounded in the week's data. Use the accumulated "→" inferences as the primary source — the two most significant patterns of the week become the two questions.
@@ -213,6 +253,7 @@ Additional patterns to draw from:
 | Tasks clustered on 1–2 days | "What was preventing work on the other days?" |
 | One project dominates all mentions | "Is this intentional or are other projects getting lost?" |
 | User journal mentions concept but no wikilink exists | "Is this concept ready to become a note?" |
+| Anchor consistently below target (e.g. English 2/7) | "What's blocking this anchor — time, energy, or missing material?" |
 
 ```markdown
 > **Reflection:**
@@ -245,6 +286,15 @@ Full callout written into the weekly note:
 > **Open threads:**
 > - Thread description — N days
 > → [inference about thread accumulation — only if pattern found]
+>
+> **Якоря:**
+> | Якорь | Выполнено | Цель |
+> |-------|-----------|------|
+> | ⚓ English | N/7 | 7/7 |
+> | ⚓ Coding | N/7 | 7/7 |
+> | ⚓ ЕГЭ | N/6 | 6/7 |
+> | ⚓ Vault | N/7 | 7/7 |
+> → [inference about anchor streak or weak spot — only if pattern found]
 >
 > **Reflection:**
 > 1. Specific question grounded in data
@@ -297,6 +347,7 @@ Review written → periodic/weekly/2026-W08.md
 Tasks: 5 completed.
 Themes: knowledge management (6), writing process (4).
 Projects: 3 active.
+Anchors: English 5/7, Coding 4/7, ЕГЭ 3/6, Vault 6/7.
 Threads: 3 open.
 ```
 

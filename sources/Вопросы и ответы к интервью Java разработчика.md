@@ -1,12 +1,11 @@
 ---
 tags:
-  - status/hold
   - source/article/paper
   - category/java
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@вопросы_и_ответы_к_интервью_java_разработчика)"
-status: ❄
+status: 📥
 rating:
 scientificity:
 category:

@@ -8,7 +8,7 @@ deck: obsidian::webdev
 icon: </>
 color: "#ab4642"
 created: 2026-04-23T12:00:41+03:00
-updated: 2026-04-23T12:00:41+03:00
+updated: 2026-06-10T12:48:48+03:00
 ---
 
 **dvh**
@@ -26,3 +26,5 @@ dvh - % от высоты окна
         />
       </div>
 ```
+
+является частью [[web viewport height]]

@@ -10,11 +10,10 @@ addition:
 zotero: "[🇿](zotero://select/items/@kirillgalkinselectfromKakPravilnoPolzovatsya2025)"
 status: 🟩
 rating:
-scientificity:
+scientificity: 📢
 category:
   - "[[games]]"
 meta:
-  - grapthics
 problem:
 creator:
   - "[[Kirill Galkin (SelectFrom)]]"

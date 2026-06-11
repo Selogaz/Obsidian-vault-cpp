@@ -7,9 +7,9 @@ aliases: []
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@opencode_nj_kit)"
-status: 🟦
+status: 🟩
 rating:
-scientificity:
+scientificity: 👓
 category:
   - "[[webdev]]"
 meta:

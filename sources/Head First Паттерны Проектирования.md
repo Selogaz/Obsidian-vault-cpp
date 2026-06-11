@@ -7,9 +7,9 @@ aliases:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@eHeadFirstPatterny)"
-status: 🟥
+status: 📥
 rating:
-scientificity:
+scientificity: 🅱️
 category:
   - "[[java]]"
 meta:

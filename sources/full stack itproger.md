@@ -11,9 +11,9 @@ addition:
   - "[[full stack itproger - conspectuses|📓]]"
   - "[[full stack itproger - practice|💪]]"
 zotero: "[🇿](zotero://select/items/@ProfessiyaFULLSTACK2022)"
-status: ❄
+status: ⬛
 rating:
-scientificity:
+scientificity: 💬
 category:
   - "[[webdev]]"
 meta:

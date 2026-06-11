@@ -6,7 +6,7 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@изучение_java)"
-status: 🟥
+status: 📥
 rating:
 scientificity:
 category:

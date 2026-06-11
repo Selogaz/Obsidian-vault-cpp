@@ -74,18 +74,31 @@ User: "today" / "start my day" / "kick me" / "feed" / "briefing"
    c. Read 5-10 recently modified vault notes (base/, sources/)
    d. Find 2-3 old notes (30+ days) connected to recent themes
    e. Search for open tasks and stated intentions in recent entries (obsidian search)
-   f. Read current week's weekly note (periodic/weekly/YYYY-WWW.md) if it exists —
-      specifically text BELOW the [!weekly-review]- callout (user's stated weekly focus).
-      This tells you what the user committed to this week. Use it to align the seed
-      and materials with their actual declared intention.
-    |
+    f. Read current week's weekly note (periodic/weekly/YYYY-WWW.md) if it exists —
+       specifically text BELOW the [!weekly-review]- callout (user's stated weekly focus).
+       This tells you what the user committed to this week. Use it to align the seed
+       and materials with their actual declared intention.
+    g. Read the workflow note `base/_hierarchy/daily-workflow.md` — determine today's
+       ЕГЭ subject (math vs cs) and vault upkeep (Obsidian vs Zotero) based on weekday.
+     |
 5. Generate briefing content:
    a. SEED — one sharp idea/thought/connection based on vault context
    b. MATERIALS — relevant vault links organized by usefulness
    c. PROJECT FEED — connections for active projects
-   d. THREADS — unfinished business from recent days
+   d. ANCHORS — specific suggestions for today's 4 anchors (English, Coding, ЕГЭ, Vault)
+   e. THREADS — unfinished business from recent days
     |
-6. WRITE the briefing directly into the daily note (append after existing content)
+6. WRITE the briefing directly into the daily note (append after existing content).
+   After the briefing callout, append an anchor checklist section (if it doesn't
+   already exist in today's note):
+
+   ```markdown
+   **⚓ Якоря дня:**
+   - [ ] ⚓ English (30 мин)
+   - [ ] ⚓ Coding practice (30 мин)
+   - [ ] ⚓ ЕГЭ (30 мин)
+   - [ ] ⚓ Vault upkeep (15 мин)
+   ```
     |
 7. Brief confirmation in chat (1-2 lines max)
 ```
@@ -227,9 +240,15 @@ Appended AFTER any existing content in the note.
 > - [[Project A]] 🟦: see [[note X]] — [how it helps]
 > - [[Project B]] 🟥: see [[note Y]], [[source Z]] — [connection]
 >
+> **Anchors:**
+> - ⚓ English — [[project or note]] — [specific suggestion, 5-10 words]
+> - ⚓ Coding practice — [[project or note]] — [specific suggestion, 5-10 words]
+> - ⚓ ЕГЭ — [subject: Математика/Информатика] — [[project or note]] — [section/topic, 5-10 words]
+> - ⚓ Vault upkeep — [Obsidian/Zotero] — [[project or note]] — [specific task, 5-10 words]
+>
 > **Threads:**
 > - [open task or stated intention] — [[periodic/daily/YYYY-MM-DD|date]]
-```
+> ```
 
 ### Rules
 
@@ -339,6 +358,59 @@ Collect unfinished business from recent daily notes:
 
 Keep to 2-3 most important threads. Don't dump the entire backlog.
 
+## Anchors Section
+
+Generate a concrete suggestion for each of the 4 daily anchors. Determine
+today's ЕГЭ subject and vault upkeep type from the workflow note
+(`base/_hierarchy/daily-workflow.md`):
+
+| Day | ЕГЭ | Vault |
+|-----|-----|-------|
+| Mon/Wed/Fri | Математика | Obsidian |
+| Tue/Thu/Sat | Информатика | Zotero |
+| Sun | — | Obsidian + Zotero |
+
+### Suggestion strategies per anchor
+
+**English (30 min):**
+- Reference the active project [[Learn English from a1-a2 level]]
+- Suggest: BBC 6 Minute English shadowing, Murphy grammar unit, Anki cards, or a specific resource ([[Oxford English Grammar Tests]], [[ef set quick check english test]])
+- Prefer content connected to текущей vault activity (tech docs, article notes)
+
+**Coding practice (30 min):**
+- Reference [[Алгоритмы и структуры данных]] or [[рекомендуемая стратегия изучения алгоритмов]]
+- Suggest: LeetCode problem by category, a design pattern from [[Head First Паттерны Проектирования]], or a specific note from the algorithms hierarchy
+- Use the week's study focus if stated in weekly note
+
+**ЕГЭ (30 min):**
+- For Математика: reference [[ЕГЭ Математика/ЕГЭ Математика]], suggest a specific task type or topic from the project
+- For Информатика: reference [[ЕГЭ Информатика/ЕГЭ Информатика]], suggest a specific task or theme
+- Check recent vault activity for what was last worked on
+
+**Vault upkeep (10-15 min):**
+- For Obsidian: suggest linking two orphan notes, cleaning a tag, reviewing a hierarchy
+- For Zotero: suggest tagging one item, cleaning one collection, reviewing a source status
+- On Sunday: suggest a combined 30-min vault session
+
+### Format in briefing
+
+```markdown
+> **Anchors:**
+> - ⚓ English — [[Learn English from a1-a2 level]] — [concrete suggestion]
+> - ⚓ Coding practice — [[Алгоритмы и структуры данных]] — [concrete suggestion]
+> - ⚓ ЕГЭ Математика — [[ЕГЭ Математика/ЕГЭ Математика]] — [concrete suggestion]
+> - ⚓ Vault (Obsidian) — [specific note or task suggestion]
+```
+
+### Rules
+
+1. **Every anchor must have a concrete suggestion** — never "делай английский" without specifics. At minimum: "30 min Murphy Unit 12 — Past Simple".
+2. **Use existing vault content** — link to notes, sources, or project pages the user already has.
+3. **Don't repeat the same suggestion 3+ days in a row** — rotate within available resources.
+4. **If an anchor project is dormant (no activity 7+ days)**, acknowledge it explicitly: *"английский молчит 15 дней — 30 min BBC 6 Minute English прервут серию"*.
+5. **Adapt ЕГЭ subject automatically** from weekday rule above.
+6. **Skip section entirely** if the briefing already has an Anchors checklist from a previous run in today's note.
+
 ## Anti-patterns
 
 - Outputting the briefing to chat instead of writing to the note
@@ -360,7 +432,7 @@ Briefing written to periodic/daily/2026-02-11.md
 
 Inbox: 3 tasks moved (from 2026-02-09, 2026-02-08).
 Seed: connection between [[X]] and [[Y]].
-3 materials, 2 project links, 1 open thread.
+3 materials, 2 project links, 4 anchors set, 1 open thread.
 ```
 
 If the note didn't exist — mention it was created:
@@ -370,7 +442,7 @@ Created periodic/daily/2026-02-11.md with briefing.
 
 Inbox: 1 task moved (from 2026-02-09).
 Seed: your idea about [X] has an unexplored angle.
-4 materials, 1 project link, 2 threads.
+4 materials, 1 project link, 4 anchors set, 2 threads.
 ```
 
 If no inbox tasks were found, omit the "Inbox:" line entirely.

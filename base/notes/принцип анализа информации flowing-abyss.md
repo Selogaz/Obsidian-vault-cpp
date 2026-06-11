@@ -7,7 +7,7 @@ deck: obsidian::obsidian
 icon: 📝
 color: "#d0a570"
 created: 2026-05-29T21:48:18+03:00
-updated: 2026-05-29T21:48:18+03:00
+updated: 2026-06-11T00:51:03+03:00
 ---
 
 **Принцип анализа информации flowing-abyss**

@@ -8,9 +8,9 @@ aliases:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@ECMA262)"
-status: 🟥
+status: 📥
 rating:
-scientificity:
+scientificity: 👓
 category:
   - "[[webdev]]"
 meta:

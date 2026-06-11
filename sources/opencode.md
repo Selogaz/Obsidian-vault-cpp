@@ -6,9 +6,9 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@opencode)"
-status: ❄
+status: 🟩
 rating:
-scientificity:
+scientificity: 💬
 category:
   - "[[study]]"
 meta:

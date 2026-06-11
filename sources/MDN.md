@@ -8,9 +8,9 @@ aliases:
 published: 2025
 addition:
 zotero: "[🇿](zotero://select/items/@MDN2025)"
-status: 🟥
+status: 📥
 rating:
-scientificity:
+scientificity: 👓
 category:
   - "[[webdev]]"
 meta:

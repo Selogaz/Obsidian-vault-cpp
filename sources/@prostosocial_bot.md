@@ -6,7 +6,7 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@prostosocial_bot)"
-status: ❄
+status: ⬛
 rating:
 scientificity:
 category:

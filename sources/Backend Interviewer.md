@@ -7,9 +7,9 @@ aliases: []
 addition:
   - конспекты backend_interviewer
 zotero: "[🇿](zotero://select/items/@backend_interviewer)"
-status: 🟥
+status: 📥
 rating:
-scientificity:
+scientificity: 💬
 category:
   - "[[java]]"
 meta:

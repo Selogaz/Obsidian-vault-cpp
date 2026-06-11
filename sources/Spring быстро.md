@@ -6,7 +6,7 @@ aliases:
   - Spring быстро
 addition:
 zotero: "[🇿](zotero://select/items/@spilkeSpringBystro)"
-status: 📥
+status: ⬛
 rating:
 scientificity:
 category:

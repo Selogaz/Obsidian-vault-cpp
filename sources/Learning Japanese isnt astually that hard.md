@@ -9,7 +9,7 @@ addition:
 zotero: "[🇿](zotero://select/items/@learning_japanese_isnt_astually_that_hard)"
 status: 🟩
 rating:
-scientificity:
+scientificity: 📢
 category:
   - "[[japanese]]"
 meta:

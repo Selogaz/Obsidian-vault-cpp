@@ -6,7 +6,7 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@демонстрация_работы_разных_propagation)"
-status: 🟥
+status: 📥
 rating:
 scientificity:
 category:

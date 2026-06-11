@@ -6,9 +6,9 @@ aliases:
   - Spring Security в действии
 addition:
 zotero: "[🇿](zotero://select/items/@spilkeSpringSecurityDeystvii)"
-status: 📥
+status: ⬛
 rating:
-scientificity:
+scientificity: 🅱️
 category:
   - "[[java]]"
 meta:

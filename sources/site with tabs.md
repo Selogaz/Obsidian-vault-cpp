@@ -6,9 +6,9 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@site_with_tabs)"
-status: 🟥
+status: 📥
 rating:
-scientificity:
+scientificity: 💬
 category:
   - "[[music]]"
 meta:

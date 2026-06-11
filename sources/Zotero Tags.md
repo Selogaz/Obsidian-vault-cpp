@@ -1,6 +1,6 @@
 ---
 tags:
-  - status/wip
+  - status/done
   - source/article/paper
   - category/obsidian
 aliases:
@@ -8,9 +8,9 @@ aliases:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@ZoteroTags)"
-status: 🟦
-rating:
-scientificity:
+status: 🟩
+rating: 🌕
+scientificity: 💬
 category:
   - "[[obsidian]]"
 meta:
@@ -24,7 +24,7 @@ url:
 icon: 📃
 color: "#7575c0"
 created: 2026-06-01T13:35:27+03:00
-updated: 2026-06-01T14:57:48+03:00
+updated: 2026-06-01T23:17:56+03:00
 related:
 ---
 

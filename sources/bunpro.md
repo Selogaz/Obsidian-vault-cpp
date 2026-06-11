@@ -6,9 +6,9 @@ tags:
 aliases: []
 addition:
 zotero: "[🇿](zotero://select/items/@bunpro)"
-status: 🟦
+status: ⬛
 rating:
-scientificity:
+scientificity: 📢
 category:
   - "[[japanese]]"
 meta:
