@@ -8,7 +8,7 @@ deck: obsidian::css
 icon: </>
 color: "#ab4642"
 created: 2026-01-19T20:56:48+03:00
-updated: 2026-03-04T19:44:17+03:00
+updated: 2026-06-17T12:56:42+03:00
 ---
 
 **подключение шрифта**
@@ -33,4 +33,19 @@ p.txt {
 p.txt {
 	font-family: "Montserrat", sans-serif;
 }
+```
+
+Например, в [[Подземелья Максвелла]] - Firenight и Jost.
+
+```css
+--font-firenight: 'Firenight';
+
+.font-firenight {
+  font-family: var(--font-firenight, 'Firenight'), sans-serif !important;
+}
+
+.font-jost {
+  font-family: var(--font-jost), 'Jost', Arial, sans-serif !important;
+}
+
 ```

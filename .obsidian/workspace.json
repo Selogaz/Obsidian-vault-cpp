@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2026-06-10.md",
+                "file": "periodic/daily/2026-06-17.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-06-10"
+              "title": "2026-06-17"
             }
           },
           {
-            "id": "963fc517e4dbc517",
+            "id": "855515df47018b46",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2026-06-11.md",
+                "file": "sources/Как делать полезные заметки.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,16 +52,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-06-11"
+              "title": "Как делать полезные заметки"
             }
           },
           {
-            "id": "094bcc580c376e34",
+            "id": "7f47162b1871a667",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/tasks/Исправить нижнюю панель на iPad — кнопки съедаются снизу.md",
+                "file": "templates/create/sources/book/manifest.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,107 +76,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Исправить нижнюю панель на iPad — кнопки съедаются снизу"
-            }
-          },
-          {
-            "id": "1461b03fb489cc04",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/orphan notes vault.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "orphan notes vault"
-            }
-          },
-          {
-            "id": "32f791b1d3e7b5c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/web запуск understand-anything.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "web запуск understand-anything"
-            }
-          },
-          {
-            "id": "f233ae194c1d6565",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/web understand-anything команды.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "web understand-anything команды"
-            }
-          },
-          {
-            "id": "2e905706c04db928",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "projects/Подземелья Максвелла.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Подземелья Максвелла"
+              "title": "manifest"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -422,7 +326,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 348.5,
+    "collapsed": true
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -438,13 +343,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/Подземелья Максвелла.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Подземелья Максвелла"
+              "title": "Outline"
             }
           },
           {
@@ -463,7 +367,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:note/specific/code",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -488,7 +392,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 348.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -508,36 +413,37 @@
       "graph:Open graph view": false
     }
   },
-  "active": "2e905706c04db928",
+  "active": "855515df47018b46",
   "lastOpenFiles": [
-    "periodic/daily/2026-06-11.md",
-    "base/notes/web understand-anything команды.md",
-    "base/notes/web запуск understand-anything.md",
-    "base/tasks/Исправить нижнюю панель на iPad — кнопки съедаются снизу.md",
-    "base/notes/orphan notes vault.md",
-    "base/notes/web отладка верстки ios mac.md",
-    "base/tasks/Написать документацию к днд.md",
-    "base/tasks/Пройтись по каждой спеке и выявить косяки.md",
-    "base/tasks/Без vpn не открывается test.dnd.md",
-    "periodic/daily/2026-06-10.md",
-    "base/notes/действия при усталости.md",
-    "projects/ЕГЭ Информатика/11-посимвольное кодирование.md",
-    "home/vault statistics.md",
-    "base/notes/расширенная кодировка символов.md",
-    "base/notes/егэ-математика-эвиденция 1.md",
-    "base/notes/11-посимвольное кодирование 1.md",
-    "base/notes/транскрибация видео.md",
-    "sources/Транскрибация видео.md",
-    "base/notes/11-посимвольное кодирование.md",
-    "sources/How Linux Works.md",
-    "base/notes/Полиморфная переменная и функция.md",
-    "base/notes/правильная настройка windows.md",
-    "base/categories/java.md",
+    "periodic/daily/2026-06-17.md",
+    "base/notes/ошибка импорта источника из Zotero.md",
+    "sources/Как делать полезные заметки.md",
+    "templates/create/sources/book/manifest.md",
+    "sources/Происхождение и развитие сознания.md",
+    "files/image-45-x2-y350.png",
+    "base/notes/страх повторного чтения или просмотра.md",
+    "base/notes/неуточненная связь.md",
+    "base/notes/поле reviewed в daily-заметках.md",
+    "home/fleetings.md",
+    "periodic/statuses/inbox.md",
+    "base/notes/плохой комментарий.md",
+    "periodic/statuses/idea.md",
+    "base/notes/цикл работы с задачами.md",
     "home/index.md",
-    "sources/vault.md",
-    "base/categories/obsidian.md",
-    "home/databases/sources.base",
+    "base/notes/orphan notes vault.md",
+    "base/notes/java локи и уровни изоляции транзакций.md",
+    "base/notes/java docker commands.md",
+    "base/notes/github-profile-setup.md",
+    "base/notes/css подключение шрифта.md",
+    "base/notes/css position.md",
+    "base/notes/css important.md",
+    "base/notes/claude-code-workflows guide.md",
+    "periodic/daily/2026-05-31.md",
+    "base/notes/bases-tasks-issue.md",
+    "base/notes/A6_hard.py.md",
+    "base/notes/a6_2.py.md",
     "home/databases/breadcrumbs.base",
+    "home/databases/sources.base",
     "files/2026-06-04 20260605122226953.png",
     "files/2026-06-03 20260603123127867.png",
     "My Library.json",
@@ -556,7 +462,6 @@
     "files/2026-05-22 20260522122348017.png",
     "files/908187f27a096d70bad75d15ed6c3672_MD5.png",
     "files/katakana 20260506095923130.png",
-    "files/Suzume no Tojimari 20260503210952134.png",
     "periodic/2026.canvas",
     "files/Редизайн мобильного приложения для покупки билетов в S7 (2026-04-21) - roadmap.canvas",
     "periodic/2025.canvas",

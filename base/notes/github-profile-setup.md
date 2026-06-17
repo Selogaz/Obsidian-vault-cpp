@@ -6,12 +6,12 @@ aliases: []
 icon: 📝
 color: "#70a0b5"
 created: 2026-05-31T15:56:44+03:00
-updated: 2026-05-31T15:56:44+03:00
+updated: 2026-06-17T13:01:14+03:00
 ---
 
-# Настройка профильного README на GitHub (Selogaz)
+# Настройка профильного README на GitHub ([Selogaz](https://github.com/Selogaz/Selogaz))
 
-Инструкция по сборке профиля с карточками статистики (github-readme-stats) и блоком WakaTime «время по языкам».
+Инструкция по сборке [профиля](https://github.com/ocapraro) с карточками статистики (github-readme-stats) и блоком WakaTime «время по языкам».
 
 ---
 

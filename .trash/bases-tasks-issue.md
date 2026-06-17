@@ -6,7 +6,7 @@ aliases: []
 icon: 📝
 color: "#d0a570"
 created: 2026-05-31T14:50:59+03:00
-updated: 2026-05-31T14:50:59+03:00
+updated: 2026-06-17T12:47:31+03:00
 ---
 
 # `editor.setValue()` On every `editor-change` resets cursor — typing inside wikilinks/inline elements is broken in notes with tasks

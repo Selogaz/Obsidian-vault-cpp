@@ -8,7 +8,7 @@ aliases:
 icon: 📝
 color: "#70a0b5"
 created: 2026-06-11T21:20:00+03:00
-updated: 2026-06-11T20:04:15+03:00
+updated: 2026-06-17T13:04:29+03:00
 ---
 
 # Orphan notes vault
@@ -17,16 +17,8 @@ updated: 2026-06-11T20:04:15+03:00
 
 ## base/notes
 
-- 11-посимвольное кодирование
-- a6_2.py
-- A6_hard.py
-- bases-tasks-issue
-- claude-code-workflows guide
-- css important
 - css position
-- css подключение шрифта
 - github-profile-setup
-- java docker commands
 - java middle Verme легенда
 - java локи и уровни изоляции транзакций
 - java передача параметров в методы (ИИ версия)
@@ -102,7 +94,3 @@ updated: 2026-06-11T20:04:15+03:00
 - Покупка гитары, усилителя и педали
 - Практика по SVG
 - Форма комментариев на JS
-
-## Sources
-
-- Практическая биоинформатика

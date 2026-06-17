@@ -1,14 +1,14 @@
 ---
 tags:
+  - project/максвелла/adr
   - note/specific/code
-  - category/webdev
 aliases:
   - резина
 deck: obsidian::webdev
 icon: </>
 color: "#ab4642"
 created: 2026-05-23T09:12:59+03:00
-updated: 2026-05-23T09:12:59+03:00
+updated: 2026-06-11T12:00:00+03:00
 ---
 
 **резина**

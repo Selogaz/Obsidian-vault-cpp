@@ -8,7 +8,7 @@ deck: obsidian::css
 icon: </>
 color: "#ab4642"
 created: 2026-01-18T18:30:36+03:00
-updated: 2026-03-04T19:45:06+03:00
+updated: 2026-06-17T12:52:34+03:00
 ---
 
 **position**

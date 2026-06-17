@@ -1,14 +1,14 @@
 ---
 tags:
+  - project/максвелла/process
   - note/specific/code
-  - category/webdev
 aliases:
   - аудит проекта
 deck: obsidian::webdev
 icon: </>
 color: "#ab4642"
 created: 2026-05-10T21:00:37+03:00
-updated: 2026-06-01T13:00:41+03:00
+updated: 2026-06-11T21:27:10+03:00
 ---
 
 **аудит проекта**

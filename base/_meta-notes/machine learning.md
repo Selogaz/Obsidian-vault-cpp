@@ -11,7 +11,7 @@ category:
 icon: 🔎
 color: "#6fa8d6"
 created: 2026-03-21T00:00:00+07:00
-updated: 2026-03-21T00:00:00+07:00
+updated: 2026-06-15T16:36:35+03:00
 ---
 
 # Machine Learning

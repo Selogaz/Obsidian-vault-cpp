@@ -7,7 +7,7 @@ deck: obsidian::study
 icon: 📝
 color: "#d0a570"
 created: 2026-03-15T23:32:28+03:00
-updated: 2026-03-16T19:49:52+03:00
+updated: 2026-06-17T12:47:06+03:00
 ---
 
 **A6_hard.py**
@@ -75,3 +75,5 @@ else:
 print(area1 + area2 - area_inter)
 
 ```
+
+более сложный вариант [[a6_2.py]]
