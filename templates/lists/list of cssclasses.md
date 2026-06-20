@@ -1,0 +1,9 @@
+full-width
+hide-backlinks
+hide-properties
+no-inline-title
+remove-dataview-title
+hide-embed-heading
+task-contrast
+hide-bases-header
+hover-bases-header

@@ -5,3 +5,5 @@
 
 # Зависимости плагинов — платформенно-зависимые, не должны попадать в git
 .obsidian/plugins/*/node_modules/
+/.claude/
+/skills/

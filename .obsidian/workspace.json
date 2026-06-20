@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2026-06-17.md",
+                "file": "periodic/daily/2026-06-20.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-06-17"
+              "title": "2026-06-20"
             }
           },
           {
-            "id": "855515df47018b46",
+            "id": "d619c6abfde956d9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/Как делать полезные заметки.md",
+                "file": "base/additions/conspectuses/conspectus — Как делать полезные заметки.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,16 +52,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Как делать полезные заметки"
+              "title": "conspectus — Как делать полезные заметки"
             }
           },
           {
-            "id": "7f47162b1871a667",
+            "id": "d441803b4d04888b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "templates/create/sources/book/manifest.md",
+                "file": "base/notes/ключевой элемент любого учебного процесса.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,11 +76,83 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "manifest"
+              "title": "ключевой элемент любого учебного процесса"
+            }
+          },
+          {
+            "id": "8a6b208e0a7e6105",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/ключ к хорошему рабочему процессу.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "ключ к хорошему рабочему процессу"
+            }
+          },
+          {
+            "id": "6b81e6dbd475c278",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/положительная обратная связь в контексте Zettelkasten.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "положительная обратная связь в контексте Zettelkasten"
+            }
+          },
+          {
+            "id": "427c692e259c954e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home/prefixes.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "prefixes"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -413,55 +485,55 @@
       "graph:Open graph view": false
     }
   },
-  "active": "855515df47018b46",
+  "active": "427c692e259c954e",
   "lastOpenFiles": [
-    "periodic/daily/2026-06-17.md",
-    "base/notes/ошибка импорта источника из Zotero.md",
+    "base/notes/ключевой элемент любого учебного процесса.md",
+    "base/additions/conspectuses/conspectus — Как делать полезные заметки.md",
+    "base/notes/ключ к хорошему рабочему процессу.md",
+    "home/prefixes.md",
+    "base/notes/положительная обратная связь в контексте Zettelkasten.md",
+    "periodic/daily/2026-06-20.md",
+    "base/notes/basic-primary vs specific-exact.md",
+    "base/notes/теги заметок.md",
+    "base/notes/жизненный цикл заметки.md",
     "sources/Как делать полезные заметки.md",
-    "templates/create/sources/book/manifest.md",
-    "sources/Происхождение и развитие сознания.md",
+    "base/notes/критерии получения удовольствия от работы.md",
+    "base/notes/почему внешнее вознаграждение не работает.md",
+    "base/notes/интерес к работе - обязательная часть хранилища.md",
+    "base/notes/ключ к хорошей идее.md",
+    "base/notes/ключ к хорошему тексту.md",
+    "base/notes/положительная обратная связь в контексте мотивации.md",
+    "base/notes/как найти темы, вопросы и доводы.md",
+    "base/notes/зачем нужен Zettelkasten.md",
+    "base/notes/последствия старта с чистого листа.md",
+    "base/notes/герменевтический круг.md",
+    "base/notes/как предотвратить чистый лист.md",
+    "base/notes/герменевтический круг 1.md",
+    "base/creators/Ханс-Георг Гадамер.md",
+    "base/notes/заметки и проблема чистого листа.md",
+    "base/notes/проекты и Zotero.md",
+    "base/notes/какие идеи нужно записывать.md",
+    "files/А1-простейшая планиметрия 20260620175858141.png",
+    "files/А1-простейшая планиметрия 20260620172857752.png",
+    "files/А1-простейшая планиметрия 20260620164205139.png",
+    "files/А1-простейшая планиметрия 20260620165443133.png",
+    "files/А1-простейшая планиметрия 20260620164130191.png",
+    "base/_hierarchy/карта связей — ЕГЭ информатика.md.tmp.37453.d9ffc378d4de",
+    "projects/ЕГЭ Информатика/7-кодирование информации.md.tmp.37453.a988d3ee01b8",
+    "base/notes/буквенные обозначения кодирования информации.md.tmp.37453.84250234cefc",
+    "projects/ЕГЭ Русский язык",
+    "base/notes/егэ-математика-вопрос.md.tmp.37453.6234420439c9",
+    "base/notes/цикл умной подготовки к ЕГЭ.md.tmp.37453.7da021b0bb9e",
+    "base/notes/план подготовки к ЕГЭ.md.tmp.37453.a53571497b7a",
+    "base/notes/план подготовки к ЕГЭ.md.tmp.37453.ca86afabecd4",
+    "base/notes/план подготовки к ЕГЭ.md.tmp.37453.4511d5496749",
+    "base/notes/план подготовки к ЕГЭ.md.tmp.37453.c4d6c9836ccb",
     "files/image-45-x2-y350.png",
-    "base/notes/страх повторного чтения или просмотра.md",
-    "base/notes/неуточненная связь.md",
-    "base/notes/поле reviewed в daily-заметках.md",
-    "home/fleetings.md",
-    "periodic/statuses/inbox.md",
-    "base/notes/плохой комментарий.md",
-    "periodic/statuses/idea.md",
-    "base/notes/цикл работы с задачами.md",
-    "home/index.md",
-    "base/notes/orphan notes vault.md",
-    "base/notes/java локи и уровни изоляции транзакций.md",
-    "base/notes/java docker commands.md",
-    "base/notes/github-profile-setup.md",
-    "base/notes/css подключение шрифта.md",
-    "base/notes/css position.md",
-    "base/notes/css important.md",
-    "base/notes/claude-code-workflows guide.md",
-    "periodic/daily/2026-05-31.md",
-    "base/notes/bases-tasks-issue.md",
-    "base/notes/A6_hard.py.md",
-    "base/notes/a6_2.py.md",
-    "home/databases/breadcrumbs.base",
-    "home/databases/sources.base",
     "files/2026-06-04 20260605122226953.png",
     "files/2026-06-03 20260603123127867.png",
-    "My Library.json",
-    "periodic/monthly/2026-05.md.tmp.188759.14c88bc5ddb0",
-    "periodic/weekly/2026-W22.md.tmp.186084.1850a095ac32",
-    "sources/Вопросы и ответы к интервью Java разработчика.md.tmp.20611.b9ffcc1ec98e",
-    "sources/народный пк от welson.md.tmp.20611.1c71bb6b30d3",
-    "sources/ЕСЛИ У ТЕБЯ ПРОЦЕССОР АМД ПОСМОТРИ ЭТО ВИДЕО. САМАЯ ВАЖНАЯ НАСТРОЙКА ДЛЯ ИГР AMD RYZEN X3D.md.tmp.20611.ff8ab1667817",
     "files/7eaa7c5e6dfcf869db82ebc9cc26ea29_MD5.png",
     "files/7ea799320378bc2e61e385b5c0ab8c37_MD5.png",
-    "files/5a57b85e4b493fa9c7403d9ecd30d0a2_MD5.png",
-    "files/zotero-sync/_backup-sources-20260530-175138",
-    "projects/Синхронизация Zotero и Obsidian.md.tmp.20611.79ebb1012b38",
     "periodic/tasks (grouped by priority).canvas",
-    "files/2026-05-23 20260523233435765.png",
-    "files/2026-05-22 20260522122348017.png",
-    "files/908187f27a096d70bad75d15ed6c3672_MD5.png",
-    "files/katakana 20260506095923130.png",
     "periodic/2026.canvas",
     "files/Редизайн мобильного приложения для покупки билетов в S7 (2026-04-21) - roadmap.canvas",
     "periodic/2025.canvas",

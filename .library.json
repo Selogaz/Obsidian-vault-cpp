@@ -32,14 +32,14 @@
       "citekeyCaseInsensitive": true,
       "citekeyFold": true,
       "citekeyFormat": "auth.lower + shorttitle(3, 3) + year",
-      "citekeySearch": true,
       "citekeyUnsafeChars": "\\\"#%'(),={}~",
       "csquotes": "",
       "DOIandURL": "both",
       "exportBibTeXStrings": "off",
       "exportBraceProtection": true,
+      "exportCaseProtection": "",
       "exportSort": "citekey",
-      "exportTitleCase": true,
+      "exportTitlecase": "",
       "extraMergeCitekeys": false,
       "extraMergeCSL": false,
       "extraMergeTeX": false,
@@ -109,7 +109,7 @@
   },
   "version": {
     "zotero": "9.0.4",
-    "bbt": "9.0.29"
+    "bbt": "9.0.30"
   },
   "collections": {
     "QVNRAYT7": {
@@ -451,7 +451,8 @@
         2145,
         2188,
         2307,
-        2396
+        2396,
+        3043
       ]
     },
     "JPS5N475": {
@@ -467,7 +468,8 @@
         2188,
         2191,
         2235,
-        2307
+        2307,
+        3043
       ]
     },
     "DD6MR3D9": {
@@ -1036,6 +1038,56 @@
       "itemKey": "HNCKTATY",
       "libraryID": 1,
       "select": "zotero://select/library/items/HNCKTATY"
+    },
+    {
+      "key": "VCD92UB6",
+      "version": 7410,
+      "itemType": "book",
+      "title": "Getting things done: the art of stress-free productivity",
+      "date": "2003",
+      "citationKey": "allenGettingThingsDone2003",
+      "shortTitle": "Getting things done",
+      "language": "eng",
+      "libraryCatalog": "K10plus ISBN",
+      "publisher": "Penguin Books",
+      "place": "London",
+      "ISBN": "978-0-14-200028-1",
+      "numPages": "267",
+      "creators": [
+        {
+          "firstName": "David",
+          "lastName": "Allen",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-18T09:41:39Z",
+      "dateModified": "2026-06-18T09:41:39Z",
+      "uri": "http://zotero.org/users/16981227/items/VCD92UB6",
+      "itemID": 3043,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-06-18T09:42:40Z",
+          "dateModified": "2026-06-18T09:42:40Z",
+          "uri": "http://zotero.org/users/16981227/items/NCCQD774",
+          "path": "/home/exuberance/Zotero/storage/NCCQD774/Allen - 2003 - Getting things done the art of stress-free productivity.pdf",
+          "select": "zotero://select/library/items/NCCQD774"
+        }
+      ],
+      "notes": [],
+      "itemKey": "VCD92UB6",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/VCD92UB6"
     },
     {
       "key": "EFLY7HAH",
