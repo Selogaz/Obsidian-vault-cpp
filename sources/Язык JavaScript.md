@@ -23,9 +23,9 @@ url:
 icon: 📃
 color: "#7575c0"
 created: 2026-01-13T22:04:15+03:00
-updated: 2026-01-13T23:44:01+03:00
+updated: 2026-06-22T01:06:15+03:00
 related:
 ---
 
-![[js TypeScript]]
+[[js TypeScript]]
 [[Спецификация ECMA-script]]

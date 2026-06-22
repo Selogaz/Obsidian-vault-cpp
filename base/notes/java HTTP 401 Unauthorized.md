@@ -1,6 +1,7 @@
 ---
 tags:
   - note/specific/code
+  - category/webdev
   - category/java
 aliases:
   - HTTP 401 Unauthorized
@@ -8,7 +9,7 @@ deck: obsidian::java
 icon: </>
 color: "#ab4642"
 created: 2025-09-30T19:35:23+03:00
-updated: 2025-10-08T19:30:44+03:00
+updated: 2026-06-22T00:45:55+03:00
 sr-due: 2025-10-12
 sr-interval: 4
 sr-ease: 270

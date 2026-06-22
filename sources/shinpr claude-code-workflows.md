@@ -1,6 +1,6 @@
 ---
 tags:
-  - status/wip
+  - status/done
   - source/article/resource
   - category/webdev
 aliases: []
@@ -24,10 +24,10 @@ cover:
 icon: 🌐
 color: "#7575c0"
 created: 2026-05-27T13:28:58+03:00
-updated: 2026-05-27T15:23:24+03:00
+updated: 2026-06-22T00:56:39+03:00
 ---
 
 Добавить в Claude marketplace `shinpr/claude-code-workflows`
 Добавить плагин `dev-workflows-frontend@claude-code-workflows`
 
-``
+Похожий плагин для opencode: [[opencode-nj-kit]]

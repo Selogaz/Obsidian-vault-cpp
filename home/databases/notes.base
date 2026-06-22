@@ -77,10 +77,12 @@ views:
       - formula.updated_relative
       - aliases
     sort:
+      - property: formula.backlinks
+        direction: ASC
       - property: formula.created_relative
         direction: DESC
     columnSize:
-      file.name: 530
+      file.name: 451
       formula.backlinks: 1
       formula.outlinks: 1
   - type: table
@@ -104,6 +106,8 @@ views:
       - formula.created_relative
       - formula.updated_relative
     sort:
+      - property: file.name
+        direction: ASC
       - property: formula.created_relative
         direction: DESC
     columnSize:

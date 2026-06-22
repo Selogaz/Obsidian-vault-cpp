@@ -1,3 +1,7 @@
+---
+updated: 2026-06-21T23:17:51+03:00
+---
+
 # PLAN: Pomodoro Audio Player (Web/PWA)
 
 ## Goal

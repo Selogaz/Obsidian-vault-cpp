@@ -8,7 +8,7 @@ deck: obsidian::webdev
 icon: </>
 color: "#ab4642"
 created: 2026-06-14T15:22:42+03:00
-updated: 2026-06-14T15:22:42+03:00
+updated: 2026-06-22T01:23:41+03:00
 ---
 
 **9-slice tecnique**

@@ -1,6 +1,5 @@
 ---
 tags:
-  - status/todo
   - source/article/paper
   - category/webdev
 aliases:
@@ -24,7 +23,7 @@ url:
 icon: 📃
 color: "#7575c0"
 created: 2026-01-13T22:27:24+03:00
-updated: 2026-03-04T19:31:08+03:00
+updated: 2026-06-22T01:08:01+03:00
 related:
 ---
 

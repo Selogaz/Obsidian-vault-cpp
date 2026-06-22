@@ -8,7 +8,7 @@ deck: obsidian::programming
 icon: </>
 color: "#ab4642"
 created: 2026-01-22T15:39:09+03:00
-updated: 2026-03-04T18:57:36+03:00
+updated: 2026-06-22T01:09:20+03:00
 ---
 
 **PascalCase**

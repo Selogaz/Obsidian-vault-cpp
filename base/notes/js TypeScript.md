@@ -8,7 +8,7 @@ deck: obsidian::js
 icon: </>
 color: "#ab4642"
 created: 2026-01-13T22:08:15+03:00
-updated: 2026-01-13T22:08:15+03:00
+updated: 2026-06-22T01:09:14+03:00
 ---
 
 **TypeScript**

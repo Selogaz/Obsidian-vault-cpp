@@ -1,6 +1,6 @@
 ---
 tags:
-  - status/wip
+  - status/done
   - source/article/resource
   - category/webdev
 aliases: []
@@ -23,7 +23,7 @@ cover:
 icon: 🌐
 color: "#7575c0"
 created: 2026-05-27T15:24:28+03:00
-updated: 2026-05-28T14:23:33+03:00
+updated: 2026-06-22T00:56:13+03:00
 ---
 
 ## Установка
@@ -53,6 +53,4 @@ npx opencode-nj-kit
 
 **Агентов** вы вызываете через меня — я маршрутизирую задачи к нужному специалисту. Если задача сложная, я сам решу, кого подключить.
 
----
-
-> [!question] Хотите, чтобы я составил план (`docs/PLAN-documentation.md`) и запустил создание документации через `documentation-writer`? Или предпочтёте `/orchestrate` с несколькими агентами для более глубокого анализа?
+Похожий плагин для клода: [[shinpr claude-code-workflows]]

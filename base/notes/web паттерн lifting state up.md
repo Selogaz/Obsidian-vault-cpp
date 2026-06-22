@@ -8,7 +8,7 @@ deck: obsidian::webdev
 icon: </>
 color: "#ab4642"
 created: 2026-05-26T21:37:11+03:00
-updated: 2026-05-26T21:37:11+03:00
+updated: 2026-06-21T23:22:17+03:00
 ---
 
 **паттерн lifting state up**
@@ -35,3 +35,4 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
 ```
 
 Паттерн **«подъём состояния» (lifting state up)** — передача обработчиков из родителя.
+[[web props|props]]

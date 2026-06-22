@@ -66,7 +66,7 @@
     "showContextInCards": true,
     "showIntervalInReviewButtons": true,
     "flashcardHeightPercentage": 80,
-    "flashcardWidthPercentage": 40,
+    "flashcardWidthPercentage": 39.98287671232877,
     "flashcardHeightPercentageMobile": 100,
     "flashcardWidthPercentageMobile": 100,
     "flashcardAgainText": "Again",
@@ -101,7 +101,7 @@
     "singlelineCardSeparator": "::",
     "singlelineReversedCardSeparator": ":::"
   },
-  "buryDate": "2026-06-20",
+  "buryDate": "2026-06-22",
   "buryList": [],
   "historyDeck": "statistics",
   "scheduleData": {

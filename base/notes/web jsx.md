@@ -8,7 +8,7 @@ deck: obsidian::webdev
 icon: </>
 color: "#ab4642"
 created: 2026-05-26T20:57:58+03:00
-updated: 2026-05-26T20:57:58+03:00
+updated: 2026-06-21T23:13:23+03:00
 ---
 
 **jsx**

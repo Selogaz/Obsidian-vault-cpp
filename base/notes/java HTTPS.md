@@ -1,6 +1,7 @@
 ---
 tags:
   - note/specific/code
+  - category/webdev
   - category/java
 aliases:
   - HTTPS
@@ -8,7 +9,7 @@ deck: obsidian::java
 icon: </>
 color: "#ab4642"
 created: 2025-09-30T20:27:50+03:00
-updated: 2025-10-08T19:35:44+03:00
+updated: 2026-06-22T00:47:26+03:00
 sr-due: 2025-10-12
 sr-interval: 4
 sr-ease: 270
@@ -27,7 +28,7 @@ openssl pkcs12 -export -in cert.pem -inkey key.pem -out certificate.p12 -name "c
 ```
 Вторая команда получает в качестве входных данных два файла, сгенерированных первой командой, и выводит самоподписанный сертификат.
 
-Скопируйте файл certificate.p12 в папку ресурсов проекта Spring Boot и добавьте следующие строки в файл application.properties:
+Скопируйте файл certificate.p12 в папку ресурсов проекта [[Spring Boot|Spring Boot]] и добавьте следующие строки в файл application.properties:
 ```properties
 server.ssl.key-store-type=PKCS12
 server.ssl.key-store=classpath:certificate.p12
@@ -39,4 +40,4 @@ server.ssl.key-store-password=12345
 curl -k -u user:93a01cf0-794b-4b98-86ef-54860f36f7f3 https://localhost:8080/hello
 ```
 
-Благодаря этому сертификату клиент, вызывающий конечную точку, знает, что ответ пришел от сервера аутентификации и никто не перехватил канал связи. Но его нужно купить)
+Благодаря этому сертификату клиент, вызывающий конечную точку, знает, что ответ пришел от сервера [[java Аутентификация|Аутентификация]] и никто не перехватил канал связи. Но его нужно купить)
