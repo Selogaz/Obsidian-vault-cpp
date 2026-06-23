@@ -1,13 +1,13 @@
 ---
 tags:
-  - status/done
+  - status/drop
   - project/single
   - priority/c
   - category/webdev
 aliases:
   - PomoMusic Controller
 addition:
-status: 🟩
+status: ⬛
 priority: 🇨
 category:
   - "[[webdev]]"
@@ -23,7 +23,7 @@ cover:
 icon: ✏️
 color: "#b87535"
 created: 2026-05-31T19:38:57+03:00
-updated: 2026-06-20T16:38:16+03:00
+updated: 2026-06-22T21:58:33+03:00
 tasks:
   - "- [ ] #task/multistep #category/webdev Добавить к [[PomodoroMusicExtension]] страницы с настройкой при установке, как в Anki Dictionary"
   - "- [ ] Добавить в [[PomodoroMusicExtension]] прикрепление таймера к Obsidian-проекту. Кнопка для автоматической записи количества сессий в проект"

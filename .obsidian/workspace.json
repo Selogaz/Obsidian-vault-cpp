@@ -8,12 +8,36 @@
         "type": "tabs",
         "children": [
           {
-            "id": "185187b031a2010f",
+            "id": "4b642383a5012c3b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/additions/conspectuses/conspectus — Как делать полезные заметки.md",
+                "file": "home/index.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "a4b3b288ea35178a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/daily/2026-06-23.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +52,48 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "conspectus — Как делать полезные заметки"
+              "title": "2026-06-23"
+            }
+          },
+          {
+            "id": "e18c885b1004cba8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sources/Overistimation of the importance of money.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Overistimation of the importance of money"
+            }
+          },
+          {
+            "id": "270b0ffc5539d2ba",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "home/databases/notes.base",
+                "viewName": "📝 All"
+              },
+              "icon": "lucide-table",
+              "title": "notes"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -294,13 +356,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "base/additions/conspectuses/conspectus — Как делать полезные заметки.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of conspectus — Как делать полезные заметки"
+              "title": "Outline"
             }
           },
           {
@@ -339,23 +400,13 @@
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
-          },
-          {
-            "id": "5dcd87b6b6e5b8bb",
-            "type": "leaf",
-            "state": {
-              "type": "hybrid-search-graph-workbench",
-              "state": {},
-              "icon": "git-fork",
-              "title": "Graph workbench"
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 348.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -375,36 +426,38 @@
       "graph:Open graph view": false
     }
   },
-  "active": "5dcd87b6b6e5b8bb",
+  "active": "270b0ffc5539d2ba",
   "lastOpenFiles": [
-    "sources/Как делать полезные заметки.md",
-    "periodic/daily/2026-06-22.md",
-    "projects/ЕГЭ Информатика/ЕГЭ Информатика.md",
-    "projects/ЕГЭ Информатика/1-анализ информационных моделей.md",
-    "base/notes/алгоритм решения А1 Информатика.md",
-    "projects/ЕГЭ Математика/А1-простейшая планиметрия.md",
-    "projects/ЕГЭ Математика/ЕГЭ Математика.md",
-    "projects/ЕГЭ Русский язык/ЕГЭ Русский язык.md",
-    "projects/ЕГЭ Математика/А14-стереометрия.md",
-    "projects/ЕГЭ Математика/А12.md",
-    "projects/ЕГЭ Математика/А11.md",
-    "projects/ЕГЭ Математика/А10.md",
-    "projects/ЕГЭ Математика/А9.md",
-    "projects/ЕГЭ Математика/А8.md",
-    "projects/ЕГЭ Математика/А7-преобразования.md",
-    "projects/ЕГЭ Математика/A2-векторы.md",
-    "projects/ЕГЭ Математика/А3-простейшая стереометрия.md",
-    "projects/ЕГЭ Математика/А4-простая вероятность.md",
-    "projects/ЕГЭ Математика/А5-сложная вероятность.md",
-    "projects/ЕГЭ Математика/А6-простейшие уравнения.md",
-    "base/_meta-notes/Лечение тремора, холода и нехватки воздуха.md",
-    "base/_problems/почему сохраняется соматика после пневмонии.md",
-    "base/notes/ортостатический замер.md",
-    "projects/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки/Лечение похолодания конечностей, тремора и дискомфорта в груди и теле после физической нагрузки.md",
-    "base/notes/deepseek_health.md",
+    "periodic/daily/2026-06-23.md",
+    "sources/Overistimation of the importance of money.md",
+    "base/additions/conspectuses/overistimation  of the importance of money.md",
+    "base/additions/conspectuses/Entrepreneurship.md",
+    "sources/Entrepreneurship.md",
+    "base/creators/William J. Baumol.md",
+    "home/index.md",
+    "base/additions/conspectuses/conspectus - a2-english-for-developers.md",
+    "base/additions/aggregators/a2-english-for-developers - conspectuses.md",
+    "sources/a2-english-for-developers.md",
+    "base/categories/english.md",
+    "base/creators/Загузов.md",
+    "base/_meta-notes/psy.md",
     "base/categories/health.md",
-    "home/databases/breadcrumbs.base",
+    "base/notes/я != количество моих денег.md",
+    "base/notes/решение проблемы избыточной важности денег.md",
+    "base/_problems/избыточная важность денег.md",
+    "base/_problems/отождествление себя с ситуацией.md",
+    "base/additions/conspectuses/Как делать полезные заметки.md",
+    "base/additions/conspectuses/A Philosophy Of Software Design.md",
+    "base/_meta-notes/достижение экспертности.md",
+    "base/notes/методы достижения экспертности.md",
+    "base/notes/исполнительность vs экспертность.md",
+    "base/_hierarchy/обратная связь.md",
+    "base/_problems/сбор обратной связи.md",
+    "base/_problems/развитие интуиции.md",
+    "base/notes/регулирование как драйвер продуктивных стратегий бизнеса.md.tmp.22254.d6df4fe74a21",
+    "home/databases/high-notes.base",
     "home/databases/notes.base",
+    "home/databases/breadcrumbs.base",
     "files/Pasted image 20260620235621.png",
     "files/А1-простейшая планиметрия 20260620175858141.png",
     "files/А1-простейшая планиметрия 20260620172857752.png",
@@ -417,8 +470,6 @@
     "projects/ЕГЭ Русский язык",
     "base/notes/егэ-математика-вопрос.md.tmp.37453.6234420439c9",
     "base/notes/цикл умной подготовки к ЕГЭ.md.tmp.37453.7da021b0bb9e",
-    "base/notes/план подготовки к ЕГЭ.md.tmp.37453.a53571497b7a",
-    "base/notes/план подготовки к ЕГЭ.md.tmp.37453.ca86afabecd4",
     "files/image-45-x2-y350.png",
     "files/2026-06-04 20260605122226953.png",
     "files/2026-06-03 20260603123127867.png",

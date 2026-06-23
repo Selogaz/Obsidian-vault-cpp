@@ -25,7 +25,6 @@ cssclasses:
 - [[obsidian]]
 - [[health]]
 - [[productivity]]
-- [[music]]
 - [[linux]]
 - [[java]]
 - [[japanese]]

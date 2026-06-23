@@ -21,7 +21,7 @@ cover:
 icon: ✏️
 color: "#b87535"
 created: 2026-05-19T00:03:12+03:00
-updated: 2026-06-03T11:21:43+03:00
+updated: 2026-06-23T00:41:57+03:00
 ---
 
 > [!toc]- Table of contents
@@ -34,6 +34,8 @@ updated: 2026-06-03T11:21:43+03:00
 > group by heading
 > hide task count
 > ```
+
+Главный источник для ежедневной практики - [[a2-english-for-developers]]
 
 # Description
 

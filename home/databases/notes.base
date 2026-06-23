@@ -77,6 +77,8 @@ views:
       - formula.updated_relative
       - aliases
     sort:
+      - property: formula.updated_relative
+        direction: DESC
       - property: formula.backlinks
         direction: ASC
       - property: formula.created_relative

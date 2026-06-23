@@ -11,7 +11,7 @@ problem:
 icon: 🧬
 color: "#b089c4"
 created: 2026-06-22T00:04:26+03:00
-updated: 2026-06-22T00:07:17+03:00
+updated: 2026-06-22T22:38:32+03:00
 ---
 
 [[java @Configuration и @Bean|Configuration и @Bean]]
@@ -31,3 +31,4 @@ updated: 2026-06-22T00:07:17+03:00
 [[java плюсы Spring Boot|плюсы Spring Boot]]
 [[java пояснения к pom.xml|пояснения к pom.xml]]
 [[java пример application.yaml]]
+[[DI]]

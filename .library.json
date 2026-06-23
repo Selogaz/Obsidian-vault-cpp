@@ -109,7 +109,7 @@
   },
   "version": {
     "zotero": "9.0.4",
-    "bbt": "9.0.30"
+    "bbt": "9.0.31"
   },
   "collections": {
     "QVNRAYT7": {
@@ -127,6 +127,7 @@
       "parent": "",
       "name": "🗺️ computer science",
       "collections": [
+        "KBFE8CL2",
         "JDWBZAA3",
         "IVN58YKB",
         "U3Y7ZRNU"
@@ -144,7 +145,18 @@
         72,
         1897,
         2041,
-        2186
+        2186,
+        3067,
+        3070
+      ]
+    },
+    "KBFE8CL2": {
+      "key": "KBFE8CL2",
+      "parent": "ZDQ26KED",
+      "name": "⇶ AI",
+      "collections": [],
+      "items": [
+        3067
       ]
     },
     "JDWBZAA3": {
@@ -188,7 +200,12 @@
         1889,
         1899,
         2190,
-        2191
+        2191,
+        3049,
+        3068,
+        3076,
+        3077,
+        3078
       ]
     },
     "Y73ZVE8V": {
@@ -233,6 +250,8 @@
       "parent": "",
       "name": "🗺️ health",
       "collections": [
+        "88CS2DJN",
+        "6IV2JSUQ",
         "L6V6KVJ5"
       ],
       "items": [
@@ -243,6 +262,24 @@
         2235,
         2253,
         2255
+      ]
+    },
+    "88CS2DJN": {
+      "key": "88CS2DJN",
+      "parent": "TXJ29FIP",
+      "name": "⇶ money",
+      "collections": [],
+      "items": [
+        3074
+      ]
+    },
+    "6IV2JSUQ": {
+      "key": "6IV2JSUQ",
+      "parent": "TXJ29FIP",
+      "name": "⇶ psy",
+      "collections": [],
+      "items": [
+        3074
       ]
     },
     "L6V6KVJ5": {
@@ -1144,7 +1181,7 @@
     },
     {
       "key": "8LKQU8JW",
-      "version": 6115,
+      "version": 7710,
       "itemType": "videoRecording",
       "title": "Как ПОЛИГЛОТЫ начинают думать на английском: ВАЖНЫЕ ШАГИ без зубрёжки",
       "abstractNote": "Почему ты понимаешь английский, но замираешь, когда нужно заговорить?\nПочему мысли есть — а слова «застревают» в голове?\nВ этом видео я объясняю и какие ВАЖНЫЕ ШАГИ помогают начать думать на английском, как это делают ПОЛИГЛОТЫ.",
@@ -1163,7 +1200,7 @@
       ],
       "tags": [
         {
-          "tag": "🟦"
+          "tag": "🟩"
         },
         {
           "tag": "💎"
@@ -1174,7 +1211,7 @@
       ],
       "relations": {},
       "dateAdded": "2026-06-10T17:53:10Z",
-      "dateModified": "2026-06-11T09:45:39Z",
+      "dateModified": "2026-06-22T21:09:49Z",
       "uri": "http://zotero.org/users/16981227/items/8LKQU8JW",
       "itemID": 2190,
       "attachments": [],
@@ -1496,6 +1533,47 @@
       "itemKey": "T2VZDT9X",
       "libraryID": 1,
       "select": "zotero://select/library/items/T2VZDT9X"
+    },
+    {
+      "key": "ANILWS97",
+      "version": 7725,
+      "itemType": "journalArticle",
+      "title": "Entrepreneurship: Productive, Unproductive, and Destructive",
+      "abstractNote": "The basic hypothesis is that, while the total supply of entrepreneurs varies among societies, the productive contribution of the society's entrepreneurial activities varies much more because of their allocation between productive activities such as innovation and largely unproductive activities such as rent seeking or organized crime. This allocation is heavily influenced by the relative payoffs society offers to such activities. This implies that policy can influence the allocation of entrepreneurship more effectively than it can influence its supply. Historical evidence from ancient Rome, early China, and the Middle Ages and Renaissance in Europe is used to investigate the hypotheses.",
+      "date": "1990",
+      "citationKey": "baumolEntrepreneurshipProductiveUnproductive1990",
+      "url": "https://www.jstor.org/stable/2937617",
+      "accessDate": "2026-06-23T06:29:02Z",
+      "shortTitle": "Entrepreneurship",
+      "libraryCatalog": "JSTOR",
+      "volume": "98",
+      "publisher": "University of Chicago Press",
+      "pages": "893-921",
+      "publicationTitle": "Journal of Political Economy",
+      "ISSN": "0022-3808",
+      "issue": "5",
+      "creators": [
+        {
+          "firstName": "William J.",
+          "lastName": "Baumol",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "🟦"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-23T06:29:02Z",
+      "dateModified": "2026-06-23T06:34:22Z",
+      "uri": "http://zotero.org/users/16981227/items/ANILWS97",
+      "itemID": 3072,
+      "attachments": [],
+      "notes": [],
+      "itemKey": "ANILWS97",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/ANILWS97"
     },
     {
       "key": "EFG2AMCF",
@@ -3079,6 +3157,92 @@
       "select": "zotero://select/library/items/LPXJ57KD"
     },
     {
+      "key": "I2GABKWN",
+      "version": 7719,
+      "itemType": "webpage",
+      "title": "a2-english-for-developers",
+      "abstractNote": "Learn to Code — For Free",
+      "citationKey": "FreeCodeCamporg",
+      "url": "https://www.freecodecamp.org/learn/a2-english-for-developers/",
+      "accessDate": "2026-06-22T21:08:52Z",
+      "language": "en",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "💎"
+        },
+        {
+          "tag": "🟥"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-22T21:08:52Z",
+      "dateModified": "2026-06-23T06:18:35Z",
+      "uri": "http://zotero.org/users/16981227/items/I2GABKWN",
+      "itemID": 3068,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://www.freecodecamp.org/learn/a2-english-for-developers/",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-06-22T21:09:02Z",
+          "dateModified": "2026-06-22T21:09:02Z",
+          "uri": "http://zotero.org/users/16981227/items/QRVTR5ZG",
+          "path": "/home/exuberance/Zotero/storage/QRVTR5ZG/a2-english-for-developers.html",
+          "select": "zotero://select/library/items/QRVTR5ZG"
+        }
+      ],
+      "notes": [],
+      "itemKey": "I2GABKWN",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/I2GABKWN"
+    },
+    {
+      "key": "EBWF9ELE",
+      "version": 7719,
+      "itemType": "webpage",
+      "title": "python-v9 freeCodeCamp",
+      "abstractNote": "Learn to Code — For Free",
+      "citationKey": "FreeCodeCamporga",
+      "url": "https://www.freecodecamp.org/learn/python-v9/",
+      "accessDate": "2026-06-22T21:15:38Z",
+      "language": "en",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "💎"
+        },
+        {
+          "tag": "🟥"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-22T21:15:38Z",
+      "dateModified": "2026-06-23T06:18:35Z",
+      "uri": "http://zotero.org/users/16981227/items/EBWF9ELE",
+      "itemID": 3070,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://www.freecodecamp.org/learn/python-v9/",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-06-22T21:15:45Z",
+          "dateModified": "2026-06-22T21:15:45Z",
+          "uri": "http://zotero.org/users/16981227/items/J2FLDR8Q",
+          "path": "/home/exuberance/Zotero/storage/J2FLDR8Q/python-v9.html",
+          "select": "zotero://select/library/items/J2FLDR8Q"
+        }
+      ],
+      "notes": [],
+      "itemKey": "EBWF9ELE",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/EBWF9ELE"
+    },
+    {
       "key": "HFQCLH88",
       "version": 5978,
       "itemType": "document",
@@ -4448,6 +4612,45 @@
       "select": "zotero://select/library/items/SRKG8DWJ"
     },
     {
+      "key": "GE2K2IV4",
+      "version": 7745,
+      "itemType": "webpage",
+      "title": "Language Reactor - Chatbot",
+      "citationKey": "LanguageReactorChatbot",
+      "url": "https://www.languagereactor.com/chatbot",
+      "accessDate": "2026-06-23T16:02:38Z",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-23T16:02:38Z",
+      "dateModified": "2026-06-23T16:02:38Z",
+      "uri": "http://zotero.org/users/16981227/items/GE2K2IV4",
+      "itemID": 3078,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Language Reactor - Chatbot",
+          "url": "https://www.languagereactor.com/chatbot",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-06-23T16:02:40Z",
+          "dateModified": "2026-06-23T16:02:40Z",
+          "uri": "http://zotero.org/users/16981227/items/62P4WUI5",
+          "path": "/home/exuberance/Zotero/storage/62P4WUI5/chatbot.html",
+          "select": "zotero://select/library/items/62P4WUI5"
+        }
+      ],
+      "notes": [],
+      "itemKey": "GE2K2IV4",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/GE2K2IV4"
+    },
+    {
       "key": "GDQLNW3V",
       "version": 5935,
       "itemType": "document",
@@ -4832,6 +5035,171 @@
       "select": "zotero://select/library/items/CYLUN2RY"
     },
     {
+      "key": "6VST45IA",
+      "version": 7743,
+      "itemType": "computerProgram",
+      "title": "michael-borck/study-buddy",
+      "abstractNote": "Desktop AI tutoring app with local inference using Ollama for privacy-focused education.",
+      "date": "2026-06-12T15:05:35Z",
+      "citationKey": "michael-borckMichaelborckStudybuddy2026",
+      "url": "https://github.com/michael-borck/study-buddy",
+      "accessDate": "2026-06-23T16:01:58Z",
+      "libraryCatalog": "GitHub",
+      "rights": "MIT",
+      "extra": "original-date: 2025-06-24T08:41:17Z",
+      "programmingLanguage": "TypeScript",
+      "creators": [
+        {
+          "firstName": "",
+          "lastName": "michael-borck",
+          "creatorType": "programmer"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        },
+        {
+          "tag": "ai",
+          "type": 1
+        },
+        {
+          "tag": "ai-tutor",
+          "type": 1
+        },
+        {
+          "tag": "borck-edu",
+          "type": 1
+        },
+        {
+          "tag": "css",
+          "type": 1
+        },
+        {
+          "tag": "desktop-app",
+          "type": 1
+        },
+        {
+          "tag": "desktop-application",
+          "type": 1
+        },
+        {
+          "tag": "edtech",
+          "type": 1
+        },
+        {
+          "tag": "education",
+          "type": 1
+        },
+        {
+          "tag": "electron",
+          "type": 1
+        },
+        {
+          "tag": "javascript",
+          "type": 1
+        },
+        {
+          "tag": "llama",
+          "type": 1
+        },
+        {
+          "tag": "local-inference",
+          "type": 1
+        },
+        {
+          "tag": "nextjs",
+          "type": 1
+        },
+        {
+          "tag": "offline",
+          "type": 1
+        },
+        {
+          "tag": "offline-application",
+          "type": 1
+        },
+        {
+          "tag": "ollama",
+          "type": 1
+        },
+        {
+          "tag": "privacy",
+          "type": 1
+        },
+        {
+          "tag": "privacy-focused",
+          "type": 1
+        },
+        {
+          "tag": "tutoring",
+          "type": 1
+        },
+        {
+          "tag": "typescript",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-23T16:01:58Z",
+      "dateModified": "2026-06-23T16:01:58Z",
+      "uri": "http://zotero.org/users/16981227/items/6VST45IA",
+      "itemID": 3077,
+      "attachments": [],
+      "notes": [],
+      "itemKey": "6VST45IA",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/6VST45IA"
+    },
+    {
+      "key": "QWGVKJJ3",
+      "version": 7701,
+      "itemType": "videoRecording",
+      "title": "Я говорю на 12 языках. Вот моя ежедневная система",
+      "abstractNote": "Приложение: https://hyperlingua.app/\nПодробнее: https://www.nll.coach/nll-introduction",
+      "date": "2026",
+      "citationKey": "mikelgiperpoliglotGovoryuNa122026",
+      "url": "https://www.youtube.com/watch?v=ZJd2dcHkgDo",
+      "accessDate": "2026-06-22T14:09:34Z",
+      "libraryCatalog": "YouTube",
+      "runningTime": "8:15",
+      "creators": [
+        {
+          "name": "Микель Гиперполиглот",
+          "creatorType": "creator"
+        },
+        {
+          "name": "Mikel | Hyperpolyglot",
+          "creatorType": "creator"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "🟩"
+        },
+        {
+          "tag": "💎"
+        },
+        {
+          "tag": "💬"
+        },
+        {
+          "tag": "🌓"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-22T14:09:34Z",
+      "dateModified": "2026-06-22T20:45:52Z",
+      "uri": "http://zotero.org/users/16981227/items/QWGVKJJ3",
+      "itemID": 3049,
+      "attachments": [],
+      "notes": [],
+      "itemKey": "QWGVKJJ3",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/QWGVKJJ3"
+    },
+    {
       "key": "MN2FIV6H",
       "version": 5947,
       "itemType": "book",
@@ -5153,7 +5521,7 @@
     },
     {
       "key": "4HKG29JU",
-      "version": 5887,
+      "version": 7710,
       "itemType": "document",
       "title": "Oxford english grammar tests",
       "citationKey": "oxford_english_grammar_tests",
@@ -5167,10 +5535,10 @@
       ],
       "tags": [
         {
-          "tag": "🟦"
+          "tag": "💎"
         },
         {
-          "tag": "💎"
+          "tag": "✖"
         },
         {
           "tag": "👓"
@@ -5178,7 +5546,7 @@
       ],
       "relations": {},
       "dateAdded": "2026-05-30T09:04:11Z",
-      "dateModified": "2026-06-01T15:31:14Z",
+      "dateModified": "2026-06-22T21:09:40Z",
       "uri": "http://zotero.org/users/16981227/items/4HKG29JU",
       "itemID": 1873,
       "attachments": [],
@@ -5536,6 +5904,41 @@
       "itemKey": "8ZA9TAW3",
       "libraryID": 1,
       "select": "zotero://select/library/items/8ZA9TAW3"
+    },
+    {
+      "key": "BT86IK3U",
+      "version": 7742,
+      "itemType": "videoRecording",
+      "title": "Python Full Course for Beginners",
+      "abstractNote": "Master Python from scratch 🚀 No fluff—just clear, practical coding skills to kickstart your journey! \n\n🚀 Want to dive deeper?",
+      "date": "2025",
+      "citationKey": "programmingwithmoshPythonFullCourse2025",
+      "url": "https://www.youtube.com/watch?v=K5KVEU3aaeQ",
+      "accessDate": "2026-06-23T14:57:32Z",
+      "libraryCatalog": "YouTube",
+      "runningTime": "2:02:20",
+      "creators": [
+        {
+          "name": "Programming with Mosh",
+          "creatorType": "creator"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-23T14:57:32Z",
+      "dateModified": "2026-06-23T14:57:35Z",
+      "uri": "http://zotero.org/users/16981227/items/BT86IK3U",
+      "itemID": 3076,
+      "attachments": [],
+      "notes": [],
+      "itemKey": "BT86IK3U",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/BT86IK3U"
     },
     {
       "key": "5XCMPRAB",
@@ -7253,6 +7656,44 @@
       "select": "zotero://select/library/items/2KSJP3TK"
     },
     {
+      "key": "LD6RPNWG",
+      "version": 7719,
+      "itemType": "videoRecording",
+      "title": "Полная Дорожная Карта AI-инженера за 10 минут (с нуля)",
+      "abstractNote": "🧠 Напиши кодовое слово «УДАЛЕНКА» нашему менеджеру в течении 5-ти минут, и получи бесплатный разбор своего уровня и роудмап по трудоустройству в зарубежную компанию от реального эксперта-удаленщика: https://t.me/m/RLY1YX0HYjli\n\n🔑 Обучение программированию с нуля под ключ: https://offer.gernar.ru/?utm_source=y...",
+      "date": "2026",
+      "citationKey": "vadimnovoselovPolnayaDorozhnayaKarta2026",
+      "url": "https://www.youtube.com/watch?v=2wEYNs8Fc14",
+      "accessDate": "2026-06-22T20:45:12Z",
+      "libraryCatalog": "YouTube",
+      "runningTime": "9:59",
+      "creators": [
+        {
+          "name": "Vadim Novoselov",
+          "creatorType": "creator"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        },
+        {
+          "tag": "💎"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-22T20:45:12Z",
+      "dateModified": "2026-06-23T06:18:35Z",
+      "uri": "http://zotero.org/users/16981227/items/LD6RPNWG",
+      "itemID": 3067,
+      "attachments": [],
+      "notes": [],
+      "itemKey": "LD6RPNWG",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/LD6RPNWG"
+    },
+    {
       "key": "3H7AQG5W",
       "version": 5894,
       "itemType": "document",
@@ -7779,6 +8220,54 @@
       "itemKey": "QME2VA9X",
       "libraryID": 1,
       "select": "zotero://select/library/items/QME2VA9X"
+    },
+    {
+      "key": "9ZGM8UIT",
+      "version": 7741,
+      "itemType": "blogPost",
+      "title": "Overistimation of the importance of money",
+      "citationKey": "zotero-item-3074",
+      "url": "https://t.me/pereproshivka_mozgov/476",
+      "creators": [
+        {
+          "name": "Загузов",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "🟩"
+        },
+        {
+          "tag": "🌔"
+        },
+        {
+          "tag": "👓"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-23T10:38:28Z",
+      "dateModified": "2026-06-23T13:43:47Z",
+      "uri": "http://zotero.org/users/16981227/items/9ZGM8UIT",
+      "itemID": 3074,
+      "attachments": [],
+      "notes": [
+        {
+          "key": "XWZDWUWA",
+          "version": 7735,
+          "itemType": "note",
+          "parentItem": "9ZGM8UIT",
+          "note": "<div data-schema-version=\"9\"><p><strong>Почему завышенная важность денег разрушительна?</strong><br><br>Наша психика стремится <strong>к равновесию.</strong> Когда мы придаем чему-то слишком большую важность, мы создаем так называемый «избыточный потенциал». Подсознание считывает эту колоссальную концентрацию энергии <strong>не как «я очень хочу», а как «мне очень страшно, что этого не будет».</strong><br><br>Для подсознания <span style=\"background-color: rgba(241, 152, 55, 0.5);\">сильный страх и сильное желание - это стресс и угроза</span> стабильности. Чтобы снизить это напряжение, психика <strong>запускает механизмы самосаботажа.</strong> Человек буквально «сливает» деньги, упускает возможности, совершает нелогичные траты или теряет заработанное, потому что <strong>подсознанию проще убрать источник стресса (деньги), чем выдерживать постоянное напряжение ожидания.</strong><br><br>Фокус на дефиците вместо изобилия.<br>Когда деньги становятся сверхценностью, человек постоянно думает о них. Но подсознание чувствует страх (а вдруг не будет...). Если вы думаете: «Как бы мне не потерять деньги» или «Мне срочно нужны деньги, иначе всё плохо», <strong>ваш фокус зафиксирован на нехватке.</strong> Подсознание считывает этот фокус и начинает генерировать реальность, подтверждающую эту нехватку. <strong>Вы притягиваете именно то, на чем зациклены, а зациклены вы на отсутствии.<br></strong><br>Часто за желанием «много денег» на глубинном уровне стоит не потребность в бумагах или цифрах на счете, а <strong>потребность в безопасности, любви, признании и свободе.</strong> Подсознание путает деньги с этими базовыми чувствами. Но деньги не могут дать любви или внутреннего покоя. <strong>В итоге человек бежит по кругу:</strong> зарабатывает, не чувствует счастья, думает, что нужно еще больше денег, и снова зарабатывает, оставаясь внутренне пустым.<br><br><strong>Завышенная важность денег держит нервную систему в состоянии постоянной борьбы за выживание («бей или беги»).</strong><br><br>Постоянный фоновый страх «а вдруг не хватит» держит <strong>уровень кортизола и адреналина на максимуме.</strong> Со временем это ведет к хронической усталости, апатии и выгоранию, когда нет сил даже на то, чтобы зарабатывать.<br><br>Когда важность денег завышена, происходит опасная подмена: «Я стою столько, сколько у меня денег».<br><strong>Это делает психику крайне уязвимой.</strong> Любой финансовый кризис воспринимается не просто как временная трудность, а как крах личности, как обесценивание самого факта существования человека. <strong>Это рождает глубинную тревогу, депрессию и чувство тотального бессилия.</strong> Человек теряет внутреннюю опору, потому что его опора находится вовне (в кошельке или на счете), а внешнее всегда нестабильно.<br><br><strong>Чтобы убрать завышенную важность, нужно сместить фокус с удержания и страха на доверие жизни и обмен</strong>.<br><br>1. Деньги - это не цель и не безопасность. <strong>Это эквивалент энергии.</strong><br><br>Деньги приходят как благодарность мира за ту пользу, радость или ценность, которую Вы даете людям.<br><br>2. Разделение «Я» и «Мои финансы». <strong>Вы - это Ваша личность, Ваш опыт, Ваша душа.</strong> Они бесценны и не зависят от цифр на счете. Ваша самоценность абсолютна.<br><br>3. Доверие Жизни. Это ключевой момент. <strong>Завышенная важность - это попытка тотального контроля из-за недоверия к миру.</strong> Когда Вы понимаете, что Вселенная (Жизнь) изобильна и всегда заботится о Вас, даже если иногда через сложные уроки, необходимость судорожно «вцепляться» в деньги отпадает. Вы расслабляетесь.<br><br>4. Состояние изобилия притягивает, а состояние нужды - отталкивает. <strong>Люди, услуги и возможности тянутся к тем, кто излучает спокойствие, уверенность и внутреннюю гармонию</strong>, а не к тем, кто смотрит на мир глазами загнанного зверя.</p>\n</div>",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-06-23T10:40:44Z",
+          "dateModified": "2026-06-23T10:42:17Z",
+          "uri": "http://zotero.org/users/16981227/items/XWZDWUWA"
+        }
+      ],
+      "itemKey": "9ZGM8UIT",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/9ZGM8UIT"
     },
     {
       "key": "JI5WGELG",

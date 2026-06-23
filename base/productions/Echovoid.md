@@ -1,14 +1,17 @@
 ---
 tags:
   - production/band
+  - category/study
 aliases: []
 description:
 category:
+  - "[[study]]"
 meta:
+  - "[[base/_meta-notes/music|music]]"
 problem:
 relevant: false
 created: 2026-05-03T11:05:00+03:00
-updated: 2026-05-03T17:14:42+03:00
+updated: 2026-06-22T22:24:41+03:00
 icon: 🎸
 color: "#c85545"
 ---
