@@ -109,7 +109,7 @@
   },
   "version": {
     "zotero": "9.0.4",
-    "bbt": "9.0.31"
+    "bbt": "9.0.36"
   },
   "collections": {
     "QVNRAYT7": {
@@ -156,7 +156,11 @@
       "name": "⇶ AI",
       "collections": [],
       "items": [
-        3067
+        3067,
+        3209,
+        3210,
+        3212,
+        3214
       ]
     },
     "JDWBZAA3": {
@@ -506,7 +510,9 @@
         2191,
         2235,
         2307,
-        3043
+        3043,
+        3187,
+        3189
       ]
     },
     "DD6MR3D9": {
@@ -1536,7 +1542,7 @@
     },
     {
       "key": "ANILWS97",
-      "version": 7725,
+      "version": 7748,
       "itemType": "journalArticle",
       "title": "Entrepreneurship: Productive, Unproductive, and Destructive",
       "abstractNote": "The basic hypothesis is that, while the total supply of entrepreneurs varies among societies, the productive contribution of the society's entrepreneurial activities varies much more because of their allocation between productive activities such as innovation and largely unproductive activities such as rent seeking or organized crime. This allocation is heavily influenced by the relative payoffs society offers to such activities. This implies that policy can influence the allocation of entrepreneurship more effectively than it can influence its supply. Historical evidence from ancient Rome, early China, and the Middle Ages and Renaissance in Europe is used to investigate the hypotheses.",
@@ -1562,11 +1568,14 @@
       "tags": [
         {
           "tag": "🟦"
+        },
+        {
+          "tag": "💎"
         }
       ],
       "relations": {},
       "dateAdded": "2026-06-23T06:29:02Z",
-      "dateModified": "2026-06-23T06:34:22Z",
+      "dateModified": "2026-06-24T10:55:37Z",
       "uri": "http://zotero.org/users/16981227/items/ANILWS97",
       "itemID": 3072,
       "attachments": [],
@@ -3169,10 +3178,10 @@
       "creators": [],
       "tags": [
         {
-          "tag": "💎"
+          "tag": "🟥"
         },
         {
-          "tag": "🟥"
+          "tag": "💎"
         }
       ],
       "relations": {},
@@ -3212,10 +3221,10 @@
       "creators": [],
       "tags": [
         {
-          "tag": "💎"
+          "tag": "🟥"
         },
         {
-          "tag": "🟥"
+          "tag": "💎"
         }
       ],
       "relations": {},
@@ -4496,6 +4505,54 @@
       "select": "zotero://select/library/items/T3NDXUNK"
     },
     {
+      "key": "243HUU95",
+      "version": 8002,
+      "itemType": "webpage",
+      "title": "Sajjaad’s Substack | Substack",
+      "abstractNote": "Bi-weekly tech news, advice, premium resources. Click to read Sajjaad’s Substack, by Sajjaad Khader, a Substack publication with thousands of subscribers.",
+      "date": "2026-06-25",
+      "citationKey": "khaderSajjaadsSubstackSubstack2026",
+      "url": "https://sajjaad.substack.com/",
+      "accessDate": "2026-06-30T14:37:06Z",
+      "language": "en",
+      "creators": [
+        {
+          "firstName": "Sajjaad",
+          "lastName": "Khader",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-30T14:37:06Z",
+      "dateModified": "2026-06-30T14:37:07Z",
+      "uri": "http://zotero.org/users/16981227/items/243HUU95",
+      "itemID": 3209,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://sajjaad.substack.com/",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-06-30T14:37:16Z",
+          "dateModified": "2026-06-30T14:37:16Z",
+          "uri": "http://zotero.org/users/16981227/items/EYM6MZTP",
+          "path": "/home/exuberance/Zotero/storage/EYM6MZTP/sajjaad.substack.com.html",
+          "select": "zotero://select/library/items/EYM6MZTP"
+        }
+      ],
+      "notes": [],
+      "itemKey": "243HUU95",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/243HUU95"
+    },
+    {
       "key": "ZFBD8WCW",
       "version": 5964,
       "itemType": "videoRecording",
@@ -4612,6 +4669,47 @@
       "select": "zotero://select/library/items/SRKG8DWJ"
     },
     {
+      "key": "YN2RNSZQ",
+      "version": 8008,
+      "itemType": "webpage",
+      "title": "LangChain Academy",
+      "citationKey": "LangChainAcademy",
+      "url": "https://academy.langchain.com/",
+      "accessDate": "2026-06-30T14:37:23Z",
+      "language": "en",
+      "websiteTitle": "LangChain Academy",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-30T14:37:23Z",
+      "dateModified": "2026-06-30T14:37:23Z",
+      "uri": "http://zotero.org/users/16981227/items/YN2RNSZQ",
+      "itemID": 3214,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://academy.langchain.com/",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-06-30T14:37:30Z",
+          "dateModified": "2026-06-30T14:37:30Z",
+          "uri": "http://zotero.org/users/16981227/items/LAEGUQ3C",
+          "path": "/home/exuberance/Zotero/storage/LAEGUQ3C/academy.langchain.com.html",
+          "select": "zotero://select/library/items/LAEGUQ3C"
+        }
+      ],
+      "notes": [],
+      "itemKey": "YN2RNSZQ",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/YN2RNSZQ"
+    },
+    {
       "key": "GE2K2IV4",
       "version": 7745,
       "itemType": "webpage",
@@ -4649,6 +4747,48 @@
       "itemKey": "GE2K2IV4",
       "libraryID": 1,
       "select": "zotero://select/library/items/GE2K2IV4"
+    },
+    {
+      "key": "LCDJYSK7",
+      "version": 8007,
+      "itemType": "webpage",
+      "title": "Learn to Code Free Online - Python, JS & 15+ | Coddy.Tech",
+      "abstractNote": "Learn to code for free with Coddy.Tech - interactive lessons in Python, JavaScript, SQL, and 15+ languages. Join 4M+ learners building real coding skills.",
+      "citationKey": "LearnCodeFree",
+      "url": "https://coddy.tech",
+      "accessDate": "2026-06-30T14:37:14Z",
+      "language": "en",
+      "websiteTitle": "Coddy",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-30T14:37:14Z",
+      "dateModified": "2026-06-30T14:37:14Z",
+      "uri": "http://zotero.org/users/16981227/items/LCDJYSK7",
+      "itemID": 3210,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://coddy.tech",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-06-30T14:37:19Z",
+          "dateModified": "2026-06-30T14:37:19Z",
+          "uri": "http://zotero.org/users/16981227/items/CESEAEQU",
+          "path": "/home/exuberance/Zotero/storage/CESEAEQU/coddy.tech.html",
+          "select": "zotero://select/library/items/CESEAEQU"
+        }
+      ],
+      "notes": [],
+      "itemKey": "LCDJYSK7",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/LCDJYSK7"
     },
     {
       "key": "GDQLNW3V",
@@ -4698,6 +4838,47 @@
       "itemKey": "GDQLNW3V",
       "libraryID": 1,
       "select": "zotero://select/library/items/GDQLNW3V"
+    },
+    {
+      "key": "BYBDGJCT",
+      "version": 8007,
+      "itemType": "webpage",
+      "title": "Learn R, Python & Data Science Online",
+      "abstractNote": "Learn Data Science & AI from the comfort of your browser, at your own pace with DataCamp's video tutorials & coding challenges on R, Python, Statistics & more.",
+      "citationKey": "LearnPythonData",
+      "url": "https://www.datacamp.com",
+      "accessDate": "2026-06-30T14:37:18Z",
+      "language": "en-us",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-30T14:37:18Z",
+      "dateModified": "2026-06-30T14:37:18Z",
+      "uri": "http://zotero.org/users/16981227/items/BYBDGJCT",
+      "itemID": 3212,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://www.datacamp.com",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-06-30T14:37:27Z",
+          "dateModified": "2026-06-30T14:37:27Z",
+          "uri": "http://zotero.org/users/16981227/items/BV7DDRR8",
+          "path": "/home/exuberance/Zotero/storage/BV7DDRR8/www.datacamp.com.html",
+          "select": "zotero://select/library/items/BV7DDRR8"
+        }
+      ],
+      "notes": [],
+      "itemKey": "BYBDGJCT",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/BYBDGJCT"
     },
     {
       "key": "I9G8SXYA",
@@ -6128,6 +6309,46 @@
       "itemKey": "94AGWD8P",
       "libraryID": 1,
       "select": "zotero://select/library/items/94AGWD8P"
+    },
+    {
+      "key": "QVERT3ML",
+      "version": 7969,
+      "itemType": "webpage",
+      "title": "Флибуста",
+      "abstractNote": "Сайт для скачивания книг",
+      "citationKey": "PyatElementovEffektivnogo",
+      "url": "https://m.flibusta.is/b/797720",
+      "accessDate": "2026-06-29T20:52:05Z",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-29T20:52:05Z",
+      "dateModified": "2026-06-29T20:52:46Z",
+      "uri": "http://zotero.org/users/16981227/items/QVERT3ML",
+      "itemID": 3189,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Пять элементов эффективного мышления (epub) | Флибуста",
+          "url": "https://m.flibusta.is/b/797720",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-06-29T20:52:10Z",
+          "dateModified": "2026-06-29T20:52:10Z",
+          "uri": "http://zotero.org/users/16981227/items/6Y3XTTMQ",
+          "path": "/home/exuberance/Zotero/storage/6Y3XTTMQ/797720.html",
+          "select": "zotero://select/library/items/6Y3XTTMQ"
+        }
+      ],
+      "notes": [],
+      "itemKey": "QVERT3ML",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/QVERT3ML"
     },
     {
       "key": "4RETJSD3",
@@ -8268,6 +8489,52 @@
       "itemKey": "9ZGM8UIT",
       "libraryID": 1,
       "select": "zotero://select/library/items/9ZGM8UIT"
+    },
+    {
+      "key": "3GFMDUV9",
+      "version": 7956,
+      "itemType": "book",
+      "title": "Пять элементов эффективного мышления",
+      "citationKey": "zotero-item-3187",
+      "ISBN": "978-5-17-159098-7",
+      "creators": [
+        {
+          "name": "Майкл Старбёрд",
+          "creatorType": "author"
+        },
+        {
+          "name": "Эдвард Бергер",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-06-29T20:37:17Z",
+      "dateModified": "2026-06-29T20:38:00Z",
+      "uri": "http://zotero.org/users/16981227/items/3GFMDUV9",
+      "itemID": 3187,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Ebook",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-06-29T20:51:45Z",
+          "dateModified": "2026-06-29T20:51:45Z",
+          "uri": "http://zotero.org/users/16981227/items/GFZR685N",
+          "path": "/home/exuberance/Zotero/storage/GFZR685N/Майкл Старбёрд and Эдвард Бергер - Пять элементов эффективного мышления.epub",
+          "select": "zotero://select/library/items/GFZR685N"
+        }
+      ],
+      "notes": [],
+      "itemKey": "3GFMDUV9",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/3GFMDUV9"
     },
     {
       "key": "JI5WGELG",

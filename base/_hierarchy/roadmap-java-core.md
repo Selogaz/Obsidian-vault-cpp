@@ -14,7 +14,7 @@ problem:
 icon: 🧬
 color: "#b089c4"
 created: 2026-03-21T00:00:00+07:00
-updated: 2026-03-29T11:15:21+03:00
+updated: 2026-06-29T23:24:45+03:00
 ---
 
 # Roadmap: Java Core
@@ -38,7 +38,7 @@ Java Core — prerequisite для Spring Boot, который является �
 ### OOP (Неделя 5-8)
 - [x] Классы и объекты [[класс]] [[объект]] ✅ 2026-03-21
 - [x] Наследование, полиморфизм [[наследование]] [[Преимущества полиморфизма]] [[польза полиморфизма]] ✅ 2026-03-21
-- [x] Абстракция и интерфейсы [[абстракция]] [[интерфейс]] ✅ 2026-03-21
+- [x] Абстракция и интерфейсы [[Абстрагирование]] [[интерфейс]] ✅ 2026-03-21
 - [x] [[Порождающие паттерны и идиомы]] ✅ 2026-03-21
 
 ### Collections Framework (Неделя 9-12)
@@ -71,9 +71,9 @@ Java Core — prerequisite для Spring Boot, который является �
 ## Критерии завершения
 
 - [ ] Реализовал 3+ проекта на Java
-	- [ ] ⤵️ #task/reference #category/computer_science  Console Todo API
-	- [ ] ⤵️ #task/reference #category/computer_science  In-Memory Cache
-	- [ ] ⤵️ #task/reference #category/computer_science  Mini Message Broker
+	- [ ] ⤵️ #task/reference #category/computer_science Console Todo API
+	- [ ] ⤵️ #task/reference #category/computer_science In-Memory Cache
+	- [ ] ⤵️ #task/reference #category/computer_science Mini Message Broker
 - [x] Можешь объяснить difference между HashMap и ConcurrentHashMap ✅ 2026-03-21
 - [x] Понимаешь как работает Garbage Collector ✅ 2026-03-21
 - [ ] #task/reference #category/computer_science #priority/с #time/long #effort/hard Решил 50+ задач на Codeforces (Java)

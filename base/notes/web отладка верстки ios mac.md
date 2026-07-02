@@ -10,7 +10,7 @@ deck: obsidian::webdev
 icon: </>
 color: "#ab4642"
 created: 2026-06-11T12:15:56+03:00
-updated: 2026-06-11T18:31:58+03:00
+updated: 2026-06-27T10:09:36+03:00
 ---
 
 **отладка верстки ios mac**
@@ -20,6 +20,8 @@ updated: 2026-06-11T18:31:58+03:00
 ### Терминал 1
 ```bash
 npm run dev
+//OR
+npm run dev:https
 ```
 
 ### Терминал 2
@@ -44,6 +46,7 @@ node scripts/webkit-preview.mjs ipad-mini-landscape /game/character
 node scripts/webkit-preview.mjs iphone /game/character
 node scripts/webkit-preview.mjs iphone-se /game/character
 node scripts/webkit-preview.mjs iphone-max /game/character
+node scripts/webkit-preview.mjs iphone-landscape /game/create
 
 # внешний URL вместо локального
 node scripts/webkit-preview.mjs ipad https://test.dndmaxwell.online/lk

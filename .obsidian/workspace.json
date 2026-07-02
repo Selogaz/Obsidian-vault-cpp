@@ -8,36 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4b642383a5012c3b",
+            "id": "bda9ef25e60d256c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home/index.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "a4b3b288ea35178a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "periodic/daily/2026-06-23.md",
+                "file": "periodic/daily/2026-07-02.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,48 +28,21 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-06-23"
+              "title": "2026-07-02"
             }
           },
           {
-            "id": "e18c885b1004cba8",
+            "id": "0c713137623a74a8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sources/Overistimation of the importance of money.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Overistimation of the importance of money"
-            }
-          },
-          {
-            "id": "270b0ffc5539d2ba",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "home/databases/notes.base",
-                "viewName": "📝 All"
-              },
-              "icon": "lucide-table",
-              "title": "notes"
+              "title": "New tab"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -426,38 +375,38 @@
       "graph:Open graph view": false
     }
   },
-  "active": "270b0ffc5539d2ba",
+  "active": "0c713137623a74a8",
   "lastOpenFiles": [
-    "periodic/daily/2026-06-23.md",
-    "sources/Overistimation of the importance of money.md",
-    "base/additions/conspectuses/overistimation  of the importance of money.md",
-    "base/additions/conspectuses/Entrepreneurship.md",
-    "sources/Entrepreneurship.md",
-    "base/creators/William J. Baumol.md",
-    "home/index.md",
-    "base/additions/conspectuses/conspectus - a2-english-for-developers.md",
-    "base/additions/aggregators/a2-english-for-developers - conspectuses.md",
-    "sources/a2-english-for-developers.md",
-    "base/categories/english.md",
-    "base/creators/Загузов.md",
-    "base/_meta-notes/psy.md",
-    "base/categories/health.md",
-    "base/notes/я != количество моих денег.md",
-    "base/notes/решение проблемы избыточной важности денег.md",
-    "base/_problems/избыточная важность денег.md",
-    "base/_problems/отождествление себя с ситуацией.md",
+    "periodic/daily/2026-07-02.md",
+    "base/notes/начало работы в dnd-frontend.md",
     "base/additions/conspectuses/Как делать полезные заметки.md",
-    "base/additions/conspectuses/A Philosophy Of Software Design.md",
+    "base/notes/польза внимания к своим и чужим неудачам.md",
+    "base/notes/как перестать делать поспешные выводы.md",
+    "base/_problems/развитие внимательности.md",
     "base/_meta-notes/достижение экспертности.md",
-    "base/notes/методы достижения экспертности.md",
-    "base/notes/исполнительность vs экспертность.md",
-    "base/_hierarchy/обратная связь.md",
     "base/_problems/сбор обратной связи.md",
+    "base/notes/методы достижения экспертности.md",
     "base/_problems/развитие интуиции.md",
+    "base/notes/идеи и инертность.md",
+    "base/_hierarchy/Абстракция.md",
+    "base/notes/польза абстракции.md",
+    "base/_hierarchy/roadmap-java-core.md",
+    "base/notes/Абстрагирование.md",
+    "periodic/daily/2026-06-29.md",
+    "home/databases/breadcrumbs.base",
+    "periodic/weekly/2026-W26.md",
+    "base/notes/потенциальные причины тяжести в голове.md",
+    "base/notes/Наведение порядка в хранилище.md",
+    "periodic/daily/2026-06-26.md",
+    "periodic/daily/2026-06-22.md",
+    "periodic/daily/2026-06-23.md",
+    "periodic/daily/2026-06-24.md",
+    "periodic/daily/2026-06-25.md",
+    "periodic/daily/2026-06-27.md",
+    "periodic/daily/2026-06-28.md",
+    "home/databases/notes.base",
     "base/notes/регулирование как драйвер продуктивных стратегий бизнеса.md.tmp.22254.d6df4fe74a21",
     "home/databases/high-notes.base",
-    "home/databases/notes.base",
-    "home/databases/breadcrumbs.base",
     "files/Pasted image 20260620235621.png",
     "files/А1-простейшая планиметрия 20260620175858141.png",
     "files/А1-простейшая планиметрия 20260620172857752.png",
