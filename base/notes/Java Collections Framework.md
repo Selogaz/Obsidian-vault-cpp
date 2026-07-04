@@ -16,7 +16,7 @@ sr-ease: 250
 
 **Java Collections Framework**
 —
-- [ ] #task/inbox #category/java определение jcf
+- [-] #task/inbox #category/java определение jcf ❌ 2026-07-04
 - [[коллекция]]
 - [[Основные интерфейсы JCF и их реализации]]
 - [[java.util.Collections]]

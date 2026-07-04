@@ -12,6 +12,6 @@ tasks:
 
 плагин для firefox, позволяющий слушать [[music.base|музыку]] в вк без рекламы и открытия сайта
 
-- [ ] #task/inbox Экспортировать музыкальные группы из архива, который готовится по ссылке [data_protection](https://vk.com/data_protection?section=rules)
+- [-] #task/inbox Экспортировать музыкальные группы из архива, который готовится по ссылке [data_protection](https://vk.com/data_protection?section=rules) ❌ 2026-07-04
 
 [[base/_meta-notes/music|music]]

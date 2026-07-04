@@ -55,10 +55,10 @@ sr-ease: 290
 	- Alibaba
 	- Kubernetes
 	- OpenFeign
-- [ ] #task/someday #category/work в свободное время ознакомиться подробнее. Или хотя бы сделать по ним заметки
+- [-] #task/someday #category/work в свободное время ознакомиться подробнее. Или хотя бы сделать по ним заметки ❌ 2026-07-04
 
 # Kubernetes
 
-- [ ] #task/reference #category/java Ознакомиться с Kubernetes после изучения книги[^1]
+- [-] #task/reference #category/java Ознакомиться с Kubernetes после изучения книги[^1] ❌ 2026-07-04
 
 [^1]: с. 37

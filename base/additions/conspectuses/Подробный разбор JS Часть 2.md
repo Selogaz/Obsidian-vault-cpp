@@ -180,7 +180,7 @@ input.removeAttribute("class");
 input.className = "some new test";
 ```
 
-- [ ] #task/inbox #category/webdev - Разбить практику с DOM на работу с id, тегами, классами и атрибутами
+- [-] #task/inbox #category/webdev - Разбить практику с DOM на работу с id, тегами, классами и атрибутами ❌ 2026-07-04
 
 ## Добавление текста с помощью JS
 ```js

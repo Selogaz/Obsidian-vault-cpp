@@ -71,15 +71,15 @@ Next.js runtime
 Next.js runtime
  из `packages/next/client/components/app-router.tsx` и `client/index.tsx`
  Клиентский компонент, который:
-- [ ] #task/inbox #category/webdev - Получает <font color="#ffff00">Flight-поток</font> (<font color="#ffff00">RSC payload</font>) через `useServerResponse()`
+- [-] #task/inbox #category/webdev - Получает <font color="#ffff00">Flight-поток</font> (<font color="#ffff00">RSC payload</font>) через `useServerResponse()` ❌ 2026-07-04
  - Вызывает `response.readRoot()` - рендерит серверные компоненты на клиенте
-- [ ] #task/inbox #category/webdev - Рендерит `<AppRouter>` внутри себя
-- [ ] #task/inbox #category/webdev Другое определение - корень <font color="#ffff00">React Server Components</font>, создаваемый React-рантаймом для <font color="#ffff00">RSC-дерева</font>. Содержит Server Components, которые отрендерились на сервере и пришли на клиент в виде <font color="#ffff00">RSC Payload</font> (компактного бинарного представления).
+- [-] #task/inbox #category/webdev - Рендерит `<AppRouter>` внутри себя ❌ 2026-07-04
+- [-] #task/inbox #category/webdev Другое определение - корень <font color="#ffff00">React Server Components</font>, создаваемый React-рантаймом для <font color="#ffff00">RSC-дерева</font>. Содержит Server Components, которые отрендерились на сервере и пришли на клиент в виде <font color="#ffff00">RSC Payload</font> (компактного бинарного представления). ❌ 2026-07-04
 
 Вместе они реализуют архитектуру React Server Components: серверная часть идёт в ServerRoot, клиентская — в Root. React *"сшивает" эти два дерева* через границу клиентских компонентов. Можно проверить: если компонент использует useState/useEffect, он *гарантированно окажется под Root*, а обычный серверный *компонент без 'use client' — под ServerRoot.*
 
 web RSC payload
 компактное бинарное представление
 
-- [ ] #task/inbox #category/webdev createRoot()
-- [ ] #task/inbox #category/webdev hydrateRoot
+- [-] #task/inbox #category/webdev createRoot() ❌ 2026-07-04
+- [-] #task/inbox #category/webdev hydrateRoot ❌ 2026-07-04

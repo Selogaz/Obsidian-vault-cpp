@@ -76,7 +76,7 @@ Java Core — prerequisite для Spring Boot, который является �
 	- [ ] ⤵️ #task/reference #category/computer_science Mini Message Broker
 - [x] Можешь объяснить difference между HashMap и ConcurrentHashMap ✅ 2026-03-21
 - [x] Понимаешь как работает Garbage Collector ✅ 2026-03-21
-- [ ] #task/reference #category/computer_science #priority/с #time/long #effort/hard Решил 50+ задач на Codeforces (Java)
+- [-] #task/reference #category/computer_science #priority/с #time/long #effort/hard Решил 50+ задач на Codeforces (Java) ❌ 2026-07-04
 
 ## Связь с дипломом
 

@@ -160,7 +160,12 @@
         3209,
         3210,
         3212,
-        3214
+        3214,
+        3220,
+        3224,
+        3226,
+        3227,
+        3230
       ]
     },
     "JDWBZAA3": {
@@ -265,7 +270,9 @@
         2017,
         2235,
         2253,
-        2255
+        2255,
+        3217,
+        3218
       ]
     },
     "88CS2DJN": {
@@ -475,7 +482,8 @@
       "collections": [],
       "items": [
         1895,
-        1913
+        1913,
+        3222
       ]
     },
     "3X8RA6QK": {
@@ -1831,6 +1839,48 @@
       "select": "zotero://select/library/items/QF2UENP7"
     },
     {
+      "key": "I8PSPZ52",
+      "version": 8054,
+      "itemType": "webpage",
+      "title": "Y Combinator",
+      "abstractNote": "Y Combinator created a new model for funding early stage startups. Four times a year we invest in a large number of startups.",
+      "citationKey": "Combinator",
+      "url": "https://www.ycombinator.com/",
+      "accessDate": "2026-07-04T12:57:01Z",
+      "language": "en",
+      "websiteTitle": "Y Combinator",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-07-04T12:57:01Z",
+      "dateModified": "2026-07-04T12:57:01Z",
+      "uri": "http://zotero.org/users/16981227/items/I8PSPZ52",
+      "itemID": 3230,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://www.ycombinator.com/",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-07-04T12:57:15Z",
+          "dateModified": "2026-07-04T12:57:15Z",
+          "uri": "http://zotero.org/users/16981227/items/T6L7GHPM",
+          "path": "/home/exuberance/Zotero/storage/T6L7GHPM/www.ycombinator.com.html",
+          "select": "zotero://select/library/items/T6L7GHPM"
+        }
+      ],
+      "notes": [],
+      "itemKey": "I8PSPZ52",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/I8PSPZ52"
+    },
+    {
       "key": "QDUMA8ZR",
       "version": 5916,
       "itemType": "document",
@@ -2028,6 +2078,48 @@
       "itemKey": "YXG4QMIX",
       "libraryID": 1,
       "select": "zotero://select/library/items/YXG4QMIX"
+    },
+    {
+      "key": "KA78J2RE",
+      "version": 8047,
+      "itemType": "webpage",
+      "title": "DeepLearning.AI: Start or Advance Your Career in AI",
+      "abstractNote": "DeepLearning.AI | Andrew Ng | Join over 7 million people learning how to use and build AI through our online courses. Earn certifications, level up your skills, and stay ahead of the industry.",
+      "citationKey": "DeepLearningAIStartAdvance",
+      "url": "https://www.deeplearning.ai",
+      "accessDate": "2026-07-04T12:48:23Z",
+      "shortTitle": "DeepLearning.AI",
+      "language": "en",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-07-04T12:48:23Z",
+      "dateModified": "2026-07-04T12:48:23Z",
+      "uri": "http://zotero.org/users/16981227/items/KA78J2RE",
+      "itemID": 3226,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://www.deeplearning.ai",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-07-04T12:48:32Z",
+          "dateModified": "2026-07-04T12:48:32Z",
+          "uri": "http://zotero.org/users/16981227/items/JM3BQIIV",
+          "path": "/home/exuberance/Zotero/storage/JM3BQIIV/www.deeplearning.ai.html",
+          "select": "zotero://select/library/items/JM3BQIIV"
+        }
+      ],
+      "notes": [],
+      "itemKey": "KA78J2RE",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/KA78J2RE"
     },
     {
       "key": "TSIMPJ5R",
@@ -5880,6 +5972,47 @@
       "select": "zotero://select/library/items/R82NZQD8"
     },
     {
+      "key": "TEDV5STV",
+      "version": 8043,
+      "itemType": "webpage",
+      "title": "Practice Live Job Interviews - For Free",
+      "abstractNote": "We match you the best practice peers and set your interviews together, including real-world interview questions, high-quality video chat, collaborative environment, and peer feedback.",
+      "citationKey": "PracticeLiveJob",
+      "url": "https://www.pramp.com",
+      "accessDate": "2026-07-04T12:48:12Z",
+      "websiteTitle": "Pramp",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-07-04T12:48:12Z",
+      "dateModified": "2026-07-04T12:48:14Z",
+      "uri": "http://zotero.org/users/16981227/items/TEDV5STV",
+      "itemID": 3224,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://www.pramp.com",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-07-04T12:48:18Z",
+          "dateModified": "2026-07-04T12:48:18Z",
+          "uri": "http://zotero.org/users/16981227/items/PFZG8L57",
+          "path": "/home/exuberance/Zotero/storage/PFZG8L57/www.pramp.com.html",
+          "select": "zotero://select/library/items/PFZG8L57"
+        }
+      ],
+      "notes": [],
+      "itemKey": "TEDV5STV",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/TEDV5STV"
+    },
+    {
       "key": "RJ5VK4IG",
       "version": 5654,
       "itemType": "webpage",
@@ -6122,6 +6255,48 @@
       "select": "zotero://select/library/items/BT86IK3U"
     },
     {
+      "key": "63WTRWZV",
+      "version": 8033,
+      "itemType": "webpage",
+      "title": "Prompt library",
+      "abstractNote": "Copy-paste prompts for Claude Code, tagged by task and role.",
+      "citationKey": "PromptLibrary",
+      "url": "https://code.claude.com/docs/en/prompt-library",
+      "accessDate": "2026-07-04T11:14:37Z",
+      "language": "en",
+      "websiteTitle": "Claude Code Docs",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-07-04T11:14:37Z",
+      "dateModified": "2026-07-04T11:14:42Z",
+      "uri": "http://zotero.org/users/16981227/items/63WTRWZV",
+      "itemID": 3220,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://code.claude.com/docs/en/prompt-library",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-07-04T11:14:44Z",
+          "dateModified": "2026-07-04T11:14:44Z",
+          "uri": "http://zotero.org/users/16981227/items/PMXIVYJF",
+          "path": "/home/exuberance/Zotero/storage/PMXIVYJF/prompt-library.html",
+          "select": "zotero://select/library/items/PMXIVYJF"
+        }
+      ],
+      "notes": [],
+      "itemKey": "63WTRWZV",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/63WTRWZV"
+    },
+    {
       "key": "5XCMPRAB",
       "version": 5923,
       "itemType": "blogPost",
@@ -6170,6 +6345,91 @@
       "itemKey": "5XCMPRAB",
       "libraryID": 1,
       "select": "zotero://select/library/items/5XCMPRAB"
+    },
+    {
+      "key": "52N2JYU3",
+      "version": 8028,
+      "itemType": "webpage",
+      "title": "Простое Сообщество",
+      "abstractNote": "Система подборок для саморазвития. 300+ материалов о продуктивности, здоровье и обучении.",
+      "citationKey": "ProstoeSoobshchestvo",
+      "url": "https://prosto.social/",
+      "accessDate": "2026-07-03T09:28:35Z",
+      "language": "ru",
+      "websiteTitle": "Простое Сообщество",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-07-03T09:28:35Z",
+      "dateModified": "2026-07-03T09:28:35Z",
+      "uri": "http://zotero.org/users/16981227/items/52N2JYU3",
+      "itemID": 3218,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://prosto.social/",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-07-03T09:28:41Z",
+          "dateModified": "2026-07-03T09:28:41Z",
+          "uri": "http://zotero.org/users/16981227/items/3WZHTECF",
+          "path": "/home/exuberance/Zotero/storage/3WZHTECF/prosto.social.html",
+          "select": "zotero://select/library/items/3WZHTECF"
+        }
+      ],
+      "notes": [],
+      "itemKey": "52N2JYU3",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/52N2JYU3"
+    },
+    {
+      "key": "AAI9RSPU",
+      "version": 8032,
+      "itemType": "videoRecording",
+      "title": "Как оказаться в 1%",
+      "abstractNote": "Если вы хотите быть в окружении умных, дисциплинированных, стремящихся, неравнодушных людей, то вступайте в наше Сообщество ⬇\nПростое Сообщество: https://go.prosto.social/",
+      "date": "2026",
+      "citationKey": "prostoglebKakOkazatsya12026",
+      "url": "https://www.youtube.com/watch?v=jKpGKmATpOM",
+      "accessDate": "2026-07-03T08:32:38Z",
+      "libraryCatalog": "YouTube",
+      "runningTime": "17:45",
+      "creators": [
+        {
+          "name": "Просто Глеб",
+          "creatorType": "creator"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "🌕"
+        },
+        {
+          "tag": "💎"
+        },
+        {
+          "tag": "📢"
+        },
+        {
+          "tag": "🟩"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-07-03T08:32:38Z",
+      "dateModified": "2026-07-04T11:14:00Z",
+      "uri": "http://zotero.org/users/16981227/items/AAI9RSPU",
+      "itemID": 3217,
+      "attachments": [],
+      "notes": [],
+      "itemKey": "AAI9RSPU",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/AAI9RSPU"
     },
     {
       "key": "MVQXQDMB",
@@ -7409,6 +7669,55 @@
       "select": "zotero://select/library/items/ILN2KB9X"
     },
     {
+      "key": "J8I8HQ2Z",
+      "version": 8038,
+      "itemType": "forumPost",
+      "title": "Can someone suggest how can I get a Parkway Drive tone? As close as possible to Deep Blue (both guitar and pedal and strings) . Thanks!",
+      "date": "2022-09-03T20:19:26.000Z",
+      "citationKey": "sugar_vividCanSomeoneSuggest2022",
+      "url": "https://www.reddit.com/r/guitarpedals/comments/x53s1w/can_someone_suggest_how_can_i_get_a_parkway_drive/",
+      "accessDate": "2026-07-04T11:44:07Z",
+      "shortTitle": "Can someone suggest how can I get a Parkway Drive tone?",
+      "forumTitle": "r/guitarpedals",
+      "postType": "Reddit Post",
+      "creators": [
+        {
+          "firstName": "",
+          "lastName": "Sugar_Vivid",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-07-04T11:44:07Z",
+      "dateModified": "2026-07-04T11:44:07Z",
+      "uri": "http://zotero.org/users/16981227/items/J8I8HQ2Z",
+      "itemID": 3222,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://www.reddit.com/r/guitarpedals/comments/x53s1w/can_someone_suggest_how_can_i_get_a_parkway_drive/",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-07-04T11:44:19Z",
+          "dateModified": "2026-07-04T11:44:19Z",
+          "uri": "http://zotero.org/users/16981227/items/58HWS2YU",
+          "path": "/home/exuberance/Zotero/storage/58HWS2YU/can_someone_suggest_how_can_i_get_a_parkway_drive.html",
+          "select": "zotero://select/library/items/58HWS2YU"
+        }
+      ],
+      "notes": [],
+      "itemKey": "J8I8HQ2Z",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/J8I8HQ2Z"
+    },
+    {
       "key": "XASJY2RD",
       "version": 5889,
       "itemType": "document",
@@ -7511,6 +7820,47 @@
       "itemKey": "IGG9GSFB",
       "libraryID": 1,
       "select": "zotero://select/library/items/IGG9GSFB"
+    },
+    {
+      "key": "UUYTHL4M",
+      "version": 8048,
+      "itemType": "webpage",
+      "title": "System Design · Coding · Behavioral · Machine Learning Interviews",
+      "abstractNote": "Ace Every Stage of Your Next Technical Interview",
+      "citationKey": "SystemDesignCoding",
+      "url": "https://bytebytego.com",
+      "accessDate": "2026-07-04T12:48:30Z",
+      "websiteTitle": "ByteByteGo",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-07-04T12:48:30Z",
+      "dateModified": "2026-07-04T12:48:30Z",
+      "uri": "http://zotero.org/users/16981227/items/UUYTHL4M",
+      "itemID": 3227,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://bytebytego.com",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-07-04T12:48:35Z",
+          "dateModified": "2026-07-04T12:48:35Z",
+          "uri": "http://zotero.org/users/16981227/items/VKNSRU7Q",
+          "path": "/home/exuberance/Zotero/storage/VKNSRU7Q/bytebytego.com.html",
+          "select": "zotero://select/library/items/VKNSRU7Q"
+        }
+      ],
+      "notes": [],
+      "itemKey": "UUYTHL4M",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/UUYTHL4M"
     },
     {
       "key": "ILTXRTA3",

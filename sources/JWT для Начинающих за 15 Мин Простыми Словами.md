@@ -23,7 +23,7 @@ created: 2025-09-17T12:33:46+03:00
 updated: 2026-06-01T17:39:06+03:00
 total_hours: 0
 tasks:
-  - "- [ ] #task/inbox #category/java Короткоживущий и долгоживущий jwt-токен"
+  - "- [-] #task/inbox #category/java Короткоживущий и долгоживущий jwt-токен ❌ 2026-07-04"
 ---
 
 https://www.youtube.com/watch?v=D8KggyvCRrg
@@ -35,4 +35,4 @@ https://www.youtube.com/watch?v=D8KggyvCRrg
 
 ![[java JWT|JWT]]
 
-- [ ] #task/inbox #category/java Короткоживущий и долгоживущий jwt-токен
+- [-] #task/inbox #category/java Короткоживущий и долгоживущий jwt-токен ❌ 2026-07-04

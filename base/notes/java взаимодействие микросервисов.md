@@ -22,4 +22,4 @@ sr-ease: 310
 - RabbitMQ
 Взаимодействие может быть организовано через [[java gRPC|gRPC]]
 
-- [ ] #task/inbox #category/java RabbitMQ
+- [-] #task/inbox #category/java RabbitMQ ❌ 2026-07-04

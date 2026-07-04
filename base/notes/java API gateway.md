@@ -26,4 +26,4 @@ sr-ease: 310
 	- авторизация
 	- аутентификация(безопасный доступ)
 
-- [ ] #task/reference #category/java почему авторизация и аутентификация есть не только здесь, но и в [[java service mesh|service mesh]]
+- [-] #task/reference #category/java почему авторизация и аутентификация есть не только здесь, но и в [[java service mesh|service mesh]] ❌ 2026-07-04

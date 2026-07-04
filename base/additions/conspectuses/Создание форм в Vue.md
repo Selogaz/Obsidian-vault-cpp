@@ -300,7 +300,7 @@ import CreatePost from './CreatePost.vue'
 ## Общая схема
 
 - Родитель может передавать данные дочернему компоненту через `props`
-	- [ ] #task/inbox #category/webdev - Что еще за props?
+	- [x] #task/inbox #category/webdev - Что еще за props? ✅ 2026-07-04
 - Дочерний элемент может отправлять данные родителю через события `emit`
 
 ## Emit
