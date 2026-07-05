@@ -2,13 +2,13 @@
 tags:
   - mark/scene
 aliases: []
-status: 📥
+status: 🟦
 up:
   - "[[projects/ЕГЭ Информатика/ЕГЭ Информатика.md|ЕГЭ Информатика]]"
 icon: ✍️
 color: "#d0b580"
 created: 2026-03-16T19:33:21+03:00
-updated: 2026-06-21T11:09:19+03:00
+updated: 2026-07-05T05:52:39+03:00
 ---
 
 ## A3

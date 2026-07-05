@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2026-07-04.md",
+                "file": "periodic/daily/2026-07-05.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,11 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-07-04"
+              "title": "2026-07-05"
             }
           },
           {
-            "id": "aba9374613976790",
+            "id": "e50022a430e80251",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/стратегия расходования usage credits с Fable 5.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "стратегия расходования usage credits с Fable 5"
+            }
+          },
+          {
+            "id": "7623288f8e65c8f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,8 +78,105 @@
               "icon": "lucide-file",
               "title": "промт для верстки bite-transit(асташко)"
             }
+          },
+          {
+            "id": "7992590698fce2aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/выбор модели по типу задачи.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "выбор модели по типу задачи"
+            }
+          },
+          {
+            "id": "8ebcbb7be83a217e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/работа с агентами после Fable.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "работа с агентами после Fable"
+            }
+          },
+          {
+            "id": "06ecc9716eeb7b56",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/что Fable делал сам — проси явно.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "что Fable делал сам — проси явно"
+            }
+          },
+          {
+            "id": "76f11cc1b99a8ef5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/sonnet vs opus.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "sonnet vs opus"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -318,12 +439,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "base/notes/стратегия расходования usage credits с Fable 5.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of стратегия расходования usage credits с Fable 5"
             }
           },
           {
@@ -363,12 +485,12 @@
               "title": "Notes Review Queue"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 348.5,
-    "collapsed": true
+    "width": 348.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -388,45 +510,45 @@
       "graph:Open graph view": false
     }
   },
-  "active": "bda9ef25e60d256c",
+  "active": "e50022a430e80251",
   "lastOpenFiles": [
-    "base/notes/sonnet vs opus.md",
-    "base/notes/промт для верстки bite-transit(асташко).md",
-    "periodic/daily/2026-07-04.md",
-    "home/databases/breadcrumbs.base",
-    "base/notes/AI prompts.md",
-    "periodic/daily/2026-07-03.md",
-    "periodic/statuses/someday.md",
-    "periodic/statuses/regular.md",
-    "projects/Инвентаризация.md",
-    "periodic/statuses/reference.md",
-    "base/additions/conspectuses/Как делать полезные заметки.md",
-    "periodic/statuses/one-off.md",
-    "periodic/statuses/next_action.md",
-    "periodic/statuses/multistep.md",
-    "periodic/statuses/idea.md",
+    "base/notes/стратегия расходования usage credits с Fable 5.md.tmp.343632.9268fe2056c4",
+    "base/notes/стратегия расходования usage credits с Fable 5.md.tmp.343632.c9b355f199da",
+    "base/notes/стратегия расходования usage credits с Fable 5.md.tmp.343632.e33c1ea36476",
+    "base/notes/архитектурная сессия и ревью релизного диффа.md",
+    "base/notes/архитектурная сессия и ревью релизного диффа.md.tmp.343632.3405ccaf1ff7",
     "periodic/daily/2026-07-05.md",
-    "periodic/tasks (grouped by priority).canvas",
-    "periodic/priority.md",
-    "periodic/calendar.md",
-    "periodic/today.md",
-    "periodic/upcoming.md",
-    "periodic/statuses/inbox.md",
+    "base/notes/что Fable делал сам — проси явно.md",
+    "base/notes/стратегия расходования usage credits с Fable 5.md",
+    "base/notes/стратегия расходования usage credits с Fable 5.md.tmp.343632.c31c50e47f2c",
+    "base/notes/работа с агентами после Fable.md",
+    "base/notes/выбор модели по типу задачи.md",
+    "base/notes/промт для верстки bite-transit(асташко).md",
+    "base/notes/sonnet vs opus.md",
+    "base/notes/выражение восхищения.md",
+    "base/notes/this those.md",
+    "base/notes/that.md",
+    "base/notes/выражение согласия.md",
+    "base/notes/end выражение согласия.md",
+    "projects/ЕГЭ Информатика/4-условие Фано.md",
+    "projects/ЕГЭ Информатика/3-базы данных Excel.md",
+    "projects/ЕГЭ Информатика/1-анализ информационных моделей.md",
+    "projects/ЕГЭ Информатика/2-таблицы истинности.md",
+    "projects/ЕГЭ Информатика/ЕГЭ Информатика.md",
+    "base/notes/конвейер для бесплатных агентов.md",
+    "home/databases/breadcrumbs.base",
+    "base/notes/конвейер для бесплатных агентов.md.tmp.3606725.32da1e1ca60c",
+    "base/_hierarchy/Fable 5.md",
+    "base/notes/конвейер для бесплатных агентов.md.tmp.3606725.2e77024be282",
+    "base/notes/конвейер для бесплатных агентов.md.tmp.3606725.29307649b344",
+    "periodic/daily/2026-07-04.md",
     "base/notes/промт для ревью кода.md",
-    "base/notes/легитимизация отдыха.md",
-    "base/notes/нейтрально-отрицательные действия.md",
-    "base/notes/настоящий отдых.md",
-    "base/notes/годовой план карьерного развития.md",
-    "base/notes/claude workflows.md",
-    "base/notes/паттерн недоприсвоения результатов.md.tmp.756907.c40c380818c0",
-    "base/notes/разделение суждения и исполнения.md.tmp.756907.7656f3a9d207",
-    "base/notes/легитимизация отдыха.md.tmp.756907.0efa71e2df88",
-    "base/notes/спринт с Fable.md.tmp.756907.4f04a8dbf905",
-    "base/notes/спринт с Fable.md.tmp.756907.5ebac9a6d11c",
-    "base/notes/нейтрально-отрицательные действия.md.tmp.756907.fd280b740f5b",
-    "base/notes/нейтрально-отрицательные действия.md.tmp.756907.5cdb98f7f286",
-    "base/notes/нейтрально-отрицательные действия.md.tmp.756907.ff5737c1c260",
-    "base/notes/спринт с Fable.md.tmp.756907.96b19f753e1f",
+    "base/notes/особенности claude code workflows.md.tmp.3606725.ed6e4ab40d76",
+    "base/notes/работа с агентами после Fable.md.tmp.3606725.472914268c32",
+    "base/notes/токен-гигиена и возобновляемость.md",
+    "base/notes/промт для написания тестов.md",
+    "base/notes/промт для дебага.md",
+    "periodic/tasks (grouped by priority).canvas",
     "files/2026-07-02 20260702215950530.png",
     "files/2026-07-02 20260702215921316.png",
     "files/Pasted image 20260620235621.png",
