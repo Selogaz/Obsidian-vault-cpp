@@ -1,18 +1,21 @@
 ---
 tags:
+  - category/computer_science
   - category/productivity
   - system/high/hierarchy
 aliases: []
 relevant: false
 category:
+  - "[[computer science]]"
   - "[[productivity]]"
 meta:
   - "[[достижение экспертности]]"
+  - "[[AI]]"
 problem:
 icon: 🧬
 color: "#b089c4"
 created: 2026-07-03T14:32:33+03:00
-updated: 2026-07-04T23:15:12+03:00
+updated: 2026-07-09T18:50:27+03:00
 ---
 
 [[Что делать каждый день, чтобы стать крутым спецом]]
@@ -31,3 +34,8 @@ updated: 2026-07-04T23:15:12+03:00
 [[паттерн недоприсвоения результатов]]
 [[работа с агентами после Fable]]
 [[конвейер для бесплатных агентов]]
+[[что Fable делал сам — проси явно]]
+[[работа с агентами после Fable]]
+[[Fable bite-transit prompts]]
+[[plan-pixel-audit]]
+[[что бы сказал Fable на эти данные?]]

@@ -13,6 +13,78 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "periodic/daily/2026-07-15.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-07-15"
+            }
+          },
+          {
+            "id": "eaf5b95a42462b5f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/спринт с Fable.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "спринт с Fable"
+            }
+          },
+          {
+            "id": "b74a7f427633d5d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/годовой план карьерного развития.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "годовой план карьерного развития"
+            }
+          },
+          {
+            "id": "9571e1a209ab553a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "periodic/daily/2026-07-05.md",
                 "mode": "source",
                 "source": false,
@@ -30,153 +102,9 @@
               "icon": "lucide-file",
               "title": "2026-07-05"
             }
-          },
-          {
-            "id": "e50022a430e80251",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/стратегия расходования usage credits с Fable 5.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "стратегия расходования usage credits с Fable 5"
-            }
-          },
-          {
-            "id": "7623288f8e65c8f4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/промт для верстки bite-transit(асташко).md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "промт для верстки bite-transit(асташко)"
-            }
-          },
-          {
-            "id": "7992590698fce2aa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/выбор модели по типу задачи.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "выбор модели по типу задачи"
-            }
-          },
-          {
-            "id": "8ebcbb7be83a217e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/работа с агентами после Fable.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "работа с агентами после Fable"
-            }
-          },
-          {
-            "id": "06ecc9716eeb7b56",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/что Fable делал сам — проси явно.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "что Fable делал сам — проси явно"
-            }
-          },
-          {
-            "id": "76f11cc1b99a8ef5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/notes/sonnet vs opus.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "sonnet vs opus"
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -439,13 +367,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "base/notes/стратегия расходования usage credits с Fable 5.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of стратегия расходования usage credits с Fable 5"
+              "title": "Outline"
             }
           },
           {
@@ -485,12 +412,12 @@
               "title": "Notes Review Queue"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 348.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -510,44 +437,45 @@
       "graph:Open graph view": false
     }
   },
-  "active": "e50022a430e80251",
+  "active": "b74a7f427633d5d1",
   "lastOpenFiles": [
+    "base/notes/спринт с Fable.md",
+    "periodic/daily/2026-07-05.md",
+    "periodic/daily/2026-07-15.md",
+    "base/notes/запушить, перезаписав коммит.md",
+    "periodic/daily/2026-07-14.md",
+    "base/notes/мой график работы.md",
+    "base/notes/выживание на удалёнке без выгорания.md",
+    "base/notes/выживание на удалёнке без выгорания.md.tmp.100226.6efc8bff0ba0",
+    "base/notes/месть за украденный день.md",
+    "base/notes/месть за украденный день.md.tmp.100226.114ff7130ad7",
+    "base/notes/выживание на удалёнке без выгорания.md.tmp.100226.9613c0a17278",
+    "periodic/daily/2026-07-13.md",
+    "periodic/daily/2026-07-11.md",
+    "periodic/daily/2026-07-10.md",
+    "base/_hierarchy/Fable 5.md",
+    "base/notes/что бы сказал Fable на эти данные?.md",
+    "base/notes/протокол доверия.md",
+    "home/databases/breadcrumbs.base",
+    "base/notes/claude переключение аккаунтов.md",
+    "base/notes/запуск claude через токены(tokenator).md",
+    "periodic/daily/2026-07-09.md",
+    "base/notes/сикофантия.md",
+    "base/notes/один и тот же вопрос AI будет иметь разные ответы, в зависимости от формулировки.md",
+    "base/notes/выборы сентябрь 2026.md",
+    "base/notes/подобие фигур и его коэффициент.md",
+    "base/notes/выражение объема пирамиды через площадь с помощью интегрирования.md",
+    "base/_hierarchy/площади фигур.md",
+    "base/notes/площадь боковой поверхности призмы.md",
+    "files/Сеть-WB-VPN-MTU-разбор.md",
+    "periodic/daily/2026-07-08.md",
+    "files/2026-07-08 20260708140951637.png",
+    "base/notes/медицинский брифинг для врача.md.tmp.1545010.d9936ad454d5",
     "base/notes/стратегия расходования usage credits с Fable 5.md.tmp.343632.9268fe2056c4",
     "base/notes/стратегия расходования usage credits с Fable 5.md.tmp.343632.c9b355f199da",
     "base/notes/стратегия расходования usage credits с Fable 5.md.tmp.343632.e33c1ea36476",
-    "base/notes/архитектурная сессия и ревью релизного диффа.md",
     "base/notes/архитектурная сессия и ревью релизного диффа.md.tmp.343632.3405ccaf1ff7",
-    "periodic/daily/2026-07-05.md",
-    "base/notes/что Fable делал сам — проси явно.md",
-    "base/notes/стратегия расходования usage credits с Fable 5.md",
     "base/notes/стратегия расходования usage credits с Fable 5.md.tmp.343632.c31c50e47f2c",
-    "base/notes/работа с агентами после Fable.md",
-    "base/notes/выбор модели по типу задачи.md",
-    "base/notes/промт для верстки bite-transit(асташко).md",
-    "base/notes/sonnet vs opus.md",
-    "base/notes/выражение восхищения.md",
-    "base/notes/this those.md",
-    "base/notes/that.md",
-    "base/notes/выражение согласия.md",
-    "base/notes/end выражение согласия.md",
-    "projects/ЕГЭ Информатика/4-условие Фано.md",
-    "projects/ЕГЭ Информатика/3-базы данных Excel.md",
-    "projects/ЕГЭ Информатика/1-анализ информационных моделей.md",
-    "projects/ЕГЭ Информатика/2-таблицы истинности.md",
-    "projects/ЕГЭ Информатика/ЕГЭ Информатика.md",
-    "base/notes/конвейер для бесплатных агентов.md",
-    "home/databases/breadcrumbs.base",
-    "base/notes/конвейер для бесплатных агентов.md.tmp.3606725.32da1e1ca60c",
-    "base/_hierarchy/Fable 5.md",
-    "base/notes/конвейер для бесплатных агентов.md.tmp.3606725.2e77024be282",
-    "base/notes/конвейер для бесплатных агентов.md.tmp.3606725.29307649b344",
-    "periodic/daily/2026-07-04.md",
-    "base/notes/промт для ревью кода.md",
-    "base/notes/особенности claude code workflows.md.tmp.3606725.ed6e4ab40d76",
-    "base/notes/работа с агентами после Fable.md.tmp.3606725.472914268c32",
-    "base/notes/токен-гигиена и возобновляемость.md",
-    "base/notes/промт для написания тестов.md",
-    "base/notes/промт для дебага.md",
     "periodic/tasks (grouped by priority).canvas",
     "files/2026-07-02 20260702215950530.png",
     "files/2026-07-02 20260702215921316.png",
@@ -558,7 +486,6 @@
     "files/А1-простейшая планиметрия 20260620165443133.png",
     "files/А1-простейшая планиметрия 20260620164130191.png",
     "files/image-45-x2-y350.png",
-    "files/2026-06-04 20260605122226953.png",
     "periodic/2026.canvas",
     "files/Редизайн мобильного приложения для покупки билетов в S7 (2026-04-21) - roadmap.canvas",
     "periodic/2025.canvas",

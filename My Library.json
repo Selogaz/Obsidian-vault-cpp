@@ -108,7 +108,7 @@
     }
   },
   "version": {
-    "zotero": "9.0.4",
+    "zotero": "9.0.6",
     "bbt": "9.0.36"
   },
   "collections": {
@@ -165,7 +165,8 @@
         3224,
         3226,
         3227,
-        3230
+        3230,
+        3232
       ]
     },
     "JDWBZAA3": {
@@ -520,7 +521,8 @@
         2307,
         3043,
         3187,
-        3189
+        3189,
+        3233
       ]
     },
     "DD6MR3D9": {
@@ -579,7 +581,8 @@
         2060,
         2187,
         2192,
-        2193
+        2193,
+        3232
       ]
     }
   },
@@ -1787,6 +1790,76 @@
       "itemKey": "GEE6HW2R",
       "libraryID": 1,
       "select": "zotero://select/library/items/GEE6HW2R"
+    },
+    {
+      "key": "TTEITJZA",
+      "version": 8059,
+      "itemType": "computerProgram",
+      "title": "realiti4/claude-swap",
+      "abstractNote": "Switch between multiple Claude Code accounts, with automatic rate-limit rotation, usage dashboard, and parallel sessions",
+      "date": "2026-07-10T07:02:10Z",
+      "citationKey": "cetinkolRealiti4Claudeswap2026",
+      "url": "https://github.com/realiti4/claude-swap",
+      "accessDate": "2026-07-10T07:16:52Z",
+      "libraryCatalog": "GitHub",
+      "rights": "MIT",
+      "extra": "original-date: 2026-01-11T08:47:31Z",
+      "programmingLanguage": "Python",
+      "creators": [
+        {
+          "firstName": "Onur",
+          "lastName": "Cetinkol",
+          "creatorType": "programmer"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        },
+        {
+          "tag": "account-manager",
+          "type": 1
+        },
+        {
+          "tag": "account-switcher",
+          "type": 1
+        },
+        {
+          "tag": "anthropic",
+          "type": 1
+        },
+        {
+          "tag": "claude",
+          "type": 1
+        },
+        {
+          "tag": "claude-code",
+          "type": 1
+        },
+        {
+          "tag": "cli",
+          "type": 1
+        },
+        {
+          "tag": "multi-account",
+          "type": 1
+        },
+        {
+          "tag": "tui",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-07-10T07:16:52Z",
+      "dateModified": "2026-07-10T07:16:52Z",
+      "uri": "http://zotero.org/users/16981227/items/TTEITJZA",
+      "itemID": 3232,
+      "attachments": [],
+      "notes": [],
+      "itemKey": "TTEITJZA",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/TTEITJZA"
     },
     {
       "key": "QF2UENP7",
@@ -8225,6 +8298,41 @@
       "itemKey": "2KSJP3TK",
       "libraryID": 1,
       "select": "zotero://select/library/items/2KSJP3TK"
+    },
+    {
+      "key": "UVLBXRSZ",
+      "version": 8060,
+      "itemType": "videoRecording",
+      "title": "Сделай это заранее, даже если не планируешь эмигрировать",
+      "abstractNote": "Телеграм-канал про Уругвай: https://t.me/vadim_from_uru\n\nОсенью 2022 года я экстренно эмигрировал из России, хотя всего за пару дней до этого был в полной уверенности, что несмотря ни на что планирую и дальше оставаться на Родине. Увы, обстоятельства порой меняются самым непредсказуемым образом, и то, что",
+      "date": "2026",
+      "citationKey": "vadimizurugvayaSdelayEtoZaranee2026",
+      "url": "https://www.youtube.com/watch?v=v-Z3wM5ra9A",
+      "accessDate": "2026-07-13T15:41:08Z",
+      "libraryCatalog": "YouTube",
+      "runningTime": "17:52",
+      "creators": [
+        {
+          "name": "Вадим из Уругвая",
+          "creatorType": "creator"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-07-13T15:41:08Z",
+      "dateModified": "2026-07-13T15:41:13Z",
+      "uri": "http://zotero.org/users/16981227/items/UVLBXRSZ",
+      "itemID": 3233,
+      "attachments": [],
+      "notes": [],
+      "itemKey": "UVLBXRSZ",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/UVLBXRSZ"
     },
     {
       "key": "LD6RPNWG",

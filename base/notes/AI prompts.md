@@ -5,9 +5,8 @@ aliases: []
 icon: 📝
 color: "#70a0b5"
 created: 2026-07-04T15:14:22+03:00
-updated: 2026-07-04T15:14:22+03:00
+updated: 2026-07-06T20:50:53+03:00
 ---
-
 
 # Plan
 
@@ -23,3 +22,4 @@ updated: 2026-07-04T15:14:22+03:00
 - verification loop from a screenshot
 	- `implement this design, then take a screenshot of the result, compare it to the original, and fix any differences`
 
+[[Fable bite-transit prompts]]
