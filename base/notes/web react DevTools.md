@@ -61,10 +61,10 @@ const HeadManagerContext = React.createContext<HeadManager | null>(null);
 
 Next.js runtime
 лежит в `packages/next/clients/index.tsx`. *Компонент-обертка*, который:
-- [ ] #task/inbox #category/webdev - ждет завершения <font color="#ffff00">гидратации</font>
-- [ ] #task/inbox #category/webdev - Вызывает callbacks через <font color="#ffff00">useLayoutEffect</font> (например, сигнал `window.__NEXT_HYDRATED = true`)
-- [ ] #task/inbox #category/webdev - Измеряет <font color="#ffff00">Web Vitals</font> через <font color="#ffff00">useEffect</font>
-- [ ] #task/inbox #category/webdev Другое определение - клиентский React-корень, создаваемый `hydrateRoot()`.
+- [-] #task/inbox #category/webdev - ждет завершения <font color="#ffff00">гидратации</font> ❌ 2026-07-22
+- [-] #task/inbox #category/webdev - Вызывает callbacks через <font color="#ffff00">useLayoutEffect</font> (например, сигнал `window.__NEXT_HYDRATED = true`) ❌ 2026-07-22
+- [-] #task/inbox #category/webdev - Измеряет <font color="#ffff00">Web Vitals</font> через <font color="#ffff00">useEffect</font> ❌ 2026-07-22
+- [-] #task/inbox #category/webdev Другое определение - клиентский React-корень, создаваемый `hydrateRoot()`. ❌ 2026-07-22
 
 ## ServerRoot
 

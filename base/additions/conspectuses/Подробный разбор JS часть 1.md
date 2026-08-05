@@ -406,7 +406,7 @@ for (let key in car) {
 
 ## Функции внутри класса
 
-- [ ] #task/inbox #category/webdev - Разница между `function Car` и `class Car`?
+- [-] #task/inbox #category/webdev - Разница между `function Car` и `class Car`? ❌ 2026-07-22
 
 ### [[конструктор]]
 

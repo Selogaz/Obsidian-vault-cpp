@@ -6,7 +6,6 @@
       "ascii": "",
       "asciiBibLaTeX": false,
       "asciiBibTeX": true,
-      "autoAbbrev": false,
       "autoExport": "immediate",
       "autoExportDelay": 5,
       "autoExportIdleWait": 10,
@@ -61,6 +60,7 @@
       "itemObserverDelay": 5,
       "jabrefFormat": 0,
       "japanese": false,
+      "journalAbbreviation": "auto",
       "keyScope": "library",
       "language": "langid",
       "mapMath": "",
@@ -86,10 +86,9 @@
       "separatorNames": "and",
       "skipFields": "",
       "skipWords": "a,ab,aboard,about,above,across,after,against,al,along,amid,among,an,and,anti,around,as,at,before,behind,below,beneath,beside,besides,between,beyond,but,by,d,da,das,de,del,dell,dello,dei,degli,della,dell,delle,dem,den,der,des,despite,die,do,down,du,during,ein,eine,einem,einen,einer,eines,el,en,et,except,for,from,gli,i,il,in,inside,into,is,l,la,las,le,les,like,lo,los,near,nor,of,off,on,onto,or,over,past,per,plus,round,save,since,so,some,sur,than,the,through,to,toward,towards,un,una,unas,under,underneath,une,unlike,uno,unos,until,up,upon,versus,via,von,while,with,within,without,yet,zu,zum",
-      "startupProgress": "popup",
       "strings": "",
       "stringsOverride": "",
-      "verbatimFields": "url,doi,file,pdf,ids,eprint,/^verb[a-z]$/,groups,/^citeulike-linkout-[0-9]+$/, /^bdsk-url-[0-9]+$/, keywords",
+      "verbatimFields": "url,doi,file,pdf,ids,eprint,/^verb[a-z]$/,groups,/^citeulike-linkout-[0-9]+$/,/^bdsk-url-[0-9]+$/, keywords",
       "warnBulkModify": 10,
       "warnTitleCased": false
     },
@@ -109,7 +108,7 @@
   },
   "version": {
     "zotero": "9.0.6",
-    "bbt": "9.0.36"
+    "bbt": "9.0.55"
   },
   "collections": {
     "QVNRAYT7": {
@@ -522,7 +521,10 @@
         3043,
         3187,
         3189,
-        3233
+        3233,
+        3234,
+        3235,
+        3236
       ]
     },
     "DD6MR3D9": {
@@ -631,6 +633,7 @@
           "uri": "http://zotero.org/users/16981227/items/T2PS65H8"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "7EITUUWT",
       "libraryID": 1,
       "select": "zotero://select/library/items/7EITUUWT"
@@ -675,6 +678,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "9ZGKRNKM",
       "libraryID": 1,
       "select": "zotero://select/library/items/9ZGKRNKM"
@@ -723,6 +727,7 @@
           "uri": "http://zotero.org/users/16981227/items/S955MQMX"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "IQT323C6",
       "libraryID": 1,
       "select": "zotero://select/library/items/IQT323C6"
@@ -772,6 +777,7 @@
           "uri": "http://zotero.org/users/16981227/items/TX7PIEE6"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "FU6W7EY7",
       "libraryID": 1,
       "select": "zotero://select/library/items/FU6W7EY7"
@@ -834,6 +840,7 @@
           "uri": "http://zotero.org/users/16981227/items/MQL4JLXQ"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "QUZDEMMP",
       "libraryID": 1,
       "select": "zotero://select/library/items/QUZDEMMP"
@@ -915,6 +922,7 @@
           "uri": "http://zotero.org/users/16981227/items/J3HRCN98"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "HNUQD2JN",
       "libraryID": 1,
       "select": "zotero://select/library/items/HNUQD2JN"
@@ -975,6 +983,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "7IK9F3WX",
       "libraryID": 1,
       "select": "zotero://select/library/items/7IK9F3WX"
@@ -1089,6 +1098,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "HNCKTATY",
       "libraryID": 1,
       "select": "zotero://select/library/items/HNCKTATY"
@@ -1139,6 +1149,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "VCD92UB6",
       "libraryID": 1,
       "select": "zotero://select/library/items/VCD92UB6"
@@ -1192,6 +1203,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "EFLY7HAH",
       "libraryID": 1,
       "select": "zotero://select/library/items/EFLY7HAH"
@@ -1233,6 +1245,7 @@
       "itemID": 2190,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "8LKQU8JW",
       "libraryID": 1,
       "select": "zotero://select/library/items/8LKQU8JW"
@@ -1276,6 +1289,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "RKB7VXBT",
       "libraryID": 1,
       "select": "zotero://select/library/items/RKB7VXBT"
@@ -1316,6 +1330,7 @@
       "itemID": 6,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "NZD7N7N7",
       "libraryID": 1,
       "select": "zotero://select/library/items/NZD7N7N7"
@@ -1353,6 +1368,7 @@
       "itemID": 7,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "49W3HW87",
       "libraryID": 1,
       "select": "zotero://select/library/items/49W3HW87"
@@ -1394,6 +1410,7 @@
       "itemID": 1,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "8VHTY422",
       "libraryID": 1,
       "select": "zotero://select/library/items/8VHTY422"
@@ -1443,6 +1460,7 @@
           "uri": "http://zotero.org/users/16981227/items/4C2JFZST"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "4FKP2K5R",
       "libraryID": 1,
       "select": "zotero://select/library/items/4FKP2K5R"
@@ -1495,6 +1513,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "PENHPP9I",
       "libraryID": 1,
       "select": "zotero://select/library/items/PENHPP9I"
@@ -1547,6 +1566,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "T2VZDT9X",
       "libraryID": 1,
       "select": "zotero://select/library/items/T2VZDT9X"
@@ -1591,6 +1611,7 @@
       "itemID": 3072,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "J. Polit. Econ.",
       "itemKey": "ANILWS97",
       "libraryID": 1,
       "select": "zotero://select/library/items/ANILWS97"
@@ -1635,6 +1656,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "EFG2AMCF",
       "libraryID": 1,
       "select": "zotero://select/library/items/EFG2AMCF"
@@ -1694,6 +1716,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "F6CD5IB4",
       "libraryID": 1,
       "select": "zotero://select/library/items/F6CD5IB4"
@@ -1738,6 +1761,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "HC553TGV",
       "libraryID": 1,
       "select": "zotero://select/library/items/HC553TGV"
@@ -1787,6 +1811,7 @@
           "uri": "http://zotero.org/users/16981227/items/NEQWYK2E"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "GEE6HW2R",
       "libraryID": 1,
       "select": "zotero://select/library/items/GEE6HW2R"
@@ -1857,6 +1882,7 @@
       "itemID": 3232,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "TTEITJZA",
       "libraryID": 1,
       "select": "zotero://select/library/items/TTEITJZA"
@@ -1907,6 +1933,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "QF2UENP7",
       "libraryID": 1,
       "select": "zotero://select/library/items/QF2UENP7"
@@ -1949,6 +1976,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "I8PSPZ52",
       "libraryID": 1,
       "select": "zotero://select/library/items/I8PSPZ52"
@@ -1998,6 +2026,7 @@
           "uri": "http://zotero.org/users/16981227/items/IMAXF5CI"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "QDUMA8ZR",
       "libraryID": 1,
       "select": "zotero://select/library/items/QDUMA8ZR"
@@ -2043,6 +2072,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "94V57JUQ",
       "libraryID": 1,
       "select": "zotero://select/library/items/94V57JUQ"
@@ -2104,6 +2134,7 @@
           "uri": "http://zotero.org/users/16981227/items/U9KKDAJW"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "WQIRFWNL",
       "libraryID": 1,
       "select": "zotero://select/library/items/WQIRFWNL"
@@ -2148,6 +2179,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "YXG4QMIX",
       "libraryID": 1,
       "select": "zotero://select/library/items/YXG4QMIX"
@@ -2190,6 +2222,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "KA78J2RE",
       "libraryID": 1,
       "select": "zotero://select/library/items/KA78J2RE"
@@ -2239,9 +2272,54 @@
           "uri": "http://zotero.org/users/16981227/items/4UZKUW76"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "TSIMPJ5R",
       "libraryID": 1,
       "select": "zotero://select/library/items/TSIMPJ5R"
+    },
+    {
+      "key": "PZPGGGSX",
+      "version": 8065,
+      "itemType": "videoRecording",
+      "title": "Крипта для абсолютных новичков. Пошаговая инструкция",
+      "abstractNote": "🔄 Надежный мониторинг обменников криптовалют Exnode: https://bit.ly/3SgIE3S\n\nЭто видео — для тех, кто не знает, как пользоваться криптовалютой, но хотел бы научиться. Издалека может показаться, что мир крипты какой-то сложный, но на самом деле разберется даже ребенок. Вы точно освоите. Я подробно, пошагово, с демонстрацией на эк",
+      "date": "2023",
+      "citationKey": "dmitrykolezevKriptaDlyaAbsolyutnyh2023",
+      "url": "https://www.youtube.com/watch?v=3Bhe3l7i1Ds",
+      "accessDate": "2026-07-15T18:22:40Z",
+      "libraryCatalog": "YouTube",
+      "runningTime": "22:43",
+      "creators": [
+        {
+          "name": "Dmitry Kolezev",
+          "creatorType": "creator"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "🟩"
+        },
+        {
+          "tag": "💎"
+        },
+        {
+          "tag": "💬"
+        },
+        {
+          "tag": "🌔"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-07-15T18:22:40Z",
+      "dateModified": "2026-07-18T06:41:56Z",
+      "uri": "http://zotero.org/users/16981227/items/PZPGGGSX",
+      "itemID": 3234,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "PZPGGGSX",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/PZPGGGSX"
     },
     {
       "key": "VUAGG4ZV",
@@ -2269,6 +2347,7 @@
       "itemID": 2160,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "VUAGG4ZV",
       "libraryID": 1,
       "select": "zotero://select/library/items/VUAGG4ZV"
@@ -2311,6 +2390,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "JMFPRMJ3",
       "libraryID": 1,
       "select": "zotero://select/library/items/JMFPRMJ3"
@@ -2356,6 +2436,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "8GCF69IC",
       "libraryID": 1,
       "select": "zotero://select/library/items/8GCF69IC"
@@ -2397,6 +2478,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "NDLRA83P",
       "libraryID": 1,
       "select": "zotero://select/library/items/NDLRA83P"
@@ -2438,6 +2520,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "RWNKRHDH",
       "libraryID": 1,
       "select": "zotero://select/library/items/RWNKRHDH"
@@ -2480,6 +2563,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "FQ4Q54X4",
       "libraryID": 1,
       "select": "zotero://select/library/items/FQ4Q54X4"
@@ -2522,6 +2606,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "KEWJ79II",
       "libraryID": 1,
       "select": "zotero://select/library/items/KEWJ79II"
@@ -2581,6 +2666,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "TVQ3CGEG",
       "libraryID": 1,
       "select": "zotero://select/library/items/TVQ3CGEG"
@@ -2630,6 +2716,7 @@
           "uri": "http://zotero.org/users/16981227/items/FN4DKXU9"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "V6EUSKFR",
       "libraryID": 1,
       "select": "zotero://select/library/items/V6EUSKFR"
@@ -2668,6 +2755,7 @@
       "itemID": 2187,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "YPF9XIDK",
       "libraryID": 1,
       "select": "zotero://select/library/items/YPF9XIDK"
@@ -2716,6 +2804,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "F3TBMSJ3",
       "libraryID": 1,
       "select": "zotero://select/library/items/F3TBMSJ3"
@@ -2778,6 +2867,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "65Q5LGKD",
       "libraryID": 1,
       "select": "zotero://select/library/items/65Q5LGKD"
@@ -2814,6 +2904,7 @@
       "itemID": 1636,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "ZK86NFZ3",
       "libraryID": 1,
       "select": "zotero://select/library/items/ZK86NFZ3"
@@ -2863,6 +2954,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "LRIW9JTN",
       "libraryID": 1,
       "select": "zotero://select/library/items/LRIW9JTN"
@@ -2903,6 +2995,7 @@
       "itemID": 16,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "UZ3W9GC2",
       "libraryID": 1,
       "select": "zotero://select/library/items/UZ3W9GC2"
@@ -2943,6 +3036,7 @@
       "itemID": 9,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "N3EGD366",
       "libraryID": 1,
       "select": "zotero://select/library/items/N3EGD366"
@@ -2984,6 +3078,7 @@
       "itemID": 14,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "CCLAVMGU",
       "libraryID": 1,
       "select": "zotero://select/library/items/CCLAVMGU"
@@ -3024,6 +3119,7 @@
       "itemID": 15,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "S56X6WV3",
       "libraryID": 1,
       "select": "zotero://select/library/items/S56X6WV3"
@@ -3064,6 +3160,7 @@
       "itemID": 12,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "K4Q9STJC",
       "libraryID": 1,
       "select": "zotero://select/library/items/K4Q9STJC"
@@ -3105,6 +3202,7 @@
       "itemID": 10,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "FGBWKJNI",
       "libraryID": 1,
       "select": "zotero://select/library/items/FGBWKJNI"
@@ -3146,6 +3244,7 @@
       "itemID": 13,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "V96L8EIJ",
       "libraryID": 1,
       "select": "zotero://select/library/items/V96L8EIJ"
@@ -3201,6 +3300,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "VQSU5C68",
       "libraryID": 1,
       "select": "zotero://select/library/items/VQSU5C68"
@@ -3253,6 +3353,7 @@
           "uri": "http://zotero.org/users/16981227/items/CI7G285V"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "WCNWTJDC",
       "libraryID": 1,
       "select": "zotero://select/library/items/WCNWTJDC"
@@ -3282,6 +3383,7 @@
       "itemID": 2047,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "RWCT3C3M",
       "libraryID": 1,
       "select": "zotero://select/library/items/RWCT3C3M"
@@ -3326,6 +3428,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "LPXJ57KD",
       "libraryID": 1,
       "select": "zotero://select/library/items/LPXJ57KD"
@@ -3369,6 +3472,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "I2GABKWN",
       "libraryID": 1,
       "select": "zotero://select/library/items/I2GABKWN"
@@ -3412,6 +3516,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "EBWF9ELE",
       "libraryID": 1,
       "select": "zotero://select/library/items/EBWF9ELE"
@@ -3460,6 +3565,7 @@
           "uri": "http://zotero.org/users/16981227/items/YY3AL2Q2"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "HFQCLH88",
       "libraryID": 1,
       "select": "zotero://select/library/items/HFQCLH88"
@@ -3508,6 +3614,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "5WL6P95A",
       "libraryID": 1,
       "select": "zotero://select/library/items/5WL6P95A"
@@ -3552,6 +3659,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "HTTS575T",
       "libraryID": 1,
       "select": "zotero://select/library/items/HTTS575T"
@@ -3592,6 +3700,7 @@
       "itemID": 2186,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "6AT9QKG4",
       "libraryID": 1,
       "select": "zotero://select/library/items/6AT9QKG4"
@@ -3632,6 +3741,7 @@
       "itemID": 2,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "NNFM79IF",
       "libraryID": 1,
       "select": "zotero://select/library/items/NNFM79IF"
@@ -3684,6 +3794,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "W2H39TE2",
       "libraryID": 1,
       "select": "zotero://select/library/items/W2H39TE2"
@@ -3736,6 +3847,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "CT8382FC",
       "libraryID": 1,
       "select": "zotero://select/library/items/CT8382FC"
@@ -3780,6 +3892,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "34AA5GAZ",
       "libraryID": 1,
       "select": "zotero://select/library/items/34AA5GAZ"
@@ -3833,6 +3946,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "MRXJ5WMZ",
       "libraryID": 1,
       "select": "zotero://select/library/items/MRXJ5WMZ"
@@ -3868,6 +3982,7 @@
       "itemID": 2396,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "3LVJVJ78",
       "libraryID": 1,
       "select": "zotero://select/library/items/3LVJVJ78"
@@ -3917,6 +4032,7 @@
           "uri": "http://zotero.org/users/16981227/items/8ZTBQLVT"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "ZIF9JZDH",
       "libraryID": 1,
       "select": "zotero://select/library/items/ZIF9JZDH"
@@ -3966,6 +4082,7 @@
           "uri": "http://zotero.org/users/16981227/items/HU4NHJ9H"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "QIPSKYSZ",
       "libraryID": 1,
       "select": "zotero://select/library/items/QIPSKYSZ"
@@ -4006,6 +4123,7 @@
       "itemID": 5,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "4WILXS92",
       "libraryID": 1,
       "select": "zotero://select/library/items/4WILXS92"
@@ -4055,6 +4173,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "GU32JFZH",
       "libraryID": 1,
       "select": "zotero://select/library/items/GU32JFZH"
@@ -4100,6 +4219,7 @@
           "uri": "http://zotero.org/users/16981227/items/D4TJGJEF"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "IEIFHI6B",
       "libraryID": 1,
       "select": "zotero://select/library/items/IEIFHI6B"
@@ -4141,6 +4261,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "T3X9ZD57",
       "libraryID": 1,
       "select": "zotero://select/library/items/T3X9ZD57"
@@ -4185,6 +4306,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "IKKYAIF7",
       "libraryID": 1,
       "select": "zotero://select/library/items/IKKYAIF7"
@@ -4230,6 +4352,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "UGH5TLJQ",
       "libraryID": 1,
       "select": "zotero://select/library/items/UGH5TLJQ"
@@ -4282,6 +4405,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "GW5MFPB4",
       "libraryID": 1,
       "select": "zotero://select/library/items/GW5MFPB4"
@@ -4320,6 +4444,7 @@
       "itemID": 32,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "LLG9DESZ",
       "libraryID": 1,
       "select": "zotero://select/library/items/LLG9DESZ"
@@ -4369,6 +4494,7 @@
           "uri": "http://zotero.org/users/16981227/items/I7HKPCFS"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "ITAWQU7I",
       "libraryID": 1,
       "select": "zotero://select/library/items/ITAWQU7I"
@@ -4411,6 +4537,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "6M2TKGEP",
       "libraryID": 1,
       "select": "zotero://select/library/items/6M2TKGEP"
@@ -4454,6 +4581,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "WDCTAC9J",
       "libraryID": 1,
       "select": "zotero://select/library/items/WDCTAC9J"
@@ -4498,6 +4626,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "GYYY8UNP",
       "libraryID": 1,
       "select": "zotero://select/library/items/GYYY8UNP"
@@ -4536,6 +4665,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "MHBPBUBL",
       "libraryID": 1,
       "select": "zotero://select/library/items/MHBPBUBL"
@@ -4578,6 +4708,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "3LRY8J5Q",
       "libraryID": 1,
       "select": "zotero://select/library/items/3LRY8J5Q"
@@ -4620,6 +4751,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "EDX34GG8",
       "libraryID": 1,
       "select": "zotero://select/library/items/EDX34GG8"
@@ -4665,6 +4797,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "T3NDXUNK",
       "libraryID": 1,
       "select": "zotero://select/library/items/T3NDXUNK"
@@ -4713,6 +4846,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "243HUU95",
       "libraryID": 1,
       "select": "zotero://select/library/items/243HUU95"
@@ -4753,6 +4887,7 @@
       "itemID": 4,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "ZFBD8WCW",
       "libraryID": 1,
       "select": "zotero://select/library/items/ZFBD8WCW"
@@ -4788,6 +4923,7 @@
       "itemID": 42,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "VWCUY3EJ",
       "libraryID": 1,
       "select": "zotero://select/library/items/VWCUY3EJ"
@@ -4829,6 +4965,7 @@
       "itemID": 20,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "SRKG8DWJ",
       "libraryID": 1,
       "select": "zotero://select/library/items/SRKG8DWJ"
@@ -4870,6 +5007,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "YN2RNSZQ",
       "libraryID": 1,
       "select": "zotero://select/library/items/YN2RNSZQ"
@@ -4909,6 +5047,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "GE2K2IV4",
       "libraryID": 1,
       "select": "zotero://select/library/items/GE2K2IV4"
@@ -4951,6 +5090,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "LCDJYSK7",
       "libraryID": 1,
       "select": "zotero://select/library/items/LCDJYSK7"
@@ -5000,6 +5140,7 @@
           "uri": "http://zotero.org/users/16981227/items/G9XX5CY7"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "GDQLNW3V",
       "libraryID": 1,
       "select": "zotero://select/library/items/GDQLNW3V"
@@ -5041,6 +5182,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "BYBDGJCT",
       "libraryID": 1,
       "select": "zotero://select/library/items/BYBDGJCT"
@@ -5090,6 +5232,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "I9G8SXYA",
       "libraryID": 1,
       "select": "zotero://select/library/items/I9G8SXYA"
@@ -5140,6 +5283,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "XTGLPB7C",
       "libraryID": 1,
       "select": "zotero://select/library/items/XTGLPB7C"
@@ -5184,6 +5328,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "YRNG3HVR",
       "libraryID": 1,
       "select": "zotero://select/library/items/YRNG3HVR"
@@ -5235,6 +5380,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "UTIJ56X3",
       "libraryID": 1,
       "select": "zotero://select/library/items/UTIJ56X3"
@@ -5280,6 +5426,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "Q2PBNMSP",
       "libraryID": 1,
       "select": "zotero://select/library/items/Q2PBNMSP"
@@ -5327,6 +5474,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "JKU2PXDM",
       "libraryID": 1,
       "select": "zotero://select/library/items/JKU2PXDM"
@@ -5376,6 +5524,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "CYLUN2RY",
       "libraryID": 1,
       "select": "zotero://select/library/items/CYLUN2RY"
@@ -5494,6 +5643,7 @@
       "itemID": 3077,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "6VST45IA",
       "libraryID": 1,
       "select": "zotero://select/library/items/6VST45IA"
@@ -5541,6 +5691,7 @@
       "itemID": 3049,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "QWGVKJJ3",
       "libraryID": 1,
       "select": "zotero://select/library/items/QWGVKJJ3"
@@ -5583,6 +5734,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "MN2FIV6H",
       "libraryID": 1,
       "select": "zotero://select/library/items/MN2FIV6H"
@@ -5635,6 +5787,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "VGCFRIGY",
       "libraryID": 1,
       "select": "zotero://select/library/items/VGCFRIGY"
@@ -5680,6 +5833,7 @@
           "uri": "http://zotero.org/users/16981227/items/5CFSVXH5"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "TABMHQXT",
       "libraryID": 1,
       "select": "zotero://select/library/items/TABMHQXT"
@@ -5723,6 +5877,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "EMM754UK",
       "libraryID": 1,
       "select": "zotero://select/library/items/EMM754UK"
@@ -5771,6 +5926,7 @@
           "uri": "http://zotero.org/users/16981227/items/7NKH7PYY"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "WPYQQZQE",
       "libraryID": 1,
       "select": "zotero://select/library/items/WPYQQZQE"
@@ -5819,6 +5975,7 @@
           "uri": "http://zotero.org/users/16981227/items/VCIBWVU7"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "GDZRYV95",
       "libraryID": 1,
       "select": "zotero://select/library/items/GDZRYV95"
@@ -5861,6 +6018,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "H58FXWE7",
       "libraryID": 1,
       "select": "zotero://select/library/items/H58FXWE7"
@@ -5910,6 +6068,7 @@
           "uri": "http://zotero.org/users/16981227/items/SXLAIZ25"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "4HKG29JU",
       "libraryID": 1,
       "select": "zotero://select/library/items/4HKG29JU"
@@ -5959,6 +6118,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "EWYY9CZ3",
       "libraryID": 1,
       "select": "zotero://select/library/items/EWYY9CZ3"
@@ -5999,6 +6159,7 @@
       "itemID": 8,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "V73WPMYN",
       "libraryID": 1,
       "select": "zotero://select/library/items/V73WPMYN"
@@ -6040,6 +6201,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "R82NZQD8",
       "libraryID": 1,
       "select": "zotero://select/library/items/R82NZQD8"
@@ -6081,6 +6243,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "TEDV5STV",
       "libraryID": 1,
       "select": "zotero://select/library/items/TEDV5STV"
@@ -6120,6 +6283,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "RJ5VK4IG",
       "libraryID": 1,
       "select": "zotero://select/library/items/RJ5VK4IG"
@@ -6168,6 +6332,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "7WZERXBH",
       "libraryID": 1,
       "select": "zotero://select/library/items/7WZERXBH"
@@ -6217,6 +6382,7 @@
           "uri": "http://zotero.org/users/16981227/items/MQ6VGJSA"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "7GUPHQSP",
       "libraryID": 1,
       "select": "zotero://select/library/items/7GUPHQSP"
@@ -6288,6 +6454,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "8ZA9TAW3",
       "libraryID": 1,
       "select": "zotero://select/library/items/8ZA9TAW3"
@@ -6323,13 +6490,14 @@
       "itemID": 3076,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "BT86IK3U",
       "libraryID": 1,
       "select": "zotero://select/library/items/BT86IK3U"
     },
     {
       "key": "63WTRWZV",
-      "version": 8033,
+      "version": 8035,
       "itemType": "webpage",
       "title": "Prompt library",
       "abstractNote": "Copy-paste prompts for Claude Code, tagged by task and role.",
@@ -6365,6 +6533,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "63WTRWZV",
       "libraryID": 1,
       "select": "zotero://select/library/items/63WTRWZV"
@@ -6415,6 +6584,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "5XCMPRAB",
       "libraryID": 1,
       "select": "zotero://select/library/items/5XCMPRAB"
@@ -6457,6 +6627,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "52N2JYU3",
       "libraryID": 1,
       "select": "zotero://select/library/items/52N2JYU3"
@@ -6481,16 +6652,16 @@
       ],
       "tags": [
         {
-          "tag": "🌕"
+          "tag": "🟩"
         },
         {
           "tag": "💎"
         },
         {
-          "tag": "📢"
+          "tag": "🌕"
         },
         {
-          "tag": "🟩"
+          "tag": "📢"
         }
       ],
       "relations": {},
@@ -6500,6 +6671,7 @@
       "itemID": 3217,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "AAI9RSPU",
       "libraryID": 1,
       "select": "zotero://select/library/items/AAI9RSPU"
@@ -6545,6 +6717,7 @@
           "uri": "http://zotero.org/users/16981227/items/CL3LKHPH"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "MVQXQDMB",
       "libraryID": 1,
       "select": "zotero://select/library/items/MVQXQDMB"
@@ -6594,6 +6767,7 @@
           "uri": "http://zotero.org/users/16981227/items/FAAHREXC"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "GILNPN84",
       "libraryID": 1,
       "select": "zotero://select/library/items/GILNPN84"
@@ -6639,6 +6813,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "94AGWD8P",
       "libraryID": 1,
       "select": "zotero://select/library/items/94AGWD8P"
@@ -6679,6 +6854,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "QVERT3ML",
       "libraryID": 1,
       "select": "zotero://select/library/items/QVERT3ML"
@@ -6728,6 +6904,7 @@
           "uri": "http://zotero.org/users/16981227/items/GZRYFYYI"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "4RETJSD3",
       "libraryID": 1,
       "select": "zotero://select/library/items/4RETJSD3"
@@ -6776,6 +6953,7 @@
           "uri": "http://zotero.org/users/16981227/items/RBTX4KKF"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "349NKRU6",
       "libraryID": 1,
       "select": "zotero://select/library/items/349NKRU6"
@@ -6825,6 +7003,7 @@
           "uri": "http://zotero.org/users/16981227/items/ZEBNSQUC"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "QE2PITAR",
       "libraryID": 1,
       "select": "zotero://select/library/items/QE2PITAR"
@@ -6877,6 +7056,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "HK26QR39",
       "libraryID": 1,
       "select": "zotero://select/library/items/HK26QR39"
@@ -6921,6 +7101,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "59GGUFHL",
       "libraryID": 1,
       "select": "zotero://select/library/items/59GGUFHL"
@@ -6968,6 +7149,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "UY9DGK7X",
       "libraryID": 1,
       "select": "zotero://select/library/items/UY9DGK7X"
@@ -7007,6 +7189,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "VHQ37URU",
       "libraryID": 1,
       "select": "zotero://select/library/items/VHQ37URU"
@@ -7048,6 +7231,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "K7GLETXB",
       "libraryID": 1,
       "select": "zotero://select/library/items/K7GLETXB"
@@ -7093,6 +7277,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "P33B72S7",
       "libraryID": 1,
       "select": "zotero://select/library/items/P33B72S7"
@@ -7160,6 +7345,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "SZPU8A87",
       "libraryID": 1,
       "select": "zotero://select/library/items/SZPU8A87"
@@ -7209,6 +7395,7 @@
           "uri": "http://zotero.org/users/16981227/items/NASASP4D"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "GP7E6PJA",
       "libraryID": 1,
       "select": "zotero://select/library/items/GP7E6PJA"
@@ -7243,6 +7430,7 @@
       "itemID": 1506,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "C946HISW",
       "libraryID": 1,
       "select": "zotero://select/library/items/C946HISW"
@@ -7292,6 +7480,7 @@
           "uri": "http://zotero.org/users/16981227/items/MLFL3IES"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "5LRQXJK8",
       "libraryID": 1,
       "select": "zotero://select/library/items/5LRQXJK8"
@@ -7337,6 +7526,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "KUQ8VNJD",
       "libraryID": 1,
       "select": "zotero://select/library/items/KUQ8VNJD"
@@ -7378,6 +7568,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "G8TDKGYF",
       "libraryID": 1,
       "select": "zotero://select/library/items/G8TDKGYF"
@@ -7423,6 +7614,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "B6TGZLP4",
       "libraryID": 1,
       "select": "zotero://select/library/items/B6TGZLP4"
@@ -7467,6 +7659,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "N3Y3E7T4",
       "libraryID": 1,
       "select": "zotero://select/library/items/N3Y3E7T4"
@@ -7511,6 +7704,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "IXIJ2I3P",
       "libraryID": 1,
       "select": "zotero://select/library/items/IXIJ2I3P"
@@ -7559,6 +7753,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "F6XH4THP",
       "libraryID": 1,
       "select": "zotero://select/library/items/F6XH4THP"
@@ -7604,6 +7799,7 @@
           "uri": "http://zotero.org/users/16981227/items/Y7LGP4HH"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "G84XSEFG",
       "libraryID": 1,
       "select": "zotero://select/library/items/G84XSEFG"
@@ -7646,6 +7842,7 @@
           "uri": "http://zotero.org/users/16981227/items/C5CB4IF2"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "BJGGMQ6Z",
       "libraryID": 1,
       "select": "zotero://select/library/items/BJGGMQ6Z"
@@ -7688,6 +7885,7 @@
           "uri": "http://zotero.org/users/16981227/items/YGZSQX57"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "2BSXKSWR",
       "libraryID": 1,
       "select": "zotero://select/library/items/2BSXKSWR"
@@ -7737,6 +7935,7 @@
           "uri": "http://zotero.org/users/16981227/items/W8CWTGYC"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "ILN2KB9X",
       "libraryID": 1,
       "select": "zotero://select/library/items/ILN2KB9X"
@@ -7786,6 +7985,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "J8I8HQ2Z",
       "libraryID": 1,
       "select": "zotero://select/library/items/J8I8HQ2Z"
@@ -7847,6 +8047,7 @@
           "uri": "http://zotero.org/users/16981227/items/K7X9DTUR"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "XASJY2RD",
       "libraryID": 1,
       "select": "zotero://select/library/items/XASJY2RD"
@@ -7890,6 +8091,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "IGG9GSFB",
       "libraryID": 1,
       "select": "zotero://select/library/items/IGG9GSFB"
@@ -7931,6 +8133,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "UUYTHL4M",
       "libraryID": 1,
       "select": "zotero://select/library/items/UUYTHL4M"
@@ -7977,6 +8180,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "ILTXRTA3",
       "libraryID": 1,
       "select": "zotero://select/library/items/ILTXRTA3"
@@ -8029,6 +8233,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "VE95HY6S",
       "libraryID": 1,
       "select": "zotero://select/library/items/VE95HY6S"
@@ -8073,6 +8278,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "C43ESGSM",
       "libraryID": 1,
       "select": "zotero://select/library/items/C43ESGSM"
@@ -8117,6 +8323,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "U6K3XJGJ",
       "libraryID": 1,
       "select": "zotero://select/library/items/U6K3XJGJ"
@@ -8162,6 +8369,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "XT29TK9F",
       "libraryID": 1,
       "select": "zotero://select/library/items/XT29TK9F"
@@ -8207,6 +8415,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "RSFGB2JT",
       "libraryID": 1,
       "select": "zotero://select/library/items/RSFGB2JT"
@@ -8251,6 +8460,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "A98X675R",
       "libraryID": 1,
       "select": "zotero://select/library/items/A98X675R"
@@ -8295,6 +8505,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "2KSJP3TK",
       "libraryID": 1,
       "select": "zotero://select/library/items/2KSJP3TK"
@@ -8330,6 +8541,7 @@
       "itemID": 3233,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "UVLBXRSZ",
       "libraryID": 1,
       "select": "zotero://select/library/items/UVLBXRSZ"
@@ -8368,6 +8580,7 @@
       "itemID": 3067,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "LD6RPNWG",
       "libraryID": 1,
       "select": "zotero://select/library/items/LD6RPNWG"
@@ -8417,6 +8630,7 @@
           "uri": "http://zotero.org/users/16981227/items/QTMBLFEE"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "3H7AQG5W",
       "libraryID": 1,
       "select": "zotero://select/library/items/3H7AQG5W"
@@ -8457,6 +8671,7 @@
       "itemID": 2192,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "Y5Z2BP99",
       "libraryID": 1,
       "select": "zotero://select/library/items/Y5Z2BP99"
@@ -8505,6 +8720,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "WLZMK3ND",
       "libraryID": 1,
       "select": "zotero://select/library/items/WLZMK3ND"
@@ -8550,6 +8766,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "5UQS9A73",
       "libraryID": 1,
       "select": "zotero://select/library/items/5UQS9A73"
@@ -8597,6 +8814,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "C4A27HL4",
       "libraryID": 1,
       "select": "zotero://select/library/items/C4A27HL4"
@@ -8649,6 +8867,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "S288LPQ6",
       "libraryID": 1,
       "select": "zotero://select/library/items/S288LPQ6"
@@ -8694,6 +8913,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "REQ4BPQP",
       "libraryID": 1,
       "select": "zotero://select/library/items/REQ4BPQP"
@@ -8763,6 +8983,7 @@
       "itemID": 2191,
       "attachments": [],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "KCDW56VW",
       "libraryID": 1,
       "select": "zotero://select/library/items/KCDW56VW"
@@ -8813,6 +9034,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "DSBH28W9",
       "libraryID": 1,
       "select": "zotero://select/library/items/DSBH28W9"
@@ -8854,6 +9076,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "LLE6BI7V",
       "libraryID": 1,
       "select": "zotero://select/library/items/LLE6BI7V"
@@ -8896,6 +9119,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "QME2VA9X",
       "libraryID": 1,
       "select": "zotero://select/library/items/QME2VA9X"
@@ -8944,6 +9168,7 @@
           "uri": "http://zotero.org/users/16981227/items/XWZDWUWA"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "9ZGM8UIT",
       "libraryID": 1,
       "select": "zotero://select/library/items/9ZGM8UIT"
@@ -8990,9 +9215,81 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "3GFMDUV9",
       "libraryID": 1,
       "select": "zotero://select/library/items/3GFMDUV9"
+    },
+    {
+      "key": "JDJJ9XK6",
+      "version": 8068,
+      "itemType": "book",
+      "title": "Теория Решения Изобретательских Задач",
+      "citationKey": "zotero-item-3235",
+      "creators": [
+        {
+          "name": "Альтшуллер",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-07-18T06:42:06Z",
+      "dateModified": "2026-07-18T06:42:36Z",
+      "uri": "http://zotero.org/users/16981227/items/JDJJ9XK6",
+      "itemID": 3235,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "JDJJ9XK6",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/JDJJ9XK6"
+    },
+    {
+      "key": "Y4TNT6UC",
+      "version": 8077,
+      "itemType": "book",
+      "title": "Deep work",
+      "citationKey": "zotero-item-3236",
+      "creators": [
+        {
+          "name": "Cal Newport",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "🟦"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-08-02T09:34:18Z",
+      "dateModified": "2026-08-02T09:36:36Z",
+      "uri": "http://zotero.org/users/16981227/items/Y4TNT6UC",
+      "itemID": 3236,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Ebook",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-08-02T09:35:10Z",
+          "dateModified": "2026-08-02T09:35:10Z",
+          "uri": "http://zotero.org/users/16981227/items/SC52QIUE",
+          "path": "/home/exuberance/Zotero/storage/SC52QIUE/Cal Newport - Deep work.epub",
+          "select": "zotero://select/library/items/SC52QIUE"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "Y4TNT6UC",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/Y4TNT6UC"
     },
     {
       "key": "JI5WGELG",
@@ -9040,6 +9337,7 @@
         }
       ],
       "notes": [],
+      "autoJournalAbbreviation": "",
       "itemKey": "JI5WGELG",
       "libraryID": 1,
       "select": "zotero://select/library/items/JI5WGELG"
@@ -9086,6 +9384,7 @@
           "uri": "http://zotero.org/users/16981227/items/FK6F3D9Y"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "LATQTVEZ",
       "libraryID": 1,
       "select": "zotero://select/library/items/LATQTVEZ"
@@ -9134,6 +9433,7 @@
           "uri": "http://zotero.org/users/16981227/items/8M4TQNWL"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "WDGIBZL2",
       "libraryID": 1,
       "select": "zotero://select/library/items/WDGIBZL2"
@@ -9176,6 +9476,7 @@
           "uri": "http://zotero.org/users/16981227/items/7UGIWDN4"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "F9X3DK7J",
       "libraryID": 1,
       "select": "zotero://select/library/items/F9X3DK7J"
@@ -9219,6 +9520,7 @@
           "uri": "http://zotero.org/users/16981227/items/7QVHQEW7"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "FNZC3AYQ",
       "libraryID": 1,
       "select": "zotero://select/library/items/FNZC3AYQ"
@@ -9265,6 +9567,7 @@
           "uri": "http://zotero.org/users/16981227/items/KTH9WAK9"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "N2CD7L64",
       "libraryID": 1,
       "select": "zotero://select/library/items/N2CD7L64"
@@ -9311,6 +9614,7 @@
           "uri": "http://zotero.org/users/16981227/items/6RQ8GUXJ"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "R442Y2HW",
       "libraryID": 1,
       "select": "zotero://select/library/items/R442Y2HW"
@@ -9357,6 +9661,7 @@
           "uri": "http://zotero.org/users/16981227/items/8TARMNFC"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "QA5GDCAK",
       "libraryID": 1,
       "select": "zotero://select/library/items/QA5GDCAK"
@@ -9399,6 +9704,7 @@
           "uri": "http://zotero.org/users/16981227/items/9AE6C54B"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "7RNWA9GZ",
       "libraryID": 1,
       "select": "zotero://select/library/items/7RNWA9GZ"
@@ -9445,6 +9751,7 @@
           "uri": "http://zotero.org/users/16981227/items/3XWYBVV7"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "65FHDXA9",
       "libraryID": 1,
       "select": "zotero://select/library/items/65FHDXA9"
@@ -9490,6 +9797,7 @@
           "uri": "http://zotero.org/users/16981227/items/L5J7N47H"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "QJ8EHNYP",
       "libraryID": 1,
       "select": "zotero://select/library/items/QJ8EHNYP"
@@ -9532,6 +9840,7 @@
           "uri": "http://zotero.org/users/16981227/items/8JHVKAAG"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "NC73TC6E",
       "libraryID": 1,
       "select": "zotero://select/library/items/NC73TC6E"
@@ -9574,6 +9883,7 @@
           "uri": "http://zotero.org/users/16981227/items/QCFMP82J"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "9G5M7V3Y",
       "libraryID": 1,
       "select": "zotero://select/library/items/9G5M7V3Y"
@@ -9616,6 +9926,7 @@
           "uri": "http://zotero.org/users/16981227/items/HJ6N7WQ8"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "37KY9QB5",
       "libraryID": 1,
       "select": "zotero://select/library/items/37KY9QB5"
@@ -9658,6 +9969,7 @@
           "uri": "http://zotero.org/users/16981227/items/CCYRVCID"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "5BBLLVT3",
       "libraryID": 1,
       "select": "zotero://select/library/items/5BBLLVT3"
@@ -9703,6 +10015,7 @@
           "uri": "http://zotero.org/users/16981227/items/8EHSXMXY"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "84PS5MB3",
       "libraryID": 1,
       "select": "zotero://select/library/items/84PS5MB3"
@@ -9748,6 +10061,7 @@
           "uri": "http://zotero.org/users/16981227/items/PH7NSAGK"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "C8G9UW2Z",
       "libraryID": 1,
       "select": "zotero://select/library/items/C8G9UW2Z"
@@ -9793,6 +10107,7 @@
           "uri": "http://zotero.org/users/16981227/items/A9QGEFU3"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "IEIRAD5U",
       "libraryID": 1,
       "select": "zotero://select/library/items/IEIRAD5U"
@@ -9838,6 +10153,7 @@
           "uri": "http://zotero.org/users/16981227/items/WF236JGB"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "FSKTHH8N",
       "libraryID": 1,
       "select": "zotero://select/library/items/FSKTHH8N"
@@ -9883,6 +10199,7 @@
           "uri": "http://zotero.org/users/16981227/items/5PE7UQB6"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "I2PSVS4K",
       "libraryID": 1,
       "select": "zotero://select/library/items/I2PSVS4K"
@@ -9928,6 +10245,7 @@
           "uri": "http://zotero.org/users/16981227/items/EG8PT8DC"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "2AH2PV2W",
       "libraryID": 1,
       "select": "zotero://select/library/items/2AH2PV2W"
@@ -9974,6 +10292,7 @@
           "uri": "http://zotero.org/users/16981227/items/TBKCG86R"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "UBLL9L83",
       "libraryID": 1,
       "select": "zotero://select/library/items/UBLL9L83"
@@ -10020,6 +10339,7 @@
           "uri": "http://zotero.org/users/16981227/items/XPTFFEAP"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "KIEIQIH3",
       "libraryID": 1,
       "select": "zotero://select/library/items/KIEIQIH3"
@@ -10066,6 +10386,7 @@
           "uri": "http://zotero.org/users/16981227/items/6899JX9B"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "JL8FQICV",
       "libraryID": 1,
       "select": "zotero://select/library/items/JL8FQICV"
@@ -10112,6 +10433,7 @@
           "uri": "http://zotero.org/users/16981227/items/485RDPW2"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "53BG348M",
       "libraryID": 1,
       "select": "zotero://select/library/items/53BG348M"
@@ -10154,6 +10476,7 @@
           "uri": "http://zotero.org/users/16981227/items/D57IANX4"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "SUKVSLYH",
       "libraryID": 1,
       "select": "zotero://select/library/items/SUKVSLYH"
@@ -10196,6 +10519,7 @@
           "uri": "http://zotero.org/users/16981227/items/Q5KQCDAZ"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "K66KPFNM",
       "libraryID": 1,
       "select": "zotero://select/library/items/K66KPFNM"
@@ -10238,6 +10562,7 @@
           "uri": "http://zotero.org/users/16981227/items/U6EBHAS7"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "CRN5SUVP",
       "libraryID": 1,
       "select": "zotero://select/library/items/CRN5SUVP"
@@ -10280,6 +10605,7 @@
           "uri": "http://zotero.org/users/16981227/items/CJVLVMVI"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "9MTZV7NX",
       "libraryID": 1,
       "select": "zotero://select/library/items/9MTZV7NX"
@@ -10322,6 +10648,7 @@
           "uri": "http://zotero.org/users/16981227/items/UFG79EK5"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "CRQHK4ZY",
       "libraryID": 1,
       "select": "zotero://select/library/items/CRQHK4ZY"
@@ -10368,6 +10695,7 @@
           "uri": "http://zotero.org/users/16981227/items/QPK3LGHZ"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "WQRPAUHA",
       "libraryID": 1,
       "select": "zotero://select/library/items/WQRPAUHA"
@@ -10414,6 +10742,7 @@
           "uri": "http://zotero.org/users/16981227/items/XEYP53M9"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "QP36X58D",
       "libraryID": 1,
       "select": "zotero://select/library/items/QP36X58D"
@@ -10460,6 +10789,7 @@
           "uri": "http://zotero.org/users/16981227/items/7MXRCKH9"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "IKLWKA2V",
       "libraryID": 1,
       "select": "zotero://select/library/items/IKLWKA2V"
@@ -10505,6 +10835,7 @@
           "uri": "http://zotero.org/users/16981227/items/UT3DTBBX"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "ZHWLWBAM",
       "libraryID": 1,
       "select": "zotero://select/library/items/ZHWLWBAM"
@@ -10548,6 +10879,7 @@
           "uri": "http://zotero.org/users/16981227/items/KLD5A74E"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "E2W4KFWY",
       "libraryID": 1,
       "select": "zotero://select/library/items/E2W4KFWY"
@@ -10594,6 +10926,7 @@
           "uri": "http://zotero.org/users/16981227/items/PBHI4V5K"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "XXTUDVPT",
       "libraryID": 1,
       "select": "zotero://select/library/items/XXTUDVPT"
@@ -10636,6 +10969,7 @@
           "uri": "http://zotero.org/users/16981227/items/WGIU9UFZ"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "VXGEGIPM",
       "libraryID": 1,
       "select": "zotero://select/library/items/VXGEGIPM"
@@ -10679,6 +11013,7 @@
           "uri": "http://zotero.org/users/16981227/items/LEHBLRUI"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "JLHV54MM",
       "libraryID": 1,
       "select": "zotero://select/library/items/JLHV54MM"
@@ -10721,6 +11056,7 @@
           "uri": "http://zotero.org/users/16981227/items/XLHPNMLQ"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "FNBE8TSW",
       "libraryID": 1,
       "select": "zotero://select/library/items/FNBE8TSW"
@@ -10763,6 +11099,7 @@
           "uri": "http://zotero.org/users/16981227/items/AUZDXB3U"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "ZUNPAAX7",
       "libraryID": 1,
       "select": "zotero://select/library/items/ZUNPAAX7"
@@ -10809,6 +11146,7 @@
           "uri": "http://zotero.org/users/16981227/items/7IWDIBVH"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "LF9K3SQW",
       "libraryID": 1,
       "select": "zotero://select/library/items/LF9K3SQW"
@@ -10855,6 +11193,7 @@
           "uri": "http://zotero.org/users/16981227/items/P6YG9GTV"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "RCG7FZWD",
       "libraryID": 1,
       "select": "zotero://select/library/items/RCG7FZWD"
@@ -10897,6 +11236,7 @@
           "uri": "http://zotero.org/users/16981227/items/NQK9MLM8"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "WV8S624M",
       "libraryID": 1,
       "select": "zotero://select/library/items/WV8S624M"
@@ -10943,6 +11283,7 @@
           "uri": "http://zotero.org/users/16981227/items/CXC3ZTDE"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "QQSBUFIN",
       "libraryID": 1,
       "select": "zotero://select/library/items/QQSBUFIN"
@@ -10985,6 +11326,7 @@
           "uri": "http://zotero.org/users/16981227/items/ZUQCF74M"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "V6MRBYNE",
       "libraryID": 1,
       "select": "zotero://select/library/items/V6MRBYNE"
@@ -11027,6 +11369,7 @@
           "uri": "http://zotero.org/users/16981227/items/NCTLKZWM"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "9M9XIKHK",
       "libraryID": 1,
       "select": "zotero://select/library/items/9M9XIKHK"
@@ -11069,6 +11412,7 @@
           "uri": "http://zotero.org/users/16981227/items/UABX898P"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "H9AJWY85",
       "libraryID": 1,
       "select": "zotero://select/library/items/H9AJWY85"
@@ -11111,6 +11455,7 @@
           "uri": "http://zotero.org/users/16981227/items/I7TWAMFH"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "HNKGSCXE",
       "libraryID": 1,
       "select": "zotero://select/library/items/HNKGSCXE"
@@ -11153,6 +11498,7 @@
           "uri": "http://zotero.org/users/16981227/items/RRFUCLIZ"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "ZIYM5FA8",
       "libraryID": 1,
       "select": "zotero://select/library/items/ZIYM5FA8"
@@ -11199,6 +11545,7 @@
           "uri": "http://zotero.org/users/16981227/items/TDVGK2C3"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "DEZPKC7Y",
       "libraryID": 1,
       "select": "zotero://select/library/items/DEZPKC7Y"
@@ -11244,6 +11591,7 @@
           "uri": "http://zotero.org/users/16981227/items/L5X6I3WB"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "GJKSBXQ5",
       "libraryID": 1,
       "select": "zotero://select/library/items/GJKSBXQ5"
@@ -11286,6 +11634,7 @@
           "uri": "http://zotero.org/users/16981227/items/RWS9GVND"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "YEBIGZD3",
       "libraryID": 1,
       "select": "zotero://select/library/items/YEBIGZD3"
@@ -11328,6 +11677,7 @@
           "uri": "http://zotero.org/users/16981227/items/T2UD8B35"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "ECRLXPR5",
       "libraryID": 1,
       "select": "zotero://select/library/items/ECRLXPR5"
@@ -11373,6 +11723,7 @@
           "uri": "http://zotero.org/users/16981227/items/BBCYLN82"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "ASG9NNJQ",
       "libraryID": 1,
       "select": "zotero://select/library/items/ASG9NNJQ"
@@ -11419,6 +11770,7 @@
           "uri": "http://zotero.org/users/16981227/items/FU28ZBDG"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "K3P5MEBX",
       "libraryID": 1,
       "select": "zotero://select/library/items/K3P5MEBX"
@@ -11465,6 +11817,7 @@
           "uri": "http://zotero.org/users/16981227/items/N965SETN"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "NQ3LK7W9",
       "libraryID": 1,
       "select": "zotero://select/library/items/NQ3LK7W9"
@@ -11507,6 +11860,7 @@
           "uri": "http://zotero.org/users/16981227/items/4MQQZUUC"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "7GSLIRQW",
       "libraryID": 1,
       "select": "zotero://select/library/items/7GSLIRQW"
@@ -11553,6 +11907,7 @@
           "uri": "http://zotero.org/users/16981227/items/7XQXBV8P"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "PFEGL83G",
       "libraryID": 1,
       "select": "zotero://select/library/items/PFEGL83G"
@@ -11595,6 +11950,7 @@
           "uri": "http://zotero.org/users/16981227/items/MGJT3TUQ"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "XCYBHE7N",
       "libraryID": 1,
       "select": "zotero://select/library/items/XCYBHE7N"
@@ -11640,6 +11996,7 @@
           "uri": "http://zotero.org/users/16981227/items/ENFNKGYT"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "N3Y9HQZ5",
       "libraryID": 1,
       "select": "zotero://select/library/items/N3Y9HQZ5"
@@ -11685,6 +12042,7 @@
           "uri": "http://zotero.org/users/16981227/items/ES97U4Q7"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "FAGG56E8",
       "libraryID": 1,
       "select": "zotero://select/library/items/FAGG56E8"
@@ -11730,6 +12088,7 @@
           "uri": "http://zotero.org/users/16981227/items/3Y6VVHD9"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "NTA9LJSQ",
       "libraryID": 1,
       "select": "zotero://select/library/items/NTA9LJSQ"
@@ -11777,6 +12136,7 @@
           "uri": "http://zotero.org/users/16981227/items/SKDT2SLX"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "QEH6MEJC",
       "libraryID": 1,
       "select": "zotero://select/library/items/QEH6MEJC"
@@ -11820,6 +12180,7 @@
           "uri": "http://zotero.org/users/16981227/items/DJRR4B65"
         }
       ],
+      "autoJournalAbbreviation": "",
       "itemKey": "UWRP4Q9Q",
       "libraryID": 1,
       "select": "zotero://select/library/items/UWRP4Q9Q"

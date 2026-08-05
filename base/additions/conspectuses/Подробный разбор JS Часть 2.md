@@ -52,7 +52,7 @@ navigator.platform;//определяет ОС
 location.href;//полный адрес до html страницы
 location.reload;//перезагрузить страницу
 ```
-- [ ] #task/inbox #category/webdev - Чем отличается `location.href = "url`" от `window.open` ?
+- [-] #task/inbox #category/webdev - Чем отличается `location.href = "url`" от `window.open` ? ❌ 2026-07-22
 ```js
 location.href = "https://itproger.com";//переход на другую страницу
 ```

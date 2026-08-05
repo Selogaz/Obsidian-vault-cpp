@@ -88,7 +88,7 @@ src/
 ```
 
 # Tasks
-- [ ] #task/multistep #category/webdev Добавить к [[PomodoroMusicExtension]] страницы с настройкой при установке, как в Anki Dictionary
+- [-] #task/multistep #category/webdev Добавить к [[PomodoroMusicExtension]] страницы с настройкой при установке, как в Anki Dictionary ❌ 2026-07-22
 - [ ] Добавить в [[PomodoroMusicExtension]] прикрепление таймера к Obsidian-проекту. Кнопка для автоматической записи количества сессий в проект
 - [ ] Сделать паузу и старт одной кнопкой
 - [ ] Добавить отдельно кнопку стоп(вместо теперешней паузы)
