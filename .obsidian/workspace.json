@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2026-08-05.md",
+                "file": "base/categories/java.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "java"
+            }
+          },
+          {
+            "id": "5be8bbbcf29191ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sources/Пять элементов эффективного мышления.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +52,21 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-08-05"
+              "title": "Пять элементов эффективного мышления"
+            }
+          },
+          {
+            "id": "64f77d702014e56d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -339,7 +374,8 @@
               "title": "Notes Review Queue"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -364,34 +400,34 @@
       "graph:Open graph view": false
     }
   },
-  "active": "bda9ef25e60d256c",
+  "active": "64f77d702014e56d",
   "lastOpenFiles": [
-    "periodic/daily/2026-08-05.md",
-    "base/additions/conspectuses/deep work.md",
-    "sources/Deep work.md",
-    "base/_hierarchy/TailwindCSS.md",
-    "base/categories/webdev.md",
+    "base/categories/java.md",
+    "sources/Пять элементов эффективного мышления.md",
+    "projects/новый проект.md",
+    "sources/a2-english-for-developers.md",
+    "base/additions/conspectuses/конспект.md",
+    "base/additions/conspectuses/Как делать полезные заметки.md",
+    "base/notes/роль правильного рабочего процесса в работе с информацией.md",
+    "base/_hierarchy/паттерны java.md",
+    "base/notes/первое упоминание философии.md",
+    "base/notes/письмо - не линейный процесс.md",
+    "base/categories/english.md",
     "home/index.md",
-    "base/notes/теорема углубленной работы.md",
-    "periodic/daily/2026-08-04.md",
-    "sources/фыва.md",
-    "base/notes/длительность концентрации улучшается со временем при регулярных занятиях.md",
-    "base/notes/общие черты гениев концентрации.md",
-    "base/notes/причины высокой ценности способности к длительной концентрации.md",
-    "base/notes/способы работы без отвлечений.md",
-    "base/additions/aggregators/Deep work - conspectuses.md",
-    "base/additions/conspectuses/Untitled.md",
-    "periodic/daily/2026-08-12.md",
-    "periodic/daily/2026-08-03.md",
-    "base/notes/способ автоматизации работы Excel.md",
-    "base/notes/сопротивление тренду доступности в сети открывает возможности роста.md",
-    "base/_hierarchy/люди, работающие в уединении.md",
-    "base/categories/productivity.md",
-    "base/notes/Интернет может лишать способности к глубоким размышлениям.md",
-    "base/_hierarchy/люди, которым свойственно работать в уединении.md",
-    "periodic/daily/2026-08-02.md",
-    "base/notes/режим дня Карла Юнга.md",
-    "periodic/daily/2026-08-01.md",
+    "base/additions/aggregators/Как делать полезные заметки - conspectuses.md",
+    "sources/Как делать полезные заметки.md",
+    "base/_hierarchy/паттерны python.md",
+    "base/categories/webdev.md",
+    "periodic/daily/2026-08-09.md",
+    "base/additions/conspectuses/deep work.md",
+    "base/notes/причины отвлечений - случайны.md",
+    "base/notes/офисы - залупа.md",
+    "base/notes/Концентрация - не панацея. Примеры успешной многозадачности.md",
+    "base/notes/остаточное внимание.md",
+    "base/creators/Адам Грант.md",
+    "base/creators/Софи Лерой.md",
+    "base/notes/3 кита постановки навыков.md",
+    "base/notes/лучшие ученики тратят на учебу меньше времени, чем отстающие.md",
     "home/databases/breadcrumbs.base",
     "periodic/tasks (grouped by priority).canvas",
     "base/notes/класс Архитектор в Эхо бездны.md.tmp.82914.286f97205fa8",

@@ -524,7 +524,10 @@
         3233,
         3234,
         3235,
-        3236
+        3236,
+        3316,
+        3327,
+        3329
       ]
     },
     "DD6MR3D9": {
@@ -5793,6 +5796,49 @@
       "select": "zotero://select/library/items/VGCFRIGY"
     },
     {
+      "key": "RF77G5NW",
+      "version": 8218,
+      "itemType": "webpage",
+      "title": "muhammadiso-00 - Overview",
+      "abstractNote": "Im very simple guy. muhammadiso-00 has 6 repositories available. Follow their code on GitHub.",
+      "citationKey": "Muhammadiso00Overview",
+      "url": "https://github.com/muhammadiso-00",
+      "accessDate": "2026-08-06T10:28:32Z",
+      "language": "en",
+      "websiteTitle": "GitHub",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-08-06T10:28:32Z",
+      "dateModified": "2026-08-06T10:28:32Z",
+      "uri": "http://zotero.org/users/16981227/items/RF77G5NW",
+      "itemID": 3327,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://github.com/muhammadiso-00",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-08-06T10:28:39Z",
+          "dateModified": "2026-08-06T10:28:39Z",
+          "uri": "http://zotero.org/users/16981227/items/YW9757RS",
+          "path": "/home/exuberance/Zotero/storage/YW9757RS/muhammadiso-00.html",
+          "select": "zotero://select/library/items/YW9757RS"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "RF77G5NW",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/RF77G5NW"
+    },
+    {
       "key": "TABMHQXT",
       "version": 5788,
       "itemType": "document",
@@ -7620,6 +7666,54 @@
       "select": "zotero://select/library/items/B6TGZLP4"
     },
     {
+      "key": "CA5AWEGU",
+      "version": 8220,
+      "itemType": "webpage",
+      "title": "Muhammadiso Sobitxonov - Creative Developer Portfolio",
+      "abstractNote": "Award-winning creative developer specializing in cutting-edge web development, interactive experiences, and modern UI/UX design.",
+      "citationKey": "sobitxonovMuhammadisoSobitxonovCreative",
+      "url": "https://muhammadiso.uz",
+      "accessDate": "2026-08-06T10:28:47Z",
+      "language": "en",
+      "creators": [
+        {
+          "firstName": "Muhammadiso",
+          "lastName": "Sobitxonov",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-08-06T10:28:47Z",
+      "dateModified": "2026-08-06T10:28:47Z",
+      "uri": "http://zotero.org/users/16981227/items/CA5AWEGU",
+      "itemID": 3329,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://muhammadiso.uz",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-08-06T10:28:52Z",
+          "dateModified": "2026-08-06T10:28:52Z",
+          "uri": "http://zotero.org/users/16981227/items/D3CM9WVR",
+          "path": "/home/exuberance/Zotero/storage/D3CM9WVR/muhammadiso.uz.html",
+          "select": "zotero://select/library/items/D3CM9WVR"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "CA5AWEGU",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/CA5AWEGU"
+    },
+    {
       "key": "N3Y3E7T4",
       "version": 5990,
       "itemType": "book",
@@ -9290,6 +9384,36 @@
       "itemKey": "Y4TNT6UC",
       "libraryID": 1,
       "select": "zotero://select/library/items/Y4TNT6UC"
+    },
+    {
+      "key": "NW8N3FQW",
+      "version": 8202,
+      "itemType": "book",
+      "title": "Код Таланта",
+      "citationKey": "zotero-item-3316",
+      "creators": [
+        {
+          "name": "Дэниел Койл",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-08-05T15:07:37Z",
+      "dateModified": "2026-08-05T15:07:49Z",
+      "uri": "http://zotero.org/users/16981227/items/NW8N3FQW",
+      "itemID": 3316,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "NW8N3FQW",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/NW8N3FQW"
     },
     {
       "key": "JI5WGELG",

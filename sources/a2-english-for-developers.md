@@ -25,8 +25,10 @@ url:
 icon: 📃
 color: "#7575c0"
 created: 2026-06-23T00:10:22+03:00
-updated: 2026-06-23T00:46:59+03:00
+updated: 2026-08-09T21:33:57+03:00
 related:
 ---
 
 freeCodeCamp course. Nice work context, introducing yourself and other cool basics
+
+[[конспект]]
