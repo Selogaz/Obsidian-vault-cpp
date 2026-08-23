@@ -108,9 +108,19 @@
   },
   "version": {
     "zotero": "9.0.6",
-    "bbt": "9.0.55"
+    "bbt": "9.0.57"
   },
   "collections": {
+    "BI9U9AUX": {
+      "key": "BI9U9AUX",
+      "parent": "",
+      "name": "🗺️ artistic",
+      "collections": [],
+      "items": [
+        3372,
+        3374
+      ]
+    },
     "QVNRAYT7": {
       "key": "QVNRAYT7",
       "parent": "",
@@ -7482,6 +7492,55 @@
       "select": "zotero://select/library/items/C946HISW"
     },
     {
+      "key": "FPGUET7X",
+      "version": 8313,
+      "itemType": "videoRecording",
+      "title": "Dr. Stone — watch anime online free on YummyAnime",
+      "abstractNote": "After five years of harboring unspoken feelings, high-schooler Taiju Ooki is finally ready to confess his love to Yuzuriha Ogawa. Just when Taiju begins his confession however, a blinding green light strikes the Earth and petrifies mankind around the world—turning every single human into stone.\n\nSeveral millennia later, Taiju awakens to find the modern world completely nonexistent, as nature has flourished in the years humanity stood still. Among a stone world of statues, Taiju encounters one other living human: his science-loving friend Senkuu, who has been active for a few months. Taiju learns that Senkuu has developed a grand scheme—to launch the complete revival of civilization with science. Taiju's brawn and Senkuu's brains combine to forge a formidable partnership, and they soon uncover a method to revive those petrified.\n\nHowever, Senkuu's master plan is threatened when his ideologies are challenged by those who awaken. All the while, the reason for mankind's petrification remains unknown.\n\n[Written by MAL Rewrite]",
+      "citationKey": "sinyaDrStoneWatch",
+      "url": "https://old.yummyani.me/catalog/item/doktor-stoun",
+      "accessDate": "2026-08-11T06:44:36Z",
+      "language": "en",
+      "libraryCatalog": "old.yummyani.me",
+      "creators": [
+        {
+          "firstName": "Ино",
+          "lastName": "Синъя",
+          "creatorType": "creator"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-08-11T06:44:36Z",
+      "dateModified": "2026-08-11T06:44:37Z",
+      "uri": "http://zotero.org/users/16981227/items/FPGUET7X",
+      "itemID": 3374,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://old.yummyani.me/catalog/item/doktor-stoun",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-08-11T06:44:42Z",
+          "dateModified": "2026-08-11T06:44:42Z",
+          "uri": "http://zotero.org/users/16981227/items/GXA2E5AZ",
+          "path": "/home/exuberance/Zotero/storage/GXA2E5AZ/doktor-stoun.html",
+          "select": "zotero://select/library/items/GXA2E5AZ"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "FPGUET7X",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/FPGUET7X"
+    },
+    {
       "key": "5LRQXJK8",
       "version": 5890,
       "itemType": "document",
@@ -8467,6 +8526,55 @@
       "itemKey": "XT29TK9F",
       "libraryID": 1,
       "select": "zotero://select/library/items/XT29TK9F"
+    },
+    {
+      "key": "S2K69IM7",
+      "version": 8308,
+      "itemType": "videoRecording",
+      "title": "The Tunnel to Summer, the Exit of Goodbyes — watch anime online free on YummyAnime",
+      "abstractNote": "Kaoru Touno's family is falling apart. After the death of a sibling and his parents' divorce, he no longer feels any peace at home. Following a heated confrontation with his father, Kaoru runs out of his house and finds himself before a mysterious tunnel, which pulls him in. Bewildered by what he sees inside, he rushes to the exit, picking up a bird that looks identical to his deceased pet on his way out.\n\nUpon emerging outside, Kaoru realizes that, despite him spending just a few minutes inside the tunnel, an entire week has passed. The bizarre experience leads him to remember the rumors of \"Urashima Tunnel\"—a passage that grants wishes in exchange for one's lifespan. Given the resurrection of his pet bird, Kaoru cannot help but wonder if another visit can help fix his messed up life.\n\nHowever, when he returns to the entrance of the mysterious tunnel, Kaoru realizes that he has been followed by Anzu Hanashiro, a new transfer student in his class. She also knows about the rumors and asks him to help her with an experiment—it turns out that she, too, has a wish that only the tunnel can grant.\n\n[Written by MAL Rewrite]",
+      "citationKey": "tomohisaTunnelSummerExit",
+      "url": "https://old.yummyani.me/catalog/item/tonnel-leto-vihod-proshchaniy",
+      "accessDate": "2026-08-11T06:43:47Z",
+      "language": "en",
+      "libraryCatalog": "old.yummyani.me",
+      "creators": [
+        {
+          "firstName": "Тагути",
+          "lastName": "Томохиса",
+          "creatorType": "creator"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-08-11T06:43:47Z",
+      "dateModified": "2026-08-11T06:43:48Z",
+      "uri": "http://zotero.org/users/16981227/items/S2K69IM7",
+      "itemID": 3372,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://old.yummyani.me/catalog/item/tonnel-leto-vihod-proshchaniy",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-08-11T06:43:49Z",
+          "dateModified": "2026-08-11T06:43:49Z",
+          "uri": "http://zotero.org/users/16981227/items/8B7STBDK",
+          "path": "/home/exuberance/Zotero/storage/8B7STBDK/tonnel-leto-vihod-proshchaniy.html",
+          "select": "zotero://select/library/items/8B7STBDK"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "S2K69IM7",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/S2K69IM7"
     },
     {
       "key": "RSFGB2JT",

@@ -13,31 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/categories/java.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "java"
-            }
-          },
-          {
-            "id": "5be8bbbcf29191ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sources/Пять элементов эффективного мышления.md",
+                "file": "periodic/daily/2026-08-23.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,21 +28,83 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Пять элементов эффективного мышления"
+              "title": "2026-08-23"
             }
           },
           {
-            "id": "64f77d702014e56d",
+            "id": "32ab4be5d2c78f7e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "sources/Deep work.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Deep work"
+            }
+          },
+          {
+            "id": "ec13b3ff5f6affec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/additions/conspectuses/deep work.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "deep work"
+            }
+          },
+          {
+            "id": "fd33d8905551ecd1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/Современные теории восстановления или как нонфикшн может убить ваш досуг вместе с отдыхом.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Современные теории восстановления или как нонфикшн может убить ваш досуг вместе с отдыхом"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -370,12 +408,11 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "SpacedRepIcon",
-              "title": "Notes Review Queue"
+              "icon": "lucide-ghost",
+              "title": "review-queue-list-view"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -393,41 +430,45 @@
       "bases:Create new base": false,
       "canvas:Create new canvas": true,
       "workspaces:Manage workspace layouts": true,
-      "obsidian-spaced-repetition:Review flashcards": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
       "periodic-notes:Open today": false,
-      "graph:Open graph view": false
+      "graph:Open graph view": false,
+      "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "64f77d702014e56d",
+  "active": "fd33d8905551ecd1",
   "lastOpenFiles": [
+    "projects/Современные теории восстановления или как нонфикшн может убить ваш досуг вместе с отдыхом.md",
+    "base/additions/conspectuses/deep work.md",
+    "base/notes/правильный отдых от работы.md",
+    "sources/Deep work.md",
+    "periodic/daily/2026-08-23.md",
+    "periodic/daily/2026-08-22.md",
+    "projects/Лечение мигрени.md.tmp.1010421.6fe279738f9a",
+    "projects/Лечение мигрени.md.tmp.1010421.9c18dd8cdc38",
+    "projects/Лечение мигрени.md.tmp.1010421.53e2e5607f8d",
+    "projects/Лечение мигрени.md",
+    "periodic/daily/2026-08-21.md",
+    "base/notes/правки днд 2108.md",
+    "periodic/daily/2026-08-18.md",
+    "base/categories/webdev.md",
+    "home/index.md",
+    "periodic/daily/2026-08-17.md",
+    "periodic/daily/2026-08-16.md",
+    "base/notes/аренда жилья в Беларуси для гражданина РФ.md",
+    "base/notes/аренда жилья в Беларуси для гражданина РФ.md.tmp.35204.de16a465c22f",
+    "periodic/daily/2026-08-14.md",
+    "periodic/daily/2026-08-12.md",
+    "base/additions/conspectuses/консультация Корвин эмиграция.md",
+    "sources/консультация Корвин эмиграция.md",
+    "base/additions/aggregators/консультация Корвин эмиграция - conspectuses.md",
     "base/categories/java.md",
     "sources/Пять элементов эффективного мышления.md",
     "projects/новый проект.md",
     "sources/a2-english-for-developers.md",
     "base/additions/conspectuses/конспект.md",
     "base/additions/conspectuses/Как делать полезные заметки.md",
-    "base/notes/роль правильного рабочего процесса в работе с информацией.md",
-    "base/_hierarchy/паттерны java.md",
-    "base/notes/первое упоминание философии.md",
-    "base/notes/письмо - не линейный процесс.md",
-    "base/categories/english.md",
-    "home/index.md",
-    "base/additions/aggregators/Как делать полезные заметки - conspectuses.md",
-    "sources/Как делать полезные заметки.md",
-    "base/_hierarchy/паттерны python.md",
-    "base/categories/webdev.md",
-    "periodic/daily/2026-08-09.md",
-    "base/additions/conspectuses/deep work.md",
-    "base/notes/причины отвлечений - случайны.md",
-    "base/notes/офисы - залупа.md",
-    "base/notes/Концентрация - не панацея. Примеры успешной многозадачности.md",
-    "base/notes/остаточное внимание.md",
-    "base/creators/Адам Грант.md",
-    "base/creators/Софи Лерой.md",
-    "base/notes/3 кита постановки навыков.md",
-    "base/notes/лучшие ученики тратят на учебу меньше времени, чем отстающие.md",
     "home/databases/breadcrumbs.base",
     "periodic/tasks (grouped by priority).canvas",
     "base/notes/класс Архитектор в Эхо бездны.md.tmp.82914.286f97205fa8",
@@ -435,11 +476,7 @@
     "base/notes/микрошаги этапа 0 — по одному в неделю.md.tmp.273802.1001248cc14d",
     "base/notes/микрошаги этапа 0 — по одному в неделю.md.tmp.273802.7ea051b27172",
     "base/notes/план переезда в Новую Зеландию через Армению.md.tmp.273802.d71c9316f0d2",
-    "base/notes/выживание на удалёнке без выгорания.md.tmp.100226.6efc8bff0ba0",
-    "base/notes/месть за украденный день.md.tmp.100226.114ff7130ad7",
-    "base/notes/выживание на удалёнке без выгорания.md.tmp.100226.9613c0a17278",
     "files/2026-07-08 20260708140951637.png",
-    "base/notes/медицинский брифинг для врача.md.tmp.1545010.d9936ad454d5",
     "files/2026-07-02 20260702215950530.png",
     "files/2026-07-02 20260702215921316.png",
     "files/Pasted image 20260620235621.png",
