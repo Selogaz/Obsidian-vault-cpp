@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bda9ef25e60d256c",
+            "id": "cd3738e7d9f2f5e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2026-08-23.md",
+                "file": "base/additions/conspectuses/конспект - Как привести дела в порядок.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-08-23"
+              "title": "конспект - Как привести дела в порядок"
             }
           },
           {
-            "id": "32ab4be5d2c78f7e",
+            "id": "0814fe3bc414e614",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/Deep work.md",
+                "file": "periodic/daily/2026-09-03.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,17 +52,17 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Deep work"
+              "title": "2026-09-03"
             }
           },
           {
-            "id": "ec13b3ff5f6affec",
+            "id": "685c574aa3492bc3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/additions/conspectuses/deep work.md",
-                "mode": "source",
+                "file": "periodic/statuses/inbox.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -76,17 +76,17 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "deep work"
+              "title": "inbox"
             }
           },
           {
-            "id": "fd33d8905551ecd1",
+            "id": "8eee3b1b52b98a5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/Современные теории восстановления или как нонфикшн может убить ваш досуг вместе с отдыхом.md",
-                "mode": "source",
+                "file": "periodic/calendar.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -100,11 +100,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Современные теории восстановления или как нонфикшн может убить ваш досуг вместе с отдыхом"
+              "title": "calendar"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -408,11 +408,12 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "review-queue-list-view"
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -430,52 +431,54 @@
       "bases:Create new base": false,
       "canvas:Create new canvas": true,
       "workspaces:Manage workspace layouts": true,
+      "obsidian-spaced-repetition:Review flashcards": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
       "periodic-notes:Open today": false,
-      "graph:Open graph view": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "graph:Open graph view": false
     }
   },
-  "active": "fd33d8905551ecd1",
+  "active": "0814fe3bc414e614",
   "lastOpenFiles": [
-    "projects/Современные теории восстановления или как нонфикшн может убить ваш досуг вместе с отдыхом.md",
-    "base/additions/conspectuses/deep work.md",
-    "base/notes/правильный отдых от работы.md",
-    "sources/Deep work.md",
-    "periodic/daily/2026-08-23.md",
-    "periodic/daily/2026-08-22.md",
-    "projects/Лечение мигрени.md.tmp.1010421.6fe279738f9a",
-    "projects/Лечение мигрени.md.tmp.1010421.9c18dd8cdc38",
-    "projects/Лечение мигрени.md.tmp.1010421.53e2e5607f8d",
-    "projects/Лечение мигрени.md",
-    "periodic/daily/2026-08-21.md",
-    "base/notes/правки днд 2108.md",
-    "periodic/daily/2026-08-18.md",
-    "base/categories/webdev.md",
-    "home/index.md",
-    "periodic/daily/2026-08-17.md",
-    "periodic/daily/2026-08-16.md",
-    "base/notes/аренда жилья в Беларуси для гражданина РФ.md",
-    "base/notes/аренда жилья в Беларуси для гражданина РФ.md.tmp.35204.de16a465c22f",
-    "periodic/daily/2026-08-14.md",
-    "periodic/daily/2026-08-12.md",
+    "periodic/statuses/inbox.md",
+    "periodic/daily/2026-09-03.md",
+    "periodic/calendar.md",
+    "periodic/daily/2026-07-22.md",
+    "periodic/daily/2026-08-29.md",
+    "periodic/daily/2026-07-05.md",
+    "base/additions/conspectuses/Краткий обзор JavaScript.md",
+    "home/fleetings.md",
+    "periodic/weekly/2026-W10.md",
+    "base/notes/новая заметка 1.md",
+    "base/notes/горизонтальная концентрация внимания.md",
+    "base/additions/conspectuses/конспект - Как привести дела в порядок.md",
+    "base/notes/горизонтальное управление.md",
+    "base/notes/шестиуровневая модель анализа собственной работы.md",
+    "base/notes/модель анализа повседневной работы.md",
+    "base/notes/следующий шаг.md",
+    "base/notes/4 критерия выбора текущих действий.md",
     "base/additions/conspectuses/консультация Корвин эмиграция.md",
-    "sources/консультация Корвин эмиграция.md",
-    "base/additions/aggregators/консультация Корвин эмиграция - conspectuses.md",
-    "base/categories/java.md",
-    "sources/Пять элементов эффективного мышления.md",
-    "projects/новый проект.md",
-    "sources/a2-english-for-developers.md",
-    "base/additions/conspectuses/конспект.md",
-    "base/additions/conspectuses/Как делать полезные заметки.md",
-    "home/databases/breadcrumbs.base",
+    "base/notes/предварительное планирование.md",
+    "base/notes/задачи с дедлайном делаются в первую очередь.md",
+    "base/notes/еженедельный обзор.md",
+    "base/notes/требует ли это действий.md",
+    "base/notes/5 этапов контроля по Аллену.md",
+    "home/databases/projects.base",
+    "base/notes/план переезда в Новую Зеландию через Армению.md",
+    "base/notes/эмиграция из России во избежание мобилизации.md",
+    "base/_hierarchy/переезд в исландию.md",
+    "periodic/tasks (grouped by effort).canvas",
     "periodic/tasks (grouped by priority).canvas",
-    "base/notes/класс Архитектор в Эхо бездны.md.tmp.82914.286f97205fa8",
-    "base/notes/микрошаги этапа 0 — по одному в неделю.md.tmp.273802.78adb9573e55",
-    "base/notes/микрошаги этапа 0 — по одному в неделю.md.tmp.273802.1001248cc14d",
-    "base/notes/микрошаги этапа 0 — по одному в неделю.md.tmp.273802.7ea051b27172",
-    "base/notes/план переезда в Новую Зеландию через Армению.md.tmp.273802.d71c9316f0d2",
+    "periodic/tasks (grouped by time).canvas",
+    "home/databases/breadcrumbs.base",
+    "projects/Переезд в Армению/Переезд в Армению.md.tmp.140783.7ce65d2358ec",
+    "base/additions/aggregators/Переезд в Армению - researches.md.tmp.140783.535eb66473bb",
+    "base/additions/researches/Переезд в Армению (2026-09-01) - researches.md.tmp.140783.33b94e15050b",
+    "projects/Переезд в Армению/Переезд в Армению.md.tmp.140783.619a8fa4f4ee",
+    "projects/Переезд в Армению/Переезд в Армению.md.tmp.140783.5f1e6a349f71",
+    "base/notes/реформа ВНЖ Армении.md.tmp.140783.350281efa753",
+    "projects/Переезд в Армению/Переезд в Армению.md.tmp.140783.2390ed804609",
+    "base/additions/aggregators/Переезд в Армению - AI.md.tmp.140783.e307d94d9cff",
     "files/2026-07-08 20260708140951637.png",
     "files/2026-07-02 20260702215950530.png",
     "files/2026-07-02 20260702215921316.png",
@@ -492,8 +495,6 @@
     "periodic/2027.canvas",
     "periodic/tasks (grouped by effort)_1.canvas",
     "periodic/2024_1.canvas",
-    "periodic/2025_1.canvas",
-    "periodic/tasks (grouped by time)_1.canvas",
-    "periodic/2026_1.canvas"
+    "periodic/2025_1.canvas"
   ]
 }

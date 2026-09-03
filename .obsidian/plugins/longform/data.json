@@ -1,7 +1,7 @@
 {
   "version": 3,
   "projects": {},
-  "selectedDraftVaultPath": "projects/ЕГЭ Информатика/ЕГЭ Информатика.md",
+  "selectedDraftVaultPath": "projects/Переезд в Армению/Переезд в Армению.md",
   "userScriptFolder": null,
   "sessionStorage": "data",
   "sessions": [
@@ -81,6 +81,10 @@
           "scenes": {
             "1-обработка-текста": 27
           }
+        },
+        "projects/Переезд в Армению/Переезд в Армению.md": {
+          "total": 0,
+          "scenes": {}
         }
       }
     }

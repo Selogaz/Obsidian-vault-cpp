@@ -1,12 +1,12 @@
 ---
 tags:
-  - status/wip
+  - status/hold
   - project/single
   - priority/c
   - category/english
 aliases: []
 addition:
-status: 🟦
+status: ❄
 priority: 🇨
 category:
   - "[[english]]"
@@ -21,7 +21,7 @@ cover:
 icon: ✏️
 color: "#b87535"
 created: 2026-05-19T00:03:12+03:00
-updated: 2026-06-23T00:41:57+03:00
+updated: 2026-09-03T16:38:30+03:00
 ---
 
 > [!toc]- Table of contents

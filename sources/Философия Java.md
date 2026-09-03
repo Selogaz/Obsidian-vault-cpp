@@ -1,6 +1,5 @@
 ---
 tags:
-  - status/todo
   - source/book
   - category/java
 aliases:
@@ -24,6 +23,6 @@ url:
 icon: 📖
 color: "#b5b570"
 created: 2026-03-21T22:37:42+03:00
-updated: 2026-03-21T22:38:12+03:00
+updated: 2026-08-26T10:02:06+03:00
 related:
 ---

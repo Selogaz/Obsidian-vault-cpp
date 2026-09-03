@@ -39,6 +39,7 @@
       "exportCaseProtection": "",
       "exportSort": "citekey",
       "exportTitlecase": "",
+      "extraFieldAsNote": false,
       "extraMergeCitekeys": false,
       "extraMergeCSL": false,
       "extraMergeTeX": false,
@@ -108,7 +109,7 @@
   },
   "version": {
     "zotero": "9.0.6",
-    "bbt": "9.0.57"
+    "bbt": "9.0.63"
   },
   "collections": {
     "BI9U9AUX": {
@@ -537,7 +538,8 @@
         3236,
         3316,
         3327,
-        3329
+        3329,
+        3386
       ]
     },
     "DD6MR3D9": {
@@ -9522,6 +9524,48 @@
       "itemKey": "NW8N3FQW",
       "libraryID": 1,
       "select": "zotero://select/library/items/NW8N3FQW"
+    },
+    {
+      "key": "4JBYS6BC",
+      "version": 8361,
+      "itemType": "book",
+      "title": "Как привести дела в порядок",
+      "citationKey": "zotero-item-3386",
+      "creators": [
+        {
+          "name": "Дэвид Аллен",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-08-29T06:52:12Z",
+      "dateModified": "2026-08-29T06:52:25Z",
+      "uri": "http://zotero.org/users/16981227/items/4JBYS6BC",
+      "itemID": 3386,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Ebook",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-08-29T06:54:03Z",
+          "dateModified": "2026-08-29T06:54:03Z",
+          "uri": "http://zotero.org/users/16981227/items/V8RLKVU3",
+          "path": "/home/exuberance/Zotero/storage/V8RLKVU3/Дэвид Аллен - Как привести дела в порядок.epub",
+          "select": "zotero://select/library/items/V8RLKVU3"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "4JBYS6BC",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/4JBYS6BC"
     },
     {
       "key": "JI5WGELG",
