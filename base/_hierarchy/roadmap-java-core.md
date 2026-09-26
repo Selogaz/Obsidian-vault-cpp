@@ -71,9 +71,9 @@ Java Core — prerequisite для Spring Boot, который является �
 ## Критерии завершения
 
 - [ ] Реализовал 3+ проекта на Java
-	- [ ] ⤵️ #task/reference #category/computer_science Console Todo API
-	- [ ] ⤵️ #task/reference #category/computer_science In-Memory Cache
-	- [ ] ⤵️ #task/reference #category/computer_science Mini Message Broker
+	- [-] ⤵️ #task/reference #category/computer_science Console Todo API ❌ 2026-09-04
+	- [-] ⤵️ #task/reference #category/computer_science In-Memory Cache ❌ 2026-09-04
+	- [-] ⤵️ #task/reference #category/computer_science Mini Message Broker ❌ 2026-09-04
 - [x] Можешь объяснить difference между HashMap и ConcurrentHashMap ✅ 2026-03-21
 - [x] Понимаешь как работает Garbage Collector ✅ 2026-03-21
 - [-] #task/reference #category/computer_science #priority/с #time/long #effort/hard Решил 50+ задач на Codeforces (Java) ❌ 2026-07-04

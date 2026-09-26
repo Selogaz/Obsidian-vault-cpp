@@ -1,7 +1,7 @@
 ---
 tags:
   - mark/addition/researches
-status: 🟥
+status: 🟩
 project:
   - "[[Переезд в Армению]]"
 created: 2026-09-01T09:09:19+03:00

@@ -4,7 +4,7 @@ tags:
   - mark/log/conspectus
   - category/study
 aliases: []
-status: 🟥
+status: ❄
 source:
   - "[[sources/Entrepreneurship]]"
 start: 2026-06-23T09:37:29+03:00
@@ -14,7 +14,7 @@ url:
 icon: 📓
 color: "#6f97c8"
 created: 2026-06-23T09:37:29+03:00
-updated: 2026-06-23T16:37:58+03:00
+updated: 2026-09-04T13:03:35+03:00
 ---
 
 > [!toc]+

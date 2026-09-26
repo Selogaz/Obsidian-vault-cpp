@@ -4,7 +4,7 @@ tags:
   - mark/log/conspectus
   - category/webdev
 aliases: []
-status: 🟦
+status: ❄
 source:
   - "[[sources/A Philosophy Of Software Design]]"
 start: 2026-05-27T23:40:05+03:00
@@ -14,7 +14,7 @@ url:
 icon: 📓
 color: "#6f97c8"
 created: 2026-05-27T23:40:05+03:00
-updated: 2026-06-23T16:29:08+03:00
+updated: 2026-09-04T13:04:07+03:00
 tasks: []
 ---
 

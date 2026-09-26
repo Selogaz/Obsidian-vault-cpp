@@ -18,4 +18,4 @@ sr-ease: 170
 Общепринятые способы организации кода
 [[sources/refactoring guru|refactoring guru]]
 
-- [ ] #task/someday #category/work Написать заметку по паттернам проектирования [[Head First Паттерны Проектирования]]
+- [-] #task/someday #category/work Написать заметку по паттернам проектирования [[Head First Паттерны Проектирования]] ❌ 2026-09-04

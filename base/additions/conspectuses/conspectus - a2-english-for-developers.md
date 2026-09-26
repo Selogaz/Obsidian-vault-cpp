@@ -4,7 +4,7 @@ tags:
   - mark/log/conspectus
   - category/english
 aliases: []
-status: 🟦
+status: 🟩
 source:
   - "[[a2-english-for-developers]]"
 start: 2026-06-23T00:10:56+03:00

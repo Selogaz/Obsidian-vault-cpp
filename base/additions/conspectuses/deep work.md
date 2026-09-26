@@ -4,7 +4,7 @@ tags:
   - mark/log/conspectus
   - category/productivity
 aliases: []
-status: 🟦
+status: 🟩
 source:
   - "[[Deep work]]"
 start: 2026-08-02T12:41:52+03:00
