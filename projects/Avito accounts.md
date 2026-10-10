@@ -2,12 +2,13 @@
 tags:
   - status/wip
   - project/single
-  - priority/c
+  - priority/normal
   - category/webdev
 aliases: []
+description:
 addition:
 status: 🟦
-priority: 🇨
+priority: ◽
 category:
   - "[[webdev]]"
 meta:
@@ -23,6 +24,10 @@ color: "#b87535"
 created: 2026-09-03T11:36:32+03:00
 updated: 2026-09-03T15:07:37+03:00
 ---
+# Tasks
+- [ ] #task/one-off #task/waiting_for Подождать ответа Ивана ➕ 2026-10-08 📅 2026-10-12
+- [x] #task/waiting_for Вспомнить что там вообще с проектом ➕ 2026-09-30 ✅ 2026-10-08
+	- > Иван опять меня игнорит
 
 > [!toc]- Table of contents
 > ```table-of-contents

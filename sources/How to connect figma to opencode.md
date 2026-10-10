@@ -4,6 +4,7 @@ tags:
   - source/article/resource
   - category/webdev
 aliases: []
+description:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@how_to_connect_figma_to_opencode)"
@@ -17,7 +18,7 @@ problem:
 creator:
 production:
 start: 2026-05-21T19:04:04+03:00
-end:
+end: 2026-09-26
 url:
   - https://mehmetbaykar.com/posts/how-to-integrate-figma-mcp-in-claude-and-opencode/
 cover:
@@ -25,6 +26,7 @@ icon: 🌐
 color: "#7575c0"
 created: 2026-05-21T19:04:04+03:00
 updated: 2026-05-21T19:06:52+03:00
+citekey: how_to_connect_figma_to_opencode
 ---
 
 Источник, в котором упоминается этот источник - https://forum.figma.com/suggest-a-feature-11/figma-s-approach-breaks-the-core-promise-of-mcp-52507

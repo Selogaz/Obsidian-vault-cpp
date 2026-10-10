@@ -12,6 +12,9 @@ formulas:
   year: file.name.slice(0, 4)
   updated_relative: updated.relative()
   existing_links: file.links.map(value.asFile()).filter(value.isTruthy())
+  overall: if(file.hasProperty("focus") && file.hasProperty("learn") && file.hasProperty("routine") && file.hasProperty("move") && file.hasProperty("connect") && file.hasProperty("rest"), ((number(focus) + number(learn) + number(routine) + number(move) + number(connect) + number(rest)) / 6).round(1), null)
+  day_quality: if(formula.overall.isEmpty(), null, if(formula.overall >= 7, "Great", if(formula.overall >= 5, "Good", if(formula.overall >= 3, "Okay", "Low"))))
+  unique_day: if(description.isEmpty(), null, 1)
 properties:
   note.reviewed:
     displayName: ✅️
@@ -23,10 +26,14 @@ properties:
     displayName: 🦄 description (text)
   file.name:
     displayName: 📅 period
+  formula.day_quality:
+    displayName: ✨ day quality
+  formula.unique_day:
+    displayName: 🦄 unique days
   formula.existing_links:
     displayName: 🔗 links
   note.focus:
-    displayName: 🧿 focus (0-10)
+    displayName: 🧿 focus
   note.learn:
     displayName: 💡 learn
   note.routine:
@@ -61,47 +68,13 @@ views:
       - property: file.name
         direction: DESC
     columnSize:
-      file.name: 196
-      note.focus: 145
+      file.name: 145
+      note.focus: 90
       note.learn: 90
       note.routine: 100
       note.move: 90
       note.connect: 110
       note.rest: 80
-  - type: list
-    name: 🇩ays (list)
-    filters:
-      and:
-        - file.inFolder("periodic/daily")
-    groupBy:
-      property: formula.month_group
-      direction: DESC
-    order:
-      - file.name
-      - formula.existing_links
-    sort:
-      - property: file.name
-        direction: DESC
-    indentProperties: true
-  - type: table
-    name: 🇩ays (with description)
-    filters:
-      and:
-        - file.inFolder("periodic/daily")
-        - "!description.isEmpty()"
-    groupBy:
-      property: formula.month_group
-      direction: DESC
-    order:
-      - reviewed
-      - file.name
-      - formula.updated_relative
-      - description
-    sort:
-      - property: file.name
-        direction: DESC
-    columnSize:
-      file.name: 145
   - type: table
     name: 🇼eeks
     filters:
@@ -178,23 +151,109 @@ views:
         - "false"
     order:
       - file.name
-  - type: chart-bar
-    name: "📈 Statistics: By Reviewed"
-    x: note.reviewed
-    aggregate:file.name: Count
-    show-labels: true
-  - type: chart-line
-    name: "📈 Statistics: By Actions"
+  - type: periodic-review
+    name: 👁 Review
+    showQuarterly: true
+    showYearly: true
+  - type: table
+    name: "👁 Days: To Review"
     filters:
       and:
         - file.inFolder("periodic/daily")
-        - or:
-            - "!focus.isEmpty()"
-            - "!learn.isEmpty()"
-            - "!move.isEmpty()"
-            - "!connect.isEmpty()"
-            - "!routine.isEmpty()"
-            - "!rest.isEmpty()"
+        - "!reviewed"
+        - date(file.name) < today()
+        - date(file.name) >= today() - "365d"
+    order:
+      - reviewed
+      - file.name
+      - formula.updated_relative
+      - focus
+      - learn
+      - routine
+      - move
+      - connect
+      - rest
+      - description
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 145
+      note.focus: 90
+      note.learn: 90
+      note.routine: 100
+      note.move: 90
+      note.connect: 110
+      note.rest: 80
+  - type: table
+    name: "👁 Weeks: To Review"
+    filters:
+      and:
+        - file.inFolder("periodic/weekly")
+        - "!reviewed"
+        - file.name < today().format("GGGG-[W]WW")
+    order:
+      - reviewed
+      - file.name
+      - formula.updated_relative
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 145
+  - type: table
+    name: "👁 Months: To Review"
+    filters:
+      and:
+        - file.inFolder("periodic/monthly")
+        - "!reviewed"
+        - file.name < today().format("YYYY-MM")
+    order:
+      - reviewed
+      - file.name
+      - formula.updated_relative
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 145
+  - type: table
+    name: "👁 Quarters: To Review"
+    filters:
+      and:
+        - file.inFolder("periodic/quarterly")
+        - "!reviewed"
+        - file.name < today().format("YYYY-[Q]Q")
+    order:
+      - reviewed
+      - file.name
+      - formula.updated_relative
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 145
+  - type: table
+    name: "👁 Years: To Review"
+    filters:
+      and:
+        - file.inFolder("periodic/yearly")
+        - "!reviewed"
+        - file.name < today().format("YYYY")
+    order:
+      - reviewed
+      - file.name
+      - formula.updated_relative
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 145
+  - type: life-tracker
+    name: 📈 Statistics
+    filters:
+      and:
+        - file.inFolder("periodic/daily")
     order:
       - focus
       - learn
@@ -202,14 +261,253 @@ views:
       - connect
       - routine
       - rest
-    sort:
-      - property: file.basename
-        direction: ASC
-    limit: 30
-    x: file.name
-    show-labels: false
-    aggregate: None
-    null-handling: Leave gap
-    min-y-override: "0"
-    max-y-override: "10"
-    sync-y-axes: false
+      - reviewed
+      - formula.overall
+      - formula.day_quality
+      - formula.unique_day
+    columnConfigs:
+      note.focus:
+        - id: e1d85ee5-6abb-46c9-bc85-508fb7c02bc0
+          propertyId: note.focus
+          visualizationType: heatmap
+          displayName: 🧿 focus
+          configuredAt: 1789450938468
+          scale:
+            min: 0
+            max: 10
+          colorScheme:
+            kind: discrete
+            empty: var(--background-modifier-border)
+            mapping:
+              "0": "#bb584f"
+              "1": "#c4654b"
+              "2": "#cb7248"
+              "3": "#d18246"
+              "4": "#d39449"
+              "5": "#d4a552"
+              "6": "#c1ab4f"
+              "7": "#abb055"
+              "8": "#8faf5c"
+              "9": "#6ea75f"
+              "10": "#499e64"
+            fallback: "#cccccc"
+      note.learn:
+        - id: bf4acab4-73ae-4998-9da6-76c6ed20c8e2
+          propertyId: note.learn
+          visualizationType: heatmap
+          displayName: 💡 learn
+          configuredAt: 1789450947250
+          scale:
+            min: 0
+            max: 10
+          colorScheme:
+            kind: discrete
+            empty: var(--background-modifier-border)
+            mapping:
+              "0": "#bb584f"
+              "1": "#c4654b"
+              "2": "#cb7248"
+              "3": "#d18246"
+              "4": "#d39449"
+              "5": "#d4a552"
+              "6": "#c1ab4f"
+              "7": "#abb055"
+              "8": "#8faf5c"
+              "9": "#6ea75f"
+              "10": "#499e64"
+            fallback: "#cccccc"
+      note.move:
+        - id: 3243e093-ac6e-4fca-a730-9e189f6c3c0c
+          propertyId: note.move
+          visualizationType: heatmap
+          displayName: 🧗 move
+          configuredAt: 1789450965166
+          scale:
+            min: 0
+            max: 10
+          colorScheme:
+            kind: discrete
+            empty: var(--background-modifier-border)
+            mapping:
+              "0": "#bb584f"
+              "1": "#c4654b"
+              "2": "#cb7248"
+              "3": "#d18246"
+              "4": "#d39449"
+              "5": "#d4a552"
+              "6": "#c1ab4f"
+              "7": "#abb055"
+              "8": "#8faf5c"
+              "9": "#6ea75f"
+              "10": "#499e64"
+            fallback: "#cccccc"
+      note.connect:
+        - id: 572ebc98-939d-4e96-87e7-3158c6ea2f1d
+          propertyId: note.connect
+          visualizationType: heatmap
+          displayName: 💬 connect
+          configuredAt: 1789451023999
+          scale:
+            min: 0
+            max: 10
+          colorScheme:
+            kind: discrete
+            empty: var(--background-modifier-border)
+            mapping:
+              "0": "#bb584f"
+              "1": "#c4654b"
+              "2": "#cb7248"
+              "3": "#d18246"
+              "4": "#d39449"
+              "5": "#d4a552"
+              "6": "#c1ab4f"
+              "7": "#abb055"
+              "8": "#8faf5c"
+              "9": "#6ea75f"
+              "10": "#499e64"
+            fallback: "#cccccc"
+      note.routine:
+        - id: d5b54882-67a8-4fb1-8b22-edb1b3b090a4
+          propertyId: note.routine
+          visualizationType: heatmap
+          displayName: 🔄 routine
+          configuredAt: 1789450753596
+          scale:
+            min: 0
+            max: 10
+          colorScheme:
+            kind: discrete
+            empty: var(--background-modifier-border)
+            mapping:
+              "0": "#bb584f"
+              "1": "#c4654b"
+              "2": "#cb7248"
+              "3": "#d18246"
+              "4": "#d39449"
+              "5": "#d4a552"
+              "6": "#c1ab4f"
+              "7": "#abb055"
+              "8": "#8faf5c"
+              "9": "#6ea75f"
+              "10": "#499e64"
+            fallback: "#cccccc"
+      note.rest:
+        - id: 08f6054a-de83-4b8c-bc36-b0f703b3d8e8
+          propertyId: note.rest
+          visualizationType: heatmap
+          displayName: 🌙 rest
+          configuredAt: 1789451017698
+          scale:
+            min: 0
+            max: 10
+          colorScheme:
+            kind: discrete
+            empty: var(--background-modifier-border)
+            mapping:
+              "0": "#bb584f"
+              "1": "#c4654b"
+              "2": "#cb7248"
+              "3": "#d18246"
+              "4": "#d39449"
+              "5": "#d4a552"
+              "6": "#c1ab4f"
+              "7": "#abb055"
+              "8": "#8faf5c"
+              "9": "#6ea75f"
+              "10": "#499e64"
+            fallback: "#cccccc"
+      note.reviewed:
+        - id: 6e5a9b4a-8664-48c0-9c92-6192a520dff7
+          propertyId: note.reviewed
+          visualizationType: heatmap
+          displayName: ✅️
+          configuredAt: 1789451106528
+          scale:
+            min: 0
+            max: 1
+          colorScheme:
+            kind: discrete
+            empty: var(--background-modifier-border)
+            mapping:
+              "0": "#bb584f"
+              "1": "#499e64"
+            fallback: "#cccccc"
+      formula.overall:
+        - id: 2a53e933-e9b0-48eb-87c4-c78d6f7f8c1d
+          propertyId: formula.overall
+          visualizationType: line-chart
+          displayName: overall
+          configuredAt: 1789452418530
+          scale:
+            min: 0
+            max: 10
+          referenceLine:
+            enabled: true
+            value: 5
+            label: Solid day
+        - id: ee230130-10d1-4626-8585-79ff0f0617f4
+          propertyId: formula.overall
+          visualizationType: progress
+          displayName: overall
+          configuredAt: 1789453924491
+          referenceLine:
+            enabled: true
+            value: 5
+            label: Solid day
+          target:
+            enabled: true
+            value: 5
+            metric: average
+            period: weekly
+            direction: at-least
+            warnThreshold: 0.5
+      formula.day_quality:
+        - id: 9417c48c-b3ec-44c9-b239-55e05bee1778
+          propertyId: formula.day_quality
+          visualizationType: doughnut-chart
+          displayName: day_quality
+          configuredAt: 1789453329411
+      formula.unique_day:
+        - id: 6756d369-b842-4408-a71b-a6fc59d6da1b
+          propertyId: formula.unique_day
+          visualizationType: heatmap
+          displayName: 🦄 unique days
+          configuredAt: 1789455179510
+          scale:
+            min: 0
+            max: 1
+          colorScheme:
+            kind: discrete
+            empty: var(--background-modifier-border)
+            mapping:
+              "1": "#ba8baf"
+            fallback: "#ba8baf"
+    gridColumns: 3
+    timeFrame: all-time
+    overlayConfigs:
+      d0cd56e4-df25-4ad0-afd7-e31cfc6364c2:
+        id: d0cd56e4-df25-4ad0-afd7-e31cfc6364c2
+        propertyIds:
+          - note.focus
+          - note.learn
+          - note.move
+          - note.connect
+          - note.routine
+          - note.rest
+        visualizationType: line-chart
+        displayName: 📊 Overlay
+        configuredAt: 1789450689502
+        hideIndividualVisualizations: false
+    manualOrder:
+      - overlay:d0cd56e4-df25-4ad0-afd7-e31cfc6364c2
+      - prop:formula.overall
+      - prop:formula.overall
+      - prop:formula.day_quality
+      - prop:formula.unique_day
+      - prop:note.reviewed
+      - prop:note.focus
+      - prop:note.learn
+      - prop:note.move
+      - prop:note.connect
+      - prop:note.routine
+      - prop:note.rest

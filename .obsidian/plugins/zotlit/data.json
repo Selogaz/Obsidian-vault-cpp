@@ -1,0 +1,125 @@
+{
+  "__VERSION__": 9,
+  "release.previous-version": "2.1.4",
+  "note.literature-folder": "sources",
+  "template.folder": "templates/create/sources/zotero",
+  "note.frontmatter-fields": [
+    {
+      "key": "tags",
+      "expr": "(() => {\n  const t = (zt.itemType ?? \"\").toLowerCase();\n\n  const source =\n    /blogpost|document|conferencepaper|forumpost|journalarticle|letter|preprint|magazinearticle|newspaperarticle|report|thesis|webpage/.test(t)\n      ? \"article/paper\"\n    : /book/.test(t)\n      ? \"book\"\n    : /manuscript/.test(t)\n      ? \"course\"\n    : /film/.test(t)\n      ? \"cinematic/movie\"\n    : /podcast|radiobroadcast/.test(t)\n      ? \"podcast\"\n    : /videorecording|tvbroadcast/.test(t)\n      ? \"video/recording\"\n    : \"other\";\n\n  return [`source/${source}`];\n})()",
+      "merge": "replace",
+      "language": "javascript"
+    },
+    {
+      "key": "aliases",
+      "expr": "[zt.title].filter(Boolean)",
+      "merge": "replace",
+      "language": "javascript"
+    },
+    {
+      "key": "category",
+      "expr": "(() => {\n  const segments = [...new Set(\n    zt.collections\n      .flatMap(c => c.path)\n      .map(s => s.replace(/\\+/, \"\").trim())\n      .filter(Boolean)\n  )];\n\n  return segments\n    .filter(s => /🗺️/.test(s))\n    .map(s => `[[${s.replace(/🗺️/g, \"\").trim()}]]`)\n    .filter(s => s !== \"[[]]\");\n})()",
+      "merge": "replace",
+      "language": "javascript"
+    },
+    {
+      "key": "meta",
+      "expr": "(() => {\n  const segments = [...new Set(\n    zt.collections\n      .flatMap(c => c.path)\n      .map(s => s.replace(/\\+/, \"\").trim())\n      .filter(Boolean)\n  )];\n\n  return segments\n    .filter(s => /⇶|🔬|🔎/.test(s))\n    .map(s => `[[${s.replace(/⇶|🔬|🔎/g, \"\").trim()}]]`)\n    .filter(s => s !== \"[[]]\");\n})()",
+      "merge": "replace",
+      "language": "javascript"
+    },
+    {
+      "key": "problem",
+      "expr": "(() => {\n  const segments = [...new Set(\n    zt.collections\n      .flatMap(c => c.path)\n      .map(s => s.replace(/\\+/, \"\").trim())\n      .filter(Boolean)\n  )];\n\n  return segments\n    .filter(s => /⚡️/.test(s))\n    .map(s => `[[${s.replace(/⚡️/g, \"\").trim()}]]`)\n    .filter(s => s !== \"[[]]\");\n})()",
+      "merge": "replace",
+      "language": "javascript"
+    },
+    {
+      "key": "related",
+      "expr": "zt.relatedItems\n  .map(item =>\n    item.noteLink(\n      item.title ?? item.shortTitle ?? item.citationKey ?? item.key\n    )\n  )\n  .filter(Boolean)",
+      "merge": "replace",
+      "language": "javascript"
+    },
+    {
+      "key": "citekey",
+      "expr": "zt.citationKey",
+      "merge": "replace",
+      "language": "liquid"
+    },
+    {
+      "key": "creator",
+      "expr": "zt.authors.map(c =>\n  `[[base/creators/${c.fullName}|${c.fullName}]]`\n)",
+      "merge": "replace",
+      "language": "javascript"
+    },
+    {
+      "key": "production",
+      "expr": "zt.publisher\n  ? [`[[base/productions/${zt.publisher}|${zt.publisher}]]`]\n  : []",
+      "merge": "replace",
+      "language": "javascript"
+    },
+    {
+      "key": "url",
+      "expr": "(() => {\n  const url = zt.url?.trim();\n  if (!url) return [];\n\n  let host = \"\";\n  try {\n    host = new URL(url).hostname\n      .replace(/^www\\./, \"\")\n      .toLowerCase();\n  } catch {}\n\n  let label;\n\n  if (\n    host === \"youtube.com\" ||\n    host.endsWith(\".youtube.com\") ||\n    host === \"youtu.be\"\n  ) {\n    label = \"YouTube\";\n  } else {\n    label =\n      zt.publicationTitle?.trim() ||\n      zt.publisher?.trim() ||\n      zt.libraryCatalog?.trim() ||\n      host ||\n      \"Source\";\n  }\n\n  label = label.replace(/[\\[\\]]/g, \"\");\n\n  return [`[${label}](<${url}>)`];\n})()",
+      "merge": "append",
+      "language": "javascript"
+    },
+    {
+      "key": "zotero",
+      "expr": "zt.citationKey\n  ? `[🇿](zotero://select/items/@${zt.citationKey})`\n  : `[🇿](${zt.backlink})`",
+      "merge": "replace",
+      "language": "javascript"
+    },
+    {
+      "key": "status",
+      "expr": "(() => {\n  const names = zt.tags.map(t => t.name);\n\n  if (names.some(t => /inbox|📥/i.test(t))) return \"📥\";\n  if (names.some(t => /todo|🟥/i.test(t))) return \"🟥\";\n  if (names.some(t => /wip|🟦/i.test(t))) return \"🟦\";\n  if (names.some(t => /atom|⚛/i.test(t))) return \"⚛\";\n  if (names.some(t => /done|🟩/i.test(t))) return \"🟩\";\n\n  return undefined;\n})()",
+      "merge": "replace",
+      "language": "javascript"
+    },
+    {
+      "key": "rating",
+      "expr": "[\"🌕\", \"🌔\", \"🌓\", \"🌒\", \"🌑\"]\n  .find(x => zt.tags.some(t => t.name.includes(x)))",
+      "merge": "replace",
+      "language": "javascript"
+    },
+    {
+      "key": "scientificity",
+      "expr": "[\"🅰️\", \"🅱️\", \"👓\", \"📢\", \"💬\"]\n  .find(x => zt.tags.some(t => t.name.includes(x)))",
+      "merge": "replace",
+      "language": "javascript"
+    },
+    {
+      "key": "published",
+      "expr": "zt.date?.year ?? null",
+      "merge": "replace",
+      "language": "javascript"
+    },
+    {
+      "key": "created",
+      "expr": "(() => {\n  const d = new Date();\n  const pad = n => String(n).padStart(2, \"0\");\n\n  const offset = -d.getTimezoneOffset();\n  const sign = offset >= 0 ? \"+\" : \"-\";\n  const offsetHours = pad(Math.floor(Math.abs(offset) / 60));\n  const offsetMinutes = pad(Math.abs(offset) % 60);\n\n  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}${sign}${offsetHours}:${offsetMinutes}`;\n})()",
+      "merge": "keep",
+      "language": "javascript"
+    },
+    {
+      "key": "start",
+      "expr": "new Date().toISOString()",
+      "merge": "keep",
+      "language": "javascript"
+    }
+  ],
+  "attachment.folder-path": "files",
+  "server.enabled": true,
+  "note.import-folder": "base/notes",
+  "release.notices-enabled": false,
+  "zotero.auto-refresh": true,
+  "citation.editor-suggester": true,
+  "citation.open-as-links": false,
+  "zotero.library-scope": {
+    "mode": "selected",
+    "libraries": [
+      {
+        "type": "personal"
+      }
+    ]
+  }
+}

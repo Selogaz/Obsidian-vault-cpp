@@ -9,21 +9,36 @@ filters:
     - or:
         - '!this.file.hasTag("system/category")'
         - or:
-            - file.hasTag("category/" + this.file.name.replace(" ", "_"))
+            - file.hasTag("category/" + this.file.name.replace(/ /g, "_"))
             - category.contains(link(this.file.name))
 formulas:
+  cover_image: image(cover)
+  cover_sort: if(cover == null, 0, 1)
   backlinks: file.backlinks.length
   outlinks: file.links.length
   created_relative: created.relative()
   updated_relative: updated.relative()
-  type: if(file.tags.toString().contains("#system/category"), "Category", if(file.tags.toString().contains("#system/high/meta"), "Meta-note", if(file.tags.toString().contains("#system/high/problem"), "Problem", if(file.tags.toString().contains("#system/high/hierarchy"), "Hierarchy", "Other"))))
-  category_status: if(file.tags.toString().contains("#system/category"), if(category.isEmpty(), "✅", "❌"), if(file.tags.toString().contains("#system/high/meta"), if(!category.isEmpty(), "✅", "❌"), if(file.tags.toString().contains("#system/high/problem"), if(!category.isEmpty(), "✅", "❌"), if(file.tags.toString().contains("#system/high/hierarchy"), if(!category.isEmpty(), "✅", "❌"), ""))))
-  meta_status: if(file.tags.toString().contains("#system/category"), if(meta.isEmpty(), "✅", "❌"), if(file.tags.toString().contains("#system/high/meta"), if(meta.isEmpty(), "✅", "❌"), if(file.tags.toString().contains("#system/high/problem"), if(!meta.isEmpty(), "✅", "❌"), if(file.tags.toString().contains("#system/high/hierarchy"), "✅", ""))))
-  problem_status: if(file.tags.toString().contains("#system/high/hierarchy"), "✅", if(problem.isEmpty(), "✅", "❌"))
-  category_type_valid: if(category.isEmpty(), "✅", if(list(category).filter(value.asFile().hasTag("system/category")).length == list(category).length, "✅", "❌"))
-  meta_type_valid: if(meta.isEmpty(), "✅", if(list(meta).filter(value.asFile().hasTag("system/high/meta")).length == list(meta).length, "✅", "❌"))
-  problem_type_valid: if(problem.isEmpty(), "✅", if(list(problem).filter(value.asFile().hasTag("system/high/problem")).length == list(problem).length, "✅", "❌"))
+  type: if(file.hasTag("system/category"), "Category", if(file.hasTag("system/high/meta"), "Meta-note", if(file.hasTag("system/high/problem"), "Problem", if(file.hasTag("system/high/hierarchy"), "Hierarchy", "Other"))))
+  category_status: if(file.hasTag("system/category"), if(category.isEmpty(), "✅", "❌"), if(file.hasTag("system/high/meta"), if(!category.isEmpty(), "✅", "❌"), if(file.hasTag("system/high/problem"), if(!category.isEmpty(), "✅", "❌"), if(file.hasTag("system/high/hierarchy"), if(!category.isEmpty(), "✅", "❌"), ""))))
+  meta_status: if(file.hasTag("system/category"), if(meta.isEmpty(), "✅", "❌"), if(file.hasTag("system/high/meta"), if(meta.isEmpty(), "✅", "❌"), if(file.hasTag("system/high/problem"), if(!meta.isEmpty(), "✅", "❌"), if(file.hasTag("system/high/hierarchy"), "✅", ""))))
+  problem_status: if(file.hasTag("system/high/hierarchy"), "✅", if(problem.isEmpty(), "✅", "❌"))
+  category_type_valid: if(category.isEmpty(), "✅", if(list(category).filter(value.isType("link") && value.asFile().hasTag("system/category")).length == list(category).length, "✅", "❌"))
+  meta_type_valid: if(meta.isEmpty(), "✅", if(list(meta).filter(value.isType("link") && value.asFile().hasTag("system/high/meta")).length == list(meta).length, "✅", "❌"))
+  problem_type_valid: if(problem.isEmpty(), "✅", if(list(problem).filter(value.isType("link") && value.asFile().hasTag("system/high/problem")).length == list(problem).length, "✅", "❌"))
+  category_valid: if(formula.category_status == "❌" || formula.category_type_valid == "❌", "❌", "✅")
+  meta_valid: if(formula.meta_status == "❌" || formula.meta_type_valid == "❌", "❌", "✅")
+  problem_valid: if(formula.problem_status == "❌" || formula.problem_type_valid == "❌", "❌", "✅")
 properties:
+  formula.category_valid:
+    displayName: ✓
+  formula.meta_valid:
+    displayName: ✓
+  formula.problem_valid:
+    displayName: ✓
+  note.cover:
+    displayName: 🖼️ cover
+  formula.cover_image:
+    displayName: 🖼️
   file.name:
     displayName: 🔤 title
   note.addition:
@@ -353,6 +368,37 @@ views:
       formula.outlinks: 1
       formula.created_relative: 140
       formula.updated_relative: 140
+  - type: structure
+    name: "🌳 Structure: Tree"
+    layout: graph
+    direction: right
+    edgeLabels: true
+    inherit:
+      - category
+      - meta
+      - problem
+    types:
+      Category:
+        tag: system/category
+        folder: base/categories
+        children:
+          Meta-note: category
+          Hierarchy: category
+      Meta-note:
+        tag: system/high/meta
+        folder: base/_meta-notes
+        children:
+          Problem: meta
+          Hierarchy: meta
+      Problem:
+        tag: system/high/problem
+        folder: base/_problems
+        children:
+          Hierarchy: problem
+      Hierarchy:
+        tag: system/high/hierarchy
+        children:
+          Hierarchy: file.backlinks
   - type: table
     name: ———
     filters:
@@ -376,49 +422,46 @@ views:
     name: ✅ Structure Validation
     filters:
       or:
-        - formula.category_status == "❌"
-        - formula.meta_status == "❌"
-        - formula.problem_status == "❌"
-        - formula.category_type_valid == "❌"
-        - formula.meta_type_valid == "❌"
-        - formula.problem_type_valid == "❌"
+        - formula.category_valid == "❌"
+        - formula.meta_valid == "❌"
+        - formula.problem_valid == "❌"
     order:
       - file.name
-      - formula.category_status
-      - formula.category_type_valid
+      - formula.category_valid
       - category
-      - formula.meta_status
-      - formula.meta_type_valid
+      - formula.meta_valid
       - meta
-      - formula.problem_status
-      - formula.problem_type_valid
+      - formula.problem_valid
       - problem
     sort:
       - property: formula.type
         direction: DESC
-      - property: formula.category_status
+      - property: formula.category_valid
         direction: DESC
-      - property: formula.category_type_valid
+      - property: formula.meta_valid
         direction: DESC
-      - property: formula.meta_status
-        direction: DESC
-      - property: formula.meta_type_valid
-        direction: DESC
-      - property: formula.problem_status
-        direction: DESC
-      - property: formula.problem_type_valid
+      - property: formula.problem_valid
         direction: DESC
       - property: file.name
         direction: ASC
     columnSize:
       file.name: 350
       formula.type: 120
-      formula.category_status: 110
-      formula.category_type_valid: 70
-      formula.meta_status: 1
-      formula.meta_type_valid: 1
-      formula.problem_status: 1
-      formula.problem_type_valid: 1
+      formula.category_valid: 1
+      formula.meta_valid: 1
+      formula.problem_valid: 1
       note.category: 180
       note.meta: 180
       note.problem: 180
+  - type: table
+    name: ⬜ Uncovered
+    groupBy:
+      property: formula.type
+      direction: ASC
+    order:
+      - formula.cover_image
+      - file.name
+      - cover
+    sort:
+      - property: formula.cover_sort
+        direction: ASC

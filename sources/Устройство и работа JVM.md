@@ -1,9 +1,9 @@
 ---
 tags:
-  - status/todo
   - source/article/paper
   - category/java
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@устройство_и_работа_jvm)"
 status: 📥
@@ -21,6 +21,7 @@ icon: 📃
 color: "#7575c0"
 created: 2025-09-20T09:06:13+03:00
 updated: 2026-01-14T00:12:16+03:00
+citekey: устройство_и_работа_jvm
 total_hours: 0
 ---
 

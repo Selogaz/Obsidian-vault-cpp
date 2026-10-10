@@ -4,6 +4,7 @@ tags:
   - mark/log/conspectus
   - category/study
 aliases: []
+description:
 status: ❄
 source:
   - "[[sources/Entrepreneurship]]"

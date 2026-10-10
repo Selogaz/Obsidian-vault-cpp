@@ -3,6 +3,7 @@ tags:
   - source/article/paper
   - category/java
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@вопросы_и_ответы_к_интервью_java_разработчика)"
 status: 📥
@@ -23,6 +24,7 @@ icon: 📃
 color: "#7575c0"
 created: 2025-05-20T09:14:45+03:00
 updated: 2026-04-02T14:39:02+03:00
+citekey: вопросы_и_ответы_к_интервью_java_разработчика
 total_hours: 0
 ---
 

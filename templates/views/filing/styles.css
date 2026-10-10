@@ -1,0 +1,168 @@
+/* A list next to filing zones scrolls inside, so the zones stay beside it. */
+.tabbed-columns:has(.filing) .bases-embed .bases-view {
+  max-height: 70vh;
+}
+
+.filing {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filing__hint {
+  color: var(--text-faint);
+  font-size: .7em;
+}
+
+.filing__empty {
+  color: var(--text-faint);
+  font-size: .75em;
+}
+
+.filing__groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.filing__group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  grid-column: 1 / -1;
+}
+
+.filing__group.is-collapsed {
+  grid-column: auto;
+}
+
+.filing__group.is-collapsed .filing__zones {
+  display: none;
+}
+
+.filing__group.is-related {
+  order: -1;
+}
+
+.filing__group.is-unavailable {
+  opacity: .35;
+}
+
+.filing__group-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  padding: 2px;
+  color: var(--text-muted);
+  font-size: .72em;
+  cursor: pointer;
+}
+
+.filing__group-title::before {
+  content: "▾";
+  color: var(--text-faint);
+}
+
+.filing__group.is-collapsed .filing__group-title::before {
+  content: "▸";
+}
+
+.filing__group-title:hover {
+  color: var(--text-normal);
+}
+
+.filing__count {
+  margin-left: auto;
+  color: var(--text-faint);
+  font-family: var(--font-monospace);
+}
+
+.filing__zones {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.filing__zone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 7px 10px;
+  border: 1px dashed var(--background-modifier-border-hover);
+  border-radius: var(--radius-s);
+  color: var(--text-muted);
+  font-size: .78em;
+  transition: border-color 120ms ease, background-color 120ms ease, color 120ms ease;
+}
+
+.filing__icon {
+  flex: 0 0 auto;
+}
+
+.filing__name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.filing__zone.is-over {
+  border-style: solid;
+  border-color: var(--interactive-accent);
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.filing__zone.is-ready {
+  border-style: solid;
+  border-color: var(--color-green);
+}
+
+.filing__zone.is-not-ready {
+  border-color: var(--color-red);
+  color: var(--text-faint);
+}
+
+.filing__zone.is-not-ready.is-over {
+  background: transparent;
+}
+
+.filing__status {
+  min-height: 1.5em;
+  color: var(--text-muted);
+  font-size: .72em;
+}
+
+.filing__requirements {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 4px;
+  padding-top: 8px;
+  border-top: 1px solid var(--background-modifier-border);
+  color: var(--text-muted);
+  font-size: .72em;
+}
+
+.filing__requirements-lead,
+.filing__requirements-note {
+  color: var(--text-faint);
+}
+
+.filing__requirement {
+  display: grid;
+  grid-template-columns: 9em minmax(0, 1fr);
+  gap: 8px;
+}
+
+.filing__requirement-stage {
+  color: var(--text-normal);
+  white-space: nowrap;
+}
+
+.filing__zone.is-done {
+  border-style: solid;
+  border-color: var(--color-green);
+  color: var(--text-normal);
+}

@@ -1,0 +1,121 @@
+filters:
+  and:
+    - or:
+        - file.inFolder("base/notes")
+        - file.inFolder("sources")
+        - file.inFolder("projects")
+        - file.inFolder("base/contacts")
+        - file.inFolder("base/creators")
+        - file.inFolder("base/productions")
+    - or:
+        - '!this.file.hasTag("system/category")'
+        - or:
+            - file.hasTag("category/" + this.file.name.replace(/ /g, "_"))
+            - category.contains(link(this.file.name))
+formulas:
+  type: if(file.inFolder("sources"), "① 🗃️ source", if(file.inFolder("projects"), "② 🏢 project", if(file.inFolder("base/contacts"), "③ 👤 contact", if(file.inFolder("base/creators"), "④ 👨‍🎨 creator", if(file.inFolder("base/productions"), "⑤ 🏭 production", "⑥ 📝 note")))))
+  is_material: |
+    !file.inFolder("base/notes") && file.properties.keys().contains("category") && status != "⬛"
+      && !file.hasTag("mark/scene") && !(file.inFolder("sources") && file.hasTag("mark/log"))
+  has_category: '!category.isEmpty() || file.hasTag("category")'
+  md_links_count: file.links.filter(value.asFile().ext == "md").length
+  without_category: |
+    if(file.inFolder("base/notes"),
+      !formula.has_category && (formula.md_links_count > 0 || file.backlinks.length > 0),
+      formula.is_material && !formula.has_category)
+  created_relative: created.relative()
+  updated_relative: updated.relative()
+properties:
+  file.name:
+    displayName: 🔤 title
+  formula.type:
+    displayName: 🗄️ type
+  note.status:
+    displayName: 💯
+  note.category:
+    displayName: 🗺️ category
+  note.meta:
+    displayName: 🔎 meta
+  note.problem:
+    displayName: ⚡ problem
+  formula.created_relative:
+    displayName: 🆕 created
+  formula.updated_relative:
+    displayName: 🔄 updated
+views:
+  - type: table
+    name: "🗺️ Without Category: Last 12 Months"
+    filters:
+      and:
+        - 'created && date(created) >= today() - "365d"'
+        - formula.without_category
+    groupBy:
+      property: formula.type
+      direction: ASC
+    order:
+      - file.name
+      - status
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: created
+        direction: DESC
+    columnSize:
+      file.name: 420
+  - type: table
+    name: "🗺️ Without Category: Last 90 Days"
+    filters:
+      and:
+        - 'created && date(created) >= today() - "90d"'
+        - formula.without_category
+    groupBy:
+      property: formula.type
+      direction: ASC
+    order:
+      - file.name
+      - status
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: created
+        direction: DESC
+    columnSize:
+      file.name: 420
+  - type: table
+    name: "🗺️ Without Category: All Time"
+    filters:
+      and:
+        - formula.without_category
+    groupBy:
+      property: formula.type
+      direction: ASC
+    order:
+      - file.name
+      - status
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: created
+        direction: DESC
+    columnSize:
+      file.name: 420
+  - type: table
+    name: "🔎 Group: By Meta"
+    filters:
+      and:
+        - formula.is_material
+        - file.properties.keys().contains("meta")
+    groupBy:
+      property: note.meta
+      direction: ASC
+    order:
+      - file.name
+      - formula.type
+      - status
+      - note.problem
+      - formula.updated_relative
+    sort:
+      - property: updated
+        direction: DESC
+    columnSize:
+      file.name: 420

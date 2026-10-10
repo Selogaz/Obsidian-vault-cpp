@@ -1,15 +1,16 @@
 ---
 tags:
+  - category/webdev
   - task/default
 aliases: []
+description: ""
 id: ПОМ-4
 attribute:
-description: ""
 project:
   - "[[Подземелья Максвелла]]"
 milestone:
 status: 🟩
-priority: 🇧
+priority: 🔼
 related:
 blockedBy:
 category:
@@ -20,7 +21,7 @@ creator:
 production:
 url:
 start: 2026-06-11T10:39:47+03:00
-end:
+end: 2026-09-26
 icon: ✓
 color: "#d8d8d8"
 created: 2026-06-11T10:39:47+03:00

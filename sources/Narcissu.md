@@ -4,6 +4,7 @@ tags:
   - source/game
   - category/english
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@narcissu)"
 status: ⬛
@@ -16,11 +17,12 @@ problem:
 creator:
 production:
 start: 2026-03-20T16:26:03+03:00
-end:
+end: 2026-09-26
 icon: 🎮
 color: "#3a9560"
 created: 2026-03-20T16:26:03+03:00
 updated: 2026-06-02T13:19:26+03:00
+citekey: narcissu
 ---
 
 visual novel

@@ -1,0 +1,123 @@
+.vault-inventory {
+  margin-bottom: var(--stats-section-gap, 26px);
+  border-top: 1px solid var(--background-modifier-border);
+  border-bottom: 1px solid var(--background-modifier-border);
+  color: var(--text-normal);
+  font-variant-numeric: tabular-nums;
+}
+
+.vault-inventory__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  color: var(--text-muted);
+}
+
+.vault-inventory__header > span {
+  font-size: .68em;
+}
+
+.vault-inventory__header strong {
+  color: var(--text-normal);
+  font-size: .68em;
+  font-weight: var(--font-semibold);
+}
+
+.vault-inventory__section {
+  margin: 0;
+  border-top: 1px solid color-mix(in srgb, var(--background-modifier-border) 72%, transparent);
+}
+
+.vault-inventory__header + .vault-inventory__section {
+  border-top: 0;
+}
+
+.vault-inventory__section summary {
+  display: grid;
+  grid-template-columns: 12px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  color: var(--text-normal);
+  font-size: .74em;
+  cursor: pointer;
+}
+
+.vault-inventory__section summary:hover {
+  background: var(--background-modifier-hover);
+}
+
+.vault-inventory__section summary::before {
+  color: var(--text-faint);
+  font-size: 1em;
+  line-height: 1;
+  content: "›";
+}
+
+.vault-inventory__section[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.vault-inventory__section summary > span:first-child {
+  min-width: 0;
+}
+
+.vault-inventory__section summary > span:last-child {
+  flex: 0 0 auto;
+  color: var(--text-muted);
+  font-size: .86em;
+}
+
+.vault-inventory__section summary b {
+  color: var(--text-normal);
+  font-size: 1em;
+  font-weight: var(--font-semibold);
+}
+
+.vault-inventory__section[open] summary {
+  color: var(--text-accent);
+}
+
+.vault-inventory__body {
+  padding: 2px 12px 10px 30px;
+}
+
+.vault-inventory__line {
+  display: grid;
+  grid-template-columns: minmax(105px, 0.28fr) minmax(0, 1fr);
+  gap: 12px;
+  padding: 5px 0;
+}
+
+.vault-inventory__line > span {
+  color: var(--text-muted);
+  font-size: .65em;
+  line-height: 1.45;
+}
+
+.vault-inventory__values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 13px;
+}
+
+.vault-inventory__value {
+  color: var(--text-normal);
+  font-size: .7em;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+@media (max-width: 520px) {
+  .vault-inventory__line {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  .vault-inventory__body {
+    padding-left: 24px;
+  }
+}

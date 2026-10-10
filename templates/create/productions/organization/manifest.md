@@ -1,15 +1,18 @@
 ---
 name: 🏢 Organization
+description: "A production note for a group that fits no other type."
 target:
   query: "#production/organization"
 fields:
   icon:
     type: text
+    description: "The icon for this note type."
     required: true
     hidden: true
     fixed: 🏢
   color:
     type: text
+    description: "The color for this note type."
     required: true
     hidden: true
     fixed: "#c85545"
@@ -23,6 +26,9 @@ formatting:
     - meta
     - problem
     - relevant
+    - icon
+    - color
+    - cover
     - created
     - updated
 ---

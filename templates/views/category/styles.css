@@ -1,0 +1,71 @@
+/* Category header line. templates/views/inbox/styles.css renders the same line
+   for the inbox and keeps the same rules. */
+
+.stat-line {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 0;
+  margin-left: 8px;
+  font-size: .8em;
+  vertical-align: middle;
+}
+
+.stat-line__lead,
+.stat-line__group {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0 11px;
+  padding: 0 11px;
+  white-space: nowrap;
+}
+
+.stat-line__lead {
+  padding-left: 0;
+}
+
+.stat-line__group--divided {
+  border-left: 1px solid var(--background-modifier-border-hover);
+}
+
+.stat-line__label {
+  color: var(--text-faint);
+}
+
+.stat-count {
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.stat-count b {
+  color: var(--text-normal);
+  font-family: var(--font-monospace);
+  font-variant-numeric: tabular-nums;
+  font-weight: var(--font-semibold);
+}
+
+.stat-count[data-growth='true'] b {
+  color: var(--color-green);
+}
+
+.stat-count[data-zero='true'] b {
+  color: var(--text-faint);
+  font-weight: normal;
+}
+
+.stat-count[role='button'] {
+  cursor: pointer;
+}
+
+.stat-count[role='button']:hover {
+  color: var(--text-normal);
+  text-decoration: underline;
+  text-decoration-color: var(--background-modifier-border-hover);
+  text-underline-offset: 3px;
+}
+
+.stat-count[role='button']:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid var(--interactive-accent);
+  outline-offset: 2px;
+}

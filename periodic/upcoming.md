@@ -18,7 +18,7 @@ color: "#e8e8e8"
 ---
 
 >[!todo|hidden]
-> `$=dv.span("[[periodic/daily/" + moment().format("YYYY-MM-DD") + "|" + moment().format("D MMMM • dddd") + "]]")` ┃ [[today|today]] ┃ [[calendar|calendar]]
+> `$=dv.span("[[periodic/daily/" + moment().format("YYYY-MM-DD") + "|" + moment().format("D MMMM • dddd") + "]]")` ┃ [[today|today]]
 > ___
 > ```tasks
 > not done

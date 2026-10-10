@@ -1,9 +1,10 @@
 ---
 tags:
-  - status/hold
+  - status/drop
   - source/article/paper
   - category/health
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@prostosocial_bot)"
 status: ⬛
@@ -17,11 +18,12 @@ problem:
 creator:
 production:
 start: 2025-05-21T15:46:55+03:00
-end:
+end: 2026-09-26
 icon: 📃
 color: "#7575c0"
 created: 2025-05-21T15:46:55+03:00
 updated: 2026-04-02T14:41:17+03:00
+citekey: prostosocial_bot
 total_hours: 0
 ---
 

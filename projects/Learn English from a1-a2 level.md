@@ -2,12 +2,13 @@
 tags:
   - status/hold
   - project/single
-  - priority/c
+  - priority/normal
   - category/english
 aliases: []
+description:
 addition:
 status: ❄
-priority: 🇨
+priority: ◽
 category:
   - "[[english]]"
 meta:

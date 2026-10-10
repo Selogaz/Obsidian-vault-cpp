@@ -3,15 +3,15 @@
  * Modes: "new", "delete", "additions"
  *
  * Task structure:
- * - [ ] #task/type #category/name #priority/x #time/x #effort/x task text
- * 	- [ ] ⤵️ #task/type #category/name #priority/x #time/x #effort/x subtask text
- * 	- [ ] ⤵️ 💬 #task/type subtask with comments
- * 		- comment line
+ * - [ ] #task/type #category/name #time/x #effort/x task text 🔺
+ * 	- [/] #task/type subtask text
+ * 		- indented line without a checkbox, left as it is
  *
  * Features:
- * - Tasks with tabulation are automatically marked as subtasks with ⤵️
- * - Tasks with comment lines (indented text without task marker) get 💬 marker
- * - Comment detection works only when multiple lines are selected
+ * - The checkbox content ([ ], [x], [/] or any custom status) is kept as written
+ * - Indentation is kept as written, tabs or spaces, also inside blockquotes
+ * - Indented lines without a checkbox (comments, descriptions, time entries) are left as they are
+ * - A legacy ⤵️ subtask marker is removed and never added
  */
 // ============================================================================
 // CONFIGURATION & CONSTANTS
@@ -32,8 +32,8 @@ const TAG_CONFIGS = {
     nameTransform: (name) => name.replace(/ /g, '_'),
   },
   priority: {
-    prefix: '#priority/',
-    tags: ['a', 'b', 'c', 'd', 'e'],
+    prefix: '',
+    tags: ['🔺', '⏫', '🔼', '🔽', '⏬'],
   },
   time: {
     prefix: '#time/',
@@ -47,11 +47,11 @@ const TAG_CONFIGS = {
 
 const MENU_OPTIONS = {
   priority: [
-    '🇦 important, urgently',
-    '🇧 important, not urgently',
-    '🇨 common task',
-    '🇩 delegate',
-    '🇪 estimate',
+    '🔺 highest (important, urgent)',
+    '⏫ high (important, not urgent)',
+    '🔼 medium',
+    '🔽 low (delegate)',
+    '⏬ lowest (eliminate)',
   ],
   time: [
     '🤏 quick (t ⪅15 min)',
@@ -200,13 +200,10 @@ class TagUpdater {
 class TaskLine {
   constructor(line) {
     this.original = line;
-    this.blockquote = '';
-    this.tabulation = '';
+    this.blockquote = ''; // kept as written, for example "> " or "> > "
+    this.indent = ''; // kept as written, tabs or spaces
     this.taskMarker = '- [ ] ';
-    this.isSubtask = false;
-    this.subtaskMarker = '⤵️ ';
-    this.hasComments = false;
-    this.commentMarker = '💬 ';
+    this.legacySubtaskMarker = '⤵️';
     this.isComment = false; // True if this line is a comment, not a task
     this.tags = {
       status: [],
@@ -227,49 +224,42 @@ class TaskLine {
 
     let remaining = line;
 
-    // Extract blockquote (>)
-    const blockquoteMatch = remaining.match(/^>+/);
+    // Extract blockquote (>), with the single space after each marker
+    const blockquoteMatch = remaining.match(/^(?:> ?)+/);
     if (blockquoteMatch) {
       this.blockquote = blockquoteMatch[0];
       remaining = remaining.slice(this.blockquote.length);
-      // Remove single space after blockquote if present
-      if (remaining.startsWith(' ')) {
-        remaining = remaining.slice(1);
-      }
     }
 
-    // Extract tabulation
-    const tabulationMatch = remaining.match(/^[\t]+/);
-    if (tabulationMatch) {
-      this.tabulation = tabulationMatch[0];
-      this.isSubtask = true; // Task with tabulation is a subtask
-      remaining = remaining.slice(this.tabulation.length);
-    }
+    // Extract indentation exactly as written: tabs, spaces or a mix
+    this.indent = remaining.match(/^[ \t]*/)[0];
+    remaining = remaining.slice(this.indent.length);
 
-    // Remove only spaces (not tabs) before task marker
-    remaining = remaining.replace(/^ +/, '');
-
-    // Check if this is a task (has task marker) or a comment (no task marker)
-    const taskMarkerMatch = remaining.match(/^- \[.\] /);
+    // Check if this is a task (has task marker) or a comment (no task marker).
+    // The marker is kept as written, so a custom status like [/] survives.
+    const taskMarkerMatch = remaining.match(/^(?:[-*+]|\d+[.)]) \[[^\]]\] /);
     if (taskMarkerMatch) {
       // This is a task
       this.taskMarker = taskMarkerMatch[0];
       remaining = remaining.slice(this.taskMarker.length);
 
-      // Extract subtask marker if present
-      if (remaining.startsWith(this.subtaskMarker)) {
-        remaining = remaining.slice(this.subtaskMarker.length);
-      }
-
-      // Extract comment marker if present
-      if (remaining.startsWith(this.commentMarker)) {
-        this.hasComments = true;
-        remaining = remaining.slice(this.commentMarker.length);
+      // Drop a legacy subtask marker if present
+      if (remaining.startsWith(this.legacySubtaskMarker)) {
+        remaining = remaining
+          .slice(this.legacySubtaskMarker.length)
+          .replace(/^\uFE0F?[ \t]*/, '');
       }
     } else {
-      // This is a comment line (has tabulation but no task marker)
-      if (this.tabulation) {
+      // This is a comment line (indented, no task marker)
+      if (this.indent) {
         this.isComment = true;
+      } else {
+        // A plain list item becomes a task with the same bullet
+        const bulletMatch = remaining.match(/^([-*+]|\d+[.)]) /);
+        if (bulletMatch) {
+          this.taskMarker = bulletMatch[1] + ' [ ] ';
+          remaining = remaining.slice(bulletMatch[0].length);
+        }
       }
     }
 
@@ -297,35 +287,18 @@ class TaskLine {
       return this.original;
     }
 
-    // Build the line piece by piece
-    let result = '';
+    // Blockquote and indentation go back exactly as they were written
+    const prefix = this.blockquote + this.indent;
 
-    // Add blockquote if present
-    if (this.blockquote) {
-      result += this.blockquote + ' ';
-    }
+    // Build the rest of the line piece by piece
+    let result = this.taskMarker;
 
-    // Add tabulation (tabs only, no spaces)
-    result += this.tabulation;
-
-    // Add task marker
-    result += this.taskMarker;
-
-    // Add subtask marker if this is a subtask
-    if (this.isSubtask) {
-      result += this.subtaskMarker;
-    }
-
-    // Add comment marker if task has comments
-    if (this.hasComments) {
-      result += this.commentMarker;
-    }
-
-    // Collect non-empty tags
+    // Collect non-empty tags (priority is excluded: Tasks' emoji-format
+    // parser requires the priority signifier to trail the description,
+    // not sit among the other tags)
     const tagParts = [
       this.tags.status.filter(Boolean).join(' '),
       this.tags.category.filter(Boolean).join(' '),
-      this.tags.priority.filter(Boolean).join(' '),
       this.tags.time.filter(Boolean).join(' '),
       this.tags.effort.filter(Boolean).join(' '),
     ].filter((part) => part.trim());
@@ -344,8 +317,14 @@ class TaskLine {
       result += this.text;
     }
 
-    // Clean up multiple spaces (but not tabs) and return
-    return result.replace(/ {2,}/g, ' ');
+    // Add priority signifier at the very end, per Tasks' emoji format
+    const priority = this.tags.priority.filter(Boolean).join(' ');
+    if (priority) {
+      result += ' ' + priority;
+    }
+
+    // Clean up multiple spaces, but never touch the indentation
+    return prefix + result.replace(/ {2,}/g, ' ');
   }
 }
 
@@ -440,61 +419,6 @@ class UserInputHandler {
 }
 
 // ============================================================================
-// COMMENT DETECTION HELPER
-// ============================================================================
-
-/**
- * Analyze lines and mark tasks that have comments
- * A task has comments if there are comment lines (lines with tabulation but no task marker)
- * immediately following it at a deeper level
- */
-function detectComments(lines) {
-  const parsed = lines.map((line) => {
-    if (line.trim() === '')
-      return { line, isTask: false, isComment: false, level: 0 };
-
-    const task = new TaskLine(line);
-    const level = task.tabulation.length;
-
-    return {
-      line,
-      task,
-      isTask: !task.isComment,
-      isComment: task.isComment,
-      level,
-    };
-  });
-
-  // For each task, check if it has comments following it
-  for (let i = 0; i < parsed.length; i++) {
-    if (!parsed[i].isTask) continue;
-
-    const taskLevel = parsed[i].level;
-
-    // Look ahead for comments at the next level
-    for (let j = i + 1; j < parsed.length; j++) {
-      const item = parsed[j];
-
-      // Empty line - skip
-      if (item.line.trim() === '') continue;
-
-      // If we find a comment at a deeper level than the task, mark the task as having comments
-      if (item.isComment && item.level > taskLevel) {
-        parsed[i].task.hasComments = true;
-        break; // Found at least one comment, that's enough
-      }
-
-      // If we find a task or comment at the same or shallower level, stop looking
-      if (item.level <= taskLevel) {
-        break;
-      }
-    }
-  }
-
-  return parsed;
-}
-
-// ============================================================================
 // MODE PROCESSORS
 // ============================================================================
 
@@ -518,14 +442,10 @@ class ModeProcessor {
     // Parse and process lines
     const lines = content.split('\n');
 
-    // Detect comments only if we have multiple lines
-    const shouldDetectComments = lines.length > 1;
-    const parsedData = shouldDetectComments ? detectComments(lines) : null;
-
-    const processedLines = lines.map((line, index) => {
+    const processedLines = lines.map((line) => {
       if (line.trim() === '') return line;
 
-      const task = parsedData ? parsedData[index].task : new TaskLine(line);
+      const task = new TaskLine(line);
 
       // If this is a comment line, return it unchanged
       if (task.isComment) {
@@ -574,14 +494,10 @@ class ModeProcessor {
     // Parse and process lines
     const lines = content.split('\n');
 
-    // Detect comments only if we have multiple lines
-    const shouldDetectComments = lines.length > 1;
-    const parsedData = shouldDetectComments ? detectComments(lines) : null;
-
-    const processedLines = lines.map((line, index) => {
+    const processedLines = lines.map((line) => {
       if (line.trim() === '') return line;
 
-      const task = parsedData ? parsedData[index].task : new TaskLine(line);
+      const task = new TaskLine(line);
 
       // If this is a comment line, return it unchanged
       if (task.isComment) {
@@ -660,12 +576,6 @@ class ModeProcessor {
         time: [],
         effort: [],
       };
-
-      // Remove subtask marker
-      task.isSubtask = false;
-
-      // Remove comment marker
-      task.hasComments = false;
 
       return task.build();
     });

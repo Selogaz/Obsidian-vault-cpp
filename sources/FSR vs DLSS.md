@@ -5,6 +5,7 @@ tags:
   - category/computer_science
 aliases:
   - FSR vs DLSS | Как работает | Графику сравниваю не я, а - ВЫ!
+description:
 published: 2021
 addition:
 zotero: "[🇿](zotero://select/items/@etotkompyuterFSRVsDLSS2021)"
@@ -19,13 +20,14 @@ creator:
   - "[[Этот Компьютер]]"
 production:
 start: 2025-10-24T09:55:00+03:00
-end:
+end: 2026-09-26
 url:
   - "[YouTube](https://www.youtube.com/watch?v=WP0y9xZLW9w)"
 icon: 📹
 color: "#2a9070"
 created: 2025-10-24T09:55:00+03:00
 updated: 2026-02-28T23:33:53+03:00
+citekey: etotkompyuterFSRVsDLSS2021
 related:
 total_hours: 0
 ---

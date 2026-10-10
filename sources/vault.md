@@ -4,6 +4,7 @@ tags:
   - source/article/paper
   - category/obsidian
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@vault)"
 status: 🟦
@@ -24,6 +25,7 @@ icon: 📃
 color: "#7575c0"
 created: 2025-05-20T12:24:31+03:00
 updated: 2026-06-11T00:53:07+03:00
+citekey: vault
 total_hours: 0
 ---
 

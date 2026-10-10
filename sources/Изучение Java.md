@@ -1,9 +1,9 @@
 ---
 tags:
-  - status/todo
   - source/article/paper
   - category/java
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@изучение_java)"
 status: 📥
@@ -24,6 +24,7 @@ icon: 📃
 color: "#7575c0"
 created: 2025-05-20T16:08:03+03:00
 updated: 2026-01-14T00:23:12+03:00
+citekey: изучение_java
 total_hours: 0
 ---
 

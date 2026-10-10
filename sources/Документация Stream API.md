@@ -1,9 +1,9 @@
 ---
 tags:
-  - status/todo
   - source/article/paper
   - category/java
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@документация_stream_api)"
 status: 📥
@@ -21,6 +21,7 @@ icon: 📃
 color: "#7575c0"
 created: 2025-09-19T20:40:52+03:00
 updated: 2026-01-14T00:23:36+03:00
+citekey: документация_stream_api
 total_hours: 0
 ---
 

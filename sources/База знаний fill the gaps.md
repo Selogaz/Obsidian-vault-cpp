@@ -1,9 +1,9 @@
 ---
 tags:
-  - status/hold
   - source/article/paper
   - category/java
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@база_знаний_fill_the_gaps)"
 status: 📥
@@ -21,6 +21,7 @@ icon: 📃
 color: "#7575c0"
 created: 2025-09-19T19:09:11+03:00
 updated: 2026-04-02T14:35:47+03:00
+citekey: база_знаний_fill_the_gaps
 total_hours: 0
 ---
 

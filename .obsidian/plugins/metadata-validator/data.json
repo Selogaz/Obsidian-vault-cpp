@@ -8,6 +8,8 @@
   "showSidebarPanel": true,
   "showFileExplorerBadges": false,
   "interceptBases": true,
+  "showBasesErrors": true,
+  "enableJsExecution": true,
   "enableLiveValidation": true,
   "backgroundScanInterval": 5,
   "globalPropertyOrder": [

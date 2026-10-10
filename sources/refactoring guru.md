@@ -1,9 +1,10 @@
 ---
 tags:
-  - status/hold
+  - status/drop
   - source/article/paper
   - category/java
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@refactoring_guru)"
 status: ⬛
@@ -16,11 +17,12 @@ problem:
 creator:
 production:
 start: 2025-08-06T14:27:29+03:00
-end:
+end: 2026-09-26
 icon: 📃
 color: "#7575c0"
 created: 2025-08-06T14:27:29+03:00
 updated: 2026-04-02T14:41:42+03:00
+citekey: refactoring_guru
 total_hours: 0
 ---
 

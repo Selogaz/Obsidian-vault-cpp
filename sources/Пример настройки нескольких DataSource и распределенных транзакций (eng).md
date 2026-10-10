@@ -1,9 +1,9 @@
 ---
 tags:
-  - status/todo
   - source/article/paper
   - category/java
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@пример_настройки_нескольких_datasource_и_распределенных_транзакций_eng)"
 status: 📥
@@ -21,6 +21,7 @@ icon: 📃
 color: "#7575c0"
 created: 2025-09-20T08:39:37+03:00
 updated: 2026-01-14T00:19:47+03:00
+citekey: пример_настройки_нескольких_datasource_и_распределенных_транзакций_eng
 total_hours: 0
 ---
 

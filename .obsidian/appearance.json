@@ -1,22 +1,22 @@
 {
-  "baseFontSize": 25,
+  "baseFontSize": 20,
   "baseFontSizeAction": false,
-  "showViewHeader": false,
+  "showViewHeader": true,
   "nativeMenus": false,
   "enabledCssSnippets": [
     "supercharged-links-manual",
-    "tags",
+    "supercharged-links",
+    "callouts",
     "fonts",
     "general-view",
-    "cssclasses",
-    "callouts",
-    "modals",
-    "calendar",
-    "supercharged-links",
-    "supercharged-links-gen",
-    "mobile"
+    "tags",
+    "obsidian-base16-dark",
+    "cssclasses"
   ],
   "cssTheme": "Base16 Default Dark",
   "showRibbon": false,
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "interfaceFontFamily": "",
+  "textFontFamily": "",
+  "monospaceFontFamily": ""
 }

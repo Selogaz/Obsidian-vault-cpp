@@ -14,50 +14,42 @@
   padding: 0 !important;
   margin: 0 !important;
 }
-.callout[data-callout-metadata='hidden'] .callout-title {
-  display: none;
-}
-.callout[data-callout-metadata='hidden'].callout,
-.callout[data-callout-metadata='hidden'] .callout-content,
-.callout[data-callout-metadata='hidden'] p {
-  background-color: transparent !important;
-  border: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
 
-/* ZOTERO ANNOTATION COLORS */
-.theme-dark .callout[data-callout-metadata='#ff6666'] .callout-icon,
-.theme-dark .callout[data-callout-metadata='#ff6666'] .callout-icon svg {
-  color: #cc6666;
+/* ZOTERO ANNOTATION COLORS
+   The native RGB triplet keeps this portable across themes. The optional
+   full-colour companion lets themes that support it colour the whole shell
+   without depending on any theme-owned variable. */
+.callout[data-callout-metadata='#ff6666'] {
+  --callout-color: 216, 110, 104;
+  --zotero-annotation-color: #d86e68;
 }
-.theme-dark .callout[data-callout-metadata='#5fb236'] .callout-icon,
-.theme-dark .callout[data-callout-metadata='#5fb236'] .callout-icon svg {
-  color: #b5bd68;
+.callout[data-callout-metadata='#5fb236'] {
+  --callout-color: 161, 181, 108;
+  --zotero-annotation-color: #a1b56c;
 }
-.theme-dark .callout[data-callout-metadata='#2ea8e5'] .callout-icon,
-.theme-dark .callout[data-callout-metadata='#2ea8e5'] .callout-icon svg {
-  color: #81a2be;
+.callout[data-callout-metadata='#2ea8e5'] {
+  --callout-color: 124, 175, 194;
+  --zotero-annotation-color: #7cafc2;
 }
-.theme-dark .callout[data-callout-metadata='#a28ae5'] .callout-icon,
-.theme-dark .callout[data-callout-metadata='#a28ae5'] .callout-icon svg {
-  color: #b294bb;
+.callout[data-callout-metadata='#a28ae5'] {
+  --callout-color: 186, 139, 175;
+  --zotero-annotation-color: #ba8baf;
 }
-.theme-dark .callout[data-callout-metadata='#f19837'] .callout-icon,
-.theme-dark .callout[data-callout-metadata='#f19837'] .callout-icon svg {
-  color: #de935f;
+.callout[data-callout-metadata='#f19837'] {
+  --callout-color: 220, 150, 86;
+  --zotero-annotation-color: #dc9656;
 }
-.theme-dark .callout[data-callout-metadata='#ffd400'] .callout-icon,
-.theme-dark .callout[data-callout-metadata='#ffd400'] .callout-icon svg {
-  color: #f0c674;
+.callout[data-callout-metadata='#ffd400'] {
+  --callout-color: 219, 175, 110;
+  --zotero-annotation-color: #dbaf6e;
 }
-.theme-dark .callout[data-callout-metadata='#e56eee'] .callout-icon,
-.theme-dark .callout[data-callout-metadata='#e56eee'] .callout-icon svg {
-  color: #ba8baf;
+.callout[data-callout-metadata='#e56eee'] {
+  --callout-color: 186, 139, 175;
+  --zotero-annotation-color: #ba8baf;
 }
-.theme-dark .callout[data-callout-metadata='#aaaaaa'] .callout-icon,
-.theme-dark .callout[data-callout-metadata='#aaaaaa'] .callout-icon svg {
-  color: #969896;
+.callout[data-callout-metadata='#aaaaaa'] {
+  --callout-color: 152, 152, 152;
+  --zotero-annotation-color: #989898;
 }
 
 /* KANBAN CALLOUT */
@@ -194,13 +186,19 @@
   + blockquote {
   display: none;
 }
+/* A tab panel is a blockquote only as a markdown trick — it is not a
+   quotation and must not carry a quote's box. This reset previously zeroed
+   only `padding-left`, so the theme's block padding and the blockquote's
+   own bottom margin stayed and opened a tall empty band under the tab row
+   whenever the selected panel was short. Zeroing both keeps the panel flush
+   with its tabs; nothing about which panel shows is touched. */
 [data-callout='tabbed'] > .callout-content > blockquote {
   order: 999;
   grid-column: 1 / -1;
   background-color: transparent;
-  padding-left: 0;
+  padding: 0;
   border: 0;
-  margin-top: 2px;
+  margin: 2px 0 0;
   font-style: normal !important;
   opacity: 1 !important;
 }

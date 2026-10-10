@@ -1,9 +1,9 @@
 ---
 tags:
-  - status/todo
   - source/video/recording
   - category/java
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@jwt_dlya_nachinayushchih_za_15_min_prostymi_slovami)"
 status: 📥
@@ -21,6 +21,7 @@ icon: 📹
 color: "#2a9070"
 created: 2025-09-17T12:33:46+03:00
 updated: 2026-06-01T17:39:06+03:00
+citekey: jwt_dlya_nachinayushchih_za_15_min_prostymi_slovami
 total_hours: 0
 tasks:
   - "- [-] #task/inbox #category/java Короткоживущий и долгоживущий jwt-токен ❌ 2026-07-04"

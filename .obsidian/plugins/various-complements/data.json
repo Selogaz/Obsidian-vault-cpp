@@ -160,6 +160,8 @@
   "excludeInternalLinkPathGlobPatterns": [],
   "excludeSelfInternalLink": false,
   "excludeExistingInActiveFileInternalLinks": false,
+  "excludeUnresolvedInternalLinks": true,
+  "excludeInternalLinksInCode": true,
   "updateInternalLinksOnSave": true,
   "insertAliasTransformedFromDisplayedInternalLink": {
     "enabled": false,
@@ -178,6 +180,7 @@
   "intelligentSuggestionPrioritization": {
     "enabled": true,
     "historyFilePath": "",
+    "prettyPrintHistoryFile": false,
     "maxDaysToKeepHistory": 30,
     "maxNumberOfHistoryToKeep": 0
   },

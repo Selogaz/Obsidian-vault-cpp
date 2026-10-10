@@ -1,24 +1,52 @@
 /* CSSCLASS CATEGORY */
 .category {
   --file-line-width: 100%;
-  --line-width: var(--max-width) !important;
-  --container-table-width: var(--max-width) !important;
-  --container-dataview-table-width: var(--max-width) !important;
-  --container-img-width: var(--max-width) !important;
-  --container-iframe-width: var(--max-width) !important;
-  --container-map-width: var(--max-width) !important;
-  --container-chart-width: var(--max-width) !important;
+  --line-width: 100% !important;
+  --container-table-width: 100% !important;
+  --container-dataview-table-width: 100% !important;
+  --container-img-width: 100% !important;
+  --container-iframe-width: 100% !important;
+  --container-map-width: 100% !important;
+  --container-chart-width: 100% !important;
 }
 .category.markdown-rendered {
-  padding-top: 0px;
-  margin-top: 0px;
+  padding-top: 0;
+  margin-top: 0;
 }
 .category .tabs-container {
   padding-top: 10px;
 }
+/* Group heading. Was `color-mix(... 60%, black)` over the tab container's
+   background, which lands darker than the page on any dark theme — the
+   heading read as a black bar rather than as a divider — plus a `gray`
+   border, a literal that belongs to no palette. Both now come from
+   Obsidian's own surface variables, so this snippet keeps working whatever
+   theme is active instead of assuming one. */
 .category .bases-group-heading {
-  background: color-mix(in srgb, var(--tab-container-background) 60%, black);
-  border: 1px solid gray;
+  background: var(--background-secondary-alt);
+  border: 1px solid var(--background-modifier-border);
+}
+
+/* Category task groups should scan as one compact result set. Tasks already
+   carry their own row separation, so large native heading/list margins add
+   empty pages rather than hierarchy. Keep one measured step between groups
+   and a smaller step between a group label and its first task. */
+.category .block-language-tasks .tasks-group-heading {
+  margin-block: calc(var(--font-text-size) * 0.4)
+    calc(var(--font-text-size) * 0.2) !important;
+}
+.category .block-language-tasks .tasks-group-heading:first-of-type {
+  margin-block-start: calc(var(--font-text-size) * 0.3) !important;
+}
+.category
+  .block-language-tasks
+  ul.contains-task-list.plugin-tasks-query-result {
+  margin-block: 0 calc(var(--font-text-size) * 0.4) !important;
+}
+.category
+  .block-language-tasks
+  ul.contains-task-list.plugin-tasks-query-result:last-child {
+  margin-block-end: 0 !important;
 }
 /* dataview */
 .category [data-callout='tabbed'] td,
@@ -33,6 +61,7 @@
 /* hide view button in categories */
 .category .dvit-button.change-view-button,
 .category .embedded-backlinks,
+.category .micropatches-local-graph,
 .category .embedded-similar-notes,
 .category .inline-title {
   display: none;
@@ -57,16 +86,98 @@
   --metadata-display-editing: none;
 }
 
+/* Independent category actions must remain separate from tab navigation,
+   including when the header wraps in a split pane. */
+.category .mb-button-group-inline {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 0;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+/* Restore the edge removed by the theme's joined Meta Bind group rule. */
+.category .mb-button-group > .mb-button:not(:first-child) > .mb-button-inner:not(.mod-plain) {
+  border-left: 1px solid var(--background-modifier-border);
+}
+
+.category .mb-button-group > .mb-button:not(:first-child)
+  > .mb-button-inner:not(.mod-plain, :disabled, [aria-disabled='true'], .disabled):is(:hover, :focus, :active) {
+  border-left-color: var(--background-modifier-border-hover);
+}
+
+/* Quiet outlined actions support the category's navigation/content hierarchy.
+   The button selector beats the theme's scoped Meta Bind hover rule;
+   plain, disabled and semantic foregrounds keep their existing contracts. */
+.category .mb-button-group > .mb-button
+  > button.mb-button-inner:not(.mod-plain, :disabled, [aria-disabled='true'], .disabled) {
+  background-color: transparent;
+}
+
+.category .mb-button-group > .mb-button
+  > button.mb-button-inner:not(.mod-plain, :disabled, [aria-disabled='true'], .disabled):hover {
+  background-color: var(--b16-surface-1, var(--background-secondary));
+}
+
+.category .mb-button-group > .mb-button
+  > button.mb-button-inner:not(.mod-plain, :disabled, [aria-disabled='true'], .disabled):active {
+  background-color: var(--b16-surface-1, var(--background-secondary));
+}
+
+.category .mb-button-group > .mb-button
+  > button.mb-button-inner:not(.mod-plain, .mod-warning, :disabled, [aria-disabled='true'], .disabled) {
+  color: var(--text-muted);
+}
+
+.category .mb-button-group > .mb-button
+  > button.mb-button-inner:not(.mod-plain, .mod-warning, :disabled, [aria-disabled='true'], .disabled):is(:hover, :focus-visible) {
+  color: var(--text-normal);
+}
+
+/* Markdown gives this header no class: :has is necessary to identify the
+   paragraph that combines action buttons with the custom statistics view. */
+.category p:has(> .mb-button-group-inline):has(.stat-line) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+}
+
+.category p:has(> .mb-button-group-inline) .stat-line {
+  margin-inline-start: 0;
+}
+
+/* Vertical category navigation sizes to its longest rendered label.
+   Flex stretch gives every item that width; the plugin's max-width still
+   protects narrow panes. Horizontal tab rows keep their own sizing. */
+.category .tabbed:is(.tabbed--left, .tabbed--right) > .tabbed__list {
+  flex-basis: auto;
+  width: max-content;
+}
+
+/* Secondary navigation is quieter than the top-level sections. The list's
+   role and orientation remain visible through Tabbed's active edge.
+   body + button beat the theme's verified (0,5,1) button geometry selector. */
+body .category .tabbed__panel .tabbed > .tabbed__list > button.tabbed__tab {
+  font-size: var(--b16-font-ui-m, var(--font-ui-small));
+  font-weight: 500;
+}
+
+.category .tabbed-columns__title {
+  font-size: var(--b16-font-ui-m, var(--font-ui-small));
+}
+
 /* CSSCLASSES */
 .full-width {
   --file-line-width: 100%;
-  --line-width: var(--max-width) !important;
-  --container-table-width: var(--max-width) !important;
-  --container-dataview-table-width: var(--max-width) !important;
-  --container-img-width: var(--max-width) !important;
-  --container-iframe-width: var(--max-width) !important;
-  --container-map-width: var(--max-width) !important;
-  --container-chart-width: var(--max-width) !important;
+  --line-width: 100% !important;
+  --container-table-width: 100% !important;
+  --container-dataview-table-width: 100% !important;
+  --container-img-width: 100% !important;
+  --container-iframe-width: 100% !important;
+  --container-map-width: 100% !important;
+  --container-chart-width: 100% !important;
 }
 .wider-page {
   --file-line-width: 70%;
@@ -74,11 +185,13 @@
 .no-inline-title .inline-title,
 .no-inline-title .el-pre.mod-frontmatter.mod-ui {
   display: none;
+
   --metadata-display-reading: none;
   --metadata-display-editing: none;
 }
 .hide-backlinks .embedded-backlinks,
-.hide-backlinks .embedded-similar-notes {
+.hide-backlinks .embedded-similar-notes,
+.hide-backlinks .micropatches-local-graph {
   display: none;
 }
 .hide-bases-header .bases-header {
@@ -95,6 +208,12 @@
 }
 .hover-bases-header .bases-header:hover {
   opacity: 1;
+}
+.scroll-bases .bases-embed .bases-view {
+  max-height: 55vh;
+}
+.fleetings .bases-embed[src*="To Review"] .bases-view {
+  max-height: 55vh;
 }
 .hide-properties {
   --metadata-display-reading: none;

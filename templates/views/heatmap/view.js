@@ -1,384 +1,518 @@
-/*
- * @Author          : 稻米鼠
- * @Date            : 2022-10-28 08:32:52
- * @LastEditTime    : 2022-11-23 15:57:29
- * @FilePath        : \ob-templates\Dataview\Heatmap-dataview\view.js
- * @Description     : Note Heatmap
- * @HomePage        : https://github.com/dmscode/Obsidian-Templates
+/**
+ * Interactive activity heatmap for the Abyss vault.
+ *
+ * The view follows the vault's manifest boundaries: source logs are additions,
+ * discourse notes are still notes, and task notes are separate from inline tasks.
  */
-/** @type {array} All notes */
-const allNotes = dv.pages(
-  "#note OR #system OR #periodic OR #project OR #source OR #creator OR #production OR #contact OR #mark/addition"
-);
-/** Represents a simple +1 value */
-const addOne = () => 1;
 
-/** @type {object} Preset data acquisition methods */
-const defaultMethods = {
-  cday: {
-    /** Note creation date (from frontmatter) */ source: allNotes,
-    getDate: (p) => {
-      const d = p.file.frontmatter.created;
-      if (!d) return "";
-      return String(d).slice(0, 10);
-    },
-    getValue: addOne,
+const options = input && typeof input === "object" ? input : {};
+
+const scopes = [
+  {
+    id: "all",
+    icon: "◉",
+    label: "All",
+    query:
+      "#note OR #system OR #periodic OR #project OR #source OR #creator OR #production OR #contact OR #task OR #mark/addition",
   },
-  mday: {
-    /** Note modification date (from frontmatter) */ source: allNotes,
-    getDate: (p) => {
-      const d = p.file.frontmatter.updated;
-      if (!d) return "";
-      return String(d).slice(0, 10);
-    },
-    getValue: addOne,
+  { id: "notes", icon: "📝", label: "Notes", query: "#note" },
+  { id: "projects", icon: "🏢", label: "Projects", query: "#project" },
+  {
+    id: "sources",
+    icon: "🗃️",
+    label: "Sources",
+    query: "#source AND -#mark/log",
   },
-  created: {
-    /** Note creation date (from frontmatter) */ source: allNotes,
-    getDate: (p) => {
-      const d = p.file.frontmatter.created;
-      if (!d) return "";
-      return String(d).slice(0, 10);
-    },
-    getValue: addOne,
+  {
+    id: "people",
+    icon: "👥",
+    label: "People",
+    query: "#contact OR #creator OR #production",
   },
-  updated: {
-    /** Note modification date (from frontmatter) */ source: allNotes,
-    getDate: (p) => {
-      const d = p.file.frontmatter.updated;
-      if (!d) return "";
-      return String(d).slice(0, 10);
-    },
-    getValue: addOne,
+  { id: "system", icon: "🗺️", label: "System", query: "#system" },
+  {
+    id: "additions",
+    icon: "➕",
+    label: "Additions",
+    query:
+      "(#mark/addition OR #mark/log/conspectus) AND -#mark/addition/aggregator",
   },
-  name: {
-    /** Note name */ source: allNotes,
-    getDate: (p) => p.file.name,
-    getValue: addOne,
+  { id: "periodic", icon: "📅", label: "Periodic", query: "#periodic" },
+  {
+    id: "tasks",
+    icon: "✅",
+    label: "Task notes",
+    query: "#task/default OR #task/milestone",
   },
-  task: {
-    /** Task completion date */
-    source: dv.pages().file.tasks.filter((t) => t.completed),
-    getDate: (t) => dv.func.dateformat(t.completion, "yyyy-MM-dd"),
-    getValue: addOne,
+  {
+    id: "completed",
+    icon: "✔️",
+    label: "Inline tasks",
+    eventType: "completed-tasks",
   },
+];
+
+const dateField = ["mday", "updated"].includes(options.type)
+  ? "updated"
+  : "created";
+const initialScope =
+  scopes.find((scope) => scope.id === options.scope) ?? scopes[0];
+
+const pad = (value) => String(value).padStart(2, "0");
+const toDateKey = (value) => {
+  if (!value) return null;
+  if (typeof value.toISODate === "function") return value.toISODate();
+  const match = String(value).match(/\d{4}-\d{2}-\d{2}/);
+  return match ? match[0] : null;
+};
+const keyForDate = (date) =>
+  `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
+const addDays = (date, amount) => {
+  const result = new Date(date);
+  result.setDate(result.getDate() + amount);
+  return result;
 };
 
-/**
- * Get specified input
- *
- * @param {string} key
- * @param {any} defaultVal
- * @return {any}
- */
-const getInput = (key, defaultVal) => {
-  return input && input[key] ? input[key] : defaultVal;
-};
-/**
- * Call method according to the corresponding type to get data
- *
- * @return {object}
- */
-const dataGetter = () => {
-  const type = getInput("type", "cday");
-  const method = defaultMethods[type]
-    ? defaultMethods[type]
-    : defaultMethods["cday"];
-  const source = getInput("source", method.source);
-  const getDate = getInput("getDate", method.getDate);
-  const getValue = getInput("getValue", method.getValue);
-  const data = {};
-  source.filter((p) => {
-    const md = getDate(p);
-    const val = getValue(p);
-    data[md] = data[md] ? data[md] + val : val;
-  });
-  return data;
-};
-/**
- * Level calculation method
- *
- * @param {number} count Quantity
- * @returns {number} Corresponding level
- */
-const levelGetter = getInput("levelGetter", (count) => (count < 5 ? count : 5));
-
-/** @type {object} Data source */
-const heatData = getInput("heatData", dataGetter());
-
-/** @type {Date} */
 const today = new Date();
-/** @type {number} One day in milliseconds */
-const daylong = 24 * 60 * 60 * 1000;
-/** @type {number} Day of the week (0=Sunday, 1=Monday, ...) */
-const todayDay = today.getDay();
-/** @type {number} Offset to the nearest previous Monday */
-const mondayOffset = todayDay === 0 ? 6 : todayDay - 1;
-/** @type {number} Start date: Monday 53 weeks ago */
-const startDay = today - (mondayOffset + 52 * 7) * daylong;
+today.setHours(12, 0, 0, 0);
 
-/**
- * Two-digit number
- *
- * @param {number} num Integer from 0 to 99
- * @return {string}
- */
-const dbNum = (num) => (num > 9 ? String(num) : "0" + num);
-
-/** @type {string} */
-let code = `
-<style>
-.dms-heatmap {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  width: 100%;
-  overflow: visible;
-}
-.dms-heatmap-weekrow {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  flex-grow: 1;
-  min-width: 18px;
-  position: relative;
-  padding-top: 28px;
-}
-.dms-heatmap-month {
-  position: absolute;
-  top: 0;
-  line-height: 28px;
-  font-size: 14px;
-}
-.dms-heatmap-day {
-  border: 1px solid rgba(128, 128, 128, .08);
-  background-color: rgba(128, 128, 128, .05);
-  border-radius: 3px;
-  margin: 0 1px 1px 0;
-  box-sizing: border-box;
-  cursor: pointer;
-  position: relative;
-}
-.dms-heatmap-day:hover::before,
-.dms-heatmap-day:hover::after {
-  display: none !important;
-}
-.dms-heatmap-day.dms-heatmap-future-day {
-  opacity: 0;
-}
-.dms-heatmap-day > img {
-  position: relative;
-  border: none;
-  background: none;
-  width: 100%;
-  display: block;
-  opacity: 0;
-  z-index: -100;
-}
-.dms-heatmap-level-1 { background-color: hsl(120, 60%, 80%, .5); }
-.dms-heatmap-level-2 { background-color: hsl(120, 60%, 70%, .5); }
-.dms-heatmap-level-3 { background-color: hsl(120, 60%, 60%, .5); }
-.dms-heatmap-level-4 { background-color: hsl(120, 60%, 50%, .5); }
-.dms-heatmap-level-5 { background-color: hsl(120, 60%, 40%, .5); }
-
-.dms-heatmap-weekday-mark {
-  border: 1px solid rgba(128, 128, 128, 0);
-  background: none;
-}
-
-.dms-heatmap-weekday-0 { background-color: hsl(10, 100%, 60%, .3); }
-.dms-heatmap-weekday-3 { background-color: hsl(200, 100%, 60%, .3); }
-.dms-heatmap-weekday-6 { background-color: hsl(200, 100%, 60%, .3); }
-
-.dms-heatmap-mark-show {
-  width: 100%;
-  flex-grow: 0;
-  text-align: right;
-  font-size: 12px;
-  line-height: 2em;
-}
-.dms-heatmap-level-mark {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-}
-
-.dms-heatmap-day.dms-heatmap-day-first:hover::after {
-  left: 0;
-  transform: none;
-  margin-left: 4px;
-}
-.dms-heatmap-day.dms-heatmap-day-first:hover::before {
-  left: 8px;
-  transform: none;
-}
-.dms-heatmap-day.dms-heatmap-day-last:hover::after {
-  left: 100%;
-  transform: translate(-100%, 0);
-  margin-left: -4px;
-}
-.dms-heatmap-day.dms-heatmap-day-last:hover::before {
-  left: calc(100% - 8px);
-  transform: none;
-}
-
-@media screen and (max-width: 480px) {
-  .dms-heatmap-weekrow {
-	min-width: 32px;
+const mondayOnOrBefore = (date) =>
+  addDays(date, -((date.getDay() + 6) % 7));
+const sundayOnOrAfter = (date) =>
+  addDays(date, 6 - ((date.getDay() + 6) % 7));
+const makeWeeks = (start, end) => {
+  const weekCount = Math.floor((end - start) / (7 * 86400000)) + 1;
+  return Array.from({ length: weekCount }, (_, weekIndex) =>
+    Array.from({ length: 7 }, (_, dayIndex) =>
+      addDays(start, weekIndex * 7 + dayIndex)
+    )
+  );
+};
+const calendarForPeriod = (period) => {
+  if (period === "rolling") {
+    const start = addDays(mondayOnOrBefore(today), -52 * 7);
+    return {
+      start,
+      end: today,
+      weeks: makeWeeks(start, addDays(start, 52 * 7)),
+    };
   }
-}
-</style>
-<div class="dms-heatmap">`;
-/** @type {number} */
-let dayCount = 0;
 
-/**
- * Append code for one day
- *
- * @param {array} className
- * @param {string} tipLabel
- */
-const addDay = (className, tipLabel) => {
-  code += `<div class="${className.join(" ")}" ${tipLabel} data-heatmap-tooltip>
-		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAADElEQVQImWP4//8/AAX+Av5Y8msOAAAAAElFTkSuQmCC">
-	  </div>`;
+  const year = Number(period);
+  const start = new Date(year, 0, 1, 12);
+  const end = new Date(year, 11, 31, 12);
+  const gridStart = mondayOnOrBefore(start);
+  return {
+    start,
+    end,
+    weeks: makeWeeks(gridStart, sundayOnOrAfter(end)),
+  };
 };
 
-/** Loop output for 53 weeks */
-for (let weekIndex = 0; weekIndex < 53; weekIndex++) {
-  /** If it has exceeded today, stop */
-  if (startDay + dayCount * daylong > today) break;
-  /** Output one week (column) */
-  code += `<div class="dms-heatmap-weekrow">`;
-  for (let d = 0; d < 7; d++) {
-    /** The date of the day */
-    const theDay = new Date(startDay + dayCount * daylong);
-    /** Calculate year, month, day */
-    const year = theDay.getFullYear();
-    const month = dbNum(theDay.getMonth() + 1);
-    const day = dbNum(theDay.getDate());
-    /** Generate date string */
-    const theDayStr = `${year}-${month}-${day}`;
-    /** If it is the beginning of the month, add a month indicator */
-    if (day === "01") code += `<div class="dms-heatmap-month">${month}</div>`;
-    /** Get level, a total of five levels */
-    const level = levelGetter(heatData[theDayStr] ? heatData[theDayStr] : 0);
-    /** class array */
-    const className = ["dms-heatmap-day", "dms-heatmap-level-" + level];
-    /** @type {boolean} Is it a future time? Only display up to today, so the future will not be displayed */
-    const future = dayCount > 364 && theDay - today >= daylong - 1;
-    if (future) className.push("dms-heatmap-future-day");
-    if (d === 0) className.push("dms-heatmap-day-first");
-    if (d === 6) className.push("dms-heatmap-day-last");
+let activePeriod = options.year ? String(options.year) : "rolling";
+let { start: periodStart, end: periodEnd, weeks } =
+  calendarForPeriod(activePeriod);
 
-    /** Tooltip in the style of '3 notes on Apr 27, 2024' */
-    const count = heatData[theDayStr] || 0;
-    const months = [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
-    ];
-    const dateLabel = `${
-      months[theDay.getMonth()]
-    } ${theDay.getDate()}, ${theDay.getFullYear()}`;
-    const tipLabel = !future
-      ? `aria-label="${count} note${count !== 1 ? "s" : ""} on ${dateLabel}"`
-      : "";
+const root = dv.el("div", "", { cls: "vault-heatmap" });
 
-    addDay(className, tipLabel);
-    dayCount++;
+const header = document.createElement("header");
+header.className = "vault-heatmap__header";
+header.setAttribute("role", "toolbar");
+header.setAttribute("aria-label", "Heatmap period");
+root.append(header);
+
+const toolbar = document.createElement("div");
+toolbar.className = "vault-heatmap__toolbar";
+toolbar.setAttribute("role", "toolbar");
+toolbar.setAttribute("aria-label", "Heatmap scope");
+
+const viewport = document.createElement("div");
+viewport.className = "vault-heatmap__viewport";
+
+const calendar = document.createElement("div");
+calendar.className = "vault-heatmap__calendar";
+
+const monthsRow = document.createElement("div");
+monthsRow.className = "vault-heatmap__months";
+
+const weeksRow = document.createElement("div");
+weeksRow.className = "vault-heatmap__weeks";
+
+const footer = document.createElement("div");
+footer.className = "vault-heatmap__footer";
+
+const details = document.createElement("div");
+details.className = "vault-heatmap__details";
+details.hidden = true;
+
+const summary = document.createElement("span");
+summary.className = "vault-heatmap__summary";
+
+const legend = document.createElement("div");
+legend.className = "vault-heatmap__legend";
+legend.append(document.createTextNode("Low"));
+for (const level of [0, 2, 4, 6, 8, 10]) {
+  const swatch = document.createElement("span");
+  swatch.className = "vault-heatmap__swatch";
+  swatch.dataset.level = String(level);
+  legend.append(swatch);
+}
+legend.append(document.createTextNode("High"));
+
+footer.append(summary, legend);
+calendar.append(monthsRow, weeksRow);
+viewport.append(calendar);
+root.append(toolbar, viewport, footer, details);
+
+const monthFormatter = new Intl.DateTimeFormat(undefined, { month: "short" });
+const dateFormatter = new Intl.DateTimeFormat(undefined, {
+  day: "numeric",
+  month: "short",
+  year: "numeric",
+});
+
+const taskTarget = (task) => {
+  const link = task.link ?? task.section;
+  const path = link?.path ?? task.path;
+  if (!link?.subpath) return path;
+  const subpath = link.type === "block" ? `^${link.subpath}` : link.subpath;
+  return `${path}#${subpath}`;
+};
+
+const taskLabel = (task) =>
+  String(task.text ?? "")
+    .replace(/(^|\s)#(?:task|category|time|effort)\/[^\s]+/gu, " ")
+    .replace(/\s*✅\s*\d{4}-\d{2}-\d{2}\b/gu, " ")
+    .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, "$2")
+    .replace(/\[\[([^\]]+)\]\]/g, "$1")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/[*_~`]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const dataForScope = (scope) => {
+  const entries = new Map();
+  const addEntry = (key, entry) => {
+    if (!key) return;
+    if (!entries.has(key)) entries.set(key, []);
+    entries.get(key).push(entry);
+  };
+
+  if (scope.eventType !== "completed-tasks") {
+    const pages = options.source ?? dv.pages(scope.query);
+    for (const page of pages) {
+      const value = page.file?.frontmatter?.[dateField] ?? page[dateField];
+      addEntry(toDateKey(value), {
+        kind: "note",
+        label: page.file.name,
+        page,
+      });
+    }
   }
-  /** End of the week */
-  code += `</div>`;
-}
-code += `</div>`;
-/** Add level legend */
-code += `<div class="dms-heatmap-mark-show">Low `;
-for (let d = 0; d < 6; d++) {
-  const className = [
-    "dms-heatmap-day",
-    "dms-heatmap-level-mark",
-    `dms-heatmap-level-${d}`,
-  ];
-  const tipLabel = `aria-label="level-${d}"`;
-  addDay(className, tipLabel);
-}
-code += ` Hight</div>`;
 
-const root = dv.el("div", "", { cls: "dms-heatmap-container" });
-const rootShadow = root.attachShadow({ mode: "open" });
-rootShadow.innerHTML = code;
-
-// Tooltip logic outside Shadow DOM
-if (!document.getElementById("dms-heatmap-tooltip")) {
-  const tooltip = document.createElement("div");
-  tooltip.id = "dms-heatmap-tooltip";
-  tooltip.style.position = "fixed";
-  tooltip.style.pointerEvents = "none";
-  tooltip.style.zIndex = "9999";
-  tooltip.style.background = "#333336";
-  tooltip.style.color = "#CCCCCE";
-  tooltip.style.borderRadius = "3px";
-  tooltip.style.boxShadow = "0 2px 6px rgba(0,0,0,.1)";
-  tooltip.style.fontSize = "12px";
-  tooltip.style.lineHeight = "12px";
-  tooltip.style.padding = "3px 6px";
-  tooltip.style.whiteSpace = "nowrap";
-  tooltip.style.display = "none";
-  document.body.appendChild(tooltip);
-}
-const tooltip = document.getElementById("dms-heatmap-tooltip");
-
-function showTooltip(text, x, y) {
-  tooltip.textContent = text;
-  tooltip.style.display = "block";
-  // Смещение: 10px вправо и 20px вверх от курсора
-  const margin = 10;
-  tooltip.style.left = x + margin + "px";
-  tooltip.style.top = y - 20 + "px";
-  // Проверка выхода за правый край
-  const rect = tooltip.getBoundingClientRect();
-  if (rect.right > window.innerWidth) {
-    tooltip.style.left = window.innerWidth - rect.width - margin + "px";
+  if (scope.id === "all" || scope.eventType === "completed-tasks") {
+    const pages = options.source ?? dv.pages("");
+    for (const page of pages) {
+      for (const task of page.file?.tasks ?? []) {
+        if (!task.completion) continue;
+        addEntry(toDateKey(task.completion), {
+          kind: "task",
+          label: taskLabel(task),
+          task,
+        });
+      }
+    }
   }
-  // Проверка выхода за левый край
-  if (rect.left < 0) {
-    tooltip.style.left = margin + "px";
-  }
-  // Проверка выхода за верх
-  if (rect.top < 0) {
-    tooltip.style.top = margin + "px";
-  }
-}
-function hideTooltip() {
-  tooltip.style.display = "none";
-}
 
-// Навешиваем обработчики на все ячейки после рендера
-setTimeout(() => {
-  const shadow = root.shadowRoot;
-  if (!shadow) return;
-  shadow.querySelectorAll("[data-heatmap-tooltip]").forEach((el) => {
-    el.addEventListener("mouseenter", (e) => {
-      const label = el.getAttribute("aria-label");
-      if (!label) return;
-      const rect = el.getBoundingClientRect();
-      showTooltip(label, rect.right, rect.top);
-    });
-    el.addEventListener("mousemove", (e) => {
-      const label = el.getAttribute("aria-label");
-      if (!label) return;
-      showTooltip(label, e.clientX, e.clientY);
-    });
-    el.addEventListener("mouseleave", hideTooltip);
+  for (const eventsForDay of entries.values()) {
+    eventsForDay.sort((a, b) =>
+      a.label.localeCompare(b.label, undefined, { sensitivity: "base" })
+    );
+  }
+
+  return entries;
+};
+
+const intensityFor = (count, scaleMax) => {
+  if (count <= 0) return 0;
+  return Math.max(1, Math.ceil(Math.min(count / scaleMax, 1) * 10));
+};
+
+let activeScope = initialScope;
+let selectedDateKey = null;
+
+const openInternalLink = (event, target) => {
+  event.preventDefault();
+  event.stopPropagation();
+  app.workspace.openLinkText(
+    target,
+    dv.current()?.file?.path ?? "",
+    event.metaKey || event.ctrlKey
+  );
+};
+
+const renderDetails = (date, events) => {
+  details.replaceChildren();
+
+  const header = document.createElement("div");
+  header.className = "vault-heatmap__details-header";
+
+  const dateLabel = document.createElement("span");
+  dateLabel.className = "vault-heatmap__details-date";
+  dateLabel.textContent = dateFormatter.format(date);
+
+  const countLabel = document.createElement("span");
+  countLabel.className = "vault-heatmap__details-count";
+  const taskCount = events.filter((entry) => entry.kind === "task").length;
+  const noteCount = events.length - taskCount;
+  if (activeScope.id === "all") {
+    countLabel.textContent = [
+      noteCount ? `${noteCount} notes` : "",
+      taskCount ? `${taskCount} tasks` : "",
+    ]
+      .filter(Boolean)
+      .join(" · ");
+  } else if (activeScope.eventType === "completed-tasks") {
+    countLabel.textContent = `${taskCount} completed`;
+  } else {
+    const action = dateField === "created" ? "created" : "updated";
+    countLabel.textContent = `${noteCount} ${action}`;
+  }
+
+  const close = document.createElement("button");
+  close.type = "button";
+  close.className = "vault-heatmap__details-close";
+  close.setAttribute("aria-label", "Close day details");
+  close.textContent = "×";
+  close.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    selectedDateKey = null;
+    render();
   });
-}, 0);
+
+  header.append(dateLabel, countLabel, close);
+
+  const list = document.createElement("div");
+  list.className = "vault-heatmap__details-list";
+
+  for (const entry of events) {
+    if (entry.kind === "task") {
+      const row = document.createElement("div");
+      row.className = "vault-heatmap__task";
+
+      const checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+      checkbox.checked = true;
+      checkbox.tabIndex = -1;
+      checkbox.className =
+        "task-list-item-checkbox vault-heatmap__task-checkbox";
+      checkbox.setAttribute("aria-hidden", "true");
+
+      const link = document.createElement("a");
+      const target = taskTarget(entry.task);
+      link.className =
+        "internal-link vault-heatmap__link vault-heatmap__task-link";
+      link.dataset.href = target;
+      link.href = target;
+      link.title = `${entry.task.path}:${entry.task.line + 1}`;
+      link.textContent = entry.label || "Completed task";
+      link.addEventListener("click", (event) => openInternalLink(event, target));
+
+      row.append(checkbox, link);
+      list.append(row);
+      continue;
+    }
+
+    const page = entry.page;
+    const link = document.createElement("a");
+    link.className = "internal-link vault-heatmap__link";
+    link.dataset.href = page.file.path;
+    link.href = page.file.path;
+    link.title = page.file.path;
+
+    const icon = document.createElement("span");
+    icon.className = "vault-heatmap__link-icon";
+    icon.textContent = page.icon || activeScope.icon || "•";
+
+    const name = document.createElement("span");
+    name.textContent = page.file.name;
+
+    link.append(icon, name);
+    link.addEventListener("click", (event) =>
+      openInternalLink(event, page.file.path)
+    );
+
+    list.append(link);
+  }
+
+  details.append(header, list);
+  details.hidden = false;
+};
+
+const hideDetails = () => {
+  details.replaceChildren();
+  details.hidden = true;
+};
+
+const render = () => {
+  const entries = dataForScope(activeScope);
+  const visibleCounts = weeks
+    .flat()
+    .filter((date) => date >= periodStart && date <= periodEnd && date <= today)
+    .map((date) => entries.get(keyForDate(date))?.length ?? 0);
+  const nonZeroCounts = visibleCounts.filter(Boolean).sort((a, b) => a - b);
+  const percentileIndex = Math.floor((nonZeroCounts.length - 1) * 0.9);
+  const scaleMax = Math.max(1, nonZeroCounts[percentileIndex] ?? 1);
+  const total = visibleCounts.reduce((sum, count) => sum + count, 0);
+  const peak = Math.max(0, ...visibleCounts);
+
+  monthsRow.replaceChildren();
+  weeksRow.replaceChildren();
+  calendar.style.setProperty("--heatmap-week-count", String(weeks.length));
+
+  for (const days of weeks) {
+    const monthCell = document.createElement("div");
+    monthCell.className = "vault-heatmap__month";
+    const monthStart = days.find(
+      (date) =>
+        date >= periodStart && date <= periodEnd && date.getDate() === 1
+    );
+    if (monthStart) monthCell.textContent = monthFormatter.format(monthStart);
+    monthsRow.append(monthCell);
+
+    const week = document.createElement("div");
+    week.className = "vault-heatmap__week";
+
+    for (const date of days) {
+      const key = keyForDate(date);
+      const events = entries.get(key) ?? [];
+      const count = events.length;
+      const future = date < periodStart || date > periodEnd || date > today;
+      const day = document.createElement("div");
+      day.className = "vault-heatmap__day";
+      day.dataset.level = String(intensityFor(count, scaleMax));
+      day.dataset.count = String(count);
+      day.dataset.future = String(future);
+      day.dataset.today = String(key === keyForDate(today));
+      day.dataset.selected = String(key === selectedDateKey);
+
+      if (!future) {
+        const noun =
+          activeScope.eventType === "completed-tasks"
+            ? count === 1
+              ? "task"
+              : "tasks"
+            : count === 1
+              ? "event"
+              : "events";
+        const label = `${count} ${noun} on ${dateFormatter.format(date)}`;
+        day.setAttribute("aria-label", label);
+        day.setAttribute("data-tooltip-position", "top");
+      }
+
+      if (!future && count > 0) {
+        day.setAttribute("role", "button");
+        day.tabIndex = 0;
+
+        const selectDay = (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          selectedDateKey = selectedDateKey === key ? null : key;
+          render();
+        };
+
+        day.addEventListener("click", selectDay);
+        day.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") selectDay(event);
+        });
+      }
+
+      week.append(day);
+    }
+
+    weeksRow.append(week);
+  }
+
+  const summaryNoun =
+    activeScope.eventType === "completed-tasks" ? "tasks" : "events";
+  summary.textContent = `${activeScope.label}: ${total} ${summaryNoun} · peak ${peak}/day`;
+
+  if (selectedDateKey) {
+    const selectedDate = weeks
+      .flat()
+      .find((date) => keyForDate(date) === selectedDateKey);
+    const selectedEvents = entries.get(selectedDateKey) ?? [];
+    if (selectedDate && selectedEvents.length > 0) {
+      renderDetails(selectedDate, selectedEvents);
+    } else {
+      selectedDateKey = null;
+      hideDetails();
+    }
+  } else {
+    hideDetails();
+  }
+
+  for (const button of toolbar.querySelectorAll("button")) {
+    button.setAttribute(
+      "aria-pressed",
+      String(button.dataset.scope === activeScope.id)
+    );
+  }
+
+  for (const button of header.querySelectorAll("button")) {
+    button.setAttribute(
+      "aria-pressed",
+      String(button.dataset.period === activePeriod)
+    );
+  }
+};
+
+const availableYears = Array.from(
+  new Set(
+    Array.from(dataForScope(scopes[0]).keys(), (key) => Number(key.slice(0, 4)))
+  )
+)
+  .filter((year) => year >= 1970 && year <= today.getFullYear())
+  .sort((a, b) => b - a);
+
+for (const period of [
+  { id: "rolling", label: "53 weeks" },
+  ...availableYears.map((year) => ({ id: String(year), label: String(year) })),
+]) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "vault-heatmap__range";
+  button.dataset.period = period.id;
+  button.textContent = period.label;
+  button.setAttribute("aria-pressed", String(period.id === activePeriod));
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    activePeriod = period.id;
+    ({ start: periodStart, end: periodEnd, weeks } =
+      calendarForPeriod(activePeriod));
+    selectedDateKey = null;
+    render();
+  });
+  header.append(button);
+}
+
+for (const scope of scopes) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "vault-heatmap__filter";
+  button.dataset.scope = scope.id;
+  button.textContent = `${scope.icon} ${scope.label}`;
+  button.setAttribute("aria-pressed", String(scope.id === activeScope.id));
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    activeScope = scope;
+    selectedDateKey = null;
+    render();
+  });
+  toolbar.append(button);
+}
+
+render();

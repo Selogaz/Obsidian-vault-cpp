@@ -1,10 +1,10 @@
 ---
 tags:
-  - status/todo
   - source/book
   - category/computer_science
 aliases:
   - cpumemory
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@cpumemory)"
 status: 📥
@@ -18,6 +18,7 @@ creator:
 production:
 icon: 📖
 color: "#b5b570"
+citekey: cpumemory
 ---
 
 ```toc

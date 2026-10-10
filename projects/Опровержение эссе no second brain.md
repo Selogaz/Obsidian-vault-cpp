@@ -2,18 +2,19 @@
 tags:
   - status/done
   - project/single
-  - priority/c
+  - priority/normal
 aliases: []
+description:
 addition:
 status: 🟩
-priority: 🇨
+priority: ◽
 category:
 meta:
 problem:
 creator:
 production:
 start:
-end:
+end: 2026-09-26
 url:
   - "[Второй мозг не нужен (эссе)](https://vsblog.netlify.app/no-second-brain/)"
 cover:

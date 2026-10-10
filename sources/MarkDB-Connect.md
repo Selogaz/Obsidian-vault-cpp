@@ -1,9 +1,11 @@
 ---
 tags:
+  - status/done
   - source/article/paper
   - category/obsidian
 aliases:
   - MarkDB-Connect
+description:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@MarkDBConnect)"
@@ -17,13 +19,14 @@ problem:
 creator:
 production:
 start: 2026-06-01T15:07:01+03:00
-end:
+end: 2026-09-26
 url:
   - "[flowing-abyss](https://flowing-abyss.com/MarkDB-Connect)"
 icon: 📃
 color: "#7575c0"
 created: 2026-06-01T15:07:01+03:00
 updated: 2026-06-01T15:31:31+03:00
+citekey: MarkDBConnect
 related:
 ---
 

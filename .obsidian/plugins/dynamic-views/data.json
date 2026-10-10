@@ -1,0 +1,6 @@
+{
+  "pluginSettings": {
+    "createdTimeProperty": "created",
+    "modifiedTimeProperty": "updated"
+  }
+}

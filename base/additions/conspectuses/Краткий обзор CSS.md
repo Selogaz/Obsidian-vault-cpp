@@ -4,11 +4,12 @@ tags:
   - mark/log/conspectus
   - category/webdev
 aliases: []
+description:
 status: 🟩
 source:
   - "[[full stack itproger]]"
 start: 2026-01-18T16:03:30+03:00
-end:
+end: 2026-09-26
 next:
 url:
 icon: 📓

@@ -1,9 +1,9 @@
 ---
 tags:
-  - status/todo
   - source/article/paper
   - category/java
 aliases: []
+description:
 addition:
   - конспекты backend_interviewer
 zotero: "[🇿](zotero://select/items/@backend_interviewer)"
@@ -26,6 +26,7 @@ icon: 📃
 color: "#7575c0"
 created: 2025-05-29T18:17:18+03:00
 updated: 2026-01-14T00:05:05+03:00
+citekey: backend_interviewer
 total_hours: 0
 ---
 

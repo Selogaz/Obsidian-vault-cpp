@@ -1,7 +1,51 @@
 {
-  "showGettingStartedBanner": true,
+  "installedVersion": "1.0.0-beta1",
+  "activeCalendarSet": "Default",
+  "showGettingStartedBanner": false,
   "hasMigratedDailyNoteSettings": false,
   "hasMigratedWeeklyNoteSettings": false,
+  "calendarSets": [
+    {
+      "day": {
+        "enabled": true,
+        "format": "YYYY-MM-DD",
+        "folder": "periodic/daily",
+        "openAtStartup": false,
+        "templatePath": "templates/create/periodic/day/template.md"
+      },
+      "week": {
+        "enabled": true,
+        "format": "YYYY-[W]ww",
+        "folder": "periodic/weekly",
+        "openAtStartup": false,
+        "templatePath": "templates/create/periodic/week/template.md"
+      },
+      "month": {
+        "enabled": true,
+        "format": "YYYY-MM",
+        "folder": "periodic/monthly",
+        "openAtStartup": false,
+        "templatePath": "templates/create/periodic/month/template.md"
+      },
+      "quarter": {
+        "enabled": true,
+        "format": "YYYY-[Q]Q",
+        "folder": "periodic/quarterly",
+        "openAtStartup": false,
+        "templatePath": "templates/create/periodic/quarter/template.md"
+      },
+      "year": {
+        "enabled": true,
+        "format": "YYYY",
+        "folder": "periodic/yearly",
+        "openAtStartup": false,
+        "templatePath": "templates/create/periodic/year/template.md"
+      },
+      "id": "Default",
+      "ctime": "2026-09-07T18:38:43+07:00"
+    }
+  ],
+  "enableTimelineComplication": false,
   "daily": {
     "format": "YYYY-MM-DD",
     "template": "templates/create/periodic/day/template.md",

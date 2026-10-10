@@ -16,10 +16,12 @@ if (source) {
 tags:<%* if (source_type) { tR += `\n  - ${source_type}` } %><%* if (category != "") { tR += category } %>
   - mark/log/conspectus
 aliases: []
+description:
 status: 🟥
 source:<%* if (source) { tR += `\n  - "[[${source}]]"` } %>
 start: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 end:
+summary:
 next:
 url:
 icon: <% `"${tp.user.manifest("fields.icon.fixed")}"` %>
@@ -32,4 +34,4 @@ updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 > ```table-of-contents
 > ```
 
-<%* await tp.user.title() -%><% tp.file.cursor(0) %>
+<%* await tp.user.title() -%><% tp.user.cursor() %>

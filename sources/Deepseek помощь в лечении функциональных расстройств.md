@@ -1,9 +1,10 @@
 ---
 tags:
-  - status/wip
+  - status/drop
   - source/article/resource
   - category/health
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@deepseek_pomoshch_v_lechenii_funkcionalnyh_rasstroystv)"
 status: ⬛
@@ -16,13 +17,14 @@ problem:
 creator:
 production:
 start: 2026-03-27T13:38:41+03:00
-end:
+end: 2026-09-26
 url:
   - https://chat.deepseek.com/share/xdjnwx4sxj1650hy2x
 icon: 🌐
 color: "#7575c0"
 created: 2026-03-27T13:38:41+03:00
 updated: 2026-06-01T17:32:29+03:00
+citekey: deepseek_pomoshch_v_lechenii_funkcionalnyh_rasstroystv
 ---
 
 [[скрытый железодефицит]]

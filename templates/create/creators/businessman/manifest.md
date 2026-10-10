@@ -1,15 +1,18 @@
 ---
 name: 🫅 Businessman
+description: "A creator profile that groups work by one business leader."
 target:
   query: "#creator/businessman"
 fields:
   icon:
     type: text
+    description: "The icon for this note type."
     required: true
     hidden: true
     fixed: 🫅
   color:
     type: text
+    description: "The color for this note type."
     required: true
     hidden: true
     fixed: "#d09060"
@@ -23,6 +26,9 @@ formatting:
     - meta
     - problem
     - relevant
+    - icon
+    - color
+    - cover
     - created
     - updated
 ---

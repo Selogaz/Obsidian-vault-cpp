@@ -5,10 +5,15 @@ filters:
         - and:
             - '!this.file.hasTag("system/category")'
             - '!this.file.hasTag("mark/addition/aggregator")'
+            - '!this.file.inFolder("projects")'
+        - and:
+            - this.file.inFolder("projects")
+            - project
+            - project.contains(link(this.file.name))
         - and:
             - this.file.hasTag("system/category")
             - or:
-                - file.hasTag("category/" + this.file.name.replace(" ", "_"))
+                - file.hasTag("category/" + this.file.name.replace(/ /g, "_"))
                 - category.contains(link(this.file.name))
         - and:
             - this.file.hasTag("mark/addition/aggregator")
@@ -16,19 +21,18 @@ filters:
 formulas:
   type: file.tags.filter(value.startsWith("#task/"))[0].replace(/^.*\//, '')
   kanban: if(status.contains("🟦"), "① 🟦 In Progress", if(status.contains("🟥"), "② 🟥 ToDo", if(status.contains("📥"), "③ 📥 Inbox", if(status.contains("❄"), "④ ❄ Hold", if(status.contains("🟩"), "⑤ 🟩 Done", if(status.contains("📢"), "⑥ 📢 Published", "⑦ ⬛ Drop"))))))
-  priority: if(priority.contains("🇦"), "① 🇦 Critical & Urgent", if(priority.contains("🇧"), "② 🇧 Important", if(priority.contains("🇨"), "③ 🇨 Normal", if(priority.contains("🇩"), "④ 🇩 Delegated", if(priority.contains("🇪"), "⑤ 🇪 Review", "⑥ Other")))))
+  priority: if(priority.contains("🔺"), "① 🔺 Critical & Urgent", if(priority.contains("⏫"), "② ⏫ Important", if(priority.contains("🔼"), "③ 🔼 Medium", if(priority.contains("◽"), "④ ◽ Normal", if(priority.contains("🔽"), "⑤ 🔽 Delegated", if(priority.contains("⏬"), "⑥ ⏬ Review", "⑦ Other"))))))
   backlinks: file.backlinks.length
   outlinks: file.links.length
   created_relative: created.relative()
   updated_relative: updated.relative()
-  project_valid: if(project.isEmpty(), "❌", if(list(project).filter(value.asFile().tags.filter(value.startsWith("#project/")).length > 0).length == list(project).length, "✅", "❌"))
-  milestone_valid: if(milestone.isEmpty(), "✅", if(list(milestone).filter(value.asFile().hasTag("task/milestone")).length == list(milestone).length, "✅", "❌"))
+  project_valid: if(project.isEmpty(), "❌", if(list(project).filter(value.isType("link") && value.asFile().tags.filter(value.startsWith("#project/")).length > 0).length == list(project).length, "✅", "❌"))
+  milestone_valid: if(milestone.isEmpty(), "✅", if(list(milestone).filter(value.isType("link") && value.asFile().hasTag("task/milestone")).length == list(milestone).length, "✅", "❌"))
   milestone: if(file.hasTag("task/milestone"), file.name, if(milestone.isEmpty(), "∅ No milestone", list(milestone)[0].toString().replace("[[", "").replace("]]", "")))
   ms_sort: if(file.hasTag("task/milestone"), "0", "1")
   ms_tasks_total: if(file.hasTag("task/milestone"), file.backlinks.filter(value.asFile().inFolder("base/tasks")).filter(!value.asFile().hasTag("task/milestone")).filter(!value.asFile().properties.status.contains("⬛")).length, 0)
-  ms_tasks_done: if(file.hasTag("task/milestone"), file.backlinks.filter(value.asFile().inFolder("base/tasks")).filter(!value.asFile().hasTag("task/milestone")).filter(!value.asFile().properties.status.contains("⬛")).filter(value.asFile().properties.status.contains("🟩")).length, 0)
+  ms_tasks_done: if(file.hasTag("task/milestone"), file.backlinks.filter(value.asFile().inFolder("base/tasks")).filter(!value.asFile().hasTag("task/milestone")).filter(!value.asFile().properties.status.contains("⬛")).filter(value.asFile().properties.status.contains("🟩") || value.asFile().properties.status.contains("📢")).length, 0)
   ms_progress: if(!file.hasTag("task/milestone"), "", if(formula.ms_tasks_total == 0, html("<progress value='0' max='100'></progress> 0 / 0"), html("<progress value='" + formula.ms_tasks_done / formula.ms_tasks_total * 100 + "' max='100'></progress> " + formula.ms_tasks_done + " / " + formula.ms_tasks_total)))
-  tasks_progress: if(tasks.filter(value.toString().startsWith("- [")).length, tasks.filter(value.toString().startsWith("- [x]")).length + " / " + tasks.filter(value.toString().startsWith("- [")).length, "-")
 properties:
   note.id:
     displayName: 🆔 id
@@ -86,8 +90,6 @@ properties:
     displayName: 🔢
   formula.ms_tasks_done:
     displayName: ✅
-  formula.tasks_progress:
-    displayName: ✅
 views:
   - type: table
     name: "📊 All: Short View"
@@ -99,7 +101,7 @@ views:
       - file.name
       - status
       - priority
-      - formula.tasks_progress
+      - attribute
       - start
       - end
       - milestone
@@ -135,7 +137,7 @@ views:
       - file.name
       - status
       - priority
-      - formula.tasks_progress
+      - attribute
       - description
       - start
       - end
@@ -179,6 +181,7 @@ views:
       - formula.ms_progress
       - status
       - priority
+      - attribute
       - start
       - end
       - project
@@ -200,6 +203,33 @@ views:
         - "false"
     order:
       - file.name
+  - type: structure
+    name: "🗂 Structure: Milestones"
+    sort:
+      - property: formula.ms_sort
+        direction: ASC
+      - property: formula.kanban
+        direction: ASC
+      - property: formula.priority
+        direction: ASC
+      - property: file.name
+        direction: ASC
+    layout: outline
+    direction: right
+    inherit:
+      - project
+    types:
+      Project:
+        folder: projects
+        children:
+          Milestone: project
+          Task: project
+      Milestone:
+        tag: task/milestone
+        children:
+          Task: milestone
+      Task:
+        tag: task/default
   - type: table
     name: "📋 Workflow: Kanban (v)"
     filters:
@@ -215,6 +245,7 @@ views:
       - file.name
       - status
       - priority
+      - attribute
       - start
       - end
       - project
@@ -253,7 +284,7 @@ views:
       - ⚛
       - ⚙️
       - ⬛
-    groupOrder:
+    columnOrder:
       - 📥
       - ❄
       - 🟥
@@ -272,19 +303,21 @@ views:
       - 🟦=🟦 WIP
       - 🟩=🟩 Done
     subGroupLabels:
-      - 🇦=🇦 critical & urgent
-      - 🇧=🇧 important, not urgent
-      - 🇨=🇨 normal
-      - 🇩=🇩 delegated
-      - 🇪=🇪 review or delete
+      - 🔺=🔺 highest (critical & urgent)
+      - ⏫=⏫ high (important, not urgent)
+      - 🔼=🔼 medium
+      - ◽=◽ normal
+      - 🔽=🔽 low (delegated)
+      - ⏬=⏬ lowest (review or delete)
     hiddenSubGroups:
       - Empty Group
-    subGroupOrder:
-      - 🇦
-      - 🇧
-      - 🇨
-      - 🇩
-      - 🇪
+    rowOrder:
+      - 🔺
+      - ⏫
+      - 🔼
+      - ◽
+      - 🔽
+      - ⏬
     newNoteFolder:
       - base/tasks
     newNoteTemplate:
@@ -331,8 +364,8 @@ views:
       - sleep=moon
       - nutrition=apple
     collapsedSubGroups:
-      - 🇩
-      - 🇪
+      - 🔽
+      - ⏬
   - type: board-view
     name: "📋 Workflow: Kanban-i (h)"
     filters:
@@ -344,15 +377,17 @@ views:
       - file.name
       - milestone
     groupProperty: note.priority
+    idProperty: note.id
     hideEmptyGroups: false
     hiddenGroups:
       - Empty Group
-    groupOrder:
-      - 🇪
-      - 🇩
-      - 🇨
-      - 🇧
-      - 🇦
+    columnOrder:
+      - ⏬
+      - 🔽
+      - ◽
+      - 🔼
+      - ⏫
+      - 🔺
     colorCells: false
     colorHeaders: true
     colorCards: true
@@ -404,12 +439,13 @@ views:
       - 🟦=🟦 WIP
       - 🟩=🟩 Done
     groupLabels:
-      - 🇦=🇦 critical & urgent
-      - 🇧=🇧 important, not urgent
-      - 🇨=🇨 normal
-      - 🇩=🇩 delegated
-      - 🇪=🇪 review or delete
-    subGroupOrder:
+      - 🔺=🔺 highest (critical & urgent)
+      - ⏫=⏫ high (important, not urgent)
+      - 🔼=🔼 medium
+      - ◽=◽ normal
+      - 🔽=🔽 low (delegated)
+      - ⏬=⏬ lowest (review or delete)
+    rowOrder:
       - 🟩
       - 🟦
       - 🟥
@@ -450,7 +486,7 @@ views:
       📢: var(--color-white)
     zoom: 1
     timeScale: day
-    borderColorMap: 🇦=var(--color-red);🇧=var(--color-orange);🇨=var(--color-blue);🇩=var(--color-white);🇪=var(--color-gray)
+    borderColorMap: 🔺=var(--color-red);⏫=var(--color-orange);🔼=var(--color-blue);◽=var(--color-white);🔽=var(--color-accent);⏬=var(--color-gray)
     borderBy: note.priority
     borderWidth: 1
     showColors: true
@@ -488,6 +524,7 @@ views:
       - file.name
       - status
       - priority
+      - attribute
       - project
       - milestone
       - start
@@ -517,6 +554,7 @@ views:
       - file.name
       - status
       - priority
+      - attribute
       - project
       - milestone
       - start
@@ -549,6 +587,7 @@ views:
       - file.name
       - status
       - priority
+      - attribute
       - start
       - end
       - project
@@ -572,6 +611,7 @@ views:
       - file.name
       - status
       - priority
+      - attribute
       - start
       - end
       - project
@@ -600,6 +640,7 @@ views:
       - file.name
       - status
       - priority
+      - attribute
       - start
       - end
       - project
@@ -626,6 +667,7 @@ views:
       - file.name
       - status
       - priority
+      - attribute
       - start
       - end
       - blockedBy
@@ -653,6 +695,7 @@ views:
       - file.name
       - status
       - priority
+      - attribute
       - start
       - end
       - project
@@ -679,6 +722,7 @@ views:
       - file.name
       - status
       - priority
+      - attribute
       - start
       - end
       - project
@@ -717,9 +761,9 @@ views:
       - project
       - milestone
     sort:
-      - property: file.name
-        direction: ASC
       - property: formula.kanban
+        direction: ASC
+      - property: file.name
         direction: ASC
       - property: formula.priority
         direction: ASC
@@ -741,6 +785,7 @@ views:
       - file.name
       - status
       - priority
+      - attribute
       - start
       - end
       - milestone
@@ -770,6 +815,7 @@ views:
       - file.name
       - status
       - priority
+      - attribute
       - project
       - milestone
       - start
@@ -797,6 +843,7 @@ views:
       - file.name
       - status
       - priority
+      - attribute
       - project
       - category
       - meta
@@ -837,6 +884,7 @@ views:
       - file.name
       - status
       - priority
+      - attribute
       - project
       - milestone
       - end
@@ -899,7 +947,7 @@ views:
     columnSize:
       file.name: 350
       note.id: 80
-      formula.project_valid: 70
+      formula.project_valid: 1
       formula.milestone_valid: 1
       note.project: 200
       note.milestone: 200

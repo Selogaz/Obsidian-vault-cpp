@@ -1,10 +1,11 @@
 ---
 aliases:
   - хоткеи
-cssclasses:
-  - hide-backlinks
 obsidianUIMode: preview
 icon: ⌨️
+cssclasses:
+  - hide-backlinks
+  - hide-properties
 ---
 
 # Main menu
@@ -15,7 +16,7 @@ icon: ⌨️
 	- alt + [i]nbox
 		- alt + shift + i – create a note in inbox
 	- alt + [t]ask
-		- alt + shift + [t]ab - tab search
+		- alt + shift + [t]ask - abyss tasks
 	- alt + [d]iary – periodic notes
 		- alt + shift + d – open today
 	- alt + [s]earch – search (sources, projects, ...)

@@ -4,11 +4,12 @@ tags:
   - mark/log/conspectus
   - category/computer_science
 aliases: []
+description:
 status: 🟩
 source:
   - "[[Полная Дорожная Карта AI-инженера за 10 минут (с нуля)]]"
 start: 2026-06-22T23:49:29+03:00
-end:
+end: 2026-09-26
 next:
 url:
 icon: 📓

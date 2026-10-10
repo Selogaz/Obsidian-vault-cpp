@@ -4,6 +4,7 @@ tags:
   - source/book
   - category/english
 aliases: []
+description:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@oxford_english_grammar_tests)"
@@ -25,6 +26,7 @@ icon: 📖
 color: "#b5b570"
 created: 2026-05-19T00:32:01+03:00
 updated: 2026-05-21T13:29:52+03:00
+citekey: oxford_english_grammar_tests
 ---
 
 key to the tests - https://elt.oup.com/elt/students/practicegrammar/oxford-practice-grammar-basic-tests-key.pdf?cc=ru&selLanguage=ru

@@ -1,9 +1,10 @@
 ---
 tags:
-  - status/hold
+  - status/drop
   - source/article/resource
   - category/linux
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@qwen)"
 status: ⬛
@@ -16,13 +17,14 @@ problem:
 creator:
 production:
 start: 2026-02-26T16:24:41+03:00
-end:
+end: 2026-09-26
 url:
   - https://chat.qwen.ai/s/t_fdbd9c1e-b4a9-477d-a024-1ebbbf405d5b?fev=0.2.8
 icon: 🌐
 color: "#7575c0"
 created: 2026-02-26T16:24:41+03:00
 updated: 2026-04-02T14:43:25+03:00
+citekey: qwen
 ---
 
 https://chat.qwen.ai/s/t_fdbd9c1e-b4a9-477d-a024-1ebbbf405d5b?fev=0.2.8

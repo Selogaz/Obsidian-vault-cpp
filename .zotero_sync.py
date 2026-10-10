@@ -7,7 +7,7 @@ from pathlib import Path
 LIBRARY_FILE = ".library.json"
 SOURCES_DIR = "sources"
 
-STATUS_MAP = {"📥": "🟥", "🟥": "🟥", "🟦": "🟦", "🟩": "🟩", "✖": "⬛"}
+STATUS_MAP = {"📥": "📥", "🟥": "🟥", "🟦": "🟦", "🟩": "🟩", "✖": "⬛"}
 RATING_MAP = {"🌕": "🌕", "🌔": "🌔", "🌓": "🌓", "🌒": "🌒", "🌑": "🌑"}
 SCIENTIFICITY_MAP = {"🅰️": "🅰️", "🅱️": "🅱️", "👓": "👓", "📢": "📢", "💬": "💬"}
 COLLECTION_MAP = {
@@ -197,7 +197,7 @@ def process_file(
         with open(file_path, "r", encoding="utf-8") as f:
             content = f.read()
 
-        citekey_match = re.search(r"zotero:.*items/@([a-zA-Z0-9_\-]+)", content)
+        citekey_match = re.search(r"zotero:.*items/@([a-zA-Z0-9_-]+)", content)
         if not citekey_match:
             return False
 

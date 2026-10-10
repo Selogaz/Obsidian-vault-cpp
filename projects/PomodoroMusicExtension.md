@@ -2,13 +2,14 @@
 tags:
   - status/drop
   - project/single
-  - priority/c
+  - priority/normal
   - category/webdev
 aliases:
   - PomoMusic Controller
+description:
 addition:
 status: ⬛
-priority: 🇨
+priority: ◽
 category:
   - "[[webdev]]"
 meta:
@@ -16,7 +17,7 @@ problem:
 creator:
 production:
 start: 2026-05-31T19:38:57+03:00
-end:
+end: 2026-09-26
 url:
   - "[GitHub](https://github.com/exuberance/PomodoroMusicExtension)"
 cover:

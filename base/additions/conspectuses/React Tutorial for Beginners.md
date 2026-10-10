@@ -5,13 +5,15 @@ tags:
   - category/webdev
 aliases:
   - Конспект React Tutorial for Beginners
+description:
 status: 🟩
 source:
   - "[[Учебник по React для начинающих]]"
 start: 2026-05-26T21:30:00+03:00
-end:
+end: 2026-09-26
 next:
-url: https://youtu.be/SqcY0GlETPk
+url:
+  - https://youtu.be/SqcY0GlETPk
 icon: 📓
 color: "#6f97c8"
 updated: 2026-05-27T12:55:08+03:00

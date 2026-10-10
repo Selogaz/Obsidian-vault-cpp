@@ -4,6 +4,7 @@ tags:
   - category/webdev
 aliases:
   - MDN
+description:
 published: 2025
 addition:
 zotero: "[🇿](zotero://select/items/@MDN2025)"
@@ -24,6 +25,7 @@ icon: 📃
 color: "#7575c0"
 created: 2026-01-13T22:27:24+03:00
 updated: 2026-06-22T01:08:01+03:00
+citekey: MDN2025
 related:
 ---
 

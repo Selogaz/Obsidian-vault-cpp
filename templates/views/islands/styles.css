@@ -1,0 +1,101 @@
+.islands {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.islands__hint,
+.islands__empty {
+  color: var(--text-faint);
+  font-size: .72em;
+}
+
+/* Cards flow into columns; each one is drawn as a small chain, not as text. */
+.islands__cards {
+  columns: 3 300px;
+  column-gap: 12px;
+}
+
+.islands__card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border: 1px dashed var(--background-modifier-border-hover);
+  border-radius: var(--radius-s);
+  break-inside: avoid;
+}
+
+.islands__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  color: var(--text-muted);
+  font-size: .72em;
+}
+
+.islands__category {
+  color: var(--text-faint);
+}
+
+.islands__origins {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: .8em;
+}
+
+.islands__chain {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  font-size: .86em;
+}
+
+.islands__line {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  min-width: 0;
+}
+
+.islands__line--extra {
+  color: var(--text-faint);
+  font-size: .85em;
+}
+
+.islands__branch,
+.islands__arrow {
+  flex: 0 0 auto;
+  color: var(--text-faint);
+  font-family: var(--font-monospace);
+  white-space: pre;
+}
+
+.islands__mention {
+  color: var(--text-muted);
+}
+
+.islands__node {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  min-width: 0;
+}
+
+.islands__node .internal-link {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.islands__icon {
+  flex: 0 0 auto;
+}
+
+/* The periodic note a line starts from keeps its full date; the note shortens. */
+.islands__origins .islands__node:first-child {
+  flex: 0 0 auto;
+}

@@ -1,15 +1,16 @@
 ---
 tags:
+  - category/webdev
   - task/default
 aliases: []
+description: ""
 id: ПОМ-18
 attribute:
-description: ""
 project:
   - "[[Подземелья Максвелла]]"
 milestone:
 status: 🟥
-priority: 🇧
+priority: 🔼
 related:
 blockedBy:
 category:

@@ -4,6 +4,7 @@ tags:
   - mark/log/conspectus
   - category/webdev
 aliases: []
+description:
 status: ❄
 source:
   - "[[sources/A Philosophy Of Software Design]]"
@@ -14,13 +15,14 @@ url:
 icon: 📓
 color: "#6f97c8"
 created: 2026-05-27T23:40:05+03:00
-updated: 2026-09-04T13:04:07+03:00
+updated: 2026-09-28T13:40:03+04:00
 tasks: []
 ---
 
 > [!toc]+
 > ```table-of-contents
 > ```
+
 # Preface
 
 [[главная проблема computer science]]

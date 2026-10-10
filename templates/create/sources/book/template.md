@@ -1,7 +1,9 @@
 <% "---" %>
 tags:<% `\n  -  ${String(tp.user.manifest("target.query") || "").match(/#source[\w\/-]+/)[0].replace(/^#/, "")}` %>
 aliases: []
+description:
 published:
+addition:
 status: <%- await tp.user.status("source") %>
 rating:
 scientificity:
@@ -10,7 +12,7 @@ meta:<%* const m = await tp.user.meta(c) %><%- m ? `\n  - "[[${m}]]"` : "" %>
 problem:<%* const p = await tp.user.problem(m) %><%- p ? `\n  - "[[${p}]]"` : "" %>
 creator:
 production:
-start: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
+start:
 end:
 url:
 cover:
@@ -20,4 +22,21 @@ created: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 <% "---" %>
 
-<% tp.file.cursor(0) %>
+~~~~tabs
+tab: ☰ TOC
+```table-of-contents
+```
+
+tab: ✔️ Tasks
+```tasks
+path includes {{query.file.path}}
+group by heading
+hide task count
+```
+
+tab: ➕ Additions
+`BUTTON[add-addition]`
+![[interim.base#📋 Workflow: Kanban (v)]]
+~~~~
+
+<% tp.user.cursor() %>

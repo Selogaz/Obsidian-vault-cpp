@@ -1,9 +1,9 @@
 ---
 tags:
-  - status/todo
   - source/video/recording
   - category/computer_science
 aliases: []
+description:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@народный_пк_от_welson)"
@@ -27,6 +27,7 @@ icon: 📹
 color: "#2a9070"
 created: 2025-10-16T10:08:16+03:00
 updated: 2026-01-14T00:21:26+03:00
+citekey: народный_пк_от_welson
 genre:
 related:
 total_hours: 0

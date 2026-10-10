@@ -5,25 +5,47 @@ filters:
     - or:
         - '!this.file.hasTag("system/category")'
         - or:
-            - file.hasTag("category/" + this.file.name.replace(" ", "_"))
+            - file.hasTag("category/" + this.file.name.replace(/ /g, "_"))
             - category.contains(link(this.file.name))
 formulas:
+  cover_image: image(cover)
+  cover_sort: if(cover == null, 0, 1)
   type: file.tags.filter(value.startsWith("#project/"))[0].replace(/^.*\//, '')
   kanban: if(status.contains("🟦"), "① 🟦 In Progress", if(status.contains("🟥"), "② 🟥 ToDo", if(status.contains("📥"), "③ 📥 Inbox", if(status.contains("❄"), "④ ❄ Hold", if(status.contains("🟩"), "⑤ 🟩 Done", "⑥ Other")))))
-  priority: if(priority.contains("🇦"), "① 🇦 Important and urgent", if(priority.contains("🇧"), "② 🇧 Important and non-urgent", if(priority.contains("🇨"), "③ 🇨 Common project", if(priority.contains("🇩"), "④ 🇩 Delegate", if(priority.contains("🇪"), "⑤ 🇪 Eliminate", "⑥ Other")))))
+  priority: if(priority.contains("🔺"), "① 🔺 Important and urgent", if(priority.contains("⏫"), "② ⏫ Important and non-urgent", if(priority.contains("🔼"), "③ 🔼 Medium", if(priority.contains("◽"), "④ ◽ Normal", if(priority.contains("🔽"), "⑤ 🔽 Delegate", if(priority.contains("⏬"), "⑥ ⏬ Eliminate", "⑦ Other"))))))
   backlinks: file.backlinks.length
   outlinks: file.links.length
   created_relative: created.relative()
   updated_relative: updated.relative()
   category_status: if(!category.isEmpty(), "✅", "❌")
-  category_type_valid: if(category.isEmpty(), "✅", if(list(category).filter(value.asFile().hasTag("system/category")).length == list(category).length, "✅", "❌"))
-  meta_type_valid: if(meta.isEmpty(), "✅", if(list(meta).filter(value.asFile().hasTag("system/high/meta")).length == list(meta).length, "✅", "❌"))
-  problem_type_valid: if(problem.isEmpty(), "✅", if(list(problem).filter(value.asFile().hasTag("system/high/problem")).length == list(problem).length, "✅", "❌"))
-  creator_type_valid: if(creator.isEmpty(), "✅", if(list(creator).filter(value.asFile().tags.filter(value.startsWith("#creator/") || value.startsWith("#contact/")).length > 0).length == list(creator).length, "✅", "❌"))
-  production_type_valid: if(production.isEmpty(), "✅", if(list(production).filter(value.asFile().tags.filter(value.startsWith("#production/")).length > 0).length == list(production).length, "✅", "❌"))
+  category_type_valid: if(category.isEmpty(), "✅", if(list(category).filter(value.isType("link") && value.asFile().hasTag("system/category")).length == list(category).length, "✅", "❌"))
+  meta_type_valid: if(meta.isEmpty(), "✅", if(list(meta).filter(value.isType("link") && value.asFile().hasTag("system/high/meta")).length == list(meta).length, "✅", "❌"))
+  problem_type_valid: if(problem.isEmpty(), "✅", if(list(problem).filter(value.isType("link") && value.asFile().hasTag("system/high/problem")).length == list(problem).length, "✅", "❌"))
+  creator_type_valid: if(creator.isEmpty(), "✅", if(list(creator).filter(value.isType("link") && value.asFile().tags.filter(value.startsWith("#creator/") || value.startsWith("#contact/")).length > 0).length == list(creator).length, "✅", "❌"))
+  creator_category_valid: if(creator.isEmpty(), "✅", if(list(creator).filter(value.isType("link") && value.asFile() && list(value.asFile().properties.category).filter(list(category).contains(value)).isEmpty()).isEmpty(), "✅", "❌"))
+  production_type_valid: if(production.isEmpty(), "✅", if(list(production).filter(value.isType("link") && value.asFile().tags.filter(value.startsWith("#production/")).length > 0).length == list(production).length, "✅", "❌"))
+  production_category_valid: if(production.isEmpty(), "✅", if(list(production).filter(value.isType("link") && value.asFile() && list(value.asFile().properties.category).filter(list(category).contains(value)).isEmpty()).isEmpty(), "✅", "❌"))
   end_year: if(end, end.toString().slice(0, 4), "")
-  tasks_progress: if(tasks.filter(value.toString().startsWith("- [")).length, tasks.filter(value.toString().startsWith("- [x]")).length + " / " + tasks.filter(value.toString().startsWith("- [")).length, "—")
+  category_valid: if(formula.category_type_valid == "❌", "❌", "✅")
+  meta_valid: if(formula.meta_type_valid == "❌", "❌", "✅")
+  problem_valid: if(formula.problem_type_valid == "❌", "❌", "✅")
+  creator_valid: if(formula.creator_type_valid == "❌" || formula.creator_category_valid == "❌", "❌", "✅")
+  production_valid: if(formula.production_type_valid == "❌" || formula.production_category_valid == "❌", "❌", "✅")
 properties:
+  formula.category_valid:
+    displayName: ✓
+  formula.meta_valid:
+    displayName: ✓
+  formula.problem_valid:
+    displayName: ✓
+  formula.creator_valid:
+    displayName: ✓
+  formula.production_valid:
+    displayName: ✓
+  note.cover:
+    displayName: 🖼️ cover
+  formula.cover_image:
+    displayName: 🖼️
   formula.type:
     displayName: 🗄️ type
   note.addition:
@@ -72,10 +94,12 @@ properties:
     displayName: 🏷️
   formula.creator_type_valid:
     displayName: 🏷️
+  formula.creator_category_valid:
+    displayName: 🗺️
   formula.production_type_valid:
     displayName: 🏷️
-  formula.tasks_progress:
-    displayName: ✅
+  formula.production_category_valid:
+    displayName: 🗺️
 views:
   - type: table
     name: "📊 All: Short View"
@@ -209,7 +233,7 @@ views:
       - ⚛
       - ⚙️
       - ⬛
-    groupOrder:
+    columnOrder:
       - 📥
       - ❄
       - 🟥
@@ -228,24 +252,30 @@ views:
       - 🟦=🟦 WIP
       - 🟩=🟩 Done
     subGroupLabels:
-      - 🇦=🇦 critical & urgent
-      - 🇧=🇧 important, not urgent
-      - 🇨=🇨 normal
-      - 🇩=🇩 delegated
-      - 🇪=🇪 review or delete
+      - 🔺=🔺 highest (critical & urgent)
+      - ⏫=⏫ high (important, not urgent)
+      - 🔼=🔼 medium
+      - ◽=◽ normal
+      - 🔽=🔽 low (delegated)
+      - ⏬=⏬ lowest (review or delete)
     hiddenSubGroups:
       - Empty Group
-    subGroupOrder:
-      - 🇦
-      - 🇧
-      - 🇨
-      - 🇩
-      - 🇪
+    rowOrder:
+      - 🔺
+      - ⏫
+      - 🔼
+      - ◽
+      - 🔽
+      - ⏬
     newNoteFolder:
       - projects
     newNoteTemplate:
       - templates/create/projects/single project template.md
     newNoteOpen: true
+    collapsedSubGroups:
+      - 🔺
+      - 🔽
+      - ⏬
   - type: board-view
     name: "📋 Workflow: Kanban-i (h)"
     filters:
@@ -260,12 +290,13 @@ views:
     hideEmptyGroups: false
     hiddenGroups:
       - Empty Group
-    groupOrder:
-      - 🇦
-      - 🇧
-      - 🇨
-      - 🇩
-      - 🇪
+    columnOrder:
+      - 🔺
+      - ⏫
+      - 🔼
+      - ◽
+      - 🔽
+      - ⏬
     colorCells: false
     colorHeaders: false
     colorCards: false
@@ -278,12 +309,13 @@ views:
       - 🟦=🟦 WIP
       - 🟩=🟩 Done
     groupLabels:
-      - 🇦=🇦 critical & urgent
-      - 🇧=🇧 important, not urgent
-      - 🇨=🇨 normal
-      - 🇩=🇩 delegated
-      - 🇪=🇪 review or delete
-    subGroupOrder:
+      - 🔺=🔺 highest (critical & urgent)
+      - ⏫=⏫ high (important, not urgent)
+      - 🔼=🔼 medium
+      - ◽=◽ normal
+      - 🔽=🔽 low (delegated)
+      - ⏬=⏬ lowest (review or delete)
+    rowOrder:
       - 🟦
       - 🟥
       - ❄
@@ -308,11 +340,12 @@ views:
     endDate: note.end
     colorBy: note.priority
     colorMap:
-      🇨: var(--color-blue)
-      🇦: var(--color-red)
-      🇧: var(--color-orange)
-      🇩: var(--color-accent)
-      🇪: var(--color-base-40)
+      🔼: var(--color-blue)
+      🔺: var(--color-red)
+      ⏫: var(--color-orange)
+      ◽: var(--color-base-50)
+      🔽: var(--color-accent)
+      ⏬: var(--color-base-40)
     zoom: 1
     showColors: false
   - type: calendar
@@ -396,6 +429,31 @@ views:
     columnSize:
       file.name: 530
       note.addition: 90
+      note.status: 1
+      note.priority: 1
+  - type: table
+    name: "🔺 Workflow: Prioritize"
+    filters:
+      or:
+        - status.contains("🟦")
+        - status.contains("🟥")
+        - status.contains("📥")
+    groupBy:
+      property: formula.priority
+      direction: ASC
+    order:
+      - file.name
+      - status
+      - priority
+      - start
+      - end
+    sort:
+      - property: formula.kanban
+        direction: ASC
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
       note.status: 1
       note.priority: 1
   - type: table
@@ -852,45 +910,58 @@ views:
     name: ✅ Structure Validation
     filters:
       or:
-        - formula.category_type_valid == "❌"
-        - formula.meta_type_valid == "❌"
-        - formula.problem_type_valid == "❌"
-        - formula.creator_type_valid == "❌"
-        - formula.production_type_valid == "❌"
+        - formula.category_valid == "❌"
+        - formula.meta_valid == "❌"
+        - formula.problem_valid == "❌"
+        - formula.creator_valid == "❌"
+        - formula.production_valid == "❌"
     order:
       - file.name
-      - formula.category_type_valid
+      - formula.category_valid
       - category
-      - formula.meta_type_valid
+      - formula.meta_valid
       - meta
-      - formula.problem_type_valid
+      - formula.problem_valid
       - problem
-      - formula.creator_type_valid
+      - formula.creator_valid
       - creator
-      - formula.production_type_valid
+      - formula.production_valid
       - production
     sort:
-      - property: formula.category_type_valid
+      - property: formula.category_valid
         direction: DESC
-      - property: formula.meta_type_valid
+      - property: formula.meta_valid
         direction: DESC
-      - property: formula.problem_type_valid
+      - property: formula.problem_valid
         direction: DESC
-      - property: formula.creator_type_valid
+      - property: formula.creator_valid
         direction: DESC
-      - property: formula.production_type_valid
+      - property: formula.production_valid
         direction: DESC
       - property: file.name
         direction: ASC
     columnSize:
       file.name: 350
-      formula.category_type_valid: 70
-      formula.meta_type_valid: 1
-      formula.problem_type_valid: 1
-      formula.creator_type_valid: 1
-      formula.production_type_valid: 1
+      formula.category_valid: 1
+      formula.meta_valid: 1
+      formula.problem_valid: 1
+      formula.creator_valid: 1
+      formula.production_valid: 1
       note.category: 180
       note.meta: 180
       note.problem: 180
       note.creator: 180
       note.production: 180
+    timeScale: year
+  - type: table
+    name: ⬜ Uncovered
+    groupBy:
+      property: formula.type
+      direction: ASC
+    order:
+      - formula.cover_image
+      - file.name
+      - cover
+    sort:
+      - property: formula.cover_sort
+        direction: ASC

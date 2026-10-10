@@ -1,10 +1,11 @@
 ---
 tags:
-  - status/hold
+  - status/drop
   - source/article/paper
   - category/webdev
 aliases:
   - Профессия FULL STACK разработчик itProger
+description:
 published: 2022
 addition:
   - "[[full stack itproger - attachments|📁]]"
@@ -21,13 +22,14 @@ problem:
 creator:
 production:
 start: 2026-01-14T10:26:29+03:00
-end:
+end: 2026-09-26
 url:
   - "[SHAREWOOD.TECH (ex .BIZ) (Шервуд) 🔥 Слив Курсов – Скачать Бесплатно](https://s1.sharewood.tech/threads/itproger-professija-full-stack-razrabotchik-2021.319682/)"
 icon: 📃
 color: "#7575c0"
 created: 2026-01-14T10:26:29+03:00
 updated: 2026-04-02T14:34:51+03:00
+citekey: ProfessiyaFULLSTACK2022
 related:
 ---
 

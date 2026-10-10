@@ -3,11 +3,25 @@ filters:
     - file.inFolder("base/notes")
 formulas:
   md_links_count: file.links.filter(value.asFile().ext == "md").length
+  backlinks: file.backlinks.length
+  outlinks: file.links.length
   created_relative: created.relative()
   updated_relative: updated.relative()
 properties:
   file.name:
     displayName: 🔤 title
+  file.tags:
+    displayName: 🏷️ tags
+  note.deck:
+    displayName: 🃏 deck
+  file.backlinks:
+    displayName: backlinks
+  file.links:
+    displayName: outlinks
+  formula.backlinks:
+    displayName: 🔽
+  formula.outlinks:
+    displayName: ⬆️
   note.topic:
     displayName: 💬 topic
   note.modelKey:
@@ -17,40 +31,75 @@ properties:
   formula.updated_relative:
     displayName: 🔄 updated
 views:
-  - type: table
-    name: 👻 Orphans
+  - type: dynamic-views-masonry
+    name: 👻 Orphans (cards)
     filters:
       and:
         - '!file.hasTag("category")'
-        - file.backlinks.length == 0
         - formula.md_links_count == 0
+        - file.backlinks.length == 0
     order:
       - file.name
+      - updated
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    fallbackToContent: true
+    textPreviewLines: 8
+    thumbnailSize: 90
+  - type: table
+    name: 👻 Orphans (list)
+    filters:
+      and:
+        - '!file.hasTag("category")'
+        - formula.md_links_count == 0
+        - file.backlinks.length == 0
+    order:
+      - file.name
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+  - type: table
+    name: 🧬 Via Hierarchies
+    filters:
+      and:
+        - this.file.hasTag("system/category")
+        - not:
+            - file.hasTag("category/" + this.file.name.replace(/ /g, "_"))
+            - category.contains(link(this.file.name))
+        - file.backlinks.filter(file(value).inFolder("base/_hierarchy") && file(value).hasLink(this.file)).length > 0
+    order:
+      - file.name
+      - file.tags
+      - deck
+      - formula.backlinks
+      - file.backlinks
+      - formula.outlinks
+      - file.links
       - formula.created_relative
       - formula.updated_relative
     sort:
       - property: formula.created_relative
         direction: DESC
     columnSize:
-      file.name: 1330
-      formula.created_relative: 140
-      formula.updated_relative: 140
+      file.name: 530
+      formula.backlinks: 1
+      formula.outlinks: 1
   - type: table
     name: 🤖 AI Generated
     filters:
       and:
         - file.hasTag("mark/ai")
     order:
+      - formula.created_relative
+      - formula.updated_relative
       - file.name
       - topic
       - modelKey
-      - formula.created_relative
-      - formula.updated_relative
     sort:
       - property: formula.updated_relative
         direction: DESC
     columnSize:
-      file.name: 530
       note.topic: 350
       note.modelKey: 350
       formula.created_relative: 140
@@ -61,13 +110,12 @@ views:
       and:
         - file.hasTag("mark/bookmark")
     order:
-      - file.name
       - formula.created_relative
       - formula.updated_relative
+      - file.name
     sort:
       - property: formula.created_relative
         direction: DESC
     columnSize:
-      file.name: 1330
       formula.created_relative: 140
       formula.updated_relative: 140

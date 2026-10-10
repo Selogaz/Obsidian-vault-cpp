@@ -3,5 +3,5 @@ emoji: "➕"
 title: "other"
 targetKind: "note"
 contextFolder: ""
-folder: ""
+folder: "base/additions/aggregators"
 ---

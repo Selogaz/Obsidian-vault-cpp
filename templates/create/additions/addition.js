@@ -87,7 +87,9 @@ module.exports = {
         }
       }
 
-      const aggregatorFolder = 'base/additions/aggregators';
+      const aggregatorFolder = hasConcreteTemplate
+        ? 'base/additions/aggregators'
+        : selected.folder || 'base/additions/aggregators';
       const aggregatorBaseName = `${activeFile.basename} - ${selected.id}`;
       const aggregatorPath = `${aggregatorFolder}/${aggregatorBaseName}.md`;
 
@@ -161,15 +163,23 @@ module.exports = {
 };
 
 function getTemplaterFunctions(app) {
-  const tp =
-    app.plugins.plugins['templater-obsidian']?.templater
-      ?.current_functions_object;
+  const templater = app.plugins.plugins['templater-obsidian']?.templater;
 
-  if (!tp?.file?.create_new) {
+  if (!templater?.create_new_note_from_template) {
     throw new Error('Templater API is not available.');
   }
 
-  return tp;
+  return {
+    file: {
+      create_new: (template, filename, openNew, folder) =>
+        templater.create_new_note_from_template(
+          template,
+          folder,
+          filename,
+          openNew
+        ),
+    },
+  };
 }
 
 async function askRequiredConcreteTitle(quickAddApi) {

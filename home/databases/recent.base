@@ -31,15 +31,14 @@ views:
       property: formula.folder_type
       direction: ASC
     order:
-      - file.name
       - formula.created_relative
       - formula.updated_relative
+      - file.name
     sort:
       - property: formula.updated_relative
         direction: DESC
     limit: 25
     columnSize:
-      file.name: 1325
       formula.created_relative: 140
       formula.updated_relative: 140
   - type: table
@@ -48,15 +47,14 @@ views:
       property: formula.folder_type
       direction: ASC
     order:
-      - file.name
       - formula.created_relative
       - formula.updated_relative
+      - file.name
     sort:
       - property: formula.created_relative
         direction: DESC
     limit: 25
     columnSize:
-      file.name: 1325
       formula.created_relative: 140
       formula.updated_relative: 140
   - type: table
@@ -69,14 +67,13 @@ views:
       property: formula.today_activity
       direction: ASC
     order:
-      - file.name
       - formula.created_relative
       - formula.updated_relative
+      - file.name
     sort:
       - property: formula.updated_relative
         direction: DESC
     columnSize:
-      file.name: 1325
       formula.created_relative: 140
       formula.updated_relative: 140
   - type: table
@@ -86,14 +83,13 @@ views:
         - created >= today() - "7d"
         - updated >= today() - "7d"
     order:
-      - file.name
       - formula.created_relative
       - formula.updated_relative
+      - file.name
     sort:
       - property: formula.created_relative
         direction: DESC
     columnSize:
-      file.name: 1325
       formula.created_relative: 140
       formula.updated_relative: 140
   - type: table
@@ -103,14 +99,13 @@ views:
         - created >= today() - "30d"
         - updated >= today() - "30d"
     order:
-      - file.name
       - formula.created_relative
       - formula.updated_relative
+      - file.name
     sort:
       - property: formula.created_relative
         direction: DESC
     columnSize:
-      file.name: 1325
       formula.created_relative: 140
       formula.updated_relative: 140
   - type: table
@@ -120,14 +115,13 @@ views:
         - created >= today() - "90d"
         - updated >= today() - "90d"
     order:
-      - file.name
       - formula.created_relative
       - formula.updated_relative
+      - file.name
     sort:
       - property: formula.created_relative
         direction: DESC
     columnSize:
-      file.name: 1325
       formula.created_relative: 140
       formula.updated_relative: 140
   - type: table
@@ -137,14 +131,13 @@ views:
         - created >= today() - "365d"
         - updated >= today() - "365d"
     order:
-      - file.name
       - formula.created_relative
       - formula.updated_relative
+      - file.name
     sort:
       - property: formula.created_relative
         direction: DESC
     columnSize:
-      file.name: 1325
       formula.created_relative: 140
       formula.updated_relative: 140
   - type: table
@@ -162,6 +155,5 @@ views:
         direction: ASC
     limit: 28
     columnSize:
-      file.name: 1325
       formula.created_relative: 140
       formula.updated_relative: 140

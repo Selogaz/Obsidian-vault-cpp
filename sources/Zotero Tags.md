@@ -5,6 +5,7 @@ tags:
   - category/obsidian
 aliases:
   - Zotero Tags
+description:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@ZoteroTags)"
@@ -18,13 +19,14 @@ problem:
 creator:
 production:
 start: 2026-06-01T13:35:27+03:00
-end:
+end: 2026-09-26
 url:
   - "[flowing-abyss](https://flowing-abyss.com/zotero-tags)"
 icon: 📃
 color: "#7575c0"
 created: 2026-06-01T13:35:27+03:00
 updated: 2026-06-01T23:17:56+03:00
+citekey: ZoteroTags
 related:
 ---
 

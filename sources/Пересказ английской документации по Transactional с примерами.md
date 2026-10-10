@@ -3,6 +3,7 @@ tags:
   - source/article/paper
   - category/java
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@пересказ_английской_документации_по_transactional_с_примерами)"
 status: 📥
@@ -20,6 +21,7 @@ icon: 📃
 color: "#7575c0"
 created: 2025-09-20T08:37:24+03:00
 updated: 2026-01-14T00:21:02+03:00
+citekey: пересказ_английской_документации_по_transactional_с_примерами
 total_hours: 0
 ---
 

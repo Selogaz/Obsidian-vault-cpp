@@ -9,7 +9,8 @@ module.exports = async function refactor() {
   const content = text_split.slice(1).join('\n');
 
   const note = await tp.user.note(file_name, content);
-  const template = note.template;
+  // The new note is created without opening, so its cursor mark has nowhere to go.
+  const template = note.template.replace(/<%\s*tp\.file\.cursor\(\d*\)\s*%>/g, '');
   const title = note.title;
 
   await tp.file.create_new(template, title);

@@ -5,6 +5,7 @@ tags:
   - category/computer_science
 aliases:
   - Как на самом деле распределяют нагрузку Windows 10 и 11 на разные типы ядер в Intel Alder Lake?!
+description:
 published: 2022
 addition:
 zotero: "[🇿](zotero://select/items/@etotkompyuterKakNaSamom2022)"
@@ -19,13 +20,14 @@ creator:
   - "[[Этот Компьютер]]"
 production:
 start: 2025-10-23T17:41:49+03:00
-end:
+end: 2026-09-26
 url:
   - "[YouTube](https://www.youtube.com/watch?v=3SrbnbhvzTw)"
 icon: 📹
 color: "#2a9070"
 created: 2025-10-23T17:41:49+03:00
 updated: 2026-02-28T23:34:16+03:00
+citekey: etotkompyuterKakNaSamom2022
 related:
 total_hours: 0
 ---

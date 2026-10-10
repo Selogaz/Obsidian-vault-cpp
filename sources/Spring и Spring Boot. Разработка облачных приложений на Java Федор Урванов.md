@@ -1,8 +1,10 @@
 ---
 tags:
+  - status/drop
   - source/book
   - category/java
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@spring_i_spring_boot_razrabotka_oblachnyh_prilozheniy_na_java_fedor_urvanov)"
 status: ⬛
@@ -15,11 +17,12 @@ problem:
 creator:
 production:
 start: 2025-05-31T20:58:17+03:00
-end:
+end: 2026-09-26
 icon: 📖
 color: "#b5b570"
 created: 2025-05-31T20:58:17+03:00
 updated: 2026-06-01T17:36:48+03:00
+citekey: spring_i_spring_boot_razrabotka_oblachnyh_prilozheniy_na_java_fedor_urvanov
 total_hours: 0
 ---
 

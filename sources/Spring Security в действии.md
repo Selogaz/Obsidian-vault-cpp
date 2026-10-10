@@ -1,9 +1,11 @@
 ---
 tags:
+  - status/drop
   - source/book
   - category/java
 aliases:
   - Spring Security в действии
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@spilkeSpringSecurityDeystvii)"
 status: ⬛
@@ -15,9 +17,11 @@ meta:
 problem:
 creator:
 production:
+end: 2026-09-26
 icon: 📖
 color: "#b5b570"
 updated: 2026-06-01T17:35:59+03:00
+citekey: spilkeSpringSecurityDeystvii
 ---
 
 ```table-of-contents

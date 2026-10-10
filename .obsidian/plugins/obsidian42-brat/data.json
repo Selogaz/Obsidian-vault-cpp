@@ -1,37 +1,52 @@
 {
   "pluginList": [
-    "TimoBechtel/obsidian-block-view",
-    "ocapraro/obsidian-bases-tasks",
-    "churnish/bases-auto-search",
-    "haiqiang-zhang/obsidian-bases-charts",
+    "flowing-abyss/obsidian-abyss-tasks",
+    "SilentVoid13/Templater",
+    "flowing-abyss/obsidian-bases-structure",
+    "flowing-abyss/obsidian-local-fonts",
     "flowing-abyss/obsidian-bases-board",
+    "flowing-abyss/obsidian-tabbed",
+    "flowing-abyss/obsidian-micropatches",
+    "flowing-abyss/obsidian-metadata-validator",
+    "liamcain/obsidian-periodic-notes",
     "TfTHacker/timeline-for-bases",
-    "reply2za/obsidian-query-control",
-    "flowing-abyss/obsidian-task-calendar",
-    "flowing-abyss/obsidian-task-search",
-    "flowing-abyss/obsidian-tag-replacer",
-    "flowing-abyss/obsidian-frontmatter-sync",
     "flowing-abyss/obsidian-calendar-plugin"
   ],
   "pluginSubListFrozenVersion": [
     {
-      "repo": "TimoBechtel/obsidian-block-view",
+      "repo": "flowing-abyss/obsidian-abyss-tasks",
       "version": "latest"
     },
     {
-      "repo": "ocapraro/obsidian-bases-tasks",
-      "version": ""
+      "repo": "SilentVoid13/Templater",
+      "version": "2.25.1"
     },
     {
-      "repo": "churnish/bases-auto-search",
+      "repo": "flowing-abyss/obsidian-bases-structure",
       "version": "latest"
     },
     {
-      "repo": "haiqiang-zhang/obsidian-bases-charts",
-      "version": ""
+      "repo": "flowing-abyss/obsidian-local-fonts",
+      "version": "latest"
     },
     {
       "repo": "flowing-abyss/obsidian-bases-board",
+      "version": "latest"
+    },
+    {
+      "repo": "flowing-abyss/obsidian-tabbed",
+      "version": "latest"
+    },
+    {
+      "repo": "flowing-abyss/obsidian-micropatches",
+      "version": "latest"
+    },
+    {
+      "repo": "flowing-abyss/obsidian-metadata-validator",
+      "version": "latest"
+    },
+    {
+      "repo": "liamcain/obsidian-periodic-notes",
       "version": "latest"
     },
     {
@@ -39,31 +54,16 @@
       "version": "latest"
     },
     {
-      "repo": "reply2za/obsidian-query-control",
-      "version": "latest"
-    },
-    {
       "repo": "flowing-abyss/obsidian-calendar-plugin",
-      "version": "latest"
-    },
-    {
-      "repo": "flowing-abyss/obsidian-frontmatter-sync",
-      "version": "latest"
-    },
-    {
-      "repo": "flowing-abyss/obsidian-tag-replacer",
-      "version": "latest"
-    },
-    {
-      "repo": "flowing-abyss/obsidian-task-search",
-      "version": "latest"
-    },
-    {
-      "repo": "flowing-abyss/obsidian-task-calendar",
       "version": "latest"
     }
   ],
-  "themesList": [],
+  "themesList": [
+    {
+      "repo": "flowing-abyss/obsidian-base16-default-dark",
+      "lastUpdate": "27356873"
+    }
+  ],
   "updateAtStartup": true,
   "updateThemesAtStartup": true,
   "enableAfterInstall": true,

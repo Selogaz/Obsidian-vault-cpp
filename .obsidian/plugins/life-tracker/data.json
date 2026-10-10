@@ -1,0 +1,148 @@
+{
+  "visualizationPresets": [],
+  "animationDuration": 3000,
+  "propertyDefinitions": [
+    {
+      "id": "ff78567a-0b03-4ed2-b169-96b09dcb26e8",
+      "name": "focus",
+      "displayName": "🧿 Focus",
+      "type": "number",
+      "allowedValues": [],
+      "numberRange": {
+        "min": 0,
+        "max": 10,
+        "step": 1
+      },
+      "defaultValue": "0",
+      "required": false,
+      "description": "",
+      "order": 0,
+      "mappings": [],
+      "valueMapping": null,
+      "polarity": "higher-is-better",
+      "valueEmojis": null
+    },
+    {
+      "id": "ba86f938-5851-41ce-942b-2f3374d27025",
+      "name": "learn",
+      "displayName": "💡 learn",
+      "type": "number",
+      "allowedValues": [],
+      "numberRange": {
+        "min": 0,
+        "max": 10,
+        "step": 1
+      },
+      "defaultValue": null,
+      "required": false,
+      "description": "",
+      "order": 1,
+      "mappings": [],
+      "valueMapping": null,
+      "polarity": "higher-is-better",
+      "valueEmojis": null
+    },
+    {
+      "id": "d3bc912f-7540-4827-bf4d-2407d6911006",
+      "name": "routine",
+      "displayName": "🔄 routine",
+      "type": "number",
+      "allowedValues": [],
+      "numberRange": {
+        "min": 0,
+        "max": 10,
+        "step": 1
+      },
+      "defaultValue": null,
+      "required": false,
+      "description": "",
+      "order": 2,
+      "mappings": [],
+      "valueMapping": null,
+      "polarity": "higher-is-better",
+      "valueEmojis": null
+    },
+    {
+      "id": "ee0bbffa-b188-4442-93f3-601d190313d1",
+      "name": "move",
+      "displayName": "🧗 move",
+      "type": "number",
+      "allowedValues": [],
+      "numberRange": {
+        "min": 0,
+        "max": 10,
+        "step": 1
+      },
+      "defaultValue": null,
+      "required": false,
+      "description": "",
+      "order": 3,
+      "mappings": [],
+      "valueMapping": null,
+      "polarity": "higher-is-better",
+      "valueEmojis": null
+    },
+    {
+      "id": "f370a179-c3d5-4145-a852-6c9de7cd42ed",
+      "name": "connect",
+      "displayName": "💬 connect",
+      "type": "number",
+      "allowedValues": [],
+      "numberRange": {
+        "min": 0,
+        "max": 10,
+        "step": 1
+      },
+      "defaultValue": null,
+      "required": false,
+      "description": "",
+      "order": 4,
+      "mappings": [],
+      "valueMapping": null,
+      "polarity": "higher-is-better",
+      "valueEmojis": null
+    },
+    {
+      "id": "0cdc5853-e84d-4668-ab5f-63dec244b0da",
+      "name": "rest",
+      "displayName": "🌙 rest",
+      "type": "number",
+      "allowedValues": [],
+      "numberRange": {
+        "min": 0,
+        "max": 10,
+        "step": 1
+      },
+      "defaultValue": null,
+      "required": false,
+      "description": "",
+      "order": 5,
+      "mappings": [],
+      "valueMapping": null,
+      "polarity": "higher-is-better",
+      "valueEmojis": null
+    },
+    {
+      "id": "fa61f925-d39f-4e0d-b5a9-927edc5206fa",
+      "name": "reviewed",
+      "displayName": "👁 reviewed",
+      "type": "checkbox",
+      "allowedValues": [],
+      "numberRange": null,
+      "defaultValue": false,
+      "required": false,
+      "description": "",
+      "order": 6,
+      "mappings": [],
+      "valueMapping": null,
+      "polarity": "higher-is-better",
+      "valueEmojis": null
+    }
+  ],
+  "showConfettiOnCapture": true,
+  "weekStartsOn": 1,
+  "filenameDatePatterns": [],
+  "highContrast": false,
+  "createMissingNotes": false,
+  "dailyNoteTypeId": ""
+}

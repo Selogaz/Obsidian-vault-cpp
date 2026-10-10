@@ -1,5 +1,6 @@
 {
   "binaryPath": "",
+  "apiKeySecretId": "",
   "transport": "stdio",
   "httpHost": "127.0.0.1",
   "httpPort": 3939,
@@ -7,6 +8,8 @@
   "httpFallbackHost": "127.0.0.1",
   "httpFallbackPort": 3939,
   "defaultMode": "hybrid",
+  "defaultSearchFilters": "",
+  "customPostfixes": [],
   "showMeta": false,
   "showPreviewMeta": true,
   "centerPanels": false,
@@ -14,10 +17,17 @@
   "showGraphPanel": false,
   "scrollToSnippet": false,
   "rememberLastQuery": true,
-  "lastQuery": "tonsor",
+  "lastQuery": "",
   "showSimilarNotesAtBottom": false,
   "similarNotesBottomLimit": 5,
+  "showSimilarNotesInPagePreview": false,
+  "similarNotesPagePreviewLimit": 5,
   "similarNotesThreshold": 0,
   "searchPanelLimit": 20,
-  "searchPanelThreshold": 0
+  "searchPanelThreshold": 0,
+  "inlineSearchEnabled": true,
+  "inlineSearchTrigger": ";;",
+  "inlineSearchLimit": 10,
+  "inlineSearchThreshold": 0,
+  "inlineSearchShowPreview": true
 }

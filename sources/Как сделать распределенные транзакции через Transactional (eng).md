@@ -3,6 +3,7 @@ tags:
   - source/article/paper
   - category/java
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@как_сделать_распределенные_транзакции_через_transactional_eng)"
 status: 📥
@@ -20,6 +21,7 @@ icon: 📃
 color: "#7575c0"
 created: 2025-09-20T08:38:48+03:00
 updated: 2026-01-14T00:22:20+03:00
+citekey: как_сделать_распределенные_транзакции_через_transactional_eng
 total_hours: 0
 ---
 

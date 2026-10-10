@@ -1,10 +1,10 @@
 ---
 tags:
-  - status/todo
   - source/article/paper
   - category/java
 aliases:
   - Сайд-эффекты ребалансировок в Kafka
+description:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@SaydeffektyRebalansirovokKafka)"
@@ -25,6 +25,7 @@ icon: 📃
 color: "#7575c0"
 created: 2025-09-26T12:44:09+03:00
 updated: 2026-01-14T00:26:19+03:00
+citekey: SaydeffektyRebalansirovokKafka
 related:
 total_hours: 0
 ---

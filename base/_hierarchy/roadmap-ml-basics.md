@@ -5,6 +5,7 @@ tags:
 aliases:
   - machine learning intro
   - roadmap ml basics
+description:
 relevant: false
 category:
   - "[[computer science]]"

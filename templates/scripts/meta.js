@@ -18,6 +18,15 @@ module.exports = async function meta(category, note) {
 		}
 	}
 
+	// Inherit the meta-note of the structural note the creation was started from,
+	// but only when it sits in the category being filled in.
+	const inherited = await tp.user.context()
+	// A note created already in its place keeps it, even without a meta-note.
+	if (inherited.prefilled) return inherited.meta ?? ''
+	if (inherited.meta && (!category || inherited.category === category)) {
+		return inherited.meta
+	}
+
 	let meta_notes
 	let meta
 	let relevant

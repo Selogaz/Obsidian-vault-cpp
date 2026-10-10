@@ -5,6 +5,7 @@ tags:
   - category/study
 aliases:
   - "Entrepreneurship: Productive, Unproductive, and Destructive"
+description:
 published: 1990
 addition:
   - "[[Entrepreneurship - conspectuses|📓]]"
@@ -29,5 +30,6 @@ icon: 📃
 color: "#7575c0"
 created: 2026-06-23T09:36:09+03:00
 updated: 2026-06-23T09:37:29+03:00
+citekey: baumolEntrepreneurshipProductiveUnproductive1990
 related:
 ---

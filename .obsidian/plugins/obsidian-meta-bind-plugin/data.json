@@ -2,11 +2,7 @@
   "devMode": false,
   "ignoreCodeBlockRestrictions": false,
   "preferredDateFormat": "YYYY-MM-DD",
-  "firstWeekday": {
-    "index": 1,
-    "name": "Monday",
-    "shortName": "Mo"
-  },
+  "firstWeekday": "Monday",
   "syncInterval": 200,
   "enableJs": false,
   "viewFieldDisplayNullAsEmpty": false,
@@ -282,7 +278,264 @@
           "command": "quickadd:choice:df650bef-3b43-4cba-bdff-cc2597221496"
         }
       ]
+    },
+    {
+      "label": "📝 + note",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "",
+      "id": "add-fleeting",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:fb2ec774-91b3-4123-9b3a-de21a97efe36"
+        }
+      ]
+    },
+    {
+      "label": "📥 + task",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "Capture a #task/inbox into today's daily note",
+      "id": "add-inbox-task",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:fb471f8f-0e4b-4fd1-abe3-813e58c23797"
+        }
+      ]
+    },
+    {
+      "label": "💡 + idea",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "Capture a #task/idea into today's daily note",
+      "id": "add-idea",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:8e9a8f94-0206-452b-b38d-bcb5dec3661b"
+        }
+      ]
+    },
+    {
+      "label": "💬 + log",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "Add a timestamped log line to today's daily note",
+      "id": "add-log",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:470018fe-b1ec-4e57-9bcd-f5baa490ffc1"
+        }
+      ]
+    },
+    {
+      "label": "🗃️ + source",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "Create a source",
+      "id": "add-source",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:1c285a9b-48cf-495b-859f-1cfd7ee371e0"
+        }
+      ]
+    },
+    {
+      "label": "🏢 + project",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "Create a project",
+      "id": "add-project",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:45e2f469-7257-4416-939e-77782e920de0"
+        }
+      ]
+    },
+    {
+      "label": "🔎 + meta-note",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "Create a meta-note",
+      "id": "add-meta",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:068b3cea-6a03-4edc-aa71-706348e33cdd"
+        }
+      ]
+    },
+    {
+      "label": "🧬 + hierarchy",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "Create a hierarchy",
+      "id": "add-hierarchy",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:4b36b7c9-e418-458b-82d0-9a04673bae6e"
+        }
+      ]
+    },
+    {
+      "label": "⚡ + problem",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "Create a problem",
+      "id": "add-problem",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:a238aa02-8718-402f-b700-6799a5062ffc"
+        }
+      ]
+    },
+    {
+      "label": "👥 + person",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "Create a contact, creator or production",
+      "id": "add-person",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:707ecefc-d0c4-4952-a1dc-a59188781173"
+        }
+      ]
+    },
+    {
+      "label": "🃏 Change deck",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "Move cards from one deck to another",
+      "id": "change-deck",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:3a7ffd10-caf6-459a-8221-ce6b84e494b5"
+        }
+      ]
+    },
+    {
+      "label": "🗺️ Send to category",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "File every item of the list above under one category",
+      "id": "send-to-category",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:ba615e7a-ab80-4a7a-a9aa-fadf0f6b0b55"
+        }
+      ]
+    },
+    {
+      "label": "🗑️ Delete all",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "Move every unlinked note of the list above to the trash",
+      "id": "delete-unlinked-notes",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:4f21a80c-13d8-497f-b170-324645903f8f"
+        }
+      ]
+    },
+    {
+      "label": "⬆️ Move all up",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "Tag every note of the list below with this category",
+      "id": "move-all-up",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:7dadadea-2a13-48eb-8eb2-c6a077f0d7c1"
+        }
+      ]
+    },
+    {
+      "label": "➕ addition",
+      "icon": "",
+      "style": "default",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "Create an addition",
+      "id": "add-addition",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:bfea583a-186c-4a13-8b18-36a2225d0976"
+        }
+      ]
     }
   ],
-  "excludedFolders": ["templates"]
+  "excludedFolders": [
+    "templates"
+  ]
 }

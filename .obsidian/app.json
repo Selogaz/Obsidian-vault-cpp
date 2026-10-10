@@ -1,6 +1,6 @@
 {
   "propertiesInDocument": "visible",
-  "spellcheck": true,
+  "spellcheck": false,
   "autoPairBrackets": false,
   "autoPairMarkdown": false,
   "vimMode": false,
@@ -16,7 +16,8 @@
     "templates/",
     "home/",
     "periodic/statuses/",
-    "/^periodic/[^/]+$/"
+    "/^periodic/[^/]+$/",
+    "/^[^/]+$/"
   ],
   "autoConvertHtml": true,
   "mobileToolbarCommands": [
@@ -44,5 +45,13 @@
     "editor:configure-toolbar"
   ],
   "mobilePullAction": "quickadd:choice:a3d0159b-9d26-4d19-9cac-7b5b3faec83e",
-  "showLineNumber": false
+  "showLineNumber": false,
+  "tabSize": 4,
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "2",
+    "downscalePercent": 100
+  }
 }

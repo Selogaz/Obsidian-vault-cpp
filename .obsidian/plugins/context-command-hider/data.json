@@ -1,5 +1,17 @@
 {
   "hideTitles": [
+    "Copy line link (adv-uri)",
+    "Include this file",
+    "Set citation presentation",
+    "Close tabs after",
+    "Converting link is not here",
+    "Overriding attachment setting",
+    "Add to excluded keywords",
+    "Exclude this file",
+    "/QuickAdd(.*)/",
+    "Delete unused attachments in file",
+    "AI tools",
+    "Move attachment to proper folder",
     "[Virtual Linker] Include this file",
     "[Virtual Linker] Converting link is not here.",
     "Collect attachments in file",

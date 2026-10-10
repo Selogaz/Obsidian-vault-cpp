@@ -1,28 +1,48 @@
 filters:
   and:
+    - file.ext == "md"
+    - '!file.inFolder("templates")'
+    - '!file.inFolder("files")'
+    - '!file.inFolder("home")'
     - file.path != this.file.path
 formulas:
   fm_out: this.file.properties.values() .map(list(value)).flat() .map(value.toString()) .filter(value.contains("[[")) .map(link(value)) .map(file(value)) .contains(file)
   in_any: file.links.contains(this.file)
   out_any: this.file.links.contains(file)
-  out_2hop: this.file.links.map(file(value)).map(value.links).flat().map(file(value)).contains(file)
-  in_2hop: this.file.backlinks.map(file(value)).map(value.backlinks).flat().map(file(value)).contains(file)
-  is_2hop: (formula.out_2hop || formula.in_2hop) && !formula.in_any && !formula.out_any && !formula.fm_out
-  rank: if(formula.fm_out, -1, if(formula.in_any && formula.out_any, 0, if(formula.in_any, 1, 2)))
-  icon: if(formula.fm_out, "📋️", if(formula.in_any && formula.out_any, "🖇️", if(formula.in_any, "🔽", "⬆️")))
-  pseudo_random: ((now() - file.ctime).milliseconds % 10000 + file.name.length * 17 + file.size % 1000) % 100
+  out_2hop: this.file.links.filter(file(value).links.contains(file)).length > 0
+  in_2hop: file.links.filter(file(value).links.contains(this.file)).length > 0
+  is_2hop: (file.inFolder("base") || file.inFolder("sources") || file.inFolder("projects")) && !formula.in_any && !formula.out_any && !formula.fm_out && (formula.out_2hop || formula.in_2hop)
+  is_milestone: list(milestone).contains(this.file)
+  rank: if(formula.fm_out, -1, if(formula.is_milestone, 0, if(formula.in_any && formula.out_any, 1, if(formula.in_any, 2, if(formula.out_any, 3, 4)))))
+  icon: if(formula.fm_out, "📋️", if(formula.is_milestone, "📍", if(formula.in_any && formula.out_any, "🖇️", if(formula.in_any, "🔽", if(formula.out_any, "⬆️", "🥢")))))
+  pseudo_random: random()
 properties:
   formula.icon:
     displayName: 🔗
   file.name:
     displayName: 🔤 title
+  note.id:
+    displayName: 🆔 id
+  note.status:
+    displayName: 💯
+  note.priority:
+    displayName: 🔺
+  note.attribute:
+    displayName: 🧩 attribute
+  note.start:
+    displayName: 🚩 start
+  note.end:
+    displayName: 🏁 end
 views:
   - type: table
     name: 🔗 links
     filters:
       or:
+        - formula.fm_out
+        - formula.is_milestone
         - formula.in_any
         - formula.out_any
+        - formula.is_2hop
     order:
       - formula.icon
       - file.name
@@ -33,18 +53,6 @@ views:
         direction: ASC
     columnSize:
       formula.icon: 1
-  - type: table
-    name: 🥢 2-hop
-    filters:
-      and:
-        - formula.is_2hop
-    order:
-      - file.name
-    sort:
-      - property: file.tags
-        direction: ASC
-      - property: file.name
-        direction: ASC
   - type: table
     name: 🎲 random
     filters:
@@ -63,6 +71,19 @@ views:
       - property: formula.pseudo_random
         direction: DESC
     limit: 20
+  - type: table
+    name: 📍 milestone
+    filters:
+      and:
+        - formula.is_milestone
+    order:
+      - id
+      - file.name
+      - status
+      - priority
+      - attribute
+      - start
+      - end
   - type: table
     name: ➕️ addition
     filters:

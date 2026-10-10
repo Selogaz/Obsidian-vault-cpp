@@ -1,0 +1,1047 @@
+{
+  "selectionHighlighter": {
+    "highlightWordAroundCursor": true,
+    "highlightSelectedText": true,
+    "maxMatches": 100,
+    "minSelectionLength": 3,
+    "highlightDelay": 200,
+    "ignoredWords": "myself, our, ours, ourselves, you, your, yours, yourself, yourselves, him, his, himself, she, her, hers, herself, its, itself, they, them, their, theirs, themselves, what, which, who, whom, this, that, these, those, are, was, were, been, being, have, has, had, having, does, did, doing, the, and, but, because, until, while, for, with, about, against, between, into, through, during, before, after, above, below, from, down, out, off, over, under, again, further, then, once, here, there, when, where, why, how, all, any, both, each, few, more, most, other, some, such, nor, not, only, own, same, than, too, very, can, will, just, don, should, now",
+    "selectionColor": "default",
+    "selectionDecoration": "underline dotted",
+    "css": "text-decoration: underline dotted; text-decoration-color: var(--text-accent)"
+  },
+  "staticHighlighter": {
+    "showInReadingMode": false,
+    "debugMode": false,
+    "queries": {
+      "exclamation": {
+        "class": "exclamation",
+        "staticColor": "#42188000",
+        "staticDecoration": "none",
+        "staticCss": {
+          "color": "var(--color-red) !important"
+        },
+        "colorIconSnippet": "font-weight: 400; color: var(--color-red)",
+        "regex": true,
+        "query": "[?!]+",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "#default",
+        "tagEnabled": true
+      },
+      "punctuation": {
+        "class": "punctuation",
+        "staticColor": "#42188000",
+        "staticDecoration": "none",
+        "staticCss": {},
+        "colorIconSnippet": "",
+        "regex": true,
+        "query": "[→+.,/#$%^&;:{}=\\-~()\"|–@—]+",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "#default",
+        "tagEnabled": true
+      },
+      "digits": {
+        "class": "digits",
+        "staticColor": "#00000000",
+        "staticDecoration": "none",
+        "staticCss": {
+          "color": "var(--color-orange) !important"
+        },
+        "colorIconSnippet": "font-weight: 400; color: var(--color-orange)",
+        "regex": true,
+        "query": "\\d+",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "#default",
+        "tagEnabled": true
+      },
+      "long-dash": {
+        "class": "long-dash",
+        "staticColor": "#42188000",
+        "staticDecoration": "none",
+        "staticCss": {
+          "fontSize": "0",
+          ".cm-active &": {
+            "fontSize": "var(--font-text-size)",
+            "color": "rgba(251, 70, 76, 1) !important"
+          },
+          "&::before": {
+            "fontSize": "var(--font-text-size)",
+            "content": "\"• • •\"",
+            "color": "rgba(116, 116, 116, 1) !important"
+          },
+          ".cm-active &::before": {
+            "fontSize": "0"
+          }
+        },
+        "colorIconSnippet": "font-weight: 400; color: rgba(116, 116, 116, 1)",
+        "regex": true,
+        "query": "^—$",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "#default",
+        "tagEnabled": true
+      },
+      "ai-not-about": {
+        "class": "ai-not-about",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "[Нн]е[ \\t]+про(?![А-Яа-яЁё])[ \\t]+.{1,150}?,[ \\t]*а[ \\t]+про(?![А-Яа-яЁё])",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-not-just": {
+        "class": "ai-not-just",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "[Нн]е[ \\t]+просто[ \\t]+.{1,120}?,[ \\t]*а[ \\t]+(?:ещ[её][ \\t]+и[ \\t]+)?",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-point-is-not": {
+        "class": "ai-point-is-not",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "[Дд]ело[ \\t]+не[ \\t]+в[ \\t]+.{1,120}?,[ \\t]*а[ \\t]+в[ \\t]+",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-this-is-not": {
+        "class": "ai-this-is-not",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "[Ээ]то[ \\t]+не[ \\t]+.{1,120}?[.!?:,][ \\t]+[Ээ]то[ \\t]+",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-important-to-note": {
+        "class": "ai-important-to-note",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Вв]ажно|[Сс]тоит|[Сс]ледует)[ \\t]+(?:понимать|отметить|подчеркнуть|учитывать|помнить)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-filler-transition": {
+        "class": "ai-filler-transition",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Тт]аким[ \\t]+образом|[Вв][ \\t]+конечном[ \\t]+итоге|[Вв][ \\t]+целом|[Пп]о[ \\t]+сути)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-more-than": {
+        "class": "ai-more-than",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Ээ]то|[Оо]н|[Оо]на|[Оо]ни)[ \\t]+(?:нечто|что-то)[ \\t]+большее,[ \\t]+чем",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-not-only": {
+        "class": "ai-not-only",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "[Нн]е[ \\t]+только[ \\t]+.{1,120}?,[ \\t]*но[ \\t]+и[ \\t]+",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-key-role": {
+        "class": "ai-key-role",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Ии]грает|[Ии]грают|[Вв]ыполняет|[Вв]ыполняют)[ \\t]+ключевую[ \\t]+роль",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-wide-range": {
+        "class": "ai-wide-range",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "[Шш]ирок(?:ий|ого|ому|им|ом)[ \\t]+спектр",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-deep-question": {
+        "class": "ai-deep-question",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Нн]астоящий|[Рр]еальный)[ \\t]+вопрос[ \\t,:\\-–—]*(?:в[ \\t]+том|заключается[ \\t]+в[ \\t]+том|не[ \\t]+в[ \\t]+том)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-core-truth": {
+        "class": "ai-core-truth",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Вв][ \\t]+самой[ \\t]+сути|[Вв][ \\t]+своей[ \\t]+основе|[Чч]то[ \\t]+действительно[ \\t]+важно|[Сс]уть[ \\t]+(?:вопроса|проблемы|дела)[ \\t]+в[ \\t]+том)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-staged-opener": {
+        "class": "ai-staged-opener",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:^|[.!?][ \\t]+)(?:[Дд]авайте[ \\t]+(?:разбер[её]м|посмотрим|рассмотрим|погрузимся|углубимся)|[Вв]от[ \\t]+что[ \\t]+(?:важно|нужно[ \\t]+знать)|[Дд]ля[ \\t]+начала|[Кк]оротко[ \\t]+говоря)[,:.!?]?",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-fake-objection": {
+        "class": "ai-fake-objection",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Чч]тобы[ \\t]+было[ \\t]+ясно|[Нн]е[ \\t]+поймите[ \\t]+(?:меня[ \\t]+)?неправильно|[Яя][ \\t]+не[ \\t]+говорю,[ \\t]+что|[Ээ]то[ \\t]+не[ \\t]+значит,[ \\t]+что)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-you-might-think": {
+        "class": "ai-you-might-think",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Мм]ожно[ \\t]+было[ \\t]+бы[ \\t]+подумать|[Мм]ожет[ \\t]+показаться|[Нн]а[ \\t]+первый[ \\t]+взгляд[ \\t]+может[ \\t]+показаться)[^.!?\\r\\n]{0,120}[,;:][ \\t]*(?:но|однако)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-dramatic-closer": {
+        "class": "ai-dramatic-closer",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Ии][ \\t]+это[ \\t]+главное|[Вв]от[ \\t]+в[ \\t]+ч[её]м[ \\t]+суть|[Ии]менно[ \\t]+это[ \\t]+и[ \\t]+есть[ \\t]+(?:главное|суть)|[Пп]рочитайте[ \\t]+это[ \\t]+ещ[её][ \\t]+раз|[Зз]адумайтесь[ \\t]+об[ \\t]+этом)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-fragment-pair": {
+        "class": "ai-fragment-pair",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:^|[.!?][ \\t]+)(?:[Нн]икаких?|[Бб]ез)[ \\t]+[^.!?\\r\\n]{1,50}\\.[ \\t]+(?:[Нн]икаких?|[Бб]ез)[ \\t]+[^.!?\\r\\n]{1,50}\\.",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-triad": {
+        "class": "ai-triad",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "[^,.;:\\r\\n]{2,40},[ \\t]+[^,.;:\\r\\n]{2,40},[ \\t]+(?:и|или)[ \\t]+[^,.;:\\r\\n]{2,40}",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-repeated-opening": {
+        "class": "ai-repeated-opening",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:^|[.!?][ \\t]+)([А-ЯЁ][А-Яа-яЁё]{1,20})[ \\t]+[^.!?\\r\\n]{2,100}[.!?][ \\t]+\\1[ \\t]+[^.!?\\r\\n]{2,100}[.!?][ \\t]+\\1[ \\t]+",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-dash-density": {
+        "class": "ai-dash-density",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "^(?=(?:[^—–\\r\\n]*[—–]){2})[^\\r\\n]+$",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-hedge-stack": {
+        "class": "ai-hedge-stack",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Вв]озможно|[Вв]ероятно|[Пп]отенциально|[Пп]редположительно)[^.!?\\r\\n]{0,50}(?:[вВ]озможно|[вВ]ероятно|[пП]отенциально|[пП]редположительно)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-significance": {
+        "class": "ai-significance",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Пп]оворотн(?:ый|ым)[ \\t]+момент|[Зз]наков(?:ый|ым)[ \\t]+момент|[Ии]гра(?:ет|ют)[ \\t]+(?:ключевую|решающую)[ \\t]+роль|[Ии]меет[ \\t]+решающее[ \\t]+значение)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-importance": {
+        "class": "ai-importance",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Пп]одч[её]ркива(?:ет|ют)|[Дд]емонстриру(?:ет|ют)|[Пп]оказыва(?:ет|ют))[ \\t]+(?:важность|значимость|необходимость)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-broader-trend": {
+        "class": "ai-broader-trend",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Оо]тража(?:ет|ют)|[Пп]оказыва(?:ет|ют))[ \\t]+более[ \\t]+широк(?:ую|ий|ое)[ \\t]+(?:тенденцию|контекст|процесс|сдвиг|картину)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-setting-stage": {
+        "class": "ai-setting-stage",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Зз]акладыва(?:ет|ют|я)[ \\t]+основу[ \\t]+для|[Сс]озда(?:е|ё)т[ \\t]+почву[ \\t]+для|[Оо]ткрыва(?:ет|ют|я)[ \\t]+путь[ \\t]+(?:к|для))",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-gerund-rider": {
+        "class": "ai-gerund-rider",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "[:,][ \\t]*(?:подч[её]ркивая|демонстрируя|обеспечивая|отражая|символизируя|способствуя|формируя|создавая|показывая|усиливая)[ \\t]+",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-sales-language": {
+        "class": "ai-sales-language",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Бб]огатое[ \\t]+культурное[ \\t]+наследие|[Вв][ \\t]+самом[ \\t]+сердце|[Уу]никальное[ \\t]+сочетание|[Пп]ередовые[ \\t]+решения|[Зз]ахватывающ(?:ий|ая|ее|ие)[ \\t]+(?:опыт|вид[ \\t]+возможност(?:и|ей)|возможности|возможностей))",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-borrowed-authority": {
+        "class": "ai-borrowed-authority",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Пп]о[ \\t]+мнению[ \\t]+экспертов|[Ээ]ксперты[ \\t]+(?:считают|отмечают|подчеркивают)|[Нн]аблюдатели[ \\t]+(?:отмечают|считают)|[Рр]яд[ \\t]+(?:экспертов|исследователей|публикаций)[ \\t]+)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-serves-as": {
+        "class": "ai-serves-as",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Вв]ыступа(?:ет|ют)[ \\t]+в[ \\t]+качестве|[Фф]ункциониру(?:ет|ют)[ \\t]+как|[Сс]лужи(?:т|ат)[ \\t]+в[ \\t]+качестве|[Пп]редставля(?:ет|ют)[ \\t]+собой|[Вв]ыполня(?:ет|ют)[ \\t]+в[ \\t]+качестве)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-future-bright": {
+        "class": "ai-future-bright",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Бб]удущее[ \\t]+выглядит[ \\t]+(?:светлым|многообещающим)|[Вв]переди[ \\t]+(?:нас[ \\t]+)?ждут[ \\t]+интересные[ \\t]+времена|[Шш]аг[ \\t]+в[ \\t]+правильном[ \\t]+направлении)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-despite-challenges": {
+        "class": "ai-despite-challenges",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "[Нн]есмотря[ \\t]+на[ \\t]+(?:эти[ \\t]+)?(?:вызовы|трудности|проблемы)[^.!?\\r\\n]{0,120}продолжа(?:ет|ют)[ \\t]+(?:развиваться|расти|проc?цветать)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-chat-residue": {
+        "class": "ai-chat-residue",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Нн]адеюсь,[ \\t]+это[ \\t]+поможет|[Оо]тличный[ \\t]+вопрос!?|[Кк]онечно!?|[Вв]ы[ \\t]+абсолютно[ \\t]+правы|[Дд]айте[ \\t]+знать,[ \\t]+если)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-offer-more": {
+        "class": "ai-offer-more",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Хх]отите,[ \\t]+я[ \\t]+(?:продолжу|добавлю|составлю|покажу|подготовлю)|[Мм]огу[ \\t]+также[ \\t]+(?:добавить|подготовить|составить|показать))",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-knowledge-limit": {
+        "class": "ai-knowledge-limit",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "(?:[Нн]а[ \\t]+момент[ \\t]+моего[ \\t]+последнего[ \\t]+обновления|[Нн]а[ \\t]+основе[ \\t]+доступной[ \\t]+информации|[Пп]одробности[ \\t]+(?:ограничены|неизвестны)|[Ии]нформация[ \\t]+не[ \\t]+является[ \\t]+общедоступной)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-bold-label": {
+        "class": "ai-bold-label",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "^[ \\t]*[-*+][ \\t]+\\*\\*[^*\\r\\n]{2,60}\\*\\*:[ \\t]+",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "ai-heading-decoration": {
+        "class": "ai-heading-decoration",
+        "staticColor": "#A32F6B",
+        "staticDecoration": "underline wavy",
+        "staticCss": {
+          "textDecoration": "underline",
+          "webkitTextDecorationColor": "#A32F6B",
+          "textDecorationColor": "#A32F6B",
+          "webkitTextDecorationStyle": "wavy",
+          "textDecorationStyle": "wavy"
+        },
+        "colorIconSnippet": "text-decoration: underline; -webkit-text-decoration-color: #A32F6B; text-decoration-color: #A32F6B; -webkit-text-decoration-style: wavy; text-decoration-style: wavy;",
+        "regex": true,
+        "query": "^#{1,6}[ \\t]+(?:[🚀💡✅⚠🔥✨📌🎯🧠][️]?[ \\t]+|[→➜➤][ \\t]+)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "AI Patterns",
+        "tagEnabled": false
+      },
+      "task-time-entry": {
+        "class": "task-time-entry",
+        "staticColor": "#00000000",
+        "staticDecoration": "none",
+        "staticCss": {
+          "color": "var(--text-faint) !important",
+          "& span:not(.a):not(.b):not(.c)": {
+            "color": "var(--text-faint) !important"
+          },
+          "fontSize": "0.85em",
+          ".cm-active &": {
+            "color": "var(--text-muted) !important"
+          },
+          ".cm-active & span:not(.a):not(.b):not(.c)": {
+            "color": "var(--text-muted) !important"
+          }
+        },
+        "colorIconSnippet": "color: var(--text-faint)",
+        "regex": true,
+        "query": "(?<=^[\\t >]*- )\\d{4}-\\d{2}-\\d{2}(?:T|[ \\t]+)\\d{1,2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})?[ \\t]*→(?:[ \\t]*(?:\\d{4}-\\d{2}-\\d{2}(?:T|[ \\t]+))?\\d{1,2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})?)?",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "Tasks Meta",
+        "tagEnabled": true
+      },
+      "task-comment-stamp": {
+        "class": "task-comment-stamp",
+        "staticColor": "#00000000",
+        "staticDecoration": "none",
+        "staticCss": {
+          "color": "var(--text-accent) !important",
+          "backgroundColor": "var(--background-modifier-hover)",
+          "borderRadius": "var(--radius-s)",
+          "padding": "0.1em 0.45em",
+          "fontSize": "0.8em",
+          "fontWeight": "var(--font-medium)",
+          "& span:not(.a):not(.b):not(.c)": {
+            "color": "var(--text-accent) !important"
+          }
+        },
+        "colorIconSnippet": "color: var(--text-accent)",
+        "regex": true,
+        "query": "(?<=^[\\t >]*- )\\d{4}-\\d{2}-\\d{2}(?:T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2}))?(?=:(?:[ \\t]|$))",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "Tasks Meta",
+        "tagEnabled": true
+      },
+      "task-stamp-precision": {
+        "class": "task-stamp-precision",
+        "staticColor": "#00000000",
+        "staticDecoration": "none",
+        "staticCss": {
+          "fontSize": "0",
+          ".cm-active &": {
+            "fontSize": "inherit"
+          }
+        },
+        "colorIconSnippet": "color: var(--text-faint)",
+        "regex": true,
+        "query": "(?<=\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}):\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})?|(?<=\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2})(?:Z|[+-]\\d{2}:\\d{2})",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "Tasks Meta",
+        "tagEnabled": true
+      },
+      "task-description-mark": {
+        "class": "task-description-mark",
+        "staticColor": "#00000000",
+        "staticDecoration": "none",
+        "staticCss": {
+          "color": "var(--text-faint) !important",
+          "& span:not(.a):not(.b):not(.c)": {
+            "color": "var(--text-faint) !important"
+          }
+        },
+        "colorIconSnippet": "color: var(--text-faint)",
+        "regex": true,
+        "query": "(?<=^[\\t >]*- )>(?= )",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "Tasks Meta",
+        "tagEnabled": true
+      },
+      "task-description-text": {
+        "class": "task-description-text",
+        "staticColor": "#00000000",
+        "staticDecoration": "none",
+        "staticCss": {
+          "color": "var(--text-muted) !important",
+          "& span:not(.a):not(.b):not(.c)": {
+            "color": "var(--text-muted) !important"
+          },
+          "fontStyle": "italic",
+          ".cm-active &": {
+            "color": "var(--text-normal) !important"
+          },
+          ".cm-active & span:not(.a):not(.b):not(.c)": {
+            "color": "var(--text-normal) !important"
+          }
+        },
+        "colorIconSnippet": "color: var(--text-faint)",
+        "regex": true,
+        "query": "(?<=^[\\t >]*- > ).+$",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "Tasks Meta",
+        "tagEnabled": true
+      },
+      "task-comment-colon": {
+        "class": "task-comment-colon",
+        "staticColor": "#00000000",
+        "staticDecoration": "none",
+        "staticCss": {
+          "fontSize": "0",
+          ".cm-active &": {
+            "fontSize": "inherit",
+            "color": "var(--text-faint) !important"
+          }
+        },
+        "colorIconSnippet": "color: var(--text-accent)",
+        "regex": true,
+        "query": "(?<=^[\\t >]*- \\d{4}-\\d{2}-\\d{2}(?:T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2}))?):(?=[ \\t]|$)",
+        "mark": [
+          "match"
+        ],
+        "highlighterEnabled": true,
+        "tag": "Tasks Meta",
+        "tagEnabled": true
+      }
+    },
+    "queryOrder": [
+      "ai-not-about",
+      "exclamation",
+      "punctuation",
+      "digits",
+      "long-dash",
+      "ai-not-just",
+      "ai-point-is-not",
+      "ai-this-is-not",
+      "ai-important-to-note",
+      "ai-filler-transition",
+      "ai-more-than",
+      "ai-not-only",
+      "ai-key-role",
+      "ai-wide-range",
+      "ai-deep-question",
+      "ai-core-truth",
+      "ai-staged-opener",
+      "ai-fake-objection",
+      "ai-you-might-think",
+      "ai-dramatic-closer",
+      "ai-fragment-pair",
+      "ai-triad",
+      "ai-repeated-opening",
+      "ai-dash-density",
+      "ai-hedge-stack",
+      "ai-significance",
+      "ai-importance",
+      "ai-broader-trend",
+      "ai-setting-stage",
+      "ai-gerund-rider",
+      "ai-sales-language",
+      "ai-borrowed-authority",
+      "ai-serves-as",
+      "ai-future-bright",
+      "ai-despite-challenges",
+      "ai-chat-residue",
+      "ai-offer-more",
+      "ai-knowledge-limit",
+      "ai-bold-label",
+      "ai-heading-decoration",
+      "task-time-entry",
+      "task-comment-stamp",
+      "task-stamp-precision",
+      "task-description-mark",
+      "task-description-text",
+      "task-comment-colon"
+    ],
+    "tagOrder": [],
+    "expandedTags": [],
+    "toggleable": [
+      "#default"
+    ],
+    "onOffSwitch": true
+  }
+}

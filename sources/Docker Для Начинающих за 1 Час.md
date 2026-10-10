@@ -2,8 +2,8 @@
 tags:
   - status/done
   - source/video/recording
-  - category/java
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@DockerDlyaNachinayushchih)"
 status: 🟩
@@ -15,11 +15,12 @@ problem:
 creator:
 production:
 start: 2025-09-17T18:19:50+03:00
-end:
+end: 2026-09-26
 icon: 📹
 color: "#2a9070"
 created: 2025-09-17T18:19:50+03:00
 updated: 2026-06-01T17:32:09+03:00
+citekey: DockerDlyaNachinayushchih
 total_hours: 0
 ---
 

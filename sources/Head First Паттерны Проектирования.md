@@ -1,9 +1,10 @@
 ---
 tags:
-  - status/todo
   - source/book
+  - category/java
 aliases:
   - Head First Паттерны Проектирования
+description:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@eHeadFirstPatterny)"
@@ -25,6 +26,7 @@ icon: 📖
 color: "#b5b570"
 created: 2025-05-31T21:25:12+03:00
 updated: 2026-01-14T00:26:40+03:00
+citekey: eHeadFirstPatterny
 related:
 total_hours: 0
 ---

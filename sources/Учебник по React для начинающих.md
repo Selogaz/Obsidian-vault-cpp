@@ -5,6 +5,7 @@ tags:
   - category/webdev
 aliases:
   - React Tutorial for Beginners - Programming with Mosh
+description:
 published: 2023-03-12
 addition:
   - "[[Учебник по React для начинающих - conspectuses|📓]]"
@@ -20,7 +21,7 @@ creator:
   - "[[Mosh Hamedani]]"
 production:
 start: 2026-05-26T20:51:18+03:00
-end:
+end: 2026-09-26
 url:
   - https://youtu.be/SqcY0GlETPk
 cover:
@@ -28,6 +29,7 @@ icon: 📹
 color: "#2a9070"
 created: 2026-05-26T20:51:18+03:00
 updated: 2026-05-26T20:55:30+03:00
+citekey: учебник_по_react_для_начинающих
 ---
 
 Master React 18 with TypeScript! Build amazing front-end apps with this beginner-friendly tutorial.

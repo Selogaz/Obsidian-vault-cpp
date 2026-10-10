@@ -1,0 +1,248 @@
+{
+  "firstDayOfWeek": 1,
+  "taskPrefix": "#task/one-off",
+  "taskFilePath": "periodic/daily/{{YYYY-MM-DD}}.md",
+  "taskArchivePath": "periodic/archive.md",
+  "taskIgnoreQuery": "",
+  "taskTemplatePath": "templates/create/periodic/day/template.md",
+  "inbox": {
+    "mode": "tag",
+    "tag": "#task/inbox",
+    "removeTagOnAssign": true
+  },
+  "pinnedTags": [
+    "#task/next_action",
+    "#task/multistep"
+  ],
+  "archivedTags": [],
+  "archivedTagPrefixes": [],
+  "tagGroups": [
+    {
+      "id": "group-1789196995062",
+      "name": "category",
+      "mode": "prefix",
+      "prefix": "category",
+      "color": "#86c1b9"
+    },
+    {
+      "id": "group-1789197016829",
+      "name": "type",
+      "mode": "prefix",
+      "prefix": "task",
+      "color": "#c49bbb"
+    }
+  ],
+  "taskInsertionMode": "append",
+  "taskInsertionSection": "## Tasks",
+  "taskInsertionSectionPosition": "top",
+  "sourceNoteDisplay": "non-default",
+  "projects": {
+    "membershipQuery": "#project",
+    "createFolder": "projects",
+    "templatePath": "templates/create/projects/single/abyss-tasks.md",
+    "statusProperty": "status",
+    "startProperty": "start",
+    "endProperty": "end",
+    "propertyDefinitions": {
+      "property:addition": {
+        "type": "list"
+      },
+      "property:priority": {
+        "type": "text",
+        "presets": [
+          {
+            "value": "🔺",
+            "displayName": "highest",
+            "color": "#ab4642"
+          },
+          {
+            "value": "⏫",
+            "displayName": "high",
+            "color": "#dc9656"
+          },
+          {
+            "value": "🔼",
+            "displayName": "medium",
+            "color": "#f7ca88"
+          },
+          {
+            "value": "◽",
+            "displayName": "normal",
+            "color": "#b8b8b8"
+          },
+          {
+            "value": "🔽",
+            "displayName": "low",
+            "color": "#7cafc2"
+          },
+          {
+            "value": "⏬",
+            "displayName": "lowest",
+            "color": "#ba8baf"
+          }
+        ]
+      },
+      "property:category": {
+        "type": "list"
+      },
+      "property:meta": {
+        "type": "list"
+      },
+      "property:problem": {
+        "type": "list"
+      },
+      "property:creator": {
+        "type": "list"
+      },
+      "property:production": {
+        "type": "list"
+      },
+      "property:url": {
+        "type": "text"
+      }
+    },
+    "statuses": [
+      {
+        "id": "🟥",
+        "name": "⬛",
+        "color": "#424242",
+        "onLeftPanel": false,
+        "displayName": "Drop",
+        "display": "dot"
+      },
+      {
+        "id": "status-7",
+        "name": "❄",
+        "color": "#97c9ed",
+        "onLeftPanel": false,
+        "displayName": "Hold",
+        "display": "dot"
+      },
+      {
+        "id": "status-6",
+        "name": "📥",
+        "color": "#f29557",
+        "onLeftPanel": false,
+        "displayName": "Inbox",
+        "display": "dot"
+      },
+      {
+        "id": "status-2",
+        "name": "🟥",
+        "color": "#f44336",
+        "onLeftPanel": false,
+        "displayName": "ToDo",
+        "display": "dot"
+      },
+      {
+        "id": "status-3",
+        "name": "🟦",
+        "color": "#1b75d2",
+        "onLeftPanel": true,
+        "displayName": "WIP",
+        "display": "dot"
+      },
+      {
+        "id": "status-4",
+        "name": "🟩",
+        "color": "#7cb342",
+        "onLeftPanel": false,
+        "displayName": "Done",
+        "display": "dot"
+      },
+      {
+        "id": "status-5",
+        "name": "📢",
+        "color": "#ffffff",
+        "onLeftPanel": false,
+        "displayName": "Published",
+        "display": "dot"
+      }
+    ],
+    "defaultStatusId": "status-3",
+    "taskInsertionMode": "section",
+    "taskInsertionSection": "# Tasks",
+    "taskInsertionSectionPosition": "top",
+    "propertyDefinitionsVersion": 1
+  },
+  "taskStatuses": [
+    {
+      "id": "status-1",
+      "symbol": " ",
+      "name": "To-do",
+      "type": "todo",
+      "icon": "",
+      "core": true
+    },
+    {
+      "id": "status-2",
+      "symbol": "/",
+      "name": "In progress",
+      "type": "in-progress",
+      "icon": "",
+      "core": true
+    },
+    {
+      "id": "status-3",
+      "symbol": "x",
+      "name": "Done",
+      "type": "done",
+      "icon": "check",
+      "core": true
+    },
+    {
+      "id": "status-4",
+      "symbol": "-",
+      "name": "Cancelled",
+      "type": "cancelled",
+      "icon": "x",
+      "core": true
+    }
+  ],
+  "taskLifecycle": {
+    "addCreatedDate": true,
+    "addCompletionDate": true
+  },
+  "recurrence": {
+    "newOccurrencePlacement": "before",
+    "removeScheduledDate": false
+  },
+  "shortcuts": {
+    "openQuickCapture": "Q",
+    "openTasks": "L",
+    "openInbox": "I",
+    "openToday": "T",
+    "openUpcoming": "U",
+    "openCalendar": "C",
+    "openCalendarToday": "D",
+    "openCalendarWeek": "W",
+    "openCalendarMonth": "M",
+    "openProjects": "P",
+    "openSearch": "S"
+  },
+  "desktop": {
+    "defaultView": "month",
+    "firstDayOfWeek": 1,
+    "dailyNoteFolder": "periodic/daily",
+    "dailyNoteFormat": "YYYY-MM-DD",
+    "upcomingDays": 7,
+    "style": "style1",
+    "globalTaskFilter": "",
+    "startPosition": "",
+    "tag": "",
+    "folder": ""
+  },
+  "mobile": {
+    "defaultView": "list",
+    "firstDayOfWeek": 1,
+    "dailyNoteFolder": "periodic/daily",
+    "dailyNoteFormat": "YYYY-MM-DD",
+    "upcomingDays": 7,
+    "style": "style1",
+    "globalTaskFilter": "",
+    "startPosition": "",
+    "tag": "",
+    "folder": ""
+  },
+  "savedViewStateSchemaVersion": 1
+}

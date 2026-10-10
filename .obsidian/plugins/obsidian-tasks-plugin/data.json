@@ -1,13 +1,13 @@
 {
   "presets": {},
-  "globalQuery": "path does not include files/\npath does not include classes/\npath does not include home/\npath does not include templates/\nhide toolbar",
+  "globalQuery": "path does not include files/\npath does not include home/\npath does not include templates/\nhide toolbar\nhide created date",
   "globalFilter": "",
   "removeGlobalFilter": false,
   "taskFormat": "tasksPluginEmoji",
-  "setCreatedDate": false,
+  "setCreatedDate": true,
   "setDoneDate": true,
   "setCancelledDate": true,
-  "autoSuggestInEditor": false,
+  "autoSuggestInEditor": true,
   "autoSuggestMinMatch": 0,
   "autoSuggestMaxItems": 6,
   "provideAccessKeys": true,
@@ -54,17 +54,20 @@
     ]
   },
   "isShownInEditModal": {
-    "priority": false,
+    "priority": true,
     "recurrence": true,
     "due": true,
     "scheduled": false,
-    "start": false,
-    "before_this": false,
-    "after_this": false,
+    "start": true,
+    "before_this": true,
+    "after_this": true,
     "status": true,
     "created": false,
     "done": true,
     "cancelled": false
+  },
+  "dismissedNotices": {
+    "live-preview-callout-warning": false
   },
   "features": {
     "INTERNAL_TESTING_ENABLED_BY_DEFAULT": true

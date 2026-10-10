@@ -4,6 +4,7 @@ tags:
   - source/article/paper
   - category/games
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@pve_gayd_na_holi_prista_x1)"
 status: 🟩
@@ -18,7 +19,7 @@ problem:
 creator:
 production:
 start: 2025-05-15T17:00:11+03:00
-end:
+end: 2026-09-26
 url:
   - "[Website](https://forum.sirus.su/resources/gaid-na-xoli-prista-x1.68/)"
 cover:
@@ -26,6 +27,7 @@ icon: 📃
 color: "#7575c0"
 created: 2025-05-15T17:00:11+03:00
 updated: 2026-06-01T17:38:29+03:00
+citekey: pve_gayd_na_holi_prista_x1
 total_hours: 0
 ---
 

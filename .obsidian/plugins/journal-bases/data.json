@@ -1,0 +1,36 @@
+{
+  "daily": {
+    "enabled": true,
+    "folder": "periodic/daily",
+    "format": "YYYY-MM-DD",
+    "template": "templates/create/periodic/day/template.md"
+  },
+  "weekly": {
+    "enabled": true,
+    "folder": "periodic/weekly",
+    "format": "GGGG-[W]WW",
+    "template": "templates/create/periodic/week/template.md"
+  },
+  "monthly": {
+    "enabled": true,
+    "folder": "periodic/monthly",
+    "format": "YYYY-MM",
+    "template": "templates/create/periodic/month/template.md"
+  },
+  "quarterly": {
+    "enabled": true,
+    "folder": "periodic/quarterly",
+    "format": "YYYY-[Q]Q",
+    "template": "templates/create/periodic/quarter/template.md"
+  },
+  "yearly": {
+    "enabled": true,
+    "folder": "periodic/yearly",
+    "format": "YYYY",
+    "template": "templates/create/periodic/year/template.md"
+  },
+  "donePropertyName": "reviewed",
+  "collapseFrontmatter": true,
+  "rememberColumnState": true,
+  "debugModeEnabled": false
+}

@@ -4,6 +4,7 @@ tags:
   - category/webdev
 aliases:
   - Vue.js
+description:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@Vuejs)"
@@ -24,6 +25,7 @@ icon: 📃
 color: "#7575c0"
 created: 2026-01-13T22:43:43+03:00
 updated: 2026-06-22T01:04:20+03:00
+citekey: Vuejs
 related:
 ---
 

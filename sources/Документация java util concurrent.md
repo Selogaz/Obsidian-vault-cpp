@@ -3,6 +3,7 @@ tags:
   - source/article/paper
   - category/java
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@документация_java_util_concurrent)"
 status: 📥
@@ -20,6 +21,7 @@ icon: 📃
 color: "#7575c0"
 created: 2025-09-19T21:58:10+03:00
 updated: 2026-01-14T00:23:40+03:00
+citekey: документация_java_util_concurrent
 total_hours: 0
 ---
 

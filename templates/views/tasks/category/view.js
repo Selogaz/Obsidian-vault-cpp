@@ -2,25 +2,32 @@ const category = dv.current().file.name.replace(/ /g, '_');
 
 const groupByType = `
 group by function \
-  if (task.tags.includes("#task/inbox"))         return "%%01%% [[inbox|inbox]]"; \
-  if (task.tags.includes("#task/next_action"))   return "%%02%% [[next_action|next action]]"; \
-  if (task.tags.includes("#task/one-off"))       return "%%03%% [[one-off|one-off]]"; \
-  if (task.tags.includes("#task/multistep"))     return "%%04%% [[multistep|multistep]]"; \
-  if (task.tags.includes("#task/waiting_for"))   return "%%05%% [[waiting_for|waiting for]]"; \
-  if (task.tags.includes("#task/regular"))       return "%%06%% [[regular|regular]]"; \
-  if (task.tags.includes("#task/idea"))          return "%%07%% [[idea|ideas]]"; \
-  if (task.tags.includes("#task/reference"))     return "%%08%% [[reference|references]]"; \
-  if (task.tags.includes("#task/someday"))       return "%%09%% [[someday|someday]]"; \
+  for (let i = 0; i < task.tags.length; i++) { \
+    let t = task.tags[i]; \
+    if (t.startsWith("#task/")) { \
+      let k = t.slice(6); \
+      if (k === "inbox")         return "%%01%% [[inbox|inbox]]"; \
+      if (k === "next_action")   return "%%02%% [[next_action|next action]]"; \
+      if (k === "one-off")       return "%%03%% [[one-off|one-off]]"; \
+      if (k === "multistep")     return "%%04%% [[multistep|multistep]]"; \
+      if (k === "waiting_for")   return "%%05%% [[waiting_for|waiting for]]"; \
+      if (k === "regular")       return "%%06%% [[regular|regular]]"; \
+      if (k === "idea")          return "%%07%% [[idea|ideas]]"; \
+      if (k === "reference")     return "%%08%% [[reference|references]]"; \
+      if (k === "someday")       return "%%09%% [[someday|someday]]"; \
+    } \
+  } \
   return "%%00%% Without status";
 `;
 
 const groupByPriority = `
 group by function \\
-  if (task.tags.includes("#priority/a")) return "- %%01%%🇦 Important and urgent"; \\
-  if (task.tags.includes("#priority/b")) return "- %%02%%🇧 Important"; \\
-  if (task.tags.includes("#priority/c")) return "- %%03%%🇨 Сommon task"; \\
-  if (task.tags.includes("#priority/d")) return "- %%04%%🇩 Delegate"; \\
-  if (task.tags.includes("#priority/e")) return "- %%05%%🇪 Eliminate"; \\
+  if (task.priorityName === "Highest") return "- %%01%%🔺 Important and urgent"; \\
+  if (task.priorityName === "High") return "- %%02%%⏫ Important"; \\
+  if (task.priorityName === "Medium") return "- %%03%%🔼 Medium"; \\
+  if (task.priorityName === "Normal") return "- %%04%%⚪ Normal"; \\
+  if (task.priorityName === "Low") return "- %%05%%🔽 Delegate"; \\
+  if (task.priorityName === "Lowest") return "- %%06%%⏬ Eliminate"; \\
   return "%%99%%";
 `;
 
@@ -49,10 +56,15 @@ group by function \\
 
 const sortByTime = `
 sort by function \\
+  let cache = query.searchCache.sortTime || (query.searchCache.sortTime = new Map()); \\
+  let cached = cache.get(task); \\
+  if (cached) return cached; \\
   let dateStr = task.happens ? task.happens.format("YYYY-MM-DD") : "9999-99-99"; \\
   let m = task.description && task.description.match(/⏰\\s*(\\d{1,2}:\\d{2})/); \\
   let timeStr = m ? (m[1].length == 4 ? "0" + m[1] : m[1]) : "99:99"; \\
-  return dateStr + "T" + timeStr;
+  let result = dateStr + "T" + timeStr; \\
+  cache.set(task, result); \\
+  return result;
 `;
 
 const blockIdSuffix = Math.random().toString(36).slice(2, 9);
@@ -80,7 +92,7 @@ function buildQuery() {
     .join('\n');
 
   let query = `
-not done
+(not done) OR (done today)
 tags include #category/${category}
 ${activeCode}
 ${sortByTime}
@@ -140,7 +152,7 @@ function renderDataviewContent() {
     if (buttonElement) {
       buttonElement.addEventListener('click', () => {
         activeGroups[btn.key] = !activeGroups[btn.key];
-        renderDataviewContent();
+renderDataviewContent();
       });
     }
   }

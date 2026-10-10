@@ -1,9 +1,9 @@
 ---
 tags:
-  - status/todo
   - source/article/resource
   - category/obsidian
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@flowing_abbyss)"
 status: 📥
@@ -23,6 +23,7 @@ icon: 🌐
 color: "#7575c0"
 created: 2026-02-26T19:23:29+03:00
 updated: 2026-02-26T19:25:36+03:00
+citekey: flowing_abbyss
 ---
 
 # Descourse graph

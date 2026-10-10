@@ -1,9 +1,10 @@
 ---
 tags:
-  - status/hold
+  - status/done
   - source/article/resource
   - category/study
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@opencode)"
 status: 🟩
@@ -16,11 +17,12 @@ problem:
 creator:
 production:
 start: 2026-03-03T14:03:39+03:00
-end:
+end: 2026-09-26
 icon: 🌐
 color: "#7575c0"
 created: 2026-03-03T14:03:39+03:00
 updated: 2026-04-02T14:42:14+03:00
+citekey: opencode
 ---
 
 [[заметки по ведению хранилища от opencode]]

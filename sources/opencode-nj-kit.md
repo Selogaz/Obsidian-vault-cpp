@@ -4,6 +4,7 @@ tags:
   - source/article/resource
   - category/webdev
 aliases: []
+description:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@opencode_nj_kit)"
@@ -17,13 +18,14 @@ problem:
 creator:
 production:
 start: 2026-05-27T15:24:28+03:00
-end:
+end: 2026-09-26
 url:
 cover:
 icon: 🌐
 color: "#7575c0"
 created: 2026-05-27T15:24:28+03:00
 updated: 2026-06-22T00:56:13+03:00
+citekey: opencode_nj_kit
 ---
 
 ## Установка

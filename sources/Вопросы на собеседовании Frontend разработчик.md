@@ -4,6 +4,7 @@ tags:
   - source/article/resource
   - category/webdev
 aliases: []
+description:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@вопросы_на_собеседовании_frontend_разработчик)"
@@ -25,6 +26,7 @@ icon: 🌐
 color: "#7575c0"
 created: 2026-05-26T22:46:35+03:00
 updated: 2026-05-26T22:54:20+03:00
+citekey: вопросы_на_собеседовании_frontend_разработчик
 ---
 
 # Расскажи о себе

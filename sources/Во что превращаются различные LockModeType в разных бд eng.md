@@ -1,9 +1,9 @@
 ---
 tags:
-  - status/todo
   - source/article/paper
   - category/java
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@во_что_превращаются_различные_lockmodetype_в_разных_бд_eng)"
 status: 📥
@@ -21,6 +21,7 @@ icon: 📃
 color: "#7575c0"
 created: 2025-09-26T10:52:40+03:00
 updated: 2026-01-18T16:10:10+03:00
+citekey: во_что_превращаются_различные_lockmodetype_в_разных_бд_eng
 total_hours: 0
 ---
 

@@ -1,0 +1,792 @@
+body.micropatches-hide-traffic-lights.mod-macos:not(.is-fullscreen) {
+  --frame-left-space: 0px;
+}
+
+body.micropatches-hide-traffic-lights.mod-macos:not(.is-fullscreen)
+  .workspace-tabs.mod-top-left-space
+  > .workspace-tab-header-container {
+  padding-left: var(--size-4-2, 8px);
+}
+
+/* Windows/Linux: the controls are Obsidian's own DOM, only floating over the
+   tab bar in the "Hidden" frame style. Wherever Obsidian brings the full
+   titlebar back (vault picker, popout modals, global progress) they stay. */
+body.micropatches-hide-traffic-lights:is(.mod-windows, .mod-linux).is-hidden-frameless:not(
+    .is-fullscreen,
+    .starter,
+    .is-popout-modal,
+    .in-progress
+  ) {
+  --frame-right-space: 0px;
+}
+
+body.micropatches-hide-traffic-lights:is(.mod-windows, .mod-linux).is-hidden-frameless:not(
+    .is-fullscreen,
+    .starter,
+    .is-popout-modal,
+    .in-progress
+  )
+  .titlebar-button-container.mod-right {
+  display: none;
+}
+
+/* Every patch is one native settings group. The consistent group spacing
+   separates patches; indentation alone communicates child settings. */
+.micropatches-setting-patch > .setting-items > .setting-item:first-child > .setting-item-info > .setting-item-name {
+  font-weight: var(--font-medium, 500);
+}
+
+.micropatches-setting-patch > .setting-items > .setting-item:not(:first-child) > .setting-item-info {
+  padding-inline-start: var(--size-4-5, 20px);
+}
+
+/* instant-ui: near-zero instead of `none` so transitionend/animationend
+   still fire and animation-fill-mode still applies — cleanup logic that
+   depends on those (Notice, sidebar reveal, folder collapse, etc.) keeps
+   working, it just happens instantly. This has to win over every other
+   transition/animation rule in core, the active theme, snippets, and other
+   plugins, none of which this stylesheet can out-specificity in advance, so
+   !important here is load-bearing rather than a shortcut.
+   Editing Toolbar dropdowns sit a gap away from their button and stay open
+   across it only while their `visibility` transition runs out, so they keep
+   their own duration. */
+body.micropatches-instant-ui
+  *:not(
+    :is(
+      [class^="editingToolbarCommandsubItem"] > .subitem,
+      .loader-spinner svg,
+      .loader-cube,
+      .sk-cube,
+      .cm-fat-cursor-mark,
+      .cm-animate-fat-cursor,
+      .progress-bar-line,
+      .progress-bar-subline,
+      [class*="spinner"],
+      [class*="loading"],
+      .cm-cursorLayer .cm-cursor,
+      .node-insert-event,
+      .hmd-file-uploading,
+      .mod-pending
+    )
+  ),
+body.micropatches-instant-ui *:not(:is([class*="spinner"], [class*="loading"], .mod-pending))::before,
+body.micropatches-instant-ui *:not(:is([class*="spinner"], [class*="loading"], .mod-pending))::after {
+  animation-duration: 0.001ms !important;
+  animation-delay: 0s !important;
+  transition-duration: 0.001ms !important;
+  transition-delay: 0s !important;
+}
+
+.view-header-title-container.micropatches-periodic-breadcrumbs > button.micropatches-periodic-breadcrumb {
+  all: unset;
+  display: inline-flex;
+  flex: 0 1 auto;
+  align-items: center;
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: min(13ch, 24vw);
+  height: 24px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s, 4px);
+  padding: 0 var(--size-2-2, 8px);
+  background: var(--background-secondary);
+  color: var(--text-muted);
+  cursor: pointer;
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+  font-weight: var(--font-medium, 500);
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition:
+    color 80ms ease-out,
+    background-color 80ms ease-out,
+    border-color 80ms ease-out;
+}
+
+.view-header-title-container.micropatches-periodic-breadcrumbs > button.micropatches-periodic-breadcrumb::before,
+.view-header-title-container.micropatches-periodic-breadcrumbs > button.micropatches-periodic-breadcrumb::after {
+  flex: 0 0 auto;
+  color: var(--text-faint);
+  font-size: 1.25em;
+  font-weight: var(--font-normal, 400);
+  line-height: 0.7;
+}
+
+.view-header-title-container.micropatches-periodic-breadcrumbs > button.micropatches-periodic-breadcrumb.is-previous {
+  gap: 0.32em;
+  justify-content: flex-end;
+  margin-inline-end: var(--size-4-3, 12px);
+}
+
+.view-header-title-container.micropatches-periodic-breadcrumbs
+  > button.micropatches-periodic-breadcrumb.is-previous::before {
+  content: "‹";
+}
+
+.view-header-title-container.micropatches-periodic-breadcrumbs > button.micropatches-periodic-breadcrumb.is-next {
+  gap: 0.32em;
+  justify-content: flex-start;
+  margin-inline-start: var(--size-4-3, 12px);
+}
+
+.view-header-title-container.micropatches-periodic-breadcrumbs
+  > button.micropatches-periodic-breadcrumb.is-next::after {
+  content: "›";
+}
+
+.view-header-title-container.micropatches-periodic-breadcrumbs
+  > button.micropatches-periodic-breadcrumb:hover:not(:disabled),
+.view-header-title-container.micropatches-periodic-breadcrumbs > button.micropatches-periodic-breadcrumb:focus-visible {
+  background: var(--background-modifier-hover);
+  border-color: var(--background-modifier-border-hover, var(--background-modifier-border));
+  color: var(--text-normal);
+}
+
+.view-header-title-container.micropatches-periodic-breadcrumbs > button.micropatches-periodic-breadcrumb:focus-visible {
+  outline: 1px solid var(--background-modifier-border-focus);
+  outline-offset: 1px;
+}
+
+.view-header-title-container.micropatches-periodic-breadcrumbs > button.micropatches-periodic-breadcrumb.is-create {
+  color: var(--text-faint);
+}
+
+.view-header-title-container.micropatches-periodic-breadcrumbs
+  > button.micropatches-periodic-breadcrumb.is-create:hover,
+.view-header-title-container.micropatches-periodic-breadcrumbs
+  > button.micropatches-periodic-breadcrumb.is-create:focus-visible {
+  color: var(--text-muted);
+}
+
+.view-header-title-container.micropatches-periodic-breadcrumbs > button.micropatches-periodic-breadcrumb:disabled {
+  color: var(--text-faint);
+  cursor: default;
+  opacity: 0.55;
+}
+
+@media (max-width: 600px) {
+  .view-header-title-container.micropatches-periodic-breadcrumbs > button.micropatches-periodic-breadcrumb {
+    max-width: 11ch;
+    padding-inline: var(--size-2-1, 4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .view-header-title-container.micropatches-periodic-breadcrumbs > button.micropatches-periodic-breadcrumb {
+    transition: none;
+  }
+}
+
+.nav-action-button.micropatches-backlinks-default-filter {
+  position: relative;
+}
+
+.micropatches-backlinks-default-filter-dot {
+  position: absolute;
+  inset-block-start: 2px;
+  inset-inline-end: 2px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--interactive-accent);
+  box-shadow: 0 0 0 1px var(--background-secondary);
+  pointer-events: none;
+}
+
+.micropatches-backlinks-default-filter.is-overridden .micropatches-backlinks-default-filter-dot {
+  opacity: 0.4;
+}
+
+.micropatches-heading-backlink-indicator {
+  --micropatches-heading-backlink-icon-size: clamp(15px, 0.6em, 18px);
+
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: calc(var(--micropatches-heading-backlink-icon-size) + 6px);
+  height: calc(var(--micropatches-heading-backlink-icon-size) + 6px);
+  margin-inline-start: 0.32em;
+  border-radius: var(--radius-s, 4px);
+  padding-inline: 3px;
+  color: var(--text-faint);
+  cursor: pointer;
+  font-family: var(--font-interface);
+  font-size: inherit;
+  font-style: normal;
+  font-weight: var(--font-medium, 500);
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.micropatches-heading-backlink-indicator > span:first-child {
+  display: inline-flex;
+}
+
+.micropatches-heading-backlink-indicator svg {
+  width: var(--micropatches-heading-backlink-icon-size);
+  height: var(--micropatches-heading-backlink-icon-size);
+  stroke-width: 1.8;
+}
+
+.micropatches-heading-backlink-indicator:hover,
+.micropatches-heading-backlink-indicator[aria-expanded="true"] {
+  background: var(--background-modifier-hover);
+  color: var(--text-muted);
+}
+
+.micropatches-heading-backlink-indicator:focus-visible {
+  outline: 2px solid var(--background-modifier-border-focus);
+  outline-offset: 1px;
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.popover.hover-popover.micropatches-heading-backlinks-popover {
+  --popover-width: 100%;
+
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: min(340px, calc(100vw - 16px));
+  max-height: min(420px, calc(100vh - 16px));
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m, 8px);
+  padding: 0;
+  background: var(--background-primary);
+  color: var(--text-normal);
+  box-shadow: var(--shadow-s);
+  overflow: hidden;
+  z-index: var(--layer-popover, 30);
+}
+
+.micropatches-heading-backlinks-title {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 36px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding: 0 var(--size-4-3, 12px);
+  color: var(--text-muted);
+  font-family: var(--font-interface);
+  font-size: var(--font-ui-small);
+  font-weight: var(--font-semibold, 600);
+}
+
+.micropatches-heading-backlinks-title .micropatches-heading-backlink-count {
+  min-width: 1.55em;
+  border-radius: var(--radius-s, 4px);
+  padding: 0.12em 0.38em;
+  background: var(--background-secondary);
+  color: var(--text-faint);
+  font-size: var(--font-ui-smaller);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+.micropatches-heading-backlinks-list {
+  min-height: 0;
+  padding: var(--size-2-2, 4px);
+  overflow-y: auto;
+}
+
+.micropatches-heading-backlinks-item {
+  all: unset;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: var(--radius-s, 4px);
+  padding: var(--size-2-2, 6px) var(--size-4-2, 8px);
+  cursor: pointer;
+  font-family: var(--font-interface);
+  text-align: start;
+}
+
+.popover.hover-popover.micropatches-heading-backlinks-popover
+  .micropatches-heading-backlinks-list
+  > button:is(.micropatches-heading-backlinks-item, .micropatches-heading-backlinks-more)[type="button"] {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.popover.hover-popover.micropatches-heading-backlinks-popover .micropatches-heading-backlinks-item:hover,
+.popover.hover-popover.micropatches-heading-backlinks-popover .micropatches-heading-backlinks-item:focus-visible {
+  background: var(--background-modifier-hover);
+}
+
+.popover.hover-popover.micropatches-heading-backlinks-popover .micropatches-heading-backlinks-item:focus-visible {
+  outline: 2px solid var(--background-modifier-border-focus);
+  outline-offset: -2px;
+}
+
+.micropatches-heading-backlinks-file {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  color: var(--text-normal);
+  font-size: var(--font-ui-small);
+  font-weight: var(--font-medium, 500);
+  line-height: 1.35;
+}
+
+.micropatches-heading-backlinks-file > span:first-child {
+  display: inline-flex;
+  flex: 0 0 auto;
+  margin-inline-end: var(--size-2-2, 6px);
+  color: var(--text-faint);
+}
+
+.micropatches-heading-backlinks-file svg {
+  width: 13px;
+  height: 13px;
+}
+
+.micropatches-heading-backlinks-filename {
+  flex: 0 1 auto;
+  min-width: 3ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.micropatches-heading-backlinks-path {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  color: var(--text-faint);
+  font-size: var(--font-ui-smaller);
+  font-weight: var(--font-normal, 400);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.micropatches-heading-backlinks-path:empty {
+  display: none;
+}
+
+.micropatches-heading-backlinks-line {
+  flex: 0 0 auto;
+  color: var(--text-faint);
+  font-weight: var(--font-normal, 400);
+  font-variant-numeric: tabular-nums;
+}
+
+.micropatches-heading-backlinks-preview {
+  display: -webkit-box;
+  margin-block-start: 2px;
+  color: var(--text-muted);
+  font-family: var(--font-text);
+  font-size: var(--font-ui-smaller);
+  font-weight: var(--font-normal, 400);
+  line-height: 1.35;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.micropatches-heading-backlinks-preview.is-empty {
+  color: var(--text-faint);
+}
+
+.micropatches-heading-backlinks-more {
+  all: unset;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: var(--radius-s, 4px);
+  padding: var(--size-2-2, 6px) var(--size-4-2, 8px);
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: var(--font-interface);
+  font-size: var(--font-ui-small);
+  text-align: center;
+}
+
+.popover.hover-popover.micropatches-heading-backlinks-popover .micropatches-heading-backlinks-more:hover,
+.popover.hover-popover.micropatches-heading-backlinks-popover .micropatches-heading-backlinks-more:focus-visible {
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.popover.hover-popover.micropatches-heading-backlinks-popover .micropatches-heading-backlinks-more:focus-visible {
+  outline: 2px solid var(--background-modifier-border-focus);
+  outline-offset: -2px;
+}
+
+@media (pointer: coarse) {
+  .micropatches-heading-backlink-indicator {
+    min-width: 28px;
+    height: 28px;
+  }
+}
+
+@media print {
+  .micropatches-heading-backlink-indicator,
+  .micropatches-heading-backlinks-popover {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .micropatches-heading-backlink-indicator {
+    transition: none;
+  }
+}
+
+.micropatches-local-graph {
+  position: relative;
+  height: var(--micropatches-local-graph-height, 260px);
+  margin-block: var(--size-4-4, 16px);
+  border: var(--border-width, 1px) solid var(--background-modifier-border);
+  border-radius: var(--radius-m, 8px);
+  overflow: hidden;
+  contain: strict;
+}
+
+.micropatches-local-graph > .workspace-leaf-content {
+  height: 100%;
+}
+
+.micropatches-local-graph > .workspace-leaf-content > .view-header {
+  display: none;
+}
+
+/* The graph renderer disables touch scrolling on its canvas. Let vertical
+   swipes scroll the note; horizontal drags and pinches still reach the graph. */
+.is-mobile .micropatches-local-graph canvas {
+  touch-action: pan-y !important;
+}
+
+/* Hot corners: a quarter-circle anchored in the window corner. ::before is
+   the soft approach glow, growing with proximity (0..1); ::after is the
+   trigger zone — a faint fill closed by a crisp hairline arc; crossing the
+   arc fires the command. Size, trigger radius and proximity are set from
+   hot-corners.ts. */
+.micropatches-hot-corner {
+  --micropatches-hot-corner-color: var(--interactive-accent);
+  position: fixed;
+  z-index: var(--layer-tooltip, 70);
+  width: var(--micropatches-hot-corner-size, 240px);
+  height: var(--micropatches-hot-corner-size, 240px);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 180ms ease-out;
+}
+
+.micropatches-hot-corner.is-visible {
+  opacity: 1;
+}
+
+.micropatches-hot-corner::before,
+.micropatches-hot-corner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform-origin: var(--micropatches-hot-corner-at, top left);
+}
+
+.micropatches-hot-corner::before {
+  background: radial-gradient(
+    circle at var(--micropatches-hot-corner-at, top left),
+    color-mix(in srgb, var(--micropatches-hot-corner-color) 70%, transparent) 0%,
+    color-mix(in srgb, var(--micropatches-hot-corner-color) 28%, transparent)
+      calc(12% + 22% * var(--micropatches-hot-corner-proximity, 0)),
+    transparent calc(30% + 40% * var(--micropatches-hot-corner-proximity, 0))
+  );
+  opacity: calc(0.2 + 0.5 * var(--micropatches-hot-corner-proximity, 0));
+}
+
+.micropatches-hot-corner::after {
+  --micropatches-hot-corner-r: var(--micropatches-hot-corner-trigger, 64px);
+  background: radial-gradient(
+    circle at var(--micropatches-hot-corner-at, top left),
+    color-mix(in srgb, var(--micropatches-hot-corner-color) 14%, transparent) 0,
+    color-mix(in srgb, var(--micropatches-hot-corner-color) 26%, transparent)
+      calc(var(--micropatches-hot-corner-r) - 2px),
+    var(--micropatches-hot-corner-color) calc(var(--micropatches-hot-corner-r) - 1.25px),
+    var(--micropatches-hot-corner-color) calc(var(--micropatches-hot-corner-r) - 0.25px),
+    color-mix(in srgb, var(--micropatches-hot-corner-color) 30%, transparent)
+      calc(var(--micropatches-hot-corner-r) + 0.75px),
+    transparent calc(var(--micropatches-hot-corner-r) + 12px)
+  );
+  opacity: calc(0.5 + 0.5 * var(--micropatches-hot-corner-proximity, 0));
+}
+
+/* Names the command, tucked just outside the trigger arc on the diagonal. */
+.micropatches-hot-corner-label {
+  --micropatches-hot-corner-label-offset: calc(var(--micropatches-hot-corner-trigger, 64px) * 0.72 + 10px);
+  position: absolute;
+  z-index: 1;
+  max-width: calc(100% - var(--micropatches-hot-corner-label-offset));
+  padding: var(--size-2-1, 2px) var(--size-4-2, 8px);
+  overflow: hidden;
+  border-radius: var(--radius-s, 4px);
+  border: var(--border-width, 1px) solid var(--background-modifier-border);
+  background-color: var(--background-primary-alt);
+  box-shadow: var(--shadow-s);
+  color: var(--text-normal);
+  font-size: var(--font-ui-smaller);
+  line-height: var(--line-height-tight);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: calc(0.35 + 0.65 * var(--micropatches-hot-corner-proximity, 0));
+}
+
+.micropatches-hot-corner-label:empty {
+  display: none;
+}
+
+.micropatches-hot-corner[data-corner^="top"] .micropatches-hot-corner-label {
+  top: var(--micropatches-hot-corner-label-offset);
+}
+
+.micropatches-hot-corner[data-corner^="bottom"] .micropatches-hot-corner-label {
+  bottom: var(--micropatches-hot-corner-label-offset);
+}
+
+.micropatches-hot-corner[data-corner$="Left"] .micropatches-hot-corner-label {
+  left: var(--micropatches-hot-corner-label-offset);
+}
+
+.micropatches-hot-corner[data-corner$="Right"] .micropatches-hot-corner-label {
+  right: var(--micropatches-hot-corner-label-offset);
+}
+
+/* Confirmation pulse: the zone swells out of the corner while everything
+   fades, and stays faded — hot-corners.ts keeps it dark until re-armed. */
+.micropatches-hot-corner.is-fired {
+  animation: micropatches-hot-corner-fade 380ms ease-out forwards;
+}
+
+.micropatches-hot-corner.is-fired::after {
+  animation: micropatches-hot-corner-pulse 380ms cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+@keyframes micropatches-hot-corner-fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes micropatches-hot-corner-pulse {
+  0% {
+    transform: scale(1);
+    filter: brightness(1.5);
+  }
+  100% {
+    transform: scale(1.7);
+    filter: brightness(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .micropatches-hot-corner {
+    transition: none;
+  }
+
+  .micropatches-hot-corner.is-fired,
+  .micropatches-hot-corner.is-fired::after {
+    animation-duration: 1ms;
+  }
+}
+
+.micropatches-hot-corner[data-corner="topLeft"] {
+  top: 0;
+  left: 0;
+  --micropatches-hot-corner-at: top left;
+}
+
+.micropatches-hot-corner[data-corner="topRight"] {
+  top: 0;
+  right: 0;
+  --micropatches-hot-corner-at: top right;
+}
+
+.micropatches-hot-corner[data-corner="bottomLeft"] {
+  bottom: 0;
+  left: 0;
+  --micropatches-hot-corner-at: bottom left;
+}
+
+.micropatches-hot-corner[data-corner="bottomRight"] {
+  right: 0;
+  bottom: 0;
+  --micropatches-hot-corner-at: bottom right;
+}
+
+/* Focus mode: an allowlist, not a blocklist. Nothing here depends on what the
+   user (or another plugin) has enabled: whole regions are hidden and only the
+   focused note's text and inline title stay. !important is what keeps the
+   panels from coming back while the mode is on. */
+body.micropatches-focus-mode
+  :is(
+    .status-bar,
+    .workspace-ribbon,
+    .sidebar-toggle-button,
+    .workspace-tab-header-container,
+    .view-header,
+    .workspace-split.mod-left-split,
+    .workspace-split.mod-right-split,
+    .workspace-drawer,
+    .workspace-leaf-resize-handle
+  ) {
+  display: none !important;
+}
+
+/* Only the focused note: other tab groups, the splits that hold none of it,
+   and (stacked tabs) its sibling leaves. Guarded by :has() so a window that
+   somehow has no target never goes blank. */
+body.micropatches-focus-mode:has(.micropatches-focus-tabs)
+  .workspace-split.mod-root
+  :is(.workspace-tabs:not(.micropatches-focus-tabs), .workspace-split:not(:has(.micropatches-focus-tabs))),
+body.micropatches-focus-mode .micropatches-focus-tabs .workspace-leaf:not(.micropatches-focus-leaf),
+body.micropatches-focus-mode .micropatches-focus-tabs .workspace-tab-container > .workspace-tab-header {
+  display: none !important;
+}
+
+/* Everything around the text — properties, backlinks and whatever plugins
+   append next to them — except the inline title. */
+body.micropatches-focus-mode .micropatches-focus-leaf .cm-sizer > :not(.cm-contentContainer, .inline-title),
+body.micropatches-focus-mode .micropatches-focus-leaf .markdown-preview-sizer > .mod-footer,
+body.micropatches-focus-mode .micropatches-focus-leaf .markdown-preview-sizer > .mod-header > :not(.inline-title) {
+  display: none !important;
+}
+
+body.micropatches-focus-mode .micropatches-focus-leaf .markdown-source-view.mod-cm6 .cm-content > * {
+  transition: opacity 0.2s ease;
+}
+
+body.micropatches-focus-mode
+  .micropatches-focus-leaf
+  .markdown-source-view.mod-cm6
+  .cm-content
+  > :not(.cm-active, :focus-within) {
+  opacity: 0.35;
+}
+
+/* Bases column search: the popover is Bases' own toolbar menu. The value
+   list scrolls under a fixed search field, and each rendered value is inert
+   so the whole row, not a link inside it, is what you click. */
+body:not(.is-phone) .micropatches-bases-column-search .bases-toolbar-items .suggestion-group {
+  max-height: min(360px, 50vh);
+  overflow-y: auto;
+}
+
+.micropatches-bases-column-search .bases-toolbar-menu-item-name {
+  pointer-events: none;
+}
+
+.micropatches-bases-column-search .bases-toolbar-menu-item-name > p {
+  display: inline;
+  margin: 0;
+}
+
+.micropatches-bases-column-filter {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  color: var(--text-accent);
+}
+
+/* Bases pagination: previous/next buttons are the toolbar's own icon buttons;
+   the page label between them matches the result count next to it. The
+   result count pushes the rest of the toolbar right; the pager takes that
+   over so it sits beside the count. */
+.bases-toolbar .bases-toolbar-result-count.micropatches-bases-paginated {
+  margin-inline-end: 0;
+}
+
+.bases-toolbar .micropatches-bases-pagination {
+  display: flex;
+  align-items: center;
+  margin-inline-end: auto;
+}
+
+.micropatches-bases-pagination-label {
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+/* Bases groups */
+.micropatches-bases-groups-actions {
+  display: flex;
+}
+
+.bases-group-heading:has(> .micropatches-bases-groups-toggle) {
+  cursor: pointer;
+}
+
+.bases-group-heading .micropatches-bases-groups-toggle {
+  flex: none;
+  align-self: center;
+  padding: 2px;
+  margin-inline-end: 4px;
+  color: var(--text-muted);
+}
+
+.micropatches-bases-groups-folded > .bases-tr {
+  display: none;
+}
+
+.micropatches-bases-groups-dragging {
+  opacity: 0.45;
+}
+
+.micropatches-bases-groups-moving,
+.micropatches-bases-groups-moving * {
+  cursor: grabbing !important;
+  user-select: none !important;
+}
+
+.micropatches-bases-groups-target > .bases-group-heading {
+  color: var(--text-accent);
+  background: var(--background-modifier-hover);
+}
+
+.micropatches-bases-groups-preview,
+.micropatches-bases-groups-line {
+  position: fixed;
+  pointer-events: none;
+  z-index: var(--layer-tooltip);
+}
+
+.micropatches-bases-groups-preview {
+  max-width: min(320px, calc(100vw - 16px));
+  padding: 6px 8px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s);
+  background: var(--background-primary);
+  box-shadow: var(--shadow-s);
+  color: var(--text-normal);
+  font-size: var(--font-ui-small);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.micropatches-bases-groups-preview.is-blocked {
+  color: var(--text-muted);
+}
+
+.micropatches-bases-groups-property {
+  margin-bottom: 2px;
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+}
+
+.micropatches-bases-groups-line {
+  height: 2px;
+  background: var(--interactive-accent);
+}

@@ -4,6 +4,7 @@ tags:
   - source/video/recording
   - category/java
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@5_primeneniy_kafka_v_realnyh_prilozheniyah)"
 status: 🟩
@@ -17,11 +18,12 @@ creator:
   - Влад Мишустин
 production:
 start: 2025-09-18T17:06:21+03:00
-end:
+end: 2026-09-26
 icon: 📹
 color: "#2a9070"
 created: 2025-09-18T17:06:21+03:00
 updated: 2026-06-01T17:47:46+03:00
+citekey: 5_primeneniy_kafka_v_realnyh_prilozheniyah
 total_hours: 0
 ---
 

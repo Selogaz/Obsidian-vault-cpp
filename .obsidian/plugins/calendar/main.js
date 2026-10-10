@@ -17,10 +17,56 @@ const DEFAULT_MONTHLY_NOTE_FORMAT = "YYYY-MM";
 const DEFAULT_QUARTERLY_NOTE_FORMAT = "YYYY-[Q]Q";
 const DEFAULT_YEARLY_NOTE_FORMAT = "YYYY";
 
-function shouldUsePeriodicNotesSettings(periodicity) {
+const PERIODIC_NOTES_GRANULARITIES = {
+    daily: "day",
+    weekly: "week",
+    monthly: "month",
+    quarterly: "quarter",
+    yearly: "year",
+};
+
+/**
+ * Read the config of the `periodic-notes` plugin for the given periodicity.
+ * Supports both the legacy settings (`settings.daily`, ...) and the
+ * calendar sets introduced in 1.0.0, where `settings` is a svelte store.
+ */
+function getPeriodicNotesConfig(periodicity) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const periodicNotes = window.app.plugins.getPlugin("periodic-notes");
-    return periodicNotes && periodicNotes.settings?.[periodicity]?.enabled;
+    if (!periodicNotes) {
+        return null;
+    }
+    const calendarSetManager = periodicNotes.calendarSetManager;
+    if (typeof calendarSetManager?.getActiveConfig === "function") {
+        try {
+            const config = calendarSetManager.getActiveConfig(PERIODIC_NOTES_GRANULARITIES[periodicity]);
+            return config
+                ? {
+                    enabled: !!config.enabled,
+                    format: config.format,
+                    folder: config.folder,
+                    template: config.templatePath,
+                }
+                : null;
+        }
+        catch (err) {
+            // No active calendar set
+            return null;
+        }
+    }
+    const settings = periodicNotes.settings?.[periodicity];
+    return settings
+        ? {
+            enabled: !!settings.enabled,
+            format: settings.format,
+            folder: settings.folder,
+            template: settings.template,
+        }
+        : null;
+}
+
+function shouldUsePeriodicNotesSettings(periodicity) {
+    return !!getPeriodicNotesConfig(periodicity)?.enabled;
 }
 
 /**
@@ -30,9 +76,9 @@ function shouldUsePeriodicNotesSettings(periodicity) {
 function getDailyNoteSettings() {
     try {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const { internalPlugins, plugins } = window.app;
+        const { internalPlugins } = window.app;
         if (shouldUsePeriodicNotesSettings("daily")) {
-            const { format, folder, template } = plugins.getPlugin("periodic-notes")?.settings?.daily || {};
+            const { format, folder, template } = getPeriodicNotesConfig("daily") || {};
             return {
                 format: format || DEFAULT_DAILY_NOTE_FORMAT,
                 folder: folder?.trim() || "",
@@ -60,8 +106,8 @@ function getWeeklyNoteSettings() {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const pluginManager = window.app.plugins;
         const calendarSettings = pluginManager.getPlugin("calendar")?.options;
-        const periodicNotesSettings = pluginManager.getPlugin("periodic-notes")?.settings?.weekly;
-        if (shouldUsePeriodicNotesSettings("weekly")) {
+        const periodicNotesSettings = getPeriodicNotesConfig("weekly");
+        if (periodicNotesSettings?.enabled) {
             return {
                 format: periodicNotesSettings.format || DEFAULT_WEEKLY_NOTE_FORMAT,
                 folder: periodicNotesSettings.folder?.trim() || "",
@@ -85,11 +131,9 @@ function getWeeklyNoteSettings() {
  * to keep behavior of creating a new note in-sync.
  */
 function getMonthlyNoteSettings() {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const pluginManager = window.app.plugins;
     try {
         const settings = (shouldUsePeriodicNotesSettings("monthly") &&
-            pluginManager.getPlugin("periodic-notes")?.settings?.monthly) ||
+            getPeriodicNotesConfig("monthly")) ||
             {};
         return {
             format: settings.format || DEFAULT_MONTHLY_NOTE_FORMAT,
@@ -107,11 +151,9 @@ function getMonthlyNoteSettings() {
  * to keep behavior of creating a new note in-sync.
  */
 function getQuarterlyNoteSettings() {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const pluginManager = window.app.plugins;
     try {
         const settings = (shouldUsePeriodicNotesSettings("quarterly") &&
-            pluginManager.getPlugin("periodic-notes")?.settings?.quarterly) ||
+            getPeriodicNotesConfig("quarterly")) ||
             {};
         return {
             format: settings.format || DEFAULT_QUARTERLY_NOTE_FORMAT,
@@ -129,11 +171,9 @@ function getQuarterlyNoteSettings() {
  * to keep behavior of creating a new note in-sync.
  */
 function getYearlyNoteSettings() {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const pluginManager = window.app.plugins;
     try {
         const settings = (shouldUsePeriodicNotesSettings("yearly") &&
-            pluginManager.getPlugin("periodic-notes")?.settings?.yearly) ||
+            getPeriodicNotesConfig("yearly")) ||
             {};
         return {
             format: settings.format || DEFAULT_YEARLY_NOTE_FORMAT,
@@ -711,9 +751,7 @@ function appHasDailyNotesPluginLoaded() {
     if (dailyNotesPlugin && dailyNotesPlugin.enabled) {
         return true;
     }
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const periodicNotes = app.plugins.getPlugin("periodic-notes");
-    return periodicNotes && periodicNotes.settings?.daily?.enabled;
+    return shouldUsePeriodicNotesSettings("daily");
 }
 
 /**
@@ -726,9 +764,7 @@ function appHasWeeklyNotesPluginLoaded() {
     if (app.plugins.getPlugin("calendar")) {
         return true;
     }
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const periodicNotes = app.plugins.getPlugin("periodic-notes");
-    return periodicNotes && periodicNotes.settings?.weekly?.enabled;
+    return shouldUsePeriodicNotesSettings("weekly");
 }
 
 function appHasMonthlyNotesPluginLoaded() {
@@ -1123,10 +1159,24 @@ const defaultSettings = Object.freeze({
     showQuarter: false, // Added default value for showQuarter
 });
 function appHasPeriodicNotesPluginLoaded() {
-    var _a, _b;
+    var _a, _b, _c;
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const periodicNotes = window.app.plugins.getPlugin("periodic-notes");
-    return periodicNotes && ((_b = (_a = periodicNotes.settings) === null || _a === void 0 ? void 0 : _a.weekly) === null || _b === void 0 ? void 0 : _b.enabled);
+    if (!periodicNotes) {
+        return false;
+    }
+    // Periodic Notes >= 1.0.0 stores its config in calendar sets
+    const calendarSetManager = periodicNotes.calendarSetManager;
+    if (typeof (calendarSetManager === null || calendarSetManager === void 0 ? void 0 : calendarSetManager.getActiveConfig) === "function") {
+        try {
+            return !!((_a = calendarSetManager.getActiveConfig("week")) === null || _a === void 0 ? void 0 : _a.enabled);
+        }
+        catch (err) {
+            // No active calendar set
+            return false;
+        }
+    }
+    return !!((_c = (_b = periodicNotes.settings) === null || _b === void 0 ? void 0 : _b.weekly) === null || _c === void 0 ? void 0 : _c.enabled);
 }
 class CalendarSettingsTab extends obsidian.PluginSettingTab {
     constructor(app, plugin) {

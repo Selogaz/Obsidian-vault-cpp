@@ -4,7 +4,7 @@ filters:
     - or:
         - '!this.file.hasTag("system/category")'
         - or:
-            - file.hasTag("category/" + this.file.name.replace(" ", "_"))
+            - file.hasTag("category/" + this.file.name.replace(/ /g, "_"))
             - category.contains(link(this.file.name))
 formulas:
   type: file.tags.filter(value.startsWith("#note/basic/"))[0].replace(/^.*\//, '')
@@ -33,6 +33,9 @@ formulas:
       file(value).hasTag("note") ||
       file(value).inFolder("sources")
     ).length
+  subcategory: |
+    file.tags.filter(value.startsWith("#category/" + this.file.name.replace(/ /g, "_") + "/"))[0]
+      .replace("#category/" + this.file.name.replace(/ /g, "_") + "/", "")
   created_relative: created.relative()
   updated_relative: updated.relative()
 properties:
@@ -58,6 +61,8 @@ properties:
     displayName: 🆕 created
   formula.updated_relative:
     displayName: 🔄 updated
+  formula.subcategory:
+    displayName: 🗂 subcategory
   formula.total_links:
     displayName: 🔗 total
   formula.imbalance:
@@ -77,14 +82,52 @@ views:
       - formula.updated_relative
       - aliases
     sort:
-      - property: formula.updated_relative
-        direction: DESC
-      - property: formula.backlinks
-        direction: ASC
       - property: formula.created_relative
         direction: DESC
     columnSize:
-      file.name: 451
+      file.name: 530
+      formula.backlinks: 1
+      formula.outlinks: 1
+  - type: table
+    name: "🏷️ All: Tagged"
+    order:
+      - file.name
+      - file.tags
+      - deck
+      - formula.backlinks
+      - file.backlinks
+      - formula.outlinks
+      - file.links
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      formula.backlinks: 1
+      formula.outlinks: 1
+  - type: table
+    name: "🌱 Workflow: Grow"
+    filters:
+      and:
+        - file.hasTag("note/basic")
+        - '!file.hasTag("note/discourse")'
+    groupBy:
+      property: formula.rank
+      direction: ASC
+    order:
+      - file.name
+      - formula.backlinks
+      - file.backlinks
+      - formula.outlinks
+      - file.links
+      - formula.updated_relative
+    sort:
+      - property: formula.updated_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
       formula.backlinks: 1
       formula.outlinks: 1
   - type: table
@@ -108,14 +151,34 @@ views:
       - formula.created_relative
       - formula.updated_relative
     sort:
-      - property: file.name
-        direction: ASC
       - property: formula.created_relative
         direction: DESC
     columnSize:
       file.name: 530
       formula.backlinks: 1
       formula.outlinks: 1
+  - type: dynamic-views-masonry
+    name: 🌲 Evergreens (cards)
+    filters:
+      or:
+        - file.hasTag("note/basic/evergreen")
+        - file.hasTag("note/basic/incubator")
+        - file.hasTag("note/basic/fern")
+        - file.hasTag("note/basic/seed")
+    groupBy:
+      property: formula.rank
+      direction: ASC
+    order:
+      - file.name
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      formula.backlinks: 1
+      formula.outlinks: 1
+    id: bezisb-🌲 Evergreens (cards)
+    displaySecondAsSubtitle: true
   - type: table
     name: 🪡 Single Link
     filters:
@@ -195,6 +258,123 @@ views:
     sort:
       - property: formula.created_relative
         direction: DESC
+    columnSize:
+      file.name: 530
+      formula.backlinks: 1
+      formula.outlinks: 1
+  - type: table
+    name: "🧩 Workflow: Unfiled"
+    filters:
+      and:
+        - file.backlinks.filter(file(value).inFolder("base/_hierarchy") || (file(value).inFolder("base/notes") && file(value).hasTag("mark/aggregator"))).length == 0
+    order:
+      - file.name
+      - formula.type
+      - formula.backlinks
+      - file.backlinks
+      - formula.outlinks
+      - file.links
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.created_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+      formula.backlinks: 1
+      formula.outlinks: 1
+  - type: table
+    name: "🗂 Group: By Subcategory"
+    groupBy:
+      property: formula.subcategory
+      direction: ASC
+    order:
+      - file.name
+      - formula.subcategory
+      - formula.type
+      - formula.backlinks
+      - formula.outlinks
+      - formula.updated_relative
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 530
+      formula.backlinks: 1
+      formula.outlinks: 1
+  - type: table
+    name: 🕓 Recent
+    order:
+      - file.name
+      - formula.type
+      - formula.backlinks
+      - file.backlinks
+      - formula.outlinks
+      - file.links
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.updated_relative
+        direction: DESC
+    limit: 15
+    columnSize:
+      file.name: 530
+      formula.backlinks: 1
+      formula.outlinks: 1
+  - type: table
+    name: ⇶ Aggregators
+    filters:
+      and:
+        - file.hasTag("mark/aggregator")
+    order:
+      - file.name
+      - formula.type
+      - formula.backlinks
+      - file.backlinks
+      - formula.outlinks
+      - file.links
+      - formula.created_relative
+      - formula.updated_relative
+    sort:
+      - property: formula.outlinks
+        direction: DESC
+    columnSize:
+      file.name: 530
+      formula.backlinks: 1
+      formula.outlinks: 1
+  - type: table
+    name: 🌉 Cross-Category
+    filters:
+      and:
+        - file.tags.filter(value.startsWith("#category/")).length > 1
+    order:
+      - file.name
+      - file.tags
+      - formula.backlinks
+      - formula.outlinks
+      - formula.updated_relative
+    sort:
+      - property: formula.updated_relative
+        direction: DESC
+    columnSize:
+      file.name: 530
+  - type: table
+    name: "🃏 Group: By Deck"
+    filters:
+      and:
+        - "!deck.isEmpty()"
+    groupBy:
+      property: deck
+      direction: ASC
+    order:
+      - file.name
+      - formula.type
+      - formula.backlinks
+      - formula.outlinks
+      - formula.updated_relative
+    sort:
+      - property: file.name
+        direction: ASC
     columnSize:
       file.name: 530
       formula.backlinks: 1

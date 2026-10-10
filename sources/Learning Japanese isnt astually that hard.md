@@ -4,6 +4,7 @@ tags:
   - source/video/recording
   - category/japanese
 aliases: []
+description:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@learning_japanese_isnt_astually_that_hard)"
@@ -17,7 +18,7 @@ problem:
 creator:
 production:
 start: 2026-05-08T18:12:39+03:00
-end:
+end: 2026-09-26
 url:
   - https://youtu.be/7fvCb5_Nzq4?si=CLoOVgngp9o0sxQH
 cover:
@@ -25,6 +26,7 @@ icon: 📹
 color: "#2a9070"
 created: 2026-05-08T18:12:39+03:00
 updated: 2026-05-14T19:18:28+03:00
+citekey: learning_japanese_isnt_astually_that_hard
 ---
 
 [[comprehensible method]]

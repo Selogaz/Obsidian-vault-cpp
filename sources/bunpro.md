@@ -1,9 +1,10 @@
 ---
 tags:
-  - status/wip
+  - status/drop
   - source/article/resource
   - category/japanese
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@bunpro)"
 status: ⬛
@@ -16,13 +17,14 @@ problem:
 creator:
 production:
 start: 2026-04-07T21:45:57+03:00
-end:
+end: 2026-09-26
 url:
   - https://bunpro.jp
 icon: 🌐
 color: "#7575c0"
 created: 2026-04-07T21:45:57+03:00
 updated: 2026-05-08T19:09:55+03:00
+citekey: bunpro
 ---
 
 отсюда взята целиком [[hiragana]]

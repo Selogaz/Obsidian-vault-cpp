@@ -4,10 +4,11 @@ tags:
 project:<%- (p => p ? `\n  - "[[${p}]]"` : "")(await tp.user.project()) %>
 cssclasses:
   - hide-backlinks
+  - hide-properties
   - full-width
 created: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 <% "---" %>
 
 `BUTTON[add-generated]`
-![[interim.base#🤖 Generated]]
+![[Kanban System Desing - conspectuses 20260421012534000.base#🤖 Generated]]

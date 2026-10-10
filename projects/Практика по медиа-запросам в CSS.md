@@ -2,18 +2,19 @@
 tags:
   - status/done
   - project/short
-  - priority/c
+  - priority/normal
 aliases: []
+description:
 addition:
 status: 🟩
-priority: 🇨
+priority: ◽
 category:
 meta:
 problem:
 creator:
 production:
 start: 2026-01-21T14:58:38+03:00
-end:
+end: 2026-09-26
 url:
 cover:
 icon: 🗞️

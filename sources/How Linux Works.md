@@ -5,6 +5,7 @@ tags:
   - category/linux
 aliases:
   - How Linux Works
+description:
 published: 2016
 addition:
 zotero: "[🇿](zotero://select/items/@wardHowLinuxWorks2016)"
@@ -19,13 +20,14 @@ creator:
   - "[[Brian Ward]]"
 production:
 start: 2026-02-26T19:12:15+03:00
-end:
+end: 2026-09-26
 url:
   - https://chat.qwen.ai/s/t_4c5bfeff-f174-486b-8527-8d1274797167?fev=0.2.8
 icon: 📖
 color: "#b5b570"
 created: 2026-02-26T19:12:15+03:00
 updated: 2026-06-11T00:56:40+03:00
+citekey: wardHowLinuxWorks2016
 related:
 ---
 

@@ -18,6 +18,13 @@ module.exports = async function category(note) {
 		}
 	}
 
+	// Nothing was passed in: inherit the category of the structural note the
+	// creation was started from. Anywhere else the suggester still asks.
+	const inherited = await tp.user.context()
+	// A note created already in its place keeps it, even without a category.
+	if (inherited.prefilled) return inherited.category ?? ''
+	if (inherited.category) return inherited.category
+
 	const pages = await dv.pages('#system/category AND -#mark/ignore')
 	const categories = pages
 		.sort(p => p.file.name)

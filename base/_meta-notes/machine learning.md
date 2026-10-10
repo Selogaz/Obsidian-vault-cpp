@@ -5,13 +5,14 @@ tags:
 aliases:
   - machine learning operations
   - mlops
+description:
 relevant: false
 category:
   - "[[computer science]]"
 icon: 🔎
 color: "#6fa8d6"
 created: 2026-03-21T00:00:00+07:00
-updated: 2026-06-15T16:36:35+03:00
+updated: 2026-09-28T13:37:21+04:00
 ---
 
 # Machine Learning
@@ -21,16 +22,19 @@ Thematic hub for ML concepts, deployment, and operations relevant to the diploma
 ## Подтемы
 
 ### ML Fundamentals
+
 - Neural networks basics
 - Model architectures (CNN, RNN, Transformers)
 - Training vs Inference
 
 ### ML Deployment
+
 - [[ml-deployment-microservices]]
 - Model serving frameworks
 - TensorFlow Serving, Triton, TorchServe
 
 ### MLOps
+
 - Model lifecycle management
 - Versioning (DVC, MLflow)
 - Monitoring и Observability

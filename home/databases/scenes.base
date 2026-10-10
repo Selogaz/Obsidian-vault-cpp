@@ -1,0 +1,50 @@
+filters:
+  and:
+    - file.folder == this.file.folder
+    - file.tags.contains("mark/scene")
+properties:
+  note.status:
+    displayName: 💯
+  file.name:
+    displayName: 🔤 title
+views:
+  - type: table
+    name: ✍️ Scenes
+    order:
+      - status
+      - file.name
+  - type: board-view
+    name: 📋 Kanban
+    groupProperty: note.status
+    newNoteTemplate:
+      - templates/create/projects/longform/scene board.md
+    newNoteOpen: false
+    hideEmptyGroups: false
+    hiddenGroups:
+      - Empty Group
+    columnOrder:
+      - ⬛
+      - ⚙️
+      - 🟥
+      - 💡
+      - 🧠
+      - 🔎
+      - 🟦
+      - 📋
+      - 🖍
+      - 🟩
+      - 📦
+      - 📢
+    groupLabels:
+      - ⬛=0 Special | ⬛ Abandoned
+      - ⚙️=0 Special | ⚙️ Special
+      - 🟥=1 Preparation | 🟥 ToDo
+      - 💡=1 Preparation | 💡 Idea
+      - 🧠=2 Preprocessing | 🧠 Brainstorm
+      - 🔎=2 Preprocessing | 🔎 Research
+      - 🟦=3 Processing | 🟦 WIP
+      - 📋=3 Processing | 📋 Revising
+      - 🖍=4 Processing | 🖍 Edit
+      - 🟩=5 Distributing | 🟩 Done
+      - 📦=5 Distributing | 📦 Compilation
+      - 📢=5 Distributing | 📢 Published

@@ -4,6 +4,7 @@ tags:
   - source/article/paper
   - category/productivity
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@productive_procrastination_why_busy_doesnt_mean_productive)"
 status: 🟩
@@ -25,6 +26,7 @@ icon: 📃
 color: "#7575c0"
 created: 2026-04-01T20:52:44+03:00
 updated: 2026-04-06T21:56:11+03:00
+citekey: productive_procrastination_why_busy_doesnt_mean_productive
 ---
 
 [[продуктивная прокрастинация]]

@@ -1,10 +1,11 @@
 ---
 aliases:
   - каллауты
-cssclasses:
-  - hide-backlinks
 obsidianUIMode: preview
 icon: 🖍
+cssclasses:
+  - hide-backlinks
+  - hide-properties
 ---
 
 # Inline
@@ -16,6 +17,7 @@ icon: 🖍
 - 💬 text
 - 👁️‍🗨️ text
 - 💭 text
+- @ text
 - ℹ️ text
 - 🔗 text
 - ❌ text
@@ -33,6 +35,12 @@ icon: 🖍
 # Note
 
 > [!note]
+> test
+
+> [!notes]
+> test
+
+> [!sidenote]
 > test
 
 # Abstract
@@ -54,6 +62,24 @@ icon: 🖍
 # Todo
 
 > [!todo]
+> test
+
+# Goal
+
+> [!goal]
+> test
+
+> [!target]
+> test
+
+# Activity
+
+> [!activity]
+> test
+
+# Calendar
+
+> [!calendar]
 > test
 
 # Tip
@@ -178,9 +204,17 @@ icon: 🖍
 > [!contacts]
 > test
 
+> [!contact]
+> test
+
 # Documentation
 
 > [!documentation]
+> test
+
+# Definition
+
+> [!definition]
 > test
 
 # Idea
@@ -215,6 +249,19 @@ icon: 🖍
 # TOC
 
 > [!toc]
+> test
+
+# Map
+
+> [!map]
+> test
+
+# Briefing
+
+> [!briefing]
+> test
+
+> [!weekly-review]
 > test
 
 # Zotero
@@ -254,3 +301,15 @@ icon: 🖍
 > <label>tab 2<input type="radio" name="test"/></label>
 >
 > > content 2
+
+# Layout
+
+> [!hidden]
+> test
+
+> [!col-2]
+> test
+
+> [!kanban]
+> - Column
+>   - Item

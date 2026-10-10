@@ -1,0 +1,15 @@
+{
+    "id": "life-tracker",
+    "name": "Life Tracker",
+    "description": "Capture and visualize the data that matters in your life.",
+    "version": "2.24.4",
+    "minAppVersion": "1.12.0",
+    "isDesktopOnly": false,
+    "author": "Sébastien Dubois",
+    "authorUrl": "https://dsebastien.net",
+    "fundingUrl": {
+        "Join Knowii": "https://www.store.dsebastien.net/product/knowii-community/",
+        "GitHub Sponsors": "https://github.com/sponsors/dsebastien",
+        "Buy Me a Coffee": "https://www.buymeacoffee.com/dsebastien"
+    }
+}

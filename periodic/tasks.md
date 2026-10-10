@@ -39,3 +39,15 @@ color: "#e8e8e8"
 [[reference|reference]]
 [[waiting_for|waiting for]]
 [[regular|regular]]
+
+%%
+- [x] #task/idea text
+- [x] #task/inbox text
+- [x] #task/multistep text
+- [x] #task/next_action text
+- [x] #task/one-off text
+- [x] #task/reference text
+- [x] #task/regular text
+- [x] #task/someday text
+- [x] #task/waiting_for text
+%%

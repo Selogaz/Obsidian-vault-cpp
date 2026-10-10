@@ -2,7 +2,7 @@
 tags:
   - mark/addition/practice
 status: 🟥
-project:<%- (p => p ? `\n  - "[[${p}]]"` : "")(await tp.user.project()) %>
+source:<%- (p => p ? `\n  - "[[${p}]]"` : "")(await tp.user.source()) %>
 description:
 summary:
 created: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>

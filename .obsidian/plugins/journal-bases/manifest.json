@@ -1,0 +1,15 @@
+{
+    "id": "journal-bases",
+    "name": "Journal Bases",
+    "description": "Custom Base views for journaling and periodic reviews.",
+    "version": "2.1.2",
+    "minAppVersion": "1.13.0",
+    "isDesktopOnly": false,
+    "author": "Sébastien Dubois",
+    "authorUrl": "https://dsebastien.net",
+    "fundingUrl": {
+        "Join Knowii": "https://www.store.dsebastien.net/product/knowii-community/",
+        "GitHub Sponsors": "https://github.com/sponsors/dsebastien",
+        "Buy Me a Coffee": "https://www.buymeacoffee.com/dsebastien"
+    }
+}

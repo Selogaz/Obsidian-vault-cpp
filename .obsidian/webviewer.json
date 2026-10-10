@@ -2,5 +2,6 @@
   "openExternalURLs": true,
   "enableAdblocking": true,
   "homepage": "https://google.com",
-  "searchEngine": "google"
+  "searchEngine": "google",
+  "markdownPath": "sources"
 }

@@ -2,6 +2,7 @@
 tags:
   - system/high/problem
 aliases:
+description:
 category:<%* const c = await tp.user.category() %><%- c ? `\n  - "[[${c}]]"` : "" %>
 meta:<%* const m = await tp.user.meta(c) %><%- m ? `\n  - "[[${m}]]"` : "" %>
 relevant: false
@@ -11,4 +12,4 @@ created: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 <% "---" %>
 
-💤<% tp.file.cursor(0) %>
+💤<% tp.user.cursor() %>

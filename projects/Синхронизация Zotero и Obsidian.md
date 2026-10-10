@@ -2,11 +2,12 @@
 tags:
   - status/done
   - project/single
-  - priority/b
+  - priority/medium
 aliases: []
+description:
 addition:
 status: 🟩
-priority: 🇧
+priority: 🔼
 category:
 meta:
 problem:

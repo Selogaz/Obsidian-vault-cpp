@@ -6,11 +6,12 @@ tags:
   - category/html
   - category/css
 aliases: []
+description:
 status: 🟩
 source:
   - "[[full stack itproger]]"
 start: 2026-01-21T13:58:38+03:00
-end:
+end: 2026-09-26
 next:
 url:
 icon: 📓

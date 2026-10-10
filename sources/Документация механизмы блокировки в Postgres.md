@@ -1,9 +1,9 @@
 ---
 tags:
-  - status/todo
   - source/article/paper
   - category/java
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@документация_механизмы_блокировки_в_postgres)"
 status: 📥
@@ -21,6 +21,7 @@ icon: 📃
 color: "#7575c0"
 created: 2025-09-26T10:50:24+03:00
 updated: 2026-01-14T00:23:32+03:00
+citekey: документация_механизмы_блокировки_в_postgres
 total_hours: 0
 ---
 

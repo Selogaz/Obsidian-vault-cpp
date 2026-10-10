@@ -2,8 +2,6 @@ module.exports = async (params) => {
   const { app } = params;
 
   const TASK_FOLDER = 'base/tasks';
-  const FREEZE_STATUS = '❄';
-  const ACTIVE_BLOCKER_STATUSES = new Set(['🟦', '📥', '❄']);
 
   function parseLinks(value) {
     return [value]
@@ -38,6 +36,29 @@ module.exports = async (params) => {
         })()
       : null;
 
+  // Started from a category page, only that category's task notes are updated.
+  const activeTags = [activeFm?.tags]
+    .flat()
+    .filter(Boolean)
+    .map((tag) => String(tag).replace(/^#/, ''));
+  const activeCategory =
+    !activeProject && activeTags.includes('system/category')
+      ? activeFile.basename
+      : null;
+
+  function inActiveCategory(fm) {
+    const tag = `category/${activeCategory.replace(/ /g, '_').toLowerCase()}`;
+    return (
+      [fm?.tags]
+        .flat()
+        .filter(Boolean)
+        .some((value) => {
+          const name = String(value).replace(/^#/, '').toLowerCase();
+          return name === tag || name.startsWith(`${tag}/`);
+        }) || hasLink(fm?.category, activeCategory)
+    );
+  }
+
   const allTaskFiles = app.vault.getMarkdownFiles().filter((f) =>
     f.path.startsWith(TASK_FOLDER)
   );
@@ -57,16 +78,20 @@ module.exports = async (params) => {
             return name === activeProject;
           });
       })
-    : allTaskFiles;
+    : activeCategory
+      ? allTaskFiles.filter((f) =>
+          inActiveCategory(app.metadataCache.getFileCache(f)?.frontmatter)
+        )
+      : allTaskFiles;
 
   let relationsAdded = 0;
-  let tasksFrozen = 0;
 
   for (const file of taskFiles) {
     const fm = app.metadataCache.getFileCache(file)?.frontmatter;
     if (!fm) continue;
 
-    // 1. Sync bidirectional related links
+    // Sync bidirectional related links. Freezing by blockedBy is done by the rules
+    // `hold while blocked` and `release when unblocked` in the task manifest.
     for (const name of parseLinks(fm.related)) {
       const target = app.metadataCache.getFirstLinkpathDest(name, file.path);
       if (!target) continue;
@@ -79,38 +104,15 @@ module.exports = async (params) => {
         relationsAdded++;
       }
     }
-
-    // 2. Freeze if blocked by active tasks
-    const blockers = parseLinks(fm.blockedBy);
-    if (blockers.length === 0) continue;
-
-    const hasActiveBlocker = blockers.some((name) => {
-      const blocker = app.metadataCache.getFirstLinkpathDest(name, file.path);
-      if (!blocker) return false;
-      const status =
-        app.metadataCache.getFileCache(blocker)?.frontmatter?.status;
-      return ACTIVE_BLOCKER_STATUSES.has(status);
-    });
-
-    if (hasActiveBlocker && fm.status !== FREEZE_STATUS) {
-      await app.fileManager.processFrontMatter(file, (tfm) => {
-        tfm.status = FREEZE_STATUS;
-      });
-      tasksFrozen++;
-    } else if (!hasActiveBlocker && fm.status === FREEZE_STATUS) {
-      await app.fileManager.processFrontMatter(file, (tfm) => {
-        tfm.status = '🟥';
-      });
-      tasksFrozen--;
-    }
   }
 
   // Touch milestone files to force Bases progress formula refresh
-  const milestoneFiles = (activeProject ? allTaskFiles : app.vault.getMarkdownFiles()).filter((f) => {
+  const milestoneFiles = (activeProject || activeCategory ? allTaskFiles : app.vault.getMarkdownFiles()).filter((f) => {
     const fm = app.metadataCache.getFileCache(f)?.frontmatter;
     if (!fm?.tags) return false;
     const tags = [fm.tags].flat();
     if (!tags.some((t) => String(t).includes('task/milestone'))) return false;
+    if (activeCategory) return inActiveCategory(fm);
     if (!activeProject) return true;
     return [fm.project].flat().filter(Boolean).some((link) => {
       const match = String(link).match(/\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/);
@@ -125,6 +127,5 @@ module.exports = async (params) => {
     });
   }
 
-  const frozenMsg = tasksFrozen > 0 ? `, ${tasksFrozen} frozen` : tasksFrozen < 0 ? `, ${Math.abs(tasksFrozen)} unfrozen` : '';
-  new Notice(`Relations updated: +${relationsAdded} links${frozenMsg}, ${milestoneFiles.length} milestones refreshed`);
+  new Notice(`Relations updated: +${relationsAdded} links, ${milestoneFiles.length} milestones refreshed`);
 };

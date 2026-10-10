@@ -7,7 +7,7 @@ deck: obsidian::computer_science
 icon: 📝
 color: "#d0a570"
 created: 2026-06-20T18:48:08+03:00
-updated: 2026-06-20T18:48:08+03:00
+updated: 2026-09-28T13:40:09+04:00
 ---
 
 **Главная проблема computer science**

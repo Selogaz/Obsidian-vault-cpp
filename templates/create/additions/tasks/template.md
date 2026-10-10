@@ -8,7 +8,7 @@ description:
 project:<%- project ? `\n  - "[[${project}]]"` : "" %>
 milestone:<%* const milestone = await tp.user.milestone(project) %><%- milestone ? `\n  - "[[${milestone}]]"` : "" %>
 status: 📥
-priority: 🇨
+priority: ◽
 related:
 blockedBy:
 category:<%* const category = await tp.user.category(project) %><%- category && [category].flat().length ? `\n` + [category].flat().map(v => `  - "[[${v}]]"`).join('\n') : "" %>
@@ -17,7 +17,7 @@ problem:<%* const problem = await tp.user.problem([meta].flat()[0] || '', projec
 creator:
 production:
 url:
-start: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
+start:
 end:
 created: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>

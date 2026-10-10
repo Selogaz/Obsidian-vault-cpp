@@ -19,7 +19,7 @@
                 "name": "openFile",
                 "type": "UserScript",
                 "id": "77730487-f798-4dd2-bf69-5ba67de88c47",
-                "path": "templates/openFile.js",
+                "path": "templates/macros/open-file.js",
                 "settings": {
                   "File Path": "home/index.md",
                   "View Mode": "preview"
@@ -33,7 +33,7 @@
           "id": "ee39e2e5-67c1-4901-b550-b45394365926",
           "name": "📥 inbox",
           "type": "Macro",
-          "command": false,
+          "command": true,
           "macro": {
             "id": "0b5590b5-4ee8-4b45-a89b-c2a9938d69d5",
             "name": "open inbox (db)",
@@ -42,7 +42,7 @@
                 "name": "openFile",
                 "type": "UserScript",
                 "id": "feabc337-949d-47aa-8074-480e37ccf8bb",
-                "path": "templates/openFile.js",
+                "path": "templates/macros/open-file.js",
                 "settings": {
                   "File Path": "home/fleetings.md",
                   "View Mode": "preview"
@@ -66,7 +66,7 @@
                 "name": "openFile",
                 "type": "UserScript",
                 "id": "2a9c379d-4a42-4305-88ea-dc4b1fcaeb49",
-                "path": "templates/openFile.js",
+                "path": "templates/macros/open-file.js",
                 "settings": {
                   "File Path": "home/databases/notes.base",
                   "View Mode": "default"
@@ -88,7 +88,7 @@
                 "name": "openFile",
                 "type": "UserScript",
                 "id": "43f985a7-ff94-401f-aa8e-a7b85bb24e98",
-                "path": "templates/openFile.js",
+                "path": "templates/macros/open-file.js",
                 "settings": {
                   "File Path": "home/databases/sources.base",
                   "View Mode": "default"
@@ -111,7 +111,7 @@
                 "name": "openFile",
                 "type": "UserScript",
                 "id": "2148c5f9-7731-4940-96bf-3d74416b188f",
-                "path": "templates/openFile.js",
+                "path": "templates/macros/open-file.js",
                 "settings": {
                   "File Path": "home/databases/projects.base",
                   "View Mode": "default"
@@ -134,7 +134,7 @@
                 "name": "openFile",
                 "type": "UserScript",
                 "id": "abc6d7f4-1d92-4887-82c0-0f656a7f3c11",
-                "path": "templates/openFile.js",
+                "path": "templates/macros/open-file.js",
                 "settings": {
                   "File Path": "home/databases/people.base",
                   "View Mode": "default"
@@ -157,7 +157,7 @@
                 "name": "openFile",
                 "type": "UserScript",
                 "id": "1053e3dc-cc4f-41af-b981-3ca2b9727dde",
-                "path": "templates/openFile.js",
+                "path": "templates/macros/open-file.js",
                 "settings": {
                   "File Path": "home/databases/high-notes.base",
                   "View Mode": "default"
@@ -212,7 +212,16 @@
                             "createInSameFolderAsActiveFile": false,
                             "chooseFromSubfolders": false
                           },
-                          "appendLink": false,
+                          "appendLink": {
+                            "enabled": true,
+                            "placement": "replaceSelection",
+                            "requireActiveFile": false,
+                            "linkType": "link",
+                            "displayText": "none",
+                            "destination": {
+                              "type": "activeFile"
+                            }
+                          },
                           "openFile": true,
                           "fileOpening": {
                             "location": "tab",
@@ -245,7 +254,7 @@
                   "id": "470018fe-b1ec-4e57-9bcd-f5baa490ffc1",
                   "name": "💬 HH:MM new interstitial log",
                   "type": "Capture",
-                  "command": false,
+                  "command": true,
                   "appendLink": false,
                   "captureTo": "periodic/daily/{{date}}",
                   "captureToActiveFile": false,
@@ -287,7 +296,7 @@
                   "id": "8e9a8f94-0206-452b-b38d-bcb5dec3661b",
                   "name": "💡 add `#task/idea`",
                   "type": "Capture",
-                  "command": false,
+                  "command": true,
                   "appendLink": false,
                   "captureTo": "periodic/daily/{{date}}",
                   "captureToActiveFile": false,
@@ -298,7 +307,7 @@
                   },
                   "format": {
                     "enabled": true,
-                    "format": "- [ ] #task/idea {{value}}<%* new Notice(\"idea added\", 3000) %>"
+                    "format": "- [ ] #task/idea {{value}} ➕ {{DATE:YYYY-MM-DD}}<%* new Notice(\"idea added\", 3000) %>"
                   },
                   "insertAfter": {
                     "enabled": false,
@@ -306,7 +315,11 @@
                     "insertAtEnd": false,
                     "considerSubsections": false,
                     "createIfNotFound": false,
-                    "createIfNotFoundLocation": "top"
+                    "createIfNotFoundLocation": "top",
+                    "promptHeading": false,
+                    "inline": false,
+                    "replaceExisting": false,
+                    "blankLineAfterMatchMode": "auto"
                   },
                   "prepend": true,
                   "task": false,
@@ -323,13 +336,24 @@
                     "focus": true,
                     "mode": "default"
                   },
-                  "activeFileWritePosition": "cursor"
+                  "activeFileWritePosition": "cursor",
+                  "insertBefore": {
+                    "enabled": false,
+                    "before": "",
+                    "createIfNotFound": false,
+                    "createIfNotFoundLocation": "top"
+                  },
+                  "captureToCanvasNodeId": "",
+                  "newLineCapture": {
+                    "enabled": false,
+                    "direction": "below"
+                  }
                 },
                 {
                   "id": "fb471f8f-0e4b-4fd1-abe3-813e58c23797",
                   "name": "✅ add `#task/inbox`",
                   "type": "Capture",
-                  "command": false,
+                  "command": true,
                   "appendLink": false,
                   "captureTo": "periodic/daily/{{date}}",
                   "captureToActiveFile": false,
@@ -340,7 +364,7 @@
                   },
                   "format": {
                     "enabled": true,
-                    "format": "- [ ] #task/inbox {{value}}<%* new Notice(\"task added\", 3000) %>"
+                    "format": "- [ ] #task/inbox {{value}} ➕ {{DATE:YYYY-MM-DD}}<%* new Notice(\"task added\", 3000) %>"
                   },
                   "insertAfter": {
                     "enabled": false,
@@ -348,7 +372,10 @@
                     "insertAtEnd": false,
                     "considerSubsections": false,
                     "createIfNotFound": false,
-                    "createIfNotFoundLocation": "top"
+                    "createIfNotFoundLocation": "top",
+                    "promptHeading": false,
+                    "inline": false,
+                    "replaceExisting": false
                   },
                   "prepend": true,
                   "task": false,
@@ -365,10 +392,21 @@
                     "focus": true,
                     "mode": "default"
                   },
-                  "activeFileWritePosition": "cursor"
+                  "activeFileWritePosition": "cursor",
+                  "insertBefore": {
+                    "enabled": false,
+                    "before": "",
+                    "createIfNotFound": false,
+                    "createIfNotFoundLocation": "top"
+                  },
+                  "captureToCanvasNodeId": "",
+                  "newLineCapture": {
+                    "enabled": false,
+                    "direction": "below"
+                  }
                 }
               ],
-              "collapsed": false
+              "collapsed": true
             },
             {
               "id": "00cab3c4-42d0-42de-b4b7-8742c64d0b66",
@@ -380,7 +418,7 @@
                   "id": "1c285a9b-48cf-495b-859f-1cfd7ee371e0",
                   "name": "🇸 create source",
                   "type": "Macro",
-                  "command": false,
+                  "command": true,
                   "runOnStartup": false,
                   "macro": {
                     "name": "🇸 create source",
@@ -418,10 +456,22 @@
                     "name": "🇿 import from Zotero",
                     "commands": [
                       {
-                        "name": "Zotero Integration: Source import",
+                        "name": "ZotLit: Open Zotero annotations",
                         "type": "Obsidian",
-                        "id": "8b85d339-74b9-470c-9ea9-a9b386bd8718",
-                        "commandId": "obsidian-zotero-desktop-connector:zdc-exp-Source import"
+                        "id": "d282f570-4904-4c2d-ae8c-9f8f2886f85c",
+                        "commandId": "zotlit:open-annot-view"
+                      },
+                      {
+                        "name": "Wait",
+                        "type": "Wait",
+                        "id": "0cd9019e-210e-4ace-a515-b8f49499f9fd",
+                        "time": 250
+                      },
+                      {
+                        "name": "ZotLit: Open literature note quick switcher",
+                        "type": "Obsidian",
+                        "id": "67e8336a-6560-4c53-aa12-ce6502230847",
+                        "commandId": "zotlit:note-quick-switcher"
                       }
                     ]
                   },
@@ -434,7 +484,7 @@
               "id": "45e2f469-7257-4416-939e-77782e920de0",
               "name": "🔻🏢 project",
               "type": "Macro",
-              "command": false,
+              "command": true,
               "runOnStartup": false,
               "macro": {
                 "name": "🔻🏢 project",
@@ -466,7 +516,7 @@
               "id": "707ecefc-d0c4-4952-a1dc-a59188781173",
               "name": "🔻👥 people",
               "type": "Multi",
-              "command": false,
+              "command": true,
               "choices": [
                 {
                   "id": "639748d1-14e1-4c24-991a-2bdaf5673444",
@@ -630,7 +680,7 @@
                   "id": "068b3cea-6a03-4edc-aa71-706348e33cdd",
                   "name": "⠀⠀🔬 create meta-note *(thematic hub, focused exploration)*",
                   "type": "Macro",
-                  "command": false,
+                  "command": true,
                   "runOnStartup": false,
                   "macro": {
                     "name": "⠀⠀🔬 create meta-note *(thematic hub, focused exploration)*",
@@ -695,7 +745,7 @@
                   "id": "a238aa02-8718-402f-b700-6799a5062ffc",
                   "name": "⠀⠀⠀⠀⚡ create problem *(research question, investigation)*",
                   "type": "Macro",
-                  "command": false,
+                  "command": true,
                   "runOnStartup": false,
                   "macro": {
                     "name": "⠀⠀⠀⠀⚡ create problem *(research question, investigation)*",
@@ -760,7 +810,7 @@
                   "id": "4b36b7c9-e418-458b-82d0-9a04673bae6e",
                   "name": "🧬 create hierarchy *(aggregate related notes)*",
                   "type": "Macro",
-                  "command": false,
+                  "command": true,
                   "runOnStartup": false,
                   "macro": {
                     "name": "🧬 create hierarchy *(aggregate related notes)*",
@@ -828,7 +878,7 @@
               "id": "bfea583a-186c-4a13-8b18-36a2225d0976",
               "name": "🔻➕ additions",
               "type": "Macro",
-              "command": false,
+              "command": true,
               "runOnStartup": false,
               "macro": {
                 "name": "🔻➕ additions",
@@ -866,7 +916,7 @@
                     "name": "openFile",
                     "type": "UserScript",
                     "id": "867ea4c7-8985-40e4-988d-cdb731dd6b4f",
-                    "path": "templates/openFile.js",
+                    "path": "templates/macros/open-file.js",
                     "settings": {
                       "File Path": "periodic/statuses/inbox.md",
                       "View Mode": "preview"
@@ -889,7 +939,7 @@
                     "name": "openFile",
                     "type": "UserScript",
                     "id": "b1aa4148-1f3a-4953-af70-6f17375f0f98",
-                    "path": "templates/openFile.js",
+                    "path": "templates/macros/open-file.js",
                     "settings": {
                       "File Path": "periodic/today.md",
                       "View Mode": "preview"
@@ -912,32 +962,9 @@
                     "name": "openFile",
                     "type": "UserScript",
                     "id": "d10ef878-456e-4577-b5be-696a21a7daf2",
-                    "path": "templates/openFile.js",
+                    "path": "templates/macros/open-file.js",
                     "settings": {
                       "File Path": "periodic/upcoming.md",
-                      "View Mode": "preview"
-                    }
-                  }
-                ]
-              },
-              "runOnStartup": false
-            },
-            {
-              "id": "ea88c815-26cc-4e71-98da-ce52e8edd3b4",
-              "name": "🗓 calendar",
-              "type": "Macro",
-              "command": false,
-              "macro": {
-                "id": "e301b27d-506c-4333-82b8-a276cc98aef8",
-                "name": "open calendar",
-                "commands": [
-                  {
-                    "name": "openFile",
-                    "type": "UserScript",
-                    "id": "f61c3e6a-55da-4f64-9ecb-d313f6e05ced",
-                    "path": "templates/openFile.js",
-                    "settings": {
-                      "File Path": "periodic/calendar.md",
                       "View Mode": "preview"
                     }
                   }
@@ -958,7 +985,7 @@
                     "name": "openFile",
                     "type": "UserScript",
                     "id": "d69f5cc0-2646-4ace-81d6-762ec8ad1b14",
-                    "path": "templates/openFile.js",
+                    "path": "templates/macros/open-file.js",
                     "settings": {
                       "File Path": "periodic/priority.md",
                       "View Mode": "preview"
@@ -1739,7 +1766,7 @@
                     "name": "openFile",
                     "type": "UserScript",
                     "id": "1e281acc-9255-4a84-a5c9-9247d8082c84",
-                    "path": "templates/openFile.js",
+                    "path": "templates/macros/open-file.js",
                     "settings": {
                       "File Path": "periodic/2026.canvas",
                       "View Mode": "default"
@@ -1873,23 +1900,23 @@
               "runOnStartup": false
             },
             {
-              "id": "fc060950-72a4-467f-8004-058684deedf5",
+              "id": "405e9905-0faa-49bc-8562-a21bb6700b44",
               "name": "✅ tasks",
               "type": "Macro",
               "command": false,
+              "runOnStartup": false,
               "macro": {
-                "id": "99829757-d18f-4b8d-abae-c9b60334d87d",
-                "name": "task search",
+                "name": "✅ tasks",
+                "id": "fd0826c4-61a4-40ea-9bab-7d9c81db13d5",
                 "commands": [
                   {
-                    "name": "Task Search: Open Task Search Modal",
+                    "name": "Tasks: Quick search",
                     "type": "Obsidian",
-                    "id": "54a04317-cc1a-4f27-90fd-1c873fbe15d6",
-                    "commandId": "task-search:open-task-search-modal"
+                    "id": "aa65520f-49a2-4891-9985-0005a327a724",
+                    "commandId": "obsidian-tasks-plugin:quick-search"
                   }
                 ]
-              },
-              "runOnStartup": false
+              }
             },
             {
               "id": "0cbd2d00-1397-4057-a04f-f1f6079cd035",
@@ -1920,25 +1947,6 @@
           "command": true,
           "choices": [
             {
-              "id": "7c46b876-5bed-41da-8a2d-6e65fa41cac1",
-              "name": "📄 edit the template",
-              "type": "Macro",
-              "command": false,
-              "macro": {
-                "id": "ecc05f3d-5e02-4d63-8206-a178c06b7aa2",
-                "name": "edit the template",
-                "commands": [
-                  {
-                    "name": "Another Quick Switcher: Templates search",
-                    "type": "Obsidian",
-                    "id": "559978e4-2968-4eaf-9cec-aba16a5365b1",
-                    "commandId": "obsidian-another-quick-switcher:search-command_templates-search"
-                  }
-                ]
-              },
-              "runOnStartup": false
-            },
-            {
               "id": "baad597c-fcf6-40d3-be89-101e3c45439c",
               "name": "⚙️ command palette",
               "type": "Macro",
@@ -1958,6 +1966,37 @@
               "runOnStartup": false
             },
             {
+              "id": "25da4855-914c-40e9-ac40-654c4e8acc20",
+              "name": "⚠️ validate + lint",
+              "type": "Macro",
+              "command": false,
+              "runOnStartup": false,
+              "macro": {
+                "name": "⚠️ validate + lint",
+                "id": "8244595c-a31b-4952-81cc-e2d6319fa7f0",
+                "commands": [
+                  {
+                    "name": "Metadata Validator: Auto-fix all notes in vault",
+                    "type": "Obsidian",
+                    "id": "d01e4196-966e-404d-ab56-4098ab0b413c",
+                    "commandId": "metadata-validator:auto-fix-vault"
+                  },
+                  {
+                    "name": "Wait",
+                    "type": "Wait",
+                    "id": "3941ebf4-5971-40af-a675-c627db619e6e",
+                    "time": 15000
+                  },
+                  {
+                    "name": "Linter: Lint all files in the vault",
+                    "type": "Obsidian",
+                    "id": "af182289-2839-4c92-8fbc-d37b712a7755",
+                    "commandId": "obsidian-linter:lint-all-files"
+                  }
+                ]
+              }
+            },
+            {
               "id": "6cacb887-3583-4fc8-86f6-84b9b88ce0ef",
               "name": "📊 vault statistics",
               "type": "Macro",
@@ -1970,7 +2009,7 @@
                     "name": "openFile",
                     "type": "UserScript",
                     "id": "e7562cd9-2ae9-4ee3-9295-aaf880545ef9",
-                    "path": "templates/openFile.js",
+                    "path": "templates/macros/open-file.js",
                     "settings": {
                       "File Path": "home/vault statistics.md",
                       "View Mode": "preview"
@@ -1993,7 +2032,7 @@
                     "name": "openFile",
                     "type": "UserScript",
                     "id": "ab1524f2-6fd4-456d-9cfd-893a5574d1b5",
-                    "path": "templates/openFile.js",
+                    "path": "templates/macros/open-file.js",
                     "settings": {
                       "File Path": "home/help/hotkeys.md",
                       "View Mode": "preview"
@@ -2016,7 +2055,7 @@
                     "name": "openFile",
                     "type": "UserScript",
                     "id": "e3eb7af0-cfe6-4285-aa9c-bb6bd95869db",
-                    "path": "templates/openFile.js",
+                    "path": "templates/macros/open-file.js",
                     "settings": {
                       "File Path": "home/prefixes.md",
                       "View Mode": "source"
@@ -2776,7 +2815,8 @@
                     "direction": "vertical",
                     "mode": "default",
                     "focus": true
-                  }
+                  },
+                  "activeFileWritePosition": "cursor"
                 }
               },
               {
@@ -2864,21 +2904,178 @@
               }
             ]
           }
+        },
+        {
+          "id": "4500373d-23b5-417b-b1ea-42106f723c91",
+          "name": "set start today",
+          "type": "Macro",
+          "command": true,
+          "runOnStartup": false,
+          "macro": {
+            "name": "set start today",
+            "id": "306c97de-e077-4442-882d-a7cb93a6bb74",
+            "commands": [
+              {
+                "name": "set-today",
+                "type": "UserScript",
+                "id": "15e83460-5f1e-40ad-b419-fe5c510f782e",
+                "path": "templates/macros/set-today.js",
+                "settings": {
+                  "Field name": "start",
+                  "Overwrite existing value": true
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "f2194e42-9c34-4034-89ce-4f68dbca289a",
+          "name": "set end today",
+          "type": "Macro",
+          "command": true,
+          "runOnStartup": false,
+          "macro": {
+            "name": "set end today",
+            "id": "67b6c174-f5ce-4474-9aae-a9ee90b00201",
+            "commands": [
+              {
+                "name": "set-today",
+                "type": "UserScript",
+                "id": "9dc09c58-2653-47e6-ba6d-0ddbc6970137",
+                "path": "templates/macros/set-today.js",
+                "settings": {
+                  "Field name": "end",
+                  "Overwrite existing value": true
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "485d01f9-639d-4744-8b15-019652c50b07",
+          "name": "on startup",
+          "type": "Macro",
+          "command": false,
+          "runOnStartup": true,
+          "macro": {
+            "name": "on startup",
+            "id": "68c18793-eb2e-4ea5-afe3-5c1550aa59b9",
+            "commands": [
+              {
+                "name": "on-startup",
+                "type": "UserScript",
+                "id": "a16f6203-ae93-4f0c-8952-9c76e7548780",
+                "path": "templates/macros/on-startup.js",
+                "settings": {
+                  "Workspace": "default",
+                  "Auto-load note limit": "3"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "3a7ffd10-caf6-459a-8221-ce6b84e494b5",
+          "name": "change deck",
+          "type": "Macro",
+          "command": true,
+          "runOnStartup": false,
+          "macro": {
+            "name": "change deck",
+            "id": "58caf706-2768-40bc-a847-8071b1c6b54e",
+            "commands": [
+              {
+                "name": "change-deck",
+                "type": "UserScript",
+                "id": "006f393f-a91a-46cb-a9b4-afe11955a5c9",
+                "path": "templates/macros/change-deck.js",
+                "settings": {}
+              }
+            ]
+          }
+        },
+        {
+          "id": "ba615e7a-ab80-4a7a-a9aa-fadf0f6b0b55",
+          "name": "send to category",
+          "type": "Macro",
+          "command": true,
+          "runOnStartup": false,
+          "macro": {
+            "name": "send to category",
+            "id": "9f50a4bd-a1e3-448c-a52e-5d0b7d315922",
+            "commands": [
+              {
+                "name": "list-actions",
+                "type": "UserScript",
+                "id": "a30cc5e8-5823-486d-8c94-4b52c9898a55",
+                "path": "templates/macros/list-actions.js",
+                "settings": {
+                  "Action": "Send to category"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "4f21a80c-13d8-497f-b170-324645903f8f",
+          "name": "delete empty notes",
+          "type": "Macro",
+          "command": true,
+          "runOnStartup": false,
+          "macro": {
+            "name": "delete empty notes",
+            "id": "e18cdb9c-a197-47f9-9dc4-4c297cabbb3d",
+            "commands": [
+              {
+                "name": "list-actions",
+                "type": "UserScript",
+                "id": "eb35f34a-0f26-45cb-aa92-36ea12ad382e",
+                "path": "templates/macros/list-actions.js",
+                "settings": {
+                  "Action": "Delete empty notes"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "7dadadea-2a13-48eb-8eb2-c6a077f0d7c1",
+          "name": "tag with this category",
+          "type": "Macro",
+          "command": true,
+          "runOnStartup": false,
+          "macro": {
+            "name": "tag with this category",
+            "id": "3487e0e3-f1d0-4f28-b75f-31ad044095fa",
+            "commands": [
+              {
+                "name": "tag-with-this-category",
+                "type": "UserScript",
+                "id": "2f629b75-c77d-4a6e-83ac-b87fcfda5776",
+                "path": "templates/macros/tag-with-this-category.js",
+                "settings": {}
+              }
+            ]
+          }
         }
       ],
-      "collapsed": false
+      "collapsed": true
     }
   ],
   "inputPrompt": "single-line",
   "persistInputPromptDrafts": true,
   "useSelectionAsCaptureValue": true,
+  "namePastedImagesAfterNoteTitle": false,
+  "searchNestedChoices": true,
+  "templateFolderLauncherRow": "bottom",
   "devMode": false,
-  "templateFolderPath": "",
+  "templateFolderPaths": [],
   "announceUpdates": "none",
-  "version": "2.12.3",
+  "version": "2.27.0",
   "globalVariables": {},
   "onePageInputEnabled": false,
   "disableOnlineFeatures": true,
+  "enableUriCallbacks": false,
   "enableRibbonIcon": false,
   "showCaptureNotification": false,
   "showInputCancellationNotification": false,
@@ -2922,19 +3119,73 @@
             "maxTokens": 8192
           },
           {
-            "name": "gpt-4-32k",
-            "maxTokens": 32768
-          },
-          {
-            "name": "gpt-4-1106-preview",
-            "maxTokens": 128000
-          },
-          {
             "name": "text-davinci-003",
             "maxTokens": 4096
+          },
+          {
+            "name": "gpt-5.5",
+            "maxTokens": 1050000,
+            "maxOutputTokens": 128000,
+            "supportsTemperature": false
+          },
+          {
+            "name": "gpt-5.4",
+            "maxTokens": 1050000,
+            "maxOutputTokens": 128000,
+            "supportsTemperature": false
+          },
+          {
+            "name": "gpt-5.4-mini",
+            "maxTokens": 400000,
+            "maxOutputTokens": 128000,
+            "supportsTemperature": false
+          },
+          {
+            "name": "gpt-5.4-nano",
+            "maxTokens": 400000,
+            "maxOutputTokens": 128000,
+            "supportsTemperature": false
+          },
+          {
+            "name": "gpt-4.1",
+            "maxTokens": 1047576,
+            "maxOutputTokens": 32768,
+            "supportsTemperature": true
+          },
+          {
+            "name": "gpt-4.1-mini",
+            "maxTokens": 1047576,
+            "maxOutputTokens": 32768,
+            "supportsTemperature": true
+          },
+          {
+            "name": "gpt-4o",
+            "maxTokens": 128000,
+            "maxOutputTokens": 16384,
+            "supportsTemperature": true
+          },
+          {
+            "name": "gpt-4o-mini",
+            "maxTokens": 128000,
+            "maxOutputTokens": 16384,
+            "supportsTemperature": true
+          },
+          {
+            "name": "o3",
+            "maxTokens": 200000,
+            "maxOutputTokens": 100000,
+            "supportsTemperature": false
+          },
+          {
+            "name": "o4-mini",
+            "maxTokens": 200000,
+            "maxOutputTokens": 100000,
+            "supportsTemperature": false
           }
         ],
-        "modelSource": "auto"
+        "modelSource": "modelsDev",
+        "autoSyncModels": true,
+        "id": "openai"
       }
     ]
   },
@@ -2951,7 +3202,10 @@
     "backfillFileOpeningDefaults": true,
     "migrateProviderApiKeysToSecretStorage": true,
     "consolidateFileExistsBehavior": true,
-    "repairTemplateFileExistsBehavior": true
+    "repairTemplateFileExistsBehavior": true,
+    "migrateToMultipleTemplateFolders": true,
+    "refreshStaleDefaultModelSeeds": true,
+    "pinAiModelRefs": true
   },
   "macros": []
 }

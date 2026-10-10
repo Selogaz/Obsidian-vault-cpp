@@ -1,4 +1,13 @@
 {
+  "terminal:close-terminal": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "W"
+    }
+  ],
   "note-composer:extract-heading": [
     {
       "modifiers": [
@@ -816,13 +825,6 @@
         "Mod"
       ],
       "key": "`"
-    },
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "T"
     }
   ],
   "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-new-tab": [
@@ -1409,6 +1411,13 @@
         "Mod"
       ],
       "key": "F2"
+    },
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
     }
   ],
   "quickadd:choice:05ea818b-a46c-4fa2-b3cf-171caf61dcfd": [
@@ -1509,37 +1518,83 @@
       "key": "D"
     }
   ],
+  "rss-dashboard:open-dashboard": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "R"
+    }
+  ],
+  "obsidian-hybrid-search:search-title": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "O"
+    }
+  ],
+  "editing-toolbar:ai-inline-completion": [],
+  "obsidian-hybrid-search:search-hybrid": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "F"
+    }
+  ],
+  "hybrid-search:search-title": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "O"
+    }
+  ],
+  "hybrid-search:search-hybrid": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "F"
+    }
+  ],
+  "task-calendar:open-panel": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "T"
+    }
+  ],
+  "abyss-tasks:open-panel": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "T"
+    }
+  ],
   "metadata-validator:edit-properties": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "M"
+    }
+  ],
+  "metadata-validator:edit-properties-keyboard": [
     {
       "modifiers": [
         "Alt"
       ],
       "key": "M"
-    }
-  ],
-  "obsidian-hybrid-search:open-search": [
-    {
-      "modifiers": [
-        "Meta"
-      ],
-      "key": "F"
-    }
-  ],
-  "zotflow:insert-citation": [],
-  "hybrid-search:open-search": [
-    {
-      "modifiers": [
-        "Meta"
-      ],
-      "key": "F"
-    }
-  ],
-  "hybrid-search:open-graph-workbench": [
-    {
-      "modifiers": [
-        "Meta"
-      ],
-      "key": "G"
     }
   ]
 }

@@ -4,17 +4,18 @@ tags:
   - mark/log/conspectus
   - category/health
 aliases: []
+description:
 status: 🟩
 source:
   - "[[sources/Overistimation of the importance of money]]"
 start: 2026-06-23T13:52:02+03:00
-end:
+end: 2026-09-26
 next:
 url:
 icon: 📓
 color: "#6f97c8"
 created: 2026-06-23T13:52:02+03:00
-updated: 2026-06-23T16:44:05+03:00
+updated: 2026-10-06T12:04:07+04:00
 ---
 
 > [!toc]+
@@ -26,5 +27,5 @@ updated: 2026-06-23T16:44:05+03:00
 [[самосаботаж]]
 [[желание денег маскирует другие желания]]
 [[последствия погони за сверхценностью]]
-[[я != количество моих денег]]
+[[я ≠ количество моих денег]]
 [[решение проблемы избыточной важности денег]]

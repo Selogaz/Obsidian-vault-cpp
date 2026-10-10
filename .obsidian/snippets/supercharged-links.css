@@ -1,4 +1,4 @@
-/* core mechanics */
+/* core mechanic */
 .data-link-icon[data-link-icon]::before {
   content: attr(data-link-icon, '📝') ' ';
 }
@@ -9,109 +9,74 @@
 }
 
 /* status */
+.data-link-icon[data-link-status]::before,
+.data-link-icon[data-link-reviewed]::before {
+  border-inline-start: 2px solid var(--sc-link-state-primary, var(--text-faint));
+  border-block-end: 2px solid
+    var(--sc-link-state-secondary, var(--sc-link-state-primary));
+  border-radius: var(--radius-s);
+}
+
 .data-link-icon[data-link-status='📥' i]::before {
-  border-left: solid #f7bb73;
-  border-bottom: solid #f7bb73;
-  border-radius: 100px;
-  border-width: 3px;
+  --sc-link-state-primary: var(--color-yellow);
 }
 
 .data-link-icon[data-link-status='🟥' i]::before {
-  border-left: solid #ff1100;
-  border-bottom: solid #ff1100;
-  border-radius: 100px;
-  border-width: 3px;
+  --sc-link-state-primary: var(--color-red);
 }
 
 .data-link-icon[data-link-status='🟦' i]::before {
-  border-left: solid #00ffff;
-  border-bottom: solid #00ffff;
-  border-radius: 100px;
-  border-width: 3px;
+  --sc-link-state-primary: var(--link-color);
 }
 
 .data-link-icon[data-link-status='⚛' i]::before {
-  border-left: solid #dd00ff;
-  border-bottom: solid #dd00ff;
-  border-radius: 100px;
-  border-width: 3px;
+  --sc-link-state-primary: var(--color-purple);
 }
 
 .data-link-icon[data-link-status='🟩' i]::before {
-  border-left: solid #88ff00;
-  border-bottom: solid #88ff00;
-  border-radius: 100px;
-  border-width: 3px;
+  --sc-link-state-primary: var(--color-green);
 }
 
 .data-link-icon[data-link-status='⬛' i]::before {
-  border-left: solid #787878;
-  border-bottom: solid #787878;
-  border-radius: 100px;
-  border-width: 3px;
+  --sc-link-state-primary: var(--text-faint);
 }
 
 .data-link-icon[data-link-status='❄' i]::before {
-  border-left: solid #ffffff;
-  border-bottom: solid #43aeff;
-  border-radius: 100px;
-  border-width: 3px;
+  --sc-link-state-primary: var(--text-normal);
+  --sc-link-state-secondary: var(--link-color);
 }
 
 .data-link-icon[data-link-status='📢' i]::before {
-  border-left: solid #ffffff;
-  border-bottom: solid #88ff00;
-  border-radius: 100px;
-  border-width: 3px;
+  --sc-link-state-primary: var(--text-normal);
+  --sc-link-state-secondary: var(--color-green);
 }
 
 .data-link-icon[data-link-status='⚙️' i]::before {
-  border-left: solid #a0a0c0;
-  border-bottom: solid #a0a0c0;
-  border-radius: 100px;
-  border-width: 3px;
+  --sc-link-state-primary: var(--text-muted);
 }
 
 .data-link-icon[data-link-status='💡' i]::before {
-  border-left: solid #ffe000;
-  border-bottom: solid #ffe000;
-  border-radius: 100px;
-  border-width: 3px;
+  --sc-link-state-primary: var(--color-yellow);
 }
 
 .data-link-icon[data-link-status='🧠' i]::before {
-  border-left: solid #ff8c00;
-  border-bottom: solid #ff8c00;
-  border-radius: 100px;
-  border-width: 3px;
+  --sc-link-state-primary: var(--color-orange);
 }
 
 .data-link-icon[data-link-status='🔎' i]::before {
-  border-left: solid #4488ff;
-  border-bottom: solid #4488ff;
-  border-radius: 100px;
-  border-width: 3px;
+  --sc-link-state-primary: var(--link-color);
 }
 
 .data-link-icon[data-link-status='📋' i]::before {
-  border-left: solid #cc88ff;
-  border-bottom: solid #cc88ff;
-  border-radius: 100px;
-  border-width: 3px;
+  --sc-link-state-primary: var(--color-purple);
 }
 
 .data-link-icon[data-link-status='🖍' i]::before {
-  border-left: solid #ff66aa;
-  border-bottom: solid #ff66aa;
-  border-radius: 100px;
-  border-width: 3px;
+  --sc-link-state-primary: var(--color-purple);
 }
 
 .data-link-icon[data-link-status='📦' i]::before {
-  border-left: solid #c08040;
-  border-bottom: solid #c08040;
-  border-radius: 100px;
-  border-width: 3px;
+  --sc-link-state-primary: var(--color-orange);
 }
 
 /* source */
@@ -130,25 +95,19 @@
 }
 
 [data-link-tags*='#system/genre' i] {
-  color: #c8604a !important;
+  color: var(--color-red) !important;
 }
 
 .data-link-icon[data-link-tags*='#system/genre' i]::before {
   content: '🎭 ';
 }
 
-[data-link-reviewed*='true' i]::before {
-  border-left: solid #88ff00;
-  border-bottom: solid #88ff00;
-  border-radius: 100px;
-  border-width: 2px;
+.data-link-icon[data-link-reviewed*='true' i]::before {
+  --sc-link-state-primary: var(--color-green);
 }
 
-[data-link-reviewed*='false' i]::before {
-  border-left: solid #ff1100;
-  border-bottom: solid #ff1100;
-  border-radius: 100px;
-  border-width: 2px;
+.data-link-icon[data-link-reviewed*='false' i]::before {
+  --sc-link-state-primary: var(--color-red);
 }
 
 /* discourse */
@@ -172,7 +131,7 @@
 /* mark */
 
 [data-link-tags*='#mark/addition/aggregator' i] {
-  color: #7a7d88 !important;
+  color: var(--text-muted) !important;
 }
 
 .prompt-results
@@ -191,22 +150,22 @@
 
 .data-link-icon-after[data-link-tags*='#mark/aggregator' i]::after {
   content: ' ⇶' !important;
-  color: orange !important;
+  color: var(--color-orange) !important;
 }
 
 .data-link-icon-after[data-link-tags*='#mark/approved' i]::after {
   content: ' ϟ';
-  color: rgb(196, 184, 79) !important;
+  color: var(--color-yellow) !important;
 }
 
 .data-link-icon-after[data-link-tags*='#mark/approved' i][data-link-tags*='#mark/aggregator' i]::after {
   content: ' ϟ⇶';
-  color: orange;
+  color: var(--color-orange);
 }
 
 .data-link-icon-after[data-link-tags*='#mark/ignore' i]::after {
   content: '⁻';
-  color: rgb(255, 0, 0) !important;
+  color: var(--color-red) !important;
 }
 
 .data-link-icon[data-link-tags*='#mark/my' i]::before {
@@ -218,7 +177,7 @@
 }
 
 [data-link-tags*='#mark/quote' i] {
-  color: #b0b0b0 !important;
+  color: var(--text-muted) !important;
 }
 
 .data-link-icon[data-link-tags*='#mark/quote' i]::before {
@@ -226,7 +185,7 @@
 }
 
 [data-link-tags*='#mark/kanban' i] {
-  color: #c5c5c5 !important;
+  color: var(--text-normal) !important;
 }
 
 .data-link-icon[data-link-tags*='#mark/kanban' i]::before {
@@ -234,12 +193,12 @@
 }
 
 .data-link-icon-after[data-link-tags*='#mark/no_sync' i]::after {
-  color: gray;
+  color: var(--text-faint);
   content: "'";
 }
 
 [data-link-tags*='#mark/ai' i] {
-  color: #a080b5 !important;
+  color: var(--color-purple) !important;
 }
 
 .data-link-icon[data-link-tags*='#mark/ai' i]::before {
@@ -247,7 +206,7 @@
 }
 
 [data-link-tags*='#mark/bookmark' i] {
-  color: #c8b050 !important;
+  color: var(--color-yellow) !important;
 }
 
 .data-link-icon[data-link-tags*='#mark/bookmark' i]::before {
@@ -258,7 +217,7 @@
 .data-link-icon[data-link-path^='templates/' i]::before,
 .data-link-icon[data-link-path^='periodic/templates' i]::before {
   content: '(template) ';
-  color: rgb(156, 0, 156);
+  color: var(--link-external-color);
 }
 
 /* --- */
@@ -279,4 +238,23 @@
 
 .data-link-icon[data-link-tags*='#mark/excalidraw' i]::before {
   content: '🖌 ' !important;
+}
+
+/* FakeLink uses the same ::before pseudo-element as a transparent, absolute
+ * click target. Once Supercharged Links adds an icon, that invisible layer
+ * becomes a visible emoji positioned over the link label. Keep the target
+ * note's icon, but return it to the inline flow and make it subordinate to
+ * the text. The link itself remains the click target. */
+.virtual-link-a.data-link-icon[data-link-icon]::before {
+  position: static;
+  inset: auto;
+  display: inline;
+  inline-size: auto;
+  block-size: auto;
+  transform: none;
+  z-index: auto;
+  pointer-events: none;
+  font-size: 0.78em;
+  line-height: inherit;
+  vertical-align: 0.06em;
 }

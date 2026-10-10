@@ -4,6 +4,7 @@ tags:
   - source/cinematic/anime
   - category/japanese
 aliases: []
+description:
 published:
 addition:
 zotero: "[🇿](zotero://select/items/@suzume_no_tojimari)"
@@ -17,7 +18,7 @@ problem:
 creator:
 production:
 start: 2026-05-03T17:17:59+03:00
-end:
+end: 2026-09-26
 url:
   - https://3may.newdeaf.co/anime/9794-sudzumje-zakryvajuschaja-dveri-2022-subtitry.html
 cover:
@@ -25,6 +26,7 @@ icon: 🌸
 color: "#d090b5"
 created: 2026-05-03T17:17:59+03:00
 updated: 2026-05-03T22:25:02+03:00
+citekey: suzume_no_tojimari
 tasks:
   - "- [ ] #task/someday #category/japanese Поехать в родной город Сузуме(Suzume no Tojimari) - Нитинан(日南市) в префектуре Миядзаки"
 ---

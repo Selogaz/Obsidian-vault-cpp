@@ -6,10 +6,38 @@ filters:
         - and:
             - '!this.file.hasTag("system/category")'
             - '!this.file.hasTag("mark/addition/aggregator")'
+            - '!this.file.inFolder("sources")'
+            - '!this.file.inFolder("projects")'
+            - '!this.file.inFolder("base/contacts")'
+            - '!this.file.inFolder("base/creators")'
+            - '!this.file.inFolder("base/productions")'
+        - and:
+            - or:
+                - this.file.inFolder("sources")
+                - this.file.inFolder("projects")
+                - this.file.inFolder("base/contacts")
+                - this.file.inFolder("base/creators")
+                - this.file.inFolder("base/productions")
+            - or:
+                - and:
+                    - project
+                    - project.contains(link(this.file.name))
+                - and:
+                    - source
+                    - source.contains(link(this.file.name))
+                - and:
+                    - contact
+                    - contact.contains(link(this.file.name))
+                - and:
+                    - creator
+                    - creator.contains(link(this.file.name))
+                - and:
+                    - production
+                    - production.contains(link(this.file.name))
         - and:
             - this.file.hasTag("system/category")
             - or:
-                - file.hasTag("category/" + this.file.name.replace(" ", "_"))
+                - file.hasTag("category/" + this.file.name.replace(/ /g, "_"))
                 - category.contains(link(this.file.name))
         - and:
             - this.file.hasTag("mark/addition/aggregator")
@@ -171,7 +199,7 @@ views:
       - property: created
         direction: DESC
     columnSize:
-      note.order: 1
+      note.order: 30
   - type: table
     name: 🧪 Experiments
     filters:
@@ -307,7 +335,7 @@ views:
     name: 💬 Social
     filters:
       and:
-        - file.inFolder("base/additions/social")
+        - file.inFolder("base/additions/socials")
     order:
       - file.name
       - status

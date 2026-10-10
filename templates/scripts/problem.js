@@ -18,6 +18,15 @@ module.exports = async function problem(meta, note) {
 		}
 	}
 
+	// Inherit the problem of the structural note the creation was started from,
+	// but only when it sits under the meta-note being filled in.
+	const inherited = await tp.user.context()
+	// A note created already in its place keeps it, even without a problem.
+	if (inherited.prefilled) return inherited.problem ?? ''
+	if (inherited.problem && (!meta || inherited.meta === meta)) {
+		return inherited.problem
+	}
+
 	let problem_notes
 	let problem
 	let relevant
@@ -52,7 +61,7 @@ module.exports = async function problem(meta, note) {
 				}),
 				problem_notes.file.name,
 				false,
-				'Select the meta-note'
+				'Select the problem'
 			)
 		}
 	} else {

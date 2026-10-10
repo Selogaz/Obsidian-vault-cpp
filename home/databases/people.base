@@ -7,20 +7,39 @@ filters:
     - or:
         - '!this.file.hasTag("system/category")'
         - or:
-            - file.hasTag("category/" + this.file.name.replace(" ", "_"))
+            - file.hasTag("category/" + this.file.name.replace(/ /g, "_"))
             - category.contains(link(this.file.name))
 formulas:
+  cover_image: image(cover)
+  cover_sort: if(cover == null, 0, 1)
   backlinks: file.backlinks.length
   outlinks: file.links.length
   type: tags.toString().replace(/.*#(contact|creator|production)\/([^,]+).*/, "$2")
   created_relative: created.relative()
   updated_relative: updated.relative()
   category_status: if(!category.isEmpty(), "✅", "❌")
-  category_type_valid: if(category.isEmpty(), "✅", if(list(category).filter(value.asFile().hasTag("system/category")).length == list(category).length, "✅", "❌"))
-  meta_type_valid: if(meta.isEmpty(), "✅", if(list(meta).filter(value.asFile().hasTag("system/high/meta")).length == list(meta).length, "✅", "❌"))
-  problem_type_valid: if(problem.isEmpty(), "✅", if(list(problem).filter(value.asFile().hasTag("system/high/problem")).length == list(problem).length, "✅", "❌"))
-  production_type_valid: if(production.isEmpty(), "✅", if(list(production).filter(value.asFile().tags.filter(value.startsWith("#production/")).length > 0).length == list(production).length, "✅", "❌"))
+  category_type_valid: if(category.isEmpty(), "✅", if(list(category).filter(value.isType("link") && value.asFile().hasTag("system/category")).length == list(category).length, "✅", "❌"))
+  meta_type_valid: if(meta.isEmpty(), "✅", if(list(meta).filter(value.isType("link") && value.asFile().hasTag("system/high/meta")).length == list(meta).length, "✅", "❌"))
+  problem_type_valid: if(problem.isEmpty(), "✅", if(list(problem).filter(value.isType("link") && value.asFile().hasTag("system/high/problem")).length == list(problem).length, "✅", "❌"))
+  production_type_valid: if(production.isEmpty(), "✅", if(list(production).filter(value.isType("link") && value.asFile().tags.filter(value.startsWith("#production/")).length > 0).length == list(production).length, "✅", "❌"))
+  production_category_valid: if(production.isEmpty(), "✅", if(list(production).filter(value.isType("link") && value.asFile() && list(value.asFile().properties.category).filter(list(category).contains(value)).isEmpty()).isEmpty(), "✅", "❌"))
+  category_valid: if(formula.category_type_valid == "❌", "❌", "✅")
+  meta_valid: if(formula.meta_type_valid == "❌", "❌", "✅")
+  problem_valid: if(formula.problem_type_valid == "❌", "❌", "✅")
+  production_valid: if(formula.production_type_valid == "❌" || formula.production_category_valid == "❌", "❌", "✅")
 properties:
+  formula.category_valid:
+    displayName: ✓
+  formula.meta_valid:
+    displayName: ✓
+  formula.problem_valid:
+    displayName: ✓
+  formula.production_valid:
+    displayName: ✓
+  note.cover:
+    displayName: 🖼️ cover
+  formula.cover_image:
+    displayName: 🖼️
   formula.type:
     displayName: 🗄️ type
   file.name:
@@ -61,6 +80,8 @@ properties:
     displayName: 🏷️
   formula.production_type_valid:
     displayName: 🏷️
+  formula.production_category_valid:
+    displayName: 🗺️
 views:
   - type: table
     name: 👥 All People
@@ -91,6 +112,23 @@ views:
       formula.outlinks: 1
       formula.created_relative: 140
       formula.updated_relative: 140
+  - type: dynamic-views-grid
+    name: 🖼️ Cards
+    order:
+      - file.name
+      - description
+      - url
+    displaySecondAsSubtitle: true
+    subtitleLines: 3
+    imagePosition: top
+    imageProperty: note.cover
+    imageFormat: cover
+    minimumColumns: one
+    id: mpty4f-🖼️ Cards
+    fallbackToContent: false
+    urlProperty: note.url
+    cardGapDesktop: 4
+    cardSize: 200
   - type: table
     name: ———
     filters:
@@ -385,38 +423,50 @@ views:
     name: ✅ Structure Validation
     filters:
       or:
-        - formula.category_type_valid == "❌"
-        - formula.meta_type_valid == "❌"
-        - formula.problem_type_valid == "❌"
-        - formula.production_type_valid == "❌"
+        - formula.category_valid == "❌"
+        - formula.meta_valid == "❌"
+        - formula.problem_valid == "❌"
+        - formula.production_valid == "❌"
     order:
       - file.name
-      - formula.category_type_valid
+      - formula.category_valid
       - category
-      - formula.meta_type_valid
+      - formula.meta_valid
       - meta
-      - formula.problem_type_valid
+      - formula.problem_valid
       - problem
-      - formula.production_type_valid
+      - formula.production_valid
       - production
     sort:
-      - property: formula.category_type_valid
+      - property: formula.category_valid
         direction: DESC
-      - property: formula.meta_type_valid
+      - property: formula.meta_valid
         direction: DESC
-      - property: formula.problem_type_valid
+      - property: formula.problem_valid
         direction: DESC
-      - property: formula.production_type_valid
+      - property: formula.production_valid
         direction: DESC
       - property: file.name
         direction: ASC
     columnSize:
       file.name: 350
-      formula.category_type_valid: 70
-      formula.meta_type_valid: 1
-      formula.problem_type_valid: 1
-      formula.production_type_valid: 1
+      formula.category_valid: 1
+      formula.meta_valid: 1
+      formula.problem_valid: 1
+      formula.production_valid: 1
       note.category: 180
       note.meta: 180
       note.problem: 180
       note.production: 180
+  - type: table
+    name: ⬜ Uncovered
+    groupBy:
+      property: formula.type
+      direction: ASC
+    order:
+      - formula.cover_image
+      - file.name
+      - cover
+    sort:
+      - property: formula.cover_sort
+        direction: ASC

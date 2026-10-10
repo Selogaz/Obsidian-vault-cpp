@@ -8,7 +8,7 @@ deck: obsidian::java
 icon: </>
 color: "#ab4642"
 created: 2025-06-15T08:41:29+03:00
-updated: 2025-09-21T12:28:43+03:00
+updated: 2026-10-09T19:17:03+04:00
 sr-due: 2026-09-26
 sr-interval: 370
 sr-ease: 294

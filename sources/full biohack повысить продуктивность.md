@@ -4,6 +4,7 @@ tags:
   - source/article/paper
   - category/health
 aliases: []
+description:
 addition:
 zotero: "[🇿](zotero://select/items/@full_biohack_povysit_produktivnost)"
 status: 🟩
@@ -16,11 +17,12 @@ problem:
 creator:
 production:
 start: 2025-06-10T20:41:43+03:00
-end:
+end: 2026-09-26
 icon: 📃
 color: "#7575c0"
 created: 2025-06-10T20:41:43+03:00
 updated: 2026-06-11T00:44:54+03:00
+citekey: full_biohack_povysit_produktivnost
 total_hours: 0
 ---
 

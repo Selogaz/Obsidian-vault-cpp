@@ -1,0 +1,185 @@
+{
+  "autoToggleByMode": false,
+  "advancedSettings": true,
+  "linkerActivated": true,
+  "matchAnyPartsOfWords": false,
+  "matchEndOfWords": false,
+  "matchBeginningOfWords": false,
+  "suppressSuffixForSubWords": false,
+  "includeAllFiles": false,
+  "linkerDirectories": [
+    "base",
+    "projects",
+    "sources"
+  ],
+  "excludedDirectories": [
+    "files/",
+    "home/",
+    "periodic/",
+    "templates/"
+  ],
+  "excludedDirectoriesForLinking": [
+    "base/categories",
+    "templates",
+    "home",
+    "files",
+    "periodic"
+  ],
+  "virtualLinkSuffix": "",
+  "virtualLinkAliasSuffix": "",
+  "excludedExtensions": [
+    ".mp4"
+  ],
+  "useMarkdownLinks": false,
+  "linkFormat": "shortest",
+  "defaultUseMarkdownLinks": false,
+  "defaultLinkFormat": "shortest",
+  "useDefaultLinkStyleForConversion": true,
+  "applyDefaultLinkStyling": true,
+  "alternativeDisplayStyle": false,
+  "includeHeaders": false,
+  "headerMatchSymbols": true,
+  "headerMatchOnlyBetweenSymbols": false,
+  "headerMatchStartSymbol": "⟦",
+  "headerMatchEndSymbol": "⟧",
+  "matchCaseSensitive": false,
+  "capitalLetterProportionForAutomaticMatchCase": 0.75,
+  "tagToIgnoreCase": "linker-ignore-case",
+  "tagToMatchCase": "linker-match-case",
+  "propertyNameToMatchCase": "linker-match-case",
+  "propertyNameToIgnoreCase": "linker-ignore-case",
+  "tagToExcludeFile": "linker-exclude",
+  "tagToIncludeFile": "linker-include",
+  "excludeLinksToOwnNote": true,
+  "fixIMEProblem": true,
+  "excludeLinksInCurrentLine": true,
+  "onlyLinkOnce": false,
+  "excludeLinksToRealLinkedFiles": false,
+  "includeAliases": true,
+  "maxReferenceCount": 5,
+  "maxReferencesToHideLink": 10,
+  "alwaysShowMultipleReferences": false,
+  "excludedKeywords": [
+    "structure",
+    "list",
+    "filter",
+    "sort",
+    "statistics",
+    "kanban"
+  ],
+  "headerAutoAppendSuffix": false,
+  "headerAutoAppendSymbol": "☱",
+  "headingSymbolWhitelist": [],
+  "allowLinksInHeaders": false,
+  "colorOnlyDisplay": true,
+  "virtualLinkRequireModifier": false,
+  "frontmatterExcludeProperty": "fakelink-exclude",
+  "perNoteExcludeKeywords": false,
+  "enableFrontmatterExcludeList": false,
+  "frontmatterExcludeListProperty": "fakelink-exclude-keywords",
+  "headerVirtualLinkColor": "#a16946",
+  "noteVirtualLinkColor": "#a16946",
+  "fuzzyBaseColor": "#8e44ad",
+  "fuzzyColorMixRatio": 50,
+  "headerJumpRetryDelay": 500,
+  "enableStemming": false,
+  "stemmingLanguage": "en",
+  "fuzzyMatchThreshold": 80,
+  "fuzzyMinLength": 6,
+  "fuzzySlidingWindow": true,
+  "fuzzySlidingWindowMaxOffset": 10,
+  "skipMultipleTargets": true,
+  "enableSymbolExclusion": false,
+  "excludeSymbolStart": "{",
+  "excludeSymbolEnd": "}",
+  "enableInternalLinkSyntax": false,
+  "enableContextDisambiguation": false,
+  "jumpEnabled": true,
+  "jumpDelayMs": 8000,
+  "jumpOpenInNewTab": true,
+  "lineLinkSelfHeal": false,
+  "autoExcludeContainedCopies": false,
+  "filenameAffixExclusions": [],
+  "__fakelinkSizeCache": {
+    "images": {},
+    "pdf": {},
+    "embeds": {
+      "Другая заметка": [
+        {
+          "w": 700,
+          "h": 129
+        },
+        {
+          "w": 440,
+          "h": 176
+        }
+      ],
+      "Другая заметка#Раздел": [
+        {
+          "w": 700,
+          "h": 129
+        },
+        {
+          "w": 440,
+          "h": 112
+        }
+      ],
+      "Другая заметка#^block-id": [
+        {
+          "w": 700,
+          "h": 66
+        },
+        {
+          "w": 440,
+          "h": 49
+        }
+      ]
+    },
+    "widths": {},
+    "scales": {}
+  },
+  "__fakelinkSizeCache2": {
+    "images": {},
+    "pdf": {},
+    "embeds": {
+      "Другая заметка": [
+        {
+          "w": 700,
+          "h": 129
+        },
+        {
+          "w": 440,
+          "h": 176
+        }
+      ],
+      "Другая заметка#Раздел": [
+        {
+          "w": 700,
+          "h": 129
+        },
+        {
+          "w": 440,
+          "h": 112
+        }
+      ],
+      "Другая заметка#^block-id": [
+        {
+          "w": 700,
+          "h": 66
+        },
+        {
+          "w": 440,
+          "h": 49
+        }
+      ],
+      "диплом-roadmap-обучения": [
+        {
+          "w": 400,
+          "h": 2420
+        }
+      ]
+    },
+    "widths": {},
+    "scales": {}
+  }
+}

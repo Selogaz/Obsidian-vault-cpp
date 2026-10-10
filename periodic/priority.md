@@ -4,11 +4,6 @@ tags:
   - time/moderate
   - time/long
   - time/lengthy
-  - priority/e
-  - priority/d
-  - priority/c
-  - priority/b
-  - priority/a
   - mark/gtd
   - effort/medium
   - effort/hard
@@ -26,13 +21,13 @@ color: "#e8e8e8"
 > ___
 > ```tasks
 > not done
-> tags include #priority
+> priority is not none
 > group by function \
->   if (task.tags.includes("#priority/a"))         return "%%01%% 🇦 Important and urgent"; \
->   if (task.tags.includes("#priority/b"))         return "%%02%% 🇧 Important and non-urgent"; \
->   if (task.tags.includes("#priority/c"))         return "%%03%% 🇨 Сommon task"; \
->   if (task.tags.includes("#priority/d"))         return "%%04%% 🇩 Delegate"; \
->   if (task.tags.includes("#priority/e"))         return "%%05%% 🇪 Eliminate"; \
+>   if (task.priorityName === "Highest")           return "%%01%% 🔺 Important and urgent"; \
+>   if (task.priorityName === "High")              return "%%02%% ⏫ Important and non-urgent"; \
+>   if (task.priorityName === "Medium")            return "%%03%% 🔼 Medium"; \
+>   if (task.priorityName === "Low")               return "%%04%% 🔽 Delegate"; \
+>   if (task.priorityName === "Lowest")            return "%%05%% ⏬ Eliminate"; \
 >   return "%%99%%";
 > group by function \
 > 	if (task.file.folder.includes("periodic/")) return "%%_%%"; \

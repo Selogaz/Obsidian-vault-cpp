@@ -6,6 +6,7 @@ tags:
   - category/html
   - category/css
 aliases: []
+description:
 status: 🟦🟩
 source:
   - "[[full stack itproger]]"

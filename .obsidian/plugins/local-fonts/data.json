@@ -1,0 +1,869 @@
+{
+  "folder": ".fonts",
+  "roles": {
+    "text": "IBM Plex Sans",
+    "interface": "IBM Plex Sans",
+    "monospace": "IBM Plex Mono",
+    "headings": "IBM Plex Serif",
+    "emoji": "Noto Color Emoji"
+  },
+  "hardOverride": false,
+  "cache": {
+    "version": 2,
+    "folder": ".fonts",
+    "faces": [
+      {
+        "path": ".fonts/ibm-plex-mono/ibm-plex-mono-100.woff2",
+        "format": "woff2",
+        "size": 37412,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Mono",
+        "weight": 100,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-mono/ibm-plex-mono-100italic.woff2",
+        "format": "woff2",
+        "size": 40628,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Mono",
+        "weight": 100,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-mono/ibm-plex-mono-200.woff2",
+        "format": "woff2",
+        "size": 37460,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Mono",
+        "weight": 200,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-mono/ibm-plex-mono-200italic.woff2",
+        "format": "woff2",
+        "size": 41336,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Mono",
+        "weight": 200,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-mono/ibm-plex-mono-300.woff2",
+        "format": "woff2",
+        "size": 37336,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Mono",
+        "weight": 300,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-mono/ibm-plex-mono-300italic.woff2",
+        "format": "woff2",
+        "size": 41568,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Mono",
+        "weight": 300,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-mono/ibm-plex-mono-400.woff2",
+        "format": "woff2",
+        "size": 37156,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Mono",
+        "weight": 400,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-mono/ibm-plex-mono-400italic.woff2",
+        "format": "woff2",
+        "size": 41492,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Mono",
+        "weight": 400,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-mono/ibm-plex-mono-500.woff2",
+        "format": "woff2",
+        "size": 38152,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Mono",
+        "weight": 500,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-mono/ibm-plex-mono-500italic.woff2",
+        "format": "woff2",
+        "size": 42568,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Mono",
+        "weight": 500,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-mono/ibm-plex-mono-600.woff2",
+        "format": "woff2",
+        "size": 39024,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Mono",
+        "weight": 600,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-mono/ibm-plex-mono-600italic.woff2",
+        "format": "woff2",
+        "size": 43272,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Mono",
+        "weight": 600,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-mono/ibm-plex-mono-700.woff2",
+        "format": "woff2",
+        "size": 38372,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Mono",
+        "weight": 700,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-mono/ibm-plex-mono-700italic.woff2",
+        "format": "woff2",
+        "size": 42136,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Mono",
+        "weight": 700,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-sans/ibm-plex-sans-100.woff2",
+        "format": "woff2",
+        "size": 67720,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Sans",
+        "weight": 100,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-sans/ibm-plex-sans-100italic.woff2",
+        "format": "woff2",
+        "size": 76004,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Sans",
+        "weight": 100,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-sans/ibm-plex-sans-200.woff2",
+        "format": "woff2",
+        "size": 76916,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Sans",
+        "weight": 200,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-sans/ibm-plex-sans-200italic.woff2",
+        "format": "woff2",
+        "size": 83812,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Sans",
+        "weight": 200,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-sans/ibm-plex-sans-300.woff2",
+        "format": "woff2",
+        "size": 76888,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Sans",
+        "weight": 300,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-sans/ibm-plex-sans-300italic.woff2",
+        "format": "woff2",
+        "size": 84040,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Sans",
+        "weight": 300,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-sans/ibm-plex-sans-400.woff2",
+        "format": "woff2",
+        "size": 69868,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Sans",
+        "weight": 400,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-sans/ibm-plex-sans-400italic.woff2",
+        "format": "woff2",
+        "size": 76204,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Sans",
+        "weight": 400,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-sans/ibm-plex-sans-500.woff2",
+        "format": "woff2",
+        "size": 76384,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Sans",
+        "weight": 500,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-sans/ibm-plex-sans-500italic.woff2",
+        "format": "woff2",
+        "size": 83260,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Sans",
+        "weight": 500,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-sans/ibm-plex-sans-600.woff2",
+        "format": "woff2",
+        "size": 76564,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Sans",
+        "weight": 600,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-sans/ibm-plex-sans-600italic.woff2",
+        "format": "woff2",
+        "size": 83508,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Sans",
+        "weight": 600,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-sans/ibm-plex-sans-700.woff2",
+        "format": "woff2",
+        "size": 69424,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Sans",
+        "weight": 700,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-sans/ibm-plex-sans-700italic.woff2",
+        "format": "woff2",
+        "size": 75644,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Sans",
+        "weight": 700,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-serif/ibm-plex-serif-100.woff2",
+        "format": "woff2",
+        "size": 46520,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Serif",
+        "weight": 100,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-serif/ibm-plex-serif-100italic.woff2",
+        "format": "woff2",
+        "size": 49144,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Serif",
+        "weight": 100,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-serif/ibm-plex-serif-200.woff2",
+        "format": "woff2",
+        "size": 49740,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Serif",
+        "weight": 200,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-serif/ibm-plex-serif-200italic.woff2",
+        "format": "woff2",
+        "size": 53208,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Serif",
+        "weight": 200,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-serif/ibm-plex-serif-300.woff2",
+        "format": "woff2",
+        "size": 49808,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Serif",
+        "weight": 300,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-serif/ibm-plex-serif-300italic.woff2",
+        "format": "woff2",
+        "size": 53732,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Serif",
+        "weight": 300,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-serif/ibm-plex-serif-400.woff2",
+        "format": "woff2",
+        "size": 48668,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Serif",
+        "weight": 400,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-serif/ibm-plex-serif-400italic.woff2",
+        "format": "woff2",
+        "size": 53316,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Serif",
+        "weight": 400,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-serif/ibm-plex-serif-500.woff2",
+        "format": "woff2",
+        "size": 49820,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Serif",
+        "weight": 500,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-serif/ibm-plex-serif-500italic.woff2",
+        "format": "woff2",
+        "size": 54712,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Serif",
+        "weight": 500,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-serif/ibm-plex-serif-600.woff2",
+        "format": "woff2",
+        "size": 50116,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Serif",
+        "weight": 600,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-serif/ibm-plex-serif-600italic.woff2",
+        "format": "woff2",
+        "size": 55284,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Serif",
+        "weight": 600,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-serif/ibm-plex-serif-700.woff2",
+        "format": "woff2",
+        "size": 48060,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Serif",
+        "weight": 700,
+        "italic": false,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/ibm-plex-serif/ibm-plex-serif-700italic.woff2",
+        "format": "woff2",
+        "size": 53304,
+        "mtime": 1785318016000,
+        "family": "IBM Plex Serif",
+        "weight": 700,
+        "italic": true,
+        "colorFormats": [],
+        "scripts": [
+          "latin",
+          "cyrillic",
+          "greek",
+          "vietnamese"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/noto-color-emoji/noto-color-emoji-colrv1.woff2",
+        "format": "woff2",
+        "size": 1972940,
+        "mtime": 1785318016000,
+        "family": "Noto Color Emoji",
+        "weight": 400,
+        "italic": false,
+        "colorFormats": [
+          "COLR1"
+        ],
+        "scripts": [
+          "emoji"
+        ],
+        "axes": [],
+        "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.",
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/noto-color-emoji/noto-color-emoji-svg.woff2",
+        "format": "woff2",
+        "size": 3728104,
+        "mtime": 1785318016000,
+        "family": "Noto Color Emoji",
+        "weight": 400,
+        "italic": false,
+        "colorFormats": [
+          "SVG"
+        ],
+        "scripts": [
+          "emoji"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      },
+      {
+        "path": ".fonts/twemoji/twemoji-colr.woff2",
+        "format": "woff2",
+        "size": 617240,
+        "mtime": 1786713460000,
+        "family": "Twemoji Mozilla",
+        "weight": 400,
+        "italic": false,
+        "colorFormats": [
+          "COLR1"
+        ],
+        "scripts": [
+          "emoji"
+        ],
+        "axes": [],
+        "license": null,
+        "source": "name-table"
+      }
+    ]
+  }
+}
