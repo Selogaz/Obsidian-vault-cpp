@@ -41,6 +41,9 @@ body:not(.is-mobile) .mod-root
 .metadata-properties-heading,
 /* open daily note in metadata */
 .metadata-property-value .clickable-icon,
+/* just simple calendar help */
+.jsc-status,
+.jsc-help,
 /* properties */
 [data-property-key='sr-due'],
 [data-property-key='sr-interval'],

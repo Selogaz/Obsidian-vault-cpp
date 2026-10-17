@@ -11,4 +11,4 @@ updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 <% "---" %>
 
 `BUTTON[add-meeting]`
-![[Kanban System Desing - conspectuses 20260421012534000.base#🗣️ Meetings]]
+![[interim.base#🗣️ Meetings]]

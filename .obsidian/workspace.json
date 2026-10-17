@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/7 шагов к финансовой безопасности_ Мой план (с циферками).md",
+                "file": "sources/Стратегия без иллюзий_ Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "7 шагов к финансовой безопасности_ Мой план (с циферками)"
+              "title": "Стратегия без иллюзий_ Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен"
             }
           },
           {
-            "id": "69b787f57dcd5232",
+            "id": "5de40565ece90c69",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/additions/conspectuses/Авось прорвемся 7 шагов фин безопасность.md",
+                "file": "base/additions/conspectuses/Стратегия без иллюзий конспект.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,16 +52,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Авось прорвемся 7 шагов фин безопасность"
+              "title": "Стратегия без иллюзий конспект"
             }
           },
           {
-            "id": "2685d2909d71615e",
+            "id": "250f481e422865e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/ИСПОВЕДЬ СВИТЧЕРА В АЙТИ_ Как перестать работать и начать зарабатывать.md",
+                "file": "base/notes/стратегический разрыв.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,16 +76,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "ИСПОВЕДЬ СВИТЧЕРА В АЙТИ_ Как перестать работать и начать зарабатывать"
+              "title": "стратегический разрыв"
             }
           },
           {
-            "id": "c711f4fa41cac01b",
+            "id": "4ca5b38608933a24",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/additions/conspectuses/ИСПОВЕДЬ СВИТЧЕРА В АЙТИ.md",
+                "file": "base/notes/java планирование.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,16 +100,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "ИСПОВЕДЬ СВИТЧЕРА В АЙТИ"
+              "title": "java планирование"
             }
           },
           {
-            "id": "cbc2b4df0fb48fff",
+            "id": "254ccc74bfbb6693",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sources/Как я создала 10 источников дохода_ Полный роадмап с цифрами.md",
+                "file": "base/notes/navigation.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -124,35 +124,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Как я создала 10 источников дохода_ Полный роадмап с цифрами"
-            }
-          },
-          {
-            "id": "c981f44b90e5b58e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/additions/conspectuses/10 источников дохода roadmap.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": false
-                }
-              },
-              "icon": "lucide-file",
-              "title": "10 источников дохода roadmap"
+              "title": "navigation"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -456,12 +432,12 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "review-queue-list-view"
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
             }
           },
           {
-            "id": "3cd5e4a61102b2dd",
+            "id": "6693a7b10b99772b",
             "type": "leaf",
             "state": {
               "type": "zotero-annotation-view",
@@ -477,18 +453,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 348.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "hybrid-search:Hybrid search": false,
       "periodic-notes:Open today's daily note": false,
+      "zotlit:Open Zotero annotations": false,
       "dynamic-views:Create new Grid base": false,
       "dynamic-views:Create new Masonry base": false,
       "dynamic-views:Shuffle base": false,
       "dynamic-views:Open random file from base": false,
-      "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false,
-      "zotlit:Open Zotero annotations": false,
+      "obsidian-local-images-plus:Local Images Plus  0.17.0\r\nLocalize attachments (plugin folder)": false,
       "templater-obsidian:Templater": false,
       "daily-notes:Open today's daily note": false,
       "obsidian42-brat:BRAT": false,
@@ -498,58 +475,55 @@
       "obsidian-spaced-repetition:Review flashcards": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-      "graph:Open graph view": false
+      "graph:Open graph view": false,
+      "obsidian-local-images-plus:Local Images Plus  0.17.1\r\nLocalize attachments (plugin folder)": false,
+      "life-tracker:Life Tracker: quick add": false
     }
   },
-  "active": "c981f44b90e5b58e",
+  "active": "5de40565ece90c69",
   "lastOpenFiles": [
-    "sources/Как я создала 10 источников дохода_ Полный роадмап с цифрами.md",
-    "base/additions/conspectuses/10 источников дохода roadmap.md",
-    "base/additions/aggregators/Как я создала 10 источников дохода_ Полный роадмап с цифрами - conspectuses.md",
-    "base/additions/conspectuses/ИСПОВЕДЬ СВИТЧЕРА В АЙТИ.md",
-    "base/additions/conspectuses/Авось прорвемся 7 шагов фин безопасность.md",
-    "sources/ИСПОВЕДЬ СВИТЧЕРА В АЙТИ_ Как перестать работать и начать зарабатывать.md",
-    "base/additions/aggregators/ИСПОВЕДЬ СВИТЧЕРА В АЙТИ_ Как перестать работать и начать зарабатывать - conspectuses.md",
-    "sources/7 шагов к финансовой безопасности_ Мой план (с циферками).md",
-    "files/Авось прорвемся 7 шагов фин безопасность 20261009230657870.png",
-    "files/Авось прорвемся 7 шагов фин безопасность 20261009230638442.png",
-    "files/Авось прорвемся 7 шагов фин безопасность 20261009220135300.png",
-    "base/additions/aggregators/7 шагов к финансовой безопасности_ Мой план (с циферками) - conspectuses.md",
-    "base/notes/java import.md",
-    "periodic/daily/2026-10-09.md",
-    "projects/Месячный бюджет.md",
-    "base/additions/conspectuses/Финансовая грамотность по-американски.md",
-    "base/notes/Чрезвычайный фонд.md",
-    "sources/_SW.BAND_ _Анатолий Власов_ Финансовая грамотность по-американски (2020).md",
-    "periodic/daily/2026-10-08.md",
-    "base/notes/30 идей для threads.md",
-    "base/notes/доступ к деньгам из чрезвычайного фонда.md",
-    "base/notes/Метод конвертов.md",
-    "base/additions/aggregators/_SW.BAND_ _Анатолий Власов_ Финансовая грамотность по-американски (2020) - conspectuses.md",
-    "periodic/daily/2026-10-07.md",
-    "projects/Поиск работы разработчиком через Threads.md",
-    "home/databases/projects.base",
-    "periodic/daily/2026-10-06.md",
-    "base/additions/conspectuses/финансовый аналитик о деньгах.md",
-    "sources/Абсолютно всё, что вам нужно знать о деньгах — рассказывает финансовый аналитик.md",
-    "base/notes/ключевая ставка.md",
-    "home/databases/high-notes.base",
-    "projects/Career advancement.md.tmp.193163.e8a9d679ef19",
-    "files/image.png",
-    "periodic/daily/2026-09-30.md.tmp.29513.c23a4be9cf72",
-    "periodic/daily/2026-09-30.md.tmp.29513.c3555a1603b8",
-    "periodic/tasks (grouped by priority).canvas",
+    "base/notes/стратегический разрыв.md",
+    "base/additions/conspectuses/Стратегия без иллюзий конспект.md",
+    "base/notes/SMART.md",
+    "base/notes/go to market.md",
+    "base/notes/циклы движения по VENOM.md",
+    "base/notes/java планирование.md",
+    "base/notes/objectives.md",
+    "base/notes/navigation.md",
+    "base/notes/exploration.md",
+    "base/notes/management.md",
+    "base/notes/Стратегия без иллюзий конспект.md",
+    "base/notes/vision.md",
+    "base/notes/операционализация стратегии.md",
+    "base/notes/образы будущего.md",
+    "base/notes/понимание.md",
+    "base/notes/Стратегия в менеджменте.md",
+    "base/notes/Стратегирование.md",
+    "base/notes/дрейф контекста.md",
+    "sources/Стратегия без иллюзий_ Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен.md",
+    "base/additions/aggregators/Стратегия без иллюзий_ Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен - conspectuses.md",
+    "projects/ЕГЭ Математика/Стратегия математика.md",
+    "base/notes/пассивность усиливает тревогу.md",
+    "periodic/daily/2026-10-17.md",
+    "base/categories/productivity.md",
+    "sources/Крипта для абсолютных новичков. Пошаговая инструкция.md",
+    "base/additions/conspectuses/Крипта для абсолютных новичков.md",
     "home/databases/sources.base",
     "home/databases/breadcrumbs.base",
+    "Operon/Demo Workspace",
+    "Operon/Tasks",
+    "Operon/Tables/Default table.table",
+    "Operon/Tables",
+    "Operon",
+    "home/databases/projects.base",
     "files/инструкция по трассировке 20260922132913087.png",
     "files/инструкция по трассировке 20260922132820622.png",
     "files/DATE_2026-09-22 TIME_13-22-53 20260922132805276.png",
     "files/инструкция по трассировке 20260922132708440.png",
+    "home/databases/high-notes.base",
     "files/DATE_2026-09-22 TIME_06-38-09 20260922063810502.png",
     "home/databases/notes.base",
     "files/Редизайн мобильного приложения для покупки билетов в S7 (2026-04-21) - roadmap.canvas",
-    "home/databases/interim.base",
-    "templates/scripts/creator.js",
     "periodic/2025.canvas",
     "periodic/2026.canvas",
     "periodic/2027.canvas",
@@ -558,6 +532,11 @@
     "periodic/2025_1.canvas",
     "periodic/tasks (grouped by time)_1.canvas",
     "periodic/2026_1.canvas",
-    "files/test.png"
+    "periodic/tasks (grouped by priority)_1.canvas",
+    "files/test.png",
+    "files/test.jpg",
+    "files/Pasted Image 20260107000747_014.png",
+    "files/japan_1.png",
+    "files/japan.png"
   ]
 }

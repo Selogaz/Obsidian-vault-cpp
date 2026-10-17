@@ -9,7 +9,7 @@
     },
     "force-yaml-escape": {
       "enabled": false,
-      "force-yaml-escape-keys": ""
+      "force-yaml-escape-keys": []
     },
     "format-tags-in-yaml": {
       "enabled": false
@@ -18,27 +18,73 @@
       "enabled": true,
       "alias-key": false,
       "tag-key": false,
-      "default-array-style": "multi-line",
       "default-array-keys": false,
-      "force-single-line-array-style": "",
-      "force-multi-line-array-style": ""
+      "force-single-line-array-style": [],
+      "force-multi-line-array-style": []
     },
     "insert-yaml-attributes": {
       "enabled": false,
-      "text-to-insert": "tags:\naliases:"
+      "text-to-insert": [
+        "tags:",
+        "aliases:"
+      ]
     },
     "move-tags-to-yaml": {
       "enabled": false,
       "how-to-handle-existing-tags": "Nothing",
-      "tags-to-ignore": ""
+      "tags-to-ignore": []
     },
     "remove-yaml-keys": {
       "enabled": false,
-      "yaml-keys-to-remove": ""
+      "yaml-keys-to-remove": []
     },
     "yaml-key-sort": {
       "enabled": false,
-      "yaml-key-priority-sort-order": "tags:\naliases:\nid:\nattribute:\ndescription:\nstatus:\nrating:\nscientificity:\npriority:\naddition:\nsource:\nproject:\nmilestone:\nnext:\nup:\ndeck:\nrelated:\nblockedBy:\ngenre:\ncategory:\nmeta:\nproblem:\ncreator:\nproduction:\ncontext:\nsimilar:\ncorollary:\nopposite:\nurl:\nzotero:\nlongform:\ntitle_translation:\ncover:\npublished:\nstart:\nend:\ntotal_hours:\nrelevant:\ncreated:\nupdated:\nsr-due:\nsr-interval:\nsr-ease:",
+      "yaml-key-priority-sort-order": [
+        "tags:",
+        "aliases:",
+        "id:",
+        "attribute:",
+        "description:",
+        "status:",
+        "rating:",
+        "scientificity:",
+        "priority:",
+        "addition:",
+        "source:",
+        "project:",
+        "milestone:",
+        "next:",
+        "up:",
+        "deck:",
+        "related:",
+        "blockedBy:",
+        "genre:",
+        "category:",
+        "meta:",
+        "problem:",
+        "creator:",
+        "production:",
+        "context:",
+        "similar:",
+        "corollary:",
+        "opposite:",
+        "url:",
+        "zotero:",
+        "longform:",
+        "title_translation:",
+        "cover:",
+        "published:",
+        "start:",
+        "end:",
+        "total_hours:",
+        "relevant:",
+        "created:",
+        "updated:",
+        "sr-due:",
+        "sr-interval:",
+        "sr-ease:"
+      ],
       "priority-keys-at-start-of-yaml": true,
       "yaml-sort-order-for-other-keys": "None"
     },
@@ -64,14 +110,53 @@
       "preserve-existing-alias-section-style": true,
       "keep-alias-that-matches-the-filename": false,
       "use-yaml-key-to-keep-track-of-old-filename-or-heading": true,
-      "alias-helper-key": "linter-yaml-title-alias"
+      "alias-helper-key": "linter-yaml-title-alias",
+      "remove-alias-if-empty": true
     },
     "capitalize-headings": {
       "enabled": true,
       "style": "First letter",
       "ignore-case-words": true,
-      "ignore-words": "macOS, iOS, iPhone, iPad, JavaScript, TypeScript, AppleScript",
-      "lowercase-words": "via, a, an, the, and, or, but, for, nor, so, yet, at, by, in, of, on, to, up, as, is, if, it, for, to, with, without, into, onto, per",
+      "ignore-words": [
+        "macOS",
+        "iOS",
+        "iPhone",
+        "iPad",
+        "JavaScript",
+        "TypeScript",
+        "AppleScript"
+      ],
+      "lowercase-words": [
+        "via",
+        "a",
+        "an",
+        "the",
+        "and",
+        "or",
+        "but",
+        "for",
+        "nor",
+        "so",
+        "yet",
+        "at",
+        "by",
+        "in",
+        "of",
+        "on",
+        "to",
+        "up",
+        "as",
+        "is",
+        "if",
+        "it",
+        "for",
+        "to",
+        "with",
+        "without",
+        "into",
+        "onto",
+        "per"
+      ],
       "starting-word-ignore-characters": "'\"(‘“-",
       "ending-word-ignore-characters": ".?!,:;'\")”’0123456789-"
     },
@@ -223,7 +308,7 @@
     },
     "auto-correct-common-misspellings": {
       "enabled": false,
-      "ignore-words": "",
+      "ignore-words": [],
       "extra-auto-correct-files": [],
       "skip-words-with-multiple-capitals": false
     },
@@ -258,14 +343,14 @@
       "dedupe-alias-key": true,
       "dedupe-tag-key": true,
       "dedupe-array-keys": true,
-      "ignore-keys": ""
+      "ignore-keys": []
     },
     "sort-yaml-array-values": {
       "enabled": false,
       "sort-alias-key": false,
       "sort-tag-key": true,
       "sort-array-keys": true,
-      "ignore-keys": "",
+      "ignore-keys": [],
       "sort-order": "Ascending Alphabetical"
     },
     "default-language-for-code-fences": {
@@ -273,6 +358,16 @@
       "default-language": ""
     },
     "empty-line-around-horizontal-rules": {
+      "enabled": false
+    },
+    "move-inline-fields-to-yaml": {
+      "enabled": false,
+      "how-to-handle-full-line-fields": "Move and remove",
+      "how-to-handle-bracketed-fields": "Leave in place",
+      "how-to-handle-existing-keys": "Skip",
+      "inline-keys-to-ignore": null
+    },
+    "align-table-columns": {
       "enabled": false
     }
   },
@@ -286,6 +381,8 @@
   "lintOnFileChange": true,
   "displayLintOnFileChangeNotice": false,
   "settingsConvertedToConfigKeyValues": true,
+  "textAreaSettingsConvertedToListItemSettings": true,
+  "defaultArrayStyleMovedToCommonStyles": true,
   "additionalFileExtensions": [],
   "foldersToIgnore": [
     "templates",
@@ -403,6 +500,7 @@
     "aliasArrayStyle": "multi-line",
     "tagArrayStyle": "multi-line",
     "minimumNumberOfDollarSignsToBeAMathBlock": 2,
-    "escapeCharacter": "\""
+    "escapeCharacter": "\"",
+    "defaultArrayStyle": "multi-line"
   }
 }

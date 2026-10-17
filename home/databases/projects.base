@@ -241,7 +241,7 @@ views:
       - 🟩
     colorCells: false
     colorHeaders: false
-    colorCards: false
+    colorCards: true
     hideEmptyGroups: false
     hideEmptySubGroups: false
     subGroupProperty: note.priority
@@ -276,6 +276,8 @@ views:
       - 🔺
       - 🔽
       - ⏬
+    hideEmptyProperties: true
+    imageProperty: note.cover
   - type: board-view
     name: "📋 Workflow: Kanban-i (h)"
     filters:
@@ -299,7 +301,7 @@ views:
       - ⏬
     colorCells: false
     colorHeaders: false
-    colorCards: false
+    colorCards: true
     hideEmptySubGroups: false
     subGroupProperty: note.status
     subGroupLabels:
@@ -328,6 +330,8 @@ views:
     newNoteTemplate:
       - templates/create/projects/single project template.md
     newNoteOpen: true
+    hideEmptyProperties: true
+    imageProperty: note.cover
   - type: timeline
     name: "🕛 Workflow: Timeline"
     filters:
@@ -348,16 +352,18 @@ views:
       ⏬: var(--color-base-40)
     zoom: 1
     showColors: false
-  - type: calendar
+  - type: just-simple-calendar
     name: "🗓️ Workflow: Calendar"
     filters:
       and:
         - '!status.contains("⬛")'
         - '!status.contains("📢")'
-        - start
-        - end
-    startDate: note.start
-    endDate: note.end
+        - or:
+            - start
+            - end
+    dateProperty: note.start
+    endDateProperty: note.end
+    weekStart: "1"
   - type: block-view
     name: "✅ Workflow: Inline Tasks"
     filters:

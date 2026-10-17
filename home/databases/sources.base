@@ -245,7 +245,7 @@ views:
       - ⚛
     colorCells: false
     colorHeaders: false
-    colorCards: false
+    colorCards: true
     hideEmptySubGroups: false
     subGroupLabels:
       - Empty Group=default
@@ -260,6 +260,7 @@ views:
       - templates/create/sources/source template.md
     newNoteOpen: true
     imageProperty: note.cover
+    hideEmptyProperties: true
   - type: block-view
     name: "✅ Workflow: Inline Tasks"
     filters:

@@ -453,7 +453,8 @@
         2029,
         2031,
         2033,
-        2043
+        2043,
+        3452
       ]
     },
     "7KYNWNXU": {
@@ -545,7 +546,9 @@
         3327,
         3329,
         3386,
-        3443
+        3443,
+        3454,
+        3456
       ]
     },
     "ZVMFRHCY": {
@@ -1410,7 +1413,7 @@
     },
     {
       "key": "IRR2H8N6",
-      "version": 8545,
+      "version": 8556,
       "itemType": "videoRecording",
       "title": "7 шагов к финансовой безопасности: Мой план (с циферками)",
       "abstractNote": "Предыдущий доклад про уход от продажи времени:    • ИСПОВЕДЬ СВИТЧЕРА В АЙТИ: Как перестать ра...  \nПДФ презентация этого доклада в тг: https://t.me/iosgetthrough/1592",
@@ -1429,12 +1432,15 @@
       ],
       "tags": [
         {
+          "tag": "💎"
+        },
+        {
           "tag": "🟩"
         }
       ],
       "relations": {},
       "dateAdded": "2026-10-09T15:16:42Z",
-      "dateModified": "2026-10-09T20:38:35Z",
+      "dateModified": "2026-10-16T08:39:12Z",
       "uri": "http://zotero.org/users/16981227/items/IRR2H8N6",
       "itemID": 3449,
       "attachments": [],
@@ -1446,7 +1452,7 @@
     },
     {
       "key": "X5CXIL89",
-      "version": 8549,
+      "version": 8556,
       "itemType": "videoRecording",
       "title": "ИСПОВЕДЬ СВИТЧЕРА В АЙТИ: Как перестать работать и начать зарабатывать",
       "abstractNote": "С чего начать вам -    • Как я создала 10 источников дохода: Полный...  \nPDF презентация доклада в тг: https://t.me/iosgetthrough/1157",
@@ -1465,12 +1471,15 @@
       ],
       "tags": [
         {
+          "tag": "💎"
+        },
+        {
           "tag": "🟩"
         }
       ],
       "relations": {},
       "dateAdded": "2026-10-09T20:30:19Z",
-      "dateModified": "2026-10-09T20:38:26Z",
+      "dateModified": "2026-10-16T08:39:12Z",
       "uri": "http://zotero.org/users/16981227/items/X5CXIL89",
       "itemID": 3450,
       "attachments": [],
@@ -1519,7 +1528,7 @@
     },
     {
       "key": "QNZPQSXY",
-      "version": 8547,
+      "version": 8556,
       "itemType": "videoRecording",
       "title": "Как я создала 10 источников дохода: Полный роадмап с цифрами",
       "abstractNote": "с чего вам начать -    • Как использовать найм прежде, чем он испол...   \nпдф презентация по теме видео со всеми шагами - https://t.me/iosgetthrough/1533",
@@ -1538,12 +1547,15 @@
       ],
       "tags": [
         {
+          "tag": "💎"
+        },
+        {
           "tag": "🟦"
         }
       ],
       "relations": {},
       "dateAdded": "2026-10-09T20:38:13Z",
-      "dateModified": "2026-10-09T20:38:23Z",
+      "dateModified": "2026-10-16T08:39:12Z",
       "uri": "http://zotero.org/users/16981227/items/QNZPQSXY",
       "itemID": 3451,
       "attachments": [],
@@ -7498,6 +7510,49 @@
       "select": "zotero://select/library/items/VHQ37URU"
     },
     {
+      "key": "68CEXMNU",
+      "version": 8553,
+      "itemType": "webpage",
+      "title": "Секция System Design | Кратко | Введение",
+      "abstractNote": "Все самое необходимое для прохождения собеседования по проектированию систем",
+      "citationKey": "SekciyaSystemDesign",
+      "url": "https://nowinterview.ru/learn/system-design/in-a-hurry/introduction",
+      "accessDate": "2026-10-10T11:17:36Z",
+      "language": "ru",
+      "websiteTitle": "NowInterview",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-10-10T11:17:36Z",
+      "dateModified": "2026-10-10T11:17:44Z",
+      "uri": "http://zotero.org/users/16981227/items/68CEXMNU",
+      "itemID": 3452,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://nowinterview.ru/learn/system-design/in-a-hurry/introduction",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-10T11:17:37Z",
+          "dateModified": "2026-10-10T11:17:37Z",
+          "uri": "http://zotero.org/users/16981227/items/MZL45WSG",
+          "path": "/home/exuberance/Zotero/storage/MZL45WSG/introduction.html",
+          "select": "zotero://select/library/items/MZL45WSG"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "68CEXMNU",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/68CEXMNU"
+    },
+    {
       "key": "K7GLETXB",
       "version": 5933,
       "itemType": "webpage",
@@ -7970,6 +8025,36 @@
       "itemKey": "B6TGZLP4",
       "libraryID": 1,
       "select": "zotero://select/library/items/B6TGZLP4"
+    },
+    {
+      "key": "4I329KUH",
+      "version": 0,
+      "itemType": "webpage",
+      "title": "Snowball - учет инвестиционного портфеля акций и облигаций",
+      "abstractNote": "Snowball - учет инвестиций в акции, облигации и криптовалюту, учет дивидендов, календарь выплаты дивидендов, дивидендная доходность портфеля, аналитика и дивиденды компаний",
+      "citationKey": "SnowballUchetInvesticionnogo",
+      "url": "https://snowball-income.com/dashboard",
+      "accessDate": "2026-10-16T08:50:00Z",
+      "language": "ru",
+      "websiteTitle": "Snowball Income",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-10-16T08:50:00Z",
+      "dateModified": "2026-10-16T08:50:01Z",
+      "uri": "http://zotero.org/users/16981227/items/4I329KUH",
+      "itemID": 3456,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "4I329KUH",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/4I329KUH"
     },
     {
       "key": "CA5AWEGU",
@@ -8509,10 +8594,10 @@
       "creators": [],
       "tags": [
         {
-          "tag": "💎"
+          "tag": "🟦"
         },
         {
-          "tag": "🟦"
+          "tag": "💎"
         }
       ],
       "relations": {},
@@ -9820,6 +9905,7 @@
       "itemType": "book",
       "title": "Как привести дела в порядок",
       "citationKey": "zotero-item-3386",
+      "language": "en-US",
       "creators": [
         {
           "name": "Дэвид Аллен",
@@ -9855,6 +9941,50 @@
       "itemKey": "4JBYS6BC",
       "libraryID": 1,
       "select": "zotero://select/library/items/4JBYS6BC"
+    },
+    {
+      "key": "FV7BTCIB",
+      "version": 8566,
+      "itemType": "book",
+      "title": "Стратегия без иллюзий: Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен",
+      "citationKey": "zotero-item-3454",
+      "url": "https://llibre.ru/books/33669/download/epub",
+      "language": "en-US",
+      "creators": [
+        {
+          "name": "Семён Колосов",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-10-16T08:39:23Z",
+      "dateModified": "2026-10-16T08:45:16Z",
+      "uri": "http://zotero.org/users/16981227/items/FV7BTCIB",
+      "itemID": 3454,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Ebook",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-16T08:41:10Z",
+          "dateModified": "2026-10-16T08:41:10Z",
+          "uri": "http://zotero.org/users/16981227/items/D6KE7S6A",
+          "path": "/home/exuberance/Zotero/storage/D6KE7S6A/Семён Колосов - Стратегия без иллюзий Как управлять своей жизнью, чтобы обрести устойчивость и достигать больш.epub",
+          "select": "zotero://select/library/items/D6KE7S6A"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "FV7BTCIB",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/FV7BTCIB"
     },
     {
       "key": "JI5WGELG",

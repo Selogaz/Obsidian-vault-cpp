@@ -2,13 +2,12 @@
 tags:
   - note/specific/code
   - category/java
-aliases:
-  - планирование
+aliases: []
 deck: obsidian::java
 icon: </>
 color: "#ab4642"
 created: 2025-11-15T17:25:01+03:00
-updated: 2025-11-15T17:59:52+03:00
+updated: 2026-10-17T12:44:22+04:00
 ---
 
 **планирование**

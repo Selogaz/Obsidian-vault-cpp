@@ -1,7 +1,6 @@
 {
   "pluginList": [
     "flowing-abyss/obsidian-abyss-tasks",
-    "SilentVoid13/Templater",
     "flowing-abyss/obsidian-bases-structure",
     "flowing-abyss/obsidian-local-fonts",
     "flowing-abyss/obsidian-bases-board",
@@ -16,10 +15,6 @@
     {
       "repo": "flowing-abyss/obsidian-abyss-tasks",
       "version": "latest"
-    },
-    {
-      "repo": "SilentVoid13/Templater",
-      "version": "2.25.1"
     },
     {
       "repo": "flowing-abyss/obsidian-bases-structure",
@@ -61,7 +56,7 @@
   "themesList": [
     {
       "repo": "flowing-abyss/obsidian-base16-default-dark",
-      "lastUpdate": "27356873"
+      "lastUpdate": "28123664"
     }
   ],
   "updateAtStartup": true,

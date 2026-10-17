@@ -456,6 +456,101 @@ views:
     collapsedSubGroups:
       - 🟩
       - ❄
+  - type: board-view
+    name: "📋 Workflow: Kanban-m (h)"
+    filters:
+      and:
+        - '!file.hasTag("task/milestone")'
+        - '!status.contains("⬛")'
+        - '!status.contains("📢")'
+    order:
+      - file.name
+      - priority
+    sort:
+      - property: formula.priority
+        direction: ASC
+    groupProperty: note.status
+    hiddenGroups:
+      - Empty Group
+      - 📢
+      - 🧠
+      - 🖍
+      - 🔎
+      - 📦
+      - 📋
+      - 💡
+      - ⚛️
+      - ⚛
+      - ⚙️
+      - ⬛
+    columnOrder:
+      - 📥
+      - ❄
+      - 🟥
+      - 🟦
+      - 🟩
+    groupLabels:
+      - 📥=📥 Inbox
+      - ❄=❄ Hold/Blocked
+      - 🟥=🟥 ToDo
+      - 🟦=🟦 WIP
+      - 🟩=🟩 Done
+    subGroupProperty: note.milestone
+    hiddenSubGroups:
+      - Empty Group
+    hideEmptyGroups: false
+    hideEmptySubGroups: false
+    colorCells: false
+    colorHeaders: true
+    colorCards: true
+    newNoteFolder:
+      - base/tasks
+    newNoteTemplate:
+      - templates/create/additions/tasks/template.md
+    openInSideView: true
+    idProperty: note.id
+    iconProperty: note.attribute
+    iconMapping:
+      - bug=bug
+      - feature=sparkles
+      - improvement=trending-up
+      - performance=gauge
+      - quality=shield-check
+      - dataset=database
+      - pipeline=workflow
+      - model=brain-circuit
+      - analytics=bar-chart-3
+      - preprocessing=filter
+      - experiment=flask-conical
+      - research=search
+      - analysis=microscope
+      - literature=library
+      - insight=lightbulb
+      - deploy=rocket
+      - container=box
+      - server=server
+      - cicd=repeat-2
+      - monitoring=activity
+      - security=shield-check
+      - api=plug
+      - architecture=blocks
+      - task=check-square
+      - schedule=calendar
+      - notes=notebook
+      - reading=book-open
+      - finance=wallet
+      - shopping=shopping-cart
+      - travel=plane
+      - home=home
+      - workout=dumbbell
+      - cardio=footprints
+      - sauna=thermometer
+      - health=heart-pulse
+      - sleep=moon
+      - nutrition=apple
+    collapsedSubGroups:
+      - "[[OHS CLI and Developer UX]]"
+      - "[[OHS Graph Features - графовые возможности поиска]]"
   - type: timeline
     name: "📍 Workflow: Timeline"
     filters:
@@ -490,17 +585,19 @@ views:
     borderBy: note.priority
     borderWidth: 1
     showColors: true
-  - type: calendar
+  - type: just-simple-calendar
     name: "🗓️ Workflow: Calendar"
     filters:
       and:
         - '!file.hasTag("task/milestone")'
         - '!status.contains("⬛")'
         - '!status.contains("📢")'
-        - start
-        - end
-    startDate: note.start
-    endDate: note.end
+        - or:
+            - start
+            - end
+    dateProperty: note.start
+    endDateProperty: note.end
+    weekStart: "1"
   - type: block-view
     name: "✅ Workflow: Inline Tasks"
     filters:

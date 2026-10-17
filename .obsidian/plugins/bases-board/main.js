@@ -20,3 +20,5 @@ sortablejs/modular/sortable.esm.js:
    * @license MIT
    *)
 */
+
+/* nosourcemap */

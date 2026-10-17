@@ -17,7 +17,6 @@
   "obsidian-local-images-plus",
   "obsidian-meta-bind-plugin",
   "obsidian42-brat",
-  "calendar-bases",
   "bases-chart-views",
   "timeline-for-bases",
   "context-command-hider",
@@ -37,14 +36,15 @@
   "abyss-tasks",
   "various-complements",
   "attachment-management",
+  "hybrid-search",
+  "zotlit",
+  "micropatches",
   "another-dynamic-highlights",
   "metadata-validator",
   "journal-bases",
   "life-tracker",
   "dynamic-views",
   "bases-structure",
-  "time-machine",
-  "hybrid-search",
-  "micropatches",
-  "zotlit"
+  "just-simple-calendar",
+  "copy-url-in-preview"
 ]

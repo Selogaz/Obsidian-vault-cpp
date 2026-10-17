@@ -1,6 +1,7 @@
 {
   "firstDayOfWeek": 1,
   "taskPrefix": "#task/one-off",
+  "applyTaskPrefixToSubtasks": false,
   "taskFilePath": "periodic/daily/{{YYYY-MM-DD}}.md",
   "taskArchivePath": "periodic/archive.md",
   "taskIgnoreQuery": "",
@@ -218,7 +219,8 @@
     "openCalendarWeek": "W",
     "openCalendarMonth": "M",
     "openProjects": "P",
-    "openSearch": "S"
+    "openSearch": "S",
+    "openStatistics": "A"
   },
   "desktop": {
     "defaultView": "month",
@@ -244,5 +246,5 @@
     "tag": "",
     "folder": ""
   },
-  "savedViewStateSchemaVersion": 1
+  "savedViewStateSchemaVersion": 2
 }

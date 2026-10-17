@@ -1,1 +1,10 @@
-{"id":"metadata-validator","name":"Metadata Validator","minAppVersion":"1.7.2","description":"Manifest-driven metadata validation, auto-fix, rules, and field picker for notes.","author":"flowing-abyss","authorUrl":"https://github.com/flowing-abyss","isDesktopOnly":false,"version":"1.1.4"}
+{
+  "id": "metadata-validator",
+  "name": "Metadata Validator",
+  "minAppVersion": "1.7.2",
+  "description": "Manifest-driven metadata validation, auto-fix, rules, and field picker for notes.",
+  "author": "flowing-abyss",
+  "authorUrl": "https://github.com/flowing-abyss",
+  "isDesktopOnly": false,
+  "version": "1.1.4"
+}

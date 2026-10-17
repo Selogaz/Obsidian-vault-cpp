@@ -1,0 +1,11 @@
+---
+tags:
+  - note/basic/primary
+aliases: []
+icon: 📝
+color: "#70a0b5"
+created: 2026-10-17T12:24:04+04:00
+updated: 2026-10-17T12:24:04+04:00
+---
+
+компонент [[Стратегия без иллюзий конспект#VENOM|VENOM]]

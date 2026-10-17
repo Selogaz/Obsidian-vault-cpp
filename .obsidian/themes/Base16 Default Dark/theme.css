@@ -4885,6 +4885,213 @@ input[type='text'][type]:not(.metadata-input, .metadata-property-key-input) {
   display: none;
 }
 
+/* ===== 50-plugins/abyss-statistics.css ===== */
+
+/* ABYSS TASKS — STATISTICS / ANALYSIS
+   Verified against task-statistics and the live 11-view interface.
+   Frames belong to filters and paging actions. Navigation, chart keys,
+   captions and evidence are content controls, like the rest of Abyss Tasks.
+   Runtime captures: .docs/abyss-statistics-20261009/ and
+   .docs/abyss-statistics-followup-20261009/. */
+
+/* These navigation entries are buttons, unlike the task browser's divs.
+   Override 40-chrome.css including its hover/active frame (0,3,1). */
+body.theme-dark .abyss-left--statistics button.abyss-left-item {
+  border: 0;
+  border-radius: var(--b16-radius-control);
+  box-shadow: none;
+  background: transparent;
+  color: var(--b16-text-muted);
+
+  &:hover {
+    background: var(--b16-surface-2);
+    color: var(--b16-text-normal);
+  }
+
+  &.is-active {
+    background: var(--b16-surface-3);
+    color: var(--b16-text-normal);
+  }
+}
+
+/* Match the adjacent information tool and the plugin's quiet rail tools. */
+body.theme-dark .abyss-statistics button.abyss-compact-pane-button {
+  border-color: transparent;
+  box-shadow: none;
+  background: transparent;
+  color: var(--b16-text-muted);
+
+  &:hover {
+    background: var(--b16-surface-1);
+    color: var(--b16-text-normal);
+  }
+
+  /* Preserve the plugin's expanded-pane indicator without adding a frame. */
+  &[aria-expanded='true'] {
+    color: var(--b16-accent-link);
+  }
+}
+
+/* The plugin's two-column header squeezes the title to 24px in a 380px
+   pane. Wrap the controls when their measured width no longer fits.
+   CompactPaneAccess observes the header height for its overlay offset. */
+.theme-dark .abyss-statistics > .abyss-center-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.theme-dark .abyss-statistics .abyss-center-title {
+  flex: 1 0 auto;
+  max-inline-size: 100%;
+}
+
+.theme-dark .abyss-statistics .abyss-center-controls {
+  flex-wrap: wrap;
+  max-inline-size: 100%;
+  margin-inline-start: auto;
+}
+
+/* Period and project status are the same kind of filter. */
+.theme-dark :is(.abyss-statistics-controls, .abyss-statistics-actions) select.dropdown {
+  border: 1px solid var(--b16-border-normal);
+  border-radius: var(--b16-radius-control);
+  background-color: transparent;
+  box-shadow: none;
+
+  &:hover {
+    background-color: var(--b16-surface-1);
+    border-color: var(--b16-border-strong);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--b16-accent-link);
+    outline-offset: 2px;
+  }
+}
+
+/* The native scope picker is a .prompt portal. Its pressed tabs need the
+   same specificity as 40-chrome.css button states to stay frameless. */
+.theme-dark .abyss-statistics-scope-tabs > button[aria-pressed] {
+  border: 0;
+  border-radius: var(--b16-radius-control);
+  box-shadow: none;
+  background: transparent;
+  color: var(--b16-text-muted);
+
+  &:hover {
+    background: var(--b16-surface-2);
+    color: var(--b16-text-normal);
+  }
+
+  &[aria-pressed='true'] {
+    background: var(--b16-surface-3);
+    color: var(--b16-text-normal);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--b16-accent-link);
+    outline-offset: -2px;
+  }
+}
+
+/* The same regular, muted UI step as comment timestamps and Upcoming dates.
+   Chart marks, series colours, axis measurement and numeric scales remain
+   plugin-owned; only the surrounding reading hierarchy is adjusted. */
+.theme-dark
+  :is(
+    .abyss-statistics-context,
+    .abyss-statistics-metric-label,
+    .abyss-statistics-legend,
+    .abyss-statistics-intensity,
+    .abyss-statistics-evidence-count
+  ) {
+  font-size: var(--b16-font-ui-s);
+  line-height: var(--b16-label-line-height);
+  color: var(--b16-text-muted);
+}
+
+/* Evidence is interface content; an unqualified h3 inherited the note's
+   serif heading family in the live drilldown. */
+.theme-dark .abyss-statistics-evidence-header h3 {
+  font-family: var(--font-interface);
+  font-size: var(--b16-font-ui-m);
+  font-weight: var(--font-semibold);
+  color: var(--b16-text-normal);
+}
+
+.theme-dark .abyss-statistics-metrics {
+  align-items: flex-start;
+  column-gap: var(--size-4-6);
+  margin-block-start: var(--size-4-2);
+}
+
+/* Clickable and read-only totals share the same inset and alignment. */
+.theme-dark .abyss-statistics .abyss-statistics-metric {
+  padding: var(--size-2-1);
+  max-inline-size: 100%;
+}
+
+/* Match the specificity of the generic button state rules. */
+body.theme-dark
+  .abyss-statistics
+  button:is(.abyss-statistics-metric, .abyss-statistics-evidence-action),
+body.theme-dark
+  .abyss-statistics
+  :is(.abyss-statistics-legend, .abyss-statistics-chart-caption)
+  > button {
+  border: 0;
+  border-radius: var(--b16-radius-control);
+  box-shadow: none;
+  background: transparent;
+  color: inherit;
+  max-inline-size: 100%;
+
+  &:not(:disabled):hover {
+    background: var(--b16-surface-1);
+    color: var(--b16-text-normal);
+  }
+
+  &:not(:disabled):active {
+    background: var(--b16-surface-2);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--b16-accent-link);
+    outline-offset: -2px;
+  }
+}
+
+.theme-dark .abyss-statistics-details p {
+  font-size: var(--b16-font-ui-s);
+  color: var(--b16-text-muted);
+}
+
+/* Ranking buttons overlay the SVG. An opaque hover on the entire button
+   hides its bar. Highlight only the two text hit areas and preserve the
+   plugin's 32px pitch and measured label/value widths. */
+body.theme-dark .abyss-statistics button.abyss-statistics-row-button {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+
+  &:is(:hover, :focus-visible) :is(.abyss-statistics-row-label, .abyss-statistics-row-value) {
+    background: var(--b16-surface-1);
+  }
+
+  &:focus-visible {
+    outline-offset: -2px;
+  }
+}
+
+/* The chart library exposes tooltip materials through public properties.
+   Its portal otherwise resolves background-secondary on the document body. */
+.theme-dark .abyss-statistics-tooltip {
+  --ts-chart-tooltip-background: var(--b16-surface-2);
+  --ts-chart-tooltip-border: 1px solid var(--b16-border-strong);
+  --ts-chart-tooltip-border-radius: var(--b16-radius-control);
+}
+
 /* ===== 50-plugins/abyss-tasks.css ===== */
 
 /* ABYSS TASKS
@@ -5157,6 +5364,22 @@ body.theme-dark .abyss-panel-view button.abyss-project-timeline-group-header {
   color: var(--b16-text-muted);
   text-transform: none;
   letter-spacing: normal;
+}
+
+/* Upcoming dates follow comment timestamps: regular metadata weight with
+   the shared UI size, muted color and casing from the labels above.
+   taskSearchOrganization.ts creates task-daily rows only for Upcoming
+   grouped by date; neither headers nor the list expose that mode directly.
+   :has() is needed to scope via the verified data-row-key on those cards.
+   The renderer puts label and count in one text node separated by two
+   spaces; preserve that separation without preventing long labels wrapping. */
+.theme-dark
+  :where(.abyss-task-list-surface:has(.abyss-task-card[data-row-key^='["task-daily",']))
+  .abyss-group-header {
+  padding-inline: var(--size-4-3);
+  padding-bottom: var(--size-4-1);
+  font-weight: var(--b16-chrome-weight);
+  white-space: pre-wrap;
 }
 
 /* Dependency titles use buttons where subtask titles use plain labels.
@@ -5499,6 +5722,22 @@ body.theme-dark .abyss-dep-search button.abyss-dep-search-option {
   background: transparent;
   border-radius: 0;
   padding-inline: 0;
+}
+
+/* Show more / Show less is a text disclosure, like the inspector's inline
+   add actions. Match the generic button hover specificity from 40-chrome.css
+   so its frame and fill stay absent in both the panel and task modal. */
+.theme-dark :is(.abyss-panel-view, .abyss-modal) button.abyss-comment-disclosure {
+  border: 0;
+  border-radius: var(--b16-radius-control);
+  box-shadow: none;
+  background: transparent;
+  color: var(--b16-text-muted);
+  font-size: var(--font-ui-smallest);
+
+  &:is(:hover, :focus-visible) {
+    color: var(--b16-text-normal);
+  }
 }
 
 /* A little more room for editable dates avoids turning every metadata
@@ -5880,37 +6119,52 @@ body.theme-dark
   --bases-charts-accent: var(--interactive-accent);
 }
 
-/* ECharts tooltip outer container (inline styles need !important to override).
-   ECharts injects the tooltip as an unnamed div wrapping .bases-chart-tooltip,
-   always as a direct child of .bases-charts-plot-grid-item — scoping :has()
-   to that rare, chart-only container keeps the selector cheap (not a global
-   div:has() that Chromium must re-check on every DOM mutation app-wide). */
-.theme-dark .bases-charts-plot-grid-item > div:has(> .bases-chart-tooltip) {
-  background-color: var(--b16-surface-1) !important;
-  border-color: var(--b16-border-normal) !important;
-  box-shadow: 0 2px 10px color-mix(in srgb, black 50%, transparent) !important;
-}
-
-/* Tooltip inner container */
+/* Chart Views 0.4.1 portals the tooltip host to body. The named inner
+   container now owns its material; the old grid-child wrapper, divider,
+   and interactive file rows no longer exist (source and live DOM verified). */
 .theme-dark .bases-chart-tooltip {
-  color: var(--text-normal);
+  color: var(--b16-text-normal);
+  background: var(--b16-surface-2);
+  border-color: var(--b16-border-normal);
+  box-shadow: none;
 }
 
-/* Replace hardcoded #999 secondary text with theme muted color */
-.theme-dark .bases-chart-tooltip-value,
 .theme-dark .bases-chart-tooltip-file-value {
-  color: var(--text-muted);
+  color: var(--b16-text-muted);
   font-size: var(--b16-font-ui-s);
 }
 
-/* Replace hardcoded rgba(128,128,128,0.2) divider */
-.theme-dark .bases-chart-tooltip-divider {
-  background: var(--b16-border-normal);
+/* These are toolbar controls and list rows, not standalone action buttons.
+   Native Bases uses div.text-icon-button; Chart Views uses real buttons,
+   so the generic theme button border and state rules otherwise win.
+   The element-qualified scope also wins against their 0-3-1 state rules. */
+body.theme-dark .bases-chart-toolbar button.bases-chart-axis-button,
+body.theme-dark .bases-chart-axis-panel button.bases-chart-property-option,
+body.theme-dark .bases-chart-files-modal button.bases-chart-file-open {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
 }
 
-/* Replace hardcoded rgba(128,128,128,0.15) hover */
-.theme-dark .bases-chart-tooltip-file:hover {
+body.theme-dark .bases-chart-toolbar button.bases-chart-axis-button {
+  color: var(--b16-text-muted);
+  border-radius: var(--b16-radius-s);
+  line-height: var(--line-height-tight);
+}
+
+body.theme-dark
+  .bases-chart-toolbar
+  button.bases-chart-axis-button:is(:hover, :focus-visible, [aria-expanded='true']),
+body.theme-dark
+  .bases-chart-axis-panel
+  button.bases-chart-property-option:is(:hover, :focus-visible, [aria-pressed='true']) {
   background: var(--b16-surface-2);
+}
+
+/* Hover belongs to the whole table row. Keep the filename cell flush with
+   its neighbours; the generic keyboard focus outline remains visible. */
+body.theme-dark .bases-chart-files-modal button.bases-chart-file-open {
+  border-radius: 0;
 }
 
 /* Central data tables and boards, with a quieter navigation variant in
@@ -6530,59 +6784,75 @@ body.theme-dark
  * graph, and glow rings on nodes, gates and edges. Those become the flat
  * surfaces, hairlines and single selection ring used by Canvas and Graph. */
 
-/* The plugin's own palette inputs. Rebinding the three it reads retints
-   every rule that consumes them (hairlines, search icon, history label). */
-.theme-dark .excalibrain-app {
-  --eb-line: var(--b16-border-normal);
-  --eb-muted: var(--b16-text-muted);
-  --eb-text: var(--b16-text-normal);
+/* Bind the current K-Plex palette inputs to the theme. Node and link
+   colours still come from the plugin's supported style settings. */
+.theme-dark .kplex-app {
+  --kplex-line: var(--b16-border-normal);
+  --kplex-muted: var(--b16-text-muted);
+  --kplex-panel: var(--b16-surface-1);
+  --kplex-panel-2: var(--b16-surface-2);
+  --kplex-accent: var(--b16-accent-link);
 
   background: var(--b16-surface-0);
 }
 
+/* New action controls and the detached Sidecar button share these inputs.
+   The detached button is outside the app and cannot inherit its palette. */
+.theme-dark :is(.kplex-app, .kplex-sidecar-unfold-plex) {
+  --kplex-text: var(--b16-text-normal);
+  --kplex-control-bg: var(--b16-surface-0);
+  --kplex-control-hover: var(--b16-surface-1);
+  --kplex-control-border: var(--b16-border-normal);
+}
+
 /* Toolbar ------------------------------------------------------------------ */
-.theme-dark .excalibrain-top-stack,
-.theme-dark .excalibrain-topbar {
+.theme-dark .kplex-top-stack,
+.theme-dark .kplex-topbar {
   background: var(--b16-surface-0);
   box-shadow: none;
 }
 
-.theme-dark .excalibrain-brand {
+.theme-dark .kplex-brand {
   color: var(--b16-text-normal);
   font-weight: var(--font-semibold);
 }
 
 /* The brand mark borrowed orange (inline code here) and a glow. */
-.theme-dark .excalibrain-brand-mark {
+.theme-dark .kplex-brand-mark {
   color: var(--b16-text-muted);
   filter: none;
   text-shadow: none;
 }
 
 /* Index readiness is status, not decoration: ok is the status green, a
-   rebuild in progress is pending work (warn), not an error. */
-.theme-dark .kplex-index-status {
+   rebuild in progress is pending work (warn), not an error. The new
+   .kplex-topbar button.kplex-index-status rules need the body specificity
+   to preserve the round, glow-free dot at rest and on hover. */
+body.theme-dark .kplex-index-status {
   border: 0;
+  border-radius: 50%;
 }
 
-.theme-dark .kplex-index-status.is-ready {
+body.theme-dark .kplex-index-status.is-ready {
   background: var(--b16-status-ok);
   box-shadow: none;
 }
 
-.theme-dark .kplex-index-status.is-updating {
+body.theme-dark .kplex-index-status.is-updating {
   background: var(--b16-status-warn);
   box-shadow: none;
 }
 
-.theme-dark .excalibrain-toolbar-divider {
+.theme-dark .kplex-toolbar-divider {
   background: var(--b16-border-normal);
 }
 
-/* Toggle buttons (inline labels, section outline, …) and the active filter
-   trigger. The global button rule has no `.is-on` state, and the plugin's
-   own is a translucent blue fill; pressed here is the theme's pressed step. */
-.theme-dark .excalibrain-topbar button.is-on,
+/* Toggle buttons and the active filter trigger share the theme's pressed
+   step. Current Find, layout and Sidecar controls expose aria-pressed. */
+.theme-dark .kplex-topbar button.is-on,
+.theme-dark .kplex-find button[aria-pressed='true'],
+.theme-dark button.kplex-layout-toggle[aria-pressed='true'],
+.theme-dark .kplex-sidecar-controls button[aria-pressed='true'],
 .theme-dark .kplex-filter.is-active .kplex-filter-trigger {
   color: var(--b16-text-strong);
   background: var(--b16-surface-2);
@@ -6594,7 +6864,7 @@ body.theme-dark
 }
 
 /* Search field and its results list. */
-.theme-dark .excalibrain-view-host .excalibrain-search {
+.theme-dark .kplex-view-host .kplex-search {
   color: var(--b16-text-normal);
   background: var(--b16-surface-0);
   border: 1px solid var(--b16-border-normal);
@@ -6602,12 +6872,12 @@ body.theme-dark
   box-shadow: none;
 }
 
-.theme-dark .excalibrain-view-host .excalibrain-search:focus {
+.theme-dark .kplex-view-host .kplex-search:focus {
   border-color: var(--b16-accent-link);
   box-shadow: none;
 }
 
-.theme-dark .excalibrain-search-results {
+.theme-dark .kplex-search-results {
   background: var(--b16-surface-1);
   border-color: var(--b16-border-normal);
   border-radius: var(--b16-radius-s);
@@ -6616,18 +6886,18 @@ body.theme-dark
 
 /* Result rows are <button>s, so the global button rule framed every row;
    the plugin draws them as borderless list items. */
-.theme-dark button.excalibrain-search-result {
+.theme-dark button.kplex-search-result {
   border: 0;
   border-radius: var(--b16-radius-control);
 }
 
-.theme-dark button.excalibrain-search-result:hover {
+.theme-dark button.kplex-search-result:hover {
   background: var(--b16-surface-2);
 }
 
 /* Keyboard selection is "you are here": the link-hue rail used by the
    active Longform scene and Claudian's active session. */
-.theme-dark button.excalibrain-search-result.is-selected {
+.theme-dark button.kplex-search-result.is-selected {
   color: var(--b16-text-strong);
   background: var(--b16-surface-2);
   box-shadow: inset 2px 0 0 var(--b16-accent-link);
@@ -6685,7 +6955,7 @@ body.theme-dark
   color: var(--b16-text-faint);
 }
 
-.theme-dark .excalibrain-view-host .kplex-pinned-remove {
+.theme-dark .kplex-view-host .kplex-pinned-remove {
   color: var(--b16-text-faint);
   border-left: 1px solid var(--b16-border-normal);
 }
@@ -6693,14 +6963,14 @@ body.theme-dark
 /* Graph surface ------------------------------------------------------------ */
 
 /* A radial blue glow plus a vertical sheen sat over the whole Plex. */
-.theme-dark .excalibrain-plex::after {
+.theme-dark .kplex-plex::after {
   background: none;
 }
 
 /* Zone captions (PARENTS, CHILDREN, …) are a watermark, not chrome: the
    rotated side captions are positioned for the plugin's own 9px size, so
    only their colour moves onto the faint text step. */
-.theme-dark .excalibrain-zone-label {
+.theme-dark .kplex-zone-label {
   color: var(--b16-text-faint);
 }
 
@@ -6722,60 +6992,67 @@ body.theme-dark
 /* Nodes. Fill, text and border come inline from the plugin settings; the
    stylesheet adds a drop shadow and an inset highlight that turned every
    card into a floating pill. Canvas cards are flat, so these are too. */
-.theme-dark .excalibrain-thought,
-.theme-dark .excalibrain-thought.is-kplex-section:hover {
+.theme-dark .kplex-thought,
+.theme-dark .kplex-thought.is-kplex-section:hover {
   box-shadow: none;
 }
 
 /* Hovering one node dims every unrelated node, and the plugin did that with
    a saturate/brightness filter per node: the most expensive repaint left in
    a large Plex. Opacity alone already reads as "not related". */
-.theme-dark .excalibrain-thought.is-dimmed,
-.theme-dark .excalibrain-thought.is-connect-blocked {
+.theme-dark .kplex-thought.is-dimmed,
+.theme-dark .kplex-thought.is-connect-blocked {
   filter: none;
 }
 
 /* Related-to-hovered: one neutral contrast step, as a Canvas hover. */
-.theme-dark .excalibrain-thought.is-highlighted,
-.theme-dark .excalibrain-thought.is-highlighted:hover {
+.theme-dark .kplex-thought.is-highlighted,
+.theme-dark .kplex-thought.is-highlighted:hover {
   filter: none;
   box-shadow: 0 0 0 1px var(--b16-border-strong);
 }
 
 /* Selection is one precise link-hue ring (Canvas selection), replacing a
    white ring plus a 34px blue halo. */
-.theme-dark .excalibrain-thought.is-selected,
-.theme-dark .excalibrain-thought.is-selected.is-highlighted,
-.theme-dark .excalibrain-plex.is-section-expanded .excalibrain-thought.is-selected {
+.theme-dark .kplex-thought.is-selected,
+.theme-dark .kplex-thought.is-selected.is-highlighted,
+.theme-dark .kplex-plex.is-section-expanded .kplex-thought.is-selected {
   box-shadow: 0 0 0 1px var(--b16-accent-link);
 }
 
-.theme-dark .excalibrain-thought.is-dragging,
-.theme-dark .excalibrain-thought.is-connect-origin,
-.theme-dark .excalibrain-thought.is-connect-candidate:hover {
+.theme-dark .kplex-thought.is-dragging,
+.theme-dark .kplex-thought.is-connect-origin,
+.theme-dark .kplex-thought.is-connect-candidate:hover {
   filter: none;
   box-shadow: 0 0 0 1px var(--b16-accent-link);
 }
 
 /* Gates: fill and stroke come from the node style settings; drop the halo. */
-.theme-dark .excalibrain-gate {
+.theme-dark .kplex-gate {
   box-shadow: none;
 }
 
-.theme-dark .excalibrain-gate:hover,
-.theme-dark .excalibrain-gate.is-highlighted {
+.theme-dark .kplex-gate:hover,
+.theme-dark .kplex-gate.is-highlighted {
   box-shadow: 0 0 0 1px var(--b16-accent-link);
 }
 
 /* Gate counts sit on the bare graph surface, so the dark text shadow the
    plugin draws behind them is unnecessary; they are micro-syntax. */
-.theme-dark .excalibrain-gate-count {
+.theme-dark .kplex-gate-count {
   color: var(--b16-text-muted);
   text-shadow: none;
 }
 
 .theme-dark .kplex-expanded-mini-thought {
   box-shadow: none;
+}
+
+/* Local Find uses a stronger ring than hover. Keep its 2px accent visible
+   when the ordinary highlighted-hover or selected rules also match. */
+.theme-dark .kplex-plex.is-finding .kplex-thought.is-highlighted,
+.theme-dark .kplex-expanded-mini-thought.is-find-match {
+  box-shadow: 0 0 0 2px var(--b16-accent-link);
 }
 
 /* Same neutral as the gates, which the node style settings set to the
@@ -6788,13 +7065,13 @@ body.theme-dark
 /* Edges. Stroke colour is a presentation attribute from the link style
    settings; a CSS stroke outranks it without !important, so the hovered
    path can take the link hue instead of a glow. */
-.theme-dark .excalibrain-edge-visible,
+.theme-dark .kplex-edge-visible,
 .theme-dark .kplex-expanded-edge,
 .theme-dark .kplex-drag-connector {
   filter: none;
 }
 
-.theme-dark .excalibrain-edge.is-highlighted .excalibrain-edge-visible {
+.theme-dark .kplex-edge.is-highlighted .kplex-edge-visible {
   filter: none;
   stroke: var(--b16-accent-link);
 }
@@ -6818,7 +7095,7 @@ body.theme-dark
   border-color: var(--b16-border-strong);
 }
 
-.theme-dark .excalibrain-view-host .kplex-zone-filter-input {
+.theme-dark .kplex-view-host .kplex-zone-filter-input {
   color: var(--b16-text-normal);
   background: var(--b16-surface-0);
   border-color: var(--b16-accent-link);
@@ -6838,12 +7115,12 @@ body.theme-dark
 
 /* Zoom buttons float over edges, so unlike the global transparent button
    they need an opaque page-coloured fill. */
-.theme-dark .excalibrain-zoom-controls button {
+.theme-dark .kplex-zoom-controls button {
   color: var(--b16-text-muted);
   background: var(--b16-surface-0);
 }
 
-.theme-dark .excalibrain-zoom-controls button:hover {
+.theme-dark .kplex-zoom-controls button:hover {
   color: var(--b16-text-strong);
   background: var(--b16-surface-2);
 }
@@ -6862,12 +7139,22 @@ body.theme-dark
   box-shadow: none;
 }
 
-.theme-dark .kplex-density-heading {
-  grid-template-columns: auto 1fr auto;
-  gap: 6px;
+.theme-dark .kplex-density-heading,
+.theme-dark .kplex-wrap-label-caption {
   font-size: var(--font-ui-smallest);
   letter-spacing: 0;
   text-transform: none;
+}
+
+.theme-dark .kplex-density-heading {
+  grid-template-columns: auto 1fr auto;
+  gap: 6px;
+}
+
+/* The new wrapping toggle shares the slider frame, but needs no rail width. */
+.theme-dark .kplex-wrap-label-control {
+  width: calc(var(--font-text-size) * 4.5);
+  min-width: 0;
 }
 
 .theme-dark .kplex-density-heading output {
@@ -6905,11 +7192,11 @@ body.theme-dark
 }
 
 /* History ------------------------------------------------------------------ */
-.theme-dark .excalibrain-history-bar {
+.theme-dark .kplex-history-bar {
   background: var(--b16-surface-0);
 }
 
-.theme-dark .excalibrain-history-label {
+.theme-dark .kplex-history-label {
   color: var(--b16-text-faint);
   font-size: var(--font-ui-smallest);
   letter-spacing: 0.1em;
@@ -6919,7 +7206,7 @@ body.theme-dark
    not apply to a flex container: long titles were clipped on both sides
    instead of ending in an ellipsis. A block box restores the plugin's own
    left-aligned ellipsis. */
-.theme-dark .excalibrain-history-list button {
+.theme-dark .kplex-history-list button {
   display: block;
   height: auto;
   color: var(--b16-text-muted);
@@ -6927,11 +7214,11 @@ body.theme-dark
   line-height: 1.3;
 }
 
-.theme-dark .excalibrain-history-list button:hover {
+.theme-dark .kplex-history-list button:hover {
   color: var(--b16-text-normal);
 }
 
-.theme-dark .excalibrain-history-list button.is-active {
+.theme-dark .kplex-history-list button.is-active {
   color: var(--b16-text-normal);
   background: var(--b16-surface-1);
   border-color: var(--b16-border-strong);

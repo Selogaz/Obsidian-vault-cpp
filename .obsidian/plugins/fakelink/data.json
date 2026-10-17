@@ -53,6 +53,8 @@
   "excludeLinksToOwnNote": true,
   "fixIMEProblem": true,
   "excludeLinksInCurrentLine": true,
+  "tableLinkSuppression": true,
+  "lastSeenVersion": "1.24.13",
   "onlyLinkOnce": false,
   "excludeLinksToRealLinkedFiles": false,
   "includeAliases": true,
@@ -72,16 +74,29 @@
   "headingSymbolWhitelist": [],
   "allowLinksInHeaders": false,
   "colorOnlyDisplay": true,
-  "virtualLinkRequireModifier": false,
+  "disableVirtualLinkPreview": false,
+  "backgroundHighlight": false,
+  "backgroundTint": true,
+  "backgroundLines": true,
+  "backgroundCursorLine": true,
+  "backgroundTabAccent": true,
+  "backgroundUnfocusedMask": true,
+  "backgroundTabs": true,
+  "backgroundLineOpacity": 10,
+  "cursorLineOpacity": 35,
   "frontmatterExcludeProperty": "fakelink-exclude",
   "perNoteExcludeKeywords": false,
   "enableFrontmatterExcludeList": false,
   "frontmatterExcludeListProperty": "fakelink-exclude-keywords",
+  "linkIgnoreMode": "tag",
+  "linkIgnoreTag": "linker-ignore",
+  "linkIgnoreProperty": "linker-ignore",
   "headerVirtualLinkColor": "#a16946",
   "noteVirtualLinkColor": "#a16946",
   "fuzzyBaseColor": "#8e44ad",
   "fuzzyColorMixRatio": 50,
-  "headerJumpRetryDelay": 500,
+  "headingAlignWatchSeconds": 12,
+  "alignHeadingAfterJump": false,
   "enableStemming": false,
   "stemmingLanguage": "en",
   "fuzzyMatchThreshold": 80,
@@ -95,11 +110,14 @@
   "enableInternalLinkSyntax": false,
   "enableContextDisambiguation": false,
   "jumpEnabled": true,
-  "jumpDelayMs": 8000,
+  "lineJumpWaitSeconds": 8,
   "jumpOpenInNewTab": true,
   "lineLinkSelfHeal": false,
   "autoExcludeContainedCopies": false,
   "filenameAffixExclusions": [],
+  "virtualLinkRequireModifier": false,
+  "headerJumpRetryDelay": 500,
+  "jumpDelayMs": 8000,
   "__fakelinkSizeCache": {
     "images": {},
     "pdf": {},
@@ -172,10 +190,22 @@
           "h": 49
         }
       ],
-      "диплом-roadmap-обучения": [
+      "егэ-математика-стратегия": [
         {
-          "w": 400,
-          "h": 2420
+          "w": 700,
+          "h": 441
+        }
+      ],
+      "Стратегирование": [
+        {
+          "w": 700,
+          "h": 375
+        }
+      ],
+      "циклы движения по VENOM": [
+        {
+          "w": 700,
+          "h": 99
         }
       ]
     },
