@@ -3,7 +3,6 @@
   const anyNote = app.vault.getMarkdownFiles()[0];
   const { obsidian } = await templater.functions_generator.generate_object(templater.create_running_config(anyNote, anyNote, 0), 0);
   const PREFIX = 'zz convtest';
-  const PRIMARY_LABEL = '📝 Primary (basic)';
   const keep = window.__convTestKeep === true;
   delete window.__convTestKeep;
   const results = [];
@@ -162,8 +161,8 @@
     linker: ['base/notes', 'See [[zz convtest target]] and [[base/notes/zz convtest target|alias text]].\n'],
     'empty fm': ['base/notes', '---\n---\nEmpty fm body\n'],
     plain: ['base/notes', 'Plain text only\n'],
-    cancel: ['base/notes', '---\ntags:\n  - note/basic/primary\n---\n\nCancel body\n'],
-    broken: ['base/notes', '---\ntags:\n  - note/basic/primary\n---\n\nBroken body\n'],
+    cancel: ['base/notes', '---\ntags:\n  - note/basic/primary\naliases:\nicon: 📝\ncolor: "#70a0b5"\n---\n\nCancel body\n'],
+    broken: ['base/notes', '---\ntags:\n  - note/basic/primary\naliases:\nicon: 📝\ncolor: "#70a0b5"\n---\n\nBroken body\n'],
     'bad template': ['base/notes', 'Placeholder\n'],
     canvas: ['base/notes', '{"nodes":[],"edges":[]}', 'zz convtest canvas', 'canvas'],
     paper: ['sources', '---\ntags:\n  - source/book\naliases:\n  - p1\nstatus: 🟦\nrating: 🌔\nurl: https://example.org\nstart: 2026-03-01\nscientificity: 👓\n---\n\nPaper body\n'],
@@ -177,6 +176,12 @@
     'child meta': ['base/_meta-notes', '---\ntags:\n  - system/high/meta\ncategory:\n  - "[[obsidian]]"\n---\n\nChild meta body\n'],
     'child hierarchy': ['base/_meta-notes', '---\ntags:\n  - system/high/meta\ncategory:\n  - "[[obsidian]]"\n---\n\nChild hierarchy body\n'],
     'moved hierarchy': ['base/_hierarchy', '---\ntags:\n  - system/high/hierarchy\ncategory:\n  - "[[obsidian]]"\nmeta:\n  - "[[zz convtest parent meta]]"\nproblem:\n  - "[[zz convtest parent problem]]"\n---\n\nMoved hierarchy body\n'],
+    'two categories': ['base/_hierarchy', '---\ntags:\n  - system/high/hierarchy\ncategory:\n  - "[[obsidian]]"\n  - "[[linux]]"\n---\n\nTwo categories body\n'],
+    'short placed': ['base/notes', '---\ntags:\n  - note/basic/primary\ncategory:\n  - "[[obsidian]]"\n---\n\nShort placed body\n'],
+    'nested section': ['projects', projectNote('## Goals\n\nGoal text', '')],
+    'changed tabs': ['projects', projectNote('Changed tabs text', '').replace('hide task count', 'hide task count\nshort mode')],
+    'no fm template': ['base/notes', '---\ntags:\n  - note/basic/primary\naliases:\nicon: 📝\ncolor: "#70a0b5"\n---\n\nNo fm body\n'],
+    'bad folder': ['base/notes', '---\ntags:\n  - note/basic/primary\naliases:\nicon: 📝\ncolor: "#70a0b5"\n---\n\nBad folder body\n'],
     'project again': ['projects', projectNote('What the project is about', '- [ ] first task')],
     'project twice': ['projects', projectNote('', '')],
     'project to book': ['projects', projectNote('Kept description text', '')],
@@ -207,10 +212,12 @@
 
     await test('people: contact keeps aliases, created, description, strips old tabs, drops note props', async () => {
       const file = files.contact;
-      const { notices } = await convert(file, ['👥 people', '👤 Working']);
+      const { menus, notices } = await convert(file, ['👥 people']);
+      ok(!menus.slice(1).some((menu) => menu.items.some((item) => item?.template)), 'type menu shown');
+      ok(menus[1]?.labels.some((label) => /^✓ .* obsidian( \|.*)?$/.test(label)), 'category not asked');
       same(file.path, 'base/contacts/zz convtest contact.md', 'path');
       const { text, fm, body } = await parse(file);
-      ok(String(fm.tags?.[0]).startsWith('contact/'), `tags ${fm.tags}`);
+      same(fm.tags?.[0], 'contact/working', 'type tag');
       ok(!fm.tags.includes('note/basic/primary') && !fm.tags.includes('mark/scene'), 'old tags kept');
       ok(!('deck' in fm), 'deck kept on template type');
       same(fm.aliases, ['first alias'], 'aliases');
@@ -223,24 +230,24 @@
       ok(notices.some((n) => n.startsWith('Converted')), `notices ${notices}`);
     });
 
-    await test('people: creator from note without frontmatter fills created, empty aliases', async () => {
+    await test('people: note without frontmatter fills created, empty aliases', async () => {
       const file = files.creator;
-      await convert(file, ['👥 people', '👩🏻‍💻 Writer']);
-      same(file.path, 'base/creators/zz convtest creator.md', 'path');
+      await convert(file, ['👥 people']);
+      same(file.path, 'base/contacts/zz convtest creator.md', 'path');
       const { text, fm, body } = await parse(file);
-      ok(String(fm.tags?.[0]).startsWith('creator/'), `tags ${fm.tags}`);
+      same(fm.tags?.[0], 'contact/working', 'type tag');
       ok(isToday(fm.created), `created ${fm.created}`);
       same(fm.aliases, [], 'aliases');
       ok(body.endsWith('Creator plain body'), 'body');
       same(count(text, '~~~~tabs'), 1, 'tabs blocks');
     });
 
-    await test('people: production from CRLF note keeps alias and strips CRLF tabs', async () => {
+    await test('people: CRLF note keeps alias and strips CRLF tabs', async () => {
       const file = files.production;
-      await convert(file, ['👥 people', '💼 Company']);
-      same(file.path, 'base/productions/zz convtest production.md', 'path');
+      await convert(file, ['👥 people']);
+      same(file.path, 'base/contacts/zz convtest production.md', 'path');
       const { text, fm, body } = await parse(file);
-      ok(String(fm.tags?.[0]).startsWith('production/'), `tags ${fm.tags}`);
+      same(fm.tags?.[0], 'contact/working', 'type tag');
       same(fm.aliases, ['crlf alias'], 'aliases');
       ok(!text.includes('\r'), 'CRLF left');
       same(count(text, '~~~~tabs'), 1, 'tabs blocks');
@@ -328,7 +335,7 @@
 
     await test('note: source → primary drops old props, keeps category tag', async () => {
       const file = files['from source'];
-      await convert(file, ['📝 note', PRIMARY_LABEL]);
+      await convert(file, ['📝 note']);
       same(file.path, 'base/notes/zz convtest from source.md', 'path');
       const { text, fm, body } = await parse(file);
       same(Object.keys(fm).sort(), ['aliases', 'color', 'created', 'cssclasses', 'deck', 'icon', 'tags', 'updated'], 'keys');
@@ -340,34 +347,35 @@
       same(body, 'Source body', 'body');
     });
 
-    await test('note: primary → claim keeps deck, cssclasses, category and mark tags in place', async () => {
+    await test('note: no type menu, primary in place keeps deck, cssclasses, category and mark tags', async () => {
       const file = files.claim;
       const before = ours().length;
-      await convert(file, ['📝 note', '❗ Claim (discourse)']);
+      const { menus } = await convert(file, ['📝 note']);
+      same(menus.length, 1, 'menus');
       same(file.path, 'base/notes/zz convtest claim.md', 'path');
       same(ours().length, before, 'file count');
       const { fm, body } = await parse(file);
-      same(fm.tags[0], 'note/discourse/claim', 'type tag');
-      same([...fm.tags].sort(), ['category/obsidian', 'mark/scene', 'note/discourse/claim'], 'tags');
+      same(fm.tags[0], 'note/basic/primary', 'type tag');
+      same([...fm.tags].sort(), ['category/obsidian', 'mark/scene', 'note/basic/primary'], 'tags');
       same(fm.deck, 'obsidian::claims', 'deck');
       same(fm.cssclasses, ['full-width'], 'cssclasses');
       same(fm.aliases, ['solo'], 'aliases');
       same(body, 'Claim body', 'body');
     });
 
-    await test('note: contact → specific code moves to base/notes, drops production', async () => {
+    await test('note: contact → primary moves to base/notes, drops production', async () => {
       const file = files.code;
-      await convert(file, ['📝 note', '</> Code (specific)']);
+      await convert(file, ['📝 note']);
       same(file.path, 'base/notes/zz convtest code.md', 'path');
       const { fm, body } = await parse(file);
-      same(fm.tags, ['note/specific/code'], 'tags');
+      same(fm.tags, ['note/basic/primary'], 'tags');
       ok(!('production' in fm) && !('relevant' in fm), 'old props kept');
       same(body, 'Code body', 'body');
     });
 
     await test('name clash in target folder gets a free name', async () => {
       const file = files.clash;
-      await convert(file, ['👥 people', '👤 Working']);
+      await convert(file, ['👥 people']);
       same(file.path, 'base/contacts/zz convtest clash 1.md', 'path');
       await untouched(files['clash other'], snaps['clash other'], false);
       ok((await parse(file)).body.endsWith('Clash body'), 'body');
@@ -376,7 +384,7 @@
     await test('inbound links resolve after move', async () => {
       const file = files.target;
       const linker = files.linker;
-      await convert(file, ['👥 people', '👤 Working']);
+      await convert(file, ['👥 people']);
       same(file.path, 'base/contacts/zz convtest target.md', 'path');
       const resolved = await until(() => {
         const links = app.metadataCache.getFileCache(linker)?.links ?? [];
@@ -387,21 +395,21 @@
       ok(text.includes('|alias text]]'), `alias lost: ${text}`);
     });
 
-    await test('empty frontmatter ---\\n--- → seed', async () => {
+    await test('empty frontmatter ---\\n--- → primary', async () => {
       const file = files['empty fm'];
-      await convert(file, ['📝 note', '🌱 Seed (basic)']);
+      await convert(file, ['📝 note']);
       same(file.path, 'base/notes/zz convtest empty fm.md', 'path');
       const { text, fm, body } = await parse(file);
-      same(fm.tags, ['note/basic/seed'], 'tags');
+      same(fm.tags, ['note/basic/primary'], 'tags');
       same(body, 'Empty fm body', 'body');
       same(count(text, '---'), 2, 'frontmatter fences');
     });
 
-    await test('no frontmatter → evergreen', async () => {
+    await test('no frontmatter → primary', async () => {
       const file = files.plain;
-      await convert(file, ['📝 note', '🌲 Evergreen (basic)']);
+      await convert(file, ['📝 note']);
       const { fm, body } = await parse(file);
-      same(fm.tags, ['note/basic/evergreen'], 'tags');
+      same(fm.tags, ['note/basic/primary'], 'tags');
       ok(isToday(fm.created), `created ${fm.created}`);
       same(body, 'Plain text only', 'body');
     });
@@ -413,7 +421,7 @@
     });
 
     await test('cancel at menu 2 leaves note untouched', async () => {
-      const { menus } = await convert(files.cancel, ['👥 people', null]);
+      const { menus } = await convert(files.cancel, ['🧠 system', null]);
       same(menus.length, 2, 'menus');
       await untouched(files.cancel, snaps.cancel);
     });
@@ -425,33 +433,22 @@
       const { menus } = await convert(files.cancel, ['🧠 system', null]);
       same(menus[1].labels, ['🔎 Meta-note', '⚡ Problem', '🧬 Hierarchy'], 'system menu');
       ok(!menus[1].items.some((t) => /category\/template\.md$/.test(t.template?.path)), 'category offered');
-      for (const group of ['👥 people', '🏢 project', '🗃️ source']) {
+      for (const group of ['🏢 project', '🗃️ source']) {
         const run = await convert(files.cancel, [group, null]);
         ok(!run.menus[1].items.some((t) => /\/category\b|categories/.test(`${t.template?.path} ${t.folder}`)), `category in ${group}`);
       }
       await untouched(files.cancel, snaps.cancel);
     });
 
-    await test('note menu: Primary first, rest sorted by tag', async () => {
-      const { menus } = await convert(files.cancel, ['📝 note', null]);
-      const items = menus[1].items;
-      same(menus[1].labels[0], PRIMARY_LABEL, 'first label');
-      same(items[0].tag, 'note/basic/primary', 'first tag');
-      const rest = items.slice(1).map((t) => t.tag);
-      same(rest, [...rest].sort((a, b) => a.localeCompare(b)), 'order');
-      ok(['basic', 'discourse', 'specific'].every((kind) => items.some((t) => t.tag.split('/')[1] === kind)), 'kinds');
-      ok(items.every((t) => t.folder === 'base/notes'), 'folders');
-    });
-
     await test('no active file: notice, nothing changes', async () => {
-      const run = await patch(app.workspace, 'getActiveFile', () => null, () => convert(null, ['👥 people', '👤 Working']));
+      const run = await patch(app.workspace, 'getActiveFile', () => null, () => convert(null, ['👥 people']));
       same(run.menus.length, 0, 'menus');
       same(run.notices, ['Open the note to convert.'], 'notices');
       await untouched(files.cancel, snaps.cancel);
     });
 
     await test('non-md active file: notice, nothing changes', async () => {
-      const run = await convert(files.canvas, ['👥 people', '👤 Working']);
+      const run = await convert(files.canvas, ['👥 people']);
       ok(app.workspace.getActiveFile() === files.canvas, 'canvas is not active');
       same(run.menus.length, 0, 'menus');
       same(run.notices, ['Open the note to convert.'], 'notices');
@@ -460,7 +457,7 @@
 
     await test('template render throws: note byte-identical', async () => {
       const fail = () => Promise.reject(new Error('zz convtest render failure'));
-      const run = await patch(templater, 'read_and_parse_template', fail, () => convert(files.broken, ['👥 people', '👤 Working']));
+      const run = await patch(templater, 'read_and_parse_template', fail, () => convert(files.broken, ['👥 people']));
       ok(run.notices.some((n) => n.startsWith('Convert type error') && n.includes('render failure')), `notices ${run.notices}`);
       await untouched(files.broken, snaps.broken);
       ok(!templater.files_with_pending_templates?.has(files.broken.path), 'templater task left open');
@@ -468,7 +465,7 @@
 
     await test('template that throws: note byte-identical', async () => {
       const bad = { title: 'zz broken', folder: 'base/contacts', template: files['bad template'] };
-      const run = await convert(files.broken, ['👥 people', () => bad]);
+      const run = await convert(files.broken, ['🗃️ source', () => bad]);
       ok(run.notices.some((n) => n.startsWith('Convert type error')), `notices ${run.notices}`);
       await untouched(files.broken, snaps.broken);
       await untouched(files['bad template'], snaps['bad template']);
@@ -488,14 +485,14 @@
       same(body.split('\n').pop(), 'Paper body', 'body');
     });
 
-    await test('same family: working → client in place keeps production and relevant, one tabs block', async () => {
+    await test('same family: working → working in place keeps production and relevant, one tabs block', async () => {
       const file = files.client;
       const before = ours().length;
-      await convert(file, ['👥 people', '🤝 Client']);
+      await convert(file, ['👥 people']);
       same(file.path, 'base/contacts/zz convtest client.md', 'path');
       same(ours().length, before, 'file count');
       const { text, fm, body } = await parse(file);
-      ok(fm.tags.includes('contact/client'), `tags ${fm.tags}`);
+      ok(fm.tags.includes('contact/working'), `tags ${fm.tags}`);
       same(fm.production, ['[[zz convtest production]]'], 'production');
       same(fm.relevant, true, 'relevant');
       same(count(text, '~~~~tabs'), 1, 'tabs blocks');
@@ -505,7 +502,7 @@
 
     await test('old tabs kept when the new type has no tabs', async () => {
       const file = files['custom tabs'];
-      await convert(file, ['📝 note', PRIMARY_LABEL]);
+      await convert(file, ['📝 note']);
       same(file.path, 'base/notes/zz convtest custom tabs.md', 'path');
       const { text, body } = await parse(file);
       same(count(text, '~~~~tabs'), 1, 'tabs blocks');
@@ -514,14 +511,14 @@
 
     await test('note: comma-separated string tags keep category and mark', async () => {
       const file = files['string tags'];
-      await convert(file, ['📝 note', '❗ Claim (discourse)']);
-      same([...(await parse(file)).fm.tags].sort(), ['category/obsidian', 'mark/scene', 'note/discourse/claim'], 'tags');
+      await convert(file, ['📝 note']);
+      same([...(await parse(file)).fm.tags].sort(), ['category/obsidian', 'mark/scene', 'note/basic/primary'], 'tags');
     });
 
     await test('note: #-prefixed tags keep category and mark', async () => {
       const file = files['hash tags'];
-      await convert(file, ['📝 note', '🌱 Seed (basic)']);
-      same([...(await parse(file)).fm.tags].sort(), ['category/obsidian', 'mark/scene', 'note/basic/seed'], 'tags');
+      await convert(file, ['📝 note']);
+      same([...(await parse(file)).fm.tags].sort(), ['category/obsidian', 'mark/scene', 'note/basic/primary'], 'tags');
     });
 
     await test('self links as [[path|alias]] and plain name are removed', async () => {
@@ -539,7 +536,7 @@
       const pickParent = (items) => items.find((o) => o.file.basename === 'zz convtest parent meta');
       const { menus } = await convert(file, ['🧠 system', '⚡ Problem', null, pickParent]);
       same(file.path, 'base/_problems/zz convtest child meta.md', 'path');
-      ok(menus[2]?.labels.some((label) => /^✓ .* obsidian$/.test(label)), 'current category not marked');
+      ok(menus[2]?.labels.some((label) => /^✓ .* obsidian( \|.*)?$/.test(label)), 'current category not marked');
       ok(menus[3]?.items.length, 'meta not asked');
       ok(!menus[3].items.some((o) => o.file === file), 'itself offered');
       ok(menus[3].items.every((o) => listOfLinks(o.file, 'category').includes('obsidian')), 'meta from other category offered');
@@ -564,12 +561,52 @@
       const file = files['moved hierarchy'];
       const pickLinux = (items) => items.find((o) => o.file.basename === 'linux');
       const { menus } = await convert(file, ['🧠 system', '🧬 Hierarchy', pickLinux]);
-      ok(menus[2]?.labels.some((label) => /^✓ .* obsidian$/.test(label)), 'current category not marked');
+      ok(menus[2]?.labels.some((label) => /^✓ .* obsidian( \|.*)?$/.test(label)), 'current category not marked');
       ok(!menus.slice(3).some((menu) => menu.items.some((o) => o.file.basename.startsWith('zz convtest parent'))), 'old meta or problem offered');
       const { fm } = await parse(file);
       same(fm.category, ['[[linux]]'], 'category');
       ok(!fm.meta, `meta ${JSON.stringify(fm.meta)}`);
       ok(!fm.problem, `problem ${JSON.stringify(fm.problem)}`);
+    });
+
+    await test('Esc on the category keeps every category of the note', async () => {
+      const file = files['two categories'];
+      await convert(file, ['🧠 system', '🧬 Hierarchy']);
+      same([...(await parse(file)).fm.category].sort(), ['[[linux]]', '[[obsidian]]'], 'category');
+    });
+
+    await test('short project does not ask a category', async () => {
+      const file = files['short placed'];
+      const { menus } = await convert(file, ['🏢 project', '🗞️ Short']);
+      same(menus.length, 2, 'menus');
+      same(file.path, 'projects/zz convtest short placed.md', 'path');
+    });
+
+    await test('section with only subheadings is not empty', async () => {
+      const file = files['nested section'];
+      await convert(file, ['🗃️ source', '_📖 Book']);
+      const { body } = await parse(file);
+      ok(body.endsWith('# Description\n\n## Goals\n\nGoal text'), `body ${body}`);
+    });
+
+    await test('old tabs with changed contents are still replaced', async () => {
+      const file = files['changed tabs'];
+      await convert(file, ['🏢 project', '✏️ Single']);
+      const { text } = await parse(file);
+      same(count(text, '~~~~tabs'), 1, 'tabs blocks');
+      ok(!text.includes('short mode'), 'old tabs left');
+    });
+
+    await test('template without frontmatter: note byte-identical', async () => {
+      const run = await patch(templater, 'read_and_parse_template', async () => 'Just text\n', () => convert(files['no fm template'], ['👥 people']));
+      ok(run.notices.some((n) => n.includes('template has no frontmatter')), `notices ${run.notices}`);
+      await untouched(files['no fm template'], snaps['no fm template']);
+    });
+
+    await test('protected target folder: notice, nothing changes', async () => {
+      const run = await convert(files['bad folder'], ['🗃️ source', (items) => ({ ...items[0], folder: 'base/categories' })]);
+      same(run.notices, ['Bad target folder: base/categories'], 'notices');
+      await untouched(files['bad folder'], snaps['bad folder']);
     });
 
     await test('project → project keeps one Description and one Tasks with their text', async () => {
@@ -617,13 +654,13 @@
       await until(() => app.workspace.getActiveFile() === file);
       const editor = leaf.view.editor;
       editor.replaceRange('Unsaved line\n', { line: editor.lastLine(), ch: 0 });
-      await convert(file, ['👥 people', '👤 Working']);
+      await convert(file, ['👥 people']);
       same(file.path, 'base/contacts/zz convtest unsaved.md', 'path');
       ok((await parse(file)).body.includes('Unsaved line'), 'unsaved text lost');
     });
 
     await test('invalid YAML: notice before any menu, note untouched', async () => {
-      const run = await convert(files['bad yaml'], ['👥 people', '👤 Working']);
+      const run = await convert(files['bad yaml'], ['👥 people']);
       same(run.menus.length, 0, 'menus');
       ok(run.notices.some((n) => n.startsWith('Convert type error')), `notices ${run.notices}`);
       await untouched(files['bad yaml'], snaps['bad yaml']);
@@ -632,7 +669,7 @@
     for (const path of ['base/categories/zz convtest category.md', 'templates/create/contacts/working/template.md']) {
       await test(`protected path refused: ${path.split('/')[0]}/${path.split('/')[1]}`, async () => {
         const fake = Object.assign(Object.create(Object.getPrototypeOf(files.cancel)), { path, extension: 'md', basename: 'x' });
-        const run = await patch(app.workspace, 'getActiveFile', () => fake, () => convert(null, ['👥 people', '👤 Working']));
+        const run = await patch(app.workspace, 'getActiveFile', () => fake, () => convert(null, ['👥 people']));
         same(run.menus.length, 0, 'menus');
         same(run.notices, ['Templates and categories are not converted.'], 'notices');
       });

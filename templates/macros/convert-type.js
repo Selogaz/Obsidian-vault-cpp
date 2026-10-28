@@ -1,21 +1,29 @@
 module.exports = async ({ app, quickAddApi, obsidian }) => {
-  const SYSTEM = 'templates/create/system/category/meta';
+  const CREATE = 'templates/create';
+  const SYSTEM = `${CREATE}/system/category/meta`;
+  const CONTACT = `${CREATE}/contacts/working`;
+  const PRIMARY = `${CREATE}/notes/basic/primary`;
   const GROUPS = [
-    { title: '👥 people', roots: ['templates/create/contacts', 'templates/create/creators', 'templates/create/productions'] },
-    { title: '🏢 project', roots: ['templates/create/projects'] },
-    { title: '🗃️ source', roots: ['templates/create/sources'] },
+    { title: '👥 people', paths: [CONTACT] },
+    { title: '🏢 project', paths: [`${CREATE}/projects/*`] },
+    { title: '🗃️ source', paths: [`${CREATE}/sources/*`] },
     { title: '🧠 system', paths: [SYSTEM, `${SYSTEM}/problem`, `${SYSTEM}/problem/hierarchy`] },
-    { title: '📝 note', notes: 'templates/create/notes' },
+    { title: '📝 note', paths: [PRIMARY] },
   ];
-  const SKIPPED = ['templates/create/projects/longform'];
+  const SKIPPED = [`${CREATE}/projects/longform`];
   const PROTECTED = /^(templates|base\/categories)\//;
-  const PRIMARY = 'note/basic/primary';
   const KEPT_TAGS = /^(category|mark)\//;
   const OWN_KEYS = ['tags', 'aliases', 'icon', 'color', 'created', 'updated'];
+  const PLACE = ['category', 'meta', 'problem'];
+  const ICONS = { 'system/category': '🗺️', 'system/high/meta': '🔎', 'system/high/problem': '⚡' };
+  const ASKS_CATEGORY = /tp\.user\.category\(/;
+  const PLACEHOLDER = '💤';
   const CURSOR = /<%\s*tp\.file\.cursor\(\d*\)\s*%>/g;
   const TABS = /^~~~~tabs\n[\s\S]*?\n~~~~(?=\n|$)/gm;
+  const LEADING_TABS = /^~~~~tabs\n[\s\S]*?\n~~~~(?=\n|$)/;
   const HEADING = /^#{1,6} \S.*$/gm;
-  const HEADING_LINE = /^#{1,6} \S/;
+  const TEMPLATER = ['start_templater_task', 'end_templater_task', 'create_running_config', 'read_and_parse_template'];
+  const RUN_CREATE = 0;
 
   const file = app.workspace.getActiveFile();
   if (file?.extension !== 'md') {
@@ -27,7 +35,7 @@ module.exports = async ({ app, quickAddApi, obsidian }) => {
     return;
   }
   const templater = app.plugins.plugins['templater-obsidian']?.templater;
-  if (!templater?.read_and_parse_template) {
+  if (!TEMPLATER.every((key) => typeof templater?.[key] === 'function')) {
     new obsidian.Notice('Templater is not available.');
     return;
   }
@@ -36,43 +44,37 @@ module.exports = async ({ app, quickAddApi, obsidian }) => {
     const manifest = app.vault.getFileByPath(`${path}/manifest.md`);
     return manifest ? app.metadataCache.getFileCache(manifest)?.frontmatter : undefined;
   };
-  const folderOf = (manifest, fallback = '') => String(manifest?.enforce_folder ?? manifest?.folder ?? '').trim() || fallback;
+  const parentOf = (path) => path.slice(0, path.lastIndexOf('/'));
+  const folderOf = (path) => {
+    for (let at = path; at.startsWith(`${CREATE}/`); at = parentOf(at)) {
+      const manifest = manifestOf(at);
+      const folder = String(manifest?.enforce_folder ?? manifest?.folder ?? '').trim();
+      if (folder) return folder;
+    }
+    return '';
+  };
   const subfolders = (path) => (app.vault.getFolderByPath(path)?.children ?? [])
     .filter((child) => child instanceof obsidian.TFolder);
 
-  const templateType = (path, fallback) => {
+  const typeOf = (path) => {
     const manifest = manifestOf(path);
+    const folder = folderOf(path);
+    if (!manifest || !folder) return null;
+    const title = String(manifest.name ?? path.split('/').pop()).trim();
     const template = app.vault.getFileByPath(`${path}/template.md`);
-    const folder = folderOf(manifest, fallback);
-    if (!manifest || !template || !folder) return null;
-    return { title: String(manifest.name ?? path.split('/').pop()).trim(), folder, template };
+    if (template) return { title, folder, template };
+    const tag = String(manifest.target?.query ?? '').match(/#([\w/-]+)/)?.[1];
+    return tag ? { title, folder, tag, fields: manifest.fields } : null;
   };
 
-  const noteType = (path, folder) => {
-    const manifest = manifestOf(path);
-    const tag = String(manifest?.target?.query ?? '').match(/#([\w/-]+)/)?.[1];
-    if (!tag) return null;
-    return { title: `${String(manifest.name ?? tag).trim()} (${tag.split('/')[1]})`, folder, tag, fields: manifest.fields };
-  };
-
-  const typesOf = (group) => {
-    if (group.paths) return group.paths.map((path) => templateType(path)).filter(Boolean);
-    if (group.notes) {
-      const folder = folderOf(manifestOf(group.notes), 'base/notes');
-      const rank = (type) => (type.tag === PRIMARY ? 0 : 1);
-      return subfolders(group.notes)
-        .flatMap((kind) => subfolders(kind.path))
-        .map((child) => noteType(child.path, folder))
-        .filter(Boolean)
-        .sort((a, b) => rank(a) - rank(b) || a.tag.localeCompare(b.tag));
-    }
-    return group.roots
-      .flatMap((root) => subfolders(root)
-        .filter((child) => !SKIPPED.includes(child.path))
-        .map((child) => templateType(child.path, folderOf(manifestOf(root)))))
+  const typesOf = (group) => group.paths.flatMap((path) => {
+    if (!path.endsWith('/*')) return [typeOf(path)].filter(Boolean);
+    return subfolders(parentOf(path))
+      .filter((child) => !SKIPPED.includes(child.path))
+      .map((child) => typeOf(child.path))
       .filter(Boolean)
       .sort((a, b) => a.title.localeCompare(b.title));
-  };
+  });
 
   await app.workspace.getActiveViewOfType(obsidian.MarkdownView)?.save();
   const text = await app.vault.read(file);
@@ -88,8 +90,16 @@ module.exports = async ({ app, quickAddApi, obsidian }) => {
   const group = await quickAddApi.suggester(GROUPS.map((g) => g.title), GROUPS);
   if (!group) return;
   const types = typesOf(group);
-  const type = await quickAddApi.suggester(types.map((t) => t.title), types);
+  if (!types.length) {
+    new obsidian.Notice(`No types for ${group.title}.`);
+    return;
+  }
+  const type = types.length === 1 ? types[0] : await quickAddApi.suggester(types.map((t) => t.title), types);
   if (!type) return;
+  if (PROTECTED.test(`${type.folder}/`) || !app.vault.getFolderByPath(type.folder)) {
+    new obsidian.Notice(`Bad target folder: ${type.folder}`);
+    return;
+  }
 
   const listOf = (value) => [value ?? []].flat()
     .filter((item) => item != null && item !== '' && typeof item !== 'object')
@@ -102,18 +112,24 @@ module.exports = async ({ app, quickAddApi, obsidian }) => {
     obsidian.parseLinktext(link.replace(/^\[\[|\]\]$/g, '').split('|')[0]).path,
     from,
   );
+  const targetsOf = (links) => new Set(listOf(links).map((link) => targetOf(link, file.path)).filter(Boolean));
   const isSelf = (link) => targetOf(link, file.path) === file;
+  const linkTo = (target) => `[[${app.metadataCache.fileToLinktext(target, file.path, true)}]]`;
 
   const pinned = (option) => (option.fm.relevant === true ? 0 : 1);
   const tagged = (tag) => app.vault.getMarkdownFiles()
     .filter((f) => f !== file)
-    .map((f) => ({ file: f, fm: app.metadataCache.getFileCache(f)?.frontmatter ?? {} }))
+    .map((f) => ({ file: f, fm: app.metadataCache.getFileCache(f)?.frontmatter ?? {}, tag }))
     .filter(({ fm: other }) => {
       const tags = tagsOf(other.tags);
       return tags.includes(tag) && !tags.includes('mark/ignore');
     })
     .sort((a, b) => pinned(a) - pinned(b) || a.file.basename.localeCompare(b.file.basename));
-  const labelOf = ({ file: f, fm: other }, mark = '') => `${mark}${other.relevant === true ? '📌' : ''}${other.icon ?? ''} ${f.basename}`.trim();
+  const labelOf = ({ file: f, fm: other, tag }, mark = '') => {
+    const aggregator = tagsOf(other.tags).includes('mark/aggregator') ? '⇶' : '';
+    const aliases = listOf(other.aliases);
+    return `${mark}${other.relevant === true ? '📌' : ''}${aggregator}${other.icon || ICONS[tag]} ${f.basename}${aliases.length ? ` | ${aliases.join(', ')}` : ''}`;
+  };
   const linksUnder = (fm, key, parentKey, parents) => listOf(fm[key]).filter((link) => {
     const target = targetOf(link, file.path);
     const own = target && app.metadataCache.getFileCache(target)?.frontmatter;
@@ -122,36 +138,35 @@ module.exports = async ({ app, quickAddApi, obsidian }) => {
 
   const askMissing = async (fm, key, tag, parentKey) => {
     if (!(key in fm) || !isEmpty(fm[key])) return;
-    const parents = new Set(listOf(fm[parentKey]).map((link) => targetOf(link, file.path)).filter(Boolean));
+    const parents = targetsOf(fm[parentKey]);
     if (!parents.size) return;
     const options = tagged(tag)
       .filter(({ file: f, fm: other }) => listOf(other[parentKey]).some((link) => parents.has(targetOf(link, f.path))));
     if (!options.length) return;
     const choice = await quickAddApi.suggester(options.map((option) => labelOf(option)), options);
-    if (choice) fm[key] = [`[[${choice.file.basename}]]`];
+    if (choice) fm[key] = [linkTo(choice.file)];
   };
 
   const askCategory = async (fm) => {
-    const current = new Set(listOf(fm.category).map((link) => targetOf(link, file.path)).filter(Boolean));
+    const current = targetsOf(fm.category);
     const options = tagged('system/category');
     if (!options.length) return;
     const labels = options.map((option) => labelOf(option, current.has(option.file) ? '✓ ' : ''));
     const choice = await quickAddApi.suggester(labels, options);
     if (!choice || (current.size === 1 && current.has(choice.file))) return;
-    fm.category = [`[[${choice.file.basename}]]`];
+    fm.category = [linkTo(choice.file)];
     if ('meta' in fm) {
       const metas = linksUnder(fm, 'meta', 'category', new Set([choice.file]));
       fm.meta = metas.length ? metas : null;
     }
     if ('problem' in fm) {
-      const parents = new Set(listOf(fm.meta).map((link) => targetOf(link, file.path)).filter(Boolean));
-      const problems = linksUnder(fm, 'problem', 'meta', parents);
+      const problems = linksUnder(fm, 'problem', 'meta', targetsOf(fm.meta));
       fm.problem = problems.length ? problems : null;
     }
   };
 
   const plainNote = () => {
-    const now = window.moment().format('YYYY-MM-DDTHH:mm:ssZ');
+    const now = obsidian.moment().format('YYYY-MM-DDTHH:mm:ssZ');
     const fm = {
       tags: [type.tag],
       aliases: [],
@@ -169,57 +184,70 @@ module.exports = async ({ app, quickAddApi, obsidian }) => {
     if (type.tag) return plainNote();
     templater.start_templater_task(file.path);
     try {
-      return await templater.read_and_parse_template(templater.create_running_config(type.template, file, 0));
+      return await templater.read_and_parse_template(templater.create_running_config(type.template, file, RUN_CREATE));
     } finally {
       await templater.end_templater_task(file.path);
     }
   };
 
+  const levelOf = (line) => line.match(/^(#{1,6}) \S/)?.[1].length;
+  const dropEmptySections = (part, drop) => {
+    const lines = part.split('\n');
+    return lines.filter((line, i) => {
+      const level = levelOf(line);
+      if (!level || !drop(line)) return true;
+      const end = lines.findIndex((l, j) => j > i && levelOf(l) <= level);
+      return lines.slice(i + 1, end < 0 ? undefined : end).some((l) => l.trim());
+    }).join('\n').replace(/\n{3,}/g, '\n\n').trim();
+  };
+  const tabsKey = (block) => block.split('\n').filter((line) => /^\s*tab:/.test(line)).join('\n');
+
   try {
     const rendered = (await render()).replace(CURSOR, '');
     const head = obsidian.getFrontMatterInfo(rendered);
+    if (!head.exists) throw new Error(`${type.title}: template has no frontmatter`);
     const fm = obsidian.parseYaml(head.frontmatter) ?? {};
     let tail = rendered.slice(head.contentStart).trim();
 
     for (const [key, value] of Object.entries(old)) {
       if (!OWN_KEYS.includes(key) && key in fm && isEmpty(fm[key]) && !isEmpty(value)) fm[key] = value;
     }
+    for (const key of PLACE) {
+      if (key in fm && listOf(old[key]).length) fm[key] = listOf(old[key]);
+    }
     fm.aliases = [...new Set([...listOf(fm.aliases), ...listOf(old.aliases)])];
     if (old.created) fm.created = old.created;
     if (type.tag) fm.tags = [...new Set([type.tag, ...tagsOf(old.tags).filter((tag) => KEPT_TAGS.test(tag))])];
-    for (const key of ['category', 'meta', 'problem']) {
+    for (const key of PLACE) {
       if (!(key in fm)) continue;
       const links = listOf(fm[key]).filter((link) => !isSelf(link));
       fm[key] = links.length ? links : null;
     }
-    
-    const templateAsked = !type.tag && ['category', 'meta', 'problem'].every((key) => isEmpty(old[key]));
-    if ('category' in fm && !templateAsked) await askCategory(fm);
-    await askMissing(fm, 'meta', 'system/high/meta', 'category');
-    await askMissing(fm, 'problem', 'system/high/problem', 'meta');
+
+    const asksPlace = !type.tag && 'category' in fm && ASKS_CATEGORY.test(await app.vault.cachedRead(type.template));
+    const placed = PLACE.some((key) => [old[key]].flat().some(Boolean));
+    if (asksPlace) {
+      if (placed) await askCategory(fm);
+      await askMissing(fm, 'meta', 'system/high/meta', 'category');
+      await askMissing(fm, 'problem', 'system/high/problem', 'meta');
+    }
 
     const templates = app.vault.getMarkdownFiles()
-      .filter((f) => f.path.startsWith('templates/create/') && f.name === 'template.md' && !f.path.endsWith('system/category/template.md'));
+      .filter((f) => f.path.startsWith(`${CREATE}/`) && f.name === 'template.md' && !f.path.endsWith('system/category/template.md'));
     const texts = (await Promise.all(templates.map((f) => app.vault.cachedRead(f)))).map((t) => t.replace(/\r\n/g, '\n'));
-    const templateTabs = new Set(texts.flatMap((t) => t.match(TABS) ?? []));
+    const templateTabs = new Set(texts.flatMap((t) => t.match(TABS) ?? []).map(tabsKey).filter(Boolean));
     const templateHeadings = new Set(texts.flatMap((t) => t.match(HEADING) ?? []));
     const headingsOf = (part) => new Set(part.match(HEADING) ?? []);
 
     let body = text.slice(info.contentStart).replace(/\r\n/g, '\n').trim();
-    const oldTabs = body.match(new RegExp(TABS.source))?.[0];
-    if (oldTabs && templateTabs.has(oldTabs)) body = body.slice(oldTabs.length).trim();
+    const oldTabs = body.match(LEADING_TABS)?.[0];
+    if (oldTabs && templateTabs.has(tabsKey(oldTabs))) body = body.slice(oldTabs.length).trim();
 
     const tailHeadings = headingsOf(tail);
-    const lines = body.split('\n');
-    body = lines.filter((line, i) => {
-      if (!templateHeadings.has(line) || tailHeadings.has(line)) return true;
-      const next = lines.slice(i + 1).findIndex((l) => HEADING_LINE.test(l));
-      return lines.slice(i + 1, next < 0 ? undefined : i + 1 + next).some((l) => l.trim());
-    }).join('\n').replace(/\n{3,}/g, '\n\n').trim();
-
+    body = dropEmptySections(body, (line) => templateHeadings.has(line) && !tailHeadings.has(line));
     const bodyHeadings = headingsOf(body);
-    tail = tail.split('\n').filter((line) => !bodyHeadings.has(line)).join('\n').replace(/\n{3,}/g, '\n\n').trim();
-    const content = [body && tail === '💤' ? '' : tail, body].filter(Boolean).join('\n\n');
+    tail = dropEmptySections(tail, (line) => bodyHeadings.has(line));
+    const content = [body && tail === PLACEHOLDER ? '' : tail, body].filter(Boolean).join('\n\n');
 
     if (file.parent?.path !== type.folder) {
       await app.fileManager.renameFile(file, app.vault.getAvailablePath(`${type.folder}/${file.basename}`, 'md'));
