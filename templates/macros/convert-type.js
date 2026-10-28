@@ -131,8 +131,6 @@ module.exports = async ({ app, quickAddApi, obsidian }) => {
     if (choice) fm[key] = [`[[${choice.file.basename}]]`];
   };
 
-  // Esc keeps the current categories; a new choice replaces them and drops
-  // the meta-notes and problems that do not sit under it.
   const askCategory = async (fm) => {
     const current = new Set(listOf(fm.category).map((link) => targetOf(link, file.path)).filter(Boolean));
     const options = tagged('system/category');
@@ -194,7 +192,7 @@ module.exports = async ({ app, quickAddApi, obsidian }) => {
       const links = listOf(fm[key]).filter((link) => !isSelf(link));
       fm[key] = links.length ? links : null;
     }
-    // The template itself asks only for a note with no place at all.
+    
     const templateAsked = !type.tag && ['category', 'meta', 'problem'].every((key) => isEmpty(old[key]));
     if ('category' in fm && !templateAsked) await askCategory(fm);
     await askMissing(fm, 'meta', 'system/high/meta', 'category');
