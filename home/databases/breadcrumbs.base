@@ -4,7 +4,6 @@ filters:
     - '!file.inFolder("templates")'
     - '!file.inFolder("files")'
     - '!file.inFolder("home")'
-    - file.path != this.file.path
 formulas:
   fm_out: this.file.properties.values() .map(list(value)).flat() .map(value.toString()) .filter(value.contains("[[")) .map(link(value)) .map(file(value)) .contains(file)
   in_any: file.links.contains(this.file)
@@ -53,6 +52,41 @@ views:
         direction: ASC
     columnSize:
       formula.icon: 1
+  - type: structure
+    name: 🌳 structure
+    filters:
+      or:
+        - file.inFolder("base/categories")
+        - file.inFolder("base/_meta-notes")
+        - file.inFolder("base/_problems")
+        - file.inFolder("base/_hierarchy")
+    layout: outline
+    inherit:
+      - category
+      - meta
+      - problem
+    types:
+      Category:
+        tag: system/category
+        folder: base/categories
+        children:
+          Meta-note: category
+          Hierarchy: category
+      Meta-note:
+        tag: system/high/meta
+        folder: base/_meta-notes
+        children:
+          Problem: meta
+          Hierarchy: meta
+      Problem:
+        tag: system/high/problem
+        folder: base/_problems
+        children:
+          Hierarchy: problem
+      Hierarchy:
+        tag: system/high/hierarchy
+        children:
+          Hierarchy: file.backlinks
   - type: table
     name: 🎲 random
     filters:

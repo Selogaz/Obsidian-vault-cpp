@@ -42,204 +42,6 @@
                   "icon": "calendar-with-checkmark",
                   "title": "Calendar"
                 }
-              },
-              {
-                "id": "4247943d03ca86d9",
-                "type": "leaf",
-                "state": {
-                  "type": "localgraph",
-                  "state": {
-                    "options": {
-                      "collapse-filter": true,
-                      "search": "",
-                      "localJumps": 1,
-                      "localBacklinks": true,
-                      "localForelinks": true,
-                      "localInterlinks": true,
-                      "showTags": false,
-                      "showAttachments": false,
-                      "hideUnresolved": false,
-                      "collapse-color-groups": true,
-                      "colorGroups": [
-                        {
-                          "query": "tag:#note/basic",
-                          "color": {
-                            "a": 1,
-                            "rgb": 9486517
-                          }
-                        },
-                        {
-                          "query": "tag:#note/specific",
-                          "color": {
-                            "a": 1,
-                            "rgb": 14543214
-                          }
-                        },
-                        {
-                          "query": "tag:#system/category",
-                          "color": {
-                            "a": 1,
-                            "rgb": 3509376
-                          }
-                        },
-                        {
-                          "query": "tag:#system/supercategory",
-                          "color": {
-                            "a": 1,
-                            "rgb": 13684936
-                          }
-                        },
-                        {
-                          "query": "tag:#system/high/hierarchy",
-                          "color": {
-                            "a": 1,
-                            "rgb": 10551504
-                          }
-                        },
-                        {
-                          "query": "tag:#system/high/meta",
-                          "color": {
-                            "a": 1,
-                            "rgb": 8283336
-                          }
-                        },
-                        {
-                          "query": "tag:#system/high/problem",
-                          "color": {
-                            "a": 1,
-                            "rgb": 14266432
-                          }
-                        },
-                        {
-                          "query": "tag:#periodic",
-                          "color": {
-                            "a": 1,
-                            "rgb": 6450848
-                          }
-                        },
-                        {
-                          "query": "tag:#project/short",
-                          "color": {
-                            "a": 1,
-                            "rgb": 11898992
-                          }
-                        },
-                        {
-                          "query": "tag:#project/single",
-                          "color": {
-                            "a": 1,
-                            "rgb": 13136181
-                          }
-                        },
-                        {
-                          "query": "tag:#project/longform",
-                          "color": {
-                            "a": 1,
-                            "rgb": 6526389
-                          }
-                        },
-                        {
-                          "query": "tag:#mark/log OR tag:#mark/addition",
-                          "color": {
-                            "a": 1,
-                            "rgb": 9486517
-                          }
-                        },
-                        {
-                          "query": "tag:#source/article",
-                          "color": {
-                            "a": 1,
-                            "rgb": 8743104
-                          }
-                        },
-                        {
-                          "query": "tag:#source/book",
-                          "color": {
-                            "a": 1,
-                            "rgb": 13093232
-                          }
-                        },
-                        {
-                          "query": "tag:#source/course",
-                          "color": {
-                            "a": 1,
-                            "rgb": 8026677
-                          }
-                        },
-                        {
-                          "query": "tag:#source/cinematic",
-                          "color": {
-                            "a": 1,
-                            "rgb": 13854037
-                          }
-                        },
-                        {
-                          "query": "tag:#source/podcast",
-                          "color": {
-                            "a": 1,
-                            "rgb": 3503504
-                          }
-                        },
-                        {
-                          "query": "tag:#source/video",
-                          "color": {
-                            "a": 1,
-                            "rgb": 3509376
-                          }
-                        },
-                        {
-                          "query": "tag:#creator",
-                          "color": {
-                            "a": 1,
-                            "rgb": 14462048
-                          }
-                        },
-                        {
-                          "query": "tag:#production",
-                          "color": {
-                            "a": 1,
-                            "rgb": 13850949
-                          }
-                        },
-                        {
-                          "query": "tag:#contact",
-                          "color": {
-                            "a": 1,
-                            "rgb": 4718773
-                          }
-                        },
-                        {
-                          "query": "tag:#mark/gtd",
-                          "color": {
-                            "a": 1,
-                            "rgb": 4587361
-                          }
-                        },
-                        {
-                          "query": "tag:#mark/scene",
-                          "color": {
-                            "a": 1,
-                            "rgb": 14600064
-                          }
-                        }
-                      ],
-                      "collapse-display": true,
-                      "showArrow": true,
-                      "textFadeMultiplier": 0,
-                      "nodeSizeMultiplier": 1,
-                      "lineSizeMultiplier": 1,
-                      "collapse-forces": true,
-                      "centerStrength": 0.518713248970312,
-                      "repelStrength": 10,
-                      "linkStrength": 1,
-                      "linkDistance": 250,
-                      "scale": 1,
-                      "close": true
-                    }
-                  },
-                  "icon": "lucide-git-fork",
-                  "title": "Graph view"
-                }
               }
             ]
           },
@@ -265,7 +67,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 348.5,
+        "width": 330.99609375,
         "collapsed": true
       },
       "right": {
@@ -331,11 +133,19 @@
           }
         ],
         "direction": "horizontal",
-        "width": 348.5,
+        "width": 332.69921875,
         "collapsed": true
       },
       "left-ribbon": {
         "hiddenItems": {
+          "periodic-notes:Open today's daily note": false,
+          "zotlit:Open Zotero annotations": false,
+          "dynamic-views:Create new Grid base": false,
+          "dynamic-views:Create new Masonry base": false,
+          "dynamic-views:Shuffle base": false,
+          "dynamic-views:Open random file from base": false,
+          "obsidian-local-images-plus:Local Images Plus  0.17.1\r\nLocalize attachments (plugin folder)": false,
+          "abyss-tasks:Open task view": false,
           "templater-obsidian:Templater": false,
           "daily-notes:Open today's daily note": false,
           "obsidian42-brat:BRAT": false,
@@ -345,12 +155,11 @@
           "obsidian-spaced-repetition:Review flashcards": false,
           "obsidian-excalidraw-plugin:New drawing": false,
           "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-          "periodic-notes:Open today": false,
           "graph:Open graph view": false
         }
       },
       "active": "bda9ef25e60d256c",
-      "mtime": "2026-02-18T20:09:12+07:00"
+      "mtime": "2026-10-27T08:34:02+07:00"
     },
     "search": {
       "main": {
@@ -358,11 +167,11 @@
         "type": "split",
         "children": [
           {
-            "id": "254c978382691039",
+            "id": "869ee376eb4c73a0",
             "type": "tabs",
             "children": [
               {
-                "id": "6079afcdbfeb81c8",
+                "id": "67c9bbbb7ae05f29",
                 "type": "leaf",
                 "state": {
                   "type": "empty",
@@ -404,45 +213,8 @@
                   "icon": "calendar-with-checkmark",
                   "title": "Calendar"
                 }
-              },
-              {
-                "id": "c24c00f17129b420",
-                "type": "leaf",
-                "state": {
-                  "type": "localgraph",
-                  "state": {
-                    "options": {
-                      "collapse-filter": true,
-                      "search": "",
-                      "localJumps": 1,
-                      "localBacklinks": true,
-                      "localForelinks": true,
-                      "localInterlinks": false,
-                      "showTags": false,
-                      "showAttachments": false,
-                      "hideUnresolved": false,
-                      "collapse-color-groups": true,
-                      "colorGroups": [],
-                      "collapse-display": true,
-                      "showArrow": false,
-                      "textFadeMultiplier": 0,
-                      "nodeSizeMultiplier": 1,
-                      "lineSizeMultiplier": 1,
-                      "collapse-forces": true,
-                      "centerStrength": 0.518713248970312,
-                      "repelStrength": 10,
-                      "linkStrength": 1,
-                      "linkDistance": 250,
-                      "scale": 1,
-                      "close": true
-                    }
-                  },
-                  "icon": "lucide-git-fork",
-                  "title": "Graph view"
-                }
               }
-            ],
-            "currentTab": 2
+            ]
           },
           {
             "id": "e5e1529f2a00091d",
@@ -455,7 +227,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "followCursor": false,
+                    "followCursor": true,
                     "showSearch": false,
                     "searchQuery": ""
                   },
@@ -532,6 +304,14 @@
       },
       "left-ribbon": {
         "hiddenItems": {
+          "periodic-notes:Open today's daily note": false,
+          "zotlit:Open Zotero annotations": false,
+          "dynamic-views:Create new Grid base": false,
+          "dynamic-views:Create new Masonry base": false,
+          "dynamic-views:Shuffle base": false,
+          "dynamic-views:Open random file from base": false,
+          "obsidian-local-images-plus:Local Images Plus  0.17.1\r\nLocalize attachments (plugin folder)": false,
+          "abyss-tasks:Open task view": false,
           "obsidian42-brat:BRAT": false,
           "graph:Open graph view": false,
           "daily-notes:Open today's daily note": false,
@@ -540,13 +320,12 @@
           "canvas:Create new canvas": true,
           "workspaces:Manage workspace layouts": true,
           "obsidian-spaced-repetition:Review flashcards": false,
-          "periodic-notes:Open today": false,
           "obsidian-excalidraw-plugin:New drawing": false,
           "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
         }
       },
-      "active": "6079afcdbfeb81c8",
-      "mtime": "2026-02-18T20:09:54+07:00"
+      "active": "67c9bbbb7ae05f29",
+      "mtime": "2026-10-27T08:34:43+07:00"
     },
     "tasks": {
       "main": {
@@ -578,7 +357,7 @@
                           "showSearch": false,
                           "searchQuery": "",
                           "backlinkCollapsed": false,
-                          "unlinkedCollapsed": true
+                          "unlinkedCollapsed": false
                         }
                       },
                       "icon": "lucide-file",
@@ -608,7 +387,7 @@
                           "showSearch": false,
                           "searchQuery": "",
                           "backlinkCollapsed": false,
-                          "unlinkedCollapsed": true
+                          "unlinkedCollapsed": false
                         }
                       },
                       "icon": "lucide-file",
@@ -641,7 +420,7 @@
                       "showSearch": false,
                       "searchQuery": "",
                       "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
+                      "unlinkedCollapsed": false
                     }
                   },
                   "icon": "lucide-file",
@@ -671,43 +450,6 @@
                   "icon": "calendar-with-checkmark",
                   "title": "Calendar"
                 }
-              },
-              {
-                "id": "0484e773a99b97d4",
-                "type": "leaf",
-                "state": {
-                  "type": "localgraph",
-                  "state": {
-                    "file": "periodic/today.md",
-                    "options": {
-                      "collapse-filter": true,
-                      "search": "",
-                      "localJumps": 1,
-                      "localBacklinks": true,
-                      "localForelinks": true,
-                      "localInterlinks": false,
-                      "showTags": false,
-                      "showAttachments": false,
-                      "hideUnresolved": false,
-                      "collapse-color-groups": true,
-                      "colorGroups": [],
-                      "collapse-display": true,
-                      "showArrow": false,
-                      "textFadeMultiplier": 0,
-                      "nodeSizeMultiplier": 1,
-                      "lineSizeMultiplier": 1,
-                      "collapse-forces": true,
-                      "centerStrength": 0.518713248970312,
-                      "repelStrength": 10,
-                      "linkStrength": 1,
-                      "linkDistance": 250,
-                      "scale": 1,
-                      "close": false
-                    }
-                  },
-                  "icon": "lucide-git-fork",
-                  "title": "Graph of today"
-                }
               }
             ]
           },
@@ -733,7 +475,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 348.5,
+        "width": 330.91796875,
         "collapsed": true
       },
       "right": {
@@ -756,7 +498,7 @@
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of inbox"
+                  "title": "Outline"
                 }
               },
               {
@@ -800,11 +542,19 @@
           }
         ],
         "direction": "horizontal",
-        "width": 348.5,
+        "width": 332.92578125,
         "collapsed": true
       },
       "left-ribbon": {
         "hiddenItems": {
+          "periodic-notes:Open today's daily note": false,
+          "zotlit:Open Zotero annotations": false,
+          "dynamic-views:Create new Grid base": false,
+          "dynamic-views:Create new Masonry base": false,
+          "dynamic-views:Shuffle base": false,
+          "dynamic-views:Open random file from base": false,
+          "obsidian-local-images-plus:Local Images Plus  0.17.1\r\nLocalize attachments (plugin folder)": false,
+          "abyss-tasks:Open task view": false,
           "graph:Open graph view": false,
           "templater-obsidian:Templater": false,
           "daily-notes:Open today's daily note": false,
@@ -814,12 +564,11 @@
           "workspaces:Manage workspace layouts": true,
           "obsidian-spaced-repetition:Review flashcards": false,
           "obsidian-excalidraw-plugin:New drawing": false,
-          "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-          "periodic-notes:Open today": false
+          "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
         }
       },
-      "active": "58bc42a2b8ecc4b6",
-      "mtime": "2026-02-18T20:10:09+07:00"
+      "active": "db55c216d0acfbeb",
+      "mtime": "2026-10-27T08:39:45+07:00"
     }
   },
   "active": "default"

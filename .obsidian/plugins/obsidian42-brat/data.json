@@ -1,5 +1,6 @@
 {
   "pluginList": [
+    "flowing-abyss/obsidian-periodic-notes",
     "flowing-abyss/obsidian-abyss-tasks",
     "flowing-abyss/obsidian-bases-structure",
     "flowing-abyss/obsidian-local-fonts",
@@ -12,6 +13,10 @@
     "flowing-abyss/obsidian-calendar-plugin"
   ],
   "pluginSubListFrozenVersion": [
+    {
+      "repo": "flowing-abyss/obsidian-periodic-notes",
+      "version": "latest"
+    },
     {
       "repo": "flowing-abyss/obsidian-abyss-tasks",
       "version": "latest"
@@ -56,7 +61,7 @@
   "themesList": [
     {
       "repo": "flowing-abyss/obsidian-base16-default-dark",
-      "lastUpdate": "28461642"
+      "lastUpdate": "28713915"
     }
   ],
   "updateAtStartup": true,

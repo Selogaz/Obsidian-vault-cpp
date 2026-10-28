@@ -16,6 +16,9 @@ formulas:
   outlinks: file.links.length
   created_relative: created.relative()
   updated_relative: updated.relative()
+  related_notes: '[file.links, file.backlinks].flat().map(value.asFile()).filter(value).filter(value.inFolder("base/notes")).map(value.path).unique().sort().map(link(value, file(value).name))'
+  stats_notes: formula.related_notes.length
+  stats_source: file.name
   category_status: if(!category.isEmpty(), "✅", "❌")
   category_type_valid: if(category.isEmpty(), "✅", if(list(category).filter(value.isType("link") && value.asFile().hasTag("system/category")).length == list(category).length, "✅", "❌"))
   meta_type_valid: if(meta.isEmpty(), "✅", if(list(meta).filter(value.isType("link") && value.asFile().hasTag("system/high/meta")).length == list(meta).length, "✅", "❌"))
@@ -24,7 +27,11 @@ formulas:
   production_type_valid: if(production.isEmpty(), "✅", if(list(production).filter(value.isType("link") && value.asFile().tags.filter(value.startsWith("#production/")).length > 0).length == list(production).length, "✅", "❌"))
   creator_category_valid: if(creator.isEmpty(), "✅", if(list(creator).filter(value.isType("link") && value.asFile() && list(value.asFile().properties.category).filter(list(category).contains(value)).isEmpty()).isEmpty(), "✅", "❌"))
   production_category_valid: if(production.isEmpty(), "✅", if(list(production).filter(value.isType("link") && value.asFile() && list(value.asFile().properties.category).filter(list(category).contains(value)).isEmpty()).isEmpty(), "✅", "❌"))
-  published_year: if(published, published.toString().slice(0, 4), "")
+  stats_status: if(status.contains("⚛"), "① ⚛ Atom", if(status.contains("🟦"), "② 🟦 In Progress", if(status.contains("🟥"), "③ 🟥 ToDo", if(status.contains("📥"), "④ 📥 Inbox", if(status.contains("❄"), "⑤ ❄ Hold", if(status.contains("🟩"), "⑥ 🟩 Done", if(status.contains("📢"), "⑦ 📢 Published", if(status.contains("⬛"), "⑧ ⬛ Drop", "⑨ Other / unset"))))))))
+  stats_rating: if(rating.isEmpty(), "⑥ Not rated", formula.rating)
+  stats_scientificity: if(scientificity.isEmpty(), "⑥ Not classified", formula.scientificity)
+  stats_category: if(category.isEmpty(), list("Unassigned"), category)
+  published_year: if(published.isEmpty(), null, published.toString().slice(0, 4))
   cover_image: image(cover)
   cover_sort: if(cover == null, 0, 1)
   category_valid: if(formula.category_type_valid == "❌", "❌", "✅")
@@ -33,6 +40,22 @@ formulas:
   creator_valid: if(formula.creator_type_valid == "❌" || formula.creator_category_valid == "❌", "❌", "✅")
   production_valid: if(formula.production_type_valid == "❌" || formula.production_category_valid == "❌", "❌", "✅")
 properties:
+  formula.related_notes:
+    displayName: 📝 linked notes
+  formula.stats_notes:
+    displayName: 📝 note count
+  formula.stats_source:
+    displayName: 📚 sources
+  formula.stats_status:
+    displayName: 💯 status
+  formula.stats_rating:
+    displayName: 🌕 rating
+  formula.stats_scientificity:
+    displayName: 🅰️ scientificity
+  formula.stats_category:
+    displayName: 🗺️ category
+  formula.published_year:
+    displayName: 📢 published
   formula.category_valid:
     displayName: ✓
   formula.meta_valid:
@@ -78,9 +101,9 @@ properties:
   file.name:
     displayName: 🔤 title
   formula.backlinks:
-    displayName: 🔽
+    displayName: 🔽 incoming links
   formula.outlinks:
-    displayName: ⬆️
+    displayName: ⬆️ outgoing links
   formula.created_relative:
     displayName: 🆕 created
   formula.updated_relative:
@@ -131,7 +154,7 @@ views:
     columnSize:
       file.name: 530
       note.addition: 90
-      note.zotero: 1
+      note.zotero: 60
       note.status: 1
       note.scientificity: 1
       note.rating: 1
@@ -144,6 +167,8 @@ views:
       - formula.updated_relative
       - formula.type
       - file.name
+      - formula.stats_notes
+      - formula.related_notes
       - addition
       - zotero
       - status
@@ -164,8 +189,10 @@ views:
         direction: DESC
     columnSize:
       file.name: 530
-      formula.backlinks: 1
-      formula.outlinks: 1
+      formula.backlinks: 150
+      formula.outlinks: 150
+      formula.stats_notes: 135
+      formula.related_notes: 320
       note.addition: 90
       note.zotero: 1
       note.status: 1
@@ -799,32 +826,51 @@ views:
   - type: chart-bar
     name: "📈 Statistics: By Types"
     x: formula.type
-    aggregate:file.name: Count
+    y:
+      - formula.stats_source
+    aggregate:formula.stats_source: Count
     show-labels: true
   - type: chart-bar
     name: "📈 Statistics: By Statuses"
     sort:
-      - property: formula.kanban
+      - property: formula.stats_status
         direction: ASC
-    x: note.status
-    aggregate:file.name: Count
+    x: formula.stats_status
+    y:
+      - formula.stats_source
+    aggregate:formula.stats_source: Count
     show-labels: true
   - type: chart-bar
     name: "📈 Statistics: By Ratings"
-    x: note.rating
-    aggregate:file.name: Count
+    sort:
+      - property: formula.stats_rating
+        direction: ASC
+    x: formula.stats_rating
+    y:
+      - formula.stats_source
+    aggregate:formula.stats_source: Count
     show-labels: true
     sync-y-axes: false
   - type: chart-bar
     name: "📈 Statistics: By Scientificity"
-    x: note.scientificity
-    aggregate:file.name: Count
+    sort:
+      - property: formula.stats_scientificity
+        direction: ASC
+    x: formula.stats_scientificity
+    y:
+      - formula.stats_source
+    aggregate:formula.stats_source: Count
     show-labels: true
     sync-y-axes: false
   - type: chart-bar
     name: "📈 Statistics: By Category"
-    x: note.category
-    aggregate:file.name: Count
+    sort:
+      - property: formula.stats_category
+        direction: ASC
+    x: formula.stats_category
+    y:
+      - formula.stats_source
+    aggregate:formula.stats_source: Count
     show-labels: true
     sync-y-axes: false
     show-percentages: false
@@ -832,15 +878,66 @@ views:
     name: "📈 Statistics: By Published"
     filters:
       and:
-        - published != null
+        - "!published.isEmpty()"
     sort:
-      - property: published
+      - property: formula.published_year
         direction: ASC
     x: formula.published_year
-    aggregate:file.name: Count
+    y:
+      - formula.stats_source
+    aggregate:formula.stats_source: Count
     show-labels: true
     sync-y-axes: false
     show-percentages: false
+  - type: chart-bar
+    name: "📈 Statistics: Linked Notes"
+    sort:
+      - property: formula.stats_notes
+        direction: ASC
+    x: formula.stats_notes
+    y:
+      - formula.stats_source
+    aggregate:formula.stats_source: Count
+    show-labels: true
+    show-percentages: false
+    min-y-override: 0
+    color-palette: teal
+  - type: chart-bar
+    name: "📈 Statistics: By End"
+    filters:
+      and:
+        - "!end.isEmpty()"
+        - status.contains("🟩") || status.contains("📢") || status.contains("⬛")
+    groupBy:
+      property: formula.stats_status
+      direction: ASC
+    sort:
+      - property: end
+        direction: ASC
+    bar-layout: stacked
+    x-date-gaps:
+      property: note.end
+      enabled: true
+    group-colors:
+      version: 1
+      overrides:
+        '["String","⑥ 🟩 Done"]':
+          type: preset
+          value: green
+        '["String","⑧ ⬛ Drop"]':
+          type: preset
+          value: gray
+    x: note.end
+    x-date-grouping:
+      property: note.end
+      unit: month
+    y:
+      - formula.stats_source
+    aggregate:formula.stats_source: Count
+    show-labels: true
+    show-percentages: false
+    min-y-override: 0
+    color-palette: earth
   - type: table
     name: ———
     filters:

@@ -6,6 +6,7 @@
     "footnote-sidenotes": true,
     "periodic-breadcrumbs": true,
     "backlinks-defaults": true,
+    "search-context": true,
     "heading-backlinks": true,
     "outline-viewport": true,
     "note-local-graph": true,

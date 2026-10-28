@@ -180,7 +180,8 @@
         3226,
         3227,
         3230,
-        3232
+        3232,
+        3622
       ]
     },
     "JDWBZAA3": {
@@ -548,7 +549,8 @@
         3386,
         3443,
         3454,
-        3456
+        3456,
+        3621
       ]
     },
     "ZVMFRHCY": {
@@ -1432,10 +1434,10 @@
       ],
       "tags": [
         {
-          "tag": "💎"
+          "tag": "🟩"
         },
         {
-          "tag": "🟩"
+          "tag": "💎"
         }
       ],
       "relations": {},
@@ -1471,10 +1473,10 @@
       ],
       "tags": [
         {
-          "tag": "💎"
+          "tag": "🟩"
         },
         {
-          "tag": "🟩"
+          "tag": "💎"
         }
       ],
       "relations": {},
@@ -1547,10 +1549,10 @@
       ],
       "tags": [
         {
-          "tag": "💎"
+          "tag": "🟦"
         },
         {
-          "tag": "🟦"
+          "tag": "💎"
         }
       ],
       "relations": {},
@@ -8028,7 +8030,7 @@
     },
     {
       "key": "4I329KUH",
-      "version": 0,
+      "version": 8567,
       "itemType": "webpage",
       "title": "Snowball - учет инвестиционного портфеля акций и облигаций",
       "abstractNote": "Snowball - учет инвестиций в акции, облигации и криптовалюту, учет дивидендов, календарь выплаты дивидендов, дивидендная доходность портфеля, аналитика и дивиденды компаний",
@@ -8953,6 +8955,43 @@
       "select": "zotero://select/library/items/S2K69IM7"
     },
     {
+      "key": "VJPA6RZ8",
+      "version": 8788,
+      "itemType": "videoRecording",
+      "title": "10 главных AI трендов, которые нельзя упустить: чему учиться и на что не тратить время в эпоху ИИ",
+      "abstractNote": "Чему учиться в эпоху ИИ, чтобы не потратить годы на навыки, которые скоро потеряют ценность? Разбираем 10 главных трендов искусственного интеллекта: что развивать человеку сегодня, чтобы использовать изменения ИИ себе в плюс, а не догонять их завтра. Какие AI-навыки будут нужны дальше и на что больше не стоит тратить время.",
+      "date": "2026",
+      "citationKey": "tothemoon--ai-podkastizkremnievoydoliny10GlavnyhAI2026",
+      "url": "https://www.youtube.com/watch?v=v98y19UbTGQ",
+      "accessDate": "2026-10-20T05:04:53Z",
+      "shortTitle": "10 главных AI трендов, которые нельзя упустить",
+      "libraryCatalog": "YouTube",
+      "runningTime": "49:39",
+      "creators": [
+        {
+          "name": "ToTheMoon — AI-подкаст из Кремниевой Долины",
+          "creatorType": "creator"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-10-20T05:04:53Z",
+      "dateModified": "2026-10-20T05:04:54Z",
+      "uri": "http://zotero.org/users/16981227/items/VJPA6RZ8",
+      "itemID": 3621,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "VJPA6RZ8",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/VJPA6RZ8"
+    },
+    {
       "key": "RSFGB2JT",
       "version": 5841,
       "itemType": "webpage",
@@ -9348,6 +9387,45 @@
       "itemKey": "5UQS9A73",
       "libraryID": 1,
       "select": "zotero://select/library/items/5UQS9A73"
+    },
+    {
+      "key": "5DBK8MJU",
+      "version": 8792,
+      "itemType": "videoRecording",
+      "title": "Как реально работает GPT. Разрушаем мифы блогеров. Часть 1.",
+      "abstractNote": "Часть 1. Введение в концепцию GPT, как трансформер был задуман Google концептуально\nСледующая часть    • Часть 2. Превращаем слова в вектора для GPT  \nЕсли что непонятно, то вопросы можно задать тут https://t.me/turboproject",
+      "date": "2025",
+      "citationKey": "vladimirivanovKakRealnoRabotaet2025",
+      "url": "https://www.youtube.com/watch?v=wNsp1ZH-pyk",
+      "accessDate": "2026-10-23T17:56:11Z",
+      "libraryCatalog": "YouTube",
+      "runningTime": "12:52",
+      "creators": [
+        {
+          "name": "Владимир Иванов",
+          "creatorType": "creator"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "💎"
+        },
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-10-23T17:56:11Z",
+      "dateModified": "2026-10-26T11:45:08Z",
+      "uri": "http://zotero.org/users/16981227/items/5DBK8MJU",
+      "itemID": 3622,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "5DBK8MJU",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/5DBK8MJU"
     },
     {
       "key": "C4A27HL4",
@@ -9905,7 +9983,6 @@
       "itemType": "book",
       "title": "Как привести дела в порядок",
       "citationKey": "zotero-item-3386",
-      "language": "en-US",
       "creators": [
         {
           "name": "Дэвид Аллен",

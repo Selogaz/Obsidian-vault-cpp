@@ -23,12 +23,13 @@ cover: https://opengraph.githubassets.com/d9b4ad6de7aa7dceb117c18602eecdd1908dff
 icon: 📃
 color: "#7575c0"
 created: 2025-05-20T09:14:45+03:00
-updated: 2026-04-02T14:39:02+03:00
+updated: 2026-10-22T10:00:42+04:00
 citekey: вопросы_и_ответы_к_интервью_java_разработчика
 total_hours: 0
 ---
 
 # 🟩 ООП[^1]
+
 > [!check]- ООП
 > - [[ООП]]
 > 	- [[что такое ООП]]
@@ -65,6 +66,7 @@ total_hours: 0
 - [[Java Collections Framework]]
 
 # Concurrency[^5]
+
 - [[java Многопоточность]]
 
 [^1]:

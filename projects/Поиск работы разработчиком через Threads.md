@@ -25,7 +25,7 @@ cover:
 icon: ✏️
 color: "#b87535"
 created: 2026-10-06T14:49:23+04:00
-updated: 2026-10-06T14:52:37+04:00
+updated: 2026-10-26T10:36:29+04:00
 ---
 
 ~~~~tabs
@@ -55,6 +55,8 @@ tab: ✅ Task notes
 # Description
 
 # Tasks
-- [ ] #task/one-off Распланировать посты на месяц ➕ 2026-10-08 📅 2026-10-08
+
+- [x] #task/one-off #context/work/self-product Распланировать посты на месяц ➕ 2026-10-08 📅 2026-10-08 ✅ 2026-10-22
 
 [[30 идей для threads]]
+[[вторая подборка постов для threads]]

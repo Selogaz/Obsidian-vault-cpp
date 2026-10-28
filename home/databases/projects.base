@@ -8,6 +8,7 @@ filters:
             - file.hasTag("category/" + this.file.name.replace(/ /g, "_"))
             - category.contains(link(this.file.name))
 formulas:
+  stats_project: file.name
   cover_image: image(cover)
   cover_sort: if(cover == null, 0, 1)
   type: file.tags.filter(value.startsWith("#project/"))[0].replace(/^.*\//, '')
@@ -25,13 +26,20 @@ formulas:
   creator_category_valid: if(creator.isEmpty(), "✅", if(list(creator).filter(value.isType("link") && value.asFile() && list(value.asFile().properties.category).filter(list(category).contains(value)).isEmpty()).isEmpty(), "✅", "❌"))
   production_type_valid: if(production.isEmpty(), "✅", if(list(production).filter(value.isType("link") && value.asFile().tags.filter(value.startsWith("#production/")).length > 0).length == list(production).length, "✅", "❌"))
   production_category_valid: if(production.isEmpty(), "✅", if(list(production).filter(value.isType("link") && value.asFile() && list(value.asFile().properties.category).filter(list(category).contains(value)).isEmpty()).isEmpty(), "✅", "❌"))
-  end_year: if(end, end.toString().slice(0, 4), "")
+  stats_status: if(status.contains("🟦"), "① 🟦 In Progress", if(status.contains("🟥"), "② 🟥 ToDo", if(status.contains("📥"), "③ 📥 Inbox", if(status.contains("❄"), "④ ❄ Hold", if(status.contains("🟩"), "⑤ 🟩 Done", if(status.contains("📢"), "⑥ 📢 Published", if(status.contains("⬛"), "⑦ ⬛ Drop", "⑧ Other / unset")))))))
+  stats_category: if(category.isEmpty(), list("Unassigned"), category)
   category_valid: if(formula.category_type_valid == "❌", "❌", "✅")
   meta_valid: if(formula.meta_type_valid == "❌", "❌", "✅")
   problem_valid: if(formula.problem_type_valid == "❌", "❌", "✅")
   creator_valid: if(formula.creator_type_valid == "❌" || formula.creator_category_valid == "❌", "❌", "✅")
   production_valid: if(formula.production_type_valid == "❌" || formula.production_category_valid == "❌", "❌", "✅")
 properties:
+  formula.stats_project:
+    displayName: 🚀 projects
+  formula.stats_status:
+    displayName: 💯 status
+  formula.stats_category:
+    displayName: 🗺️ category
   formula.category_valid:
     displayName: ✓
   formula.meta_valid:
@@ -875,20 +883,29 @@ views:
   - type: chart-bar
     name: "📈 Statistics: By Types"
     x: formula.type
-    aggregate:file.name: Count
+    y:
+      - formula.stats_project
+    aggregate:formula.stats_project: Count
     show-labels: true
   - type: chart-bar
     name: "📈 Statistics: By Statuses"
     sort:
-      - property: formula.kanban
+      - property: formula.stats_status
         direction: ASC
-    x: note.status
-    aggregate:file.name: Count
+    x: formula.stats_status
+    y:
+      - formula.stats_project
+    aggregate:formula.stats_project: Count
     show-labels: true
   - type: chart-bar
     name: "📈 Statistics: By Category"
-    x: note.category
-    aggregate:file.name: Count
+    sort:
+      - property: formula.stats_category
+        direction: ASC
+    x: formula.stats_category
+    y:
+      - formula.stats_project
+    aggregate:formula.stats_project: Count
     show-labels: true
     sync-y-axes: false
     show-percentages: false
@@ -896,12 +913,18 @@ views:
     name: "📈 Statistics: By End"
     filters:
       and:
-        - end != null
+        - "!end.isEmpty()"
+        - status.contains("🟩") || status.contains("📢")
     sort:
       - property: end
         direction: ASC
-    x: formula.end_year
-    aggregate:file.name: Count
+    x: note.end
+    x-date-grouping:
+      property: note.end
+      unit: year
+    y:
+      - formula.stats_project
+    aggregate:formula.stats_project: Count
     show-labels: true
     sync-y-axes: false
     show-percentages: false

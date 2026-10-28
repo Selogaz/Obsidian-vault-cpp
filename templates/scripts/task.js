@@ -3,8 +3,8 @@
  * Modes: "new", "delete", "additions"
  *
  * Task structure:
- * - [ ] #task/type #category/name #time/x #effort/x task text 🔺
- * 	- [/] #task/type subtask text
+ * - [ ] #task/type #category/name #time/x #effort/x task text 🔺 ➕ YYYY-MM-DD
+ * 	- [/] #task/type subtask text ➕ YYYY-MM-DD
  * 		- indented line without a checkbox, left as it is
  *
  * Features:
@@ -12,6 +12,7 @@
  * - Indentation is kept as written, tabs or spaces, also inside blockquotes
  * - Indented lines without a checkbox (comments, descriptions, time entries) are left as they are
  * - A legacy ⤵️ subtask marker is removed and never added
+ * - New and additions modes append today's creation date only when none exists
  */
 // ============================================================================
 // CONFIGURATION & CONSTANTS
@@ -281,7 +282,7 @@ class TaskLine {
     this.text = text.trim();
   }
 
-  build() {
+  build(createdDate = '') {
     // If this is a comment line, return it as-is
     if (this.isComment) {
       return this.original;
@@ -317,10 +318,26 @@ class TaskLine {
       result += this.text;
     }
 
-    // Add priority signifier at the very end, per Tasks' emoji format
+    // Keep Obsidian block IDs after all Tasks metadata.
+    const blockIdMatch = result.match(/[ \t]+\^[a-zA-Z0-9-]+[ \t]*$/u);
+    const blockId = blockIdMatch ? blockIdMatch[0].trim() : '';
+    if (blockIdMatch) {
+      result = result.slice(0, blockIdMatch.index);
+    }
+
+    // Add priority before any new creation-date suffix, per Tasks' emoji format
     const priority = this.tags.priority.filter(Boolean).join(' ');
     if (priority) {
       result += ' ' + priority;
+    }
+
+    // Keep an existing creation date wherever it appears in the task text.
+    if (createdDate && !/➕\uFE0F?\s*\d{4}-\d{2}-\d{2}\b/u.test(result)) {
+      result += ` ➕ ${createdDate}`;
+    }
+
+    if (blockId) {
+      result += ' ' + blockId;
     }
 
     // Clean up multiple spaces, but never touch the indentation
@@ -439,6 +456,8 @@ class ModeProcessor {
       content = this._convertUrlsToLinks(content);
     }
 
+    const createdDate = this.tp.date.now('YYYY-MM-DD');
+
     // Parse and process lines
     const lines = content.split('\n');
 
@@ -479,7 +498,7 @@ class ModeProcessor {
           .filter(Boolean);
       }
 
-      return task.build();
+      return task.build(createdDate);
     });
 
     return processedLines.join('\n');
@@ -490,6 +509,8 @@ class ModeProcessor {
     const selectedPriority = await this.inputHandler.promptPriority();
     const selectedTime = await this.inputHandler.promptTime();
     const selectedEffort = await this.inputHandler.promptEffort();
+
+    const createdDate = this.tp.date.now('YYYY-MM-DD');
 
     // Parse and process lines
     const lines = content.split('\n');
@@ -546,7 +567,7 @@ class ModeProcessor {
           .filter(Boolean);
       }
 
-      return task.build();
+      return task.build(createdDate);
     });
 
     return processedLines.join('\n');
@@ -644,7 +665,7 @@ async function task(tp, mode = 'new') {
     if (selectedStatus) parts.push(selectedStatus);
     if (selectedCategory) parts.push(selectedCategory);
 
-    return parts.join(' ') + ' ';
+    return `${parts.join(' ')} ${tp.file.cursor()} ➕ ${tp.date.now('YYYY-MM-DD')}`;
   }
 
   // Process based on mode

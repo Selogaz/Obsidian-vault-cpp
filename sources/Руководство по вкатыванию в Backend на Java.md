@@ -24,7 +24,7 @@ cover:
 icon: 📃
 color: "#7575c0"
 created: 2025-05-20T15:58:18+03:00
-updated: 2026-03-04T19:58:08+03:00
+updated: 2026-10-22T10:01:00+04:00
 citekey: руководство_по_вкатыванию_в_backend_на_java
 total_hours: 0
 ---

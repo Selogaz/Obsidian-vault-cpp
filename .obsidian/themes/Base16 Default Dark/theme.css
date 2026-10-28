@@ -1232,12 +1232,15 @@
    characters create more syntax spans: `#category/knowledge_base` is emitted
    as `#` + `category/knowledge_` + `base`. Styling each span as a complete
    chip makes one tag look like two adjacent tags. Give every standalone span
-   a symmetric chip, then remove only the touching edges from every contiguous
-   run of hashtag spans, regardless of how many fragments CodeMirror creates.
+   a symmetric chip, then remove touching edges only when the next span
+   continues the same tag. CSS sibling combinators ignore whitespace text
+   nodes, so `.cm-hashtag-begin` must stop the join between separate tags.
 
    Off the cursor line the sigil can be swallowed by a widget and the word
    span can be the only `.cm-hashtag` on the line. Because neither adjacency
    rule matches that standalone span, it correctly keeps both outer caps.
+   The :has() look-ahead checks for a following continuation before removing
+   the right cap; :where() keeps the boundary check from adding specificity.
 
    Specificity note: app.css addresses these as `.cm-s-obsidian
    span.cm-hashtag-end` (0,2,1), so a plain `.theme-dark .cm-hashtag`
@@ -1249,13 +1252,13 @@
   padding: 0.1em 0.4em;
 }
 
-.theme-dark .cm-s-obsidian span.cm-hashtag:has(+ span.cm-hashtag) {
+.theme-dark .cm-s-obsidian span.cm-hashtag:has(+ span.cm-hashtag:where(:not(.cm-hashtag-begin))) {
   padding-right: 0;
   border-start-end-radius: 0;
   border-end-end-radius: 0;
 }
 
-.theme-dark .cm-s-obsidian span.cm-hashtag + span.cm-hashtag {
+.theme-dark .cm-s-obsidian span.cm-hashtag + span.cm-hashtag:where(:not(.cm-hashtag-begin)) {
   padding-left: 0;
   border-start-start-radius: 0;
   border-end-start-radius: 0;
@@ -5138,6 +5141,9 @@ body.theme-dark
     .abyss-project-timeline-group-header,
     .abyss-project-back,
     .abyss-project-open-btn,
+    .abyss-project-dashboard-title,
+    .abyss-project-dashboard-date,
+    .abyss-project-dashboard-property-label,
     .abyss-dep-badge-body,
     .abyss-dep-badge-add,
     .abyss-time-badge-body,
@@ -5156,6 +5162,34 @@ body.theme-dark .abyss-panel-view button.abyss-project-table-name:hover {
   color: var(--b16-accent-link);
 }
 
+/* Obsidian's flex button centers the text beyond both edges when narrow.
+   This text-only title needs a block box for the plugin's ellipsis to work.
+   Keep specificity below body.is-phone button.abyss-project-dashboard-title,
+   which hides the duplicate title under the phone's native view header. */
+.theme-dark button.abyss-project-dashboard-title {
+  display: block;
+}
+
+/* Project identity and metadata are inline controls. Keep their hover cue
+   after the content reset; property labels use the whole row's hover. */
+body.theme-dark
+  .abyss-panel-view
+  button:is(.abyss-project-dashboard-title, .abyss-project-dashboard-date):hover {
+  background: var(--b16-surface-1);
+}
+
+body.theme-dark
+  .abyss-panel-view
+  button:is(.abyss-project-dashboard-date, .abyss-project-dashboard-property-label) {
+  color: var(--b16-text-muted);
+}
+
+/* Property-value removal is a small inline action, not a framed button.
+   Keep the plugin's tag/value backgrounds and reveal-on-hover behavior. */
+body.theme-dark .abyss-project-dashboard-properties button.abyss-project-table-value-remove {
+  border: 0;
+}
+
 /* The content-control reset above must not erase destructive feedback. */
 body.theme-dark :is(.abyss-panel-view, .abyss-modal) button.abyss-task-delete-btn:hover {
   color: var(--b16-status-error-text);
@@ -5172,8 +5206,8 @@ body.theme-dark
     .abyss-cal-nav-month,
     .abyss-cal-nav-year,
     .abyss-cal-nav-today,
-    .abyss-cal-view-btn,
-    .abyss-project-overview-mode,
+    :where(.abyss-cal-nav) .abyss-cal-view-btn,
+    .abyss-view-mode,
     .abyss-view-state-btn,
     .abyss-projects-new,
     .abyss-mg-week-btn
@@ -5392,16 +5426,12 @@ body.theme-dark .abyss-panel-view button.abyss-project-timeline-group-header {
   letter-spacing: normal;
 }
 
-/* Upcoming dates follow comment timestamps: regular metadata weight with
-   the shared UI size, muted color and casing from the labels above.
-   taskSearchOrganization.ts creates task-daily rows only for Upcoming
-   grouped by date; neither headers nor the list expose that mode directly.
-   :has() is needed to scope via the verified data-row-key on those cards.
-   The renderer puts label and count in one text node separated by two
-   spaces; preserve that separation without preventing long labels wrapping. */
+/* Upcoming dates follow comment timestamps. Group headers expose the same
+   stable row keys as task cards, so virtualized task mounts do not control
+   header styling. Other grouping modes retain their own presentation. */
 .theme-dark
-  :where(.abyss-task-list-surface:has(.abyss-task-card[data-row-key^='["task-daily",']))
-  .abyss-group-header {
+  :where(.abyss-task-list-surface)
+  .abyss-group-header:where([data-row-key^='["upcoming-date",']) {
   padding-inline: var(--size-4-3);
   padding-bottom: var(--size-4-1);
   font-weight: var(--b16-chrome-weight);
@@ -5595,10 +5625,11 @@ body.theme-dark
   background: var(--b16-surface-2);
 }
 
-/* Joined controls fill the plugin's shared toolbar size (30px desktop,
-   36px phone). Removing the tray padding also requires restoring the
-   buttons' height: the plugin otherwise subtracts 4px from each cell. */
-.theme-dark :is(.abyss-cal-view-switcher, .abyss-project-overview-switcher) {
+/* Tasks and projects share ViewModeSwitcher and its abyss-view-* classes.
+   Joined controls fill the plugin's toolbar size (30px desktop, 36px phone).
+   Removing the tray padding also requires restoring the buttons' height:
+   the plugin otherwise subtracts 4px from each cell. */
+.theme-dark :is(:where(.abyss-cal-nav) .abyss-cal-view-switcher, .abyss-view-switcher) {
   padding: 0;
   gap: 0;
   background: transparent;
@@ -5607,7 +5638,9 @@ body.theme-dark
 
 /* The generic button rule above removes frames on standalone tools. These
    adjacent mode buttons instead share one outer frame and single dividers. */
-body.theme-dark .abyss-panel-view button:is(.abyss-cal-view-btn, .abyss-project-overview-mode) {
+body.theme-dark
+  .abyss-panel-view
+  button:is(:where(.abyss-cal-nav) .abyss-cal-view-btn, .abyss-view-mode) {
   box-sizing: border-box;
   block-size: var(--abyss-toolbar-control-size, var(--input-height));
   border: 1px solid var(--b16-border-normal);
@@ -5626,8 +5659,37 @@ body.theme-dark .abyss-panel-view button:is(.abyss-cal-view-btn, .abyss-project-
   }
 }
 
-/* Project glyph cells are square, including the painted frame. */
-.theme-dark .abyss-projects-table button.abyss-project-overview-mode {
+/* Timeline periods share the calendar button class but fill a two-tier axis.
+   Keep toolbar sizing scoped above. The generic button rules in 40-chrome.css
+   also erase the plugin's selected-period material and inset top marker;
+   restore those here without changing calendar or task/project view modes. */
+body.theme-dark .abyss-project-timeline-scale-control > button.abyss-cal-view-btn {
+  block-size: 100%;
+  border: 1px solid var(--b16-border-normal);
+  border-inline-end-width: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--b16-text-muted);
+
+  &:last-child {
+    border-inline-end-width: 1px;
+  }
+
+  &:hover {
+    background: var(--b16-surface-2);
+    color: var(--b16-text-normal);
+  }
+
+  &.is-active {
+    background: color-mix(in srgb, var(--b16-text-normal) 12%, var(--b16-surface-1));
+    box-shadow: inset 0 2px 0 var(--b16-accent-link);
+    color: var(--b16-text-normal);
+  }
+}
+
+/* Task and project glyph cells are square, including the painted frame. */
+.theme-dark .abyss-center-controls button.abyss-view-mode {
   inline-size: var(--abyss-toolbar-control-size, var(--input-height));
 }
 
@@ -5799,6 +5861,13 @@ body.theme-dark
   border-color: var(--b16-border-strong);
   border-radius: var(--b16-radius-s);
   box-shadow: none;
+}
+
+/* The text-input rule in 41-modals.css replaces only the bottom focus edge
+   with a neutral border. Match its specificity and restore that edge here;
+   the value picker keeps its own field size and overflow behavior. */
+.theme-dark input.abyss-project-value-picker-search:focus {
+  border-bottom-color: var(--b16-accent-link);
 }
 
 body.theme-dark .abyss-popover button.abyss-popover-clear-icon-btn {
@@ -6254,6 +6323,13 @@ body.theme-dark
 .theme-dark .bases-chart-tooltip-file-value {
   color: var(--b16-text-muted);
   font-size: var(--b16-font-ui-s);
+}
+
+/* Chart Views 1.3.1 uses buttons for group legend labels. Override the
+   generic button frame from 40-chrome.css, including its interaction states;
+   the existing keyboard focus outline and series colors stay intact. */
+.theme-dark .bases-charts-plot-legend button.bases-chart-group-legend-button {
+  border: 0;
 }
 
 /* These are toolbar controls and list rows, not standalone action buttons.

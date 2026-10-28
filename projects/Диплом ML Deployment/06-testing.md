@@ -3,14 +3,14 @@ tags:
   - status/todo
   - project/diploma
   - mark/scene
-aliases:
+aliases: []
 status: 🟥
 up:
   - "[[Диплом ML Deployment]]"
 icon: ✍️
 color: "#d0b580"
 created: 2026-03-21T00:00:00+07:00
-updated: 2026-03-21T21:01:30+03:00
+updated: 2026-10-22T10:36:04+04:00
 ---
 
 # Глава 6: Тестирование
@@ -19,26 +19,32 @@ updated: 2026-03-21T21:01:30+03:00
 
 ## Содержание
 
-### 6.1 Методология тестирования
+### Методология тестирования
+
 - Test pyramid
 - Testing strategy
 
-### 6.2 Модульное тестирование
+### Модульное тестирование
+
 - JUnit 5
 - Mockito
 - Покрытие кода
 
-### 6.3 Интеграционное тестирование
+### Интеграционное тестирование
+
 - TestContainers
 - Spring Boot tests
 - Contract testing
 
-### 6.4 Нагрузочное тестирование
+### Нагрузочное тестирование
+
 - JMeter / k6
 - Gatling
-- Метрики: throughput, latency, resource usage
+- Метрики
+	- throughput, latency, resource usage
 
-### 6.5 ML-specific testing
+### ML-specific testing
+
 - Model validation
 - Inference accuracy
 - Drift detection testing

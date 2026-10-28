@@ -67,6 +67,8 @@ formulas:
   kanban: if(status.contains("⚛️") || status.contains("⚛"), "① ⚛️ Atomizing", if(status.contains("🟦"), "② 🟦 In Progress", if(status.contains("🟥"), "③ 🟥 ToDo", if(status.contains("📥"), "④ 📥 Inbox", if(status.contains("❄"), "⑤ ❄ Hold", if(status.contains("🟩"), "⑥ 🟩 Done", if(status.contains("📢"), "⑦ 📢 Published", if(status.contains("⬛"), "⑧ ⬛ Drop", "⑨ Other"))))))))
   context: if(list(project).length > 0, list(project)[0], if(list(source).length > 0, list(source)[0], if(list(contact).length > 0, list(contact)[0], if(list(production).length > 0, list(production)[0], if(list(creator).length > 0, list(creator)[0], "")))))
 properties:
+  formula.kanban:
+    displayName: 💯 status
   formula.type:
     displayName: 🗄️ type
   formula.context:
@@ -364,3 +366,38 @@ views:
     x: formula.type
     aggregate:file.name: Count
     show-labels: true
+  - type: chart-bar
+    name: "📈 Statistics: By Status"
+    groupBy:
+      property: formula.kanban
+      direction: ASC
+    sort:
+      - property: formula.type
+        direction: ASC
+    bar-layout: stacked
+    group-colors:
+      version: 1
+      overrides:
+        '["String","① ⚛️ Atomizing"]':
+          type: preset
+          value: purple
+        '["String","③ 🟥 ToDo"]':
+          type: preset
+          value: red
+        '["String","⑥ 🟩 Done"]':
+          type: preset
+          value: green
+        '["String","⑦ 📢 Published"]':
+          type: preset
+          value: teal
+        '["String","⑧ ⬛ Drop"]':
+          type: preset
+          value: gray
+    x: formula.type
+    y:
+      - file.name
+    aggregate:file.name: Count
+    show-labels: true
+    show-percentages: false
+    min-y-override: 0
+    color-palette: earth

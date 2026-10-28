@@ -15,7 +15,7 @@ url:
 icon: 📓
 color: "#6f97c8"
 created: 2026-06-22T23:49:29+03:00
-updated: 2026-06-23T00:44:53+03:00
+updated: 2026-10-23T22:06:42+04:00
 ---
 
 > [!toc]+
@@ -26,8 +26,8 @@ updated: 2026-06-23T00:44:53+03:00
 - git
 - [[Алгоритмы и структуры данных]]
 - SQL
-- Как работают LLM
-	- LLM
+- [[Как работают LLM]]
+	- [[LLM]]
 	- tokens
 	- embedding
 	- fine-tuning
@@ -35,9 +35,9 @@ updated: 2026-06-23T00:44:53+03:00
 	- context window
 	- other model limitations
 	- other basic concepts
-- AI API и prompt engineering
+- AI [[API]] и [[prompt engineering]]
 	- parameters management
-	- queries to AI via API
+	- queries to AI via [[API]]
 	- substrctkchit output
 	- reliable and predictable outputs
 - embeddings, vector BD and RAG

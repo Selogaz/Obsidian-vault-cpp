@@ -8,7 +8,7 @@ deck: obsidian::webdev
 icon: </>
 color: "#ab4642"
 created: 2026-05-26T17:47:29+03:00
-updated: 2026-05-26T17:47:29+03:00
+updated: 2026-10-28T13:33:13+04:00
 ---
 
 **git commands**

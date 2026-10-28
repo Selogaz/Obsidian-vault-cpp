@@ -7,6 +7,7 @@ filters:
             - file.hasTag("category/" + this.file.name.replace(/ /g, "_"))
             - category.contains(link(this.file.name))
 formulas:
+  stats_note: file.name
   type: file.tags.filter(value.startsWith("#note/basic/"))[0].replace(/^.*\//, '')
   backlinks: file.backlinks.length
   outlinks: file.links.length
@@ -38,7 +39,20 @@ formulas:
       .replace("#category/" + this.file.name.replace(/ /g, "_") + "/", "")
   created_relative: created.relative()
   updated_relative: updated.relative()
+  stats_links: '[file.links, file.backlinks].flat().map(value.asFile()).filter(value).filter(value.path != file.path && (value.inFolder("base/notes") || (value.inFolder("sources") && !value.hasTag("mark/log")))).map(value.path).unique().length'
+  stats_links_group: if(formula.stats_links == 0, "0", if(formula.stats_links == 1, "1", if(formula.stats_links <= 5, "2–5", if(formula.stats_links <= 10, "6–10", "11+"))))
+  stats_deck: deck.replace(/^obsidian::/, "").replace(/^(.*)::([^:]+)$/, "$2 · $1").replace(/::/g, " / ").replace(/_/g, " ")
 properties:
+  formula.stats_note:
+    displayName: 📝 notes
+  formula.stats_links:
+    displayName: 🔗 links
+  formula.stats_links_group:
+    displayName: 🔗 links
+  formula.rank:
+    displayName: 🌲 evergreens
+  formula.stats_deck:
+    displayName: 🃏 deck
   file.name:
     displayName: 🔤 title
   file.tags:
@@ -386,7 +400,7 @@ views:
         - "false"
     order:
       - file.name
-  - type: chart-bar
+  - type: chart-pie
     name: "📈 Statistics: By Evergreens"
     filters:
       or:
@@ -398,10 +412,38 @@ views:
       - property: formula.rank
         direction: ASC
     x: formula.rank
-    aggregate:file.name: Count
+    y:
+      - formula.stats_note
+    aggregate:formula.stats_note: Count
     show-labels: true
-  - type: chart-pie
+    show-percentages: true
+    color-palette: earth
+  - type: chart-bar
     name: "📈 Statistics: By Deck"
-    x: note.deck
-    aggregate:file.name: Count
+    filters:
+      and:
+        - "!deck.isEmpty()"
+    sort:
+      - property: deck
+        direction: ASC
+    x: formula.stats_deck
+    y:
+      - formula.stats_note
+    aggregate:formula.stats_note: Count
     show-labels: true
+    show-percentages: false
+    min-y-override: 0
+    color-palette: blue
+  - type: chart-bar
+    name: "📈 Statistics: By Links"
+    sort:
+      - property: formula.stats_links
+        direction: ASC
+    x: formula.stats_links_group
+    y:
+      - formula.stats_note
+    aggregate:formula.stats_note: Count
+    show-labels: true
+    show-percentages: false
+    min-y-override: 0
+    color-palette: teal

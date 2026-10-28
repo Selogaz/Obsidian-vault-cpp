@@ -242,10 +242,10 @@
                         "time": 700
                       },
                       {
-                        "name": "Templater: Replace templates in the active file",
+                        "name": "Templater: Jump to next cursor location",
                         "type": "Obsidian",
                         "id": "61b3bcbc-da21-4e5d-bd48-8d838996840e",
-                        "commandId": "templater-obsidian:replace-in-file-templater"
+                        "commandId": "templater-obsidian:jump-to-next-cursor-location"
                       }
                     ]
                   }
@@ -406,7 +406,7 @@
                   }
                 }
               ],
-              "collapsed": false
+              "collapsed": true
             },
             {
               "id": "00cab3c4-42d0-42de-b4b7-8742c64d0b66",
@@ -438,10 +438,10 @@
                         "time": 1000
                       },
                       {
-                        "name": "Templater: Replace templates in the active file",
+                        "name": "Templater: Jump to next cursor location",
                         "type": "Obsidian",
                         "id": "e9e335d1-8009-4a4b-b50b-b03c6570456c",
-                        "commandId": "templater-obsidian:replace-in-file-templater"
+                        "commandId": "templater-obsidian:jump-to-next-cursor-location"
                       }
                     ]
                   }
@@ -504,10 +504,10 @@
                     "time": 1000
                   },
                   {
-                    "name": "Templater: Replace templates in the active file",
+                    "name": "Templater: Jump to next cursor location",
                     "type": "Obsidian",
                     "id": "ce4d0758-42ba-4214-8fb3-7575bf1699b6",
-                    "commandId": "templater-obsidian:replace-in-file-templater"
+                    "commandId": "templater-obsidian:jump-to-next-cursor-location"
                   }
                 ]
               }
@@ -542,10 +542,10 @@
                         "time": 1000
                       },
                       {
-                        "name": "Templater: Replace templates in the active file",
+                        "name": "Templater: Jump to next cursor location",
                         "type": "Obsidian",
                         "id": "3408ef40-27b0-45a2-addb-d2b02eb3b586",
-                        "commandId": "templater-obsidian:replace-in-file-templater"
+                        "commandId": "templater-obsidian:jump-to-next-cursor-location"
                       }
                     ]
                   }
@@ -574,10 +574,10 @@
                         "time": 1000
                       },
                       {
-                        "name": "Templater: Replace templates in the active file",
+                        "name": "Templater: Jump to next cursor location",
                         "type": "Obsidian",
                         "id": "daefd41e-757a-482f-a38a-cb58d092f479",
-                        "commandId": "templater-obsidian:replace-in-file-templater"
+                        "commandId": "templater-obsidian:jump-to-next-cursor-location"
                       }
                     ]
                   }
@@ -606,10 +606,10 @@
                         "time": 1000
                       },
                       {
-                        "name": "Templater: Replace templates in the active file",
+                        "name": "Templater: Jump to next cursor location",
                         "type": "Obsidian",
                         "id": "d553df1c-2474-4990-814e-42737fbfdca4",
-                        "commandId": "templater-obsidian:replace-in-file-templater"
+                        "commandId": "templater-obsidian:jump-to-next-cursor-location"
                       }
                     ]
                   }
@@ -733,10 +733,10 @@
                         "time": 1000
                       },
                       {
-                        "name": "Templater: Replace templates in the active file",
+                        "name": "Templater: Jump to next cursor location",
                         "type": "Obsidian",
                         "id": "ab2a1d48-a750-4b7c-b23b-556b7c49f998",
-                        "commandId": "templater-obsidian:replace-in-file-templater"
+                        "commandId": "templater-obsidian:jump-to-next-cursor-location"
                       }
                     ]
                   }
@@ -798,10 +798,10 @@
                         "time": 1000
                       },
                       {
-                        "name": "Templater: Replace templates in the active file",
+                        "name": "Templater: Jump to next cursor location",
                         "type": "Obsidian",
                         "id": "48422b07-6262-47e2-ac64-dc9ae781b683",
-                        "commandId": "templater-obsidian:replace-in-file-templater"
+                        "commandId": "templater-obsidian:jump-to-next-cursor-location"
                       }
                     ]
                   }
@@ -863,10 +863,10 @@
                         "time": 1000
                       },
                       {
-                        "name": "Templater: Replace templates in the active file",
+                        "name": "Templater: Jump to next cursor location",
                         "type": "Obsidian",
                         "id": "aa998277-7ed7-4897-b02d-4fe642edfe35",
-                        "commandId": "templater-obsidian:replace-in-file-templater"
+                        "commandId": "templater-obsidian:jump-to-next-cursor-location"
                       }
                     ]
                   }
@@ -895,7 +895,7 @@
               }
             }
           ],
-          "collapsed": false
+          "collapsed": true
         },
         {
           "id": "02e74f34-7c5f-495b-9ecc-eac6e53427ed",
@@ -1075,10 +1075,10 @@
                         }
                       },
                       {
-                        "name": "Templater: Replace templates in the active file",
+                        "name": "Templater: Jump to next cursor location",
                         "type": "Obsidian",
                         "id": "ca795346-54cb-4b97-94c3-de90d6df67cc",
-                        "commandId": "templater-obsidian:replace-in-file-templater"
+                        "commandId": "templater-obsidian:jump-to-next-cursor-location"
                       }
                     ]
                   },
@@ -1157,10 +1157,10 @@
                         }
                       },
                       {
-                        "name": "Templater: Replace templates in the active file",
+                        "name": "Templater: Jump to next cursor location",
                         "type": "Obsidian",
                         "id": "7523c354-0cfe-439a-9383-cbc6baa39d7f",
-                        "commandId": "templater-obsidian:replace-in-file-templater"
+                        "commandId": "templater-obsidian:jump-to-next-cursor-location"
                       }
                     ]
                   },
@@ -1220,10 +1220,10 @@
                         }
                       },
                       {
-                        "name": "Templater: Replace templates in the active file",
+                        "name": "Templater: Jump to next cursor location",
                         "type": "Obsidian",
                         "id": "118c0dac-4880-47f7-a862-115935a8364d",
-                        "commandId": "templater-obsidian:replace-in-file-templater"
+                        "commandId": "templater-obsidian:jump-to-next-cursor-location"
                       }
                     ]
                   },
@@ -1324,10 +1324,10 @@
                         }
                       },
                       {
-                        "name": "Templater: Replace templates in the active file",
+                        "name": "Templater: Jump to next cursor location",
                         "type": "Obsidian",
                         "id": "f07c722b-4282-422d-af1a-cd7fe02fda51",
-                        "commandId": "templater-obsidian:replace-in-file-templater"
+                        "commandId": "templater-obsidian:jump-to-next-cursor-location"
                       }
                     ]
                   },
@@ -1437,10 +1437,10 @@
                     "time": 100
                   },
                   {
-                    "name": "Templater: Replace templates in the active file",
+                    "name": "Templater: Jump to next cursor location",
                     "type": "Obsidian",
                     "id": "7f87e032-cb11-48d8-ba7c-a2b214dad771",
-                    "commandId": "templater-obsidian:replace-in-file-templater"
+                    "commandId": "templater-obsidian:jump-to-next-cursor-location"
                   }
                 ]
               }
@@ -1518,10 +1518,10 @@
                     "time": 100
                   },
                   {
-                    "name": "Templater: Replace templates in the active file",
+                    "name": "Templater: Jump to next cursor location",
                     "type": "Obsidian",
                     "id": "16e9b251-f758-4d60-98c7-479460a9e828",
-                    "commandId": "templater-obsidian:replace-in-file-templater"
+                    "commandId": "templater-obsidian:jump-to-next-cursor-location"
                   }
                 ]
               },
@@ -1600,10 +1600,10 @@
                     "time": 100
                   },
                   {
-                    "name": "Templater: Replace templates in the active file",
+                    "name": "Templater: Jump to next cursor location",
                     "type": "Obsidian",
                     "id": "5df16ae7-d8d1-4e3b-b2fe-0cf2d6303798",
-                    "commandId": "templater-obsidian:replace-in-file-templater"
+                    "commandId": "templater-obsidian:jump-to-next-cursor-location"
                   }
                 ]
               },
@@ -1682,10 +1682,10 @@
                     "time": 100
                   },
                   {
-                    "name": "Templater: Replace templates in the active file",
+                    "name": "Templater: Jump to next cursor location",
                     "type": "Obsidian",
                     "id": "f97cff66-a081-4353-9ab4-b84b5ae1b639",
-                    "commandId": "templater-obsidian:replace-in-file-templater"
+                    "commandId": "templater-obsidian:jump-to-next-cursor-location"
                   }
                 ]
               },
@@ -1763,10 +1763,10 @@
                     "time": 100
                   },
                   {
-                    "name": "Templater: Replace templates in the active file",
+                    "name": "Templater: Jump to next cursor location",
                     "type": "Obsidian",
                     "id": "bce861e9-317f-4710-beda-51a49ff2b25b",
-                    "commandId": "templater-obsidian:replace-in-file-templater"
+                    "commandId": "templater-obsidian:jump-to-next-cursor-location"
                   }
                 ]
               },
@@ -1986,14 +1986,26 @@
             },
             {
               "id": "25da4855-914c-40e9-ac40-654c4e8acc20",
-              "name": "⚠️ validate + lint",
+              "name": "⚠️ plugins+ validate + lint",
               "type": "Macro",
               "command": false,
               "runOnStartup": false,
               "macro": {
-                "name": "⚠️ validate + lint",
+                "name": "⚠️ plugins+ validate + lint",
                 "id": "8244595c-a31b-4952-81cc-e2d6319fa7f0",
                 "commands": [
+                  {
+                    "name": "BRAT: Plugins: Check for updates to all beta plugins and UPDATE",
+                    "type": "Obsidian",
+                    "id": "010ed768-040f-40e0-a7b9-bb22f564adbb",
+                    "commandId": "obsidian42-brat:checkForUpdatesAndUpdate"
+                  },
+                  {
+                    "name": "Wait",
+                    "type": "Wait",
+                    "id": "ea21b4e8-5cef-445f-afd2-99ea7d01cbad",
+                    "time": 2000
+                  },
                   {
                     "name": "Metadata Validator: Auto-fix all notes in vault",
                     "type": "Obsidian",
@@ -2151,10 +2163,10 @@
                 }
               },
               {
-                "name": "Templater: Replace templates in the active file",
+                "name": "Templater: Jump to next cursor location",
                 "type": "Obsidian",
                 "id": "ec448f4f-6c63-43b8-9dfd-cc2bec2845b4",
-                "commandId": "templater-obsidian:replace-in-file-templater"
+                "commandId": "templater-obsidian:jump-to-next-cursor-location"
               }
             ]
           }
@@ -2214,10 +2226,10 @@
                 }
               },
               {
-                "name": "Templater: Replace templates in the active file",
+                "name": "Templater: Jump to next cursor location",
                 "type": "Obsidian",
                 "id": "f05bc6d8-0f88-4c77-81a1-9f8ea3103918",
-                "commandId": "templater-obsidian:replace-in-file-templater"
+                "commandId": "templater-obsidian:jump-to-next-cursor-location"
               }
             ]
           }
@@ -2654,10 +2666,10 @@
                 }
               },
               {
-                "name": "Templater: Replace templates in the active file",
+                "name": "Templater: Jump to next cursor location",
                 "type": "Obsidian",
                 "id": "f573c78d-990a-4078-bd9e-7b4285c7e6e5",
-                "commandId": "templater-obsidian:replace-in-file-templater"
+                "commandId": "templater-obsidian:jump-to-next-cursor-location"
               }
             ]
           }
@@ -2775,10 +2787,10 @@
                 }
               },
               {
-                "name": "Templater: Replace templates in the active file",
+                "name": "Templater: Jump to next cursor location",
                 "type": "Obsidian",
                 "id": "2bcb8573-d624-433b-bf3b-59744e91a4e9",
-                "commandId": "templater-obsidian:replace-in-file-templater"
+                "commandId": "templater-obsidian:jump-to-next-cursor-location"
               }
             ]
           }
@@ -2839,10 +2851,10 @@
                 }
               },
               {
-                "name": "Templater: Replace templates in the active file",
+                "name": "Templater: Jump to next cursor location",
                 "type": "Obsidian",
                 "id": "c8d6ac3d-b29f-462e-8a60-733624ad5906",
-                "commandId": "templater-obsidian:replace-in-file-templater"
+                "commandId": "templater-obsidian:jump-to-next-cursor-location"
               }
             ]
           }
@@ -3024,35 +3036,31 @@
             "id": "9f50a4bd-a1e3-448c-a52e-5d0b7d315922",
             "commands": [
               {
-                "name": "list-actions",
+                "name": "send-to-category",
                 "type": "UserScript",
                 "id": "a30cc5e8-5823-486d-8c94-4b52c9898a55",
-                "path": "templates/macros/list-actions.js",
-                "settings": {
-                  "Action": "Send to category"
-                }
+                "path": "templates/macros/send-to-category.js",
+                "settings": {}
               }
             ]
           }
         },
         {
           "id": "4f21a80c-13d8-497f-b170-324645903f8f",
-          "name": "delete empty notes",
+          "name": "delete unlinked notes",
           "type": "Macro",
           "command": true,
           "runOnStartup": false,
           "macro": {
-            "name": "delete empty notes",
+            "name": "delete unlinked notes",
             "id": "e18cdb9c-a197-47f9-9dc4-4c297cabbb3d",
             "commands": [
               {
-                "name": "list-actions",
+                "name": "delete-unlinked-notes",
                 "type": "UserScript",
                 "id": "eb35f34a-0f26-45cb-aa92-36ea12ad382e",
-                "path": "templates/macros/list-actions.js",
-                "settings": {
-                  "Action": "Delete empty notes"
-                }
+                "path": "templates/macros/delete-unlinked-notes.js",
+                "settings": {}
               }
             ]
           }
@@ -3076,9 +3084,29 @@
               }
             ]
           }
+        },
+        {
+          "id": "c0a7e1f2-5b3d-4e8a-9c61-2f4d8b7a9e10",
+          "name": "convert type",
+          "type": "Macro",
+          "command": true,
+          "runOnStartup": false,
+          "macro": {
+            "name": "convert type",
+            "id": "d1b8f2a3-6c4e-4f9b-8d72-3a5e9c8b0f21",
+            "commands": [
+              {
+                "name": "convert-type",
+                "type": "UserScript",
+                "id": "e2c9a3b4-7d5f-4a0c-9e83-4b6f0d9c1a32",
+                "path": "templates/macros/convert-type.js",
+                "settings": {}
+              }
+            ]
+          }
         }
       ],
-      "collapsed": true
+      "collapsed": false
     }
   ],
   "inputPrompt": "single-line",
@@ -3090,7 +3118,7 @@
   "devMode": false,
   "templateFolderPaths": [],
   "announceUpdates": "none",
-  "version": "2.32.1",
+  "version": "2.33.1",
   "globalVariables": {},
   "onePageInputEnabled": false,
   "disableOnlineFeatures": true,

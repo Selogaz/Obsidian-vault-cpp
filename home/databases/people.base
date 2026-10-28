@@ -10,11 +10,12 @@ filters:
             - file.hasTag("category/" + this.file.name.replace(/ /g, "_"))
             - category.contains(link(this.file.name))
 formulas:
+  stats_person: file.name
   cover_image: image(cover)
   cover_sort: if(cover == null, 0, 1)
   backlinks: file.backlinks.length
   outlinks: file.links.length
-  type: tags.toString().replace(/.*#(contact|creator|production)\/([^,]+).*/, "$2")
+  type: file.tags.filter(value.startsWith("#contact/") || value.startsWith("#creator/") || value.startsWith("#production/")).map(value.replace(/^.*\//, '')).join(", ")
   created_relative: created.relative()
   updated_relative: updated.relative()
   category_status: if(!category.isEmpty(), "✅", "❌")
@@ -28,6 +29,8 @@ formulas:
   problem_valid: if(formula.problem_type_valid == "❌", "❌", "✅")
   production_valid: if(formula.production_type_valid == "❌" || formula.production_category_valid == "❌", "❌", "✅")
 properties:
+  formula.stats_person:
+    displayName: 👥 people
   formula.category_valid:
     displayName: ✓
   formula.meta_valid:
@@ -410,7 +413,9 @@ views:
   - type: chart-bar
     name: "📈 Statistics: By Types"
     x: formula.type
-    aggregate:file.name: Count
+    y:
+      - formula.stats_person
+    aggregate:formula.stats_person: Count
     show-labels: true
   - type: table
     name: ———

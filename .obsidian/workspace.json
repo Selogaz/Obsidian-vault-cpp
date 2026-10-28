@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "827c85ebfdd03403",
+            "id": "bda9ef25e60d256c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/notes/FSD.md",
+                "file": "base/_problems/обычная заметка.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "FSD"
+              "title": "обычная заметка"
             }
           },
           {
-            "id": "40cc36760e6a9a44",
+            "id": "300f387857e56c1f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/additions/practice/Формирование желаемого будущего.md",
+                "file": "projects/Алгоритмы и структуры данных.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,65 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Формирование желаемого будущего"
-            }
-          },
-          {
-            "id": "0ed4829d322ba676",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "periodic/weekly/2026-W43.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": false
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2026-W43"
-            }
-          },
-          {
-            "id": "d7857b2a02ff88f5",
-            "type": "leaf",
-            "state": {
-              "type": "task-calendar-panel",
-              "state": {},
-              "icon": "calendar-days",
-              "title": "Abyss Tasks"
-            }
-          },
-          {
-            "id": "734f73017688c2d7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "periodic/daily/2026-10-18.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": false
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2026-10-18"
+              "title": "Алгоритмы и структуры данных"
             }
           }
         ],
@@ -137,204 +79,6 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
-          },
-          {
-            "id": "4247943d03ca86d9",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": true,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [
-                    {
-                      "query": "tag:#note/basic",
-                      "color": {
-                        "a": 1,
-                        "rgb": 9486517
-                      }
-                    },
-                    {
-                      "query": "tag:#note/specific",
-                      "color": {
-                        "a": 1,
-                        "rgb": 14543214
-                      }
-                    },
-                    {
-                      "query": "tag:#system/category",
-                      "color": {
-                        "a": 1,
-                        "rgb": 3509376
-                      }
-                    },
-                    {
-                      "query": "tag:#system/supercategory",
-                      "color": {
-                        "a": 1,
-                        "rgb": 13684936
-                      }
-                    },
-                    {
-                      "query": "tag:#system/high/hierarchy",
-                      "color": {
-                        "a": 1,
-                        "rgb": 10551504
-                      }
-                    },
-                    {
-                      "query": "tag:#system/high/meta",
-                      "color": {
-                        "a": 1,
-                        "rgb": 8283336
-                      }
-                    },
-                    {
-                      "query": "tag:#system/high/problem",
-                      "color": {
-                        "a": 1,
-                        "rgb": 14266432
-                      }
-                    },
-                    {
-                      "query": "tag:#periodic",
-                      "color": {
-                        "a": 1,
-                        "rgb": 6450848
-                      }
-                    },
-                    {
-                      "query": "tag:#project/short",
-                      "color": {
-                        "a": 1,
-                        "rgb": 11898992
-                      }
-                    },
-                    {
-                      "query": "tag:#project/single",
-                      "color": {
-                        "a": 1,
-                        "rgb": 13136181
-                      }
-                    },
-                    {
-                      "query": "tag:#project/longform",
-                      "color": {
-                        "a": 1,
-                        "rgb": 6526389
-                      }
-                    },
-                    {
-                      "query": "tag:#mark/log OR tag:#mark/addition",
-                      "color": {
-                        "a": 1,
-                        "rgb": 9486517
-                      }
-                    },
-                    {
-                      "query": "tag:#source/article",
-                      "color": {
-                        "a": 1,
-                        "rgb": 8743104
-                      }
-                    },
-                    {
-                      "query": "tag:#source/book",
-                      "color": {
-                        "a": 1,
-                        "rgb": 13093232
-                      }
-                    },
-                    {
-                      "query": "tag:#source/course",
-                      "color": {
-                        "a": 1,
-                        "rgb": 8026677
-                      }
-                    },
-                    {
-                      "query": "tag:#source/cinematic",
-                      "color": {
-                        "a": 1,
-                        "rgb": 13854037
-                      }
-                    },
-                    {
-                      "query": "tag:#source/podcast",
-                      "color": {
-                        "a": 1,
-                        "rgb": 3503504
-                      }
-                    },
-                    {
-                      "query": "tag:#source/video",
-                      "color": {
-                        "a": 1,
-                        "rgb": 3509376
-                      }
-                    },
-                    {
-                      "query": "tag:#creator",
-                      "color": {
-                        "a": 1,
-                        "rgb": 14462048
-                      }
-                    },
-                    {
-                      "query": "tag:#production",
-                      "color": {
-                        "a": 1,
-                        "rgb": 13850949
-                      }
-                    },
-                    {
-                      "query": "tag:#contact",
-                      "color": {
-                        "a": 1,
-                        "rgb": 4718773
-                      }
-                    },
-                    {
-                      "query": "tag:#mark/gtd",
-                      "color": {
-                        "a": 1,
-                        "rgb": 4587361
-                      }
-                    },
-                    {
-                      "query": "tag:#mark/scene",
-                      "color": {
-                        "a": 1,
-                        "rgb": 14600064
-                      }
-                    }
-                  ],
-                  "collapse-display": true,
-                  "showArrow": true,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1,
-                  "close": true
-                }
-              },
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
           }
         ]
       },
@@ -360,7 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5,
+    "width": 330.99609375,
     "collapsed": true
   },
   "right": {
@@ -426,7 +170,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5,
+    "width": 332.69921875,
     "collapsed": true
   },
   "left-ribbon": {
@@ -439,7 +183,6 @@
       "dynamic-views:Shuffle base": false,
       "dynamic-views:Open random file from base": false,
       "obsidian-local-images-plus:Local Images Plus  0.17.1\r\nLocalize attachments (plugin folder)": false,
-      "life-tracker:Life Tracker: quick add": false,
       "abyss-tasks:Open task view": false,
       "templater-obsidian:Templater": false,
       "daily-notes:Open today's daily note": false,
@@ -453,49 +196,50 @@
       "graph:Open graph view": false
     }
   },
-  "active": "40cc36760e6a9a44",
+  "active": "300f387857e56c1f",
   "lastOpenFiles": [
-    "periodic/weekly/2026-W43.md",
-    "base/notes/вдохновение.md",
-    "base/additions/practice/Формирование желаемого будущего.md",
-    "periodic/daily/2026-10-18.md",
-    "base/notes/памятка на случай тревоги о будущем.md",
-    "base/notes/различение сопротивления и истощения.md",
-    "base/notes/FSD.md",
-    "periodic/daily/2026-10-12.md",
-    "periodic/daily/2026-10-15.md",
-    "periodic/daily/2026-10-16.md",
-    "periodic/daily/2026-10-17.md",
-    "base/additions/aggregators/Стратегия без иллюзий_ Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен - practice.md",
-    "sources/Стратегия без иллюзий_ Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен.md",
-    "home/databases/sources.base",
-    "home/index.md",
-    "base/_hierarchy/сон.md",
-    "base/_hierarchy/java безопасность.md",
-    "base/additions/conspectuses/Стратегия без иллюзий конспект.md",
-    "base/notes/частота пересмотра жизненной стратегии.md",
-    "base/notes/вопросы для калибровки жизненной стратегии.md",
-    "base/notes/видение будущего.md",
-    "base/notes/дальний горизонт.md",
-    "base/notes/желаемое будущее.md",
-    "base/notes/текущий горизонт.md",
-    "base/notes/ближний горизонт.md",
-    "base/notes/средний горизонт.md",
-    "base/notes/стратегический разрыв.md",
-    "home/databases/breadcrumbs.base",
-    "Operon/Demo Workspace",
-    "Operon/Tasks",
-    "Operon/Tables/Default table.table",
-    "Operon/Tables",
-    "Operon",
-    "home/databases/projects.base",
+    "base/contacts/zz convtest unsaved.md",
+    "base/notes/zz convtest bad yaml.md",
+    "sources/zz convtest empty project to book.md",
+    "sources/zz convtest project to book.md",
+    "projects/zz convtest project twice.md",
+    "projects/zz convtest project again.md",
+    "base/_hierarchy/zz convtest moved hierarchy.md",
+    "base/_hierarchy/zz convtest child hierarchy.md",
+    "base/_problems/zz convtest child meta.md",
+    "base/_hierarchy/zz convtest self forms.md",
+    "base/notes/zz convtest hash tags.md",
+    "base/notes/zz convtest string tags.md",
+    "base/notes/zz convtest custom tabs.md",
+    "base/contacts/zz convtest client.md",
+    "sources/zz convtest paper.md",
+    "base/notes/zz convtest broken.md",
+    "base/notes/zz convtest canvas.canvas",
+    "base/notes/zz convtest cancel.md",
+    "base/notes/zz convtest plain.md",
+    "base/notes/zz convtest empty fm.md",
+    "base/contacts/zz convtest target.md",
+    "base/contacts/zz convtest clash 1.md",
+    "base/notes/zz convtest code.md",
+    "base/notes/zz convtest claim.md",
+    "base/notes/zz convtest from source.md",
+    "base/_hierarchy/zz convtest self link.md",
+    "base/_hierarchy/zz convtest self meta.md",
+    "templates/macros/convert-type.js.tmp.1826630.a31d8f01c6f8",
+    "templates/macros/convert-type.js.tmp.1826630.fc03dd0f6001",
+    "templates/macros/convert-type.js.tmp.1539133.8ba18616f187",
+    "templates/macros/sed7cXvkR",
+    "templates/macros/convert-type.js.tmp.1539133.5dd2e47d648d",
+    "templates/macros/convert-type.test.js",
+    "templates/macros/convert-type.test.js.tmp.1539133.3431a7d109d6",
+    "base/notes/конвертация типа заметки.md.tmp.1539133.5e34e16ea92a",
+    "templates/macros/convert-type.js.tmp.1539133.5ec7c5a2d19e",
+    "templates/macros/convert-type.js.tmp.1539133.1174c4b2d0f2",
     "files/инструкция по трассировке 20260922132913087.png",
     "files/инструкция по трассировке 20260922132820622.png",
     "files/DATE_2026-09-22 TIME_13-22-53 20260922132805276.png",
     "files/инструкция по трассировке 20260922132708440.png",
-    "home/databases/high-notes.base",
     "files/DATE_2026-09-22 TIME_06-38-09 20260922063810502.png",
-    "home/databases/notes.base",
     "files/Редизайн мобильного приложения для покупки билетов в S7 (2026-04-21) - roadmap.canvas",
     "periodic/2025.canvas",
     "periodic/2026.canvas",
@@ -505,7 +249,6 @@
     "periodic/2025_1.canvas",
     "periodic/tasks (grouped by time)_1.canvas",
     "periodic/2026_1.canvas",
-    "periodic/tasks (grouped by priority)_1.canvas",
     "files/test.png",
     "files/test.jpg",
     "files/Pasted Image 20260107000747_014.png",

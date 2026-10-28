@@ -6,8 +6,8 @@
   "sessionStorage": "data",
   "sessions": [
     {
-      "start": "2026-10-10T06:46:07.804Z",
-      "total": 1,
+      "start": "2026-10-27T06:02:35.303Z",
+      "total": 0,
       "drafts": {
         "projects/Переезд в Японию/Переезд в Японию.md": {
           "total": 0,
@@ -42,7 +42,7 @@
           }
         },
         "projects/ЕГЭ Математика/ЕГЭ Математика.md": {
-          "total": 1,
+          "total": 0,
           "scenes": {
             "А1-простейшая планиметрия": 0,
             "A2-векторы": 0,
@@ -58,7 +58,7 @@
             "А12": 0,
             "А14-стереометрия": 0,
             "Прогресс": 0,
-            "Стратегия математика": 1
+            "Стратегия математика": 0
           }
         },
         "projects/ЕГЭ Информатика/ЕГЭ Информатика.md": {
@@ -98,7 +98,7 @@
   "keepSessionCount": 30,
   "sessionFile": "longform-sessions.json",
   "numberScenes": false,
-  "sceneTemplate": "templates/create/projects/longform scene template.md",
+  "sceneTemplate": "templates/create/projects/longform/scene template.md",
   "waitForSync": false,
   "fallbackWaitEnabled": true,
   "fallbackWaitTime": 5,

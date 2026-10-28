@@ -20,7 +20,7 @@ end:
 icon: 📃
 color: "#7575c0"
 created: 2025-09-19T19:09:11+03:00
-updated: 2026-04-02T14:35:47+03:00
+updated: 2026-10-28T13:32:46+04:00
 citekey: база_знаний_fill_the_gaps
 total_hours: 0
 ---

@@ -368,7 +368,7 @@
       "inline-keys-to-ignore": null
     },
     "align-table-columns": {
-      "enabled": false
+      "enabled": true
     }
   },
   "lintOnSave": true,

@@ -12,6 +12,7 @@ filters:
             - file.hasTag("category/" + this.file.name.replace(/ /g, "_"))
             - category.contains(link(this.file.name))
 formulas:
+  stats_high_note: file.name
   cover_image: image(cover)
   cover_sort: if(cover == null, 0, 1)
   backlinks: file.backlinks.length
@@ -29,6 +30,8 @@ formulas:
   meta_valid: if(formula.meta_status == "❌" || formula.meta_type_valid == "❌", "❌", "✅")
   problem_valid: if(formula.problem_status == "❌" || formula.problem_type_valid == "❌", "❌", "✅")
 properties:
+  formula.stats_high_note:
+    displayName: 🗂️ high notes
   formula.category_valid:
     displayName: ✓
   formula.meta_valid:
@@ -409,7 +412,9 @@ views:
   - type: chart-bar
     name: "📈 Statistics: By Types"
     x: formula.type
-    aggregate:file.name: Count
+    y:
+      - formula.stats_high_note
+    aggregate:formula.stats_high_note: Count
     show-labels: true
   - type: table
     name: ———

@@ -7,3 +7,4 @@ icon: <% `"${tp.user.manifest("fields.icon.fixed", "", "templates/create/periodi
 created: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 <% "---" %>
+

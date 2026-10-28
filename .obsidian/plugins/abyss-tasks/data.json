@@ -2,9 +2,10 @@
   "firstDayOfWeek": 1,
   "taskPrefix": "#task/one-off",
   "applyTaskPrefixToSubtasks": false,
+  "parseDatesInQuickCapture": true,
   "taskFilePath": "periodic/daily/{{YYYY-MM-DD}}.md",
   "taskArchivePath": "periodic/archive.md",
-  "taskIgnoreQuery": "",
+  "taskIgnoreQuery": "files/ OR home/ OR templates/ OR #task/default",
   "taskTemplatePath": "templates/create/periodic/day/template.md",
   "inbox": {
     "mode": "tag",

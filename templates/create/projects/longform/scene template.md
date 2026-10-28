@@ -6,9 +6,12 @@ const project = dv.pages(`"${folder}"`).where(p => dv.func.contains(p.tags, "pro
 <% "---" %>
 tags:
   - mark/scene
+aliases: []
+status: 🟥
 up:
   - "<% project %>"
-status: 🟥
+icon: ✍️
+color: "#d0b580"
 created: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 <% "---" %>

@@ -1596,5 +1596,14 @@
       ],
       "key": "M"
     }
+  ],
+  "quickadd:choice:c0a7e1f2-5b3d-4e8a-9c61-2f4d8b7a9e10": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "X"
+    }
   ]
 }

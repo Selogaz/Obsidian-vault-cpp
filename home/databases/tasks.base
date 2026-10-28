@@ -19,6 +19,7 @@ filters:
             - this.file.hasTag("mark/addition/aggregator")
             - project.contains(this.project[0])
 formulas:
+  stats_task: file.name
   type: file.tags.filter(value.startsWith("#task/"))[0].replace(/^.*\//, '')
   kanban: if(status.contains("🟦"), "① 🟦 In Progress", if(status.contains("🟥"), "② 🟥 ToDo", if(status.contains("📥"), "③ 📥 Inbox", if(status.contains("❄"), "④ ❄ Hold", if(status.contains("🟩"), "⑤ 🟩 Done", if(status.contains("📢"), "⑥ 📢 Published", "⑦ ⬛ Drop"))))))
   priority: if(priority.contains("🔺"), "① 🔺 Critical & Urgent", if(priority.contains("⏫"), "② ⏫ Important", if(priority.contains("🔼"), "③ 🔼 Medium", if(priority.contains("◽"), "④ ◽ Normal", if(priority.contains("🔽"), "⑤ 🔽 Delegated", if(priority.contains("⏬"), "⑥ ⏬ Review", "⑦ Other"))))))
@@ -26,6 +27,12 @@ formulas:
   outlinks: file.links.length
   created_relative: created.relative()
   updated_relative: updated.relative()
+  stats_duration: if(!start.isEmpty() && !end.isEmpty(), (date(date(end).format("YYYY-MM-DD")) - date(date(start).format("YYYY-MM-DD"))).days.round(0), null)
+  stats_duration_group: if(formula.stats_duration.isEmpty(), "Unknown", if(formula.stats_duration == 0, "0 d", if(formula.stats_duration <= 7, "1–7 d", if(formula.stats_duration <= 30, "8–30 d", if(formula.stats_duration <= 90, "31–90 d", "91+ d")))))
+  stats_outcome: if(status.contains("⬛"), "⬛ Drop", "🟩 Done")
+  stats_status: if(status.isEmpty(), "⑧ Unset", if(status.contains("⬛"), "⑦ ⬛ Drop", if(status.contains("🟦") || status.contains("🟥") || status.contains("📥") || status.contains("❄") || status.contains("🟩") || status.contains("📢"), formula.kanban, "⑨ Other")))
+  stats_priority: formula.priority
+  stats_attribute: if(attribute.isEmpty(), "Unspecified", attribute)
   project_valid: if(project.isEmpty(), "❌", if(list(project).filter(value.isType("link") && value.asFile().tags.filter(value.startsWith("#project/")).length > 0).length == list(project).length, "✅", "❌"))
   milestone_valid: if(milestone.isEmpty(), "✅", if(list(milestone).filter(value.isType("link") && value.asFile().hasTag("task/milestone")).length == list(milestone).length, "✅", "❌"))
   milestone: if(file.hasTag("task/milestone"), file.name, if(milestone.isEmpty(), "∅ No milestone", list(milestone)[0].toString().replace("[[", "").replace("]]", "")))
@@ -34,6 +41,20 @@ formulas:
   ms_tasks_done: if(file.hasTag("task/milestone"), file.backlinks.filter(value.asFile().inFolder("base/tasks")).filter(!value.asFile().hasTag("task/milestone")).filter(!value.asFile().properties.status.contains("⬛")).filter(value.asFile().properties.status.contains("🟩") || value.asFile().properties.status.contains("📢")).length, 0)
   ms_progress: if(!file.hasTag("task/milestone"), "", if(formula.ms_tasks_total == 0, html("<progress value='0' max='100'></progress> 0 / 0"), html("<progress value='" + formula.ms_tasks_done / formula.ms_tasks_total * 100 + "' max='100'></progress> " + formula.ms_tasks_done + " / " + formula.ms_tasks_total)))
 properties:
+  formula.stats_task:
+    displayName: ✅ tasks
+  formula.stats_duration:
+    displayName: ⏱️ days
+  formula.stats_duration_group:
+    displayName: ⏱️ days
+  formula.stats_outcome:
+    displayName: 💯 status
+  formula.stats_attribute:
+    displayName: 🧩 attribute
+  formula.stats_status:
+    displayName: 💯 status
+  formula.stats_priority:
+    displayName: 🔺 priority
   note.id:
     displayName: 🆔 id
   file.name:
@@ -996,22 +1017,98 @@ views:
       note.end: 120
   - type: chart-bar
     name: "📈 Statistics: By Attribute"
-    x: note.attribute
-    aggregate:file.name: Count
+    filters:
+      and:
+        - '!file.hasTag("task/milestone")'
+    sort:
+      - property: formula.stats_attribute
+        direction: ASC
+    x: formula.stats_attribute
+    y:
+      - formula.stats_task
+    aggregate:formula.stats_task: Count
+    show-labels: true
   - type: chart-bar
     name: "📈 Statistics: By Status"
+    filters:
+      and:
+        - '!file.hasTag("task/milestone")'
     sort:
-      - property: formula.kanban
-        direction: DESC
-    x: note.status
-    aggregate:file.name: Count
+      - property: formula.stats_status
+        direction: ASC
+    x: formula.stats_status
+    y:
+      - formula.stats_task
+    aggregate:formula.stats_task: Count
+    show-labels: true
   - type: chart-bar
     name: "📈 Statistics: By Priority"
+    filters:
+      and:
+        - '!file.hasTag("task/milestone")'
     sort:
-      - property: formula.priority
+      - property: formula.stats_priority
         direction: ASC
-    x: note.priority
-    aggregate:file.name: Count
+    x: formula.stats_priority
+    y:
+      - formula.stats_task
+    aggregate:formula.stats_task: Count
+    show-labels: true
+  - type: chart-bar
+    name: "📈 Statistics: By End"
+    filters:
+      and:
+        - '!file.hasTag("task/milestone")'
+        - status.contains("🟩") || status.contains("📢")
+        - "!end.isEmpty()"
+    sort:
+      - property: end
+        direction: ASC
+    x-date-gaps:
+      property: note.end
+      enabled: true
+    x: note.end
+    x-date-grouping:
+      property: note.end
+      unit: month
+    y:
+      - formula.stats_task
+    aggregate:formula.stats_task: Count
+    show-labels: true
+    show-percentages: false
+    min-y-override: 0
+    color-palette: green
+  - type: chart-bar
+    name: "📈 Statistics: By Duration"
+    filters:
+      and:
+        - '!file.hasTag("task/milestone")'
+        - status.contains("🟩") || status.contains("📢") || status.contains("⬛")
+        - "!formula.stats_duration.isEmpty()"
+        - formula.stats_duration >= 0
+    groupBy:
+      property: formula.stats_outcome
+      direction: ASC
+    sort:
+      - property: formula.stats_duration
+        direction: ASC
+    group-colors:
+      version: 1
+      overrides:
+        '["String","⬛ Drop"]':
+          type: preset
+          value: gray
+        '["String","🟩 Done"]':
+          type: preset
+          value: green
+    x: formula.stats_duration_group
+    y:
+      - formula.stats_task
+    aggregate:formula.stats_task: Count
+    show-labels: true
+    show-percentages: false
+    min-y-override: 0
+    color-palette: earth
   - type: table
     name: ———
     filters:
