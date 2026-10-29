@@ -518,7 +518,8 @@
         2188,
         2307,
         2396,
-        3043
+        3043,
+        3766
       ]
     },
     "JPS5N475": {
@@ -6160,6 +6161,49 @@
       "itemKey": "EMM754UK",
       "libraryID": 1,
       "select": "zotero://select/library/items/EMM754UK"
+    },
+    {
+      "key": "Q6RZN4PE",
+      "version": 8982,
+      "itemType": "webpage",
+      "title": "Obsidian Vault - FAQ",
+      "abstractNote": "Ответы на все вопросы по Obsidian Vault: структура системных заметок, механика Alt+P, метаданные, иерархии и советы по масштабированию.",
+      "citationKey": "ObsidianVaultFAQ",
+      "url": "https://flowing-abyss.com/Obsidian-Vault---FAQ",
+      "accessDate": "2026-10-29T14:34:31Z",
+      "language": "en",
+      "websiteTitle": "flowing-abyss",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-10-29T14:34:31Z",
+      "dateModified": "2026-10-29T14:34:44Z",
+      "uri": "http://zotero.org/users/16981227/items/Q6RZN4PE",
+      "itemID": 3766,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://flowing-abyss.com/Obsidian-Vault---FAQ",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-29T14:34:37Z",
+          "dateModified": "2026-10-29T14:34:37Z",
+          "uri": "http://zotero.org/users/16981227/items/NWJQBQ7Y",
+          "path": "/home/exuberance/Zotero/storage/NWJQBQ7Y/Obsidian-Vault---FAQ.html",
+          "select": "zotero://select/library/items/NWJQBQ7Y"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "Q6RZN4PE",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/Q6RZN4PE"
     },
     {
       "key": "WPYQQZQE",

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/_problems/обычная заметка.md",
+                "file": "periodic/daily/2026-10-29.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,45 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "обычная заметка"
+              "title": "2026-10-29"
+            }
+          },
+          {
+            "id": "41d23f222385995d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/additions/conspectuses/Стратегия без иллюзий конспект.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Стратегия без иллюзий конспект"
+            }
+          },
+          {
+            "id": "868a0c883e050c06",
+            "type": "leaf",
+            "state": {
+              "type": "task-calendar-panel",
+              "state": {},
+              "icon": "calendar-days",
+              "title": "Abyss Tasks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,6 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "base/additions/conspectuses/Стратегия без иллюзий конспект.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -145,8 +181,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.69921875,
-    "collapsed": true
+    "width": 332.69921875
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,9 +206,16 @@
       "graph:Open graph view": false
     }
   },
-  "active": "bda9ef25e60d256c",
+  "active": "41d23f222385995d",
   "lastOpenFiles": [
-    "projects/фывафыва.md",
+    "base/additions/conspectuses/Стратегия без иллюзий конспект.md",
+    "sources/Стратегия без иллюзий_ Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен.md",
+    "home/index.md",
+    "base/notes/установка на рост.md",
+    "base/notes/установка на данность.md",
+    "base/notes/пессимизм.md",
+    "periodic/daily/2026-10-29.md",
+    "base/_hierarchy/обычная заметка.md",
     "base/contacts/zz convtest unsaved.md",
     "base/notes/zz convtest bad yaml.md",
     "sources/zz convtest empty project to book.md",
@@ -192,14 +234,7 @@
     "base/_hierarchy/zz convtest self forms.md",
     "base/notes/zz convtest hash tags.md",
     "base/notes/zz convtest string tags.md",
-    "base/notes/zz convtest custom tabs.md",
-    "base/contacts/zz convtest client.md",
-    "sources/zz convtest paper.md",
-    "base/notes/zz convtest broken.md",
     "base/notes/zz convtest canvas.canvas",
-    "base/notes/zz convtest cancel.md",
-    "base/notes/zz convtest plain.md",
-    "base/notes/zz convtest empty fm.md",
     "templates/macros/convert-type.js.tmp.1826630.990e116100fc",
     "templates/macros/convert-type.js.tmp.1826630.a31d8f01c6f8",
     "templates/macros/convert-type.js.tmp.1826630.fc03dd0f6001",

@@ -201,13 +201,41 @@ module.exports = async ({ app, quickAddApi, obsidian }) => {
     }).join('\n').replace(/\n{3,}/g, '\n\n').trim();
   };
   const tabsKey = (block) => block.split('\n').filter((line) => /^\s*tab:/.test(line)).join('\n');
+  const headingsOf = (part) => new Set(part.match(HEADING) ?? []);
+
+  const templateParts = async () => {
+    const templates = app.vault.getMarkdownFiles()
+      .filter((f) => f.path.startsWith(`${CREATE}/`) && f.name === 'template.md' && !f.path.endsWith('system/category/template.md'));
+    const texts = (await Promise.all(templates.map((f) => app.vault.cachedRead(f)))).map((t) => t.replace(/\r\n/g, '\n'));
+    return {
+      tabs: new Set(texts.flatMap((t) => t.match(TABS) ?? []).map(tabsKey).filter(Boolean)),
+      headings: new Set(texts.flatMap((t) => t.match(HEADING) ?? [])),
+    };
+  };
+  const withoutTemplateTabs = (body, tabs) => {
+    const leading = body.match(LEADING_TABS)?.[0];
+    return leading && tabs.has(tabsKey(leading)) ? body.slice(leading.length).trim() : body;
+  };
+  const withoutEmptyTemplateSections = (body, headings, tail) => {
+    const kept = headingsOf(tail);
+    return dropEmptySections(body, (line) => headings.has(line) && !kept.has(line));
+  };
+  const withoutDuplicateHeadings = (tail, body) => {
+    const taken = headingsOf(body);
+    return dropEmptySections(tail, (line) => taken.has(line));
+  };
+  const mergeBody = async (oldBody, tail) => {
+    const known = await templateParts();
+    const body = withoutEmptyTemplateSections(withoutTemplateTabs(oldBody, known.tabs), known.headings, tail);
+    const fresh = withoutDuplicateHeadings(tail, body);
+    return [body && fresh === PLACEHOLDER ? '' : fresh, body].filter(Boolean).join('\n\n');
+  };
 
   try {
     const rendered = (await render()).replace(CURSOR, '');
     const head = obsidian.getFrontMatterInfo(rendered);
     if (!head.exists) throw new Error(`${type.title}: template has no frontmatter`);
     const fm = obsidian.parseYaml(head.frontmatter) ?? {};
-    let tail = rendered.slice(head.contentStart).trim();
 
     for (const [key, value] of Object.entries(old)) {
       if (!OWN_KEYS.includes(key) && key in fm && isEmpty(fm[key]) && !isEmpty(value)) fm[key] = value;
@@ -232,22 +260,10 @@ module.exports = async ({ app, quickAddApi, obsidian }) => {
       await askMissing(fm, 'problem', 'system/high/problem', 'meta');
     }
 
-    const templates = app.vault.getMarkdownFiles()
-      .filter((f) => f.path.startsWith(`${CREATE}/`) && f.name === 'template.md' && !f.path.endsWith('system/category/template.md'));
-    const texts = (await Promise.all(templates.map((f) => app.vault.cachedRead(f)))).map((t) => t.replace(/\r\n/g, '\n'));
-    const templateTabs = new Set(texts.flatMap((t) => t.match(TABS) ?? []).map(tabsKey).filter(Boolean));
-    const templateHeadings = new Set(texts.flatMap((t) => t.match(HEADING) ?? []));
-    const headingsOf = (part) => new Set(part.match(HEADING) ?? []);
-
-    let body = text.slice(info.contentStart).replace(/\r\n/g, '\n').trim();
-    const oldTabs = body.match(LEADING_TABS)?.[0];
-    if (oldTabs && templateTabs.has(tabsKey(oldTabs))) body = body.slice(oldTabs.length).trim();
-
-    const tailHeadings = headingsOf(tail);
-    body = dropEmptySections(body, (line) => templateHeadings.has(line) && !tailHeadings.has(line));
-    const bodyHeadings = headingsOf(body);
-    tail = dropEmptySections(tail, (line) => bodyHeadings.has(line));
-    const content = [body && tail === PLACEHOLDER ? '' : tail, body].filter(Boolean).join('\n\n');
+    const content = await mergeBody(
+      text.slice(info.contentStart).replace(/\r\n/g, '\n').trim(),
+      rendered.slice(head.contentStart).trim(),
+    );
 
     if (file.parent?.path !== type.folder) {
       await app.fileManager.renameFile(file, app.vault.getAvailablePath(`${type.folder}/${file.basename}`, 'md'));
