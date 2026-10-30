@@ -7,7 +7,7 @@ tags:
   - category/css
 aliases: []
 description:
-status: 🟦🟩
+status: 🟦
 source:
   - "[[full stack itproger]]"
 start: 2026-01-25T21:22:17+03:00
@@ -17,7 +17,7 @@ url:
 icon: 📓
 color: "#6f97c8"
 created: 2026-01-25T21:22:17+03:00
-updated: 2026-01-25T23:37:11+03:00
+updated: 2026-10-29T18:46:51+04:00
 ---
 
 > [!toc]+

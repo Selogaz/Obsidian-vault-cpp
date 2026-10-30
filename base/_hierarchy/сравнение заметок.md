@@ -3,6 +3,7 @@ tags:
   - category/obsidian
   - system/high/hierarchy
 aliases: []
+description:
 relevant: false
 category:
   - "[[obsidian]]"

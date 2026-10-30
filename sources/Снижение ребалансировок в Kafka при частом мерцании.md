@@ -14,6 +14,7 @@ scientificity: 👓
 category:
   - "[[java]]"
 meta:
+  - Kafka
 problem:
 creator:
 production:

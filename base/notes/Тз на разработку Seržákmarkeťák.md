@@ -1,5 +1,10 @@
 ---
-updated: 2026-05-15T15:55:49+03:00
+tags:
+  - note/basic/primary
+aliases: []
+icon: 📝
+color: "#70a0b5"
+updated: 2026-10-29T19:02:25+04:00
 ---
 
 # Как пользоваться тз?

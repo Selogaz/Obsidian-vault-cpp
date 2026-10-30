@@ -1,5 +1,10 @@
 ---
-updated: 2025-07-16T14:31:39+03:00
+tags:
+  - note/basic/primary
+aliases: []
+icon: 📝
+color: "#70a0b5"
+updated: 2026-10-29T19:02:24+04:00
 ---
 
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>

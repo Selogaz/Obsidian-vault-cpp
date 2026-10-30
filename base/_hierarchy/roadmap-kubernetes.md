@@ -5,6 +5,7 @@ tags:
 aliases:
   - kubernetes learning
   - roadmap k8s
+description:
 relevant: false
 category:
   - "[[computer science]]"

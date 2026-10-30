@@ -14,6 +14,7 @@ scientificity:
 category:
   - "[[java]]"
 meta:
+  - Kafka
 problem:
 creator:
   - "[[gongled]]"
@@ -25,7 +26,7 @@ url:
 icon: 📃
 color: "#7575c0"
 created: 2025-09-26T13:52:17+03:00
-updated: 2026-01-14T00:26:12+03:00
+updated: 2026-10-29T21:16:13+04:00
 citekey: gongledKafkaZa202023
 related:
 total_hours: 0

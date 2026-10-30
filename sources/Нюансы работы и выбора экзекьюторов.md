@@ -12,6 +12,7 @@ scientificity:
 category:
   - "[[java]]"
 meta:
+  - Multithreading
 problem:
 creator:
 production:

@@ -14,6 +14,7 @@ scientificity: 🅱️
 category:
   - "[[java]]"
 meta:
+  - паттерны проектирования
 problem:
 creator:
   - "[[Frimen E]]"

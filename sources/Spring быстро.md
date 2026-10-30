@@ -14,13 +14,14 @@ scientificity:
 category:
   - "[[java]]"
 meta:
+  - Spring
 problem:
 creator:
 production:
 end: 2026-09-26
 icon: 📖
 color: "#b5b570"
-updated: 2026-06-01T17:34:35+03:00
+updated: 2026-10-29T20:02:16+04:00
 citekey: spilkeSpringBystro
 ---
 

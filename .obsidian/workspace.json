@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2026-10-29.md",
+                "file": "base/_hierarchy/обучение и запоминание.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-10-29"
+              "title": "обучение и запоминание"
             }
           },
           {
-            "id": "41d23f222385995d",
+            "id": "65e5d61a33ba316a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/additions/conspectuses/Стратегия без иллюзий конспект.md",
+                "file": "base/notes/эффект простого воздействия.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,21 +52,189 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Стратегия без иллюзий конспект"
+              "title": "эффект простого воздействия"
             }
           },
           {
-            "id": "868a0c883e050c06",
+            "id": "68a84bc7b38c8334",
             "type": "leaf",
             "state": {
-              "type": "task-calendar-panel",
+              "type": "graph",
               "state": {},
-              "icon": "calendar-days",
-              "title": "Abyss Tasks"
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "a1a60b12a1bbb36c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/daily/2026-10-30.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-10-30"
+            }
+          },
+          {
+            "id": "5368508d1277f34c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/weekly/2026-W13.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-W13"
+            }
+          },
+          {
+            "id": "5f98dffcdd241986",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/weekly/2026-W14.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-W14"
+            }
+          },
+          {
+            "id": "baf82a1fd6af57fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/daily/2026-06-08.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-06-08"
+            }
+          },
+          {
+            "id": "aa886f5bb5b10a37",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/daily/2026-06-01.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-06-01"
+            }
+          },
+          {
+            "id": "3b8afb1787d75514",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/_hierarchy/устройство vault.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "устройство vault"
+            }
+          },
+          {
+            "id": "23cd9743ee9017ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/_hierarchy/рабочий процесс и поток.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "рабочий процесс и поток"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -131,7 +299,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "base/additions/conspectuses/Стратегия без иллюзий конспект.md",
+                "file": "periodic/daily/2026-10-30.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -206,45 +374,50 @@
       "graph:Open graph view": false
     }
   },
-  "active": "41d23f222385995d",
+  "active": "a1a60b12a1bbb36c",
   "lastOpenFiles": [
-    "base/additions/conspectuses/Стратегия без иллюзий конспект.md",
-    "sources/Стратегия без иллюзий_ Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен.md",
-    "home/index.md",
-    "base/notes/установка на рост.md",
-    "base/notes/установка на данность.md",
-    "base/notes/пессимизм.md",
-    "periodic/daily/2026-10-29.md",
-    "base/_hierarchy/обычная заметка.md",
-    "base/contacts/zz convtest unsaved.md",
-    "base/notes/zz convtest bad yaml.md",
-    "sources/zz convtest empty project to book.md",
-    "sources/zz convtest project to book.md",
-    "projects/zz convtest project twice.md",
-    "projects/zz convtest project again.md",
-    "base/notes/zz convtest bad folder.md",
-    "base/notes/zz convtest no fm template.md",
-    "projects/zz convtest changed tabs.md",
-    "sources/zz convtest nested section.md",
-    "projects/zz convtest short placed.md",
-    "base/_hierarchy/zz convtest two categories.md",
-    "base/_hierarchy/zz convtest moved hierarchy.md",
-    "base/_hierarchy/zz convtest child hierarchy.md",
-    "base/_problems/zz convtest child meta.md",
-    "base/_hierarchy/zz convtest self forms.md",
-    "base/notes/zz convtest hash tags.md",
-    "base/notes/zz convtest string tags.md",
+    "periodic/daily/2026-05-14.md",
+    "periodic/daily/2026-10-30.md",
+    "periodic/weekly/2026-W13.md",
+    "periodic/weekly/2026-W14.md",
+    "periodic/daily/2026-06-08.md",
+    "periodic/daily/2026-06-01.md",
+    "base/_hierarchy/устройство vault.md",
+    "sources/vault.md",
+    "base/notes/ошибки слабых студентов.md",
+    "base/_hierarchy/рабочий процесс и поток.md",
+    "base/notes/ставки на футбол.md",
+    "base/notes/нежелание как показатель ошибочности решения.md",
+    "base/notes/целостная перспектива как секрет успешной организации.md",
+    "base/notes/Thread.sleep в автотестах.md",
+    "base/_hierarchy/установки и самоконтроль.md",
+    "base/_hierarchy/GTD по Аллену.md",
+    "base/notes/эффект простого воздействия.md",
+    "base/_hierarchy/обучение и запоминание.md",
+    "base/_hierarchy/Письмо и чистый лист.md",
+    "base/notes/горизонтальная концентрация внимания.md",
+    "base/notes/как предотвратить чистый лист.md",
+    "base/notes/герменевтический круг.md",
+    "base/additions/conspectuses/Как делать полезные заметки — конспект.md",
+    "base/notes/эффект Зейгарник.md",
+    "base/notes/истощение эго.md",
+    "base/_problems/Сила воли.md",
+    "home/databases/breadcrumbs.base",
+    "base/_meta-notes/базы данных",
+    "files/Подготовка к ЕГЭ 2026-03-11.png",
+    "files/Подготовка к ЕГЭ 2026-03-09.png",
+    "files/Подготовка к ЕГЭ 2026-02-19-1.png",
+    "files/Подготовка к ЕГЭ 2026-03-10.png",
+    "files/Подготовка к ЕГЭ 2026-02-21-2.png",
+    "base/notes/Тз на разработку Seržákmarkeťák.md.tmp",
+    "sources/Как одеваться после 80 уровня в пве.md.tmp",
+    "projects/ЕГЭ Информатика/13-IP адреса и маски.md.tmp",
     "base/notes/zz convtest canvas.canvas",
     "templates/macros/convert-type.js.tmp.1826630.990e116100fc",
     "templates/macros/convert-type.js.tmp.1826630.a31d8f01c6f8",
     "templates/macros/convert-type.js.tmp.1826630.fc03dd0f6001",
     "templates/macros/convert-type.js.tmp.1539133.8ba18616f187",
     "templates/macros/sed7cXvkR",
-    "templates/macros/convert-type.js.tmp.1539133.5dd2e47d648d",
-    "templates/macros/convert-type.test.js",
-    "templates/macros/convert-type.test.js.tmp.1539133.3431a7d109d6",
-    "base/notes/конвертация типа заметки.md.tmp.1539133.5e34e16ea92a",
-    "templates/macros/convert-type.js.tmp.1539133.5ec7c5a2d19e",
     "files/инструкция по трассировке 20260922132913087.png",
     "files/инструкция по трассировке 20260922132820622.png",
     "files/DATE_2026-09-22 TIME_13-22-53 20260922132805276.png",
@@ -258,11 +431,6 @@
     "periodic/2024_1.canvas",
     "periodic/2025_1.canvas",
     "periodic/tasks (grouped by time)_1.canvas",
-    "periodic/2026_1.canvas",
-    "files/test.png",
-    "files/test.jpg",
-    "files/Pasted Image 20260107000747_014.png",
-    "files/japan_1.png",
-    "files/japan.png"
+    "periodic/2026_1.canvas"
   ]
 }

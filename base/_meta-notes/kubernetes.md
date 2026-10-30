@@ -6,6 +6,7 @@ aliases:
   - оркестрация
   - containers
   - k8s
+description:
 relevant: false
 category:
   - "[[computer science]]"

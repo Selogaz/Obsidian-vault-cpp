@@ -12,6 +12,7 @@ scientificity:
 category:
   - "[[java]]"
 meta:
+  - Postgres
 problem:
 creator:
 production:

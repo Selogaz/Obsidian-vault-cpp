@@ -12,10 +12,8 @@ rating:
 scientificity: 💬
 category:
   - "[[games]]"
-meta:
-  - "[[world of warcraft]]"
-problem:
-  - "[[holy priest]]"
+meta: []
+problem: []
 creator:
 production:
 start: 2025-05-15T17:00:11+03:00
@@ -26,7 +24,7 @@ cover:
 icon: 📃
 color: "#7575c0"
 created: 2025-05-15T17:00:11+03:00
-updated: 2026-06-01T17:38:29+03:00
+updated: 2026-10-29T18:47:23+04:00
 citekey: pve_gayd_na_holi_prista_x1
 total_hours: 0
 ---

@@ -5,6 +5,7 @@ tags:
 aliases:
   - microservices patterns
   - roadmap spring cloud
+description:
 relevant: false
 category:
   - "[[computer science]]"

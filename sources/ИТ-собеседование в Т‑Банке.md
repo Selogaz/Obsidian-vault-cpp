@@ -12,6 +12,7 @@ scientificity:
 category:
   - "[[java]]"
 meta:
+  - "[[Карьера]]"
 problem:
 creator:
 production:

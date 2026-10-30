@@ -12,6 +12,7 @@ scientificity:
 category:
   - "[[java]]"
 meta:
+  - "[[Карьера]]"
 problem:
 creator:
 production:
@@ -59,7 +60,7 @@ total_hours: 0
 
 # 📋 Java core[^3]
 
-- [[Java core]]
+- [[Java coree]]
 
 # 🟦 Java Collection Framework[^4]
 

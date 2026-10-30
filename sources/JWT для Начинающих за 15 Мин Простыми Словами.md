@@ -13,14 +13,15 @@ category:
   - "[[java]]"
 meta:
 problem:
-creator: Влад Мишустин
+creator:
+  - "[[Влад Мишустин]]"
 production:
 start: 2025-09-17T12:33:46+03:00
 end:
 icon: 📹
 color: "#2a9070"
 created: 2025-09-17T12:33:46+03:00
-updated: 2026-06-01T17:39:06+03:00
+updated: 2026-10-29T18:57:43+04:00
 citekey: jwt_dlya_nachinayushchih_za_15_min_prostymi_slovami
 total_hours: 0
 tasks:

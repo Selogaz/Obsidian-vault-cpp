@@ -3,7 +3,6 @@ tags:
   - status/drop
   - source/book
   - category/java
-  - category/bioinformatics
 aliases:
   - Java, Полное руководство
 description:
@@ -14,7 +13,6 @@ status: ⬛
 rating:
 scientificity: 🅱️
 category:
-  - "[[bioinformatics]]"
   - "[[java]]"
 meta:
 problem:
@@ -29,7 +27,7 @@ url:
 icon: 📖
 color: "#b5b570"
 created: 2025-04-23T13:46:22+03:00
-updated: 2026-04-02T14:38:45+03:00
+updated: 2026-10-29T18:47:23+04:00
 citekey: shildtJavaPolnoeRukovodstvo2023
 related:
 total_hours: 0

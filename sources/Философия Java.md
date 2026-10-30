@@ -14,6 +14,7 @@ scientificity: 🅱️
 category:
   - "[[java]]"
 meta:
+  - Java Core
 problem:
 creator:
 production:

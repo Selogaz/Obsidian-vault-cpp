@@ -10,10 +10,10 @@ meta:
   - "[[base/_meta-notes/music|music]]"
 problem:
 relevant: false
-created: 2026-05-03T11:05:00+03:00
-updated: 2026-06-22T22:24:41+03:00
 icon: 🎸
 color: "#c85545"
+created: 2026-05-03T11:05:00+03:00
+updated: 2026-06-22T22:24:41+03:00
 ---
 
 > [!todo]- tasks (`$=dv.pages().file.tasks.where(t => !t.completed).where(t => dv.func.contains(t.outlinks, dv.current().file.link)).length`)

@@ -6,8 +6,8 @@ tags:
 aliases:
   - проброс локалхост на телефон
 deck: obsidian::webdev
-icon: </>
-color: "#ab4642"
+icon: 📝
+color: "#70a0b5"
 created: 2026-06-09T12:57:12+03:00
 updated: 2026-06-11T00:03:26+03:00
 ---

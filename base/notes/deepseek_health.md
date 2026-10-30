@@ -1,5 +1,10 @@
 ---
-updated: 2026-06-22T10:20:55+03:00
+tags:
+  - note/basic/primary
+aliases: []
+icon: 📝
+color: "#70a0b5"
+updated: 2026-10-29T19:02:24+04:00
 ---
 
 # Диалог с DeepSeek: Восстановление после пневмонии и стресса

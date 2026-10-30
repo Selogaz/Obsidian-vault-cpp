@@ -6,6 +6,7 @@ aliases:
   - якоря дня
   - anchors
   - daily workflow
+description:
 relevant: false
 category:
   - "[[productivity]]"

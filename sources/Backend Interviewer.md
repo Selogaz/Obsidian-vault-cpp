@@ -13,7 +13,7 @@ scientificity: 💬
 category:
   - "[[java]]"
 meta:
-  - "[[java developer]]"
+  - "[[Карьера]]"
 problem:
 creator:
 production:
@@ -25,7 +25,7 @@ cover: https://cdn4.cdn-telegram.org/file/M6Yw7qm3mst8MactxuAJ8lhHF1UDNC_pxyHCtq
 icon: 📃
 color: "#7575c0"
 created: 2025-05-29T18:17:18+03:00
-updated: 2026-10-22T10:00:50+04:00
+updated: 2026-10-29T18:47:23+04:00
 citekey: backend_interviewer
 total_hours: 0
 ---

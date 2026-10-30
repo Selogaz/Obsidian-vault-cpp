@@ -5,6 +5,7 @@ tags:
 aliases:
   - микросервисы
   - microservices
+description:
 relevant: true
 category:
   - "[[computer science]]"

@@ -5,6 +5,7 @@ tags:
 aliases:
   - java learning path
   - roadmap java
+description:
 relevant: false
 category:
   - "[[computer science]]"
@@ -39,7 +40,7 @@ Java Core — prerequisite для Spring Boot, который является �
 - [x] Классы и объекты [[класс]] [[объект]] ✅ 2026-03-21
 - [x] Наследование, полиморфизм [[наследование]] [[Преимущества полиморфизма]] [[польза полиморфизма]] ✅ 2026-03-21
 - [x] Абстракция и интерфейсы [[Абстрагирование]] [[интерфейс]] ✅ 2026-03-21
-- [x] [[Порождающие паттерны и идиомы]] ✅ 2026-03-21
+- [x] [[base/_meta-notes/паттерны проектирования]] ✅ 2026-03-21
 
 ### Collections Framework (Неделя 9-12)
 - [x] List (ArrayList, LinkedList) = [[java ArrayList]] [[LinkedList]] ✅ 2026-03-21

@@ -7,8 +7,8 @@ tags:
 aliases:
   - viewport height
 deck: obsidian::webdev
-icon: </>
-color: "#ab4642"
+icon: 📝
+color: "#70a0b5"
 created: 2026-06-09T16:39:57+03:00
 updated: 2026-06-11T00:03:06+03:00
 ---

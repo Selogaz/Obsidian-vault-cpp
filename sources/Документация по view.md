@@ -12,6 +12,7 @@ scientificity:
 category:
   - "[[java]]"
 meta:
+  - Postgres
 problem:
 creator:
 production:
@@ -20,7 +21,7 @@ end:
 icon: 📃
 color: "#7575c0"
 created: 2025-09-26T08:44:00+03:00
-updated: 2026-01-14T00:23:25+03:00
+updated: 2026-10-29T21:24:14+04:00
 citekey: документация_по_view
 total_hours: 0
 ---

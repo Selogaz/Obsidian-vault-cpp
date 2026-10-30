@@ -31,4 +31,4 @@ citekey: zotero-item-3236
 related:
 ---
 
-[[base/additions/conspectuses/deep work|deep work]]
+[[deep work — конспект|deep work — конспект]]

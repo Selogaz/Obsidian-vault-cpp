@@ -3,6 +3,7 @@ tags:
   - category/java
   - system/high/hierarchy
 aliases: []
+description:
 relevant: false
 category:
   - "[[java]]"

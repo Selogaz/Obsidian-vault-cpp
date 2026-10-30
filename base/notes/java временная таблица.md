@@ -8,7 +8,7 @@ deck: obsidian::java
 icon: </>
 color: "#ab4642"
 created: 2025-09-21T14:04:10+03:00
-updated: 2025-10-06T19:28:00+03:00
+updated: 2026-10-29T21:24:17+04:00
 sr-due: 2025-10-10
 sr-interval: 4
 sr-ease: 270
@@ -33,9 +33,11 @@ CREATE TEMPORARY TABLE Temp_Table (
 ✅ Временное хранение большого количества строк
 
 # View (представление)
+
 ![[java view]]
 
 # Matrialized VIEW
+
 ![[java matrialized view]]
 
 # Дополнительные материалы

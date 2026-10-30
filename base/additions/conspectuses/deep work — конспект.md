@@ -4,17 +4,18 @@ tags:
   - mark/log/conspectus
   - category/productivity
 aliases: []
+description:
 status: 🟩
 source:
-  - "[[Deep work]]"
+  - "[[sources/Deep work]]"
 start: 2026-08-02T12:41:52+03:00
-end:
+end: 2026-10-29
 next:
 url:
 icon: 📓
 color: "#6f97c8"
 created: 2026-08-02T12:41:52+03:00
-updated: 2026-08-24T12:49:58+03:00
+updated: 2026-10-29T19:07:45+04:00
 ---
 
 > [!toc]+

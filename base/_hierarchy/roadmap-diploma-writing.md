@@ -5,6 +5,7 @@ tags:
 aliases:
   - roadmap thesis
   - thesis writing
+description:
 relevant: false
 category:
   - "[[study]]"

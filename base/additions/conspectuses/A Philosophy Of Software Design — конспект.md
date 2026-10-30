@@ -5,17 +5,17 @@ tags:
   - category/webdev
 aliases: []
 description:
-status: ❄
+status: ⬛
 source:
   - "[[sources/A Philosophy Of Software Design]]"
 start: 2026-05-27T23:40:05+03:00
-end:
+end: 2026-10-29
 next:
 url:
 icon: 📓
 color: "#6f97c8"
 created: 2026-05-27T23:40:05+03:00
-updated: 2026-09-28T13:40:03+04:00
+updated: 2026-10-29T18:46:51+04:00
 tasks: []
 ---
 

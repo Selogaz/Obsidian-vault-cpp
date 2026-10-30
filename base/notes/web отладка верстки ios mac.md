@@ -7,8 +7,8 @@ tags:
 aliases:
   - отладка верстки ios mac
 deck: obsidian::webdev
-icon: </>
-color: "#ab4642"
+icon: 🌿
+color: "#75a835"
 created: 2026-06-11T12:15:56+03:00
 updated: 2026-06-27T10:09:36+03:00
 ---

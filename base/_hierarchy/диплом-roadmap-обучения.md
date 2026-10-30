@@ -4,6 +4,7 @@ tags:
   - mark/discourse
   - system/high/hierarchy
 aliases: []
+description:
 relevant: true
 category:
   - "[[computer science]]"

@@ -16,7 +16,7 @@ meta:
   - "[[Прокрастинация]]"
 problem:
 creator:
-  - Dr. Jud Brewer,
+  - "[[Jud Brewer]]"
 production:
 start: 2026-04-01T21:10:09+03:00
 end: 2026-04-01T21:40:09+03:00
@@ -25,7 +25,7 @@ url:
 icon: 📃
 color: "#7575c0"
 created: 2026-04-01T21:10:09+03:00
-updated: 2026-04-06T21:55:46+03:00
+updated: 2026-10-29T19:02:04+04:00
 citekey: how_to_actually_stop_procrastinating_without_willpower
 ---
 

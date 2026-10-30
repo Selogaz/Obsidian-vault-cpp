@@ -13,6 +13,7 @@ scientificity:
 category:
   - "[[java]]"
 meta:
+  - Spring
 problem:
 creator:
 production:

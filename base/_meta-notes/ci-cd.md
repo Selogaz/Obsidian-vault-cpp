@@ -6,6 +6,7 @@ aliases:
   - ci cd
   - continuous deployment
   - continuous integration
+description:
 relevant: false
 category:
   - "[[computer science]]"

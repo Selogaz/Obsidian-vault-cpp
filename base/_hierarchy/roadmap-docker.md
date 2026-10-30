@@ -5,6 +5,7 @@ tags:
 aliases:
   - containerization
   - roadmap docker
+description:
 relevant: false
 category:
   - "[[computer science]]"

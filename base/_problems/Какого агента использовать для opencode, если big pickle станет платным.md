@@ -1,4 +1,10 @@
 ---
+tags:
+  - category/obsidian
+  - system/high/problem
+aliases: []
+description:
+relevant: false
 category:
   - "[[obsidian]]"
 meta:
@@ -7,11 +13,6 @@ icon: ⚡
 color: "#d0b040"
 created: 2026-03-20T18:16:39+03:00
 updated: 2026-03-20T18:49:31+03:00
-tags:
-  - category/obsidian
-  - system/high/problem
-aliases: []
-relevant: false
 ---
 
 ## Альтернативы для opencode

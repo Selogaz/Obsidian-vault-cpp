@@ -6,8 +6,8 @@ tags:
 aliases:
   - запуск understand-anything
 deck: obsidian::webdev
-icon: </>
-color: "#ab4642"
+icon: 📝
+color: "#70a0b5"
 created: 2026-06-10T18:28:20+03:00
 updated: 2026-06-11T20:03:59+03:00
 ---
