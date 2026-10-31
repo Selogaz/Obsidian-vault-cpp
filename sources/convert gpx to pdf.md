@@ -12,7 +12,7 @@ scientificity: 💬
 category:
   - "[[study]]"
 meta:
-  - "[[base/_meta-notes/music|music]]"
+  - "[[music|music]]"
 problem:
 creator:
 production:

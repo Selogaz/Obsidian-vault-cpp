@@ -14,4 +14,4 @@ tasks:
 
 - [-] #task/inbox Экспортировать музыкальные группы из архива, который готовится по ссылке [data_protection](https://vk.com/data_protection?section=rules) ❌ 2026-07-04
 
-[[base/_meta-notes/music|music]]
+[[music|music]]

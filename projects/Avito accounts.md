@@ -1,13 +1,13 @@
 ---
 tags:
-  - status/wip
+  - status/hold
   - project/single
   - priority/normal
   - category/webdev
 aliases: []
 description:
 addition:
-status: 🟦
+status: ❄
 priority: ◽
 category:
   - "[[webdev]]"
@@ -25,7 +25,7 @@ created: 2026-09-03T11:36:32+03:00
 updated: 2026-09-03T15:07:37+03:00
 ---
 # Tasks
-- [/] #task/one-off #task/waiting_for #context/work/dev Подождать ответа Ивана ➕ 2026-10-08
+- [-] #task/one-off #task/waiting_for #context/work/dev Подождать ответа Ивана ➕ 2026-10-08 ❌ 2026-10-30
 	- [ ] Попросить у Ивана точную дату, когда он посмотрит ➕ 2026-10-22
 - [x] #task/waiting_for Вспомнить что там вообще с проектом ➕ 2026-09-30 ✅ 2026-10-08
 	- > Иван опять меня игнорит

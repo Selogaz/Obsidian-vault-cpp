@@ -1605,5 +1605,13 @@
       ],
       "key": "X"
     }
+  ],
+  "templater-obsidian:jump-to-next-cursor-location": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "J"
+    }
   ]
 }

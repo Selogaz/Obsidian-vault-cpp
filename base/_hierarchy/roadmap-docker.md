@@ -10,12 +10,11 @@ relevant: false
 category:
   - "[[computer science]]"
 meta:
-  - "[[microservices]]"
 problem:
 icon: 🧬
 color: "#b089c4"
 created: 2026-03-21T00:00:00+07:00
-updated: 2026-03-21T00:00:00+07:00
+updated: 2026-10-30T13:44:31+04:00
 ---
 
 # Roadmap: Docker
@@ -27,51 +26,56 @@ updated: 2026-03-21T00:00:00+07:00
 
 ## Зачем это нужно
 
-Docker — стандарт де-факто для packaging приложений. Без него невозможен Kubernetes и микросервисная архитектура.
+Docker – стандарт де-факто для packaging приложений. Без него невозможен Kubernetes и микросервисная архитектура.
 
 ## Что изучать
 
 ### Основы (Неделя 1-2)
+
 - [ ] Что такое контейнеры vs VMs
 - [ ] Docker architecture
 - [ ] Images, Containers, Registries
 - [ ] docker run, docker ps, docker logs
 
 ### Dockerfile (Неделя 3-4)
+
 - [ ] FROM, COPY, RUN, CMD
 - [ ] Multi-stage builds
 - [ ] Layer caching
 - [ ] Best practices
 
 ### Docker Compose (Неделя 5-6)
+
 - [ ] docker-compose.yml syntax
 - [ ] Services, Networks, Volumes
 - [ ] Environment variables
 - [ ] Local development setup
 
 ### Networking (Неделя 7-8)
+
 - [ ] Bridge, Host, Overlay networks
 - [ ] Port mapping
 - [ ] DNS resolution between containers
 
 ### Registry (Неделя 9)
+
 - [ ] Docker Hub
 - [ ] Private registries
 - [ ] Image tagging, versioning
 
 ## Проекты
 
-1. **Dockerize Spring Boot app** — создать Dockerfile
-2. **Multi-container setup** — app + DB + Redis
-3. **[[java dockerfile]]** — изучить существующие практики
+1. **Dockerize Spring Boot app** – создать Dockerfile
+2. **Multi-container setup** – app + DB + Redis
+3. **[[java dockerfile]]** – изучить существующие практики
 
 ## Ресурсы
 
-| Тип | Название | Приоритет |
-|-----|----------|-----------|
-| Книга | Docker Deep Dive (Nigel Poulton) | 🇦 |
-| Документация | docs.docker.com | 🇦 |
-| Практика | Docker Playground | 🇦 |
+| Тип                   | Название                 | Приоритет |
+|--------------------------|----------------------------------|--------------------|
+| Книга               | Docker Deep Dive (Nigel Poulton) | 🇦                  |
+| Документация | docs.docker.com                  | 🇦                  |
+| Практика         | Docker Playground                | 🇦                  |
 
 ## Критерии завершения
 

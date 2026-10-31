@@ -1,6 +1,7 @@
 ---
 tags:
   - note/specific/exact
+  - category/webdev
 aliases:
   - ADR TEST_MODE
   - adr-001

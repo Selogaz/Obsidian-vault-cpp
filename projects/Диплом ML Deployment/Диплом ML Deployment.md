@@ -16,7 +16,6 @@ category:
   - "[[computer science]]"
 meta:
   - "[[machine learning]]"
-  - "[[microservices]]"
 problem: []
 creator:
 production:

@@ -1,44 +1,50 @@
 ---
 tags:
-  - category/computer_science
-  - system/high/meta
+  - category/java
+  - system/high/hierarchy
 aliases:
   - микросервисы
   - microservices
 description:
-relevant: true
+relevant: false
 category:
-  - "[[computer science]]"
-icon: 🔎
-color: "#6fa8d6"
+  - "[[java]]"
+meta:
+problem:
+icon: 🧬
+color: "#b089c4"
 created: 2026-03-21T00:00:00+07:00
-updated: 2026-03-21T00:00:00+07:00
+updated: 2026-10-30T13:41:51+04:00
 ---
 
 # Microservices
 
-Thematic hub for microservices architecture — core area for the diploma thesis.
+Thematic hub for microservices architecture – core area for the diploma thesis.
 
 ## Подтемы
 
 ### Architecture Patterns
+
 - Service decomposition
 - API Gateway pattern
 - Service discovery и registry
 - Circuit breaker
 
 ### Communication
+
 - REST vs gRPC
 - Async messaging (Kafka, RabbitMQ)
 - Event-driven architecture
 
 ### Infrastructure
+
 - [[kubernetes]]
 - Docker containers
 - Service mesh (Istio, Linkerd)
 - [[ci-cd-pipelines]]
 
 ### Spring Ecosystem
+
 - Spring Cloud
 - Spring Boot microservices
 - Config Server, Eureka, Gateway

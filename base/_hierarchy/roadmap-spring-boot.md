@@ -10,12 +10,11 @@ relevant: false
 category:
   - "[[computer science]]"
 meta:
-  - "[[microservices]]"
 problem:
 icon: 🧬
 color: "#b089c4"
 created: 2026-03-21T00:00:00+07:00
-updated: 2026-03-21T22:42:44+03:00
+updated: 2026-10-30T13:45:11+04:00
 ---
 
 # Roadmap: Spring Boot
@@ -27,17 +26,19 @@ updated: 2026-03-21T22:42:44+03:00
 
 ## Зачем это нужно
 
-Spring Boot — основной фреймворк для построения микросервисов в enterprise. После изучения ты сможешь создавать production-ready REST API.
+Spring Boot – основной фреймворк для построения микросервисов в enterprise. После изучения ты сможешь создавать production-ready REST API.
 
 ## Что изучать
 
 ### Spring Boot Basics (Неделя 1-4)
+
 - [ ] Spring Initializr
 - [ ] Application structure
 - [ ] @SpringBootApplication
 - [ ] Profiles и Configuration
 
 ### REST API (Неделя 5-8)
+
 - [ ] @RestController, @RequestMapping
 - [ ] @GetMapping, @PostMapping, etc.
 - [ ] Request/Response DTOs
@@ -45,18 +46,21 @@ Spring Boot — основной фреймворк для построения 
 - [ ] Error handling (@ExceptionHandler)
 
 ### Data Access (Неделя 9-12)
+
 - [ ] Spring Data JPA
 - [ ] Entities, Repositories
 - [ ] Transactions (@Transactional)
 - [ ] Database migrations (Flyway/Liquibase)
 
 ### Testing (Неделя 13-16)
+
 - [ ] JUnit 5 + Mockito
 - [ ] @WebMvcTest
 - [ ] Integration tests
 - [ ] TestContainers basics
 
 ### Advanced (Неделя 17-20)
+
 - [ ] Caching (Redis)
 - [ ] Validation (Bean Validation)
 - [ ] Security basics (Spring Security)
@@ -64,17 +68,17 @@ Spring Boot — основной фреймворк для построения 
 
 ## Проекты
 
-1. **Todo API** — CRUD с БД
-2. **Blog API** — более сложная модель данных
-3. **REST клиент** — интеграция с внешним API
+1. **Todo API** – CRUD с БД
+2. **Blog API** – более сложная модель данных
+3. **REST клиент** – интеграция с внешним API
 
 ## Ресурсы
 
-| Тип | Название | Приоритет |
-|-----|----------|-----------|
-| Книга | [[Spring и Spring Boot. Разработка облачных приложений на Java]] | 🇦 |
-| Документация | Spring.io guides | 🇦 |
-| Курс | Baeldung Spring courses | 🇧 |
+| Тип                   | Название                        | Приоритет |
+|--------------------------|-----------------------------------------|--------------------|
+| Книга               | [[Spring и Spring Boot. Разработка облачных приложений на Java]] | 🇦                  |
+| Документация | Spring.io guides                        | 🇦                  |
+| Курс                 | Baeldung Spring courses                 | 🇧                  |
 
 ## Критерии завершения
 
@@ -85,4 +89,4 @@ Spring Boot — основной фреймворк для построения 
 
 ## Связь с дипломом
 
-Spring Boot — основа для Spring Cloud микросервисов. Model Registry и Inference Services будут построены на Spring Boot.
+Spring Boot – основа для Spring Cloud микросервисов. Model Registry и Inference Services будут построены на Spring Boot.

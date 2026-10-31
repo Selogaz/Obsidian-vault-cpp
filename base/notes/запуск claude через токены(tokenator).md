@@ -5,7 +5,7 @@ aliases: []
 icon: 📝
 color: "#70a0b5"
 created: 2026-07-10T10:20:14+03:00
-updated: 2026-07-10T10:20:14+03:00
+updated: 2026-10-30T14:43:17+04:00
 ---
 
 ```zsh
@@ -18,3 +18,5 @@ export ANTHROPIC_DEFAULT_HAIKU_MODEL="claude-haiku-4-5"
 export CLAUDE_CODE_SUBAGENT_MODEL="claude-sonnet-5"
 export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC="0"
 ```
+
+[[claude переключение аккаунтов]]

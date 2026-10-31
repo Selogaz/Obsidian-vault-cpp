@@ -7,7 +7,7 @@ description:
 category:
   - "[[study]]"
 meta:
-  - "[[base/_meta-notes/music|music]]"
+  - "[[music|music]]"
 problem:
 relevant: false
 icon: 🎸
