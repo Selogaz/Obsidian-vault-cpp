@@ -147,6 +147,8 @@ views:
       - tags
       - aliases
     sort:
+      - property: category
+        direction: ASC
       - property: file.name
         direction: ASC
       - property: formula.kanban
@@ -185,6 +187,8 @@ views:
       - tags
       - aliases
     sort:
+      - property: category
+        direction: ASC
       - property: file.name
         direction: ASC
       - property: formula.kanban
@@ -526,6 +530,8 @@ views:
       - production
       - url
     sort:
+      - property: category
+        direction: ASC
       - property: formula.created_relative
         direction: DESC
     columnSize:

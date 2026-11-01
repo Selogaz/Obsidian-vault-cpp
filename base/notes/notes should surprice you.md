@@ -6,10 +6,10 @@ tags:
   - category/obsidian
 aliases: []
 deck: obsidian::obsidian
-icon: 🌱
-color: "#85a560"
+icon: 📝
+color: "#d0a570"
 created: 2026-06-10T23:31:51+03:00
-updated: 2026-06-11T00:02:29+03:00
+updated: 2026-11-01T21:09:51+04:00
 ---
 
 **Notes should surprice you**

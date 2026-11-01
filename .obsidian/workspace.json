@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "25f5fc129275c514",
+            "id": "bda9ef25e60d256c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,55 +32,7 @@
             }
           },
           {
-            "id": "cf62baea18e3d96b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/additions/practice/оценка текущей ситуации.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": false
-                }
-              },
-              "icon": "lucide-file",
-              "title": "оценка текущей ситуации"
-            }
-          },
-          {
-            "id": "c1b08f2dd1b57193",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "periodic/monthly/2026-09.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": false
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2026-09"
-            }
-          },
-          {
-            "id": "db9241b9366893ad",
+            "id": "c470893838764c9c",
             "type": "leaf",
             "state": {
               "type": "task-calendar-panel",
@@ -90,36 +42,25 @@
             }
           },
           {
-            "id": "6893e3c0a955c2e4",
+            "id": "6674e22545993249",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "base/notes/наблюдение за собой об отдыхе и мотивации.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": false
-                }
+                "file": "home/databases/sources.base",
+                "viewName": "📊 All: Extended View"
               },
-              "icon": "lucide-file",
-              "title": "наблюдение за собой об отдыхе и мотивации"
+              "icon": "lucide-table",
+              "title": "sources"
             }
           },
           {
-            "id": "c5b228a267f4c109",
+            "id": "14519badb2d570cf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/contacts/Кирилл Мегацукан.md",
+                "file": "base/notes/как создавать матрицу ментальных моделей.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -134,11 +75,179 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Кирилл Мегацукан"
+              "title": "как создавать матрицу ментальных моделей"
+            }
+          },
+          {
+            "id": "72c504244a1d57df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/_hierarchy/Zettelkasten и Луман.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Zettelkasten и Луман"
+            }
+          },
+          {
+            "id": "3f6224fecbda7c8a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/_hierarchy/устройство vault.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "устройство vault"
+            }
+          },
+          {
+            "id": "e52fe62124fe0299",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/_hierarchy/обучение и запоминание.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "обучение и запоминание"
+            }
+          },
+          {
+            "id": "32f533e7e671d1a5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "periodic/daily/2026-11-01.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-11-01"
+            }
+          },
+          {
+            "id": "35814062035482e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/_hierarchy/мозг и нейроны.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "мозг и нейроны"
+            }
+          },
+          {
+            "id": "971c59e54b44fe5e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/_hierarchy/Крипта.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Крипта"
+            }
+          },
+          {
+            "id": "c527889647c8c8f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/_hierarchy/сон.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "сон"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -186,7 +295,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 330.99609375
+    "width": 330.99609375,
+    "collapsed": true
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -202,7 +312,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "base/additions/practice/оценка текущей ситуации.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -279,46 +388,46 @@
       "graph:Open graph view": false
     }
   },
-  "active": "cf62baea18e3d96b",
+  "active": "32f533e7e671d1a5",
   "lastOpenFiles": [
-    "base/contacts/Кирилл Мегацукан.md",
-    "base/contacts/Кирилл Атаманюк.md",
-    "base/additions/practice/оценка текущей ситуации.md",
-    "periodic/monthly/2026-09.md",
-    "base/contacts/Олег Басистый.md",
-    "base/contacts/Ольга Рябинина.md",
-    "base/contacts/Вика Рябинина.md",
-    "base/contacts/Макс Техлид.md",
-    "base/notes/наблюдение за собой об отдыхе и мотивации.md",
-    "base/contacts/Натуся.md",
-    "base/contacts/Таня Филоненко.md",
-    "base/contacts/Ника Филоненко.md",
-    "base/_problems/избыточная важность денег.md",
-    "periodic/daily/2026-10-22.md",
-    "base/notes/2026-09.md",
-    "base/_hierarchy/Мотивация и стимулы.md",
-    "base/notes/ограничивающие установки.md",
-    "home/fleetings.md",
-    "base/_hierarchy/Борьба со страхом.md",
-    "base/_hierarchy/Борьба с тревогой.md",
+    "base/_hierarchy/сон.md",
+    "projects/Наведение порядка в хранилище — плотность связей.md.tmp.298332.fd0640e7744b",
+    "projects/Наведение порядка в хранилище — плотность связей.md.tmp.298332.07c42a61fdc9",
+    "base/_hierarchy/Крипта.md",
+    "base/_hierarchy/мозг и нейроны.md",
+    "periodic/daily/2026-11-01.md",
+    "base/_hierarchy/обучение и запоминание.md",
+    "base/_hierarchy/устройство vault.md",
+    "base/notes/конвертация типа заметки.md",
+    "base/_hierarchy/Zettelkasten и Луман.md",
+    "base/notes/отличие Zettelkasten от википедии.md",
+    "base/notes/разница между литературными и постоянными заметками.md",
+    "base/notes/как создавать матрицу ментальных моделей.md",
+    "base/_hierarchy/логика и стереометрия.md",
+    "base/_hierarchy/установки и самоконтроль.md",
+    "base/_hierarchy/горизонты и планирование.md",
+    "base/_hierarchy/vue js.md",
+    "base/_hierarchy/React.md",
+    "base/_hierarchy/тестирование.md",
+    "base/notes/ситуационные стратегии самоконтроля.md",
+    "base/_hierarchy/видеокарты и графика.md",
+    "base/notes/как выбрать бу видеокарту.md",
+    "base/notes/победа над соблазном это расход, а не тренировка.md",
+    "base/_hierarchy/мышление и ментальные модели.md",
+    "base/_hierarchy/фриланс и продажи.md",
+    "base/_meta-notes/Карьера.md",
+    "base/notes/люди систематически переоценивают свою стойкость.md",
+    "base/notes/принцип Одиссея у мачты.md",
+    "home/databases/sources.base",
+    "home/databases/breadcrumbs.base",
     "base/additions/practice/оценка текущей ситуации.md.tmp.9890.9a4fcba724ab",
     "base/additions/practice/оценка текущей ситуации.md.tmp.9890.fffbf81fb87c",
     "base/additions/practice/оценка текущей ситуации.md.tmp.9890.c4a07705b69c",
     "base/additions/practice/оценка текущей ситуации.md.tmp.9890.ca5cb27de9c2",
     "base/additions/practice/оценка текущей ситуации.md.tmp.9890.839e0edf0244",
     "base/additions/practice/оценка текущей ситуации.md.tmp.9890.6523dcedd5b9",
-    "base/additions/practice/оценка текущей ситуации.md.tmp.9890.86e4a824cb79",
-    "periodic/daily/2026-10-02.md",
-    "base/notes/мой паттерн провала.md",
-    "base/notes/мой паттерн успеха.md",
-    "base/notes/истинная причина незаконченного вуза.md",
-    "base/additions/conspectuses/Стратегия без иллюзий конспект.md",
-    "periodic/daily/2026-11-01.md",
-    "base/additions/practice/оценка текущей ситуации.md.tmp.9890.a841862dbb76",
-    "base/additions/practice/гипотезы для запуска цикла интерес -- страсть -- цель -- связь -- оптимальная мотивация.md.tmp.9890.50e92a8ae315",
     "files/Настя Перепелица 20261101121619032.png",
     "files/Настя Перепелица 20261101120659786.png",
-    "base/additions/practice/гипотезы для запуска цикла интерес -- страсть -- цель -- связь -- оптимальная мотивация.md.tmp.9890.99811bd5f69e",
     "periodic/tasks (grouped by priority).canvas",
     "files/Подготовка к ЕГЭ 2026-03-11.png",
     "files/Подготовка к ЕГЭ 2026-03-09.png",
