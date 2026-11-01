@@ -33,4 +33,4 @@ related:
 
 freeCodeCamp course. Nice work context, introducing yourself and other cool basics
 
-[[конспект]]
+конспект

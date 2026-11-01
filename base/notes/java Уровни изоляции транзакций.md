@@ -125,11 +125,11 @@ SELECT * FROM items FOR UPDATE;
 
 # Дополнительные материалы
 
-[Нюансы уровней изоляции в Postgres](“Изоляция транзакций” ([“Нюансы уровней изоляции в Postgres”](zotero://select/library/items/EMM754UK)) ([snapshot](zotero://open-pdf/library/items/6ZJLIGY4?sel=h2&annotation=ERHVI5JT)))
-[Как реализована многоверсионность в Postgres](“Многоверсионность” ([“Как реализована многоверсионность в Postgres”](zotero://select/library/items/3LRY8J5Q)) ([snapshot](zotero://open-pdf/library/items/KG6A4KWC?sel=%23pf3%20%3E%20div%3Afirst-child%20%3E%20div%20%3E%20div%3Anth-child(4)&annotation=43L9KF8T)))
-[Как работают разные команды на разных уровнях изоляции в Postgres](“Изоляция транзакций” ([“Как работают разные команды на разных уровнях изоляции в Postgres”](zotero://select/library/items/WDCTAC9J)) ([snapshot](zotero://open-pdf/library/items/M3II9QJI?sel=h2&annotation=PL55R4V7)))
-[Простые примеры SQL с демонстрацией ошибок изоляции](“Уровни изоляции транзакций в БД” ([ListenIT, 2024](zotero://select/library/items/I9G8SXYA)) ([snapshot](zotero://open-pdf/library/items/D8DJ6UDS?sel=h1%20%3E%20span&annotation=WZHC5G7J)))
-[Уровни изоляции в Postgres, много сложных примеров](“Transaction Isolation Levels in PostgreSQL” ([“Уровни изоляции в Postgres, много сложных примеров”](zotero://select/library/items/2KSJP3TK)) ([snapshot](zotero://open-pdf/library/items/J2RYCTJ8?sel=%23card-talk-1588408%20%3E%20h2&annotation=YMENVE6V)))
+[Нюансы уровней изоляции в Postgres](zotero://select/library/items/EMM754UK) ([snapshot](zotero://open-pdf/library/items/6ZJLIGY4?sel=h2&annotation=ERHVI5JT))
+[Как реализована многоверсионность в Postgres](zotero://select/library/items/3LRY8J5Q) ([snapshot](<zotero://open-pdf/library/items/KG6A4KWC?sel=%23pf3%20%3E%20div%3Afirst-child%20%3E%20div%20%3E%20div%3Anth-child(4)&annotation=43L9KF8T>))
+[Как работают разные команды на разных уровнях изоляции в Postgres](zotero://select/library/items/WDCTAC9J) ([snapshot](zotero://open-pdf/library/items/M3II9QJI?sel=h2&annotation=PL55R4V7))
+[Простые примеры SQL с демонстрацией ошибок изоляции](zotero://select/library/items/I9G8SXYA) ([snapshot](zotero://open-pdf/library/items/D8DJ6UDS?sel=h1%20%3E%20span&annotation=WZHC5G7J))
+[Уровни изоляции в Postgres, много сложных примеров](zotero://select/library/items/2KSJP3TK) ([snapshot](zotero://open-pdf/library/items/J2RYCTJ8?sel=%23card-talk-1588408%20%3E%20h2&annotation=YMENVE6V))
 
 изоляции транзакций определяют, как транзакции взаимодействуют друг с другом при одновременном доступе к данным
 1. Грязное чтение:

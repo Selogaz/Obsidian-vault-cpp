@@ -12,7 +12,7 @@ scientificity:
 category:
   - "[[java]]"
 meta:
-  - Postgres
+  - "[[Postgres]]"
 problem:
 creator:
 production:
@@ -21,7 +21,7 @@ end:
 icon: 📃
 color: "#7575c0"
 created: 2025-09-26T10:52:07+03:00
-updated: 2026-01-14T00:21:38+03:00
+updated: 2026-10-31T15:52:07+04:00
 citekey: много_материалов_про_блокировки_eng
 total_hours: 0
 ---

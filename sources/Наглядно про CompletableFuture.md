@@ -12,7 +12,7 @@ scientificity:
 category:
   - "[[java]]"
 meta:
-  - Multithreading
+  - "[[Multithreading]]"
 problem:
 creator:
 production:
@@ -21,7 +21,7 @@ end:
 icon: 📹
 color: "#2a9070"
 created: 2025-09-19T19:53:34+03:00
-updated: 2026-01-14T00:21:34+03:00
+updated: 2026-10-31T15:52:07+04:00
 citekey: наглядно_про_completablefuture
 total_hours: 0
 ---

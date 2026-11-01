@@ -33,7 +33,7 @@ updated: 2026-10-30T13:44:52+04:00
 ### Фаза 3: Microservices (2027-2028, Семестры 4-5)
 
 - [[roadmap-spring-cloud]]
-- [[roadmap-service-communication]]
+- roadmap-service-communication
 
 ### Фаза 4: ML Fundamentals (2028, Семестры 5-6)
 
@@ -43,7 +43,7 @@ updated: 2026-10-30T13:44:52+04:00
 ### Фаза 5: Production Ready (2028-2029, Семестры 6-7)
 
 - [[roadmap-mlops]]
-- [[roadmap-monitoring]]
+- roadmap-monitoring
 
 ### Фаза 6: Thesis Writing (2029-2030, Семестры 7-8)
 

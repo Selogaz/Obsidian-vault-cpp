@@ -12,7 +12,7 @@ scientificity:
 category:
   - "[[java]]"
 meta:
-  - Kafka
+  - "[[Kafka]]"
 problem:
 creator:
   - "[[Влад Мишустин]]"
@@ -22,7 +22,7 @@ end:
 icon: 🎞️
 color: "#c86555"
 created: 2025-09-16T18:14:38+03:00
-updated: 2026-10-29T18:57:43+04:00
+updated: 2026-10-31T15:52:06+04:00
 citekey: лучший_гайд_по_kafka_для_начинающих_за_1_час
 total_hours: 0
 ---

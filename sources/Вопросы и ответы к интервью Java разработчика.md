@@ -39,7 +39,7 @@ total_hours: 0
 > 		- [[пример инкапсуляции]]
 > 	- [[наследование]]
 > 		- [[пример наследования]]
-> 	- [[полиморфизм]]
+> 	- полиморфизм
 > 		- [[java пример полиморфизма]]
 > 		- [[пример полиморфизма от ИИ]]
 > 	- [[Абстрагирование]]
@@ -71,7 +71,7 @@ total_hours: 0
 - [[java Многопоточность]]
 
 [^1]:
-[^2]:[JVM](“JVM” ([“java-interview/jvm.md”](zotero://select/library/items/UGH5TLJQ)) ([snapshot](zotero://open-pdf/library/items/IWGPPAD7?sel=article%20%3E%20div%3Afirst-child%20%3E%20h2&annotation=R738AJTH)))
-[^3]: [java-core](“Java Core” ([“java-interview/core”](zotero://select/library/items/T3X9ZD57)) ([snapshot](zotero://open-pdf/library/items/2GAN5TQF?sel=article%20%3E%20div%3Afirst-of-type%20%3E%20h1&annotation=3KTIQPAR)))
-[^4]: [JCF](“Java Collections Framework” ([“java-interview/jcf”](zotero://select/library/items/IKKYAIF7)) ([snapshot](zotero://open-pdf/library/items/UC6ZZ8YB?sel=article%20%3E%20div%3Afirst-of-type%20%3E%20h1&annotation=32EP7WM6)))
-[^5]: [Многопоточность](“ь” ([enhorse](zotero://select/library/items/LRIW9JTN)) ([snapshot](zotero://open-pdf/library/items/BAF8UCVX?sel=article%20%3E%20div%3Afirst-of-type%20%3E%20h1&annotation=CTHISDEV)))
+[^2]:[JVM](zotero://select/library/items/UGH5TLJQ) ([snapshot](zotero://open-pdf/library/items/IWGPPAD7?sel=article%20%3E%20div%3Afirst-child%20%3E%20h2&annotation=R738AJTH))
+[^3]: [java-core](zotero://select/library/items/T3X9ZD57) ([snapshot](zotero://open-pdf/library/items/2GAN5TQF?sel=article%20%3E%20div%3Afirst-of-type%20%3E%20h1&annotation=3KTIQPAR))
+[^4]: [JCF](zotero://select/library/items/IKKYAIF7) ([snapshot](zotero://open-pdf/library/items/UC6ZZ8YB?sel=article%20%3E%20div%3Afirst-of-type%20%3E%20h1&annotation=32EP7WM6))
+[^5]: [Многопоточность](zotero://select/library/items/LRIW9JTN) ([snapshot](zotero://open-pdf/library/items/BAF8UCVX?sel=article%20%3E%20div%3Afirst-of-type%20%3E%20h1&annotation=CTHISDEV))

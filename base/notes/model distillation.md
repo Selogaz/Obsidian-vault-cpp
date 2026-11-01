@@ -33,4 +33,4 @@ updated: 2026-06-15T16:36:32+03:00
 ## Связи
 
 - [[machine learning]] — контекст техники
-- [[quantization]], [[pruning]] — смежные методы сжатия моделей
+- quantization, pruning — смежные методы сжатия моделей

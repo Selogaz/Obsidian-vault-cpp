@@ -12,7 +12,7 @@ scientificity:
 category:
   - "[[java]]"
 meta:
-  - Java Core
+  - "[[Java Core]]"
 problem:
 creator:
 production:
@@ -21,7 +21,7 @@ end:
 icon: 📃
 color: "#7575c0"
 created: 2025-09-20T09:05:51+03:00
-updated: 2026-01-14T00:12:42+03:00
+updated: 2026-10-31T15:52:10+04:00
 citekey: спецификация_jvm
 total_hours: 0
 ---

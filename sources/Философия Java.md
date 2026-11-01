@@ -14,7 +14,7 @@ scientificity: 🅱️
 category:
   - "[[java]]"
 meta:
-  - Java Core
+  - "[[Java Core]]"
 problem:
 creator:
 production:
@@ -25,7 +25,7 @@ url:
 icon: 📖
 color: "#b5b570"
 created: 2026-03-21T22:37:42+03:00
-updated: 2026-08-26T10:02:06+03:00
+updated: 2026-10-31T15:52:10+04:00
 citekey: ThinkingJava
 related:
 ---

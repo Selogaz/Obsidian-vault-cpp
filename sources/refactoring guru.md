@@ -30,7 +30,7 @@ total_hours: 0
 > ```table-of-contents
 > ```
 # Structural patterns
-[[base/additions/conspectuses/refactoring guru|refactoring guru]]
+refactoring guru
 ## Decorator
 ![[java Decorator]]
 ## Proxy

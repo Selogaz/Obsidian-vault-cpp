@@ -12,7 +12,7 @@ scientificity:
 category:
   - "[[java]]"
 meta:
-  - Postgres
+  - "[[Postgres]]"
 problem:
 creator:
 production:
@@ -21,7 +21,7 @@ end:
 icon: 📃
 color: "#7575c0"
 created: 2025-09-20T08:39:37+03:00
-updated: 2026-10-29T21:24:34+04:00
+updated: 2026-10-31T15:52:09+04:00
 citekey: пример_настройки_нескольких_datasource_и_распределенных_транзакций_eng
 total_hours: 0
 ---

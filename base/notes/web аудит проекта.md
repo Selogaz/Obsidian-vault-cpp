@@ -29,9 +29,9 @@ updated: 2026-10-27T13:29:41+04:00
 	backend. В AGENTS.md явно зафиксировано "не восстанавливать TEST_MODE".
 	Раздел "security" из старого плана закрыт.
 - **`buildCreateCharacterPayload`** уже вынесен в
-	[src/lib/characterDraft.ts](../src/lib/characterDraft.ts), `page.tsx` им
+	`src/lib/characterDraft.ts`, `page.tsx` им
 	пользуется.
-- **`useToast` подключён** в [page.tsx](../src/app/(game)/game/character/page.tsx)
+- **`useToast` подключён** в `src/app/(game)/game/character/page.tsx`
 	и `(game)/game/create/page.tsx`; ошибки `createCharacter` уже
 	показываются пользователю. Глобального `apiClient` всё ещё нет.
 - **`no-scrollbar` утилитарный класс** в `globals.css` уже введён и
@@ -121,18 +121,18 @@ Desktop-`CharacterContinueButton` уже использует `!canCreateCharact
 - **0.1** Прокинуть `disabled={!canCreateCharacter}` в mobile
 	`CharacterContinueButton` на шаге `spells` (см. #4). Тот же паттерн,
 	что уже стоит на desktop-кнопке в
-	[page.tsx](../src/app/(game)/game/character/page.tsx).
+	`src/app/(game)/game/character/page.tsx`.
 - **0.2** Подчистить очевидно устаревшие `console.log`:
-	- [src/hooks/useCharacter.ts](../src/hooks/useCharacter.ts) `Refetch
+	- `src/hooks/useCharacter.ts` `Refetch
 		requested`,
-	- [src/app/(lk)/lk/page.tsx](../src/app/(lk)/lk/page.tsx) `Save
+	- `src/app/(lk)/lk/page.tsx` `Save
 		changes:`,
-	- [src/app/_dev/templates-modal/page.tsx](../src/app/_dev/templates-modal/page.tsx)
+	- `src/app/_dev/templates-modal/page.tsx`
 		– оставить, это dev-страница.
 	`console.warn` в сервисах оставить (диагностика плохой формы ответа
 	бэка).
 - **0.3** Удалить мок-расы/классы из
-	[src/services/character.ts](../src/services/character.ts), оставить
+	`src/services/character.ts`, оставить
 	только `STEPS` и `statsInfo`. Проверить, что нигде это уже не
 	используется как источник данных (поиск `getCharacterData`).
 

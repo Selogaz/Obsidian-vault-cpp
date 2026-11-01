@@ -29,7 +29,7 @@ Thematic hub for ML concepts, deployment, and operations relevant to the diploma
 
 ### ML Deployment
 
-- [[ml-deployment-microservices]]
+- ml-deployment-microservices
 - Model serving frameworks
 - TensorFlow Serving, Triton, TorchServe
 

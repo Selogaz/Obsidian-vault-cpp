@@ -8,7 +8,6 @@ aliases:
 description:
 published: 2022
 addition:
-  - "[[full stack itproger - attachments|📁]]"
   - "[[full stack itproger - conspectuses|📓]]"
   - "[[full stack itproger - practice|💪]]"
 zotero: "[🇿](zotero://select/items/@ProfessiyaFULLSTACK2022)"
@@ -28,7 +27,7 @@ url:
 icon: 📃
 color: "#7575c0"
 created: 2026-01-14T10:26:29+03:00
-updated: 2026-04-02T14:34:51+03:00
+updated: 2026-10-31T15:53:04+04:00
 citekey: ProfessiyaFULLSTACK2022
 related:
 ---

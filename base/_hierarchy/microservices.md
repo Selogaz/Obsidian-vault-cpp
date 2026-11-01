@@ -41,7 +41,7 @@ Thematic hub for microservices architecture – core area for the diploma thesis
 - [[kubernetes]]
 - Docker containers
 - Service mesh (Istio, Linkerd)
-- [[ci-cd-pipelines]]
+- [[ci-cd]]
 
 ### Spring Ecosystem
 

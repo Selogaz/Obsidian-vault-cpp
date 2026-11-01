@@ -92,9 +92,9 @@ kafka.consumer.isolation.level=read_committed // может ли консьюм�
 
 # Дополнительные материалы
 
-[Документация Kafka](“Documentation” ([“Документация Kafka”](zotero://select/library/items/8GCF69IC)) ([snapshot](zotero://open-pdf/library/items/RTI6FZJC?sel=h1&annotation=KJWCFQW7)))
-[Различные варианты настройки Retry](“Повторная передача сообщений в Spring Kafka” ([Harmattan49, 2023](zotero://select/library/items/CT8382FC)) ([snapshot](zotero://open-pdf/library/items/7YJLL2NY?sel=h1%20%3E%20span&annotation=CTPNWG3H)))
-[Полный пример Exactly once, демо read_uncommited/read_commited](“Kafka Transactions with Spring Boot” ([“Полный пример Exactly once, демо read_uncommited/read_commited”](zotero://select/library/items/R82NZQD8)) ([snapshot](zotero://open-pdf/library/items/JMNHNW7E?sel=header%20%3E%20h2&annotation=3TIJZ2GU)))
-[Как работают транзакции](“Transactions in Apache Kafka” ([“Как работают транзакции”](zotero://select/library/items/GYYY8UNP)) ([snapshot](zotero://open-pdf/library/items/JYUQLFD5?sel=h1&annotation=2XGF8B92)))
-[](“Kafka Transactions Explained (Twice!)” ([“Как реализована атомарная транзакция в топиках”](zotero://select/library/items/MHBPBUBL)) ([snapshot](zotero://open-pdf/library/items/7PAWQLTV?sel=h1&annotation=92F9V6CN)))
-[Документация по настройке транзакций в Spring Kafka](“Transactions” ([“Документация по настройке транзакций в Spring Kafka”](zotero://select/library/items/NDLRA83P)) ([snapshot](zotero://open-pdf/library/items/CIFPNTNB?sel=%23page-title&annotation=U9DGLZTP)))
+[Документация Kafka](zotero://select/library/items/8GCF69IC) ([snapshot](zotero://open-pdf/library/items/RTI6FZJC?sel=h1&annotation=KJWCFQW7))
+[Различные варианты настройки Retry](zotero://select/library/items/CT8382FC) ([snapshot](zotero://open-pdf/library/items/7YJLL2NY?sel=h1%20%3E%20span&annotation=CTPNWG3H))
+[Полный пример Exactly once, демо read_uncommited/read_commited](zotero://select/library/items/R82NZQD8) ([snapshot](zotero://open-pdf/library/items/JMNHNW7E?sel=header%20%3E%20h2&annotation=3TIJZ2GU))
+[Как работают транзакции](zotero://select/library/items/GYYY8UNP) ([snapshot](zotero://open-pdf/library/items/JYUQLFD5?sel=h1&annotation=2XGF8B92))
+[](zotero://select/library/items/MHBPBUBL) ([snapshot](zotero://open-pdf/library/items/7PAWQLTV?sel=h1&annotation=92F9V6CN))
+[Документация по настройке транзакций в Spring Kafka](zotero://select/library/items/NDLRA83P) ([snapshot](zotero://open-pdf/library/items/CIFPNTNB?sel=%23page-title&annotation=U9DGLZTP))

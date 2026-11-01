@@ -71,7 +71,7 @@ updated: 2026-05-12T09:46:20+03:00
 
 # Writing
 
-[[Hiragana-Practice-en.pdf]]
+_(файл потерян: Hiragana-Practice-en.pdf)_
 
 # Cards
 

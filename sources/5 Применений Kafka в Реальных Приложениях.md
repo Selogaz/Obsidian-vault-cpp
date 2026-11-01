@@ -13,7 +13,7 @@ scientificity: 📢
 category:
   - "[[java]]"
 meta:
-  - Kafka
+  - "[[Kafka]]"
 problem:
 creator:
   - "[[Влад Мишустин]]"
@@ -23,7 +23,7 @@ end: 2026-09-26
 icon: 📹
 color: "#2a9070"
 created: 2025-09-18T17:06:21+03:00
-updated: 2026-10-29T19:01:52+04:00
+updated: 2026-10-31T15:52:00+04:00
 citekey: 5_primeneniy_kafka_v_realnyh_prilozheniyah
 total_hours: 0
 ---

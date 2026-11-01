@@ -11,20 +11,10 @@
             "id": "bda9ef25e60d256c",
             "type": "leaf",
             "state": {
-              "type": "task-calendar-panel",
-              "state": {},
-              "icon": "calendar-days",
-              "title": "Abyss Tasks"
-            }
-          },
-          {
-            "id": "1c786a570e388808",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "home/index.md",
-                "mode": "preview",
+                "file": "periodic/daily/2026-11-01.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -38,35 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "f6138c743505ec10",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "home/vault statistics.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": false
-                }
-              },
-              "icon": "lucide-file",
-              "title": "vault statistics"
+              "title": "2026-11-01"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -114,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 330.99609375,
-    "collapsed": true
+    "width": 330.99609375
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -185,6 +149,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "realclaudian:Open Claudian": false,
       "hybrid-search:Hybrid search": false,
       "periodic-notes:Open today's daily note": false,
       "zotlit:Open Zotero annotations": false,
@@ -206,45 +171,45 @@
       "graph:Open graph view": false
     }
   },
-  "active": "f6138c743505ec10",
+  "active": "bda9ef25e60d256c",
   "lastOpenFiles": [
+    "periodic/daily/2026-10-31.md",
+    "periodic/daily/2026-11-01.md",
+    "home/vault statistics.md",
+    "base/additions/conspectuses/Стратегия без иллюзий конспект.md",
+    "home/fleetings.md",
+    "base/additions/practice/Карта трендов.md",
+    "base/additions/aggregators/Стратегия без иллюзий_ Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен - conspectuses.md",
+    "base/additions/conspectuses/Финансовая грамотность по-американски.md",
+    "templates/create/additions/conspectuses/manifest.md",
+    "sources/Стратегия без иллюзий_ Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен.md",
+    "base/additions/conspectuses/финансовый аналитик о деньгах.md",
+    "base/additions/attachments/Переезд в Армению (2026-09-09) - attachments.md",
+    "base/additions/conspectuses/конспект - Как привести дела в порядок.md",
+    "base/additions/conspectuses/Создание проекта с Vue JS.md",
     "home/index.md",
+    "base/creators/gongled.md",
+    "base/creators/Код Желтый.md",
+    "base/creators/Brian Ward.md",
+    "base/creators/Frimen E.md",
+    "base/creators/Семён Колосов.md",
+    "base/creators/Владимир Иванов.md",
+    "base/creators/Cal Newport.md",
+    "base/creators/ToTheMoon — AI-подкаст из Кремниевой Долины.md",
+    "base/productions/Пингвин Рандом Хаус.md",
+    "base/creators/Barbara Oakley.md",
+    "base/productions/Диалектика.md",
+    "projects/Наведение порядка в хранилище — плотность связей.md.tmp.42649.74cf58704e20",
+    "sources/Пересказ английской документации по Transactional с примерами.md.tmp",
+    "sources/Как происходит индексирование и выборка по индексу.md.tmp",
+    "base/notes/how linux works конспект.md.tmp.42649.81f3cd9b683b",
+    "home/databases/people.base",
     "home/databases/breadcrumbs.base",
     "periodic/tasks (grouped by priority).canvas",
-    "periodic/monthly/2026-10.md",
-    "periodic/priority.md",
-    "periodic/daily/2026-10-31.md",
-    "periodic/weekly/2026-W44.md",
-    "periodic/weekly/2026-W45.md",
     "periodic/monthly/2026-10.md.tmp.42649.46f56dd35178",
     "periodic/weekly/2026-W44.md.tmp.42649.7008b5bac59a",
-    "periodic/daily/2026-11-01.md",
-    "periodic/monthly/2026-11.md",
-    "periodic/yearly/2026.md",
-    "base/contacts/Бояров Артем.md",
-    "periodic/daily/2026-10-30.md",
-    "home/fleetings.md",
-    "base/notes/Что делать каждый день, чтобы стать крутым спецом.md",
-    "base/_hierarchy/работа с агентами.md",
-    "base/_hierarchy/Эмиграция из РФ.md",
-    "base/notes/аренда жилья в Беларуси для гражданина РФ.md",
-    "base/notes/реестр повесток и автоматический запрет на выезд.md",
-    "base/notes/Беларусь как маршрут эмиграции из России.md",
-    "base/notes/эмиграция из России во избежание мобилизации.md",
-    "base/notes/landscape-race-redesign-ui-spec.md",
-    "base/notes/вдохновение.md",
-    "base/notes/правило именования заметок.md",
-    "base/_hierarchy/устройство vault.md",
-    "base/notes/имя заметки.md",
-    "base/notes/скрипты obsidian tasks.md",
-    "base/notes/путь для шаблонов alt e.md",
     "home/databases/notes.base",
     "base/notes/закреп телеграм-канала.md.tmp.15463.9e486eb5f872",
-    "base/notes/закреп телеграм-канала.md.tmp.15463.8f2272f5b699",
-    "base/notes/закреп телеграм-канала.md.tmp.15463.be1cab244976",
-    "base/notes/закреп телеграм-канала.md.tmp.15463.1e8fe446efe3",
-    "templates/create/used/daily - journal.md.tmp.15463.cbc23f8f5a94",
-    "templates/create/used/daily - journal.md.tmp.15463.01d554e1ee82",
     "files/Подготовка к ЕГЭ 2026-03-11.png",
     "files/Подготовка к ЕГЭ 2026-03-09.png",
     "files/Подготовка к ЕГЭ 2026-02-19-1.png",

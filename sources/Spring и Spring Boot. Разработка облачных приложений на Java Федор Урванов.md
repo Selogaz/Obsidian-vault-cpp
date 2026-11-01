@@ -13,7 +13,7 @@ scientificity:
 category:
   - "[[java]]"
 meta:
-  - Spring
+  - "[[Spring]]"
 problem:
 creator:
 production:
@@ -22,7 +22,7 @@ end: 2026-09-26
 icon: 📖
 color: "#b5b570"
 created: 2025-05-31T20:58:17+03:00
-updated: 2026-06-01T17:36:48+03:00
+updated: 2026-10-31T15:52:01+04:00
 citekey: spring_i_spring_boot_razrabotka_oblachnyh_prilozheniy_na_java_fedor_urvanov
 total_hours: 0
 ---

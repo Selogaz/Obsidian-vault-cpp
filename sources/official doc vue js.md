@@ -36,7 +36,7 @@ https://ru.vuejs.org
 js определение vue js
 JavaScript фреймворк для создания пользовательских интерфейсов
 
-[[Vue.js]]
+[[vue js|Vue.js]]
 
 ## Пример кода
 ```js

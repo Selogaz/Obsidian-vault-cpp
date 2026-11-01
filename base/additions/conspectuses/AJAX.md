@@ -30,7 +30,7 @@ updated: 2026-01-24T21:09:22+03:00
 
 [[base/additions/conspectuses/Подробный разбор JS часть 1#Отложенное выполнение функции|setTimeout]] - пример асинхронного программирования
 [[Краткий обзор JavaScript#DOM, BOM, JS|XMLHtttpRequest]]
-[[прпр События в JS#Onload]]
+[[События в JS#Onload]]
 ```js
 let load = function(url, callback) {
 	let ajax = new XMLHttpRequest();

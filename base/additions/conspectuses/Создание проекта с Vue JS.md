@@ -7,17 +7,17 @@ tags:
   - category/css
 aliases: []
 description:
-status: 🟦
+status: ⬛
 source:
   - "[[full stack itproger]]"
 start: 2026-01-25T21:22:17+03:00
-end:
+end: 2026-10-31
 next:
 url:
 icon: 📓
 color: "#6f97c8"
 created: 2026-01-25T21:22:17+03:00
-updated: 2026-10-29T18:46:51+04:00
+updated: 2026-10-31T16:02:57+04:00
 ---
 
 > [!toc]+
@@ -25,14 +25,18 @@ updated: 2026-10-29T18:46:51+04:00
 > ```
 
 # Описание
+
 К сожалению, курс на vue 2, а сейчас актуальная версия - 3. Поэтому я буду с помощью ИИ переписывать код из видео на vue 3
 
 # CDN
+
 ```js
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="js/main.js"></script>
 ```
+
 # Vue 2
+
 ```html
 <div id="app">
 
@@ -48,9 +52,10 @@ new Vue({
 ```
 
 # Первый div
+
 К сожалению, курс на vue 2, а сейчас актуальная версия - 3. Поэтому я буду с помощью ИИ переписывать код из видео на vue 3
-## 1
-```html
+
+## ```html
 <div id="app">
 	<h1>{{ title }}</h1>
 	<p>{{ isTrue }}</p>
@@ -70,6 +75,7 @@ createApp({
 ```
 
 ## События в vue
+
 ```html
 <div id="app">
 	<h1>{{ title }}</h1>
@@ -80,6 +86,7 @@ createApp({
 ```
 
 ## Methods
+
 ```html
 <button @click="changeText">Нажми на меня</button>
 ```
@@ -157,6 +164,7 @@ createApp({
 ```
 
 ## Свойство computed
+
 ```js
 createApp({
     data() {

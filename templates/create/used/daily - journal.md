@@ -8,15 +8,16 @@
     -  мигрень <% tp.file.cursor(6) %>
 - **Деньги**
     - Сделал для дохода: <% tp.file.cursor(7) %>
-    - Пришло / ушло: <% tp.file.cursor(8) %>
+    - Пришло: <% tp.file.cursor(8) %>
+    - Ушло: <% tp.file.cursor(9) %>
 - **Что вымотало:**
-    -  <% tp.file.cursor(9) %>
-- **Что порадовало:**
     -  <% tp.file.cursor(10) %>
-- **Общение:**
+- **Что порадовало:**
     -  <% tp.file.cursor(11) %>
+- **Общение:**
+    -  <% tp.file.cursor(12) %>
 - **Как прошёл день:**
-<% tp.file.cursor(12) %>
+<% tp.file.cursor(13) %>
 
 - **Завтра главное:**
-    -  <% tp.file.cursor(13) %>
+    -  <% tp.file.cursor(14) %>

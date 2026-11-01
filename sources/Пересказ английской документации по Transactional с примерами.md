@@ -12,7 +12,7 @@ scientificity:
 category:
   - "[[java]]"
 meta:
-  - Spring
+  - "[[Spring]]"
 problem:
 creator:
 production:
@@ -21,7 +21,7 @@ end:
 icon: 📃
 color: "#7575c0"
 created: 2025-09-20T08:37:24+03:00
-updated: 2026-01-14T00:21:02+03:00
+updated: 2026-10-31T15:52:08+04:00
 citekey: пересказ_английской_документации_по_transactional_с_примерами
 total_hours: 0
 ---

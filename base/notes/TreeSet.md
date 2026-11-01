@@ -17,4 +17,4 @@ sr-ease: 310
 —
 - `TreeSet` - возможно управлять порядком элементов с помощью `Comparator`, либо сохранять элементы в порядке возрастания
 - операции — O(log n)
-[[base/_meta-notes/frontend]]
+base/_meta-notes/frontend

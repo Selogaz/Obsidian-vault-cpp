@@ -12,7 +12,7 @@ scientificity:
 category:
   - "[[java]]"
 meta:
-  - Spring
+  - "[[Spring]]"
 problem:
 creator:
 production:
@@ -21,7 +21,7 @@ end:
 icon: 📹
 color: "#2a9070"
 created: 2025-09-20T08:08:03+03:00
-updated: 2026-01-14T00:23:44+03:00
+updated: 2026-10-31T15:52:03+04:00
 citekey: доклад_евгения_борисова_про_spring_boot
 total_hours: 0
 ---

@@ -28,7 +28,7 @@ color: "#e8e8e8"
 
 [[today|today]]
 [[upcoming|upcoming]]
-[[calendar|calendar]]
+calendar
 [[priority|priorities]]
 
 [[idea|ideas]]
