@@ -92,7 +92,7 @@
       "skipWords": "a,ab,aboard,about,above,across,after,against,al,along,amid,among,an,and,anti,around,as,at,before,behind,below,beneath,beside,besides,between,beyond,but,by,d,da,das,de,del,dell,dello,dei,degli,della,dell,delle,dem,den,der,des,despite,die,do,down,du,during,ein,eine,einem,einen,einer,eines,el,en,et,except,for,from,gli,i,il,in,inside,into,is,l,la,las,le,les,like,lo,los,near,nor,of,off,on,onto,or,over,past,per,plus,round,save,since,so,some,sur,than,the,through,to,toward,towards,un,una,unas,under,underneath,une,unlike,uno,unos,until,up,upon,versus,via,von,while,with,within,without,yet,zu,zum",
       "strings": "",
       "stringsOverride": "",
-      "verbatimFields": "url,doi,file,pdf,ids,eprint,/^verb[a-z]$/,groups,/^citeulike-linkout-[0-9]+$/,/^bdsk-url-[0-9]+$/, keywords",
+      "verbatimFields": "url,doi,file,pdf,ids,eprint,verb?,groups,citeulike-linkout-?*,bdsk-url-?*,keywords",
       "warnBulkModify": 10,
       "warnTitleCased": false
     },
@@ -113,7 +113,7 @@
   },
   "version": {
     "zotero": "9.0.6",
-    "bbt": "9.0.71"
+    "bbt": "9.0.74"
   },
   "collections": {
     "BI9U9AUX": {
@@ -6164,7 +6164,7 @@
     },
     {
       "key": "Q6RZN4PE",
-      "version": 8982,
+      "version": 8984,
       "itemType": "webpage",
       "title": "Obsidian Vault - FAQ",
       "abstractNote": "Ответы на все вопросы по Obsidian Vault: структура системных заметок, механика Alt+P, метаданные, иерархии и советы по масштабированию.",
@@ -9452,11 +9452,11 @@
       ],
       "tags": [
         {
-          "tag": "💎"
-        },
-        {
           "tag": "📥",
           "type": 1
+        },
+        {
+          "tag": "💎"
         }
       ],
       "relations": {},
@@ -11792,7 +11792,7 @@
     },
     {
       "key": "JLHV54MM",
-      "version": 5800,
+      "version": 8985,
       "itemType": "document",
       "title": "Мозг освобожденный",
       "citationKey": "мозг_освобожденный",

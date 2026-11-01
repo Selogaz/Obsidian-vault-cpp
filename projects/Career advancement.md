@@ -48,7 +48,7 @@ updated: 2026-10-30T14:45:38+04:00
 - [ ] #task/one-off #context/work/self-product Пооткликаться на вакансии React + TS ➕ 2026-10-01
 - [ ] #task/one-off #context/work/self-product Завести Linkedin ➕ 2026-10-01
 	- [ ] заполнить linkedin ➕ 2026-10-19
-- [ ] #task/regular #category/productivity #context/work/self-product Пробное интервью по [[подготовка к собеседованиям]] ⏰ 08:00 ⏱️ 40m 🔁 every week on Friday and Tuesday ➕ 2026-10-22 📅 2026-11-01
+- [ ] #task/regular #category/productivity #context/work/self-product Пробное интервью по [[подготовка к собеседованиям]] ⏰ 08:00 ⏱️ 40m 🔁 every week on Friday and Tuesday ➕ 2026-10-22 📅 2026-11-02
 - [x] #task/one-off Причесать гитхаб ➕ 2026-10-01 ✅ 2026-10-19
 
 ~~~~tabs
@@ -146,5 +146,5 @@ tab: ✅ Task notes
 Лежит в /home/exuberance/Projects/Automation/demo-bot
 
 Нужно
-- [ ] #category/webdev #task/one-off настроить и оплатить API OpenAI, а также ➕ 2026-10-30 📅 2026-11-01
-- [ ] #category/webdev #task/one-off настроить тг бота. Тг бот бесплатен, можно начать с него. ➕ 2026-10-30 📅 2026-11-01
+- [ ] #category/webdev #task/one-off настроить и оплатить API OpenAI, а также ➕ 2026-10-30 📅 2026-11-02
+- [ ] #category/webdev #task/one-off настроить тг бота. Тг бот бесплатен, можно начать с него. ➕ 2026-10-30 📅 2026-11-02

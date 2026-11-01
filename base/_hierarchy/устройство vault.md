@@ -2,7 +2,8 @@
 tags:
   - category/obsidian
   - system/high/hierarchy
-aliases: []
+aliases:
+  - устройству vault
 description:
 relevant: false
 category:
