@@ -6,6 +6,7 @@ tags:
 aliases: []
 description:
 addition:
+  - "[[Career advancement - negotiations|🤝]]"
 status: 🟦
 priority: ◽
 category:
@@ -20,7 +21,7 @@ cover:
 icon: ✏️
 color: "#b87535"
 created: 2026-10-01T22:11:49+04:00
-updated: 2026-10-30T14:45:38+04:00
+updated: 2026-11-02T10:49:54+04:00
 ---
 
 # Tasks
@@ -48,7 +49,7 @@ updated: 2026-10-30T14:45:38+04:00
 - [ ] #task/one-off #context/work/self-product Пооткликаться на вакансии React + TS ➕ 2026-10-01
 - [ ] #task/one-off #context/work/self-product Завести Linkedin ➕ 2026-10-01
 	- [ ] заполнить linkedin ➕ 2026-10-19
-- [ ] #task/regular #category/productivity #context/work/self-product Пробное интервью по [[подготовка к собеседованиям]] ⏰ 08:00 ⏱️ 40m 🔁 every week on Friday and Tuesday ➕ 2026-10-22 📅 2026-11-02
+- [ ] #task/regular #category/productivity #context/work/self-product Пробное интервью по [[подготовка к собеседованиям]] ⏰ 08:00 ⏱️ 40m 🔁 every week on Friday and Tuesday ➕ 2026-10-22 📅 2026-11-03
 - [x] #task/one-off Причесать гитхаб ➕ 2026-10-01 ✅ 2026-10-19
 
 ~~~~tabs
