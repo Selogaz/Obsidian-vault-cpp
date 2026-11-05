@@ -1,0 +1,15 @@
+---
+tags:
+  - mark/addition/aggregator
+contact:
+  - "[[Олег Басистый]]"
+cssclasses:
+  - hide-backlinks
+  - hide-properties
+  - full-width
+created: 2026-11-03T17:54:51+04:00
+updated: 2026-11-03T17:54:51+04:00
+---
+
+`BUTTON[add-conversation]`
+![[обратка по сильным и слабым сторонам 20260114004316143.base#👅 Conversations]]

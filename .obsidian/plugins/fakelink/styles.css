@@ -25,6 +25,32 @@
   filter: brightness(var(--virtual-link-opacity));
 }
 
+/* Search-hit run inside a virtual link widget (issue #23).
+ * While Obsidian's in-editor search has a query, the link stays a widget -
+ * click, hover preview and markdown formatting keep working - so Obsidian's
+ * own search highlight never reaches the replaced text. The widget paints the
+ * hit run itself with a FAINT outline: Obsidian's accent box belongs to the
+ * current match only, and that is private state a plugin cannot read. Keeping
+ * this hint neutral leaves the accent box unambiguous wherever Obsidian can
+ * still draw it, while a hit inside a link is at least visible. */
+.virtual-link .fakelink-search-hit {
+  box-shadow: 0 0 0px 2px var(--text-faint);
+  border-radius: 2px;
+}
+
+/* While document search has a query, Obsidian selects the current match, which
+ * moves the caret inside any ** / == / ~~ wrapping and makes Live Preview
+ * reveal those markers. Hide the inline wrapping markers again so the searched
+ * run reads like normal text; structural markers (heading hashes, list
+ * bullets) are left alone so the page layout does not change. */
+.markdown-source-view.fakelink-search-active .cm-formatting-strong,
+.markdown-source-view.fakelink-search-active .cm-formatting-em,
+.markdown-source-view.fakelink-search-active .cm-formatting-highlight,
+.markdown-source-view.fakelink-search-active .cm-formatting-strikethrough,
+.markdown-source-view.fakelink-search-active .cm-formatting-code {
+  display: none;
+}
+
 /* Color-only display mode: text color instead of background shadow */
 body.virtual-link-color-only .virtual-link-span,
 body.virtual-link-color-only .virtual-link {
@@ -151,6 +177,19 @@ strike .virtual-link-span a {
   background-color: #e6e6e6;
   position: relative;
 }
+
+/* Document-search fallback (issue #23, upstream Virtual Linker #88).
+ * While Obsidian's search panel is open with a query, virtual links render as
+ * plain text marks instead of replace widgets, so the search highlight
+ * (.cm-searchMatch, itself a mark on the document text) shows through instead
+ * of being swallowed by the widget. The mark carries the same classes as the
+ * widget's root span (.virtual-link, .virtual-link-span, type/context
+ * classes), so every display mode - shadow chip, color-only, alt style - stays
+ * exactly as the user chose it, with no underline added. The widget and its
+ * click behaviour return as soon as the search closes or empties.
+ * No dedicated rule is needed: the shared classes do the styling, and
+ * Obsidian's .cm-searchMatch background outranks the chip background wherever
+ * the search actually hits. */
 
 /* Virtual link in header context: inherit header text color */
 html body .cm-header .virtual-link-a,
@@ -518,6 +557,10 @@ body.virtual-link-bg {
   --fakelink-line-bg: rgba(135, 206, 235, var(--fakelink-line-alpha));
   --fakelink-cursor-line-bg: rgba(255, 220, 180, var(--fakelink-cursor-line-alpha));
   --fakelink-caret: #8B4513;
+  /* Cursor-line gutter chip. Same neutral language as the text band: a
+   * translucent black over whatever surface is behind it, so it reads as a
+   * slightly darker version of the background instead of a coloured block. */
+  --fakelink-gutter-active-bg: rgba(0, 0, 0, 0.16);
   --fakelink-tab-accent: #1a73e8;
   /* Both tab styles are available: this gradient comes from 激活页面明显化.css,
    * the flat #f8fbff from 背景.css - set the variable to whichever you prefer. */
@@ -549,6 +592,8 @@ body.theme-dark.virtual-link-bg {
   --fakelink-line-bg: rgba(120, 170, 255, var(--fakelink-line-alpha));
   --fakelink-cursor-line-bg: rgba(255, 190, 120, var(--fakelink-cursor-line-alpha));
   --fakelink-caret: #ffb27a;
+  /* Dark surfaces: a translucent white lifts the chip out of the background. */
+  --fakelink-gutter-active-bg: rgba(255, 255, 255, 0.18);
   --fakelink-tab-accent: #7aa2f7;
   --fakelink-tab-bg: linear-gradient(135deg, #23272e 0%, #1c2026 100%);
   --fakelink-tab-shadow: rgba(0, 0, 0, 0.35);
@@ -596,10 +641,38 @@ body.virtual-link-bg.virtual-link-bg-lines .markdown-source-view.mod-cm6 .cm-lin
   background-color: var(--fakelink-line-bg);
 }
 
-/* Cursor line + caret (from 背景.css) */
-body.virtual-link-bg.virtual-link-bg-cursor .markdown-source-view.mod-cm6 .cm-content .cm-line.cm-active {
-  background-color: var(--fakelink-cursor-line-bg);
+/* Cursor line + caret (from 背景.css)
+ * Two independent signals, both driven by --fakelink-cursor-line-color (the
+ * "Cursor line colour" setting, empty = caret colour) and scaled by the
+ * "Cursor line strength" slider:
+ *  - the gutter (line number) always gets a colour chip, outside the text;
+ *  - the text area gets an optional pseudo-3D band (top highlight, bottom
+ *    shade, faint gradient), enabled by the "Pseudo-3D band" toggle. It is
+ *    kept soft and animated over 120ms, so moving the caret fades instead of
+ *    flashing; the toggle exists because, for some eyes, any band following
+ *    the caret still tires. */
+body.virtual-link-bg.virtual-link-bg-cursor .markdown-source-view.mod-cm6 .cm-gutters .cm-gutterElement.cm-activeLineGutter,
+body.virtual-link-bg.virtual-link-bg-cursor .markdown-source-view.mod-cm6 .cm-activeLineGutter {
+  background-color: color-mix(in srgb, var(--fakelink-cursor-line-color) calc(var(--fakelink-cursor-line-alpha) * 100%), transparent);
+  /* Obsidian sets `.cm-gutters { color: var(--text-faint) !important }`, which
+   * beats any `color` we could declare without !important. -webkit-text-fill-
+   * color paints the glyphs directly and is not subject to that, so it wins
+   * without an !important of our own. */
+  -webkit-text-fill-color: var(--text-normal);
+  border-radius: 3px;
+}
+
+body.virtual-link-bg.virtual-link-bg-cursor.virtual-link-bg-cursor-3d .markdown-source-view.mod-cm6 .cm-content .cm-line.cm-active {
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--fakelink-cursor-line-color) calc(var(--fakelink-cursor-line-alpha) * 18%), transparent) 0%,
+    transparent 100%
+  );
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--fakelink-cursor-line-color) calc(var(--fakelink-cursor-line-alpha) * 75%), transparent),
+    inset 0 -1px 0 color-mix(in srgb, var(--fakelink-cursor-line-color) calc(var(--fakelink-cursor-line-alpha) * 45%), transparent);
   border-radius: 4px;
+  transition: background 0.12s ease, box-shadow 0.12s ease;
 }
 
 body.virtual-link-bg.virtual-link-bg-cursor .markdown-source-view.mod-cm6 .cm-content {

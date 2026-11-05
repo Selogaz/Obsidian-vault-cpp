@@ -6063,6 +6063,20 @@ body.theme-dark
    hover translation previously made long values scroll under the pointer;
    they add unnecessary work to dense, virtualized tables. */
 
+/* Native Bases hides the empty-text placeholder with a transparent colour,
+   but its single-line text-overflow rule still paints a visible ellipsis in
+   narrow cells. Clip only empty fields; keep their geometry and editing. */
+.theme-dark .bases-table-container .metadata-input-longtext:empty {
+  text-overflow: clip;
+}
+
+/* The edit flair and its gap can shrink a one-glyph link to zero in a narrow
+   cell. Reserve one font-relative line box, capped to the content width.
+   Keep native shrinking so long labels still leave room for the edit flair. */
+.bases-table-container:not(.mod-multiline) .metadata-link-inner {
+  min-width: min(1lh, 100%);
+}
+
 /* Native single-line, unfocused multi-select containers shrink to content.
    The pill's max-width: calc(100% - gap - 1ch) then subtracts input space
    again, clipping even short labels inside wide cells (Ahrens: 68px for
@@ -7003,6 +7017,13 @@ body.theme-dark
   --kplex-control-border: var(--b16-border-normal);
 }
 
+/* Obsidian's .workspace-leaf-content .view-content adds 12px above the
+   plugin. The toolbar already supplies its own inset; no K-Plex row or
+   control occupies this gap. Keep the host's other insets intact. */
+.theme-dark .kplex-view-host {
+  padding-block-start: 0;
+}
+
 /* Toolbar ------------------------------------------------------------------ */
 .theme-dark .kplex-top-stack,
 .theme-dark .kplex-topbar {
@@ -7045,15 +7066,24 @@ body.theme-dark .kplex-index-status.is-updating {
   background: var(--b16-border-normal);
 }
 
-/* Toggle buttons and the active filter trigger share the theme's pressed
-   step. Current Find, layout and Sidecar controls expose aria-pressed. */
+/* Toggle buttons share the theme's pressed step. Current Find, layout and
+   Sidecar controls expose aria-pressed. */
 .theme-dark .kplex-topbar button.is-on,
 .theme-dark .kplex-find button[aria-pressed='true'],
 .theme-dark button.kplex-layout-toggle[aria-pressed='true'],
-.theme-dark .kplex-sidecar-controls button[aria-pressed='true'],
-.theme-dark .kplex-filter.is-active .kplex-filter-trigger {
+.theme-dark .kplex-sidecar-controls button[aria-pressed='true'] {
   color: var(--b16-text-strong);
   background: var(--b16-surface-2);
+  border-color: var(--b16-border-strong);
+}
+
+/* is-active describes the view/filter settings even with the menu closed.
+   Keep the toolbar's outline treatment, with a brighter border and icon
+   for that state. :where() matches the native active rule's specificity
+   while letting the shared button hover, press and focus rules win. */
+.theme-dark .kplex-filter.is-active :where(.kplex-filter-trigger) {
+  color: var(--b16-text-strong);
+  background: transparent;
   border-color: var(--b16-border-strong);
 }
 

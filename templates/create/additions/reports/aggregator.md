@@ -11,4 +11,4 @@ updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 <% "---" %>
 
 `BUTTON[add-report]`
-![[interim.base#🚨 Reports]]
+![[обратка по сильным и слабым сторонам 20260114004316143.base#🚨 Reports]]

@@ -11,4 +11,4 @@ updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 <% "---" %>
 
 `BUTTON[add-conversation]`
-![[interim.base#👅 Conversations]]
+![[обратка по сильным и слабым сторонам 20260114004316143.base#👅 Conversations]]

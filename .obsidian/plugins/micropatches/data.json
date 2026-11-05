@@ -49,8 +49,13 @@
         "localBacklinks": true,
         "localForelinks": true,
         "localInterlinks": false,
+        "zotlit-pandoc-citations": true,
+        "zotlit-citation-connected-only": false,
         "collapse-color-groups": true,
         "collapse-display": true,
+        "zotlit-color-citation-links": false,
+        "zotlit-citation-popover": false,
+        "zotlit-author-title-labels": false,
         "collapse-forces": true
       },
       "position": "bottom",

@@ -11,4 +11,4 @@ updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 <% "---" %>
 
 `BUTTON[add-conspectus]`
-![[interim.base#📓 Conspectuses]]
+![[обратка по сильным и слабым сторонам 20260114004316143.base#📓 Conspectuses]]

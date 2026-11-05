@@ -11,4 +11,4 @@ updated: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
 <% "---" %>
 
 `BUTTON[add-meeting]`
-![[interim.base#🗣️ Meetings]]
+![[обратка по сильным и слабым сторонам 20260114004316143.base#🗣️ Meetings]]

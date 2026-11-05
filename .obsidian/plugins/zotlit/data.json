@@ -1,7 +1,6 @@
 {
-  "__VERSION__": 9,
-  "release.previous-version": "2.1.4",
-  "note.literature-folder": "sources",
+  "__VERSION__": 11,
+  "release.previous-version": "2.2.1",
   "template.folder": "templates/create/sources/zotero",
   "note.frontmatter-fields": [
     {
@@ -109,7 +108,6 @@
   ],
   "attachment.folder-path": "files",
   "server.enabled": true,
-  "note.import-folder": "base/notes",
   "release.notices-enabled": false,
   "zotero.auto-refresh": true,
   "citation.editor-suggester": true,
@@ -121,5 +119,17 @@
         "type": "personal"
       }
     ]
-  }
+  },
+  "note.default-profile": {
+    "bindings": {
+      "note.literature-folder": "sources",
+      "citation.references-style": null,
+      "note.import-folder": "base/notes",
+      "note.import-colored-highlights": false,
+      "note.import-annotations-as-template": false
+    }
+  },
+  "note.template-conversion-pending": true,
+  "welcome.dismissed": false,
+  "welcome.requested": true
 }

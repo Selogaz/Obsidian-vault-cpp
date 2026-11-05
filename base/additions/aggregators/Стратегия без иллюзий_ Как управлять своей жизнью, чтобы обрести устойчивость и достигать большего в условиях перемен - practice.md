@@ -12,4 +12,4 @@ cssclasses:
 ---
 
 `BUTTON[add-practice]`
-![[interim.base#💪 Practice]]
+![[обратка по сильным и слабым сторонам 20260114004316143.base#💪 Practice]]

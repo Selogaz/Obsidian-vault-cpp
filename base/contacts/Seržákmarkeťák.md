@@ -14,7 +14,7 @@ relevant: false
 icon: 👤
 color: "#3a80b5"
 created: 2026-10-31T15:45:16+04:00
-updated: 2026-10-31T15:45:16+04:00
+updated: 2026-11-04T11:51:24+04:00
 ---
 
 ~~~~tabs
@@ -35,3 +35,4 @@ tab: ➕ Additions
 ~~~~
 
 Сергей из Чехии. Дал мне [[Sladko brno]], [[Shoptet]], [[TONSOR]]
+- [ ] #category/webdev #task/one-off Оценить сколько мне должен [[Seržákmarkeťák|Сергей]] на текущий момент. ➕ 2026-11-04 📅 2026-11-04
