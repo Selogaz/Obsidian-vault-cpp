@@ -113,7 +113,7 @@
   },
   "version": {
     "zotero": "9.0.6",
-    "bbt": "9.0.76"
+    "bbt": "9.0.77"
   },
   "collections": {
     "BI9U9AUX": {
@@ -551,7 +551,9 @@
         3443,
         3454,
         3456,
-        3621
+        3621,
+        3863,
+        3864
       ]
     },
     "ZVMFRHCY": {
@@ -630,6 +632,33 @@
     }
   },
   "items": [
+    {
+      "key": "XEU9I9SW",
+      "version": 9171,
+      "itemType": "webpage",
+      "title": "(132) 5 СКУЧНЫХ IT-бизнесов, которые сделали $1.000.000 (это можно повторить) - YouTube",
+      "citationKey": "1325SKUChNYH",
+      "url": "https://www.youtube.com/watch?v=JsGyIIlm7v0",
+      "accessDate": "2026-11-06T07:58:34Z",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-11-06T07:58:34Z",
+      "dateModified": "2026-11-06T07:58:39Z",
+      "uri": "http://zotero.org/users/16981227/items/XEU9I9SW",
+      "itemID": 3863,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "XEU9I9SW",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/XEU9I9SW"
+    },
     {
       "key": "7EITUUWT",
       "version": 5985,
@@ -3558,13 +3587,13 @@
       ],
       "tags": [
         {
-          "tag": "🌕"
+          "tag": "📥"
         },
         {
           "tag": "💬"
         },
         {
-          "tag": "📥"
+          "tag": "🌕"
         }
       ],
       "relations": {},
@@ -5712,6 +5741,43 @@
       "itemKey": "JKU2PXDM",
       "libraryID": 1,
       "select": "zotero://select/library/items/JKU2PXDM"
+    },
+    {
+      "key": "Z8IGYS6X",
+      "version": 0,
+      "itemType": "videoRecording",
+      "title": "4 РЕАЛИСТИЧНЫХ Подработки на Claude: 80 000 ₽ в Месяц по Вечерам",
+      "abstractNote": "Бесплатный Тренинг «ПОЛНАЯ СХЕМА МОНЕТИЗАЦИИ НЕЙРОСЕТЕЙ»: https://t.me/+KJ2n47TlgMs2OWQy\n\n🔹 мой ТГ: https://t.me/+KJ2n47TlgMs2OWQy",
+      "date": "2026",
+      "citationKey": "matveyabramov4REALISTIChNYHPodrabotki2026",
+      "url": "https://www.youtube.com/watch?v=kq8nj0sGM4s",
+      "accessDate": "2026-11-06T08:24:28Z",
+      "shortTitle": "4 РЕАЛИСТИЧНЫХ Подработки на Claude",
+      "libraryCatalog": "YouTube",
+      "runningTime": "16:00",
+      "creators": [
+        {
+          "name": "Матвей Абрамов",
+          "creatorType": "creator"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-11-06T08:24:28Z",
+      "dateModified": "2026-11-06T08:24:29Z",
+      "uri": "http://zotero.org/users/16981227/items/Z8IGYS6X",
+      "itemID": 3864,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "Z8IGYS6X",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/Z8IGYS6X"
     },
     {
       "key": "CYLUN2RY",

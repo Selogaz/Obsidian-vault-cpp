@@ -35,4 +35,4 @@ tab: ➕ Additions
 ~~~~
 
 Сергей из Чехии. Дал мне [[Sladko brno]], [[Shoptet]], [[TONSOR]]
-- [ ] #category/webdev #task/one-off Оценить сколько мне должен [[Seržákmarkeťák|Сергей]] на текущий момент. ➕ 2026-11-04 📅 2026-11-04
+- [x] #category/webdev #task/one-off Оценить сколько мне должен [[Seržákmarkeťák|Сергей]] на текущий момент. ➕ 2026-11-04 📅 2026-11-04 ✅ 2026-11-06

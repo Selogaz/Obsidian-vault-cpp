@@ -40,7 +40,7 @@ updated: 2026-11-04T11:44:12+04:00
 - [ ] #task/one-off #context/work/dev Получить правильный App Secret приложения 924189600750509 защищённым каналом и включить проверку подписи вебхука ➕ 2026-10-21
 - [ ] #task/one-off #context/work/dev Закрыть наружу `/test/lead`, `/poll/gmail`, `/reminders/run`, `/docs` через nginx до включения Instagram (подъюнит 11.1) ➕ 2026-10-21
 - [ ] #task/one-off #context/work/dev Завести приватный git из `sladkobrno-prod` без секретов. `git clone` с сервера не использовать: там откат на `863fa74` без SendPulse и выключателя ➕ 2026-10-21
-- [ ] #task/waiting_for Продлить домен sladkobrno.cz ➕ 2026-10-21 📅 2026-11-05
+- [x] #task/waiting_for Продлить домен sladkobrno.cz ➕ 2026-10-21 📅 2026-11-05 ✅ 2026-11-06
 - [x] #task/one-off Не останавливать `sladkobrno-bot`, пока выключатель Instagram не вынесен из него (подъюнит 11.4) ➕ 2026-10-21 ✅ 2026-11-02
 - [-] #task/one-off Переоформить аккаунты на клиента: VPS, SendPulse, OpenAI, Telegram-бот, Meta ➕ 2026-10-21 ❌ 2026-11-02
 - [x] #task/one-off #context/work/dev Подтвердить решения владельца: доставка, счёт, самовывоз, демо-бот. Согласовать доработки 11.x ➕ 2026-10-21 ✅ 2026-10-26
