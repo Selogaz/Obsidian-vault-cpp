@@ -51,7 +51,7 @@ updated: 2026-11-06T09:40:07+04:00
 - [ ] #task/one-off #context/work/self-product Пооткликаться на вакансии React + TS ➕ 2026-10-01
 - [ ] #task/one-off #context/work/self-product Завести Linkedin ➕ 2026-10-01
 	- [ ] заполнить linkedin ➕ 2026-10-19
-- [ ] #task/regular #category/productivity #context/work/self-product Пробное интервью по [[подготовка к собеседованиям]] ⏰ 08:00 ⏱️ 40m 🔁 every week on Friday and Tuesday ➕ 2026-10-22 📅 2026-11-06
+- [ ] #task/regular #category/productivity #context/work/self-product Пробное интервью по [[подготовка к собеседованиям]] ⏰ 08:00 ⏱️ 40m 🔁 every week on Friday and Tuesday ➕ 2026-10-22 📅 2026-11-09
 - [x] #task/one-off Причесать гитхаб ➕ 2026-10-01 ✅ 2026-10-19
 
 ~~~~tabs
@@ -86,11 +86,11 @@ tab: ✅ Task notes
 
 # Подготовка к собесам в найм
 
-- [ ] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-06 📅 2026-11-07
-- [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-06 📅 2026-11-06 ✅ 2026-11-06
+- [ ] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-06 📅 2026-11-09
+- [ ] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday, Saturday ➕ 2026-11-06 📅 2026-11-09
 - [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-06 📅 2026-11-05 ✅ 2026-11-06
 - [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-03 📅 2026-11-04 ✅ 2026-11-06
-- [ ] #task/one-off #category/webdev Переписать резюме под "фронтенд + ИИ-интеграции" ➕ 2026-11-03 📅 2026-11-07
+- [ ] #task/one-off #category/webdev Переписать резюме под "фронтенд + ИИ-интеграции" ➕ 2026-11-03 📅 2026-11-09
 - [ ] #task/one-off #category/webdev Доделать репозиторий с разбором [[Sladko brno]] для собеседований ➕ 2026-11-03 📅 2026-11-10
 - [ ] #task/one-off #category/webdev Назвать новую ставку хотя бы одному текущему клиенту ➕ 2026-11-03 📅 2026-11-20
 
@@ -190,6 +190,9 @@ tab: ✅ Task notes
 - AI-интеграции (Q4 плана) продавать как отдельную, более дорогую услугу после первого задеплоенного кейса.
 
 # Предложение: ИИ-ассистент для заявок
+
+> [!warning] Отложено 2026-11-02
+> После разговора с [[Кирилл Мегацукан|Кириллом]] ([[periodic/daily/2026-11-02|02.11]]) продажу ИИ-ассистентов отложил: *"огромная конкуренция"*, сначала найм, блог и продажи потом. Демо-бот и [[Sladko brno]] теперь портфолио для собеседований, а не товар. Почему это не отказ от ниши, разобрано в [[страх конкуренции]].
 
 ## Проблема бизнеса
 

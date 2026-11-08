@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2026-11-06.md",
+                "file": "base/additions/conspectuses/Стратегия без иллюзий конспект.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,26 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-11-06"
+              "title": "Стратегия без иллюзий конспект"
             }
           },
           {
-            "id": "db3b0b1f0f098861",
-            "type": "leaf",
-            "state": {
-              "type": "task-calendar-panel",
-              "state": {},
-              "icon": "calendar-days",
-              "title": "Abyss Tasks"
-            }
-          },
-          {
-            "id": "64ddc596b64722ad",
+            "id": "41c6d0e6641bb503",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/Career advancement.md",
+                "file": "periodic/daily/2026-11-08.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -62,83 +52,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Career advancement"
-            }
-          },
-          {
-            "id": "0665f224dde9868d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sources/(132) 5 СКУЧНЫХ IT-бизнесов, которые сделали $1.000.000 (это можно повторить) - YouTube.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": false
-                }
-              },
-              "icon": "lucide-file",
-              "title": "(132) 5 СКУЧНЫХ IT-бизнесов, которые сделали $1.000.000 (это можно повторить) - YouTube"
-            }
-          },
-          {
-            "id": "f03bec207168c460",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "base/_hierarchy/Борьба со страхом.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": false
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Борьба со страхом"
-            }
-          },
-          {
-            "id": "dd3d9cc0f20cf67f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sources/4 РЕАЛИСТИЧНЫХ Подработки на Claude_ 80 000 ₽ в Месяц по Вечерам.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": false
-                }
-              },
-              "icon": "lucide-file",
-              "title": "4 РЕАЛИСТИЧНЫХ Подработки на Claude_ 80 000 ₽ в Месяц по Вечерам"
+              "title": "2026-11-08"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -186,7 +104,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 330.99609375
+    "width": 330.99609375,
+    "collapsed": true
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -202,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sources/4 РЕАЛИСТИЧНЫХ Подработки на Claude_ 80 000 ₽ в Месяц по Вечерам.md",
+                "file": "periodic/daily/2026-11-08.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -247,22 +166,8 @@
               "icon": "lucide-ghost",
               "title": "review-queue-list-view"
             }
-          },
-          {
-            "id": "4df75c295b0dc220",
-            "type": "leaf",
-            "state": {
-              "type": "zotero-annotation-view",
-              "state": {
-                "followMode": "active-tab",
-                "previousMode": "active-tab"
-              },
-              "icon": "highlighter",
-              "title": "Zotero annotations"
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -294,44 +199,44 @@
       "graph:Open graph view": false
     }
   },
-  "active": "dd3d9cc0f20cf67f",
+  "active": "41c6d0e6641bb503",
   "lastOpenFiles": [
-    "sources/4 РЕАЛИСТИЧНЫХ Подработки на Claude_ 80 000 ₽ в Месяц по Вечерам.md",
-    "sources/(132) 5 СКУЧНЫХ IT-бизнесов, которые сделали $1.000.000 (это можно повторить) - YouTube.md",
-    "base/_hierarchy/Борьба со страхом.md",
-    "base/notes/страх конкуренции.md",
-    "projects/Career advancement.md",
-    "base/notes/DATE_2026-11-02 TIME_18-43-24.md",
-    "periodic/daily/2026-11-06.md",
+    "base/notes/SMART.md",
+    "base/additions/conspectuses/Стратегия без иллюзий конспект.md",
+    "base/creators/Питер Голлвитцер.md",
+    "base/creators/Эдвин Локк.md",
+    "base/creators/Гэри Лэтэм.md",
+    "base/notes/цикл системной жизни.md",
+    "base/notes/рефлексия.md",
+    "base/notes/философия ставок.md",
+    "base/notes/инструмент постановки целей.md",
+    "base/notes/деньги - следствие сфокусированности на процессе, а не на результате.md",
+    "base/notes/сверка только с наличием результата свидетельствует о несистемном движении.md",
+    "base/notes/цель должна быть смелая, а не невыполнимая.md",
+    "base/notes/размытые формулировки приводят к недостижимым целям.md",
+    "base/notes/страх начинаний.md",
+    "base/creators/Иван Замесин.md",
+    "base/creators/Грег МакКеон.md",
+    "base/notes/зона ближайшего развития по Льву Выготскому.md",
+    "base/notes/Цель.md",
+    "base/notes/java aop target.md",
+    "base/notes/отвественность.md",
+    "base/notes/большинство проблем возникает из-за того, что человек пытается предсказать будущее.md",
+    "base/notes/Определенности на самом деле не существует.md",
+    "periodic/daily/2026-11-08.md",
+    "home/index.md",
+    "home/databases/breadcrumbs.base",
+    "base/additions/aggregators/Стратегия без иллюзий_ Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен - conspectuses.md",
+    "periodic/daily/2026-11-07.md",
+    "projects/Career advancement.md.tmp.268754.db277b986008",
+    "base/notes/страх конкуренции.md.tmp.268754.99e1f67f404a",
+    "base/notes/пассивность усиливает тревогу.md.tmp.268754.2c3612c12a09",
+    "base/notes/страх открытия банковского счёта.md.tmp.268754.6274d000fa1b",
+    "periodic/weekly/sedcmr334",
+    "sources/sedNMKLHA",
+    "base/additions/practice/sedeK1Gdx",
     "projects/Career advancement.md.tmp.7627.4a858e7cb937",
     "projects/sed6w6Ncr",
-    "projects/Career advancement.md.tmp.7627.02ed9ec05444",
-    "projects/Career advancement.md.tmp.7627.158bb3a6cf52",
-    "projects/Career advancement.md.tmp.7627.8e49c44c9bd1",
-    "projects/Career advancement.md.tmp.7627.6792ccdf6061",
-    "projects/Career advancement.md.tmp.7627.95c6ec4a0b8d",
-    "home/index.md",
-    "periodic/daily/2026-11-05.md",
-    "projects/Career advancement.md.tmp.14760.4a74bab76e85",
-    "projects/Career advancement.md.tmp.14760.39b3db6b70ab",
-    "projects/Career advancement.md.tmp.14760.0d8d7b1abdf3",
-    "base/notes/страх открытия банковского счёта.md",
-    "periodic/weekly/2026-W45.md",
-    "base/productions/Konami.md",
-    "periodic/daily/2026-11-04.md",
-    "projects/TONSOR.md",
-    "base/contacts/Seržákmarkeťák.md",
-    "projects/Sladko brno.md",
-    "base/notes/требования к опыту Django для веб-разработчика.md",
-    "base/additions/practice/оценка текущей ситуации.md",
-    "base/additions/conversations/обратка по сильным и слабым сторонам 1.md",
-    "base/contacts/Настя Перепелица.md",
-    "base/additions/aggregators/Настя Перепелица - conversations.md",
-    "sources/Стратегия без иллюзий_ Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен.md",
-    "base/additions/practice/поиск и анализ стратегических разрывов.md",
-    "base/additions/aggregators/Стратегия без иллюзий_ Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен - practice.md",
-    "base/additions/practice/сбор и приоритизация стратегических разрывов.md",
-    "periodic/daily/2026-11-03.md",
     "files/Настя Перепелица 20261101121619032.png",
     "files/Настя Перепелица 20261101120659786.png",
     "periodic/tasks (grouped by priority).canvas",
