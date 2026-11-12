@@ -627,7 +627,9 @@
         2187,
         2192,
         2193,
-        3232
+        3232,
+        3991,
+        3992
       ]
     }
   },
@@ -643,11 +645,11 @@
       "creators": [],
       "tags": [
         {
-          "tag": "💎"
-        },
-        {
           "tag": "📥",
           "type": 1
+        },
+        {
+          "tag": "💎"
         }
       ],
       "relations": {},
@@ -5766,11 +5768,11 @@
       ],
       "tags": [
         {
-          "tag": "💎"
-        },
-        {
           "tag": "📥",
           "type": 1
+        },
+        {
+          "tag": "💎"
         }
       ],
       "relations": {},
@@ -9366,6 +9368,46 @@
       "select": "zotero://select/library/items/3H7AQG5W"
     },
     {
+      "key": "Y4W5U893",
+      "version": 9331,
+      "itemType": "videoRecording",
+      "title": "Я полностью автоматизировал монтаж в Claude: вся система пошагово",
+      "abstractNote": "Монтаж в Claude с нуля: ни одной склейки руками — всё порезал Claude.\n\nВ этом видео с нуля ставим Claude на ваш компьютер и монтируем ваш первый ролик. Пять шагов: тариф, программа, папка для файлов, съёмка, первый монтаж. И три поломки, на которых новички обычно застревают, — с тем, как их обойти. Программировать не придётся.\n\nПромт, которым Claude смонтировал дубль из начала выпуска, таблица ошибок «что написать Claude», чек-лист установки и как подключить Claude к DaVinci — бот пришлёт бесплатно:\nhttps://t.me/AI_Creators_club_bot?sta...\nЕсли удобнее MAX — тот же бот там: https://max.ru/id692700697458_bot?sta...\nВлог из Китая, который собрал Claude: https://youtu.be/XCw8_xhoSNU\n\nГлавы:\n00:00 Сырой дубль и что сделал Claude\n00:28 План: пять шагов\n00:56 Как Claude вообще монтирует\n01:50 Влог из Китая: 115 сырых файлов\n02:21 Шаг 1. Тариф\n02:55 Шаг 2. Программа и вкладка Code\n03:24 Шаг 3. Папка для файлов\n03:55 Поломка №1: Claude не видит папку\n04:27 Первое сообщение\n05:10 Поломка №2: ошибка при установке\n05:32 Шаг 4. Как снимать, чтобы нейронка не сломала ролик\n06:46 Шаг 5. Первый монтаж\n07:51 Поломка №3: «готово» — не значит готово\n08:52 Длинное видео\n09:15 Можно ли с телефона\n09:39 Какой нужен компьютер\n09:52 Свой стиль монтажа + бот\n10:27 Коротко: весь путь\n10:47 Следующее видео\n\nЧто упоминается в выпуске:\n— Claude — программа для компьютера, вкладка Code (тариф Pro и выше)\n— Whisper и GigaAM — расшифровка речи по словам (бесплатно, на компьютере)\n— ffmpeg — резка видео (бесплатно)\n— DaVinci Resolve — монтажная программа\n\nМои соцсети:\nTelegram: https://t.me/neuro_ver\nInstagram*: https://www.instagram.com/neuro_ver\nTikTok: https://www.tiktok.com/@neuro_ver\nБез VPN:\nВК: https://vk.com/neuro_ver\nMAX: https://max.ru/channel_neuro_ver\n\nСотрудничество: https://t.me/AI_CLUB_SUPPORT\nNEUROVER — российский ИИ-агрегатор, оплата в рублях, без ограничений: https://neurover.io\n\n*Instagram принадлежит компании Meta, признанной экстремистской и запрещённой в РФ.",
+      "date": "2026",
+      "citationKey": "vershininPolnostyuAvtomatizirovalMontazh2026",
+      "url": "https://www.youtube.com/watch?v=vcLzuXROw9g",
+      "accessDate": "2026-11-09T15:30:32Z",
+      "shortTitle": "Я полностью автоматизировал монтаж в Claude",
+      "libraryCatalog": "YouTube",
+      "runningTime": "9:06",
+      "creators": [
+        {
+          "name": "ВЕРШИНИН",
+          "creatorType": "creator"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "💎"
+        },
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-11-09T15:30:32Z",
+      "dateModified": "2026-11-11T10:48:43Z",
+      "uri": "http://zotero.org/users/16981227/items/Y4W5U893",
+      "itemID": 3991,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "Y4W5U893",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/Y4W5U893"
+    },
+    {
       "key": "Y5Z2BP99",
       "version": 6114,
       "itemType": "computerProgram",
@@ -10175,6 +10217,32 @@
       "itemKey": "FV7BTCIB",
       "libraryID": 1,
       "select": "zotero://select/library/items/FV7BTCIB"
+    },
+    {
+      "key": "NWXGC9GH",
+      "version": 9333,
+      "itemType": "videoRecording",
+      "title": "AI dev конференция",
+      "citationKey": "zotero-item-3992",
+      "url": "https://ai-dev.live/",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-11-11T10:49:07Z",
+      "dateModified": "2026-11-11T10:49:27Z",
+      "uri": "http://zotero.org/users/16981227/items/NWXGC9GH",
+      "itemID": 3992,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "NWXGC9GH",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/NWXGC9GH"
     },
     {
       "key": "JI5WGELG",

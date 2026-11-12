@@ -159,7 +159,12 @@
     "scales": {}
   },
   "__fakelinkSizeCache2": {
-    "images": {},
+    "images": {
+      "files/AIdro_kxmxhabpgTTsOLMlUTaBUEdZfT7_yDCb7iEDpuPkg=s32-c-k-c0x00ffffff-no-rj.jpg\u00001794401438244": {
+        "w": 32,
+        "h": 32
+      }
+    },
     "pdf": {},
     "embeds": {
       "Другая заметка": [

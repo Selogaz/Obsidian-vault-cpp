@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/additions/conspectuses/Стратегия без иллюзий конспект.md",
+                "file": "periodic/daily/2026-11-12.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,26 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Стратегия без иллюзий конспект"
+              "title": "2026-11-12"
             }
           },
           {
-            "id": "41c6d0e6641bb503",
+            "id": "c2f11b41340ce51e",
+            "type": "leaf",
+            "state": {
+              "type": "task-calendar-panel",
+              "state": {},
+              "icon": "calendar-days",
+              "title": "Abyss Tasks"
+            }
+          },
+          {
+            "id": "bad236f684aa762c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2026-11-08.md",
+                "file": "base/additions/conspectuses/конспект AI dev.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,11 +62,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-11-08"
+              "title": "конспект AI dev"
+            }
+          },
+          {
+            "id": "a4f1b4ec94887153",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/Career advancement.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Career advancement"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -104,8 +138,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 330.99609375,
-    "collapsed": true
+    "width": 330.99609375
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -121,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "periodic/daily/2026-11-08.md",
+                "file": "projects/Career advancement.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -199,56 +232,56 @@
       "graph:Open graph view": false
     }
   },
-  "active": "41c6d0e6641bb503",
+  "active": "a4f1b4ec94887153",
   "lastOpenFiles": [
-    "base/notes/SMART.md",
-    "base/additions/conspectuses/Стратегия без иллюзий конспект.md",
-    "base/creators/Питер Голлвитцер.md",
-    "base/creators/Эдвин Локк.md",
-    "base/creators/Гэри Лэтэм.md",
-    "base/notes/цикл системной жизни.md",
-    "base/notes/рефлексия.md",
-    "base/notes/философия ставок.md",
-    "base/notes/инструмент постановки целей.md",
-    "base/notes/деньги - следствие сфокусированности на процессе, а не на результате.md",
-    "base/notes/сверка только с наличием результата свидетельствует о несистемном движении.md",
-    "base/notes/цель должна быть смелая, а не невыполнимая.md",
-    "base/notes/размытые формулировки приводят к недостижимым целям.md",
-    "base/notes/страх начинаний.md",
-    "base/creators/Иван Замесин.md",
-    "base/creators/Грег МакКеон.md",
-    "base/notes/зона ближайшего развития по Льву Выготскому.md",
-    "base/notes/Цель.md",
-    "base/notes/java aop target.md",
-    "base/notes/отвественность.md",
-    "base/notes/большинство проблем возникает из-за того, что человек пытается предсказать будущее.md",
-    "base/notes/Определенности на самом деле не существует.md",
-    "periodic/daily/2026-11-08.md",
+    "base/additions/conspectuses/конспект AI dev.md",
+    "sources/Стратегия без иллюзий_ Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен.md",
+    "periodic/daily/2026-11-12.md",
+    "base/additions/aggregators/AI dev конференция - conspectuses.md",
+    "sources/AI dev конференция.md",
+    "files/Pasted image 20261112214335.png",
+    "files/Pasted image 20261112214319.png",
+    "files/Pasted image 20261112214153.png",
+    "files/Pasted image 20261112214143.png",
+    "files/Pasted image 20261112214120.png",
+    "files/Pasted image 20261112214042.png",
+    "files/Pasted image 20261112213922.png",
+    "files/Pasted image 20261112213805.png",
+    "files/Pasted image 20261112213658.png",
+    "files/Pasted image 20261112213606.png",
+    "base/contacts/Владимир Кравчук психолог.md",
+    "projects/Career advancement.md",
+    "base/contacts/Владимир Кравчук психолог.md.tmp.173715.03160e698047",
+    "projects/Career advancement.md.tmp.173715.f972f8430d9e",
+    "projects/Career advancement.md.tmp.7600.a3e116b483f6",
+    "projects/Career advancement.md.tmp.7600.3573ce9adbe6",
+    "projects/Career advancement.md.tmp.7600.e1ec7e4c336f",
+    "projects/Career advancement.md.tmp.7600.ea16b65f667e",
+    "projects/Career advancement.md.tmp.7600.0b38d1b47777",
+    "base/productions/Wow Пердули.md",
     "home/index.md",
-    "home/databases/breadcrumbs.base",
-    "base/additions/aggregators/Стратегия без иллюзий_ Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен - conspectuses.md",
-    "periodic/daily/2026-11-07.md",
-    "projects/Career advancement.md.tmp.268754.db277b986008",
-    "base/notes/страх конкуренции.md.tmp.268754.99e1f67f404a",
-    "base/notes/пассивность усиливает тревогу.md.tmp.268754.2c3612c12a09",
-    "base/notes/страх открытия банковского счёта.md.tmp.268754.6274d000fa1b",
-    "periodic/weekly/sedcmr334",
-    "sources/sedNMKLHA",
-    "base/additions/practice/sedeK1Gdx",
-    "projects/Career advancement.md.tmp.7627.4a858e7cb937",
-    "projects/sed6w6Ncr",
-    "files/Настя Перепелица 20261101121619032.png",
-    "files/Настя Перепелица 20261101120659786.png",
+    "periodic/daily/2026-11-11.md",
+    "periodic/daily/sedfTeoUg",
+    "projects/Career advancement.md.tmp.7203.40508b94e66a",
+    "projects/Career advancement.md.tmp.7203.bfb9b8d741de",
+    "periodic/daily/2026-11-10.md",
+    "base/additions/conspectuses/Стратегия без иллюзий конспект.md",
+    "sources/Bleach.md",
+    "base/additions/practice/гипотезы для запуска цикла интерес -- страсть -- цель -- связь -- оптимальная мотивация.md",
+    "base/creators/Гэри Лэтэм.md",
+    "base/notes/SMART.md",
+    "base/notes/годовой план карьерного развития.md",
+    "base/notes/Стратегия без иллюзий конспект.md",
+    "periodic/daily/2026-11-09.md",
+    "projects/Claude монтаж.md",
+    "base/contacts/Seržákmarkeťák.md",
+    "base/additions/conspectuses/Как автоматизировать монтаж в Claude.md",
+    "sources/Я полностью автоматизировал монтаж в Claude_ вся система пошагово.md",
+    "base/additions/aggregators/Я полностью автоматизировал монтаж в Claude_ вся система пошагово - conspectuses.md",
+    "periodic/daily/2026-11-08.md",
+    "periodic/weekly/2026-W46.md",
     "periodic/tasks (grouped by priority).canvas",
-    "files/Подготовка к ЕГЭ 2026-03-11.png",
-    "files/Подготовка к ЕГЭ 2026-03-09.png",
-    "files/Подготовка к ЕГЭ 2026-02-19-1.png",
-    "files/Подготовка к ЕГЭ 2026-03-10.png",
-    "files/Подготовка к ЕГЭ 2026-02-21-2.png",
     "base/notes/zz convtest canvas.canvas",
-    "files/инструкция по трассировке 20260922132913087.png",
-    "files/инструкция по трассировке 20260922132820622.png",
-    "files/DATE_2026-09-22 TIME_13-22-53 20260922132805276.png",
     "files/Редизайн мобильного приложения для покупки билетов в S7 (2026-04-21) - roadmap.canvas",
     "periodic/2025.canvas",
     "periodic/2026.canvas",

@@ -2,7 +2,9 @@
 tags:
   - contact/working
   - category/webdev
-aliases: []
+aliases:
+  - Сергей
+  - Сергею
 description:
 addition:
 category:
