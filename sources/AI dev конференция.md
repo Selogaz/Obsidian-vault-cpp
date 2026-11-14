@@ -1,5 +1,6 @@
 ---
 tags:
+  - status/atom
   - source/video/recording
   - category/webdev
 aliases:
@@ -7,9 +8,10 @@ aliases:
 description:
 published:
 addition:
+  - "[[AI dev конференция - attachments|🖼️]]"
   - "[[AI dev конференция - conspectuses|📓]]"
 zotero: "[🇿](zotero://select/items/@zotero-item-3992)"
-status: 📥
+status: ⚛
 rating:
 scientificity:
 category:
@@ -24,7 +26,7 @@ url:
 icon: 📹
 color: "#2a9070"
 created: 2026-11-11T14:49:36+04:00
-updated: 2026-11-11T14:49:46+04:00
+updated: 2026-11-13T17:31:02+04:00
 related: []
 citekey: zotero-item-3992
 zotero-key: NWXGC9GH

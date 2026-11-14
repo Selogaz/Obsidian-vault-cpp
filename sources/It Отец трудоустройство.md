@@ -26,4 +26,4 @@ citekey: it_otec_trudoustroystvo
 total_hours: 0
 ---
 
-![[java middle шаблон легенды]]
+![[java middle]]

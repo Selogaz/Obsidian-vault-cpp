@@ -8,18 +8,18 @@ aliases:
 icon: 📝
 color: "#70a0b5"
 created: 2026-06-11T21:20:00+03:00
-updated: 2026-06-21T22:59:40+03:00
+updated: 2026-11-13T11:27:34+04:00
 ---
 
 # Orphan notes vault
 
-Заметки без связей (no inlinks + no outlinks) в рамках тэгированного графа (`#note`, `#system`, `#project`, `#source`, `#creator`, `#contact`, `#production`). По статистике — 51 шт. (4.6%).
+Заметки без связей (no inlinks + no outlinks) в рамках тэгированного графа (`#note`, `#system`, `#project`, `#source`, `#creator`, `#contact`, `#production`). По статистике – 51 шт. (4.6%).
 
 ## base/notes
 
 - css position
 - github-profile-setup
-- java middle Verme легенда
+- java middle Verme
 - java локи и уровни изоляции транзакций
 - java передача параметров в методы (ИИ версия)
 - java Сопроводительное письмо
@@ -62,8 +62,10 @@ updated: 2026-06-21T22:59:40+03:00
 - почему метод clone() объявлен в классе Object, а не в интерфейсе Cloneable
 - Почему хэш код в виде 31 * x + y предпочтительнее чем x + y
 - Признание резидентства ЕС в Исландии (EEA)
-- Путь 1: Профессиональный рост (Seniority + C1)
-- Путь 2: Образовательный маршрут (Магистратура)
+- Путь 1
+	- Профессиональный рост (Seniority + C1)
+- Путь 2
+	- Образовательный маршрут (Магистратура)
 - путь для шаблонов alt e
 - Магистратуры по CS/IT в Исландии
 

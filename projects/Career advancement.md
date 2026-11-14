@@ -21,12 +21,12 @@ cover:
 icon: ✏️
 color: "#b87535"
 created: 2026-10-01T22:11:49+04:00
-updated: 2026-11-12T12:31:10+04:00
+updated: 2026-11-13T10:08:04+04:00
 ---
 
 # Tasks
-https://claude.ai/artifact/PDmEzfBwFdPY3zTVJADU4h
 
+https://claude.ai/artifact/PDmEzfBwFdPY3zTVJADU4h
 
 - [ ] #task/multistep #category/productivity #context/work/self-product Чек-лист недели:
 	- [x] #task/inbox #category/productivity Найти узкое место ✅ 2026-10-19
@@ -53,7 +53,7 @@ https://claude.ai/artifact/PDmEzfBwFdPY3zTVJADU4h
 - [ ] #task/one-off #context/work/self-product Пооткликаться на вакансии React + TS ➕ 2026-10-01
 - [ ] #task/one-off #context/work/self-product Завести Linkedin ➕ 2026-10-01
 	- [ ] заполнить linkedin ➕ 2026-10-19
-- [ ] #task/regular #category/productivity #context/work/self-product Пробное интервью по [[подготовка к собеседованиям]] ⏰ 08:00 ⏱️ 40m 🔁 every week on Friday and Tuesday ➕ 2026-10-22 📅 2026-11-13
+- [ ] #task/regular #category/productivity #context/work/self-product Пробное интервью по [[подготовка к собеседованиям]] ⏰ 08:00 ⏱️ 40m 🔁 every week on Friday and Tuesday ➕ 2026-10-22 📅 2026-11-14
 - [x] #task/one-off Причесать гитхаб ➕ 2026-10-01 ✅ 2026-10-19
 
 ~~~~tabs
@@ -88,15 +88,16 @@ tab: ✅ Task notes
 
 # Подготовка к собесам в найм
 
-- [ ] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-12 📅 2026-11-13
+- [ ] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-13 📅 2026-11-14
+- [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-12 📅 2026-11-13 ✅ 2026-11-13
 - [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-12 📅 2026-11-12 ✅ 2026-11-12
 - [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-11 📅 2026-11-11 ✅ 2026-11-12
 - [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-06 📅 2026-11-10 ✅ 2026-11-11
 - [-] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday, Saturday ➕ 2026-11-06 📅 2026-11-09 ❌ 2026-11-10
 - [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-06 📅 2026-11-05 ✅ 2026-11-06
 - [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-03 📅 2026-11-04 ✅ 2026-11-06
-- [ ] #task/one-off #category/webdev Переписать резюме под "фронтенд + ИИ-интеграции" ➕ 2026-11-03 📅 2026-11-13
-- [ ] #task/one-off #category/webdev Доделать репозиторий с разбором [[Sladko brno]] для собеседований ➕ 2026-11-03 📅 2026-11-13
+- [x] #task/one-off #category/webdev Переписать резюме под "фронтенд + ИИ-интеграции" ➕ 2026-11-03 📅 2026-11-13 ✅ 2026-11-13
+- [ ] #task/one-off #category/webdev Доделать репозиторий с разбором [[Sladko brno]] для собеседований ➕ 2026-11-03 📅 2026-11-14
 - [ ] #task/one-off #category/webdev Назвать новую ставку хотя бы одному текущему клиенту ➕ 2026-11-03 📅 2026-11-20
 
 ## ✅ Сопроводительное: ClubHub – AI Product Engineer (черновик 2026-11-05)
@@ -1301,7 +1302,8 @@ Email: terentjev.selogaz@gmail.com
 - LangChain / LangGraph / Vercel AI SDK
 	- в проде не использовал, модели вызываю напрямую через API.
 - Docker
-	- да, multi-stage сборки и выкладка через GitHub Actions. Kubernetes: не работал.
+	- да, multi-stage сборки и выкладка через GitHub Actions. Kubernetes
+		- не работал.
 - Yandex Cloud
 	- не работал, разворачивал на VPS (nginx, systemd).
 

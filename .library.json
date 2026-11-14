@@ -553,7 +553,9 @@
         3456,
         3621,
         3863,
-        3864
+        3864,
+        3993,
+        3996
       ]
     },
     "ZVMFRHCY": {
@@ -629,11 +631,39 @@
         2193,
         3232,
         3991,
-        3992
+        3992,
+        3993,
+        3997,
+        3999,
+        4000
       ]
     }
   },
   "items": [
+    {
+      "itemType": "attachment",
+      "title": "871.pdf",
+      "url": "https://www.redcross-irkutsk.org/upload/catalog/files/products/871.pdf",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-11-11T16:39:44Z",
+      "dateModified": "2026-11-11T16:39:44Z",
+      "uri": "http://zotero.org/users/16981227/items/M5P7BBRG",
+      "path": "/home/exuberance/Zotero/storage/M5P7BBRG/871.pdf",
+      "select": "zotero://select/library/items/M5P7BBRG"
+    },
+    {
+      "itemType": "attachment",
+      "title": "https://www.redcross-irkutsk.org/upload/catalog/files/products/871.pdf",
+      "url": "https://www.redcross-irkutsk.org/upload/catalog/files/products/871.pdf",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-11-11T16:39:50Z",
+      "dateModified": "2026-11-11T16:39:50Z",
+      "uri": "http://zotero.org/users/16981227/items/UDY6Q9P9",
+      "path": "/home/exuberance/Zotero/storage/UDY6Q9P9/871.pdf",
+      "select": "zotero://select/library/items/UDY6Q9P9"
+    },
     {
       "key": "XEU9I9SW",
       "version": 9174,
@@ -1449,6 +1479,49 @@
       "select": "zotero://select/library/items/49W3HW87"
     },
     {
+      "key": "SK8CCC36",
+      "version": 9354,
+      "itemType": "webpage",
+      "title": "Authorizing OAuth apps",
+      "abstractNote": "You can connect your GitHub identity to third-party applications using OAuth. When authorizing an OAuth app, you should ensure you trust the application, review who it's developed by, and review the kinds of information the application wants to access.",
+      "citationKey": "AuthorizingOAuthApps",
+      "url": "https://docs-internal.github.com/en/apps/oauth-apps/using-oauth-apps/authorizing-oauth-apps",
+      "accessDate": "2026-11-13T06:19:21Z",
+      "language": "en",
+      "websiteTitle": "GitHub Docs",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-11-13T06:19:21Z",
+      "dateModified": "2026-11-13T06:19:21Z",
+      "uri": "http://zotero.org/users/16981227/items/SK8CCC36",
+      "itemID": 4000,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://docs-internal.github.com/en/apps/oauth-apps/using-oauth-apps/authorizing-oauth-apps",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-11-13T06:19:27Z",
+          "dateModified": "2026-11-13T06:19:27Z",
+          "uri": "http://zotero.org/users/16981227/items/BW3XUU39",
+          "path": "/home/exuberance/Zotero/storage/BW3XUU39/authorizing-oauth-apps.html",
+          "select": "zotero://select/library/items/BW3XUU39"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "SK8CCC36",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/SK8CCC36"
+    },
+    {
       "key": "IRR2H8N6",
       "version": 8556,
       "itemType": "videoRecording",
@@ -2044,6 +2117,54 @@
       "itemKey": "GEE6HW2R",
       "libraryID": 1,
       "select": "zotero://select/library/items/GEE6HW2R"
+    },
+    {
+      "key": "9PKLT3Y4",
+      "version": 9347,
+      "itemType": "journalArticle",
+      "title": "{Cognitive Complexity} a new way of measuring understandability",
+      "abstractNote": "Cyclomatic Complexity was initially formulated as a measurement of the “testability and maintainability” of the control flow of a module. While it excels at measuring the former, its underlying mathematical model is unsatisfactory at producing a value that measures the latter. This white paper describes a new metric that breaks from the use of mathematical models to evaluate code in order to remedy Cyclomatic Complexity’s shortcomings and produce a measurement that more accurately reflects the relative difficulty of understanding, and therefore of maintaining methods, classes, and applications.",
+      "date": "2023",
+      "citationKey": "campbellCognitiveComplexityNew2023",
+      "language": "en",
+      "libraryCatalog": "Zotero",
+      "creators": [
+        {
+          "firstName": "G Ann",
+          "lastName": "Campbell",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-11-13T06:12:40Z",
+      "dateModified": "2026-11-13T06:12:57Z",
+      "uri": "http://zotero.org/users/16981227/items/9PKLT3Y4",
+      "itemID": 3996,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "url": "https://www.sonarsource.com/docs/CognitiveComplexity.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-11-13T06:12:38Z",
+          "dateModified": "2026-11-13T06:12:40Z",
+          "uri": "http://zotero.org/users/16981227/items/ZSZ25PSV",
+          "path": "/home/exuberance/Zotero/storage/ZSZ25PSV/Campbell - 2023 - {Cognitive Complexity} a new way of measuring understandability.pdf",
+          "select": "zotero://select/library/items/ZSZ25PSV"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "9PKLT3Y4",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/9PKLT3Y4"
     },
     {
       "key": "TTEITJZA",
@@ -3229,6 +3350,33 @@
       "itemKey": "LRIW9JTN",
       "libraryID": 1,
       "select": "zotero://select/library/items/LRIW9JTN"
+    },
+    {
+      "key": "XUVMQ4D6",
+      "version": 0,
+      "itemType": "webpage",
+      "title": "etechlead/token-map: TokenMap is a desktop app for treemap-based codebase analysis by tokens, size, complexity, hotspots, and refactor priority",
+      "citationKey": "EtechleadTokenmapTokenMap",
+      "url": "https://github.com/etechlead/token-map",
+      "accessDate": "2026-11-13T06:17:44Z",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-11-13T06:17:44Z",
+      "dateModified": "2026-11-13T06:17:44Z",
+      "uri": "http://zotero.org/users/16981227/items/XUVMQ4D6",
+      "itemID": 3999,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "XUVMQ4D6",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/XUVMQ4D6"
     },
     {
       "key": "UZ3W9GC2",
@@ -8491,6 +8639,49 @@
       "itemKey": "2BSXKSWR",
       "libraryID": 1,
       "select": "zotero://select/library/items/2BSXKSWR"
+    },
+    {
+      "key": "99C55ZC2",
+      "version": 9350,
+      "itemType": "blogPost",
+      "title": "Статьи / Профиль etechlead",
+      "citationKey": "StatiProfilEtechlead",
+      "url": "https://habr.com/ru/users/etechlead/articles/",
+      "accessDate": "2026-11-13T06:17:15Z",
+      "language": "ru",
+      "blogTitle": "Хабр",
+      "websiteType": "Хабр",
+      "creators": [],
+      "tags": [
+        {
+          "tag": "📥",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-11-13T06:17:15Z",
+      "dateModified": "2026-11-13T06:17:22Z",
+      "uri": "http://zotero.org/users/16981227/items/99C55ZC2",
+      "itemID": 3997,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://habr.com/ru/users/etechlead/articles/",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-11-13T06:17:17Z",
+          "dateModified": "2026-11-13T06:17:17Z",
+          "uri": "http://zotero.org/users/16981227/items/Q6A8JUYS",
+          "path": "/home/exuberance/Zotero/storage/Q6A8JUYS/articles.html",
+          "select": "zotero://select/library/items/Q6A8JUYS"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "99C55ZC2",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/99C55ZC2"
     },
     {
       "key": "ILN2KB9X",

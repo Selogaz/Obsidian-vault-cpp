@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bda9ef25e60d256c",
+            "id": "9688eb767f524243",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "periodic/daily/2026-11-12.md",
+                "file": "periodic/daily/2026-11-13.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,11 +28,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-11-12"
+              "title": "2026-11-13"
             }
           },
           {
-            "id": "c2f11b41340ce51e",
+            "id": "be051696bbb1c9b6",
             "type": "leaf",
             "state": {
               "type": "task-calendar-panel",
@@ -42,12 +42,12 @@
             }
           },
           {
-            "id": "bad236f684aa762c",
+            "id": "0d1412264f9757fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "base/additions/conspectuses/конспект AI dev.md",
+                "file": "base/notes/исследование незнакомой кодовой базы.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -62,16 +62,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "конспект AI dev"
+              "title": "исследование незнакомой кодовой базы"
             }
           },
           {
-            "id": "a4f1b4ec94887153",
+            "id": "e796000c8793c9ea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/Career advancement.md",
+                "file": "periodic/daily/2026-11-14.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -86,7 +86,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Career advancement"
+              "title": "2026-11-14"
             }
           }
         ],
@@ -138,7 +138,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 330.99609375
+    "width": 330.99609375,
+    "collapsed": true
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -154,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/Career advancement.md",
+                "file": "periodic/daily/2026-11-14.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -232,13 +233,28 @@
       "graph:Open graph view": false
     }
   },
-  "active": "a4f1b4ec94887153",
+  "active": "e796000c8793c9ea",
   "lastOpenFiles": [
+    "periodic/daily/2026-11-14.md",
+    "periodic/daily/2026-11-13.md",
+    "base/notes/исследование незнакомой кодовой базы.md",
+    "base/additions/conspectuses/конспект AI dev.md.tmp.327719.de5c836bd170",
+    "base/notes/поиск проблем в незнакомой кодовой базе.md",
+    "base/notes/повышение шансов на приём pull request.md",
     "base/additions/conspectuses/конспект AI dev.md",
-    "sources/Стратегия без иллюзий_ Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен.md",
-    "periodic/daily/2026-11-12.md",
-    "base/additions/aggregators/AI dev конференция - conspectuses.md",
     "sources/AI dev конференция.md",
+    "base/additions/aggregators/AI dev конференция - attachments.md",
+    "home/index.md",
+    "base/notes/orphan notes vault.md",
+    "base/notes/java middle.md",
+    "base/notes/java middle Verme резюме опыта для собесов.md",
+    "periodic/daily/2025-11-02.md",
+    "home/databases/breadcrumbs.base",
+    "base/notes/формула ответа на собеседовании.md",
+    "periodic/daily/2026-11-12.md",
+    "projects/Career advancement.md",
+    "sources/Стратегия без иллюзий_ Как управлять своей жизнью, чтобы обрести устойчивость и достигать большего в условиях перемен.md",
+    "base/additions/aggregators/AI dev конференция - conspectuses.md",
     "files/Pasted image 20261112214335.png",
     "files/Pasted image 20261112214319.png",
     "files/Pasted image 20261112214153.png",
@@ -250,7 +266,6 @@
     "files/Pasted image 20261112213658.png",
     "files/Pasted image 20261112213606.png",
     "base/contacts/Владимир Кравчук психолог.md",
-    "projects/Career advancement.md",
     "base/contacts/Владимир Кравчук психолог.md.tmp.173715.03160e698047",
     "projects/Career advancement.md.tmp.173715.f972f8430d9e",
     "projects/Career advancement.md.tmp.7600.a3e116b483f6",
@@ -259,27 +274,13 @@
     "projects/Career advancement.md.tmp.7600.ea16b65f667e",
     "projects/Career advancement.md.tmp.7600.0b38d1b47777",
     "base/productions/Wow Пердули.md",
-    "home/index.md",
     "periodic/daily/2026-11-11.md",
     "periodic/daily/sedfTeoUg",
-    "projects/Career advancement.md.tmp.7203.40508b94e66a",
-    "projects/Career advancement.md.tmp.7203.bfb9b8d741de",
     "periodic/daily/2026-11-10.md",
     "base/additions/conspectuses/Стратегия без иллюзий конспект.md",
     "sources/Bleach.md",
     "base/additions/practice/гипотезы для запуска цикла интерес -- страсть -- цель -- связь -- оптимальная мотивация.md",
     "base/creators/Гэри Лэтэм.md",
-    "base/notes/SMART.md",
-    "base/notes/годовой план карьерного развития.md",
-    "base/notes/Стратегия без иллюзий конспект.md",
-    "periodic/daily/2026-11-09.md",
-    "projects/Claude монтаж.md",
-    "base/contacts/Seržákmarkeťák.md",
-    "base/additions/conspectuses/Как автоматизировать монтаж в Claude.md",
-    "sources/Я полностью автоматизировал монтаж в Claude_ вся система пошагово.md",
-    "base/additions/aggregators/Я полностью автоматизировал монтаж в Claude_ вся система пошагово - conspectuses.md",
-    "periodic/daily/2026-11-08.md",
-    "periodic/weekly/2026-W46.md",
     "periodic/tasks (grouped by priority).canvas",
     "base/notes/zz convtest canvas.canvas",
     "files/Редизайн мобильного приложения для покупки билетов в S7 (2026-04-21) - roadmap.canvas",
