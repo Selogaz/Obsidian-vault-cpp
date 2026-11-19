@@ -16,7 +16,7 @@ url:
 icon: 📓
 color: "#6f97c8"
 created: 2026-11-11T14:49:46+04:00
-updated: 2026-11-13T17:39:49+04:00
+updated: 2026-11-17T15:54:53+04:00
 ---
 
 > [!toc]+
@@ -421,7 +421,8 @@ Head of AI Битрикс24, инференс neuraldeep (~20 игровых 409
 	- веса = параметры × байты
 	- кеш = память карты − веса − запас
 	- сессий = токены кеша / средний промпт. При среднем промпте 29k
-		- 4090 – 67 агентов, RTX PRO 6000 – 220, B300 с Kimi K3.1 Pro – ~550. Калькуляторы: [VRAM](https://apxml.com/tools/vram-calculator), [KV-кеш](https://layer3labs.io/tools/kv-cache-calculator).
+		- 4090 – 67 агентов, RTX PRO 6000 – 220, B300 с Kimi K3.1 Pro – ~550. Калькуляторы
+			- [VRAM](https://apxml.com/tools/vram-calculator), [KV-кеш](https://layer3labs.io/tools/kv-cache-calculator).
 - Важнее, как быстро агент **читает**: 37 входных токенов на 1 выходной (бывает и 200:1).
 - Дешёвые карты тянут, если кеш под контролем
 	- выгрузка KV в RAM (сервер от 128–256 ГБ), кеш не ниже FP8.

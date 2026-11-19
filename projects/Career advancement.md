@@ -88,7 +88,10 @@ tab: ✅ Task notes
 
 # Подготовка к собесам в найм
 
-- [ ] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-13 📅 2026-11-14
+- [ ] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-18 📅 2026-11-18
+- [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-18 📅 2026-11-17 ✅ 2026-11-18
+- [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-18 📅 2026-11-16 ✅ 2026-11-18
+- [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-13 📅 2026-11-14 ✅ 2026-11-18
 - [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-12 📅 2026-11-13 ✅ 2026-11-13
 - [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-12 📅 2026-11-12 ✅ 2026-11-12
 - [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-11 📅 2026-11-11 ✅ 2026-11-12
