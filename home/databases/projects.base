@@ -127,6 +127,8 @@ views:
       - tags
       - aliases
     sort:
+      - property: start
+        direction: DESC
       - property: formula.kanban
         direction: ASC
       - property: status

@@ -6,6 +6,7 @@ tags:
 aliases: []
 description:
 addition:
+  - "[[Career advancement - исследования|🕵]]"
   - "[[Career advancement - negotiations|🤝]]"
 status: 🟦
 priority: ◽
@@ -21,7 +22,7 @@ cover:
 icon: ✏️
 color: "#b87535"
 created: 2026-10-01T22:11:49+04:00
-updated: 2026-11-13T10:08:04+04:00
+updated: 2026-11-21T10:57:27+04:00
 ---
 
 # Tasks
@@ -53,7 +54,7 @@ https://claude.ai/artifact/PDmEzfBwFdPY3zTVJADU4h
 - [ ] #task/one-off #context/work/self-product Пооткликаться на вакансии React + TS ➕ 2026-10-01
 - [ ] #task/one-off #context/work/self-product Завести Linkedin ➕ 2026-10-01
 	- [ ] заполнить linkedin ➕ 2026-10-19
-- [ ] #task/regular #category/productivity #context/work/self-product Пробное интервью по [[подготовка к собеседованиям]] ⏰ 08:00 ⏱️ 40m 🔁 every week on Friday and Tuesday ➕ 2026-10-22 📅 2026-11-14
+- [ ] #task/regular #category/productivity #context/work/self-product #task/next_action Пробное интервью по [[подготовка к собеседованиям]] ⏰ 08:00 ⏱️ 40m 🔁 every week on Friday and Tuesday ➕ 2026-10-22
 - [x] #task/one-off Причесать гитхаб ➕ 2026-10-01 ✅ 2026-10-19
 
 ~~~~tabs
@@ -88,7 +89,13 @@ tab: ✅ Task notes
 
 # Подготовка к собесам в найм
 
-- [ ] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-18 📅 2026-11-18
+- [ ] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-24 📅 2026-11-25
+- [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-24 📅 2026-11-24 ✅ 2026-11-24
+- [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-22 📅 2026-11-23 ✅ 2026-11-24
+- [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-22 📅 2026-11-21 ✅ 2026-11-22
+- [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-22 📅 2026-11-20 ✅ 2026-11-22
+- [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-19 📅 2026-11-19 ✅ 2026-11-22
+- [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-18 📅 2026-11-18 ✅ 2026-11-19
 - [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-18 📅 2026-11-17 ✅ 2026-11-18
 - [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-18 📅 2026-11-16 ✅ 2026-11-18
 - [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-13 📅 2026-11-14 ✅ 2026-11-18
@@ -100,8 +107,8 @@ tab: ✅ Task notes
 - [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-06 📅 2026-11-05 ✅ 2026-11-06
 - [x] #task/regular #category/webdev 5 откликов на hh, все полученные тестовые – в работу 🔁 every week on Monday, Tuesday, Wednesday, Thursday, Friday and Saturday ➕ 2026-11-03 📅 2026-11-04 ✅ 2026-11-06
 - [x] #task/one-off #category/webdev Переписать резюме под "фронтенд + ИИ-интеграции" ➕ 2026-11-03 📅 2026-11-13 ✅ 2026-11-13
-- [ ] #task/one-off #category/webdev Доделать репозиторий с разбором [[Sladko brno]] для собеседований ➕ 2026-11-03 📅 2026-11-14
-- [ ] #task/one-off #category/webdev Назвать новую ставку хотя бы одному текущему клиенту ➕ 2026-11-03 📅 2026-11-20
+- [ ] #category/webdev #task/next_action Доделать репозиторий с разбором [[Sladko brno]] для собеседований ➕ 2026-11-03
+- [-] #task/one-off #category/webdev Назвать новую ставку хотя бы одному текущему клиенту ➕ 2026-11-03 📅 2026-11-20 ❌ 2026-11-22
 
 ## ✅ Сопроводительное: ClubHub – AI Product Engineer (черновик 2026-11-05)
 

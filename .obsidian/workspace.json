@@ -11,13 +11,52 @@
             "id": "bda9ef25e60d256c",
             "type": "leaf",
             "state": {
-              "type": "task-calendar-panel",
-              "state": {},
-              "icon": "calendar-days",
-              "title": "Abyss Tasks"
+              "type": "markdown",
+              "state": {
+                "file": "periodic/daily/2026-11-23.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-11-23"
+            }
+          },
+          {
+            "id": "ab1d9f7f186b72ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "base/notes/вопросы для дневника.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": false
+                }
+              },
+              "icon": "lucide-file",
+              "title": "вопросы для дневника"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -65,8 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 330.99609375,
-    "collapsed": true
+    "width": 330.99609375
   },
   "right": {
     "id": "2266a43ed4d3dbb6",
@@ -160,8 +198,38 @@
       "graph:Open graph view": false
     }
   },
-  "active": "bda9ef25e60d256c",
+  "active": "ab1d9f7f186b72ed",
   "lastOpenFiles": [
+    "periodic/daily/2026-11-23.md",
+    "periodic/daily/2026-11-24.md",
+    "base/notes/interstitial log.md",
+    "file:/home/exuberance/Projects/daylog/artefacts/docs/ONBOARDING.md",
+    "periodic/daily/2026-11-23.md.tmp.2922351.2962712ef142",
+    "base/_hierarchy/деньги и отношение к себе.md",
+    "sources/Деньги - вопрос разрешения, а не усилия.md",
+    "sources/как наша психика ведёт к банкротству из заботы.md",
+    "base/notes/как перенастроить восприятие на позитив.md",
+    "sources/как мы становимся заложниками результатов и теряем свой путь.md",
+    "base/notes/вопросы для дневника.md",
+    "periodic/daily/2026-11-22.md",
+    "periodic/daily/2026-11-22.md.tmp.141008.d2bebdb0e441",
+    "projects/sed2AWsOF",
+    "periodic/daily/2026-11-21.md",
+    "periodic/daily/2026-11-20.md",
+    "home/index.md",
+    "projects/Собеседование в BOS.PRO — демо Sladko.md",
+    "periodic/daily/2026-11-19.md",
+    "home/databases/projects.base",
+    "projects/BOS-PM/Sladko/task.md",
+    "projects/BOS-PM/Sladko",
+    "projects/BOS-PM/CRM/result.json",
+    "projects/BOS-PM/CRM/eval.py",
+    "projects/BOS-PM/CRM/task.md",
+    "projects/BOS-PM/CRM/journal.tsv",
+    "projects/BOS-PM/CRM",
+    "projects/BOS-PM/eval.py",
+    "projects/BOS-PM/task.md",
+    "projects/BOS-PM/input.md",
     "periodic/daily/2026-11-17.md",
     "periodic/daily/2026-11-18.md",
     "base/additions/conspectuses/конспект AI dev.md",
@@ -169,30 +237,6 @@
     "file:/home/exuberance/Projects/resume/ai-2026-13/17-промпт-заказ-whatsapp.md",
     "file:/home/exuberance/Projects/resume/ai-2026-13/16-промпт-тестовое-вайбкодер.md",
     "file:/home/exuberance/Projects/resume/ai-2026-13/15-анкета-вайбкодер.md",
-    "file:/home/exuberance/Projects/resume/ai-2026-13/14-анкета-millhouse.md",
-    "periodic/daily/2026-11-16.md",
-    "periodic/weekly/2026-W46.md",
-    "home/databases/breadcrumbs.base",
-    "periodic/daily/2026-11-15.md",
-    "periodic/weekly/2026-W46.md.tmp.283019.30398cfdf460",
-    "periodic/weekly/2026-W46.md.tmp.283019.dc81c48209aa",
-    "periodic/daily/2026-11-14.md",
-    "base/notes/русификация магнитолы DSZT-YC4T.md",
-    "base/contacts/Владимир Кравчук психолог.md",
-    "periodic/daily/2026-11-13.md",
-    "base/notes/исследование незнакомой кодовой базы.md",
-    "base/additions/conspectuses/конспект AI dev.md.tmp.327719.de5c836bd170",
-    "base/notes/поиск проблем в незнакомой кодовой базе.md",
-    "base/notes/повышение шансов на приём pull request.md",
-    "sources/AI dev конференция.md",
-    "base/additions/aggregators/AI dev конференция - attachments.md",
-    "home/index.md",
-    "base/notes/orphan notes vault.md",
-    "base/notes/java middle.md",
-    "base/notes/java middle Verme резюме опыта для собесов.md",
-    "periodic/daily/2025-11-02.md",
-    "base/notes/формула ответа на собеседовании.md",
-    "periodic/daily/2026-11-12.md",
     "files/Pasted image 20261112214335.png",
     "files/Pasted image 20261112214319.png",
     "files/Pasted image 20261112214153.png",
@@ -202,12 +246,6 @@
     "files/Pasted image 20261112213922.png",
     "files/Pasted image 20261112213805.png",
     "files/Pasted image 20261112213658.png",
-    "base/contacts/Владимир Кравчук психолог.md.tmp.173715.03160e698047",
-    "projects/Career advancement.md.tmp.173715.f972f8430d9e",
-    "projects/Career advancement.md.tmp.7600.a3e116b483f6",
-    "projects/Career advancement.md.tmp.7600.3573ce9adbe6",
-    "projects/Career advancement.md.tmp.7600.e1ec7e4c336f",
-    "projects/Career advancement.md.tmp.7600.ea16b65f667e",
     "periodic/tasks (grouped by priority).canvas",
     "base/notes/zz convtest canvas.canvas",
     "files/Редизайн мобильного приложения для покупки билетов в S7 (2026-04-21) - roadmap.canvas",
